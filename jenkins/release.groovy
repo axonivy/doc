@@ -30,11 +30,11 @@ def buildDoc(def version, def branchVersion) {
   }
   sh "rm build/html/portal-guide/index.html"
 
-  def generateSystemDbSchemaDoc = {
-    maven cmd: "-f development/db-generator/db-meta-plugin clean install"
-    maven cmd: "-f db-schema/pom.xml clean package"
-  }
-  runMaven(generateSystemDbSchemaDoc)
+  // def generateSystemDbSchemaDoc = {
+  //   maven cmd: "-f development/db-generator/db-meta-plugin clean install"
+  //   maven cmd: "-f db-schema/pom.xml clean package"
+  // }
+  //runMaven(generateSystemDbSchemaDoc)
 
   archiveArtifacts 'build/html/**/*, ' +
                    'target/resources/includes/_release-notes.md'
