@@ -49,7 +49,7 @@
         <artifactId>flatten-maven-plugin</artifactId>
       </plugin>
 
-      <!-- <plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
@@ -65,54 +65,63 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-images</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-screenshots-designer</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-screenshots-engine</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.process</groupId>
                   <artifactId>process-editor-screenshots</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.dialog</groupId>
                   <artifactId>form-editor-screenshots</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.variable</groupId>
                   <artifactId>variable-editor-screenshots</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.dataclass</groupId>
                   <artifactId>dataclass-editor-screenshots</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.ui.icons</groupId>
                   <artifactId>ui-icons</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.neo</groupId>
                   <artifactId>neo-designer-screenshots</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
               </artifactItems>
@@ -131,6 +140,7 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.enginecockpit</groupId>
                   <artifactId>engine-cockpit-selenium-test</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
               </artifactItems>
@@ -149,6 +159,7 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.workflow</groupId>
                   <artifactId>dev-workflow-ui-screenshots</artifactId>
+                  <version>${project.version}</version>
                   <type>zip</type>
                 </artifactItem>
               </artifactItems>
@@ -159,7 +170,7 @@
         <configuration>
           <overWriteSnapshots>true</overWriteSnapshots>
         </configuration>
-      </plugin> -->
+      </plugin>
 
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
