@@ -21,6 +21,7 @@
     <designer.guide.url>https://developer.axonivy.com/doc/${doc.version}/designer-guide</designer.guide.url>
     <configuration.root>../workspace/ch.ivyteam.ivy.configuration/</configuration.root>
     <configuration.defaults>ch/ivyteam/ivy/configuration/internal/defaults</configuration.defaults>
+    <ivy-version>11.3.0</ivy-version><!-- build parameter?!-->
   </properties>
 
 
