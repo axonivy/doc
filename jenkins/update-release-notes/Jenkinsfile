@@ -1,0 +1,66 @@
+pipeline {
+  agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+    disableConcurrentBuilds()
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  parameters {
+    booleanParam(name: 'dryRun', defaultValue: true, description: 'whether the build should push the changes or not')
+  }
+
+  stages {
+    stage('update-release-notes') {
+      steps {
+        script {
+          def release = load 'build/release/release.groovy'
+          def integrateDependencies = {
+            maven cmd: '-f doc/pom.xml clean package'
+          }
+          release.runMaven(integrateDependencies)
+
+          sh 'build/doc/update-release-notes/updateReleaseNotes.sh'
+        }
+      }
+    }
+
+    stage('pull-request') {
+      agent {
+        dockerfile {
+          filename 'build/Dockerfile.gh-cli'
+          reuseNode true
+        }
+      }
+      when {
+        expression { !params.dryRun }
+      }
+      steps {
+        script {
+          def release = load 'build/release/release.groovy'
+          def version = release.mavenPropertyEvaluate('ivy-version') // e.g 8.0.1
+          def branch = "update-release-notes-$version-B$BUILD_NUMBER"
+          def message = "Update release notes for $version"
+          sh "git config --global user.name 'ivy-team'"
+          sh "git config --global user.email 'info@ivyteam.ch'"
+          withEnv(['GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=no']) {
+            withCredentials([file(credentialsId: 'github-ivyteam-token-repo-manager', variable: 'tokenFile')]) {
+              sshagent(credentials: ['github-axonivy']) {
+                sh 'git checkout -b ' + branch
+                sh 'git add .'
+                sh 'git commit -m "' + message + '"'
+                sh 'git push -u origin ' + branch
+                sh "gh auth login --with-token < ${tokenFile}"
+                sh 'gh pr create --title "' + message + '" --body "' + message + '" --base ' + BRANCH_NAME + ' --head ' + branch
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

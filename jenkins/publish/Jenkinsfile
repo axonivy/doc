@@ -1,0 +1,55 @@
+pipeline {
+  agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '1'))
+    disableConcurrentBuilds()
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  stages {
+    stage('build') {
+      when {
+        expression { env.BRANCH_NAME.startsWith('release/') || env.BRANCH_NAME.startsWith('master') }
+      }
+      steps {
+        script {
+          def release = load 'build/release/release.groovy'
+          def releaseVersion = release.evaluateMavenProperty('ivy-release-version') // e.g 9.1
+
+          release.buildJavadoc()
+          release.buildDoc(releaseVersion, releaseVersion)
+
+          release.buildProductWithoutTests('-Pivy.package.linux64') // needed for openapi
+          sh 'rm -rf workspace/ch.ivyteam.ivy.designer.product/target'
+          release.generateOpenApiJson(releaseVersion)
+
+          def deployer = {
+            def host = 'axonivya@217.26.51.247'
+            def homeDir = '/home/axonivya'
+            def dir = "$homeDir/data/ivy-doc"
+            def destFolder = "$dir/doc-$releaseVersion-" + new Date().format('yyyy-MM-dd_HH-mm-ss-SSS')
+
+            echo "Upload doc to $host:$destFolder"
+            sh "ssh $host mkdir -p $destFolder"
+
+            echo 'Upload documentation'
+            sh "rsync -r doc/build/html/ $host:$destFolder"
+
+            echo 'Upload javadoc'
+            sh "rsync -r javadoc/public-api/target/reports/apidocs/ $host:$destFolder/public-api"
+
+            echo 'Upload openapi json spec'
+            sh "rsync -r doc/openapi/target/openapi/ $host:$destFolder/openapi"
+
+            sh "ssh $host ln -fns $destFolder $homeDir/data/doc/$releaseVersion"
+          }
+          release.runSSH(deployer)
+        }
+      }
+    }
+  }
+}

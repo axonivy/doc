@@ -1,0 +1,30 @@
+pipeline {
+  agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '60', artifactNumToKeepStr: '2'))
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  stages {
+    stage('build') {
+      steps {
+        script {
+          def release = load 'jenkins/release.groovy'
+
+          def version = 'dev'
+          def branchVersion = 'master'
+          if (env.BRANCH_NAME.startsWith('release/')) {
+            version = release.evaluateMavenProperty('ivy-release-version') // minor version, e.g. 9.1
+            branchVersion = version
+          }
+          release.buildDoc(version, branchVersion)
+          currentBuild.description = "<a href='${BUILD_URL}artifact/doc/build/html/index.html'>Documentation</a>"
+        }
+      }
+    }
+  }
+}

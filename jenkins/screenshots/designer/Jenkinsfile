@@ -1,0 +1,60 @@
+pipeline {
+  agent {
+    label 'windows'
+  }
+
+  tools {
+    jdk 'temurin-jdk-21.0.6.7'
+    maven '3.9'
+  }
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '60', artifactNumToKeepStr: '10'))
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  stages {
+    stage('screenshots') {
+      steps {
+        script {
+          def autPath = buildDesigner()
+          dir('doc/screenshots/designer') {
+            maven cmd: "clean test -Daut.url=${autPath}"
+            junit skipPublishingChecks: true,
+                  testDataPublishers: [[$class: 'StabilityTestDataPublisher']],
+                  testResults: 'target/surefire-reports/TEST-*.xml'
+          }
+          currentBuild.description = "<a href='${BUILD_URL}artifact/doc/screenshots/designer/target/aut/screenshots/'>Screenshots</a>"
+          archiveArtifacts 'doc/screenshots/designer/target/aut/screenshots/**/*,' +
+                           'doc/screenshots/designer/target/results/**'
+        }
+      }
+    }
+
+    stage('upload-screenshots') {
+      when {
+        expression { currentBuild.currentResult == 'SUCCESS' && isReleaseOrMasterBranch() }
+      }
+      steps {
+        script {
+          dir('doc/screenshots/designer/zip') {
+            maven cmd: 'deploy'
+            archiveArtifacts 'target/doc*.zip'
+          }
+        }
+      }
+    }
+  }
+}
+
+def buildDesigner() {
+  maven cmd: 'clean verify -f maven/modules/product-designer/pom.xml '
+  return pwd() + '/' + findFiles(glob: 'workspace/*designer.product/target/products/*.zip')[0].path
+}
+
+def isReleaseOrMasterBranch() {
+  return env.BRANCH_NAME == 'master' || env.BRANCH_NAME.startsWith('release/')
+}

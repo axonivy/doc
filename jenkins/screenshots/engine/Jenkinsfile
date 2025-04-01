@@ -1,0 +1,61 @@
+pipeline {
+  agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '60', artifactNumToKeepStr: '10'))
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  stages {
+    stage('screenshots') {
+      steps {
+        script {
+          def random = (new Random()).nextInt(10000000)
+          def networkName = 'build-' + random
+          def seleniumName = 'selenium-' + random
+          def ivyName = 'ivy-' + random
+          sh "docker network create ${networkName}"
+          try {
+            docker.image('selenium/standalone-firefox:4').withRun("-e START_XVFB=false --shm-size=2g --name ${seleniumName} --network ${networkName}") {
+              docker.build('maven-build', '-f build/Dockerfile .').inside("--name ${ivyName} --network ${networkName}") {
+                maven cmd : 'clean package -f maven/modules/product-engine'
+                dir('doc/screenshots/engine') {
+                  maven cmd: "clean verify -Dtest.engine.url=http://${ivyName}:8080 -Dselenide.remote=http://${seleniumName}:4444/wd/hub"
+                  junit skipPublishingChecks: true,
+                        testDataPublishers: [[$class: 'StabilityTestDataPublisher']],
+                        testResults: '**/target/surefire-reports/TEST-*.xml'
+                }
+              }
+            }
+          } finally {
+            sh "docker network rm ${networkName}"
+          }
+          archiveArtifacts 'doc/screenshots/engine/target/screenshots/**/*'
+        }
+      }
+    }
+
+    stage('upload-screenshots') {
+      when {
+        expression { currentBuild.currentResult == 'SUCCESS' && isReleaseOrMasterBranch() }
+      }
+      steps {
+        script {
+          docker.build('maven-build', '-f build/Dockerfile .').inside('') {
+            dir('doc/screenshots/engine/zip') {
+              maven cmd: 'deploy'
+              archiveArtifacts 'target/doc*.zip'
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+def isReleaseOrMasterBranch() {
+  return env.BRANCH_NAME == 'master' || env.BRANCH_NAME.startsWith('release/')
+}
