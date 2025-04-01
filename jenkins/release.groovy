@@ -184,7 +184,7 @@ def announceRelease(releaseVersion, isLTS) {
 }
 
 def runMaven(command) {
-  docker.build('maven-build', '-f build/Dockerfile .').inside {
+  docker.build('maven-build', '-f jenkins/Dockerfile .').inside {
     command.call()
   }
 }

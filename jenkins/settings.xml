@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <mirrors>
+
+    <mirror>
+      <id>mirror.central</id>
+      <mirrorOf>central</mirrorOf>
+      <url>https://mvn-mirror.ivyteam.io/repository/maven-central/</url>
+    </mirror>
+
+    <mirror>
+      <id>mirror.central.snapshots</id>
+      <mirrorOf>central.snapshots</mirrorOf>
+      <url>https://mvn-mirror.ivyteam.io/repository/central-snapshots/</url>
+    </mirror>
+
+    <mirror>
+      <id>mirror.nexus.axonivy.com.snapshots</id>
+      <mirrorOf>nexus.axonivy.com.snapshots</mirrorOf>
+      <url>https://mvn-mirror.ivyteam.io/repository/maven-nexus-axonivy-com-snapshots/</url>
+    </mirror>
+
+    <mirror>
+      <id>mirror.nexus.axonivy.com.releases</id>
+      <mirrorOf>nexus.axonivy.com.releases</mirrorOf>
+      <url>https://mvn-mirror.ivyteam.io/repository/maven-nexus-axonivy-com-releases/</url>
+    </mirror>
+
+    <mirror>
+      <id>mirror.rcptt</id>
+      <mirrorOf>repo.eclipse.org.rcptt</mirrorOf>
+      <url>https://mvn-mirror.ivyteam.io/repository/eclipse-rcptt/</url>
+    </mirror>
+
+  </mirrors>
+
+</settings>
