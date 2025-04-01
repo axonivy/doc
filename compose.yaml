@@ -5,5 +5,5 @@ services:
     ports:
      - 8000:8000
     volumes:
-     - ./..:/ivy-core
-    entrypoint: make livehtml BASEDIR=/ivy-core/doc
+     - .:/ivy-core
+    entrypoint: make livehtml BASEDIR=/ivy-core
