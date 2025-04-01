@@ -22,7 +22,7 @@ pipeline {
             branchVersion = version
           }
           release.buildDoc(version, branchVersion)
-          currentBuild.description = "<a href='${BUILD_URL}artifact/doc/build/html/index.html'>Documentation</a>"
+          currentBuild.description = "<a href='${BUILD_URL}artifact/build/html/index.html'>Documentation</a>"
         }
       }
     }
