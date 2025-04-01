@@ -19,25 +19,25 @@ def buildJavadoc() {
 
 def buildDoc(def version, def branchVersion) {
   def integrateDependencies = {
-    maven cmd: "-f doc/pom.xml clean package -Ddoc.version=${version}" 
+    maven cmd: "-f pom.xml clean package -Ddoc.version=${version}" 
   }
   runMaven(integrateDependencies)
 
-  sh "doc/substitute.sh ${version}"
+  sh "substitute.sh ${version}"
 
   docker.image('axonivy/build-container:read-the-docs-2').inside {
-    sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}/doc' VERSION=${version} BRANCH_VERSION=${branchVersion}"  
+    sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' VERSION=${version} BRANCH_VERSION=${branchVersion}"  
   }
-  sh "rm doc/build/html/portal-guide/index.html"
+  sh "rm build/html/portal-guide/index.html"
 
   def generateSystemDbSchemaDoc = {
     maven cmd: "-f development/db-generator/db-meta-plugin clean install"
-    maven cmd: "-f doc/db-schema/pom.xml clean package"
+    maven cmd: "-f db-schema/pom.xml clean package"
   }
   runMaven(generateSystemDbSchemaDoc)
 
-  archiveArtifacts 'doc/build/html/**/*, ' +
-                   'doc/target/resources/includes/_release-notes.md'
+  archiveArtifacts 'build/html/**/*, ' +
+                   'target/resources/includes/_release-notes.md'
 
   withChecks('Doc Sphinx Issues') {
     recordIssues tools: [sphinxBuild()], qualityGates: [[threshold: 1, type: 'TOTAL']]
