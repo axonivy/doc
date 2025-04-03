@@ -46,7 +46,7 @@ But you can set the log level of a specific runtime logger and bring them even t
 
 The name of the runtime logger has a well defined format:
 
-**runtimelog.[app name].[process model name].[category]**
+**runtimelog.[security context name].[category].[app name].[process model name]**
 
 **Example:**
 
@@ -56,7 +56,7 @@ The name of the runtime logger has a well defined format:
 
 All available categories [category] are defined in the :public-api:`RuntimeLogCategory
 </ch/ivyteam/ivy/application/RuntimeLogCategory.html>`. Write them in lower case
-e.g., :code:`<Logger name="runtimelog.myapp.hrm.rest_client">`. 
+e.g., :code:`<Logger name="runtimelog.securitycontext.rest_client.myapp.hrm">`. 
 
 
 Log format

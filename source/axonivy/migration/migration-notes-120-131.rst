@@ -41,6 +41,45 @@ We removed the Serenity themes including the :code:`serenity-ivy` theme.
 Please use the :ref:`freya-ivy <freya-themes>` theme instead.
 
 
+Changed Runtime logger name
+****************************************
+
+|tag-ops-changed|
+
+We changed the Runtime logger name from :code:`runtime.[app name].[pm name].[category]` to
+:code:`runtime.[security context name].[category].[app name].[pm name]`.
+
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Detail**
+
+  .. container:: detail 
+
+    We added the security context name to the Runtime logger name and moved the category after the security context name.
+    This is to make the logger name more unique and to be able to filter by security context name.
+    The new logger name is now: :code:`runtime.[security context name].[category].[app name].[pm name]`.
+
+    In case you have a custom :code:`log4j2.xml` configuration, you need to adapt the  occurences of the runtime logger name in your configuration.
+
+    From something like this:
+
+    .. code-block:: xml
+          
+      <Logger name="runtimelog.myapp.hrm.rest_client" level="DEBUG">
+        <AppenderRef ref="RuntimeLog"/>
+      </Logger>
+
+    To something like this:
+
+    .. code-block:: xml
+          
+      <Logger name="runtimelog.securitycontext.rest_client.myapp.hrm" level="DEBUG">
+        <AppenderRef ref="RuntimeLog"/>
+      </Logger>
+      
 ------------
 
 .. include:: _tagLegend.rst
