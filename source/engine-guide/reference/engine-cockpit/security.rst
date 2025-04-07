@@ -103,7 +103,7 @@ User Detail
 """""""""""
 
 In the **User Detail** view, you see the settings of a user. If you added the user 
-manually in the |ivy-engine|, independent of the class of the security system, you
+manually in the Axon Ivy Engine, independent of the class of the security system, you
 can also change the settings.
 
 The :guilabel:`Information` panel displays the attributes of the user. 
@@ -130,8 +130,8 @@ After disabling a user
 Deleting a user will also remove him from the users table in the database.
 
 .. Note::
-  |ivy-engine| never deletes users automatically. If a synchronized user is deleted 
-  in the Identity Provider bound to the security system, the |ivy-engine| will only 
+  Axon Ivy Engine never deletes users automatically. If a synchronized user is deleted 
+  in the Identity Provider bound to the security system, the Axon Ivy Engine will only 
   deactivate the user. If you want to delete deactivated users, you have to do this 
   either manually in the cockpit or supply your own workflow to do so.
 
@@ -201,7 +201,7 @@ The :guilabel:`Users` panel allows you to add users to or remove them from the r
 .. Note::
   For a managed role, you cannot change assignments of managed users.
   However, you can assign and remove unmanaged users which you have created on the
-  |ivy-engine| in this security system.
+  Axon Ivy Engine in this security system.
 
 Within the :guilabel:`Properties` panel you can edit properties of the role.
 

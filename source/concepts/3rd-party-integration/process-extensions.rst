@@ -3,7 +3,7 @@
 Process Extensions
 ===================
 
-|ivy| processes have a rich set of standard elements to fulfill
+Axon Ivy processes have a rich set of standard elements to fulfill
 frequently required needs. 
 
 However, the available elements can be extended 
@@ -21,7 +21,7 @@ Connector elements are the simplest and most effective way to build
 your custom element, encapsulating your logic.
 The best thing about it? Creating such an Element doesn't require 
 special new skills apart from being familiar 
-with |ivy| Processes and their elements.
+with Axon Ivy Processes and their elements.
 
 Callable Sub Processes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -90,8 +90,8 @@ Community
 ^^^^^^^^^^^^^^
 
 Proud of your work, you may `contribute <https://github.com/axonivy-market/market/wiki>`_ this Sub Process 
-to the |ivy| `Market <https://market.axonivy.com/>`_. 
-So the |ivy| community can reuse and profit from your work.
+to the Axon Ivy `Market <https://market.axonivy.com/>`_. 
+So the Axon Ivy community can reuse and profit from your work.
 You may choose to do so, to simplify your own maintenance efforts,
 as the Market offers you a rich ecosystem that manages versions,
 distributions, and automated test infrastructure for free.
@@ -116,13 +116,13 @@ which are explained in the next chapter.
 Extendible Process Elements
 ----------------------------
 
-|ivy| comes with generic process elements that can be used to
+Axon Ivy comes with generic process elements that can be used to
 address particular execution behavior requirements none of the standard
 process elements can fulfill.
 
 All generic process elements contain a tab in which a Java class can be
 selected. The Java class implements the actual execution behavior. 
-Some standard implementations are shipped with the |ivy| core, and with
+Some standard implementations are shipped with the Axon Ivy core, and with
 these elements developers are able to specify their own implementation
 as part of the project.
 
@@ -197,10 +197,10 @@ in it there's just a interface that must be implemented.
 
 .. _extensions-bundles:
 
-|ivy| extensions bundles (Eclipse plugin)
+Axon Ivy extensions bundles (Eclipse plugin)
 ----------------------------------------------
 
-In order to provide an |ivy| extension for the Designer or Engine you
+In order to provide an Axon Ivy extension for the Designer or Engine you
 need to provide it as an Eclipse plugin.
 
 References
@@ -220,10 +220,10 @@ for your own development.
 Eclipse
 ^^^^^^^^^^^^^
 
-You can create your own Eclipse plugin in the |ivy-designer| by
+You can create your own Eclipse plugin in the Axon Ivy Designer by
 following these steps:
 
-#. Start |ivy-designer|
+#. Start Axon Ivy Designer
 
 #. Create a new Plug-in Project using the New wizard. 
    Menu: :guilabel:`File` > :guilabel:`New` > :guilabel:`Project ...` > :guilabel:`Plug-in Development` > :guilabel:`Plug-in Project`.
@@ -233,7 +233,7 @@ following these steps:
 #. Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the
    **Overview** tab and click on the link **Export Wizard**. As
    **Destination Directory** choose the ``dropins`` directory of your
-   |ivy-designer| or Engine installation. Press the **Finish**
+   Axon Ivy Designer or Engine installation. Press the **Finish**
    button. Your plugin is created in the ``dropins/plugins``
    directory.
 
@@ -243,16 +243,16 @@ following these steps:
 Installation
 ^^^^^^^^^^^^^
 
-Follow these steps to install your extensions in an |ivy-designer| or
+Follow these steps to install your extensions in an Axon Ivy Designer or
 Engine:
 
 #. Stop the running instance (if applicable).
 
 #. Copy your plugin (bundle) that contains your extension classes to the
-   ``dropins`` directory inside the |ivy-designer| or Engine
+   ``dropins`` directory inside the Axon Ivy Designer or Engine
    installation directory.
 
-#. Start the |ivy-designer| or Engine.
+#. Start the Axon Ivy Designer or Engine.
 
 .. tip::
 

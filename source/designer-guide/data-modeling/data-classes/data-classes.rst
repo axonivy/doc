@@ -3,7 +3,7 @@
 Data Classes
 ============
 
-This chapter deals with |ivy| Data Classes. A Data Class generally holds the
+This chapter deals with Axon Ivy Data Classes. A Data Class generally holds the
 data that flows through your business or User Dialog process. You can build
 complex data structures in your Data Classes. Use composition to split up your
 data if the amount of your data is getting large.
@@ -11,7 +11,7 @@ data if the amount of your data is getting large.
 Types of Data Classes
 ---------------------
 
-There are four kinds of Data Classes in |ivy|.
+There are four kinds of Data Classes in Axon Ivy.
 
 Global Data Classes
    The global Data Classes are located in the Data Class node in your project
@@ -24,7 +24,7 @@ User Dialog Data Class
    Class is visible only in the associated User Dialog Process.
 
 Web Service (WS) Data Classes
-   |ivy| generates a Web Service Data Class automatically when you create a Web
+   Axon Ivy generates a Web Service Data Class automatically when you create a Web
    Service configuration. The Web Service Data Class, like a global Data Class,
    is accessible in your project and projects depending on it. Use this Data
    Class to communicate with your Web Services.
@@ -56,7 +56,7 @@ Project Name
 Namespace
    Choose a namespace for your Data Class. The namespace lets you create a
    structure to organize your data. Use the dot character '.' to separate the
-   folders. The namespace will be visible in the |ivy| project tree.
+   folders. The namespace will be visible in the Axon Ivy project tree.
 
 Data Class Name
    Enter the name of your Data Class.

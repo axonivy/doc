@@ -1,16 +1,16 @@
 .. _test-project-setup:
 
-To get started you have to create a test project. The '|ivy| Test Project' 
+To get started you have to create a test project. The 'Axon Ivy Test Project' 
 wizard will help you to create a test project with all required 
 configurations plus a simple sample test.
 
-#. Add a new |ivy| Test Project
+#. Add a new Axon Ivy Test Project
 
    - Right click on a project you would like to write tests for.
 
-     Select: New -> |ivy| Test Project in the context menu.
+     Select: New -> Axon Ivy Test Project in the context menu.
 
-   - Pick the test flavor |TESTKIND| to include in the 'New |ivy| Test Project' wizard.
+   - Pick the test flavor |TESTKIND| to include in the 'New Axon Ivy Test Project' wizard.
 
    - Finish the wizard.
 

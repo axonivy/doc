@@ -3,11 +3,11 @@
 Identity Provider
 =================
 
-The |ivy-engine| allows you to connect external Identity Providers (IdP) 
+The Axon Ivy Engine allows you to connect external Identity Providers (IdP) 
 to automatically create, maintain, and deactivate your workflow users.
-|ivy-engine| never removes or deletes users, it just deactivates them.
+Axon Ivy Engine never removes or deletes users, it just deactivates them.
 
-|ivy-engine| currently offers interfaces for four different Identity Providers:
+Axon Ivy Engine currently offers interfaces for four different Identity Providers:
 
 .. toctree::
     :maxdepth: 1

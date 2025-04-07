@@ -5,7 +5,7 @@ REST Clients
 ============
 
 The REST clients configuration contains the definition of all REST
-services, to be consumed by an |ivy| process.
+services, to be consumed by an Axon Ivy process.
 
 .. tip::
 
@@ -17,7 +17,7 @@ REST Client
 -----------
 
 A REST client can be referenced by name or universally unique identifier (UUID).
-|ivy| generates the UUID when a new REST client is created and will never
+Axon Ivy generates the UUID when a new REST client is created and will never
 change. You define the name of a REST client when you create a new REST client.
 You can change it later. To ensure that renaming a REST client will not break
 the reference, refer to the REST client by its UUID only.
@@ -70,7 +70,7 @@ REST Client Section
   
 - :guilabel:`Icon` 
   Choose an icon that represents the system that this REST
-  client communicates with. |ivy| uses this icon as a decorator icon
+  client communicates with. Axon Ivy uses this icon as a decorator icon
   on REST client call process elements that reference this REST client.  
 
 - :guilabel:`Description`

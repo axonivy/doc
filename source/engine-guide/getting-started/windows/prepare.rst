@@ -1,7 +1,7 @@
 Prepare your Server
 -------------------
 
-Make sure that your server fulfills the :ref:`engine-system-requirements` of the |ivy-engine|.
+Make sure that your server fulfills the :ref:`engine-system-requirements` of the Axon Ivy Engine.
 
 
 Download the Engine (Windows)

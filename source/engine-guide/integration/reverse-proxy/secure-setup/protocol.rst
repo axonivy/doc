@@ -22,7 +22,7 @@ over plain HTTP.
   to encrypt and decrypt data.
 
 But you need to ensure that the reverse proxy is setting the HTTP Header `X-Forwarded-Proto`
-with the value of `https` on all requests which are sent to the |ivy-engine|.
+with the value of `https` on all requests which are sent to the Axon Ivy Engine.
 
 .. rubric:: Remarks
 

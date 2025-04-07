@@ -1,6 +1,6 @@
 .. _designer-system-requirements:
 
-|ivy-designer|
+Axon Ivy Designer
 =================
 
 We recommend the following system setup for the Axon Ivy Designer:

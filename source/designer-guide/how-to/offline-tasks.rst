@@ -4,8 +4,8 @@ Offline Tasks
 =============
 
 Offline tasks are designed for use on a mobile device without connection
-to the |ivy-engine|. Typically the task data and the task forms are
-loaded during the synchronization with the |ivy-engine| and then
+to the Axon Ivy Engine. Typically the task data and the task forms are
+loaded during the synchronization with the Axon Ivy Engine and then
 handled locally by an app on a mobile device (e.g., a smartphone or a
 tablet). When the form is completed, the mobile app will transfer the
 entered form data to the server as soon as the connection to the
@@ -83,7 +83,7 @@ the corresponding session (the one that resumed the task) expires.
    An offline aware application must manage the loading of the form data
    for required tasks, the presentation of the forms to the user during
    offline stages and the submission of the form data when the
-   connection to the engine is established again. The |ivy| mobile app has
+   connection to the engine is established again. The Axon Ivy mobile app has
    full support for offline tasks.
 
 
@@ -117,7 +117,7 @@ Offline Dialogs
 An Offline Dialog is a special kind of HTML Dialog that warrants to be
 suitable for offline usage.
 
-|ivy| treats Offline Dialogs as separate view technology. Only when a User
+Axon Ivy treats Offline Dialogs as separate view technology. Only when a User
 Task element is configured to use an Offline Dialog, it will generate
 Offline Tasks. Otherwise, normal tasks will be generated. From a
 technical point of view, an Offline Dialog is the same as a normal HTML

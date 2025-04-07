@@ -5,9 +5,9 @@ Roles and Users
 users in a system who share a common property. This allows an
 administrator to define configurations for these groups (roles) of users
 instead of doing so for each user individually.
-|ivy| incorporates a sophisticated role and user model to support:
+Axon Ivy incorporates a sophisticated role and user model to support:
 
--  **Authentication** - Who may log in to |ivy| - is the user known?
+-  **Authentication** - Who may log in to Axon Ivy - is the user known?
 -  **Authorization** - Who is allowed to do what
 -  **Task assignment** - Who may perform a task in a workflow
 -  **User-dependent UI elements** - Who can see and operate on UI elements
@@ -26,7 +26,7 @@ all other roles; all other roles are more specialized than Everybody. In the
 figure below, a member user of role **Team A** also has the roles
 **Development** and **Everybody**.
 
-A typical |ivy| Role tree might look like this:
+A typical Axon Ivy Role tree might look like this:
 
    ::
 
@@ -115,7 +115,7 @@ dragging a role and dropping it at its new location in the hierarchy.
 
 .. warning::
 
-   Role names have to be unique within their security context. |ivy| merges roles
+   Role names have to be unique within their security context. Axon Ivy merges roles
    you define in a project with all other roles in the same security context.
    The deployment will fail if a Role with the same name exists in different
    hierarchies. This does not apply for Member Roles.
@@ -133,8 +133,8 @@ at least one role. Double click on the :guilabel:`Test Users` node in
 .. note::
 
    Test users are only used in the process **simulation** within the
-   |ivy-designer|. They are **not** uploaded to the engine during
-   deployment. Users for processes deployed on the |ivy-engine| need
+   Axon Ivy Designer. They are **not** uploaded to the engine during
+   deployment. Users for processes deployed on the Axon Ivy Engine need
    to be created and configured on the engine.
    
 .. figure:: /_images/designer-configuration/test-user-editor.png
@@ -173,6 +173,6 @@ process steps in :ref:`ivyscript`.
 
    You do not see the user called **Developer**, because it is a built-in
    user. It belongs to all groups and owns all permissions. The user is
-   meant to be used for testing, so it only exists in |ivy-designer|. The
+   meant to be used for testing, so it only exists in Axon Ivy Designer. The
    password of this user is **Developer** (in case you would like to log
    in using IvyScript).

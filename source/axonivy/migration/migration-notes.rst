@@ -4,7 +4,7 @@ Migration Notes
 ---------------
 
 This chapter informs you in detail about incompatibilities that were introduced between
-different |ivy| versions and tells you what needs to be done to get your existing projects
+different Axon Ivy versions and tells you what needs to be done to get your existing projects
 working with the newest version. Go through the migration notes from version to version.
 
 .. toctree::
@@ -30,5 +30,5 @@ Migrating from these versions is no longer supported by the :ref:`migration-tool
 * :dev-url:`Migrating from 4.3 to 5.0 </doc/5.0.5/migration-notes>`
 
 Please migrate first to a newer version that still support your old version and then migrate to the next version. 
-E.g., for migrating from 6.0 to 12.0, first install 8.0 and migrate your old |ivy-engine| from 6.0 to 8.0 and then 
+E.g., for migrating from 6.0 to 12.0, first install 8.0 and migrate your old Axon Ivy Engine from 6.0 to 8.0 and then 
 install 12.0 and migrate from 8.0 to 12.0.

@@ -22,7 +22,7 @@ It is based on different sections:
 Accessibility
 ~~~~~~~~~~~~~
 
-|ivy| project tree -> double click on the *Form* node of an HTML Dialog. 
+Axon Ivy project tree -> double click on the *Form* node of an HTML Dialog. 
 If there is none, create a new HTML Dialog and select the type :code:`Dialog Form` on the first wizard page.
 
 

@@ -6,7 +6,7 @@ digraph engine {
        ]; 
    
   /* nodes */
-  engine [ label="|ivy-engine|",         pos="0.0,0.0!",   width="6.0", height="5.0", style="dashed", fontcolor="black", labelloc="t"];
+  engine [ label="Axon Ivy Engine",         pos="0.0,0.0!",   width="6.0", height="5.0", style="dashed", fontcolor="black", labelloc="t"];
   default [ label="default",                pos="0.0,-0.1!",  width="5.5", height="4.5", style="dashed", fontcolor="black", labelloc="b"];
 
   processes [ label="Processes",            pos="0.0,0.0!",   width="5.0", height="0.5" ];

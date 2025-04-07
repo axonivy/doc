@@ -8,8 +8,8 @@ additional steps are required at the end.
 
 .. rubric:: Preparation
 
-#. Download the latest |ivy-engine| hotfix version that matches your release
+#. Download the latest Axon Ivy Engine hotfix version that matches your release
    train :dev-url:`/download` and unpack at your prefered place.
-#. Stop the running |ivy-engine| instance.
+#. Stop the running Axon Ivy Engine instance.
 
 .. include:: _wizardMigration.rst

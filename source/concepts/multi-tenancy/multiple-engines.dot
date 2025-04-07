@@ -8,9 +8,9 @@ digraph engine {
   /* nodes */
   kubernetes [ label="Kubernetes", pos="0,0!" width=7 height=4.7 style="dashed" fontcolor="black" labelloc="t"];
 
-  engine1 [ label="|ivy-engine|\nContainer Tenant 1", pos="-2,0.0!" width=2 height=4 style="dashed" fontcolor="black" labelloc="t"];
-  engine2 [ label="|ivy-engine|\nContainer Tenant 2", pos="0,0.0!"  width=2 height=4 style="dashed" fontcolor="black" labelloc="t"];
-  engineN [ label="|ivy-engine|\nContainer Tenant N", pos="2,0.0!"  width=2 height=4 style="dashed" fontcolor="black" labelloc="t"];
+  engine1 [ label="Axon Ivy Engine\nContainer Tenant 1", pos="-2,0.0!" width=2 height=4 style="dashed" fontcolor="black" labelloc="t"];
+  engine2 [ label="Axon Ivy Engine\nContainer Tenant 2", pos="0,0.0!"  width=2 height=4 style="dashed" fontcolor="black" labelloc="t"];
+  engineN [ label="Axon Ivy Engine\nContainer Tenant N", pos="2,0.0!"  width=2 height=4 style="dashed" fontcolor="black" labelloc="t"];
 
   users1        [ label="Users",                         pos="-2,1.2!",  width="1.7", height="0.5", style="dashed" fontcolor="black"];
   roles1        [ label="Roles",                         pos="-2,0.5!",  width="1.7", height="0.5", style="dashed" fontcolor="black"];

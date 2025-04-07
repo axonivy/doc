@@ -7,7 +7,7 @@ States
 During process execution, the corresponding case and tasks have various states.
 Typically, cases start non-persistently, i.e., they are stored in memory only. At
 this time, their state is CREATED. As soon as a case hits a task switch,
-|ivy| persists the case and its tasks by storing them in the system database.
+Axon Ivy persists the case and its tasks by storing them in the system database.
 You can retrieve persisted cases and tasks only with the query APIs.
 Non-persisted cases and tasks are not retrievable by API.
 
@@ -82,8 +82,8 @@ Task switch states in detail
 In detail, the tasks are going to more technical task states inside a task
 switch element. After a task reaches a task switch, its state is
 READY_FOR_JOIN. As soon as all input tasks have arrived at the task switch,
-|ivy| sets the states of these input tasks to JOINING and joins their process data
-sets into one process data set forwarded to all output tasks. Then, |ivy|
+Axon Ivy sets the states of these input tasks to JOINING and joins their process data
+sets into one process data set forwarded to all output tasks. Then, Axon Ivy
 marks input tasks as DONE. It then creates the output tasks in state
 SUSPENDED.
 
@@ -116,7 +116,7 @@ Task with session timeout
 |image3|
 
 If a user resumes a task with a user dialog and the session of the user times
-out, |ivy| sets the task state back to SUSPENDED and resets the associated case
+out, Axon Ivy sets the task state back to SUSPENDED and resets the associated case
 to the task switch element.
 
 .. table:: Task with session timeout
@@ -140,10 +140,10 @@ User Task
 |image4|
 
 A User Task combines a Task Switch Event and a User Dialog. If the user starts
-to work on an ordinary HTML User Dialog, |ivy| changes the task state to
-RESUMED. If this is an 'Offline Dialog', |ivy| does not change the task state
-before the user submits the task form. Once submitted, |ivy| changes the state
-from SUSPENDED to RESUMED. |ivy| then executes subsequent steps until the task
+to work on an ordinary HTML User Dialog, Axon Ivy changes the task state to
+RESUMED. If this is an 'Offline Dialog', Axon Ivy does not change the task state
+before the user submits the task form. Once submitted, Axon Ivy changes the state
+from SUSPENDED to RESUMED. Axon Ivy then executes subsequent steps until the task
 is finally DONE. See also :ref:`offline-tasks`.
 
 
@@ -155,7 +155,7 @@ Signal Boundary Event
 |image5|
 
 A User Task with an attached Signal Boundary Event listens for a signal while
-its task is in SUSPENDED state. After receiving the signal, |ivy| destroys the
+its task is in SUSPENDED state. After receiving the signal, Axon Ivy destroys the
 task. Execution continues with a newly created follow-up task.
 
 
@@ -165,9 +165,9 @@ Case Map with session timeout
 
 |image22|
 
-When a task is created by :ref:`casemap`, its initial state is SUSPENDED. |ivy|
+When a task is created by :ref:`casemap`, its initial state is SUSPENDED. Axon Ivy
 immediately persists the task in the database. If the user session expires while
-working on this initial task, |ivy| will delete it, along with the associated
+working on this initial task, Axon Ivy will delete it, along with the associated
 Case and Business Case.
 
 .. table:: Case Map with User Dialog that reaches a session timeout

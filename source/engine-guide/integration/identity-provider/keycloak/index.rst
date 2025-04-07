@@ -3,7 +3,7 @@
 Keycloak
 ========
 
-The |ivy-engine| supports Keycloak as an identity provider. You first need to
+The Axon Ivy Engine supports Keycloak as an identity provider. You first need to
 :ref:`create client in Keycloak <keycloak-setup>`. From which you need at
 least the following settings:
 

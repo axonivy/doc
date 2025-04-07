@@ -1,9 +1,9 @@
 .. _axonivy-why:
 
-Why |ivy|?
+Why Axon Ivy?
 ===============
 
-|ivy| is exciting for everyone who participates in your digital transformation
+Axon Ivy is exciting for everyone who participates in your digital transformation
 journey.
 
 * **Business**: 

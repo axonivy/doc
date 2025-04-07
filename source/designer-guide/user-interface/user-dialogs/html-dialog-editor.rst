@@ -12,7 +12,7 @@ in a text-based editor.
 Accessibility
 ~~~~~~~~~~~~~
 
-|ivy| project tree -> double click on the *View* node of an HTML
+Axon Ivy project tree -> double click on the *View* node of an HTML
 Dialog
 
 Content Assist (Ctrl+Space)

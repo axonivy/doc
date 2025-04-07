@@ -2,7 +2,7 @@ Customization
 -------------
 
 The BusinessData store serializes Java objects to schema-less JSON by using
-`Jackson <https://github.com/FasterXML/jackson>`__. |ivy| DataClasses can be
+`Jackson <https://github.com/FasterXML/jackson>`__. Axon Ivy DataClasses can be
 serialized with Jackson. However, Jackson can store and load any Java object
 hierarchy. The following customizations will help you to store your special
 plain old Java objects, which may not be serializable by default.

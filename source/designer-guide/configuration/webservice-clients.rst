@@ -4,7 +4,7 @@ Web Service Clients
 ===================
 
 The web service clients tree contains the definition of all web
-services consumable by an |ivy| process.
+services consumable by an Axon Ivy process.
 
 .. figure:: /_images/designer-configuration/webservice-client-editor.png
    :alt: Web Service Clients Editor
@@ -55,14 +55,14 @@ The following attributes are available in the *Web Service* Section:
   specified here. Please **use protocol prefixes** like:
   https://myserver.ch/hello.wsdl or file:/c:/temp/myWis.wsdl
 
-- :guilabel:`Library` Select the library |ivy| uses to generate the web service
+- :guilabel:`Library` Select the library Axon Ivy uses to generate the web service
   client classes.
 
 - :guilabel:`Generate WS classes` After specifying the mandatory fields
   :guilabel:`WSDL URL` and :guilabel:`Library`, click 
   :guilabel:`Generate WS classes` to read the WSDL and generate client classes. 
   The generated files are compiled and packaged into a jar file. The generated 
-  jar file is located in the *lib_ws/client* folder of the |ivy| project and
+  jar file is located in the *lib_ws/client* folder of the Axon Ivy project and
   automatically added to the project libraries.
 
 .. note::

@@ -7,7 +7,7 @@
    migration wizard is responsible to copy the configuration, error pages,
    dropins and many more to the new place. It will also update the schema of the
    system database. You can start using the wizard by starting the new
-   |ivy-engine|. Browse to the |ivy-engine| URI (e.g., http://localhost:8080)
+   Axon Ivy Engine. Browse to the Axon Ivy Engine URI (e.g., http://localhost:8080)
    and click on ``Setup Wizard`` > ``Migration Wizard``.
 #. Restart your Axon Ivy Engine.
 #. Apply the :ref:`migration-upgrade-engine-post`.

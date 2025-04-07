@@ -39,7 +39,7 @@ Download the latest engine:
     cd ivy
     mkdir engine
     cd engine
-    wget https://developer.axonivy.com/permalink/|version|/axonivy-engine.zip -O engine.zip
+    wget https://developer.axonivy.com/permalink/dev/axonivy-engine.zip -O engine.zip
 
 .. include:: ../_packages.rst
 

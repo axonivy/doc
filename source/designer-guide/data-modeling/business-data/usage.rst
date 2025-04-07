@@ -131,6 +131,6 @@ Samples
 ~~~~~~~
 
 The :ref:`WorkflowDemos sample project <importing-demo-projects>`
-of the |ivy-designer| contains examples of the Business Data Store usage.
+of the Axon Ivy Designer contains examples of the Business Data Store usage.
 
 Refer to the Public API ``BusinessDataRepository`` for more code samples.

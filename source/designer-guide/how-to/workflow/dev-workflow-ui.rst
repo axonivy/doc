@@ -82,7 +82,7 @@ paper plane icon on the table in the Boundary signals box.
 Cleanup
 ~~~~~~~
 
-On the cleanup page, you can delete different types of data from the running |ivy-engine|.
+On the cleanup page, you can delete different types of data from the running Axon Ivy Engine.
 You will see four checkboxes: 
 
 The first one deletes all Cases, Tasks, and dependent objects like documents or

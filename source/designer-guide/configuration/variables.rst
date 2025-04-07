@@ -12,7 +12,7 @@ By using Variables, rather than static texts, you can master the following scena
 -  Simple Rule Values (e.g., credit account)
 
 To see and configure Variables at runtime, use the :ref:`Engine
-Cockpit Variables View <engine-cockpit-variables>` on the |ivy-engine|. 
+Cockpit Variables View <engine-cockpit-variables>` on the Axon Ivy Engine. 
 
 
 .. _variables-editor:
@@ -74,10 +74,10 @@ Shows the details of the selected Variable.
 - :guilabel:`Metadata`
   If applicable, you can specify additional metadata for a Variable:
 
-  * **Password:** This tells the |ivy-engine| to encrypt the value of this Variable.
+  * **Password:** This tells the Axon Ivy Engine to encrypt the value of this Variable.
     
     .. tip::
-      If you add a password Variable in the |ivy-designer|, 
+      If you add a password Variable in the Axon Ivy Designer, 
       you get a validation warning that the Variable is not
       encrypted. You can fix this via a :ref:`problems-view` > *QuickFix*.
       
@@ -96,7 +96,7 @@ Shows the details of the selected Variable.
 
 .. tip::
   If your Variable has :code:`password` or :code:`secret` in its name (e.g.,
-  :code:`hidePasswordMenu`) and no metadata option is chosen, the |ivy-engine|
+  :code:`hidePasswordMenu`) and no metadata option is chosen, the Axon Ivy Engine
   will automatically treat this Variable as a password for increased security.
 
 .. warning::

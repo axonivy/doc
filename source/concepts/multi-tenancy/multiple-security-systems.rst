@@ -3,7 +3,7 @@
 Multiple Security Systems
 -------------------------
 
-You can run multiple tenants on the same |ivy-engine| by creating a security
+You can run multiple tenants on the same Axon Ivy Engine by creating a security
 system per tenant. This makes sense for smaller applications. Then, you can
 create a security system per customer and deploy the application(s) per
 customer. A security system is isolated from other security systems. This also

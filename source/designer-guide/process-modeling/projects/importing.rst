@@ -61,9 +61,9 @@ Importing demo projects
 The Axon Ivy Designer can import several demo projects, which are
 provided from our Market (internet connection needed). Those
 demo projects are in the Axon Ivy Archive (\*.iar) format and can be imported
-with the help of the :ref:`|ivy| Market <market>` or the *Axon Ivy Projects* link on the welcome page.
+with the help of the :ref:`Axon Ivy Market <market>` or the *Axon Ivy Projects* link on the welcome page.
 
-The following projects are available for |ivy-designer|:
+The following projects are available for Axon Ivy Designer:
 
 .. table:: Demo projects for the Designer.
 

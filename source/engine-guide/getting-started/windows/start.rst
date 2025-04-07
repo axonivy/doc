@@ -9,4 +9,4 @@ start the Axon Ivy Engine.
   :ref:`Windows Service <engine-service>`.
 
 After the Axon Ivy Engine has been started it opens a web browser displaying the
-main page of the |ivy-engine|.
+main page of the Axon Ivy Engine.

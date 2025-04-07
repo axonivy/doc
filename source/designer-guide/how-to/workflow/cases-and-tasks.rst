@@ -2,7 +2,7 @@
 Cases and Tasks
 ---------------
 
-The |ivy| workflow manages the execution of **process instances**. A **process
+The Axon Ivy workflow manages the execution of **process instances**. A **process
 instance** is represented by one **Case** and one or more **Tasks**. The
 **Case** exists from the first process step until the last process step and
 holds information about its **process instance**. The **Case** is finished when

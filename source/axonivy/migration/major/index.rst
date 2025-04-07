@@ -4,7 +4,7 @@
 Major / Minor Upgrade
 ---------------------
 
-Upgrades to a new |ivy-engine| version are warmly recommended to benefit from new
+Upgrades to a new Axon Ivy Engine version are warmly recommended to benefit from new
 features that will increase your productivity and ability to react to new
 business needs. You can have a look at the latest features here:
 :dev-url:`/news` 
@@ -25,12 +25,12 @@ concept.
 
 **Backwards-compatibility**
 
-The |ivy-engine| can run and execute workflow applications that have been built
+The Axon Ivy Engine can run and execute workflow applications that have been built
 towards an older engine version. Even so, we do recommend to **simulate
 migrations to new versions in a testing environment** since there is a chance
 that your project relies upon a no longer supported infrastructure, such as old
 Primefaces versions, Java libraries, or internal Java classes from the
-|ivy-engine|. By sticking only to PublicAPI and best practices, however, you have
+Axon Ivy Engine. By sticking only to PublicAPI and best practices, however, you have
 a minimal risk to face these version incompatibilities.
 
 To start with, we warmly recommend to read the :ref:`Migration Notes

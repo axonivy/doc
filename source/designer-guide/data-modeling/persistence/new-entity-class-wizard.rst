@@ -25,7 +25,7 @@ Namespace
    Chose a namespace for your Entity Class. The name space lets you
    create a structure to organize your data. Use the dot character '.'
    to separate the folders from each other. The namespace will be
-   visible in the |ivy| project tree.
+   visible in the Axon Ivy project tree.
 
 Entity Class Name
    Enter the name of your Entity Class. Do not use the same name twice

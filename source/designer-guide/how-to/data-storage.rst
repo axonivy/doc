@@ -1,7 +1,7 @@
 Data Storage
 ============
 
-|ivy| provides multiple possibilities to manage and store project
+Axon Ivy provides multiple possibilities to manage and store project
 specific data. This chapter provides an overview of all the
 possibilities with their advantages and disadvantages. Which one should
 be used depends from case to case.
@@ -35,7 +35,7 @@ Database
 
 Stores and access data in a database systems. An own database
 server is necessary and the database schema must be managed outside of
-|ivy|.
+Axon Ivy.
 More information can be found in the chapter :ref:`process-element-db-activity`.
 
 Persistency (Java Persistence API)
@@ -55,7 +55,7 @@ More information can be found in the chapter :ref:`process-element-web-service-c
 Variables
 ---------
 
-Stores simple name/value configuration pairs. On the |ivy-engine| there is a :ref:`UI
+Stores simple name/value configuration pairs. On the Axon Ivy Engine there is a :ref:`UI
 <engine-cockpit-variables>` to change the values of a Variable. More information
 can be found in the chapter :ref:`variables`.
 

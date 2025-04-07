@@ -3,7 +3,7 @@
 Notification
 ============
 
-The |ivy-engine| sends :ref:`notifications<notification>` to users such as when a
+The Axon Ivy Engine sends :ref:`notifications<notification>` to users such as when a
 new task is assigned to a user. Different channels can be operated.
 Built-in channels are the following:
 

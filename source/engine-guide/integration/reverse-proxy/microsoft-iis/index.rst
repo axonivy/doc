@@ -13,13 +13,13 @@ Hard requirements:
 
 Configurable requirements:
 
-- IIS is on the same host as the |ivy-engine|.
-- The |ivy-engine| is accessed via the :code:`Default Web Site` of IIS.
+- IIS is on the same host as the Axon Ivy Engine.
+- The Axon Ivy Engine is accessed via the :code:`Default Web Site` of IIS.
 - There are no other applications served by this IIS. Otherwise, you need to
   adapt the IIS server level URL rewrite rules.
 - The script shall download the additional IIS modules required.
 
-To use Microsoft IIS as a reverse proxy in front of your |ivy-engine|, download
+To use Microsoft IIS as a reverse proxy in front of your Axon Ivy Engine, download
 and execute the powershell script :download:`iis-proxy-setup.ps1`. Right click
 on the file and click :guilabel:`Run with PowerShell`. You need to run this
 script :guilabel:`as Administrator`.
@@ -35,7 +35,7 @@ need to answer this question with :guilabel:`[A] Yes to All`.
   (Properties -> General -> Security -> Unblock) or by running the following command 
   in the PowerShell :code:`Unblock-File iis-proxy-setup.ps1`
 
-This script will guide you to set up IIS as a reverse proxy for the |ivy-engine|.
+This script will guide you to set up IIS as a reverse proxy for the Axon Ivy Engine.
 
 If your IIS server cannot access external links, you need to download the
 modules externally and upload them to your IIS server. Please check the download
@@ -67,9 +67,9 @@ The script is divided into several parts:
 
 * **URL Rewrite Rules** configures the rules for URL rewriting. It will add a
   new rule :code:`ivy-route-all` to the :guilabel:`Default Website`. This will
-  route all traffic to the |ivy-engine| which runs on the same host at
+  route all traffic to the Axon Ivy Engine which runs on the same host at
   :code:`http://localhost:8080`. You may adjust this rule according to your
-  needs when your |ivy-engine| runs on a different host, and/or on a different
+  needs when your Axon Ivy Engine runs on a different host, and/or on a different
   port. We recommend to :ref:`limit the access <reverse-proxy-secure-path>` to
   specific applications by only routing the applications that are available to
   your users. You can do that by changing the standard pattern :code:`.*` of the
@@ -80,7 +80,7 @@ The script is divided into several parts:
   
    .. figure:: /_images/iis/iis-url-rewrite.png
 
-  There are features in |ivy| that require WebSocket communication. Therefore,
+  There are features in Axon Ivy that require WebSocket communication. Therefore,
   we automatically install the WebSocket feature. IIS-ARR is not able to
   negotiate WebSocket compression, therefore we need to always set the HTTP
   header :code:`SEC_WEBSOCKET_EXTENSIONS` to empty. We implement that adding
@@ -89,13 +89,13 @@ The script is divided into several parts:
   rewrite rule to empty.
 
 
-* **Terminate SSL on IIS** ensures that IIS serves the |ivy-engine| over HTTPS
-  but the connection between IIS and |ivy-engine| is HTTP only. We highly
+* **Terminate SSL on IIS** ensures that IIS serves the Axon Ivy Engine over HTTPS
+  but the connection between IIS and Axon Ivy Engine is HTTP only. We highly
   recommend to :ref:`setup your IIS this way <reverse-proxy-terminate-ssl>`.
   This will create a new :guilabel:`IIS Server Variable` called
   :code:`HTTP_X-Forwarded-Proto` that will be set to :code:`https` on the
   :code:`ivy-route-all` rewrite rule. This will send the HTTP header
-  :code:`X-Forwarded-Proto` from IIS to the |ivy-engine|. The |ivy-engine| needs
+  :code:`X-Forwarded-Proto` from IIS to the Axon Ivy Engine. The Axon Ivy Engine needs
   this information to generate correct URLs.
 
   .. figure:: /_images/iis/iis-terminate-ssl-server-variable.png
@@ -105,16 +105,16 @@ The script is divided into several parts:
 * **Setup SSO** will configure :ref:`Single Sign-on <single-sign-on>`. This will
   enable Windows Authentication and will add a HTTP request header
   :code:`X-Forwarded-User` with the current user to the request that will be
-  forwarded to the |ivy-engine|. You will also need to :ref:`activate Single
-  Sign-on <single-sign-on>` on the |ivy-engine| in :code:`ivy.yaml`. The script will also
+  forwarded to the Axon Ivy Engine. You will also need to :ref:`activate Single
+  Sign-on <single-sign-on>` on the Axon Ivy Engine in :code:`ivy.yaml`. The script will also
   enable Basic Authentication which is required for REST clients like the
-  |ivy| Mobile App to call the protected REST Services provided by the
-  |ivy-engine|. If you don't need this you can manually disable it.
+  Axon Ivy Mobile App to call the protected REST Services provided by the
+  Axon Ivy Engine. If you don't need this you can manually disable it.
 
   .. warning::
 
     If you enable SSO, you need to make sure that your users can access the
-    |ivy-engine| :ref:`exclusively via IIS <single-sign-on>`.
+    Axon Ivy Engine :ref:`exclusively via IIS <single-sign-on>`.
 
   .. figure:: /_images/iis/iis-authentication.png
 
@@ -131,6 +131,6 @@ The script is divided into several parts:
   Then, go to :guilabel:`Default Website`, open :guilabel:`Handler Mappings` and
   add :code:`https` as a new binding. Choose the SSL certificate you supplied
   earlier. We strongly recommend to remove the :code:`http` binding. This prevents your
-  |ivy-engine| being accessible via HTTP through IIS.
+  Axon Ivy Engine being accessible via HTTP through IIS.
 
   .. figure:: /_images/iis/iis-https-binding.png

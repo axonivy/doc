@@ -58,7 +58,7 @@ then define an explicit list of managed entity classes for each unit.
 Accessibility
 ^^^^^^^^^^^^^
 
-*|ivy| Project Tree > double click on the Persistence label.*
+*Axon Ivy Project Tree > double click on the Persistence label.*
 
 Features
 ^^^^^^^^
@@ -71,7 +71,7 @@ Data source
 
    There is also a ``IvySystemDatabase`` data source that points to the
    current System Database. Usually, you will use your own database
-   to split customer data from the |ivy| system data.
+   to split customer data from the Axon Ivy system data.
 
 Description
    Describe your persistence unit here.

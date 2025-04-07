@@ -73,7 +73,7 @@ one of the many available resources in the Internet.
 
 .. tip::
 
-   In |ivy|, we integrate the open source rule engine
+   In Axon Ivy, we integrate the open source rule engine
    `Drools <https://www.drools.org>`__ to give you the flexibility to use
    a rule engine if you want. We wrapped some of the most basic features
    of Drools into our own UI and API. If you need more than that, then

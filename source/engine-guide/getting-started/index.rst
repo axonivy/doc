@@ -3,7 +3,7 @@
 Getting Started
 ***************
 
-In this chapter, we help you to get up to speed with the |ivy-engine| with
+In this chapter, we help you to get up to speed with the Axon Ivy Engine with
 minimal effort. For productive use, the resulting configuration has to be
 updated later on; see :ref:`Non-Demo Setup <non-demo-setup>` below.
 
@@ -82,5 +82,5 @@ For example:
   centralize the administration effort.
 
 * For high availability, performance and scalability, you can :ref:`cluster
-  <cluster>` the |ivy-engine| and use a separate :ref:`OpenSearch server or
+  <cluster>` the Axon Ivy Engine and use a separate :ref:`OpenSearch server or
   cluster <opensearch>`.

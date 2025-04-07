@@ -40,7 +40,7 @@ your project.
 
 - :guilabel:`Database`
   Select the type and driver of the database you use. We ship some often
-  used and well-tested drivers with the |ivy-designer|.
+  used and well-tested drivers with the Axon Ivy Designer.
 
   The field :guilabel:`Max Connections` lets you specify the maximum number of
   concurrent connections to this database.

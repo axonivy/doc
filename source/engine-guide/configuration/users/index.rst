@@ -5,11 +5,11 @@ Workflow Users
 
 Workflow Users are managed in so-called security systems that you can define in
 :ref:`ivy-yaml`. The :code:`default` security system is pre-configured on every
-|ivy-engine|. For each security system you can define an identity provider. We
+Axon Ivy Engine. For each security system you can define an identity provider. We
 distinguish between the following identity providers:
 
 * **Internal Identity Provider**:
-  Used to manage its workflow users directly on the |ivy-engine|. Only the
+  Used to manage its workflow users directly on the Axon Ivy Engine. Only the
   :code:`Ivy Security System` is an internal identity provider which has no
   further settings and is configured by default. No futher configurations are need
   if you want to go with this.

@@ -12,7 +12,7 @@ Create Microsoft Entra ID App
     :alt: New registration
 
   i. Choose a name of your choice e.g., :code:`ivy`
-  ii. Define a Redirect URI of type :code:`Web` which points to your |ivy-engine|: https://ivy.ivyteam.io/oauth2/callback
+  ii. Define a Redirect URI of type :code:`Web` which points to your Axon Ivy Engine: https://ivy.ivyteam.io/oauth2/callback
     
     The pattern of this URI is `https://{host}/oauth2/callback` . 
     Therefore, you need to adjust the host in this URL. 
@@ -38,7 +38,7 @@ Create Microsoft Entra ID App
 14. Click on :guilabel:`New Client Secret`
 15. Enter a description, e.g., :code:`ivy`
 16. Click on :guilabel:`Add`
-17. Copy the :code:`value` of this secret. This is needed later to configure the |ivy-engine|.
+17. Copy the :code:`value` of this secret. This is needed later to configure the Axon Ivy Engine.
 
     .. figure:: /_images/identity-provider/azure-4.png
       :alt: Secret
@@ -48,4 +48,4 @@ Create Microsoft Entra ID App
   .. figure:: /_images/identity-provider/azure-5.png
       :alt: Secret
 
-19. :guilabel:`Application ID` and :guilabel:`Directory (tenant) ID` is needed to configure |ivy-engine|.
+19. :guilabel:`Application ID` and :guilabel:`Directory (tenant) ID` is needed to configure Axon Ivy Engine.

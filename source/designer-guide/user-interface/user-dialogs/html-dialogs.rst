@@ -3,7 +3,7 @@
 HTML Dialogs
 ------------
 
-An HTML Dialog (in the following abbreviated as HD) is the |ivy| way to
+An HTML Dialog (in the following abbreviated as HD) is the Axon Ivy way to
 implement a User Dialog Component. HDs use the Java Server Faces (JSF)
 technology.
 
@@ -14,7 +14,7 @@ browser.
 PrimeFaces JSF Component Library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|ivy| bundles the JSF component library 
+Axon Ivy bundles the JSF component library 
 `PrimeFaces <http://primefaces.org/>`__, an open source JSF component library
 developed by Prime Teknoloji. It provides a collection of mostly visual
 components (widgets). JSF programmers use these in addition to the small set of
@@ -30,29 +30,29 @@ Find detailed PrimeFaces widget API documentation in the `PrimeFaces VDL doc
    offering structured properties.
 
 The elements of the PrimeFaces library are added to your XHTML page by the
-``<p:>`` namespace. |ivy| also includes the **primefaces-extension**\ ``<pe:``
+``<p:>`` namespace. Axon Ivy also includes the **primefaces-extension**\ ``<pe:``
 widget library.
 
 .. note::
 
    It is also possible to install and use additional JSF libraries. Copy their
    .jar files into the folder **/webapps/ivy/WEB-INF/lib** of both
-   |ivy-designer| and |ivy-engine|. Then, you have to add a namespace attribute
+   Axon Ivy Designer and Axon Ivy Engine. Then, you have to add a namespace attribute
    **xmlns:xx** on your html pages to use the widgets.
 
 
 HTML Dialog Data Binding and Event Mapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An HD follows the model-view-controller pattern of the |ivy|
+An HD follows the model-view-controller pattern of the Axon Ivy
 :ref:`user-dialog-concept`. Therefore, a HD consists of 
 
 - a **XHTML dialog** (the view) 
 - a **data class** (the model) whose data fields you can bind to widget
-  properties of the view. To define such a binding, |ivy| provides the special
+  properties of the view. To define such a binding, Axon Ivy provides the special
   object **data**.
 - a series of UI processes (the controller), which you can map to events on the 
-  view like mouse clicks. To define such an event mapping, |ivy| provides the 
+  view like mouse clicks. To define such an event mapping, Axon Ivy provides the 
   keyword **logic** to call an event process or a method process in the logic.
 
 Look at the following small code sample of a form with a mapped data
@@ -74,7 +74,7 @@ process:
 Data Class Auto Initialization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-|ivy| initializes Data Classes automatically if an HD sets at least one
+Axon Ivy initializes Data Classes automatically if an HD sets at least one
 of their properties.
 
 E.g., if ``data.address`` is ``null``, and a user submits a form with a

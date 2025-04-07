@@ -79,7 +79,7 @@ below the chart to remove the attribute from the chart.
 Engine
 ^^^^^^
 
-The **Engine** pages allow you to monitor some critical indicators of your |ivy-engine|:
+The **Engine** pages allow you to monitor some critical indicators of your Axon Ivy Engine:
 
 - **Notifications**: Overview of all user notifications
 - **Sessions**: Overview of open user sessions
@@ -94,7 +94,7 @@ Notifications
 """""""""""""
 
 The **Notifications** view gives you an overview of all user notifications.
-Based on the notification subscription settings, the |ivy-engine| sends
+Based on the notification subscription settings, the Axon Ivy Engine sends
 different notification over the configured notification channels. By 
 :ref:`clicking <engine-cockpit-notification-detail>` on a notification you can
 see more details.
@@ -130,7 +130,7 @@ especially in the case of a session leak.
 Jobs
 """"
 
-The **Jobs** view displays a table with all jobs that are periodically executed by |ivy|.
+The **Jobs** view displays a table with all jobs that are periodically executed by Axon Ivy.
 The :guilabel:`Configuration` column shows how often or when (:ref:`configuration-cron`) a job is executed. 
 The :guilabel:`Next execution` column shows when the job is executed the next time. 
 Finally, columns show the number of times the job was already executed and how often it has failed.

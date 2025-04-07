@@ -3,7 +3,7 @@
 Microsoft Entra ID
 ==================
 
-To integrate the |ivy-engine| with Microsoft Entra ID as an Identity
+To integrate the Axon Ivy Engine with Microsoft Entra ID as an Identity
 Provider, you first need to :ref:`create an application in Microsoft Entra ID <microsoft-entra-id-app>`.
 From which you need at least the following settings:
 

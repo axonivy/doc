@@ -1,9 +1,9 @@
 .. _axonivy-what:
 
-What is |ivy|?
+What is Axon Ivy?
 ====================
 
-|ivy| is a Process Automation Platform that simplifies and automates the
+Axon Ivy is a Process Automation Platform that simplifies and automates the
 interaction of humans with their digital systems. The platform is typically
 responsible for the most precious business cases where companies produce value.
 Here is how we do it:
@@ -22,7 +22,7 @@ Here is how we do it:
     into other technical systems. Even though value is produced in a well-known
     business case, there is a lack of a straightforward interface that guides
     the involved users through the process. Valuable data is often segregated
-    and stored in various dedicated technical systems. With |ivy|, you can drive
+    and stored in various dedicated technical systems. With Axon Ivy, you can drive
     your process automatically. Our platform can easily orchestrate people, data
     and technical systems. You can generate an initial application that leads
     users through the process without hiring a software engineer. People can
@@ -31,7 +31,7 @@ Here is how we do it:
 
 **Improve**
     The digitalization of your company can **evolve over time**. We favor small
-    predictable improvements over big-bang solutions. The |ivy| Platform allows
+    predictable improvements over big-bang solutions. The Axon Ivy Platform allows
     you to start quickly and simply with your existing environment. You may
     start with just task notifications sent to users that should contribute to a
     running process. And eventually, the platform becomes your single interface
@@ -41,7 +41,7 @@ Here is how we do it:
     and effectively. The cost of business transformations become reasonable and
     predictable.
 
-The |ivy| Platform consists of the :ref:`|ivy-designer| <designer-guide>` which
+The Axon Ivy Platform consists of the :ref:`Axon Ivy Designer <designer-guide>` which
 enables the drawing, simulation and implementation of automated business
-processes, and the application server :ref:`|ivy-engine| <engine-guide>` that
+processes, and the application server :ref:`Axon Ivy Engine <engine-guide>` that
 executes your business cases and provides a shared interface for process users.

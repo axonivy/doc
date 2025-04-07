@@ -4,7 +4,7 @@ Local setup
 -----------
 
 It is possible to run NEO Designer based on a local installation.
-For that download the |ivy-engine| suitable for your system.
+For that download the Axon Ivy Engine suitable for your system.
 Install the engine following the :ref:`Engine Guide <engine-guide>`
 and start the engine. 
 It will run in DEMO-MODE. No further configuration is needed. 

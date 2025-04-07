@@ -45,7 +45,7 @@ Line 34:
   In each test method you have to pass in a
   :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`.
   This client is supplied by the process testing framework and represents an
-  |ivy-engine| that can run and drive your processes along.
+  Axon Ivy Engine that can run and drive your processes along.
 
 
 Write a Process Test

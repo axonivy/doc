@@ -33,7 +33,7 @@ approval process as it obfuscates the most used business path. But it could be
 available as an optional side task that the line manager can start and then gets
 executed within the current process context.
 
-In |ivy| processes with side steps can be invoked through Triggers or
+In Axon Ivy processes with side steps can be invoked through Triggers or
 Signals.
 
 **Triggers**
@@ -141,7 +141,7 @@ when simplified:
 
 .. figure:: /_images/adaptive-case-management/acm-business-data.png 
 
-To store this kind of data |ivy| provides a simple repository that is
+To store this kind of data Axon Ivy provides a simple repository that is
 called Business Data. This stored data can then be accessed by multiple process
 instances during the lifetime of a long living complex process. The repository
 provides access to the data with simple store and load functions similar to well

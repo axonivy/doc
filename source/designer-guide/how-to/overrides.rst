@@ -9,7 +9,7 @@ customer projects it is desirable that certain parts of such a generic
 solution may be redefined in the context of a specific installation or
 customer.
 
-To permit this, |ivy| knows various concepts of context-sensitive
+To permit this, Axon Ivy knows various concepts of context-sensitive
 re-definitions:
 
 -  Regular redefinition (e.g., for Content Objects and/or
@@ -118,7 +118,7 @@ Configuration
    .. warning::
 
       Overrides cannot be "stacked" - you can only override a component that is
-      not itself an override. |ivy-designer| will warn you about this.
+      not itself an override. Axon Ivy Designer will warn you about this.
 
 
 Overrides Tool Reference
@@ -129,7 +129,7 @@ Overrides Tool Reference
 Override editor
 ~~~~~~~~~~~~~~~
 
-The |ivy| *Overrides Editor* shows the registered and active
+The Axon Ivy *Overrides Editor* shows the registered and active
 overrides for a specific project. The overrides are listed in 4
 different sections: Sub Processes, HTML Dialogs, Content Objects and
 Configurations.
@@ -168,7 +168,7 @@ Accessibility
 
 |override-tree-node|
 
-|ivy| Project Tree > double click on the Overrides node.
+Axon Ivy Project Tree > double click on the Overrides node.
 
 
 Features

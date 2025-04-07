@@ -16,7 +16,7 @@ long run these tests make your life a lot easier. Think about the following poin
   change or even a platform update).
 
 Writing good software without tests is nearly impossible, and we want to make it
-as easy as possible for you to write tests for your |ivy| project. Let's
+as easy as possible for you to write tests for your Axon Ivy project. Let's
 get started!
 
 .. tip::

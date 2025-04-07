@@ -3,7 +3,7 @@
 Persistence API
 ---------------
 
-The |ivy| Persistence API is used to load entity objects directly
+The Axon Ivy Persistence API is used to load entity objects directly
 from the database or save/update them on the database. The Persistence
 API can be accessed by IvyScript anywhere scripting is supported. The
 Persistence API can only deal with entity objects, means objects of type
@@ -498,7 +498,7 @@ from the amount of all products:
 Accessibility
 ^^^^^^^^^^^^^
 
-You can use the Persistence API everywhere you have the |ivy| variable in
+You can use the Persistence API everywhere you have the Axon Ivy variable in
 the IvyScript. Use ``ivy.persistence.``\ *<persistence unit>*. Here you
 find all the methods for finding, persisting, updating and querying
 entity objects. Replace *<persistence unit>* with the name of a

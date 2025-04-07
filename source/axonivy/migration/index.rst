@@ -3,12 +3,12 @@
 Migration
 =========
 
-The migration process from one |ivy-engine| version to another differs 
+The migration process from one Axon Ivy Engine version to another differs 
 highly among the supported operating systems and the kind of migration.
 
 **Hotfix Upgrade**
 
-If you are looking for the update steps to keep your |ivy-engine| on the
+If you are looking for the update steps to keep your Axon Ivy Engine on the
 latest patch level (e.g., ``8.0.6`` > ``8.0.13``), 
 please consult the :ref:`migration-upgrade-engine-hotfix` chapter.
 

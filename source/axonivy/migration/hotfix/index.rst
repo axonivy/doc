@@ -4,10 +4,10 @@
 Hotfix Upgrade
 ---------------
 
-It's important to keep your productive |ivy-engine| stable and up to date.
+It's important to keep your productive Axon Ivy Engine stable and up to date.
 Otherwise, you risk to be vulnerable to known **security leaks** and users may
 face inconveniences due to known and addressed **bug fixes**. In addition,
-**performance issues** may be solved and make using the |ivy-engine| more fun on
+**performance issues** may be solved and make using the Axon Ivy Engine more fun on
 a daily basis.
 
 This chapter focuses on hotfix migration in the same release train (e.g., from

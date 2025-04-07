@@ -19,7 +19,7 @@ values from their ancestor, e.g.,
    -  Austria
    -  Germany
 
-Above, you see the business calendar definitions for |ivy|. We define a global
+Above, you see the business calendar definitions for Axon Ivy. We define a global
 root with three countries. For Switzerland, we also add two regions, Zurich and
 Zug, each with their local public holidays besides the ones they inherit from
 Switzerland and IvyGlobal.
@@ -70,7 +70,7 @@ You can use another calendar by referencing it by its name:
    ivy.cal.get("Zug").getWorkDayIn(2);
 
 If you want to configure business calendars for test purposes in your
-|ivy-designer| environment, you can change (or create if it doesn't exist yet)
+Axon Ivy Designer environment, you can change (or create if it doesn't exist yet)
 the ``app-designer.yaml`` file in folder ``<designer_path>/configuration``. Note
 that all values in this file are valid for all projects in your workspace and
 that they don't get cleared after a restart.

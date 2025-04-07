@@ -15,7 +15,7 @@ can pull the new images, run integration tests and roll the update out into
 production.
 
 The command to pull the latest images may differ to the approach you are using
-to run docker. Here's a Docker-Compose example that pulls the new |ivy-engine|
+to run docker. Here's a Docker-Compose example that pulls the new Axon Ivy Engine
 hotfix version:
 
 .. code:: bash

@@ -3,7 +3,7 @@
 Formats
 -------
 
-Format configurations define how |ivy| renders values of a specific type when
+Format configurations define how Axon Ivy renders values of a specific type when
 outputting them to users. You can define formats for all *base types* of
 *IvyScript*, i.e., ``Boolean``, ``Date``, ``DateTime``, ``Time``, ``Number``, and
 ``String``. Output any non-null values of those types as *formatted

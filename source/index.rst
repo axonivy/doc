@@ -1,4 +1,4 @@
-|ivy|
+Axon Ivy
 **********
 
 .. toctree::

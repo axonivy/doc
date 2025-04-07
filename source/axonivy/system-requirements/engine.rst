@@ -1,6 +1,6 @@
 .. _engine-system-requirements:
 
-|ivy-engine|
+Axon Ivy Engine
 ===============
 
 The following system requirements highly depend on the number of Named Users,
@@ -10,7 +10,7 @@ Concurrent Users, and deployed applications.
 Hardware Requirements
 ---------------------
 
-By default, the |ivy-engine| runs a bundled OpenSearch server. It is possible
+By default, the Axon Ivy Engine runs a bundled OpenSearch server. It is possible
 to integrate with an :ref:`external <opensearch-external>` OpenSearch
 instance. This also affects the minimum hardware requirements.
 

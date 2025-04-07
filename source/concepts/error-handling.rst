@@ -66,7 +66,7 @@ same process level.
 
 |image0|
 
-Error End Events can also be used to re-throw a pre-defined |ivy| error
+Error End Events can also be used to re-throw a pre-defined Axon Ivy error
 with a specific error that has a meaning to the business (e.g., if a
 web service is not available).
 

@@ -10,7 +10,7 @@ Persistence
    it has at least one task).
 
 Types
-   The |ivy| scripting types ``XML``, and ``Tree`` are not serializable.
+   The Axon Ivy scripting types ``XML``, and ``Tree`` are not serializable.
 
    You can store Collection types like an ``ArrayList`` in a field, but
    not as the root object. Always use a simple DataClass or plain old Java
@@ -22,7 +22,7 @@ Types
 
    Do not change the type of a stored field (e.g., from ``Number`` to
    ``String``)! The serialization of data you stored previously will fail, and
-   |ivy| cannot find Business Data with the new type via the search API as the
+   Axon Ivy cannot find Business Data with the new type via the search API as the
    search index is `strongly typed
    <https://opensearch.org/docs/latest/field-types/>`__.
 

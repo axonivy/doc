@@ -25,8 +25,8 @@ This can be done on the network level by banning the IP addresses of bad clients
 Have a look at our `ivy-reverse-proxy-ngnix-fail2ban docker examples <https://github.com/axonivy/docker-samples/tree/master/ivy-reverse-proxy-nginx-fail2ban>`_ 
 to see how to configure network banning with `fail2ban <https://github.com/fail2ban/fail2ban>`_.
 
-|ivy| Login Pages (Brute Force Attack)
+Axon Ivy Login Pages (Brute Force Attack)
 -----------------------------------------
 
-To help analyze log files for brute force attacks, the |ivy| login pages return a ``401 (Unauthorized)`` HTTP error code 
+To help analyze log files for brute force attacks, the Axon Ivy login pages return a ``401 (Unauthorized)`` HTTP error code 
 if a login attempt fails.

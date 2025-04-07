@@ -10,6 +10,6 @@ of business tasks, streamlining the development process and reducing complexity.
 Designed to enhance efficiency, NEO Designer supports the rapid deployment of 
 scalable applications, tailored to meet specific business needs effectively.
 
-NEO Designer is a web-based app that is available on the |ivy-engine|.
+NEO Designer is a web-based app that is available on the Axon Ivy Engine.
 
 .. figure:: /_images/neo/overview-workspaces.png
