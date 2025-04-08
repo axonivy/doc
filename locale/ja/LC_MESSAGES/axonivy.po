@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 14:40+0000\n"
+"POT-Creation-Date: 2025-04-08 07:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -1104,13 +1104,17 @@ msgid ""
 msgstr ""
 
 #: ../../source/axonivy/try-axon-ivy.rst:15
+msgid "Simulate a change in EN sources."
+msgstr ""
+
+#: ../../source/axonivy/try-axon-ivy.rst:17
 msgid ""
 "To try the Axon Ivy Engine this way, follow the Engine Guide Chapter "
 ":ref:`Getting Started <getting-started>` but skip the license "
 "installation."
 msgstr ""
 
-#: ../../source/axonivy/try-axon-ivy.rst:18
+#: ../../source/axonivy/try-axon-ivy.rst:20
 msgid ""
 "**Cloud Trial** If you want to try an Axon Ivy Engine with a persisting "
 "database, you can get a trial engine in the cloud via "
@@ -1118,7 +1122,7 @@ msgid ""
 "fully functional license and full web access to the engine."
 msgstr ""
 
-#: ../../source/axonivy/try-axon-ivy.rst:23
+#: ../../source/axonivy/try-axon-ivy.rst:25
 msgid ""
 "With this option, you don't need to install an engine - use a local Axon "
 "Ivy Designer to develop your trial project and deploy it to the Axon Ivy "
