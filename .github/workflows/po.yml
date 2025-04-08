@@ -2,8 +2,8 @@ name: i18n
 
 on:
   push:
-    branches:
-      - master
+    # branches:
+    #   - master
   workflow_dispatch:
   schedule:
     - cron:  '21 21 * * *'
@@ -22,8 +22,18 @@ jobs:
       run: |
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make\
           generatePO BASEDIR=/doc LOCALEDIR=/doc/locale LANGUAGE=ja
-    - name: Create Pull Request
+    - name: GH out
+      id: ghtry
       run: |
+        #echo "myKey=abc`git --no-pager diff`" >> $GITHUB_OUTPUT
+        echo "MY_STRING<<EOF" >> $GITHUB_ENV
+        git --no-pager diff --name-only locale >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+    - name: Create Pull Request
+      if: ${{ env.MY_STRING != '' }}
+      run: |
+        echo "The string is: ${{ env.MY_STRING }}"
+        echo "==> got out: ${{ steps.ghtry.outputs.myKey }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
         git config user.name "${{ github.actor }}"
         git checkout -b languages
@@ -35,3 +45,4 @@ jobs:
           --label "i18n"
       env:
         GH_TOKEN: ${{ github.token }}
+

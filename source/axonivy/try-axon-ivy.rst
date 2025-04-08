@@ -10,7 +10,9 @@ We offer you two ways to try the |ivy-engine|:
 **Demo Mode**
 The |ivy-engine| runs out of the box with a demo license and an in-memory
 database. As long as you don't restart the engine, you can do everything you can
-do with a licensed, production-ready engine.
+do with a licensed, production-ready engine. 
+
+Simulate a change in EN sources.
 
 To try the |ivy-engine| this way, follow the Engine Guide Chapter :ref:`Getting
 Started <getting-started>` but skip the license installation.
