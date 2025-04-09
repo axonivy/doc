@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-08 11:30+0000\n"
-"PO-Revision-Date: 2025-04-09 12:38+0000\n"
-"Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
+"PO-Revision-Date: 2025-04-09 13:31+0000\n"
+"Last-Translator: John Doe <josoren308@inveitro.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/doc-libre/"
 "userguide/ja/>\n"
 "Language: ja\n"
@@ -47,7 +47,7 @@ msgstr "kjansdkbasdkjb"
 
 #: ../../source/axonivy/migration/deprecation.rst:14
 msgid "Deprecated Features"
-msgstr ""
+msgstr "ooooo"
 
 #: ../../source/axonivy/migration/deprecation.rst:16
 msgid ""
