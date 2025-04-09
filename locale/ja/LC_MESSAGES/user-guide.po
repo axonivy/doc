@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-08 11:30+0000\n"
 "PO-Revision-Date: 2025-04-09 12:38+0000\n"
-"Last-Translator: Jens Hartmann <jens.hartmann@axonivy.com>\n"
+"Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/doc-libre/"
 "userguide/ja/>\n"
 "Language: ja\n"
@@ -30,7 +30,6 @@ msgid "Deprecation and Removal"
 msgstr "廃止と削除"
 
 #: ../../source/axonivy/migration/deprecation.rst:6
-#, fuzzy
 msgid ""
 "You should avoid using deprecated Public APIs and features. When "
 "migrating to a new version, check for deprecated Public APIs and features"
@@ -38,7 +37,7 @@ msgid ""
 msgstr ""
 "非推奨のパブリック API や機能を使用しないでください。 "
 "新しいバージョンに移行するときは、非推奨のパブリック API と機能を確認し、"
-"後継 API または機能に置き換えてください."
+"後継 API または機能に置き換えてください. juhujfads"
 
 #: ../../source/axonivy/migration/deprecation.rst:10
 msgid ""
