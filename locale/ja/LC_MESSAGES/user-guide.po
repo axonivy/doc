@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-08 11:30+0000\n"
-"PO-Revision-Date: 2025-04-08 18:19+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-04-09 10:21+0000\n"
+"Last-Translator: John Doe <josoren308@inveitro.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/doc-libre/"
 "userguide/ja/>\n"
 "Language: ja\n"
@@ -30,11 +30,15 @@ msgid "Deprecation and Removal"
 msgstr "廃止と削除"
 
 #: ../../source/axonivy/migration/deprecation.rst:6
+#, fuzzy
 msgid ""
 "You should avoid using deprecated Public APIs and features. When "
 "migrating to a new version, check for deprecated Public APIs and features"
 " and replace them with the successor API or feature."
 msgstr ""
+"非推奨のパブリック API や機能を使用しないでください。 "
+"新しいバージョンに移行するときは、非推奨のパブリック API と機能を確認し、"
+"後継 API または機能に置き換えてください."
 
 #: ../../source/axonivy/migration/deprecation.rst:10
 msgid ""
