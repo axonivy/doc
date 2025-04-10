@@ -30,7 +30,7 @@ the locale files holding the translations are updated with the new text blocks b
 ## Weblate
 
 While our translations live in the widely supported .po gettext files,
-we use [Weblate](https://hosted.weblate.org/projects/doc-libre/userguide/) as our editor platform of choice.
+we use [Weblate](https://hosted.weblate.org/projects/axonivy/doc) as our editor platform of choice.
 
 It's featureset seems just right ✅️ to translate our docs:
 
@@ -41,3 +41,6 @@ It's featureset seems just right ✅️ to translate our docs:
 - Reoccuring translations can be reused in many components
 - Free/Libre plan for OpenSource projects
 - Self-hosting is possible, if we run into restrictions
+
+## Need help?
+here is a little starter guide. [First steps](first_steps.md)
