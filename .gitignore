@@ -3,3 +3,5 @@ _build_txt
 
 source/_images
 target/
+
+**/*.mo
