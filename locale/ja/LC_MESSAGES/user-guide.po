@@ -1164,7 +1164,7 @@ msgstr ""
 
 #: ../../source/axonivy/what-axon-ivy.rst:11
 msgid "**Visualize**"
-msgstr ""
+msgstr "**Visualize JP Friendly tests**"
 
 #: ../../source/axonivy/what-axon-ivy.rst:12
 msgid ""
