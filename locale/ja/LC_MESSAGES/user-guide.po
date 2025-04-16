@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-10 09:18+0000\n"
-"PO-Revision-Date: 2025-04-16 07:05+0000\n"
+"PO-Revision-Date: 2025-04-16 10:28+0000\n"
 "Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>"
 "\n"
@@ -27,7 +27,7 @@ msgstr "Axon Ivy warmly welcomes Japan"
 
 #: ../../source/axonivy/migration/deprecation.rst:4
 msgid "Deprecation and Removal"
-msgstr ""
+msgstr "廃止と削除"
 
 #: ../../source/axonivy/migration/deprecation.rst:6
 msgid ""
