@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-10 09:18+0000\n"
 "PO-Revision-Date: 2025-04-29 13:16+0000\n"
-"Last-Translator: Marcel Prügel <marcel.pruegel@axonivy.com>\n"
+"Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>"
 "\n"
 "Language: ja\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
-msgstr "Axon Ivy 2"
+msgstr "Axon Ivy"
 
 #: ../../source/axonivy/migration/deprecation.rst:4
 msgid "Deprecation and Removal"
