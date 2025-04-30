@@ -9,24 +9,25 @@ msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-10 09:18+0000\n"
-"PO-Revision-Date: 2025-04-08 12:14+0000\n"
+"PO-Revision-Date: 2025-04-29 13:16+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>"
+"\n"
 "Language: ja\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/doc-"
-"libre/userguide/ja/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
-msgstr "Axon Ivy warmly welcomes Japan"
+msgstr "Axon Ivy"
 
 #: ../../source/axonivy/migration/deprecation.rst:4
 msgid "Deprecation and Removal"
-msgstr ""
+msgstr "廃止と削除"
 
 #: ../../source/axonivy/migration/deprecation.rst:6
 msgid ""
@@ -34,32 +35,40 @@ msgid ""
 "migrating to a new version, check for deprecated Public APIs and features"
 " and replace them with the successor API or feature."
 msgstr ""
+"非推奨のパブリック API や機能を使用しないでください。 "
+"新しいバージョンに移行するときは、非推奨のパブリック API と機能を確認し、"
+"後継 API または機能に置き換えてください."
 
 #: ../../source/axonivy/migration/deprecation.rst:10
 msgid ""
 "This will help you later when you migrate to a version in which the "
 "previously Public APIs or features are no longer available."
-msgstr ""
+msgstr "以前のパブリック API "
+"や機能が利用できなくなったバージョンに移行すると、後で役立ちます."
 
 #: ../../source/axonivy/migration/deprecation.rst:14
 msgid "Deprecated Features"
-msgstr ""
+msgstr "廃止された特徴"
 
 #: ../../source/axonivy/migration/deprecation.rst:16
 msgid ""
 "Deprecated features are documented on our :dev-url:`Deprecation and "
 "Removal page </features/deprecation>`"
 msgstr ""
+"弊社:dev-url:`Deprecation and Removal page </features/deprecation> "
+"で非推奨の機能が文書化されます"
 
 #: ../../source/axonivy/migration/deprecation.rst:19
 msgid "Deprecated Public API"
-msgstr ""
+msgstr "非推奨公開 API"
 
 #: ../../source/axonivy/migration/deprecation.rst:21
 msgid ""
 "Deprecated Public API are documented in our :public-api:`deprecated "
 "Public API page</deprecated-list.html>`."
 msgstr ""
+"非推奨公開 API は、 :public-api:`deprecated Public API ページ</deprecated-"
+"list.html>` でドキュメント化されます."
 
 #: ../../source/axonivy/migration/hotfix/docker.rst:4
 #: ../../source/axonivy/migration/hotfix/index.rst:33
@@ -34168,4 +34177,3 @@ msgstr ""
 #~ "Engine. There will be a new "
 #~ "section for this deployed app."
 #~ msgstr ""
-
