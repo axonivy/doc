@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-05 21:28+0000\n"
+"POT-Creation-Date: 2025-05-10 21:27+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -1592,7 +1592,7 @@ msgstr ""
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:23
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:13
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:19
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:27
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:29
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:22
 msgid "Accessibility"
 msgstr ""
@@ -24892,34 +24892,41 @@ msgstr ""
 msgid ""
 "The preview is opened in the :ref:`dev-workflow-ui` frame with some "
 "tooling (:ref:`html-dialog-autorefresh` and :ref:`html-dialog-"
-"navigation`). It can execute logic processes."
+"navigation`). It can execute dialog logic, so that the dynamic behavour "
+"of the dialog like validation or autocompletion logic can be tested."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:14
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:15
 msgid "|html-dialog-preview|"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:70
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:72
 msgid "html-dialog-preview"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:18
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:19
 msgid "The preview has some restrictions:"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:20
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:21
 msgid ""
 "Previews of a :ref:`form-editor-component`, :ref:`html-dialog-component` "
 "and :ref:`static-jsf-pages` are not supported."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:22
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:23
 msgid ""
-"It uses only a minimalistic implementation of an Task, with the "
-"consequences that not every API is available"
+"It uses a minimalistic implementation of a Task context, with the "
+"consequences that not every API is available."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:29
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:25
+msgid ""
+"Note that dialog logic is executed in the preview. This may manipulate "
+"your test data in the backend."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:31
 msgid ""
 "If you have a :ref:`form-editor` or a :ref:`html-dialog-editor` open and "
 "focused, a new button appears in the Toolbar :code:`Open Dialog Preview`."
@@ -24927,11 +24934,11 @@ msgid ""
 "editor-tool-bar>`."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:38
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:40
 msgid "Auto-Refresh"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:40
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:42
 msgid ""
 "If you have a dialog open (via Preview or :ref:`simulation`) in the :ref"
 ":`dev-workflow-ui` and you make changes to the User Dialog View file, it "
@@ -24941,17 +24948,17 @@ msgid ""
 "button in the :ref:`dev-workflow-ui`."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:49
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:51
 msgid ""
 "Some changes can not be refreshed. In this cases an Error will shown, and"
 " the preview needs to be restarted."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:56
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:58
 msgid "Element Navigation"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:58
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:60
 msgid ""
 "On an open dialog in the :ref:`dev-workflow-ui` there is a **Selection "
 "Tool** which gives you the possibility to select an element in the "
@@ -24959,7 +24966,7 @@ msgid ""
 "the code of the rendered element or selects it in the :ref:`form-editor`."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:63
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:65
 msgid ""
 "If the view is an :ref:`html-dialog-editor` we try to find the selected "
 "element via the :code:`id` attribute. Because of this, it only works if "
@@ -34314,5 +34321,20 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Ènable :guilabel:`Service accounts roles`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The preview is opened in the :ref"
+#~ ":`dev-workflow-ui` frame with some "
+#~ "tooling (:ref:`html-dialog-autorefresh` and"
+#~ " :ref:`html-dialog-navigation`). It can "
+#~ "execute logic processes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It uses only a minimalistic "
+#~ "implementation of an Task, with the "
+#~ "consequences that not every API is "
+#~ "available"
 #~ msgstr ""
 
