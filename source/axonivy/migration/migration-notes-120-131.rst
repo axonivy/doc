@@ -125,6 +125,17 @@ We changed the Runtime logger name from :code:`runtime.[app name].[pm name].[cat
       </Logger>
 
 
+Axon Ivy Public API Maven dependency
+************************************
+
+|tag-project-auto-convert|
+
+We now include the Axon Ivy Public API as Maven dependency in the project's :code:`pom.xml` file.
+To do this, we update the POM by adding :code:`ivy-project-parent` as parent and inserting the :code:`ivy-api` dependency.
+This setup allows you to develop the Java part of an Axon Ivy project outside the Eclipse-based PRO Designer - for example with Visual Studio Code.
+The conversion only takes place if no parent is defined in the :code:`pom.xml` of the project.
+Currently, this Maven dependency is not required if you continue developing with the Eclipse-based PRO Designer.
+
 ------------
 
 .. include:: _tagLegend.rst
