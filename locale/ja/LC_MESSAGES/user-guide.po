@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-05 21:28+0000\n"
+"POT-Creation-Date: 2025-05-24 21:27+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -506,10 +506,10 @@ msgstr ""
 msgid ""
 "Upgrade to 13.1 is only supported from an Axon Ivy Engine 10.0 and "
 "higher. If you have an Axon Ivy Engine older than version 10.0 you need "
-"first to migrate to a newer version."
+"to first migrate to a version between 10.0 and 12.0."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:10
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:11
 #: ../../source/engine-guide/configuration/docker-container.rst:43
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:57
 #: ../../source/engine-guide/reference/setup-wizard.rst:45
@@ -517,9 +517,9 @@ msgid "License"
 msgstr ""
 
 #: ../../source/axonivy/migration/_tagLegend.rst:7
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:12
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:20
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:69
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:13
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:21
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:91
 msgid "|tag-ops-changed|"
 msgstr ""
 
@@ -527,15 +527,15 @@ msgstr ""
 msgid "tag-ops-changed"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:14
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:15
 msgid "You need to request a new license for Axon Ivy Engine 13.1."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:18
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:19
 msgid "Removal of Server Control Center for Windows"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:22
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:23
 msgid ""
 "The Server Control Center for Windows has been removed. Prefer using "
 "Docker for Windows to run the Axon Ivy Engine. If you still want to run "
@@ -544,24 +544,70 @@ msgid ""
 " Engine as a Windows Service."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:29
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:31
+msgid "Multiple responsibles for a task and multiple roles for process starts"
+msgstr ""
+
+#: ../../source/axonivy/migration/_tagLegend.rst:29
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:33
+msgid "|tag-project-changed|"
+msgstr ""
+
+#: ../../../doc-build/<rst_epilog>:7
+msgid "tag-project-changed"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:35
+msgid ""
+"It's now possible to assign multiple responsibles to a task. There is no "
+"need to create dynamic roles anymore. You can simply assign a task to "
+"different roles if needed. You will notice that you can configure on the "
+"task tab multiple responsibles e.g. :ref:`Task Tab <process-element-tab-"
+"task>`. The same is also true for the expiry task configuration."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:41
+msgid ""
+"All API's have been deprecated, which handles only one responsible. They "
+"were previously named :code:`activator`, therefore we have streamlined "
+"the naming to :code:`responsible` from deep in the core to the user "
+"interface, everywhere. Use the new API`s:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:46
+msgid ":code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:47
+msgid ":code:`ch.ivyteam.ivy.workflow.ITask.expiry()`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:49
+msgid ""
+"The same applies to process starts. It's now possible to define multiple "
+"roles on a process start. You will notice that you can configure on the "
+"request tab of a start multiple roles e.g. :ref:`Start Event <process-"
+"element-start-request-tab-request>`."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:57
 msgid "Support for Case Scope Override removed"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:31
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:59
 msgid ""
-"Case scope overriding has been depreacted in LTS 8.0 and was now removed."
-" Use :ref:`strict_overriding` if you rely on case scope overriding."
+"Case scope overriding has been deprecated in LTS 8.0 and has now been "
+"removed. Use :ref:`strict_overriding` if you rely on case scope "
+"overriding."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:36
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:64
 msgid "Removal of Serenity PrimeFaces themes"
 msgstr ""
 
 #: ../../source/axonivy/migration/_tagLegend.rst:40
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:38
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:47
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:60
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:66
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:75
 msgid "|tag-project-removed|"
 msgstr ""
 
@@ -569,18 +615,17 @@ msgstr ""
 msgid "tag-project-removed"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:40
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:62
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:68
 msgid ""
-"We removed the Serenity themes including the :code:`serenity-ivy` theme. "
-"Please use the :ref:`freya-ivy <freya-themes>` theme instead."
+"We removed the Serenity themes, including the :code:`serenity-ivy` theme."
+" Please use the :ref:`freya-ivy <freya-themes>` theme instead."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:45
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:73
 msgid "Removal of session role"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:49
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:77
 msgid ""
 "It was possible to assign a role directly to a session. This feature was "
 "intended primarily for unauthenticated sessions. In authenticated "
@@ -590,26 +635,26 @@ msgid ""
 "authentication mechanisms—bypassing the platform’s built-in user "
 "management—and needed to assign a role to the session manually. This was "
 "made possible via the :code:`ISession#assignRole` method. Roles are now "
-"only supported for authenticated sessions backed by a user which has "
-"roles assigned, which means you need now to assign roles to an user."
+"only supported for authenticated sessions backed by a user who has roles "
+"assigned, which means you now need to assign roles to a user."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:67
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:89
 msgid "Changed Runtime logger name"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:71
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:93
 msgid ""
 "We changed the Runtime logger name from :code:`runtime.[app name].[pm "
 "name].[category]` to :code:`runtime.[security context "
 "name].[category].[app name].[pm name]`."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:79
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:101
 msgid "**Detail**"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:83
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:105
 msgid ""
 "We added the security context name to the Runtime logger name and moved "
 "the category after the security context name. This is to make the logger "
@@ -618,18 +663,44 @@ msgid ""
 "name].[category].[app name].[pm name]`."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:87
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:109
 msgid ""
 "In case you have a custom :code:`log4j2.xml` configuration, you need to "
-"adapt the  occurences of the runtime logger name in your configuration."
+"adapt the occurrences of the runtime logger name in your configuration."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:89
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:111
 msgid "From something like this:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-120-131.rst:97
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:119
 msgid "To something like this:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:129
+msgid "Axon Ivy Public API Maven dependency"
+msgstr ""
+
+#: ../../source/axonivy/migration/_tagLegend.rst:25
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:131
+msgid "|tag-project-auto-convert|"
+msgstr ""
+
+#: ../../../doc-build/<rst_epilog>:6
+msgid "tag-project-auto-convert"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-120-131.rst:133
+msgid ""
+"We now include the Axon Ivy Public API as Maven dependency in the "
+"project's :code:`pom.xml` file. To do this, we update the POM by adding "
+":code:`ivy-project-parent` as parent and inserting the :code:`ivy-api` "
+"dependency. This setup allows you to develop the Java part of an Axon Ivy"
+" project outside the Eclipse-based PRO Designer - for example with Visual"
+" Studio Code. The conversion only takes place if no parent is defined in "
+"the :code:`pom.xml` of the project. Currently, this Maven dependency is "
+"not required if you continue developing with the Eclipse-based PRO "
+"Designer."
 msgstr ""
 
 #: ../../source/axonivy/migration/_tagLegend.rst:1
@@ -685,26 +756,10 @@ msgid ""
 "engine, check if this change affects you."
 msgstr ""
 
-#: ../../source/axonivy/migration/_tagLegend.rst:25
-msgid "|tag-project-auto-convert|"
-msgstr ""
-
-#: ../../../doc-build/<rst_epilog>:6
-msgid "tag-project-auto-convert"
-msgstr ""
-
 #: ../../source/axonivy/migration/_tagLegend.rst:27
 msgid ""
 "This migration is handled by the :ref:`Project Conversion <project-"
 "convert>` automatically."
-msgstr ""
-
-#: ../../source/axonivy/migration/_tagLegend.rst:29
-msgid "|tag-project-changed|"
-msgstr ""
-
-#: ../../../doc-build/<rst_epilog>:7
-msgid "tag-project-changed"
 msgstr ""
 
 #: ../../source/axonivy/migration/_tagLegend.rst:31
@@ -1592,7 +1647,7 @@ msgstr ""
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:23
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:13
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:19
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:27
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:29
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:22
 msgid "Accessibility"
 msgstr ""
@@ -24892,34 +24947,41 @@ msgstr ""
 msgid ""
 "The preview is opened in the :ref:`dev-workflow-ui` frame with some "
 "tooling (:ref:`html-dialog-autorefresh` and :ref:`html-dialog-"
-"navigation`). It can execute logic processes."
+"navigation`). It can execute dialog logic, so that the dynamic behavour "
+"of the dialog like validation or autocompletion logic can be tested."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:14
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:15
 msgid "|html-dialog-preview|"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:70
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:72
 msgid "html-dialog-preview"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:18
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:19
 msgid "The preview has some restrictions:"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:20
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:21
 msgid ""
 "Previews of a :ref:`form-editor-component`, :ref:`html-dialog-component` "
 "and :ref:`static-jsf-pages` are not supported."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:22
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:23
 msgid ""
-"It uses only a minimalistic implementation of an Task, with the "
-"consequences that not every API is available"
+"It uses a minimalistic implementation of a Task context, with the "
+"consequences that not every API is available."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:29
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:25
+msgid ""
+"Note that dialog logic is executed in the preview. This may manipulate "
+"your test data in the backend."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:31
 msgid ""
 "If you have a :ref:`form-editor` or a :ref:`html-dialog-editor` open and "
 "focused, a new button appears in the Toolbar :code:`Open Dialog Preview`."
@@ -24927,11 +24989,11 @@ msgid ""
 "editor-tool-bar>`."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:38
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:40
 msgid "Auto-Refresh"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:40
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:42
 msgid ""
 "If you have a dialog open (via Preview or :ref:`simulation`) in the :ref"
 ":`dev-workflow-ui` and you make changes to the User Dialog View file, it "
@@ -24941,17 +25003,17 @@ msgid ""
 "button in the :ref:`dev-workflow-ui`."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:49
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:51
 msgid ""
 "Some changes can not be refreshed. In this cases an Error will shown, and"
 " the preview needs to be restarted."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:56
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:58
 msgid "Element Navigation"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:58
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:60
 msgid ""
 "On an open dialog in the :ref:`dev-workflow-ui` there is a **Selection "
 "Tool** which gives you the possibility to select an element in the "
@@ -24959,7 +25021,7 @@ msgid ""
 "the code of the rendered element or selects it in the :ref:`form-editor`."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:63
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:65
 msgid ""
 "If the view is an :ref:`html-dialog-editor` we try to find the selected "
 "element via the :code:`id` attribute. Because of this, it only works if "
@@ -26178,6 +26240,17 @@ msgid ""
 ":code:`\"${hash:1234}\"` for password :code:`1234`. Hashed passwords can "
 "not be decrypted anymore. The Axon Ivy Engine will automatically hash and"
 " replace the password in file, when the configuration will be loaded"
+msgstr ""
+
+#: ../../source/engine-guide/configuration/administrators.rst:26
+msgid "SSO"
+msgstr ""
+
+#: ../../source/engine-guide/configuration/administrators.rst:28
+msgid ""
+"To configure Single Sign-on for administrators, you need to enable SSO on"
+" the :code:`system` security system in :ref:`ivy-yaml`. Read more about "
+":ref:`single-sign-on`."
 msgstr ""
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:2
@@ -30209,18 +30282,18 @@ msgid ""
 "system>` of the Axon Ivy Engine."
 msgstr ""
 
-#: ../../source/engine-guide/integration/single-sign-on/index.rst:28
+#: ../../source/engine-guide/integration/single-sign-on/index.rst:27
 msgid ""
 "Therefore you need to configure your reverse proxy to set the identifier "
 "of the authenticated user as a HTTP header. For :ref:`Microsoft IIS "
 "<reverse-proxy-iis>` we provide an auto configuration script."
 msgstr ""
 
-#: ../../source/engine-guide/integration/single-sign-on/index.rst:32
+#: ../../source/engine-guide/integration/single-sign-on/index.rst:31
 msgid "Next you need to enable SSO in :ref:`ivy-yaml`:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/single-sign-on/index.rst:40
+#: ../../source/engine-guide/integration/single-sign-on/index.rst:39
 msgid ""
 "If you enable SSO you have to ensure that the Axon Ivy Engine cannot be "
 "accessed directly. All traffic hsd to be routed via the reverse proxy. "
@@ -30230,6 +30303,12 @@ msgid ""
 msgstr ""
 
 #: ../../source/engine-guide/integration/single-sign-on/index.rst:45
+msgid ""
+"If you want to enable SSO for administrators, read more about it in "
+":ref:`SSO for administrators <engine-adminstrators-sso>`."
+msgstr ""
+
+#: ../../source/engine-guide/integration/single-sign-on/index.rst:48
 msgid ""
 "You can integrate Axon Ivy Engine with every :ref:`Web Application "
 "Firewall <web-application-firewall>` of your choice. And if nothing fits "
@@ -34314,5 +34393,73 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Ènable :guilabel:`Service accounts roles`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Upgrade to 13.1 is only supported "
+#~ "from an Axon Ivy Engine 10.0 and"
+#~ " higher. If you have an Axon "
+#~ "Ivy Engine older than version 10.0 "
+#~ "you need first to migrate to a "
+#~ "newer version."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Case scope overriding has been "
+#~ "depreacted in LTS 8.0 and was now"
+#~ " removed. Use :ref:`strict_overriding` if "
+#~ "you rely on case scope overriding."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We removed the Serenity themes including"
+#~ " the :code:`serenity-ivy` theme. Please "
+#~ "use the :ref:`freya-ivy <freya-themes>`"
+#~ " theme instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It was possible to assign a role"
+#~ " directly to a session. This feature"
+#~ " was intended primarily for unauthenticated"
+#~ " sessions. In authenticated sessions (i.e.,"
+#~ " when a user is logged in), "
+#~ "roles can and should be assigned "
+#~ "directly to the user. The original "
+#~ "idea behind this feature was to "
+#~ "support edge cases where developers "
+#~ "implemented their own authentication "
+#~ "mechanisms—bypassing the platform’s built-in"
+#~ " user management—and needed to assign "
+#~ "a role to the session manually. "
+#~ "This was made possible via the "
+#~ ":code:`ISession#assignRole` method. Roles are "
+#~ "now only supported for authenticated "
+#~ "sessions backed by a user which "
+#~ "has roles assigned, which means you "
+#~ "need now to assign roles to an "
+#~ "user."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case you have a custom "
+#~ ":code:`log4j2.xml` configuration, you need to"
+#~ " adapt the  occurences of the runtime"
+#~ " logger name in your configuration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The preview is opened in the :ref"
+#~ ":`dev-workflow-ui` frame with some "
+#~ "tooling (:ref:`html-dialog-autorefresh` and"
+#~ " :ref:`html-dialog-navigation`). It can "
+#~ "execute logic processes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It uses only a minimalistic "
+#~ "implementation of an Task, with the "
+#~ "consequences that not every API is "
+#~ "available"
 #~ msgstr ""
 
