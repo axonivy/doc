@@ -5,7 +5,7 @@ Reference
    :maxdepth: 2
 
    axonivy-engine/index
-   engine-config-cli
+   engine-cli/index
    setup-wizard
    migration-wizard
    engine-cockpit/index
