@@ -129,7 +129,7 @@ Association
        products if the Entity is reloaded or refreshed.
 
 .. note::
-  Internally, the Java Persistence API is used to implement Entity Classes and
-  their relations. For further details, please refer to the official `Java
+  Internally, the Jakarta Persistence API is used to implement Entity Classes and
+  their relations. For further details, please refer to the official `Jakarta
   Persistence API documentation
-  <https://www.oracle.com/java/technologies/persistence-jsp.html>`_.
+  <https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html>`_.

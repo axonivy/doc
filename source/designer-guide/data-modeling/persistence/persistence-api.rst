@@ -134,7 +134,7 @@ Example (Product is an Entity Class):
 Persistence Queries (JPA QL)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-With the Persistence API it is possible to execute Java Persistence API
+With the Persistence API it is possible to execute Jakarta Persistence API
 Query Language (JPA QL) statements. See ``IIvyQuery`` for more
 information about the Query API. The query language based around the
 objects that are persisted but with syntax very similar to SQL. You

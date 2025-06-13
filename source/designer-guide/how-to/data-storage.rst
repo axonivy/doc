@@ -38,11 +38,11 @@ server is necessary and the database schema must be managed outside of
 Axon Ivy.
 More information can be found in the chapter :ref:`process-element-db-activity`.
 
-Persistency (Java Persistence API)
-----------------------------------
+Persistency (Jakarta Persistence API)
+-------------------------------------
 
 Stores and access data in a database systems. An own database
-server is necessary. The database schema can be generated. JPA is a Java
+server is necessary. The database schema can be generated. JPA is a Jakarta EE 
 standard that is well documented and widely used. 
 More information can be found in the chapter :ref:`persistence`.
 

@@ -57,7 +57,7 @@ Kind of Query
       place, which can result in a complete data breach on the
       configured database. Process designers are responsible to only
       pass sanitized data into an SQL query. In some cases it might be
-      better to access the Database with JPA/Hibernate or prepared
+      better to access the Database with the :ref:`Persistence API <persistence>` or prepared
       statements using JDBC. For more information see: `SQL Injection
       Prevention Cheat
       Sheet <https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__

@@ -55,8 +55,7 @@ database.
 Primary Key Columns
 ^^^^^^^^^^^^^^^^^^^
 
-Hibernate works by default with sequences for primary key columns.
-This means it will create a table called :code:`hibernate_sequence` which is used
+Hibernate, the Jakarta Persistence API implementation library works by default with sequences for primary key columns.
+This means it will create for each table a sequence called :code:`<table-name>_SEQ` which is used
 to generate the primary keys. If you want to use the auto increment approach
-of your database management system you can set the property
-:code:`hibernate.id.new_generator_mappings` to :code:`false` in your persistence unit.
+of your database management system you can use the :code:`org.hibernate.annotations.NativeGenerator` annotation.

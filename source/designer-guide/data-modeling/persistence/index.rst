@@ -4,8 +4,8 @@ Persistence
 ===========
 
 This chapter introduces the :ref:`persistence-configuration-editor` and the
-:ref:`persistence-api` of Axon Ivy. The persistence framework is based on the `Java
-Persistence API <http://en.wikipedia.org/wiki/Java_Persistence_API>`__, a.k.a. JPA)
+:ref:`persistence-api` of Axon Ivy. The persistence framework is based on the `Jakarta
+Persistence API <https://en.wikipedia.org/wiki/Jakarta_Persistence>`__, a.k.a. Java Persistence API or JPA)
 and provides support for storing and loading business objects from and to a
 database.
 
