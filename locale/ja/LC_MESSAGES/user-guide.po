@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 21:28+0000\n"
+"POT-Creation-Date: 2025-06-14 21:28+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -27532,7 +27532,7 @@ msgstr ""
 
 #: ../../source/engine-guide/deployment/deploy/engine-cockpit/index.rst:4
 #: ../../source/engine-guide/monitoring/engine-cockpit.rst:2
-#: ../../source/engine-guide/monitoring/health.rst:15
+#: ../../source/engine-guide/monitoring/health.rst:24
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:12
 #: ../../source/engine-guide/monitoring/tracing.rst:10
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:4
@@ -30391,19 +30391,31 @@ msgid ""
 "fix a configuration."
 msgstr ""
 
+#: ../../source/engine-guide/monitoring/health.rst:15
+msgid "Endpoint"
+msgstr ""
+
 #: ../../source/engine-guide/monitoring/health.rst:17
+msgid ""
+"The health endpoint is available at :code:`http://<engine-host>:<engine-"
+"port>/system/health`. It returns the HTTP status code :code:`200` if the "
+"Axon Ivy Engine is running, and :code:`503` otherwise. This endpoint can "
+"be used to monitor the availability of the Axon Ivy Engine."
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/health.rst:26
 msgid "Health messages are displayed in the :ref:`engine-cockpit` on:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:19
+#: ../../source/engine-guide/monitoring/health.rst:28
 msgid "The :guilabel:`Health` panel in the :ref:`engine-cockpit-dashboard`"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:20
+#: ../../source/engine-guide/monitoring/health.rst:29
 msgid "The :ref:`engine-cockpit-top-menu`"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:21
+#: ../../source/engine-guide/monitoring/health.rst:30
 msgid "The :ref:`engine-cockpit-monitor-health` view"
 msgstr ""
 
