@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 21:28+0000\n"
+"POT-Creation-Date: 2025-06-21 21:28+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -8057,10 +8057,11 @@ msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:132
 msgid ""
-"Internally, the Java Persistence API is used to implement Entity Classes "
-"and their relations. For further details, please refer to the official "
-"`Java Persistence API documentation "
-"<https://www.oracle.com/java/technologies/persistence-jsp.html>`_."
+"Internally, the Jakarta Persistence API is used to implement Entity "
+"Classes and their relations. For further details, please refer to the "
+"official `Jakarta Persistence API documentation "
+"<https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist"
+"/persistence-intro/persistence-intro.html>`_."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-classes.rst:6
@@ -8165,22 +8166,22 @@ msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/generate-database-schema.rst:58
 msgid ""
-"Hibernate works by default with sequences for primary key columns. This "
-"means it will create a table called :code:`hibernate_sequence` which is "
-"used to generate the primary keys. If you want to use the auto increment "
-"approach of your database management system you can set the property "
-":code:`hibernate.id.new_generator_mappings` to :code:`false` in your "
-"persistence unit."
+"Hibernate, the Jakarta Persistence API implementation library works by "
+"default with sequences for primary key columns. This means it will create"
+" for each table a sequence called :code:`<table-name>_SEQ` which is used "
+"to generate the primary keys. If you want to use the auto increment "
+"approach of your database management system you can use the "
+":code:`org.hibernate.annotations.NativeGenerator` annotation."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:6
 msgid ""
 "This chapter introduces the :ref:`persistence-configuration-editor` and "
 "the :ref:`persistence-api` of Axon Ivy. The persistence framework is "
-"based on the `Java Persistence API "
-"<http://en.wikipedia.org/wiki/Java_Persistence_API>`__, a.k.a. JPA) and "
-"provides support for storing and loading business objects from and to a "
-"database."
+"based on the `Jakarta Persistence API "
+"<https://en.wikipedia.org/wiki/Jakarta_Persistence>`__, a.k.a. Java "
+"Persistence API or JPA) and provides support for storing and loading "
+"business objects from and to a database."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:12
@@ -8350,8 +8351,8 @@ msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:137
 msgid ""
-"With the Persistence API it is possible to execute Java Persistence API "
-"Query Language (JPA QL) statements. See ``IIvyQuery`` for more "
+"With the Persistence API it is possible to execute Jakarta Persistence "
+"API Query Language (JPA QL) statements. See ``IIvyQuery`` for more "
 "information about the Query API. The query language based around the "
 "objects that are persisted but with syntax very similar to SQL. You "
 "always have to use the names of the Entity Class and the attributes and "
@@ -9133,15 +9134,15 @@ msgid ""
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:42
-msgid "Persistency (Java Persistence API)"
+msgid "Persistency (Jakarta Persistence API)"
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:44
 msgid ""
 "Stores and access data in a database systems. An own database server is "
-"necessary. The database schema can be generated. JPA is a Java standard "
-"that is well documented and widely used. More information can be found in"
-" the chapter :ref:`persistence`."
+"necessary. The database schema can be generated. JPA is a Jakarta EE "
+"standard that is well documented and widely used. More information can be"
+" found in the chapter :ref:`persistence`."
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:50
@@ -15673,9 +15674,9 @@ msgid ""
 " variable then a so called SQL injection takes place, which can result in"
 " a complete data breach on the configured database. Process designers are"
 " responsible to only pass sanitized data into an SQL query. In some cases"
-" it might be better to access the Database with JPA/Hibernate or prepared"
-" statements using JDBC. For more information see: `SQL Injection "
-"Prevention Cheat Sheet "
+" it might be better to access the Database with the :ref:`Persistence API"
+" <persistence>` or prepared statements using JDBC. For more information "
+"see: `SQL Injection Prevention Cheat Sheet "
 "<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
 msgstr ""
 
@@ -27532,7 +27533,7 @@ msgstr ""
 
 #: ../../source/engine-guide/deployment/deploy/engine-cockpit/index.rst:4
 #: ../../source/engine-guide/monitoring/engine-cockpit.rst:2
-#: ../../source/engine-guide/monitoring/health.rst:15
+#: ../../source/engine-guide/monitoring/health.rst:24
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:12
 #: ../../source/engine-guide/monitoring/tracing.rst:10
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:4
@@ -30391,19 +30392,31 @@ msgid ""
 "fix a configuration."
 msgstr ""
 
+#: ../../source/engine-guide/monitoring/health.rst:15
+msgid "Endpoint"
+msgstr ""
+
 #: ../../source/engine-guide/monitoring/health.rst:17
+msgid ""
+"The health endpoint is available at :code:`http://<engine-host>:<engine-"
+"port>/system/health`. It returns the HTTP status code :code:`200` if the "
+"Axon Ivy Engine is running, and :code:`503` otherwise. This endpoint can "
+"be used to monitor the availability of the Axon Ivy Engine."
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/health.rst:26
 msgid "Health messages are displayed in the :ref:`engine-cockpit` on:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:19
+#: ../../source/engine-guide/monitoring/health.rst:28
 msgid "The :guilabel:`Health` panel in the :ref:`engine-cockpit-dashboard`"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:20
+#: ../../source/engine-guide/monitoring/health.rst:29
 msgid "The :ref:`engine-cockpit-top-menu`"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:21
+#: ../../source/engine-guide/monitoring/health.rst:30
 msgid "The :ref:`engine-cockpit-monitor-health` view"
 msgstr ""
 
@@ -30667,20 +30680,21 @@ msgid ""
 "The logging configuration can be fully customized to your needs. For "
 "example, you can change the log level of a logger so that the log events "
 "are logged in a log file. Therefore you need to know that Axon Ivy uses "
-"`Log4j 2 <https://logging.apache.org/log4j/2.x/>`_ for logging and comes "
+"`Log4j2 <https://logging.apache.org/log4j/2.x/>`_ for logging and comes "
 "with a built-in :ref:`default configuration <log4j2-xml>` which can be "
 "customized by providing a configuration in "
 ":file:`[engineDir]/configuration/log4j2.xml`. The custom configuration "
 "will be `merged "
 "<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_"
-" with the default configuration automatically on the fly."
+" with the default configuration automatically on the fly. Changing the "
+"log level of a specific logger can be done easily:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:40
+#: ../../source/engine-guide/monitoring/logging.rst:50
 msgid "Runtime Log"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:42
+#: ../../source/engine-guide/monitoring/logging.rst:52
 msgid ""
 "The Runtime Log is a well-known :ref:`designer feature <simulate-process-"
 "models-debugger-runtimelog-view>` and disabled by default in the Axon Ivy"
@@ -30690,22 +30704,22 @@ msgid ""
 "logs also on the Axon Ivy Engine."
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:47
+#: ../../source/engine-guide/monitoring/logging.rst:57
 msgid "The name of the runtime logger has a well defined format:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:49
+#: ../../source/engine-guide/monitoring/logging.rst:59
 msgid ""
 "**runtimelog.[security context name].[category].[app name].[process model"
 " name]**"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:51
+#: ../../source/engine-guide/monitoring/logging.rst:61
 #: ../../source/engine-guide/monitoring/tracing.rst:31
 msgid "**Example:**"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:57
+#: ../../source/engine-guide/monitoring/logging.rst:67
 msgid ""
 "All available categories [category] are defined in the :public-"
 "api:`RuntimeLogCategory "
@@ -30714,16 +30728,28 @@ msgid ""
 "name=\"runtimelog.securitycontext.rest_client.myapp.hrm\">`."
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:63
+#: ../../source/engine-guide/monitoring/logging.rst:73
 msgid "Log format"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:65
+#: ../../source/engine-guide/monitoring/logging.rst:75
 #, python-brace-format
 msgid ""
 "A single event can be found as a log entry in the format "
 "**[datetime][level][logger name][thread name]{context infos}** followed "
 "by the message itself like:"
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/logging.rst:82
+msgid "JSON Log output"
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/logging.rst:84
+msgid ""
+"You can configure the Axon Ivy Engine to log in JSON format. This is "
+"useful for log analysis tools that can parse JSON logs. Read more about "
+"it here: `Log4j2 JSON Template Layout "
+"<https://logging.apache.org/log4j/2.x/manual/json-template-layout.html>`_"
 msgstr ""
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:4
@@ -34485,5 +34511,108 @@ msgstr ""
 #~ "the Axon Ivy Engine. There will be"
 #~ " a new section for this deployed "
 #~ "app."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Internally, the Java Persistence API is"
+#~ " used to implement Entity Classes and"
+#~ " their relations. For further details, "
+#~ "please refer to the official `Java "
+#~ "Persistence API documentation "
+#~ "<https://www.oracle.com/java/technologies/persistence-"
+#~ "jsp.html>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Hibernate works by default with "
+#~ "sequences for primary key columns. This"
+#~ " means it will create a table "
+#~ "called :code:`hibernate_sequence` which is "
+#~ "used to generate the primary keys. "
+#~ "If you want to use the auto "
+#~ "increment approach of your database "
+#~ "management system you can set the "
+#~ "property :code:`hibernate.id.new_generator_mappings` to"
+#~ " :code:`false` in your persistence unit."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This chapter introduces the :ref"
+#~ ":`persistence-configuration-editor` and the "
+#~ ":ref:`persistence-api` of Axon Ivy. The"
+#~ " persistence framework is based on "
+#~ "the `Java Persistence API "
+#~ "<http://en.wikipedia.org/wiki/Java_Persistence_API>`__, a.k.a."
+#~ " JPA) and provides support for "
+#~ "storing and loading business objects "
+#~ "from and to a database."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "With the Persistence API it is "
+#~ "possible to execute Java Persistence API"
+#~ " Query Language (JPA QL) statements. "
+#~ "See ``IIvyQuery`` for more information "
+#~ "about the Query API. The query "
+#~ "language based around the objects that"
+#~ " are persisted but with syntax very"
+#~ " similar to SQL. You always have "
+#~ "to use the names of the Entity "
+#~ "Class and the attributes and not "
+#~ "the names from the database."
+#~ msgstr ""
+
+#~ msgid "Persistency (Java Persistence API)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Stores and access data in a "
+#~ "database systems. An own database server"
+#~ " is necessary. The database schema "
+#~ "can be generated. JPA is a Java"
+#~ " standard that is well documented and"
+#~ " widely used. More information can be"
+#~ " found in the chapter :ref:`persistence`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Assume the following SQL statement is"
+#~ " configured as an SQL query: ``SELECT"
+#~ " * FROM Subscriber WHERE Name LIKE"
+#~ " 'in.searchText%'``. Now if an attacker "
+#~ "manages to pass a valid SQL "
+#~ "statement into the ``in.searchText`` variable"
+#~ " then a so called SQL injection "
+#~ "takes place, which can result in a"
+#~ " complete data breach on the "
+#~ "configured database. Process designers are "
+#~ "responsible to only pass sanitized data"
+#~ " into an SQL query. In some "
+#~ "cases it might be better to access"
+#~ " the Database with JPA/Hibernate or "
+#~ "prepared statements using JDBC. For more"
+#~ " information see: `SQL Injection Prevention"
+#~ " Cheat Sheet "
+#~ "<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The logging configuration can be fully"
+#~ " customized to your needs. For "
+#~ "example, you can change the log "
+#~ "level of a logger so that the "
+#~ "log events are logged in a log "
+#~ "file. Therefore you need to know "
+#~ "that Axon Ivy uses `Log4j 2 "
+#~ "<https://logging.apache.org/log4j/2.x/>`_ for logging "
+#~ "and comes with a built-in "
+#~ ":ref:`default configuration <log4j2-xml>` which "
+#~ "can be customized by providing a "
+#~ "configuration in "
+#~ ":file:`[engineDir]/configuration/log4j2.xml`. The custom"
+#~ " configuration will be `merged "
+#~ "<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_"
+#~ " with the default configuration "
+#~ "automatically on the fly."
 #~ msgstr ""
 
