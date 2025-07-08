@@ -25,7 +25,8 @@ with this End Page Element.
 Dialog Page
    Pages can be referenced from the content management system or the web
    content directory. The wizard allows you to create, select or edit
-   pages.
+   pages. All files can be referenced from the webcontent. There is a special 
+   behavior with xhtml files, these files need to be in the webcontent/view directory.
 
    Please refer to :ref:`user-interface-web-page-creating` for a
    more thorough explanation of this tab section.
