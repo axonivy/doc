@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 21:28+0000\n"
+"POT-Creation-Date: 2025-07-19 21:29+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -448,49 +448,49 @@ msgid ""
 " Go through the migration notes from version to version."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:18
+#: ../../source/axonivy/migration/migration-notes.rst:19
 msgid "Previous Migration Notes"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:19
+#: ../../source/axonivy/migration/migration-notes.rst:20
 msgid ":ref:`migration-tools` still support migrating directly from this version:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:21
+#: ../../source/axonivy/migration/migration-notes.rst:22
 msgid ":dev-url:`Migrating from 10.0 to 12.0 </doc/12.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:23
+#: ../../source/axonivy/migration/migration-notes.rst:24
 msgid ""
 "Migrating from these versions is no longer supported by the :ref"
 ":`migration-tools`:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:25
+#: ../../source/axonivy/migration/migration-notes.rst:26
 msgid ":dev-url:`Migrating from 8.0 to 10.0 </doc/10.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:26
+#: ../../source/axonivy/migration/migration-notes.rst:27
 msgid ":dev-url:`Migrating from 7.0 to 8.0 </doc/8.0.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:27
+#: ../../source/axonivy/migration/migration-notes.rst:28
 msgid ":dev-url:`Migrating from 6.0 to 7.0 </doc/7.0.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:28
+#: ../../source/axonivy/migration/migration-notes.rst:29
 msgid ":dev-url:`Migrating from 5.1 to 6.0 </doc/6.0.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:29
+#: ../../source/axonivy/migration/migration-notes.rst:30
 msgid ":dev-url:`Migrating from 5.0 to 5.1 </doc/5.1.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:30
+#: ../../source/axonivy/migration/migration-notes.rst:31
 msgid ":dev-url:`Migrating from 4.3 to 5.0 </doc/5.0.5/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:32
+#: ../../source/axonivy/migration/migration-notes.rst:33
 msgid ""
 "Please migrate first to a newer version that still support your old "
 "version and then migrate to the next version. E.g., for migrating from "
@@ -563,6 +563,7 @@ msgstr ""
 
 #: ../../source/axonivy/migration/_tagLegend.rst:29
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:33
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:13
 msgid "|tag-project-changed|"
 msgstr ""
 
@@ -728,6 +729,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/axonivy/migration/_tagLegend.rst:13
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:26
 msgid "|tag-ops-deprecated|"
 msgstr ""
 
@@ -788,6 +790,64 @@ msgstr ""
 msgid ""
 "This migration will remove a behavior or feature of a project. If you are"
 " a project developer, check if this change affects you."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:4
+msgid "Migrating from 13.1 to 13.2"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:6
+msgid ""
+"Upgrade to 13.2 is only supported from an Axon Ivy Engine 10.0 and "
+"higher. If you have an Axon Ivy Engine older than version 10.0 you need "
+"to first migrate to a version between 10.0 and 12.0."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:11
+msgid "Persistence API (Hibernate)"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:15
+msgid ""
+"We migrated the Persistence API from Java Persistence API (JPA) version "
+"2.2 to `Jakarta Persistence API "
+"<https://jakarta.ee/specifications/persistence/3.2/>`_ version 3.2. The "
+"implementation of the API was migrated from `Hibernate "
+"<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to 7.0."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:19
+msgid ""
+"The package of the new version has changed from :code:`javax.persistence`"
+" to :code:`jakarta.persistence`. The code of Ivy projects needs to adapt "
+"to this change. Use :guilabel:`find and replace in files` in the Designer"
+" to migrate your project."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:24
+msgid "HttpHeaderSecurityFilter and RemoteIpFilter in web.xml"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:28
+msgid ""
+"We now allow to define the :ref:`reverse-proxy` HTTP Headers and security"
+" response :ref:`security-http-headers` via the :ref:`ivy-yaml`. Even if "
+"it is still possible to define this things via the :ref:`web-xml` you "
+"should no longer do that, otherwise the header maybe appear twice. So you"
+" should remove the following configurations and make the adjustments in "
+"the :ref:`ivy-yaml`:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:34
+msgid ""
+":code:`org.apache.catalina.filters.HttpHeaderSecurityFilter` → "
+":code:`WebServer.HttpHeaders`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:35
+msgid ""
+":code:`org.apache.catalina.filters.RemoteIpFilter` → "
+":code:`ReverseProxy.HttpHeaders`"
 msgstr ""
 
 #: ../../source/axonivy/migration/migration-tools.rst:4
@@ -1675,7 +1735,7 @@ msgstr ""
 #: ../../source/designer-guide/process-modeling/process-elements/error-start.rst:44
 #: ../../source/designer-guide/process-modeling/process-elements/join.rst:38
 #: ../../source/designer-guide/process-modeling/process-elements/note.rst:18
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:39
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:40
 #: ../../source/designer-guide/process-modeling/process-elements/process-end.rst:19
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:320
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:37
@@ -2257,7 +2317,7 @@ msgstr ""
 #: ../../source/concepts/error-handling.rst:73
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:12
 #: ../../source/designer-guide/how-to/workflow/states.rst:19
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:36
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:37
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:59
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:26
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:201
@@ -2270,7 +2330,7 @@ msgstr ""
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:104
 #: ../../source/designer-guide/how-to/workflow/states.rst:194
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:59
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:40
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:41
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:321
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:38
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:241
@@ -4306,6 +4366,7 @@ msgstr ""
 
 #: ../../source/concepts/testing/process-testing.rst:267
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:159
+#: ../../source/engine-guide/integration/cluster/data/index.rst:4
 msgid "Data"
 msgstr ""
 
@@ -5832,7 +5893,7 @@ msgstr ""
 #: ../../source/designer-guide/how-to/overrides.rst:102
 #: ../../source/designer-guide/user-interface/branding/branding-engine.rst:21
 #: ../../source/engine-guide/configuration/index.rst:4
-#: ../../source/engine-guide/integration/cluster/configuration.rst:4
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:2
 msgid "Configuration"
 msgstr ""
@@ -8057,10 +8118,11 @@ msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:132
 msgid ""
-"Internally, the Java Persistence API is used to implement Entity Classes "
-"and their relations. For further details, please refer to the official "
-"`Java Persistence API documentation "
-"<https://www.oracle.com/java/technologies/persistence-jsp.html>`_."
+"Internally, the Jakarta Persistence API is used to implement Entity "
+"Classes and their relations. For further details, please refer to the "
+"official `Jakarta Persistence API documentation "
+"<https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist"
+"/persistence-intro/persistence-intro.html>`_."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-classes.rst:6
@@ -8165,22 +8227,22 @@ msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/generate-database-schema.rst:58
 msgid ""
-"Hibernate works by default with sequences for primary key columns. This "
-"means it will create a table called :code:`hibernate_sequence` which is "
-"used to generate the primary keys. If you want to use the auto increment "
-"approach of your database management system you can set the property "
-":code:`hibernate.id.new_generator_mappings` to :code:`false` in your "
-"persistence unit."
+"Hibernate, the Jakarta Persistence API implementation library works by "
+"default with sequences for primary key columns. This means it will create"
+" for each table a sequence called :code:`<table-name>_SEQ` which is used "
+"to generate the primary keys. If you want to use the auto increment "
+"approach of your database management system you can use the "
+":code:`org.hibernate.annotations.NativeGenerator` annotation."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:6
 msgid ""
 "This chapter introduces the :ref:`persistence-configuration-editor` and "
 "the :ref:`persistence-api` of Axon Ivy. The persistence framework is "
-"based on the `Java Persistence API "
-"<http://en.wikipedia.org/wiki/Java_Persistence_API>`__, a.k.a. JPA) and "
-"provides support for storing and loading business objects from and to a "
-"database."
+"based on the `Jakarta Persistence API "
+"<https://en.wikipedia.org/wiki/Jakarta_Persistence>`__, a.k.a. Java "
+"Persistence API or JPA) and provides support for storing and loading "
+"business objects from and to a database."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:12
@@ -8350,8 +8412,8 @@ msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:137
 msgid ""
-"With the Persistence API it is possible to execute Java Persistence API "
-"Query Language (JPA QL) statements. See ``IIvyQuery`` for more "
+"With the Persistence API it is possible to execute Jakarta Persistence "
+"API Query Language (JPA QL) statements. See ``IIvyQuery`` for more "
 "information about the Query API. The query language based around the "
 "objects that are persisted but with syntax very similar to SQL. You "
 "always have to use the names of the Entity Class and the attributes and "
@@ -9133,15 +9195,15 @@ msgid ""
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:42
-msgid "Persistency (Java Persistence API)"
+msgid "Persistency (Jakarta Persistence API)"
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:44
 msgid ""
 "Stores and access data in a database systems. An own database server is "
-"necessary. The database schema can be generated. JPA is a Java standard "
-"that is well documented and widely used. More information can be found in"
-" the chapter :ref:`persistence`."
+"necessary. The database schema can be generated. JPA is a Jakarta EE "
+"standard that is well documented and widely used. More information can be"
+" found in the chapter :ref:`persistence`."
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:50
@@ -15673,9 +15735,9 @@ msgid ""
 " variable then a so called SQL injection takes place, which can result in"
 " a complete data breach on the configured database. Process designers are"
 " responsible to only pass sanitized data into an SQL query. In some cases"
-" it might be better to access the Database with JPA/Hibernate or prepared"
-" statements using JDBC. For more information see: `SQL Injection "
-"Prevention Cheat Sheet "
+" it might be better to access the Database with the :ref:`Persistence API"
+" <persistence>` or prepared statements using JDBC. For more information "
+"see: `SQL Injection Prevention Cheat Sheet "
 "<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
 msgstr ""
 
@@ -16319,15 +16381,18 @@ msgstr ""
 msgid ""
 "Pages can be referenced from the content management system or the web "
 "content directory. The wizard allows you to create, select or edit pages."
+" All files can be referenced from the webcontent. There is a special "
+"behavior with xhtml files, these files need to be in the webcontent/view "
+"directory."
 msgstr ""
 
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:30
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:31
 msgid ""
 "Please refer to :ref:`user-interface-web-page-creating` for a more "
 "thorough explanation of this tab section."
 msgstr ""
 
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:33
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:34
 msgid ""
 "If you choose to use a JSF page as end page please have a look at the "
 ":ref:`static-jsf-pages` documentation."
@@ -23424,6 +23489,7 @@ msgid "See :ref:`ivyscript`."
 msgstr ""
 
 #: ../../source/designer-guide/troubleshooting/index.rst:2
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:51
 #: ../../source/engine-guide/troubleshooting/index.rst:2
 msgid "Troubleshooting"
 msgstr ""
@@ -23569,7 +23635,7 @@ msgstr ""
 
 #: ../../source/designer-guide/user-interface/branding/branding-engine.rst:42
 #: ../../source/engine-guide/deployment/index.rst:4
-#: ../../source/engine-guide/integration/cluster/deployment.rst:4
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:4
 msgid "Deployment"
 msgstr ""
 
@@ -27532,7 +27598,7 @@ msgstr ""
 
 #: ../../source/engine-guide/deployment/deploy/engine-cockpit/index.rst:4
 #: ../../source/engine-guide/monitoring/engine-cockpit.rst:2
-#: ../../source/engine-guide/monitoring/health.rst:15
+#: ../../source/engine-guide/monitoring/health.rst:24
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:12
 #: ../../source/engine-guide/monitoring/tracing.rst:10
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:4
@@ -28845,215 +28911,163 @@ msgid ""
 ":ref:`getting-started`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:6
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:4
+msgid "Communication"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:6
 msgid ""
-"An Axon Ivy Engine Cluster node is set up almost the same way as a stand-"
-"alone Axon Ivy Engine. Note: All nodes in a cluster setup have to run "
-"within the same network (the same broadcast domain)."
+"Cluster nodes need to communicate with each other primarily to send cache"
+" invalidation messages. Without this communication, the Axon Ivy Cluster "
+"cannot function properly. To facilitate this, the Axon Ivy Engine uses "
+"the reliable `JGroups library <http://jgroups.org/manual5>`_. You can "
+"fully customize the communication settings by providing your own "
+":file:`[ivyEngine]/configuration/jgroups.xml` file."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:11
-msgid "Files"
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:14
+msgid "Discovery"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:13
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:16
 msgid ""
-"We recommend to configure :ref:`documents-s3` as distributed blob storage"
-" so that every cluster node can access all the files."
+"First, a discovery mechanism is used to locate other nodes within the "
+"cluster. By default, the Axon Ivy Engine uses UDP multicast over port "
+":code:`45588` to discover other nodes. The `discovery protocol "
+"<http://jgroups.org/manual5/index.html#Discovery>`_ can be changed if UDP"
+" multicast is not suitable for your environment. For example:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:16
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:22
 msgid ""
-"Otherwise you need to share the data directory for all cluster nodes "
-"(``Data.Directory`` from :ref:`ivy.yaml <ivy-yaml>`). Use a Docker volume"
-" that stores all the files. Mount it on all cluster nodes."
+"`TCP/IP <http://jgroups.org/manual5/#TCPPING_Prot>`_-based discovery with"
+" TCPPING"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:20
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:24
 msgid ""
-"Create a Docker volume called ``ivy-data`` and mount it at ``/ivy/data`` "
-"in your Axon Ivy Engine Cluster node containers."
+"`DNS <http://jgroups.org/manual5/#_dns_ping>`_-based discovery, which is "
+"often suitable for cloud environments (DNS_PING)"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:28
-msgid "Ensure that you backup this Docker volume periodically."
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:28
+msgid "Messaging"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:31
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:30
 msgid ""
-"In previous version of the Axon Ivy Engine Cluster, the applications "
-"directory (``Data.AppDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`) had "
-"to be shared between the cluster nodes, too. This is no longer required "
-"and should be avoided."
+"After discovery, cluster nodes communicate with each other by sending "
+"messages—by default using UDP multicast on port :code:`45588`. This is "
+"typically the most efficient way to send messages in a local network. "
+"However, if your environment does not support UDP multicast, you can "
+"change the `protocol "
+"<http://jgroups.org/manual5/#_transport_protocols>`_."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:36
-msgid "Cluster Name"
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:37
+msgid "TCP/IP"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:38
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:39
 msgid ""
-"If you want to run multiple clusters within the same network (same "
-"broadcast domain), you need to name each cluster with a unique name. This"
-" prevents clusters from interfering with each other."
+"If UDP multicast is not suitable for your environment, you can switch to "
+"TCP/IP. This is often necessary in cloud environments where multicast is "
+"not supported. To configure TCP/IP, you can modify the "
+":file:`jgroups.xml` file to use the `TCP transport "
+"<http://jgroups.org/manual5/#TCP>`_ instead of multicast. Here is an "
+"example configuration using DNS-based discovery with TCP/IP as protocol:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:42
-msgid "You define the cluster name in the :ref:`ivy.yaml <ivy-yaml>` file."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/configuration.rst:45
-msgid "Node Name"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/configuration.rst:47
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:45
 msgid ""
-"The :ref:`Engine Cockpit <engine-cockpit-cluster>` has a view that "
-"displays all running nodes of the cluster. The node names are auto-"
-"generated by default but you can configure them in :ref:`ivy.yaml <ivy-"
-"yaml>`."
+"jgroups.xml example of a TCP/IP based communication and DNS-based "
+"discovery mechanism"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:54
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:53
+msgid ""
+"If cluster nodes cannot discover each other or you experience messaging "
+"issues, you can enable specific :ref:`Loggers <logging>` to gain more "
+"insight into what is happening."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:57
+msgid "log4j2.xml configuration for troubleshooting cluster communication"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:6
+msgid ""
+"The configuration of each individual cluster node is the same as for the "
+"Standard Axon Ivy Engine and largely depends on how you deploy the engine"
+" within your environment. Functional aspects—such as access to the system"
+" database—must be configured identically across all cluster nodes to "
+"ensure consistency. However, performance-related settings, like "
+"connection pools for REST clients, can be customized per node if some "
+"nodes have more CPU or memory resources available than others."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:17
 msgid "Changes"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:56
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:19
 msgid ""
-"Configuration changes are only applied to the local cluster node where "
-"the change is done. E.g., if an administrator is using the :ref:`Engine "
-"Cockpit <engine-cockpit>` to change a configuration setting, then the "
-"setting is only changed at the cluster node where the current session of "
-"the administrator is executed. On all other cluster nodes, the setting "
-"remains unchanged!"
+"If you make configuration changes on one cluster node—for example, using "
+"the :ref:`Engine Cockpit <engine-cockpit>` - the other nodes in the "
+"cluster will be notified and will attempt to reload the updated "
+"configuration. However, proper reloading on the other nodes only works if"
+" all nodes share the same configuration sources (e.g., configuration "
+"files)."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:62
-msgid ""
-"We recommend that you do not change the configuration at runtime. Instead"
-" use a :ref:`container image <cluster-container>` that contains the right"
-" configuration. If you have to change the configuration, create a new "
-"container image with the new configuration."
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:26
+msgid "Cluster Name"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:67
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:28
 msgid ""
-"Another solution is to share the :ref:`configuration folder "
-"<configuration>` between all cluster nodes using a Docker volume."
+"To run multiple clusters within the same network, each cluster must be "
+"assigned a unique name. This prevents interference between clusters. You "
+"can set the cluster name in the :ref:`ivy.yaml <ivy-yaml>` configuration "
+"file."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/container.rst:4
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:34
+msgid "Node Name"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:36
+msgid ""
+"The :ref:`Engine Cockpit <engine-cockpit-cluster>` includes a view that "
+"displays all running nodes in the cluster. By default, node names are "
+"auto-generated, but you can customize them in the :ref:`ivy.yaml <ivy-"
+"yaml>` configuration file."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/container/index.rst:4
 msgid "Container Image"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/container.rst:6
+#: ../../source/engine-guide/integration/cluster/container/index.rst:6
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:6
+msgid "TBD"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/data/index.rst:6
 msgid ""
-"We strongly recommend operating an Axon Ivy Engine Cluster in a "
-"containerized environment like Docker or Kubernetes."
+"All cluster nodes must have access to a shared data directory. This "
+"directory contains data such as case attachments and application CMS "
+"content. You need to ensure that this directory is accessible to all "
+"nodes in the cluster. By default, the data directory is located at "
+":file:`[engineDir]/data`, but you can change its location using the "
+":code:`Data.Directory` setting in the :ref:`ivy.yaml <ivy-yaml>` file."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/container.rst:9
+#: ../../source/engine-guide/integration/cluster/data/index.rst:14
 msgid ""
-"We recommend that you build your own container image that contains the "
-"Axon Ivy Engine and includes your projects and configuration."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:12
-msgid "You can build the container image automatically by using a build server."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:16
-msgid "The build server:"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:18
-msgid "Checks out:"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:20
-msgid "all your projects"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:21
-msgid "your configurations"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:22
-msgid ""
-"a Dockerfile that specifies how to build your container image from a Git "
-"repository."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:24
-msgid "Builds all your projects and bundles them in an application zip file."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:25
-msgid ""
-"Builds your container image as defined by the Dockerfile. It pulls the "
-"base image ``axonivy/axonivy-engine`` image from Docker Hub."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:27
-msgid ""
-"It stores your new image (``your-company/your-project``) in a `Docker "
-"Registry <https://hub.docker.com/_/registry>`_."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:30
-msgid ""
-"Then, you can start your Axon Ivy Engine Cluster using your new container"
-" image (``your-company/your-project``)."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:33
-msgid ""
-"A simple Dockerfile that bundles the Axon Ivy Engine, your projects, and "
-"your configuration files in a container image looks as follows:"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:55
-#: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:32
-msgid "Examples"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:57
-msgid ""
-"Please refer to our :link-url:`project-build-examples <build-examples-"
-"docker>`. It shows you how to use Maven to build your container image "
-"including both your Axon Ivy Engine and your application zip file."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:61
-msgid ""
-"Additionally, refer to our example configurations on GitHub for :link-"
-"url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-"
-"scaling-haproxy>` to learn how to set up an Axon Ivy Engine Cluster with "
-"docker-compose."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/deployment.rst:6
-msgid ""
-"Deployments during runtime are not supported by the Axon Ivy Engine "
-"Cluster and do not work. Use the :ref:`deployment directory <deployment-"
-"deploying>` instead to deploy your projects during Axon Ivy Engine "
-"Cluster node startup."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/deployment.rst:11
-msgid ""
-"Only during the startup of the master cluster node, information from Axon"
-" Ivy projects is deployed to the system database. On startup of slave "
-"cluster nodes, projects files are copied to the correct location "
-"**without** updating the system database. E.g., new roles that have been "
-"added to an Axon Ivy project are created in the system database only upon"
-" startup of the master cluster node."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/deployment.rst:18
-msgid ""
-"We recommend that you add your projects directly into the deployment "
-"directory ``deploy`` of a :ref:`container image <cluster-container>`."
+"For case documents, you can also configure an S3 bucket as described in "
+":ref:`documents-s3`. In this setup, all cluster nodes must have access to"
+" the same S3 instance."
 msgstr ""
 
 #: ../../source/engine-guide/integration/cluster/index.rst:4
@@ -29110,191 +29124,100 @@ msgstr ""
 #: ../../source/engine-guide/integration/cluster/index.rst:36
 msgid ""
 "We strongly recommend operating an Axon Ivy Engine Cluster in a "
-"containerized environment like Docker, Kubernetes, or OpenShift. Build "
-"and run your :ref:`container image <cluster-container>` containing all "
-"your projects and configurations."
+"containerized environment like Kubernetes or OpenShift."
 msgstr ""
 
 #: ../../source/engine-guide/integration/cluster/index.rst:41
-msgid ""
-"See our example configurations on GitHub for :link-url:`nginx <docker-"
-"scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>` on how "
-"to set up an Axon Ivy Engine Cluster with docker-compose."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:48
 msgid "**Restrictions**"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:50
+#: ../../source/engine-guide/integration/cluster/index.rst:43
 msgid ""
 "Please consider the following restrictions if you want to run an Axon Ivy"
 " Engine Cluster:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:52
-msgid "Each node needs access to all other nodes via UDP/Multicast."
+#: ../../source/engine-guide/integration/cluster/index.rst:46
+msgid "Each node has to be the exact same version of the Axon Ivy Engine."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:53
-msgid "Each node has to use the same system database."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:54
+#: ../../source/engine-guide/integration/cluster/index.rst:47
 msgid ""
-"Each node has to use the same external :ref:`OpenSearch <opensearch>` "
-"server (or cluster)."
+"Each node needs to have the same configuration, applications, data, "
+":ref:`system database <systemdb>`, and :ref:`OpenSearch <opensearch>`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:56
-msgid "Each node has to use the same service configurations."
+#: ../../source/engine-guide/integration/cluster/index.rst:49
+msgid "Nodes need to communicate with each other."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:57
-msgid ""
-":ref:`Configuration changes <cluster-configuration-changes>` are only "
-"applied to the local cluster node where you made the change."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:59
-msgid ""
-":ref:`Deployment <cluster-deployment>` during runtime is not supported "
-"and does not work."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:61
-msgid ""
-"Some :ref:`operating systems <engine-system-requirements-os>` are not "
-"supported."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:63
-msgid ""
-"You can solve most of the restrictions by using a containerized "
-"environment with your own :ref:`container image <cluster-container>`."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:66
-msgid ""
-"Usually, UDP/Multicast works in a single subnet only. Modern routers can "
-"overcome this restriction if you configure them accordingly. If your "
-"environment does not support this setup, you can change the cluster "
-"communication to TCP/IP. TCP/IP will induce significantly higher cluster "
-"communications overhead. Contact Axon Ivy for instructions regarding this"
-" setup."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/license.rst:4
+#: ../../source/engine-guide/integration/cluster/license/index.rst:4
 msgid "Enterprise License"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/license.rst:6
+#: ../../source/engine-guide/integration/cluster/license/index.rst:6
 msgid ""
-"You need an enterprise license to run Axon Ivy Engine as a Cluster (Axon "
-"Ivy Engine Enterprise Edition)."
+"To run the Axon Ivy Engine in a cluster (Enterprise Edition), an "
+"enterprise license is required. The information needed to request this "
+"license is the same as for licensing the Standard Edition :ref:`license`,"
+" except that you must also specify the number of cluster nodes."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/license.rst:9
-msgid ""
-"The information needed to request an enterprise license is the same as "
-"for a Standard Edition :ref:`license`, with the exception of the number "
-"of cluster nodes."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/license.rst:14
+#: ../../source/engine-guide/integration/cluster/license/index.rst:13
 msgid "Cluster Nodes"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/license.rst:16
+#: ../../source/engine-guide/integration/cluster/license/index.rst:15
 msgid ""
-"Each node that you add to an Axon Ivy Engine Cluster costs an additional "
-"license fee. Therefore, the number of nodes in your Cluster is limited by"
-" the license."
+"Each node added to an Axon Ivy Engine Cluster incurs an additional "
+"license fee. As a result, the number of nodes in your cluster is limited "
+"by the terms of your license."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/license.rst:20
+#: ../../source/engine-guide/integration/cluster/license/index.rst:20
 msgid ""
-"If you add more nodes to your Cluster than your license has been issued "
-"for, then the nodes that are not licensed correctly will respond with "
-"error code :code:`503 Service Unavailable`."
+"If you add more nodes to your cluster than your license allows, any "
+"unlicensed nodes will respond with the error code :code:`503 Service "
+"Unavailable`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:4
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:4
 msgid "Load Balancer"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:6
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:6
 msgid ""
-"Axon Ivy Engine Clusters work with **sticky sessions**. The load balancer"
-" has to forward all requests from a session to the same cluster node. Of "
-"course, if a cluster node is no longer available then the request will be"
-" sent to another cluster node. This will cause the user to get a new "
-"session, therefore losing his work in the replaced session."
+"Axon Ivy Engine Clusters rely on **sticky sessions**, meaning the load "
+"balancer must route all requests from a given session to the same cluster"
+" node. If a cluster node becomes unavailable, requests will be redirected"
+" to another node. In this case, the user will receive a new session and "
+"may lose any unsaved work from the previous session. Sticky sessions can "
+"be configured as follows:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:12
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:12
 msgid ""
-"As described above, the load balancer has to ensure that all requests "
-"from the same user session are sent to the same cluster node. This can be"
-" done as follows:"
+"Configure your load balancer to manage sticky sessions using its own "
+"dedicated cookie."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:16
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:14
 msgid ""
-"configure the load balancer to always forward all requests sent from one "
-"client IP address to the same cluster node (IP based stickiness)."
+"Alternatively, set the load balancer to forward all requests from the "
+"same client IP address to the same cluster node (IP-based stickiness)."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:18
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:16
 msgid ""
-"use the Axon Ivy Session Id to provide session stickiness. The session id"
-" is provided by Axon Ivy Engine Enterprise Edition as an HTTP session "
-"cookie with the name :code:`JSESSIONID`."
+"Use the Axon Ivy Session ID for session stickiness. The Axon Ivy Engine "
+"Enterprise Edition provides this as an HTTP session cookie named "
+":code:`IVYSESSIONID`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:22
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:20
 msgid ""
-"Often, :ref:`Reverse Proxies <reverse-proxy>` can be configured as load "
-"balancers."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:25
-msgid "HAProxy"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:27
-msgid ""
-"HAProxy is a free, fast, and reliable solution offering high "
-"availability, load balancing, and proxying for TCP and HTTP-based "
-"applications. It is simple to set up. It offers a Docker image that needs"
-" only minimal configuration."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:31
-msgid ""
-"We provide a :link-url:`sample on GitHub <docker-scaling-haproxy>` how to"
-" setup an Axon Ivy Engine Cluster using HAProxy as the load balancer "
-"within docker-compose."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:36
-#: ../../source/engine-guide/integration/reverse-proxy/nginx/index.rst:4
-msgid "NGINX"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:38
-msgid ""
-"NGINX is a free, open-source HTTP web server that serves as a reverse "
-"proxy server, a mail proxy server, and a generic TCP/UDP proxy server and"
-" offers load balancing features. It also offers a Docker image with "
-"minimal configuration needs."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:43
-msgid ""
-"We provide a :link-url:`sample on GitHub <docker-scaling-nginx>` on how "
-"to setup an Axon Ivy Engine Cluster using NGINX as the load balancer "
-"within docker-compose."
+"Often, :ref:`Reverse Proxies <reverse-proxy>` can be configured to act as"
+" load balancers."
 msgstr ""
 
 #: ../../source/engine-guide/integration/identity-provider/index.rst:4
@@ -29795,7 +29718,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/engine-guide/integration/reverse-proxy/index.rst:63
-#: ../../source/engine-guide/security/http-headers.rst:2
+#: ../../source/engine-guide/security/http-headers.rst:4
 msgid "HTTP Headers"
 msgstr ""
 
@@ -30031,6 +29954,10 @@ msgid ""
 " via HTTP through IIS."
 msgstr ""
 
+#: ../../source/engine-guide/integration/reverse-proxy/nginx/index.rst:4
+msgid "NGINX"
+msgstr ""
+
 #: ../../source/engine-guide/integration/reverse-proxy/nginx/index.rst:6
 msgid ""
 "This is how to configure NGINX as a reverse proxy in front of the Axon "
@@ -30097,6 +30024,10 @@ msgid ""
 "be much appreciated by your end users. E.g., when a user is accessing "
 ":code:`https://ivyengine/` then they should be redirected to "
 ":code:`https://ivyengine/demo-app`."
+msgstr ""
+
+#: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:32
+msgid "Examples"
 msgstr ""
 
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:33
@@ -30391,19 +30322,31 @@ msgid ""
 "fix a configuration."
 msgstr ""
 
+#: ../../source/engine-guide/monitoring/health.rst:15
+msgid "Endpoint"
+msgstr ""
+
 #: ../../source/engine-guide/monitoring/health.rst:17
+msgid ""
+"The health endpoint is available at :code:`http://<engine-host>:<engine-"
+"port>/system/health`. It returns the HTTP status code :code:`200` if the "
+"Axon Ivy Engine is running, and :code:`503` otherwise. This endpoint can "
+"be used to monitor the availability of the Axon Ivy Engine."
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/health.rst:26
 msgid "Health messages are displayed in the :ref:`engine-cockpit` on:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:19
+#: ../../source/engine-guide/monitoring/health.rst:28
 msgid "The :guilabel:`Health` panel in the :ref:`engine-cockpit-dashboard`"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:20
+#: ../../source/engine-guide/monitoring/health.rst:29
 msgid "The :ref:`engine-cockpit-top-menu`"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:21
+#: ../../source/engine-guide/monitoring/health.rst:30
 msgid "The :ref:`engine-cockpit-monitor-health` view"
 msgstr ""
 
@@ -30667,20 +30610,21 @@ msgid ""
 "The logging configuration can be fully customized to your needs. For "
 "example, you can change the log level of a logger so that the log events "
 "are logged in a log file. Therefore you need to know that Axon Ivy uses "
-"`Log4j 2 <https://logging.apache.org/log4j/2.x/>`_ for logging and comes "
+"`Log4j2 <https://logging.apache.org/log4j/2.x/>`_ for logging and comes "
 "with a built-in :ref:`default configuration <log4j2-xml>` which can be "
 "customized by providing a configuration in "
 ":file:`[engineDir]/configuration/log4j2.xml`. The custom configuration "
 "will be `merged "
 "<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_"
-" with the default configuration automatically on the fly."
+" with the default configuration automatically on the fly. Changing the "
+"log level of a specific logger can be done easily:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:40
+#: ../../source/engine-guide/monitoring/logging.rst:50
 msgid "Runtime Log"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:42
+#: ../../source/engine-guide/monitoring/logging.rst:52
 msgid ""
 "The Runtime Log is a well-known :ref:`designer feature <simulate-process-"
 "models-debugger-runtimelog-view>` and disabled by default in the Axon Ivy"
@@ -30690,22 +30634,22 @@ msgid ""
 "logs also on the Axon Ivy Engine."
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:47
+#: ../../source/engine-guide/monitoring/logging.rst:57
 msgid "The name of the runtime logger has a well defined format:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:49
+#: ../../source/engine-guide/monitoring/logging.rst:59
 msgid ""
 "**runtimelog.[security context name].[category].[app name].[process model"
 " name]**"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:51
+#: ../../source/engine-guide/monitoring/logging.rst:61
 #: ../../source/engine-guide/monitoring/tracing.rst:31
 msgid "**Example:**"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:57
+#: ../../source/engine-guide/monitoring/logging.rst:67
 msgid ""
 "All available categories [category] are defined in the :public-"
 "api:`RuntimeLogCategory "
@@ -30714,16 +30658,28 @@ msgid ""
 "name=\"runtimelog.securitycontext.rest_client.myapp.hrm\">`."
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:63
+#: ../../source/engine-guide/monitoring/logging.rst:73
 msgid "Log format"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:65
+#: ../../source/engine-guide/monitoring/logging.rst:75
 #, python-brace-format
 msgid ""
 "A single event can be found as a log entry in the format "
 "**[datetime][level][logger name][thread name]{context infos}** followed "
 "by the message itself like:"
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/logging.rst:82
+msgid "JSON Log output"
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/logging.rst:84
+msgid ""
+"You can configure the Axon Ivy Engine to log in JSON format. This is "
+"useful for log analysis tools that can parse JSON logs. Read more about "
+"it here: `Log4j2 JSON Template Layout "
+"<https://logging.apache.org/log4j/2.x/manual/json-template-layout.html>`_"
 msgstr ""
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:4
@@ -34037,46 +33993,85 @@ msgid ""
 "fails."
 msgstr ""
 
-#: ../../source/engine-guide/security/http-headers.rst:4
-msgid "We recommend using the following additional security headers."
-msgstr ""
-
 #: ../../source/engine-guide/security/http-headers.rst:6
 msgid ""
-"**Strict-Transport-Security**: Set this header if the Engine is to be "
-"accessed via HTTPS only. For more information, see: `Strict-Transport-"
-"Security <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
-"/Strict-Transport-Security>`_. You can adjust this in the embedded Tomcat"
-" with the pre-configured `HTTP Header Security Filter "
-"<https://tomcat.apache.org/tomcat-9.0-doc/config/filter.html#HTTP_Header_Security_Filter>`_"
-" in the :ref:`web-xml`"
+"We recommend using the following additional security headers. Mostly it "
+"makes most sense to configure such headers in your :ref:`reverse-proxy`. "
+"However, we also give you the possibility to configure them inside of the"
+" embedded Web Server via the :code:`WebServer.HttpHeaders` key in the "
+":ref:`ivy-yaml`. You can also add more headers than the ones we list "
+"below."
 msgstr ""
 
 #: ../../source/engine-guide/security/http-headers.rst:12
 msgid ""
-"**Content-Security-Policy**: Set this header if you want to reduce the "
-"risk of having an exploitable Cross-site scripting (XSS) vulnerability. "
-"With a Content-Security-Policy, you can define from which locations "
-"external resources can be loaded and if scripts embedded in HTML can be "
-"executed. For more information, see: `Content Security Policy (CSP) "
-"<https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_."
+"**Strict-Transport-Security (HSTS)**: Set this header if the Engine is to"
+" be accessed via HTTPS only. For more information, see: `Strict-"
+"Transport-Security (MDN) <https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Headers/Strict-Transport-Security>`_."
 msgstr ""
 
-#: ../../source/engine-guide/security/http-headers.rst:18
+#: ../../source/engine-guide/security/http-headers.rst:17
 msgid ""
-"We recommend implementing these headers on a reverse proxy securing your "
-"Axon Ivy Engine. In case you have no reverse proxy, check `How do I "
-"integrate the Axon Ivy Workflow Frontend in my Web App? "
-"<https://community.axonivy.com/d/319-how-do-i-integrate-ivy-workflow-"
-"frontend-in-my-web-app>` for a CSP example using the embedded Tomcat."
+"**Content-Security-Policy (CSP)**: Set this header if you want to reduce "
+"the risk of having an exploitable Cross-site scripting (XSS) "
+"vulnerability. With a Content-Security-Policy, you can define from which "
+"locations external resources can be loaded and if scripts embedded in "
+"HTML can be executed. For more information, see: `Content Security Policy"
+" (MDN) <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_. If you "
+"use the :code:`WebServer.PrimeFaces.ContentSecurityPolicy` configuration "
+"in the :ref:`ivy-yaml`, we use the CSP functionality from `PrimeFaces "
+"<https://primefaces.github.io/primefaces/13_0_0/#/core/contentsecuritypolicy>`_."
 msgstr ""
 
-#: ../../source/engine-guide/security/http-headers.rst:23
+#: ../../source/engine-guide/security/http-headers.rst:27
 msgid ""
-"**Referrer-Policy**: Set this header if you want to control how or if the"
-" referrer is disclosed to other sites. For more information, see: "
-"`Referrer-Policy <https://developer.mozilla.org/en-"
-"US/docs/Web/HTTP/Headers/Referrer-Policy>`_"
+"**X-Frame-Options**: We set this header per default with "
+":code:`SAMEORIGIN` as we use iFrames. For more information, see: `X"
+"-Frame-Options (MDN) <https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Reference/Headers/X-Frame-Options>`_."
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:31
+msgid ""
+"**X-Content-Type-Options**: We set this header per default with "
+":code:`nosniff`. For more information, see: `X-Content-Type-Options (MDN)"
+" <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X"
+"-Content-Type-Options>`_."
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:35
+msgid ""
+"**Referrer-Policy**: We set this header per default with :code:`strict-"
+"origin-when-cross-origin`. For more information, see: `Referrer-Policy "
+"(MDN) <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+"/Referrer-Policy>`_"
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:40
+msgid ""
+"**Cross-Origin-Opener-Policy (COOP)**: Set this header to restrict the "
+"browser context. For more information, see: `Cross-Origin-Opener-Policy "
+"(MDN) <https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy>`_."
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:44
+msgid ""
+"**Cross-Origin-Embedder-Policy (COEP)**: Set this header to restrict the "
+"browser from loading and embedding cross-origin resources. For more "
+"information, see: `Cross-Origin-Embedder-Policy (MDN) "
+"<https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers"
+"/Cross-Origin-Embedder-Policy>`_."
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:49
+msgid ""
+"**Cross-Origin-Resource-Policy (CORP)**: Set this header to indicate that"
+" the browser should block cross-origin or cross-site requests to the "
+"given resource. For more information, see: `Cross-Origin-Resource-Policy "
+"(MDN) <https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Resource-Policy>`_."
 msgstr ""
 
 #: ../../source/engine-guide/security/index.rst:6
@@ -34485,5 +34480,572 @@ msgstr ""
 #~ "the Axon Ivy Engine. There will be"
 #~ " a new section for this deployed "
 #~ "app."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Internally, the Java Persistence API is"
+#~ " used to implement Entity Classes and"
+#~ " their relations. For further details, "
+#~ "please refer to the official `Java "
+#~ "Persistence API documentation "
+#~ "<https://www.oracle.com/java/technologies/persistence-"
+#~ "jsp.html>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Hibernate works by default with "
+#~ "sequences for primary key columns. This"
+#~ " means it will create a table "
+#~ "called :code:`hibernate_sequence` which is "
+#~ "used to generate the primary keys. "
+#~ "If you want to use the auto "
+#~ "increment approach of your database "
+#~ "management system you can set the "
+#~ "property :code:`hibernate.id.new_generator_mappings` to"
+#~ " :code:`false` in your persistence unit."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This chapter introduces the :ref"
+#~ ":`persistence-configuration-editor` and the "
+#~ ":ref:`persistence-api` of Axon Ivy. The"
+#~ " persistence framework is based on "
+#~ "the `Java Persistence API "
+#~ "<http://en.wikipedia.org/wiki/Java_Persistence_API>`__, a.k.a."
+#~ " JPA) and provides support for "
+#~ "storing and loading business objects "
+#~ "from and to a database."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "With the Persistence API it is "
+#~ "possible to execute Java Persistence API"
+#~ " Query Language (JPA QL) statements. "
+#~ "See ``IIvyQuery`` for more information "
+#~ "about the Query API. The query "
+#~ "language based around the objects that"
+#~ " are persisted but with syntax very"
+#~ " similar to SQL. You always have "
+#~ "to use the names of the Entity "
+#~ "Class and the attributes and not "
+#~ "the names from the database."
+#~ msgstr ""
+
+#~ msgid "Persistency (Java Persistence API)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Stores and access data in a "
+#~ "database systems. An own database server"
+#~ " is necessary. The database schema "
+#~ "can be generated. JPA is a Java"
+#~ " standard that is well documented and"
+#~ " widely used. More information can be"
+#~ " found in the chapter :ref:`persistence`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Assume the following SQL statement is"
+#~ " configured as an SQL query: ``SELECT"
+#~ " * FROM Subscriber WHERE Name LIKE"
+#~ " 'in.searchText%'``. Now if an attacker "
+#~ "manages to pass a valid SQL "
+#~ "statement into the ``in.searchText`` variable"
+#~ " then a so called SQL injection "
+#~ "takes place, which can result in a"
+#~ " complete data breach on the "
+#~ "configured database. Process designers are "
+#~ "responsible to only pass sanitized data"
+#~ " into an SQL query. In some "
+#~ "cases it might be better to access"
+#~ " the Database with JPA/Hibernate or "
+#~ "prepared statements using JDBC. For more"
+#~ " information see: `SQL Injection Prevention"
+#~ " Cheat Sheet "
+#~ "<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pages can be referenced from the "
+#~ "content management system or the web "
+#~ "content directory. The wizard allows you"
+#~ " to create, select or edit pages."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Axon Ivy Engine Cluster node is"
+#~ " set up almost the same way as"
+#~ " a stand-alone Axon Ivy Engine. "
+#~ "Note: All nodes in a cluster setup"
+#~ " have to run within the same "
+#~ "network (the same broadcast domain)."
+#~ msgstr ""
+
+#~ msgid "Files"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend to configure :ref:`documents-s3`"
+#~ " as distributed blob storage so that"
+#~ " every cluster node can access all"
+#~ " the files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Otherwise you need to share the "
+#~ "data directory for all cluster nodes "
+#~ "(``Data.Directory`` from :ref:`ivy.yaml <ivy-"
+#~ "yaml>`). Use a Docker volume that "
+#~ "stores all the files. Mount it on"
+#~ " all cluster nodes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create a Docker volume called ``ivy-"
+#~ "data`` and mount it at ``/ivy/data`` "
+#~ "in your Axon Ivy Engine Cluster "
+#~ "node containers."
+#~ msgstr ""
+
+#~ msgid "Ensure that you backup this Docker volume periodically."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In previous version of the Axon "
+#~ "Ivy Engine Cluster, the applications "
+#~ "directory (``Data.AppDirectory`` in your "
+#~ ":ref:`ivy.yaml <ivy-yaml>`) had to be"
+#~ " shared between the cluster nodes, "
+#~ "too. This is no longer required "
+#~ "and should be avoided."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to run multiple "
+#~ "clusters within the same network (same"
+#~ " broadcast domain), you need to name"
+#~ " each cluster with a unique name. "
+#~ "This prevents clusters from interfering "
+#~ "with each other."
+#~ msgstr ""
+
+#~ msgid "You define the cluster name in the :ref:`ivy.yaml <ivy-yaml>` file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :ref:`Engine Cockpit <engine-cockpit-"
+#~ "cluster>` has a view that displays "
+#~ "all running nodes of the cluster. "
+#~ "The node names are auto-generated "
+#~ "by default but you can configure "
+#~ "them in :ref:`ivy.yaml <ivy-yaml>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration changes are only applied "
+#~ "to the local cluster node where "
+#~ "the change is done. E.g., if an"
+#~ " administrator is using the :ref:`Engine"
+#~ " Cockpit <engine-cockpit>` to change "
+#~ "a configuration setting, then the "
+#~ "setting is only changed at the "
+#~ "cluster node where the current session"
+#~ " of the administrator is executed. On"
+#~ " all other cluster nodes, the setting"
+#~ " remains unchanged!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend that you do not "
+#~ "change the configuration at runtime. "
+#~ "Instead use a :ref:`container image "
+#~ "<cluster-container>` that contains the "
+#~ "right configuration. If you have to "
+#~ "change the configuration, create a new"
+#~ " container image with the new "
+#~ "configuration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Another solution is to share the "
+#~ ":ref:`configuration folder <configuration>` between"
+#~ " all cluster nodes using a Docker "
+#~ "volume."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We strongly recommend operating an Axon"
+#~ " Ivy Engine Cluster in a "
+#~ "containerized environment like Docker or "
+#~ "Kubernetes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend that you build your "
+#~ "own container image that contains the"
+#~ " Axon Ivy Engine and includes your"
+#~ " projects and configuration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can build the container image "
+#~ "automatically by using a build server."
+#~ msgstr ""
+
+#~ msgid "The build server:"
+#~ msgstr ""
+
+#~ msgid "Checks out:"
+#~ msgstr ""
+
+#~ msgid "all your projects"
+#~ msgstr ""
+
+#~ msgid "your configurations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a Dockerfile that specifies how to "
+#~ "build your container image from a "
+#~ "Git repository."
+#~ msgstr ""
+
+#~ msgid "Builds all your projects and bundles them in an application zip file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Builds your container image as defined"
+#~ " by the Dockerfile. It pulls the "
+#~ "base image ``axonivy/axonivy-engine`` image"
+#~ " from Docker Hub."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It stores your new image (``your-"
+#~ "company/your-project``) in a `Docker "
+#~ "Registry <https://hub.docker.com/_/registry>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then, you can start your Axon Ivy"
+#~ " Engine Cluster using your new "
+#~ "container image (``your-company/your-"
+#~ "project``)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A simple Dockerfile that bundles the "
+#~ "Axon Ivy Engine, your projects, and "
+#~ "your configuration files in a container"
+#~ " image looks as follows:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please refer to our :link-url"
+#~ ":`project-build-examples <build-examples-"
+#~ "docker>`. It shows you how to use"
+#~ " Maven to build your container image"
+#~ " including both your Axon Ivy Engine"
+#~ " and your application zip file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additionally, refer to our example "
+#~ "configurations on GitHub for :link-"
+#~ "url:`NGINX <docker-scaling-nginx>` and "
+#~ ":link-url:`HAProxy <docker-scaling-haproxy>` "
+#~ "to learn how to set up an "
+#~ "Axon Ivy Engine Cluster with docker-"
+#~ "compose."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Deployments during runtime are not "
+#~ "supported by the Axon Ivy Engine "
+#~ "Cluster and do not work. Use the"
+#~ " :ref:`deployment directory <deployment-"
+#~ "deploying>` instead to deploy your "
+#~ "projects during Axon Ivy Engine Cluster"
+#~ " node startup."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only during the startup of the "
+#~ "master cluster node, information from "
+#~ "Axon Ivy projects is deployed to "
+#~ "the system database. On startup of "
+#~ "slave cluster nodes, projects files are"
+#~ " copied to the correct location "
+#~ "**without** updating the system database. "
+#~ "E.g., new roles that have been "
+#~ "added to an Axon Ivy project are"
+#~ " created in the system database only"
+#~ " upon startup of the master cluster"
+#~ " node."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend that you add your "
+#~ "projects directly into the deployment "
+#~ "directory ``deploy`` of a :ref:`container "
+#~ "image <cluster-container>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We strongly recommend operating an Axon"
+#~ " Ivy Engine Cluster in a "
+#~ "containerized environment like Docker, "
+#~ "Kubernetes, or OpenShift. Build and run"
+#~ " your :ref:`container image <cluster-"
+#~ "container>` containing all your projects "
+#~ "and configurations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See our example configurations on GitHub"
+#~ " for :link-url:`nginx <docker-scaling-"
+#~ "nginx>` and :link-url:`HAProxy <docker-"
+#~ "scaling-haproxy>` on how to set up"
+#~ " an Axon Ivy Engine Cluster with "
+#~ "docker-compose."
+#~ msgstr ""
+
+#~ msgid "Each node needs access to all other nodes via UDP/Multicast."
+#~ msgstr ""
+
+#~ msgid "Each node has to use the same system database."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Each node has to use the same "
+#~ "external :ref:`OpenSearch <opensearch>` server "
+#~ "(or cluster)."
+#~ msgstr ""
+
+#~ msgid "Each node has to use the same service configurations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`Configuration changes <cluster-"
+#~ "configuration-changes>` are only applied to"
+#~ " the local cluster node where you "
+#~ "made the change."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`Deployment <cluster-deployment>` during "
+#~ "runtime is not supported and does "
+#~ "not work."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some :ref:`operating systems <engine-"
+#~ "system-requirements-os>` are not supported."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can solve most of the "
+#~ "restrictions by using a containerized "
+#~ "environment with your own :ref:`container "
+#~ "image <cluster-container>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Usually, UDP/Multicast works in a single"
+#~ " subnet only. Modern routers can "
+#~ "overcome this restriction if you "
+#~ "configure them accordingly. If your "
+#~ "environment does not support this setup,"
+#~ " you can change the cluster "
+#~ "communication to TCP/IP. TCP/IP will "
+#~ "induce significantly higher cluster "
+#~ "communications overhead. Contact Axon Ivy "
+#~ "for instructions regarding this setup."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need an enterprise license to "
+#~ "run Axon Ivy Engine as a Cluster"
+#~ " (Axon Ivy Engine Enterprise Edition)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The information needed to request an "
+#~ "enterprise license is the same as "
+#~ "for a Standard Edition :ref:`license`, "
+#~ "with the exception of the number "
+#~ "of cluster nodes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Each node that you add to an "
+#~ "Axon Ivy Engine Cluster costs an "
+#~ "additional license fee. Therefore, the "
+#~ "number of nodes in your Cluster is"
+#~ " limited by the license."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you add more nodes to your "
+#~ "Cluster than your license has been "
+#~ "issued for, then the nodes that "
+#~ "are not licensed correctly will respond"
+#~ " with error code :code:`503 Service "
+#~ "Unavailable`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Axon Ivy Engine Clusters work with "
+#~ "**sticky sessions**. The load balancer "
+#~ "has to forward all requests from a"
+#~ " session to the same cluster node."
+#~ " Of course, if a cluster node "
+#~ "is no longer available then the "
+#~ "request will be sent to another "
+#~ "cluster node. This will cause the "
+#~ "user to get a new session, "
+#~ "therefore losing his work in the "
+#~ "replaced session."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As described above, the load balancer"
+#~ " has to ensure that all requests "
+#~ "from the same user session are "
+#~ "sent to the same cluster node. "
+#~ "This can be done as follows:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "configure the load balancer to always"
+#~ " forward all requests sent from one"
+#~ " client IP address to the same "
+#~ "cluster node (IP based stickiness)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "use the Axon Ivy Session Id to "
+#~ "provide session stickiness. The session "
+#~ "id is provided by Axon Ivy Engine"
+#~ " Enterprise Edition as an HTTP "
+#~ "session cookie with the name "
+#~ ":code:`JSESSIONID`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Often, :ref:`Reverse Proxies <reverse-proxy>`"
+#~ " can be configured as load balancers."
+#~ msgstr ""
+
+#~ msgid "HAProxy"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "HAProxy is a free, fast, and "
+#~ "reliable solution offering high availability,"
+#~ " load balancing, and proxying for TCP"
+#~ " and HTTP-based applications. It is"
+#~ " simple to set up. It offers a"
+#~ " Docker image that needs only minimal"
+#~ " configuration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We provide a :link-url:`sample on "
+#~ "GitHub <docker-scaling-haproxy>` how to"
+#~ " setup an Axon Ivy Engine Cluster "
+#~ "using HAProxy as the load balancer "
+#~ "within docker-compose."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NGINX is a free, open-source HTTP"
+#~ " web server that serves as a "
+#~ "reverse proxy server, a mail proxy "
+#~ "server, and a generic TCP/UDP proxy "
+#~ "server and offers load balancing "
+#~ "features. It also offers a Docker "
+#~ "image with minimal configuration needs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We provide a :link-url:`sample on "
+#~ "GitHub <docker-scaling-nginx>` on how"
+#~ " to setup an Axon Ivy Engine "
+#~ "Cluster using NGINX as the load "
+#~ "balancer within docker-compose."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The logging configuration can be fully"
+#~ " customized to your needs. For "
+#~ "example, you can change the log "
+#~ "level of a logger so that the "
+#~ "log events are logged in a log "
+#~ "file. Therefore you need to know "
+#~ "that Axon Ivy uses `Log4j 2 "
+#~ "<https://logging.apache.org/log4j/2.x/>`_ for logging "
+#~ "and comes with a built-in "
+#~ ":ref:`default configuration <log4j2-xml>` which "
+#~ "can be customized by providing a "
+#~ "configuration in "
+#~ ":file:`[engineDir]/configuration/log4j2.xml`. The custom"
+#~ " configuration will be `merged "
+#~ "<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_"
+#~ " with the default configuration "
+#~ "automatically on the fly."
+#~ msgstr ""
+
+#~ msgid "We recommend using the following additional security headers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Strict-Transport-Security**: Set this "
+#~ "header if the Engine is to be "
+#~ "accessed via HTTPS only. For more "
+#~ "information, see: `Strict-Transport-Security"
+#~ " <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+#~ "/Strict-Transport-Security>`_. You can "
+#~ "adjust this in the embedded Tomcat "
+#~ "with the pre-configured `HTTP Header "
+#~ "Security Filter "
+#~ "<https://tomcat.apache.org/tomcat-9.0-doc/config/filter.html#HTTP_Header_Security_Filter>`_"
+#~ " in the :ref:`web-xml`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Content-Security-Policy**: Set this "
+#~ "header if you want to reduce the"
+#~ " risk of having an exploitable "
+#~ "Cross-site scripting (XSS) vulnerability. "
+#~ "With a Content-Security-Policy, you "
+#~ "can define from which locations external"
+#~ " resources can be loaded and if "
+#~ "scripts embedded in HTML can be "
+#~ "executed. For more information, see: "
+#~ "`Content Security Policy (CSP) "
+#~ "<https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend implementing these headers "
+#~ "on a reverse proxy securing your "
+#~ "Axon Ivy Engine. In case you have"
+#~ " no reverse proxy, check `How do "
+#~ "I integrate the Axon Ivy Workflow "
+#~ "Frontend in my Web App? "
+#~ "<https://community.axonivy.com/d/319-how-do-i-integrate-"
+#~ "ivy-workflow-frontend-in-my-web-app>`"
+#~ " for a CSP example using the "
+#~ "embedded Tomcat."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Referrer-Policy**: Set this header if"
+#~ " you want to control how or if"
+#~ " the referrer is disclosed to other"
+#~ " sites. For more information, see: "
+#~ "`Referrer-Policy <https://developer.mozilla.org/en-"
+#~ "US/docs/Web/HTTP/Headers/Referrer-Policy>`_"
 #~ msgstr ""
 
