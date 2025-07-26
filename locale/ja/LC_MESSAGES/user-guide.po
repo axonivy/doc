@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 21:28+0000\n"
+"POT-Creation-Date: 2025-07-26 21:29+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -448,49 +448,49 @@ msgid ""
 " Go through the migration notes from version to version."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:18
+#: ../../source/axonivy/migration/migration-notes.rst:19
 msgid "Previous Migration Notes"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:19
+#: ../../source/axonivy/migration/migration-notes.rst:20
 msgid ":ref:`migration-tools` still support migrating directly from this version:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:21
+#: ../../source/axonivy/migration/migration-notes.rst:22
 msgid ":dev-url:`Migrating from 10.0 to 12.0 </doc/12.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:23
+#: ../../source/axonivy/migration/migration-notes.rst:24
 msgid ""
 "Migrating from these versions is no longer supported by the :ref"
 ":`migration-tools`:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:25
+#: ../../source/axonivy/migration/migration-notes.rst:26
 msgid ":dev-url:`Migrating from 8.0 to 10.0 </doc/10.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:26
+#: ../../source/axonivy/migration/migration-notes.rst:27
 msgid ":dev-url:`Migrating from 7.0 to 8.0 </doc/8.0.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:27
+#: ../../source/axonivy/migration/migration-notes.rst:28
 msgid ":dev-url:`Migrating from 6.0 to 7.0 </doc/7.0.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:28
+#: ../../source/axonivy/migration/migration-notes.rst:29
 msgid ":dev-url:`Migrating from 5.1 to 6.0 </doc/6.0.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:29
+#: ../../source/axonivy/migration/migration-notes.rst:30
 msgid ":dev-url:`Migrating from 5.0 to 5.1 </doc/5.1.0/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:30
+#: ../../source/axonivy/migration/migration-notes.rst:31
 msgid ":dev-url:`Migrating from 4.3 to 5.0 </doc/5.0.5/migration-notes>`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes.rst:32
+#: ../../source/axonivy/migration/migration-notes.rst:33
 msgid ""
 "Please migrate first to a newer version that still support your old "
 "version and then migrate to the next version. E.g., for migrating from "
@@ -563,6 +563,7 @@ msgstr ""
 
 #: ../../source/axonivy/migration/_tagLegend.rst:29
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:33
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:13
 msgid "|tag-project-changed|"
 msgstr ""
 
@@ -728,6 +729,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/axonivy/migration/_tagLegend.rst:13
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:26
 msgid "|tag-ops-deprecated|"
 msgstr ""
 
@@ -788,6 +790,64 @@ msgstr ""
 msgid ""
 "This migration will remove a behavior or feature of a project. If you are"
 " a project developer, check if this change affects you."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:4
+msgid "Migrating from 13.1 to 13.2"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:6
+msgid ""
+"Upgrade to 13.2 is only supported from an Axon Ivy Engine 10.0 and "
+"higher. If you have an Axon Ivy Engine older than version 10.0 you need "
+"to first migrate to a version between 10.0 and 12.0."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:11
+msgid "Persistence API (Hibernate)"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:15
+msgid ""
+"We migrated the Persistence API from Java Persistence API (JPA) version "
+"2.2 to `Jakarta Persistence API "
+"<https://jakarta.ee/specifications/persistence/3.2/>`_ version 3.2. The "
+"implementation of the API was migrated from `Hibernate "
+"<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to 7.0."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:19
+msgid ""
+"The package of the new version has changed from :code:`javax.persistence`"
+" to :code:`jakarta.persistence`. The code of Ivy projects needs to adapt "
+"to this change. Use :guilabel:`find and replace in files` in the Designer"
+" to migrate your project."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:24
+msgid "HttpHeaderSecurityFilter and RemoteIpFilter in web.xml"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:28
+msgid ""
+"We now allow to define the :ref:`reverse-proxy` HTTP Headers and security"
+" response :ref:`security-http-headers` via the :ref:`ivy-yaml`. Even if "
+"it is still possible to define this things via the :ref:`web-xml` you "
+"should no longer do that, otherwise the header maybe appear twice. So you"
+" should remove the following configurations and make the adjustments in "
+"the :ref:`ivy-yaml`:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:34
+msgid ""
+":code:`org.apache.catalina.filters.HttpHeaderSecurityFilter` → "
+":code:`WebServer.HttpHeaders`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:35
+msgid ""
+":code:`org.apache.catalina.filters.RemoteIpFilter` → "
+":code:`ReverseProxy.HttpHeaders`"
 msgstr ""
 
 #: ../../source/axonivy/migration/migration-tools.rst:4
@@ -1623,7 +1683,7 @@ msgstr ""
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:167
 #: ../../source/designer-guide/data-modeling/persistence/new-entity-class-wizard.rst:14
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:499
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:508
 #: ../../source/designer-guide/data-modeling/persistence/persistence-configuration-editor.rst:59
 #: ../../source/designer-guide/how-to/overrides.rst:167
 #: ../../source/designer-guide/how-to/overrides.rst:252
@@ -1675,7 +1735,7 @@ msgstr ""
 #: ../../source/designer-guide/process-modeling/process-elements/error-start.rst:44
 #: ../../source/designer-guide/process-modeling/process-elements/join.rst:38
 #: ../../source/designer-guide/process-modeling/process-elements/note.rst:18
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:39
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:40
 #: ../../source/designer-guide/process-modeling/process-elements/process-end.rst:19
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:320
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:37
@@ -2257,7 +2317,7 @@ msgstr ""
 #: ../../source/concepts/error-handling.rst:73
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:12
 #: ../../source/designer-guide/how-to/workflow/states.rst:19
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:36
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:37
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:59
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:26
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:201
@@ -2270,7 +2330,7 @@ msgstr ""
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:104
 #: ../../source/designer-guide/how-to/workflow/states.rst:194
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:59
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:40
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:41
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:321
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:38
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:241
@@ -4306,6 +4366,7 @@ msgstr ""
 
 #: ../../source/concepts/testing/process-testing.rst:267
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:159
+#: ../../source/engine-guide/integration/cluster/data/index.rst:4
 msgid "Data"
 msgstr ""
 
@@ -5832,7 +5893,7 @@ msgstr ""
 #: ../../source/designer-guide/how-to/overrides.rst:102
 #: ../../source/designer-guide/user-interface/branding/branding-engine.rst:21
 #: ../../source/engine-guide/configuration/index.rst:4
-#: ../../source/engine-guide/integration/cluster/configuration.rst:4
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:2
 msgid "Configuration"
 msgstr ""
@@ -7547,7 +7608,7 @@ msgstr ""
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:92
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:119
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:17
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:26
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:30
 #: ../../source/designer-guide/process-modeling/casemap.rst:41
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:169
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:97
@@ -7567,8 +7628,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:97
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:378
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:435
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:387
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:444
 #: ../../source/designer-guide/data-modeling/persistence/persistence-configuration-editor.rst:76
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:33
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:100
@@ -7624,7 +7685,7 @@ msgid ":ref:`Entity <persistence-entity-classes>`"
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:113
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:23
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:27
 msgid "Attributes"
 msgstr ""
 
@@ -7668,7 +7729,7 @@ msgid "Use this field to document your attribute."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:135
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:41
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:45
 #: ../../source/designer-guide/data-modeling/persistence/persistence-configuration-editor.rst:86
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-call-activity.rst:36
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:190
@@ -7794,6 +7855,68 @@ msgstr ""
 msgid "Data Modeling"
 msgstr ""
 
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:4
+msgid "Data Repository API"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:6
+msgid ""
+"The Axon Ivy Data Repository API is used to create, read, update, and "
+"delete entity objects directly from the database. When an Entity Class is"
+" configured in the :ref:`persistence-entity-class-editor` to generate a "
+"data repository, a data repository interface and an accessor method "
+"called ``repository`` are automatically created for it."
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:11
+msgid ""
+"The API can be accessed using IvyScript anywhere scripting is supported, "
+"or in Java."
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:14
+#: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:32
+msgid "Examples"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:16
+msgid "Create a ``Person`` entity and store it in the database:"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:25
+msgid "Read all ``Person`` entities from the database:"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:31
+msgid "Update a ``Person`` entity in the database:"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:39
+msgid "Delete a ``Person`` entity from the database:"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:47
+msgid "Enhance the Data Repository"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:49
+msgid ""
+"A data repository provides the standard CRUD operations by default. To "
+"enhance the data repository with your own custom find methods copy the "
+"generated data repository interface located in the ``src_generated`` "
+"folder and move it into the ``src`` folder of your project. You can then "
+"add more methods to the interface as shown below:"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:63
+msgid ""
+"The implementation of the interface will automatically be created by Axon"
+" Ivy. To learn more about how to write your own repository methods visit "
+"`Jakarta Data: Repository Interfaces "
+"<https://jakarta.ee/specifications/data/1.0/jakarta-"
+"data-1.0#_repository_interfaces>`__."
+msgstr ""
+
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:4
 msgid "Entity Class Editor"
 msgstr ""
@@ -7822,11 +7945,23 @@ msgid ""
 "database table of your Entity Class gets generated."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:25
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:22
+msgid "Data Repository"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:23
+msgid "Generate"
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:24
+msgid "Select to create :ref:`data-repository-api` for the Entity Class."
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:29
 msgid "Database Field"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:27
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:31
 msgid ""
 "The name of the database table column of this Attribute. This value is "
 "used when the database table of your Entity Class gets generated. Allowed"
@@ -7834,124 +7969,124 @@ msgid ""
 "``_``."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:31
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:35
 msgid "Length"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:32
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:36
 msgid ""
 "The length of the field in the database table. The following Attribute "
 "types can have their length defined and have the specified default "
 "values:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:35
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:39
 msgid "``String`` : 255"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:36
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:40
 msgid "``BigDecimal`` : 19,2"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:37
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:41
 msgid "``BigInteger`` : 19,2"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:39
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:43
 msgid ""
 "Changing the length has only an effect if the database schema is "
 "recreated."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:42
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:46
 msgid ""
 "**ID**: Defines the primary key field of an entity. Every Entity Class "
 "must have exactly one primary key."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:44
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:48
 msgid ""
 "**Generated**: Defines if the primary key should be generated "
 "automatically."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:46
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:50
 msgid ""
 "**Not nullable**: Defines whether the field value can be ``NULL`` in the "
 "database."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:48
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:52
 msgid ""
 "**Unique**: Defines whether the field value must be unique across the "
 "database table column."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:50
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:54
 msgid ""
 "**Not updateable**: Defines whether the column is omitted in ``SQL "
 "UPDATE`` statements generated by the persistence provider."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:52
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:56
 msgid ""
 "**Not insertable**: Defines whether the column is omitted in ``SQL "
 "INSERT`` statements generated by the persistence provider."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:54
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:58
 msgid ""
 "**Version**: Defines the version field of an entity. This is used as the "
 "optimistic lock value and ensures integrity when performing the merge "
 "operation. The following Attribute types can be used as version:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:58
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:62
 msgid "``Short``"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:59
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:63
 msgid "``Integer``"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:60
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:64
 msgid "``Long``"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:61
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:65
 msgid "``java.sql.Timestamp``"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:63
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:67
 msgid "Association"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:64
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:68
 msgid ""
 "Defines the association to another Entity Class. For a bidirectional "
 "relationship, an inverse association with a mapped-by specification must "
 "be configured on the referenced Entity Class."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:68
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:72
 msgid "Cardinality"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:69
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:73
 msgid ""
 "**One-to-One**: Defines a One-to-One (1:1) association to another Entity "
 "Class. Only allowed if the Attribute type is an Entity Class. The inverse"
 " association is another One-to-One association."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:73
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:77
 msgid ""
 "**Many-to-One**: Defines a Many-to-One (n:1) association to another "
 "Entity Class. Only allowed if the Attribute type is an Entity Class. The "
 "inverse association is a One-to-Many association."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:77
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:81
 msgid ""
 "**One-to-Many**: Defines a One-to-Many (1:n) association to another "
 "Entity Class. Only allowed if the Attribute type is a ``List`` or ``Set``"
@@ -7959,59 +8094,59 @@ msgid ""
 "specification since it is the inverse of a Many-to-One association."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:83
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:87
 msgid ""
 "A One-to-Many association comes with a significant performance impact. "
 "Only use it if it is absolutely necessary."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:86
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:90
 msgid "Cascade"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:87
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:91
 msgid ""
 "Defines the cascadable operations that are propagated to the associated "
 "Entity. If checked, operations performed on this Entity will be applied "
 "automatically to the associated Entity."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:91
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:95
 msgid ""
 "**Persist**: See :ref:`Persist an Entity Object <persistence-api-"
 "persist>`."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:94
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:98
 msgid "**Merge**: See :ref:`Merge an Entity Object <persistence-api-merge>`."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:96
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:100
 msgid "**Remove**: See :ref:`Remove an Entity Object <persistence-api-remove>`."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:98
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:102
 msgid ""
 "**Refresh**: See :ref:`Refresh an Entity Object <persistence-api-"
 "refresh>`."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:101
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:105
 msgid "Mapped by"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:102
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:106
 msgid ""
 "Defines the Attribute that owns the relationship in the associated "
 "Entity. This value must be defined on the inverse (non-owning) side of "
 "the association."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:106
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:110
 msgid "Remove orphans"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:107
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:111
 msgid ""
 "If enabled and an Entity that is the target of a relationship is removed "
 "from the relationship (either by removal from the collection or by "
@@ -8020,47 +8155,48 @@ msgid ""
 "semantics do not apply."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:113
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:117
 msgid ""
 "If enabled and the remove operation is applied to the source Entity, the "
 "remove operation will be propagated as defined in the cascade section."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:116
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:120
 msgid ""
 "The remove operation is applied at the time of the flush operation. The "
 "orphans removal functionality is intended for Entities that are privately"
 " \"owned\" by their parent Entity."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:120
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:124
 msgid "**Example**:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:122
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:126
 msgid ""
 "A 'Basket' Entity holds a list of 'Product' Entities. What happens if "
 "``basket.getProducts().remove(..)`` is called?"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:125
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:129
 msgid ""
 "Remove orphans is enabled: The product is removed from the list of "
 "referenced products even if the Entity is reloaded or refreshed."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:128
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:132
 msgid ""
 "Remove orphans is disabled: The product stays in the list of referenced "
 "products if the Entity is reloaded or refreshed."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:132
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:136
 msgid ""
-"Internally, the Java Persistence API is used to implement Entity Classes "
-"and their relations. For further details, please refer to the official "
-"`Java Persistence API documentation "
-"<https://www.oracle.com/java/technologies/persistence-jsp.html>`_."
+"Internally, the Jakarta Persistence API is used to implement Entity "
+"Classes and their relations. For further details, please refer to the "
+"official `Jakarta Persistence API documentation "
+"<https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist"
+"/persistence-intro/persistence-intro.html>`_."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-classes.rst:6
@@ -8071,11 +8207,13 @@ msgid ""
 "to a database table and the attributes of an Entity Class are mapped "
 "directly to the fields of a database table. Therefore the :ref:`database "
 "schema can be generated <persistence-generate-database-schema>` directly "
-"out of an Entity Class. It is possible to load, save, and update entity "
-"objects with the :ref:`persistence-api`."
+"out of an Entity Class. It is possible to the create, read, update, and "
+"delete (CRUD) entity objects directly from/to the database using either "
+"the :ref:`persistence-api` or more conveniently with the entity's :ref"
+":`data-repository-api`."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/entity-classes.rst:15
+#: ../../source/designer-guide/data-modeling/persistence/entity-classes.rst:16
 msgid ""
 "Entity Classes are created with the :ref:`persistence-entity-class-new-"
 "wizard` and can be edited afterward in the :ref:`persistence-entity-"
@@ -8165,25 +8303,26 @@ msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/generate-database-schema.rst:58
 msgid ""
-"Hibernate works by default with sequences for primary key columns. This "
-"means it will create a table called :code:`hibernate_sequence` which is "
-"used to generate the primary keys. If you want to use the auto increment "
-"approach of your database management system you can set the property "
-":code:`hibernate.id.new_generator_mappings` to :code:`false` in your "
-"persistence unit."
+"Hibernate, the Jakarta Persistence API implementation library works by "
+"default with sequences for primary key columns. This means it will create"
+" for each table a sequence called :code:`<table-name>_SEQ` which is used "
+"to generate the primary keys. If you want to use the auto increment "
+"approach of your database management system you can use the "
+":code:`org.hibernate.annotations.NativeGenerator` annotation."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:6
 msgid ""
 "This chapter introduces the :ref:`persistence-configuration-editor` and "
 "the :ref:`persistence-api` of Axon Ivy. The persistence framework is "
-"based on the `Java Persistence API "
-"<http://en.wikipedia.org/wiki/Java_Persistence_API>`__, a.k.a. JPA) and "
-"provides support for storing and loading business objects from and to a "
-"database."
+"based on the `Jakarta Persistence API "
+"<https://jakarta.ee/specifications/persistence>`__ (also known as the "
+"Java Persistence API or JPA) and the `Jakarta Data API "
+"<https://jakarta.ee/specifications/data/>`__. It offers support for "
+"storing and retrieving business objects to and from a database."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/index.rst:12
+#: ../../source/designer-guide/data-modeling/persistence/index.rst:13
 msgid ""
 "To use automated persistence in your business or User Dialog processes, "
 "you need to define :ref:`persistence-entity-classes` first. An entity "
@@ -8192,15 +8331,19 @@ msgid ""
 "and its attributes to database table columns."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/index.rst:18
+#: ../../source/designer-guide/data-modeling/persistence/index.rst:19
 msgid ""
 "You need to define at least one persistence unit configuration. A "
-"persistence unit manages all or a subset of your entity classes and "
-"defines the database where those entities are stored. Once you have "
-"configured one or more persistence units, you can use them in your "
-"process steps with the :ref:`persistence-api` to load/update entity "
-"objects directly from the database or save and update them in the "
-"database."
+"persistence unit manages some or all of your entity classes and specifies"
+" the database where those entities are stored. Once you have configured "
+"one or more persistence units, you can use them in your process steps "
+"either with the convenient :ref:`data-repository-api` or, for complex use"
+" cases, with the :ref:`persistence-api`. These APIs allow you to perform "
+"create, read, update, and delete (CRUD) operations on entity objects "
+"directly in the database. The :ref:`data-repository-api` provides a "
+"straightforward and efficient way to manage your data for most scenarios,"
+" while the :ref:`persistence-api` offers greater flexibility and control "
+"for handling more intricate and specialized data manipulation tasks."
 msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/new-entity-class-wizard.rst:4
@@ -8254,7 +8397,17 @@ msgstr ""
 msgid "Persistence API"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:6
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:8
+msgid ""
+"The :ref:`persistence-api` is recommended for more complex use cases that"
+" cannot be adequately addressed by the :ref:`data-repository-api`. The "
+":ref:`data-repository-api` is designed to be user-friendly and "
+"convenient, handling a wide range of common scenarios. However, when your"
+" requirements exceed its capabilities, the :ref:`persistence-api` offers "
+"the additional flexibility and control you might need."
+msgstr ""
+
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:15
 msgid ""
 "The Axon Ivy Persistence API is used to load entity objects directly from"
 " the database or save/update them on the database. The Persistence API "
@@ -8268,101 +8421,101 @@ msgid ""
 "configured with the :ref:`persistence-configuration-editor`."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:21
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:30
 msgid "Persist an Entity Object"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:23
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:32
 msgid ""
 "To persist (save/create object on the database) you can use the "
 "``persist()`` method of the Persistence API."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:28
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:37
 msgid ""
 "This method only works properly if the entity object and all the "
 "associated objects are not jet persistent. Otherwise you have to use the "
 "merge method."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:32
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:52
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:107
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:123
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:163
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:187
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:267
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:41
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:61
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:116
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:132
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:172
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:196
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:276
 msgid "Example (Product is an Entity Class):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:47
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:56
 msgid "Find an Entity Object by ID"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:49
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:58
 msgid ""
 "To find an entity object by id (select object on the database) you can "
 "use the ``find()`` method of the Persistence API."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:64
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:73
 msgid "Merge an Entity Object"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:66
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:75
 msgid ""
 "To merge (update or save/create object on the database) you can use the "
 "``merge()`` method of the Persistence API."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:75
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:220
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:84
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:229
 msgid "Example update (Product is an Entity Class):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:85
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:94
 msgid "Example save/create (Product is an Entity Class):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:102
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:111
 msgid "Remove an Entity Object"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:104
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:113
 msgid ""
 "To remove (delete object on the database) you can use the ``remove()`` "
 "method of the Persistence API."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:118
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:127
 msgid "Refresh an Entity Object"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:120
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:129
 msgid ""
 "To refresh (reload object from the database) you can use the "
 "``refresh()`` method of the Persistence API."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:135
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:144
 msgid "Persistence Queries (JPA QL)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:137
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:146
 msgid ""
-"With the Persistence API it is possible to execute Java Persistence API "
-"Query Language (JPA QL) statements. See ``IIvyQuery`` for more "
+"With the Persistence API it is possible to execute Jakarta Persistence "
+"API Query Language (JPA QL) statements. See ``IIvyQuery`` for more "
 "information about the Query API. The query language based around the "
 "objects that are persisted but with syntax very similar to SQL. You "
 "always have to use the names of the Entity Class and the attributes and "
 "not the names from the database."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:146
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:155
 msgid "Case Sensitivity"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:148
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:157
 msgid ""
 "Queries are case-insensitive, except for names of Java classes and "
 "properties. So ``SeLeCT`` is the same as ``sELEct`` is the same as "
@@ -8370,11 +8523,11 @@ msgid ""
 "``foo.BARSET``. This manual uses lowercase JPA QL keywords."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:155
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:164
 msgid "Single Result"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:157
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:166
 msgid ""
 "To execute a JPA query where you are expecting a single value to be "
 "returned you would call ``getSingleResult()``. This will return the "
@@ -8383,7 +8536,7 @@ msgid ""
 "queries."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:174
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:183
 msgid ""
 "Calling this method in automatic transaction mode (by default) will close"
 " the recordset automatically. Consequently you cannot invoke this method "
@@ -8391,18 +8544,18 @@ msgid ""
 "query."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:181
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:190
 msgid "Result List"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:183
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:192
 msgid ""
 "To execute a JPA query you would typically call ``getResultList()``. This"
 " will return a list of results. This should not be called with "
 "\"UPDATE\"/\"DELETE\" queries."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:198
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:207
 msgid ""
 "Calling this method in automatic transaction mode (by default) will close"
 " the recordset automatically. Consequently you can not invoke this method"
@@ -8410,124 +8563,124 @@ msgid ""
 "query."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:205
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:214
 msgid "Execute Update"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:207
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:216
 msgid ""
 "To execute a JPA UPDATE/DELETE query you would call ``executeUpdate()``. "
 "This will return the number of objects changed by the call. This should "
 "not be called with \"select\" queries."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:211
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:220
 msgid "Example delete (Product is an Entity Class):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:233
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:242
 msgid "Parameter Binding"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:235
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:244
 msgid ""
 "The JPA Queries supports named and numbered parameters and provides "
 "methods for setting the value of a particular parameter."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:240
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:249
 msgid ""
 "You should always use parameter binding and do not build the query with "
 "string concatenation, because of performance reasons."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:243
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:252
 msgid "Example with named parameter:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:251
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:260
 msgid "Example with positional parameter:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:261
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:270
 msgid "Paging the Result"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:263
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:272
 msgid ""
 "To specify the range of a query you have the two methods "
 "``setFirstResult()`` and ``setMaxResults()`` available. The start "
 "position of the first result, numbered from 0."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:277
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:286
 msgid ""
 "The call to ``setFirstResult(40)`` means starting from the fortieth "
 "object. The call to ``setMaxResults(20)`` limits the query result set to "
 "20 objects (rows) returned by the database."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:283
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:292
 msgid "Ordering"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:285
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:294
 msgid ""
 "JPA QL provide an ORDER BY clause for ordering query results, similar to "
 "SQL."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:288
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:297
 msgid "Returns all Products ordered by name:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:294
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:303
 msgid "You specify ascending and descending order using asc or desc:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:300
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:309
 msgid "You may order by multiple properties:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:308
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:317
 msgid "Distinct Results"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:310
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:319
 msgid ""
 "When you use a select clause, the elements of the result are no longer "
 "guaranteed to be unique."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:313
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:322
 msgid ""
 "DISTINCT eliminates duplicates from the returned list of product "
 "descriptions."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:322
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:331
 msgid "Comparison Expressions"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:324
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:333
 msgid ""
 "JPA QL support the same basic comparison operators as SQL. Here are a few"
 " examples that should look familiar if you know SQL:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:327
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:336
 msgid "Binary comparison (=, <>, <, >, >=, <=, [NOT] BETWEEN, [NOT] IN):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:338
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:347
 msgid "Null check (IS [NOT] NULL):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:345
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:354
 msgid "Arithmetic expressions (+, -, \\*, /):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:351
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:360
 msgid ""
 "The LIKE operator accepts a string value as input parameter in which an "
 "underscore (_) stands for any single character, a percent (%) character "
@@ -8535,222 +8688,222 @@ msgid ""
 " all other characters stand for themselves:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:361
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:370
 msgid "Logical operators (NOT, AND, OR):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:368
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:377
 msgid "Expressions with collections (IS [NOT] EMPTY, [NOT] MEMBER [OF]):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:375
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:384
 msgid "JPA QL operator precedence"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:378
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:387
 #: ../../source/designer-guide/ivyscript/reference.rst:6
 msgid "Operators"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:380
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:389
 #: ../../source/designer-guide/ivyscript/reference.rst:14
 msgid "."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:380
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:389
 msgid "Navigation path expression operator"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:383
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:390
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:392
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:399
 msgid "+, -"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:383
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:392
 msgid ""
 "Unary positive or negative signing (all unsigned numeric values are "
 "considered positive)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:387
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:396
 msgid "\\*, /"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:387
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:396
 msgid "Regular multiplication and division of numeric values"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:390
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:399
 msgid "Regular addition and subtraction of numeric values"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:393
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:402
 msgid "=, <>, <, >, >=, <=, [NOT] BETWEEN, [NOT] IN, IS [NOT] NULL, [NOT] LIKE"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:393
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:402
 msgid "Binary comparison operators with SQL semantics"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:397
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:406
 msgid "IS [NOT] EMPTY, [NOT] MEMBER [OF]"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:397
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:406
 msgid "Binary operators for collections in JPA QL"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:400
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:409
 msgid "NOT, AND, OR"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:400
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:409
 msgid "Logical operators for ordering of expression evaluation"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:406
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:415
 msgid "Calling Functions"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:408
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:417
 msgid ""
 "An extremely powerful feature of JPA QL is the ability to call SQL "
 "functions in the where and HAVING clauses of a query."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:411
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:420
 msgid "Lower cases or upper cases a string (LOWER(string), UPPER(string)):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:418
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:427
 msgid ""
 "Another common expression is concatenation, although SQL dialects are "
 "different here, JPA QL support a portable concat(string1, string2) "
 "function:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:426
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:435
 msgid "Size of a collection (SIZE(collection)):"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:432
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:441
 msgid "JPA QL functions"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:435
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:444
 msgid "Function"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:435
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:444
 msgid "Return"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:437
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:446
 msgid "UPPER(string), LOWER(string)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:437
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:441
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:444
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:448
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:446
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:450
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:453
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:457
 msgid "string"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:437
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:446
 msgid "Lower cases or upper cases a *string* value"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:441
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:450
 msgid "CONCAT(string1, string2)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:441
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:450
 msgid "Concatenates *string* values to one string"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:444
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:453
 msgid "SUBSTRING(string, offset, length)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:444
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:453
 msgid "Substring string values (*offset* starts at 1)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:448
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:457
 msgid "TRIM( [[BOTH|LEADING|TRAILI NG] char [from]] string)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:448
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:457
 msgid ""
 "Trims spaces on BOTH sides of *string* if no *char* or other "
 "specification is given"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:454
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:463
 msgid "LENGTH(string)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:454
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:457
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:462
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:463
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:466
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:471
 msgid "number"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:454
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:463
 msgid "Gets the length of a *string* value"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:457
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:466
 msgid "LOCATE(search, string, offset)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:457
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:466
 msgid "Searches for position of *search* in *string* starting at *offset*"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:462
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:471
 msgid "ABS(number), SQRT(number), MOD(dividend, divisor)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:462
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:471
 msgid ""
 "Returns an absolute of same type as input, square root as double, and the"
 " remainder of a division as an integer"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:470
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:479
 msgid "SIZE(collection)"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:470
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:479
 msgid "integer"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:470
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:479
 msgid "Size of a *collection*; returns an integer, or 0 if empty"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:478
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:487
 msgid "Aggregate functions"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:480
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:489
 msgid ""
 "The aggregate functions that are recognized in JPA QL are ``count()``, "
 "``min()``, ``max()``, ``sum()`` and ``avg()``."
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:483
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:492
 msgid "This query counts all the Products:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:490
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:499
 msgid ""
 "This query calculates the average the sum, the maximum and the minimum "
 "from the amount of all products:"
 msgstr ""
 
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:501
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:510
 msgid ""
 "You can use the Persistence API everywhere you have the Axon Ivy variable"
 " in the IvyScript. Use ``ivy.persistence.``\\ *<persistence unit>*. Here "
@@ -9133,15 +9286,15 @@ msgid ""
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:42
-msgid "Persistency (Java Persistence API)"
+msgid "Persistency (Jakarta Persistence API)"
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:44
 msgid ""
 "Stores and access data in a database systems. An own database server is "
-"necessary. The database schema can be generated. JPA is a Java standard "
-"that is well documented and widely used. More information can be found in"
-" the chapter :ref:`persistence`."
+"necessary. The database schema can be generated. JPA is a Jakarta EE "
+"standard that is well documented and widely used. More information can be"
+" found in the chapter :ref:`persistence`."
 msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:50
@@ -15673,9 +15826,9 @@ msgid ""
 " variable then a so called SQL injection takes place, which can result in"
 " a complete data breach on the configured database. Process designers are"
 " responsible to only pass sanitized data into an SQL query. In some cases"
-" it might be better to access the Database with JPA/Hibernate or prepared"
-" statements using JDBC. For more information see: `SQL Injection "
-"Prevention Cheat Sheet "
+" it might be better to access the Database with the :ref:`Persistence API"
+" <persistence>` or prepared statements using JDBC. For more information "
+"see: `SQL Injection Prevention Cheat Sheet "
 "<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
 msgstr ""
 
@@ -16319,15 +16472,18 @@ msgstr ""
 msgid ""
 "Pages can be referenced from the content management system or the web "
 "content directory. The wizard allows you to create, select or edit pages."
+" All files can be referenced from the webcontent. There is a special "
+"behavior with xhtml files, these files need to be in the webcontent/view "
+"directory."
 msgstr ""
 
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:30
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:31
 msgid ""
 "Please refer to :ref:`user-interface-web-page-creating` for a more "
 "thorough explanation of this tab section."
 msgstr ""
 
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:33
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:34
 msgid ""
 "If you choose to use a JSF page as end page please have a look at the "
 ":ref:`static-jsf-pages` documentation."
@@ -23424,6 +23580,7 @@ msgid "See :ref:`ivyscript`."
 msgstr ""
 
 #: ../../source/designer-guide/troubleshooting/index.rst:2
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:51
 #: ../../source/engine-guide/troubleshooting/index.rst:2
 msgid "Troubleshooting"
 msgstr ""
@@ -23569,7 +23726,7 @@ msgstr ""
 
 #: ../../source/designer-guide/user-interface/branding/branding-engine.rst:42
 #: ../../source/engine-guide/deployment/index.rst:4
-#: ../../source/engine-guide/integration/cluster/deployment.rst:4
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:4
 msgid "Deployment"
 msgstr ""
 
@@ -27532,7 +27689,7 @@ msgstr ""
 
 #: ../../source/engine-guide/deployment/deploy/engine-cockpit/index.rst:4
 #: ../../source/engine-guide/monitoring/engine-cockpit.rst:2
-#: ../../source/engine-guide/monitoring/health.rst:15
+#: ../../source/engine-guide/monitoring/health.rst:24
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:12
 #: ../../source/engine-guide/monitoring/tracing.rst:10
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:4
@@ -28845,215 +29002,163 @@ msgid ""
 ":ref:`getting-started`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:6
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:4
+msgid "Communication"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:6
 msgid ""
-"An Axon Ivy Engine Cluster node is set up almost the same way as a stand-"
-"alone Axon Ivy Engine. Note: All nodes in a cluster setup have to run "
-"within the same network (the same broadcast domain)."
+"Cluster nodes need to communicate with each other primarily to send cache"
+" invalidation messages. Without this communication, the Axon Ivy Cluster "
+"cannot function properly. To facilitate this, the Axon Ivy Engine uses "
+"the reliable `JGroups library <http://jgroups.org/manual5>`_. You can "
+"fully customize the communication settings by providing your own "
+":file:`[ivyEngine]/configuration/jgroups.xml` file."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:11
-msgid "Files"
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:14
+msgid "Discovery"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:13
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:16
 msgid ""
-"We recommend to configure :ref:`documents-s3` as distributed blob storage"
-" so that every cluster node can access all the files."
+"First, a discovery mechanism is used to locate other nodes within the "
+"cluster. By default, the Axon Ivy Engine uses UDP multicast over port "
+":code:`45588` to discover other nodes. The `discovery protocol "
+"<http://jgroups.org/manual5/index.html#Discovery>`_ can be changed if UDP"
+" multicast is not suitable for your environment. For example:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:16
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:22
 msgid ""
-"Otherwise you need to share the data directory for all cluster nodes "
-"(``Data.Directory`` from :ref:`ivy.yaml <ivy-yaml>`). Use a Docker volume"
-" that stores all the files. Mount it on all cluster nodes."
+"`TCP/IP <http://jgroups.org/manual5/#TCPPING_Prot>`_-based discovery with"
+" TCPPING"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:20
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:24
 msgid ""
-"Create a Docker volume called ``ivy-data`` and mount it at ``/ivy/data`` "
-"in your Axon Ivy Engine Cluster node containers."
+"`DNS <http://jgroups.org/manual5/#_dns_ping>`_-based discovery, which is "
+"often suitable for cloud environments (DNS_PING)"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:28
-msgid "Ensure that you backup this Docker volume periodically."
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:28
+msgid "Messaging"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:31
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:30
 msgid ""
-"In previous version of the Axon Ivy Engine Cluster, the applications "
-"directory (``Data.AppDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`) had "
-"to be shared between the cluster nodes, too. This is no longer required "
-"and should be avoided."
+"After discovery, cluster nodes communicate with each other by sending "
+"messages—by default using UDP multicast on port :code:`45588`. This is "
+"typically the most efficient way to send messages in a local network. "
+"However, if your environment does not support UDP multicast, you can "
+"change the `protocol "
+"<http://jgroups.org/manual5/#_transport_protocols>`_."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:36
-msgid "Cluster Name"
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:37
+msgid "TCP/IP"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:38
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:39
 msgid ""
-"If you want to run multiple clusters within the same network (same "
-"broadcast domain), you need to name each cluster with a unique name. This"
-" prevents clusters from interfering with each other."
+"If UDP multicast is not suitable for your environment, you can switch to "
+"TCP/IP. This is often necessary in cloud environments where multicast is "
+"not supported. To configure TCP/IP, you can modify the "
+":file:`jgroups.xml` file to use the `TCP transport "
+"<http://jgroups.org/manual5/#TCP>`_ instead of multicast. Here is an "
+"example configuration using DNS-based discovery with TCP/IP as protocol:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:42
-msgid "You define the cluster name in the :ref:`ivy.yaml <ivy-yaml>` file."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/configuration.rst:45
-msgid "Node Name"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/configuration.rst:47
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:45
 msgid ""
-"The :ref:`Engine Cockpit <engine-cockpit-cluster>` has a view that "
-"displays all running nodes of the cluster. The node names are auto-"
-"generated by default but you can configure them in :ref:`ivy.yaml <ivy-"
-"yaml>`."
+"jgroups.xml example of a TCP/IP based communication and DNS-based "
+"discovery mechanism"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:54
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:53
+msgid ""
+"If cluster nodes cannot discover each other or you experience messaging "
+"issues, you can enable specific :ref:`Loggers <logging>` to gain more "
+"insight into what is happening."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:57
+msgid "log4j2.xml configuration for troubleshooting cluster communication"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:6
+msgid ""
+"The configuration of each individual cluster node is the same as for the "
+"Standard Axon Ivy Engine and largely depends on how you deploy the engine"
+" within your environment. Functional aspects—such as access to the system"
+" database—must be configured identically across all cluster nodes to "
+"ensure consistency. However, performance-related settings, like "
+"connection pools for REST clients, can be customized per node if some "
+"nodes have more CPU or memory resources available than others."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:17
 msgid "Changes"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:56
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:19
 msgid ""
-"Configuration changes are only applied to the local cluster node where "
-"the change is done. E.g., if an administrator is using the :ref:`Engine "
-"Cockpit <engine-cockpit>` to change a configuration setting, then the "
-"setting is only changed at the cluster node where the current session of "
-"the administrator is executed. On all other cluster nodes, the setting "
-"remains unchanged!"
+"If you make configuration changes on one cluster node—for example, using "
+"the :ref:`Engine Cockpit <engine-cockpit>` - the other nodes in the "
+"cluster will be notified and will attempt to reload the updated "
+"configuration. However, proper reloading on the other nodes only works if"
+" all nodes share the same configuration sources (e.g., configuration "
+"files)."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:62
-msgid ""
-"We recommend that you do not change the configuration at runtime. Instead"
-" use a :ref:`container image <cluster-container>` that contains the right"
-" configuration. If you have to change the configuration, create a new "
-"container image with the new configuration."
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:26
+msgid "Cluster Name"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/configuration.rst:67
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:28
 msgid ""
-"Another solution is to share the :ref:`configuration folder "
-"<configuration>` between all cluster nodes using a Docker volume."
+"To run multiple clusters within the same network, each cluster must be "
+"assigned a unique name. This prevents interference between clusters. You "
+"can set the cluster name in the :ref:`ivy.yaml <ivy-yaml>` configuration "
+"file."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/container.rst:4
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:34
+msgid "Node Name"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:36
+msgid ""
+"The :ref:`Engine Cockpit <engine-cockpit-cluster>` includes a view that "
+"displays all running nodes in the cluster. By default, node names are "
+"auto-generated, but you can customize them in the :ref:`ivy.yaml <ivy-"
+"yaml>` configuration file."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/container/index.rst:4
 msgid "Container Image"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/container.rst:6
+#: ../../source/engine-guide/integration/cluster/container/index.rst:6
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:6
+msgid "TBD"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/data/index.rst:6
 msgid ""
-"We strongly recommend operating an Axon Ivy Engine Cluster in a "
-"containerized environment like Docker or Kubernetes."
+"All cluster nodes must have access to a shared data directory. This "
+"directory contains data such as case attachments and application CMS "
+"content. You need to ensure that this directory is accessible to all "
+"nodes in the cluster. By default, the data directory is located at "
+":file:`[engineDir]/data`, but you can change its location using the "
+":code:`Data.Directory` setting in the :ref:`ivy.yaml <ivy-yaml>` file."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/container.rst:9
+#: ../../source/engine-guide/integration/cluster/data/index.rst:14
 msgid ""
-"We recommend that you build your own container image that contains the "
-"Axon Ivy Engine and includes your projects and configuration."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:12
-msgid "You can build the container image automatically by using a build server."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:16
-msgid "The build server:"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:18
-msgid "Checks out:"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:20
-msgid "all your projects"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:21
-msgid "your configurations"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:22
-msgid ""
-"a Dockerfile that specifies how to build your container image from a Git "
-"repository."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:24
-msgid "Builds all your projects and bundles them in an application zip file."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:25
-msgid ""
-"Builds your container image as defined by the Dockerfile. It pulls the "
-"base image ``axonivy/axonivy-engine`` image from Docker Hub."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:27
-msgid ""
-"It stores your new image (``your-company/your-project``) in a `Docker "
-"Registry <https://hub.docker.com/_/registry>`_."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:30
-msgid ""
-"Then, you can start your Axon Ivy Engine Cluster using your new container"
-" image (``your-company/your-project``)."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:33
-msgid ""
-"A simple Dockerfile that bundles the Axon Ivy Engine, your projects, and "
-"your configuration files in a container image looks as follows:"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:55
-#: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:32
-msgid "Examples"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:57
-msgid ""
-"Please refer to our :link-url:`project-build-examples <build-examples-"
-"docker>`. It shows you how to use Maven to build your container image "
-"including both your Axon Ivy Engine and your application zip file."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/container.rst:61
-msgid ""
-"Additionally, refer to our example configurations on GitHub for :link-"
-"url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-"
-"scaling-haproxy>` to learn how to set up an Axon Ivy Engine Cluster with "
-"docker-compose."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/deployment.rst:6
-msgid ""
-"Deployments during runtime are not supported by the Axon Ivy Engine "
-"Cluster and do not work. Use the :ref:`deployment directory <deployment-"
-"deploying>` instead to deploy your projects during Axon Ivy Engine "
-"Cluster node startup."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/deployment.rst:11
-msgid ""
-"Only during the startup of the master cluster node, information from Axon"
-" Ivy projects is deployed to the system database. On startup of slave "
-"cluster nodes, projects files are copied to the correct location "
-"**without** updating the system database. E.g., new roles that have been "
-"added to an Axon Ivy project are created in the system database only upon"
-" startup of the master cluster node."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/deployment.rst:18
-msgid ""
-"We recommend that you add your projects directly into the deployment "
-"directory ``deploy`` of a :ref:`container image <cluster-container>`."
+"For case documents, you can also configure an S3 bucket as described in "
+":ref:`documents-s3`. In this setup, all cluster nodes must have access to"
+" the same S3 instance."
 msgstr ""
 
 #: ../../source/engine-guide/integration/cluster/index.rst:4
@@ -29110,191 +29215,100 @@ msgstr ""
 #: ../../source/engine-guide/integration/cluster/index.rst:36
 msgid ""
 "We strongly recommend operating an Axon Ivy Engine Cluster in a "
-"containerized environment like Docker, Kubernetes, or OpenShift. Build "
-"and run your :ref:`container image <cluster-container>` containing all "
-"your projects and configurations."
+"containerized environment like Kubernetes or OpenShift."
 msgstr ""
 
 #: ../../source/engine-guide/integration/cluster/index.rst:41
-msgid ""
-"See our example configurations on GitHub for :link-url:`nginx <docker-"
-"scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>` on how "
-"to set up an Axon Ivy Engine Cluster with docker-compose."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:48
 msgid "**Restrictions**"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:50
+#: ../../source/engine-guide/integration/cluster/index.rst:43
 msgid ""
 "Please consider the following restrictions if you want to run an Axon Ivy"
 " Engine Cluster:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:52
-msgid "Each node needs access to all other nodes via UDP/Multicast."
+#: ../../source/engine-guide/integration/cluster/index.rst:46
+msgid "Each node has to be the exact same version of the Axon Ivy Engine."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:53
-msgid "Each node has to use the same system database."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:54
+#: ../../source/engine-guide/integration/cluster/index.rst:47
 msgid ""
-"Each node has to use the same external :ref:`OpenSearch <opensearch>` "
-"server (or cluster)."
+"Each node needs to have the same configuration, applications, data, "
+":ref:`system database <systemdb>`, and :ref:`OpenSearch <opensearch>`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:56
-msgid "Each node has to use the same service configurations."
+#: ../../source/engine-guide/integration/cluster/index.rst:49
+msgid "Nodes need to communicate with each other."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/index.rst:57
-msgid ""
-":ref:`Configuration changes <cluster-configuration-changes>` are only "
-"applied to the local cluster node where you made the change."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:59
-msgid ""
-":ref:`Deployment <cluster-deployment>` during runtime is not supported "
-"and does not work."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:61
-msgid ""
-"Some :ref:`operating systems <engine-system-requirements-os>` are not "
-"supported."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:63
-msgid ""
-"You can solve most of the restrictions by using a containerized "
-"environment with your own :ref:`container image <cluster-container>`."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/index.rst:66
-msgid ""
-"Usually, UDP/Multicast works in a single subnet only. Modern routers can "
-"overcome this restriction if you configure them accordingly. If your "
-"environment does not support this setup, you can change the cluster "
-"communication to TCP/IP. TCP/IP will induce significantly higher cluster "
-"communications overhead. Contact Axon Ivy for instructions regarding this"
-" setup."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/license.rst:4
+#: ../../source/engine-guide/integration/cluster/license/index.rst:4
 msgid "Enterprise License"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/license.rst:6
+#: ../../source/engine-guide/integration/cluster/license/index.rst:6
 msgid ""
-"You need an enterprise license to run Axon Ivy Engine as a Cluster (Axon "
-"Ivy Engine Enterprise Edition)."
+"To run the Axon Ivy Engine in a cluster (Enterprise Edition), an "
+"enterprise license is required. The information needed to request this "
+"license is the same as for licensing the Standard Edition :ref:`license`,"
+" except that you must also specify the number of cluster nodes."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/license.rst:9
-msgid ""
-"The information needed to request an enterprise license is the same as "
-"for a Standard Edition :ref:`license`, with the exception of the number "
-"of cluster nodes."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/license.rst:14
+#: ../../source/engine-guide/integration/cluster/license/index.rst:13
 msgid "Cluster Nodes"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/license.rst:16
+#: ../../source/engine-guide/integration/cluster/license/index.rst:15
 msgid ""
-"Each node that you add to an Axon Ivy Engine Cluster costs an additional "
-"license fee. Therefore, the number of nodes in your Cluster is limited by"
-" the license."
+"Each node added to an Axon Ivy Engine Cluster incurs an additional "
+"license fee. As a result, the number of nodes in your cluster is limited "
+"by the terms of your license."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/license.rst:20
+#: ../../source/engine-guide/integration/cluster/license/index.rst:20
 msgid ""
-"If you add more nodes to your Cluster than your license has been issued "
-"for, then the nodes that are not licensed correctly will respond with "
-"error code :code:`503 Service Unavailable`."
+"If you add more nodes to your cluster than your license allows, any "
+"unlicensed nodes will respond with the error code :code:`503 Service "
+"Unavailable`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:4
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:4
 msgid "Load Balancer"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:6
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:6
 msgid ""
-"Axon Ivy Engine Clusters work with **sticky sessions**. The load balancer"
-" has to forward all requests from a session to the same cluster node. Of "
-"course, if a cluster node is no longer available then the request will be"
-" sent to another cluster node. This will cause the user to get a new "
-"session, therefore losing his work in the replaced session."
+"Axon Ivy Engine Clusters rely on **sticky sessions**, meaning the load "
+"balancer must route all requests from a given session to the same cluster"
+" node. If a cluster node becomes unavailable, requests will be redirected"
+" to another node. In this case, the user will receive a new session and "
+"may lose any unsaved work from the previous session. Sticky sessions can "
+"be configured as follows:"
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:12
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:12
 msgid ""
-"As described above, the load balancer has to ensure that all requests "
-"from the same user session are sent to the same cluster node. This can be"
-" done as follows:"
+"Configure your load balancer to manage sticky sessions using its own "
+"dedicated cookie."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:16
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:14
 msgid ""
-"configure the load balancer to always forward all requests sent from one "
-"client IP address to the same cluster node (IP based stickiness)."
+"Alternatively, set the load balancer to forward all requests from the "
+"same client IP address to the same cluster node (IP-based stickiness)."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:18
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:16
 msgid ""
-"use the Axon Ivy Session Id to provide session stickiness. The session id"
-" is provided by Axon Ivy Engine Enterprise Edition as an HTTP session "
-"cookie with the name :code:`JSESSIONID`."
+"Use the Axon Ivy Session ID for session stickiness. The Axon Ivy Engine "
+"Enterprise Edition provides this as an HTTP session cookie named "
+":code:`IVYSESSIONID`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:22
+#: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:20
 msgid ""
-"Often, :ref:`Reverse Proxies <reverse-proxy>` can be configured as load "
-"balancers."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:25
-msgid "HAProxy"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:27
-msgid ""
-"HAProxy is a free, fast, and reliable solution offering high "
-"availability, load balancing, and proxying for TCP and HTTP-based "
-"applications. It is simple to set up. It offers a Docker image that needs"
-" only minimal configuration."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:31
-msgid ""
-"We provide a :link-url:`sample on GitHub <docker-scaling-haproxy>` how to"
-" setup an Axon Ivy Engine Cluster using HAProxy as the load balancer "
-"within docker-compose."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:36
-#: ../../source/engine-guide/integration/reverse-proxy/nginx/index.rst:4
-msgid "NGINX"
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:38
-msgid ""
-"NGINX is a free, open-source HTTP web server that serves as a reverse "
-"proxy server, a mail proxy server, and a generic TCP/UDP proxy server and"
-" offers load balancing features. It also offers a Docker image with "
-"minimal configuration needs."
-msgstr ""
-
-#: ../../source/engine-guide/integration/cluster/load-balancer.rst:43
-msgid ""
-"We provide a :link-url:`sample on GitHub <docker-scaling-nginx>` on how "
-"to setup an Axon Ivy Engine Cluster using NGINX as the load balancer "
-"within docker-compose."
+"Often, :ref:`Reverse Proxies <reverse-proxy>` can be configured to act as"
+" load balancers."
 msgstr ""
 
 #: ../../source/engine-guide/integration/identity-provider/index.rst:4
@@ -29795,7 +29809,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/engine-guide/integration/reverse-proxy/index.rst:63
-#: ../../source/engine-guide/security/http-headers.rst:2
+#: ../../source/engine-guide/security/http-headers.rst:4
 msgid "HTTP Headers"
 msgstr ""
 
@@ -30029,6 +30043,10 @@ msgid ""
 "certificate you supplied earlier. We strongly recommend to remove the "
 ":code:`http` binding. This prevents your Axon Ivy Engine being accessible"
 " via HTTP through IIS."
+msgstr ""
+
+#: ../../source/engine-guide/integration/reverse-proxy/nginx/index.rst:4
+msgid "NGINX"
 msgstr ""
 
 #: ../../source/engine-guide/integration/reverse-proxy/nginx/index.rst:6
@@ -30391,19 +30409,31 @@ msgid ""
 "fix a configuration."
 msgstr ""
 
+#: ../../source/engine-guide/monitoring/health.rst:15
+msgid "Endpoint"
+msgstr ""
+
 #: ../../source/engine-guide/monitoring/health.rst:17
+msgid ""
+"The health endpoint is available at :code:`http://<engine-host>:<engine-"
+"port>/system/health`. It returns the HTTP status code :code:`200` if the "
+"Axon Ivy Engine is running, and :code:`503` otherwise. This endpoint can "
+"be used to monitor the availability of the Axon Ivy Engine."
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/health.rst:26
 msgid "Health messages are displayed in the :ref:`engine-cockpit` on:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:19
+#: ../../source/engine-guide/monitoring/health.rst:28
 msgid "The :guilabel:`Health` panel in the :ref:`engine-cockpit-dashboard`"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:20
+#: ../../source/engine-guide/monitoring/health.rst:29
 msgid "The :ref:`engine-cockpit-top-menu`"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/health.rst:21
+#: ../../source/engine-guide/monitoring/health.rst:30
 msgid "The :ref:`engine-cockpit-monitor-health` view"
 msgstr ""
 
@@ -30667,20 +30697,21 @@ msgid ""
 "The logging configuration can be fully customized to your needs. For "
 "example, you can change the log level of a logger so that the log events "
 "are logged in a log file. Therefore you need to know that Axon Ivy uses "
-"`Log4j 2 <https://logging.apache.org/log4j/2.x/>`_ for logging and comes "
+"`Log4j2 <https://logging.apache.org/log4j/2.x/>`_ for logging and comes "
 "with a built-in :ref:`default configuration <log4j2-xml>` which can be "
 "customized by providing a configuration in "
 ":file:`[engineDir]/configuration/log4j2.xml`. The custom configuration "
 "will be `merged "
 "<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_"
-" with the default configuration automatically on the fly."
+" with the default configuration automatically on the fly. Changing the "
+"log level of a specific logger can be done easily:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:40
+#: ../../source/engine-guide/monitoring/logging.rst:50
 msgid "Runtime Log"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:42
+#: ../../source/engine-guide/monitoring/logging.rst:52
 msgid ""
 "The Runtime Log is a well-known :ref:`designer feature <simulate-process-"
 "models-debugger-runtimelog-view>` and disabled by default in the Axon Ivy"
@@ -30690,22 +30721,22 @@ msgid ""
 "logs also on the Axon Ivy Engine."
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:47
+#: ../../source/engine-guide/monitoring/logging.rst:57
 msgid "The name of the runtime logger has a well defined format:"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:49
+#: ../../source/engine-guide/monitoring/logging.rst:59
 msgid ""
 "**runtimelog.[security context name].[category].[app name].[process model"
 " name]**"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:51
+#: ../../source/engine-guide/monitoring/logging.rst:61
 #: ../../source/engine-guide/monitoring/tracing.rst:31
 msgid "**Example:**"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:57
+#: ../../source/engine-guide/monitoring/logging.rst:67
 msgid ""
 "All available categories [category] are defined in the :public-"
 "api:`RuntimeLogCategory "
@@ -30714,16 +30745,28 @@ msgid ""
 "name=\"runtimelog.securitycontext.rest_client.myapp.hrm\">`."
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:63
+#: ../../source/engine-guide/monitoring/logging.rst:73
 msgid "Log format"
 msgstr ""
 
-#: ../../source/engine-guide/monitoring/logging.rst:65
+#: ../../source/engine-guide/monitoring/logging.rst:75
 #, python-brace-format
 msgid ""
 "A single event can be found as a log entry in the format "
 "**[datetime][level][logger name][thread name]{context infos}** followed "
 "by the message itself like:"
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/logging.rst:82
+msgid "JSON Log output"
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/logging.rst:84
+msgid ""
+"You can configure the Axon Ivy Engine to log in JSON format. This is "
+"useful for log analysis tools that can parse JSON logs. Read more about "
+"it here: `Log4j2 JSON Template Layout "
+"<https://logging.apache.org/log4j/2.x/manual/json-template-layout.html>`_"
 msgstr ""
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:4
@@ -34037,46 +34080,85 @@ msgid ""
 "fails."
 msgstr ""
 
-#: ../../source/engine-guide/security/http-headers.rst:4
-msgid "We recommend using the following additional security headers."
-msgstr ""
-
 #: ../../source/engine-guide/security/http-headers.rst:6
 msgid ""
-"**Strict-Transport-Security**: Set this header if the Engine is to be "
-"accessed via HTTPS only. For more information, see: `Strict-Transport-"
-"Security <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
-"/Strict-Transport-Security>`_. You can adjust this in the embedded Tomcat"
-" with the pre-configured `HTTP Header Security Filter "
-"<https://tomcat.apache.org/tomcat-9.0-doc/config/filter.html#HTTP_Header_Security_Filter>`_"
-" in the :ref:`web-xml`"
+"We recommend using the following additional security headers. Mostly it "
+"makes most sense to configure such headers in your :ref:`reverse-proxy`. "
+"However, we also give you the possibility to configure them inside of the"
+" embedded Web Server via the :code:`WebServer.HttpHeaders` key in the "
+":ref:`ivy-yaml`. You can also add more headers than the ones we list "
+"below."
 msgstr ""
 
 #: ../../source/engine-guide/security/http-headers.rst:12
 msgid ""
-"**Content-Security-Policy**: Set this header if you want to reduce the "
-"risk of having an exploitable Cross-site scripting (XSS) vulnerability. "
-"With a Content-Security-Policy, you can define from which locations "
-"external resources can be loaded and if scripts embedded in HTML can be "
-"executed. For more information, see: `Content Security Policy (CSP) "
-"<https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_."
+"**Strict-Transport-Security (HSTS)**: Set this header if the Engine is to"
+" be accessed via HTTPS only. For more information, see: `Strict-"
+"Transport-Security (MDN) <https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Headers/Strict-Transport-Security>`_."
 msgstr ""
 
-#: ../../source/engine-guide/security/http-headers.rst:18
+#: ../../source/engine-guide/security/http-headers.rst:17
 msgid ""
-"We recommend implementing these headers on a reverse proxy securing your "
-"Axon Ivy Engine. In case you have no reverse proxy, check `How do I "
-"integrate the Axon Ivy Workflow Frontend in my Web App? "
-"<https://community.axonivy.com/d/319-how-do-i-integrate-ivy-workflow-"
-"frontend-in-my-web-app>` for a CSP example using the embedded Tomcat."
+"**Content-Security-Policy (CSP)**: Set this header if you want to reduce "
+"the risk of having an exploitable Cross-site scripting (XSS) "
+"vulnerability. With a Content-Security-Policy, you can define from which "
+"locations external resources can be loaded and if scripts embedded in "
+"HTML can be executed. For more information, see: `Content Security Policy"
+" (MDN) <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_. If you "
+"use the :code:`WebServer.PrimeFaces.ContentSecurityPolicy` configuration "
+"in the :ref:`ivy-yaml`, we use the CSP functionality from `PrimeFaces "
+"<https://primefaces.github.io/primefaces/13_0_0/#/core/contentsecuritypolicy>`_."
 msgstr ""
 
-#: ../../source/engine-guide/security/http-headers.rst:23
+#: ../../source/engine-guide/security/http-headers.rst:27
 msgid ""
-"**Referrer-Policy**: Set this header if you want to control how or if the"
-" referrer is disclosed to other sites. For more information, see: "
-"`Referrer-Policy <https://developer.mozilla.org/en-"
-"US/docs/Web/HTTP/Headers/Referrer-Policy>`_"
+"**X-Frame-Options**: We set this header per default with "
+":code:`SAMEORIGIN` as we use iFrames. For more information, see: `X"
+"-Frame-Options (MDN) <https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Reference/Headers/X-Frame-Options>`_."
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:31
+msgid ""
+"**X-Content-Type-Options**: We set this header per default with "
+":code:`nosniff`. For more information, see: `X-Content-Type-Options (MDN)"
+" <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X"
+"-Content-Type-Options>`_."
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:35
+msgid ""
+"**Referrer-Policy**: We set this header per default with :code:`strict-"
+"origin-when-cross-origin`. For more information, see: `Referrer-Policy "
+"(MDN) <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+"/Referrer-Policy>`_"
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:40
+msgid ""
+"**Cross-Origin-Opener-Policy (COOP)**: Set this header to restrict the "
+"browser context. For more information, see: `Cross-Origin-Opener-Policy "
+"(MDN) <https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy>`_."
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:44
+msgid ""
+"**Cross-Origin-Embedder-Policy (COEP)**: Set this header to restrict the "
+"browser from loading and embedding cross-origin resources. For more "
+"information, see: `Cross-Origin-Embedder-Policy (MDN) "
+"<https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers"
+"/Cross-Origin-Embedder-Policy>`_."
+msgstr ""
+
+#: ../../source/engine-guide/security/http-headers.rst:49
+msgid ""
+"**Cross-Origin-Resource-Policy (CORP)**: Set this header to indicate that"
+" the browser should block cross-origin or cross-site requests to the "
+"given resource. For more information, see: `Cross-Origin-Resource-Policy "
+"(MDN) <https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Resource-Policy>`_."
 msgstr ""
 
 #: ../../source/engine-guide/security/index.rst:6
@@ -34485,5 +34567,607 @@ msgstr ""
 #~ "the Axon Ivy Engine. There will be"
 #~ " a new section for this deployed "
 #~ "app."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Internally, the Java Persistence API is"
+#~ " used to implement Entity Classes and"
+#~ " their relations. For further details, "
+#~ "please refer to the official `Java "
+#~ "Persistence API documentation "
+#~ "<https://www.oracle.com/java/technologies/persistence-"
+#~ "jsp.html>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Entity Classes are like global :ref"
+#~ ":`data-classes` but with additional "
+#~ "information about where and how to "
+#~ "store the data of a class and "
+#~ "its attributes in a relational database."
+#~ " An Entity Class is mapped directly"
+#~ " to a database table and the "
+#~ "attributes of an Entity Class are "
+#~ "mapped directly to the fields of a"
+#~ " database table. Therefore the "
+#~ ":ref:`database schema can be generated "
+#~ "<persistence-generate-database-schema>` directly"
+#~ " out of an Entity Class. It is"
+#~ " possible to load, save, and update"
+#~ " entity objects with the :ref"
+#~ ":`persistence-api`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Hibernate works by default with "
+#~ "sequences for primary key columns. This"
+#~ " means it will create a table "
+#~ "called :code:`hibernate_sequence` which is "
+#~ "used to generate the primary keys. "
+#~ "If you want to use the auto "
+#~ "increment approach of your database "
+#~ "management system you can set the "
+#~ "property :code:`hibernate.id.new_generator_mappings` to"
+#~ " :code:`false` in your persistence unit."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This chapter introduces the :ref"
+#~ ":`persistence-configuration-editor` and the "
+#~ ":ref:`persistence-api` of Axon Ivy. The"
+#~ " persistence framework is based on "
+#~ "the `Java Persistence API "
+#~ "<http://en.wikipedia.org/wiki/Java_Persistence_API>`__, a.k.a."
+#~ " JPA) and provides support for "
+#~ "storing and loading business objects "
+#~ "from and to a database."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to define at least one"
+#~ " persistence unit configuration. A "
+#~ "persistence unit manages all or a "
+#~ "subset of your entity classes and "
+#~ "defines the database where those "
+#~ "entities are stored. Once you have "
+#~ "configured one or more persistence "
+#~ "units, you can use them in your"
+#~ " process steps with the :ref"
+#~ ":`persistence-api` to load/update entity "
+#~ "objects directly from the database or"
+#~ " save and update them in the "
+#~ "database."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "With the Persistence API it is "
+#~ "possible to execute Java Persistence API"
+#~ " Query Language (JPA QL) statements. "
+#~ "See ``IIvyQuery`` for more information "
+#~ "about the Query API. The query "
+#~ "language based around the objects that"
+#~ " are persisted but with syntax very"
+#~ " similar to SQL. You always have "
+#~ "to use the names of the Entity "
+#~ "Class and the attributes and not "
+#~ "the names from the database."
+#~ msgstr ""
+
+#~ msgid "Persistency (Java Persistence API)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Stores and access data in a "
+#~ "database systems. An own database server"
+#~ " is necessary. The database schema "
+#~ "can be generated. JPA is a Java"
+#~ " standard that is well documented and"
+#~ " widely used. More information can be"
+#~ " found in the chapter :ref:`persistence`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Assume the following SQL statement is"
+#~ " configured as an SQL query: ``SELECT"
+#~ " * FROM Subscriber WHERE Name LIKE"
+#~ " 'in.searchText%'``. Now if an attacker "
+#~ "manages to pass a valid SQL "
+#~ "statement into the ``in.searchText`` variable"
+#~ " then a so called SQL injection "
+#~ "takes place, which can result in a"
+#~ " complete data breach on the "
+#~ "configured database. Process designers are "
+#~ "responsible to only pass sanitized data"
+#~ " into an SQL query. In some "
+#~ "cases it might be better to access"
+#~ " the Database with JPA/Hibernate or "
+#~ "prepared statements using JDBC. For more"
+#~ " information see: `SQL Injection Prevention"
+#~ " Cheat Sheet "
+#~ "<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pages can be referenced from the "
+#~ "content management system or the web "
+#~ "content directory. The wizard allows you"
+#~ " to create, select or edit pages."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Axon Ivy Engine Cluster node is"
+#~ " set up almost the same way as"
+#~ " a stand-alone Axon Ivy Engine. "
+#~ "Note: All nodes in a cluster setup"
+#~ " have to run within the same "
+#~ "network (the same broadcast domain)."
+#~ msgstr ""
+
+#~ msgid "Files"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend to configure :ref:`documents-s3`"
+#~ " as distributed blob storage so that"
+#~ " every cluster node can access all"
+#~ " the files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Otherwise you need to share the "
+#~ "data directory for all cluster nodes "
+#~ "(``Data.Directory`` from :ref:`ivy.yaml <ivy-"
+#~ "yaml>`). Use a Docker volume that "
+#~ "stores all the files. Mount it on"
+#~ " all cluster nodes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create a Docker volume called ``ivy-"
+#~ "data`` and mount it at ``/ivy/data`` "
+#~ "in your Axon Ivy Engine Cluster "
+#~ "node containers."
+#~ msgstr ""
+
+#~ msgid "Ensure that you backup this Docker volume periodically."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In previous version of the Axon "
+#~ "Ivy Engine Cluster, the applications "
+#~ "directory (``Data.AppDirectory`` in your "
+#~ ":ref:`ivy.yaml <ivy-yaml>`) had to be"
+#~ " shared between the cluster nodes, "
+#~ "too. This is no longer required "
+#~ "and should be avoided."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to run multiple "
+#~ "clusters within the same network (same"
+#~ " broadcast domain), you need to name"
+#~ " each cluster with a unique name. "
+#~ "This prevents clusters from interfering "
+#~ "with each other."
+#~ msgstr ""
+
+#~ msgid "You define the cluster name in the :ref:`ivy.yaml <ivy-yaml>` file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :ref:`Engine Cockpit <engine-cockpit-"
+#~ "cluster>` has a view that displays "
+#~ "all running nodes of the cluster. "
+#~ "The node names are auto-generated "
+#~ "by default but you can configure "
+#~ "them in :ref:`ivy.yaml <ivy-yaml>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuration changes are only applied "
+#~ "to the local cluster node where "
+#~ "the change is done. E.g., if an"
+#~ " administrator is using the :ref:`Engine"
+#~ " Cockpit <engine-cockpit>` to change "
+#~ "a configuration setting, then the "
+#~ "setting is only changed at the "
+#~ "cluster node where the current session"
+#~ " of the administrator is executed. On"
+#~ " all other cluster nodes, the setting"
+#~ " remains unchanged!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend that you do not "
+#~ "change the configuration at runtime. "
+#~ "Instead use a :ref:`container image "
+#~ "<cluster-container>` that contains the "
+#~ "right configuration. If you have to "
+#~ "change the configuration, create a new"
+#~ " container image with the new "
+#~ "configuration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Another solution is to share the "
+#~ ":ref:`configuration folder <configuration>` between"
+#~ " all cluster nodes using a Docker "
+#~ "volume."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We strongly recommend operating an Axon"
+#~ " Ivy Engine Cluster in a "
+#~ "containerized environment like Docker or "
+#~ "Kubernetes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend that you build your "
+#~ "own container image that contains the"
+#~ " Axon Ivy Engine and includes your"
+#~ " projects and configuration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can build the container image "
+#~ "automatically by using a build server."
+#~ msgstr ""
+
+#~ msgid "The build server:"
+#~ msgstr ""
+
+#~ msgid "Checks out:"
+#~ msgstr ""
+
+#~ msgid "all your projects"
+#~ msgstr ""
+
+#~ msgid "your configurations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a Dockerfile that specifies how to "
+#~ "build your container image from a "
+#~ "Git repository."
+#~ msgstr ""
+
+#~ msgid "Builds all your projects and bundles them in an application zip file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Builds your container image as defined"
+#~ " by the Dockerfile. It pulls the "
+#~ "base image ``axonivy/axonivy-engine`` image"
+#~ " from Docker Hub."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It stores your new image (``your-"
+#~ "company/your-project``) in a `Docker "
+#~ "Registry <https://hub.docker.com/_/registry>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then, you can start your Axon Ivy"
+#~ " Engine Cluster using your new "
+#~ "container image (``your-company/your-"
+#~ "project``)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A simple Dockerfile that bundles the "
+#~ "Axon Ivy Engine, your projects, and "
+#~ "your configuration files in a container"
+#~ " image looks as follows:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please refer to our :link-url"
+#~ ":`project-build-examples <build-examples-"
+#~ "docker>`. It shows you how to use"
+#~ " Maven to build your container image"
+#~ " including both your Axon Ivy Engine"
+#~ " and your application zip file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additionally, refer to our example "
+#~ "configurations on GitHub for :link-"
+#~ "url:`NGINX <docker-scaling-nginx>` and "
+#~ ":link-url:`HAProxy <docker-scaling-haproxy>` "
+#~ "to learn how to set up an "
+#~ "Axon Ivy Engine Cluster with docker-"
+#~ "compose."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Deployments during runtime are not "
+#~ "supported by the Axon Ivy Engine "
+#~ "Cluster and do not work. Use the"
+#~ " :ref:`deployment directory <deployment-"
+#~ "deploying>` instead to deploy your "
+#~ "projects during Axon Ivy Engine Cluster"
+#~ " node startup."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only during the startup of the "
+#~ "master cluster node, information from "
+#~ "Axon Ivy projects is deployed to "
+#~ "the system database. On startup of "
+#~ "slave cluster nodes, projects files are"
+#~ " copied to the correct location "
+#~ "**without** updating the system database. "
+#~ "E.g., new roles that have been "
+#~ "added to an Axon Ivy project are"
+#~ " created in the system database only"
+#~ " upon startup of the master cluster"
+#~ " node."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend that you add your "
+#~ "projects directly into the deployment "
+#~ "directory ``deploy`` of a :ref:`container "
+#~ "image <cluster-container>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We strongly recommend operating an Axon"
+#~ " Ivy Engine Cluster in a "
+#~ "containerized environment like Docker, "
+#~ "Kubernetes, or OpenShift. Build and run"
+#~ " your :ref:`container image <cluster-"
+#~ "container>` containing all your projects "
+#~ "and configurations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See our example configurations on GitHub"
+#~ " for :link-url:`nginx <docker-scaling-"
+#~ "nginx>` and :link-url:`HAProxy <docker-"
+#~ "scaling-haproxy>` on how to set up"
+#~ " an Axon Ivy Engine Cluster with "
+#~ "docker-compose."
+#~ msgstr ""
+
+#~ msgid "Each node needs access to all other nodes via UDP/Multicast."
+#~ msgstr ""
+
+#~ msgid "Each node has to use the same system database."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Each node has to use the same "
+#~ "external :ref:`OpenSearch <opensearch>` server "
+#~ "(or cluster)."
+#~ msgstr ""
+
+#~ msgid "Each node has to use the same service configurations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`Configuration changes <cluster-"
+#~ "configuration-changes>` are only applied to"
+#~ " the local cluster node where you "
+#~ "made the change."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`Deployment <cluster-deployment>` during "
+#~ "runtime is not supported and does "
+#~ "not work."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some :ref:`operating systems <engine-"
+#~ "system-requirements-os>` are not supported."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can solve most of the "
+#~ "restrictions by using a containerized "
+#~ "environment with your own :ref:`container "
+#~ "image <cluster-container>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Usually, UDP/Multicast works in a single"
+#~ " subnet only. Modern routers can "
+#~ "overcome this restriction if you "
+#~ "configure them accordingly. If your "
+#~ "environment does not support this setup,"
+#~ " you can change the cluster "
+#~ "communication to TCP/IP. TCP/IP will "
+#~ "induce significantly higher cluster "
+#~ "communications overhead. Contact Axon Ivy "
+#~ "for instructions regarding this setup."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need an enterprise license to "
+#~ "run Axon Ivy Engine as a Cluster"
+#~ " (Axon Ivy Engine Enterprise Edition)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The information needed to request an "
+#~ "enterprise license is the same as "
+#~ "for a Standard Edition :ref:`license`, "
+#~ "with the exception of the number "
+#~ "of cluster nodes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Each node that you add to an "
+#~ "Axon Ivy Engine Cluster costs an "
+#~ "additional license fee. Therefore, the "
+#~ "number of nodes in your Cluster is"
+#~ " limited by the license."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you add more nodes to your "
+#~ "Cluster than your license has been "
+#~ "issued for, then the nodes that "
+#~ "are not licensed correctly will respond"
+#~ " with error code :code:`503 Service "
+#~ "Unavailable`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Axon Ivy Engine Clusters work with "
+#~ "**sticky sessions**. The load balancer "
+#~ "has to forward all requests from a"
+#~ " session to the same cluster node."
+#~ " Of course, if a cluster node "
+#~ "is no longer available then the "
+#~ "request will be sent to another "
+#~ "cluster node. This will cause the "
+#~ "user to get a new session, "
+#~ "therefore losing his work in the "
+#~ "replaced session."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As described above, the load balancer"
+#~ " has to ensure that all requests "
+#~ "from the same user session are "
+#~ "sent to the same cluster node. "
+#~ "This can be done as follows:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "configure the load balancer to always"
+#~ " forward all requests sent from one"
+#~ " client IP address to the same "
+#~ "cluster node (IP based stickiness)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "use the Axon Ivy Session Id to "
+#~ "provide session stickiness. The session "
+#~ "id is provided by Axon Ivy Engine"
+#~ " Enterprise Edition as an HTTP "
+#~ "session cookie with the name "
+#~ ":code:`JSESSIONID`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Often, :ref:`Reverse Proxies <reverse-proxy>`"
+#~ " can be configured as load balancers."
+#~ msgstr ""
+
+#~ msgid "HAProxy"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "HAProxy is a free, fast, and "
+#~ "reliable solution offering high availability,"
+#~ " load balancing, and proxying for TCP"
+#~ " and HTTP-based applications. It is"
+#~ " simple to set up. It offers a"
+#~ " Docker image that needs only minimal"
+#~ " configuration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We provide a :link-url:`sample on "
+#~ "GitHub <docker-scaling-haproxy>` how to"
+#~ " setup an Axon Ivy Engine Cluster "
+#~ "using HAProxy as the load balancer "
+#~ "within docker-compose."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NGINX is a free, open-source HTTP"
+#~ " web server that serves as a "
+#~ "reverse proxy server, a mail proxy "
+#~ "server, and a generic TCP/UDP proxy "
+#~ "server and offers load balancing "
+#~ "features. It also offers a Docker "
+#~ "image with minimal configuration needs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We provide a :link-url:`sample on "
+#~ "GitHub <docker-scaling-nginx>` on how"
+#~ " to setup an Axon Ivy Engine "
+#~ "Cluster using NGINX as the load "
+#~ "balancer within docker-compose."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The logging configuration can be fully"
+#~ " customized to your needs. For "
+#~ "example, you can change the log "
+#~ "level of a logger so that the "
+#~ "log events are logged in a log "
+#~ "file. Therefore you need to know "
+#~ "that Axon Ivy uses `Log4j 2 "
+#~ "<https://logging.apache.org/log4j/2.x/>`_ for logging "
+#~ "and comes with a built-in "
+#~ ":ref:`default configuration <log4j2-xml>` which "
+#~ "can be customized by providing a "
+#~ "configuration in "
+#~ ":file:`[engineDir]/configuration/log4j2.xml`. The custom"
+#~ " configuration will be `merged "
+#~ "<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_"
+#~ " with the default configuration "
+#~ "automatically on the fly."
+#~ msgstr ""
+
+#~ msgid "We recommend using the following additional security headers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Strict-Transport-Security**: Set this "
+#~ "header if the Engine is to be "
+#~ "accessed via HTTPS only. For more "
+#~ "information, see: `Strict-Transport-Security"
+#~ " <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+#~ "/Strict-Transport-Security>`_. You can "
+#~ "adjust this in the embedded Tomcat "
+#~ "with the pre-configured `HTTP Header "
+#~ "Security Filter "
+#~ "<https://tomcat.apache.org/tomcat-9.0-doc/config/filter.html#HTTP_Header_Security_Filter>`_"
+#~ " in the :ref:`web-xml`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Content-Security-Policy**: Set this "
+#~ "header if you want to reduce the"
+#~ " risk of having an exploitable "
+#~ "Cross-site scripting (XSS) vulnerability. "
+#~ "With a Content-Security-Policy, you "
+#~ "can define from which locations external"
+#~ " resources can be loaded and if "
+#~ "scripts embedded in HTML can be "
+#~ "executed. For more information, see: "
+#~ "`Content Security Policy (CSP) "
+#~ "<https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We recommend implementing these headers "
+#~ "on a reverse proxy securing your "
+#~ "Axon Ivy Engine. In case you have"
+#~ " no reverse proxy, check `How do "
+#~ "I integrate the Axon Ivy Workflow "
+#~ "Frontend in my Web App? "
+#~ "<https://community.axonivy.com/d/319-how-do-i-integrate-"
+#~ "ivy-workflow-frontend-in-my-web-app>`"
+#~ " for a CSP example using the "
+#~ "embedded Tomcat."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Referrer-Policy**: Set this header if"
+#~ " you want to control how or if"
+#~ " the referrer is disclosed to other"
+#~ " sites. For more information, see: "
+#~ "`Referrer-Policy <https://developer.mozilla.org/en-"
+#~ "US/docs/Web/HTTP/Headers/Referrer-Policy>`_"
 #~ msgstr ""
 
