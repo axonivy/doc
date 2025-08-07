@@ -14,7 +14,7 @@ license and the creation of a system database.
     from the wizard to the :ref:`ivy-yaml` file.
 
 Advanced users might prefer to manually craft configurations in :ref:`ivy-yaml` and 
-use the :ref:`engine-config-cli` to roll out an Axon Ivy Engine into production.
+use the :ref:`engine-cli` to roll out an Axon Ivy Engine into production.
 Configuration files make the installation process quickly reproducable in
 various environments such as dev, test and prod.
 
