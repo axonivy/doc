@@ -9,12 +9,15 @@ pipeline {
     cron '@midnight'
   }
 
+  environment {
+    version = 'dev'
+    branchVersion = 'master'
+  }
+
   stages {
-    stage('build') {
+    stage('fetch-deps') {
       steps {
         script {
-          def version = 'dev'
-          def branchVersion = 'master'
           if (env.BRANCH_NAME.startsWith('release/')) {
             version = evalReleaseVersion()
             branchVersion = version
@@ -24,13 +27,24 @@ pipeline {
             maven cmd: "-f pom.xml clean package -Ddoc.version=${version}"
           }
           runMaven(integrateDependencies)
+        }
+      }
+    }
+    stage('EN') {
+      steps {
+        script {
+          def integrateDependencies = {
+            maven cmd: "-f pom.xml clean package -Ddoc.version=${version}"
+          }
+          runMaven(integrateDependencies)
 
           docker.image('axonivy/build-container:read-the-docs-2').inside {
             sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' VERSION=${version} BRANCH_VERSION=${branchVersion}"
           }
           sh "rm build/html/portal-guide/index.html"
+          sh "mv build build-EN"
 
-          archiveArtifacts 'build/html/**/*, ' +
+          archiveArtifacts 'build-EN/html/**/*, ' +
                           'target/resources/includes/_release-notes.md'
 
           withChecks('Doc Sphinx Issues') {
@@ -40,7 +54,30 @@ pipeline {
             recordIssues tools: [mavenConsole()], qualityGates: [[threshold: 1, type: 'TOTAL']]
           }
 
-          currentBuild.description = "<a href='${BUILD_URL}artifact/build/html/index.html'>Documentation</a>"
+          currentBuild.description = "<a href='${BUILD_URL}artifact/build-EN/html/index.html'>Doc 🇬🇧️</a>"
+        }
+      }
+    }
+    stage('JP') {
+      steps {
+        script {
+          sh "rm -rf build"
+          docker.image('axonivy/build-container:read-the-docs-2').inside {
+            sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' VERSION=${version} BRANCH_VERSION=${branchVersion} LOCALEDIR=\"${env.WORKSPACE}/locale\" GETTEXT_COMPACT=user-guide SPHINXOPTS=\"-D language='ja'\""
+          }
+          sh "rm build/html/portal-guide/index.html"
+          sh "mv build build-JP"
+
+          archiveArtifacts 'build-JP/html/**/*'
+
+          withChecks('Doc Sphinx Issues') {
+            recordIssues tools: [sphinxBuild()], qualityGates: [[threshold: 1, type: 'TOTAL']]
+          }
+          withChecks('Maven Issues') {
+            recordIssues tools: [mavenConsole()], qualityGates: [[threshold: 1, type: 'TOTAL']]
+          }
+
+          currentBuild.description += "<br/><a href='${BUILD_URL}artifact/build-JP/html/index.html'>Doc 🇯🇵️</a>"
         }
       }
     }
