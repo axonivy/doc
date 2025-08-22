@@ -28,7 +28,7 @@ The following database management systems are supported, choose one:
    mssql
    oracle 
 
-Use the :ref:`setup-wizard` or the :ref:`engine-config-cli` to create the system
+Use the :ref:`setup-wizard` or the :ref:`engine-cli` to create the system
 database. To run the Axon Ivy Engine with a system database, a :ref:`license
 <license>` is required.
 
