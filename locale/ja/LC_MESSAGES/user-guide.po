@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 21:27+0000\n"
+"POT-Creation-Date: 2025-09-12 21:27+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -27150,7 +27150,8 @@ msgid ""
 "page with the name test.xhtml in your :file:`webContent/view` folder, an "
 "<application name> App and a <processmodel> PM, you can call the URL "
 "``http://localhost:8080/App/faces/view/PM/test.xhtml`` to get your static"
-" JSF page."
+" JSF page. The recommended way to create the static JSF page URL is to "
+"use the ``Ivy.html().viewLink(String viewPath)`` method."
 msgstr ""
 "ブラウザでこれらのページにアクセスするには、``http://<servername>:<port>/<application>/faces/view/<process"
 " model>/<xhtml file in webContent/view>`  "
@@ -27159,7 +27160,7 @@ msgstr ""
 "があると仮定した場合、``http://localhost:8080/App/faces/view/PM/test.xhtml`` という URL"
 " を呼び出して、静的な JSF ページにアクセスできます。"
 
-#: ../../source/designer-guide/user-interface/static-jsf-pages.rst:39
+#: ../../source/designer-guide/user-interface/static-jsf-pages.rst:41
 msgid ""
 "Please note that any page located within the folder "
 ":file:`webContent/view` is accessible via this static URL. So you should "
@@ -27169,11 +27170,11 @@ msgstr ""
 "この静的 URL から :file:`webContent/view` "
 "フォルダー内にあるどのページにもアクセスできることに注意してください。この場所には完全に機能するページ（テンプレートページ以外）のみ格納し、ログインページで保護してください。"
 
-#: ../../source/designer-guide/user-interface/static-jsf-pages.rst:45
+#: ../../source/designer-guide/user-interface/static-jsf-pages.rst:47
 msgid "**EndPage**"
 msgstr "**終了ページ**"
 
-#: ../../source/designer-guide/user-interface/static-jsf-pages.rst:47
+#: ../../source/designer-guide/user-interface/static-jsf-pages.rst:49
 msgid ""
 "If you want to call a static JSF page from an Axon Ivy process, you can "
 "implement a :ref:`End Page <process-element-end-page>`, :ref:`Task Switch"
@@ -33054,7 +33055,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/engine-guide/integration/cluster/index.rst:4
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:251
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:262
 msgid "Cluster"
 msgstr "クラスタ"
 
@@ -37746,46 +37747,126 @@ msgstr "SSL 設定"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:109
 msgid ""
-"These settings define the key and trust stores to be used for SSL/TLS "
-"client connections."
-msgstr "これらの設定により、SSL/TLS クライアント接続に使用されるキーストアとトラストストアを定義します。"
+"The **SSL Settings** page allows you to configure SSL/TLS settings for "
+"client connections. You can configure a trust store and a key store as "
+"needed."
+msgstr ""
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:113
-msgid ""
-"A key store is used to read client keys (certificates). This is only "
-"required if a server requests a client certificate in order to "
-"authenticate the client."
-msgstr "キーストアは、クライアントキー（証明書）を読み取るのに使用します。クライアントを認証するため、サーバーがクライアント証明書をリクエストした場合のみ必要です。"
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:112
+msgid "SSL Client"
+msgstr "SSL クライアント"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:117
+#, fuzzy
+msgid "Trust Store"
+msgstr "トラストストアのタイプ"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:119
+#, fuzzy
 msgid ""
-"A trust store is used to specify trusted server certificates or "
-"certificates of certification authorities. An SSL client authenticates a "
-"server by using the certificates in a trust store. If the server provides"
-" a certificate that is signed by a certification authority known by Java "
-"then the system trust store can be used. If the server uses a certificate"
-" that is self signed or signed by a unknown certification authority then "
-"a custom trust store can be used. The custom trust store must contain the"
-" server certificate or the certificate of the unknown certification "
-"authority."
+"A trust store contains trusted certificates from servers and/or "
+"certification authorities. An SSL client uses these certificates to "
+"authenticate servers during the SSL/TLS handshake. If the server presents"
+" a certificate signed by a certification authority known to Java, the "
+"system trust store may suffice. For servers using self-signed or "
+"certification authority unknown certificates, a custom trust store is "
+"necessary, this custom store must include the server certificate or the "
+"unknown certification authority certificate."
 msgstr ""
 "トラストストアは、信頼できるサーバー証明書または認証局の証明書を指定するのに使用します。SSL "
 "クライアントは、トラストストアの証明書を使用して、サーバーを認証します。Java "
 "にとって既知の認証局が署名した証明書をサーバーが提供した場合、システムのトラストストアを使用できます。サーバーが自己署名の証明書または未知の認証局が署名した証明書を使用する場合は、カスタムのトラストストアを使用できます。カスタムのトラストストアにはサーバーの証明書または未知の認証局の証明書を格納する必要があります。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:128
-msgid "SSL Client"
-msgstr "SSL クライアント"
+msgid "Trust Store Settings"
+msgstr "トラストストアの設定"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:133
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:129
+#, fuzzy
+msgid ""
+"The following settings configure the trust store for SSL/TLS client "
+"connections."
+msgstr "これらの設定により、SSL/TLS クライアント接続に使用されるキーストアとトラストストアを定義します。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:131
+msgid "Trust store file"
+msgstr "トラストストアのファイル"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:132
+#, fuzzy
+msgid "Path to the file of the trust store."
+msgstr "トラストストアのファイルを読み取るのに使用するパスワード。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:134
+msgid "Trust store password"
+msgstr "トラストストアのパスワード"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:135
+#, fuzzy
+msgid "Password for accessing the trust store file."
+msgstr "トラストストアのファイルを読み取るのに使用するパスワード。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:137
+msgid "Trust store type"
+msgstr "トラストストアのタイプ"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:138
+#, fuzzy
+msgid ""
+"The format of the trust store (e.g., JKS or PKCS12). If empty the system "
+"default type (PKCS12) is used."
+msgstr "トラストストアのタイプ（JKS、PKCS12 など）。空の場合は、システムのデフォルトのタイプが使用されます。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:141
+msgid "Trust store provider"
+msgstr "トラストストアのプロバイダー"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:142
+msgid ""
+"The security provider used to read the trust store. If empty the system "
+"default provider is used."
+msgstr "トラストストアを読み取るのに使用されるセキュリティプロバイダー。空の場合は、システムのデフォルトのプロバイダーが使用されます。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:145
+msgid "Trust store algorithm"
+msgstr "トラストストアのアルゴリズム"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:146
+#, fuzzy
+msgid ""
+"The algorithm used to read the trust store. If empty the system default "
+"algorithm is used."
+msgstr "トラストストアを読み取るのに使用されるアルゴリズム。空の場合は、システムのデフォルトのアルゴリズムが使用されます。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:150
+#, fuzzy
+msgid "Key Store"
+msgstr "キーストアのタイプ"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:152
+msgid ""
+"A key store contains the client's private key and certificate. These are "
+"required for mTLS, when a server requests the client to prove its "
+"identity. The key store must contain both the private key and the "
+"corresponding public certificate."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:157
 msgid "Key Store Settings"
 msgstr "キーストアの設定"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:134
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:158
+#, fuzzy
+msgid ""
+"The following options configure the key store for SSL/TLS client "
+"connections."
+msgstr "これらの設定により、SSL/TLS クライアント接続に使用されるキーストアとトラストストアを定義します。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:160
 msgid "Use custom key store"
 msgstr "カスタムキーストアを使用"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:135
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:161
 msgid ""
 "If selected the key store configured below is used to read the client's "
 "key. A client key is only necessary if the server requests SSL client "
@@ -37797,137 +37878,113 @@ msgstr ""
 "クライアントの認証をリクエストした場合のみ、クライアントキーが必要です。選択されない場合は、システムのキーストアが使用されます。Java "
 "システムプロパティ ``javax.net.ssl.keyStore`` を設定して、システムのキーストアを設定できます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:141
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:167
 msgid "Key store file"
 msgstr "キーストアのファイル"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:142
-msgid "The file containing the client keys."
-msgstr "クライアントキーが保存されたファイル。"
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:168
+#, fuzzy
+msgid "Path to the file of the key store."
+msgstr "送信するメールのタイトル。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:144
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:170
 msgid "Key store password"
 msgstr "キーストアのパスワード"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:145
-msgid "Password used to read the key store file."
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:171
+#, fuzzy
+msgid "Password for accessing the key store file."
 msgstr "キーストアのファイルを読み取るのに使用するパスワード。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:147
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:173
 msgid "Key password"
 msgstr "キーのパスワード"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:148
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:174
 msgid ""
-"Password needed to decrypt the key. If empty the key store password is "
-"used instead."
-msgstr "キーを復号化するのに必要なパスワード。空の場合は、キーストアのパスワードが代わりに使用されます。"
+"Password used to decrypt the private key. Only a single key password can "
+"be defined, which means multiple keys with different passwords in the "
+"same keystore are not supported."
+msgstr ""
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:151
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:178
 msgid "Key store type"
 msgstr "キーストアのタイプ"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:152
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:179
 msgid ""
 "The type of the key store (e.g., JKS or PKCS12). If empty the system "
 "default type is used."
 msgstr "キーストアのタイプ（JKS、PKCS12 など）。空の場合は、システムのデフォルトのタイプが使用されます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:155
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:182
 msgid "Key store provider"
 msgstr "キーストアのプロバイダー"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:156
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:183
 msgid ""
 "The security provider used to read the key store. If empty the system "
 "default provider is used."
 msgstr "キーストアを読み取るのに使用されるセキュリティプロバイダー。空の場合は、システムのデフォルトのプロバイダーが使用されます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:159
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:186
 msgid "Key store algorithm"
 msgstr "キーストアのアルゴリズム"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:160
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:187
 msgid ""
 "The algorithm used to read the key store. If empty the system default "
 "algorithm is used."
 msgstr "キーストアを読み取るのに使用されるアルゴリズム。空の場合は、システムのデフォルトのアルゴリズムが使用されます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:163
-msgid "Trust Store Settings"
-msgstr "トラストストアの設定"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:164
-msgid "Trust store file"
-msgstr "トラストストアのファイル"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:165
-msgid ""
-"The file containing the trusted server certificates and/or certificates "
-"of certification authorities."
-msgstr "信頼できるサーバー証明書または認証局の証明書が保存されたファイル。"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:168
-msgid "Trust store password"
-msgstr "トラストストアのパスワード"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:169
-msgid "Password used to read the trust store file."
-msgstr "トラストストアのファイルを読み取るのに使用するパスワード。"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:171
-msgid "Trust store type"
-msgstr "トラストストアのタイプ"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:172
-msgid ""
-"The type of the trust store (e.g., JKS or PKCS12). If empty the system "
-"default type is used."
-msgstr "トラストストアのタイプ（JKS、PKCS12 など）。空の場合は、システムのデフォルトのタイプが使用されます。"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:175
-msgid "Trust store provider"
-msgstr "トラストストアのプロバイダー"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:176
-msgid ""
-"The security provider used to read the trust store. If empty the system "
-"default provider is used."
-msgstr "トラストストアを読み取るのに使用されるセキュリティプロバイダー。空の場合は、システムのデフォルトのプロバイダーが使用されます。"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:179
-msgid "Trust store algorithm"
-msgstr "トラストストアのアルゴリズム"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:180
-msgid ""
-"The algorithm used to read the trust store. If emtpy the system default "
-"algorithm is used."
-msgstr "トラストストアを読み取るのに使用されるアルゴリズム。空の場合は、システムのデフォルトのアルゴリズムが使用されます。"
-
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:183
-msgid "Key & Trust Store Certificates Table"
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:191
+#, fuzzy
+msgid "Certificates Table"
 msgstr "キーストアとトラストストアの証明書の表"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:184
-msgid ""
-"In the certificate table you can view all the certificates of the store. "
-"You can see whether the certificate is valid or not. If you move the "
-"mouse cursor over the icon, a message is displayed explaining why the "
-"certificate is no longer valid. You will also see information about the "
-"alias, subject, algorithm and expiry date. It is possible to add or "
-"delete certificates as needed."
-msgstr "証明書の表には、ストアのすべての証明書が表示され、証明書が有効かどうかを確認できます。アイコンの上にマウスカーソルを移動すると、証明書が有効ではなくなった理由を説明するメッセージが表示されます。また、エイリアス、サブジェクト、アルゴリズム、有効期限に関する情報も表示されます。必要に応じて、証明書を追加、削除できます。"
-
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:192
+msgid ""
+"The certificate table displays all certificates in the selected key- or "
+"truststore:"
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:194
+msgid "Displays alias, subject, algorithm, and expiry date."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:195
+msgid "Shows whether each certificate is valid or invalid."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:196
+msgid ""
+"Hovering over the icon of the expiry date, provides details on "
+"certificate problems (e.g., expired certificate)."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:197
+msgid "Displays whether the certificate is a private key or a public certificate."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:198
+msgid "You can add or delete certificates as required."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:199
+msgid ""
+"In the key store, it is also possible to import complete PKCS#12 (.p12) "
+"stores containing private and/or public certificates."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:203
 msgid "Other SSL Settings"
 msgstr "その他の SSL の設定"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:193
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:204
 msgid "Enable insecure SSL and HTTPS connections"
 msgstr "安全でない SSL/HTTPS 接続の有効化"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:194
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:205
 msgid ""
 "Manipulates the JVMs default SSLSocketFactory, so that untrusted (self "
 "signed or outdated) certificates are silently accepted. This could for "
@@ -37937,11 +37994,11 @@ msgstr ""
 "信頼できない（自己署名または期限切れの）証明書が自動的に承認されるように、JVM のデフォルトの SSLSocketFactory "
 "を操作します。安全でない WSDL の場所から Web サービススタブを生成でき、インスタンスにとっては便利です。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:199
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:210
 msgid "Modification of certificates"
 msgstr "証明書の変更"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:200
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:211
 msgid ""
 "Key and trust stores can also be created and modified (generating and "
 "importing certificates and keys) using a graphical key tool such as "
@@ -37952,7 +38009,7 @@ msgstr ""
 "Kit（JDK）に含まれるキーツールを使用して、キーストアとトラストストアを作成、変更できます（証明書とキーの生成、インポート）。詳細については、JDK"
 " のドキュメントを参照してください。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:208
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:219
 msgid ""
 "The SSL Client trust- and key store settings are currently only "
 "considered when sending mails, for REST client calls, CXF Web Service "
@@ -37961,11 +38018,11 @@ msgstr ""
 "現在、SSL クライアントのトラストストアとキーストアの設定は、メールの送信、REST クライアントの呼び出し、CXF Web "
 "サービスクライアントの呼び出し、Web サービス定義（WSDL）ファイルの読み込み時にのみ考慮されます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:215
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:226
 msgid "TLS Connenction Tester"
 msgstr "TLS 接続テスター"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:217
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:228
 msgid ""
 "With the TLS Connection Tester you can test secure connections to "
 "WebServices (SOAP/REST) or active directories (LDAPS). This can be tested"
@@ -37977,64 +38034,64 @@ msgstr ""
 "サービス（SOAP/REST）やアクティブディレクトリ（LDAPS）へのセキュア接続をテストできます。接続テスターの隣にあるエンジンコックピットで直接テストできます。サポートされている"
 " TLS 標準が検出、報告されます。現在、信頼できる証明書は出力され、信頼できない証明書は報告されます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:223
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:234
 msgid "TLS Tester"
 msgstr "TLS テスター"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:230
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:241
 msgid "Config File Editor"
 msgstr "設定ファイルエディター"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:232
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:243
 msgid ""
 "Configurations applied in the Engine Cockpit are stored in files. The "
 "Config File Editor lets you review and modify these configurations."
 msgstr "エンジンコックピットで適用された設定はファイルに保存されます。設定ファイルエディターでは、それらの設定を見直し、変更できます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:237
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:248
 msgid ""
 "In the right upper corner, you can select the configuration file to be "
 "shown."
 msgstr "右上では、表示する設定ファイルを選択できます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:239
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:250
 msgid ""
 "While editing our prominent YAML files, you have a rich set of authoring "
 "features at hand:"
 msgstr "主要な YAML ファイルを編集する際には、豊富なオーサリング機能を利用できます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:241
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:252
 msgid ""
 "**Validation**: keys used within the YAML files are validated against the"
 " official schema. So invalid values are being blamed with a warning "
 "marker."
 msgstr "**検証** ：YAML ファイル内で使用されるキーを公式なスキーマと比較して検証します。無効な値には警告マーカーが付けられます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:242
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:253
 msgid ""
 "**Completion**: by pressing `CTRL+Space` the context completor helps you "
 "to identify and select valid configuration values or keys."
 msgstr "**完了** ：`CTRL + Space` を押して、コンテキストコンプリーターで有効な設定値やキーを特定し、選択できます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:243
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:254
 msgid ""
 "**Help**: by hovering over keys you get context-specific documentation "
 "right where you are editing."
 msgstr "**ヘルプ** ：キーの上にマウスカーソルを置いて、コンテキスト固有のドキュメントをその場で開くことができます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:244
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:255
 msgid ""
 "**Formatting:** YAML content has strict formatting rules, and the editor "
 "takes care that whitespace indents are correct and in effect."
 msgstr "**フォーマット：** YAML のコンテンツには厳格なフォーマットルールがあり、エディターは、空白インデントが正しく、有効になるように処理します。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:246
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:257
 msgid ""
 "Note that all our text-based configuration files are editable, though the"
 " authoring features may be limited on some."
 msgstr "オーサリング機能が制限されているものもありますが、テキストベースの設定ファイルはすべて編集可能です。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/system.rst:253
+#: ../../source/engine-guide/reference/engine-cockpit/system.rst:264
 msgid ""
 "If your engine runs with a :ref:`license-edition` license, your are able "
 "to define a :ref:`cluster`. The engine cockpit will provide a **Cluster**"
@@ -40008,4 +40065,42 @@ msgstr ""
 
 #~ msgid "TBD"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "A key store is used to read "
+#~ "client keys (certificates). This is only"
+#~ " required if a server requests a "
+#~ "client certificate in order to "
+#~ "authenticate the client."
+#~ msgstr "キーストアは、クライアントキー（証明書）を読み取るのに使用します。クライアントを認証するため、サーバーがクライアント証明書をリクエストした場合のみ必要です。"
+
+#~ msgid "The file containing the client keys."
+#~ msgstr "クライアントキーが保存されたファイル。"
+
+#~ msgid ""
+#~ "Password needed to decrypt the key. "
+#~ "If empty the key store password is"
+#~ " used instead."
+#~ msgstr "キーを復号化するのに必要なパスワード。空の場合は、キーストアのパスワードが代わりに使用されます。"
+
+#~ msgid ""
+#~ "The file containing the trusted server"
+#~ " certificates and/or certificates of "
+#~ "certification authorities."
+#~ msgstr "信頼できるサーバー証明書または認証局の証明書が保存されたファイル。"
+
+#~ msgid ""
+#~ "In the certificate table you can "
+#~ "view all the certificates of the "
+#~ "store. You can see whether the "
+#~ "certificate is valid or not. If "
+#~ "you move the mouse cursor over the"
+#~ " icon, a message is displayed "
+#~ "explaining why the certificate is no "
+#~ "longer valid. You will also see "
+#~ "information about the alias, subject, "
+#~ "algorithm and expiry date. It is "
+#~ "possible to add or delete certificates"
+#~ " as needed."
+#~ msgstr "証明書の表には、ストアのすべての証明書が表示され、証明書が有効かどうかを確認できます。アイコンの上にマウスカーソルを移動すると、証明書が有効ではなくなった理由を説明するメッセージが表示されます。また、エイリアス、サブジェクト、アルゴリズム、有効期限に関する情報も表示されます。必要に応じて、証明書を追加、削除できます。"
 
