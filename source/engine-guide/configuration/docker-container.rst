@@ -62,15 +62,15 @@ You can provide the license either by:
 
   .. code:: bash
 
-     export IVY_LICENCE=$(cat <licence.lic>)
-     docker run -e IVY_LICENCE=$IVY_LICENCE ... 
+     export IVY_LICENCE=$(tr -d '\r' < licence.lic)
+     docker run -e IVY_LICENCE axonivy/axonivy-engine:13.2
 
   Windows Powershell:
 
   .. code:: bash
 
      set IVY_LICENCE=[string](Get-Content -Path <licence.lic> -raw)
-     docker run -e IVY_LICENCE=$IVY_LICENCE ... 
+     docker run -e IVY_LICENCE axonivy/axonivy-engine:13.2 
 
 * Mapping it as docker secret into file ``/run/secrets/ivy.Licence``
 
