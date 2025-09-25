@@ -42,19 +42,14 @@ This script will guide you to set up IIS as a reverse proxy for the Axon Ivy Eng
   If IIS or any of its modules are already installed, the script may fail to run or some modules might not be installed correctly. 
   In that case, please refer to the documentation for manual installation.
 
-.. hint::
-  Windows Server 2025:
-  This script does not support IIS on Windows Server 2025. 
-  For manual installation, please consult the official documentation.
-
 If your IIS server cannot access external links, you need to download the
 modules externally and upload them to your IIS server. Please check the download
-links for the modules in our script by searching for :guilabel:`downloadModule`.
+links for the modules in our script by searching for :guilabel:`=== STEP 3: MODULE DEFINITIONS ===`.
 Once you have downloaded them, upload them onto the IIS server in a directory of
 your choice. Using the directory where you store our script is the most simple
-solution. Then, start the script and select `No` to the question titled
+solution. Then, start the script and select `Offline` to the question titled
 :guilabel:`IIS Module Source`, and enter the path where you stored the modules
-in question :guilabel:`IIS Modules Source Path`. 
+in question. 
 
 The script is divided into several parts:
 
