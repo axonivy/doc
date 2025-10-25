@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 09:23+0000\n"
+"POT-Creation-Date: 2025-10-25 21:27+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -3351,7 +3351,7 @@ msgstr ""
 
 #: ../../source/concepts/application-lifecycle/index.rst:36
 #: ../../source/designer-guide/reference/glossary.rst:7
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:58
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:63
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:68
 msgid "Application"
 msgstr "アプリケーション"
@@ -17756,7 +17756,7 @@ msgstr "タスクが作成または割り当てられると、通知が生成さ
 #: ../../source/engine-guide/configuration/document/local.rst:8
 #: ../../source/engine-guide/configuration/document/s3.rst:10
 #: ../../source/engine-guide/configuration/notification/mail.rst:11
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:14
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:19
 #: ../../source/engine-guide/configuration/notification/web.rst:7
 #: ../../source/engine-guide/integration/identity-provider/keycloak/index.rst:22
 #: ../../source/engine-guide/integration/identity-provider/microsoft-ad/index.rst:13
@@ -30199,7 +30199,7 @@ msgstr ""
 
 #: ../../source/engine-guide/configuration/document/local.rst:14
 #: ../../source/engine-guide/configuration/document/s3.rst:16
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:20
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:25
 #: ../../source/engine-guide/integration/identity-provider/keycloak/index.rst:29
 #: ../../source/engine-guide/integration/identity-provider/microsoft-ad/index.rst:20
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/index.rst:24
@@ -30487,49 +30487,60 @@ msgid "Microsoft Teams Notifications"
 msgstr "Microsoft Teams での通知"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:4
-msgid ""
-"This channel provides notifications via Microsoft Teams. If this channel "
-"is active in a security system with Microsoft Entra ID. the messages are "
-"sent using the user's External ID, which is linked via :ref:`Microsoft "
-"Entra ID <microsoft-entra-id>`. If the External ID is not set (e.g. for "
-"local users) or if the Microsoft Entra ID is not configured, the user's "
-"email address is used. If you enable this channel, you also need to:"
-msgstr ""
-"このチャネルは、Microsoft Teams 経由で通知を行います。このチャネルが Microsoft Entra ID "
-"を使用するセキュリティシステムでアクティブな場合、 :ref:`Microsoft Entra ID <microsoft-entra-id>` "
-"を介してリンクされたユーザーの External ID を使用して、メッセージが送信されます。External ID "
-"が設定されていない場合や（ローカルユーザーなど）Microsoft Entra ID "
-"が設定されていない場合、ユーザーのメールアドレスが使用されます。このチャネルを有効にする場合は、以下も行う必要があります。"
+#, fuzzy
+msgid "This channel provides notifications via Microsoft Teams."
+msgstr "このチャネルはメールで通知を行います。このチャネルを有効にする場合は、以下も行う必要があります。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:10
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:6
+#, fuzzy
+msgid "If you enable this channel, you also need to:"
+msgstr "このチャネルはメールで通知を行います。このチャネルを有効にする場合は、以下も行う必要があります。"
+
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:8
+#, fuzzy
 msgid ""
-":ref:`Create a technical user in the Microsoft Entra ID which serves as "
-"the sender of notifications<microsoft-teams-notifications-technical-"
-"user>`."
+"Create a technical :ref:`user in the Microsoft Entra ID<microsoft-teams-"
+"notifications-technical-user>`."
 msgstr ""
 ":ref:`通知の送信者となる技術ユーザーを Microsoft Entra ID で作成します<microsoft-teams-"
 "notifications-technical-user>` "
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:11
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:9
+#, fuzzy
 msgid ""
-":ref:`Create an application in the Microsoft Entra ID where the technical"
-" user can log in and send messages through<microsoft-teams-notifications-"
-"application>`."
+"Create an :ref:`application in the Microsoft Entra ID<microsoft-teams-"
+"notifications-application>` where the technical user can log in and send "
+"messages through."
 msgstr ""
 ":ref:`技術ユーザーがログインし、メッセージを送信できる Microsoft Entra ID でアプリケーションを作成します"
 "<microsoft-teams-notifications-application>` "
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:12
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:10
+#, fuzzy
 msgid ""
-":ref:`Users who shall be notified need to be synced with Microsoft Entra "
-"ID <microsoft-entra-id>`."
+"Users who shall be notified need to be synced with :ref:`Microsoft Entra "
+"ID <microsoft-entra-id>` or have a valid email address configured."
 msgstr ":ref:`通知を受けるユーザーを Microsoft Entra ID と同期する必要があります<microsoft-entra-id>` 。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:28
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:12
+#, fuzzy
+msgid "**Receipient Identification**"
+msgstr "**変更の確認**"
+
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:14
+msgid ""
+"Messages are sent using the user's External ID, which is linked via "
+":ref:`Microsoft Entra ID <microsoft-entra-id>`, given this channel is "
+"active in a security system with Microsoft Entra ID. In contrast, the "
+"user's email address is used, if the External ID is not set (e.g. for "
+"local users) or if the Microsoft Entra ID is not configured."
+msgstr ""
+
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:33
 msgid "Technical User"
 msgstr "技術ユーザー"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:29
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:34
 #, fuzzy
 msgid ""
 "Visit the `Microsoft 365 admin center <https://admin.microsoft.com/>`_ "
@@ -30549,15 +30560,15 @@ msgstr ""
 "］のチェックマークを外します。ユーザーに安全なパスワードを提供し、記録します。また、ユーザーが Microsoft Teams "
 "を使用できるように、製品ライセンスを提供します。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:38
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:43
 msgid "Add a user - Set up the basics"
 msgstr "ユーザーの追加 - 基本設定"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:41
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:46
 msgid "Add a user - Assign product licenses"
 msgstr "ユーザーの追加 - 製品ライセンスの割り当て"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:44
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:49
 msgid ""
 "After creating the user, turn off multifactor authentication by clicking "
 "on the user and then **Manage multifactor authentication**. Make sure no "
@@ -30567,11 +30578,11 @@ msgstr ""
 "ユーザーの作成後、ユーザー、［**多要素認証の管理** "
 "］の順にクリックして、多要素認証をオフにします。ユーザーに定期的なパスワードの変更を求めるポリシーや、その他の理由によりユーザーのログインを妨げるポリシーがないことを確認します。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:49
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:54
 msgid "Manage multifactor authentication"
 msgstr "多要素認証の管理"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:52
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:57
 msgid ""
 "Add the mail address (`TechnicalUser.Mail`) and password "
 "(`TechnicalUser.Password`) of the technical user to the configuration of "
@@ -30580,7 +30591,7 @@ msgstr ""
 "技術ユーザーのメールアドレス（`TechnicalUser.Mail`）とパスワード（`TechnicalUser.Password`）を "
 "Microsoft Teams の通知チャネルの設定に追加します。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:59
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:64
 msgid ""
 "Visit the `Microsoft Entra admin center <https://entra.microsoft.com/>`_ "
 "and follow `these instructions <https://learn.microsoft.com/en-us/entra"
@@ -30593,11 +30604,11 @@ msgstr ""
 "register-app>`_ に従って、アプリケーションを Microsoft ID プラットフォームに登録します。ステップ 5 で、［ "
 "**この組織ディレクトリのみに含まれるアカウント** ］を選択します。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:65
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:70
 msgid "Register an application"
 msgstr "アプリケーションの登録"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:68
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:73
 #, fuzzy
 msgid ""
 "Navigate to **Applications** > **Enterprise Applications** and click on "
@@ -30607,11 +30618,11 @@ msgstr ""
 "［ **アプリケーション** ］、［ **エンタープライズアプリケーション** ］の順に移動し、新しく登録したアプリケーションをクリックします。［"
 " **管理** ］セクションの［**プロパティ** ］に移動します。［ **割り当てが必要ですか?** ］を［ **はい** ］に設定します。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:72
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:77
 msgid "Application - Properties"
 msgstr "アプリケーション - プロパティ"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:75
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:80
 #, fuzzy
 msgid ""
 "Navigate to **Users and Groups** in the section **Manage**. Click on "
@@ -30623,11 +30634,11 @@ msgstr ""
 "］の順にクリックし、先に作成した技術ユーザーを検索、選択して割り当てます。（「`技術ユーザー<microsoft-teams-"
 "notifications-technical-user>` を参照してください。）"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:80
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:85
 msgid "Application - Users and groups"
 msgstr "アプリケーション - ユーザーとグループ"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:83
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:88
 #, fuzzy
 msgid ""
 "Navigate to **Applications** > **App registrations** and click on the "
@@ -30640,11 +30651,11 @@ msgstr ""
 "］に変更します。［**管理** ］セクションの［**認証** ］に移動します。［**パブリッククライアントフローを許可する** ］を［**はい**"
 " ］に設定します。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:88
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:93
 msgid "Application - Authentication"
 msgstr "アプリケーション - 認証"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:91
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:96
 #, fuzzy
 msgid ""
 "Navigate to **API permissions** in the section **Manage**. Click on **Add"
@@ -30654,29 +30665,29 @@ msgstr ""
 "［**管理** ］セクションの［**API のアクセス許可** ］に移動します。［**アクセス許可の追加** ］、［**Microsoft "
 "Graph**］、［** 委任されたアクセス許可**］の順にクリックし、以下の許可を検索、選択して追加します。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:95
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:100
 msgid "Chat.Create"
 msgstr "Chat.Create"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:96
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:101
 msgid "ChatMessage.Send"
 msgstr "ChatMessage.Send"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:97
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:102
 msgid "User.Read"
 msgstr "User.Read"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:99
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:104
 msgid ""
 "Click on **Grant admin consent for <tenant>** above the table with the "
 "permissions and confirm the dialog."
 msgstr "許可の表の上の［**<tenant> に管理者の同意を与えます** ］をクリックします。"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:102
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:107
 msgid "Application - API permissions"
 msgstr "アプリケーション - API のアクセス許可"
 
-#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:105
+#: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:110
 msgid ""
 "Add the ID of your tenant (`TenantId`) and newly created application "
 "(`ClientId`) to the configuration of the Microsoft Teams Notification "
@@ -40152,4 +40163,27 @@ msgstr ""
 #~ "GitHub repository: `IIS-Proxy "
 #~ "<https://github.com/axonivy-market/iis-proxy>`_"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "This channel provides notifications via "
+#~ "Microsoft Teams. If this channel is "
+#~ "active in a security system with "
+#~ "Microsoft Entra ID. the messages are "
+#~ "sent using the user's External ID, "
+#~ "which is linked via :ref:`Microsoft "
+#~ "Entra ID <microsoft-entra-id>`. If "
+#~ "the External ID is not set (e.g."
+#~ " for local users) or if the "
+#~ "Microsoft Entra ID is not configured,"
+#~ " the user's email address is used."
+#~ " If you enable this channel, you "
+#~ "also need to:"
+#~ msgstr ""
+#~ "このチャネルは、Microsoft Teams 経由で通知を行います。このチャネルが Microsoft"
+#~ " Entra ID を使用するセキュリティシステムでアクティブな場合、 "
+#~ ":ref:`Microsoft Entra ID <microsoft-entra-"
+#~ "id>` を介してリンクされたユーザーの External ID "
+#~ "を使用して、メッセージが送信されます。External ID "
+#~ "が設定されていない場合や（ローカルユーザーなど）Microsoft Entra ID "
+#~ "が設定されていない場合、ユーザーのメールアドレスが使用されます。このチャネルを有効にする場合は、以下も行う必要があります。"
 
