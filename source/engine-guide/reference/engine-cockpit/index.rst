@@ -56,6 +56,11 @@ On the left side are different items that provide important and useful informati
 * Administrator user menu
 
 Some items may not be available or shown depending on your engine. 
+
+.. note::
+
+    If you see the restart button in the topbar, but want to hide it, you can disable it
+    by adding :code:`Cockpit.Restart: Disabled` to your :ref:`ivy-yaml`.
   
 .. rubric:: Features
 
