@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-13 21:28+0000\n"
+"POT-Creation-Date: 2025-11-18 12:33+0000\n"
 "PO-Revision-Date: 2025-11-04 19:07+0000\n"
 "Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
 "Language: ja\n"
@@ -68,7 +68,7 @@ msgstr ""
 #: ../../source/axonivy/migration/hotfix/docker.rst:4
 #: ../../source/axonivy/migration/hotfix/index.rst:33
 #: ../../source/axonivy/migration/major/docker.rst:4
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:97
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:99
 msgid "Docker"
 msgstr "Docker"
 
@@ -3680,7 +3680,7 @@ msgstr ""
 
 #: ../../source/concepts/error-handling.rst:34
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:65
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:68
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:70
 msgid "Example"
 msgstr "例"
 
@@ -35320,34 +35320,38 @@ msgstr ""
 "は以下のように同時ユーザーの数をカウントします。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/license.rst:53
-msgid "Every session of every user counts as one concurrent user."
-msgstr "各ユーザーの各セッションは 1 人の同時ユーザーとしてカウントされます。"
+#, fuzzy
+msgid ""
+"All sessions of one user counts as one concurrent user. Users with the "
+"same name, email address and external id over multiple security contexts "
+"are only counted as one concurrent user."
+msgstr "複数のセキュリティコンテキストで同じ名前、メールアドレス、外部 ID を持つユーザーは、1 人の名前付きユーザーとしてカウントされます。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:55
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:57
 msgid ""
 "The system session is not counted as a concurrent user, as all sessions "
 "for all administrator users."
 msgstr "システムのセッションは同時ユーザーとしてカウントされません。すべての管理者ユーザーのすべてのセッションも同様です。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:58
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:60
 msgid "Anonymous sessions do not count as concurrent user."
 msgstr "匿名セッションは同時ユーザーとしてカウントされません。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:60
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:62
 msgid "This also applies to clusters."
 msgstr "クラスタも同様です。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:64
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:66
 msgid "Public URLs"
 msgstr "パブリック URL"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:66
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:68
 msgid ""
 "Public URLs are the links that end users will use to access your Axon Ivy"
 " Engine or Cluster."
 msgstr "パブリック URL は、エンドユーザーが Axon Ivy Engine やクラスタにアクセスするのに使用するリンクです。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:70
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:72
 msgid ""
 "Let's assume your Axon Ivy Engine is installed on a machine with the DNS "
 "name ``axonivyprod``. Users access the Axon Ivy Engine in two different "
@@ -35356,45 +35360,45 @@ msgstr ""
 "Axon Ivy Engine が ``axonivyprod`` という DNS 名でマシンにインストールされていると仮定します。ユーザーは 2"
 " つの異なる方法で Axon Ivy Engine にアクセスします。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:73
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:75
 msgid "Intranet users use ``http://axonivyprod:8080`` to access it."
 msgstr "イントラネットユーザーは ``http://axonivyprod:8080`` を使用してアクセスします。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:74
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:76
 msgid ""
 "Internet users use ``https://www.customer.com`` to access it through a "
 "reverse proxy."
 msgstr "インターネットユーザーは、``https://www.customer.com`` を使用して、リバースプロキシからアクセスします。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:75
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:77
 msgid ""
 "Administrators access the Axon Ivy Engine with an IP Address "
 "``http://192.168.1.19``."
 msgstr "管理者は、IP アドレス ``http://192.168.1.19`` を使用して、Axon Ivy Engine にアクセスします。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:77
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:79
 msgid "In this case, the license has to contain three public URLs:"
 msgstr "この場合、ライセンスには 3 つのパブリック URL を含める必要があります。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:79
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:81
 msgid "``axonivyprod``"
 msgstr "``axonivyprod``"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:80
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:82
 msgid "``www.customer.com``"
 msgstr "``www.customer.com``"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:81
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:83
 msgid "``192.168.1.19``"
 msgstr "``192.168.1.19``"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:83
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:85
 msgid ""
 "Note: Access via ``localhost``, ``127.0.0.1`` and ``::1`` is always "
 "possible and is not included in the license."
 msgstr "注記：``localhost``、``127.0.0.1``、``::1`` からのアクセスは常に可能ですが、ライセンスには含まれません。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:86
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:88
 msgid ""
 "For clusters, the Public URL of the load balancer in front of the cluster"
 " has to be in the license. If you need to access the cluster nodes "
@@ -35405,15 +35409,15 @@ msgstr ""
 "をライセンスに含める必要があります。別々に（内部で）クラスタノードにアクセスする必要がある場合は、IP アドレスまたは DNS "
 "名をクラスタのライセンスに追加してください。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:92
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:94
 msgid "Installing your License"
 msgstr "ライセンスのインストール"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:94
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:96
 msgid "There are several ways to install your license."
 msgstr "ライセンスをインストールする方法は複数あります。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:99
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:101
 msgid ""
 "For Containers, all your options for providing the license to the "
 "container are described in :ref:`configuration_containers_license`."
@@ -35421,25 +35425,25 @@ msgstr ""
 "コンテナについて、ライセンスをコンテナに提供するすべての方法を「 :ref:`configuration_containers_license` "
 "」で説明しています。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:105
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:107
 msgid "Linux, and Windows"
 msgstr "Linux および Windows"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:107
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:109
 msgid ""
 "For \"traditional\" server installations, your options to install a "
 "license are:"
 msgstr "「従来の」サーバーインストールでは、以下の方法でライセンスをインストールします。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:109
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:111
 msgid "copy the license to the :file:`configuration` directory of the engine."
 msgstr "ライセンスをエンジンの :file:`configuration` ディレクトリにコピーします。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:111
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:113
 msgid "upload the license using the engine cockpit."
 msgstr "エンジンコックピットを使用してライセンスをアップロードします。"
 
-#: ../../source/engine-guide/reference/axonivy-engine/license.rst:116
+#: ../../source/engine-guide/reference/axonivy-engine/license.rst:118
 msgid ""
 "You can either drag and drop the license, or select its location using "
 "the button :guilabel:`+ Choose License`."
@@ -40296,4 +40300,7 @@ msgstr ""
 #~ "translating text fields when creating "
 #~ ":ref:`Portal <portal-guide>` components."
 #~ msgstr ""
+
+#~ msgid "Every session of every user counts as one concurrent user."
+#~ msgstr "各ユーザーの各セッションは 1 人の同時ユーザーとしてカウントされます。"
 
