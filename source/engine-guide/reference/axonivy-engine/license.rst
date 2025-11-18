@@ -50,7 +50,9 @@ The number of users concurrently working on the Axon Ivy Engine is known as
 **concurrent users (CU)**. The Axon Ivy Engine counts the number of concurrent
 users as follows:
 
-* Every session of every user counts as one concurrent user.
+* All sessions of one user counts as one concurrent user. Users with the same name,
+  email address and external id over multiple security contexts are only counted as one
+  concurrent user.
 
 * The system session is not counted as a concurrent user, as all sessions 
   for all administrator users.
