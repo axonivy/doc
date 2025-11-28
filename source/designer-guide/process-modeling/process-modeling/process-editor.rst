@@ -187,9 +187,9 @@ Only available on :ref:`process-element-embedded-sub` or
 |goto-source-action| Jump to the referenced view or java class.
 *Only available on elements with a referenced view or java class*   
 
-|icon-action| Changes the icon of the process element. If the icon is already a custom icon
-the click will reset it to the default icon. Any image of the project can be
-used as decorator icons.  
+|icon-action| Changes the icon of the process element. You can select a standard icon, reset to the default or 
+choose an icon from the folder :code:`webContent/icons/` (supported formats are :code:`.svg`, :code:`.png`, 
+:code:`.jpg`, :code:`.jpeg`, :code:`.gif`, :code:`.webp`).
 
 .. include:: _select-color-quick-action.rst
 
