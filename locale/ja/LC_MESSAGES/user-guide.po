@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-28 07:48+0000\n"
+"POT-Creation-Date: 2025-12-03 13:58+0000\n"
 "PO-Revision-Date: 2025-11-26 01:52+0000\n"
 "Last-Translator: Torindo_translator <tabitosake@gmail.com>\n"
 "Language: ja\n"
@@ -15948,8 +15948,8 @@ msgid ""
 ":ref:`Persistence <persistence>`)"
 msgstr ""
 "``persistence`` - このアプリケーション内の既存の永続性ユニットへの参照（ :ref:`Persistence "
-"<persistence>` の API に関する詳細は、「 :ref:`persistence-configuration-"
-"editor` 」および「 :ref:`persistence-api` 」を参照）"
+"<persistence>` の API に関する詳細は、「 :ref:`persistence-configuration-editor` "
+"」および「 :ref:`persistence-api` 」を参照）"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:368
 msgid ""
@@ -27428,8 +27428,8 @@ msgid ""
 "data attributes on the current HTML Dialog. Simply press ``Ctrl+1`` on a "
 "**logic** or **data** expression respectively."
 msgstr ""
-"クイックフィックスを使用して、現在の HTML ダイアログに欠落しているイベント、メソッド、データ属性を作成できます。 **logic** または "
-"**data** 式でそれぞれ ``Ctrl + 1`` キーを押すだけです。"
+"クイックフィックスを使用して、現在の HTML ダイアログに欠落しているイベント、メソッド、データ属性を作成できます。 **logic** または"
+" **data** 式でそれぞれ ``Ctrl + 1`` キーを押すだけです。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:35
 msgid "|html-editor-image6|"
@@ -27564,15 +27564,19 @@ msgid ""
 msgstr "エラーページは、プロセスアクティビティや HTML ダイアログのインタラクションの実行中に発生した予期しないエラーをユーザーに知らせます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:15
+#, fuzzy
 msgid ""
-"The default error pages are located at ``webapps/ivy/ivy-error-"
-"page.xhtml``. You can inspect them. These pages can be customized to meet"
-" the look of your workflow application and your company's identity. "
-"Moreover, you can adjust the information displayed. The :public-"
-"api:`ErrorPageMBean </ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>`"
-" is accessible within error pages to provide context information on the "
-"error and its engine state. Other Ivy APIs are not intended to work in "
-"case of an error."
+"The default error pages are located at :file:`webapps/ivy/WEB-INF/lib"
+"/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml`. You "
+"can inspect them. These pages can be customized to meet the look of your "
+"workflow application and your company's identity. You can do this by e.g."
+" copy the files to :file:`webapps/ivy/error`, but make sure that you also"
+" configure the new error pages in the :ref:`web-xml`. Moreover, you can "
+"adjust the information displayed. The :public-api:`ErrorPageMBean "
+"</ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` is accessible "
+"within error pages to provide context information on the error and its "
+"engine state. Other Ivy APIs are not intended to work in case of an "
+"error."
 msgstr ""
 "デフォルトのエラーページは ``webapps/ivy/ivy-error-page.xhtml`` "
 "にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。さらに、表示される情報を調整できます。エラーページ内で"
@@ -27580,11 +27584,11 @@ msgstr ""
 "</ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` "
 "にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。エラーが発生した場合、他の Ivy API は動作しません。"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:23
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:25
 msgid "Custom error pages have to be registered in the global :ref:`web-xml`."
 msgstr "グローバルな :ref:`web-xml` にカスタムエラーページを登録する必要があります。"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:25
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:28
 msgid ""
 "Keep in mind that error pages and their configuration do not live within "
 "the project. The Migration Wizard will copy error pages from the old "
@@ -27598,24 +27602,29 @@ msgstr ""
 "で定義されたページだけです。さらに、これが正しく機能するには、エラーページが自己完結している必要があります。つまり、エラーページに他の "
 ":code:`*.xhtml` や、CSS、JavaScript、画像などのリソースが含まれていてはなりません。"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:33
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:36
 msgid "Ajax Errors"
 msgstr "Ajax エラー"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:35
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:38
+#, fuzzy
 msgid ""
 "If an exception occurs in an Ajax-based HTTP request, the configured "
 "Primefaces Ajax exception handlers come into play. The handlers have to "
 "be defined as part of the *\\*.xhtml* file. In the standard layouts "
-"provided, handlers are already configured. See "
-"``webContent/layouts/includes/exception.xhtml`` for details."
+"provided, handlers are already configured. See :file:`webapps/ivy/WEB-"
+"INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-INF/resources"
+"/ivy-form/layouts/include/exception.xhtml` for details. To customize the "
+"Ajax exception handling, you can copy the files to your project (e.g. to "
+":file:`webContent/layouts/includes/exception.xhtml`) and adjust the your "
+"template to load this file."
 msgstr ""
 "Ajax ベースの HTTP リクエストで例外が発生した場合、設定されている PrimeFaces の Ajax "
 "例外ハンドラーがこれを処理します。*\\*.xhtml* "
 "ファイルでハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、``webContent/layouts/includes/exception.xhtml``"
 " を参照してください。"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:45
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:50
 msgid ""
 "The above Ajax exception handler will catch every exception of every "
 "type. If an exception occurs, the action in ``onexception`` will be "
@@ -27624,7 +27633,7 @@ msgstr ""
 "上記の Ajax 例外ハンドラーは、すべてのタイプのすべての例外をキャッチします。例外が発生した場合、``onexception`` "
 "のアクションが実行されます。この例では、PrimeFaces ダイアログが表示されます。"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:57
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:62
 msgid ""
 "The ``errorPage`` bean is available within the Ajax exception handling. "
 "Properties like ``exceptionId`` or ``message`` can be used to provide "
@@ -27633,11 +27642,11 @@ msgstr ""
 "Ajax 例外処理では、``errorPage`` Bean を使用できます。``exceptionId`` や ``message`` "
 "などのプロパティを使用して、特定のエラー情報をユーザーに提供できます。"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:62
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:67
 msgid "View Expired Exception"
 msgstr "ビューの期限切れの例外"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:64
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:69
 msgid ""
 "If the view or the session of a user expires then there is a possibility "
 "to catch that exception with a specialized ajax exception handler. "
@@ -27647,7 +27656,7 @@ msgstr ""
 "ユーザーのビューまたはセッションが期限切れになった場合、特殊な Ajax "
 "例外ハンドラーでその例外をキャッチできます。すべての例外をキャッチする代わりに、キャッチする例外のタイプを指定できます。"
 
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:75
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:80
 msgid ""
 "This handler will only catch exceptions of type "
 "``javax.faces.application.ViewExpiredException``. The exception handler "
@@ -38400,8 +38409,8 @@ msgid ""
 " <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X"
 "-Content-Type-Options>`_."
 msgstr ""
-"**X-Content-Type-Options**：デフォルトでこのヘッダーは "
-":code:`nosniff` に設定されています。詳細については、 `X-Content-Type-Options (MDN) "
+"**X-Content-Type-Options**：デフォルトでこのヘッダーは :code:`nosniff` "
+"に設定されています。詳細については、 `X-Content-Type-Options (MDN) "
 "<https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X"
 "-Content-Type-Options>`_ を参照してください。"
 
