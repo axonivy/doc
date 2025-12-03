@@ -12,17 +12,20 @@ Error Pages
 Error pages inform the user about unexpected errors that occurred during the execution of 
 process activities or HTML dialog interactions.
 
-The default error pages are located at ``webapps/ivy/ivy-error-page.xhtml``. You
-can inspect them. These pages can be customized to meet the look of your
-workflow application and your company's identity. Moreover, you can adjust the
-information displayed. The :public-api:`ErrorPageMBean
+The default error pages are located at 
+:file:`webapps/ivy/WEB-INF/lib/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml`.
+You can inspect them. These pages can be customized to meet the look of your
+workflow application and your company's identity. You can do this by e.g. copy the files 
+to :file:`webapps/ivy/error`, but make sure that you also configure the new error pages in the :ref:`web-xml`.
+Moreover, you can adjust the information displayed. The :public-api:`ErrorPageMBean
 </ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` is accessible within error
 pages to provide context information on the error and its engine state. Other
 Ivy APIs are not intended to work in case of an error.
 
 Custom error pages have to be registered in the global :ref:`web-xml`.
 
-.. tip:: Keep in mind that error pages and their configuration do not live 
+.. tip:: 
+   Keep in mind that error pages and their configuration do not live 
    within the project. The Migration Wizard will copy error pages from the
    old engine to the new engine but only the pages defined in :ref:`web-xml`.
    Furthermore that this properly works the error pages must be self-contained,
@@ -35,8 +38,10 @@ Ajax Errors
 If an exception occurs in an Ajax-based HTTP request, the configured Primefaces
 Ajax exception handlers come into play. The handlers have to be defined
 as part of the *\*.xhtml* file. In the standard layouts provided, handlers are
-already configured. See ``webContent/layouts/includes/exception.xhtml`` for
-details.
+already configured. See 
+:file:`webapps/ivy/WEB-INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-INF/resources/ivy-form/layouts/include/exception.xhtml`
+for details. To customize the Ajax exception handling, you can copy the files to your
+project (e.g. to :file:`webContent/layouts/includes/exception.xhtml`) and adjust the your template to load this file.
 
 ::
 
