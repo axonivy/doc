@@ -19,6 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
+msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-11-28 07:48+0000\nPO-Revision-Date: 2025-12-03 15:01+0000\nLast-Translator: Torindo_reviewer <eri.kobayashi@torindo.ne.jp>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.15-dev\nGenerated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -116,11 +117,7 @@ msgid ""
 "and users may face inconveniences due to known and addressed **bug "
 "fixes**. In addition, **performance issues** may be solved and make using"
 " the Axon Ivy Engine more fun on a daily basis."
-msgstr ""
-"生産環境の Axon Ivy Engine を安定した最新の状態に保つことは重要です。そうしないと、既知の **セキュリティリーク** "
-"に対して無防備になったり、既に対処済みの **バグ修正** "
-"に関連する不具合によってユーザーが不便を感じたりする可能性があります。さらに、**パフォーマンスの問題** が解決され、Axon Ivy "
-"Engine の日常的使用がより快適になる場合もあります。"
+msgstr "生産環境のAxon Ivy Engineを安定した最新の状態に保つことは重要です。そうしないと、既知の **セキュリティリーク** に対して無防備になったり、既に対処済みの **バグ修正** に関連する不具合によってユーザーが不便を感じたりする可能性があります。さらに、Axon Ivy Engineを安定した最新の状態に保つことで**パフォーマンスの問題** が解決され、Axon Ivy Engineの日常的使用がより快適になる場合もあります。"
 
 #: ../../source/axonivy/migration/hotfix/index.rst:13
 msgid ""
@@ -384,13 +381,7 @@ msgid ""
 "internal Java classes from the Axon Ivy Engine. By sticking only to "
 "PublicAPI and best practices, however, you have a minimal risk to face "
 "these version incompatibilities."
-msgstr ""
-"Axon Ivy Engine "
-"は、古いエンジンバージョン向けに構築されたワークフローアプリケーションを実行することができます。それでも、プロジェクトが古い PrimeFaces"
-" バージョン、Java ライブラリ、または Axon Ivy Engine の内部 Java "
-"クラスなど、もうサポートされていないインフラストラクチャに依存している可能性があるため、**テスト環境で新バージョンへの移行をシミュレーションすること**"
-" を推奨します。しかし、PublicAPI "
-"とベストプラクティスのみに従っていれば、これらのバージョン非互換性に直面するリスクは最小限に抑えられます。"
+msgstr "Axon Ivy Engineは、古いエンジンバージョン向けに構築されたワークフローアプリケーションを実行することができます。それでも、プロジェクトが古いPrimeFacesバージョン、Javaライブラリ、またはAxon Ivy Engineの内部Javaクラスなど、もうサポートされていないインフラストラクチャに依存している可能性があるため、**テスト環境で新バージョンへの移行をシミュレーションすること** を推奨します。しかし、PublicAPIとベストプラクティスのみに従っていれば、これらのバージョン非互換性に直面するリスクは最小限に抑えられます。"
 
 #: ../../source/axonivy/migration/major/index.rst:36
 msgid ""
@@ -584,9 +575,7 @@ msgid ""
 "Upgrade to 13.1 is only supported from an Axon Ivy Engine 10.0 and "
 "higher. If you have an Axon Ivy Engine older than version 10.0 you need "
 "to first migrate to a version between 10.0 and 12.0."
-msgstr ""
-"13.1 へのアップグレードは、Axon Ivy Engine 10.0 以上からのみサポートされています。10.0 より古いバージョンの "
-"Axon Ivy Engine を使用している場合は、まず 10.0 ～ 12.0 のバージョンへ移行しておく必要があります。"
+msgstr "13.1へのアップグレードは、Axon Ivy Engine 10.0以降からのみサポートされています。10.0より古いバージョンのAxon Ivy Engineを使用している場合は、まず10.0～12.0のバージョンへ移行しておく必要があります。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:11
 #: ../../source/engine-guide/configuration/docker-container.rst:43
@@ -613,7 +602,7 @@ msgstr "Axon Ivy Engine 13.1 の新しいライセンスをリクエストする
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:19
 msgid "Axon Ivy Public API Maven dependency"
-msgstr "Axon Ivy パブリック API Maven 依存関係"
+msgstr "Axon IvyパブリックAPI Maven依存関係"
 
 #: ../../source/axonivy/migration/_tagLegend.rst:25
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:21
@@ -635,18 +624,11 @@ msgid ""
 "the :code:`pom.xml` of the project. Currently, this Maven dependency is "
 "not required if you continue developing with the Eclipse-based PRO "
 "Designer."
-msgstr ""
-"プロジェクトの :code:`pom.xml` ファイルに Axon Ivy Public API を Maven "
-"依存関係として含められるようになりました。これを実行するには、POM に :code:`ivy-project-parent` "
-"を親として追加し、:code:`ivy-api` 依存関係を挿入して更新します。このセットアップにより、Eclipse ベースの PRO "
-"Designer 以外の環境（Visual Studio Code など）で、Axon Ivy プロジェクトの Java "
-"部分を開発できるようになります。この変換は、プロジェクトの :code:`pom.xml` "
-"に親が定義されていない場合にのみ発生します。現在のところ、Eclipse ベースの PRO Designer で引き続き開発する場合、この "
-"Maven 依存関係は必要ありません。"
+msgstr "プロジェクトの:code:`pom.xml`ファイルにAxon Ivy Public APIをMaven依存関係として含められるようになりました。これを実行するには、POMに:code:`ivy-project-parent`を親として追加し、:code:`ivy-api`依存関係を挿入して更新します。このセットアップにより、EclipseベースのPRO Designer以外の環境（Visual Studio Codeなど）で、Axon IvyプロジェクトのJava部分を開発できるようになります。この変換は、プロジェクトの:code:`pom.xml`に親が定義されていない場合にのみ発生します。現在のところ、EclipseベースのPRO Designerで引き続き開発する場合、このMaven依存関係は必要ありません。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:31
 msgid "Multiple responsibles for a task and multiple roles for process starts"
-msgstr "1 つのタスクに対する複数の担当と、プロセス開始に対する複数のロール"
+msgstr "1つのタスクに対する複数の担当と、プロセス開始に対する複数のロール"
 
 #: ../../source/axonivy/migration/_tagLegend.rst:29
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:33
@@ -665,10 +647,7 @@ msgid ""
 "different roles if needed. You will notice that you can configure on the "
 "task tab multiple responsibles e.g. :ref:`Task Tab <process-element-tab-"
 "task>`. The same is also true for the expiry task configuration."
-msgstr ""
-"1 つのタスクに複数の担当を割り当てることが可能になりました。動的ロールを作成する必要はもうありません。必要に応じて、単純に 1 "
-"つのタスクを複数のロールに割り当てることができます。タスクタブでは、複数の担当を設定できることがわかります。（例：:ref:`Task Tab "
-"<process-element-tab-task>`）。同様のことは、期限切れタスクの設定についても当てはまります。"
+msgstr "1つのタスクに複数の担当を割り当てることが可能になりました。動的ロールを作成する必要はもうありません。必要に応じて、1つのタスクを複数のロールに割り当てることができます。タスクタブでは、複数の担当を設定できることがわかります。（例：:ref:`Task Tab <process-element-tab-task>`）。期限切れタスクの設定についても同様です。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:41
 msgid ""
@@ -676,10 +655,7 @@ msgid ""
 "were previously named :code:`activator`, therefore we have streamlined "
 "the naming to :code:`responsible` from deep in the core to the user "
 "interface, everywhere. Use the new API`s:"
-msgstr ""
-"1 名の担当しか処理しないすべての API は非推奨となりました。これらは以前、:code:`activator` "
-"という名称でしたが、コアの深い部分からユーザーインターフェイスに至るまで、一貫して :code:`responsible` "
-"という名称に統一しました。新しい API を使用してください："
+msgstr "1名の担当しか処理しないすべてのAPIは非推奨となりました。これらは以前、:code:`activator`という名称でしたが、コアの深い部分からユーザーインターフェイスに至るまで、一貫して:code:`responsible`という名称に統一しました。新しいAPIを使用してください："
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:46
 msgid ":code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`"
@@ -695,9 +671,7 @@ msgid ""
 "roles on a process start. You will notice that you can configure on the "
 "request tab of a start multiple roles e.g. :ref:`Start Event <process-"
 "element-start-request-tab-request>`."
-msgstr ""
-"プロセス開始についても同様です。プロセス開始に複数のロールを定義できるようになりました。開始イベントのリクエストタブで、複数のロールを設定できることがわかります（例：:ref:`Start"
-" Event <process-element-start-request-tab-request>`）。"
+msgstr "プロセス開始についても同様です。プロセス開始に複数のロールを定義できるようになりました。開始イベントのリクエストタブで、複数のロールを設定できることがわかります（例：:ref:`Start Event <process-element-start-request-tab-request>`）。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:56
 msgid "Support for Case Scope Override removed"
@@ -719,10 +693,7 @@ msgid ""
 "Case scope overriding has been deprecated in LTS 8.0 and has now been "
 "removed. Use :ref:`strict_overriding` if you rely on case scope "
 "overriding."
-msgstr ""
-"ケーススコープのオーバーライドは LTS 8.0 "
-"で非推奨となり、現在は削除されています。ケーススコープのオーバーライドに依存している場合は、:ref:`strict_overriding` "
-"を使用してください。"
+msgstr "ケースの範囲のオーバーライドはLTS 8.0で非推奨となり、現在は削除されています。ケースの範囲のオーバーライドに依存している場合は、:ref:`strict_overriding`を使用してください。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:65
 msgid "Removal of Serenity PrimeFaces themes"
@@ -732,9 +703,7 @@ msgstr "Serenity PrimeFaces テーマの削除"
 msgid ""
 "We removed the Serenity themes, including the :code:`serenity-ivy` theme."
 " Please use the :ref:`freya-ivy <freya-themes>` theme instead."
-msgstr ""
-"Serenity テーマ（:code:`serenity-ivy` テーマを含む）を削除しました。代わりに :ref:`freya-ivy "
-"<freya-themes>` テーマを使用してください。"
+msgstr "Serenityテーマ（:code:`serenity-ivy`テーマを含む）を削除しました。代わりに:ref:`freya-ivy <freya-themes>`テーマを使用してください。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:74
 msgid "Removal of session role"
@@ -752,11 +721,7 @@ msgid ""
 "made possible via the :code:`ISession#assignRole` method. Roles are now "
 "only supported for authenticated sessions backed by a user who has roles "
 "assigned, which means you now need to assign roles to a user."
-msgstr ""
-"以前は、ロールをセッションに直接割り当てることが可能でした。この機能は主に未認証セッション向けに設計されていました。認証済みセッション（つまりユーザーがログインしている状態）では、ロールはユーザーに直接割り当てることが可能であり、またそうあるべきです。この機能の本来の目的は、開発者がプラットフォームの組み込みユーザー管理を迂回して独自の認証メカニズムを実装し、セッションに手動でロールを割り当てる必要があるというような例外的なケースをサポートすることにありました。これを可能にしていたのが"
-" :code:`ISession#assignRole` "
-"メソッドでした。現在、ロールはユーザーにロールが割り当てられた認証済みセッションでのみサポートされます。つまり、今後は複数のロールを 1 "
-"人のユーザーに割り当てる必要があります。"
+msgstr "以前は、ロールをセッションに直接割り当てることが可能でした。この機能は主に未認証セッション向けに設計されていました。認証済みセッション（つまりユーザーがログインしている状態）では、ロールはユーザーに直接割り当てることが可能であり、またそうあるべきです。この機能の本来の目的は、開発者がプラットフォームの組み込みユーザー管理を迂回して独自の認証メカニズムを実装し、セッションに手動でロールを割り当てる必要があるというような例外的なケースをサポートすることにありました。これを可能にしていたのが:code:`ISession#assignRole`メソッドでした。現在、ロールはユーザーにロールが割り当てられた認証済みセッションでのみサポートされます。つまり、今後は複数のロールを1人のユーザーに割り当てる必要があります。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:90
 msgid "Removal of Server Control Center for Windows"
@@ -807,7 +772,7 @@ msgstr ""
 msgid ""
 "In case you have a custom :code:`log4j2.xml` configuration, you need to "
 "adapt the occurrences of the runtime logger name in your configuration."
-msgstr "カスタム :code:`log4j2.xml` 設定を使用している場合は、設定内にあるランタイムロガー名の記述を修正する必要があります。"
+msgstr "カスタム:code:`log4j2.xml`設定を使用している場合は、設定内にあるランタイムロガー名の記述を修正する必要があります。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:123
 msgid "From something like this:"
@@ -908,20 +873,18 @@ msgstr "この移行により、プロジェクトの動作や機能が削除さ
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:4
 msgid "Migrating from 13.1 to 13.2"
-msgstr "13.1 から 13.2 への移行"
+msgstr "13.1から13.2への移行"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:6
 msgid ""
 "Upgrade to 13.2 is only supported from an Axon Ivy Engine 10.0 and "
 "higher. If you have an Axon Ivy Engine older than version 10.0 you need "
 "to first migrate to a version between 10.0 and 12.0."
-msgstr ""
-"13.2 へのアップグレードは、Axon Ivy Engine 10.0 以降からのみサポートされています。バージョン 10.0 よりも古い "
-"Axon Ivy Engine を使用している場合は、最初にバージョン 10.0 ～ 12.0 に移行しておく必要があります。"
+msgstr "13.2へのアップグレードは、Axon Ivy Engine 10.0以降からのみサポートされています。10.0より古いバージョンのAxon Ivy Engineを使用している場合は、まず10.0～12.0のバージョンに移行しておく必要があります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:11
 msgid "Persistence API (Hibernate)"
-msgstr "永続性 API（Hibernate）"
+msgstr "永続性API（Hibernate）"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:15
 msgid ""
@@ -930,11 +893,7 @@ msgid ""
 "<https://jakarta.ee/specifications/persistence/3.2/>`_ version 3.2. The "
 "implementation of the API was migrated from `Hibernate "
 "<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to 7.0."
-msgstr ""
-"永続性 API を Java Persistence API (JPA) バージョン 2.2 から `Jakarta Persistence "
-"API <https://jakarta.ee/specifications/persistence/3.2/>`_ バージョン 3.2 "
-"に移行しました。API の実装は `Hibernate "
-"<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 から 7.0 に移行されました。"
+msgstr "永続性APIをJava Persistence API (JPA) バージョン2.2から`Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_バージョン3.2に移行しました。APIの実装は`Hibernate <https://hibernate.org/orm/documentation/7.0/>`_5.6から7.0に移行されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:19
 msgid ""
@@ -942,14 +901,11 @@ msgid ""
 " to :code:`jakarta.persistence`. The code of Ivy projects needs to adapt "
 "to this change. Use :guilabel:`find and replace in files` in the Designer"
 " to migrate your project."
-msgstr ""
-"新しいバージョンのパッケージは :code:`javax.persistence` から :code:`jakarta.persistence` "
-"に変更されました。この変更に合わせて Ivy プロジェクトのコードを変更する必要があります。Designer で :guilabel:`find "
-"and replace in files` を使用してプロジェクトを移行してください。"
+msgstr "新しいバージョンのパッケージは:code:`javax.persistence`から:code:`jakarta.persistence`に変更されました。この変更に合わせてIvyプロジェクトのコードを変更する必要があります。Designerで:guilabel:`find and replace in files` を使用してプロジェクトを移行してください。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:24
 msgid "HttpHeaderSecurityFilter and RemoteIpFilter in web.xml"
-msgstr "web.xml 内の HttpHeaderSecurityFilter および RemoteIpFilter"
+msgstr "web.xml内のHttpHeaderSecurityFilterおよびRemoteIpFilter"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:28
 msgid ""
@@ -959,31 +915,23 @@ msgid ""
 "should no longer do that, otherwise the header maybe appear twice. So you"
 " should remove the following configurations and make the adjustments in "
 "the :ref:`ivy-yaml`:"
-msgstr ""
-":ref:`ivy-yaml` を使用して、:ref:`reverse-proxy` HTTP ヘッダーおよびセキュリティ応答用の :ref"
-":`security-http-headers` を定義できるようになりました。引き続き :ref:`web-xml` "
-"からこれらを定義することも可能ですが、そうするとヘッダーが二重に設定されてしまう可能性があります。そのため、次の設定を削除し、:ref:`ivy-"
-"yaml` 側で調整を行ってください。"
+msgstr ":ref:`ivy-yaml`を使用して、:ref:`reverse-proxy`HTTPヘッダーおよびセキュリティ応答用の:ref:`security-http-headers`を定義できるようになりました。引き続き:ref:`web-xml`からこれらを定義することも可能ですが、そうするとヘッダーが二重に設定されてしまう可能性があります。そのため、次の設定を削除し、:ref:`ivy-yaml`側で調整を行ってください。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:34
 msgid ""
 ":code:`org.apache.catalina.filters.HttpHeaderSecurityFilter` → "
 ":code:`WebServer.HttpHeaders`"
-msgstr ""
-":code:`org.apache.catalina.filters.HttpHeaderSecurityFilter` → "
-":code:`WebServer.HttpHeaders`"
+msgstr ":code:`org.apache.catalina.filters.HttpHeaderSecurityFilter` → :code:`WebServer.HttpHeaders`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:35
 msgid ""
 ":code:`org.apache.catalina.filters.RemoteIpFilter` → "
 ":code:`ReverseProxy.HttpHeaders`"
-msgstr ""
-":code:`org.apache.catalina.filters.RemoteIpFilter` → "
-":code:`ReverseProxy.HttpHeaders`"
+msgstr ":code:`org.apache.catalina.filters.RemoteIpFilter` → :code:`ReverseProxy.HttpHeaders`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:39
 msgid "Schema header in ivy.yaml and app.yaml"
-msgstr "ivy.yaml および app.yaml 内のスキーマヘッダー"
+msgstr "ivy.yamlおよびapp.yaml内のスキーマヘッダー"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:43
 msgid ""
@@ -991,9 +939,7 @@ msgid ""
 "specified, the Axon Ivy Engine will now automatically assume that these "
 "files are in the latest version and will no longer auto migrate them. We "
 "suggest that you always version your file with a schema header."
-msgstr ""
-":ref:`ivy-yaml` および :ref:`app-yaml` にスキーマヘッダーが指定されていない場合、Axon Ivy Engine "
-"はこれらのファイルが最新バージョンであると自動的にみなし、今後は自動移行を行わなくなります。そのため、常にスキーマヘッダーを付けてファイルのバージョン管理をすることを推奨します。"
+msgstr ":ref:`ivy-yaml`および:ref:`app-yaml`にスキーマヘッダーが指定されていない場合、Axon Ivy Engineはこれらのファイルが最新バージョンであると自動的にみなし、今後は自動移行を行わなくなります。そのため、常にスキーマヘッダーを付けてファイルのバージョン管理をすることを推奨します。"
 
 #: ../../source/axonivy/migration/migration-tools.rst:4
 msgid "Migration Tools"
@@ -1480,9 +1426,7 @@ msgid ""
 "With this option, you don't need to install an engine - use a local Axon "
 "Ivy Designer to develop your trial project and deploy it to the Axon Ivy "
 "Engine in the cloud."
-msgstr ""
-"このオプションを使用すれば、エンジンをインストールする必要はありません。ローカルの Axon Ivy Designer "
-"を使用してトライアルプロジェクトを開発し、それをクラウド上の Axon Ivy Engine に展開できます。"
+msgstr "このオプションを使用すれば、エンジンをインストールする必要はありません。ローカルのAxon Ivy Designerを使用してトライアルプロジェクトを開発し、それをクラウド上のAxon Ivy Engineに展開できます。"
 
 #: ../../source/axonivy/what-axon-ivy.rst:4
 msgid "What is Axon Ivy?"
@@ -1874,9 +1818,7 @@ msgstr "サブプロセスでロジックを再利用する際に直面する可
 msgid ""
 "You can invent such custom logic nevertheless, by using :ref:`extensible-"
 "process-elements`, which are explained in the next chapter."
-msgstr ""
-"ただし、:ref:`extensible-process-elements` "
-"（次の章で説明）を使用することで、そのようなカスタムロジックを作成することはできます。"
+msgstr "ただし、:ref:`extensible-process-elements`（次の章で説明）を使用することで、そのようなカスタムロジックを作成することはできます。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:117
 msgid "Extendible Process Elements"
@@ -2173,11 +2115,7 @@ msgid ""
 "**Destination Directory** choose the ``dropins`` directory of your Axon "
 "Ivy Designer or Engine installation. Press the **Finish** button. Your "
 "plugin is created in the ``dropins/plugins`` directory."
-msgstr ""
-"**META-INF/MANIFEST.MF** ファイルエディターに戻ります。［**概要** ］タブを選択し、［**ウィザードをエクスポート**"
-" ］リンクをクリックします。**エクスポート先のディレクトリ** として、Axon Ivy Designer の ``dropins`` "
-"ディレクトリまたはエンジンのインストールディレクトリを選択します。［**終了** ］ボタンを押します。プラグインが "
-"``dropins/plugins`` ディレクトリに作成されます。"
+msgstr "**META-INF/MANIFEST.MF**ファイルエディターに戻ります。［**概要** ］タブを選択し、［**ウィザードをエクスポート** ］リンクをクリックします。**エクスポート先のディレクトリ** として、Axon Ivy DesignerまたはEngineインストール先の``dropins``ディレクトリを選択します。［**終了** ］ボタンを押します。プラグインが``dropins/plugins``ディレクトリに作成されます。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:244
 #: ../../source/designer-guide/introduction/installation.rst:4
@@ -2243,9 +2181,7 @@ msgstr ""
 msgid ""
 "Axon Ivy uses the reference implementation libraries of JAX-RS called "
 "`Jersey <https://jersey.github.io/>`__."
-msgstr ""
-"Axon Ivy は、JAX-RS のリファレンス実装ライブラリである `Jersey "
-"<https://jersey.github.io/>`__ を使用します。"
+msgstr "Axon Ivyは、JAX-RSのリファレンス実装ライブラリである`Jersey <https://jersey.github.io/>`__を使用します。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:20
 msgid "Call a Remote REST Service"
@@ -2318,11 +2254,7 @@ msgid ""
 "<https://www.openapis.org/>`__ service specifications. You only need to "
 "share the specification as a file or serve it on a public URL so that "
 "clients can start using it."
-msgstr ""
-"プロジェクトで新しい REST API を提供したら、サービス機能をサービスユーザーと共有する必要があります。Ivy "
-"プロジェクトで定義されたサービスは `OpenAPI <https://www.openapis.org/>`__ "
-"サービス仕様書として公開されるため、共有は簡単です。仕様書をファイルとして共有するか、パブリック URL "
-"で提供するだけで、クライアントは利用を開始できます。"
+msgstr "プロジェクトで新しいREST APIを提供したら、サービス機能をサービスユーザーと共有する必要があります。Ivyプロジェクトで定義されたサービスは`OpenAPI <https://www.openapis.org/>`__サービス仕様書として公開されるため、共有は簡単です。仕様書をファイルとして共有するか、パブリックURLで提供するだけで、クライアントは利用を開始できます。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:79
 msgid ""
@@ -2382,10 +2314,7 @@ msgid ""
 "services with the API Browser. It gives consumers of your services not "
 "only a detailed service description, but a simple client to fire real "
 "calls against the services, too."
-msgstr ""
-"API ブラウザを使用して、すべての `OpenAPI <https://www.openapis.org/>`__ "
-"サービスを簡単に調べることができます。API "
-"ブラウザは、サービスのコンシューマにサービスの詳細な説明を提供するだけでなく、サービスに対して実際の呼び出しを実行するためのシンプルなクライアントも提供します。"
+msgstr "APIブラウザを使用して、すべての`OpenAPI <https://www.openapis.org/>`__サービスを簡単に調べることができます。APIブラウザは、サービスのコンシューマにサービスの詳細な説明を提供するだけでなく、サービスに対して実際の呼び出しを実行するためのシンプルなクライアントも提供します。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:125
 msgid ""
@@ -3403,11 +3332,7 @@ msgid ""
 "environment on the same engine or operate :ref:`multi-tenancy <multi-"
 "tenancy>`. Security systems completely sealed off from other security "
 "systems and can consist of several applications."
-msgstr ""
-"デフォルトでは、すべての Axon Ivy Engine に :code:`default`` "
-"セキュリティシステムが搭載されており、ほとんどの場合、これで十分です。追加のセキュリティシステムが必要になるのは、同じエンジン上にテスト環境を構築する場合や"
-" :ref:`multi-tenancy <multi-tenancy>` "
-"を運用する場合だけです。セキュリティシステムは他のセキュリティシステムから完全に隔離されており、複数のアプリケーションで構成できます。"
+msgstr "デフォルトでは、すべてのAxon Ivy Engineに:code:`default``セキュリティシステムが搭載されており、ほとんどの場合、これで十分です。追加のセキュリティシステムが必要になるのは、同じエンジン上にテスト環境を構築する場合や:ref:`multi-tenancy <multi-tenancy>`を運用する場合だけです。セキュリティシステムは他のセキュリティシステムから完全に隔離されており、複数のアプリケーションで構成できます。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:36
 #: ../../source/designer-guide/reference/glossary.rst:7
@@ -4114,9 +4039,7 @@ msgid ""
 "The simplest and safest way to achieve multi-tenancy is to run a separate"
 " Axon Ivy Engine installation per tenant or per customer. Doing so brings"
 " the following advantages:"
-msgstr ""
-"マルチテナンシーを実現する最も簡単で安全な方法は、テナントまたは顧客ごとに個別の Axon Ivy Engine "
-"インストールを実行することです。そうすることで、次のような利点があります。"
+msgstr "マルチテナンシーを実現する最も簡単で安全な方法は、テナントまたは顧客ごとに個別のAxon Ivy Engineインストールを実行することです。そうすることで、次のような利点があります。"
 
 #: ../../source/concepts/multi-tenancy/multiple-engines.rst:10
 msgid ""
@@ -4171,12 +4094,7 @@ msgid ""
 "<https://kubernetes.io/>`_ or `OpenShift <https://openshift.io/>`_ that "
 "have solved the provisioning cleanly and keep administrative overhead to "
 "a minimum."
-msgstr ""
-"これらが、Axon Ivy Engine "
-"インストールを分離することによるマルチテナンシーを推奨する主な理由です。プロビジョニングが適切に解決され、管理上の負担を最小限に抑えられる "
-"`Docker <https://www.docker.com/>`_、`Kubernetes "
-"<https://kubernetes.io/>`_ または `OpenShift <https://openshift.io/>`_ "
-"などのコンテナ環境を使用することをお勧めします。"
+msgstr "これらが、Axon Ivy Engineインストールを分離することによるマルチテナンシーを推奨する主な理由です。プロビジョニングが適切に解決され、管理上の負担を最小限に抑えられる`Docker <https://www.docker.com/>`_、`Kubernetes <https://kubernetes.io/>`_または `OpenShift <https://openshift.io/>`_などのコンテナ環境を使用することをお勧めします。"
 
 #: ../../source/concepts/multi-tenancy/multiple-engines.rst:38
 msgid ""
@@ -5178,9 +5096,7 @@ msgstr ""
 msgid ""
 "Or you can change an app configuration, e.g change the URL of a "
 ":ref:`RestClient <rest-clients-configuration>`:"
-msgstr ""
-"また、 :ref:`RestClient<rest-clients-configuration>` の URL "
-"を変更するなど、アプリの設定を変更することもできます。"
+msgstr "また、 :ref:`RestClient<rest-clients-configuration>`の URL を変更するなど、アプリの設定を変更することもできます。"
 
 #: ../../source/concepts/testing/unit-testing.rst:83
 msgid ""
@@ -5351,9 +5267,7 @@ msgstr "変数の値を変更したい場合は、以下のように進めます
 msgid ""
 "Or you can change an app configuration, e.g the URL of a :ref:`RestClient"
 " <rest-clients-configuration>`:"
-msgstr ""
-"また、 :ref:`RestClient<rest-clients-configuration>` の URL "
-"など、アプリの設定を変更することもできます。"
+msgstr "また、 :ref:`RestClient<rest-clients-configuration>`の URL など、アプリの設定を変更することもできます。"
 
 #: ../../source/concepts/testing/web-testing.rst:156
 msgid "Run Automated"
@@ -5424,7 +5338,7 @@ msgstr "Axon Ivy Designer でモジュールのビルドを実行します。"
 msgid ""
 "In your Axon Ivy Designer open the **Import** Wizard, then **Existing "
 "Maven Projects**"
-msgstr "Axon Ivy Designer で**インポート** ウィザードを開き、次に **既存の Maven プロジェクト** を開きます。"
+msgstr "Axon Ivy Designerで**インポート**ウィザードを開き、次に**既存のMavenプロジェクト**を開きます。"
 
 #: ../../source/concepts/testing/web-testing.rst:202
 msgid ""
@@ -5440,7 +5354,7 @@ msgstr "``compile-test`` を右クリックし、［実行］、［Maven ビル�
 
 #: ../../source/concepts/testing/web-testing.rst:207
 msgid "Set **Goals** to ``clean verify`` and click **Run**"
-msgstr "**ゴール** を ``clean verify`` に設定し、［**実行** ］をクリックします。"
+msgstr "**ゴール**を``clean verify``に設定し、［**実行**］をクリックします。"
 
 #: ../../source/concepts/testing/web-testing.rst:209
 msgid "This triggers a run that starts and ends with something similar to:"
@@ -5546,16 +5460,14 @@ msgstr ""
 #: ../../source/designer-guide/cms/cms-editor.rst:9
 #: ../../source/designer-guide/cms/cms-editor.rst:12
 msgid "CMS Editor"
-msgstr "CMS エディター"
+msgstr "CMSエディター"
 
 #: ../../source/designer-guide/cms/cms-editor.rst:6
 msgid ""
 "Use the CMS Editor to add, delete, and edit the Content Objects of your "
 "project. Select a Content Object in the table to view and edit its "
 "values."
-msgstr ""
-"CMS "
-"エディターを使用して、プロジェクトのコンテンツオブジェクトを追加、削除、編集できます。テーブル内のコンテンツオブジェクトを選択すると、その値を表示および編集できます。"
+msgstr "CMSエディターを使用して、プロジェクトのコンテンツオブジェクトを追加、削除、編集できます。テーブル内のコンテンツオブジェクトを選択すると、その値を表示および編集できます。"
 
 #: ../../source/designer-guide/cms/cms-editor.rst:15
 msgid "Tools"
@@ -5628,9 +5540,7 @@ msgstr "Translation Wizard"
 msgid ""
 "To use the Translation Wizard, the :ref:`translation-service` must be "
 "configured on the Axon Ivy Engine."
-msgstr ""
-"Translation Wizard を使用するには、Axon Ivy Engine で :ref:`translation-service` "
-"を設定する必要があります。"
+msgstr "Translation Wizardを使用するには、Axon Ivy Engineで:ref:`translation-service`を設定する必要があります。"
 
 #: ../../source/designer-guide/cms/display.rst:4
 msgid "Display Content"
@@ -5901,10 +5811,7 @@ msgid ""
 "Where :code:`/`, :code:`/documents`, :code:`/images` and :code:`/labels``"
 " are folders and serve only for hierarchical presentation. The content "
 "objects with real values are:"
-msgstr ""
-"このコンテンツ管理システムには、8 "
-"つのコンテンツオブジェクトがあります。:code:`/`、:code:`/documents`、:code:`/images` および "
-":code:`/labels`` はフォルダーで、階層を表すためにのみ使用されます。実際の値を持つコンテンツオブジェクト："
+msgstr "このコンテンツ管理システムには、8つのコンテンツオブジェクトがあります。:code:`/`、:code:`/documents`、:code:`/images`および:code:`/labels``はフォルダーで、階層を表すためにのみ使用されます。実際の値を持つコンテンツオブジェクト："
 
 #: ../../source/designer-guide/cms/structure.rst:30
 msgid ""
@@ -5959,10 +5866,7 @@ msgid ""
 "application has the highest importance (see :ref:`cms-content-"
 "resolution`) and the cms of the application is always writeable at "
 "runtime."
-msgstr ""
-"実行時に CMS に書き込むことができます。この場合、アプリケーションの CMS に書き込む必要があります。アプリケーションの CMS "
-"が最も重要であり（ :ref:`cms-content-resolution` を参照）、アプリケーションの CMS "
-"は常に実行時に書き込み可能であるからです。"
+msgstr "実行時にCMSに書き込むことができます。この場合、アプリケーションのCMSに書き込む必要があります。アプリケーションのCMSが最も重要であり（ :ref:`cms-content-resolution`を参照）、アプリケーションのCMSは実行時に常に書き込み可能だからです。"
 
 #: ../../source/designer-guide/cms/writing.rst:21
 #, python-brace-format
@@ -6073,7 +5977,7 @@ msgstr ":ref:`CMS<cms>` を使用して、複数の言語をサポートする�
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:52
 msgid "You need to add the following to the :ref:`CMS<cms>`:"
-msgstr ":ref:`CMS<cms>` に次を追加する必要があります："
+msgstr ":ref:`CMS<cms>`に次を追加する必要があります："
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:54
 msgid ""
@@ -6601,9 +6505,7 @@ msgstr "**前提条件**"
 msgid ""
 "To generate an `OpenAPI <https://swagger.io/docs/specification/about/>`__"
 " client, you need an OpenAPI 3.0 JSON service descriptor."
-msgstr ""
-"`OpenAPI <https://swagger.io/docs/specification/about/>`__ "
-"クライアントを生成するには、OpenAPI 3.0 JSON サービス記述子が必要です。"
+msgstr "`OpenAPI <https://swagger.io/docs/specification/about/>`__クライアントを生成するには、OpenAPI 3.0 JSONサービス記述子が必要です。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:112
 msgid ""
@@ -6628,20 +6530,14 @@ msgid ""
 "<http://odata-converter.axonivy.com>`__. The service description is "
 "usually available under the given service URL ending with "
 ":code:`$metadata` e.g. :code:`https://myService/cars/$metadata`"
-msgstr ""
-"`OData service <https://www.odata.org/>`__ を統合する必要がある場合は、`OData converter"
-" <http://odata-converter.axonivy.com>`__ を使用して OData "
-"サービス記述を変換できます。通常、サービス記述は、:code:`$metadata` で終わる指定されたサービス URL （例： "
-":code:`https://myService/cars/$metadata` ）で参照できます。"
+msgstr "`OData service <https://www.odata.org/>`__を統合する必要がある場合は、`OData converter <http://odata-converter.axonivy.com>`__を使用してODataサービス記述を変換できます。通常、サービス記述は、:code:`$metadata`で終わる指定されたサービスURL（例： :code:`https://myService/cars/$metadata`）で参照できます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:129
 msgid ""
 "If you have other types of service descriptions, you may have a look at "
 "`lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__. It is "
 "able to convert many other specification types to OpenAPI."
-msgstr ""
-"他のタイプのサービス記述がある場合は、`lucybot <https://lucybot-inc.github.io/api-spec-"
-"converter/>`__ をチェックしてみてください。他の多くの仕様のタイプを OpenAPI に変換できます。"
+msgstr "他のタイプのサービス記述がある場合は、`lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__をチェックしてみてください。他の多くの仕様のタイプをOpenAPIに変換できます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:135
 #: ../../source/designer-guide/configuration/webservice-clients.rst:77
@@ -7001,11 +6897,7 @@ msgid ""
 "**Everybody** is the root for all other roles; all other roles are more "
 "specialized than Everybody. In the figure below, a member user of role "
 "**Team A** also has the roles **Development** and **Everybody**."
-msgstr ""
-"ロールの階層は、特殊化の原則に基づいて構築されています。子ロールはそれぞれ、その先祖ロールを特殊化します。つまり、**Team A** "
-"というロールは常に暗黙的にその先祖ロールを含みます。**Everybody** "
-"というロールは他のすべてのロールのルートであり、他のすべてのロールは Everybody よりも特殊化されています。下の図で **Team A**"
-" ロールのメンバーユーザーは、** Development** ロールと ** Everybody** ロールも持っています。"
+msgstr "ロールの階層は、特殊化の原則に基づいて構築されています。子ロールはそれぞれ、その先祖ロールを特殊化します。つまり、**Team A**というロールは常に暗黙的にその先祖ロールを含みます。**Everybody**というロールは他のすべてのロールのルートであり、他のすべてのロールはEverybodyよりも特殊化されています。下の図で**Team A**ロールのメンバーユーザーは、** Development**ロールと** Everybody**ロールも持っています。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:29
 msgid "A typical Axon Ivy Role tree might look like this:"
@@ -7022,10 +6914,7 @@ msgid ""
 "collect the specializations of each role, the **Member Role** is handled "
 "like a normal child **Role**. This simplifies the configuration and "
 "administration of roles."
-msgstr ""
-"**メンバーロール** は、別の既存の **ロール** にリンクしている既存の **ロール** "
-"の子として追加できます。ロールツリーの解決中は、各ロールの特殊化されたロールを収集するため、**メンバーロール** は通常の子 **ロール** "
-"のように扱われます。これにより、ロールの設定と管理を簡素化します。"
+msgstr "**メンバーロール**は、別の既存の**ロール**にリンクしている既存の**ロール**の子として追加できます。ロールツリーの解決中は、各ロールの特殊化されたロールを収集するため、**メンバーロール**は通常の子**ロール**のように扱われます。これにより、ロールの設定と管理を簡素化します。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:59
 msgid ""
@@ -7037,11 +6926,7 @@ msgid ""
 "feature of an application. With a **Member Role**, it is possible to "
 "assign permissions to an **Organizational Role** by adding it as a member"
 " role of one or more **Permission Roles**."
-msgstr ""
-"**メンバーロール** のコンセプトにより、ロールのサブツリーを **組織ロール** で作成し、別のサブツリーを **権限ロール** "
-"で作成できます。一般的に、**組織ロール** のサブツリーは会社の構造を表します。**権限ロール** "
-"のサブツリーは、アプリケーションの特定の部分または機能の使用または実行権限を表します。**メンバーロール** を使用し、1 つ以上の "
-"**権限ロール** のメンバーロールとして追加することで、**組織ロール** に権限を割り当てることができます。"
+msgstr "**メンバーロール**のコンセプトにより、ロールのサブツリーを**組織ロール**で作成し、別のサブツリーを**権限ロール**で作成できます。一般的に、**組織ロール**のサブツリーは会社の構造を表します。**権限ロール**のサブツリーは、アプリケーションの特定の部分または機能の使用または実行権限を表します。**メンバーロール**を使用し、1つ以上の**権限ロール**のメンバーロールとして追加することで、**組織ロール**に権限を割り当てることができます。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:67
 msgid ""
@@ -7049,10 +6934,7 @@ msgid ""
 "and **Team B** have the permission for **Process M** and users of both "
 "support sub-groups and the **Support Group** itself have the permission "
 "for **Process N**."
-msgstr ""
-"上記の設定では、**First Level** グループと **Team B** グループのユーザーが **Process M** "
-"の権限を持っており、**Support Group** のサブグループと **Support Group** 自体の両方のユーザーが "
-"**Process N** の権限を持っています。"
+msgstr "上記の設定では、**First Level**グループと**Team B**グループのユーザーが**Process M**の権限を持っており、**Support Group**のサブグループと**Support Group**自体の両方のユーザーが**Process N**の権限を持っています。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:76
 #: ../../source/designer-guide/configuration/roles-users.rst:82
@@ -7153,10 +7035,7 @@ msgid ""
 "Ivy Designer. They are **not** uploaded to the engine during deployment. "
 "Users for processes deployed on the Axon Ivy Engine need to be created "
 "and configured on the engine."
-msgstr ""
-"テストユーザーは、Axon Ivy Designer 内でのプロセスの **シミュレーション** "
-"にのみ使用されます。これらのユーザーは展開時にエンジンにアップロード **されません** 。Axon Ivy Engine "
-"上で展開されるプロセス用のユーザーは、エンジン上で作成および設定する必要があります。"
+msgstr "テストユーザーは、Axon Ivy Designer内でのプロセスの**シミュレーション**にのみ使用されます。これらのユーザーは展開時にエンジンにアップロード**されません**。Axon Ivy Engine上で展開されるプロセス用のユーザーは、エンジン上で作成および設定する必要があります。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:146
 msgid ""
@@ -7168,11 +7047,7 @@ msgid ""
 ":ref:`role-editor`). You can add additional properties to each user in "
 "terms of string key-value pairs and re-use them within process steps in "
 ":ref:`ivyscript`."
-msgstr ""
-"エディターの左側には、すべてのユーザーがユーザー名（ログイン名）、氏名と一緒に表示されます。左側で選択されたユーザーの特定のプロパティが右側に表示されます。1"
-" 人のユーザーを複数のロールに割り当てることができます。ユーザーは明示的に割り当てたロールの先祖ロールに暗黙的に割り当てられます（ :ref"
-":`role-editor` 」を参照）。文字列キーと値のペアで各ユーザーに追加のプロパティを追加し、 :ref:`ivyscript` "
-"のプロセスステップ内で再利用できます。"
+msgstr "エディターの左側には、すべてのユーザーがユーザー名（ログイン名）、氏名と一緒に表示されます。左側で選択されたユーザーの特定のプロパティが右側に表示されます。1人のユーザーを複数のロールに割り当てることができます。ユーザーは明示的に割り当てたロールの先祖ロールに暗黙的に割り当てられます（ :ref:`role-editor` を参照）。文字列キーと値のペアで各ユーザーに追加のプロパティを追加し、 :ref:`ivyscript`のプロセスステップ内で再利用できます。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:154
 msgid ":guilabel:`New` Creates a new user with the specified name."
@@ -8042,10 +7917,7 @@ msgid ""
 "and Axon Ivy cannot find Business Data with the new type via the search "
 "API as the search index is `strongly typed "
 "<https://opensearch.org/docs/latest/field-types/>`__."
-msgstr ""
-"格納されたフィールドの型を変更しないでください（``Number`` から ``String`` など）。検索インデックスは `strongly "
-"typed <https://opensearch.org/docs/latest/field-types/>`__ "
-"のため、以前に保存したデータのシリアライズに失敗し、Axon Ivy は検索 API から新しい型を持つビジネスデータを見つけられません。"
+msgstr "格納されたフィールドの型を変更しないでください（``Number``から``String``など）。検索インデックスは`strongly typed <https://opensearch.org/docs/latest/field-types/>`__のため、以前に保存したデータのシリアライズに失敗し、Axon Ivyは検索APIから新しい型を持つビジネスデータを見つけられません。"
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:29
 #: ../../source/designer-guide/how-to/data-storage.rst:75
@@ -8170,9 +8042,7 @@ msgstr "検索"
 msgid ""
 "The search capabilities of the Business Data Store are based on "
 "`OpenSearch <https://opensearch.org/>`__ and therefore fast and powerful."
-msgstr ""
-"ビジネスデータストアの検索機能は、`OpenSearch <https://opensearch.org/>`__ "
-"をベースにしているため、高速で強力です。"
+msgstr "ビジネスデータストアの検索機能は、`OpenSearch <https://opensearch.org/>`__をベースにしているため、高速で強力です。"
 
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:77
 msgid ""
@@ -8186,10 +8056,7 @@ msgid ""
 "dsl/term/fuzzy/>`__ and search engine like `query strings "
 "<https://opensearch.org/docs/latest/query-dsl/full-text/simple-query-"
 "string/>`__ are supported:"
-msgstr ""
-"また、`fuzzy search <https://opensearch.org/docs/latest/query-"
-"dsl/term/fuzzy/>`__ や `query strings <https://opensearch.org/docs/latest"
-"/query-dsl/full-text/simple-query-string/>`__ などの検索エンジンもサポートされています。"
+msgstr "また、`fuzzy search <https://opensearch.org/docs/latest/query-dsl/term/fuzzy/>`__や`query strings <https://opensearch.org/docs/latest/query-dsl/full-text/simple-query-string/>`__などの検索エンジンもサポートされています。"
 
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:106
 msgid ""
@@ -8671,7 +8538,7 @@ msgstr "データモデリング"
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:4
 msgid "Data Repository API"
-msgstr "データリポジトリ API"
+msgstr "データリポジトリAPI"
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:6
 msgid ""
@@ -8680,18 +8547,13 @@ msgid ""
 " configured in the :ref:`persistence-entity-class-editor` to generate a "
 "data repository, a data repository interface and an accessor method "
 "called ``repository`` are automatically created for it."
-msgstr ""
-"Axon Ivy データリポジトリ API "
-"は、データベースからエンティティオブジェクトを直接作成、読み取り、更新、削除するために使用されます。エンティティクラスが :ref"
-":`persistence-entity-class-editor` "
-"でデータリポジトリを生成するように設定されると、そのクラス用にデータリポジトリインターフェイスおよび ``repository`` "
-"というアクセサメソッドが自動的に作成されます。"
+msgstr "Axon IvyデータリポジトリAPIは、データベースからエンティティオブジェクトを直接作成、読み取り、更新、削除するために使用されます。エンティティクラスが:ref:`persistence-entity-class-editor`でデータリポジトリを生成するように設定されると、そのクラス用にデータリポジトリインターフェイスおよび``repository``というアクセサメソッドが自動的に作成されます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:11
 msgid ""
 "The API can be accessed using IvyScript anywhere scripting is supported, "
 "or in Java."
-msgstr "この API は、スクリプトがサポートされている場所であれば IvyScript を使用して、または Java で利用できます。"
+msgstr "このAPIは、スクリプトがサポートされている場所であればIvyScriptを使用して、またはJavaで利用できます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:14
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:32
@@ -8700,19 +8562,19 @@ msgstr "例"
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:16
 msgid "Create a ``Person`` entity and store it in the database:"
-msgstr "``Person`` エンティティを作成してデータベースに保存："
+msgstr "``Person``エンティティを作成してデータベースに保存："
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:25
 msgid "Read all ``Person`` entities from the database:"
-msgstr "すべての ``Person`` エンティティをデータベースから読み取る："
+msgstr "すべての``Person``エンティティをデータベースから読み取る："
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:31
 msgid "Update a ``Person`` entity in the database:"
-msgstr "``Person`` エンティティをデータベースで更新："
+msgstr "``Person``エンティティをデータベースで更新："
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:39
 msgid "Delete a ``Person`` entity from the database:"
-msgstr "``Person`` エンティティをデータベースから削除："
+msgstr "``Person``エンティティをデータベースから削除："
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:47
 msgid "Enhance the Data Repository"
@@ -8725,11 +8587,7 @@ msgid ""
 "generated data repository interface located in the ``src_dataClasses`` "
 "folder and move it into the ``src`` folder of your project. You can then "
 "add more methods to the interface as shown below:"
-msgstr ""
-"データリポジトリは、標準的な CRUD "
-"操作をデフォルトで提供します。独自のカスタム検索メソッドでデータリポジトリを拡張するには、``src_dataClasses`` "
-"フォルダーに生成されるデータリポジトリインターフェイスをコピーし、プロジェクトの ``src`` "
-"フォルダーに移動します。その後、以下の例のようにインターフェイスにメソッドを追加できます。"
+msgstr "データリポジトリは、標準的なCRUD操作をデフォルトで提供します。独自のカスタム検索メソッドでデータリポジトリを拡張するには、``src_dataClasses``フォルダーに生成されるデータリポジトリインターフェイスをコピーし、プロジェクトの``src``フォルダーに移動します。その後、以下の例のようにインターフェイスにメソッドを追加できます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/data-repository-api.rst:63
 msgid ""
@@ -8738,10 +8596,7 @@ msgid ""
 "`Jakarta Data: Repository Interfaces "
 "<https://jakarta.ee/specifications/data/1.0/jakarta-"
 "data-1.0#_repository_interfaces>`__."
-msgstr ""
-"インターフェイスの実装は Axon Ivy によって自動的に生成されます。独自のリポジトリメソッドの作成方法に関する詳細は、`Jakarta "
-"Data: Repository Interfaces <https://jakarta.ee/specifications/data/1.0"
-"/jakarta-data-1.0#_repository_interfaces>`__ を参照してください。"
+msgstr "インターフェイスの実装はAxon Ivyによって自動的に生成されます。独自のリポジトリメソッドの作成方法に関する詳細は、`Jakarta Data: Repository Interfaces <https://jakarta.ee/specifications/data/1.0/jakarta-data-1.0#_repository_interfaces>`__を参照してください。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:4
 msgid "Entity Class Editor"
@@ -8783,7 +8638,7 @@ msgstr "生成"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:24
 msgid "Select to create :ref:`data-repository-api` for the Entity Class."
-msgstr "選択すると、エンティティクラスの :ref:`data-repository-api` が作成されます。"
+msgstr "選択すると、エンティティクラスの:ref:`data-repository-api`が作成されます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:29
 msgid "Database Field"
@@ -9051,11 +8906,7 @@ msgid ""
 "official `Jakarta Persistence API documentation "
 "<https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist"
 "/persistence-intro/persistence-intro.html>`_."
-msgstr ""
-"内部的には、Java Persistence API はエンティティクラスとその関係を実装するのに使用されます。詳細については、公式の "
-"`Jakarta Persistence API documentation <https://jakarta.ee/learn/docs"
-"/jakartaee-tutorial/current/persist/persistence-intro/persistence-"
-"intro.html>`_ を参照してください。"
+msgstr "内部的には、Java Persistence APIはエンティティクラスとその関係を実装するのに使用されます。詳細については、公式の`Jakarta Persistence API documentation <https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html>`_を参照してください。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-classes.rst:6
 msgid ""
@@ -9069,13 +8920,7 @@ msgid ""
 "delete (CRUD) entity objects directly from/to the database using either "
 "the :ref:`persistence-api` or more conveniently with the entity's :ref"
 ":`data-repository-api`."
-msgstr ""
-"エンティティクラスはグローバル :ref:`data-classes` "
-"に似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。エンティティクラスはデータベーステーブルに直接マッピングされ、エンティティクラスの属性はデータベーステーブルのフィールドに直接マッピングされます。したがって、:ref:`database"
-" schema can be generated <persistence-generate-database-schema>` "
-"はエンティティクラスから直接生成できます。データベースに対してエンティティオブジェクトの作成、読み取り、更新、削除（CRUD）を直接実行することが可能です。これは、:ref"
-":`persistence-api` を使用するか、より便利な方法としてエンティティの :ref:`data-repository-api` "
-"を利用して行えます。"
+msgstr "エンティティクラスはグローバル:ref:`data-classes`に似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。エンティティクラスはデータベーステーブルに直接マッピングされ、エンティティクラスの属性はデータベーステーブルのフィールドに直接マッピングされます。したがって、:ref:`database schema can be generated <persistence-generate-database-schema>`はエンティティクラスから直接生成できます。データベースに対してエンティティオブジェクトの作成、読み取り、更新、削除（CRUD）を直接実行することが可能です。これは、:ref:`persistence-api`を使用するか、より便利な方法としてエンティティの:ref:`data-repository-api`を利用して行えます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-classes.rst:16
 msgid ""
@@ -9176,11 +9021,7 @@ msgid ""
 "to generate the primary keys. If you want to use the auto increment "
 "approach of your database management system you can use the "
 ":code:`org.hibernate.annotations.NativeGenerator` annotation."
-msgstr ""
-"Jakarta Persistence API の実装ライブラリである Hibernate "
-"は、デフォルトで主キー列にシーケンスを使用します。これは、各テーブルに対して :code:`<table-name>_SEQ` "
-"というシーケンスを作成し、主キー生成に利用することを意味します。データベース管理システムのオートインクリメント方式を使用したい場合は、:code:`org.hibernate.annotations.NativeGenerator`"
-" アノテーションを使用できます。"
+msgstr "Jakarta Persistence APIの実装ライブラリであるHibernateは、デフォルトで主キー列にシーケンスを使用します。これは、各テーブルに対して:code:`<table-name>_SEQ`というシーケンスを作成し、主キー生成に利用することを意味します。データベース管理システムのオートインクリメント方式を使用したい場合は、:code:`org.hibernate.annotations.NativeGenerator`アノテーションを使用できます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:6
 msgid ""
@@ -9191,13 +9032,7 @@ msgid ""
 "Java Persistence API or JPA) and the `Jakarta Data API "
 "<https://jakarta.ee/specifications/data/>`__. It offers support for "
 "storing and retrieving business objects to and from a database."
-msgstr ""
-"この章では、Axon Ivyの :ref:`persistence-configuration-editor` および :ref"
-":`persistence-api` を紹介します。永続性フレームワークは `Jakarta Persistence API "
-"<https://jakarta.ee/specifications/persistence>`__（Java Persistence API "
-"または JPA としても知られる）および `Jakarta Data API "
-"<https://jakarta.ee/specifications/data/>`__ "
-"をベースにしており、ビジネスオブジェクトのデータベースへの格納とデータベースからの読み込みをサポートします。"
+msgstr "この章では、Axon Ivyの:ref:`persistence-configuration-editor`および:ref:`persistence-api`を紹介します。永続性フレームワークは`Jakarta Persistence API <https://jakarta.ee/specifications/persistence>`__（Java Persistence APIまたはJPAとしても知られる）および`Jakarta Data API <https://jakarta.ee/specifications/data/>`__をベースにしており、ビジネスオブジェクトのデータベースへの格納とデータベースからの読み込みをサポートします。"
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:13
 msgid ""
@@ -9223,14 +9058,7 @@ msgid ""
 "straightforward and efficient way to manage your data for most scenarios,"
 " while the :ref:`persistence-api` offers greater flexibility and control "
 "for handling more intricate and specialized data manipulation tasks."
-msgstr ""
-"少なくとも 1 "
-"つの永続性ユニット構成を定義する必要があります。永続性ユニットは、エンティティクラスの一部または全部を管理し、それらのエンティティの保存先のデータベースを指定します。1"
-" つ以上の永続性ユニットを設定すると、プロセスステップ内で便利な :ref:`data-repository-api` "
-"を使用するか、複雑なユースケースでは :ref:`persistence-api` を使用して、それらを利用できます。これらの API "
-"により、データベース内のエンティティオブジェクトに対して、作成、読み取り、更新、削除（CRUD）操作を直接実行できます。:ref:`data-"
-"repository-api` を使用すると、ほとんどのシナリオで簡単かつ効率的にデータを管理できます。一方、:ref:`persistence-"
-"api` は、より複雑で専門的なデータ操作タスクを処理するための柔軟性と制御機能に優れています。"
+msgstr "少なくとも1つの永続性ユニット構成を定義する必要があります。永続性ユニットは、エンティティクラスの一部または全部を管理し、それらのエンティティの保存先のデータベースを指定します。1つ以上の永続性ユニットを設定すると、プロセスステップ内で便利な:ref:`data-repository-api`を使用するか、複雑なユースケースでは:ref:`persistence-api`を使用して、それらを利用できます。これらのAPIにより、データベース内のエンティティオブジェクトに対して、作成、読み取り、更新、削除（CRUD）操作を直接実行できます。:ref:`data-repository-api`を使用すると、ほとんどのシナリオで簡単かつ効率的にデータを管理できます。一方、:ref:`persistence-api`は、より複雑で専門的なデータ操作タスクを処理するための柔軟性と制御機能に優れています。"
 
 #: ../../source/designer-guide/data-modeling/persistence/new-entity-class-wizard.rst:4
 #: ../../source/designer-guide/data-modeling/persistence/new-entity-class-wizard.rst:8
@@ -9293,11 +9121,7 @@ msgid ""
 "convenient, handling a wide range of common scenarios. However, when your"
 " requirements exceed its capabilities, the :ref:`persistence-api` offers "
 "the additional flexibility and control you might need."
-msgstr ""
-":ref:`data-repository-api` では十分に対処できない、より複雑なユースケースには :ref:`persistence-"
-"api` の使用が推奨されます。:ref:`data-repository-api` "
-"は使いやすく便利で、多くの一般的なシナリオに対応できるよう設計されています。ただし、要件がその機能範囲を超える場合には、:ref"
-":`persistence-api` が必要な追加の柔軟性と制御機能を提供します。"
+msgstr ":ref:`data-repository-api`では十分に対処できない、より複雑なユースケースには:ref:`persistence-api`の使用が推奨されます。:ref:`data-repository-api`は使いやすく便利で、多くの一般的なシナリオに対応できるよう設計されています。ただし、要件がその機能範囲を超える場合には、:ref:`persistence-api`が必要となる更なる柔軟性と制御機能を提供します。"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:15
 msgid ""
@@ -9413,11 +9237,7 @@ msgid ""
 "objects that are persisted but with syntax very similar to SQL. You "
 "always have to use the names of the Entity Class and the attributes and "
 "not the names from the database."
-msgstr ""
-"永続性 API を使用して、Java Persistence API Query Language（JPA "
-"QL）ステートメントを実行できます。クエリ API の詳細については ``IIvyQuery`` "
-"を参照してください。クエリ言語は、永続化されたオブジェクトをベースにしていますが、その構文は SQL "
-"に非常によく似ています。クエリでは常に、データベースの名前ではなく、エンティティクラス名とその属性名を使用する必要があります。"
+msgstr "永続性APIを使用して、Jakarta Persistence API Query Language（JPA QL）ステートメントを実行できます。クエリAPIの詳細については``IIvyQuery``を参照してください。クエリ言語は、永続化されたオブジェクトをベースにしていますが、その構文はSQLに非常によく似ています。クエリでは常に、データベースの名前ではなく、エンティティクラス名とその属性名を使用する必要があります。"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:155
 msgid "Case Sensitivity"
@@ -10096,26 +9916,20 @@ msgid ""
 "``<groupId/>``\\ and ``<version/>``\\ Must be set in every Axon Ivy "
 "Project POM. It can not be inherited from a parent POM (even tough this "
 "is valid in plain Maven)."
-msgstr ""
-"``<groupId/>``\\ および ``<version/>``\\ は、すべての Axon Ivy プロジェクト POM "
-"で設定する必要があります。親 POM から継承することはできません（プレーンな Maven では有効です）。"
+msgstr "``<groupId/>``\\および``<version/>``\\は、すべてのAxon IvyプロジェクトPOM 設定する必要があります。親POMから継承することはできません（プレーンなMavenでは有効です）。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:64
 msgid ""
 "``<packaging>iar</packaging>`` Provides the custom Axon Ivy Project "
 "lifecycle, must not be modified."
-msgstr ""
-"``<packaging>iar</packaging>`` は、カスタム Axon Ivy "
-"プロジェクトのライフサイクルを提供します。変更しないでください。"
+msgstr "``<packaging>iar</packaging>``は、カスタムAxon Ivyプロジェクトのライフサイクルを提供します。変更しないでください。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:67
 msgid ""
 "Dependencies with ``<type>iar</type>`` will be manipulated by the :ref"
 ":`project-deployment-descriptor`. Therefore additional configurations "
 "like the ``<scope>`` could get lost trough the simple editor usage."
-msgstr ""
-"``<type>iar</type>`` との依存関係は :ref:`project-deployment-descriptor` "
-"で操作されます。そのため、``<scope>`` のような追加の設定は、単純なエディターの使用によって失われる可能性があります。"
+msgstr "``<type>iar</type>``との依存関係は:ref:`project-deployment-descriptor`で操作されます。そのため、``<scope>``のような追加の設定は、単純なエディターの使用によって失われる可能性があります。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:72
 #, python-brace-format
@@ -10123,17 +9937,13 @@ msgid ""
 "Values that can be manipulated with the simple :ref:`project-deployment-"
 "descriptor` can not contain Maven properties. For instance "
 "``<version>${myVersionProp}</version>`` is prohibited."
-msgstr ""
-"単純な :ref:`project-deployment-descriptor` で操作できる値に Maven "
-"プロパティを含めることはできません。例えば、 ``<version>${myVersionProp}</version>`` は禁止されています。"
+msgstr "単純な:ref:`project-deployment-descriptor`で操作できる値にMavenプロパティを含めることはできません。例えば、 ``<version>${myVersionProp}</version>``は禁止されています。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:77
 msgid ""
 "The version must be qualified like ``<version>5.0.0-SNAPSHOT</version>.``"
 " A version like ``<version>5-SNAPSHOT</version>`` is prohibited."
-msgstr ""
-"バージョンは ``<version>5.0.0-SNAPSHOT</version>` "
-"のように修飾する必要があります。``<version>5-SNAPSHOT</version>`` のようなバージョンは禁止されています。"
+msgstr "バージョンは``<version>5.0.0-SNAPSHOT</version>``のように修飾する必要があります。``<version>5-SNAPSHOT</version>``のようなバージョンは禁止されています。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:83
 msgid "Technical documentation"
@@ -10273,7 +10083,7 @@ msgstr ""
 
 #: ../../source/designer-guide/how-to/data-storage.rst:42
 msgid "Persistency (Jakarta Persistence API)"
-msgstr "永続性（Java Persistence API）"
+msgstr "永続性（Jakarta Persistence API）"
 
 #: ../../source/designer-guide/how-to/data-storage.rst:44
 msgid ""
@@ -10281,10 +10091,7 @@ msgid ""
 "necessary. The database schema can be generated. JPA is a Jakarta EE "
 "standard that is well documented and widely used. More information can be"
 " found in the chapter :ref:`persistence`."
-msgstr ""
-"データベースシステムにデータを格納し、アクセスします。独自のデータベースサーバーが必要です。データベーススキーマを生成できます。JPA "
-"は文書化が充実しており広く利用されている Jakarta EE の標準です。詳細については、「 :ref:`persistence` "
-"」の章を参照してください。"
+msgstr "データベースシステムにデータを格納し、アクセスします。独自のデータベースサーバーが必要です。データベーススキーマを生成できます。JPAは文書化が充実しており広く利用されているJakarta EEの標準です。詳細については、「:ref:`persistence`」の章を参照してください。"
 
 #: ../../source/designer-guide/how-to/data-storage.rst:50
 #: ../../source/designer-guide/how-to/data-storage.rst:87
@@ -10897,13 +10704,7 @@ msgid ""
 "classes`, :ref:`persistence-entity-classes`, :ref:`Process Models "
 "<process-modeling>` and :ref:`Process Elements <process-elements>` is "
 "supported by Axon Ivy."
-msgstr ""
-"多くの大規模プロジェクトがあるワークスペースでは、特定の Axon Ivy "
-"要素を見つけるのが難しいことがあります。そのような場合には、強力な検索メカニズムが役立ちます。Axon Ivy の検索を行うには、ツールバーの "
-"|image1| アイコンをクリックして検索ダイアログを開きます。開いたダイアログで Axon Ivy タブに移動します。現在、Axon Ivy "
-"では :ref:`cms`、:ref:`data-classes`、:ref:`persistence-entity-"
-"classes`、:ref:`Process Models <process-modeling>`、:ref:`Process Elements "
-"<process-elements>` の検索がサポートされています。"
+msgstr "多くの大規模プロジェクトがあるワークスペースでは、特定のAxon Ivy要素を見つけるのが難しいことがあります。そのような場合には、強力な検索メカニズムが役立ちます。Axon Ivyの検索を行うには、ツールバーの|image1|アイコンをクリックして検索ダイアログを開きます。開いたダイアログでAxon Ivyタブに移動します。現在、Axon Ivyでは:ref:`cms`、:ref:`data-classes`、:ref:`persistence-entity-classes`、:ref:`Process Models <process-modeling>`、:ref:`Process Elements <process-elements>`の検索がサポートされています。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:317
 msgid "Search page"
@@ -10981,9 +10782,7 @@ msgid ""
 "for parts that are not covered by the Axon Ivy search page. e.g., if you "
 "write your own Java classes in the Axon Ivy Designer you may use the Java"
 " search."
-msgstr ""
-"このダイアログ内には、Axon Ivy の検索ページではカバーされない部分を検索するための他の検索機能も用意されています。たとえば、Axon "
-"Ivy Designer で独自の Java クラスを作成している場合は、Java 検索を利用できます。"
+msgstr "このダイアログ内には、Axon Ivyの検索ページではカバーされない部分を検索するための他の検索機能も用意されています。たとえば、Axon Ivy Designerで独自のJavaクラスを作成している場合は、Java検索を利用できます。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:362
 msgid "Search result view"
@@ -11093,12 +10892,7 @@ msgid ""
 "plugins (open source and commercial) and even web sites (`Eclipse "
 "Marketplace <http://marketplace.eclipse.org//>`__) for browsing and "
 "searching these plugins arose in the past years."
-msgstr ""
-"Axon Ivy は、広く使用されている `Eclipse <http://www.eclipse.org>`__ "
-"プラットフォームを基盤にしており、サードパーティ製モジュールを統合するための高度なプラグイン機構を提供しています。かつては Java "
-"プログラマー向けの IDE として開発された Eclipse "
-"ですが、現在では大規模で活気あるエコシステムへと進化し、あらゆる業界で多様なツールやシステムの基盤として利用されています。そのため、プラグイン（オープンソースおよび商用）を提供する巨大なコミュニティが存在し、最近では、これらのプラグインを閲覧、検索するためのウェブサイト（`Eclipse"
-" Marketplace <http://marketplace.eclipse.org//>`__ ）も誕生しています。"
+msgstr "Axon Ivyは、広く使用されている`Eclipse <http://www.eclipse.org>`__プラットフォームを基盤にしており、サードパーティ製モジュールを統合するための高度なプラグイン機構を提供しています。かつてはJavaプログラマー向けのIDEとして開発されたEclipseですが、現在では大規模で活気あるエコシステムへと進化し、あらゆる業界で多様なツールやシステムの基盤として利用されています。そのため、プラグイン（オープンソースおよび商用）を提供する巨大なコミュニティが存在し、最近では、これらのプラグインを閲覧、検索するためのウェブサイト（`Eclipse Marketplace <http://marketplace.eclipse.org//>`__ ）も誕生しています。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:437
 msgid ""
@@ -11129,10 +10923,7 @@ msgid ""
 "entered form data to the server as soon as the connection to the workflow"
 " server is back again. In turn, this will resume the task and continue "
 "the process execution."
-msgstr ""
-"オフラインタスクは、Axon Ivy Engine "
-"への接続がない状態でモバイルデバイス上で使用できるよう設計されています。通常、タスクデータとタスクフォームは Axon Ivy Engine "
-"との同期時に読み込まれ、その後スマートフォンやタブレットなどのモバイルデバイス上のアプリによってローカルで処理されます。フォーム入力が完了すると、モバイルアプリはワークフローサーバーへの接続が回復したタイミングで、入力されたフォームデータをサーバーに送信します。これによりタスクが再開され、プロセスの実行が続行されます。"
+msgstr "オフラインタスクは、Axon Ivy Engineへの接続がない状態でモバイルデバイス上で使用できるよう設計されています。通常、タスクデータとタスクフォームはAxon Ivy Engineとの同期時に読み込まれ、その後スマートフォンやタブレットなどのモバイルデバイス上のアプリによってローカルで処理されます。フォーム入力が完了すると、モバイルアプリはワークフローサーバーへの接続が回復したタイミングで、入力されたフォームデータをサーバーに送信します。これによりタスクが再開され、プロセスの実行が続行されます。"
 
 #: ../../source/designer-guide/how-to/offline-tasks.rst:17
 msgid "Offline Task in a Process"
@@ -11824,9 +11615,7 @@ msgid ""
 "components from required projects can be overridden, there is no point in"
 " defining an override for a component in the same project (see "
 ":ref:`overrides`)."
-msgstr ""
-"実行時にオーバーライドされる元のコンポーネントの識別子を指定します。テキストフィールドの横にあるボタンを使用して、利用可能な HTML "
-"ダイアログまたはサブプロセスから選択します。オーバーライドできるのは必要なプロジェクトのコンポーネントだけであることに注意してください。同じプロジェクト内のコンポーネントに対してオーバーライドを定義しても意味がありません（「:ref:`overrides`」を参照）。"
+msgstr "実行時にオーバーライドされる元のコンポーネントの識別子を指定します。テキストフィールドの横にあるボタンを使用して、利用可能なHTMLダイアログまたはサブプロセスから選択します。オーバーライドできるのは必要なプロジェクトのコンポーネントだけです。同じプロジェクト内のコンポーネントに対してオーバーライドを定義しても意味がありません（「:ref:`overrides`」を参照）。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:271
 msgid "Existing component"
@@ -12234,9 +12023,7 @@ msgid ""
 "There is an :api-browser-url:`REST workflow API <default#/workflow>` "
 "available that allows third-party services to interact with workflow "
 "Tasks, Cases, and the like."
-msgstr ""
-"ワークフローのタスクやケースなどとサードパーティサービスとの連携を可能にする :api-browser-url:`REST workflow "
-"API <default#/workflow>` が利用可能です。"
+msgstr "ワークフローのタスクやケースなどとサードパーティサービスとの連携を可能にする:api-browser-url:`REST workflow API <default#/workflow>`が利用可能です。"
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:69
 msgid ""
@@ -12415,14 +12202,7 @@ msgid ""
 "**Task** is assigned to a user or a role. A **Task** is started by a "
 "process-start or a task-switch element and ends at the next task-switch "
 "element or process-end element."
-msgstr ""
-"Axon Ivy ワークフローは、**プロセスインスタンス** の実行を管理します。**プロセスインスタンス** は、1 つの ** ケース** "
-"と 1 つ以上の **タスク** で表されます。**ケース** は最初のプロセスステップから最後のプロセスステップまで存在し、その "
-"**プロセスインスタンス** に関する情報を保持します。プロセスが終了（完了または中止）すると、**ケース** が終了します。**ケース** は "
-"1 つ以上の接続された **タスク** で構成されます。各 **タスク** は 1 "
-"つの作業ステップとして実行される作業単位を定義します。そのため、**タスク** "
-"はユーザーまたはロールによって実行され、ユーザーまたはロールに割り当てられます。**タスク** "
-"はプロセス開始要素またはタスクスイッチ要素によって開始され、次のタスクスイッチ要素またはプロセス終了要素で終了します。"
+msgstr "Axon Ivyワークフローは、**プロセスインスタンス**の実行を管理します。**プロセスインスタンス**は、1つの** ケース**と 1つ以上の**タスク**で表されます。**ケース**は最初のプロセスステップから最後のプロセスステップまで存在し、その**プロセスインスタンス**に関する情報を保持します。プロセスが終了（完了または中止）すると、**ケース**が終了します。**ケース**は 1つ以上の接続された**タスク**で構成されます。各**タスク**は 1つの作業ステップとして実行される作業単位を定義します。そのため、**タスク**はユーザーまたはロールによって実行され、ユーザーまたはロールに割り当てられます。**タスク**はプロセス開始要素またはタスクスイッチ要素によって開始され、次のタスクスイッチ要素またはプロセス終了要素で終了します。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:21
 msgid "Multilingual Name and Description of Cases and Tasks"
@@ -12558,14 +12338,7 @@ msgid ""
 "**Case**. Moreover, any **Case** can be attached to a **Business Case** "
 "using the API. If a case map is started, a **Business Case** is "
 "automatically created. See :ref:`casemap-execution`."
-msgstr ""
-"ワークフローを分かりやすく表示するため、複数の **ケース** を 1 つの **ビジネスケース** "
-"に接続できます。:ref:`Triggered <process-element-start-request-trigger-tab>` または "
-":ref:`signaled <process-element-signal-start-tab-signal>` "
-"プロセス開始要素は、そのインスクリプション内で、開始された **ケース** を呼び出し元の **ケース** の **ビジネスケース** "
-"に接続すべきかどうかを定義します。さらに、API を使用して、任意の **ケース** を **ビジネスケース** "
-"に接続できます。ケースマップが開始されると、自動的に **ビジネスケースが** 作成されます。「:ref:`casemap-"
-"execution`」を参照照してください。"
+msgstr "ワークフローを分かりやすく表示するため、複数の**ケース**を 1つの**ビジネスケース**に接続できます。:ref:`Triggered <process-element-start-request-trigger-tab>`または:ref:`signaled <process-element-signal-start-tab-signal>`プロセス開始要素は、そのインスクリプション内で、開始された**ケース**を呼び出し元の**ケース**の**ビジネスケース**に接続すべきかどうかを定義します。さらに、APIを使用して、任意の**ケース**を**ビジネスケース**に接続できます。ケースマップが開始されると、自動的に**ビジネスケースが**作成されます。「:ref:`casemap-execution`」を参照してください。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:104
 msgid ""
@@ -12573,9 +12346,7 @@ msgid ""
 " image 'First Case'). All **Cases** attached later to the **Business "
 "Case** are subcases of the **Business Case** (see image 'Multiple "
 "Cases')."
-msgstr ""
-"プロセスの最初の **ケース** は常に **ビジネスケース** となります（「最初のケース」の図を参照）。**ビジネスケース** "
-"に後から接続されたすべての **ケース** は、**ビジネスケース** のサブケースとなります（「複数のケース」の図を参照）。"
+msgstr "プロセスの最初の**ケース**は常に**ビジネスケース**となります（「最初のケース」の図を参照）。**ビジネスケース**に後から接続されたすべての**ケース**は、**ビジネスケース**のサブケースとなります（「複数のケース」の図を参照）。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:107
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:110
@@ -12665,11 +12436,7 @@ msgid ""
 "dynamically as key/value pairs on :ref:`Starts<process-element-tab-start-"
 "custom-fields>`, :ref:`Cases<process-element-tab-case-custom-fields>` and"
 " :ref:`Tasks <process-element-tab-task-custom-fields>`."
-msgstr ""
-"カスタムフィールドを使用すると、:ref:`Starts<process-element-tab-start-custom-"
-"fields>`、:ref:`Cases<process-element-tab-case-custom-fields>`、:ref:`Tasks"
-" <process-element-tab-task-custom-fields>` "
-"に対して、ビジネスに関連する追加情報をキー/値ペアとして動的に追加できます。"
+msgstr "カスタムフィールドを使用すると、:ref:`Starts<process-element-tab-start-custom-fields>`、:ref:`Cases<process-element-tab-case-custom-fields>`、:ref:`Tasks <process-element-tab-task-custom-fields>`に対して、ビジネスに関連する追加情報をキー/値ペアとして動的に追加できます。"
 
 #: ../../source/designer-guide/how-to/workflow/custom-fields.rst:11
 msgid "Examples of custom fields are:"
@@ -14132,9 +13899,7 @@ msgid ""
 "Here you can configure how many process data snapshots are archived in "
 "the process engine history (:ref:`History View <simulate-process-models-"
 "debugger-history-view>`)."
-msgstr ""
-"ここでは、プロセスエンジンの履歴（:ref:`History View <simulate-process-models-debugger-"
-"history-view>`）にアーカイブするプロセスデータのスナップショットの数を設定できます。"
+msgstr "ここでは、プロセスエンジンの履歴（:ref:`History View <simulate-process-models-debugger-history-view>`）にアーカイブするプロセスデータのスナップショットの数を設定できます。"
 
 #: ../../source/designer-guide/introduction/preferences.rst:93
 msgid ""
@@ -14589,10 +14354,7 @@ msgid ""
 "example you could name a task dynamically by including the case number in"
 " the taskname. To use IvyScript in this Editor you must use these tags "
 "``<%=%>``."
-msgstr ""
-"マクロエディターでは、IvyScript "
-"と通常のテキストを混在させることができます。例えば、タスク名にケース番号を含めることで、タスクに動的に名前を付けることができます。このエディターで"
-" IvyScript を使用するには、``<%=%>`` タグを使用する必要があります。"
+msgstr "マクロエディターでは、IvyScriptと通常のテキストを混在させることができます。例えば、タスク名にケース番号を含めることで、タスクに動的に名前を付けることができます。このエディターでIvyScriptを使用するには、``<%=%>``タグを使用する必要があります。"
 
 #: ../../source/designer-guide/ivyscript/editor.rst:38
 msgid "Content Assist"
@@ -14897,7 +14659,7 @@ msgstr "``aType[]``"
 
 #: ../../source/designer-guide/ivyscript/java-integration.rst:125
 msgid "Ivy ``List<aType>>``"
-msgstr "Ivy ``List<aType>>``"
+msgstr "Ivy``List<aType>>``"
 
 #: ../../source/designer-guide/ivyscript/language.rst:2
 msgid "IvyScript Language"
@@ -15643,7 +15405,7 @@ msgstr "この一般的なリスト型の他に、型付きリストと呼ばれ
 
 #: ../../source/designer-guide/ivyscript/reference.rst:229
 msgid "Those list types are written as follows: ``List<aClass>``"
-msgstr "それらのリスト型は ``List<aClass>`` のように記述されます。"
+msgstr "それらのリスト型は``List<aClass>``のように記述されます。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:235
 #: ../../source/engine-guide/reference/axonivy-engine/files.rst:84
@@ -15757,9 +15519,7 @@ msgstr ""
 msgid ""
 "The following environment objects are available on ``ivy`` (details of "
 "the objects are described in the :public-api:`Public API </>`):"
-msgstr ""
-"``ivy`` では、次の環境オブジェクトが利用可能です（オブジェクトの詳細は、「:public-api:`Public API "
-"</>`」に記載されています）："
+msgstr "``ivy``では、次の環境オブジェクトが利用可能です（オブジェクトの詳細は、「:public-api:`Public API </>`」に記載されています）："
 
 #: ../../source/designer-guide/ivyscript/reference.rst:304
 msgid ""
@@ -15935,10 +15695,7 @@ msgid ""
 "``datacache`` - the reference to the :public-api:`IDataCacheContext "
 "</ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` instances for the "
 "application and session (see :ref:`data-cache`)"
-msgstr ""
-"``datacache`` - アプリケーションおよびセッション用の :public-api:`IDataCacheContext "
-"</ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` インスタンスへの参照（「:ref"
-":`data-cache`」を参照）"
+msgstr "``datacache`` - アプリケーションおよびセッション用の:public-api:`IDataCacheContext </ch/ivyteam/ivy/data/cache/IDataCacheContext.html>`インスタンスへの参照（「:ref:`data-cache`」を参照）"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:363
 msgid ""
@@ -15946,10 +15703,7 @@ msgid ""
 "application (see :ref:`persistence-configuration-editor` and :ref"
 ":`persistence-api` for more information about the API of the "
 ":ref:`Persistence <persistence>`)"
-msgstr ""
-"``persistence`` - このアプリケーション内の既存の永続性ユニットへの参照（ :ref:`Persistence "
-"<persistence>` の API に関する詳細は、「 :ref:`persistence-configuration-editor` "
-"」および「 :ref:`persistence-api` 」を参照）"
+msgstr "``persistence`` - このアプリケーション内の既存の永続性ユニットへの参照（ :ref:`Persistence <persistence>` のAPIに関する詳細は、「 :ref:`persistence-configuration-editor` 」および「 :ref:`persistence-api` 」を参照）"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:368
 msgid ""
@@ -16010,10 +15764,7 @@ msgid ""
 "open the *New Process Group Wizard*, if you want to create a new group "
 "\"on the fly\". The process groups are listed relative to the project's "
 "*processes* folder."
-msgstr ""
-"新しいケースマップを挿入するプロセスグループを選択します。``<default>`` "
-"プロセスグループを選択すると、プロジェクトのプロセスフォルダーの直下にケースマップが作成されます。新しいグループを「その場」で作成したい場合は、グループフォルダーボタンをクリックして、*プロセスグループの作成ウィザード*"
-" を開くことができます。プロセスグループは、プロジェクトの *processes* フォルダーを基準に一覧表示されます。"
+msgstr "新しいケースマップを挿入するプロセスグループを選択します。``<default>``プロセスグループを選択すると、プロジェクトのプロセスフォルダーの直下にケースマップが作成されます。新しいグループを「その場」で作成したい場合は、グループフォルダーボタンをクリックして、*プロセスグループの作成ウィザード*を開くことができます。プロセスグループは、プロジェクトの*プロセス*フォルダーを基準に一覧表示されます。"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:42
 msgid "Enter the name of the Case Map that you want to create."
@@ -16718,9 +16469,7 @@ msgid ""
 "``CONNECTOR``: Setting this tag allows a Sub Process Start element to be "
 "displayed in the Extensions Dialog. See :ref:`process-element-extension-"
 "item`"
-msgstr ""
-"``CONNECTOR``：このタグを設定すると、サブプロセス開始要素が拡張ダイアログに表示されるようになります。「:ref:`process-"
-"element-extension-item`」を参照してください。"
+msgstr "``CONNECTOR``：このタグを設定すると、サブプロセス開始要素が拡張ダイアログに表示されるようになります。「:ref:`process-element-extension-item`」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:65
 msgid ""
@@ -17617,15 +17366,7 @@ msgid ""
 " <persistence>` or prepared statements using JDBC. For more information "
 "see: `SQL Injection Prevention Cheat Sheet "
 "<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
-msgstr ""
-"``SELECT * FROM Subscriber WHERE Name LIKE 'in.searchText%'`` という SQL 文が "
-"SQL クエリとして設定されていると仮定します。攻撃者が有効な SQL 文を ``in.searchText`` "
-"変数に渡すことに成功した場合、いわゆる SQL "
-"インジェクションが発生し、設定されたデータベースのすべてのデータが漏洩します。プロセス設計者はサニタイズされたデータのみを SQL "
-"クエリに渡す責任があります。場合によっては、:ref:`Persistence API <persistence>` や、JDBC "
-"を使用して作成されたステートメントでデータベースにアクセスした方が良いでしょう。詳細はこちらを参照：`SQL Injection "
-"Prevention Cheat Sheet "
-"<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
+msgstr "``SELECT * FROM Subscriber WHERE Name LIKE 'in.searchText%'``というSQL文がSQLクエリとして設定されていると仮定します。攻撃者が有効なSQL文を``in.searchText``変数に渡すことに成功した場合、いわゆるSQLインジェクションが発生し、設定されたデータベースのすべてのデータが漏洩します。プロセス設計者はサニタイズされたデータのみをSQLクエリに渡す責任があります。場合によっては、:ref:`Persistence API <persistence>`や、JDBCを使用して作成されたステートメントでデータベースにアクセスした方が良いでしょう。詳細はこちらを参照：`SQL Injection Prevention Cheat Sheet <https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:66
 msgid ""
@@ -17949,9 +17690,7 @@ msgid ""
 "You can send HTML formatted mails by setting the content-type "
 "``type=text/html``. Consequently you can use html tags, such as ``<h1>`` "
 "or ``<b>`` in your message content."
-msgstr ""
-"``type=text/html`` コンテンツタイプを設定して、HTML 形式のメールを送信できます。HTML "
-"形式のメールのメッセージコンテンツでは、``<h1>`` や``<b>`` などの html タグを使用できます。"
+msgstr "``type=text/html``コンテンツタイプを設定して、HTML形式のメールを送信できます。HTML形式のメールのメッセージコンテンツでは、``<h1>``や``<b>``などのhtmlタグを使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:85
 msgid "Tab Attachments"
@@ -21653,7 +21392,7 @@ msgid ""
 "standard icon, reset to the default or choose an icon from the folder "
 ":code:`webContent/icons/` (supported formats are :code:`.svg`, "
 ":code:`.png`, :code:`.jpg`, :code:`.jpeg`, :code:`.gif`, :code:`.webp`)."
-msgstr ""
+msgstr "|icon-action| プロセス要素のアイコンを変更します。 標準のアイコンを選択し、デフォルトにリセットするか、フォルダー:code:`webContent/icons/`（サポートされている形式は :code:`.svg`、:code:`.png`、:code:`.jpg`、:code:`.jpeg`、:code:`.gif`、:code:`.webp`）から選択できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:228
 msgid "icon-action"
@@ -40389,4 +40128,3 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 #~ msgstr ""
 #~ "|icon-action| "
 #~ "プロセス要素のアイコンを変更します。アイコンがすでにカスタムアイコンの場合は、デフォルトアイコンにリセットされます。プロジェクトの任意の画像をデコレーターアイコンとして使用できます。"
-
