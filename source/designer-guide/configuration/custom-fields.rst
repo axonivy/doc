@@ -69,3 +69,7 @@ Examples:
 - With a ``NUMBER`` custom field 
   ``CustomFields/Tasks/productType/Values/1``, ``CustomFields/Tasks/productType/Values/2``, and ``CustomFields/Tasks/productType/Values/3``. 
   Now you can give the product types meaningful names like ``Food``, ``Electronic``, and ``Health``. In different languages if you like.
+
+.. warning::
+  If the Customfields need to be translated as well in the Portal, then the property ``HasCmsValues: true`` will be required in the custom-fields.yaml.
+  See the :ref:`Portal guide <portal-guide>` chapter `Multi-Language Support for Custom String Fields` for further information. 
