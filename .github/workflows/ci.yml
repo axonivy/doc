@@ -33,7 +33,7 @@ jobs:
          | grep -v "Could not obtain image"\
          | grep -v "Cannot scale image!"
     - name: Archive build artifact
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v6
       with:
         name: axonivy-doc_en
         path: |
