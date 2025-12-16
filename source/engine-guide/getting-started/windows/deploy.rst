@@ -2,7 +2,7 @@ Deploy a project
 ----------------
 
 Let's deploy an Axon Ivy project to the Axon Ivy Engine. Download 
-the :dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/13.2/zip>`
+the :dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/14.0/zip>`
 and drop it in :file:`[engineDir]/deploy` folder. Refresh the main
 page of the Axon Ivy Engine. There will be a new section for this deployed app. 
 
