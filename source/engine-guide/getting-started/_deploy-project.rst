@@ -13,7 +13,7 @@ application to that directory.
 .. code:: bash
 
     cd /opt/ivy/engine/deploy
-    sudo -u ivy wget https://developer.axonivy.com/maven/com.axonivy.demo/ivy-demos-app/13.2/zip
+    sudo -u ivy wget https://developer.axonivy.com/maven/com.axonivy.demo/ivy-demos-app/14.0/zip
 
 .. Note::
 

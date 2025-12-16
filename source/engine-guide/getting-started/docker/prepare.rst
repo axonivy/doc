@@ -7,7 +7,7 @@ To test your docker installation, execute the following command in a terminal:
 
 .. code:: bash
 
-   docker run -p 8080:8080 axonivy/axonivy-engine:13.2
+   docker run -p 8080:8080 axonivy/axonivy-engine:14.0
 
 Now you can connect to http://localhost:8080 - no joke. There, your Axon Ivy Engine
 is running and awaits your commands.
