@@ -8,7 +8,7 @@
   <name>Axon Ivy Platform</name>
 
   <properties>
-    <ivy-version>13.2.0-SNAPSHOT</ivy-version>
+    <ivy-version>13.2.1-SNAPSHOT</ivy-version>
     <images.folder>source/_images</images.folder>
     <includes.target.folder>${project.build.directory}/resources/includes</includes.target.folder>
     <engine.guide.url>https://developer.axonivy.com/doc/${doc.version}/engine-guide</engine.guide.url>
