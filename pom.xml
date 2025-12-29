@@ -62,13 +62,6 @@
 
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
-                  <artifactId>doc-screenshots-designer</artifactId>
-                  <version>${ivy-version}</version>
-                  <type>zip</type>
-                </artifactItem>
-
-                <artifactItem>
-                  <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-screenshots-engine</artifactId>
                   <version>${ivy-version}</version>
                   <type>zip</type>
