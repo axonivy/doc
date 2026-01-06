@@ -5,20 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: Axon Ivy Platform 13.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-16 12:48+0000\n"
-"PO-Revision-Date: 2025-12-03 15:01+0000\n"
-"Last-Translator: Torindo_reviewer <eri.kobayashi@torindo.ne.jp>\n"
-"Language: ja\n"
-"Language-Team: Japanese "
-"<https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-12-16 12:48+0000\nPO-Revision-Date: 2026-01-13 08:01+0000\nLast-Translator: Torindo_translator <tabitosake@gmail.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.15.2-dev\nGenerated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -907,19 +894,15 @@ msgid "Migrating from 13.1 to 13.2"
 msgstr "13.1から13.2への移行"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:6
-#, fuzzy
 msgid ""
 "Upgrading to version 13.2 is supported only from an Axon Ivy Engine 10.0 "
 "or higher. If your Axon Ivy Engine is older than version 10.0, you must "
 "first migrate to a version between 10.0 and 12.0."
-msgstr ""
-"13.2へのアップグレードは、Axon Ivy Engine 10.0以降からのみサポートされています。10.0より古いバージョンのAxon "
-"Ivy Engineを使用している場合は、まず10.0～12.0のバージョンに移行しておく必要があります。"
+msgstr "バージョン 13.2 へのアップグレードは、Axon Ivy Engine 10.0 以降でのみサポートされています。Axon Ivy Engine がバージョン 10.0 よりも古い場合は、最初に 10.0 ～ 12.0 のバージョンに移行する必要があります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:11
-#, fuzzy
 msgid "Final Eclipse-Based Axon Ivy PRO Designer"
-msgstr "Axon Ivy Designer を起動します。"
+msgstr "最終的な Eclipse ベースの Axon Ivy PRO Designer"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:13
 msgid ""
@@ -929,76 +912,73 @@ msgid ""
 "<https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-"
 "designer-13>`_. A Beta version is already available - try it out and "
 "share your feedback!"
-msgstr ""
+msgstr "これは、`Eclipse IDE <https://eclipseide.org/>`_ ベースの PRO Designer の最終リリースです。PRO Designer は LTS 14 から、`VS コード拡張子 <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-13>`_ に移行します。ベータ版は既に配布されているので、お試しの上、フィードバックをお寄せください!"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:17
 msgid ""
 "`Learn more about this transition <https://community.axonivy.com/d/1149"
 "-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
-msgstr ""
+msgstr "`この移行に関する詳細はこちら <https://community.axonivy.com/d/1149-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:20
-#, fuzzy
 msgid "Axon Ivy Java API Maven Dependency"
-msgstr "Axon IvyパブリックAPI Maven依存関係"
+msgstr "Axon Ivy Java API Maven 依存関係"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:22
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:42
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:63
-#, fuzzy
 msgid "|tag-project-changed| |tag-project-auto-convert|"
-msgstr "|tag-project-auto-convert|"
+msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:24
 msgid ""
 "The version of the :code:`ivy-project-parent`  in the :code:`pom.xml` "
 "file has been updated from 13.1 to 13.2."
-msgstr ""
+msgstr ":code:`pom.xml` ファイル内の :code:`ivy-project-parent` のバージョンが 13.1 から 13.2 へ更新されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:26
 msgid ""
 "For projects using :code:`ivy-project-parent`, the following dependencies"
 " have been replaced:"
-msgstr ""
+msgstr ":code:`ivy-project-parent` を使用するプロジェクトについて、次の依存関係が置換されました:"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:28
 msgid ":code:`unit-tester` → :code:`ìvy-test-api`"
-msgstr ""
+msgstr ":code:`unit-tester` → :code:`ìvy-test-api`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:29
 msgid ":code:`web-tester` → :code:`ìvy-web-test-api`"
-msgstr ""
+msgstr ":code:`web-tester` → :code:`ìvy-web-test-api`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:32
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:53
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:73
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:99
 msgid "What You Need to Do:"
-msgstr ""
+msgstr "必要なアクション:"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:34
 msgid "Run the project migration tool to automatically update your pom.xml file."
-msgstr ""
+msgstr "プロジェクト移行ツールを実行して、pom.xml ファイルを自動的に更新します。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:35
 msgid ""
 "Execute your maven build and ensure everythings compiles and all tests "
 "pass successfully."
-msgstr ""
+msgstr "Maven ビルドを実行し、すべてがコンパイルされ、すべてのテストが合格することを確認します。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:37
 msgid ""
 "For more details about the Axon Ivy Java API and troubleshoot issues, "
 "refer to `Troubleshoot Java Compilation Errors "
 "<https://community.axonivy.com/d/1150>`_."
-msgstr ""
+msgstr "Axon Ivy Java API と問題解決の詳細については、`Troubleshoot Java Compilation Errors <https://community.axonivy.com/d/1150>`_ を参照してください。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:40
 msgid "Persistence API (Hibernate)"
 msgstr "永続性API（Hibernate）"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:44
-#, fuzzy
 msgid ""
 "The Persistence API has been migrated from Java Persistence API (JPA) 2.2"
 " to `Jakarta Persistence API "
@@ -1006,106 +986,95 @@ msgid ""
 "implementation has been updated from `Hibernate "
 "<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to `Hibernate "
 "<https://hibernate.org/orm/documentation/7.0/>`_ 7.0."
-msgstr ""
-"永続性APIをJava Persistence API (JPA) バージョン2.2から`Jakarta Persistence API "
-"<https://jakarta.ee/specifications/persistence/3.2/>`_バージョン3.2に移行しました。APIの実装は`Hibernate"
-" <https://hibernate.org/orm/documentation/7.0/>`_5.6から7.0に移行されました。"
+msgstr "Persistence API は、Java Persistence API (JPA) 2.2 から `Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_ 3.2 へ移行されました。実装は、`Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 5.6 から `Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 7.0 へ更新されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:47
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:67
 msgid "Package names have changed:"
-msgstr ""
+msgstr "パッケージ名が変更されました:"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:49
 msgid ":code:`javax.persistence` → :code:`jakarta.persistence`"
-msgstr ""
+msgstr ":code:`javax.persistence` → :code:`jakarta.persistence`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:50
 msgid ":code:`javax.transaction` → :code:`jakarta.transaction`"
-msgstr ""
+msgstr ":code:`javax.transaction` → :code:`jakarta.transaction`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:55
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:75
 msgid "Run the project migration tool to automatically update your code."
-msgstr ""
+msgstr "プロジェクト移行ツールを実行して、自動的にコードを更新します。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:56
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:76
 msgid ""
 "Use :guilabel:`File Search` in the Designer to ensure all references are "
 "updated."
-msgstr ""
+msgstr "Designer で :guilabel:`File Search` を使用し、すべての参照が更新されたことを確認します。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:58
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:86
 msgid ""
 "This marks the first step in the migration from Java EE to Jakarta EE. "
 "Further migrations will follow in future releases."
-msgstr ""
+msgstr "これは、Java EEから Jakarta EEへの移行の最初のステップを示します。今後のリリースでさらなる移行が続きます。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:61
-#, fuzzy
 msgid "Mail API"
-msgstr "メールステップ"
+msgstr "Mail API"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:65
 msgid ""
 "The Mail API has been migrated from Java Mail API 1.6 to `Jakarta Mail "
 "API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0."
-msgstr ""
+msgstr "Mail API は、Java Mail API 1.6 から `Jakarta Mail API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0 へ移行されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:69
 msgid ":code:`javax.mail` → :code:`jakarta.mail`"
-msgstr ""
+msgstr ":code:`javax.mail` → :code:`jakarta.mail`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:70
 msgid ":code:`javax.activation` → :code:`jakarta.activation`"
-msgstr ""
+msgstr ":code:`javax.activation` → :code:`jakarta.activation`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:79
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:116
-#, fuzzy
 msgid "Recommendation:"
-msgstr "前提条件"
+msgstr "推奨:"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:81
 msgid "Instead of using the Jakarta Mail API, consider:"
-msgstr ""
+msgstr "Jakarta Mail API を使用する代わりに次を検討してください:"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:83
-#, fuzzy
 msgid "The :ref:`process-element-email-activity`"
-msgstr ":ref:`process-element-pi`"
+msgstr ":ref:`process-element-email-activity`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:84
 msgid ""
 "The new :public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-"
 "summary.html>`."
-msgstr ""
+msgstr "新しい :public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-summary.html>`。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:89
 msgid "HttpHeaderSecurityFilter and RemoteIpFilter in web.xml"
 msgstr "web.xml内のHttpHeaderSecurityFilterおよびRemoteIpFilter"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:93
-#, fuzzy
 msgid ""
 "You can now define the :ref:`reverse-proxy` HTTP Headers and security "
 "response :ref:`security-http-headers` in the :ref:`ivy-yaml` file. While "
 "it is still possible to configure these in :ref:`web-xml`, it is no "
 "longer recommended. If you continue to use :ref:`web-xml`, headers may "
 "appear twice."
-msgstr ""
-":ref:`ivy-yaml` を使用して、 :ref:`reverse-proxy` HTTPヘッダーおよびセキュリティ応答用の :ref"
-":`security-http-headers` を定義できるようになりました。引き続き :ref:`web-xml` "
-"からこれらを定義することも可能ですが、そうするとヘッダーが二重に設定されてしまう可能性があります。そのため、次の設定を削除し、 :ref"
-":`ivy-yaml` 側で調整を行ってください。"
+msgstr ":ref:`ivy-yaml` ファイル内で :ref:`reverse-proxy` HTTP ヘッダーおよびセキュリティ応答 :ref:`security-http-headers` を定義できるようになりました。これらを :ref:`web-xml` 内でも設定できますが、今後は推奨しません。:ref:`web-xml` を使用し続ける場合、ヘッダーが 2 回表示される可能性があります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:101
 msgid ""
 "Remove the following configurations from :ref:`web-xml` and migrate them "
 "to :ref:`ivy-yaml`:"
-msgstr ""
+msgstr "次の設定を :ref:`web-xml` から削除し、:ref:`ivy-yaml` へ移行してください:"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:103
 msgid ""
@@ -1128,18 +1097,15 @@ msgid "Schema header in ivy.yaml and app.yaml"
 msgstr "ivy.yamlおよびapp.yaml内のスキーマヘッダー"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:111
-#, fuzzy
 msgid ""
 "If your :ref:`ivy-yaml` and :ref:`app-yaml` do not include a schema "
 "header, the Axon Ivy Engine will now assume that they are in the latest "
 "version. Auto-migration of these files will not happen anymore."
-msgstr ""
-":ref:`ivy-yaml` および :ref:`app-yaml` にスキーマヘッダーが指定されていない場合、Axon Ivy "
-"Engineはこれらのファイルが最新バージョンであると自動的にみなし、今後は自動移行を行わなくなります。そのため、常にスキーマヘッダーを付けてファイルのバージョン管理をすることを推奨します。"
+msgstr ":ref:`ivy-yaml` および :ref:`app-yaml` にスキーマヘッダーが指定されていない場合、Axon Ivy Engine はこれらのファイルが最新バージョンであると自動的にみなし、今後は自動移行を行わなくなります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:118
 msgid "Always version your configuration files by including a schema header."
-msgstr ""
+msgstr "常にスキーマヘッダーを付けて設定ファイルのバージョンを管理してください。"
 
 #: ../../source/axonivy/migration/migration-tools.rst:4
 msgid "Migration Tools"
@@ -27695,7 +27661,6 @@ msgid ""
 msgstr "エラーページは、プロセスアクティビティや HTML ダイアログのインタラクションの実行中に発生した予期しないエラーをユーザーに知らせます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:15
-#, fuzzy
 msgid ""
 "The default error pages are located at :file:`webapps/ivy/WEB-INF/lib"
 "/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml`. You "
@@ -27708,12 +27673,7 @@ msgid ""
 "within error pages to provide context information on the error and its "
 "engine state. Other Ivy APIs are not intended to work in case of an "
 "error."
-msgstr ""
-"デフォルトのエラーページは ``webapps/ivy/ivy-error-page.xhtml`` "
-"にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。さらに、表示される情報を調整できます。エラーページ内で"
-" :public-api:`ErrorPageMBean "
-"</ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` "
-"にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。エラーが発生した場合、他の Ivy API は動作しません。"
+msgstr "デフォルトのエラーページは :file:`webapps/ivy/WEB-INF/lib/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml` にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。これは、ファイルを :file:`webapps/ivy/error` にコピーするなどの操作で実行できます。さらに、表示される情報を調整できます。エラーページ内で :public-api:`ErrorPageMBean </ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。エラーが発生した場合、他の Ivy API は目的通りに動作しません。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:25
 msgid "Custom error pages have to be registered in the global :ref:`web-xml`."
@@ -27738,7 +27698,6 @@ msgid "Ajax Errors"
 msgstr "Ajax エラー"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:38
-#, fuzzy
 msgid ""
 "If an exception occurs in an Ajax-based HTTP request, the configured "
 "Primefaces Ajax exception handlers come into play. The handlers have to "
@@ -27749,11 +27708,7 @@ msgid ""
 "Ajax exception handling, you can copy the files to your project (e.g. to "
 ":file:`webContent/layouts/includes/exception.xhtml`) and adjust the your "
 "template to load this file."
-msgstr ""
-"Ajax ベースの HTTP リクエストで例外が発生した場合、設定されている PrimeFaces の Ajax "
-"例外ハンドラーがこれを処理します。*\\*.xhtml* "
-"ファイルでハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、``webContent/layouts/includes/exception.xhtml``"
-" を参照してください。"
+msgstr "Ajax ベースの HTTP リクエストで例外が発生した場合、設定されている PrimeFaces の Ajax 例外ハンドラーが例外を処理します。*\\*.xhtml* ファイルの一部としてハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、:file:`webapps/ivy/WEB-INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-INF/resources/ivy-form/layouts/include/exception.xhtml` を参照してください。Ajax 例外処理をカスタマイズするには、ファイルをプロジェクト (:file:`webContent/layouts/includes/exception.xhtml` など) にコピーし、このファイルを読み込むようにテンプレートを調整できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:50
 msgid ""
@@ -32587,18 +32542,13 @@ msgid "Deploy a project"
 msgstr "プロジェクトの展開"
 
 #: ../../source/engine-guide/getting-started/windows/deploy.rst:4
-#, fuzzy
 msgid ""
 "Let's deploy an Axon Ivy project to the Axon Ivy Engine. Download the "
 ":dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-"
 "app/14.0/zip>` and drop it in :file:`[engineDir]/deploy` folder. Refresh "
 "the main page of the Axon Ivy Engine. There will be a new section for "
 "this deployed app."
-msgstr ""
-"Axon Ivy プロジェクトを Axon Ivy Engine に展開してみましょう。:dev-url:`demo application "
-"</maven/com.axonivy.demo/ivy-demos-app/13.2/zip>` "
-"をダウンロードし、:file:`[engineDir]/deploy` フォルダーに配置します。Axon Ivy Engine "
-"のメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
+msgstr "Axon Ivy プロジェクトを Axon Ivy Engine に展開してみましょう。:dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/14.0/zip>` をダウンロードし、:file:`[engineDir]/deploy` フォルダーに配置します。Axon Ivy Engine のメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
 
 #: ../../source/engine-guide/getting-started/windows/deploy.rst:9
 msgid ""
@@ -40534,4 +40484,3 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 #~ "新しいバージョンのパッケージは:code:`javax.persistence`から:code:`jakarta.persistence`に変更されました。この変更に合わせてIvyプロジェクトのコードを変更する必要があります。Designerで:guilabel:`find"
 #~ " and replace in files` "
 #~ "を使用してプロジェクトを移行してください。"
-
