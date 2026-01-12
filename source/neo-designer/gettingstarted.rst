@@ -47,11 +47,11 @@ with a sinlge click.
 
 .. image:: /_images/neo/view-browser.png
 
-.. rubric:: Add Configurations 
+.. rubric:: Configurations 
 
 Configurations are the settings and parameters that define how an application behaves 
 and interacts with other systems.
-Use the :ref:`variables-editor` to create, delete, and edit the key and values of Variables. 
+Use the :ref:`variables-editor`, :ref:`cms-editor` or the :ref:`role-editor` to do so. 
 
 .. image:: /_images/neo/editor-variable.png
 

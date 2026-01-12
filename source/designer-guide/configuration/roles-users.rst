@@ -76,42 +76,19 @@ Role Editor
 -----------
 
 The role editor allows to create, edit, or remove roles as well as to structure
-roles hierarchically. Double click on the :guilabel:`Roles` node in the
-:ref:`ivy-project-view`.
+roles hierarchically.
 
-.. figure:: /_images/designer-configuration/role-editor.png
+.. figure:: /_images/role-editor/role-editor.png
    :alt: Role Editor
    :align: center
    
    Role Editor
 
-The left side of the Role editor consists of a tree showing all the roles in a
-hierarchical order. A click on one of the roles will show the properties of the
-selected role on the right side of the editor. Manipulate the role hierarchy by
-dragging a role and dropping it at its new location in the hierarchy.
+The left side of the Role editor contains all the roles. A click on one of the 
+roles will show the properties of the selected role on the right side of the editor. 
 
-- :guilabel:`New`
-  A new role is created as a child of the selected role.
-
-- :guilabel:`Add`
-  A role is added as a linked member role to the selected role.
-
-- :guilabel:`Remove`
-  The selected role and all its child roles are removed.
-  The user is obliged to confirm the removal. Note that the role **Everybody** may not
-  be deleted.
-
-- :guilabel:`Import XML`
-  A ``roles.xml`` file from another project can be imported for
-  convenience reasons.
-
-- :guilabel:`Export XML`
-  All roles are exported in an XML file named
-  ``roles.xml`` to easily re-use the role hierarchy.
-
-- :guilabel:`Sort`
-  The selected roles are sorted alphabetically. If desired, this is
-  performed recursively on the children.
+- Press |add-role-icon| to add a new Role.
+- Press |delete-role-icon| to delete the selected Role.
 
 .. warning::
 
@@ -119,6 +96,17 @@ dragging a role and dropping it at its new location in the hierarchy.
    you define in a project with all other roles in the same security context.
    The deployment will fail if a Role with the same name exists in different
    hierarchies. This does not apply for Member Roles.
+
+.. |add-role-icon| image:: /_images/ui-icons/plus.svg
+   :alt: Add Role
+   :width: 16px
+   :height: 16px
+
+.. |delete-role-icon| image:: /_images/ui-icons/trash.svg
+   :alt: Delete Role
+   :width: 16px
+   :height: 16px
+
 
 .. _test-user-editor:
 
