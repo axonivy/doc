@@ -75,7 +75,7 @@
                 </artifactItem>
 
                 <artifactItem>
-                  <groupId>ch.ivyteam.dialog</groupId>
+                  <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>form-editor-screenshots</artifactId>
                   <version>${ivy-version}</version>
                   <type>zip</type>
@@ -84,6 +84,13 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.variable</groupId>
                   <artifactId>variable-editor-screenshots</artifactId>
+                  <version>${ivy-version}</version>
+                  <type>zip</type>
+                </artifactItem>
+
+                 <artifactItem>
+                  <groupId>ch.ivyteam.doc</groupId>
+                  <artifactId>role-editor-screenshots</artifactId>
                   <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
