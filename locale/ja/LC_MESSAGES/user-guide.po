@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-16 12:48+0000\n"
+"POT-Creation-Date: 2026-01-12 13:54+0000\n"
 "PO-Revision-Date: 2025-12-03 15:01+0000\n"
 "Last-Translator: Torindo_reviewer <eri.kobayashi@torindo.ne.jp>\n"
 "Language: ja\n"
@@ -7192,72 +7192,51 @@ msgstr ""
 "**Process N** の権限を持っています。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:76
-#: ../../source/designer-guide/configuration/roles-users.rst:82
-#: ../../source/designer-guide/configuration/roles-users.rst:86
+#: ../../source/designer-guide/configuration/roles-users.rst:81
+#: ../../source/designer-guide/configuration/roles-users.rst:85
 msgid "Role Editor"
 msgstr "ロールエディター"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:78
+#, fuzzy
 msgid ""
 "The role editor allows to create, edit, or remove roles as well as to "
-"structure roles hierarchically. Double click on the :guilabel:`Roles` "
-"node in the :ref:`ivy-project-view`."
+"structure roles hierarchically."
 msgstr ""
 "ロールエディターでは、ロールを作成、編集、削除し、ロールの階層構造を作成できます。 :ref:`ivy-project-view` の "
 ":guilabel:`Roles` ノードをダブルクリックしてください。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:88
+#: ../../source/designer-guide/configuration/roles-users.rst:87
+#, fuzzy
 msgid ""
-"The left side of the Role editor consists of a tree showing all the roles"
-" in a hierarchical order. A click on one of the roles will show the "
-"properties of the selected role on the right side of the editor. "
-"Manipulate the role hierarchy by dragging a role and dropping it at its "
-"new location in the hierarchy."
+"The left side of the Role editor contains all the roles. A click on one "
+"of the roles will show the properties of the selected role on the right "
+"side of the editor."
 msgstr ""
 "ロールエディターの左側は、すべてのロールを階層的に表示するツリーで構成されています。ロールの 1 "
 "つをクリックすると、選択されたロールのプロパティがエディターの右側に表示されます。ロールをドラッグして階層内の新しい位置にドロップして、ロールの階層を操作できます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:93
-msgid ":guilabel:`New` A new role is created as a child of the selected role."
-msgstr ":guilabel:`新規` 選択されたロールの子として新しいロールが作成されます。"
+#: ../../source/designer-guide/configuration/roles-users.rst:90
+#, fuzzy
+msgid "Press |add-role-icon| to add a new Role."
+msgstr "|add-variable-icon| をクリックして、新しい変数を追加します。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:96
-msgid ""
-":guilabel:`Add` A role is added as a linked member role to the selected "
-"role."
-msgstr ":guilabel:`追加` 選択されたロールにリンクされたメンバーロールとしてロールが追加されます。"
+#: ../../source/designer-guide/configuration/roles-users.rst:100
+#, fuzzy
+msgid "Add Role"
+msgstr "変数の追加"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:99
-msgid ""
-":guilabel:`Remove` The selected role and all its child roles are removed."
-" The user is obliged to confirm the removal. Note that the role "
-"**Everybody** may not be deleted."
-msgstr ""
-":guilabel:`削除` "
-"選択されたロールとそのすべての子ロールが削除されます。ユーザーは削除を確認する義務があります。**Everybody** "
-"ロールは削除できないことに注意してください。"
+#: ../../source/designer-guide/configuration/roles-users.rst:91
+#, fuzzy
+msgid "Press |delete-role-icon| to delete the selected Role."
+msgstr "|delete-variable-icon| をクリックして、選択した変数を削除します。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:104
-msgid ""
-":guilabel:`Import XML` A ``roles.xml`` file from another project can be "
-"imported for convenience reasons."
-msgstr ":guilabel:`XML をインポート` 他のプロジェクトから ``roles.xml`` ファイルをインポートできます。"
+#: ../../source/designer-guide/configuration/roles-users.rst:105
+#, fuzzy
+msgid "Delete Role"
+msgstr "delete"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:108
-msgid ""
-":guilabel:`Export XML` All roles are exported in an XML file named "
-"``roles.xml`` to easily re-use the role hierarchy."
-msgstr ""
-":guilabel:`XML のエクスポート` すべてのロールが ``roles.xml`` という名前の XML "
-"ファイルにエクスポートされ、ロールの階層構造を簡単に再利用できます。"
-
-#: ../../source/designer-guide/configuration/roles-users.rst:112
-msgid ""
-":guilabel:`Sort` The selected roles are sorted alphabetically. If "
-"desired, this is performed recursively on the children."
-msgstr ":guilabel:`並び替え` 選択されたロールがアルファベット順に並び替えられます。必要に応じて、子に対して再帰的に実行されます。"
-
-#: ../../source/designer-guide/configuration/roles-users.rst:118
+#: ../../source/designer-guide/configuration/roles-users.rst:95
 msgid ""
 "Role names have to be unique within their security context. Axon Ivy "
 "merges roles you define in a project with all other roles in the same "
@@ -7267,13 +7246,13 @@ msgstr ""
 "ロール名はセキュリティコンテキスト内で一意でなければなりません。Axon Ivy "
 "は、プロジェクト内で定義したロールを、同じセキュリティコンテキスト内の他のすべてのロールとマージします。同じ名前のロールが異なる階層に存在する場合、展開は失敗します。これはメンバーロールには適用されません。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:126
-#: ../../source/designer-guide/configuration/roles-users.rst:140
-#: ../../source/designer-guide/configuration/roles-users.rst:144
+#: ../../source/designer-guide/configuration/roles-users.rst:114
+#: ../../source/designer-guide/configuration/roles-users.rst:128
+#: ../../source/designer-guide/configuration/roles-users.rst:132
 msgid "Test User Editor"
 msgstr "テストユーザーエディター"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:128
+#: ../../source/designer-guide/configuration/roles-users.rst:116
 msgid ""
 "Process designers can create, edit and remove test users in the user "
 "editor. Users need a password to authenticate themselves, and they need "
@@ -7284,7 +7263,7 @@ msgstr ""
 "つのロールに割り当てられている必要があります。テストユーザーエディターを起動するには、 :ref:`ivy-project-view` の "
 ":guilabel:`Test Users` ノードをダブルクリックします。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:135
+#: ../../source/designer-guide/configuration/roles-users.rst:123
 msgid ""
 "Test users are only used in the process **simulation** within the Axon "
 "Ivy Designer. They are **not** uploaded to the engine during deployment. "
@@ -7295,7 +7274,7 @@ msgstr ""
 "Designer内でのプロセスの**シミュレーション**にのみ使用されます。これらのユーザーは展開時にエンジンにアップロード**されません**。Axon"
 " Ivy Engine上で展開されるプロセス用のユーザーは、エンジン上で作成および設定する必要があります。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:146
+#: ../../source/designer-guide/configuration/roles-users.rst:134
 msgid ""
 "On the left hand side of the editor, you see all users with their user "
 "names (i.e. login names) and their full names. For the selected user on "
@@ -7310,27 +7289,27 @@ msgstr ""
 " :ref:`role-editor` を参照）。文字列キーと値のペアで各ユーザーに追加のプロパティを追加し、 :ref:`ivyscript` "
 "のプロセスステップ内で再利用できます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:154
+#: ../../source/designer-guide/configuration/roles-users.rst:142
 msgid ":guilabel:`New` Creates a new user with the specified name."
 msgstr ":guilabel:`新規` 指定された名前で新しいユーザーを作成します。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:157
+#: ../../source/designer-guide/configuration/roles-users.rst:145
 msgid ""
 ":guilabel:`Remove` Removes a user from the list. The process designer "
 "does confirm the removal."
 msgstr ":guilabel:`削除` リストからユーザーを削除します。プロセス設計者は削除を確認します。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:161
+#: ../../source/designer-guide/configuration/roles-users.rst:149
 msgid ":guilabel:`Sort` Sorts the user list in alphabetical order."
 msgstr ":guilabel:`並び替え` ユーザーリストをアルファベット順に並び替えます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:164
+#: ../../source/designer-guide/configuration/roles-users.rst:152
 msgid ""
 ":guilabel:`Import` Test users from a ``users.xml`` file from another "
 "project can be imported for convenience reasons."
 msgstr ":guilabel:`インポート` 他のプロジェクトの ``users.xml`` ファイルからテストユーザーをインポートできます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:168
+#: ../../source/designer-guide/configuration/roles-users.rst:156
 msgid ""
 ":guilabel:`Export XML` All users and their corresponding properties are "
 "exported into a XML file named ``users.xml`` for easy re-use of test "
@@ -7339,7 +7318,7 @@ msgstr ""
 ":guilabel:`XML のエクスポート` すべてのユーザーとユーザーに対応するプロパティが ``users.xml`` という名前の XML"
 " ファイルにエクスポートされ、他のプロジェクトでテストユーザーを簡単に再利用できます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:174
+#: ../../source/designer-guide/configuration/roles-users.rst:162
 msgid ""
 "You do not see the user called **Developer**, because it is a built-in "
 "user. It belongs to all groups and owns all permissions. The user is "
@@ -38811,15 +38790,17 @@ msgid ""
 msgstr "NEO Designer に含まれるシミュレーター機能を使用して、プロセスをワンクリックで実行、テストできます。"
 
 #: ../../source/neo-designer/gettingstarted.rst:51
-msgid "Add Configurations"
-msgstr "設定の追加"
+#, fuzzy
+msgid "Configurations"
+msgstr "設定"
 
 #: ../../source/neo-designer/gettingstarted.rst:52
+#, fuzzy
 msgid ""
 "Configurations are the settings and parameters that define how an "
 "application behaves and interacts with other systems. Use the :ref"
-":`variables-editor` to create, delete, and edit the key and values of "
-"Variables."
+":`variables-editor`, :ref:`cms-editor` or the :ref:`role-editor` to do "
+"so."
 msgstr ""
 "設定とパラメーターで、アプリケーションの動作と他のシステムとのインタラクションを定義します :ref:`variables-editor` "
 "を使用して、変数のキーと値を作成、削除、編集します。"
@@ -40534,4 +40515,49 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 #~ "新しいバージョンのパッケージは:code:`javax.persistence`から:code:`jakarta.persistence`に変更されました。この変更に合わせてIvyプロジェクトのコードを変更する必要があります。Designerで:guilabel:`find"
 #~ " and replace in files` "
 #~ "を使用してプロジェクトを移行してください。"
+
+#~ msgid ":guilabel:`New` A new role is created as a child of the selected role."
+#~ msgstr ":guilabel:`新規` 選択されたロールの子として新しいロールが作成されます。"
+
+#~ msgid ""
+#~ ":guilabel:`Add` A role is added as "
+#~ "a linked member role to the "
+#~ "selected role."
+#~ msgstr ":guilabel:`追加` 選択されたロールにリンクされたメンバーロールとしてロールが追加されます。"
+
+#~ msgid ""
+#~ ":guilabel:`Remove` The selected role and "
+#~ "all its child roles are removed. "
+#~ "The user is obliged to confirm the"
+#~ " removal. Note that the role "
+#~ "**Everybody** may not be deleted."
+#~ msgstr ""
+#~ ":guilabel:`削除` "
+#~ "選択されたロールとそのすべての子ロールが削除されます。ユーザーは削除を確認する義務があります。**Everybody** "
+#~ "ロールは削除できないことに注意してください。"
+
+#~ msgid ""
+#~ ":guilabel:`Import XML` A ``roles.xml`` file"
+#~ " from another project can be imported"
+#~ " for convenience reasons."
+#~ msgstr ":guilabel:`XML をインポート` 他のプロジェクトから ``roles.xml`` ファイルをインポートできます。"
+
+#~ msgid ""
+#~ ":guilabel:`Export XML` All roles are "
+#~ "exported in an XML file named "
+#~ "``roles.xml`` to easily re-use the "
+#~ "role hierarchy."
+#~ msgstr ""
+#~ ":guilabel:`XML のエクスポート` すべてのロールが ``roles.xml`` "
+#~ "という名前の XML ファイルにエクスポートされ、ロールの階層構造を簡単に再利用できます。"
+
+#~ msgid ""
+#~ ":guilabel:`Sort` The selected roles are "
+#~ "sorted alphabetically. If desired, this "
+#~ "is performed recursively on the "
+#~ "children."
+#~ msgstr ":guilabel:`並び替え` 選択されたロールがアルファベット順に並び替えられます。必要に応じて、子に対して再帰的に実行されます。"
+
+#~ msgid "Add Configurations"
+#~ msgstr "設定の追加"
 
