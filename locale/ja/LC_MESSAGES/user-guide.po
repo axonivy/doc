@@ -894,15 +894,19 @@ msgid "Migrating from 13.1 to 13.2"
 msgstr "13.1から13.2への移行"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:6
+#, fuzzy
 msgid ""
 "Upgrading to version 13.2 is supported only from an Axon Ivy Engine 10.0 "
 "or higher. If your Axon Ivy Engine is older than version 10.0, you must "
 "first migrate to a version between 10.0 and 12.0."
-msgstr "バージョン13.2へのアップグレードは、Axon Ivy Engine 10.0以降でのみサポートされています。Axon Ivy Engineがバージョン10.0よりも古い場合は、最初に10.0～12.0のバージョンに移行する必要があります。"
+msgstr ""
+"13.2へのアップグレードは、Axon Ivy Engine 10.0以降からのみサポートされています。10.0より古いバージョンのAxon "
+"Ivy Engineを使用している場合は、まず10.0～12.0のバージョンに移行しておく必要があります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:11
+#, fuzzy
 msgid "Final Eclipse-Based Axon Ivy PRO Designer"
-msgstr "最終的なEclipseベースのAxon Ivy PRO Designer"
+msgstr "Axon Ivy Designer を起動します。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:13
 msgid ""
@@ -912,73 +916,76 @@ msgid ""
 "<https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-"
 "designer-13>`_. A Beta version is already available - try it out and "
 "share your feedback!"
-msgstr "これは、`Eclipse IDE <https://eclipseide.org/>`_ ベースのPRO Designerの最終リリースです。PRO DesignerはLTS 14から、`VS コード拡張子 <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-13>`_ に移行します。ベータ版は既に配布されているので、お試しの上、フィードバックをお寄せください。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:17
 msgid ""
 "`Learn more about this transition <https://community.axonivy.com/d/1149"
 "-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
-msgstr "`この移行に関する詳細はこちら <https://community.axonivy.com/d/1149-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:20
+#, fuzzy
 msgid "Axon Ivy Java API Maven Dependency"
-msgstr "Axon Ivy Java API Maven依存関係"
+msgstr "Axon IvyパブリックAPI Maven依存関係"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:22
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:42
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:63
+#, fuzzy
 msgid "|tag-project-changed| |tag-project-auto-convert|"
-msgstr "|tag-project-changed| |tag-project-auto-convert|"
+msgstr "|tag-project-auto-convert|"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:24
 msgid ""
 "The version of the :code:`ivy-project-parent`  in the :code:`pom.xml` "
 "file has been updated from 13.1 to 13.2."
-msgstr ":code:`pom.xml`ファイル内の:code:`ivy-project-parent`のバージョンが13.1から13.2へ更新されました。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:26
 msgid ""
 "For projects using :code:`ivy-project-parent`, the following dependencies"
 " have been replaced:"
-msgstr ":code:`ivy-project-parent`を使用するプロジェクトについて、次の依存関係が置換されました："
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:28
 msgid ":code:`unit-tester` → :code:`ìvy-test-api`"
-msgstr ":code:`unit-tester` → :code:`ìvy-test-api`"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:29
 msgid ":code:`web-tester` → :code:`ìvy-web-test-api`"
-msgstr ":code:`web-tester` → :code:`ìvy-web-test-api`"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:32
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:53
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:73
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:99
 msgid "What You Need to Do:"
-msgstr "必要なアクション："
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:34
 msgid "Run the project migration tool to automatically update your pom.xml file."
-msgstr "プロジェクト移行ツールを実行して、pom.xmlファイルを自動的に更新します。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:35
 msgid ""
 "Execute your maven build and ensure everythings compiles and all tests "
 "pass successfully."
-msgstr "Mavenビルドを実行し、すべてがコンパイルされ、すべてのテストが合格することを確認します。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:37
 msgid ""
 "For more details about the Axon Ivy Java API and troubleshoot issues, "
 "refer to `Troubleshoot Java Compilation Errors "
 "<https://community.axonivy.com/d/1150>`_."
-msgstr "Axon Ivy Java APIと問題解決の詳細については、`Troubleshoot Java Compilation Errors <https://community.axonivy.com/d/1150>`_を参照してください。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:40
 msgid "Persistence API (Hibernate)"
 msgstr "永続性API（Hibernate）"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:44
+#, fuzzy
 msgid ""
 "The Persistence API has been migrated from Java Persistence API (JPA) 2.2"
 " to `Jakarta Persistence API "
@@ -986,95 +993,106 @@ msgid ""
 "implementation has been updated from `Hibernate "
 "<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to `Hibernate "
 "<https://hibernate.org/orm/documentation/7.0/>`_ 7.0."
-msgstr "Persistence APIは、Java Persistence API (JPA) 2.2から`Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_ 3.2へ移行されました。実装は、`Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 5.6から`Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 7.0へ更新されました。"
+msgstr ""
+"永続性APIをJava Persistence API (JPA) バージョン2.2から`Jakarta Persistence API "
+"<https://jakarta.ee/specifications/persistence/3.2/>`_バージョン3.2に移行しました。APIの実装は`Hibernate"
+" <https://hibernate.org/orm/documentation/7.0/>`_5.6から7.0に移行されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:47
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:67
 msgid "Package names have changed:"
-msgstr "パッケージ名が変更されました："
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:49
 msgid ":code:`javax.persistence` → :code:`jakarta.persistence`"
-msgstr ":code:`javax.persistence` → :code:`jakarta.persistence`"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:50
 msgid ":code:`javax.transaction` → :code:`jakarta.transaction`"
-msgstr ":code:`javax.transaction` → :code:`jakarta.transaction`"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:55
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:75
 msgid "Run the project migration tool to automatically update your code."
-msgstr "プロジェクト移行ツールを実行して、自動的にコードを更新します。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:56
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:76
 msgid ""
 "Use :guilabel:`File Search` in the Designer to ensure all references are "
 "updated."
-msgstr "Designerで:guilabel:`File Search`を使用し、すべての参照が更新されたことを確認します。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:58
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:86
 msgid ""
 "This marks the first step in the migration from Java EE to Jakarta EE. "
 "Further migrations will follow in future releases."
-msgstr "これは、Java EEからJakarta EEへの移行の最初のステップを示します。今後のリリースでさらなる移行が続きます。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:61
+#, fuzzy
 msgid "Mail API"
-msgstr "Mail API"
+msgstr "メールステップ"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:65
 msgid ""
 "The Mail API has been migrated from Java Mail API 1.6 to `Jakarta Mail "
 "API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0."
-msgstr "Mail APIは、Java Mail API 1.6から`Jakarta Mail API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0へ移行されました。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:69
 msgid ":code:`javax.mail` → :code:`jakarta.mail`"
-msgstr ":code:`javax.mail` → :code:`jakarta.mail`"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:70
 msgid ":code:`javax.activation` → :code:`jakarta.activation`"
-msgstr ":code:`javax.activation` → :code:`jakarta.activation`"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:79
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:116
+#, fuzzy
 msgid "Recommendation:"
-msgstr "推奨："
+msgstr "前提条件"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:81
 msgid "Instead of using the Jakarta Mail API, consider:"
-msgstr "Jakarta Mail APIを使用する代わりに次を検討してください："
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:83
+#, fuzzy
 msgid "The :ref:`process-element-email-activity`"
-msgstr ":ref:`process-element-email-activity`"
+msgstr ":ref:`process-element-pi`"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:84
 msgid ""
 "The new :public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-"
 "summary.html>`."
-msgstr "新しい:public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-summary.html>`。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:89
 msgid "HttpHeaderSecurityFilter and RemoteIpFilter in web.xml"
 msgstr "web.xml内のHttpHeaderSecurityFilterおよびRemoteIpFilter"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:93
+#, fuzzy
 msgid ""
 "You can now define the :ref:`reverse-proxy` HTTP Headers and security "
 "response :ref:`security-http-headers` in the :ref:`ivy-yaml` file. While "
 "it is still possible to configure these in :ref:`web-xml`, it is no "
 "longer recommended. If you continue to use :ref:`web-xml`, headers may "
 "appear twice."
-msgstr ":ref:`ivy-yaml`ファイル内で:ref:`reverse-proxy`HTTPヘッダーおよびセキュリティ応答:ref:`security-http-headers`を定義できるようになりました。これらを:ref:`web-xml`内でも設定できますが、今後は推奨しません。:ref:`web-xml`を使用し続ける場合、ヘッダーが2回表示される可能性があります。"
+msgstr ""
+":ref:`ivy-yaml` を使用して、 :ref:`reverse-proxy` HTTPヘッダーおよびセキュリティ応答用の :ref"
+":`security-http-headers` を定義できるようになりました。引き続き :ref:`web-xml` "
+"からこれらを定義することも可能ですが、そうするとヘッダーが二重に設定されてしまう可能性があります。そのため、次の設定を削除し、 :ref"
+":`ivy-yaml` 側で調整を行ってください。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:101
 msgid ""
 "Remove the following configurations from :ref:`web-xml` and migrate them "
 "to :ref:`ivy-yaml`:"
-msgstr "次の設定を:ref:`web-xml`から削除し、:ref:`ivy-yaml`へ移行してください："
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:103
 msgid ""
@@ -1097,15 +1115,18 @@ msgid "Schema header in ivy.yaml and app.yaml"
 msgstr "ivy.yamlおよびapp.yaml内のスキーマヘッダー"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:111
+#, fuzzy
 msgid ""
 "If your :ref:`ivy-yaml` and :ref:`app-yaml` do not include a schema "
 "header, the Axon Ivy Engine will now assume that they are in the latest "
 "version. Auto-migration of these files will not happen anymore."
-msgstr ":ref:`ivy-yaml`および:ref:`app-yaml`にスキーマヘッダーが指定されていない場合、Axon Ivy Engineはこれらのファイルが最新バージョンであるとみなし、自動移行を行わなくなります。"
+msgstr ""
+":ref:`ivy-yaml` および :ref:`app-yaml` にスキーマヘッダーが指定されていない場合、Axon Ivy "
+"Engineはこれらのファイルが最新バージョンであると自動的にみなし、今後は自動移行を行わなくなります。そのため、常にスキーマヘッダーを付けてファイルのバージョン管理をすることを推奨します。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:118
 msgid "Always version your configuration files by including a schema header."
-msgstr "常にスキーマヘッダーを付けて設定ファイルのバージョンを管理してください。"
+msgstr ""
 
 #: ../../source/axonivy/migration/migration-tools.rst:4
 msgid "Migration Tools"
@@ -7158,72 +7179,51 @@ msgstr ""
 "**Process N** の権限を持っています。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:76
-#: ../../source/designer-guide/configuration/roles-users.rst:82
-#: ../../source/designer-guide/configuration/roles-users.rst:86
+#: ../../source/designer-guide/configuration/roles-users.rst:81
+#: ../../source/designer-guide/configuration/roles-users.rst:85
 msgid "Role Editor"
 msgstr "ロールエディター"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:78
+#, fuzzy
 msgid ""
 "The role editor allows to create, edit, or remove roles as well as to "
-"structure roles hierarchically. Double click on the :guilabel:`Roles` "
-"node in the :ref:`ivy-project-view`."
+"structure roles hierarchically."
 msgstr ""
 "ロールエディターでは、ロールを作成、編集、削除し、ロールの階層構造を作成できます。 :ref:`ivy-project-view` の "
 ":guilabel:`Roles` ノードをダブルクリックしてください。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:88
+#: ../../source/designer-guide/configuration/roles-users.rst:87
+#, fuzzy
 msgid ""
-"The left side of the Role editor consists of a tree showing all the roles"
-" in a hierarchical order. A click on one of the roles will show the "
-"properties of the selected role on the right side of the editor. "
-"Manipulate the role hierarchy by dragging a role and dropping it at its "
-"new location in the hierarchy."
+"The left side of the Role editor contains all the roles. A click on one "
+"of the roles will show the properties of the selected role on the right "
+"side of the editor."
 msgstr ""
 "ロールエディターの左側は、すべてのロールを階層的に表示するツリーで構成されています。ロールの 1 "
 "つをクリックすると、選択されたロールのプロパティがエディターの右側に表示されます。ロールをドラッグして階層内の新しい位置にドロップして、ロールの階層を操作できます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:93
-msgid ":guilabel:`New` A new role is created as a child of the selected role."
-msgstr ":guilabel:`新規` 選択されたロールの子として新しいロールが作成されます。"
-
-#: ../../source/designer-guide/configuration/roles-users.rst:96
-msgid ""
-":guilabel:`Add` A role is added as a linked member role to the selected "
-"role."
-msgstr ":guilabel:`追加` 選択されたロールにリンクされたメンバーロールとしてロールが追加されます。"
-
-#: ../../source/designer-guide/configuration/roles-users.rst:99
-msgid ""
-":guilabel:`Remove` The selected role and all its child roles are removed."
-" The user is obliged to confirm the removal. Note that the role "
-"**Everybody** may not be deleted."
+#: ../../source/designer-guide/configuration/roles-users.rst:90
+#, fuzzy
+msgid "Press |add-role-icon| to add a new Role."
 msgstr ""
-":guilabel:`削除` "
-"選択されたロールとそのすべての子ロールが削除されます。ユーザーは削除を確認する義務があります。**Everybody** "
-"ロールは削除できないことに注意してください。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:104
-msgid ""
-":guilabel:`Import XML` A ``roles.xml`` file from another project can be "
-"imported for convenience reasons."
-msgstr ":guilabel:`XML をインポート` 他のプロジェクトから ``roles.xml`` ファイルをインポートできます。"
-
-#: ../../source/designer-guide/configuration/roles-users.rst:108
-msgid ""
-":guilabel:`Export XML` All roles are exported in an XML file named "
-"``roles.xml`` to easily re-use the role hierarchy."
+#: ../../source/designer-guide/configuration/roles-users.rst:100
+#, fuzzy
+msgid "Add Role"
 msgstr ""
-":guilabel:`XML のエクスポート` すべてのロールが ``roles.xml`` という名前の XML "
-"ファイルにエクスポートされ、ロールの階層構造を簡単に再利用できます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:112
-msgid ""
-":guilabel:`Sort` The selected roles are sorted alphabetically. If "
-"desired, this is performed recursively on the children."
-msgstr ":guilabel:`並び替え` 選択されたロールがアルファベット順に並び替えられます。必要に応じて、子に対して再帰的に実行されます。"
+#: ../../source/designer-guide/configuration/roles-users.rst:91
+#, fuzzy
+msgid "Press |delete-role-icon| to delete the selected Role."
+msgstr ""
 
-#: ../../source/designer-guide/configuration/roles-users.rst:118
+#: ../../source/designer-guide/configuration/roles-users.rst:105
+#, fuzzy
+msgid "Delete Role"
+msgstr ""
+
+#: ../../source/designer-guide/configuration/roles-users.rst:95
 msgid ""
 "Role names have to be unique within their security context. Axon Ivy "
 "merges roles you define in a project with all other roles in the same "
@@ -7233,13 +7233,13 @@ msgstr ""
 "ロール名はセキュリティコンテキスト内で一意でなければなりません。Axon Ivy "
 "は、プロジェクト内で定義したロールを、同じセキュリティコンテキスト内の他のすべてのロールとマージします。同じ名前のロールが異なる階層に存在する場合、展開は失敗します。これはメンバーロールには適用されません。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:126
-#: ../../source/designer-guide/configuration/roles-users.rst:140
-#: ../../source/designer-guide/configuration/roles-users.rst:144
+#: ../../source/designer-guide/configuration/roles-users.rst:114
+#: ../../source/designer-guide/configuration/roles-users.rst:128
+#: ../../source/designer-guide/configuration/roles-users.rst:132
 msgid "Test User Editor"
 msgstr "テストユーザーエディター"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:128
+#: ../../source/designer-guide/configuration/roles-users.rst:116
 msgid ""
 "Process designers can create, edit and remove test users in the user "
 "editor. Users need a password to authenticate themselves, and they need "
@@ -7250,7 +7250,7 @@ msgstr ""
 "つのロールに割り当てられている必要があります。テストユーザーエディターを起動するには、 :ref:`ivy-project-view` の "
 ":guilabel:`Test Users` ノードをダブルクリックします。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:135
+#: ../../source/designer-guide/configuration/roles-users.rst:123
 msgid ""
 "Test users are only used in the process **simulation** within the Axon "
 "Ivy Designer. They are **not** uploaded to the engine during deployment. "
@@ -7261,7 +7261,7 @@ msgstr ""
 "Designer内でのプロセスの**シミュレーション**にのみ使用されます。これらのユーザーは展開時にエンジンにアップロード**されません**。Axon"
 " Ivy Engine上で展開されるプロセス用のユーザーは、エンジン上で作成および設定する必要があります。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:146
+#: ../../source/designer-guide/configuration/roles-users.rst:134
 msgid ""
 "On the left hand side of the editor, you see all users with their user "
 "names (i.e. login names) and their full names. For the selected user on "
@@ -7276,27 +7276,27 @@ msgstr ""
 " :ref:`role-editor` を参照）。文字列キーと値のペアで各ユーザーに追加のプロパティを追加し、 :ref:`ivyscript` "
 "のプロセスステップ内で再利用できます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:154
+#: ../../source/designer-guide/configuration/roles-users.rst:142
 msgid ":guilabel:`New` Creates a new user with the specified name."
 msgstr ":guilabel:`新規` 指定された名前で新しいユーザーを作成します。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:157
+#: ../../source/designer-guide/configuration/roles-users.rst:145
 msgid ""
 ":guilabel:`Remove` Removes a user from the list. The process designer "
 "does confirm the removal."
 msgstr ":guilabel:`削除` リストからユーザーを削除します。プロセス設計者は削除を確認します。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:161
+#: ../../source/designer-guide/configuration/roles-users.rst:149
 msgid ":guilabel:`Sort` Sorts the user list in alphabetical order."
 msgstr ":guilabel:`並び替え` ユーザーリストをアルファベット順に並び替えます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:164
+#: ../../source/designer-guide/configuration/roles-users.rst:152
 msgid ""
 ":guilabel:`Import` Test users from a ``users.xml`` file from another "
 "project can be imported for convenience reasons."
 msgstr ":guilabel:`インポート` 他のプロジェクトの ``users.xml`` ファイルからテストユーザーをインポートできます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:168
+#: ../../source/designer-guide/configuration/roles-users.rst:156
 msgid ""
 ":guilabel:`Export XML` All users and their corresponding properties are "
 "exported into a XML file named ``users.xml`` for easy re-use of test "
@@ -7305,7 +7305,7 @@ msgstr ""
 ":guilabel:`XML のエクスポート` すべてのユーザーとユーザーに対応するプロパティが ``users.xml`` という名前の XML"
 " ファイルにエクスポートされ、他のプロジェクトでテストユーザーを簡単に再利用できます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:174
+#: ../../source/designer-guide/configuration/roles-users.rst:162
 msgid ""
 "You do not see the user called **Developer**, because it is a built-in "
 "user. It belongs to all groups and owns all permissions. The user is "
@@ -27661,6 +27661,7 @@ msgid ""
 msgstr "エラーページは、プロセスアクティビティや HTML ダイアログのインタラクションの実行中に発生した予期しないエラーをユーザーに知らせます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:15
+#, fuzzy
 msgid ""
 "The default error pages are located at :file:`webapps/ivy/WEB-INF/lib"
 "/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml`. You "
@@ -27673,7 +27674,12 @@ msgid ""
 "within error pages to provide context information on the error and its "
 "engine state. Other Ivy APIs are not intended to work in case of an "
 "error."
-msgstr "デフォルトのエラーページは:file:`webapps/ivy/WEB-INF/lib/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml`にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。これは、ファイルを:file:`webapps/ivy/error`にコピーするなどの操作で実行できますが、 :ref:`web-xml`の新しいエラーページも設定されていることを確認してください。 さらに、表示される情報を調整できます。エラーページ内で:public-api:`ErrorPageMBean </ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>`にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。他のIvy APIは、エラー発生時に動作するようには設計されていません。"
+msgstr ""
+"デフォルトのエラーページは ``webapps/ivy/ivy-error-page.xhtml`` "
+"にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。さらに、表示される情報を調整できます。エラーページ内で"
+" :public-api:`ErrorPageMBean "
+"</ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` "
+"にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。エラーが発生した場合、他の Ivy API は動作しません。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:25
 msgid "Custom error pages have to be registered in the global :ref:`web-xml`."
@@ -27698,6 +27704,7 @@ msgid "Ajax Errors"
 msgstr "Ajax エラー"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:38
+#, fuzzy
 msgid ""
 "If an exception occurs in an Ajax-based HTTP request, the configured "
 "Primefaces Ajax exception handlers come into play. The handlers have to "
@@ -27708,7 +27715,11 @@ msgid ""
 "Ajax exception handling, you can copy the files to your project (e.g. to "
 ":file:`webContent/layouts/includes/exception.xhtml`) and adjust the your "
 "template to load this file."
-msgstr "AjaxベースのHTTPリクエストで例外が発生した場合、設定されているPrimeFacesのAjax例外ハンドラーが例外を処理します。*\\*.xhtml*ファイルの一部としてハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、:file:`webapps/ivy/WEB-INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-INF/resources/ivy-form/layouts/include/exception.xhtml`を参照してください。Ajax例外処理をカスタマイズするには、ファイルをプロジェクト（:file:`webContent/layouts/includes/exception.xhtml`など）にコピーし、このファイルを読み込むようにテンプレートを調整できます。"
+msgstr ""
+"Ajax ベースの HTTP リクエストで例外が発生した場合、設定されている PrimeFaces の Ajax "
+"例外ハンドラーがこれを処理します。*\\*.xhtml* "
+"ファイルでハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、``webContent/layouts/includes/exception.xhtml``"
+" を参照してください。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:50
 msgid ""
@@ -32542,13 +32553,18 @@ msgid "Deploy a project"
 msgstr "プロジェクトの展開"
 
 #: ../../source/engine-guide/getting-started/windows/deploy.rst:4
+#, fuzzy
 msgid ""
 "Let's deploy an Axon Ivy project to the Axon Ivy Engine. Download the "
 ":dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-"
 "app/14.0/zip>` and drop it in :file:`[engineDir]/deploy` folder. Refresh "
 "the main page of the Axon Ivy Engine. There will be a new section for "
 "this deployed app."
-msgstr "Axon IvyプロジェクトをAxon Ivy Engineに展開してみましょう。:dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/14.0/zip>`をダウンロードし、:file:`[engineDir]/deploy`フォルダーに配置します。Axon Ivy Engineのメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
+msgstr ""
+"Axon Ivy プロジェクトを Axon Ivy Engine に展開してみましょう。:dev-url:`demo application "
+"</maven/com.axonivy.demo/ivy-demos-app/13.2/zip>` "
+"をダウンロードし、:file:`[engineDir]/deploy` フォルダーに配置します。Axon Ivy Engine "
+"のメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
 
 #: ../../source/engine-guide/getting-started/windows/deploy.rst:9
 msgid ""
@@ -38761,15 +38777,17 @@ msgid ""
 msgstr "NEO Designer に含まれるシミュレーター機能を使用して、プロセスをワンクリックで実行、テストできます。"
 
 #: ../../source/neo-designer/gettingstarted.rst:51
-msgid "Add Configurations"
-msgstr "設定の追加"
+#, fuzzy
+msgid "Configurations"
+msgstr "設定"
 
 #: ../../source/neo-designer/gettingstarted.rst:52
+#, fuzzy
 msgid ""
 "Configurations are the settings and parameters that define how an "
 "application behaves and interacts with other systems. Use the :ref"
-":`variables-editor` to create, delete, and edit the key and values of "
-"Variables."
+":`variables-editor`, :ref:`cms-editor` or the :ref:`role-editor` to do "
+"so."
 msgstr ""
 "設定とパラメーターで、アプリケーションの動作と他のシステムとのインタラクションを定義します :ref:`variables-editor` "
 "を使用して、変数のキーと値を作成、削除、編集します。"
@@ -40484,3 +40502,49 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 #~ "新しいバージョンのパッケージは:code:`javax.persistence`から:code:`jakarta.persistence`に変更されました。この変更に合わせてIvyプロジェクトのコードを変更する必要があります。Designerで:guilabel:`find"
 #~ " and replace in files` "
 #~ "を使用してプロジェクトを移行してください。"
+
+#~ msgid ":guilabel:`New` A new role is created as a child of the selected role."
+#~ msgstr ":guilabel:`新規` 選択されたロールの子として新しいロールが作成されます。"
+
+#~ msgid ""
+#~ ":guilabel:`Add` A role is added as "
+#~ "a linked member role to the "
+#~ "selected role."
+#~ msgstr ":guilabel:`追加` 選択されたロールにリンクされたメンバーロールとしてロールが追加されます。"
+
+#~ msgid ""
+#~ ":guilabel:`Remove` The selected role and "
+#~ "all its child roles are removed. "
+#~ "The user is obliged to confirm the"
+#~ " removal. Note that the role "
+#~ "**Everybody** may not be deleted."
+#~ msgstr ""
+#~ ":guilabel:`削除` "
+#~ "選択されたロールとそのすべての子ロールが削除されます。ユーザーは削除を確認する義務があります。**Everybody** "
+#~ "ロールは削除できないことに注意してください。"
+
+#~ msgid ""
+#~ ":guilabel:`Import XML` A ``roles.xml`` file"
+#~ " from another project can be imported"
+#~ " for convenience reasons."
+#~ msgstr ":guilabel:`XML をインポート` 他のプロジェクトから ``roles.xml`` ファイルをインポートできます。"
+
+#~ msgid ""
+#~ ":guilabel:`Export XML` All roles are "
+#~ "exported in an XML file named "
+#~ "``roles.xml`` to easily re-use the "
+#~ "role hierarchy."
+#~ msgstr ""
+#~ ":guilabel:`XML のエクスポート` すべてのロールが ``roles.xml`` "
+#~ "という名前の XML ファイルにエクスポートされ、ロールの階層構造を簡単に再利用できます。"
+
+#~ msgid ""
+#~ ":guilabel:`Sort` The selected roles are "
+#~ "sorted alphabetically. If desired, this "
+#~ "is performed recursively on the "
+#~ "children."
+#~ msgstr ":guilabel:`並び替え` 選択されたロールがアルファベット順に並び替えられます。必要に応じて、子に対して再帰的に実行されます。"
+
+#~ msgid "Add Configurations"
+#~ msgstr "設定の追加"
+
