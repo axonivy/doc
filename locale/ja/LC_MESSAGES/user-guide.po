@@ -934,13 +934,13 @@ msgstr "|tag-project-changed| |tag-project-auto-convert|"
 msgid ""
 "The version of the :code:`ivy-project-parent`  in the :code:`pom.xml` "
 "file has been updated from 13.1 to 13.2."
-msgstr ":code:`pom.xml`ファイル内の:code:`ivy-project-parent`のバージョンが13.1から13.2へ更新されました。"
+msgstr ":code:`pom.xml` ファイル内の :code:`ivy-project-parent` のバージョンが13.1から13.2へ更新されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:26
 msgid ""
 "For projects using :code:`ivy-project-parent`, the following dependencies"
 " have been replaced:"
-msgstr ":code:`ivy-project-parent`を使用するプロジェクトについて、次の依存関係が置換されました："
+msgstr ":code:`ivy-project-parent` を使用するプロジェクトについて、次の依存関係が置換されました："
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:28
 msgid ":code:`unit-tester` → :code:`ìvy-test-api`"
@@ -972,7 +972,7 @@ msgid ""
 "For more details about the Axon Ivy Java API and troubleshoot issues, "
 "refer to `Troubleshoot Java Compilation Errors "
 "<https://community.axonivy.com/d/1150>`_."
-msgstr "Axon Ivy Java APIと問題解決の詳細については、`Troubleshoot Java Compilation Errors <https://community.axonivy.com/d/1150>`_を参照してください。"
+msgstr "Axon Ivy Java APIと問題解決の詳細については、`Troubleshoot Java Compilation Errors <https://community.axonivy.com/d/1150>`_ を参照してください。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:40
 msgid "Persistence API (Hibernate)"
@@ -1011,7 +1011,7 @@ msgstr "プロジェクト移行ツールを実行して、自動的にコード
 msgid ""
 "Use :guilabel:`File Search` in the Designer to ensure all references are "
 "updated."
-msgstr "Designerで:guilabel:`File Search`を使用し、すべての参照が更新されたことを確認します。"
+msgstr "Designerで :guilabel:`File Search` を使用し、すべての参照が更新されたことを確認します。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:58
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:86
@@ -1068,13 +1068,13 @@ msgid ""
 "it is still possible to configure these in :ref:`web-xml`, it is no "
 "longer recommended. If you continue to use :ref:`web-xml`, headers may "
 "appear twice."
-msgstr ":ref:`ivy-yaml`ファイル内で:ref:`reverse-proxy`HTTPヘッダーおよびセキュリティ応答:ref:`security-http-headers`を定義できるようになりました。これらを:ref:`web-xml`内でも設定できますが、今後は推奨しません。:ref:`web-xml`を使用し続ける場合、ヘッダーが2回表示される可能性があります。"
+msgstr ":ref:`ivy-yaml` ファイル内で :ref:`reverse-proxy` HTTPヘッダーおよびセキュリティ応答 :ref:`security-http-headers` を定義できるようになりました。これらを :ref:`web-xml` 内でも設定できますが、今後は推奨しません。:ref:`web-xml` を使用し続ける場合、ヘッダーが2回表示される可能性があります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:101
 msgid ""
 "Remove the following configurations from :ref:`web-xml` and migrate them "
 "to :ref:`ivy-yaml`:"
-msgstr "次の設定を:ref:`web-xml`から削除し、:ref:`ivy-yaml`へ移行してください："
+msgstr "次の設定を :ref:`web-xml` から削除し、:ref:`ivy-yaml` へ移行してください："
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:103
 msgid ""
@@ -1101,7 +1101,7 @@ msgid ""
 "If your :ref:`ivy-yaml` and :ref:`app-yaml` do not include a schema "
 "header, the Axon Ivy Engine will now assume that they are in the latest "
 "version. Auto-migration of these files will not happen anymore."
-msgstr ":ref:`ivy-yaml`および:ref:`app-yaml`にスキーマヘッダーが指定されていない場合、Axon Ivy Engineはこれらのファイルが最新バージョンであるとみなし、自動移行を行わなくなります。"
+msgstr ":ref:`ivy-yaml` および :ref:`app-yaml` にスキーマヘッダーが指定されていない場合、Axon Ivy Engineはこれらのファイルが最新バージョンであるとみなし、自動移行を行わなくなります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:118
 msgid "Always version your configuration files by including a schema header."
@@ -27652,7 +27652,7 @@ msgid ""
 "within error pages to provide context information on the error and its "
 "engine state. Other Ivy APIs are not intended to work in case of an "
 "error."
-msgstr "デフォルトのエラーページは:file:`webapps/ivy/WEB-INF/lib/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml`にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。これは、ファイルを:file:`webapps/ivy/error`にコピーするなどの操作で実行できますが、 :ref:`web-xml`の新しいエラーページも設定されていることを確認してください。 さらに、表示される情報を調整できます。エラーページ内で:public-api:`ErrorPageMBean </ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>`にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。他のIvy APIは、エラー発生時に動作するようには設計されていません。"
+msgstr "デフォルトのエラーページは :file:`webapps/ivy/WEB-INF/lib/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml` にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。これは、ファイルを :file:`webapps/ivy/error` にコピーするなどの操作で実行できますが、 :ref:`web-xml` の新しいエラーページも設定されていることを確認してください。 さらに、表示される情報を調整できます。エラーページ内で :public-api:`ErrorPageMBean </ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。他のIvy APIは、エラー発生時に動作するようには設計されていません。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:25
 msgid "Custom error pages have to be registered in the global :ref:`web-xml`."
@@ -27687,7 +27687,7 @@ msgid ""
 "Ajax exception handling, you can copy the files to your project (e.g. to "
 ":file:`webContent/layouts/includes/exception.xhtml`) and adjust the your "
 "template to load this file."
-msgstr "AjaxベースのHTTPリクエストで例外が発生した場合、設定されているPrimeFacesのAjax例外ハンドラーが例外を処理します。*\\*.xhtml*ファイルの一部としてハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、:file:`webapps/ivy/WEB-INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-INF/resources/ivy-form/layouts/include/exception.xhtml`を参照してください。Ajax例外処理をカスタマイズするには、ファイルをプロジェクト（:file:`webContent/layouts/includes/exception.xhtml`など）にコピーし、このファイルを読み込むようにテンプレートを調整できます。"
+msgstr "AjaxベースのHTTPリクエストで例外が発生した場合、設定されているPrimeFacesのAjax例外ハンドラーが例外を処理します。*\\*.xhtml*ファイルの一部としてハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、:file:`webapps/ivy/WEB-INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-INF/resources/ivy-form/layouts/include/exception.xhtml` を参照してください。Ajax例外処理をカスタマイズするには、ファイルをプロジェクト（:file:`webContent/layouts/includes/exception.xhtml` など）にコピーし、このファイルを読み込むようにテンプレートを調整できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:50
 msgid ""
@@ -32527,7 +32527,7 @@ msgid ""
 "app/14.0/zip>` and drop it in :file:`[engineDir]/deploy` folder. Refresh "
 "the main page of the Axon Ivy Engine. There will be a new section for "
 "this deployed app."
-msgstr "Axon IvyプロジェクトをAxon Ivy Engineに展開してみましょう。:dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/14.0/zip>`をダウンロードし、:file:`[engineDir]/deploy`フォルダーに配置します。Axon Ivy Engineのメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
+msgstr "Axon IvyプロジェクトをAxon Ivy Engineに展開してみましょう。:dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/14.0/zip>` をダウンロードし、:file:`[engineDir]/deploy` フォルダーに配置します。Axon Ivy Engineのメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
 
 #: ../../source/engine-guide/getting-started/windows/deploy.rst:9
 msgid ""
