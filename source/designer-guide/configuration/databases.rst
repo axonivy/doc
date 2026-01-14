@@ -4,63 +4,52 @@ Databases
 =========
 
 To use databases in your business or User Dialog processes, start with defining
-database configurations for each database you want to use. After you have
+Database Connections for each database you want to use. After you have
 configured the databases (data sources) you can use them in your process steps.
-The process steps reference only the database configuration ids.
+The process steps reference only the Database Connection ids.
 
 .. _database-configuration-editor:
 
-Database Configuration Editor
------------------------------
+Database Editor
+---------------
 
-The database configuration editor lets you configure the databases you use in
-your project.
+The Database Editor lets you configure the databases you use in your project.
 
-.. figure:: /_images/designer-configuration/database-editor.png
-   :alt: Database Configuration Editor
+.. figure:: /_images/database-editor/database-editor.png
+   :alt: Database Editor
 
-   Database Configuration Editor
+   Database Editor
 
-- :guilabel:`All Database Configurations` A list of all database configurations
-  defined in this project. A red or green icon indicates the result of the
-  connection test automatically executed upon saving a database configuration.
+The left side of the Database Editor contains all the Database Connections. A
+click on one of them will show the properties of the selected Database
+Connection on the right side of the editor.
 
-- :guilabel:`New`
-  Add a new database configuration
+- Press |add-database-connection-icon| to add a new Database Connection.
+- Press |delete-database-connection-icon| to delete the selected Database
+  Connection.
+- Press |generate-icon| to generate Data Classes, Forms and Processes from a
+  Database Connection.
 
-- :guilabel:`Remove`
-  Remove the selected database configuration
+.. |add-database-connection-icon| image:: /_images/ui-icons/plus.svg
+   :alt: Add Database Connection
+   :width: 16px
+   :height: 16px
 
-- :guilabel:`Test Connection` Test database connection. A dialog shows the
-  result status. In case of failure, the reason is displayed
+.. |delete-database-connection-icon| image:: /_images/ui-icons/trash.svg
+   :alt: Delete Database Connection
+   :width: 16px
+   :height: 16px
 
-- :guilabel:`SQL`
-  Opens a SQL editor to set up SQL Statements. The SQL Editor
-  displays the query result in a result table
-
-- :guilabel:`Database`
-  Select the type and driver of the database you use. We ship some often
-  used and well-tested drivers with the Axon Ivy Designer.
-
-  The field :guilabel:`Max Connections` lets you specify the maximum number of
-  concurrent connections to this database.
-  
-  Choose an :guilabel:`Icon` that represents the database. The icon will also be
-  used as decorator icon on Database process elements that reference this
-  database.  
-
-- :guilabel:`Connection Properties`
-  Specify the properties for the database connection.
-
-- :guilabel:`Additional Connection Properties`
-  If your database needs additional settings, you can use this section
-  to define these properties.
+.. |generate-icon| image:: /_images/ui-icons/settings-cog.svg
+   :alt: Generate
+   :width: 16px
+   :height: 16px
 
 Dynamic Properties
-^^^^^^^^^^^^^^^^^^^^^^^^^
-You may need to adjust property values for multiple runtime environments. 
-E.g., use different database hosts for testing and production, 
-consequently with other credentials and connection URIs.
+^^^^^^^^^^^^^^^^^^
+You may need to adjust property values for multiple runtime environments. E.g.,
+use different database hosts for testing and production, consequently with other
+credentials and connection URIs.
 
 If you anticipate this need, then you can simplify these configuration
 adjustments for operations by using :ref:`dynamic-config` expressions in both

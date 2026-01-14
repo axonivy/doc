@@ -110,6 +110,13 @@
                 </artifactItem>
 
                 <artifactItem>
+                  <groupId>ch.ivyteam.database</groupId>
+                  <artifactId>database-editor-screenshots</artifactId>
+                  <version>${ivy-version}</version>
+                  <type>zip</type>
+                </artifactItem>
+
+                <artifactItem>
                   <groupId>ch.ivyteam.ui.icons</groupId>
                   <artifactId>ui-icons</artifactId>
                   <version>${ivy-version}</version>
