@@ -5,7 +5,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-12-16 12:48+0000\nPO-Revision-Date: 2026-01-13 08:01+0000\nLast-Translator: Torindo_reviewer <eri.kobayashi@torindo.ne.jp>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.15.2-dev\nGenerated-By: Babel 2.17.0\n"
+msgstr ""
+"Project-Id-Version: Axon Ivy Platform 13.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-14 10:59+0000\n"
+"PO-Revision-Date: 2026-01-13 08:01+0000\n"
+"Last-Translator: Torindo_reviewer <eri.kobayashi@torindo.ne.jp>\n"
+"Language: ja\n"
+"Language-Team: Japanese "
+"<https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -898,7 +911,9 @@ msgid ""
 "Upgrading to version 13.2 is supported only from an Axon Ivy Engine 10.0 "
 "or higher. If your Axon Ivy Engine is older than version 10.0, you must "
 "first migrate to a version between 10.0 and 12.0."
-msgstr "バージョン13.2へのアップグレードは、Axon Ivy Engine 10.0以降でのみサポートされています。Axon Ivy Engineがバージョン10.0よりも古い場合は、最初に10.0～12.0のバージョンに移行する必要があります。"
+msgstr ""
+"バージョン13.2へのアップグレードは、Axon Ivy Engine 10.0以降でのみサポートされています。Axon Ivy "
+"Engineがバージョン10.0よりも古い場合は、最初に10.0～12.0のバージョンに移行する必要があります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:11
 msgid "Final Eclipse-Based Axon Ivy PRO Designer"
@@ -912,13 +927,19 @@ msgid ""
 "<https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-"
 "designer-13>`_. A Beta version is already available - try it out and "
 "share your feedback!"
-msgstr "これは、`Eclipse IDE <https://eclipseide.org/>`_ ベースのPRO Designerの最終リリースです。PRO DesignerはLTS 14から、`VS コード拡張子 <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-13>`_ に移行します。ベータ版は既に配布されているので、お試しの上、フィードバックをお寄せください。"
+msgstr ""
+"これは、`Eclipse IDE <https://eclipseide.org/>`_ ベースのPRO "
+"Designerの最終リリースです。PRO DesignerはLTS 14から、`VS コード拡張子 "
+"<https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-"
+"designer-13>`_ に移行します。ベータ版は既に配布されているので、お試しの上、フィードバックをお寄せください。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:17
 msgid ""
 "`Learn more about this transition <https://community.axonivy.com/d/1149"
 "-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
-msgstr "`この移行に関する詳細はこちら <https://community.axonivy.com/d/1149-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
+msgstr ""
+"`この移行に関する詳細はこちら <https://community.axonivy.com/d/1149-maintenance-mode-"
+"of-the-eclipse-based-pro-designer>`_"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:20
 msgid "Axon Ivy Java API Maven Dependency"
@@ -934,7 +955,9 @@ msgstr "|tag-project-changed| |tag-project-auto-convert|"
 msgid ""
 "The version of the :code:`ivy-project-parent`  in the :code:`pom.xml` "
 "file has been updated from 13.1 to 13.2."
-msgstr ":code:`pom.xml` ファイル内の :code:`ivy-project-parent` のバージョンが13.1から13.2へ更新されました。"
+msgstr ""
+":code:`pom.xml` ファイル内の :code:`ivy-project-parent` "
+"のバージョンが13.1から13.2へ更新されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:26
 msgid ""
@@ -972,7 +995,9 @@ msgid ""
 "For more details about the Axon Ivy Java API and troubleshoot issues, "
 "refer to `Troubleshoot Java Compilation Errors "
 "<https://community.axonivy.com/d/1150>`_."
-msgstr "Axon Ivy Java APIと問題解決の詳細については、`Troubleshoot Java Compilation Errors <https://community.axonivy.com/d/1150>`_ を参照してください。"
+msgstr ""
+"Axon Ivy Java APIと問題解決の詳細については、`Troubleshoot Java Compilation Errors "
+"<https://community.axonivy.com/d/1150>`_ を参照してください。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:40
 msgid "Persistence API (Hibernate)"
@@ -986,7 +1011,12 @@ msgid ""
 "implementation has been updated from `Hibernate "
 "<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to `Hibernate "
 "<https://hibernate.org/orm/documentation/7.0/>`_ 7.0."
-msgstr "Persistence APIは、Java Persistence API (JPA) 2.2から`Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_ 3.2へ移行されました。実装は、`Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 5.6から`Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 7.0へ更新されました。"
+msgstr ""
+"Persistence APIは、Java Persistence API (JPA) 2.2から`Jakarta Persistence API"
+" <https://jakarta.ee/specifications/persistence/3.2/>`_ "
+"3.2へ移行されました。実装は、`Hibernate "
+"<https://hibernate.org/orm/documentation/7.0/>`_ 5.6から`Hibernate "
+"<https://hibernate.org/orm/documentation/7.0/>`_ 7.0へ更新されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:47
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:67
@@ -1028,7 +1058,9 @@ msgstr "Mail API"
 msgid ""
 "The Mail API has been migrated from Java Mail API 1.6 to `Jakarta Mail "
 "API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0."
-msgstr "Mail APIは、Java Mail API 1.6から`Jakarta Mail API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0へ移行されました。"
+msgstr ""
+"Mail APIは、Java Mail API 1.6から`Jakarta Mail API "
+"<https://jakarta.ee/specifications/mail/2.0/>`_ 2.0へ移行されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:69
 msgid ":code:`javax.mail` → :code:`jakarta.mail`"
@@ -1055,7 +1087,9 @@ msgstr ":ref:`process-element-email-activity`"
 msgid ""
 "The new :public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-"
 "summary.html>`."
-msgstr "新しい:public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-summary.html>`。"
+msgstr ""
+"新しい:public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-"
+"summary.html>`。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:89
 msgid "HttpHeaderSecurityFilter and RemoteIpFilter in web.xml"
@@ -1068,7 +1102,10 @@ msgid ""
 "it is still possible to configure these in :ref:`web-xml`, it is no "
 "longer recommended. If you continue to use :ref:`web-xml`, headers may "
 "appear twice."
-msgstr ":ref:`ivy-yaml` ファイル内で :ref:`reverse-proxy` HTTPヘッダーおよびセキュリティ応答 :ref:`security-http-headers` を定義できるようになりました。これらを :ref:`web-xml` 内でも設定できますが、今後は推奨しません。:ref:`web-xml` を使用し続ける場合、ヘッダーが2回表示される可能性があります。"
+msgstr ""
+":ref:`ivy-yaml` ファイル内で :ref:`reverse-proxy` HTTPヘッダーおよびセキュリティ応答 :ref"
+":`security-http-headers` を定義できるようになりました。これらを :ref:`web-xml` "
+"内でも設定できますが、今後は推奨しません。:ref:`web-xml` を使用し続ける場合、ヘッダーが2回表示される可能性があります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:101
 msgid ""
@@ -1101,7 +1138,9 @@ msgid ""
 "If your :ref:`ivy-yaml` and :ref:`app-yaml` do not include a schema "
 "header, the Axon Ivy Engine will now assume that they are in the latest "
 "version. Auto-migration of these files will not happen anymore."
-msgstr ":ref:`ivy-yaml` および :ref:`app-yaml` にスキーマヘッダーが指定されていない場合、Axon Ivy Engineはこれらのファイルが最新バージョンであるとみなし、自動移行を行わなくなります。"
+msgstr ""
+":ref:`ivy-yaml` および :ref:`app-yaml` にスキーマヘッダーが指定されていない場合、Axon Ivy "
+"Engineはこれらのファイルが最新バージョンであるとみなし、自動移行を行わなくなります。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:118
 msgid "Always version your configuration files by including a schema header."
@@ -6259,104 +6298,80 @@ msgid "Databases"
 msgstr "データベース"
 
 #: ../../source/designer-guide/configuration/databases.rst:6
+#, fuzzy
 msgid ""
 "To use databases in your business or User Dialog processes, start with "
-"defining database configurations for each database you want to use. After"
-" you have configured the databases (data sources) you can use them in "
-"your process steps. The process steps reference only the database "
-"configuration ids."
+"defining Database Connections for each database you want to use. After "
+"you have configured the databases (data sources) you can use them in your"
+" process steps. The process steps reference only the Database Connection "
+"ids."
 msgstr ""
 "ビジネスプロセスやユーザーダイアログプロセスでデータベースを使用するには、まず始めに使用したいデータベースごとにデータベース設定を定義します。データベース（データソース）を設定すると、プロセスステップで使用できます。プロセスステップでは、データベース構成"
 " ID のみ参照します。"
 
 #: ../../source/designer-guide/configuration/databases.rst:14
-#: ../../source/designer-guide/configuration/databases.rst:19
-#: ../../source/designer-guide/configuration/databases.rst:22
-msgid "Database Configuration Editor"
-msgstr "データベース設定エディター"
+#: ../../source/designer-guide/configuration/databases.rst:18
+#: ../../source/designer-guide/configuration/databases.rst:21
+#, fuzzy
+msgid "Database Editor"
+msgstr "データクラスエディター"
 
 #: ../../source/designer-guide/configuration/databases.rst:16
+#, fuzzy
 msgid ""
-"The database configuration editor lets you configure the databases you "
-"use in your project."
+"The Database Editor lets you configure the databases you use in your "
+"project."
 msgstr "データベース設定エディターでは、プロジェクトで使用するデータベースを設定できます。"
 
-#: ../../source/designer-guide/configuration/databases.rst:24
+#: ../../source/designer-guide/configuration/databases.rst:23
+#, fuzzy
 msgid ""
-":guilabel:`All Database Configurations` A list of all database "
-"configurations defined in this project. A red or green icon indicates the"
-" result of the connection test automatically executed upon saving a "
-"database configuration."
+"The left side of the Database Editor contains all the Database "
+"Connections. A click on one of them will show the properties of the "
+"selected Database Connection on the right side of the editor."
 msgstr ""
-":guilabel:`すべてのデータベース設定` "
-"このプロジェクトで定義されているすべてのデータベース設定のリスト。赤または緑のアイコンは、データベース設定の保存時に自動的に実行された接続テストの結果を示します。"
+"ロールエディターの左側は、すべてのロールを階層的に表示するツリーで構成されています。ロールの 1 "
+"つをクリックすると、選択されたロールのプロパティがエディターの右側に表示されます。ロールをドラッグして階層内の新しい位置にドロップして、ロールの階層を操作できます。"
+
+#: ../../source/designer-guide/configuration/databases.rst:27
+#, fuzzy
+msgid "Press |add-database-connection-icon| to add a new Database Connection."
+msgstr "|add-variable-icon| をクリックして、新しい変数を追加します。"
+
+#: ../../source/designer-guide/configuration/databases.rst:33
+#, fuzzy
+msgid "Add Database Connection"
+msgstr "データベースの詳細"
 
 #: ../../source/designer-guide/configuration/databases.rst:28
-msgid ":guilabel:`New` Add a new database configuration"
-msgstr ":guilabel:`新規` 新しいデータベース設定を追加します。"
-
-#: ../../source/designer-guide/configuration/databases.rst:31
-msgid ":guilabel:`Remove` Remove the selected database configuration"
-msgstr ":guilabel:`削除` 選択されたデータベース設定を削除します。"
-
-#: ../../source/designer-guide/configuration/databases.rst:34
+#, fuzzy
 msgid ""
-":guilabel:`Test Connection` Test database connection. A dialog shows the "
-"result status. In case of failure, the reason is displayed"
+"Press |delete-database-connection-icon| to delete the selected Database "
+"Connection."
+msgstr "|delete-variable-icon| をクリックして、選択した変数を削除します。"
+
+#: ../../source/designer-guide/configuration/databases.rst:38
+#, fuzzy
+msgid "Delete Database Connection"
+msgstr "データベーススキーマの生成"
+
+#: ../../source/designer-guide/configuration/databases.rst:30
+msgid ""
+"Press |generate-icon| to generate Data Classes, Forms and Processes from "
+"a Database Connection."
 msgstr ""
-":guilabel:`接続のテスト` "
-"データベース接続をテストします。ダイアログに結果のステータスが表示されます。失敗した場合はその理由が表示されます。"
 
-#: ../../source/designer-guide/configuration/databases.rst:37
-msgid ""
-":guilabel:`SQL` Opens a SQL editor to set up SQL Statements. The SQL "
-"Editor displays the query result in a result table"
-msgstr ""
-":guilabel:`SQL` SQL 文を設定するための SQL エディターを開きます。SQL "
-"エディターには、クエリの結果が結果表に表示されます。"
+#: ../../source/designer-guide/configuration/databases.rst:43
+#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:23
+msgid "Generate"
+msgstr "生成"
 
-#: ../../source/designer-guide/configuration/databases.rst:41
-msgid ""
-":guilabel:`Database` Select the type and driver of the database you use. "
-"We ship some often used and well-tested drivers with the Axon Ivy "
-"Designer."
-msgstr ""
-":guilabel:`データベース` 使用するデータベースのタイプとドライバを選択します。Axon Ivy Designer "
-"には、よく使用され、十分にテストされたドライバが付属しています。"
-
-#: ../../source/designer-guide/configuration/databases.rst:45
-msgid ""
-"The field :guilabel:`Max Connections` lets you specify the maximum number"
-" of concurrent connections to this database."
-msgstr ":guilabel:`最大接続数` フィールドでは、このデータベースへの最大同時接続数を指定できます。"
-
-#: ../../source/designer-guide/configuration/databases.rst:48
-msgid ""
-"Choose an :guilabel:`Icon` that represents the database. The icon will "
-"also be used as decorator icon on Database process elements that "
-"reference this database."
-msgstr ""
-"データベースを表す:guilabel:`アイコン` "
-"を選択します。このアイコンは、このデータベースを参照するデータベースプロセス要素のデコレーターアイコンとしても使用されます。"
-
-#: ../../source/designer-guide/configuration/databases.rst:52
-msgid ""
-":guilabel:`Connection Properties` Specify the properties for the database"
-" connection."
-msgstr ":guilabel:`接続プロパティ` データベース接続のプロパティを指定します。"
-
-#: ../../source/designer-guide/configuration/databases.rst:55
-msgid ""
-":guilabel:`Additional Connection Properties` If your database needs "
-"additional settings, you can use this section to define these properties."
-msgstr ":guilabel:`追加の接続プロパティ` データベースに追加の設定が必要な場合、このセクションを使用してプロパティを定義できます。"
-
-#: ../../source/designer-guide/configuration/databases.rst:60
+#: ../../source/designer-guide/configuration/databases.rst:49
 #: ../../source/designer-guide/configuration/rest-clients.rst:263
 msgid "Dynamic Properties"
 msgstr "ダイナミックプロパティ"
 
-#: ../../source/designer-guide/configuration/databases.rst:61
+#: ../../source/designer-guide/configuration/databases.rst:50
 msgid ""
 "You may need to adjust property values for multiple runtime environments."
 " E.g., use different database hosts for testing and production, "
@@ -6365,7 +6380,7 @@ msgstr ""
 "複数の実行環境のプロパティ値を調整しなければならないことがあります。例えば、テスト環境と本番環境で異なるデータベースホストを使用する場合、他の認証情報や接続"
 " URI を使用します。"
 
-#: ../../source/designer-guide/configuration/databases.rst:65
+#: ../../source/designer-guide/configuration/databases.rst:54
 #, python-brace-format
 msgid ""
 "If you anticipate this need, then you can simplify these configuration "
@@ -8857,10 +8872,6 @@ msgstr "エンティティクラスのデータベース表の名前。指定さ
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:22
 msgid "Data Repository"
 msgstr "データリポジトリ"
-
-#: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:23
-msgid "Generate"
-msgstr "生成"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:24
 msgid "Select to create :ref:`data-repository-api` for the Entity Class."
@@ -27652,7 +27663,15 @@ msgid ""
 "within error pages to provide context information on the error and its "
 "engine state. Other Ivy APIs are not intended to work in case of an "
 "error."
-msgstr "デフォルトのエラーページは :file:`webapps/ivy/WEB-INF/lib/ivy-jsf-webapp-config.jar/META-INF/resources/ivy-error-page.xhtml` にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。これは、ファイルを :file:`webapps/ivy/error` にコピーするなどの操作で実行できますが、 :ref:`web-xml` の新しいエラーページも設定されていることを確認してください。 さらに、表示される情報を調整できます。エラーページ内で :public-api:`ErrorPageMBean </ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。他のIvy APIは、エラー発生時に動作するようには設計されていません。"
+msgstr ""
+"デフォルトのエラーページは :file:`webapps/ivy/WEB-INF/lib/ivy-jsf-webapp-config.jar"
+"/META-INF/resources/ivy-error-page.xhtml` "
+"にあります。これらを精査し、ワークフローアプリケーションや自社のアイデンティティに合わせて、エラーページをカスタマイズできます。これは、ファイルを"
+" :file:`webapps/ivy/error` にコピーするなどの操作で実行できますが、 :ref:`web-xml` "
+"の新しいエラーページも設定されていることを確認してください。 さらに、表示される情報を調整できます。エラーページ内で :public-"
+"api:`ErrorPageMBean </ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>`"
+" にアクセスし、エラーに関するコンテキスト情報やエンジンの状態を確認できます。他のIvy "
+"APIは、エラー発生時に動作するようには設計されていません。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:25
 msgid "Custom error pages have to be registered in the global :ref:`web-xml`."
@@ -27687,7 +27706,12 @@ msgid ""
 "Ajax exception handling, you can copy the files to your project (e.g. to "
 ":file:`webContent/layouts/includes/exception.xhtml`) and adjust the your "
 "template to load this file."
-msgstr "AjaxベースのHTTPリクエストで例外が発生した場合、設定されているPrimeFacesのAjax例外ハンドラーが例外を処理します。*\\*.xhtml*ファイルの一部としてハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、:file:`webapps/ivy/WEB-INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-INF/resources/ivy-form/layouts/include/exception.xhtml` を参照してください。Ajax例外処理をカスタマイズするには、ファイルをプロジェクト（:file:`webContent/layouts/includes/exception.xhtml` など）にコピーし、このファイルを読み込むようにテンプレートを調整できます。"
+msgstr ""
+"AjaxベースのHTTPリクエストで例外が発生した場合、設定されているPrimeFacesのAjax例外ハンドラーが例外を処理します。*\\*.xhtml*ファイルの一部としてハンドラーを定義する必要がありますが、付属の標準的なレイアウトでは、ハンドラーがすでに設定されています。詳細については、:file:`webapps/ivy"
+"/WEB-INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-"
+"INF/resources/ivy-form/layouts/include/exception.xhtml` "
+"を参照してください。Ajax例外処理をカスタマイズするには、ファイルをプロジェクト（:file:`webContent/layouts/includes/exception.xhtml`"
+" など）にコピーし、このファイルを読み込むようにテンプレートを調整できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:50
 msgid ""
@@ -32527,7 +32551,11 @@ msgid ""
 "app/14.0/zip>` and drop it in :file:`[engineDir]/deploy` folder. Refresh "
 "the main page of the Axon Ivy Engine. There will be a new section for "
 "this deployed app."
-msgstr "Axon IvyプロジェクトをAxon Ivy Engineに展開してみましょう。:dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/14.0/zip>` をダウンロードし、:file:`[engineDir]/deploy` フォルダーに配置します。Axon Ivy Engineのメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
+msgstr ""
+"Axon IvyプロジェクトをAxon Ivy Engineに展開してみましょう。:dev-url:`demo application "
+"</maven/com.axonivy.demo/ivy-demos-app/14.0/zip>` "
+"をダウンロードし、:file:`[engineDir]/deploy` フォルダーに配置します。Axon Ivy "
+"Engineのメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
 
 #: ../../source/engine-guide/getting-started/windows/deploy.rst:9
 msgid ""
@@ -40510,4 +40538,80 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 
 #~ msgid "Add Configurations"
 #~ msgstr "設定の追加"
+
+#~ msgid "Database Configuration Editor"
+#~ msgstr "データベース設定エディター"
+
+#~ msgid ""
+#~ ":guilabel:`All Database Configurations` A list"
+#~ " of all database configurations defined "
+#~ "in this project. A red or green"
+#~ " icon indicates the result of the "
+#~ "connection test automatically executed upon"
+#~ " saving a database configuration."
+#~ msgstr ""
+#~ ":guilabel:`すべてのデータベース設定` "
+#~ "このプロジェクトで定義されているすべてのデータベース設定のリスト。赤または緑のアイコンは、データベース設定の保存時に自動的に実行された接続テストの結果を示します。"
+
+#~ msgid ":guilabel:`New` Add a new database configuration"
+#~ msgstr ":guilabel:`新規` 新しいデータベース設定を追加します。"
+
+#~ msgid ":guilabel:`Remove` Remove the selected database configuration"
+#~ msgstr ":guilabel:`削除` 選択されたデータベース設定を削除します。"
+
+#~ msgid ""
+#~ ":guilabel:`Test Connection` Test database "
+#~ "connection. A dialog shows the result"
+#~ " status. In case of failure, the "
+#~ "reason is displayed"
+#~ msgstr ""
+#~ ":guilabel:`接続のテスト` "
+#~ "データベース接続をテストします。ダイアログに結果のステータスが表示されます。失敗した場合はその理由が表示されます。"
+
+#~ msgid ""
+#~ ":guilabel:`SQL` Opens a SQL editor to"
+#~ " set up SQL Statements. The SQL "
+#~ "Editor displays the query result in "
+#~ "a result table"
+#~ msgstr ""
+#~ ":guilabel:`SQL` SQL 文を設定するための SQL "
+#~ "エディターを開きます。SQL エディターには、クエリの結果が結果表に表示されます。"
+
+#~ msgid ""
+#~ ":guilabel:`Database` Select the type and "
+#~ "driver of the database you use. We"
+#~ " ship some often used and well-"
+#~ "tested drivers with the Axon Ivy "
+#~ "Designer."
+#~ msgstr ""
+#~ ":guilabel:`データベース` 使用するデータベースのタイプとドライバを選択します。Axon Ivy "
+#~ "Designer には、よく使用され、十分にテストされたドライバが付属しています。"
+
+#~ msgid ""
+#~ "The field :guilabel:`Max Connections` lets "
+#~ "you specify the maximum number of "
+#~ "concurrent connections to this database."
+#~ msgstr ":guilabel:`最大接続数` フィールドでは、このデータベースへの最大同時接続数を指定できます。"
+
+#~ msgid ""
+#~ "Choose an :guilabel:`Icon` that represents "
+#~ "the database. The icon will also "
+#~ "be used as decorator icon on "
+#~ "Database process elements that reference "
+#~ "this database."
+#~ msgstr ""
+#~ "データベースを表す:guilabel:`アイコン` "
+#~ "を選択します。このアイコンは、このデータベースを参照するデータベースプロセス要素のデコレーターアイコンとしても使用されます。"
+
+#~ msgid ""
+#~ ":guilabel:`Connection Properties` Specify the "
+#~ "properties for the database connection."
+#~ msgstr ":guilabel:`接続プロパティ` データベース接続のプロパティを指定します。"
+
+#~ msgid ""
+#~ ":guilabel:`Additional Connection Properties` If "
+#~ "your database needs additional settings, "
+#~ "you can use this section to define"
+#~ " these properties."
+#~ msgstr ":guilabel:`追加の接続プロパティ` データベースに追加の設定が必要な場合、このセクションを使用してプロパティを定義できます。"
 
