@@ -97,7 +97,7 @@ System Database
 OpenSearch
 -------------
 
-Version 2.19. Only required if you run your :ref:`own <opensearch-external>`
+Version 3.4. Only required if you run your :ref:`own <opensearch-external>`
 OpenSearch instance!
 
 
