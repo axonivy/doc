@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 10:59+0000\n"
+"POT-Creation-Date: 2026-01-18 21:29+0000\n"
 "PO-Revision-Date: 2026-01-13 08:01+0000\n"
 "Last-Translator: Torindo_reviewer <eri.kobayashi@torindo.ne.jp>\n"
 "Language: ja\n"
@@ -603,7 +603,7 @@ msgstr "ライセンス"
 msgid "|tag-ops-changed|"
 msgstr "|tag-ops-changed|"
 
-#: ../../../doc-build/<rst_epilog>:3
+#: ../../../doc-build/<rst_epilogue>:3
 msgid "tag-ops-changed"
 msgstr "tag-ops-changed"
 
@@ -620,7 +620,7 @@ msgstr "Axon IvyパブリックAPI Maven依存関係"
 msgid "|tag-project-auto-convert|"
 msgstr "|tag-project-auto-convert|"
 
-#: ../../../doc-build/<rst_epilog>:6
+#: ../../../doc-build/<rst_epilogue>:6
 msgid "tag-project-auto-convert"
 msgstr "tag-project-auto-convert"
 
@@ -653,7 +653,7 @@ msgstr "1つのタスクに対する複数の担当と、プロセス開始に�
 msgid "|tag-project-changed|"
 msgstr "|tag-project-changed|"
 
-#: ../../../doc-build/<rst_epilog>:7
+#: ../../../doc-build/<rst_epilogue>:7
 msgid "tag-project-changed"
 msgstr "tag-project-changed"
 
@@ -708,7 +708,7 @@ msgstr "ケースの範囲のオーバーライドの削除"
 msgid "|tag-project-removed|"
 msgstr "|tag-project-removed|"
 
-#: ../../../doc-build/<rst_epilog>:9
+#: ../../../doc-build/<rst_epilogue>:9
 msgid "tag-project-removed"
 msgstr "tag-project-removed"
 
@@ -821,7 +821,7 @@ msgstr "**タグの凡例：** "
 msgid "|tag-ops-wizard|"
 msgstr "|tag-ops-wizard|"
 
-#: ../../../doc-build/<rst_epilog>:2
+#: ../../../doc-build/<rst_epilogue>:2
 msgid "tag-ops-wizard"
 msgstr "tag-ops-wizard"
 
@@ -841,7 +841,7 @@ msgstr "この移行により、エンジンのオペレーションの一部が
 msgid "|tag-ops-deprecated|"
 msgstr "|tag-ops-deprecated|"
 
-#: ../../../doc-build/<rst_epilog>:4
+#: ../../../doc-build/<rst_epilogue>:4
 msgid "tag-ops-deprecated"
 msgstr "tag-ops-deprecated"
 
@@ -856,7 +856,7 @@ msgstr "この移行は、非推奨となる動作や機能を強調するもの
 msgid "|tag-ops-removed|"
 msgstr "|tag-ops-removed|"
 
-#: ../../../doc-build/<rst_epilog>:5
+#: ../../../doc-build/<rst_epilogue>:5
 msgid "tag-ops-removed"
 msgstr "tag-ops-removed"
 
@@ -883,7 +883,7 @@ msgstr "この移行により、プロジェクトの特定の動作が変更さ
 msgid "|tag-project-deprecated|"
 msgstr "|tag-project-deprecated|"
 
-#: ../../../doc-build/<rst_epilog>:8
+#: ../../../doc-build/<rst_epilogue>:8
 msgid "tag-project-deprecated"
 msgstr "tag-project-deprecated"
 
@@ -1555,8 +1555,9 @@ msgid "OpenSearch"
 msgstr "OpenSearch"
 
 #: ../../source/axonivy/system-requirements/engine.rst:100
+#, fuzzy
 msgid ""
-"Version 2.19. Only required if you run your :ref:`own <opensearch-"
+"Version 3.4. Only required if you run your :ref:`own <opensearch-"
 "external>` OpenSearch instance!"
 msgstr ""
 "バージョン 2.19。 :ref:`自分の<opensearch-external>` OpenSearch "
@@ -12649,6 +12650,11 @@ msgstr ""
 "**ケース** を呼び出し元の **ケース** の **ビジネスケース** に接続すべきかどうかを定義します。さらに、API を使用して、任意の "
 "**ケース** を **ビジネスケース** に接続できます。ケースマップが開始されると、自動的に **ビジネスケース** が作成されます。「 "
 ":ref:`casemap-execution` 」を参照してください。"
+
+#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:102
+#, fuzzy
+msgid "Lifecycle"
+msgstr "アプリケーションのライフサイクル"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:104
 msgid ""
