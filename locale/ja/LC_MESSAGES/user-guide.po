@@ -5,20 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: Axon Ivy Platform 13.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 10:59+0000\n"
-"PO-Revision-Date: 2026-01-13 08:01+0000\n"
-"Last-Translator: Torindo_reviewer <eri.kobayashi@torindo.ne.jp>\n"
-"Language: ja\n"
-"Language-Team: Japanese "
-"<https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-14 10:59+0000\nPO-Revision-Date: 2026-01-19 07:29+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.15.2\nGenerated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -196,9 +183,7 @@ msgstr "このセクションでは、すべての Linux ディストリビュ�
 msgid ""
 "Download the latest Axon Ivy Engine hotfix version that matches your "
 "release train :dev-url:`/download` and unpack at your prefered place."
-msgstr ""
-":dev-url:`/download` でリリーストレインと一致する最新バージョンの Axon Ivy Engine "
-"のホットフィックスをダウンロードし、任意の場所で解凍します。"
+msgstr ":dev-url:`/download` でリリーストレインと一致する最新バージョンの Axon Ivy Engine のホットフィックスをダウンロードし、任意の場所で解凍します。"
 
 #: ../../source/axonivy/migration/hotfix/linux.rst:10
 #: ../../source/axonivy/migration/hotfix/windows.rst:11
@@ -237,34 +222,29 @@ msgstr "Axon Ivy Engine のバージョンの移行プロセスは、対応す�
 
 #: ../../source/axonivy/migration/index.rst:9
 msgid "**Hotfix Upgrade**"
-msgstr "**ホットフィックスのアップグレード** "
+msgstr "**ホットフィックスのアップグレード**"
 
 #: ../../source/axonivy/migration/index.rst:11
 msgid ""
 "If you are looking for the update steps to keep your Axon Ivy Engine on "
 "the latest patch level (e.g., ``8.0.6`` > ``8.0.13``), please consult the"
 " :ref:`migration-upgrade-engine-hotfix` chapter."
-msgstr ""
-"Axon Ivy Engine を最新のパッチレベル（例：``8.0.6`` から "
-"``8.0.13``）で維持するアップデート手順を知りたい場合は、 :ref:`migration-upgrade-engine-hotfix` "
-"」の章を参照してください。"
+msgstr "Axon Ivy Engine を最新のパッチレベル（例：``8.0.6`` から ``8.0.13``）で維持するアップデート手順を知りたい場合は、 :ref:`migration-upgrade-engine-hotfix` 」の章を参照してください。"
 
 #: ../../source/axonivy/migration/index.rst:15
 msgid "**Major / Minor Upgrade**"
-msgstr "**メジャー／マイナーアップグレード** "
+msgstr "**メジャー／マイナーアップグレード**"
 
 #: ../../source/axonivy/migration/index.rst:17
 msgid ""
 "When you aim for a migration to another major version (e.g., ``8.0.30`` >"
 " ``10.0.20``) or minor version (e.g., ``11.1`` > ``11.2``) please consult"
 " the :ref:`migration-upgrade-engine-major` chapter."
-msgstr ""
-"別のメジャーバージョン（例：``8.0.30`` から ``10.0.20``）やマイナーバージョン（例：``11.1`` から "
-"``11.2``）への移行を行う場合は、「 :ref:`migration-upgrade-engine-major` 」の章を参照してください。"
+msgstr "別のメジャーバージョン（例：``8.0.30`` から ``10.0.20``）やマイナーバージョン（例：``11.1`` から ``11.2``）への移行を行う場合は、「 :ref:`migration-upgrade-engine-major` 」の章を参照してください。"
 
 #: ../../source/axonivy/migration/index.rst:21
 msgid "**Migration Tools**"
-msgstr "**移行ツール** "
+msgstr "**移行ツール**"
 
 #: ../../source/axonivy/migration/index.rst:23
 msgid "To ease the migration we provide :ref:`migration-tools`."
@@ -299,9 +279,7 @@ msgid ""
 "Do a backup of the system database and all of your data of your Axon ivy "
 "Engine. If you run your Axon Ivy Engine in a Virtual Machine, then you "
 "can take a snapshot."
-msgstr ""
-"Axon Ivy Engine のシステムデータベースとすべてのデータのバックアップを取ります。Axon Ivy Engine "
-"を仮想マシンで実行している場合は、スナップショットを取得できます。"
+msgstr "Axon Ivy Engine のシステムデータベースとすべてのデータのバックアップを取ります。Axon Ivy Engine を仮想マシンで実行している場合は、スナップショットを取得できます。"
 
 #: ../../source/axonivy/migration/major/_wizardMigration.rst:6
 msgid ""
@@ -312,11 +290,7 @@ msgid ""
 "Axon Ivy Engine. Browse to the Axon Ivy Engine URI (e.g., "
 "http://localhost:8080) and click on ``Setup Wizard`` > ``Migration "
 "Wizard``."
-msgstr ""
-":ref:`migration-wizard` を使用して、Axon Ivy Engine "
-"を移行します。移行ウィザードは、設定、エラーページ、ドロップインなどを新しい場所にコピーします。また、システムデータのスキーマもアップデートします。ウィザードの使用を開始するには、新しい"
-" Axon Ivy Engine を起動します。Axon Ivy Engine の "
-"URI（例：http://localhost:8080）にアクセスし、［``セットアップウィザード``］、［``移行ウィザード``］の順にクリックしてください。"
+msgstr ":ref:`migration-wizard` を使用して、Axon Ivy Engine を移行します。移行ウィザードは、設定、エラーページ、ドロップインなどを新しい場所にコピーします。また、システムデータのスキーマもアップデートします。ウィザードの使用を開始するには、新しい Axon Ivy Engine を起動します。Axon Ivy Engine の URI（例：http://localhost:8080）にアクセスし、［``セットアップウィザード``］、［``移行ウィザード``］の順にクリックしてください。"
 
 #: ../../source/axonivy/migration/major/_wizardMigration.rst:12
 msgid "Restart your Axon Ivy Engine."
@@ -336,9 +310,7 @@ msgid ""
 "benefit from new features that will increase your productivity and "
 "ability to react to new business needs. You can have a look at the latest"
 " features here: :dev-url:`/news`"
-msgstr ""
-"生産性を向上させ、新しいビジネスニーズへの対応能力を高める新機能の恩恵を受けるため、新しい Axon Ivy Engine "
-"バージョンへのアップグレードを推奨します。最新の機能は :dev-url:`/news` でご覧いただけます。"
+msgstr "生産性を向上させ、新しいビジネスニーズへの対応能力を高める新機能の恩恵を受けるため、新しい Axon Ivy Engine バージョンへのアップグレードを推奨します。最新の機能は :dev-url:`/news` でご覧いただけます。"
 
 #: ../../source/axonivy/migration/major/index.rst:12
 msgid ""
@@ -347,12 +319,7 @@ msgid ""
 "(e.g., from ``11.1`` to ``11.2``). If you are only interested in applying"
 " hotfix upgrades (e.g., from ``12.0.0`` to ``12.0.2``), please consult "
 "the simpler :ref:`migration-upgrade-engine-hotfix` chapter."
-msgstr ""
-"この章では、メジャーバージョンから別のメジャーバージョン（例：``10.0`` から "
-"``12.0``）、マイナーバージョンから別のマイナーバージョン（例：``11.1`` から "
-"``11.2``）への移行に焦点を当てます。ホットフィックスのアップグレード（例：``12.0.0`` から "
-"``12.0.2``）にのみ興味がある場合は、よりシンプルな :ref:`migration-upgrade-engine-hotfix` "
-"」の章を参照してください。"
+msgstr "この章では、メジャーバージョンから別のメジャーバージョン（例：``10.0`` から ``12.0``）、マイナーバージョンから別のマイナーバージョン（例：``11.1`` から ``11.2``）への移行に焦点を当てます。ホットフィックスのアップグレード（例：``12.0.0`` から ``12.0.2``）にのみ興味がある場合は、よりシンプルな :ref:`migration-upgrade-engine-hotfix` 」の章を参照してください。"
 
 #: ../../source/axonivy/migration/major/index.rst:18
 msgid ""
@@ -372,7 +339,7 @@ msgstr ""
 
 #: ../../source/axonivy/migration/major/index.rst:26
 msgid "**Backwards-compatibility**"
-msgstr "**下位互換性** "
+msgstr "**下位互換性**"
 
 #: ../../source/axonivy/migration/major/index.rst:28
 msgid ""
@@ -412,9 +379,7 @@ msgstr "Linux システムでの移行は、ホットフィックスの移行と
 msgid ""
 "Download the latest Axon Ivy Engine hotfix version that matches your main"
 " release :dev-url:`/download`"
-msgstr ""
-":dev-url:`/download` でメインリリースと一致する最新バージョンの Axon Ivy Engine "
-"のホットフィックをダウンロードします。"
+msgstr ":dev-url:`/download` でメインリリースと一致する最新バージョンの Axon Ivy Engine のホットフィックをダウンロードします。"
 
 #: ../../source/axonivy/migration/major/post-migration.rst:4
 msgid "Post Migration Steps"
@@ -476,9 +441,7 @@ msgid ""
 ":`project-convert` of the Axon Ivy Designer Guide. Usually, this is "
 "achieved by invoking the project conversion action on each project. Some "
 "manual adaptations may be necessary."
-msgstr ""
-"Axon Ivy Designer ガイドの :ref:`project-convert` "
-"」のセクションの説明に従ってプロジェクトを移行します。通常、これは各プロジェクトに対してプロジェクト変換アクションを呼び出すことで達成されます。手作業による調整が必要な場合もあります。"
+msgstr "Axon Ivy Designer ガイドの :ref:`project-convert` 」のセクションの説明に従ってプロジェクトを移行します。通常、これは各プロジェクトに対してプロジェクト変換アクションを呼び出すことで達成されます。手作業による調整が必要な場合もあります。"
 
 #: ../../source/axonivy/migration/major/post-migration.rst:35
 msgid "Test the migrated project in the Axon Ivy Designer."
@@ -40614,4 +40577,3 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 #~ "you can use this section to define"
 #~ " these properties."
 #~ msgstr ":guilabel:`追加の接続プロパティ` データベースに追加の設定が必要な場合、このセクションを使用してプロパティを定義できます。"
-
