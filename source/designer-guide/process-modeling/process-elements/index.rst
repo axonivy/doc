@@ -133,7 +133,6 @@ Interface Activities
    web-service-call-activity
    rest-client-activity
    email-activity
-   rule-activity
    program-interface-activity
 
 
