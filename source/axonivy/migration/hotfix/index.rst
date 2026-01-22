@@ -1,7 +1,7 @@
-.. _migration-upgrade-engine-hotfix:
+.. _migration-update-engine-hotfix:
 
 
-Hotfix Upgrade
+Hotfix Update
 ---------------
 
 It's important to keep your productive Axon Ivy Engine stable and up to date.

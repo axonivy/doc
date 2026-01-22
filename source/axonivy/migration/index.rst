@@ -6,11 +6,11 @@ Migration
 The migration process from one Axon Ivy Engine version to another differs 
 highly among the supported operating systems and the kind of migration.
 
-**Hotfix Upgrade**
+**Hotfix Update**
 
 If you are looking for the update steps to keep your Axon Ivy Engine on the
 latest patch level (e.g., ``8.0.6`` > ``8.0.13``), 
-please consult the :ref:`migration-upgrade-engine-hotfix` chapter.
+please consult the :ref:`migration-update-engine-hotfix` chapter.
 
 **Major / Minor Upgrade**
 
