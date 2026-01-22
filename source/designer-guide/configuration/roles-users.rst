@@ -97,6 +97,11 @@ roles will show the properties of the selected role on the right side of the edi
    The deployment will fail if a Role with the same name exists in different
    hierarchies. This does not apply for Member Roles.
 
+.. tip::
+
+   You do not see the role called **Everybody**, because it is a built-in
+   role. It contains every user and role.
+
 .. |add-role-icon| image:: /_images/ui-icons/plus.svg
    :alt: Add Role
    :width: 16px
@@ -125,7 +130,7 @@ at least one role. Double click on the :guilabel:`Test Users` node in
    deployment. Users for processes deployed on the Axon Ivy Engine need
    to be created and configured on the engine.
    
-.. figure:: /_images/designer-configuration/test-user-editor.png
+.. figure:: /_images/user-editor/user-editor.png
    :alt: Test User Editor
    :align: center
    
@@ -139,23 +144,8 @@ explicitly assigned him to (see :ref:`role-editor`). You can add additional
 properties to each user in terms of string key-value pairs and re-use them within
 process steps in :ref:`ivyscript`.
 
-- :guilabel:`New`
-  Creates a new user with the specified name.
-
-- :guilabel:`Remove`
-  Removes a user from the list.
-  The process designer does confirm the removal.
-
-- :guilabel:`Sort`
-  Sorts the user list in alphabetical order.
-
-- :guilabel:`Import` 
-  Test users from a ``users.xml`` file from another project
-  can be imported for convenience reasons.
-  
-- :guilabel:`Export XML` 
-  All users and their corresponding properties are exported into a XML file 
-  named ``users.xml`` for easy re-use of test users in another project.
+- Press |add-user-icon| to add a new User.
+- Press |delete-user-icon| to delete the selected User.
 
 .. tip::
 
@@ -164,3 +154,13 @@ process steps in :ref:`ivyscript`.
    meant to be used for testing, so it only exists in Axon Ivy Designer. The
    password of this user is **Developer** (in case you would like to log
    in using IvyScript).
+
+.. |add-user-icon| image:: /_images/ui-icons/plus.svg
+   :alt: Add User
+   :width: 16px
+   :height: 16px
+
+.. |delete-user-icon| image:: /_images/ui-icons/trash.svg
+   :alt: Delete User
+   :width: 16px
+   :height: 16px
