@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-14 10:59+0000\nPO-Revision-Date: 2026-01-19 07:29+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.15.2\nGenerated-By: Babel 2.17.0\n"
+msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-14 10:59+0000\nPO-Revision-Date: 2026-01-27 00:02+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.16-dev\nGenerated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -20,9 +20,7 @@ msgid ""
 "You should avoid using deprecated Public APIs and features. When "
 "migrating to a new version, check for deprecated Public APIs and features"
 " and replace them with the successor API or feature."
-msgstr ""
-"非推奨のパブリック API や機能の使用は避けるべきです。新しいバージョンに移行する際は、非推奨のパブリック API と機能を確認し、後継の "
-"API と機能に置き換えてください。"
+msgstr "非推奨のパブリック API や機能の使用は避けるべきです。新しいバージョンに移行する際は、非推奨のパブリック API と機能を確認し、後継の API と機能に置き換えてください。"
 
 #: ../../source/axonivy/migration/deprecation.rst:10
 msgid ""
@@ -48,9 +46,7 @@ msgstr "非推奨のパブリック API"
 msgid ""
 "Deprecated Public API are documented in our :public-api:`deprecated "
 "Public API page</deprecated-list.html>`."
-msgstr ""
-"非推奨のパブリック API は :public-api:`「非推奨のパブリック API」ページ</deprecated-list.html>` "
-"記載されています。"
+msgstr "非推奨のパブリック API は :public-api:`「非推奨のパブリック API」ページ</deprecated-list.html>` 記載されています。"
 
 #: ../../source/axonivy/migration/hotfix/docker.rst:4
 #: ../../source/axonivy/migration/hotfix/index.rst:33
@@ -365,9 +361,7 @@ msgid ""
 "<migration-notes>` for the versions you are migrating to. It documents "
 "possible breaking changes that may affect you and require manual "
 "adaptations in your project."
-msgstr ""
-"始めに、移行先のバージョン :ref:`移行に関する注記<migration-notes>` "
-"読むことを推奨します。注記には、プロジェクトの手動での修正などの影響を及ぼす、互換性を破る可能性がある変更についてまとめられています。"
+msgstr "始めに、移行先のバージョン :ref:`移行に関する注記<migration-notes>` 読むことを推奨します。注記には、プロジェクトの手動での修正などの影響を及ぼす、互換性を破る可能性がある変更についてまとめられています。"
 
 #: ../../source/axonivy/migration/major/linux.rst:6
 msgid ""
@@ -505,7 +499,7 @@ msgstr "これらのバージョンからの移行は、 :ref:`migration-tools` 
 
 #: ../../source/axonivy/migration/migration-notes.rst:26
 msgid ":dev-url:`Migrating from 8.0 to 10.0 </doc/10.0/migration-notes>`"
-msgstr ":dev-url:`8.0 から 10.0 への移行</doc/10.0/migration-notes>`"
+msgstr ":dev-url:`Migrating from 8.0 to 10.0 </doc/10.0/migration-notes>`:dev-url:`8.0 から 10.0 への移行</doc/10.0/migration-notes>`"
 
 #: ../../source/axonivy/migration/migration-notes.rst:27
 msgid ":dev-url:`Migrating from 7.0 to 8.0 </doc/8.0.0/migration-notes>`"
@@ -855,9 +849,7 @@ msgid ""
 "This migration will mark features or APIs as deprecated in projects. That"
 " functionality will be removed soon. If you are a project developer, "
 "check if this change affects you."
-msgstr ""
-"この移行は、プロジェクトの機能や API "
-"を非推奨としてマークします。その機能はまもなく削除されます。プロジェクト開発者は、この変更による影響がないか確認してください。"
+msgstr "この移行は、プロジェクトの機能や API を非推奨としてマークします。その機能はまもなく削除されます。プロジェクト開発者は、この変更による影響がないか確認してください。"
 
 #: ../../source/axonivy/migration/_tagLegend.rst:42
 msgid ""
@@ -890,19 +882,13 @@ msgid ""
 "<https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-"
 "designer-13>`_. A Beta version is already available - try it out and "
 "share your feedback!"
-msgstr ""
-"これは、`Eclipse IDE <https://eclipseide.org/>`_ ベースのPRO "
-"Designerの最終リリースです。PRO DesignerはLTS 14から、`VS コード拡張子 "
-"<https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-"
-"designer-13>`_ に移行します。ベータ版は既に配布されているので、お試しの上、フィードバックをお寄せください。"
+msgstr "これは、`Eclipse IDE <https://eclipseide.org/>`_ ベースのPRO Designerの最終リリースです。PRO DesignerはLTS 14から、`VS コード拡張子 <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-13>`_ に移行します。ベータ版は既に配布されているので、お試しの上、フィードバックをお寄せください。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:17
 msgid ""
 "`Learn more about this transition <https://community.axonivy.com/d/1149"
 "-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
-msgstr ""
-"`この移行に関する詳細はこちら <https://community.axonivy.com/d/1149-maintenance-mode-"
-"of-the-eclipse-based-pro-designer>`_"
+msgstr "`この移行に関する詳細はこちら <https://community.axonivy.com/d/1149-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:20
 msgid "Axon Ivy Java API Maven Dependency"
@@ -1021,9 +1007,7 @@ msgstr "Mail API"
 msgid ""
 "The Mail API has been migrated from Java Mail API 1.6 to `Jakarta Mail "
 "API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0."
-msgstr ""
-"Mail APIは、Java Mail API 1.6から`Jakarta Mail API "
-"<https://jakarta.ee/specifications/mail/2.0/>`_ 2.0へ移行されました。"
+msgstr "Mail APIは、Java Mail API 1.6から`Jakarta Mail API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0へ移行されました。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:69
 msgid ":code:`javax.mail` → :code:`jakarta.mail`"
@@ -1050,9 +1034,7 @@ msgstr ":ref:`process-element-email-activity`"
 msgid ""
 "The new :public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-"
 "summary.html>`."
-msgstr ""
-"新しい:public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-"
-"summary.html>`。"
+msgstr "新しい:public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-summary.html>`。"
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:89
 msgid "HttpHeaderSecurityFilter and RemoteIpFilter in web.xml"
@@ -1170,9 +1152,7 @@ msgid ""
 "For security reasons, we recommend using the latest available web browser"
 " versions. Most other web browsers that support the latest JavaScript, "
 "HTML 5 and CSS 3 specifications will work, too."
-msgstr ""
-"セキュリティ上の理由から、最新バージョンのウェブブラウザを使用することを推奨します。他にも、最新の JavaScript、HTML 5、CSS 3"
-" の仕様に対応したほとんどのウェブブラウザでも動作します。"
+msgstr "セキュリティ上の理由から、最新バージョンのウェブブラウザを使用することを推奨します。他にも、最新の JavaScript、HTML 5、CSS 3 の仕様に対応したほとんどのウェブブラウザでも動作します。"
 
 #: ../../source/axonivy/system-requirements/designer.rst:4
 msgid "Axon Ivy Designer"
@@ -1233,11 +1213,7 @@ msgid ""
 "macOS installation. We do not include Java SE 21 on Linux. You may want "
 "to use Java SE 21 provided by your operating system or install `Eclipse "
 "Temurin <https://adoptium.net/>`_."
-msgstr ""
-"なお、`Eclipse Temurin <https://adoptium.net/>`_ から提供される Java SE 21 "
-"は、Windows インストレーションと macOS インストレーションに含まれています。Linux には Java SE 21 "
-"は含まれていません。お使いのオペレーティングシステムで提供される Java SE 21 を使用したり、`Eclipse Temurin "
-"<https://adoptium.net/>`_ をインストールすることも可能です。"
+msgstr "なお、`Eclipse Temurin <https://adoptium.net/>`_ から提供される Java SE 21 は、Windows インストレーションと macOS インストレーションに含まれています。Linux には Java SE 21 は含まれていません。お使いのオペレーティングシステムで提供される Java SE 21 を使用したり、`Eclipse Temurin <https://adoptium.net/>`_ をインストールすることも可能です。"
 
 #: ../../source/axonivy/system-requirements/designer.rst:27
 msgid "We test Axon Ivy Designer with `Eclipse Temurin <https://adoptium.net/>`_."
@@ -1270,16 +1246,14 @@ msgstr "ベータ版 - macOS Monterey（64 ビット版）（macOS Monterey 12.6
 
 #: ../../source/axonivy/system-requirements/designer.rst:39
 msgid "**macOS**"
-msgstr "**macOS** "
+msgstr "**macOS**"
 
 #: ../../source/axonivy/system-requirements/designer.rst:41
 msgid ""
 "The Designer has some known bugs when running under macOS. We are "
 "currently not able to fix those bugs or provide support. Use at your own "
 "risk."
-msgstr ""
-"macOS "
-"で動作するデザイナーには、いくつかの既知のバグがあります。現在、これらのバグを修正したり、サポートを提供することはできません。自己責任で使用してください。"
+msgstr "macOS で動作するデザイナーには、いくつかの既知のバグがあります。現在、これらのバグを修正したり、サポートを提供することはできません。自己責任で使用してください。"
 
 #: ../../source/axonivy/system-requirements/designer.rst:45
 msgid "Web Browsers"
@@ -1323,13 +1297,13 @@ msgstr "**メモリ（RAM）** ：最低 8 GB、32 GB を推奨。 "
 msgid ""
 "**Disk Space**: Minimum is 20 GB, we recommend 100 GB on a Solid State "
 "Disk (SSD)."
-msgstr "**ディスクの空き容量** ：最低 20 GB、SSD では 100 GB を推奨。 "
+msgstr "**ディスクの空き容量** ：最低 20 GB、SSD では 100 GB を推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:26
 msgid ""
 "**Processors**: Minimum is 4 cores with 2 GHz, we recommend 16 cores with"
 " 2.5 GHz."
-msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。 "
+msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:31
 msgid "With an external OpenSearch server"
@@ -1337,7 +1311,7 @@ msgstr "外部の OpenSearch サーバーを使用"
 
 #: ../../source/axonivy/system-requirements/engine.rst:32
 msgid "**Memory (RAM)**: Minimum is 4 GB. We recommend using at least 16 GB."
-msgstr "**メモリ（RAM）** ：最低 4 GB、16 GB 以上を推奨。 "
+msgstr "**メモリ（RAM）** ：最低 4 GB、16 GB 以上を推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:35
 msgid ""
@@ -1349,7 +1323,7 @@ msgstr "**ディスクの空き容量** ：最低 2 GB、SSD では 50 GB を推
 msgid ""
 "**Processors**: Minimum is 4 cores with 2 GHz. We recommend 16 cores with"
 " 2.5 GHz."
-msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。 "
+msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:45
 msgid ""
@@ -1543,9 +1517,7 @@ msgid ""
 "NEO Designer users are working with a :ref:`web browser <browser-system-"
 "requirements>` that communicates with a :ref:`Axon Ivy Engine <engine-"
 "system-requirements>`."
-msgstr ""
-"NEO Designer のユーザーは、 :ref:`Axon Ivy Engine<engine-system-requirements>` "
-"と通信する :ref:`ウェブブラウザ<browser-system-requirements>` を使用して作業しています。"
+msgstr "NEO Designer のユーザーは、 :ref:`Axon Ivy Engine<engine-system-requirements>` と通信する :ref:`ウェブブラウザ<browser-system-requirements>` を使用して作業しています。"
 
 #: ../../source/axonivy/try-axon-ivy.rst:2
 msgid "Try Axon Ivy!"
@@ -1615,7 +1587,7 @@ msgstr ""
 
 #: ../../source/axonivy/what-axon-ivy.rst:11
 msgid "**Visualize**"
-msgstr "**視覚化** "
+msgstr "**視覚化**"
 
 #: ../../source/axonivy/what-axon-ivy.rst:12
 msgid ""
@@ -1631,7 +1603,7 @@ msgstr ""
 
 #: ../../source/axonivy/what-axon-ivy.rst:18
 msgid "**Automate**"
-msgstr "**自動化** "
+msgstr "**自動化**"
 
 #: ../../source/axonivy/what-axon-ivy.rst:19
 msgid ""
@@ -1660,7 +1632,7 @@ msgstr ""
 
 #: ../../source/axonivy/what-axon-ivy.rst:32
 msgid "**Improve**"
-msgstr "**改善** "
+msgstr "**改善**"
 
 #: ../../source/axonivy/what-axon-ivy.rst:33
 msgid ""
@@ -2238,9 +2210,7 @@ msgid ""
 "`extension-demos <https://github.com/axonivy/extension-demos/>`_, show "
 "extensions to the logger infrastracture, database drivers, and tomcat "
 "webserver."
-msgstr ""
-" `extension-demos <https://github.com/axonivy/extension-demos/>`_ "
-"には、ロガーインフラストラクチャ、データベースドライバー、Tomcat ウェブサーバーの拡張が公開されています。"
+msgstr "`extension-demos <https://github.com/axonivy/extension-demos/>`_ には、ロガーインフラストラクチャ、データベースドライバー、Tomcat ウェブサーバーの拡張が公開されています。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:218
 msgid ""
@@ -2336,9 +2306,7 @@ msgstr "REST サービス"
 msgid ""
 "REST (representational state transfer) is an architectural style, based "
 "on resources to provide inter-system communication."
-msgstr ""
-"REST（Representational State "
-"Transfer）は、システム間通信を提供するためのリソースをベースにしたアーキテクチャスタイルです。"
+msgstr "REST（Representational State Transfer）は、システム間通信を提供するためのリソースをベースにしたアーキテクチャスタイルです。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:9
 msgid ""
@@ -2348,11 +2316,7 @@ msgid ""
 "developing, exposing and accessing web applications designed and "
 "implemented in compliance with principles of the REST architectural "
 "style."
-msgstr ""
-"RESTful Web サービスの Java API 仕様は `JAX-RS "
-"<https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-"
-"summary.html#package.description>`__ と呼ばれ、REST "
-"アーキテクチャスタイルの原則に従って設計、実装されたウェブアプリケーションを開発、公開、アクセスするためのポータブルな API を提供します。"
+msgstr "RESTful Web サービスの Java API 仕様は `JAX-RS <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__ と呼ばれ、REST アーキテクチャスタイルの原則に従って設計、実装されたウェブアプリケーションを開発、公開、アクセスするためのポータブルな API を提供します。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:15
 msgid ""
@@ -2371,9 +2335,7 @@ msgid ""
 "To call a remote REST service, you have to define it in the :ref:`rest-"
 "clients-configuration`. After that, you can use a :ref:`process-element-"
 "rest-client-activity` to call the REST service."
-msgstr ""
-"リモート REST サービスを呼び出すには :ref:`rest-clients-configuration` で定義する必要があります。定義後 "
-":ref:`process-element-rest-client-activity` を使用して、REST サービスを呼び出すことができます。"
+msgstr "リモート REST サービスを呼び出すには :ref:`rest-clients-configuration` で定義する必要があります。定義後 :ref:`process-element-rest-client-activity` を使用して、REST サービスを呼び出すことができます。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:26
 msgid ""
@@ -2408,18 +2370,13 @@ msgid ""
 "Further information is available in the `JAX-RS API Specification "
 "<https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-"
 "summary.html#package.description>`__."
-msgstr ""
-"詳細は、`JAX-RS API Specification "
-"<https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-"
-"summary.html#package.description>`__ で確認できます。"
+msgstr "詳細は、`JAX-RS API Specification <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__ で確認できます。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:63
 msgid ""
 "Many example REST services are available in the :ref:`ConnectivityDemos "
 "<importing-demo-projects>`."
-msgstr ""
-":ref:`ConnectivityDemos<importing-demo-projects>` では、多くの REST "
-"サービスのサンプルが公開されています。"
+msgstr ":ref:`ConnectivityDemos<importing-demo-projects>` では、多くの REST サービスのサンプルが公開されています。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:70
 msgid "API Publishing"
@@ -2449,9 +2406,7 @@ msgid ""
 "``/<appName>/api/openapi.json`` e.g., "
 "http://localhost:8081/designer/api/openapi.json (this one is from "
 "Designer)"
-msgstr ""
-"``/<appName>/api/openapi.json`` "
-"例：http://localhost:8081/designer/api/openapi.json（Designer の場合）"
+msgstr "``/<appName>/api/openapi.json`` 例：http://localhost:8081/designer/api/openapi.json（Designer の場合）"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:88
 msgid "Custom OpenAPI Docs"
@@ -2592,9 +2547,7 @@ msgstr ""
 msgid ""
 "User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` have to "
 "be implemented such that no data is modified."
-msgstr ""
-"GET``、``HEAD``、``OPTIONS`` を使用してユーザーが提供する REST "
-"サービスは、データが変更されないように実装する必要があります。"
+msgstr "``GET``、``HEAD``、``OPTIONS`` を使用してユーザーが提供する REST サービスは、データが変更されないように実装する必要があります。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:174
 msgid ""
@@ -3238,9 +3191,7 @@ msgstr "デザイナーでのシグナルの手動送信"
 msgid ""
 "While developing a process it is possible to send a Signal manually in "
 "the :guilabel:`Signals` page of the :ref:`designer-workflow-ui`."
-msgstr ""
-"プロセスの開発中に、 :ref:`designer-workflow-ui` の:guilabel:`シグナル` "
-"ページでシグナルを手動で送信できます。"
+msgstr ":guilabel:`Signals`プロセスの開発中に、 :ref:`designer-workflow-ui` の :guilabel:`Signals`ページでシグナルを手動で送信できます。"
 
 #: ../../source/concepts/adaptive-case-management.rst:303
 msgid "Receiving Signals"
@@ -3251,9 +3202,7 @@ msgid ""
 "Signals are received by Signal Boundary Events and Signal Start Events. "
 "Receivers can either register for an explicit signal code or a generic "
 ":ref:`signal-receive-patterns`."
-msgstr ""
-"シグナルは、シグナル境界イベントとシグナル開始イベントによって受信されます。レシーバーは、明示的なシグナルコード、一般的 :ref"
-":`signal-receive-patterns` のいずれかを登録できます。"
+msgstr "シグナルは、シグナル境界イベントとシグナル開始イベントによって受信されます。レシーバーは、明示的なシグナルコード、一般的 :ref:`signal-receive-patterns` のいずれかを登録できます。"
 
 #: ../../source/concepts/adaptive-case-management.rst:310
 #: ../../source/designer-guide/how-to/workflow/states.rst:153
@@ -3461,18 +3410,14 @@ msgstr "シグナルのトレース"
 msgid ""
 "Signals can be traced by using the :ref:`designer-workflow-ui`. It makes "
 "use of the Public API for Signals (``ivy.wf.signals()``)."
-msgstr ""
-"シグナルは、 :ref:`designer-workflow-ui` を使用してトレースできます。これには、シグナルのパブリック "
-"API（``ivy.wf.signals()``）を使用します。"
+msgstr "シグナルは、 :ref:`designer-workflow-ui` を使用してトレースできます。これには、シグナルのパブリック API（``ivy.wf.signals()``）を使用します。"
 
 #: ../../source/concepts/adaptive-case-management.rst:398
 msgid ""
 "For debugging the signal data of a Signal event you can set a :ref"
 ":`simulate-process-models-breakpoints` on a Signal Start or Signal "
 "Boundary Event and inspect the signal variable in the 'Variables' view."
-msgstr ""
-"シグナルイベントのシグナルデータをデバッグするには、シグナル開始イベントまたはシグナル境界イベント :ref:`simulate-process-"
-"models-breakpoints` を設定し、変数ビューでシグナル変数を精査します。"
+msgstr "シグナルイベントのシグナルデータをデバッグするには、シグナル開始イベントまたはシグナル境界イベント :ref:`simulate-process-models-breakpoints` を設定し、変数ビューでシグナル変数を精査します。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:4
 msgid "Application Lifecycle"
@@ -3805,9 +3750,7 @@ msgid ""
 "The error may be caught by an :ref:`process-element-error-boundary-event`"
 " attached to the activity or subprocess, or by an :ref:`process-element-"
 "error-start`."
-msgstr ""
-"エラーは、アクティビティやサブプロセスに接続され :ref:`process-element-error-boundary-event` 、または"
-" :ref:`process-element-error-start` によってキャッチできます。"
+msgstr "エラーは、アクティビティやサブプロセスに接続され :ref:`process-element-error-boundary-event` 、または :ref:`process-element-error-start` によってキャッチできます。"
 
 #: ../../source/concepts/error-handling.rst:21
 msgid ""
@@ -4049,9 +3992,7 @@ msgid ""
 "A :ref:`process-element-error-boundary-event` catches errors that have "
 "been thrown from the attaching activity or subprocess if the configured "
 "Error Code matches the received error code."
-msgstr ""
-"設定されたエラーコードが受信したエラーコードと一致する場合 :ref:`process-element-error-boundary-event`"
-" は、接続する側のアクティビティまたはサブプロセスからスローされたエラーをキャッチします。"
+msgstr "設定されたエラーコードが受信したエラーコードと一致する場合 :ref:`process-element-error-boundary-event` は、接続する側のアクティビティまたはサブプロセスからスローされたエラーをキャッチします。"
 
 #: ../../source/concepts/error-handling.rst:183
 msgid "Error Start Event"
@@ -4062,9 +4003,7 @@ msgid ""
 "A :ref:`process-element-error-start` catches unhandled errors which were "
 "thrown in the same process or inside a subprocess if the configured Error"
 " Code matches the thrown error."
-msgstr ""
-"設定されたエラーコードが受信したエラーコードと一致する場合 :ref:`process-element-error-start` "
-"は、同じプロセス内またはサブプロセス内でスローされた未処理のエラーをキャッチします。"
+msgstr "設定されたエラーコードが受信したエラーコードと一致する場合 :ref:`process-element-error-start` は、同じプロセス内またはサブプロセス内でスローされた未処理のエラーをキャッチします。"
 
 #: ../../source/concepts/error-handling.rst:192
 msgid "Loop Prevention"
@@ -4467,9 +4406,7 @@ msgstr "テンプレートは実行時に以下のように解決されます。
 msgid ""
 "Defined template on the :ref:`task element <process-element-tab-task-"
 "notification>` from the project CMS:"
-msgstr ""
-"プロジェクトの CMS  :ref:`タスク要素<process-element-tab-task-notification>` "
-"定義されたテンプレート："
+msgstr "プロジェクトの CMS  :ref:`タスク要素<process-element-tab-task-notification>` 定義されたテンプレート："
 
 #: ../../source/concepts/notification/index.rst:87
 #: ../../source/concepts/notification/index.rst:92
@@ -6501,9 +6438,7 @@ msgstr "Time``、``Date``、``DateTime``：short、medium、long、full"
 msgid ""
 "Formats are defined in :file:`config/formats.yaml` of your project. The "
 "following listing shows all available properties:"
-msgstr ""
-"フォーマットは、プロジェクトの :file:`config/formats.yaml` "
-"で定義します。以下のリストに利用可能なすべてのプロパティを示します。"
+msgstr "フォーマットは、プロジェクトの :file:`config/formats.yaml` で定義します。以下のリストに利用可能なすべてのプロパティを示します。"
 
 #: ../../source/designer-guide/configuration/index.rst:2
 #: ../../source/designer-guide/how-to/continuous-integration.rst:47
@@ -6546,11 +6481,7 @@ msgid ""
 "a new REST client. You can change it later. To ensure that renaming a "
 "REST client will not break the reference, refer to the REST client by its"
 " UUID only."
-msgstr ""
-"REST クライアントは、名前または UUID（Universally Unique Identifier）で参照できます。Axon Ivy "
-"では、UUID は新しい REST クライアントの作成時に生成され、変更されることはありません。新しい REST "
-"クライアントを作成する際に、REST クライアントの名前を定義します。この名前は後で変更できます。REST "
-"クライアントの名前を変更しても参照が壊れないようにするため、REST クライアントを UUID のみで参照してください。"
+msgstr "REST クライアントは、名前または UUID（Universally Unique Identifier）で参照できます。Axon Ivy では、UUID は新しい REST クライアントの作成時に生成され、変更されることはありません。新しい REST クライアントを作成する際に、REST クライアントの名前を定義します。この名前は後で変更できます。REST クライアントの名前を変更しても参照が壊れないようにするため、REST クライアントを UUID のみで参照してください。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:25
 msgid ""
@@ -6600,18 +6531,14 @@ msgstr "REST クライアントセクション"
 msgid ""
 ":guilabel:`UUID` Universal unique identifier of the REST client. The REST"
 " client can be referenced by this UUID. Cannot be modified."
-msgstr ""
-":guilabel:`UUID` REST クライアントの UUID。REST クライアントはこの UUID "
-"で参照できます。変更することはできません。"
+msgstr ":guilabel:`UUID` REST クライアントの UUID。REST クライアントはこの UUID で参照できます。変更することはできません。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:66
 msgid ""
 ":guilabel:`Name` The name of the REST client. You can refer to the REST "
 "client by this name. You can modify it. Note that references using the "
 "name will break if you change it."
-msgstr ""
-":guilabel:`名前` REST クライアントの名前。この名前で REST "
-"クライアントを参照できます。変更することもできます。この名前を変更すると、この名前を使用した参照が壊れてしまうことに注意してください。"
+msgstr ":guilabel:`名前` REST クライアントの名前。この名前で REST クライアントを参照できます。変更することもできます。この名前を変更すると、この名前を使用した参照が壊れてしまうことに注意してください。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:71
 msgid ""
@@ -6639,9 +6566,7 @@ msgstr ""
 msgid ""
 "The URI can contain template placeholders which are resolved later by the"
 " client user (e.g., https://api.twitter.com/{version})."
-msgstr ""
-"URI "
-"には、クライアントユーザーが後で解決するテンプレートプレースホルダーを含めることができます（例：https://api.twitter.com/{version}）。"
+msgstr "URI には、クライアントユーザーが後で解決するテンプレートプレースホルダーを含めることができます（例：https://api.twitter.com/{version}）。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:95
 msgid "OpenAPI Client Generator"
@@ -6653,10 +6578,7 @@ msgid ""
 "editor simplification features for specific calls with a :ref:`process-"
 "element-rest-client-activity`. Click the *Generate REST classes* button "
 "to start the wizard."
-msgstr ""
-"OpenAPI クライアントジェネレーターウィザードは :ref:`process-element-rest-client-activity` "
-"を含む特定の呼び出しの検証エディターとインスクリプションエディターの簡易機能を提供します。 *REST クラスの作成* "
-"ボタンをクリックすると、ウィザードが開始されます。"
+msgstr "OpenAPI クライアントジェネレーターウィザードは :ref:`process-element-rest-client-activity` を含む特定の呼び出しの検証エディターとインスクリプションエディターの簡易機能を提供します。 *REST クラスの作成* ボタンをクリックすると、ウィザードが開始されます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:102
 msgid "**OpenAPI Clients**"
@@ -6684,9 +6606,7 @@ msgstr "**前提条件**"
 msgid ""
 "To generate an `OpenAPI <https://swagger.io/docs/specification/about/>`__"
 " client, you need an OpenAPI 3.0 JSON service descriptor."
-msgstr ""
-"`OpenAPI <https://swagger.io/docs/specification/about/>`__ "
-"クライアントを生成するには、OpenAPI 3.0 JSONサービス記述子が必要です。"
+msgstr "`OpenAPI <https://swagger.io/docs/specification/about/>`__ クライアントを生成するには、OpenAPI 3.0 JSONサービス記述子が必要です。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:112
 msgid ""
@@ -6722,9 +6642,7 @@ msgid ""
 "If you have other types of service descriptions, you may have a look at "
 "`lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__. It is "
 "able to convert many other specification types to OpenAPI."
-msgstr ""
-"他のタイプのサービス記述がある場合は、 `lucybot <https://lucybot-inc.github.io/api-spec-"
-"converter/>`__ をチェックしてみてください。他の多くの仕様のタイプをOpenAPIに変換できます。"
+msgstr "他のタイプのサービス記述がある場合は、 `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__ をチェックしてみてください。他の多くの仕様のタイプをOpenAPIに変換できます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:135
 #: ../../source/designer-guide/configuration/webservice-clients.rst:77
@@ -6746,9 +6664,7 @@ msgid ""
 ":guilabel:`NTLM` Adds support for NTLM (Windows) authentication. "
 "Optionally, you can configure the ``NTLM.domain`` and the "
 "``NTLM.workstation`` in the properties section."
-msgstr ""
-":guilabel:`NTLM` NTLM（Windows）認証のサポートを追加します。任意で、プロパティセクションで "
-"``NTLM.domain`` と ``NTLM.workstation`` を設定できます。"
+msgstr ":guilabel:`NTLM` NTLM（Windows）認証のサポートを追加します。任意で、プロパティセクションで ``NTLM.domain`` と ``NTLM.workstation`` を設定できます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:148
 msgid ""
@@ -6917,11 +6833,7 @@ msgid ""
 "``{api.version}`` which re-occur on every instance of a call activity, "
 "you should set it as a global path property in the REST Client, rather "
 "than re-declaring it on every instance of the calling element."
-msgstr ""
-"プレフィックスに ``PATH.`` が付いたプロパティは、アクティビティを呼び出す際のリソースパスで使用されます。ターゲットリソースに "
-"``{api.version}`` "
-"のようなテンプレートが含まれており、呼び出しアクティビティのインスタンスごとに再表示される場合は、呼び出し元の要素のインスタンスごとに宣言し直すのではなく、REST"
-" クライアントでグローバルパスのプロパティとして設定する必要があります。"
+msgstr "プレフィックスに ``PATH.`` が付いたプロパティは、アクティビティを呼び出す際のリソースパスで使用されます。ターゲットリソースに ``{api.version}`` のようなテンプレートが含まれており、呼び出しアクティビティのインスタンスごとに再表示される場合は、呼び出し元の要素のインスタンスごとに宣言し直すのではなく、REST クライアントでグローバルパスのプロパティとして設定する必要があります。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:229
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-converters.rst:27
@@ -6964,7 +6876,7 @@ msgstr "2"
 msgid ""
 "The resolved URI would consequently be: "
 "``https://api.twitter.com/2/status/...``"
-msgstr "解決された URI は次のようになります：https://api.twitter.com/2/status/...``"
+msgstr "解決された URI は次のようになります：``https://api.twitter.com/2/status/...``"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:244
 msgid "**Connection Properties**"
@@ -7455,9 +7367,7 @@ msgid ""
 ":file:`variables.yaml`. If you make manual changes to "
 ":file:`variables.yaml`, pay attention to the following points to prevent "
 "the loss of data:"
-msgstr ""
-"変数エディターは :file:`variables.yaml` の内容を解釈し、書式設定します。file:`variables.yaml` "
-"を手動で変更する場合は、データの損失を防ぐため、以下の点に注意してください。"
+msgstr "変数エディターは :file:`variables.yaml` の内容を解釈し、書式設定します。:file:`variables.yaml` を手動で変更する場合は、データの損失を防ぐため、以下の点に注意してください。"
 
 #: ../../source/designer-guide/configuration/variables.rst:108
 msgid "Make sure the content is valid YAML."
@@ -7467,9 +7377,7 @@ msgstr "コンテンツが有効な YAML であることを確認します。"
 msgid ""
 "Make sure :file:`variables.yaml` contains exactly one top-level key with "
 "the name :code:`Variables`."
-msgstr ""
-":file:`variables.yaml` に :code:`Variables` という名前の最上位キーが 1 "
-"つだけ含まれていることを確認します。"
+msgstr ":file:`variables.yaml` に :code:`Variables` という名前の最上位キーが 1 つだけ含まれていることを確認します。"
 
 #: ../../source/designer-guide/configuration/variables.rst:111
 msgid "Only put comments at the start or end of the file or before a Variable."
@@ -7566,9 +7474,7 @@ msgid ""
 ":guilabel:`Icon` Choose an icon that represents the system that this web "
 "service communicates with. The icon will also be used as decorator icon "
 "on Web Service process elements that references this web service."
-msgstr ""
-":guilabel:`アイコン` この Web サービスが通信するシステムを表すアイコンを選択します。このアイコンは、この Web "
-"サービスを参照する Web サービスプロセス要素のデコレーターアイコンとしても使用されます。"
+msgstr ":guilabel:`アイコン` この Web サービスが通信するシステムを表すアイコンを選択します。このアイコンは、この Web サービスを参照する Web サービスプロセス要素のデコレーターアイコンとしても使用されます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:49
 msgid ""
@@ -7581,10 +7487,7 @@ msgid ""
 ":guilabel:`WSDL URL` Service details and classes will be generated using "
 "the WSDL specified here. Please **use protocol prefixes** like: "
 "https://myserver.ch/hello.wsdl or file:/c:/temp/myWis.wsdl"
-msgstr ""
-":guilabel:`WSDL URL` サービスの詳細とクラスは、ここで指定された WSDL "
-"を使用して生成されます。https://myserver.ch/hello.wsdl、file:/c:/temp/myWis.wsdl "
-"のような**プロトコルのプレフィックスを使用** してください。"
+msgstr ":guilabel:`WSDL URL` サービスの詳細とクラスは、ここで指定された WSDL を使用して生成されます。https://myserver.ch/hello.wsdl、file:/c:/temp/myWis.wsdl のような**プロトコルのプレフィックスを使用** してください。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:58
 msgid ""
@@ -7613,9 +7516,7 @@ msgid ""
 "functionality or data structure of the Service) or the "
 ":guilabel:`Library` setting, you **must** re-generate the service "
 "classes."
-msgstr ""
-":guilabel:`WSDL URL`、:guilabel:`WSDL`（サービスの機能やデータ構造）、:guilabel:`ライブラリ` "
-"の設定を変更した場合は、サービスクラスを再度生成する必要があります。"
+msgstr ":guilabel:`WSDL URL`、:guilabel:`WSDL`（サービスの機能やデータ構造）、:guilabel:`Library`の設定を変更した場合は、サービスクラスを再度生成する必要があります。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:84
 msgid ""
@@ -7648,10 +7549,7 @@ msgid ""
 "overridden in the :ref:`process-element-web-service-call-activity` that "
 "performs the call to the remote service. In these activities, "
 "authentication properties can contain scripted or dynamic values."
-msgstr ""
-"認証プロパティ（``ユーザー名``、``パスワード`` など）は、リモートサービスを呼び出す :ref:`process-element-web-"
-"service-call-activity` "
-"でオーバーライドできます。これらのアクティビティでは、認証プロパティにスクリプト化された値や動的な値を含めることができます。"
+msgstr "認証プロパティ（``ユーザー名``、``パスワード`` など）は、リモートサービスを呼び出す :ref:`process-element-web-service-call-activity` でオーバーライドできます。これらのアクティビティでは、認証プロパティにスクリプト化された値や動的な値を含めることができます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:118
 msgid ""
@@ -7666,12 +7564,7 @@ msgid ""
 "`javax.xml.ws.WebServiceFeature "
 "<https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/WebServiceFeature.html>`__"
 " or ``ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature``."
-msgstr ""
-":guilabel:`追加` 新しい機能クラスをリストに追加します。指定されたすべての機能クラスは JAX-WS 標準クラス "
-"`javax.xml.ws.WebServiceFeature "
-"<https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/WebServiceFeature.html>`__"
-" または ``ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature`` "
-"を実装する必要があります。"
+msgstr ":guilabel:`追加` 新しい機能クラスをリストに追加します。指定されたすべての機能クラスは JAX-WS 標準クラス `javax.xml.ws.WebServiceFeature <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/WebServiceFeature.html>`__ または ``ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature`` を実装する必要があります。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:128
 msgid ":guilabel:`Remove` Removes the selected feature class from the list."
@@ -7682,10 +7575,7 @@ msgid ""
 "Properties configure the web service client and its features. Some well "
 "known properties are documented here: `javax.xml.ws.BindingProvider "
 "<https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/BindingProvider.html>`__"
-msgstr ""
-"Web サービスクライアントとその機能を設定します。主要なプロパティは、：javax.xml.ws.BindingProvider "
-"<https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/BindingProvider.html>`__"
-" に記載されています。"
+msgstr "Web サービスクライアントとその機能を設定します。主要なプロパティは、：javax.xml.ws.BindingProvider <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/BindingProvider.html>`__ に記載されています。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:158
 msgid ""
@@ -7693,9 +7583,7 @@ msgid ""
 "need to specify the property *SSL.keyAlias*. The value of this alias "
 "needs to correspond with a key alias available in the client keystore "
 "configured in :ref:`engine-cockpit-ssl`."
-msgstr ""
-"Web サービスの SSL クライアント認証を設定するには、*SSL.keyAlias* プロパティを指定する必要があります。このエイリアスの値は"
-" :ref:`engine-cockpit-ssl` で設定されたクライアントキーストアで利用可能なキーエイリアスに対応する必要があります。"
+msgstr "Web サービスの SSL クライアント認証を設定するには、*SSL.keyAlias* プロパティを指定する必要があります。このエイリアスの値は :ref:`engine-cockpit-ssl` で設定されたクライアントキーストアで利用可能なキーエイリアスに対応する必要があります。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:164
 msgid "Endpoint URIs Section ~~~~~~~~~~~~~-~~~~~~~"
@@ -7716,9 +7604,7 @@ msgid ""
 " classes generation. (see: Generate WS classes). The content of this list"
 " originates from the specified WSDL and is populated with information "
 "from the client framework."
-msgstr ""
-":guilabel:`ポート` ポートのリストは Web サービスクライアントクラスの生成後に利用できます（参照：WS "
-"クラスの生成）。このリストの内容は、指定された WSDL を元に作成され、クライアントフレームワークからの情報が入力されます。"
+msgstr ":guilabel:`ポート` ポートのリストは Web サービスクライアントクラスの生成後に利用できます（参照：WS クラスの生成）。このリストの内容は、指定された WSDL を元に作成され、クライアントフレームワークからの情報が入力されます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:181
 msgid ""
@@ -7750,9 +7636,7 @@ msgid ""
 "This list is optional. If this list is empty and no default URI is "
 "specified then an exception is raised during the call; the process "
 "continues with error handling."
-msgstr ""
-"このリストは任意です。このリストが空で、デフォルト URI "
-"が指定されていない場合、呼び出し中に例外が発生し、エラー処理によりプロセスが継続されます。"
+msgstr "このリストは任意です。このリストが空で、デフォルト URI が指定されていない場合、呼び出し中に例外が発生し、エラー処理によりプロセスが継続されます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:199
 msgid "Dynamic Endpoint URIs"
@@ -8184,9 +8068,7 @@ msgid ""
 "The method ``get`` works as follows: If a BusinessData object is already "
 "associated with the current business case, this object is loaded. If not,"
 " a new BusinessData object is created instead."
-msgstr ""
-"``get`` "
-"メソッドは次のように動作します：ビジネスデータオブジェクトがすでに現在のビジネスケースに関連付けられている場合、このオブジェクトが読み込まれます。そうでない場合は、代わりに新しいビジネスデータオブジェクトが作成されます。"
+msgstr "``get`` メソッドは次のように動作します：ビジネスデータオブジェクトがすでに現在のビジネスケースに関連付けられている場合、このオブジェクトが読み込まれます。そうでない場合は、代わりに新しいビジネスデータオブジェクトが作成されます。"
 
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:36
 msgid ""
@@ -8230,9 +8112,7 @@ msgstr "検索"
 msgid ""
 "The search capabilities of the Business Data Store are based on "
 "`OpenSearch <https://opensearch.org/>`__ and therefore fast and powerful."
-msgstr ""
-"ビジネスデータストアの検索機能は、`OpenSearch <https://opensearch.org/>`__ "
-"をベースにしているため、高速で強力です。"
+msgstr "ビジネスデータストアの検索機能は、`OpenSearch <https://opensearch.org/>`__ をベースにしているため、高速で強力です。"
 
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:77
 msgid ""
@@ -8258,6 +8138,7 @@ msgid ""
 msgstr "デフォルトでは、検索結果は 10 件に制限されています。より多くの検索結果を得たい場合は、``limit`` メソッドを使用してください。"
 
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:110
+#, fuzzy
 msgid "Store with own Id"
 msgstr "独自の ID の格納"
 
@@ -8450,9 +8331,7 @@ msgid ""
 "If you open an Entity Class, additional properties are configurable in "
 "this editor. They are documented in the :ref:`persistence-entity-class-"
 "editor`."
-msgstr ""
-"エンティティクラスを開くと、追加のプロパティをこのエディターで設定できます。追加のプロパティ :ref:`persistence-entity-"
-"class-editor` に記載されています。"
+msgstr "エンティティクラスを開くと、追加のプロパティをこのエディターで設定できます。追加のプロパティ :ref:`persistence-entity-class-editor` に記載されています。"
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:81
 msgid ""
@@ -8954,9 +8833,7 @@ msgid ""
 "Defines the association to another Entity Class. For a bidirectional "
 "relationship, an inverse association with a mapped-by specification must "
 "be configured on the referenced Entity Class."
-msgstr ""
-"別のエンティティクラスとのアソシエーションを定義します。双方向リレーションシップでは、参照されるエンティティクラスに mapped-by "
-"指定の逆アソシエーションを設定する必要があります。"
+msgstr "別のエンティティクラスとのアソシエーションを定義します。双方向リレーションシップでは、参照されるエンティティクラスに mapped-by 指定の逆アソシエーションを設定する必要があります。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:72
 msgid "Cardinality"
@@ -8988,10 +8865,7 @@ msgid ""
 "Entity Class. Only allowed if the Attribute type is a ``List`` or ``Set``"
 " of an Entity Class. This association type always requires a mapped-by "
 "specification since it is the inverse of a Many-to-One association."
-msgstr ""
-"**One-to-Many** ：別のエンティティクラスへの 1 対多（1:n）のアソシエーションを定義します。属性タイプがエンティティクラスの "
-"``List`` または ``Set`` である場合にのみ許可されます。このアソシエーションタイプは多対 1 のアソシエーションの逆であるため"
-"、常にmapped-by 指定が必要です。"
+msgstr "**One-to-Many** ：別のエンティティクラスへの 1 対多（1:n）のアソシエーションを定義します。属性タイプがエンティティクラスの ``List`` または ``Set`` である場合にのみ許可されます。このアソシエーションタイプは多対 1 のアソシエーションの逆であるため、常にmapped-by 指定が必要です。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:87
 msgid ""
@@ -9054,18 +8928,13 @@ msgid ""
 "setting the relationship to null), the orphaned Entity will be removed. "
 "If the orphaned Entity is a detached, new, or removed Entity, the "
 "semantics do not apply."
-msgstr ""
-"有効にした場合、リレーションシップのターゲットであるエンティティがリレーションシップから削除されると（コレクションから削除、またはリレーションシップを"
-" NULL "
-"に設定）、孤立したエンティティが削除されます。孤立したエンティティが切り離されたエンティティ、新しいエンティティ、または削除されたエンティティである場合、セマンティクスは適用されません。"
+msgstr "有効にした場合、リレーションシップのターゲットであるエンティティがリレーションシップから削除されると（コレクションから削除、またはリレーションシップを NULL に設定）、孤立したエンティティが削除されます。孤立したエンティティが切り離されたエンティティ、新しいエンティティ、または削除されたエンティティである場合、セマンティクスは適用されません。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:117
 msgid ""
 "If enabled and the remove operation is applied to the source Entity, the "
 "remove operation will be propagated as defined in the cascade section."
-msgstr ""
-"有効にした場合、remove オペレーションがソースエンティティに適用されると、remove オペレーションは Cascade "
-"セクションで定義されているように伝搬されます。"
+msgstr "有効にした場合、remove オペレーションがソースエンティティに適用されると、remove オペレーションは Cascade セクションで定義されているように伝搬されます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:120
 msgid ""
@@ -9126,13 +8995,7 @@ msgid ""
 "delete (CRUD) entity objects directly from/to the database using either "
 "the :ref:`persistence-api` or more conveniently with the entity's :ref"
 ":`data-repository-api`."
-msgstr ""
-"エンティティクラスはグローバル :ref:`data-classes` "
-"に似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。エンティティクラスはデータベーステーブルに直接マッピングされ、エンティティクラスの属性はデータベーステーブルのフィールドに直接マッピングされます。したがって、:ref:`database"
-" schema can be generated <persistence-generate-database-schema>` "
-"はエンティティクラスから直接生成できます。データベースに対してエンティティオブジェクトの作成、読み取り、更新、削除（CRUD）を直接実行することが可能です。これは、"
-" :ref:`persistence-api` を使用するか、より便利な方法としてエンティティの :ref:`data-repository-"
-"api` を利用して行えます。"
+msgstr "エンティティクラスはグローバル :ref:`data-classes` に似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。エンティティクラスはデータベーステーブルに直接マッピングされ、エンティティクラスの属性はデータベーステーブルのフィールドに直接マッピングされます。したがって、:ref:`database schema can be generated <persistence-generate-database-schema>` はエンティティクラスから直接生成できます。データベースに対してエンティティオブジェクトの作成、読み取り、更新、削除（CRUD）を直接実行することが可能です。これは、 :ref:`persistence-api` を使用するか、より便利な方法としてエンティティの :ref:`data-repository-api` を利用して行えます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-classes.rst:16
 msgid ""
@@ -9141,10 +9004,7 @@ msgid ""
 "class-editor`. Both are similar to the wizard and editor for regular Data"
 " Classes but allow for the specification of additional settings necessary"
 " for automated persistence."
-msgstr ""
-"エンティティクラスは :ref:`persistence-entity-class-new-wizard` で作成され :ref"
-":`persistence-entity-class-editor` "
-"で編集できます。どちらも通常のデータクラスのウィザードとエディターに似ていますが、自動永続化に必要な追加設定を指定できます。"
+msgstr "エンティティクラスは :ref:`persistence-entity-class-new-wizard` で作成され :ref:`persistence-entity-class-editor` で編集できます。どちらも通常のデータクラスのウィザードとエディターに似ていますが、自動永続化に必要な追加設定を指定できます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/generate-database-schema.rst:4
 msgid "Generate database schema"
@@ -9233,11 +9093,7 @@ msgid ""
 "to generate the primary keys. If you want to use the auto increment "
 "approach of your database management system you can use the "
 ":code:`org.hibernate.annotations.NativeGenerator` annotation."
-msgstr ""
-"Jakarta Persistence API の実装ライブラリである Hibernate "
-"は、デフォルトで主キー列にシーケンスを使用します。これは、各テーブルに対して :code:`<table-name>_SEQ` "
-"というシーケンスを作成し、主キー生成に利用することを意味します。データベース管理システムのオートインクリメント方式を使用したい場合は、:code:`org.hibernate.annotations.NativeGenerator`"
-" アノテーションを使用できます。"
+msgstr "Jakarta Persistence API の実装ライブラリである Hibernate は、デフォルトで主キー列にシーケンスを使用します。これは、各テーブルに対して :code:`<table-name>_SEQ` というシーケンスを作成し、主キー生成に利用することを意味します。データベース管理システムのオートインクリメント方式を使用したい場合は、:code:`org.hibernate.annotations.NativeGenerator` アノテーションを使用できます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:6
 msgid ""
@@ -9248,13 +9104,7 @@ msgid ""
 "Java Persistence API or JPA) and the `Jakarta Data API "
 "<https://jakarta.ee/specifications/data/>`__. It offers support for "
 "storing and retrieving business objects to and from a database."
-msgstr ""
-"この章では、Axon Ivy の :ref:`persistence-configuration-editor` および :ref"
-":`persistence-api` を紹介します。永続性フレームワークは `Jakarta Persistence API "
-"<https://jakarta.ee/specifications/persistence>`__（Java Persistence API "
-"または JPA としても知られる）および `Jakarta Data API "
-"<https://jakarta.ee/specifications/data/>`__ "
-"をベースにしており、ビジネスオブジェクトのデータベースへの格納とデータベースからの読み込みをサポートします。"
+msgstr "この章では、Axon Ivy の :ref:`persistence-configuration-editor` および :ref:`persistence-api` を紹介します。永続性フレームワークは `Jakarta Persistence API <https://jakarta.ee/specifications/persistence>`__（Java Persistence API または JPA としても知られる）および `Jakarta Data API <https://jakarta.ee/specifications/data/>`__ をベースにしており、ビジネスオブジェクトのデータベースへの格納とデータベースからの読み込みをサポートします。"
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:13
 msgid ""
@@ -9263,9 +9113,7 @@ msgid ""
 "class is similar to a data class (i.e., a business object) but holds "
 "additional information that is used to map the class to a database table "
 "and its attributes to database table columns."
-msgstr ""
-"ビジネスプロセスやユーザーダイアログプロセスで自動永続化を使用するには、最初 :ref:`persistence-entity-classes` "
-"を定義する必要があります。エンティティクラスはデータクラス（ビジネスオブジェクト）に似ていますが、クラスをデータベース表、その属性をデータベース表の列にマッピングするための追加情報を保持しています。"
+msgstr "ビジネスプロセスやユーザーダイアログプロセスで自動永続化を使用するには、最初 :ref:`persistence-entity-classes` を定義する必要があります。エンティティクラスはデータクラス（ビジネスオブジェクト）に似ていますが、クラスをデータベース表、その属性をデータベース表の列にマッピングするための追加情報を保持しています。"
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:19
 msgid ""
@@ -9665,9 +9513,7 @@ msgid ""
 "underscore (_) stands for any single character, a percent (%) character "
 "stands for any sequence of characters (including the empty sequence), and"
 " all other characters stand for themselves:"
-msgstr ""
-"LIKE 演算子は、文字列値を入力パラメーターとして受けます。アンダースコア（_）は任意の 1 "
-"文字を表し、パーセント（%）文字は任意の文字列（空の文字列を含む）を表し、それ以外のすべての文字は自身を表します。"
+msgstr "LIKE 演算子は、文字列値を入力パラメーターとして受けます。アンダースコア（_）は任意の 1 文字を表し、パーセント（%）文字は任意の文字列（空の文字列を含む）を表し、それ以外のすべての文字は自身を表します。"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:370
 msgid "Logical operators (NOT, AND, OR):"
@@ -9761,9 +9607,7 @@ msgid ""
 "Another common expression is concatenation, although SQL dialects are "
 "different here, JPA QL support a portable concat(string1, string2) "
 "function:"
-msgstr ""
-"もう一つの一般的な式は連結です。SQL の方言は異なりますが、JPA QL は移植性の高い concat(文字列1, 文字列2) "
-"関数をサポートしています。"
+msgstr "もう一つの一般的な式は連結です。SQL の方言は異なりますが、JPA QL は移植性の高い concat(文字列1, 文字列2) 関数をサポートしています。"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:435
 msgid "Size of a collection (SIZE(collection)):"
@@ -13342,9 +13186,7 @@ msgid ""
 "handing, intermediate events, or user aborts. To learn more about task "
 "states, refer to the enumeration ``ch.ivyteam.ivy.workflow.TaskState`` in"
 " public API."
-msgstr ""
-"タスクの同期、エラー処理、中間イベント、ユーザーによる中断など、他にも多くのタスクの状態があります。タスクの状態の詳細については、パブリック "
-"API の ``ch.ivyteam.ivy.workflow.TaskState`` 列挙を参照してください。"
+msgstr "タスクの同期、エラー処理、中間イベント、ユーザーによる中断など、他にも多くのタスクの状態があります。タスクの状態の詳細については、パブリック API の ``ch.ivyteam.ivy.workflow.TaskState`` 列挙を参照してください。"
 
 #: ../../source/designer-guide/index.rst:4
 msgid "Designer Guide"
@@ -13404,10 +13246,7 @@ msgid ""
 "displayed for *delete* or *move* refactorings, i.e. if the artifact will "
 "no longer exist in the scope of any callers that referred to it before "
 "the operation."
-msgstr ""
-"*2 ページ目*には、オペレーションの実行後に**破壊される参照のリスト** "
-"が表示されます。破壊された参照が検出されなかった場合、このページは表示されません。このページは、*削除* または *移動* "
-"リファクタリング、つまり、オペレーションの前に参照した呼び出し元のスコープにアーティファクトが存在しなくなる場合にのみ表示されます。"
+msgstr "*2 ページ目*には、オペレーションの実行後に**破壊される参照のリスト** が表示されます。破壊された参照が検出されなかった場合、このページは表示されません。このページは、*削除* または *移動* リファクタリング、つまり、オペレーションの前に参照した呼び出し元のスコープにアーティファクトが存在しなくなる場合にのみ表示されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:37
 #: ../../source/designer-guide/introduction/common-ui-components.rst:41
@@ -13421,9 +13260,7 @@ msgid ""
 "refactoring and possibly a preview of any old and new resources that will"
 " be created. You may individually deselect any operations, they will then"
 " not be executed when you press *Finish*."
-msgstr ""
-"*3 ページ目*には、選択したリファクタリングの結果として実行される**オペレーションの詳細リスト** "
-"が表示されます。古いリソースと作成される新しいリソースのプレビューが表示される場合もあります。個別にオペレーションの選択を解除することもできますが、その場合は［*終了*］をクリックしても実行されません。"
+msgstr "*3 ページ目*には、選択したリファクタリングの結果として実行される**オペレーションの詳細リスト** が表示されます。古いリソースと作成される新しいリソースのプレビューが表示される場合もあります。個別にオペレーションの選択を解除することもできますが、その場合は［*終了*］をクリックしても実行されません。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:51
 msgid ""
@@ -13444,9 +13281,7 @@ msgid ""
 "pages. As soon as the *Finish* button is enabled (this may not be the "
 "case, if some required input is missing on the first page), you may press"
 " it and execute the operation immediately."
-msgstr ""
-"［*次へ*］ボタンと［*戻る*］ボタンをクリックして、ページから別のページへ移動できますが、3 "
-"つのページをすべて見る必要はありません。［*終了*］ボタンが有効になったらすぐに（最初のページで必要な入力が行われていない場合は、この限りではありません）、ボタンをクリックしてオペレーションを実行できます。"
+msgstr "［*次へ*］ボタンと［*戻る*］ボタンをクリックして、ページから別のページへ移動できますが、3 つのページをすべて見る必要はありません。［*終了*］ボタンが有効になったらすぐに（最初のページで必要な入力が行われていない場合は、この限りではありません）、ボタンをクリックしてオペレーションを実行できます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:75
 #: ../../source/designer-guide/introduction/common-ui-components.rst:77
@@ -13466,9 +13301,7 @@ msgid ""
 "references to the renamed artifact (within the current workspace) will be"
 " updated automatically. Otherwise, no callers or references will be "
 "updated, which will possibly result in broken references."
-msgstr ""
-"［*参照を更新*] "
-"チェックボックスをオンにしたままにすると、（現在のワークスペース内にある）名前を変更したアーティファクトへの既存の参照がすべて自動的に更新されます。そうしない場合、呼び出し元も参照も更新されないため、参照が破壊される可能性があります。"
+msgstr "［*参照を更新*] チェックボックスをオンにしたままにすると、（現在のワークスペース内にある）名前を変更したアーティファクトへの既存の参照がすべて自動的に更新されます。そうしない場合、呼び出し元も参照も更新されないため、参照が破壊される可能性があります。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:93
 msgid ""
@@ -13482,9 +13315,7 @@ msgstr "プロセスの名前空間はスラッシュ「/」で区切られ（�
 msgid ""
 "Click on :guilabel:`Finish` to actually rename the selected resource(s) "
 "or on :guilabel:`Cancel` to abort the operation."
-msgstr ""
-":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に変更されます。:guilabel:`キャンセル` "
-"をクリックすると、操作が中止されます。"
+msgstr ":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に変更されます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:105
 #: ../../source/designer-guide/introduction/common-ui-components.rst:107
@@ -13502,9 +13333,7 @@ msgstr "表示されたリストから、移動操作の移動先のプロジェ
 msgid ""
 "Click on :guilabel:`Finish` to actually move the selected resource(s) to "
 "the selected project or on :guilabel:`Cancel` to abort the operation."
-msgstr ""
-":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に移動されます。:guilabel:`キャンセル` "
-"をクリックすると、操作が中止されます。"
+msgstr ":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に移動されます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:123
 #: ../../source/designer-guide/introduction/common-ui-components.rst:125
@@ -13531,9 +13360,7 @@ msgstr ""
 msgid ""
 "Click on :guilabel:`Finish` to actually delete the selected resource(s) "
 "or on :guilabel:`Cancel` to abort the operation."
-msgstr ""
-":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に削除されます。:guilabel:`キャンセル` "
-"をクリックすると、操作が中止されます。"
+msgstr ":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に削除されます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:146
 #: ../../source/designer-guide/introduction/common-ui-components.rst:148
@@ -16870,9 +16697,7 @@ msgid ""
 "The code tab is part of almost all inscription masks and allows the user "
 "to define the semantics (behavior) of the corresponding process element "
 "with the built-in :ref:`ivyscript`."
-msgstr ""
-"コードタブは、ほぼすべてのインスクリプションマスクの一部であり、ユーザーは、組み込まれた :ref:`ivyscript` "
-"を使用して、対応するプロセス要素のセマンティクス（動作）を定義できます。"
+msgstr "コードタブは、ほぼすべてのインスクリプションマスクの一部であり、ユーザーは、組み込まれた :ref:`ivyscript` を使用して、対応するプロセス要素のセマンティクス（動作）を定義できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:128
 msgid "Code Editor"
@@ -16883,9 +16708,7 @@ msgid ""
 "You can write IvyScript code snippets into many parts of the inscription."
 " The editor supports code completion and error highlighting. Red "
 "underlined code indicates an error."
-msgstr ""
-"インスクリプションの多くの部分に IvyScript "
-"のコードスニペットを書き込むことができます。エディターは、コード補完とエラーの強調表示をサポートしており、赤色の下線でエラーを示します。"
+msgstr "インスクリプションの多くの部分に IvyScript のコードスニペットを書き込むことができます。エディターは、コード補完とエラーの強調表示をサポートしており、赤色の下線でエラーを示します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:135
 msgid "For more information about IvyScript, see :ref:`ivyscript`."
@@ -16909,9 +16732,7 @@ msgstr "maximize-action"
 msgid ""
 "|search-action| Open the :ref:`process-inscription-browsers` to select "
 "contents from your project environment."
-msgstr ""
-"|search-action| プロジェクト環境からコンテンツを選択するため :ref:`process-inscription-"
-"browsers` を開きます。"
+msgstr "|search-action| プロジェクト環境からコンテンツを選択するため :ref:`process-inscription-browsers` を開きます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:142
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:137
@@ -16937,10 +16758,7 @@ msgid ""
 "process. The signature is a definition of the name with the parameter "
 "types and its order. Elements like :ref:`process-element-call-sub` or "
 ":ref:`process-element-trigger-step` are referenced to this signature."
-msgstr ""
-"開始タブでは、プロセスを開始するための名前と入力パラメーターを定義します。シグネチャは、パラメーターの型とその順番を含む名前の定義です :ref"
-":`process-element-call-sub` :ref:`process-element-trigger-step` "
-"のような要素は、このシグネチャを参照します。"
+msgstr "開始タブでは、プロセスを開始するための名前と入力パラメーターを定義します。シグネチャは、パラメーターの型とその順番を含む名前の定義です :ref:`process-element-call-sub` :ref:`process-element-trigger-step` のような要素は、このシグネチャを参照します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:164
 #: ../../source/designer-guide/reference/glossary.rst:133
@@ -16985,9 +16803,7 @@ msgid ""
 "The input parameters defined above are available as fields on the "
 "``param`` variable. You can assign the parameter values to the internal "
 "data fields in the table."
-msgstr ""
-"上で定義した入力パラメーターを ``param`` "
-"変数のフィールドとして利用できます。パラメーター値を表の内部データフィールドに割り当てることができます。"
+msgstr "上で定義した入力パラメーターを ``param`` 変数のフィールドとして利用できます。パラメーター値を表の内部データフィールドに割り当てることができます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:189
 msgid ""
@@ -17050,9 +16866,7 @@ msgid ""
 " when the process ends. All logic in this tab will be executed when the "
 "end element is reached. E.g., when the :ref:`process-element-user-dialog-"
 "exit-end` is reached."
-msgstr ""
-"このタブを使用して、プロセス終了時に呼び出し元に返される値を定義します。 :ref:`process-element-user-dialog-"
-"exit-end` に達するなど、終了要素に達すると、このタブ内のすべてのロジックが実行されます。"
+msgstr "このタブを使用して、プロセス終了時に呼び出し元に返される値を定義します。 :ref:`process-element-user-dialog-exit-end` に達するなど、終了要素に達すると、このタブ内のすべてのロジックが実行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:235
 msgid "Output Parameters"
@@ -17075,9 +16889,7 @@ msgid ""
 "For each defined output parameter you must now specify the value that "
 "will be returned. In most cases, this is a process attribute. However you"
 " may specify any valid IvyScript expression."
-msgstr ""
-"定義された出力パラメーターごとに、返される値を指定する必要があります。ほとんどの場合、プロセス属性を指定しますが、有効な IvyScript "
-"式を指定することもできます。"
+msgstr "定義された出力パラメーターごとに、返される値を指定する必要があります。ほとんどの場合、プロセス属性を指定しますが、有効な IvyScript 式を指定することもできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:246
 msgid "Using the defined return parameters"
@@ -17087,9 +16899,7 @@ msgstr "定義された戻りパラメーターの使用"
 msgid ""
 "The declared return parameters are shown in the table as fields of a "
 "``result`` variable (none if the defined return value is ``void``)."
-msgstr ""
-"宣言された戻りパラメーターは、``result`` 変数のフィールドとして表に表示されます（定義された戻り値が ``void`` "
-"の場合は表示されません）。"
+msgstr "宣言された戻りパラメーターは、``result`` 変数のフィールドとして表に表示されます（定義された戻り値が ``void`` の場合は表示されません）。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-data-cache.rst:2
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:254
@@ -17133,9 +16943,7 @@ msgid ""
 "*Group/Entry* part. If found, the cached value is returned and the "
 "execution of the element ends. If not found, the element is executed "
 "normally, but in the end the result is stored in the data cache."
-msgstr ""
-"**キャッシュ** "
-"：データキャッシュメカニズムを使用して、要素を実行します。最初に、下の*グループ／エントリ*部分に記載されたエントリをデータキャッシュ全体で検索します。見つかった場合は、キャッシュされた値が返され、要素の実行が終了します。見つからなかった場合、要素は通常どおりに実行され、最後に結果がデータキャッシュに保存されます。"
+msgstr "**キャッシュ** ：データキャッシュメカニズムを使用して、要素を実行します。最初に、下の*グループ／エントリ*部分に記載されたエントリをデータキャッシュ全体で検索します。見つかった場合は、キャッシュされた値が返され、要素の実行が終了します。見つからなかった場合、要素は通常どおりに実行され、最後に結果がデータキャッシュに保存されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:280
 msgid ""
@@ -17143,9 +16951,7 @@ msgid ""
 "specified in the *Group/Entry* part. Use this when your element performs "
 "a write operation that changes data which is cached. The step is executed"
 " normally, but in addition the specified data cache entry is invalidated."
-msgstr ""
-"**キャッシュを無効にする** ： *グループ／エントリ* "
-"部分で指定されたデータキャッシュエントリを明示的に無効にします。キャッシュされているデータを変更する書き込み操作を要素が実行する場合に使用します。ステップは通常どおりに実行されますが、指定されたデータキャッシュエントリが無効になります。"
+msgstr "**キャッシュを無効にする** ： *グループ／エントリ* 部分で指定されたデータキャッシュエントリを明示的に無効にします。キャッシュされているデータを変更する書き込み操作を要素が実行する場合に使用します。ステップは通常どおりに実行されますが、指定されたデータキャッシュエントリが無効になります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:287
 msgid "Cache entries are always bound to their scope."
@@ -17156,9 +16962,7 @@ msgid ""
 "**Session**: the cache entry is linked to the currently logged in user "
 "(i.e., is specific for each user and is invalidated when the user logs "
 "out)."
-msgstr ""
-"**セッション** "
-"：キャッシュエントリは現在ログインしているユーザーにリンクされます（つまり、ユーザーごとに固有で、ユーザーがログアウトすると無効になります）。"
+msgstr "**セッション** ：キャッシュエントリは現在ログインしているユーザーにリンクされます（つまり、ユーザーごとに固有で、ユーザーがログアウトすると無効になります）。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:293
 msgid "**Application**: the cache entry is linked to the Application"
@@ -17193,11 +16997,7 @@ msgid ""
 "configurable period of time (In seconds, e.g., :code:`3600` for one "
 "hour). Invalidating a group always means to remove all its entries from "
 "the cache."
-msgstr ""
-"**ライフタイム** ：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット "
-":code:`\"HH:mms:ss\"` が設定された文字列、例： :code:`\"23:50:00\"` "
-"）、または設定可能な期間（秒単位、例えば :code:`3600` "
-"は1時間）後に、グループを無効にすることができます。グループが無効化されると、常にキャッシュからすべてのエントリが削除されます。"
+msgstr "**ライフタイム** ：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット :code:`\"HH:mms:ss\"` が設定された文字列、例： :code:`\"23:50:00\"` ）、または設定可能な期間（秒単位、例えば :code:`3600` は1時間）後に、グループを無効にすることができます。グループが無効化されると、常にキャッシュからすべてのエントリが削除されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:315
 msgid "Entry"
@@ -17209,9 +17009,7 @@ msgid ""
 "multiple entries with the same name in different groups. Use always the "
 "same entry names (as well for the group) if you want to use the same data"
 " cache entry in multiple process steps."
-msgstr ""
-"**名前** "
-"：グループ内では一意でなければなりませんが、異なるグループであれば同じ名前のエントリを複数設定できます。複数のプロセスステップで同じデータキャッシュエントリを使用する場合は、必ず同じエントリ名（とグループ）を使用してください。"
+msgstr "**名前** ：グループ内では一意でなければなりませんが、異なるグループであれば同じ名前のエントリを複数設定できます。複数のプロセスステップで同じデータキャッシュエントリを使用する場合は、必ず同じエントリ名（とグループ）を使用してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:321
 msgid ""
@@ -17220,10 +17018,7 @@ msgid ""
 "(String with time format :code:`\"HH:mm:ss\"`, e.g., "
 ":code:`\"23:50:00\"`) or after a configurable period of time (In seconds,"
 " e.g., :code:`3600` for one hour)."
-msgstr ""
-"**ライフタイム** ：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット "
-":code:`\"HH:mms:ss\"` が設定された文字列、例： :code:`\"23:50:00\"` "
-"）、または設定可能な期間（秒単位、例えば :code:`3600` は1時間）後に、単一のキャッシュエントリを無効にすることができます。"
+msgstr "**ライフタイム** ：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット :code:`\"HH:mms:ss\"` が設定された文字列、例： :code:`\"23:50:00\"` ）、または設定可能な期間（秒単位、例えば :code:`3600` は1時間）後に、単一のキャッシュエントリを無効にすることができます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-case.rst:2
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:331
@@ -17242,11 +17037,7 @@ msgid ""
 "effect how Axon Ivy treats the cases. But they can be accessed through "
 "the :public-api:`Public API </>`, which allows you to use them for "
 "example to filter the task list."
-msgstr ""
-":ref:`プロセス<glossar-process>` が開始されるたびに :ref:`ケース<glossar-case>` "
-"作成されます。このタブでは、ケースの追加情報を定義できます。このタブで定義された情報は、Axon Ivy "
-"でのケースの取り扱いには影響しません。これらの情報は :public-api:`パブリック API </>` "
-"からアクセスでき、例えばタスクリストのフィルタリングに使用できます。"
+msgstr ":ref:`プロセス<glossar-process>` が開始されるたびに :ref:`ケース<glossar-case>` 作成されます。このタブでは、ケースの追加情報を定義できます。このタブで定義された情報は、Axon Ivy でのケースの取り扱いには影響しません。これらの情報は :public-api:`パブリック API </>` からアクセスでき、例えばタスクリストのフィルタリングに使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:340
 msgid ""
@@ -17259,9 +17050,7 @@ msgid ""
 "Look at the :ref:`workflow concept <workflow-categories>` for some more "
 "information about categorization. Look at the :ref:`multilingual concept "
 "<workflow-languages>` for multilingual case names and descriptions."
-msgstr ""
-"カテゴリー分類については :ref:`ワークフローのコンセプト<workflow-categories>` "
-"参照してください。多言語のケース名と説明については :ref:`多言語のコンセプト<workflow-languages>` 参照してください。"
+msgstr "カテゴリー分類については :ref:`ワークフローのコンセプト<workflow-categories>` 参照してください。多言語のケース名と説明については :ref:`多言語のコンセプト<workflow-languages>` 参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:357
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:361
@@ -17281,19 +17070,14 @@ msgid ""
 "values are only informational and have no effect on how this case is "
 "treated by Axon Ivy. These :ref:`custom fields <custom-fields>` can "
 "easily be queried on case user interfaces to allow sorting and filtering."
-msgstr ""
-"ここでは、作成したケースの追加情報を設定できます。設定された値は情報提供のみで、このケースの Axon Ivy "
-"での取り扱いには影響しません。これら :ref:`カスタムフィールド<custom-fields>` "
-"、ケースのユーザーインターフェースで簡単に照会でき、並べ替えやフィルタリングを行うことが可能です。"
+msgstr "ここでは、作成したケースの追加情報を設定できます。設定された値は情報提供のみで、このケースの Axon Ivy での取り扱いには影響しません。これら :ref:`カスタムフィールド<custom-fields>` 、ケースのユーザーインターフェースで簡単に照会でき、並べ替えやフィルタリングを行うことが可能です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_embedInFrame.rst:1
 msgid ""
 "You can open the follow up UserDialogs in full-screen rather than in the "
 "iFrame frontend view (e.g., portal, dev-wf-ui) by setting the "
 "``embedInFrame`` custom field to ``false``."
-msgstr ""
-"``embedInFrame`` カスタムフィールドを ``false`` に設定して、iFrame のフロントエンドビュー（ポータル、dev-"
-"wf-ui など）ではなく、フルスクリーンで後続のユーザーダイアログを開くことができます。"
+msgstr "``embedInFrame`` カスタムフィールドを ``false`` に設定して、iFrame のフロントエンドビュー（ポータル、dev-wf-ui など）ではなく、フルスクリーンで後続のユーザーダイアログを開くことができます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_embedInFrame.rst:5
 msgid ""
@@ -17305,9 +17089,7 @@ msgstr "``embedInFrame`` は文字列で、``true`` または ``false`` のど�
 msgid ""
 "If ``embedInFrame`` is set to ``false`` on the case tab custom fields, "
 "all the following tasks are gonna open on a full screen page."
-msgstr ""
-"ケースタブのカスタムフィールドで ``embedInFrame`` が ``false`` "
-"に設定されている場合、以降のタスクはすべてフルスクリーンページで開かれます。"
+msgstr "ケースタブのカスタムフィールドで ``embedInFrame`` が ``false`` に設定されている場合、以降のタスクはすべてフルスクリーンページで開かれます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-task-call-wait.rst:2
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-task.rst:2
@@ -17346,9 +17128,7 @@ msgstr "多言語のタスク名と説明については、 :ref:`多言語の�
 msgid ""
 "**Category:** It is recommended practice to define and reference the text"
 " from the CMS. See :ref:`here <workflow-categories>`."
-msgstr ""
-"**カテゴリー：** テキストを定義し、CMS から参照することを推奨します :ref:`こちら<workflow-categories>` "
-"参照してください。"
+msgstr "**カテゴリー：** テキストを定義し、CMS から参照することを推奨します :ref:`こちら<workflow-categories>` 参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:394
 msgid "**Responsible:** The role or user to assign the task"
@@ -17358,9 +17138,7 @@ msgstr "**担当：** タスクを割り当てるロールまたはユーザー"
 msgid ""
 "Use *Role from Attr.* or *User from Attr.* (as String), if the role or "
 "user must be set dynamically during process execution."
-msgstr ""
-"プロセス実行中にロールまたはユーザを動的に設定する必要がある場合は、 *Role from Attr.* または *User from "
-"Attr.* を（文字列として）使用します。"
+msgstr "プロセス実行中にロールまたはユーザを動的に設定する必要がある場合は、 *Role from Attr.* または *User from Attr.* を（文字列として）使用します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_responsible.rst:4
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:205
@@ -17412,10 +17190,7 @@ msgid ""
 "Switch element. It is automatically redirected to this new task marked "
 "with *Skip tasklist*. But only if it is allowed to work on the task and "
 "the Task Switch is not waiting for any other tasks to finish."
-msgstr ""
-"通常、ユーザーインタラクションはタスクスイッチ要素で終了します。タスクリストにリダイレクトされるか、終了ページが表示されます。タスクの［*タスクリストをスキップ*］が有効な場合、ユーザーインタラクションはタスクスイッチ要素で終了しないことがあります。*スキップタスクリスト*"
-" "
-"でマークされた新しいタスクに自動的にリダイレクトされます。ただし、そのタスクでの作業が許可されていて、タスクスイッチが他のタスクの終了を待っていない場合に限ります。"
+msgstr "通常、ユーザーインタラクションはタスクスイッチ要素で終了します。タスクリストにリダイレクトされるか、終了ページが表示されます。タスクの［*タスクリストをスキップ*］が有効な場合、ユーザーインタラクションはタスクスイッチ要素で終了しないことがあります。*スキップタスクリスト* でマークされた新しいタスクに自動的にリダイレクトされます。ただし、そのタスクでの作業が許可されていて、タスクスイッチが他のタスクの終了を待っていない場合に限ります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:424
 msgid "Onle one task of a Task Switch element can activate *Skip tasklist*."
@@ -17431,9 +17206,7 @@ msgid ""
 "not see the task in his tasklist or get any notification about its "
 "existence until the delay period is over. This ivyScript expression "
 "defines the :ref:`ivyscript-datatype-duration` the task is blocked."
-msgstr ""
-"ユーザーが作業する前にタスクをブロックできます。遅延期間が終了するまで、ユーザーのタスクリストにタスクが表示されたり、タスクの存在に関する通知を受け取ることはありません。この"
-" ivyScript 式は、タスクがブロックされる :ref:`ivyscript-datatype-duration` を定義します。"
+msgstr "ユーザーが作業する前にタスクをブロックできます。遅延期間が終了するまで、ユーザーのタスクリストにタスクが表示されたり、タスクの存在に関する通知を受け取ることはありません。この ivyScript 式は、タスクがブロックされる :ref:`ivyscript-datatype-duration` を定義します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:434
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:435
@@ -17472,9 +17245,7 @@ msgid ""
 "Executes an :ref:`process-element-error-start` that compensates the "
 "expired task. Here you can implemented any custom behavior and access the"
 " full workflow API."
-msgstr ""
-"期限切れのタスクを補償す :ref:`process-element-error-start` "
-"を実行します。任意のカスタム動作を実装し、ワークフロー API 全体にアクセスできます。"
+msgstr "期限切れのタスクを補償す :ref:`process-element-error-start` を実行します。任意のカスタム動作を実装し、ワークフロー API 全体にアクセスできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:459
 msgid "**Responsible**"
@@ -17498,18 +17269,13 @@ msgid ""
 "values are only informational and have no effect on how this task is "
 "treated by Axon Ivy. These :ref:`custom fields <custom-fields>` can "
 "easily be queried on task user interfaces to allow sorting and filtering."
-msgstr ""
-"ここでは、作成したタスクの追加情報を設定できます。設定された値は情報提供のみで、このタスクの Axon Ivy "
-"での取り扱いには影響しません。これら :ref:`カスタムフィールド<custom-fields>` "
-"、タスクのユーザーインターフェースで簡単に照会でき、並べ替えやフィルタリングを行うことが可能です。"
+msgstr "ここでは、作成したタスクの追加情報を設定できます。設定された値は情報提供のみで、このタスクの Axon Ivy での取り扱いには影響しません。これら :ref:`カスタムフィールド<custom-fields>` 、タスクのユーザーインターフェースで簡単に照会でき、並べ替えやフィルタリングを行うことが可能です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:484
 msgid ""
 "If ``embedInFrame`` is set to ``false`` on the task tab custom fields, "
 "the next task is gonna open on a full screen page."
-msgstr ""
-"タスクタブのカスタムフィールドで ``embedInFrame`` が ``false`` "
-"に設定されている場合、次のタスクはフルスクリーンページで開かれます。"
+msgstr "タスクタブのカスタムフィールドで ``embedInFrame`` が ``false`` に設定されている場合、次のタスクはフルスクリーンページで開かれます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:490
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:491
@@ -17549,13 +17315,7 @@ msgid ""
 "channel: :file:`/Notification/new-task/Templates/my-custom-"
 "template/mail/Subject`. See als :ref:`Templating <notification-"
 "templating>`."
-msgstr ""
-"CMS の :file:`/Notification/new-"
-"task/Templates/[テンプレート]/[チャネル]/Subject|Content` にあるテンプレート（例えば、 "
-":code:`mail` チャネルの :code:`Subject` テンプレート :code:`my-custom-template` "
-"の場合は、:file:`/Notification/new-task/Templates/my-custom-"
-"template/mail/Subject`）。 :ref:`テンプレート<notification-templating>` "
-"も参照してください。"
+msgstr "CMS の :file:`/Notification/new-task/Templates/[テンプレート]/[チャネル]/Subject|Content` にあるテンプレート（例えば、 :code:`mail` チャネルの :code:`Subject` テンプレート :code:`my-custom-template` の場合は、:file:`/Notification/new-task/Templates/my-custom-template/mail/Subject`）。 :ref:`テンプレート<notification-templating>` も参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:510
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:511
@@ -17575,13 +17335,7 @@ msgid ""
 " Custom Fields with dynamic keys out of a third party source you'd rather"
 " do this in this code block than with the ui table above where the key "
 "names and types are static."
-msgstr ""
-"このタブで定義されるタスクのポストコンストラクトコードブロックです。作成されたタスクは ``task`` "
-"という名前の変数として提供されます。タスクに関連するカスタム API を呼び出すために使用できますが、それを設定するために利用可能な UI "
-"要素はありません。例えば、作成されたタスクの :public-api:`BusinessCalendar "
-"</ch/ivyteam/ivy/application/calendar/IDefaultBusinessCalendar.html>` "
-"はこの場所で定義できます。また、サードパーティーのソースから動的なキーを持つカスタムフィールドを定義する必要がある場合、キーの名前やタイプが静的な上記の"
-" UI 表よりも、このコードブロックで行う方が良いでしょう。"
+msgstr "このタブで定義されるタスクのポストコンストラクトコードブロックです。作成されたタスクは ``task`` という名前の変数として提供されます。タスクに関連するカスタム API を呼び出すために使用できますが、それを設定するために利用可能な UI 要素はありません。例えば、作成されたタスクの :public-api:`BusinessCalendar </ch/ivyteam/ivy/application/calendar/IDefaultBusinessCalendar.html>` はこの場所で定義できます。また、サードパーティーのソースから動的なキーを持つカスタムフィールドを定義する必要がある場合、キーの名前やタイプが静的な上記の UI 表よりも、このコードブロックで行う方が良いでしょう。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:4
 msgid "Database Activity"
@@ -17598,9 +17352,7 @@ msgid ""
 "With this element you can execute SQL commands on the database server. "
 "You can access all the databases that are defined in the :ref:`database-"
 "configuration`."
-msgstr ""
-"この要素を使用して、データベースサーバ上で SQL コマンドを実行できます :ref:`database-configuration` "
-"で定義されているすべてのデータベースにアクセスできます。"
+msgstr "この要素を使用して、データベースサーバ上で SQL コマンドを実行できます :ref:`database-configuration` で定義されているすべてのデータベースにアクセスできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:21
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:27
@@ -17613,9 +17365,7 @@ msgid ""
 "Here you define which SQL command you want to execute on which database. "
 "Depending on the kind of SQL command you are supported during the "
 "construction of your command."
-msgstr ""
-"ここでは、どのデータベースに対してどの SQL コマンドを実行するかを定義します。SQL "
-"コマンドの種類に応じて、コマンドの作成時にサポートされます。"
+msgstr "ここでは、どのデータベースに対してどの SQL コマンドを実行するかを定義します。SQL コマンドの種類に応じて、コマンドの作成時にサポートされます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:32
 msgid "Kind of Query"
@@ -17626,9 +17376,7 @@ msgid ""
 "Choose the kind of query you like to perform. Axon Ivy offers dedicated "
 "UI support for the most common query types such as ``Select`` (Read), "
 "``Insert`` (Write), ``Update`` (Update) and ``Delete`` (Delete)."
-msgstr ""
-"実行したいクエリの種類を選択します。Axon Ivy は、 ``Select`` （読み込み）、 ``Insert`` （書き込み）、 "
-"``Update`` （更新）、 ``Delete`` （削除）など、最も一般的なクエリタイプを専用の UI でサポートしています。"
+msgstr "実行したいクエリの種類を選択します。Axon Ivy は、 ``Select`` （読み込み）、 ``Insert`` （書き込み）、 ``Update`` （更新）、 ``Delete`` （削除）など、最も一般的なクエリタイプを専用の UI でサポートしています。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:37
 msgid ""
@@ -17636,27 +17384,21 @@ msgid ""
 "SQL statement that is not covered by the *Query Definition* mask then you"
 " may also select ``Any`` and write pure SQL instead. Expanding of process"
 " attributes will also work in the *Any Query* mode."
-msgstr ""
-"非標準の SQL が必要な場合や、 *クエリ定義* マスクでカバーできない複雑な SQL 文を発行したい場合は、代わりに ``Any`` "
-"を選択して純粋な SQL を書くこともできます。プロセス属性の展開は *Any クエリ* モードでも動作します。"
+msgstr "非標準の SQL が必要な場合や、 *クエリ定義* マスクでカバーできない複雑な SQL 文を発行したい場合は、代わりに ``Any`` を選択して純粋な SQL を書くこともできます。プロセス属性の展開は *Any クエリ* モードでも動作します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:45
 msgid ""
 "The use of the **Any Query** option can lead to `SQL injection "
 "<https://en.wikipedia.org/wiki/SQL_injection>`__ vulnerabilities if not "
 "used carefully."
-msgstr ""
-"**Any クエリ** オプションを不用意に使用した場合、`SQL "
-"インジェクション<https://en.wikipedia.org/wiki/SQL_injection>` 脆弱性につながる可能性があります。"
+msgstr "**Any クエリ** オプションを不用意に使用した場合、`SQL インジェクション<https://en.wikipedia.org/wiki/SQL_injection>` 脆弱性につながる可能性があります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:49
 msgid ""
 "E.g., if a ``String`` variable is passed into a query then an attacker "
 "could provide a valid partial SQL statement which is then executed in the"
 " context of the query."
-msgstr ""
-"例えば、``String`` 変数がクエリに渡された場合、攻撃者は有効な部分的 SQL 文を提供でき、その SQL "
-"文はクエリのコンテキストで実行されます。"
+msgstr "例えば、``String`` 変数がクエリに渡された場合、攻撃者は有効な部分的 SQL 文を提供でき、その SQL 文はクエリのコンテキストで実行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:53
 msgid ""
@@ -17670,23 +17412,13 @@ msgid ""
 " <persistence>` or prepared statements using JDBC. For more information "
 "see: `SQL Injection Prevention Cheat Sheet "
 "<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
-msgstr ""
-"``SELECT * FROM Subscriber WHERE Name LIKE 'in.searchText%'`` という SQL 文が "
-"SQL クエリとして設定されていると仮定します。攻撃者が有効な SQL 文を ``in.searchText`` "
-"変数に渡すことに成功した場合、いわゆる SQL "
-"インジェクションが発生し、設定されたデータベースのすべてのデータが漏洩します。プロセス設計者はサニタイズされたデータのみを SQL "
-"クエリに渡す責任があります。場合によっては、 :ref:`Persistence API <persistence>` や、JDBC "
-"を使用して作成されたステートメントでデータベースにアクセスした方が良いでしょう。詳細はこちらを参照： `SQL Injection "
-"Prevention Cheat Sheet "
-"<https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
+msgstr "``SELECT * FROM Subscriber WHERE Name LIKE 'in.searchText%'`` という SQL 文が SQL クエリとして設定されていると仮定します。攻撃者が有効な SQL 文を ``in.searchText`` 変数に渡すことに成功した場合、いわゆる SQL インジェクションが発生し、設定されたデータベースのすべてのデータが漏洩します。プロセス設計者はサニタイズされたデータのみを SQL クエリに渡す責任があります。場合によっては、 :ref:`Persistence API <persistence>` や、JDBC を使用して作成されたステートメントでデータベースにアクセスした方が良いでしょう。詳細はこちらを参照： `SQL Injection Prevention Cheat Sheet <https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md>`__"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:66
 msgid ""
 "Choose the database on which the command is executed. The database must "
 "be configured in the :ref:`database-configuration`."
-msgstr ""
-"コマンドを実行するデータベースを選択します。データベースは :ref:`database-configuration` "
-"で設定しておく必要があります。"
+msgstr "コマンドを実行するデータベースを選択します。データベースは :ref:`database-configuration` で設定しておく必要があります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:71
 msgid ""
@@ -17695,27 +17427,20 @@ msgid ""
 " ``Any Query``. For all other query kinds the *Query Definition* mask is "
 "currently not working correctly (e.g., query fields can not be edited / "
 "defined)."
-msgstr ""
-"現在、**DB2** データベースは DB ステップで完全にはサポートされていないことに注意してください。DB2 接続に適したクエリの種類は "
-"``Any クエリ`` だけです。現在、それ以外の種類のクエリでは、 *クエリ定義* "
-"マスクは正しく動作しません（クエリフィールドを編集／定義できないなど）。"
+msgstr "現在、**DB2** データベースは DB ステップで完全にはサポートされていないことに注意してください。DB2 接続に適したクエリの種類は ``Any クエリ`` だけです。現在、それ以外の種類のクエリでは、 *クエリ定義* マスクは正しく動作しません（クエリフィールドを編集／定義できないなど）。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:77
 msgid ""
 "There is also an ``IvySystemDatabase`` datasource which points to the "
 "current System Database. Normally you would prefer your own database to "
 "split valuable customer data from the system data."
-msgstr ""
-"また、現在のシステムデータベースを指す ``IvySystemDatabase`` "
-"データソースもあります。貴重な顧客データをシステムデータから分離するため、通常は独自のデータベースを使用します。"
+msgstr "また、現在のシステムデータベースを指す ``IvySystemDatabase`` データソースもあります。貴重な顧客データをシステムデータから分離するため、通常は独自のデータベースを使用します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:83
 msgid ""
 "Do not manipulate system database tables prefixed with ``IWA_`` within "
 "the ``IvySystemDatabase`` this could lead to unexpected runtime behavior."
-msgstr ""
-"``IvySystemDatabase`` 内の ``IWA_`` "
-"をプレフィックスとするシステムデータベース表を操作しないでください。予期しない実行時の動作を引き起こす可能性があります。"
+msgstr "``IvySystemDatabase`` 内の ``IWA_`` をプレフィックスとするシステムデータベース表を操作しないでください。予期しない実行時の動作を引き起こす可能性があります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:87
 msgid "Query Definition"
@@ -17798,11 +17523,7 @@ msgid ""
 "that the values are quoted because the variable do not contain a single "
 "value but a part of an SQL query (e.g. \"id=123 AND name=ivy\"). "
 "Therefore you can disable the quoting with this check box."
-msgstr ""
-"SQL クエリ内の IvyScript "
-"変数は、変数の値のデータ型に応じた引用符で囲まれます。例えば、文字列の値はシングルクォートで囲まれます（例：hello -> "
-"'hello'）。変数が単一の値を含むのではなく、SQL クエリの一部であるため、値を引用符で囲みたくない場合は（例：\"id=123 AND "
-"name=ivy\"）、このチェックボックスで引用を無効にすることができます。"
+msgstr "SQL クエリ内の IvyScript 変数は、変数の値のデータ型に応じた引用符で囲まれます。例えば、文字列の値はシングルクォートで囲まれます（例：hello -> 'hello'）。変数が単一の値を含むのではなく、SQL クエリの一部であるため、値を引用符で囲みたくない場合は（例：\"id=123 AND name=ivy\"）、このチェックボックスで引用を無効にすることができます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:128
 msgid "Table Column Browser"
@@ -18629,20 +18350,14 @@ msgid ""
 "must supply an inner ``Editor`` class implementation. We recommend to "
 "extend your implementation from :public-api:`UiEditorExtension "
 "</ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`."
-msgstr ""
-"プロセスのインスクリプションマスクでカスタム設定を定義するには、``Editor`` 内部クラスの実装を提供する必要があります。:public-"
-"api:`UiEditorExtension "
-"</ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>` "
-"から実装を拡張することを推奨します。"
+msgstr "プロセスのインスクリプションマスクでカスタム設定を定義するには、``Editor`` 内部クラスの実装を提供する必要があります。:public-api:`UiEditorExtension </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>` から実装を拡張することを推奨します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_programEditor.rst:8
 msgid ""
 "This editor class is responsible for two things: Firstly, to create UI "
 "widgets, which display configuration values. And secondly, to map "
 "configuration data onto these widgets:"
-msgstr ""
-"このエディタークラスの役割は 2 つあります。最初に、設定値を表示する UI "
-"ウィジェットを作成します。次に、それらのウィジェットに設定データをマップします。"
+msgstr "このエディタークラスの役割は 2 つあります。最初に、設定値を表示する UI ウィジェットを作成します。次に、それらのウィジェットに設定データをマップします。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_programEditor.rst:12
 msgid ""
@@ -18650,10 +18365,7 @@ msgid ""
 "</ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>` method "
 "supports you in creating widgets for the editor. Currently labels, "
 "scriptEditors and textEditors are supported."
-msgstr ""
-"1. :public-api:`initUiFields "
-"</ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>` "
-"メソッドを使用して、エディターのウィジェットを作成します。現在、ラベル、スクリプトエディター、テキストエディターがサポートされています。"
+msgstr "1. :public-api:`initUiFields </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>` メソッドを使用して、エディターのウィジェットを作成します。現在、ラベル、スクリプトエディター、テキストエディターがサポートされています。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_programEditor.rst:15
 msgid ""
@@ -18702,12 +18414,7 @@ msgid ""
 "new Java source file with an example implementation of the bean class or "
 "select an :ref:`existing one <process-element-program-start-existing-"
 "beans>`."
-msgstr ""
-":public-api:`IProcessStartEventBean "
-"</ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` "
-"インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| "
-"を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します :ref:`既存の Bean<process-"
-"element-program-start-existing-beans>` を選択することもできます。"
+msgstr ":public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します :ref:`既存の Bean<process-element-program-start-existing-beans>` を選択することもできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:40
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:30
@@ -18730,10 +18437,7 @@ msgid ""
 "api:`IProcessStartEventBean "
 "</ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` to "
 "configure its execution."
-msgstr ""
-":public-api:`IProcessStartEventBean "
-"</ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` "
-"の実装で提供されるカスタムエディター UI を使用して、実行を設定できます。"
+msgstr ":public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` の実装で提供されるカスタムエディター UI を使用して、実行を設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:63
 msgid "Existing Beans"
@@ -18749,9 +18453,7 @@ msgid ""
 "certain times defined by a daily time or standard CRON expression. The "
 "configuration can either be configured directly or indirectly via a "
 "variable. If the variable changes the bean is reconfigured automatically."
-msgstr ""
-"定義された遅延で、または時刻や標準的な CRON 式で定義された時間に定期的にプロセスを開始する "
-"Bean。設定は直接、または変数により間接的に行うことができます。変数が変わると、Beam は自動的に再設定されます。"
+msgstr "定義された遅延で、または時刻や標準的な CRON 式で定義された時間に定期的にプロセスを開始する Bean。設定は直接、または変数により間接的に行うことができます。変数が変わると、Beam は自動的に再設定されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:85
 msgid ""
@@ -18765,16 +18467,7 @@ msgid ""
 " The common way to implement a Start Event Bean is to extend from "
 ":public-api:`AbstractProcessStartEventBean "
 "</ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`."
-msgstr ""
-"プログラム開始は、:public-api:`IProcessStartEventBean "
-"</ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` "
-"インターフェースを実装する Java クラスを消費します。この実装は、:public-"
-"api:`IProcessStartEventBeanRuntime "
-"</ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>` "
-"の ``fireProcessStartEventRequest`` メソッドを呼び出して、新しいプロセスを開始します。イベント開始 Bean "
-"を実装する一般的な方法は、:public-api:`AbstractProcessStartEventBean "
-"</ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>` "
-"からの拡張です。"
+msgstr "プログラム開始は、:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>` の ``fireProcessStartEventRequest`` メソッドを呼び出して、新しいプロセスを開始します。イベント開始 Bean を実装する一般的な方法は、:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>` からの拡張です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:94
 msgid ""
@@ -18783,10 +18476,7 @@ msgid ""
 "</ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. This "
 "will enable your Program Start not only on the master node, but on all "
 "available nodes."
-msgstr ""
-"Axon Ivy Cluster を使用する場合、:public-api:`IMultiNodeCapable "
-"</ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` "
-"インターフェースで実装をマークできます。これにより、マスターノードだけでなく、使用可能なすべてのノードでプログラム開始が有効になります。"
+msgstr "Axon Ivy Cluster を使用する場合、:public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` インターフェースで実装をマークできます。これにより、マスターノードだけでなく、使用可能なすべてのノードでプログラム開始が有効になります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:102
 msgid ""
@@ -18904,18 +18594,14 @@ msgid ""
 "target service. For instance, many REST APIs can provide data in multiple"
 " serialization formats. By setting the ``Accept`` header, the preferred "
 "format can be propagated to the target service."
-msgstr ""
-"**ヘッダー** ：リクエストと一緒に送信され、ターゲットサービスで解釈できます。例えば、多くの REST API "
-"は、複数のシリアライズ形式でデータを提供できます。``Accept`` ヘッダーを設定して、優先される形式をターゲットサービスに伝搬できます。"
+msgstr "**ヘッダー** ：リクエストと一緒に送信され、ターゲットサービスで解釈できます。例えば、多くの REST API は、複数のシリアライズ形式でデータを提供できます。``Accept`` ヘッダーを設定して、優先される形式をターゲットサービスに伝搬できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:67
 msgid ""
 "Any other HTTP-Header can also be configured. However, the "
 "``Authorization`` header is easier to configure with an authorization "
 "feature on the :ref:`rest-clients-configuration`."
-msgstr ""
-"他にもさまざまな HTTP ヘッダーを設定できます。例えば :ref:`rest-clients-configuration` "
-"で認可機能を使用して設定を行う場合は、``Authorization`` の方が簡単です。"
+msgstr "他にもさまざまな HTTP ヘッダーを設定できます。例えば :ref:`rest-clients-configuration` で認可機能を使用して設定を行う場合は、``Authorization`` の方が簡単です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:73
 msgid ""
@@ -18923,9 +18609,7 @@ msgid ""
 "properties of the REST client. They are globally configurable in the :ref"
 ":`rest-clients-configuration` properties. Here you can overwrite a "
 "property with dynamic values."
-msgstr ""
-"**プロパティ** ：REST クライアントのオプションの機能やネイティブプロパティを設定するのに使用します :ref:`rest-"
-"clients-configuration` のプロパティでグローバルに設定可能です。ここでは、プロパティを動的な値で上書きできます。"
+msgstr "**プロパティ** ：REST クライアントのオプションの機能やネイティブプロパティを設定するのに使用します :ref:`rest-clients-configuration` のプロパティでグローバルに設定可能です。ここでは、プロパティを動的な値で上書きできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:80
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:123
@@ -18954,26 +18638,20 @@ msgid ""
 "**Form**: Send form values as content of type ``application/x-www-form-"
 "urlencoded`` or as ``multipart/form-data``. The form values are "
 "scriptable."
-msgstr ""
-"**フォーム** ：``application/x-www-form-urlencoded`` タイプのコンテンツまたは ``multipart"
-"/form-data`` としてフォームの値を送信します。フォームの値はスクリプト可能です。"
+msgstr "**フォーム** ：``application/x-www-form-urlencoded`` タイプのコンテンツまたは ``multipart/form-data`` としてフォームの値を送信します。フォームの値はスクリプト可能です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:97
 msgid ""
 "**Entity**: Send a complex object as serialized text to the remote REST "
 "service. Most Java objects should be serializable as JSON "
 "(application/json) without additional configuration."
-msgstr ""
-"**エンティティ** ：複雑なオブジェクトをシリアライズされたテキストとしてリモート REST サービスに送信します。ほとんどの Java "
-"オブジェクトは、追加設定なしで、JSON（application/json）としてシリアライズ可能です。"
+msgstr "**エンティティ** ：複雑なオブジェクトをシリアライズされたテキストとしてリモート REST サービスに送信します。ほとんどの Java オブジェクトは、追加設定なしで、JSON（application/json）としてシリアライズ可能です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:101
 msgid ""
 "The serialization behavior can be configured for special needs via "
 ":ref:`properties <rest-clients-configuration-properties>` on the client."
-msgstr ""
-"シリアライズの動作は、クライアント :ref:`プロパティ<rest-clients-configuration-properties>` "
-"必要に合わせて設定できます。"
+msgstr "シリアライズの動作は、クライアント :ref:`プロパティ<rest-clients-configuration-properties>` 必要に合わせて設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:109
 msgid ""
@@ -18981,19 +18659,14 @@ msgid ""
 "with an exception. This is typically the case if a connection or timeout "
 "problem exists. Pick '*>> Ignore Error*' to continue the process "
 "execution even though the REST service call failed with an exception."
-msgstr ""
-"**エラー時** ：接続やタイムアウトの問題が発生したなど、REST "
-"クライアントが例外で失敗した場合にスローするエラーコードを選択します。REST サービスの呼び出しが例外で失敗しても、「*>> エラーを無視*'」"
-" を選択して、プロセスの実行を継続できます。"
+msgstr "**エラー時** ：接続やタイムアウトの問題が発生したなど、REST クライアントが例外で失敗した場合にスローするエラーコードを選択します。REST サービスの呼び出しが例外で失敗しても、「*>> エラーを無視*'」 を選択して、プロセスの実行を継続できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:111
 msgid ""
 "**On Status Code not successful**: Fail automatically with an Error Code "
 "if the HTTP response status code is not in the 200 family. Pick '*>> "
 "Ignore Error*' if other status codes are valid and expected."
-msgstr ""
-"**ステータスコードの失敗時** ：HTTP 応答ステータスコードが 200 "
-"番台でない場合、自動的にエラーコードで失敗します。他のステータスコードが有効で、予想される場合は、「*>> エラーを無視*」を選択してください。"
+msgstr "**ステータスコードの失敗時** ：HTTP 応答ステータスコードが 200 番台でない場合、自動的にエラーコードで失敗します。他のステータスコードが有効で、予想される場合は、「*>> エラーを無視*」を選択してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:116
 msgid "On this tab you can consume response from the REST service."
@@ -19009,25 +18682,19 @@ msgid ""
 "**Result-Type**: The first combo defines how the response entity will be "
 "read. Pick a Java type that can be mapped to response entity. The entity "
 "object is available in the 'result' variable."
-msgstr ""
-"**結果のタイプ** ：最初のコンボでは、応答エンティティの読み取り方法を定義します。応答エンティティにマッピングできる Java "
-"のタイプを選択します。エンティティオブジェクトは 'result' 変数で使用できます。"
+msgstr "**結果のタイプ** ：最初のコンボでは、応答エンティティの読み取り方法を定義します。応答エンティティにマッピングできる Java のタイプを選択します。エンティティオブジェクトは 'result' 変数で使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:128
 msgid ""
 "See the chapter below (:ref:`process-element-rest-client-activity-json-"
 "to-java`) for a quick comparison of response body mapping solutions."
-msgstr ""
-"応答ボディのマッピング方法の簡単な比較については、下の章（「:ref:`process-element-rest-client-activity-"
-"json-to-java`」）を参照してください。"
+msgstr "応答ボディのマッピング方法の簡単な比較については、下の章（「:ref:`process-element-rest-client-activity-json-to-java`」）を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:132
 msgid ""
 "The deserialization from JSON to a Java object can be customized with "
 ":ref:`properties <rest-clients-configuration-properties>` on the client."
-msgstr ""
-"JSON から Java オブジェクトへのデシリアライズは、クライアント :ref:`プロパティ<rest-clients-"
-"configuration-properties>` カスタマイズできます。"
+msgstr "JSON から Java オブジェクトへのデシリアライズは、クライアント :ref:`プロパティ<rest-clients-configuration-properties>` カスタマイズできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:136
 msgid ""
@@ -19036,10 +18703,7 @@ msgid ""
 " data. However, in this editor the JAX-RS 'response' variable is also "
 "available which lets you access the HTTP-status-code and other details of"
 " the HTTP response."
-msgstr ""
-"**コード** ：コードエディターを使用して、応答またはそのエンティティを処理します。ほとんどの場合、'result' "
-"変数をプロセスデータに割り当てるだけです。ただし、このエディターでは、JAX-RS の 'response' "
-"変数も利用可能で、この変数を使用して、HTTP ステータスコードなど、HTTP 応答の詳細を確認できます。"
+msgstr "**コード** ：コードエディターを使用して、応答またはそのエンティティを処理します。ほとんどの場合、'result' 変数をプロセスデータに割り当てるだけです。ただし、このエディターでは、JAX-RS の 'response' 変数も利用可能で、この変数を使用して、HTTP ステータスコードなど、HTTP 応答の詳細を確認できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:146
 msgid "JSON to Java"
@@ -19170,9 +18834,7 @@ msgid ""
 "In the scripting field, the variable ``client`` holds the REST client "
 "chosen in the *Target* section. The whole setup from the Target section "
 "will be applied to this client variable."
-msgstr ""
-"スクリプトフィールドの ``クライアント`` の変数は、*ターゲット* セクションで選択された REST "
-"クライアントを保持します。ターゲットセクションのセットアップ全体がこのクライアント変数に適用されます。"
+msgstr "スクリプトフィールドの ``クライアント`` の変数は、*ターゲット* セクションで選択された REST クライアントを保持します。ターゲットセクションのセットアップ全体がこのクライアント変数に適用されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:228
 msgid "|image15|"
@@ -19193,10 +18855,7 @@ msgid ""
 "You must do it by calling close() or readEntity() on a Response, that was"
 " created by calling any method on the ``Invocation.Builder`` class (e.g. "
 "``client.request().put(...)``) that returns a ``Response`` object."
-msgstr ""
-"接続プールのブロックを防ぐため、REST 応答オブジェクトを閉じる必要があります。 ``応答`` オブジェクトを返す "
-"``Invocation.Builder`` クラス（ ``client.request().put(...)`` "
-"など）で任意のメソッドを呼び出して作成された応答で、close() または readEntity() を呼び出してください。"
+msgstr "接続プールのブロックを防ぐため、REST 応答オブジェクトを閉じる必要があります。 ``応答`` オブジェクトを返す ``Invocation.Builder`` クラス（ ``client.request().put(...)`` など）で任意のメソッドを呼び出して作成された応答で、close() または readEntity() を呼び出してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:257
 #, python-brace-format
@@ -19206,10 +18865,7 @@ msgid ""
 "with-resources is not supported, instead you should use a try {} finally "
 "{} statement and close the response in the finally block. See example "
 "below."
-msgstr ""
-"Java でのベストプラクティスは、try-with-resources 文の使用です。次のセクションの POST "
-"リクエストの例を参照してください。ただし、IvyScript では try-with-resources はサポートされていないため、代わりに "
-"try {} finally {} 文を使用し、最後のブロックで応答を閉じてください。以下の例を参照してください。"
+msgstr "Java でのベストプラクティスは、try-with-resources 文の使用です。次のセクションの POST リクエストの例を参照してください。ただし、IvyScript では try-with-resources はサポートされていないため、代わりに try {} finally {} 文を使用し、最後のブロックで応答を閉じてください。以下の例を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:261
 msgid ""
@@ -19217,9 +18873,7 @@ msgid ""
 " REST service will not be returned to the connection pool. Over time all "
 "connections in the pool are consumed and all new requests will be blocked"
 " forever."
-msgstr ""
-"応答を閉じるのを忘れた場合、REST "
-"サービスの呼び出しに使用した接続が接続プールに返されません。最終的に、プールのすべての接続が消費され、以降の新しいリクエストはすべてブロックされます。"
+msgstr "応答を閉じるのを忘れた場合、REST サービスの呼び出しに使用した接続が接続プールに返されません。最終的に、プールのすべての接続が消費され、以降の新しいリクエストはすべてブロックされます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:278
 msgid "Call from Java"
@@ -19238,12 +18892,7 @@ msgid ""
 "<http://docs.oracle.com/javaee/7/api/javax/ws/rs/client/WebTarget.html>`__"
 " which is pre-configured as defined in the :ref:`rest-clients-"
 "configuration`. It provides fluent API to call the remote REST service."
-msgstr ""
-"REST クライアントにアクセスするエントリポイントは、``Ivy.rest()`` です :ref:`rest-clients-"
-"configuration` で定義されているように、返されるオブジェクトは、事前設定済みの "
-"`javax.ws.rs.client.WebTarget "
-"<http://docs.oracle.com/javaee/7/api/javax/ws/rs/client/WebTarget.html>`__"
-" のインスタンスです。これは、リモート REST サービスを呼び出す Fluent API を提供します。"
+msgstr "REST クライアントにアクセスするエントリポイントは、``Ivy.rest()`` です :ref:`rest-clients-configuration` で定義されているように、返されるオブジェクトは、事前設定済みの `javax.ws.rs.client.WebTarget <http://docs.oracle.com/javaee/7/api/javax/ws/rs/client/WebTarget.html>`__ のインスタンスです。これは、リモート REST サービスを呼び出す Fluent API を提供します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:289
 msgid "**Java Example**"
@@ -19267,12 +18916,7 @@ msgid ""
 "(``javax.ws.rs.core.Feature``). Our authorization feature can be taken as"
 " an example: "
 "``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature``."
-msgstr ""
-"設定を複数回適用する代わりに :ref:`rest-clients-configuration` "
-"で設定をグローバルに設定できます。カスタム機能（``javax.ws.rs.core.Feature`` ）を実装して、REST "
-"クライアント呼び出しのほぼすべての設定を行うことができます。Axon Ivy の認可機能の一例として、 "
-"``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature``"
-" があります。"
+msgstr "設定を複数回適用する代わりに :ref:`rest-clients-configuration` で設定をグローバルに設定できます。カスタム機能（``javax.ws.rs.core.Feature`` ）を実装して、REST クライアント呼び出しのほぼすべての設定を行うことができます。Axon Ivy の認可機能の一例として、 ``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature`` があります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:4
 msgid "Rule Activity"
@@ -19289,9 +18933,7 @@ msgid ""
 "This element allows to apply a rule set defined in DRL or XLS documents. "
 "By specifying a rule namespace and a data object class, this activity "
 "will apply all rules defined in the namespace to the data object."
-msgstr ""
-"この要素を使用して、 DRL または XLS "
-"ドキュメントで定義されたルールセットを適用できます。このアクティビティは、ルールの名前空間とデータオブジェクトのクラスを指定して、名前空間で定義されたすべてのルールをデータオブジェクトに適用します。"
+msgstr "この要素を使用して、 DRL または XLS ドキュメントで定義されたルールセットを適用できます。このアクティビティは、ルールの名前空間とデータオブジェクトのクラスを指定して、名前空間で定義されたすべてのルールをデータオブジェクトに適用します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:22
 msgid "Tab Call"
@@ -19306,9 +18948,7 @@ msgid ""
 "The namespace of the rule set. Child namespaces will not be applied. Only"
 " one namespace can be chosen. If you want to choose more than one "
 "namespace you need to use our Java Rules API."
-msgstr ""
-"ルールセットの名前空間。子名前空間は適用されません。選択できる名前空間は 1 つのみです。複数の名前空間を選択したい場合は、Java ルール "
-"API を使用する必要があります。"
+msgstr "ルールセットの名前空間。子名前空間は適用されません。選択できる名前空間は 1 つのみです。複数の名前空間を選択したい場合は、Java ルール API を使用する必要があります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:33
 msgid "Data Object"
@@ -19343,9 +18983,7 @@ msgid ""
 "intend to use specific functionality and/or technology (such as invoking "
 "Web Services, querying Databases and so on) as these elements encapsulate"
 " their use and handle exceptions internally."
-msgstr ""
-"特定の機能やテクノロジー（Web "
-"サービスの呼び出し、データベースの照会など）を使用する場合は、使用をカプセル化し、例外を内部で処理する専用のプロセス要素を使用することを強く推奨します。"
+msgstr "特定の機能やテクノロジー（Web サービスの呼び出し、データベースの照会など）を使用する場合は、使用をカプセル化し、例外を内部で処理する専用のプロセス要素を使用することを強く推奨します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:34
 msgid ""
@@ -19355,9 +18993,7 @@ msgid ""
 "data. The general recommendation is to use the output table to define "
 "simple assignments and the code tab if more extensive scripting is needed"
 " to calculate data."
-msgstr ""
-"*出力タブ* の実行後、入力されたコードが実行されます。最初は難しそうに見えるかもしれませんが、コードタブは出力データを定義する方法の 1 "
-"つであるといえます。一般的には、簡単な割り当ての定義には出力表を使用し、データの計算により包括的なスクリプトが必要な場合にコードタブを使用することを推奨します。"
+msgstr "*出力タブ* の実行後、入力されたコードが実行されます。最初は難しそうに見えるかもしれませんが、コードタブは出力データを定義する方法の 1 つであるといえます。一般的には、簡単な割り当ての定義には出力表を使用し、データの計算により包括的なスクリプトが必要な場合にコードタブを使用することを推奨します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:41
 msgid "Disable Permission Checks (Execute this Script Step as SYSTEM)"
@@ -19368,9 +19004,7 @@ msgid ""
 "With this option enabled the scripts from the Output and Code Tab runs "
 "without security permission checks. The execution of the scripts will "
 "never throw any PermissionDeniedException."
-msgstr ""
-"このオプションが有効な場合、出力タブとコードタブのスクリプトは、セキュリティ権限チェックなしで実行されます。スクリプトの実行により、PermissionDeniedException"
-" がスローされることはありません。"
+msgstr "このオプションが有効な場合、出力タブとコードタブのスクリプトは、セキュリティ権限チェックなしで実行されます。スクリプトの実行により、PermissionDeniedException がスローされることはありません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:48
 msgid ""
@@ -19470,9 +19104,7 @@ msgid ""
 "one process path into a number of paths that are executed concurrently. "
 "The input process data is copied to all the parallel executions but can "
 "be manipulated in each path individually."
-msgstr ""
-"これを使用して、並列するプロセスパスをモデル化できます。この要素は、1 "
-"つのプロセスパスを同時に実行される複数のパスに分割できます。入力されたプロセスデータはすべての並列実行にコピーされますが、パスごとに個別に操作することが可能です。"
+msgstr "これを使用して、並列するプロセスパスをモデル化できます。この要素は、1 つのプロセスパスを同時に実行される複数のパスに分割できます。入力されたプロセスデータはすべての並列実行にコピーされますが、パスごとに個別に操作することが可能です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/split.rst:19
 msgid "Use this element always together with the Join element."
@@ -19490,9 +19122,7 @@ msgid ""
 "available which carries the data of the Xth output. Hover with the mouse "
 "over the outgoing connections of the element to see which output "
 "connection corresponds to which variable."
-msgstr ""
-"出力接続ごとに、X 番目の出力のデータを保持する別個の ``outX`` "
-"オブジェクトを使用できます。要素の出力接続の上にマウスカーソルを置くと、どの出力接続がどの変数に対応するかを確認できます。"
+msgstr "出力接続ごとに、X 番目の出力のデータを保持する別個の ``outX`` オブジェクトを使用できます。要素の出力接続の上にマウスカーソルを置くと、どの出力接続がどの変数に対応するかを確認できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:6
 msgid ""
@@ -19505,9 +19135,7 @@ msgid ""
 "The Request Start element is the start point of a workflow. A workflow "
 "contains one case and at least one task. Each start of a Request Start "
 "creates a new case and task."
-msgstr ""
-"リクエスト開始要素はワークフローの開始点です。ワークフローには、1 つのケースと少なくとも 1 "
-"つのタスクが含まれます。リクエスト開始の開始ごとに、新しいケースとタスクが作成されます。"
+msgstr "リクエスト開始要素はワークフローの開始点です。ワークフローには、1 つのケースと少なくとも 1 つのタスクが含まれます。リクエスト開始の開始ごとに、新しいケースとタスクが作成されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:15
 msgid "There are two ways to start a new workflow:"
@@ -19524,9 +19152,7 @@ msgid ""
 "Most workflows are started with a HTTP request. The start Links can be "
 "found on the Process Start Overview HTML page and can be placed on an "
 "external web sites or as shortcut on the desktop."
-msgstr ""
-"ほとんどのワークフローは HTTP リクエストで開始されます。開始リンクはプロセス開始の概要の HTML "
-"ページに表示され、外部のウェブサイトに配置したり、ショートカットとしてデスクトップに置くことができます。"
+msgstr "ほとんどのワークフローは HTTP リクエストで開始されます。開始リンクはプロセス開始の概要の HTML ページに表示され、外部のウェブサイトに配置したり、ショートカットとしてデスクトップに置くことができます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:23
 msgid ""
@@ -19554,9 +19180,7 @@ msgid ""
 "trigger-step`. On call, it creates a new case and a new task to the "
 "Request Start with the defined configurations (and parameters). This "
 "offers a simple way to create several workflows inside a other workflow."
-msgstr ""
-"新しいワークフローを開始するもう 1 つの方法は :ref:`process-element-trigger-step` "
-"です。トリガーステップは、呼び出し時に、定義された設定（とパラメーター）を使用して、リクエスト開始に対して新しいケースと新しいタスクを作成します。この方法では、簡単に複数のワークフローを他のワークフロー内で作成できます。"
+msgstr "新しいワークフローを開始するもう 1 つの方法は :ref:`process-element-trigger-step` です。トリガーステップは、呼び出し時に、定義された設定（とパラメーター）を使用して、リクエスト開始に対して新しいケースと新しいタスクを作成します。この方法では、簡単に複数のワークフローを他のワークフロー内で作成できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:37
 msgid ""
@@ -19573,9 +19197,7 @@ msgid ""
 "On this tab you can define a name and parameters (which results in a so "
 "called Signature) to start the process. See :ref:`process-element-tab-"
 "start` for a more detailed description."
-msgstr ""
-"このタブでは、プロセスを開始する名前とパラメーター（いわゆるシグネチャ）を定義できます。詳細については、 :ref:`process-"
-"element-tab-start` 」を参照してください。"
+msgstr "このタブでは、プロセスを開始する名前とパラメーター（いわゆるシグネチャ）を定義できます。詳細については、 :ref:`process-element-tab-start` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:55
 msgid ""
@@ -19588,36 +19210,28 @@ msgid ""
 "If you have for example defined a parameter named *myParameter* in the "
 "signature, append ``?myParameter=hallo`` to the URL to pass the value "
 "*hallo* to the parameter *myParameter*."
-msgstr ""
-"例えば、*myParameter* という名前のパラメーターがシグネチャに定義されている場合、``?myParameter=hallo`` を "
-"URL に追加して、*hallo* という値を *myParameter* パラメーターに受け渡します。"
+msgstr "例えば、*myParameter* という名前のパラメーターがシグネチャに定義されている場合、``?myParameter=hallo`` を URL に追加して、*hallo* という値を *myParameter* パラメーターに受け渡します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:62
 msgid ""
 "If you want to pass values for multiple parameters the following "
 "parameter need an & instead of an ?. For example: "
 "``?param1=value1&param2=value2&param3=value3``"
-msgstr ""
-"複数のパラメーターの値を受け渡す場合、? の代わりに & "
-"を使用します。例：``?param1=value1&param2=value2&param3=value3``"
+msgstr "複数のパラメーターの値を受け渡す場合、? の代わりに & を使用します。例：``?param1=value1&param2=value2&param3=value3``"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:71
 msgid ""
 "This tab contains the configuration for the HTTP-Request start. Name, "
 "description and category which is displayed on the start list. The "
 "required permissions to start the process, and the workflow mode."
-msgstr ""
-"このタブには、HTTP "
-"リクエスト開始の設定が表示されます。設定には、開始リストに表示される名前、説明、カテゴリー、プロセスを開始するのに必要な権限、ワークフローモードが含まれます。"
+msgstr "このタブには、HTTP リクエスト開始の設定が表示されます。設定には、開始リストに表示される名前、説明、カテゴリー、プロセスを開始するのに必要な権限、ワークフローモードが含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:75
 msgid ""
 "Name, description and category will be used as :ref:`case <glossar-case>`"
 " name, description and category if not otherwise configured on the :ref"
 ":`process-element-tab-case`."
-msgstr ""
-":ref:`process-element-tab-case` で設定されていない場合、このタブの名前、説明、カテゴリー :ref:`ケース"
-"<glossar-case>` 名前、説明、カテゴリーとして使用されます。"
+msgstr ":ref:`process-element-tab-case` で設定されていない場合、このタブの名前、説明、カテゴリー :ref:`ケース<glossar-case>` 名前、説明、カテゴリーとして使用されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:81
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:184
@@ -19630,9 +19244,7 @@ msgid ""
 "checked, the HTTP request mechanism for this start element is enabled. "
 "Otherwise it is not possible to start the request start with a HTTP "
 "request."
-msgstr ""
-"［*この開始を HTTP リクエスト／リンクで開始できるようにする*］チェックボックスをオンにした場合、この開始要素の HTTP "
-"リクエストメカニズムが有効になります。オフの場合は、 HTTP リクエストでリクエスト開始を開始できません。"
+msgstr "［*この開始を HTTP リクエスト／リンクで開始できるようにする*］チェックボックスをオンにした場合、この開始要素の HTTP リクエストメカニズムが有効になります。オフの場合は、 HTTP リクエストでリクエスト開始を開始できません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:87
 msgid "Start link"
@@ -19644,9 +19256,7 @@ msgid ""
 " has to end on *.ivp*. This is required for proper association of the "
 "request by the web server. Important: this name has to be unique within "
 "its process."
-msgstr ""
-"プロセス開始リンクの名前が表示されます。このリンクは常に *.ivp* "
-"で終わる必要があることに注意してください。これは、ウェブサーバーからのリクエストを適切に関連付けるために必要です。重要：この名前はプロセス内で一意でなければなりません。"
+msgstr "プロセス開始リンクの名前が表示されます。このリンクは常に *.ivp* で終わる必要があることに注意してください。これは、ウェブサーバーからのリクエストを適切に関連付けるために必要です。重要：この名前はプロセス内で一意でなければなりません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:93
 msgid "Start list"
@@ -19705,17 +19315,13 @@ msgid ""
 "To display an icon for a start on start lists configure the ``cssIcon`` "
 "custom field. You can find a list of possible icons in the :ref:`Html "
 "Dialog Demos <importing-demo-projects>`."
-msgstr ""
-"開始リストに開始のアイコンを表示するには、``cssIcon`` カスタムフィールドを設定します。表示可能なアイコンについては "
-":ref:`HtmlDialogDemos <importing-demo-projects>` 参照してください。"
+msgstr "開始リストに開始のアイコンを表示するには、``cssIcon`` カスタムフィールドを設定します。表示可能なアイコンについては :ref:`HtmlDialogDemos <importing-demo-projects>` 参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:129
 msgid ""
 "If ``embedInFrame`` is set to ``false`` on the request tab custom fields,"
 " the initial dialog will be embedded in a frame."
-msgstr ""
-"リクエストタブのカスタムフィールドで ``embedInFrame`` が ``false`` "
-"に設定されている場合、初期ダイアログがフレームに埋め込まれます。"
+msgstr "リクエストタブのカスタムフィールドで ``embedInFrame`` が ``false`` に設定されている場合、初期ダイアログがフレームに埋め込まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:132
 msgid "Responsible Role"
@@ -19744,10 +19350,7 @@ msgid ""
 "*Everybody* role by default) may start the process. If unchecked it "
 "limits the process to users that are registered in the Axon Ivy Engine as"
 " users."
-msgstr ""
-"このチェックボックスがオンの場合、匿名ユーザー（デフォルトでは *Everybody* "
-"ロールを持つユーザー）がプロセスを開始できます。オフの場合、そのプロセスは、Axon Ivy Engine "
-"にユーザーとして登録されたユーザーに制限されます。"
+msgstr "このチェックボックスがオンの場合、匿名ユーザー（デフォルトでは *Everybody* ロールを持つユーザー）がプロセスを開始できます。オフの場合、そのプロセスは、Axon Ivy Engine にユーザーとして登録されたユーザーに制限されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:147
 msgid "Violation error"
@@ -19758,26 +19361,20 @@ msgid ""
 "The selected exception element is thrown when the user lacks the required"
 " role. The error can be handled by a catching :ref:`process-element-"
 "error-start`."
-msgstr ""
-"ユーザーに必要なロールがない場合、選択された例外要素がスローされます。エラーは、エラーをキャッチする :ref:`process-element-"
-"error-start` により処理できます。"
+msgstr "ユーザーに必要なロールがない場合、選択された例外要素がスローされます。エラーは、エラーをキャッチする :ref:`process-element-error-start` により処理できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:153
 msgid ""
 "If the option is selected, the task can be reset in the process (with "
 "``task.reset()``). This will reset the process data and the current user "
 "who got the task assigned."
-msgstr ""
-"このオプションが選択されている場合、（``task.reset()`` "
-"で）プロセス内のタスクをリセットできます。プロセスデータとタスクが割り当てられた現在のユーザーがリセットされます。"
+msgstr "このオプションが選択されている場合、（``task.reset()`` で）プロセス内のタスクをリセットできます。プロセスデータとタスクが割り当てられた現在のユーザーがリセットされます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:159
 msgid ""
 "When a session timeout occurs, ``task.reset()`` is called automatically "
 "on the task. Thereby the user has the task again in his task list."
-msgstr ""
-"セッションタイムアウトが発生した場合、タスクで ``task.reset()`` "
-"が自動的に呼び出されます。これにより、ユーザーのタスクリストにタスクが再表示されます。"
+msgstr "セッションタイムアウトが発生した場合、タスクで ``task.reset()`` が自動的に呼び出されます。これにより、ユーザーのタスクリストにタスクが再表示されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:165
 msgid ""
@@ -19790,12 +19387,7 @@ msgid ""
 "This helps to separate tasks in the task overview from workflow starts "
 "(with different steps) and simple process starts (which e.g., only "
 "outputs some information)."
-msgstr ""
-"通常、1 つ以上の :ref:`process-element-task-switch-gateway` "
-"を含むプロセスのみ、このオプションが選択されます。デフォルトでは、新しいタスクは永続化されるまで ``作成済み`` "
-"の状態ですが、このオプションを選択した場合、タスクは直接、``再開済み`` の状態になります。この動作により、プロセス :ref"
-":`process-element-task-switch-gateway` "
-"が含まれるタスクを他のタスクと区別できます。タスクの概要でタスクを（異なるステップを含む）ワークフローの開始や単純なプロセス開始（情報のみ出力するプロセス開始など）から切り離すのにも役立ちます。"
+msgstr "通常、1 つ以上の :ref:`process-element-task-switch-gateway` を含むプロセスのみ、このオプションが選択されます。デフォルトでは、新しいタスクは永続化されるまで ``作成済み`` の状態ですが、このオプションを選択した場合、タスクは直接、``再開済み`` の状態になります。この動作により、プロセス :ref:`process-element-task-switch-gateway` が含まれるタスクを他のタスクと区別できます。タスクの概要でタスクを（異なるステップを含む）ワークフローの開始や単純なプロセス開始（情報のみ出力するプロセス開始など）から切り離すのにも役立ちます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:178
 msgid "Trigger Tab"
@@ -19813,9 +19405,7 @@ msgid ""
 "the trigger mechanism for this start element is enabled. Otherwise it is "
 "not possible to choose the *Request Start* element in a :ref:`process-"
 "element-trigger-step`."
-msgstr ""
-"［*この開始をトリガー要素で開始できるようにする*］チェックボックスをオンにした場合、この開始要素のトリガーメカニズムが有効になります。オフの場合は"
-" :ref:`process-element-trigger-step` で *リクエスト開始* 要素を選択できません。"
+msgstr "［*この開始をトリガー要素で開始できるようにする*］チェックボックスをオンにした場合、この開始要素のトリガーメカニズムが有効になります。オフの場合は :ref:`process-element-trigger-step` で *リクエスト開始* 要素を選択できません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:192
 msgid ""
@@ -19823,9 +19413,7 @@ msgid ""
 "disabled start, this will not prohibit the execution at runtime. An error"
 " is logged to the log file and the process starts with its defined "
 "configuration."
-msgstr ""
-"すでに関連す :ref:`process-element-trigger-step` "
-"が無効化された開始にリンクされている場合、実行時の実行は禁止されません。エラーはログファイルに記録され、プロセスは定義された設定で開始します。"
+msgstr "すでに関連す :ref:`process-element-trigger-step` が無効化された開始にリンクされている場合、実行時の実行は禁止されません。エラーはログファイルに記録され、プロセスは定義された設定で開始します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:197
 msgid "Responsible Role / User"
@@ -19842,10 +19430,7 @@ msgid ""
 "Use *Role from Attr.* or *User from Attr.*, if the role or user must be "
 "set dynamically during process execution. For example from a parameter "
 "set by the :ref:`process-element-trigger-step`."
-msgstr ""
-"例えば :ref:`process-element-trigger-step` "
-"で設定されたパラメーターセットからなど、ロールやユーザーをプロセス実行中に動的に設定する必要がある場合は、*Role from Attr.* "
-"または *User from Attr.* を使用します。"
+msgstr "例えば :ref:`process-element-trigger-step` で設定されたパラメーターセットからなど、ロールやユーザーをプロセス実行中に動的に設定する必要がある場合は、*Role from Attr.* または *User from Attr.* を使用します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:207
 msgid ""
@@ -19858,9 +19443,7 @@ msgid ""
 "The role CREATOR means that the user who has started the current case is "
 "responsible for the task created by the :ref:`process-element-trigger-"
 "step`."
-msgstr ""
-"CREATOR ロールは、現在のケースを開始したユーザー :ref:`process-element-trigger-step` "
-"で作成されたタスクに対して責任を負うことを意味します。"
+msgstr "CREATOR ロールは、現在のケースを開始したユーザー :ref:`process-element-trigger-step` で作成されたタスクに対して責任を負うことを意味します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:213
 msgid "Delay (blocking period)"
@@ -19871,9 +19454,7 @@ msgid ""
 "The task can be blocked before a user can work on it. This ivyScript "
 "expression defines the :ref:`ivyscript-datatype-duration` the task is "
 "blocked."
-msgstr ""
-"ユーザーが作業できるようになるまで、タスクをブロックできます。この ivyScript 式は、タスクがブロックされ :ref"
-":`ivyscript-datatype-duration` を定義します。"
+msgstr "ユーザーが作業できるようになるまで、タスクをブロックできます。この ivyScript 式は、タスクがブロックされ :ref:`ivyscript-datatype-duration` を定義します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:218
 msgid ""
@@ -19888,12 +19469,7 @@ msgid ""
 "start-request-trigger-tab`) will appear in the task list as suspended "
 "tasks. Tasks started with a HTTP request (see :ref:`process-element-"
 "start-request-tab-request`) normally do not appear in the task list."
-msgstr ""
-"このタブでは、タスクに関連する情報を定義します。:ref:`process-element-trigger-step` （「:ref"
-":`process-element-start-request-trigger-"
-"tab`」を参照）を使用して作成されたタスクのみが、保留タスクとしてタスクリストに表示されます。通常、HTTP "
-"リクエストで開始されるタスク（「:ref:`process-element-start-request-tab-"
-"request`」を参照）は、タスクリストには表示されません。"
+msgstr "このタブでは、タスクに関連する情報を定義します。:ref:`process-element-trigger-step` （「:ref:`process-element-start-request-trigger-tab`」を参照）を使用して作成されたタスクのみが、保留タスクとしてタスクリストに表示されます。通常、HTTP リクエストで開始されるタスク（「:ref:`process-element-start-request-tab-request`」を参照）は、タスクリストには表示されません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:232
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:117
@@ -19921,10 +19497,7 @@ msgid ""
 "next Task Switch or Process End. This option is only available when the "
 "option *Anonymous* on the :ref:`process-element-start-request-tab-"
 "request` is disabled."
-msgstr ""
-"［*タスクの永続化*］が選択されている場合、ケースとタスクはリクエストの開始時に直接永続化されます。タスクは（作成済みの状態をスキップして）すぐに実行中の状態になり、タスクは（作成済みの状態をスキップして））再開の状態になります。また、開始リクエストや次のタスクスイッチまたはプロセス終了の後、タスクをリセットできます。このオプションは"
-"  :ref:`process-element-start-request-tab-request` "
-"の［*匿名*］オプションが無効になっている場合のみ、使用可能です。"
+msgstr "［*タスクの永続化*］が選択されている場合、ケースとタスクはリクエストの開始時に直接永続化されます。タスクは（作成済みの状態をスキップして）すぐに実行中の状態になり、タスクは（作成済みの状態をスキップして））再開の状態になります。また、開始リクエストや次のタスクスイッチまたはプロセス終了の後、タスクをリセットできます。このオプションは  :ref:`process-element-start-request-tab-request` の［*匿名*］オプションが無効になっている場合のみ、使用可能です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:245
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:120
@@ -19947,9 +19520,7 @@ msgid ""
 "An IvyScript expression defines the :ref:`ivyscript-datatype-duration` "
 "until the task will expire. If that happens the escalation procedure "
 "defined by the following parameters is executed."
-msgstr ""
-"IvyScript 式は、タスクの有効期限が切れるまで :ref:`ivyscript-datatype-duration` "
-"を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。"
+msgstr "IvyScript 式は、タスクの有効期限が切れるまで :ref:`ivyscript-datatype-duration` を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:255
 msgid ""
@@ -19976,11 +19547,7 @@ msgid ""
 "makes only sense in combination when starting with a :ref:`process-"
 "element-trigger-step` (see :ref:`process-element-start-request-trigger-"
 "tab`)"
-msgstr ""
-"HTTP リクエスト（「:ref:`process-element-start-request-tab-"
-"request`」を参照）で作成されたタスクは直ちに実行されます。:ref:`process-element-trigger-step` "
-"（「:ref:`process-element-start-request-trigger-tab` "
-"」を参照）で開始する場合のみ、有効期限のタイムアウトを定義してください。"
+msgstr "HTTP リクエスト（「:ref:`process-element-start-request-tab-request`」を参照）で作成されたタスクは直ちに実行されます。:ref:`process-element-trigger-step` （「:ref:`process-element-start-request-trigger-tab` 」を参照）で開始する場合のみ、有効期限のタイムアウトを定義してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-task-call-wait.rst:12
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:270
@@ -20000,17 +19567,13 @@ msgid ""
 "This is a post construct code block for the Task that is defined in this "
 "tab. The created Task is provided as variable called ``task`` (:ref"
 ":`process-element-tab-task`)."
-msgstr ""
-"このタブで定義されるタスクのポストコンストラクトコードブロックです。作成されたタスクは ``task`` という名前の変数として提供されます（ "
-":ref:`process-element-tab-task` ）。"
+msgstr "このタブで定義されるタスクのポストコンストラクトコードブロックです。作成されたタスクは ``task`` という名前の変数として提供されます（ :ref:`process-element-tab-task` ）。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:282
 msgid ""
 "On this tab you can configure the Case created by this Start Request. See"
 " :ref:`process-element-tab-case` in the Common Tabs section."
-msgstr ""
-"このタブでは、この開始リクエストで作成されるケースを設定できます。「共通のタブ」の章の :ref:`process-element-tab-"
-"case` 」を参照してください。"
+msgstr "このタブでは、この開始リクエストで作成されるケースを設定できます。「共通のタブ」の章の :ref:`process-element-tab-case` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:4
 msgid "Sub Process Start"
@@ -20020,9 +19583,7 @@ msgstr "サブプロセス開始"
 msgid ""
 "|image0| The *Sub Start* element is located in the *Subprocess* drawer of"
 " the process editor palette and only available in callable sub processes."
-msgstr ""
-"|image0| *サブプロセス開始* 要素は、プロセスエディターパレットの *サブプロセス* "
-"ドロワーにあり、呼び出し可能なサブプロセスでのみ使用できます。"
+msgstr "|image0| *サブプロセス開始* 要素は、プロセスエディターパレットの *サブプロセス* ドロワーにあり、呼び出し可能なサブプロセスでのみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:13
 msgid ""
@@ -20035,9 +19596,7 @@ msgid ""
 "This tab is used to define the name and input parameters of the sub "
 "process. See :ref:`process-element-tab-start` for a more detailed "
 "description."
-msgstr ""
-"このタブを使用して、サブプロセスの名前と入力パラメーターを定義します。詳細については、 :ref:`process-element-tab-"
-"start` 」を参照してください。"
+msgstr "このタブを使用して、サブプロセスの名前と入力パラメーターを定義します。詳細については、 :ref:`process-element-tab-start` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:29
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:27
@@ -20074,10 +19633,7 @@ msgid ""
 "Switch Event element can only have one input and one output, instead of "
 "multiple ones like the parallel Task Switch Gateway. The usage of this "
 "simplified element is to have a more BPMN conform element."
-msgstr ""
-"タスクスイッチイベント要素の機能 :ref:`process-element-task-switch-gateway` "
-"要素と同じです。違いは、タスクスイッチイベント要素には、並列するタスクスイッチゲートウェイのように複数の入出力ではなく、1 つの入力と 1 "
-"つの出力のみ設定できることです。この簡素化された要素を使用することで、より BPMN に準拠した要素を設定できます。"
+msgstr "タスクスイッチイベント要素の機能 :ref:`process-element-task-switch-gateway` 要素と同じです。違いは、タスクスイッチイベント要素には、並列するタスクスイッチゲートウェイのように複数の入出力ではなく、1 つの入力と 1 つの出力のみ設定できることです。この簡素化された要素を使用することで、より BPMN に準拠した要素を設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-event.rst:19
 msgid ""
@@ -20129,19 +19685,14 @@ msgid ""
 "This is a default behavior. To change it consult the documentation of "
 ":public-api:`SystemTaskFailureBehaviour "
 "</ch/ivyteam/ivy/workflow/SystemTaskFailureBehaviour.html>`"
-msgstr ""
-"これはデフォルトの動作です。変更する場合は、:public-api:`SystemTaskFailureBehaviour "
-"</ch/ivyteam/ivy/workflow/SystemTaskFailureBehaviour.html>` "
-"のドキュメントを参照してください。"
+msgstr "これはデフォルトの動作です。変更する場合は、:public-api:`SystemTaskFailureBehaviour </ch/ivyteam/ivy/workflow/SystemTaskFailureBehaviour.html>` のドキュメントを参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:35
 msgid ""
 "The Task Switch Gateway element can have several input and output arcs "
 "and acts as an AND-Gateway. It synchronizes all incoming tasks - it waits"
 " until all incoming tasks have been completed."
-msgstr ""
-"タスクスイッチゲートウェイ要素には複数の入出力アークを設定できます。この要素は AND "
-"ゲートウェイとして機能し、すべての入力タスクを同期し、すべての入力タスクが完了するまで待ちます。"
+msgstr "タスクスイッチゲートウェイ要素には複数の入出力アークを設定できます。この要素は AND ゲートウェイとして機能し、すべての入力タスクを同期し、すべての入力タスクが完了するまで待ちます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:39
 msgid ""
@@ -20163,9 +19714,7 @@ msgid ""
 " which carries the data of the Xth input. Hover with the mouse over the "
 "incoming connections of the element to learn which input connection "
 "corresponds to which variable."
-msgstr ""
-"入力接続ごとに、X 番目の入力のデータを保持する別個の ``inX`` "
-"オブジェクトを使用できます。要素の入力接続の上にマウスカーソルを置くと、どの入力接続がどの変数に対応するかを確認できます。"
+msgstr "入力接続ごとに、X 番目の入力のデータを保持する別個の ``inX`` オブジェクトを使用できます。要素の入力接続の上にマウスカーソルを置くと、どの入力接続がどの変数に対応するかを確認できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:66
 msgid "Tasks Tab"
@@ -20177,9 +19726,7 @@ msgid ""
 ":`process-element-tab-task` for a more detailed description. The only "
 "difference in comparison to the referenced Task tab is, that the Task "
 "Switch Gateway can have multiple configurable tasks."
-msgstr ""
-"このタブでは、このゲートウェイのタスクを設定できます。詳細については、 :ref:`process-element-tab-task` "
-"」を参照してください。参照先のタスクタブとの違いは、タスクスイッチゲートウェイには複数のタスクを設定できる点のみです。"
+msgstr "このタブでは、このゲートウェイのタスクを設定できます。詳細については、 :ref:`process-element-tab-task` 」を参照してください。参照先のタスクタブとの違いは、タスクスイッチゲートウェイには複数のタスクを設定できる点のみです。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:74
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:77
@@ -20205,9 +19752,7 @@ msgid ""
 "If no task is created because *skip task list* is enabled (see :ref"
 ":`process-element-tab-task`) the case will continue without displaying a "
 "page or the task list."
-msgstr ""
-"［*タスクリストをスキップ*］が有効で（ :ref:`process-element-tab-task` "
-"」を参照）、タスクが作成されない場合は、ページやタスクリストが表示されずに、ケースが続行されます。"
+msgstr "［*タスクリストをスキップ*］が有効で（ :ref:`process-element-tab-task` 」を参照）、タスクが作成されない場合は、ページやタスクリストが表示されずに、ケースが続行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:95
 msgid ""
@@ -20233,9 +19778,7 @@ msgid ""
 "element creates a case and a task with the defined configuration on the "
 ":ref:`process-element-start-request`. element. The new created task is "
 "returned to the Trigger element."
-msgstr ""
-"トリガー要素を使用して、新しいワークフローを開始できます。 トリガー要素は、トリガーによる開始メカニズムが有効 :ref:`process-"
-"element-start-request` 要素をトリガーします。 :ref:`process-element-start-request`"
+msgstr "トリガー要素を使用して、新しいワークフローを開始できます。 トリガー要素は、トリガーによる開始メカニズムが有効 :ref:`process-element-start-request` 要素をトリガーします。 :ref:`process-element-start-request`"
 
 #: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:20
 msgid ""
@@ -20256,9 +19799,7 @@ msgstr "このタブでは、開始シグネチャと、入力パラメーター
 msgid ""
 "The variable ``result`` contains the created task that are returned by "
 "the triggered :ref:`process-element-start-request`."
-msgstr ""
-"``result`` 変数には、トリガーされ :ref:`process-element-start-request` "
-"によって返される作成済みのタスクが含まれます。"
+msgstr "``result`` 変数には、トリガーされ :ref:`process-element-start-request` によって返される作成済みのタスクが含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:6
 msgid ""
@@ -20273,10 +19814,7 @@ msgid ""
 "another *User Dialog*. Input and return parameters for/from the started "
 "User Dialog can be mapped using the *call* and *output* tabs of this "
 "element."
-msgstr ""
-"ユーザーダイアログ要素を使用して、プロセスからユーザーダイアログを呼び出します。ユーザーダイアログは、 *ビジネスプロセス* からも、別の "
-"*ユーザーダイアログ* からも開始できます。開始されたユーザーダイアログの入力パラメーターと戻りパラメーターは、この要素の *呼び出し* タブと "
-"*出力* タブを使用してマッピングできます。"
+msgstr "ユーザーダイアログ要素を使用して、プロセスからユーザーダイアログを呼び出します。ユーザーダイアログは、 *ビジネスプロセス* からも、別の *ユーザーダイアログ* からも開始できます。開始されたユーザーダイアログの入力パラメーターと戻りパラメーターは、この要素の *呼び出し* タブと *出力* タブを使用してマッピングできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:2
 msgid "Dialog Tab"
@@ -20303,9 +19841,7 @@ msgid ""
 "Defines the User Dialog component to be started by its ID. You can either"
 " create a new-one by using the |add-button| button. Or pick an existing "
 "one from the dropdown list."
-msgstr ""
-"ID で開始されるユーザーダイアログコンポーネントを定義します。|add-button| "
-"ボタンを使用して、新しいコンポーネントを作成できます。または、ドロップダウンリストから既存のコンポーネントを選択します。"
+msgstr "ID で開始されるユーザーダイアログコンポーネントを定義します。|add-button| ボタンを使用して、新しいコンポーネントを作成できます。または、ドロップダウンリストから既存のコンポーネントを選択します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:22
 msgid ""
@@ -20327,9 +19863,7 @@ msgid ""
 "mapped here to an ``param`` object, which offers a field for each "
 "declared start method parameter. You can define each parameter "
 "individually from the calling process's data."
-msgstr ""
-"選択した *開始メソッド* にパラメーターが必要な場合、ここで ``param`` "
-"オブジェクトにマッピングできます。ここには、宣言された開始メソッドのパラメーターごとにフィールドが表示されます。呼び出し元のプロセスのデータから個々にパラメーターを定義できます。"
+msgstr "選択した *開始メソッド* にパラメーターが必要な場合、ここで ``param`` オブジェクトにマッピングできます。ここには、宣言された開始メソッドのパラメーターごとにフィールドが表示されます。呼び出し元のプロセスのデータから個々にパラメーターを定義できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:35
 msgid ""
@@ -20338,18 +19872,14 @@ msgid ""
 "in order to define a call parameter. You can also mix the two forms, in "
 "which case the table's definitions will be executed before the scripting "
 "block."
-msgstr ""
-"例えば、呼び出しパラメーターを定義するために計算を行う必要がある場合、属性表の下にあるスクリプトフィールドで呼び出しパラメーターを定義できます。また、スクリプトブロックの前に表の定義を実行する場合には、2"
-" つのフォームを組み合わせることができます。"
+msgstr "例えば、呼び出しパラメーターを定義するために計算を行う必要がある場合、属性表の下にあるスクリプトフィールドで呼び出しパラメーターを定義できます。また、スクリプトブロックの前に表の定義を実行する場合には、2 つのフォームを組み合わせることができます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:43
 msgid ""
 "The result values of the started User Dialog (if any) are mapped back "
 "onto the calling process's data on the *Output* tab. They are available "
 "as fields on a ``result`` variable."
-msgstr ""
-"開始されたユーザーダイアログの結果の値がある場合、*出力* タブの呼び出し元のプロセスのデータにマッピングし直されます。結果の値は "
-"``result`` 変数のフィールドとして使用できます。"
+msgstr "開始されたユーザーダイアログの結果の値がある場合、*出力* タブの呼び出し元のプロセスのデータにマッピングし直されます。結果の値は ``result`` 変数のフィールドとして使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:29
 msgid ""
@@ -21609,9 +21139,7 @@ msgstr "delete-action"
 msgid ""
 "|start-action| Starts/Runs the selected process. Only available on the "
 ":ref:`Start Element <process-element-start-request>`"
-msgstr ""
-"|start-action| 選択したプロセスを開始／実行します :ref:`開始要素<process-element-start-"
-"request>` のみ使用できます。"
+msgstr "|start-action| 選択したプロセスを開始／実行します :ref:`開始要素<process-element-start-request>` のみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:216
 msgid "start-action"
@@ -21623,10 +21151,7 @@ msgid ""
 "|info-action| Information about the current selection (:ref:`problem "
 "markers <problems-view>`, :ref:`name <process-element-tab-general>`, "
 ":ref:`description <process-element-tab-general>`, PID, conditions, etc.)."
-msgstr ""
-"|info-action| 現在の選択に関する情報（:ref:`problem markers <problems-"
-"view>`、:ref:`name <process-element-tab-general>`、:ref:`description "
-"<process-element-tab-general>`、PID、条件など）。"
+msgstr "|info-action| 現在の選択に関する情報（:ref:`problem markers <problems-view>`、:ref:`name <process-element-tab-general>`、:ref:`description <process-element-tab-general>`、PID、条件など）。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:319
 msgid "info-action"
@@ -21642,9 +21167,7 @@ msgstr "|search-action| この開始イベントのすべての使用状況を�
 msgid ""
 "|breakpoint-action| Toggle Breakpoint: To suspend the execution. :ref"
 ":`process-element-breakpoints` can be added to process elements."
-msgstr ""
-"|breakpoint-action| ブレークポイントの切り替え：実行を中断するには :ref:`process-element-"
-"breakpoints` をプロセス要素に追加します。"
+msgstr "|breakpoint-action| ブレークポイントの切り替え：実行を中断するには :ref:`process-element-breakpoints` をプロセス要素に追加します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:220
 msgid "breakpoint-action"
@@ -21748,27 +21271,21 @@ msgstr "要素をプロセスワークフローに直接挿入します。以下
 msgid ""
 "Events: All possible event elements (also for :ref:`process-element-"
 "error-boundary-event` and :ref:`process-element-signal-boundary-event`)"
-msgstr ""
-"イベント：すべてのイベント要素（:ref:`process-element-error-boundary-event` および :ref"
-":`process-element-signal-boundary-event` も含む）"
+msgstr "イベント：すべてのイベント要素（:ref:`process-element-error-boundary-event` および :ref:`process-element-signal-boundary-event` も含む）"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:208
 msgid ""
 "Press the key :guilabel:`A` to get a list of all elements. You can also "
 "navigate through the list with the :guilabel:`Arrow` keys and add an "
 "element with the :guilabel:`Enter` key."
-msgstr ""
-":guilabel:`A` キーを押して、すべての要素のリストを取得できます。また、:guilabel:`矢印` "
-"キーを押してリスト内を移動し、:guilabel:`Enter` キーで要素を追加できます。"
+msgstr ":guilabel:`A` キーを押して、すべての要素のリストを取得できます。また、:guilabel:`矢印` キーを押してリスト内を移動し、:guilabel:`Enter` キーで要素を追加できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:212
 msgid ""
 "|connect-action| The **Connection Tool** can connect the current element "
 "with another. *Only available if the element has no outgoing connector or"
 " supports multiple outgoing connectors*"
-msgstr ""
-"|connect-action| **接続ツール** "
-"で現在の要素を他の要素と接続できます。*要素に出力コネクターがないか、複数の出力コネクターをサポートしている場合のみ、使用できます*。"
+msgstr "|connect-action| **接続ツール** で現在の要素を他の要素と接続できます。*要素に出力コネクターがないか、複数の出力コネクターをサポートしている場合のみ、使用できます*。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:230
 msgid "connect-action"
@@ -21877,9 +21394,7 @@ msgstr "ショートカットキー"
 msgid ""
 "Some of the *tools* and *quick actions* are available with shortcut keys."
 " To use them, select the element, then press the associated key."
-msgstr ""
-"*ツール* や *クイックアクション* "
-"の中には、ショートカットキーを使用できるものがあります。ショートカットキーを使用するには、要素を選択し、関連付けられたキーを押します。"
+msgstr "*ツール* や *クイックアクション* の中には、ショートカットキーを使用できるものがあります。ショートカットキーを使用するには、要素を選択し、関連付けられたキーを押します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:333
 msgid "Jump out"
@@ -21890,9 +21405,7 @@ msgid ""
 "|jump-out-action| Visible in the top left of the :ref:`process-editor-"
 "area` to jump out of an *embedded subprocess* to the process that "
 "contains the *Embedded Sub* element."
-msgstr ""
-"|jump-out-action| :ref:`process-editor-area` の左上に表示され、*埋め込みサブプロセス* から "
-"*埋め込みサブプロセス* 要素を含むプロセスにジャンプアウトします。"
+msgstr "|jump-out-action| :ref:`process-editor-area` の左上に表示され、*埋め込みサブプロセス* から *埋め込みサブプロセス* 要素を含むプロセスにジャンプアウトします。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:340
 msgid "jump-out-action"
@@ -21922,9 +21435,7 @@ msgid ""
 "implement business cases. Business processes contain starts that can be "
 "selected by any user from his/her workflow list or from the list of star "
 "table processes."
-msgstr ""
-"ビジネスプロセスは *通常* "
-"のプロセスで、ビジネスケースの実装に使用されます。ビジネスプロセスには、ユーザーがワークフローリストや開始表のプロセスのリストから選択できる開始が含まれます。"
+msgstr "ビジネスプロセスは *通常* のプロセスで、ビジネスケースの実装に使用されます。ビジネスプロセスには、ユーザーがワークフローリストや開始表のプロセスのリストから選択できる開始が含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:22
 msgid ""
@@ -21933,9 +21444,7 @@ msgid ""
 "available in all other process kinds. The hierarchy of embedded "
 "subprocesses is potentially indefinite, i.e., you can create further "
 "embedded subs inside an already existing subprocess."
-msgstr ""
-"基本的には、埋め込みサブプロセスは、複数の要素を構文的に 1 "
-"つの要素に折りたたんだもので、プロセス設計中に詳細が表示されないようにします。埋め込みサブプロセスは、他のすべての種類のプロセスで使用できます。埋め込みサブプロセスの階層は潜在的には無限で、既存のサブプロセス内にさらに埋め込みサブプロセスを作成できます。"
+msgstr "基本的には、埋め込みサブプロセスは、複数の要素を構文的に 1 つの要素に折りたたんだもので、プロセス設計中に詳細が表示されないようにします。埋め込みサブプロセスは、他のすべての種類のプロセスで使用できます。埋め込みサブプロセスの階層は潜在的には無限で、既存のサブプロセス内にさらに埋め込みサブプロセスを作成できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:28
 msgid ""
@@ -21943,9 +21452,7 @@ msgid ""
 "diagram simplification, no mapping of data is required when entering or "
 "leaving this kind of subprocess (i.e., inside an embedded subprocess the "
 "same data is available as inside the caller process)."
-msgstr ""
-"*埋め込みサブプロセス* "
-"は、プロセス図を簡素化するための構造的な手段であり、埋め込みサブプロセスに出入りする際にデータのマッピングを行う必要はありません（埋め込みサブプロセス内では、呼び出し元のプロセスと同じデータを使用できます）。"
+msgstr "*埋め込みサブプロセス* は、プロセス図を簡素化するための構造的な手段であり、埋め込みサブプロセスに出入りする際にデータのマッピングを行う必要はありません（埋め込みサブプロセス内では、呼び出し元のプロセスと同じデータを使用できます）。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:35
 msgid ""
@@ -21955,9 +21462,7 @@ msgid ""
 "incompatibilities with older versions of the process and will hinder you "
 "to deploy such a process over an already deployed older version of the "
 "process. The process elements that may cause such incompatibilities are:"
-msgstr ""
-"プロセス要素を埋め込みサブプロセスにラップしても、ほとんどのプロセス要素の機能には影響しません。ただし、Axon Ivy "
-"によるプロセス要素の処理方法には影響を及ぼします。ラッピングにより、古いバージョンのプロセスとの互換性の問題が生じ、展開済みの古いバージョンのプロセスにそのようなプロセスを展開できなくなる可能性があります。そのような互換性の問題を引き起こす可能性があるプロセス要素は以下のとおりです。"
+msgstr "プロセス要素を埋め込みサブプロセスにラップしても、ほとんどのプロセス要素の機能には影響しません。ただし、Axon Ivy によるプロセス要素の処理方法には影響を及ぼします。ラッピングにより、古いバージョンのプロセスとの互換性の問題が生じ、展開済みの古いバージョンのプロセスにそのようなプロセスを展開できなくなる可能性があります。そのような互換性の問題を引き起こす可能性があるプロセス要素は以下のとおりです。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:43
 msgid ":ref:`process-element-task-switch-gateway`"
@@ -21977,9 +21482,7 @@ msgid ""
 "from any other process with the *call subprocess element*. Independent "
 "subprocesses can be used to factor out frequently used functionality "
 "which can then be reused by any other process."
-msgstr ""
-"依存関係にあるサブプロセス（呼び出し可能）は、*サブプロセスの呼び出し要素* "
-"で他のプロセスから呼び出すことができるプロセスです。依存関係にあるサブプロセスを使用して、頻繁に使用される機能をくくり出し、他のプロセスで再利用できます。"
+msgstr "依存関係にあるサブプロセス（呼び出し可能）は、*サブプロセスの呼び出し要素* で他のプロセスから呼び出すことができるプロセスです。依存関係にあるサブプロセスを使用して、頻繁に使用される機能をくくり出し、他のプロセスで再利用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:57
 msgid ""
@@ -21987,9 +21490,7 @@ msgid ""
 "parts of process logic) they have an own Data Class which might not match"
 " the caller's data. Therefore parameters need to be mapped in both "
 "directions when entering and leaving an independent subprocess."
-msgstr ""
-"*呼び出し可能* なサブプロセスは、プロセス（またはプロセスロジックの一部）の *依存関係* "
-"の実装であることから、呼び出し可能なサブプロセスには、呼び出し元のデータと一致しない独自のデータクラスが設定されている場合があります。そのため、依存関係にあるサブプロセスに出入りする際は、双方向でパラメーターをマップする必要があります。"
+msgstr "*呼び出し可能* なサブプロセスは、プロセス（またはプロセスロジックの一部）の *依存関係* の実装であることから、呼び出し可能なサブプロセスには、呼び出し元のデータと一致しない独自のデータクラスが設定されている場合があります。そのため、依存関係にあるサブプロセスに出入りする際は、双方向でパラメーターをマップする必要があります。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:62
 msgid ""
@@ -21997,9 +21498,7 @@ msgid ""
 " from the :ref:`process-new-wizard`. The created process will contain "
 "special start and end elements that must encompass the process "
 "implementation."
-msgstr ""
-"依存関係にあるサブプロセスを作成するには :ref:`process-new-wizard` "
-"で［*呼び出し可能なサブプロセス*］オプションを選択します。作成されたプロセスには、プロセス実装を含む特別な開始要素と終了要素が含まれます。"
+msgstr "依存関係にあるサブプロセスを作成するには :ref:`process-new-wizard` で［*呼び出し可能なサブプロセス*］オプションを選択します。作成されたプロセスには、プロセス実装を含む特別な開始要素と終了要素が含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:70
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:58
@@ -22012,10 +21511,7 @@ msgid ""
 " Web Service process can be started (i.e., called) from any other "
 "application (or from another process) by using the *Web Service call "
 "element* or any other SOAP web service compatible client.."
-msgstr ""
-"Web サービスプロセスは、特殊な *依存関係にあるサブプロセス* です。*Web サービス呼び出し要素* または Web "
-"サービスと互換性のある他の SOAP クライアントを使用して、他のアプリケーションから（または他のプロセスから）Web "
-"サービスプロセスを開始する（呼び出す）ことができます。"
+msgstr "Web サービスプロセスは、特殊な *依存関係にあるサブプロセス* です。*Web サービス呼び出し要素* または Web サービスと互換性のある他の SOAP クライアントを使用して、他のアプリケーションから（または他のプロセスから）Web サービスプロセスを開始する（呼び出す）ことができます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:77
 msgid ""
@@ -22023,9 +21519,7 @@ msgid ""
 "operations, which are defined by the *Web Service Process Start* elements"
 " within the process. Each of these start elements have their own input "
 "and output parameters that will be mapped to and from the process data."
-msgstr ""
-"Web サービスプロセスは、プロセス内の*Web サービスプロセスの開始*要素で定義される、1 つまたは複数のオペレーションを Web "
-"サービスに提供します。これらの開始要素にはそれぞれ独自の入出力パラメーターが含まれ、プロセスデータとマッピングされます。"
+msgstr "Web サービスプロセスは、プロセス内の*Web サービスプロセスの開始*要素で定義される、1 つまたは複数のオペレーションを Web サービスに提供します。これらの開始要素にはそれぞれ独自の入出力パラメーターが含まれ、プロセスデータとマッピングされます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:83
 msgid ""
@@ -22033,10 +21527,7 @@ msgid ""
 "other applications and not by a user directly, no user-interaction (HTML "
 "or User Dialogs) is allowed within such a process. If the process does "
 "contain user-interaction an exception will be thrown."
-msgstr ""
-"Web サービスは、ユーザーではなく、他のアプリケーションから呼び出されることを想定しているため、Web "
-"サービスプロセスではユーザーインタラクション（HTML "
-"またはユーザーダイアログ）は許可されません。プロセスにユーザーインタラクションが含まれる場合は、例外がスローされます。"
+msgstr "Web サービスは、ユーザーではなく、他のアプリケーションから呼び出されることを想定しているため、Web サービスプロセスではユーザーインタラクション（HTML またはユーザーダイアログ）は許可されません。プロセスにユーザーインタラクションが含まれる場合は、例外がスローされます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:88
 msgid ""
@@ -22060,11 +21551,7 @@ msgid ""
 "the *User Dialog drawer* on the process editor palette), while other "
 "elements (such as *task switch* or *HTML page*) are not available for "
 "conceptual reasons."
-msgstr ""
-"ユーザーダイアログロジックプロセスは、ユーザーダイアログの動作、すなわち MVC パターン :ref:`コントローラー<user-"
-"dialogs>` 実装です。ユーザーダイアログロジックプロセスでは、まったく新しい要素を（プロセスエディターパレット "
-"*ユーザーダイアログドロワー* から）使用できます。ただし、それ以外の要素（ *タスクスイッチ* 、 *HTML ページ*など* "
-"）は、コンセプト上の理由から使用できません。"
+msgstr "ユーザーダイアログロジックプロセスは、ユーザーダイアログの動作、すなわち MVC パターン :ref:`コントローラー<user-dialogs>` 実装です。ユーザーダイアログロジックプロセスでは、まったく新しい要素を（プロセスエディターパレット *ユーザーダイアログドロワー* から）使用できます。ただし、それ以外の要素（ *タスクスイッチ* 、 *HTML ページ*など* ）は、コンセプト上の理由から使用できません。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:103
 msgid ""
@@ -22074,11 +21561,7 @@ msgid ""
 "need to have a direct connection (in fact they never have). Once a User "
 "Dialog process is running, it is driven by *user interface events* which "
 "will trigger individual sub processes."
-msgstr ""
-"ユーザーダイアログロジックプロセスは、*ビジネスプロセス* 内の *ユーザーダイアログ* 要素で呼び出されます。プロセスの実行は *init "
-"start* 要素で開始され、*dialog exit* 要素で終了します。2 "
-"つの要素を直接接続する必要はありません（実際、直接接続されることはありません）。動作したユーザーダイアログプロセスは、個々のサブプロセスをトリガーする"
-" *ユーザーインターフェースイベント* によって駆動されます。"
+msgstr "ユーザーダイアログロジックプロセスは、*ビジネスプロセス* 内の *ユーザーダイアログ* 要素で呼び出されます。プロセスの実行は *init start* 要素で開始され、*dialog exit* 要素で終了します。2 つの要素を直接接続する必要はありません（実際、直接接続されることはありません）。動作したユーザーダイアログプロセスは、個々のサブプロセスをトリガーする *ユーザーインターフェースイベント* によって駆動されます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:112
 msgid ""
@@ -22086,9 +21569,7 @@ msgid ""
 "(or rather should) be seen as equivalent to calling of a *callable "
 "process* with the sole difference that the User Dialog offers a user "
 "interface that allows a user to interact with the process logic directly."
-msgstr ""
-"*プロセスベースのユーザーダイアログ* の呼び出し（ロジックの実行を含む）は、*呼び出し可能プロセス* "
-"と同等であるといえます（むしろ、そうあるべきです）。唯一の違いは、ユーザーダイアログは、ユーザーがプロセスロジックと直接やり取りできるインターフェースを提供することです。"
+msgstr "*プロセスベースのユーザーダイアログ* の呼び出し（ロジックの実行を含む）は、*呼び出し可能プロセス* と同等であるといえます（むしろ、そうあるべきです）。唯一の違いは、ユーザーダイアログは、ユーザーがプロセスロジックと直接やり取りできるインターフェースを提供することです。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:118
 msgid ""
@@ -22109,10 +21590,7 @@ msgid ""
 "properties. To open and show a the inscription mask of a process you "
 "simply select the process in the :ref:`ivy-project-view`, right-click and"
 " select *inscription* from the pop-up menu."
-msgstr ""
-"プロセス内部で使用されるプロセス要素と同様、プロセス自体にも *インスクリプション* "
-"があり、プロセスのプロパティを指定、編集できます。プロセスのインスクリプションマスクを開いて表示するには、 :ref:`ivy-project-"
-"view` でプロセスを選択して右クリックし、ポップアップメニューから［*インスクリプション*］を選択するだけです。"
+msgstr "プロセス内部で使用されるプロセス要素と同様、プロセス自体にも *インスクリプション* があり、プロセスのプロパティを指定、編集できます。プロセスのインスクリプションマスクを開いて表示するには、 :ref:`ivy-project-view` でプロセスを選択して右クリックし、ポップアップメニューから［*インスクリプション*］を選択するだけです。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:13
 msgid "Name and Description"
@@ -22144,9 +21622,7 @@ msgid ""
 " show an error. The used data class is initially specified with the :ref"
 ":`process-new-wizard`, but you may change this association at any later "
 "time."
-msgstr ""
-"各プロセスをデータクラスと関連付ける必要があります。関連付けない場合、タブにエラーが表示されます。使用するデータクラスは最初 :ref"
-":`process-new-wizard` で指定されますが、この関連付けは後から変更できます。"
+msgstr "各プロセスをデータクラスと関連付ける必要があります。関連付けない場合、タブにエラーが表示されます。使用するデータクラスは最初 :ref:`process-new-wizard` で指定されますが、この関連付けは後から変更できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:31
 msgid ""
@@ -22155,18 +21631,14 @@ msgid ""
 "that **it is strongly recommended that you only set data classes that are"
 " defined in the same project as the process** in order to avoid "
 "dependencies on the specific implementation of another project."
-msgstr ""
-"データクラスフィールドの隣にある［(C)］ボタンを使用して、編集したプロセスに表示される既存のデータクラスを選択します。他のプロジェクト固有の実装への依存関係を回避するため、**プロセスと同じプロジェクトで定義されるデータクラスのみ設定することを強く推奨します**"
-" 。"
+msgstr "データクラスフィールドの隣にある［(C)］ボタンを使用して、編集したプロセスに表示される既存のデータクラスを選択します。他のプロジェクト固有の実装への依存関係を回避するため、**プロセスと同じプロジェクトで定義されるデータクラスのみ設定することを強く推奨します** 。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:37
 msgid ""
 "It is legal for two processes to specify the same data class. This can be"
 " desired if the processes operate on the same set of data (e.g., sub "
 "processes) and it may facilitate the mapping in some cases."
-msgstr ""
-"2 "
-"つのプロセスで同じデータクラスを指定することに問題ありません。プロセスを同じデータセット（サブプロセスなど）で実行する場合は、そうするのが望ましいといえます。場合によっては、マッピングが容易になります。"
+msgstr "2 つのプロセスで同じデータクラスを指定することに問題ありません。プロセスを同じデータセット（サブプロセスなど）で実行する場合は、そうするのが望ましいといえます。場合によっては、マッピングが容易になります。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:42
 #: ../../source/engine-guide/security/axonivy-engine/permissions.rst:2
@@ -22223,9 +21695,7 @@ msgid ""
 "The *Web Service authentication* options allows you to specify how "
 "clients are authenticated when invoking the web service. You can select "
 "one of the following available authentication methods:"
-msgstr ""
-"*Web サービスの認証* オプションでは、Web "
-"サービスの呼び出し時のクライアントの認証方法を指定できます。以下のいずれかの認証方法を選択できます。"
+msgstr "*Web サービスの認証* オプションでは、Web サービスの呼び出し時のクライアントの認証方法を指定できます。以下のいずれかの認証方法を選択できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:75
 msgid "None/Container"
@@ -22237,9 +21707,7 @@ msgid ""
 " web container (Tomcat) or a web server (Microsoft IIS/Apache) handles "
 "user authentication, the user is passed through to Axon Ivy (e.g., Single"
 " Sign-on)."
-msgstr ""
-"認証は Web サービス要素では処理されません。ただし、ウェブコンテナ（Tomcat）またはウェブサーバー（Microsoft "
-"IIS/Apache）でユーザー認証を処理する場合、ユーザーは Axon Ivy に受け渡されます（例：シングルサインオン）。"
+msgstr "認証は Web サービス要素では処理されません。ただし、ウェブコンテナ（Tomcat）またはウェブサーバー（Microsoft IIS/Apache）でユーザー認証を処理する場合、ユーザーは Axon Ivy に受け渡されます（例：シングルサインオン）。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:81
 msgid "WS Security"
@@ -22272,19 +21740,14 @@ msgid ""
 "Service processes and Web Service process elements in common. It can "
 "therefore be used to call a Web Service process from a Web Service "
 "process element if authentication is required."
-msgstr ""
-"HTTP Basic は、一般に Web サービスプロセスと Web "
-"サービスプロセス要素でサポートされる唯一の認証オプションです。認証が必要な場合は、Web サービスから Web "
-"サービスプロセス要素を呼び出すのに使用できます。"
+msgstr "HTTP Basic は、一般に Web サービスプロセスと Web サービスプロセス要素でサポートされる唯一の認証オプションです。認証が必要な場合は、Web サービスから Web サービスプロセス要素を呼び出すのに使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:106
 msgid ""
 "If the web container (Tomcat) or a web server (Microsoft IIS/Apache) "
 "already handles user authentication, the user is passed through to Axon "
 "Ivy without doing an additional HTTP Basic authentication."
-msgstr ""
-"すでにウェブコンテナ（Tomcat）またはウェブサーバー（Microsoft "
-"IIS/Apache）でユーザー認証を処理している場合、ユーザーは、追加の HTTP Basic 認証なしで、Axon Ivy に受け渡されます。"
+msgstr "すでにウェブコンテナ（Tomcat）またはウェブサーバー（Microsoft IIS/Apache）でユーザー認証を処理している場合、ユーザーは、追加の HTTP Basic 認証なしで、Axon Ivy に受け渡されます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/swimlanes.rst:2
 msgid "Swimlanes"
@@ -22296,9 +21759,7 @@ msgid ""
 "and lanes are swimlanes with a label that is placed *behind* the process "
 "logic. Swimlanes have a *horizontal* orientation and can have a colored "
 "border."
-msgstr ""
-"*プール* と *レーン* を使用して、プロセスを視覚的に構造化できます。プールとレーンは、プロセスロジックの *後に* "
-"配置されるラベル付きのスイムレーンです。スイムレーンは *水平* 方向で、色付きの境界線を設定できます。"
+msgstr "*プール* と *レーン* を使用して、プロセスを視覚的に構造化できます。プールとレーンは、プロセスロジックの *後に* 配置されるラベル付きのスイムレーンです。スイムレーンは *水平* 方向で、色付きの境界線を設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/swimlanes.rst:10
 msgid ""
@@ -22357,10 +21818,7 @@ msgid ""
 "simply a structured \"coloring\" of the process' background; they do not "
 "grow or shrink when you change the processes logic and need to be "
 "adjusted manually."
-msgstr ""
-"プールとレーンはいかなる *構造的な* "
-"意味を持たないことに注意してください。これらの目的は純粋に意味的なものです。プールやレーンは、要素が配置される、または関連付けられるコンテナでは "
-"*ありません*。プールとレーンは、プロセスの背景の構造化された「色付け」であり、プロセスロジックを変更しても拡大／縮小されないため、手動で調整する必要があります。"
+msgstr "プールとレーンはいかなる *構造的な* 意味を持たないことに注意してください。これらの目的は純粋に意味的なものです。プールやレーンは、要素が配置される、または関連付けられるコンテナでは *ありません*。プールとレーンは、プロセスの背景の構造化された「色付け」であり、プロセスロジックを変更しても拡大／縮小されないため、手動で調整する必要があります。"
 
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:5
 msgid "Inscription Browsers"
@@ -22528,10 +21986,7 @@ msgid ""
 ":`process-element-sub-process-start` instances which are tagged as "
 "connector on the :ref:`process-element-tab-general`. Furthermore, it's an"
 " easy starting point to install additional connectors from the Market."
-msgstr ""
-"OpenAPI REST サービスクライアント :ref:`process-element-tab-general` "
-"でコネクターとしてタグ付けされ :ref:`process-element-sub-process-start` "
-"インスタンスのいずれかの挿入可能なコネクターを一覧表示します。さらに、ここから簡単に Market の追加コネクターをインストールできます。"
+msgstr "OpenAPI REST サービスクライアント :ref:`process-element-tab-general` でコネクターとしてタグ付けされ :ref:`process-element-sub-process-start` インスタンスのいずれかの挿入可能なコネクターを一覧表示します。さらに、ここから簡単に Market の追加コネクターをインストールできます。"
 
 #: ../../source/designer-guide/process-modeling/process-views/extension-browser.rst:21
 msgid "|ext-browser|"
@@ -22578,10 +22033,7 @@ msgid ""
 "Problems View can be found in the Online Help: *Workbench User Guide > "
 "Reference > User interface information > Views and editors > Problems "
 "View*."
-msgstr ""
-"このビューは標準的な Eclipse IDE のビューです。問題ビューの詳細については、オンラインヘルプの *［Workbench User "
-"Guide］ > ［Reference］ > ［User interface information］ > ［Views and editors］"
-" > ［Problems View］* を参照してください。"
+msgstr "このビューは標準的な Eclipse IDE のビューです。問題ビューの詳細については、オンラインヘルプの *［Workbench User Guide］ > ［Reference］ > ［User interface information］ > ［Views and editors］ > ［Problems View］* を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-views/process-inscription-editor-view.rst:4
 msgid "Inscription View"
@@ -22696,9 +22148,7 @@ msgstr ""
 msgid ""
 "To work with references of process elements, there are also some useful "
 "features on the Process Editor :ref:`process-editor-quick-actions`."
-msgstr ""
-"プロセス要素の参照を使用する場合、プロセスエディター :ref:`process-editor-quick-actions` "
-"にも便利な機能があります。"
+msgstr "プロセス要素の参照を使用する場合、プロセスエディター :ref:`process-editor-quick-actions` にも便利な機能があります。"
 
 #: ../../source/designer-guide/process-modeling/process-views/reference-view.rst:24
 msgid "Window > Show View > Reference View"
@@ -22799,9 +22249,7 @@ msgid ""
 "If you inspect your project's properties, the main page will show you the"
 " actual project version and inform you whether it is up to date or not "
 "(see :ref:`project-preferences` below):"
-msgstr ""
-"プロジェクトのプロパティを精査する場合、メインページにはプロジェクトの実際のバージョンが表示され、古いバージョンかどうかが示されます（以下の "
-":ref:`project-preferences` 」を参照）。"
+msgstr "プロジェクトのプロパティを精査する場合、メインページにはプロジェクトの実際のバージョンが表示され、古いバージョンかどうかが示されます（以下の :ref:`project-preferences` 」を参照）。"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:27
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:30
@@ -22886,11 +22334,7 @@ msgid ""
 "to close the wizard. You can also press *Cancel* if you want to commit "
 "the changes of the last converter. Simply start the *Convert Project* "
 "wizard again to resume with the next converter."
-msgstr ""
-"コンバーターの終了後、［*ログをコピー*］または［*ログを開く*］ボタンを使用して、ログをコピーするか、（プロジェクトの logs "
-"フォルダーに格納されている）ログファイルを開きます。［*次へ "
-">*］をクリックして次に使用可能なコンバーターを実行するか、他に使用可能なコンバーターがない場合は、［*終了*］をクリックしてウィザードを閉じます。また、最後に実行したコンバーターの変更をコミットしたい場合は、［*キャンセル*］をクリックします。*プロジェクトの変換*"
-" ウィザードを再度起動して、次のコンバーターから再開できます。"
+msgstr "コンバーターの終了後、［*ログをコピー*］または［*ログを開く*］ボタンを使用して、ログをコピーするか、（プロジェクトの logs フォルダーに格納されている）ログファイルを開きます。［*次へ >*］をクリックして次に使用可能なコンバーターを実行するか、他に使用可能なコンバーターがない場合は、［*終了*］をクリックしてウィザードを閉じます。また、最後に実行したコンバーターの変更をコミットしたい場合は、［*キャンセル*］をクリックします。*プロジェクトの変換* ウィザードを再度起動して、次のコンバーターから再開できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:89
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:92
@@ -22971,10 +22415,7 @@ msgid ""
 "following artifacts: User Dialogs, Data Classes, Web Service "
 "Configurations, CMS Entries, Configurations, Java classes or Java "
 "libraries (JAR files)."
-msgstr ""
-"*プロジェクトの他のプロジェクトへの依存関係* "
-"と、プロジェクトでの作業に必要な、それらのプロジェクトのバージョンの正確な範囲。この方法でプロジェクトを参照しない場合は、参照元のプロジェクトのアーティファクトを使用できます。対象となるアーティファクトには、ユーザーダイアログ、データクラス、Web"
-" サービス設定、CMS エントリ、設定、Java クラス、Java ライブラリ（JAR ファイル）があります。"
+msgstr "*プロジェクトの他のプロジェクトへの依存関係* と、プロジェクトでの作業に必要な、それらのプロジェクトのバージョンの正確な範囲。この方法でプロジェクトを参照しない場合は、参照元のプロジェクトのアーティファクトを使用できます。対象となるアーティファクトには、ユーザーダイアログ、データクラス、Web サービス設定、CMS エントリ、設定、Java クラス、Java ライブラリ（JAR ファイル）があります。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:28
 msgid "Information about the implementor of the project and its purpose."
@@ -23005,20 +22446,14 @@ msgid ""
 "not possible to use a sub process defined in *Project B* from *Project C*"
 " (unless *Project B* is added as required project in the deployment "
 "descriptor of *Project C*)."
-msgstr ""
-"この機能を以下の図で説明します。例えば、*Project D* で定義されたユーザーダイアログを *Project A* "
-"で使用できます。同様に、*Project E* で定義されたデータクラスを *Project A* で使用できます。ただし、*Project B*"
-" で定義されたサブプロセスを *Project C* から使用することはできません（*Project B* が、*Project C* "
-"のデプロイメント記述子で必要なプロジェクトとして追加されている場合を除く）。"
+msgstr "この機能を以下の図で説明します。例えば、*Project D* で定義されたユーザーダイアログを *Project A* で使用できます。同様に、*Project E* で定義されたデータクラスを *Project A* で使用できます。ただし、*Project B* で定義されたサブプロセスを *Project C* から使用することはできません（*Project B* が、*Project C* のデプロイメント記述子で必要なプロジェクトとして追加されている場合を除く）。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:49
 msgid ""
 "The search order to look up reused artifacts is breadth first. The order "
 "in which directly referenced projects are looked up, can be defined in "
 "the :ref:`project-deployment-descriptor`."
-msgstr ""
-"再使用されたアーティファクトの検索順序は幅優先です。直接参照されるプロジェクトの検索順序 :ref:`project-deployment-"
-"descriptor` で定義できます。"
+msgstr "再使用されたアーティファクトの検索順序は幅優先です。直接参照されるプロジェクトの検索順序 :ref:`project-deployment-descriptor` で定義できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:53
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:56
@@ -23038,9 +22473,7 @@ msgid ""
 "versions cannot be resolved, then a project cannot be deployed. Therefore"
 " projects must be deployed *bottom up*, i.e., one must start by deploying"
 " first the required projects that are lowest in the dependency hierarchy."
-msgstr ""
-"プロジェクトをエンジンに展開する際は、必要なプロジェクト（とそのバージョン）が使用可能な確認します。必要なプロジェクトのバージョンを解決できない場合、そのプロジェクトは展開できません。そのため、プロジェクトは"
-" *下から上に* 展開しなければなりません。つまり、依存関係の階層の一番下にある必要なプロジェクトを最初に展開する必要があります。"
+msgstr "プロジェクトをエンジンに展開する際は、必要なプロジェクト（とそのバージョン）が使用可能な確認します。必要なプロジェクトのバージョンを解決できない場合、そのプロジェクトは展開できません。そのため、プロジェクトは *下から上に* 展開しなければなりません。つまり、依存関係の階層の一番下にある必要なプロジェクトを最初に展開する必要があります。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:71
 msgid "Deployment Descriptor Editor"
@@ -23052,9 +22485,7 @@ msgid ""
 "properties as well as the required projects and their version ranges as "
 "described above. Most of those properties can already be specified in the"
 " :ref:`project-new-wizard`, when a project is initially created."
-msgstr ""
-"デプロイメント記述子エディターでは、先に説明した必要なプロジェクトとそのバージョン範囲に加えて、プロジェクトの展開プロパティを編集できます。これらのプロパティのほとんどは、プロジェクトを最初に作成する際"
-" :ref:`project-new-wizard` で指定できます。"
+msgstr "デプロイメント記述子エディターでは、先に説明した必要なプロジェクトとそのバージョン範囲に加えて、プロジェクトの展開プロパティを編集できます。これらのプロパティのほとんどは、プロジェクトを最初に作成する際 :ref:`project-new-wizard` で指定できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:79
 msgid "The deployment descriptor editor consists of two tabs:"
@@ -23077,9 +22508,7 @@ msgid ""
 "The deployment description is stored as Maven pom.xml, allowing Ivy "
 "Projects to be built on a continuous integration server. See :ref"
 ":`continuous-integration`."
-msgstr ""
-"デプロイメント記述子は Maven の pom.xml として格納され、継続的インテグレーションサーバーで Ivy プロジェクトを作成できます。「"
-" :ref:`continuous-integration` 」を参照してください。"
+msgstr "デプロイメント記述子は Maven の pom.xml として格納され、継続的インテグレーションサーバーで Ivy プロジェクトを作成できます。「 :ref:`continuous-integration` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:94
 msgid ""
@@ -23205,10 +22634,7 @@ msgid ""
 "change the order). The general search order in the dependency graph is "
 "*breadth first*, but the order that you define here is the search order "
 "that will be used on a specific node when searching the graph."
-msgstr ""
-"表での順序によって、参照先のアーティファクトの検索順序が決まることに注意してください（順序を変更するには、**上ボタン** または "
-"**下ボタン** を使用します）。依存関係グラフの一般的な検索順序は *幅優先* "
-"ですが、グラフを検索する際、ここで定義した順序が特定のノードで使用されます。"
+msgstr "表での順序によって、参照先のアーティファクトの検索順序が決まることに注意してください（順序を変更するには、**上ボタン** または **下ボタン** を使用します）。依存関係グラフの一般的な検索順序は *幅優先* ですが、グラフを検索する際、ここで定義した順序が特定のノードで使用されます。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:159
 msgid ""
@@ -23270,10 +22696,7 @@ msgid ""
 "markers will be displayed when the workspace is built, and cycles are "
 "detected as this condition can lead to endless recursion and other "
 "unpredictable behavior when looking up artifacts."
-msgstr ""
-"プロジェクトの依存関係の巡回に注意してください。プロジェクト B もプロジェクト A を必要とする場合（または、プロジェクト B がプロジェクト "
-"A を必要とするプロジェクトを必要とする場合、より大きな巡回が形成されます）、プロジェクト A からプロジェクト B "
-"を必要プロジェクトに設定しないでください。このような条件は際限のない再帰につながり、アーティファクトの検索時に予期しない動作が行われる可能性があるため、ワークスペースの作成時にエラーマーカーが表示され、巡回が検出されます。"
+msgstr "プロジェクトの依存関係の巡回に注意してください。プロジェクト B もプロジェクト A を必要とする場合（または、プロジェクト B がプロジェクト A を必要とするプロジェクトを必要とする場合、より大きな巡回が形成されます）、プロジェクト A からプロジェクト B を必要プロジェクトに設定しないでください。このような条件は際限のない再帰につながり、アーティファクトの検索時に予期しない動作が行われる可能性があるため、ワークスペースの作成時にエラーマーカーが表示され、巡回が検出されます。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:196
 msgid "Project Graph view"
@@ -23358,10 +22781,7 @@ msgid ""
 "choosing **Open With -> Maven POM Editor** or click on the **Open with "
 "Maven POM Editor** action in the toolbar of the :ref:`deployment-"
 "descriptor-editor`."
-msgstr ""
-"新しい依存関係を追加するには、デプロイメント記述子ファイルを右クリックし、**［エディターで開く］、［Maven POM Editor］** "
-"の順に選択して Maven POM Editor でデプロイメント記述子を開くか、:ref:`deployment-descriptor-"
-"editor` のツールバーで［**Maven POM Editor で開く**］アクションをクリックします。"
+msgstr "新しい依存関係を追加するには、デプロイメント記述子ファイルを右クリックし、**［エディターで開く］、［Maven POM Editor］** の順に選択して Maven POM Editor でデプロイメント記述子を開くか、:ref:`deployment-descriptor-editor` のツールバーで［**Maven POM Editor で開く**］アクションをクリックします。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:260
 msgid ""
@@ -23402,11 +22822,7 @@ msgid ""
 "an action to trigger the execution of the automatic import. This action "
 "works even if **Auto Import** is turned off. A log with the executed "
 "tasks is shown to better understands what the automatic import is doing."
-msgstr ""
-"一部のユースケースでは、この自動インポートが望ましくない場合があります（例：プロジェクトの移行など）。そのような場合には、環境設定で自動インポートを無効にできます。"
-" :ref:`deployment-descriptor-editor` のツールバーでは、**自動インポート** "
-"のオン/オフを確認できます。また、自動インポートの実行を手動でトリガーするアクションもあり、これは **自動インポート** "
-"がオフの場合でも動作します。自動インポートが何を行っているかを理解しやすいように、実行されたタスクのログが表示されます。"
+msgstr "一部のユースケースでは、この自動インポートが望ましくない場合があります（例：プロジェクトの移行など）。そのような場合には、環境設定で自動インポートを無効にできます。 :ref:`deployment-descriptor-editor` のツールバーでは、**自動インポート** のオン/オフを確認できます。また、自動インポートの実行を手動でトリガーするアクションもあり、これは **自動インポート** がオフの場合でも動作します。自動インポートが何を行っているかを理解しやすいように、実行されたタスクのログが表示されます。"
 
 #: ../../source/designer-guide/process-modeling/projects/exporting.rst:5
 msgid "Exporting a Project"
