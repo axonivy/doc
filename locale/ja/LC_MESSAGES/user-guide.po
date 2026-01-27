@@ -89,7 +89,8 @@ msgstr ""
 "のホットフィックスのバージョンをプルする Docker-Compose の例です。"
 
 #: ../../source/axonivy/migration/hotfix/index.rst:5
-msgid "Hotfix Upgrade"
+#, fuzzy
+msgid "Hotfix Update"
 msgstr "ホットフィックスのアップグレード"
 
 #: ../../source/axonivy/migration/hotfix/index.rst:7
@@ -179,7 +180,9 @@ msgstr "このセクションでは、すべての Linux ディストリビュ�
 msgid ""
 "Download the latest Axon Ivy Engine hotfix version that matches your "
 "release train :dev-url:`/download` and unpack at your prefered place."
-msgstr ":dev-url:`/download` でリリーストレインと一致する最新バージョンの Axon Ivy Engine のホットフィックスをダウンロードし、任意の場所で解凍します。"
+msgstr ""
+":dev-url:`/download` でリリーストレインと一致する最新バージョンの Axon Ivy Engine "
+"のホットフィックスをダウンロードし、任意の場所で解凍します。"
 
 #: ../../source/axonivy/migration/hotfix/linux.rst:10
 #: ../../source/axonivy/migration/hotfix/windows.rst:11
@@ -191,10 +194,11 @@ msgstr "実行中の Axon Ivy Engine インスタンスを停止します。"
 
 #: ../../source/axonivy/migration/hotfix/linux.rst:11
 #: ../../source/axonivy/migration/hotfix/windows.rst:12
+#, fuzzy
 msgid ""
 "Start the :ref:`migration-wizard`. The Migration Wizard will copy all "
 "relevant files from the old engine to the new engine during a hotfix "
-"upgrade."
+"update."
 msgstr ""
 ":ref:`migration-wizard` "
 "を起動します。移行ウィザードは、ホットフィックスのアップグレード中に、関連するすべてのファイルを古いエンジンから新しいエンジンにコピーします。"
@@ -217,15 +221,20 @@ msgid ""
 msgstr "Axon Ivy Engine のバージョンの移行プロセスは、対応するオペレーティングシステムや移行のタイプによって大きく異なります。"
 
 #: ../../source/axonivy/migration/index.rst:9
-msgid "**Hotfix Upgrade**"
+#, fuzzy
+msgid "**Hotfix Update**"
 msgstr "**ホットフィックスのアップグレード**"
 
 #: ../../source/axonivy/migration/index.rst:11
+#, fuzzy
 msgid ""
 "If you are looking for the update steps to keep your Axon Ivy Engine on "
 "the latest patch level (e.g., ``8.0.6`` > ``8.0.13``), please consult the"
-" :ref:`migration-upgrade-engine-hotfix` chapter."
-msgstr "Axon Ivy Engine を最新のパッチレベル（例：``8.0.6`` から ``8.0.13``）で維持するアップデート手順を知りたい場合は、 :ref:`migration-upgrade-engine-hotfix` 」の章を参照してください。"
+" :ref:`migration-update-engine-hotfix` chapter."
+msgstr ""
+"Axon Ivy Engine を最新のパッチレベル（例：``8.0.6`` から "
+"``8.0.13``）で維持するアップデート手順を知りたい場合は、 :ref:`migration-upgrade-engine-hotfix` "
+"」の章を参照してください。"
 
 #: ../../source/axonivy/migration/index.rst:15
 msgid "**Major / Minor Upgrade**"
@@ -236,7 +245,9 @@ msgid ""
 "When you aim for a migration to another major version (e.g., ``8.0.30`` >"
 " ``10.0.20``) or minor version (e.g., ``11.1`` > ``11.2``) please consult"
 " the :ref:`migration-upgrade-engine-major` chapter."
-msgstr "別のメジャーバージョン（例：``8.0.30`` から ``10.0.20``）やマイナーバージョン（例：``11.1`` から ``11.2``）への移行を行う場合は、「 :ref:`migration-upgrade-engine-major` 」の章を参照してください。"
+msgstr ""
+"別のメジャーバージョン（例：``8.0.30`` から ``10.0.20``）やマイナーバージョン（例：``11.1`` から "
+"``11.2``）への移行を行う場合は、「 :ref:`migration-upgrade-engine-major` 」の章を参照してください。"
 
 #: ../../source/axonivy/migration/index.rst:21
 msgid "**Migration Tools**"
@@ -275,7 +286,9 @@ msgid ""
 "Do a backup of the system database and all of your data of your Axon ivy "
 "Engine. If you run your Axon Ivy Engine in a Virtual Machine, then you "
 "can take a snapshot."
-msgstr "Axon Ivy Engine のシステムデータベースとすべてのデータのバックアップを取ります。Axon Ivy Engine を仮想マシンで実行している場合は、スナップショットを取得できます。"
+msgstr ""
+"Axon Ivy Engine のシステムデータベースとすべてのデータのバックアップを取ります。Axon Ivy Engine "
+"を仮想マシンで実行している場合は、スナップショットを取得できます。"
 
 #: ../../source/axonivy/migration/major/_wizardMigration.rst:6
 msgid ""
@@ -286,7 +299,11 @@ msgid ""
 "Axon Ivy Engine. Browse to the Axon Ivy Engine URI (e.g., "
 "http://localhost:8080) and click on ``Setup Wizard`` > ``Migration "
 "Wizard``."
-msgstr ":ref:`migration-wizard` を使用して、Axon Ivy Engine を移行します。移行ウィザードは、設定、エラーページ、ドロップインなどを新しい場所にコピーします。また、システムデータのスキーマもアップデートします。ウィザードの使用を開始するには、新しい Axon Ivy Engine を起動します。Axon Ivy Engine の URI（例：http://localhost:8080）にアクセスし、［``セットアップウィザード``］、［``移行ウィザード``］の順にクリックしてください。"
+msgstr ""
+":ref:`migration-wizard` を使用して、Axon Ivy Engine "
+"を移行します。移行ウィザードは、設定、エラーページ、ドロップインなどを新しい場所にコピーします。また、システムデータのスキーマもアップデートします。ウィザードの使用を開始するには、新しい"
+" Axon Ivy Engine を起動します。Axon Ivy Engine の "
+"URI（例：http://localhost:8080）にアクセスし、［``セットアップウィザード``］、［``移行ウィザード``］の順にクリックしてください。"
 
 #: ../../source/axonivy/migration/major/_wizardMigration.rst:12
 msgid "Restart your Axon Ivy Engine."
@@ -306,16 +323,24 @@ msgid ""
 "benefit from new features that will increase your productivity and "
 "ability to react to new business needs. You can have a look at the latest"
 " features here: :dev-url:`/news`"
-msgstr "生産性を向上させ、新しいビジネスニーズへの対応能力を高める新機能の恩恵を受けるため、新しい Axon Ivy Engine バージョンへのアップグレードを推奨します。最新の機能は :dev-url:`/news` でご覧いただけます。"
+msgstr ""
+"生産性を向上させ、新しいビジネスニーズへの対応能力を高める新機能の恩恵を受けるため、新しい Axon Ivy Engine "
+"バージョンへのアップグレードを推奨します。最新の機能は :dev-url:`/news` でご覧いただけます。"
 
 #: ../../source/axonivy/migration/major/index.rst:12
+#, fuzzy
 msgid ""
 "This chapter focuses on migrations from one major version to another "
 "(e.g., from ``10.0`` to ``12.0``) or from one minor version to another "
 "(e.g., from ``11.1`` to ``11.2``). If you are only interested in applying"
-" hotfix upgrades (e.g., from ``12.0.0`` to ``12.0.2``), please consult "
-"the simpler :ref:`migration-upgrade-engine-hotfix` chapter."
-msgstr "この章では、メジャーバージョンから別のメジャーバージョン（例：``10.0`` から ``12.0``）、マイナーバージョンから別のマイナーバージョン（例：``11.1`` から ``11.2``）への移行に焦点を当てます。ホットフィックスのアップグレード（例：``12.0.0`` から ``12.0.2``）にのみ興味がある場合は、よりシンプルな :ref:`migration-upgrade-engine-hotfix` 」の章を参照してください。"
+" hotfix updates (e.g., from ``12.0.0`` to ``12.0.2``), please consult the"
+" simpler :ref:`migration-update-engine-hotfix` chapter."
+msgstr ""
+"この章では、メジャーバージョンから別のメジャーバージョン（例：``10.0`` から "
+"``12.0``）、マイナーバージョンから別のマイナーバージョン（例：``11.1`` から "
+"``11.2``）への移行に焦点を当てます。ホットフィックスのアップグレード（例：``12.0.0`` から "
+"``12.0.2``）にのみ興味がある場合は、よりシンプルな :ref:`migration-upgrade-engine-hotfix` "
+"」の章を参照してください。"
 
 #: ../../source/axonivy/migration/major/index.rst:18
 msgid ""
@@ -373,7 +398,9 @@ msgstr "Linux システムでの移行は、ホットフィックスの移行と
 msgid ""
 "Download the latest Axon Ivy Engine hotfix version that matches your main"
 " release :dev-url:`/download`"
-msgstr ":dev-url:`/download` でメインリリースと一致する最新バージョンの Axon Ivy Engine のホットフィックをダウンロードします。"
+msgstr ""
+":dev-url:`/download` でメインリリースと一致する最新バージョンの Axon Ivy Engine "
+"のホットフィックをダウンロードします。"
 
 #: ../../source/axonivy/migration/major/post-migration.rst:4
 msgid "Post Migration Steps"
@@ -435,7 +462,9 @@ msgid ""
 ":`project-convert` of the Axon Ivy Designer Guide. Usually, this is "
 "achieved by invoking the project conversion action on each project. Some "
 "manual adaptations may be necessary."
-msgstr "Axon Ivy Designer ガイドの :ref:`project-convert` 」のセクションの説明に従ってプロジェクトを移行します。通常、これは各プロジェクトに対してプロジェクト変換アクションを呼び出すことで達成されます。手作業による調整が必要な場合もあります。"
+msgstr ""
+"Axon Ivy Designer ガイドの :ref:`project-convert` "
+"」のセクションの説明に従ってプロジェクトを移行します。通常、これは各プロジェクトに対してプロジェクト変換アクションを呼び出すことで達成されます。手作業による調整が必要な場合もあります。"
 
 #: ../../source/axonivy/migration/major/post-migration.rst:35
 msgid "Test the migrated project in the Axon Ivy Designer."
@@ -2108,7 +2137,6 @@ msgstr "プロセスエディター > ［インスクライブ］ > ［インス
 #: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:40
 #: ../../source/designer-guide/process-modeling/process-elements/process-end.rst:19
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:320
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:37
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:52
 #: ../../source/designer-guide/process-modeling/process-elements/signal-boundary-event.rst:40
 #: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:46
@@ -2770,7 +2798,6 @@ msgstr "|image0|"
 #: ../../source/designer-guide/how-to/workflow/states.rst:19
 #: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:37
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:59
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:26
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:201
 msgid "|image1|"
 msgstr "|image1|"
@@ -2783,7 +2810,6 @@ msgstr "|image1|"
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:59
 #: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:41
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:321
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:38
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:241
 #: ../../source/designer-guide/process-modeling/simulation/simulation.rst:169
 msgid "image1"
@@ -3191,7 +3217,7 @@ msgstr "デザイナーでのシグナルの手動送信"
 msgid ""
 "While developing a process it is possible to send a Signal manually in "
 "the :guilabel:`Signals` page of the :ref:`designer-workflow-ui`."
-msgstr ":guilabel:`Signals`プロセスの開発中に、 :ref:`designer-workflow-ui` の :guilabel:`Signals`ページでシグナルを手動で送信できます。"
+msgstr ":guilabel:`Signals` プロセスの開発中に、 :ref:`designer-workflow-ui` の :guilabel:`Signals` ページでシグナルを手動で送信できます。"
 
 #: ../../source/concepts/adaptive-case-management.rst:303
 msgid "Receiving Signals"
@@ -7078,7 +7104,7 @@ msgstr ""
 msgid "Press |add-role-icon| to add a new Role."
 msgstr ""
 
-#: ../../source/designer-guide/configuration/roles-users.rst:100
+#: ../../source/designer-guide/configuration/roles-users.rst:105
 #, fuzzy
 msgid "Add Role"
 msgstr ""
@@ -7088,7 +7114,7 @@ msgstr ""
 msgid "Press |delete-role-icon| to delete the selected Role."
 msgstr ""
 
-#: ../../source/designer-guide/configuration/roles-users.rst:105
+#: ../../source/designer-guide/configuration/roles-users.rst:110
 #, fuzzy
 msgid "Delete Role"
 msgstr ""
@@ -7103,13 +7129,19 @@ msgstr ""
 "ロール名はセキュリティコンテキスト内で一意でなければなりません。Axon Ivy "
 "は、プロジェクト内で定義したロールを、同じセキュリティコンテキスト内の他のすべてのロールとマージします。同じ名前のロールが異なる階層に存在する場合、展開は失敗します。これはメンバーロールには適用されません。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:114
-#: ../../source/designer-guide/configuration/roles-users.rst:128
-#: ../../source/designer-guide/configuration/roles-users.rst:132
+#: ../../source/designer-guide/configuration/roles-users.rst:102
+msgid ""
+"You do not see the role called **Everybody**, because it is a built-in "
+"role. It contains every user and role."
+msgstr ""
+
+#: ../../source/designer-guide/configuration/roles-users.rst:119
+#: ../../source/designer-guide/configuration/roles-users.rst:133
+#: ../../source/designer-guide/configuration/roles-users.rst:137
 msgid "Test User Editor"
 msgstr "テストユーザーエディター"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:116
+#: ../../source/designer-guide/configuration/roles-users.rst:121
 msgid ""
 "Process designers can create, edit and remove test users in the user "
 "editor. Users need a password to authenticate themselves, and they need "
@@ -7120,7 +7152,7 @@ msgstr ""
 "つのロールに割り当てられている必要があります。テストユーザーエディターを起動するには、 :ref:`ivy-project-view` の "
 ":guilabel:`Test Users` ノードをダブルクリックします。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:123
+#: ../../source/designer-guide/configuration/roles-users.rst:128
 msgid ""
 "Test users are only used in the process **simulation** within the Axon "
 "Ivy Designer. They are **not** uploaded to the engine during deployment. "
@@ -7131,7 +7163,7 @@ msgstr ""
 "Designer内でのプロセスの**シミュレーション**にのみ使用されます。これらのユーザーは展開時にエンジンにアップロード**されません**。Axon"
 " Ivy Engine上で展開されるプロセス用のユーザーは、エンジン上で作成および設定する必要があります。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:134
+#: ../../source/designer-guide/configuration/roles-users.rst:139
 msgid ""
 "On the left hand side of the editor, you see all users with their user "
 "names (i.e. login names) and their full names. For the selected user on "
@@ -7146,36 +7178,27 @@ msgstr ""
 " :ref:`role-editor` を参照）。文字列キーと値のペアで各ユーザーに追加のプロパティを追加し、 :ref:`ivyscript` "
 "のプロセスステップ内で再利用できます。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:142
-msgid ":guilabel:`New` Creates a new user with the specified name."
-msgstr ":guilabel:`新規` 指定された名前で新しいユーザーを作成します。"
+#: ../../source/designer-guide/configuration/roles-users.rst:147
+#, fuzzy
+msgid "Press |add-user-icon| to add a new User."
+msgstr "|add-variable-icon| をクリックして、新しい変数を追加します。"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:145
-msgid ""
-":guilabel:`Remove` Removes a user from the list. The process designer "
-"does confirm the removal."
-msgstr ":guilabel:`削除` リストからユーザーを削除します。プロセス設計者は削除を確認します。"
+#: ../../source/designer-guide/configuration/roles-users.rst:158
+#, fuzzy
+msgid "Add User"
+msgstr "名前付きユーザー"
 
-#: ../../source/designer-guide/configuration/roles-users.rst:149
-msgid ":guilabel:`Sort` Sorts the user list in alphabetical order."
-msgstr ":guilabel:`並び替え` ユーザーリストをアルファベット順に並び替えます。"
+#: ../../source/designer-guide/configuration/roles-users.rst:148
+#, fuzzy
+msgid "Press |delete-user-icon| to delete the selected User."
+msgstr "|delete-variable-icon| をクリックして、選択した変数を削除します。"
+
+#: ../../source/designer-guide/configuration/roles-users.rst:163
+#, fuzzy
+msgid "Delete User"
+msgstr "delete"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:152
-msgid ""
-":guilabel:`Import` Test users from a ``users.xml`` file from another "
-"project can be imported for convenience reasons."
-msgstr ":guilabel:`インポート` 他のプロジェクトの ``users.xml`` ファイルからテストユーザーをインポートできます。"
-
-#: ../../source/designer-guide/configuration/roles-users.rst:156
-msgid ""
-":guilabel:`Export XML` All users and their corresponding properties are "
-"exported into a XML file named ``users.xml`` for easy re-use of test "
-"users in another project."
-msgstr ""
-":guilabel:`XML のエクスポート` すべてのユーザーとユーザーに対応するプロパティが ``users.xml`` という名前の XML"
-" ファイルにエクスポートされ、他のプロジェクトでテストユーザーを簡単に再利用できます。"
-
-#: ../../source/designer-guide/configuration/roles-users.rst:162
 msgid ""
 "You do not see the user called **Developer**, because it is a built-in "
 "user. It belongs to all groups and owns all permissions. The user is "
@@ -7516,7 +7539,7 @@ msgid ""
 "functionality or data structure of the Service) or the "
 ":guilabel:`Library` setting, you **must** re-generate the service "
 "classes."
-msgstr ":guilabel:`WSDL URL`、:guilabel:`WSDL`（サービスの機能やデータ構造）、:guilabel:`Library`の設定を変更した場合は、サービスクラスを再度生成する必要があります。"
+msgstr ":guilabel:`WSDL URL`、:guilabel:`WSDL`（サービスの機能やデータ構造）、:guilabel:`Library` の設定を変更した場合は、サービスクラスを再度生成する必要があります。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:84
 msgid ""
@@ -8138,7 +8161,6 @@ msgid ""
 msgstr "デフォルトでは、検索結果は 10 件に制限されています。より多くの検索結果を得たい場合は、``limit`` メソッドを使用してください。"
 
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:110
-#, fuzzy
 msgid "Store with own Id"
 msgstr "独自の ID の格納"
 
@@ -8291,7 +8313,6 @@ msgstr "新しいデータクラスが属するプロジェクトを選択しま
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:56
 #: ../../source/designer-guide/data-modeling/persistence/new-entity-class-wizard.rst:24
 #: ../../source/designer-guide/process-modeling/casemap.rst:33
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:28
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:26
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:40
 msgid "Namespace"
@@ -8399,7 +8420,7 @@ msgstr "このフィールドを使用して、データクラスをドキュメ
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:100
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:141
-#: ../../source/designer-guide/process-modeling/process-elements/index.rst:150
+#: ../../source/designer-guide/process-modeling/process-elements/index.rst:149
 msgid "Annotations"
 msgstr "アノテーション"
 
@@ -16233,7 +16254,6 @@ msgstr "|image0| *代替ゲートウェイ* 要素は、プロセスエディタ
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:12
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:10
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:10
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:10
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:10
 #: ../../source/designer-guide/process-modeling/process-elements/signal-boundary-event.rst:10
 #: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:10
@@ -16281,7 +16301,6 @@ msgstr ""
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:40
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:17
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:15
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:17
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:24
 #: ../../source/designer-guide/process-modeling/process-elements/signal-boundary-event.rst:18
 #: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:18
@@ -17980,7 +17999,7 @@ msgstr "ワークフローアクティビティ"
 msgid "Interface Activities"
 msgstr "インターフェースアクティビティ"
 
-#: ../../source/designer-guide/process-modeling/process-elements/index.rst:141
+#: ../../source/designer-guide/process-modeling/process-elements/index.rst:140
 msgid "BPMN Activities"
 msgstr "BPMN アクティビティ"
 
@@ -18917,48 +18936,6 @@ msgid ""
 " an example: "
 "``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature``."
 msgstr "設定を複数回適用する代わりに :ref:`rest-clients-configuration` で設定をグローバルに設定できます。カスタム機能（``javax.ws.rs.core.Feature`` ）を実装して、REST クライアント呼び出しのほぼすべての設定を行うことができます。Axon Ivy の認可機能の一例として、 ``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature`` があります。"
-
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:4
-msgid "Rule Activity"
-msgstr "ルールアクティビティ"
-
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:6
-msgid ""
-"|image0| The *Rule Activity* element is located in the *Activity* drawer "
-"of the process editor palette."
-msgstr "|image0| *ルールアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
-
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:12
-msgid ""
-"This element allows to apply a rule set defined in DRL or XLS documents. "
-"By specifying a rule namespace and a data object class, this activity "
-"will apply all rules defined in the namespace to the data object."
-msgstr "この要素を使用して、 DRL または XLS ドキュメントで定義されたルールセットを適用できます。このアクティビティは、ルールの名前空間とデータオブジェクトのクラスを指定して、名前空間で定義されたすべてのルールをデータオブジェクトに適用します。"
-
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:22
-msgid "Tab Call"
-msgstr "呼び出しタブ"
-
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:24
-msgid "In this tab you can configure the rule set and the data object."
-msgstr "このタブでは、ルールセットとデータオブジェクトを設定できます。"
-
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:29
-msgid ""
-"The namespace of the rule set. Child namespaces will not be applied. Only"
-" one namespace can be chosen. If you want to choose more than one "
-"namespace you need to use our Java Rules API."
-msgstr "ルールセットの名前空間。子名前空間は適用されません。選択できる名前空間は 1 つのみです。複数の名前空間を選択したい場合は、Java ルール API を使用する必要があります。"
-
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:33
-msgid "Data Object"
-msgstr "データオブジェクト"
-
-#: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:34
-msgid ""
-"The data object to apply the ruleset to. It must match the type defined "
-"in the rule set."
-msgstr "ルールセットを適用するデータオブジェクト。ルールセットで定義されたタイプと一致している必要があります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:4
 msgid "Script Step"
@@ -39999,3 +39976,80 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 #~ "you can use this section to define"
 #~ " these properties."
 #~ msgstr ":guilabel:`追加の接続プロパティ` データベースに追加の設定が必要な場合、このセクションを使用してプロパティを定義できます。"
+
+#~ msgid ":guilabel:`New` Creates a new user with the specified name."
+#~ msgstr ":guilabel:`新規` 指定された名前で新しいユーザーを作成します。"
+
+#~ msgid ""
+#~ ":guilabel:`Remove` Removes a user from "
+#~ "the list. The process designer does "
+#~ "confirm the removal."
+#~ msgstr ":guilabel:`削除` リストからユーザーを削除します。プロセス設計者は削除を確認します。"
+
+#~ msgid ":guilabel:`Sort` Sorts the user list in alphabetical order."
+#~ msgstr ":guilabel:`並び替え` ユーザーリストをアルファベット順に並び替えます。"
+
+#~ msgid ""
+#~ ":guilabel:`Import` Test users from a "
+#~ "``users.xml`` file from another project "
+#~ "can be imported for convenience reasons."
+#~ msgstr ":guilabel:`インポート` 他のプロジェクトの ``users.xml`` ファイルからテストユーザーをインポートできます。"
+
+#~ msgid ""
+#~ ":guilabel:`Export XML` All users and "
+#~ "their corresponding properties are exported"
+#~ " into a XML file named ``users.xml``"
+#~ " for easy re-use of test users"
+#~ " in another project."
+#~ msgstr ""
+#~ ":guilabel:`XML のエクスポート` すべてのユーザーとユーザーに対応するプロパティが "
+#~ "``users.xml`` という名前の XML "
+#~ "ファイルにエクスポートされ、他のプロジェクトでテストユーザーを簡単に再利用できます。"
+
+#~ msgid "Rule Activity"
+#~ msgstr "ルールアクティビティ"
+
+#~ msgid ""
+#~ "|image0| The *Rule Activity* element is"
+#~ " located in the *Activity* drawer of"
+#~ " the process editor palette."
+#~ msgstr "|image0| *ルールアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
+
+#~ msgid ""
+#~ "This element allows to apply a "
+#~ "rule set defined in DRL or XLS "
+#~ "documents. By specifying a rule "
+#~ "namespace and a data object class, "
+#~ "this activity will apply all rules "
+#~ "defined in the namespace to the "
+#~ "data object."
+#~ msgstr ""
+#~ "この要素を使用して、 DRL または XLS "
+#~ "ドキュメントで定義されたルールセットを適用できます。このアクティビティは、ルールの名前空間とデータオブジェクトのクラスを指定して、名前空間で定義されたすべてのルールをデータオブジェクトに適用します。"
+
+#~ msgid "Tab Call"
+#~ msgstr "呼び出しタブ"
+
+#~ msgid "In this tab you can configure the rule set and the data object."
+#~ msgstr "このタブでは、ルールセットとデータオブジェクトを設定できます。"
+
+#~ msgid ""
+#~ "The namespace of the rule set. "
+#~ "Child namespaces will not be applied."
+#~ " Only one namespace can be chosen."
+#~ " If you want to choose more "
+#~ "than one namespace you need to use"
+#~ " our Java Rules API."
+#~ msgstr ""
+#~ "ルールセットの名前空間。子名前空間は適用されません。選択できる名前空間は 1 "
+#~ "つのみです。複数の名前空間を選択したい場合は、Java ルール API を使用する必要があります。"
+
+#~ msgid "Data Object"
+#~ msgstr "データオブジェクト"
+
+#~ msgid ""
+#~ "The data object to apply the "
+#~ "ruleset to. It must match the type"
+#~ " defined in the rule set."
+#~ msgstr "ルールセットを適用するデータオブジェクト。ルールセットで定義されたタイプと一致している必要があります。"
+
