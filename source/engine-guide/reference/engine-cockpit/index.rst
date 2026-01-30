@@ -47,7 +47,6 @@ If you have configured an EMail server you can test it by clicking on the
 A breadcrumb in the top menu bar on the right side helps you navigate and shows your current location. 
 On the left side are different items that provide important and useful information or features like:
 
-* Engine Restart
 * License messages
 * Cluster warning
 * Health messages
