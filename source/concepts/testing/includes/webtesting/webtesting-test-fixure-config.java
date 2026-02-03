@@ -1,7 +1,7 @@
 @Test
 void config(WebAppFixture fixture) {
   /* The WebAppFixture can change the value of an app configuration. */
-  fixture.config("RestClients.myClient.Url", "${ivy.app.baseurl}/api/myCoolMockService");
+  fixture.config("RestClients.myClient.Url", "{ivy.app.baseurl}/api/myCoolMockService");
   open(EngineUrl.createProcessUrl("a-process-url/18AF06DD4E1A49B8/start.ivp"));
   $(By.id("rest:result")).shouldBe(exactText("hello from mock service"));
 
