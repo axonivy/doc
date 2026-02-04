@@ -5,20 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: Axon Ivy Platform 13.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 07:21+0000\n"
-"PO-Revision-Date: 2026-01-27 00:02+0000\n"
-"Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
-"Language: ja\n"
-"Language-Team: Japanese "
-"<https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-14 10:59+0000\nPO-Revision-Date: 2026-01-30 07:30+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.16-dev\nGenerated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -4923,9 +4910,7 @@ msgid ""
 "existing user. You can either login with a user name or with an ``IUser``"
 " object. In the example below we injected the ``IUser`` object as a "
 "method parameter."
-msgstr ""
-"さらに、``AppFixture`` を使用して、既存のユーザーでログインすることも可能です。ユーザー名または ``IUser`` "
-"オブジェクトでログインできます。以下の例では、メソッドのパラメーターとして ``IUser`` オブジェクトを挿入しています。"
+msgstr "さらに、``AppFixture`` を使用して、既存のユーザーでログインすることも可能です。ユーザー名または ``IUser`` オブジェクトでログインできます。以下の例では、メソッドのパラメーターとして ``IUser`` オブジェクトを挿入しています。"
 
 #: ../../source/concepts/testing/web-testing.rst:4
 msgid "Web Testing"
@@ -4959,27 +4944,20 @@ msgid ""
 "url:`real test implementation <build-examples-web-test-base>`. First, we "
 "need to start a process. To do this you can use the ``EngineUrl`` utility"
 " from the :ref:`web-tester`."
-msgstr ""
-"先ほど作成したテストクラスを :link-url:`実際のテスト実装<build-examples-web-test-base>` "
-"で拡張してみましょう。最初に、プロセスを開始する必要があります。それには、 :ref:`web-tester` の ``EngineUrl`` "
-"ユーティリティを使用します。"
+msgstr "先ほど作成したテストクラスを :link-url:`実際のテスト実装<build-examples-web-test-base>` で拡張してみましょう。最初に、プロセスを開始する必要があります。それには、 :ref:`web-tester` の ``EngineUrl`` ユーティリティを使用します。"
 
 #: ../../source/concepts/testing/web-testing.rst:37
 msgid ""
 "This process opens a dialog with two input fields (``firstname`` and "
 "``lastname``) and a ``submit`` button. After submitting, a second dialog "
 "with your input values is displayed."
-msgstr ""
-"このプロセスでは、2 つの入力フィールド（``firstname`` と ``lastname``）と ``submit`` "
-"ボタンを表示するダイアログが開きます。送信後、入力値を含む 2 番目のダイアログが表示されます。"
+msgstr "このプロセスでは、2 つの入力フィールド（``firstname`` と ``lastname``）と ``submit`` ボタンを表示するダイアログが開きます。送信後、入力値を含む 2 番目のダイアログが表示されます。"
 
 #: ../../source/concepts/testing/web-testing.rst:48
 msgid ""
 "The :ref:`@IvyWebTest <web-tester>` annotation can be configured (e.g to "
 "select a ``browser`` or to start the test ``headless``)."
-msgstr ""
-":ref:`@IvyWebTest <web-tester>` アノテーションを設定できます（``ブラウザ`` の選択、``ヘッドレス`` "
-"テストの開始など）。"
+msgstr ":ref:`@IvyWebTest <web-tester>` アノテーションを設定できます（``ブラウザ`` の選択、``ヘッドレス`` テストの開始など）。"
 
 #: ../../source/concepts/testing/web-testing.rst:53
 msgid "Select, Do and Check"
@@ -5025,9 +5003,7 @@ msgstr "複数の要素を選択するなど、セレクタの活用方法は他
 msgid ""
 "Have a look at the :link-url:`demo project <build-examples-web-test-"
 "select>` to see more options."
-msgstr ""
-"その他の活用方法については、:link-url:`デモプロジェクト<build-examples-web-test-select>` "
-"参照してください。"
+msgstr "その他の活用方法については、:link-url:`デモプロジェクト<build-examples-web-test-select>` 参照してください。"
 
 #: ../../source/concepts/testing/web-testing.rst:90
 msgid "Execute an Action"
@@ -5057,9 +5033,7 @@ msgstr "メソッドコールを連鎖させることで、項目の複数の条
 msgid ""
 "Have a look at the :link-url:`demo project <build-examples-web-test-"
 "condition>` to see more options."
-msgstr ""
-"その他の活用方法については、:link-url:`デモプロジェクト<build-examples-web-test-select>` "
-"参照してください。"
+msgstr "その他の活用方法については、:link-url:`デモプロジェクト<build-examples-web-test-select>` 参照してください。"
 
 #: ../../source/concepts/testing/web-testing.rst:130
 msgid ""
@@ -5069,10 +5043,7 @@ msgid ""
 "the :ref:`AppFixture <unit-testing-app-fixture>` of :ref:`unit-testing`, "
 "the changed values are **not** automatically reset after the test run. "
 "Let's have a look at it:"
-msgstr ""
-"テストケースによっては、別のユーザーでウェブテストを実行する必要があったり、変数やアプリの設定に別の値が必要になります。このような場合は、`WebAppFixture`"
-" ユーティリティを使用します。 :ref:`unit-testing` の :ref:`AppFixture<unit-testing-app-"
-"fixture>` と異なり、変更された値はテスト実行後に自動的にリセット**されません** 。それでは見てみましょう。"
+msgstr "テストケースによっては、別のユーザーでウェブテストを実行する必要があったり、変数やアプリの設定に別の値が必要になります。このような場合は、`WebAppFixture` ユーティリティを使用します。 :ref:`unit-testing` の :ref:`AppFixture<unit-testing-app-fixture>` と異なり、変更された値はテスト実行後に自動的にリセット**されません** 。それでは見てみましょう。"
 
 #: ../../source/concepts/testing/web-testing.rst:135
 msgid "You can change the current user or log out to an anonymous session:"
