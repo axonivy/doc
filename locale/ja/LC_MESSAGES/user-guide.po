@@ -1272,7 +1272,7 @@ msgid ""
 "By default, the Axon Ivy Engine runs a bundled OpenSearch server. It is "
 "possible to integrate with an :ref:`external <opensearch-external>` "
 "OpenSearch instance. This also affects the minimum hardware requirements."
-msgstr "デフォルトでは、Axon Ivy Engine はバンドルされた OpenSearch サーバーを実行します :ref:`外部<opensearch-external>`OpenSearch インスタンスと統合することも可能ですが、最小ハードウェア要件にも影響が生じます。"
+msgstr "デフォルトでは、Axon Ivy Engine はバンドルされた OpenSearch サーバーを実行します :ref:`外部<opensearch-external>` OpenSearch インスタンスと統合することも可能ですが、最小ハードウェア要件にも影響が生じます。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:19
 msgid "With bundled OpenSearch server (default)"
@@ -36751,7 +36751,7 @@ msgid ""
 "<https://github.com/axonivy/docker-samples/tree/master/ivy-reverse-proxy-"
 "nginx-fail2ban>`_ to see how rate limits can be configured with "
 ":ref:`NGINX reverse proxy <reverse-proxy-nginx>`."
-msgstr ":ref:`NGINX リバースプロキシ<reverse-proxy-nginx>` でレート制限を設定する方法については、 `ivy-reverse-proxy-ngnix-fail2ban Docker の例<https://github.com/axonivy/docker-samples/tree/master/ivy-reverse-proxy-nginx-fail2ban>`_ を参照してください。"
+msgstr ":ref:`NGINX リバースプロキシ<reverse-proxy-nginx>` でレート制限を設定する方法については、 `ivy-reverse-proxy-ngnix-fail2ban Docker の例 <https://github.com/axonivy/docker-samples/tree/master/ivy-reverse-proxy-nginx-fail2ban>`_ を参照してください。"
 
 #: ../../source/engine-guide/security/dos-brute-force-attack-prevention.rst:20
 msgid "Network Banning"
