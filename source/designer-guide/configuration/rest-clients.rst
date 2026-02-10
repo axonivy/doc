@@ -32,32 +32,35 @@ REST Client Editor
 
 Use the REST client Editor to create and edit REST client configurations.
 
-.. figure:: /_images/designer-configuration/rest-client-editor.png
+.. figure:: /_images/restclient-editor/restclient-editor.png
    :alt: REST Client Editor
    :align: center
    
    REST Client Editor
 
 
-REST Clients Tree Editor
-~~~~~~~~~~~~~~~~~~~~~~~~
+The left side of the REST editor contains all the clients. A click on one of the 
+clients will show the properties of the selected client on the right side of the editor. 
 
-Shows the REST clients of the current project.
+- Press |add-client-icon| to add a new REST client.
+- Press |delete-client-icon| to delete the selected REST client.
 
-- :guilabel:`Add Client`
-  Adds a new REST client.
 
-- :guilabel:`Remove`
-  Removes the selected REST client.
+.. |add-client-icon| image:: /_images/ui-icons/plus.svg
+   :alt: Add Client
+   :width: 16px
+   :height: 16px
+
+.. |delete-client-icon| image:: /_images/ui-icons/trash.svg
+   :alt: Delete Client
+   :width: 16px
+   :height: 16px
 
 
 REST Client Details Editor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Shows the details of the currently selected REST client.
-
-REST Client Section
-^^^^^^^^^^^^^^^^^^^
 
 - :guilabel:`UUID`
   Universal unique identifier of the REST client. The REST client can
@@ -92,7 +95,8 @@ REST Client Section
 .. _rest-clients-generator-wizard:
 
 OpenAPI Client Generator
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
+
 The OpenAPI client generator wizard provides validation and inscription editor simplification features 
 for specific calls with a :ref:`process-element-rest-client-activity`. 
 Click the *Generate REST classes* button to start the wizard. 
@@ -132,7 +136,7 @@ convert many other specification types to OpenAPI.
 
 
 Authentication Section
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 - :guilabel:`HTTP Basic`
   Adds support for HTTP Basic authentication.
@@ -152,7 +156,7 @@ Authentication Section
   The password of the user used to authenticate the client with the service.
 
 Features Section
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 - :guilabel:`JSON` 
   Adds a feature that maps Java objects to JSON for requests and 
@@ -174,8 +178,8 @@ Features Section
 .. _rest-clients-configuration-properties:
 
 Properties Section
-^^^^^^^^^^^^^^^^^^
- 
+~~~~~~~~~~~~~~~~~~
+
 Use Properties to customize the settings of the REST client or one of
 its features.
 
@@ -260,7 +264,8 @@ but has other restrictions like missing NTLM support.
 
 
 Dynamic Properties
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
+
 You may need to adjust property values for multiple runtime environments. 
 E.g., you call different service URIs for test and production, 
 consequently with different credentials or OAUTH2 application identifiers.
