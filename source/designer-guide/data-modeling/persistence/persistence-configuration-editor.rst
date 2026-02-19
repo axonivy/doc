@@ -34,26 +34,16 @@ then define an explicit list of managed entity classes for each unit.
    a ``customer`` to ``employee_unit``) will consequently result in
    errors.
 
-.. figure:: /_images/persistence/persistence-configuration-editor-single-unit.png
-   :alt: Persistence Configuration Editor (single persistence unit)
+.. figure::  /_images/persistence-editor/persistence-editor.png
+   :alt: Persistence Configuration Editor
 
-   Persistence Configuration Editor (single persistence unit)
+   Persistence Configuration Editor
 
-.. figure:: /_images/persistence/persistence-configuration-editor-multiple-unit.png
-   :alt: Persistence Configuration Editor (multiple persistence units)
-
-   Persistence Configuration Editor (multiple persistence units)
-
-**New**
-   Add a new persistence unit configuration
-
-**Remove**
-   Remove the selected persistence unit(s)
-
-**Generate Schema**
-   Generates the database schema out of the entity classes that belong to
-   the selected persistence unit. See :ref:`persistence-generate-database-schema`
-   for details.
+- Press |add-persistence-icon| to add a new persistence unit configuration.
+- Press |delete-persistence-icon| to delete the selected persistence unit.
+- Press |generate-schema-icon| to generate the database schema out of the entity classes that belong to
+  the selected persistence unit. See :ref:`persistence-generate-database-schema`
+  for details.
 
 Accessibility
 ^^^^^^^^^^^^^
@@ -86,3 +76,18 @@ Managed Classes
 Properties
    Specify properties for the persistence unit. This is optional. This
    freedom comes with responsibility - know what you are doing.
+
+.. |add-persistence-icon| image:: /_images/ui-icons/plus.svg
+   :alt: Add Persistence Unit
+   :width: 16px
+   :height: 16px
+
+.. |delete-persistence-icon| image:: /_images/ui-icons/trash.svg
+   :alt: Delete Persistence Unit
+   :width: 16px
+   :height: 16px
+
+.. |generate-schema-icon| image:: /_images/ui-icons/sql.svg
+   :alt: Generate Schema
+   :width: 16px
+   :height: 16px
