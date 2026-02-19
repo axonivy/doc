@@ -5,7 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-14 10:59+0000\nPO-Revision-Date: 2026-02-12 09:09+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.16-dev\nGenerated-By: Babel 2.17.0\n"
+msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-01-14 10:59+0000\nPO-Revision-Date: 2026-02-19 09:17+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.16.1-dev\nGenerated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -14895,9 +14895,7 @@ msgid ""
 "The IvyScript Strings are ``java.lang.String`` objects but has a "
 "simplified and extended class reference definition. Conversion and format"
 " methods has been added for convenience."
-msgstr ""
-"IvyScript の文字列は ``java.lang.String`` "
-"オブジェクトですが、クラス参照の定義が簡略化、拡張されています。また、変換メソッドとフォーマットメソッドが追加されています。"
+msgstr "IvyScript の文字列は ``java.lang.String`` オブジェクトですが、クラス参照の定義が簡略化、拡張されています。また、変換メソッドとフォーマットメソッドが追加されています。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:175
 msgid "Record"
@@ -20021,10 +20019,7 @@ msgid ""
 "the project, a new client can instantly be created via the plus button. "
 "The available Web Service Clients are managed in the :ref:`webservice-"
 "clients-configuration`."
-msgstr ""
-"使用する Web "
-"サービスを選択します。プロジェクトにアクセス可能なクライアントがない場合は、［+］ボタンですぐに新しいクライアントを作成できます。利用可能な "
-"Web サービスクライアントは :ref:`webservice-clients-configuration` で管理されます。"
+msgstr "使用する Web サービスを選択します。プロジェクトにアクセス可能なクライアントがない場合は、［+］ボタンですぐに新しいクライアントを作成できます。利用可能な Web サービスクライアントは :ref:`webservice-clients-configuration` で管理されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-call-activity.rst:29
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/port.rst:4
@@ -20079,18 +20074,14 @@ msgid ""
 "call fails with an exception. Pick '*>> Ignore Exception*' to continue "
 "the process execution even though the web service call failed with an "
 "exception."
-msgstr ""
-"このタブでは、Web サービスの呼び出しが例外で失敗した場合にスローするエラーコードを設定できます。Web "
-"サービスの呼び出しが例外で失敗しても、「*>> 例外を無視*」を選択して、プロセスの実行を継続できます。"
+msgstr "このタブでは、Web サービスの呼び出しが例外で失敗した場合にスローするエラーコードを設定できます。Web サービスの呼び出しが例外で失敗しても、「*>> 例外を無視*」を選択して、プロセスの実行を継続できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-call-activity.rst:62
 msgid ""
 "Maps the result returned by the Web Service Call back to any process data"
 " or executes code on it. The result is provided as ``wsResponse`` "
 "variable."
-msgstr ""
-"Web サービス呼び出しから返された結果をプロセスデータにマッピングするか、プロセスデータでコードを実行します。結果は "
-"``wsResponse`` 変数として提供されます。"
+msgstr "Web サービス呼び出しから返された結果をプロセスデータにマッピングするか、プロセスデータでコードを実行します。結果は ``wsResponse`` 変数として提供されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:4
 msgid "Web Service Process Start"
@@ -20100,35 +20091,27 @@ msgstr "Web サービスプロセスの開始"
 msgid ""
 "|image0| The *WS Start* element is located in the *WS Process* drawer of "
 "the process editor palette and only available in web service processes."
-msgstr ""
-"|image0| *Web サービスの開始* 要素は、プロセスエディターパレットの *Web サービスプロセス* ドロワーにあり、Web "
-"サービスプロセスでのみ使用できます。"
+msgstr "|image0| *Web サービスの開始* 要素は、プロセスエディターパレットの *Web サービスプロセス* ドロワーにあり、Web サービスプロセスでのみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:12
 msgid ""
 "Each Web Service Start element will create a web service operation in the"
 " web service where it is located. It has input and output parameters."
-msgstr ""
-"各 Web サービスプロセスの開始要素は、配置された Web サービスで Web "
-"サービスオペレーションを作成します。この要素には、入出力パラメーターが含まれます。"
+msgstr "各 Web サービスプロセスの開始要素は、配置された Web サービスで Web サービスオペレーションを作成します。この要素には、入出力パラメーターが含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:23
 msgid ""
 "This tab is used to define the name and input parameters of the web "
 "service operation. See :ref:`process-element-tab-start` for a more "
 "detailed description."
-msgstr ""
-"このタブを使用して、Web サービスオペレーションの名前と入力パラメーターを定義します。詳細については、 :ref:`process-"
-"element-tab-start` 」を参照してください。"
+msgstr "このタブを使用して、Web サービスオペレーションの名前と入力パラメーターを定義します。詳細については、 :ref:`process-element-tab-start` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:28
 msgid ""
 "The name text field allows you to specify the name of the web service "
 "operation. This is the name that will also appear in the generated WSDL "
 "and will be used to call the web service operation."
-msgstr ""
-"名前テキストフィールドでは、Web サービスオペレーションの名前を指定できます。この名前は、生成された WSDL にも表示され、Web "
-"サービスオペレーションを呼び出すのに使用されます。"
+msgstr "名前テキストフィールドでは、Web サービスオペレーションの名前を指定できます。この名前は、生成された WSDL にも表示され、Web サービスオペレーションを呼び出すのに使用されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:32
 msgid "Input parameters"
@@ -20182,10 +20165,7 @@ msgid ""
 "service interface is kept stable. This has the effect that none of the "
 "clients of the web service have to be changed/adapted after an internal "
 "data change."
-msgstr ""
-"入力パラメーターをローカルデータに割り当てる必要がある理由は、実装の宣言からの独立を維持するためです。これにより、Web "
-"サービスインターフェースの安定を維持したまま、実装を変更できるようになります（データの名前の変更、異なるデータ型の使用など）。内部データの変更後に"
-" Web サービスのクライアントを変更する／適合させる必要はありません。"
+msgstr "入力パラメーターをローカルデータに割り当てる必要がある理由は、実装の宣言からの独立を維持するためです。これにより、Web サービスインターフェースの安定を維持したまま、実装を変更できるようになります（データの名前の変更、異なるデータ型の使用など）。内部データの変更後に Web サービスのクライアントを変更する／適合させる必要はありません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:74
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:79
@@ -20208,9 +20188,7 @@ msgid ""
 "As the web service's name and authentication options are defined for the "
 "whole web service and not per web service operation, you can change these"
 " settings on the :ref:`process-properties-ws` itself."
-msgstr ""
-"Web サービスの名前と認証オプションは、Web サービスオペレーションごとではなく、Web サービス全体に対して定義されるため :ref"
-":`process-properties-ws` 自体でこれらの設定を変更できます。"
+msgstr "Web サービスの名前と認証オプションは、Web サービスオペレーションごとではなく、Web サービス全体に対して定義されるため :ref:`process-properties-ws` 自体でこれらの設定を変更できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:90
 msgid ""
@@ -20218,9 +20196,7 @@ msgid ""
 "is invoked with a user not owning the selected role, an error will occur."
 " The error can be handled by a catching :ref:`process-element-error-"
 "start`."
-msgstr ""
-"この開始を呼び出す必要があるロールを指定できます。選択されたロールを所有していないユーザーがこの開始を呼び出すと、エラーが発生します。エラーは、エラーをキャッチす"
-" :ref:`process-element-error-start` により処理できます。"
+msgstr "この開始を呼び出す必要があるロールを指定できます。選択されたロールを所有していないユーザーがこの開始を呼び出すと、エラーが発生します。エラーは、エラーをキャッチす :ref:`process-element-error-start` により処理できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:94
 msgid "Exception handling"
@@ -20231,9 +20207,7 @@ msgid ""
 "The exception handling allows your web service operation to throw a "
 "custom exception if your process could not complete normally. When such "
 "an exception is thrown, no output parameters are returned to the client."
-msgstr ""
-"プロセスが正常に完了しなかった場合、例外処理により、Web "
-"サービスオペレーションからカスタム例外がスローされます。そのような例外がスローされた場合、出力パラメーターはクライアントに返されません。"
+msgstr "プロセスが正常に完了しなかった場合、例外処理により、Web サービスオペレーションからカスタム例外がスローされます。そのような例外がスローされた場合、出力パラメーターはクライアントに返されません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:100
 msgid ""
@@ -20248,9 +20222,7 @@ msgid ""
 " web service call will normally not appear in a task list of a user. The "
 "values on this tab are therefore only relevant for analyzing the finished"
 " tasks and not for the task list itself."
-msgstr ""
-"このタブでは、タスクに関連する情報を定義します。通常、Web "
-"サービス呼び出し用に作成されたタスクはユーザーのタスクリストに表示されません。そのため、このタブの値は、タスクリスト自体ではなく、完了したタスクの分析にのみ関係しています。"
+msgstr "このタブでは、タスクに関連する情報を定義します。通常、Web サービス呼び出し用に作成されたタスクはユーザーのタスクリストに表示されません。そのため、このタブの値は、タスクリスト自体ではなく、完了したタスクの分析にのみ関係しています。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:118
 msgid "Defines the name and description of the task."
@@ -20274,9 +20246,7 @@ msgstr ""
 msgid ""
 "On this tab you can configure the Case created by this Web Service "
 "Process Start. See :ref:`process-element-tab-case`."
-msgstr ""
-"このタブでは、この Web サービスプロセスの開始で作成されるケースを設定できます。 :ref:`process-element-tab-"
-"case` 」を参照してください。"
+msgstr "このタブでは、この Web サービスプロセスの開始で作成されるケースを設定できます。 :ref:`process-element-tab-case` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:142
 msgid ""
@@ -20284,9 +20254,7 @@ msgid ""
 "which contains JAX-WS annotations to define the Web Service. If the "
 "default configuration does not fit your needs, the generated Java file "
 "can be managed and extended by the developer."
-msgstr ""
-"Web サービスのエンドポイントは、Web サービスを定義する JAX-WS アノテーションを格納する Java "
-"ファイルで自動的に生成されます。デフォルトの設定がニーズに合わない場合は、生成された Java ファイルを開発者が管理、拡張できます。"
+msgstr "Web サービスのエンドポイントは、Web サービスを定義する JAX-WS アノテーションを格納する Java ファイルで自動的に生成されます。デフォルトの設定がニーズに合わない場合は、生成された Java ファイルを開発者が管理、拡張できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:147
 msgid ""
@@ -20296,20 +20264,14 @@ msgid ""
 "of the project and has to be in line with the configuration of the WS "
 "Start Elements of the process. The ``fully-qualified-name`` is defined in"
 " the inscription mask of the process."
-msgstr ""
-"Java ファイルは ``[プロジェクト]/src_wsproc/[完全修飾名].java`` フォルダーに配置され、CXF "
-"ライブラリ（http://cxf.apache.org/）によって解釈されます。ファイルをプロジェクトの ``src`` "
-"フォルダーに移動し、プロセスの Web サービスの開始要素の設定と一致させる必要があります。``完全修飾名`` "
-"は、プロセスのインスクリプションマスクで定義されます。"
+msgstr "Java ファイルは ``[プロジェクト]/src_wsproc/[完全修飾名].java`` フォルダーに配置され、CXF ライブラリ（http://cxf.apache.org/）によって解釈されます。ファイルをプロジェクトの ``src`` フォルダーに移動し、プロセスの Web サービスの開始要素の設定と一致させる必要があります。``完全修飾名`` は、プロセスのインスクリプションマスクで定義されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:155
 msgid ""
 "The Java file in the ``src``-folder is under control of the Developer. "
 "When a WS Start element configuration changes, the change has to be "
 "adapted manually in the Java file."
-msgstr ""
-"``src`` フォルダーの Java ファイルは開発者が管理します。Web サービスの開始要素の設定が変更された場合は、Java "
-"ファイルでその変更を手動で適合させる必要があります。"
+msgstr "``src`` フォルダーの Java ファイルは開発者が管理します。Web サービスの開始要素の設定が変更された場合は、Java ファイルでその変更を手動で適合させる必要があります。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/index.rst:6
 msgid ""
@@ -20401,10 +20363,7 @@ msgid ""
 "the *New Process Group Wizard*, if you want to create a new group \"on "
 "the fly\". The process groups are listed relative to the project's "
 "*process* folder."
-msgstr ""
-"新しいプロセスを挿入するグループ（名前空間にほぼ相当）を選択します。``<default>`` "
-"プロセスグループを選択し、プロジェクトのプロセスフォルダーの直下にプロセスを作成します（グループなし）。新しいグループを「その場」で作成したい場合は、グループフォルダーボタンをクリックして、*プロセスグループの作成ウィザード*"
-" を開くことができます。プロセスグループは、プロジェクトの *process* フォルダーを基準に一覧表示されます。"
+msgstr "新しいプロセスを挿入するグループ（名前空間にほぼ相当）を選択します。``<default>`` プロセスグループを選択し、プロジェクトのプロセスフォルダーの直下にプロセスを作成します（グループなし）。新しいグループを「その場」で作成したい場合は、グループフォルダーボタンをクリックして、*プロセスグループの作成ウィザード* を開くことができます。プロセスグループは、プロジェクトの *process* フォルダーを基準に一覧表示されます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:36
 msgid "Enter the name of the new process."
@@ -20415,9 +20374,7 @@ msgid ""
 ":ref:`process-kind-business`: This option is the default option an "
 "creates a normal standard business process. Use this option to implement "
 "your business logic."
-msgstr ""
-":ref:`process-kind-"
-"business`：このオプションは、通常の標準的なビジネスプロセスを作成するデフォルトのオプションです。このオプションを使用して、ビジネスロジックを実装します。"
+msgstr ":ref:`process-kind-business`：このオプションは、通常の標準的なビジネスプロセスを作成するデフォルトのオプションです。このオプションを使用して、ビジネスロジックを実装します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:43
 msgid ""
@@ -20426,10 +20383,7 @@ msgid ""
 "process-call-end element. You need to implement your process between "
 "those two elements. It is allowed to have multiple Process Starts and "
 "Process End elements in a callable process."
-msgstr ""
-":ref:`Callable Sub Process <process-kind-"
-"callable>`：このオプションは、プロセスの呼び出し開始要素、プロセスの呼び出し終了要素を含む呼び出し可能なサブプロセスを作成します。これら"
-" 2 つの要素の間でプロセスを実装する必要があります。複数のプロセス開始とプロセス終了を呼び出し可能なプロセスに設定できます。"
+msgstr ":ref:`Callable Sub Process <process-kind-callable>`：このオプションは、プロセスの呼び出し開始要素、プロセスの呼び出し終了要素を含む呼び出し可能なサブプロセスを作成します。これら 2 つの要素の間でプロセスを実装する必要があります。複数のプロセス開始とプロセス終了を呼び出し可能なプロセスに設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:50
 msgid ""
@@ -20438,11 +20392,7 @@ msgid ""
 "will be created automatically and you can implement your process between "
 "these elements. Please note that no user interaction may occur in a web "
 "service process."
-msgstr ""
-":ref:`process-kind-webservice`：このオプションは、他のシステムから呼び出すことができる Web "
-"サービスプロセスを作成します。Web サービスの開始要素と Web "
-"サービスの終了要素が自動的に作成され、これらの要素の間にプロセスを実装できます。Web "
-"サービスプロセスではユーザーインタラクションは発生しない可能性があることに注意してください。"
+msgstr ":ref:`process-kind-webservice`：このオプションは、他のシステムから呼び出すことができる Web サービスプロセスを作成します。Web サービスの開始要素と Web サービスの終了要素が自動的に作成され、これらの要素の間にプロセスを実装できます。Web サービスプロセスではユーザーインタラクションは発生しない可能性があることに注意してください。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:61
 msgid "Process Data (page2)"
@@ -20467,9 +20417,7 @@ msgid ""
 " recommended to select a data class from the project where the process "
 "will be created** in order to avoid dependencies on the implementation of"
 " another project."
-msgstr ""
-"*既存*：既存のデータクラスを新しいプロセスのデータ構造として選択する場合は、このオプションを選択します。右側にあるクラスセレクターボタンで任意の既存のデータクラスを選択できます。他のプロジェクトの実装への依存関係を回避するため、**プロセスを作成するプロジェクトからデータクラスを選択することを強く推奨します**"
-" 。"
+msgstr "*既存*：既存のデータクラスを新しいプロセスのデータ構造として選択する場合は、このオプションを選択します。右側にあるクラスセレクターボタンで任意の既存のデータクラスを選択できます。他のプロジェクトの実装への依存関係を回避するため、**プロセスを作成するプロジェクトからデータクラスを選択することを強く推奨します** 。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:77
 msgid ""
@@ -20513,9 +20461,7 @@ msgid ""
 "The *Caller Data* references the Data Class from the Caller Process. The "
 "fields of this Data Class can be automatically mapped to the Callable Sub"
 " Process Data."
-msgstr ""
-"*呼び出し元のデータ* "
-"は、呼び出し元のプロセスからデータクラスを参照します。このデータクラスのフィールドを呼び出し可能なサブプロセスのデータに自動的にマッピングできます。"
+msgstr "*呼び出し元のデータ* は、呼び出し元のプロセスからデータクラスを参照します。このデータクラスのフィールドを呼び出し可能なサブプロセスのデータに自動的にマッピングできます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:106
 msgid ""
@@ -20526,11 +20472,7 @@ msgid ""
 "process element of the high level process will also be inscribed with "
 "input- & output mappings, if the new Process Wizard was opened from the "
 "Call Sub inscription step."
-msgstr ""
-"呼び出し元のデータの下にあるマッピング表では、新しいプロセスの In 引数と Out "
-"引数を定義できます。マッピングを選択すると、ウィザードで、サブプロセスの呼び出し開始イベント、内部の入力マッピング（param > "
-"in）と出力マッピング（out > "
-"result）が自動的に設定されます。また、プロセスの作成ウィザードがサブプロセスの呼び出しインスクリプションステップから開かれた場合は、入力マッピングと出力マッピングで上位のプロセスの呼び出し元のプロセス要素がインスクライブされます。"
+msgstr "呼び出し元のデータの下にあるマッピング表では、新しいプロセスの In 引数と Out 引数を定義できます。マッピングを選択すると、ウィザードで、サブプロセスの呼び出し開始イベント、内部の入力マッピング（param > in）と出力マッピング（out > result）が自動的に設定されます。また、プロセスの作成ウィザードがサブプロセスの呼び出しインスクリプションステップから開かれた場合は、入力マッピングと出力マッピングで上位のプロセスの呼び出し元のプロセス要素がインスクライブされます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:4
 msgid "Process Editor"
@@ -20541,9 +20483,7 @@ msgid ""
 "The Process editor is used to design and edit the different process kinds"
 " (mostly *business* and *User Dialog logic* processes). The Process "
 "editor has different parts:"
-msgstr ""
-"プロセスエディターを使用して、さまざまな種類のプロセス（ほとんどが *ビジネス* プロセスと *ユーザーダイアログロジック* "
-"プロセス）を設計、編集します。プロセスエディターには以下のパーツが含まれています。"
+msgstr "プロセスエディターを使用して、さまざまな種類のプロセス（ほとんどが *ビジネス* プロセスと *ユーザーダイアログロジック* プロセス）を設計、編集します。プロセスエディターには以下のパーツが含まれています。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:10
 msgid ""
@@ -20603,9 +20543,7 @@ msgid ""
 "|marquee-tool| Marquee: grab multiple elements from your process. The "
 "Marquee Tool can also be started if you hold *Shift* or you can select "
 "multiple elements by hold *Ctrl*."
-msgstr ""
-"|marquee-tool| プロセスの複数の要素を囲みます（マーキー）。*Shift* "
-"キーを押し続けてマーキーツールを始動させることもできます。または、*Ctrl* キーを押して複数の要素を選択できます。"
+msgstr "|marquee-tool| プロセスの複数の要素を囲みます（マーキー）。*Shift* キーを押し続けてマーキーツールを始動させることもできます。または、*Ctrl* キーを押して複数の要素を選択できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:53
 msgid "marquee-tool"
@@ -20708,9 +20646,7 @@ msgstr "ダークモード：ダークテーマとライトテーマを切り替
 msgid ""
 "Grid: Toggle the grid mode. (You can also set the grid mode in the :ref"
 ":`process-editor-preferences`)"
-msgstr ""
-"グリッド：グリッドモードを切り替えます。 :ref:`process-editor-preferences` "
-"でグリッドモードを設定することもできます。）"
+msgstr "グリッド：グリッドモードを切り替えます。 :ref:`process-editor-preferences` でグリッドモードを設定することもできます。）"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:89
 msgid "Custom Icon: Toggle between custom and default icons."
@@ -20786,12 +20722,7 @@ msgid ""
 "multi`. And also on :ref:`connectors <process-editor-quick-actions-"
 "connector>` and :ref:`swimlanes <process-editor-quick-actions-lanes>` you"
 " will get a Quick Action Menu."
-msgstr ""
-"要素ごと :ref:`process-editor-quick-actions` "
-"があり、要素を編集するのに便利なアクションが表示されます。複数の要素を選択する場合は :ref:`process-editor-quick-"
-"actions-multi` にアクセスできます。クイックアクションメニューは :ref:`コネクター<process-editor-quick-"
-"actions-connector>` :ref:`スイムレーン<process-editor-quick-actions-lanes>` "
-"も表示されます。"
+msgstr "要素ごと :ref:`process-editor-quick-actions` があり、要素を編集するのに便利なアクションが表示されます。複数の要素を選択する場合は :ref:`process-editor-quick-actions-multi` にアクセスできます。クイックアクションメニューは :ref:`コネクター<process-editor-quick-actions-connector>` :ref:`スイムレーン<process-editor-quick-actions-lanes>` も表示されます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:145
 msgid ""
@@ -20799,10 +20730,7 @@ msgid ""
 "Zoom, use your mouse wheel. To undo/redo or copy/paste you can use the "
 "**Edit** menu of the IDE or use the default shortcuts (`Ctrl + C`, `Ctrl "
 "+ V`, etc.)."
-msgstr ""
-"プロセスエディター内でスクロールするには、図をドラッグします。ズームするには、マウスホイールを使用します。IDE の**編集** "
-"メニューを使用するか、デフォルトのショートカット（「Ctrl + C」、「Ctrl + "
-"V」など）を使用して、直前の変更を元に戻したりやり直したり、コピーや貼り付けを行うことができます。"
+msgstr "プロセスエディター内でスクロールするには、図をドラッグします。ズームするには、マウスホイールを使用します。IDE の**編集** メニューを使用するか、デフォルトのショートカット（「Ctrl + C」、「Ctrl + V」など）を使用して、直前の変更を元に戻したりやり直したり、コピーや貼り付けを行うことができます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:154
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:149
@@ -20830,9 +20758,7 @@ msgstr "delete-action"
 msgid ""
 "|start-action| Starts/Runs the selected process. Only available on the "
 ":ref:`Start Element <process-element-start-request>`"
-msgstr ""
-"|start-action| 選択したプロセスを開始／実行します :ref:`開始要素<process-element-start-"
-"request>` のみ使用できます。"
+msgstr "|start-action| 選択したプロセスを開始／実行します :ref:`開始要素<process-element-start-request>` のみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:216
 msgid "start-action"
@@ -20876,9 +20802,7 @@ msgid ""
 "|jump-in-action| Enters the embedded or referenced process and shows the "
 "encapsulated process. *Only available on elements with an reference to "
 "another process*"
-msgstr ""
-"|jump-in-action| "
-"埋め込まれたプロセスや参照されるプロセスを入力し、カプセル化されたプロセスを表示します。*別のプロセスへの参照が設定された要素でのみ使用できます*。"
+msgstr "|jump-in-action| 埋め込まれたプロセスや参照されるプロセスを入力し、カプセル化されたプロセスを表示します。*別のプロセスへの参照が設定された要素でのみ使用できます*。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:222
 msgid "jump-in-action"
@@ -20889,9 +20813,7 @@ msgid ""
 "|unwrap-action|  The elements encapsulated by the embedded subprocess are"
 " placed into the current process. Only available on :ref:`process-"
 "element-embedded-sub` or :ref:`process-element-bpmn-activity`"
-msgstr ""
-"|unwrap-action| 埋め込みサブプロセスにカプセル化された要素が現在のプロセスに配置されます :ref:`process-"
-"element-embedded-sub` または :ref:`process-element-bpmn-activity` でのみ使用できます。"
+msgstr "|unwrap-action| 埋め込みサブプロセスにカプセル化された要素が現在のプロセスに配置されます :ref:`process-element-embedded-sub` または :ref:`process-element-bpmn-activity` でのみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:224
 msgid "unwrap-action"
@@ -20913,9 +20835,7 @@ msgstr "edit-label-action"
 msgid ""
 "|goto-source-action| Jump to the referenced view or java class. *Only "
 "available on elements with a referenced view or java class*"
-msgstr ""
-"|goto-source-action| 参照されるビューまたは Java クラスにジャンプします。*参照されるビューまたは Java "
-"クラスを持つ要素でのみ使用できます*。"
+msgstr "|goto-source-action| 参照されるビューまたは Java クラスにジャンプします。*参照されるビューまたは Java クラスを持つ要素でのみ使用できます*。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:226
 msgid "goto-source-action"
@@ -22096,11 +22016,7 @@ msgid ""
 "to close the wizard. You can also press *Cancel* if you want to commit "
 "the changes of the last converter. Simply start the *Convert Project* "
 "wizard again to resume with the next converter."
-msgstr ""
-"コンバーターの終了後、［*ログをコピー*］または［*ログを開く*］ボタンを使用して、ログをコピーするか、（プロジェクトの logs "
-"フォルダーに格納されている）ログファイルを開きます。［*次へ "
-">*］をクリックして次に使用可能なコンバーターを実行するか、他に使用可能なコンバーターがない場合は、［*終了*］をクリックしてウィザードを閉じます。また、最後に実行したコンバーターの変更をコミットしたい場合は、［*キャンセル*］をクリックします。*プロジェクトの変換*"
-" ウィザードを再度起動して、次のコンバーターから再開できます。"
+msgstr "コンバーターの終了後、［*ログをコピー*］または［*ログを開く*］ボタンを使用して、ログをコピーするか、（プロジェクトの logs フォルダーに格納されている）ログファイルを開きます。［*次へ >*］をクリックして次に使用可能なコンバーターを実行するか、他に使用可能なコンバーターがない場合は、［*終了*］をクリックしてウィザードを閉じます。また、最後に実行したコンバーターの変更をコミットしたい場合は、［*キャンセル*］をクリックします。*プロジェクトの変換* ウィザードを再度起動して、次のコンバーターから再開できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:89
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:92
