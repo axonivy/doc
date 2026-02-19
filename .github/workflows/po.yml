@@ -20,7 +20,7 @@ jobs:
     - name: Update PO Languages
       run: |
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make\
-          generatePO BASEDIR=/doc LOCALEDIR=/doc/locale LANGUAGE=ja
+          generatePO BASEDIR=/doc LOCALEDIR=/doc/locale LANGUAGE=ja O="--line-width -1"
     - name: Locale Diff
       id: locale-diff
       run: |
