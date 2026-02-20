@@ -133,7 +133,7 @@ def mavenPropertyEvaluate(def propertyName) {
 }
 
 def runMaven(command) {
-  docker.image('maven:3.9.12-eclipse-temurin-25').inside {
+  docker.build('maven-build', '-f Dockerfile.maven .').inside {
     command.call()
   }
 }
