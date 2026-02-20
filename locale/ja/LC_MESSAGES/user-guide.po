@@ -5,19 +5,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: Axon Ivy Platform 13.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 13:07+0000\n"
-"PO-Revision-Date: 2026-02-19 09:17+0000\n"
-"Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
-"Language: ja\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.18.0\n"
+msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-02-19 13:07+0000\nPO-Revision-Date: 2026-02-20 10:00+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.16.1-dev\nGenerated-By: Babel 2.18.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -17599,7 +17587,7 @@ msgstr "actions"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:76
 msgid "|composite| Composites: All reusable :ref:`html-dialog-component`"
-msgstr "|composite| コンポジット：すべての再利用可能な :ref:`html-dialog-component` "
+msgstr "|composite| コンポジット：すべての再利用可能な :ref:`html-dialog-component`"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:92
 msgid "composite"
@@ -25397,4 +25385,3 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 
 #~ msgid "**Remove**"
 #~ msgstr "**削除**"
-
