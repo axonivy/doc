@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 09:57+0000\n"
+"POT-Creation-Date: 2026-02-20 11:22+0000\n"
 "PO-Revision-Date: 2026-02-19 09:17+0000\n"
 "Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
 "Language: ja\n"
@@ -4757,11 +4757,21 @@ msgid "How to Access Variables"
 msgstr "変数へのアクセス方法"
 
 #: ../../source/designer-guide/configuration/variables.rst:116
-msgid "To access the Variables in your code, you can use the :public-api:`var </ch/ivyteam/ivy/environment/Ivy.html#var>` method. In :ref:`ivyscript`, you can use the name of the Variable to get access to your defined Variables. In addition, this approach has the advantage that you receive validation notifications when a Variable is removed by a developer."
+#, fuzzy
+msgid "To access the Variables in your code, you can use the :public-api:`var </ch/ivyteam/ivy/environment/Ivy.html#var>` method. In :ref:`ivyscript`, you can use the namespace and name of the Variable to get access to your defined Variables. In addition, this approach has the advantage that you receive validation notifications when a Variable is removed by a developer."
 msgstr "コードの変数にアクセスするには、 :public-api:`var </ch/ivyteam/ivy/environment/Ivy.html#var>` メソッドを使用します。 :ref:`ivyscript` では、変数名を使用して、定義した変数にアクセスできます。さらに、この方法には、変数が開発者によって削除されたときに、検証通知を受け取ることができるという利点があります。"
 
-#: ../../source/designer-guide/configuration/variables.rst:126
-msgid "If you want to access Variable **Metadata**, you can also use the :code:`var` keyword. This delivers an :public-api:`interface </ch/ivyteam/ivy/vars/Variables.html>`. From the interface, you can get a :public-api:`Variable object </ch/ivyteam/ivy/vars/Variable.html>`. This object contains additional metadata for that Variable."
+#: ../../source/designer-guide/configuration/variables.rst:122
+msgid "For example, if you have a Variable with the namespace :code:`my.namespace` and the name :code:`myVariable`, you can access it in :ref:`ivyscript` as follows:"
+msgstr ""
+
+#: ../../source/designer-guide/configuration/variables.rst:129
+msgid "You can also use the :public-api:`var </ch/ivyteam/ivy/environment/Ivy.html#var>` method with :code:`get` to access the Variable, but without the advantage of validation of the Variable's existence:"
+msgstr ""
+
+#: ../../source/designer-guide/configuration/variables.rst:138
+#, fuzzy
+msgid "If you want to access Variable **Metadata**, you can use the :public-api:`var </ch/ivyteam/ivy/environment/Ivy.html#var>` method with :code:`variable`. This object contains additional metadata for that Variable:"
 msgstr "**メタデータ** 変数にアクセスしたい場合は、 :code:`var` キーワードを使用することもできます。これにより、:public-api:`インターフェース</ch/ivyteam/ivy/vars/Variables.html>` 提供されます。このインターフェースから :public-api:`変数オブジェクト </ch/ivyteam/ivy/vars/Variable.html>` 取得できます。このオブジェクトには、その変数の追加のメタデータが含まれています。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:4
