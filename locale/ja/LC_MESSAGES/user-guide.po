@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 13:07+0000\n"
+"POT-Creation-Date: 2026-02-20 09:57+0000\n"
 "PO-Revision-Date: 2026-02-19 09:17+0000\n"
 "Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
 "Language: ja\n"
@@ -951,11 +951,13 @@ msgid "**Processors**: Minimum is 4 cores with 2 GHz. We recommend 16 cores with
 msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:45
-msgid "The Axon Ivy Engine needs Java SE 21 to run and is tested with `Eclipse Temurin <https://adoptium.net/>`_."
+#, fuzzy
+msgid "The Axon Ivy Engine needs Java SE 25 to run and is tested with `Eclipse Temurin <https://adoptium.net/>`_."
 msgstr "Axon Ivy Engine を実行するには、Java SE 21 が必要です。Axon Ivy Engine は、`Eclipse Temurin <https://adoptium.net/>`_ でテストされています。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:48
-msgid "Note: Java SE 21 `Eclipse Temurin <https://adoptium.net/>`_ is already included in our Windows installation and the Docker container. On Linux, we do not include Java SE 21. You may want to use Java SE 21 provided by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_."
+#, fuzzy
+msgid "Note: Java SE 25 `Eclipse Temurin <https://adoptium.net/>`_ is already included in our Windows installation and the Docker container. On Linux, we do not include Java SE 25. You may want to use Java SE 25 provided by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_."
 msgstr "注：Java SE 21 `Eclipse Temurin <https://adoptium.net/>`_ は、Windows インストレーションと Docker コンテナに含まれています。Linux には Java SE 21 は含まれていません。お使いのオペレーティングシステムで提供される Java SE 21 を使用したり、`Eclipse Temurin <https://adoptium.net/>`_ をインストールすることも可能です。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:58
@@ -20730,7 +20732,8 @@ msgid "Prepare your Server (Linux)"
 msgstr "サーバーの準備（Linux）"
 
 #: ../../source/engine-guide/getting-started/linux/prepare.rst:4
-msgid "Add the software and tools needed for the installation and operation of the Axon Ivy Engine (sudo, wget, unzip, Java 21 runtime). Most distributions have these tools pre-installed, but some Docker images may not."
+#, fuzzy
+msgid "Add the software and tools needed for the installation and operation of the Axon Ivy Engine (sudo, wget, unzip, Java 25 runtime). Most distributions have these tools pre-installed, but some Docker images may not."
 msgstr "Axon Ivy Engine のインストールと操作に必要なソフトウェアとツール（sudo、wget、unzip、Java 21）を追加します。ほとんどのディストリビューションではこれらのツールがプリインストールされますが、Docker イメージはプリインストールされない場合があります。"
 
 #: ../../source/engine-guide/getting-started/linux/prepare.rst:8
