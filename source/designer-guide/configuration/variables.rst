@@ -115,20 +115,30 @@ How to Access Variables
 
 To access the Variables in your code, you can use the :public-api:`var
 </ch/ivyteam/ivy/environment/Ivy.html#var>` method. In :ref:`ivyscript`, you can
-use the name of the Variable to get access to your defined Variables. In addition,
-this approach has the advantage that you receive validation notifications when a
-Variable is removed by a developer. 
+use the namespace and name of the Variable to get access to your defined
+Variables. In addition, this approach has the advantage that you receive
+validation notifications when a Variable is removed by a developer.
+
+For example, if you have a Variable with the namespace :code:`my.namespace` and
+the name :code:`myVariable`, you can access it in :ref:`ivyscript` as follows:
 
 .. code:: java
   
-  ivy.var.myVariable;
+  ivy.var.my_namespace_myVariable;
 
-If you want to access Variable **Metadata**, you can also use the :code:`var`
-keyword. This delivers an :public-api:`interface
-</ch/ivyteam/ivy/vars/Variables.html>`. From the interface, you can get a 
-:public-api:`Variable object </ch/ivyteam/ivy/vars/Variable.html>`. 
-This object contains additional metadata for that Variable.
+You can also use the :public-api:`var
+</ch/ivyteam/ivy/environment/Ivy.html#var>` method with :code:`get` to access
+the Variable, but without the advantage of validation of the Variable's
+existence:
 
 .. code:: java
 
-  ivy.var.variable("myVariable").description();
+  ivy.var.get("my.namespace.myVariable");
+
+If you want to access Variable **Metadata**, you can use the :public-api:`var
+</ch/ivyteam/ivy/environment/Ivy.html#var>` method with :code:`variable`. This
+object contains additional metadata for that Variable:
+
+.. code:: java
+
+  ivy.var.variable("my.namespace.myVariable").description();
