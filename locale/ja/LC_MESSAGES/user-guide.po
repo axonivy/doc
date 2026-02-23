@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 13:30+0000\n"
+"POT-Creation-Date: 2026-02-23 09:51+0000\n"
 "PO-Revision-Date: 2026-02-19 09:17+0000\n"
 "Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
 "Language: ja\n"
@@ -1102,7 +1102,7 @@ msgstr "OpenSearch"
 
 #: ../../source/axonivy/system-requirements/engine.rst:100
 #, fuzzy
-msgid "Version 3.4. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
+msgid "Version 3.5. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
 msgstr "バージョン 2.19。 :ref:`自分の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:105
