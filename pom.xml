@@ -97,6 +97,13 @@
 
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
+                  <artifactId>webservice-editor-screenshots</artifactId>
+                  <version>${ivy-version}</version>
+                  <type>zip</type>
+                </artifactItem>
+
+                <artifactItem>
+                  <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>role-editor-screenshots</artifactId>
                   <version>${ivy-version}</version>
                   <type>zip</type>

@@ -3,25 +3,28 @@
 Web Service Clients
 ===================
 
-The web service clients tree contains the definition of all web
-services consumable by an Axon Ivy process.
-
-.. figure:: /_images/designer-configuration/webservice-client-editor.png
+.. figure:: /_images/webservice-editor/webservice-editor.png
    :alt: Web Service Clients Editor
 
    Web Service Clients Editor
 
 
-Web Service Clients Tree
-------------------------
+The left side of the Web Service Clients editor contains all the clients. A click on one of the 
+clients will show the properties of the selected client on the right side of the editor. 
 
-Shows the web service clients.
+- Press |add-client-icon| to add a new Web Service client.
+- Press |delete-client-icon| to delete the selected Web Service client.
 
-- :guilabel:`Add Client`
-  Adds a new web service client.
 
-- :guilabel:`Remove`
-  Remove the current selection.
+.. |add-client-icon| image:: /_images/ui-icons/plus.svg
+   :alt: Add Client
+   :width: 16px
+   :height: 16px
+
+.. |delete-client-icon| image:: /_images/ui-icons/trash.svg
+   :alt: Delete Client
+   :width: 16px
+   :height: 16px
 
 
 Client Details Editor
@@ -50,44 +53,17 @@ The following attributes are available in the *Web Service* Section:
   Description of the web service. This field is for documentation
   purposes only.
 
-- :guilabel:`WSDL URL`
-  Service details and classes will be generated using the WSDL
-  specified here. Please **use protocol prefixes** like:
-  https://myserver.ch/hello.wsdl or file:/c:/temp/myWis.wsdl
-
-- :guilabel:`Library` Select the library Axon Ivy uses to generate the web service
-  client classes.
-
-- :guilabel:`Generate WS classes` After specifying the mandatory fields
-  :guilabel:`WSDL URL` and :guilabel:`Library`, click 
-  :guilabel:`Generate WS classes` to read the WSDL and generate client classes. 
-  The generated files are compiled and packaged into a jar file. The generated 
-  jar file is located in the *lib_ws/client* folder of the Axon Ivy project and
-  automatically added to the project libraries.
-
-.. note::
-
-   If you change the :guilabel:`WSDL URL`, the :guilabel:`WSDL` (i.e., the
-   functionality or data structure of the Service) or the :guilabel:`Library`
-   setting, you **must** re-generate the service classes.
-
 
 
 Authentication Section
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: /_images/designer-configuration/webservice-client-auth.png
-   :alt: Authentication Section
-
-   Authentication Section
-
 Configures the authentication scheme and data used to authenticate with the
 remote web service. The following attributes are available in the
-*Authentication* section:
+**Authentication** section:
 
 - :guilabel:`Type`
-  The authentication type to be used. The available authentication
-  types depend on the selected library.
+  The authentication type to be used.
 
 - :guilabel:`Username`
   Name of the user used to authenticate the client. Will be stored as a
@@ -109,49 +85,25 @@ remote web service. The following attributes are available in the
 Features Section
 ~~~~~~~~~~~~~~~~
 
-.. figure:: /_images/designer-configuration/webservice-client-features.png
-   :alt: Features Section
-
-   Features Section
-   
-
 Features add optional functionality to a web service client call
-execution.
-
-- :guilabel:`Add`
-  Adds a new feature class to the list. All specified feature classes
-  must implement the JAX-WS standard class
-  `javax.xml.ws.WebServiceFeature <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/WebServiceFeature.html>`__
-  or
-  ``ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature``.
-
-- :guilabel:`Remove`
-  Removes the selected feature class from the list.
+execution. All specified feature classes must implement the JAX-WS standard class
+`javax.xml.ws.WebServiceFeature <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/WebServiceFeature.html>`__
+or
+:public-api:`ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature </ch/ivyteam/ivy/webservice/exec/feature/WebServiceClientFeature.html>`
 
 
 
 Properties Section
 ~~~~~~~~~~~~~~~~~~
 
-.. figure:: /_images/designer-configuration/webservice-client-properties.png
-   :alt: Properties Section
-
-   Properties Section
-
 Properties configure the web service client and its features. Some well
 known properties are documented here:
 `javax.xml.ws.BindingProvider <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/BindingProvider.html>`__
 
-- :guilabel:`Add`
-  Adds a new property.
+.. tip::
 
-- :guilabel:`Add Password`
-  Adds a new password property. The value of a password property is not
-  visible in the table and is stored encrypted in the configuration
-  file.
-
-- :guilabel:`Remove`
-  Removes the selected property.
+   Change a property to a password to hide its value in the configuration and store it encrypted. 
+   This is especially useful for properties that contain sensitive information like credentials.
 
 .. tip::
 
@@ -162,19 +114,13 @@ known properties are documented here:
 
 
 Endpoint URIs Section
-~~~~~~~~~~~~~-~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: /_images/designer-configuration/webservice-client-endpoint-uris.png
-   :alt: Endpoint URIs Section
-
-   Endpoint URIs Section
-
-
-The following attributes are available in the *Ports* section:
+The following attributes are available in the *Endpoint URIs* section:
 
 - :guilabel:`Ports` 
   The list of ports is available after web service client
-  classes generation. (see: Generate WS classes). The content of this list
+  classes :ref:`generation <webservice-clients-generator-wizard>`. The content of this list
   originates from the specified WSDL and is populated with information from the
   client framework.
 
@@ -209,3 +155,17 @@ the service call.
 
 Refer to :ref:`dynamic-config` for additional information.
 
+
+.. _webservice-clients-generator-wizard:
+
+WSDL Client Generator
+---------------------
+
+Some service details and classes will be generated using a WSDL specification.
+First of all you have to specify the :guilabel:`WSDL URL` (Please **use protocol prefixes** like:
+:code:`https://myserver.ch/hello.wsdl` or :code:`file:/c:/temp/myWis.wsdl`). Then define your 
+:guilabel:`Namespace` and click the :guilabel:`Generate` button to start the generation process.
+
+The generated files are compiled and packaged into a jar file. The generated 
+jar file is located in the :file:`lib_ws/client` folder of the Axon Ivy project and
+automatically added to the project libraries.
