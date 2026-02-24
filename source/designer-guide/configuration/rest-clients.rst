@@ -91,6 +91,141 @@ Shows the details of the currently selected REST client.
      ivy.rest.client("twitter").resolveTemplate("version", "1.1").get()
 
 
+Authentication Section
+^^^^^^^^^^^^^^^^^^^^^^
+
+- :guilabel:`HTTP Basic`
+  Adds support for HTTP Basic authentication.
+
+- :guilabel:`HTTP Digest`
+  Adds support for HTTP Digest authentication.
+
+- :guilabel:`NTLM` 
+  Adds support for NTLM (Windows) authentication. Optionally,
+  you can configure the ``NTLM.domain`` and the ``NTLM.workstation`` in the
+  properties section.
+
+- :guilabel:`Username`
+  The name of the user used to authenticate the client with the service.
+
+- :guilabel:`Password`
+  The password of the user used to authenticate the client with the service.
+
+Features Section
+^^^^^^^^^^^^^^^^
+
+Shows the configured "features" classes. The classes configured here
+are registered in the WebTarget using the method ``register(Class)``.
+The classes need to implement a JAX-RS contract interface :code:`javax.ws.rs.core.Feature` and must
+have a default constructor.
+
+.. tip::
+
+   E.g. add the :code:`JsonFeature` that maps Java objects to JSON for requests and 
+   JSON to Java objects for responses.
+
+
+.. _rest-clients-configuration-properties:
+
+Properties Section
+^^^^^^^^^^^^^^^^^^
+
+Use Properties to customize the settings of the REST client or one of
+its features.
+
+.. tip::
+
+   Change a property to a password to hide its value in the configuration and store it encrypted. 
+   This is especially useful for properties that contain sensitive information like credentials.
+
+
+**Client Properties**
+
+Well known properties of REST clients are documented here:
+`org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__.
+
+To configure SSL client authentication for a REST client call, specify the
+property :code:`SSL.keyAlias`. The value of this alias needs to correspond with a key
+alias available in the client keystore configured under
+:ref:`engine-cockpit-ssl`.
+
+**JSON Properties**
+
+The :code:`JsonFeature` knows many properties that customize the serialization from
+JSON to Java objects and vice versa.
+
+It is possible to read a very complex JSON object with many fields back to a
+Java object that contains only a subset of these fields. To allow this
+incomplete but efficient mapping, the property
+``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES`` must be set to ``false``.
+
+Consult the Jackson documentation for a list of all configurable
+items:
+
+- `Jackson Deserialization features <https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__
+  can be set using ``Deserialization.`` as a prefix. E.g., ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``
+
+- `Jackson Serialization features <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__
+  can be set using ``Serialization.`` as a prefix. E.g., ``Serialization.WRITE_ENUMS_USING_INDEX``
+
+**Path Properties**
+
+Properties can be defined as :code:`Path Properties`. Those are used in resource paths on calling activities. 
+If your target resources contain templates like ``{api.version}`` which 
+re-occur on every instance of a call activity, you should set it as a global 
+path property in the REST Client, rather than re-declaring it on every instance 
+of the calling element.
+
+.. hint::
+
+   **Example:**
+
+   If a valid resource of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``
+
+   Then the path template ``{api.version}`` can be set globally on the REST Client
+   as a property:
+
+   +----------+------------------+----------+
+   | Type     | Property         | Value    |
+   +----------+------------------+----------+
+   | Path     | api.version      |    2     |
+   +----------+------------------+----------+
+
+   The resolved URI would consequently be: ``https://api.twitter.com/2/status/...``
+
+**Connection Properties**
+
+You can configure the library used to create and manage connections by setting a
+connector provider ``jersey.client.connectorProvider``. By default, the Apache
+HTTP Client (``org.glassfish.jersey.apache.connector.ApacheConnectorProvider``)
+is used. This library uses a connection pool to reuse connections. By default,
+the connection pool is limited to 5 connections. You can see how many
+connections are currently in use by looking at the :ref:`life stats
+<engine-cockpit-monitor-services>` in the :ref:`engine-cockpit`. If all
+connections are in use most of the time, consider increasing the maximum number
+of connections in the pool to avoid performance issues. Configure it by setting
+the property ``jersey.client.pool.maxConnections``. 
+
+As an alternative to the Apache HTTP Client, you can use ``java.net.URLConnection`` from the Java core library 
+(``org.glassfish.jersey.client.HttpUrlConnectorProvider``). This connection provider does not have a maximum connection limit 
+but has other restrictions like missing NTLM support.
+
+
+Dynamic Properties
+^^^^^^^^^^^^^^^^^^
+
+You may need to adjust property values for multiple runtime environments. 
+E.g., you call different service URIs for test and production, 
+consequently with different credentials or OAUTH2 application identifiers.
+
+If you anticipate this need, then you can simplify these configuration
+adjustments for operations by using :ref:`dynamic-config` expressions in both
+properties and other configuration values. E.g., the property
+``appId=${ivy.var.cloudAppId}`` is evaluated at runtime and has the value of
+the variable called ``cloudAppId``. Thus, your database name is now configurable
+using variable ``cloudAppId``. Operations need to set this variable correctly; they
+do not need to dive into the configuration of this external database.
+
 
 .. _rest-clients-generator-wizard:
 
@@ -133,148 +268,3 @@ available under the given service URL ending with :code:`$metadata` e.g.
 If you have other types of service descriptions, you may have a look at
 `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__. It is able to
 convert many other specification types to OpenAPI.
-
-
-Authentication Section
-~~~~~~~~~~~~~~~~~~~~~~
-
-- :guilabel:`HTTP Basic`
-  Adds support for HTTP Basic authentication.
-
-- :guilabel:`HTTP Digest`
-  Adds support for HTTP Digest authentication.
-
-- :guilabel:`NTLM` 
-  Adds support for NTLM (Windows) authentication. Optionally,
-  you can configure the ``NTLM.domain`` and the ``NTLM.workstation`` in the
-  properties section.
-
-- :guilabel:`Username`
-  The name of the user used to authenticate the client with the service.
-
-- :guilabel:`Password`
-  The password of the user used to authenticate the client with the service.
-
-Features Section
-~~~~~~~~~~~~~~~~
-
-- :guilabel:`JSON` 
-  Adds a feature that maps Java objects to JSON for requests and 
-  JSON to Java objects for responses.
-
-- :guilabel:`Features List`
-  Shows the configured "features" classes. The classes configured here
-  are registered in the WebTarget using the method ``register(Class)``.
-  The classes need to implement a JAX-RS contract interface and must
-  have a default constructor.
-
-- :guilabel:`Add`
-  Adds a new feature class.
-
-- :guilabel:`Remove`
-  Removes the selected feature.
-
-
-.. _rest-clients-configuration-properties:
-
-Properties Section
-~~~~~~~~~~~~~~~~~~
-
-Use Properties to customize the settings of the REST client or one of
-its features.
-
-- :guilabel:`Add`
-  Adds a new property.
-
-- :guilabel:`Add Password`
-  Adds a new password property. The value of a password property is not
-  visible in the table and is stored encrypted in the configuration file.
-
-- :guilabel:`Remove`
-  Removes the selected property.
-
-**Client Properties**
-
-Well known properties of REST clients are documented here:
-`org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__.
-
-To configure SSL client authentication for a REST client call, specify the
-property *SSL.keyAlias*. The value of this alias needs to correspond with a key
-alias available in the client keystore configured under
-:ref:`engine-cockpit-ssl`.
-
-**JSON Properties**
-
-The JSON feature knows many properties that customize the serialization from
-JSON to Java objects and vice versa.
-
-It is possible to read a very complex JSON object with many fields back to a
-Java object that contains only a subset of these fields. To allow this
-incomplete but efficient mapping, the property
-``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES`` must be set to ``false``.
-
-Consult the Jackson documentation for a list of all configurable
-items:
-
-- `Jackson Deserialization features <https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__
-  can be set using ``Deserialization.`` as a prefix. E.g., ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``
-
-- `Jackson Serialization features <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__
-  can be set using ``Serialization.`` as a prefix. E.g., ``Serialization.WRITE_ENUMS_USING_INDEX``
-
-**Path Properties**
-
-Properties prefixed with ``PATH.`` are used in resource paths on calling activities. 
-If your target resources contain templates like ``{api.version}`` which 
-re-occur on every instance of a call activity, you should set it as a global 
-path property in the REST Client, rather than re-declaring it on every instance 
-of the calling element.
-
-Example:
-
-If a valid resource of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``
-
-Then the path template ``{api.version}`` can be set globally on the REST Client
-as a property:
-
-+------------------+----------+
-| Property         | Value    |
-+------------------+----------+
-| PATH.api.version |    2     |
-+------------------+----------+
-
-The resolved URI would consequently be: ``https://api.twitter.com/2/status/...``
-
-**Connection Properties**
-
-You can configure the library used to create and manage connections by setting a
-connector provider ``jersey.client.connectorProvider``. By default, the Apache
-HTTP Client (``org.glassfish.jersey.apache.connector.ApacheConnectorProvider``)
-is used. This library uses a connection pool to reuse connections. By default,
-the connection pool is limited to 5 connections. You can see how many
-connections are currently in use by looking at the :ref:`life stats
-<engine-cockpit-monitor-services>` in the :ref:`engine-cockpit`. If all
-connections are in use most of the time, consider increasing the maximum number
-of connections in the pool to avoid performance issues. Configure it by setting
-the property ``jersey.client.pool.maxConnections``. 
-
-As an alternative to the Apache HTTP Client, you can use ``java.net.URLConnection`` from the Java core library 
-(``org.glassfish.jersey.client.HttpUrlConnectorProvider``). This connection provider does not have a maximum connection limit 
-but has other restrictions like missing NTLM support.
-
-
-Dynamic Properties
-~~~~~~~~~~~~~~~~~~
-
-You may need to adjust property values for multiple runtime environments. 
-E.g., you call different service URIs for test and production, 
-consequently with different credentials or OAUTH2 application identifiers.
-
-If you anticipate this need, then you can simplify these configuration
-adjustments for operations by using :ref:`dynamic-config` expressions in both
-properties and other configuration values. E.g., the property
-``appId=${ivy.var.cloudAppId}`` is evaluated at runtime and has the value of
-the variable called ``cloudAppId``. Thus, your database name is now configurable
-using variable ``cloudAppId``. Operations need to set this variable correctly; they
-do not need to dive into the configuration of this external database.
-
