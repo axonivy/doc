@@ -124,19 +124,18 @@ The following attributes are available in the *Endpoint URIs* section:
   originates from the specified WSDL and is populated with information from the
   client framework.
 
-- :guilabel:`Default URI`
+- :guilabel:`Endpoint URI`
   The URI of the current web service. The initial URI is derived from the WSDL.
   You can override this setting if the address has changed.
 
-- :guilabel:`Fallback URIs` An optional list of URIs. They are used as fallbacks
-  if any error happens during the web service request. The default endpoint will
+  You can optionally add fallback URIs below the default URI. The default endpoint will
   be called first, then the fallback URIs in the order they are specified.
   Servers on the list are queried one by one until a successful web service
   invocation is achieved, or no more fallbacks are available. You find error
   messages in the runtime log when endpoint invocations fail. If a service
   invocation is successful, then the process continues.
 
-  This list is optional. If this list is empty and no default URI is specified
+  If this list is empty and no endpoint URI is specified
   then an exception is raised during the call; the process continues with
   error handling.
 
