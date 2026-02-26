@@ -233,10 +233,19 @@ OpenAPI Client Generator
 ------------------------
 
 The OpenAPI client generator wizard provides validation and inscription editor simplification features 
-for specific calls with a :ref:`process-element-rest-client-activity`. 
-Click the *Generate REST classes* button to start the wizard. 
+for specific calls with a :ref:`process-element-rest-client-activity`.
+Press |generate-icon| to open the OpenAPI client generator wizard.
 
-.. figure:: /_images/designer-configuration/rest-client-editor-main-section.png
+.. |generate-icon| image:: /_images/ui-icons/settings-cog.svg
+   :alt: Generate
+   :width: 16px
+   :height: 16px
+
+.. figure:: /_images/restclient-editor/restclient-editor.png
+    :alt: REST Client Editor
+    :align: center
+    
+    OpenAPI Client Generator Button
 
 **OpenAPI Clients**
 
@@ -250,8 +259,11 @@ Click the *Generate REST classes* button to start the wizard.
   client, you need an OpenAPI 3.0 JSON service descriptor. 
 - The legacy Swagger 2.0 openapi.json format is also supported by the client generator.
 
-.. figure:: /_images/designer-configuration/rest-client-generator-wizard.png
-
+.. figure:: /_images/restclient-editor/dialog-generate-rest-classes.png
+   :alt: OpenAPI Client Generator Wizard
+   :align: center
+   
+   OpenAPI Client Generator Wizard
 
 .. _rest-clients-openapi-migrate:
 
