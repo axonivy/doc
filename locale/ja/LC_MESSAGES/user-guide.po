@@ -5,7 +5,19 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-02-19 13:07+0000\nPO-Revision-Date: 2026-02-20 10:00+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.16.1-dev\nGenerated-By: Babel 2.18.0\n"
+msgstr ""
+"Project-Id-Version: Axon Ivy Platform 13.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 07:59+0000\n"
+"PO-Revision-Date: 2026-02-20 10:00+0000\n"
+"Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
+"Language: ja\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -4001,6 +4013,7 @@ msgid "Press |generate-icon| to generate Data Classes, Forms and Processes from 
 msgstr ""
 
 #: ../../source/designer-guide/configuration/databases.rst:43
+#: ../../source/designer-guide/configuration/rest-clients.rst:239
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:23
 msgid "Generate"
 msgstr "生成"
@@ -4411,50 +4424,57 @@ msgid "OpenAPI Client Generator"
 msgstr "OpenAPI クライアントジェネレーター"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:235
-msgid "The OpenAPI client generator wizard provides validation and inscription editor simplification features for specific calls with a :ref:`process-element-rest-client-activity`. Click the *Generate REST classes* button to start the wizard."
+#, fuzzy
+msgid "The OpenAPI client generator wizard provides validation and inscription editor simplification features for specific calls with a :ref:`process-element-rest-client-activity`. Press |generate-icon| to open the OpenAPI client generator wizard."
 msgstr "OpenAPI クライアントジェネレーターウィザードは :ref:`process-element-rest-client-activity` を含む特定の呼び出しの検証エディターとインスクリプションエディターの簡易機能を提供します。 *REST クラスの作成* ボタンをクリックすると、ウィザードが開始されます。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:241
+#: ../../source/designer-guide/configuration/rest-clients.rst:244
 msgid "**OpenAPI Clients**"
 msgstr "**OpenAPI クライアント**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:243
+#: ../../source/designer-guide/configuration/rest-clients.rst:246
 msgid "expose valid resource+method combos and their documentation"
 msgstr "有効なリソースとメソッドの組み合わせとそのドキュメントを公開します。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:244
+#: ../../source/designer-guide/configuration/rest-clients.rst:247
 msgid "display and validate typed query- and path parameters"
 msgstr "入力されたクエリパラメーターとパスパラメーターを表示、検証します。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:245
+#: ../../source/designer-guide/configuration/rest-clients.rst:248
 msgid "are aware of the payloads sent to and fro and generate Java objects for them"
 msgstr "送信、受信されたペイロードを認識し、Java オブジェクトを生成します。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:247
+#: ../../source/designer-guide/configuration/rest-clients.rst:250
 msgid "**Pre-Requisites**"
 msgstr "**前提条件**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:249
+#: ../../source/designer-guide/configuration/rest-clients.rst:252
 msgid "To generate an `OpenAPI <https://swagger.io/docs/specification/about/>`__ client, you need an OpenAPI 3.0 JSON service descriptor."
 msgstr "`OpenAPI <https://swagger.io/docs/specification/about/>`__ クライアントを生成するには、OpenAPI 3.0 JSONサービス記述子が必要です。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:251
+#: ../../source/designer-guide/configuration/rest-clients.rst:254
 msgid "The legacy Swagger 2.0 openapi.json format is also supported by the client generator."
 msgstr "レガシーな Swagger 2.0 の openapi.json フォーマットもクライアントジェネレーターでサポートされています。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:258
+#: ../../source/designer-guide/configuration/rest-clients.rst:256
+#: ../../source/designer-guide/configuration/rest-clients.rst:260
+#, fuzzy
+msgid "OpenAPI Client Generator Wizard"
+msgstr "OpenAPI クライアントジェネレーター"
+
+#: ../../source/designer-guide/configuration/rest-clients.rst:264
 msgid "**Migrate to OpenAPI**"
 msgstr "**OpenAPI への移行**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:260
+#: ../../source/designer-guide/configuration/rest-clients.rst:266
 msgid "OpenAPI isn't the only popular format to describe REST service capabilities."
 msgstr "REST サービスの機能を記述するための一般的なフォーマットは、OpenAPI だけではありません。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:262
+#: ../../source/designer-guide/configuration/rest-clients.rst:268
 msgid "If you need to integrate an `OData service <https://www.odata.org/>`__, you can convert your OData service description with our `OData converter <http://odata-converter.axonivy.com>`__. The service description is usually available under the given service URL ending with :code:`$metadata` e.g. :code:`https://myService/cars/$metadata`"
 msgstr "`OData service <https://www.odata.org/>`__を統合する必要がある場合は、`OData converter <http://odata-converter.axonivy.com>`__を使用してODataサービス記述を変換できます。通常、サービス記述は、:code:`$metadata`で終わる指定されたサービスURL（例： :code:`https://myService/cars/$metadata`）で参照できます。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:268
+#: ../../source/designer-guide/configuration/rest-clients.rst:274
 msgid "If you have other types of service descriptions, you may have a look at `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__. It is able to convert many other specification types to OpenAPI."
 msgstr "他のタイプのサービス記述がある場合は、 `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__ をチェックしてみてください。他の多くの仕様のタイプをOpenAPIに変換できます。"
 
