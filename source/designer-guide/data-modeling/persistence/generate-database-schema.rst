@@ -3,21 +3,18 @@
 Generate database schema
 ------------------------
 
-Click on :guilabel:`Generate Schema` in the persistence unit.
+Click on |generate-schema-icon| in the persistence unit.
 
-Generation options
+Generation preview
 ^^^^^^^^^^^^^^^^^^
 
-On the first wizard page you can specify the type of the schema generation.
+On the generation dialog you can specify the type of the schema generation. It directly shows a preview what will be executed on the
+database.
 
-.. figure:: /_images/persistence/generate-database-schema-options.png
-   :alt: Database schema generation option
+.. figure:: /_images/persistence-editor/schema-generation-dialog.png
+   :alt: Database schema generation
 
-   Database schema generation option
-
-**Data source**
-   For the schema generation the data source of the persistence unit is
-   used.
+   Database schema generation
 
 **Type**
    Specify the type of the schema generation. You can choose between
@@ -40,17 +37,6 @@ On the first wizard page you can specify the type of the schema generation.
          This option does delete all data which is stored in the
          database.
 
-Generation preview
-^^^^^^^^^^^^^^^^^^
-
-The second wizard page shows a preview what will be executed on the
-database.
-
-.. figure:: /_images/persistence/generate-database-schema-preview.png
-   :alt: Database schema generation preview
-
-   Database schema generation preview
-
 
 Primary Key Columns
 ^^^^^^^^^^^^^^^^^^^
@@ -59,3 +45,8 @@ Hibernate, the Jakarta Persistence API implementation library works by default w
 This means it will create for each table a sequence called :code:`<table-name>_SEQ` which is used
 to generate the primary keys. If you want to use the auto increment approach
 of your database management system you can use the :code:`org.hibernate.annotations.NativeGenerator` annotation.
+
+.. |generate-schema-icon| image:: /_images/ui-icons/settings-cog.svg
+   :alt: Generate Schema
+   :width: 16px
+   :height: 16px

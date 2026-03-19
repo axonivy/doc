@@ -66,12 +66,15 @@ Data source
 Description
    Describe your persistence unit here.
 
-Managed Classes
-   Specify the list of classes to be managed in this persistence unit. If
-   'Exclude unlisted classes' is checked, only the entity classes defined in the
-   list are included in the persistence unit. Otherwise, all entity classes of
-   the project are included automatically in addition to the entity classes
-   explicitly defined in the list.
+Managed Entity Classes
+   Specify the entity classes to include in this persistence unit. The 
+   explicitly listed classes are always included. Depending on the selected 
+   'Included Classes', all entity classes from the current project and 
+   optionally from required projects are discovered and managed automatically.
+
+   - **From Project:** Includes listed classes plus all entity classes discovered in the current project.
+   - **From Project & Dependent:** Includes listed classes plus all entity classes discovered in the current and required projects.
+   - **Only Listed:** Only the explicitly listed classes are included. No automatic discovery.
 
 Properties
    Specify properties for the persistence unit. This is optional. This
@@ -87,7 +90,7 @@ Properties
    :width: 16px
    :height: 16px
 
-.. |generate-schema-icon| image:: /_images/ui-icons/sql.svg
+.. |generate-schema-icon| image:: /_images/ui-icons/settings-cog.svg
    :alt: Generate Schema
    :width: 16px
    :height: 16px
