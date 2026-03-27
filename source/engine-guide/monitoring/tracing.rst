@@ -38,7 +38,7 @@ and exited the web server. During the request a database :code:`SELECT` statemen
 The whole request has been processed in 16 ms.
 
 Request Tracing Tools
-.....................
+---------------------
 
 You can use a external tracing tool that propagates a trace id in a HTTP header.
 In that case, Axon Ivy will re-use the given trace Id as its **requestId**.
@@ -55,6 +55,35 @@ X-B3-TraceId       `Zipkin <https://zipkin.io/>`_
 X-Amzn-Trace-Id    `Amazon X-Ray <https://docs.aws.amazon.com/xray>`_
 ot-tracer-traceid  `Open Tracing <https://github.com/opentracing>`_
 =================  =============
+
+Configuration
+..............
+
+Axon Ivy Engine natively supports exporting spans via the
+`OpenTelemetry Protocol (OTLP) <https://opentelemetry.io/docs/specs/otlp/>`_ over HTTP/protobuf.
+To activate the exporter, set the standard OTEL system property ``otel.traces.exporter=otlp``
+and point it at your collector with ``otel.exporter.otlp.endpoint``
+(e.g. ``http://localhost:4318``).
+
+Set these as JVM system properties in :ref:`jvm-options`
+(:file:`[engineDir]/configuration/jvm.options`):
+
+  .. code-block::
+  
+     # Enable OTLP span export
+     -Dotel.traces.exporter=otlp
+     # Jaeger collector endpoint (OTLP HTTP receiver, default port 4318)
+     -Dotel.exporter.otlp.endpoint=http://localhost:4318
+     # Optional: tag all spans with a service / project name
+     -Dotel.resource.attributes=service.name=my-ivy-engine
+
+Resource attributes such as a project name can be attached with
+``otel.resource.attributes`` (e.g. ``openinference.project.name=my-workflow``).
+All properties can alternatively be supplied as environment variables using the
+`standard OTEL naming convention <https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/>`_
+(uppercase, dots replaced by underscores, e.g. ``OTEL_TRACES_EXPORTER=otlp``).
+
+Note that only the HTTP/protobuf transport is bundled; gRPC is not supported.
 
 For a deeper integration with a tracing tool have a look at our :link-url:`Jaeger Tracing <docker-tracing-jaeger>` 
 (`Jaeger <https://www.jaegertracing.io>`_ and  `OpenTelemetry <https://opentelemetry.io/>`_) example.
