@@ -4147,6 +4147,7 @@ msgstr "フォーマットは、プロジェクトの :file:`config/formats.yaml
 #: ../../source/designer-guide/user-interface/branding/branding-engine.rst:21
 #: ../../source/engine-guide/configuration/index.rst:4
 #: ../../source/engine-guide/integration/cluster/configuration/index.rst:4
+#: ../../source/engine-guide/monitoring/tracing.rst:60
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:2
 msgid "Configuration"
 msgstr "設定"
@@ -22222,7 +22223,24 @@ msgstr "ot-tracer-traceid"
 msgid "`Open Tracing <https://github.com/opentracing>`_"
 msgstr "`Open Tracing <https://github.com/opentracing>`_"
 
-#: ../../source/engine-guide/monitoring/tracing.rst:59
+#: ../../source/engine-guide/monitoring/tracing.rst:62
+msgid "Axon Ivy Engine natively supports exporting spans via the `OpenTelemetry Protocol (OTLP) <https://opentelemetry.io/docs/specs/otlp/>`_ over HTTP/protobuf. To activate the exporter, set the standard OTEL system property ``otel.traces.exporter=otlp`` and point it at your collector with ``otel.exporter.otlp.endpoint`` (e.g. ``http://localhost:4318``)."
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/tracing.rst:68
+#, fuzzy
+msgid "Set these as JVM system properties in :ref:`jvm-options` (:file:`[engineDir]/configuration/jvm.options`):"
+msgstr ":file:`[エンジンのディレクトリ]/configuration/jvm.options`"
+
+#: ../../source/engine-guide/monitoring/tracing.rst:80
+msgid "Resource attributes such as a project name can be attached with ``otel.resource.attributes`` (e.g. ``openinference.project.name=my-workflow``). All properties can alternatively be supplied as environment variables using the `standard OTEL naming convention <https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/>`_ (uppercase, dots replaced by underscores, e.g. ``OTEL_TRACES_EXPORTER=otlp``)."
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/tracing.rst:86
+msgid "Note that only the HTTP/protobuf transport is bundled; gRPC is not supported."
+msgstr ""
+
+#: ../../source/engine-guide/monitoring/tracing.rst:88
 msgid "For a deeper integration with a tracing tool have a look at our :link-url:`Jaeger Tracing <docker-tracing-jaeger>` (`Jaeger <https://www.jaegertracing.io>`_ and  `OpenTelemetry <https://opentelemetry.io/>`_) example."
 msgstr "トレースツールとのより深い統合については、:link-url:`Jaeger Tracing <docker-tracing-jaeger>` (`Jaeger <https://www.jaegertracing.io>`_および `OpenTelemetry <https://opentelemetry.io/>`_ ）の例を参照してください。"
 
