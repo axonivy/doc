@@ -37,30 +37,20 @@ The example above shows the log messages when the request with id **61** has ent
 and exited the web server. During the request a database :code:`SELECT` statement has been executed.
 The whole request has been processed in 16 ms.
 
+
 Request Tracing Tools
 ---------------------
 
-You can use a external tracing tool that propagates a trace id in a HTTP header.
-In that case, Axon Ivy will re-use the given trace Id as its **requestId**.
-This allows you to aggregate log entries from different systems using the
-**requestId**. Axon Ivy Engine supports the following HTTP headers:
+Axon Ivy Engine execution can be traced using external tools, such as Jaeger.
+As reference look at our :link-url:`Jaeger Tracing <docker-tracing>` example
+(`Jaeger <https://www.jaegertracing.io>`_ and  `OpenTelemetry <https://opentelemetry.io/>`_).
 
-=================  =============      
-HTTP Header        Tool/Standard
-=================  =============
-traceparent        `W3C Trace Context <https://www.w3.org/TR/trace-context/>`_
-uber-trace-id      `Jaeger <https://www.jaegertracing.io>`_
-b3                 `Zipkin <https://zipkin.io/>`_
-X-B3-TraceId       `Zipkin <https://zipkin.io/>`_
-X-Amzn-Trace-Id    `Amazon X-Ray <https://docs.aws.amazon.com/xray>`_
-ot-tracer-traceid  `Open Tracing <https://github.com/opentracing>`_
-=================  =============
 
-Configuration
+Trace Export
 ..............
 
 Axon Ivy Engine natively supports exporting spans via the
-`OpenTelemetry Protocol (OTLP) <https://opentelemetry.io/docs/specs/otlp/>`_ over HTTP/protobuf.
+`OpenTelemetry Protocol (OTLP) <https://opentelemetry.io/docs/specs/otlp/>`_ .
 To activate the exporter, set the standard OTEL system property ``otel.traces.exporter=otlp``
 and point it at your collector with ``otel.exporter.otlp.endpoint``
 (e.g. ``http://localhost:4318``).
@@ -76,14 +66,33 @@ Set these as JVM system properties in :ref:`jvm-options`
      -Dotel.exporter.otlp.endpoint=http://localhost:4318
      # Optional: tag all spans with a service / project name
      -Dotel.resource.attributes=service.name=my-ivy-engine
+     # Optional: inter-system tracing propagation using W3C Trace Context
+     -Dotel.propagators=tracecontext
 
-Resource attributes such as a project name can be attached with
-``otel.resource.attributes`` (e.g. ``openinference.project.name=my-workflow``).
-All properties can alternatively be supplied as environment variables using the
-`standard OTEL naming convention <https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/>`_
-(uppercase, dots replaced by underscores, e.g. ``OTEL_TRACES_EXPORTER=otlp``).
+- All properties can alternatively be supplied as environment variables using
+  the `standard OTEL naming convention <https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/>`_ 
+  (uppercase, dots replaced by underscores, e.g. ``OTEL_TRACES_EXPORTER=otlp``).
+- Only the HTTP/protobuf transport is bundled; gRPC is not supported.
+- For outgoing HTTP calls, only W3C Trace Context propagation is supported out of the box.
 
-Note that only the HTTP/protobuf transport is bundled; gRPC is not supported.
 
-For a deeper integration with a tracing tool have a look at our :link-url:`Jaeger Tracing <docker-tracing-jaeger>` 
-(`Jaeger <https://www.jaegertracing.io>`_ and  `OpenTelemetry <https://opentelemetry.io/>`_) example.
+Inter-System tracing
+........................
+
+You can use an external tracing tool that propagates a trace ID in an HTTP header.
+In that case, Axon Ivy will re-use the given trace ID as its **requestId**.
+This allows you to aggregate log entries from different systems using the
+**requestId**. Axon Ivy Engine supports the following HTTP headers:
+
+=================  =============      
+HTTP Header        Tool/Standard
+=================  =============
+traceparent        `W3C Trace Context <https://www.w3.org/TR/trace-context/>`_
+uber-trace-id      `Jaeger <https://www.jaegertracing.io>`_
+b3                 `Zipkin <https://zipkin.io/>`_
+X-B3-TraceId       `Zipkin <https://zipkin.io/>`_
+X-Amzn-Trace-Id    `Amazon X-Ray <https://docs.aws.amazon.com/xray>`_
+ot-tracer-traceid  `Open Tracing <https://github.com/opentracing>`_
+=================  =============
+
+Note that only W3C Trace Context is redistributed by the Axon Ivy Engine when making outgoing HTTP calls.
