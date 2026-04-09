@@ -24,7 +24,7 @@ development, to get to know new features or to eliminate potential problems.
    :maxdepth: 1
 
 
-   installation
+   installation/index
    workbench
    perspectives
    menus
