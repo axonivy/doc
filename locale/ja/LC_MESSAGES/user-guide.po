@@ -1585,7 +1585,7 @@ msgid "Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the **Ove
 msgstr "**META-INF/MANIFEST.MF**ファイルエディターに戻ります。［**概要** ］タブを選択し、［**ウィザードをエクスポート** ］リンクをクリックします。**エクスポート先のディレクトリ** として、Axon Ivy DesignerまたはEngineインストール先の``dropins``ディレクトリを選択します。［**終了** ］ボタンを押します。プラグインが``dropins/plugins``ディレクトリに作成されます。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:244
-#: ../../source/designer-guide/introduction/installation.rst:4
+#: ../../source/designer-guide/introduction/installation/index.rst:4
 msgid "Installation"
 msgstr "インストール"
 
@@ -8636,25 +8636,334 @@ msgstr "上記のドキュメントはすべて簡潔で、必要な機能のみ
 msgid "Do not forget, anytime you find some unknown feature, hitting ``F1`` will show you a context sensitive compact help!"
 msgstr "知らない機能を目にしたときはいつでも、``F1`` を押して、コンテキストに応じたコンパクトなヘルプを表示できます。"
 
-#: ../../source/designer-guide/introduction/installation.rst:6
-msgid "To successfully install Axon Ivy Designer follow these steps:"
-msgstr "Axon Ivy Designer を正常にインストールするには、以下の手順に従います。"
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:4
+#: ../../source/designer-guide/introduction/installation/index.rst:22
+#, fuzzy
+msgid "Comprehensive Requirements"
+msgstr "システム要件"
 
-#: ../../source/designer-guide/introduction/installation.rst:8
-msgid ":dev-url:`Download </download>` the **latest** Axon Ivy Designer version."
-msgstr "Axon Ivy Designer の**最新** バージョンを:dev-url:`ダウンロード</download>` ます。"
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:6
+msgid "This page provides comprehensive instructions for installing, configuring, and troubleshooting the Axon Ivy Designer. It is intended for both end users and IT administrators who need to ensure the Designer runs correctly, especially in corporate environments."
+msgstr ""
 
-#: ../../source/designer-guide/introduction/installation.rst:9
-msgid "Check if your system meets the :ref:`system requirements <designer-system-requirements>`."
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:14
+#, fuzzy
+msgid "User Permissions"
+msgstr "権限"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:16
+msgid "The Axon Ivy Designer does not require administrator privileges. A regular user account is sufficient, provided the following conditions are met:"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:19
+msgid "Read and write access to the workspace directory."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:20
+msgid "Permission to open local network ports."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:25
+#, fuzzy
+msgid "Integrated Engine (localhost)"
+msgstr "エンジンのインストール（Windows）"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:27
+msgid "The Axon Ivy Designer downloads and uses an Axon Ivy Engine for simulation and testing. This Engine starts automatically and is accessible at ``http://localhost:8080`` by default. If port ``8080`` is already in use, the Designer automatically tries the next free port until it finds one (up to port ``8180``)."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:33
+msgid "For the integrated Engine to work correctly:"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:35
+msgid "Local firewall software and other security software (antivirus, EDR solutions) must not block connections to ``localhost``."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:37
+msgid "Proxy servers must not intercept traffic to ``localhost`` or ``127.0.0.1``. Ensure ``localhost`` and ``127.0.0.1`` are part of your proxy exclusion list (see :ref:`designer-install-proxy-configuration`)."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:44
+#, fuzzy
+msgid "Network Access"
+msgstr "プロセスの作成"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:46
+msgid "The Designer requires access to several online services. The following endpoints must be reachable over HTTPS."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:53
+#, fuzzy
+msgid "Host"
+msgstr "myHost"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:54
+#, fuzzy
+msgid "Purpose"
+msgstr "プロセス"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:55
+#, fuzzy
+msgid "``developer.axonivy.com``"
+msgstr "``axonivyprod``"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:56
+msgid "Axon Ivy Developer portal to download the Engine and access the documentation."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:58
+#, fuzzy
+msgid "``market.axonivy.com``"
+msgstr "``axonivyprod``"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:59
+msgid "Axon Ivy Market to browse and install connectors, ready-made process models, business solutions, and practical tools."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:61
+#, fuzzy
+msgid "``maven.axonivy.com``"
+msgstr "``axonivyprod``"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:62
+msgid "Axon Ivy Maven repository to download Axon Ivy project dependencies via Maven."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:64
+msgid "``repo.maven.apache.org``"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:65
+msgid "Maven Central repository to download Axon Ivy and third-party project dependencies via Maven."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:71
+#, fuzzy
+msgid "Proxy Configuration"
+msgstr "設定"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:73
+msgid "If your organization routes internet traffic through a proxy server, there are some components that need to be configured accordingly. Also, ensure that ``localhost`` and ``127.0.0.1`` are part of the system proxy exclusion list for the :ref:`integrated Engine <designer-install-integrated-engine>` to work correctly."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:82
+#, fuzzy
+msgid "Maven"
+msgstr "保存"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:84
+msgid "Maven is used by the Designer to download project dependencies and has its own independent proxy configuration. The proxy settings for Maven are defined in the ``settings.xml`` file, typically located at ``%USERPROFILE%\\.m2\\settings.xml`` (Windows) or ``~/.m2/settings.xml`` (Linux). If the file does not exist, create it. Configure the proxy according to your company proxy configuration. See `Apache Maven - Configuring a proxy <https://maven.apache.org/guides/mini/guide-proxies.html>`_ for instructions."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:92
+msgid "Verify that the Designer knows about it:"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:94
+msgid "Go to :menuselection:`Manage --> Settings --> Extensions --> Language Support for Java(TM) by Red Hat --> Maven` or search for ``java.configuration.maven.userSettings``."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:97
+msgid "Make sure the *Java > Configuration > Maven: User Settings* field points to your ``settings.xml`` file. If empty, it should use the default location mentioned above."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:104
+msgid "JVM"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:106
+msgid "Proxy settings also need to be configured at the JVM level. This is done by adding system properties to the ``jvm.options`` file located in the Engine directory."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:110
+msgid "Locate the Engine downloaded to Visual Studio Code's global storage directory, typically at ``%APPDATA%\\Code\\User\\globalStorage\\axonivy.vscode-designer-14\\engines`` (Windows) or ``~/.config/Code/User/globalStorage/axonivy.vscode-designer-14/engines`` (Linux)."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:117
+#, fuzzy
+msgid "Add the following lines to ``<engine-directory>\\configuration\\jvm.options``:"
+msgstr ":file:`[エンジンのディレクトリ]/configuration/jvm.options`"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:127
+#, fuzzy
+msgid "If the proxy requires authentication:"
+msgstr "Windows 認証"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:139
+msgid "Custom SSL/TLS Certificate"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:141
+msgid "If your organization uses a corporate proxy that performs SSL/TLS inspection, the corporate CA certificate must be imported into the JVM's trust store."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:144
+msgid "To import a corporate CA certificate:"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:146
+msgid "Obtain the CA certificate file (e.g., ``corporate-ca.crt``)."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:147
+msgid "Locate the directory of the JRE used by Maven and to start the Engine. Usually, where the environment variable ``JAVA_HOME`` points to."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:149
+msgid "Import the certificate using the ``keytool`` command:"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:161
+#, fuzzy
+msgid "Virus Scanner"
+msgstr "最初のケース"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:163
+msgid "Maven downloads hundreds of files into ``.m2\\repository\\``. Virus scanners scanning each file can dramatically slow down Maven builds."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:166
+msgid "The workspace contains many files that are frequently read and written during development. Scanning adds latency that manifests as slow project builds or other side effects."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:170
+msgid "To circumvent this, add the following exclusions to your antivirus software:"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:172
+#, fuzzy
+msgid "Designer workspace directory."
+msgstr "Microsoft Active Directory"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:173
+#, fuzzy
+msgid "Maven local repository."
+msgstr "データリポジトリ"
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:178
+msgid "Dev Drive (Windows)"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:180
+msgid "Putting the workspace and Maven local repository directories on a Dev Drive can significantly improve performance of developer workloads."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/comprehensive-requirements.rst:183
+msgid "For more information on Dev Drives, see `Microsoft Windows - Dev Drive <https://learn.microsoft.com/en-us/windows/dev-drive/>`_."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:7
+#, fuzzy
+msgid "Quick Start"
+msgstr "QuickStartTutorial"
+
+#: ../../source/designer-guide/introduction/installation/index.rst:9
+#, fuzzy
+msgid "To install the Axon Ivy Designer:"
+msgstr "Axon Ivy Designer を起動します。"
+
+#: ../../source/designer-guide/introduction/installation/index.rst:11
+#, fuzzy
+msgid "Check that your system meets the :ref:`system requirements <designer-system-requirements>`."
 msgstr "お使いのシステムが :ref:`システム要件<designer-system-requirements>` を満たしているか確認します。"
 
-#: ../../source/designer-guide/introduction/installation.rst:10
-msgid "Unzip the downloaded file in any folder where you have full access."
-msgstr "ダウンロードしたファイルをフルアクセスできる任意のフォルダーに解凍します。"
+#: ../../source/designer-guide/introduction/installation/index.rst:13
+msgid "`Download <https://code.visualstudio.com/download>`_ the latest Visual Studio Code."
+msgstr ""
 
-#: ../../source/designer-guide/introduction/installation.rst:11
-msgid "Run ``Axon Ivy Designer``."
-msgstr "``Axon Ivy Designer`` を実行します。"
+#: ../../source/designer-guide/introduction/installation/index.rst:15
+msgid "Run Visual Studio Code."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:16
+msgid "Install the `Axon Ivy Designer extension <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-14>`_ from the Visual Studio Code Marketplace. Search for \"Axon Ivy PRO Designer 14\" in the Extensions view and click :guilabel:`Install`."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:24
+msgid "These are the detailed requirements to ensure the Axon Ivy Designer works correctly, especially in corporate environments."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:27
+msgid "Some of it should work by default, some of it needs to be handled by IT administrators, and some of it might need to be configured by the end user. Whether a particular requirement needs to be handled and by whom depends on your organization's IT policies and environment. Refer to :ref:`designer-install-comprehensive-requirements` for more information on each item."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:38
+#, fuzzy
+msgid "Requirement"
+msgstr "システム要件"
+
+#: ../../source/designer-guide/introduction/installation/index.rst:39
+#, fuzzy
+msgid "Details"
+msgstr "タスクの詳細"
+
+#: ../../source/designer-guide/introduction/installation/index.rst:40
+#, fuzzy
+msgid ":ref:`System <designer-system-requirements>`"
+msgstr ":ref:`browser-system-requirements` を参照してください。"
+
+#: ../../source/designer-guide/introduction/installation/index.rst:41
+#, fuzzy
+msgid "See :ref:`system requirements <designer-system-requirements>`."
+msgstr "お使いのシステムが :ref:`システム要件<designer-system-requirements>` を満たしているか確認します。"
+
+#: ../../source/designer-guide/introduction/installation/index.rst:42
+msgid ":ref:`User permissions <designer-install-user-permissions>`"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:43
+msgid "Read/write on workspace directory, permission to open local ports."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:44
+msgid ":ref:`Localhost <designer-install-integrated-engine>`"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:45
+msgid "Must not be blocked, must bypass the proxy."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:46
+msgid ":ref:`Network access <designer-install-network-access>`"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:47
+msgid "Allow ``developer.axonivy.com``, ``market.axonivy.com``, ``maven.axonivy.com``, and ``repo.maven.apache.org`` over HTTPS."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:49
+#, fuzzy
+msgid ":ref:`Proxy <designer-install-proxy-configuration>`"
+msgstr ":ref:`persistence-configuration-editor`"
+
+#: ../../source/designer-guide/introduction/installation/index.rst:50
+msgid "Configure for :ref:`Maven <designer-install-proxy-configuration-maven>` and :ref:`JVM <designer-install-proxy-configuration-jvm>`."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:52
+msgid ":ref:`Custom certificate <designer-install-custom-certificate>`"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:53
+msgid "Import corporate CA certificate into JVM trust store if the proxy performs SSL/TLS inspection."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:55
+msgid ":ref:`Virus scanner <designer-install-virus-scanner>`"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:56
+msgid "Exclude workspace and Maven local repository directories."
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:57
+msgid ":ref:`Dev Drive (Windows) <designer-install-dev-drive>`"
+msgstr ""
+
+#: ../../source/designer-guide/introduction/installation/index.rst:58
+msgid "Consider using a Dev Drive for improved performance."
+msgstr ""
 
 #: ../../source/designer-guide/introduction/menus.rst:2
 msgid "Menus"
@@ -25546,4 +25855,16 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 
 #~ msgid "Note that only the HTTP/protobuf transport is bundled; gRPC is not supported."
 #~ msgstr ""
+
+#~ msgid "To successfully install Axon Ivy Designer follow these steps:"
+#~ msgstr "Axon Ivy Designer を正常にインストールするには、以下の手順に従います。"
+
+#~ msgid ":dev-url:`Download </download>` the **latest** Axon Ivy Designer version."
+#~ msgstr "Axon Ivy Designer の**最新** バージョンを:dev-url:`ダウンロード</download>` ます。"
+
+#~ msgid "Unzip the downloaded file in any folder where you have full access."
+#~ msgstr "ダウンロードしたファイルをフルアクセスできる任意のフォルダーに解凍します。"
+
+#~ msgid "Run ``Axon Ivy Designer``."
+#~ msgstr "``Axon Ivy Designer`` を実行します。"
 
