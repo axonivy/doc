@@ -1,4 +1,4 @@
-.. _designer-install-comprehensive-requiremenets:
+.. _designer-install-comprehensive-requirements:
 
 Comprehensive Requirements
 ==========================
@@ -107,7 +107,7 @@ Proxy settings also need to be configured at the JVM level. This is done by
 adding system properties to the ``jvm.options`` file located in the Engine
 directory.
 
-Locate the Engine downloaded to Visual Studio Codes's global storage directory,
+Locate the Engine downloaded to Visual Studio Code's global storage directory,
 typically at
 ``%APPDATA%\Code\User\globalStorage\axonivy.vscode-designer-14\engines``
 (Windows) or

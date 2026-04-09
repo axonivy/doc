@@ -28,7 +28,7 @@ Some of it should work by default, some of it needs to be handled by IT
 administrators, and some of it might need to be configured by the end user.
 Whether a particular requirement needs to be handled and by whom depends on your
 organization's IT policies and environment. Refer to
-:ref:`designer-install-comprehensive-requiremenets` for more information on each
+:ref:`designer-install-comprehensive-requirements` for more information on each
 item.
 
 .. list-table::
@@ -60,4 +60,4 @@ item.
 .. toctree::
    :hidden:
 
-   comprehensive-requiremenets
+   comprehensive-requirements
