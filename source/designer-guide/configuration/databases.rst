@@ -58,3 +58,61 @@ properties and other configuration values. E.g., the property
 the variable called ``cloudDb``. Thus, your database name is now configurable
 using variable ``cloudDb``. Operations need to set this variable correctly; they
 do not need to dive into the configuration of this external database.
+
+.. _sql-query-runner:
+
+SQL Query Runner
+----------------
+
+The SQL Query Runner lets you inspect and query your database content directly
+within the Axon Ivy Designer — without switching to an external database tool.
+Use it to browse table contents or develop and debug queries before using them
+in process steps.
+
+Open the SQL Query Runner by clicking |sql-query-runner-icon| in the Database
+Editor toolbar.
+
+.. |sql-query-runner-icon| image:: /_images/ui-icons/sql.svg
+   :alt: SQL Query Runner
+   :width: 16px
+   :height: 16px
+
+.. figure:: /_images/database-editor/sql-query-tester.png
+   :alt: SQL Query Runner
+   :align: center
+
+   SQL Query Runner
+
+Query Input
+^^^^^^^^^^^^^^^^^^
+
+- :guilabel:`Database Configuration`
+  Shows the name of the currently active database connection. Determined by
+  the selection in the Database Editor and cannot be changed within the SQL
+  Query Runner.
+
+- :guilabel:`Tables`
+  This dropdown lists all tables of the database. Selecting a table
+  automatically generates and executes a ``SELECT * FROM <table>`` query — a
+  quick way to inspect table contents without writing SQL manually.
+
+- SQL input area
+  Write any custom SQL query here.
+
+- :guilabel:`Execute`
+  Runs the query from the SQL input area and displays the result below.
+
+Query Result
+^^^^^^^^^^^^^^^^^^
+
+- ``SELECT`` queries return the result as a table with column headers and row
+  data.
+- ``INSERT``, ``UPDATE``, ``DELETE``, and ``CREATE`` statements return a
+  confirmation message.
+
+.. tip::
+
+   - To browse table contents, select a table from the :guilabel:`Tables`
+     dropdown to run an automatic ``SELECT *``.
+   - To develop and debug queries, write and run custom SQL in the input area
+     before using them in a Database Step in your process.
