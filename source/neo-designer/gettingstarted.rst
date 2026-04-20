@@ -43,7 +43,7 @@ The Axon Ivy :ref:`form-editor` is a graphical modeling tool to design dynamic f
 .. rubric:: Simulate the application
 
 Included in NEO Designer is a simulator feature to execute and test a process 
-with a sinlge click. 
+with a single click. 
 
 .. image:: /_images/neo/view-browser.png
 

@@ -27,7 +27,7 @@ Accessibility
 Attribute Browser
 ----------------------------
 
-A browser to select valid attributes of the process datas for scriptable process element configurations.
+A browser to select valid attributes of the process data for scriptable process element configurations.
 
 .. figure:: /_images/process-inscription/browser-attribute.png
    :alt: Attribute Browser

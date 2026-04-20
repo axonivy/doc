@@ -9,7 +9,7 @@ the process simulation, then it will restore the process data for the preview.
 
 The preview is opened in the :ref:`dev-workflow-ui` frame with some tooling
 (:ref:`html-dialog-autorefresh` and :ref:`html-dialog-navigation`). It can
-execute dialog logic, so that the dynamic behavour of the dialog like validation
+execute dialog logic, so that the dynamic behaviour of the dialog like validation
 or autocompletion logic can be tested.
 
 |html-dialog-preview|

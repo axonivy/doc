@@ -8,9 +8,9 @@ which can be used to deploy new applications or projects. It can be inspected
 with the :ref:`integration-rest-api-browser`.
 
 The REST deployment API makes highly customized deployment chains possible. This
-is the prefered approach to build a CI/CD pipeline because it is platform
+is the preferred approach to build a CI/CD pipeline because it is platform
 independent. You can use any tool you want to call this REST API like
-:code:`curl`. Whether a deployment was succesful or not can be checked by
+:code:`curl`. Whether a deployment was successful or not can be checked by
 verifying the http status code, which must be :code:`200`.
 
 Example how to deploy via curl:

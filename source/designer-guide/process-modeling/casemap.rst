@@ -242,7 +242,7 @@ to be triggerable and set the responsible role to ``SYSTEM``.
 Stage switching
 ~~~~~~~~~~~~~~~
 
-When a stage change happens the Case Map does not cancel tasks thats
+When a stage change happens the Case Map does not cancel tasks that
 were started in the stage before the switching happened. This is mainly
 important if the stage switch was performed programmatically using the
 ``ivy.casemap`` API. The process developer should consider to change the

@@ -21,7 +21,7 @@ Variables:
   myEnumVar: hi
 
   # This is a file variable. 
-  # It's perfect to contain large and complex datas, 
+  # It's perfect to contain large and complex data, 
   #  as the value is not defined in variables.yaml directly. 
   #  Rather it's value is loaded
   #  from an external file, which is located 

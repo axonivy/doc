@@ -15,7 +15,7 @@ Content objects (except folders) have **content object values**, where each
 value is bound to a locale.
 
 A locale defines the language and optionally the region. This allows you to
-define values for different langauges and even for different regions. You can
+define values for different languages and even for different regions. You can
 define a value for English :code:`en` or be more specific for US-English with
 :code:`en_US` or British-English with :code:`en_GB`.
 

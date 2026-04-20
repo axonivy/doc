@@ -32,7 +32,7 @@ What You Need to Do:
 --------------------
 
 1. Run the project migration tool to automatically update your pom.xml file.
-2. Execute your maven build and ensure everythings compiles and all tests pass successfully.
+2. Execute your maven build and ensure everything compiles and all tests pass successfully.
 
 For more details about the Axon Ivy Java API and troubleshoot issues, refer to `Troubleshoot Java Compilation Errors <https://community.axonivy.com/d/1150>`_.
 

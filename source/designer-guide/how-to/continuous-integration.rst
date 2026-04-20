@@ -66,7 +66,7 @@ Axon Ivy Projects:
 
 -  Dependencies with ``<type>iar</type>`` will be manipulated by the
    :ref:`project-deployment-descriptor`. Therefore additional
-   configurations like the ``<scope>`` could get lost trough the simple
+   configurations like the ``<scope>`` could get lost through the simple
    editor usage.
 
 -  Values that can be manipulated with the simple

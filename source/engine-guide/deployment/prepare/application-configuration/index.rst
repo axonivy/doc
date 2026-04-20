@@ -34,7 +34,7 @@ configuration for the application, but with a lower priority than the regular
 
 The :file:`app.yaml` file can override :ref:`variables` declared in projects.
 If these variables are values of type file (e.g :code:`[file: json]`), then
-these files values can also be overriden by adding them to the :file:`app.zip` 
+these files values can also be overridden by adding them to the :file:`app.zip` 
 in :file:`<app.zip>/config/variables/myVariableName.json` as shown below.
 
 ::
