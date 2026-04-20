@@ -17,7 +17,7 @@ environment and runtime behavior of the Axon Ivy Engine.
 
 To craft your own configuration you would typically copy values from our
 **reference** files, located under :file:`[engineDir]/configuration/reference` or
-see te :ref:`configuration-file-reference` and adjust them according to your needs. 
+see the :ref:`configuration-file-reference` and adjust them according to your needs. 
 Alternative, you can also copy and modify whole **templates**,
 which are provided under :file:`[enginDir]/configuration/templates`.
 

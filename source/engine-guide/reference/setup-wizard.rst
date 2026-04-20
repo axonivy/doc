@@ -15,7 +15,7 @@ license and the creation of a system database.
 
 Advanced users might prefer to manually craft configurations in :ref:`ivy-yaml` and 
 use the :ref:`engine-config-cli` to roll out an Axon Ivy Engine into production.
-Configuration files make the installation process quickly reproducable in
+Configuration files make the installation process quickly reproducible in
 various environments such as dev, test and prod.
 
 

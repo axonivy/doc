@@ -121,7 +121,7 @@ found in the following list:
   This means that all new processes are started in this version. Program Start,
   Web Service Process and Rest Endpoints are only active for process model
   versions in this state. Only one process model version of a process model can
-  be in state :code:`RELEASED`. If a process model version get's released, then
+  be in state :code:`RELEASED`. If a process model version gets released, then
   the current released process model version gets :code:`DEPRECATED` or
   :code:`ARCHIVED`.
 * **DEPRECATED**: The process model version has previously been in state

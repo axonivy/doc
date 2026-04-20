@@ -68,6 +68,6 @@ If the database is created by the Axon Ivy Engine the collation is set to
 Non-TLS/SSL Connection
 **********************
 
-By default, the Microsof SQL Server driver connects using TLS/SSL. 
+By default, the Microsoft SQL Server driver connects using TLS/SSL. 
 If your SQL Server is not configured for TLS/SSL, you must add the following property to your connection configuration:
 ``encrypt=false``.

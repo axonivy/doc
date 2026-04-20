@@ -72,7 +72,7 @@ Summary
 -------
 
 +-------------------------------+------------+----------------------+------------+----------------+-------------+-----------+-----------+
-| Concept                       | Overriding | Project Dependencies | Public API | Web Accessable | Designer UI | Engine UI | Knowledge |
+| Concept                       | Overriding | Project Dependencies | Public API | Web Accessible | Designer UI | Engine UI | Knowledge |
 +===============================+============+======================+============+================+=============+===========+===========+
 | Content Management            | yes        | yes                  | yes        | (yes)          | yes         | no        | Novice    |
 +-------------------------------+------------+----------------------+------------+----------------+-------------+-----------+-----------+

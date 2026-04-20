@@ -34,7 +34,7 @@ The configuration examples for :ref:`NGINX <reverse-proxy-nginx>` and for
 :ref:`Apache HTTP Server <reverse-proxy-apache>` follow all of these recommendations.
 The configuration script provided for :ref:`Microsoft IIS <reverse-proxy-iis>`
 routes all traffic to the Axon Ivy Engine. We recommend to only route specific
-applications by manually modifing the rules in :guilabel:`URL Rewrite`.
+applications by manually modifying the rules in :guilabel:`URL Rewrite`.
 
 
 Block URLs on the Axon Ivy Engine

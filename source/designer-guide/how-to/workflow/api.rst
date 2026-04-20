@@ -22,7 +22,7 @@ code:
    :language: java
 
 To execute a query, you need an instance of an IQueryExecutor. Retrieve it
-trough the :ref:`ivy environment variable
+through the :ref:`ivy environment variable
 <ivyscript-reference-environmentvariable>`.
 
 Queries are executed against a single security context by default.
@@ -43,7 +43,7 @@ Queries are executed against a single security context by default.
 Task and Case manipulation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The API to manipulate tasks and cases is available trough the :ref:`ivy
+The API to manipulate tasks and cases is available through the :ref:`ivy
 environment variable <ivyscript-reference-environmentvariable>`.
 
 -  ``ivy.case`` (ICase): represents the currently executing process

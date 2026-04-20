@@ -302,7 +302,7 @@ The following environment objects are available on ``ivy`` (details of
 the objects are described in the :public-api:`Public API </>`):
 
 -  ``cal`` - an :public-api:`IDefaultBusinessCalendar </ch/ivyteam/ivy/application/calendar/IDefaultBusinessCalendar.html>`
-   object that gives access to business calendar informations and calculations.
+   object that gives access to business calendar information and calculations.
 
 -  ``request`` - an :public-api:`IProcessModelVersionRequest </ch/ivyteam/ivy/request/IProcessModelVersionRequest.html>`
    object, the representation of the request against the server to execute the

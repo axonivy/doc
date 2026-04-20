@@ -62,7 +62,7 @@ links in mails).
 .. rubric:: HTTP Headers
 
 To successfully integrate a reverse proxy with the Axon Ivy Engine you need to pass the host
-which the client itself initally has requested, so that the Axon Ivy Engine can
+which the client itself initially has requested, so that the Axon Ivy Engine can
 generate correct URLs based on the request. All documented examples
 preserve this :code:`Host` header, but if you integrate the Axon Ivy Engine with any other
 reverse proxy you need to pass the :code:`Host` header to the Axon Ivy Engine. As an alternative

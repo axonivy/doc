@@ -19,7 +19,7 @@ is executed after the engine has started.
 
 This is an alternate approach to automate a CI/CD pipeline compared to REST-API.
 It is always platform-dependent on which the Axon Ivy Engine is running. Furthermore
-you need to verify if the deployment was succesful or not by checking the generated
+you need to verify if the deployment was successful or not by checking the generated
 log files in the deployment directory:
 
 +------------------+------------------------------------------------------------------------+

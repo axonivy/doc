@@ -9,7 +9,7 @@ additional steps are required at the end.
 .. rubric:: Preparation
 
 #. Download the latest Axon Ivy Engine hotfix version that matches your release
-   train :dev-url:`/download` and unpack at your prefered place.
+   train :dev-url:`/download` and unpack at your preferred place.
 #. Stop the running Axon Ivy Engine instance.
 
 .. include:: _wizardMigration.rst

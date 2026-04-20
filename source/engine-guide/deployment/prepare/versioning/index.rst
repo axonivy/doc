@@ -13,7 +13,7 @@ made:
 
 .. rubric:: Persistent Data
 
-* Deleting, renaming or chaning the type of fields in Ivy Data Classes which are persistent
+* Deleting, renaming or changing the type of fields in Ivy Data Classes which are persistent
 * Changing types of fields that are persistent in business data
 
 

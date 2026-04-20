@@ -11,7 +11,7 @@ distinguish between the following identity providers:
 * **Internal Identity Provider**:
   Used to manage its workflow users directly on the Axon Ivy Engine. Only the
   :code:`Ivy Security System` is an internal identity provider which has no
-  further settings and is configured by default. No futher configurations are need
+  further settings and is configured by default. No further configurations are need
   if you want to go with this.
 
 * **External Identity Provider**:

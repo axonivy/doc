@@ -18,7 +18,7 @@ Java interface into the process workflow.
 Scope
 ~~~~~~~~~
 If you just need to call some Java code within your workflow, 
-it's normally preferrable to do this via the :ref:`process-element-script-activity`.
+it's normally preferable to do this via the :ref:`process-element-script-activity`.
 
 If not only Java code must be called, but process logic, too, 
 you are better off with calling a re-usable :ref:`Callable SubProcesses <process-kind-callable>`
@@ -61,7 +61,7 @@ Program
 
 Timeout
    Defines a timeout for the return call to the Java PI class.
-   A timout error can be handled by a catching :ref:`process-element-error-start`.
+   A timeout error can be handled by a catching :ref:`process-element-error-start`.
 
 
 Configuration Tab

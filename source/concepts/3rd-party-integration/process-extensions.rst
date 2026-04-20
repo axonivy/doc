@@ -183,7 +183,7 @@ elements, available in the process editor palette.
    Dropin Elements are hard to develop, build and :ref:`distribute<dropin-installation>`.
    Therefore, their usage is strongly discouraged. 
    For most customers it's 
-   perferrable to work with :ref:`connector-process-elements`
+   preferable to work with :ref:`connector-process-elements`
    or the :ref:`extensible-process-elements`. 
 
 However, to implement your own process elements 
@@ -213,7 +213,7 @@ rather than explaining details of the tools we rely upon.
 We have several active projects that you may use as template
 for your own development.
 
-* `extension-demos <https://github.com/axonivy/extension-demos/>`_, show extensions to the logger infrastracture, database drivers, and tomcat webserver.
+* `extension-demos <https://github.com/axonivy/extension-demos/>`_, show extensions to the logger infrastructure, database drivers, and tomcat webserver.
 
 * In the Market there are products that enrich the Designer development tooling, such as the `openai-assistant <https://github.com/axonivy-market/openai-connector/>`_ and the  `excel-dialog <https://github.com/axonivy-market/excel-importer/>`_.
 
