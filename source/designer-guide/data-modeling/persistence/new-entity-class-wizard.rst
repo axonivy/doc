@@ -19,10 +19,10 @@ Features
 ^^^^^^^^
 
 Project Name
-   Chose the name of the project the new Entity Class should belong to.
+   Choose the name of the project the new Entity Class should belong to.
 
 Namespace
-   Chose a namespace for your Entity Class. The name space lets you
+   Choose a namespace for your Entity Class. The name space lets you
    create a structure to organize your data. Use the dot character '.'
    to separate the folders from each other. The namespace will be
    visible in the Axon Ivy project tree.

@@ -6,7 +6,7 @@ IvyScript Editor
 Modes
 -----
 
-There are two kind of IvyScript editors which are used in different
+There are two kinds of IvyScript editors which are used in different
 places.
 
 

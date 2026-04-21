@@ -35,7 +35,7 @@ To persist (save/create object on the database) you can use the
 .. warning::
 
    This method only works properly if the entity object and all the
-   associated objects are not jet persistent. Otherwise you have to use
+   associated objects are not yet persistent. Otherwise you have to use
    the merge method.
 
 Example (Product is an Entity Class):
@@ -291,7 +291,7 @@ object. The call to ``setMaxResults(20)`` limits the query result set to
 Ordering
 ~~~~~~~~
 
-JPA QL provide an ORDER BY clause for ordering query results, similar to
+JPA QL provides an ORDER BY clause for ordering query results, similar to
 SQL.
 
 Returns all Products ordered by name:
@@ -330,7 +330,7 @@ descriptions.
 Comparison Expressions
 ~~~~~~~~~~~~~~~~~~~~~~
 
-JPA QL support the same basic comparison operators as SQL. Here are a
+JPA QL supports the same basic comparison operators as SQL. Here are a
 few examples that should look familiar if you know SQL:
 
 Binary comparison (=, <>, <, >, >=, <=, [NOT] BETWEEN, [NOT] IN):
@@ -425,7 +425,7 @@ Lower cases or upper cases a string (LOWER(string), UPPER(string)):
    from Product p where upper(p.name) = 'PRODUCT NAME'
 
 Another common expression is concatenation, although SQL dialects are
-different here, JPA QL support a portable concat(string1, string2)
+different here, JPA QL supports a portable concat(string1, string2)
 function:
 
 ::
@@ -496,7 +496,7 @@ This query counts all the Products:
    Number productCount = ivy.persistence.<persistence unit>
    .createQuery("select count(p) from Product p").getSingleResult() as Number;                
 
-This query calculates the average the sum, the maximum and the minimum
+This query calculates the average, the sum, the maximum and the minimum
 from the amount of all products:
 
 ::

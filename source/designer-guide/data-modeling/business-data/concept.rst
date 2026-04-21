@@ -1,7 +1,7 @@
 Business Data Concept
 ---------------------
 
-The Business Data Store implements a document store. Beside
+The Business Data Store implements a document store. Besides
 the stored value, the repository stores additional information about the
 Business Data, like an identifier, a version, and the creation / update
 date.

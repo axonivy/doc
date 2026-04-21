@@ -75,7 +75,7 @@ specializations of each role, the **Member Role** is handled like a normal child
 Role Editor
 -----------
 
-The role editor allows to create, edit, or remove roles as well as to structure
+The role editor allows you to create, edit, or remove roles as well as to structure
 roles hierarchically.
 
 .. figure:: /_images/role-editor/role-editor.png

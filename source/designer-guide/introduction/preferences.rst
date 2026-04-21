@@ -56,9 +56,9 @@ Animation speed fast < - > slow
 
    .. tip::
    
-      As the animation is very slow with low slider values adjust this
+      As the animation is very slow with low slider values, adjust this
       setting only when you need to debug a process in its lowest
-      details and increase the speed as soon you have finished.
+      details and increase the speed as soon as you have finished.
 
 Simulation/Animation follow
    Here you can set in which mode the execution is animated. You can
@@ -79,7 +79,7 @@ Simulation/Animation follow
 
    -  **Follow only in open editors** - You can choose which process are
       animated by opening them in a process editor window. Note that the
-      focus switches always the window displaying the currently executed
+      focus always switches to the window displaying the currently executed
       process
 
    -  **Follow only in current editor on top** - If you are only interested
@@ -110,7 +110,7 @@ History
    .. note::
 
       In case of memory shortage during simulation the settings of
-      history preferences may be ignored (resulting in less snapshots
+      history preferences may be ignored (resulting in fewer snapshots
       shown in the history).
 
 Event Bean Simulation

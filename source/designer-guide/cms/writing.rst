@@ -3,7 +3,7 @@ Writing
 
 You are able to write at runtime to the cms.
 In this case it is necessary that you write 
-in the CMS of the application. Because the 
+in the CMS of the application, because the 
 cms of the application has the highest importance
 (see :ref:`cms-content-resolution`) and the cms
 of the application is always writeable

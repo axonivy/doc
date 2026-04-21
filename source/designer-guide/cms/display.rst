@@ -45,8 +45,7 @@ The generated link then looks as follows:
 
   ``/designer/cm/cms$1/documents/instruction.pdf?l=en&v=1641303359499``
 
-If you want to generate a link with a specific locale then you can
-use then you can use the advanced API:
+If you want to generate a link with a specific locale then you can use the advanced API:
 
 .. code:: java
 

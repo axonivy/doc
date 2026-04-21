@@ -37,7 +37,7 @@ File Menu
    each other in some way.
 
    In the opening dialog simply select a different workspace directory.
-   If you have switched workspaces before, you can also chose from a
+   If you have switched workspaces before, you can also choose from a
    list of previously used workspaces.
 
 3 - Import...
@@ -155,7 +155,7 @@ Window Menu
    below the Axon Ivy folder.
 
 3 - Preferences...
-   Opens the Preferences editor for the all settings that are
+   Opens the Preferences editor for all settings that are
    available on the Eclipse platform. The Axon Ivy specific
    preferences are available under the Axon Ivy branch of the
    preferences tree.

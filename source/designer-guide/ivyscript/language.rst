@@ -6,7 +6,7 @@ computational expressions but also more complex elements to program
 conditional-, loop- and exception handling blocks.
 
 The :ref:`ivyscript-reference-data-types` are
-defined for easy use. Especially, IvyScript bewares the programmer from
+defined for easy use. Especially, IvyScript protects the programmer from
 null pointer exceptions because Ivy data objects are automatically
 initialized to a default value. Read the section :ref:`ivyscript-nullhandling`
 for more details.
