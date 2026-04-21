@@ -9,7 +9,7 @@ drawer of the process editor palette.
 Element Details
 ---------------
 
-This elements terminates the current process.
+This element terminates the current process.
 
 Inscription
 -----------

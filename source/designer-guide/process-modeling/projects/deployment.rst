@@ -117,7 +117,7 @@ Project Version
 
 Provider
    The name of the user or company that implements and maintains (i.e.
-   provides) the project. The provider setting has not functional
+   provides) the project. The provider setting has no functional
    purpose. It is for documentation only.
 
 Description
@@ -273,4 +273,4 @@ In some use cases, this automatic import is not desirable (E.g., project migrati
 For these cases, you can turn off the automatic import in the preferences.
 On the toolbar of the :ref:`deployment-descriptor-editor`, you can see if the **Auto Import** is on or off.
 There is also an action to trigger the execution of the automatic import. This action works even if **Auto Import** is turned off. 
-A log with the executed tasks is shown to better understands what the automatic import is doing.   
+A log with the executed tasks is shown to better understand what the automatic import is doing.   

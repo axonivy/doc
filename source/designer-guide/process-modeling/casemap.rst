@@ -85,11 +85,11 @@ stage.
 Process
 ^^^^^^^
 
-A process in the Case Map references to a process start of an Axon Ivy
+A process in the Case Map references a process start of an Axon Ivy
 process. If the business process enters a stage, the first process,
 which entry condition evaluates to true, will be started.
 
-Processes and Sidesteps can be rearranged around by drag and drop.
+Processes and Sidesteps can be rearranged by drag and drop.
 
 .. figure:: /_images/casemap/casemap-element-process.png
    :alt: Case Map Element: Process

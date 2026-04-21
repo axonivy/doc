@@ -79,7 +79,7 @@ Target
 
 Body
    For POST and PUT requests the body section can be used to specify
-   that data that will be sent to the REST service.
+   the data that will be sent to the REST service.
 
    -  **Raw**: Define the Content-Type first and define any textual
       content in the editor part. The content can contain dynamic parts

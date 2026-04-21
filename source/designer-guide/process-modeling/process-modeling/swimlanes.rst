@@ -11,7 +11,7 @@ Swimlanes are available for all process kinds and are typically used to
 visualize organizations, roles, responsibility assignments or systems
 for process elements or sections of process logic.
 
-If you select a pool or lane, you can widened or narrowed it by dragging the
+If you select a pool or lane, you can widen or narrow it by dragging the
 handle below or move it by dragging the top handle. The position of process
 elements lying outside the modified lane are not adjusted accordingly.
 

@@ -85,7 +85,7 @@ API reference
 The Program Start consumes a Java class that implements the
 :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
 interface. 
-This implementation is responsible to initiate a new process by calling 
+This implementation is responsible for initiating a new process by calling 
 the method ``fireProcessStartEventRequest`` of 
 :public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`.
 The common way to implement a Start Event Bean is to extend from 

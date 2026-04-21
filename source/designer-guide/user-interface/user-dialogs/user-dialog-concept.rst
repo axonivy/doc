@@ -39,8 +39,8 @@ Logic
 ^^^^^
 
 The logic of a User Dialog defines *how* a User Dialog performs its work. For
-each *UI Event* triggered by the user (e.g., by clicking on a button). 
-All the starts events are defined here, to build the interface for this dialog.
+each *UI Event* triggered by the user (e.g., by clicking on a button),
+all the start events are defined here, to build the interface for this dialog.
 
 The logic of a User Dialog is edited and defined using the :ref:`process-editor`.
 

@@ -71,7 +71,7 @@ Process
 
 Process Data
    The Process Data is the data passed from one
-   :ref:`Step <glossar-step>` to the next. Its represented by a data
+   :ref:`Step <glossar-step>` to the next. It's represented by a data
    class used for the whole process. Even though every
    :ref:`Step <glossar-step>` can create a new instance of this data
    class to be passed to the next :ref:`Step <glossar-step>` it will
@@ -174,7 +174,7 @@ Task
    :ref:`Task Switch <process-element-task-switch-event>` Element or at the
    :ref:`Process End <process-element-process-end>`.
 
-   Task can be assigned to a specific User, a Role or to Everybody.
+   Tasks can be assigned to a specific User, a Role or to Everybody.
 
 .. _glossar-user:
 
@@ -185,7 +185,7 @@ User
    If a User is not identified, we speak of an anonymous User.
 
 User Dialog
-   A :ref:`user-dialogs` is a concept of an User
+   A :ref:`user-dialogs` is a concept of a User
    Interface. User Dialogs can be implemented as HTML Dialog (HTML/JSF).
 
 View Type

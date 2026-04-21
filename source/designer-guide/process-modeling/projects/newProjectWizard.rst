@@ -55,7 +55,7 @@ Default namespace
    used as standard namespace for new Axon Ivy artifacts.
 
 Location
-   Defines where to project will be created on your local disk. 
+   Defines where the project will be created on your local disk. 
    By default the location will be your eclipse workspace.
    If a project is selected while opening the wizard, the location will
    be adjusted, so that the new project is created as child of the existing project, 
@@ -77,7 +77,7 @@ If there are yet no projects in the workspace, this page
 isn't being displayed in the wizard.
 
 Required Projects
-   Check the projects that the new project should be depend upon. The
+   Check the projects that the new project should depend upon. The
    selected projects will automatically be required with the version
    that they currently have in the workspace. The maximum version will
    be left empty.

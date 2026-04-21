@@ -186,7 +186,7 @@ Case and Business Case.
 Other task states
 ~~~~~~~~~~~~~~~~~
 
-There are more task states, mainly for task synchronisation, error handing,
+There are more task states, mainly for task synchronisation, error handling,
 intermediate events, or user aborts. To learn more about task states, refer to
 the enumeration ``ch.ivyteam.ivy.workflow.TaskState`` in public API.
 

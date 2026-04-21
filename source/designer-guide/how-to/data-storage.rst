@@ -21,7 +21,7 @@ HTML User Dialogs.
 Filesystem
 ----------
 
-Data can be stores in files. Access and management has to be implemented
+Data can be stored in files. Access and management has to be implemented
 in the project itself.
 
 HTML User Dialog Resources
@@ -33,7 +33,7 @@ used in the HTML User Dialog.
 Database
 --------
 
-Stores and access data in a database systems. An own database
+Stores and accesses data in database systems. A dedicated database
 server is necessary and the database schema must be managed outside of
 Axon Ivy.
 More information can be found in the chapter :ref:`process-element-db-activity`.
@@ -41,7 +41,7 @@ More information can be found in the chapter :ref:`process-element-db-activity`.
 Persistency (Jakarta Persistence API)
 -------------------------------------
 
-Stores and access data in a database systems. An own database
+Stores and accesses data in database systems. A dedicated database
 server is necessary. The database schema can be generated. JPA is a Jakarta EE 
 standard that is well documented and widely used. 
 More information can be found in the chapter :ref:`persistence`.
@@ -49,7 +49,7 @@ More information can be found in the chapter :ref:`persistence`.
 Web Service
 -----------
 
-Stores and access data in external systems by using web services.
+Stores and accesses data in external systems by using web services.
 More information can be found in the chapter :ref:`process-element-web-service-call-activity`.
 
 Variables

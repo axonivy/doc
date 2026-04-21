@@ -63,7 +63,7 @@ The Marquee Tool can also be started if you hold *Shift* or you can select multi
 Center
 ^^^^^^
 
-You can create many different elements, by select the wished element and add
+You can create many different elements by selecting the desired element and adding
 it to a position in the diagram. To keep the overview they are divided into
 different categories: 
 
@@ -132,8 +132,8 @@ area to place it. Click and drag elements to move them.
 Connectors are drawn between two elements by using the **Connector Tool** in the
 :ref:`process-editor-tool-bar` or clicking on the first element and select the
 **Connector Tool** over the :ref:`process-editor-quick-actions`. You can also
-add more bend waypoints to a connector or move them, by select the connector
-and drag the handles. To reconnect a existing connector select the connector and
+add more bend waypoints to a connector or move them, by selecting the connector
+and dragging the handles. To reconnect an existing connector select the connector and
 move the target handle to another element.
 
 On each element you have a :ref:`process-editor-quick-actions`, which provides

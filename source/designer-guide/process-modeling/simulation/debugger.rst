@@ -24,7 +24,7 @@ engine.
    Debug view in action
 
 For each request to the engine the current state (i.e., the currently
-executed process step) are shown and can be manipulated individually
+executed process step) is shown and can be manipulated individually
 with the following buttons on the toolbar:
 
 .. figure:: /_images/simulation-debugging/buttons-debugging.png

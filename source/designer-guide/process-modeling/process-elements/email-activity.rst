@@ -88,7 +88,7 @@ In this tab you can attach files to your e-mail.
 Attachments can be provided as single ``File`` process data reference 
 or with a ``List<File>`` reference to supply multiple files at once.
 Alternatively files can be selected from the CMS.
-Finally, files can be added by stating a ``String`` path. It will by resolved by
+Finally, files can be added by stating a ``String`` path. It will be resolved by
 searching the name as file in your :ref:`file area <ivyscript-reference-file>`.
 
 .. figure:: /_images/process-inscription/mail-tab-attachments.png

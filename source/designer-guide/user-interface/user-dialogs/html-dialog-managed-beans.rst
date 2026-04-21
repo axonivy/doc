@@ -94,7 +94,7 @@ your own annotation. You find an example in the :ref:`HTMLDialogDemo Project <im
    @UpperCase // custom constraint in same package
    @StartsWith(prefix="ZG") // custom constraint in same package
 
-   //only show the validation message from this annotation and not from it's re-used types:
+   //only show the validation message from this annotation and not from its re-used types:
    @ReportAsSingleViolation 
 
    @Target( { METHOD, FIELD, ANNOTATION_TYPE })

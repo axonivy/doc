@@ -46,7 +46,7 @@ started as follows:
 Configuration
 ~~~~~~~~~~~~~
 
-Axon Ivy Projects declare its ids and dependencies in the
+Axon Ivy Projects declare their ids and dependencies in the
 :ref:`project-deployment-descriptor`. This deployment descriptor
 can be easily edited with the corresponding Axon Ivy editor and is stored as
 Maven Project Object Model (``pom.xml``). Therefore each Axon Ivy Project has by

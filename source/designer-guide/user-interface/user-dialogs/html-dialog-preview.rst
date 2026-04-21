@@ -42,13 +42,13 @@ Auto-Refresh
 If you have a dialog open (via Preview or :ref:`simulation`) in the
 :ref:`dev-workflow-ui` and you make changes to the User Dialog View file, it
 will trigger an auto-refresh of the view. State which is only represented in the
-UI and is not hold in the data, will then be lost. This auto-refresh can be
+UI and is not held in the data will then be lost. This auto-refresh can be
 disabled by clicking on the :code:`Disable auto refresh` button in the
 :ref:`dev-workflow-ui`.
 
 .. note::
 
-  Some changes can not be refreshed. In this cases an Error will shown, and the
+  Some changes cannot be refreshed. In these cases, an error will be shown, and the
   preview needs to be restarted. 
 
 
@@ -65,7 +65,7 @@ element or selects it in the :ref:`form-editor`.
 If the view is an :ref:`html-dialog-editor` we try to find the selected element
 via the :code:`id` attribute. Because of this, it only works if the given element
 has an :code:`id` defined. The selection also only opens the direct
-corresponding Html Dialog View and do not navigate into additional views
+corresponding Html Dialog View and does not navigate into additional views
 (:ref:`html-dialog-multiple-views`) or Components
 (:ref:`form-editor-component` or :ref:`html-dialog-component`).
 

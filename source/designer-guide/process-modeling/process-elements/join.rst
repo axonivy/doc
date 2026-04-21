@@ -12,7 +12,7 @@ element and can be used to define its output.
 
 .. note::
 
-   This elements waits until all of the parallel incoming process paths
+   This element waits until all of the parallel incoming process paths
    have finished and reached this element.
 
 .. tip::

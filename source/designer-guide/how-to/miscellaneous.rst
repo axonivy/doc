@@ -9,10 +9,10 @@ integrated into Axon Ivy to leverage user convenience and experience.
 Debug Java Classes
 ------------------
 
-You can debug java classes in the Axon Ivy Designer, by uncomment the line
+You can debug java classes in the Axon Ivy Designer, by uncommenting the line
 :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` in
 the :file:`AxonIvyDesigner.ini` file. After a restart you're able to start a
-*Debug session* by add a new :code:`Remote Java Application debug
+*Debug session* by adding a new :code:`Remote Java Application debug
 configuration`. For more information, check out `How can I debug my Java class
 in an Axon Ivy Designer?
 <https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_
@@ -267,7 +267,7 @@ to the following:
    An Axon Ivy Engine Enterprise Edition consists of multiple engine
    instances (nodes) that are running on different machines.
 
-   Distribution of system events is handled in two ways on a Engine
+   Distribution of system events is handled in two ways on an Engine
    Enterprise Edition, depending on their category:
 
    -  ``THIRD_PARTY`` system events are distributed as cluster messages

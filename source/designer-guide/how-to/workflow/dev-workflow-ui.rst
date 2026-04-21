@@ -95,7 +95,7 @@ The third checkbox deletes OAuth2 identity tokens which you might have collected
 by calling third-party REST services.
 
 And the last checkbox clears data caches like the cache of a Database or a web
-service request. Fin additional information  in :ref:`data-cache` and
+service request. Find additional information in :ref:`data-cache` and
 :ref:`process-element-tab-data-cache`.
 
 |image8|

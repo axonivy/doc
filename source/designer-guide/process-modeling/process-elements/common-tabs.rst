@@ -38,7 +38,7 @@ Description
    
    .. tip::
 
-      You may format the descriptive text with Markdown to improve it's readability.
+      You may format the descriptive text with Markdown to improve its readability.
       Here's a cheat-sheet with the most common keywords https://www.markdownguide.org/cheat-sheet/.
 
 Means/Documents
@@ -75,7 +75,7 @@ Output Data Tab
 On this tab you can set all values in the output Data Class. By default
 the output variable is mapped directly to the input variable, but the
 user can overwrite either the assignment of the whole output Data Class
-or only of single member of it.
+or only of a single member of it.
 
 .. note::
 
@@ -367,7 +367,7 @@ Case Custom Fields
 
    .. include:: _embedInFrame.rst
    If ``embedInFrame`` is set to ``false`` on the case tab custom fields, all the
-   following tasks are gonna open on a full screen page.
+   following tasks will open on a full-screen page.
 
 
 .. _process-element-tab-task:
@@ -421,7 +421,7 @@ Task Options
    on the task and the Task Switch is not waiting for any other tasks to
    finish.
    
-   Onle one task of a Task Switch element can activate *Skip tasklist*.
+   Only one task of a Task Switch element can activate *Skip tasklist*.
 
    **Delay**
 
@@ -453,7 +453,7 @@ Task Expiry
    **Error**
 
    Executes an :ref:`process-element-error-start` that
-   compensates the expired task. Here you can implemented any custom
+   compensates the expired task. Here you can implement any custom
    behavior and access the full workflow API.
 
    **Responsible**
@@ -482,7 +482,7 @@ Task Custom Fields
 
    .. include:: _embedInFrame.rst
    If ``embedInFrame`` is set to ``false`` on the task tab custom fields, the next 
-   task is gonna open on a full screen page.
+   task will open on a full-screen page.
 
 
 .. _process-element-tab-task-notification:

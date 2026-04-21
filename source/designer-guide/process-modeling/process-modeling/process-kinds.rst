@@ -72,7 +72,7 @@ Web Service Process
 Web Service processes are a special case of *independent subprocesses*.
 A Web Service process can be started (i.e., called) from any other
 application (or from another process) by using the *Web Service call
-element* or any other SOAP web service compatible client..
+element* or any other SOAP web service compatible client.
 
 A web service process will provide a web service with one or more
 operations, which are defined by the *Web Service Process Start*
@@ -100,7 +100,7 @@ processes (from the *User Dialog drawer* on the process editor palette),
 while other elements (such as *task switch* or *HTML page*) are not
 available for conceptual reasons.
 
-A User Dialog logic process is invoked with an *User Dialog* element
+A User Dialog logic process is invoked with a *User Dialog* element
 inside a *business process*. Its execution starts with an *init start*
 element and ends with a *dialog exit* element. The two elements do not
 need to have a direct connection (in fact they never have). Once a User
