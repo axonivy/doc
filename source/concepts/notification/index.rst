@@ -67,7 +67,7 @@ in the Axon Ivy Portal.
 Templating
 ^^^^^^^^^^
 
-The content of the notification is templated-based. Based on the given channel there are one or multiple
+The content of the notification is template-based. Based on the given channel there are one or multiple
 templates for one given notification. 
 
 For example, the mail channel always needs a :code:`Subject` and a :code:`Content` template.

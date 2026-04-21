@@ -24,7 +24,7 @@ Note a few things at this point:
 Line 28:
   The test class is annotated as an :public-api:`@IvyProcessTest
   </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`, this enables you to
-  run this test as a process tests.
+  run this test as a process test.
 
 Line 31:
   As you want to test a specific process in this test class, the generated test
@@ -130,7 +130,7 @@ Mock Dialogs and Assert Data
 
 Process tests are not meant to assert UI elements such as HTML Dialogs. Because
 dialogs are an important data input interface between users and your processes,
-you have to mock those inputs. If you want to test the dialogs themselves,refer
+you have to mock those inputs. If you want to test the dialogs themselves, refer
 to chapter  :ref:`web-testing`.
 
 Let us add a UI mock for the UI of the UserTask 'write invoice' element.

@@ -15,7 +15,7 @@ Today the user has the need to adapt the process flow during execution. Optional
 side tasks are required in addition to the normal process flow or a set of tasks
 must be skipped because of a special condition. This brings back the power to
 the user who has often more knowledge about the domain and the current context
-of the process. For instance an important information could be received from a
+of the process. For instance, important information could be received from a
 phone call, but the workflow system has no knowledge about this analog
 information.
 
@@ -63,7 +63,7 @@ between the firing and listening processes is not required.
 As example think of an employee that starts to work in a company. When the
 employee is registered from HR, other processes can setup the environment for
 this employee. An IT responsible will setup a new desktop workstation while an
-office administrator will get the personal keys for the employee. To do this
+office administrator will get the personal keys for the employee. To do these
 tasks in parallel and loosely coupled signals are the first choice. The IT- and
 the office-process could listen to employee entry signals fired by the HR
 process.

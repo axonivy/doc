@@ -172,7 +172,7 @@ run. To do this, we need to first setup a Maven module build:
 
    - Delete projects ``crm`` and ``crmIntegrationTests`` from your Axon Ivy Designer
      workspace.
-   - Open your workspace folder and move both projects into an new folder, e.g
+   - Open your workspace folder and move both projects into a new folder, e.g
      :file:`compile-test`
 
    - Create a :file:`pom.xml` file in the :file:`compile-test` folder.

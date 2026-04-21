@@ -17,7 +17,7 @@ point to begin your work.
 .. rubric:: Draw a Process model
 
 A process describes a sequence of automated steps that optimize workflows and 
-enables efficient task management within an application.
+enable efficient task management within an application.
 Start the Axon Ivy :ref:`process-editor` that is included in NEO Designer to design 
 and edit a process model. 
 
@@ -60,7 +60,7 @@ Use the :ref:`variables-editor`, :ref:`cms-editor` or the :ref:`role-editor` to 
 Projects can be imported into the workspace either from the :ref:`market` or from a file.
 In the Axon Ivy market you can find and download reusable components, templates and 
 solutions to accelerate development.
-In collaboration with a pro designer packed project files will be shared.
+In collaboration with a pro designer, packed project files will be shared.
 
 To use the components from imported projects they must be added as a dependency to 
 the main project. 
