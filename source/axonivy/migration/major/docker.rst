@@ -3,7 +3,7 @@
 Docker
 ======
 
-Docker's infrastructure enables you to do automate various kinds of
+Docker's infrastructure enables you to automate various kinds of
 infrastructure setups. Consequently, the kind of major migration steps are
 various too and highly dependent on your concrete setup. However, here are the
 major steps to do when migrating a docker based Axon Ivy Engine to another major

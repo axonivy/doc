@@ -18,7 +18,7 @@ instance. This also affects the minimum hardware requirements.
 .. rubric:: With bundled OpenSearch server (default)
 
 * **Memory (RAM)**:
-  Minimum is 8 GB, we recommend to use 32 GB.
+  Minimum is 8 GB, we recommend using 32 GB.
 
 * **Disk Space**:
   Minimum is 20 GB, we recommend 100 GB on a Solid State Disk (SSD).

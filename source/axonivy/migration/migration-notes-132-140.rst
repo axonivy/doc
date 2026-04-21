@@ -22,7 +22,7 @@ Remove UUID from Rest Client and GUID from Web Service Client
 
 We have removed the UUID from the Rest Client and the GUID from the Web Service Client. 
 This means we no longer use these IDs in your processes to reference the clients.
-Instead we use the YAML key of the client. This makes the client more easier to identify and copy between projects.
+Instead we use the YAML key of the client. This makes the client easier to identify and copy between projects.
 We do an automatic project conversion, but it can happen that we cannot find the client if it is 
 defined in a different project. In this case, you need to manually update the client reference in 
 your processes to use the YAML key of the client. The old ID is still available in the YAML configuration 

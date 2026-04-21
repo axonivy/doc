@@ -5,7 +5,7 @@ Hotfix Update
 ---------------
 
 It's important to keep your productive Axon Ivy Engine stable and up to date.
-Otherwise, you risk to be vulnerable to known **security leaks** and users may
+Otherwise, you risk being vulnerable to known **security leaks** and users may
 face inconveniences due to known and addressed **bug fixes**. In addition,
 **performance issues** may be solved and make using the Axon Ivy Engine more fun on
 a daily basis.
