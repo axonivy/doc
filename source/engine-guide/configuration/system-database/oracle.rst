@@ -7,7 +7,7 @@ Oracle
   :language: yaml
   :linenos:
 
-If database will be created by the Axon Ivy Engine the collate is set to ``Latin1_General_CI_AI``.
+If the database is created by the Axon Ivy Engine the collate is set to ``Latin1_General_CI_AI``.
 
 
 .. tip::

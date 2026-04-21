@@ -10,7 +10,7 @@ the :file:`AxonIvyEngine` binary
     ./AxonIvyEngine
 
 This will start the Axon Ivy Engine as a user process. On the last lines of the
-output a URL is displayed
+output, a URL is displayed
 
 .. code:: bash
 

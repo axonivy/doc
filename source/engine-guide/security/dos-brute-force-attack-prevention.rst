@@ -11,7 +11,7 @@ Rate Limits
 
 Rate limits control the number of requests a certain client can do in a certain time. 
 If a client does more requests than allowed it either is blocked for some time or 
-gets errors (e.g., 503 Service Temporary Unavailable).
+gets errors (e.g., 503 Service Temporarily Unavailable).
 
 Have a look at our `ivy-reverse-proxy-ngnix-fail2ban docker examples <https://github.com/axonivy/docker-samples/tree/master/ivy-reverse-proxy-nginx-fail2ban>`_ 
 to see how rate limits can be configured with :ref:`NGINX reverse proxy <reverse-proxy-nginx>`.

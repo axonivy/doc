@@ -21,5 +21,5 @@ in the :ref:`release notes <release-notes>`, annotated with an exclamation mark
 Update the engine if your engine version is affected by an issue and it cannot
 be mitigated by a workaround.
 
-Keep on track with the latest security updates on
+Keep track of the latest security updates on
 https://community.axonivy.com/t/security

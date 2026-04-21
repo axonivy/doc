@@ -14,7 +14,7 @@ current user.
 Replace **myuser** with the name of your current user.
 
 .. Tip::
-    Instead of using your current user, we suggest to use a special Linux user called
+    Instead of using your current user, we suggest using a special Linux user called
     **ivy**. First, create a new user and a group called ivy. Then, change the
     owner of the folder :file:`ivy` to the user **ivy**. After that, login as
     user **ivy** and work with this new user.

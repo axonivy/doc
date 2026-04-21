@@ -1,6 +1,6 @@
 .. note::
 
-  We provide Axon Ivy Engine in different packages:
+  We provide the Axon Ivy Engine in different packages:
 
   * **Docker** Docker Image for all platforms that can run Linux containers.
 

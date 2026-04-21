@@ -17,7 +17,7 @@ password in cleartext with :code:`"${hash:` and :code:`}"` like
 :code:`"${hash:1234}"` for password :code:`1234`. Hashed passwords
 can not be decrypted anymore.
 The Axon Ivy Engine will automatically hash and replace the password in file,
-when the configuration will be loaded
+when the configuration is loaded
 
 
 Identity Provider

@@ -53,7 +53,7 @@ For details, refer to :ref:`getting-started-linux`.
 
 .. rubric:: Windows
 
-Windows is the operating system of choice in many places. Compared Docker,
+Windows is the operating system of choice in many places. Compared to Docker,
 more effort is required to install and later on upgrade the
 Axon Ivy Engine.
 
