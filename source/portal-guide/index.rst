@@ -3,4 +3,4 @@
 Portal Guide
 ============
 
-This page is just a placeholder. There is server side redirect to the correct portal guide.
+This page is just a placeholder. There is a server-side redirect to the correct portal guide.
