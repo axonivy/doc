@@ -51,7 +51,7 @@ colors with the possibility to easily change a specific color.
 
 If you define your own color, consider to use `HSL Colors
 <https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl>`_ for the
-:code:`ivy-primary-*-color` colors. This is neseccary, because some of them (at
+:code:`ivy-primary-*-color` colors. This is necessary, because some of them (at
 least :code:`ivy-primary-color` and :code:`ivy-primary-light-color`) are spliced
 to create new color accents. There are many `online color
 converter <https://www.w3schools.com/colors/colors_converter.asp>`_ to get a

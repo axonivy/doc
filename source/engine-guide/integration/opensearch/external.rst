@@ -11,7 +11,7 @@ install OpenSearch according to the docs of `OpenSearch
 We only support one version of OpenSearch which is defined in :ref:`system
 requirements <engine-system-requirements>`.
 
-To integrate the Axon Ivy Engine with an external OpenSearch instance you need
+To integrate the Axon Ivy Engine with an external OpenSearch instance you need to
 configure the :ref:`ivy-yaml`.
 
 .. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-external-opensearch.yaml

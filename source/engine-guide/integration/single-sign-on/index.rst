@@ -11,7 +11,7 @@ service with his username and password.
 Axon Ivy Engine supports Single Sign-on. The configuration depends on the given
 infrastructure, but the concept looks always the same. 
 
-The user is browsing the Axon Ivy Engine via a intermediate service - a
+The user is browsing the Axon Ivy Engine via an intermediate service - a
 :ref:`reverse proxy server <reverse-proxy>`. The reverse proxy server is
 responsible to authenticate the user and add a user identifier to the request.
 The Axon Ivy Engine will automatically log in the user when the user is known in
@@ -37,7 +37,7 @@ Next you need to enable SSO in :ref:`ivy-yaml`:
 
 .. warning::
   If you enable SSO you have to ensure that the Axon Ivy Engine cannot be accessed 
-  directly. All traffic hsd to be routed via the reverse proxy. Otherwise, an 
+  directly. All traffic has to be routed via the reverse proxy. Otherwise, an 
   attacker could simply send a valid user name in the header of his faked HTTP 
   request and immediately has access bypassing the authentication!
 

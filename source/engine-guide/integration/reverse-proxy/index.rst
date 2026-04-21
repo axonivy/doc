@@ -81,7 +81,7 @@ Check out also the following headers in the example which need to be set correct
   otherwise the generated links or redirects are wrong. Mostly only needed to
   terminate SSL on the reverse proxy server.
 - :code:`X-Forwarded-Port`
-  for identifying the port that a client used to connect your reverse proxy server.
+  for identifying the port that a client used to connect to your reverse proxy server.
   This is only in charge if :code:`X-Forwarded-Proto` is set and only needed if you
   don't serve your site via non-standard ports (80 and 443).
 
