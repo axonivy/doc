@@ -7,7 +7,7 @@ The Axon Ivy Engine provides various ways in which Axon Ivy projects can be
 deployed. We strongly recommend to **automate the deployment** in a CI/CD pipeline.
 
 - **Engine-Cockpit**: In the :ref:`Engine Cockpit <deployment-engine-cockpit>`
-  projects can be deployed manually via an user interface.
+  projects can be deployed manually via a user interface.
 
 - **REST-API**: Projects can be deployed using our built-in :ref:`REST
   API<deployment-rest-api>` via HTTP/HTTPS. The preferred approach for 

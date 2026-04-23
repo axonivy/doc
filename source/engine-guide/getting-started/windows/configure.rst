@@ -32,7 +32,7 @@ Install the license: Copy the license file (:file:`*.lic`) into the
     copy licence.lic <engineroot>\configuration\
 
 
-To configure the system database, use the:code:`config-db` command of the
+To configure the system database, use the :code:`config-db` command of the
 **EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of
 the server running your DBMS system. Replace **dbuser** and **password** with
 the credentials of a technical database user with the permissions to create 
@@ -82,7 +82,7 @@ Windows provides the service configuration utility sc.exe for this purpose.
 
     AxonIvyEngineService -register [windowsServiceName] [username] [password]
 
-replace :code:`[windowsServiceName]` with the name you want to use for the
+Replace :code:`[windowsServiceName]` with the name you want to use for the
 service, e.g. ivy_prod. The user specified by :code:`[username]` and
 :code:`[password]` is used to run the service. 
 

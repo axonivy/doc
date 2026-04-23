@@ -21,7 +21,7 @@ All refactoring wizards have the same structure:
 
 -  On the *first page* you enter the **parameters** of the operation
    (e.g., new name and/or namespace, target project, etc.) if any are
-   required. Also you may chose whether any existing references to the
+   required. Also, you may choose whether any existing references to the
    refactored artifact should be updated automatically (e.g., if you
    rename a sub process then all callers to that sub process will be
    updated, so that they point to the renamed instance). This is the
@@ -161,7 +161,7 @@ copy that will be created. All of the parameters are already filled in,
 the system tries to make educated guesses, if the selected target
 location is not valid or does not supply sufficient information (e.g., if
 a resource with the same name already exists at the paste location, then
-the name of the copy will be automatically have a "CopyOf" prefix).
+the name of the copy will automatically have a "CopyOf" prefix).
 
 Click on :guilabel:`Finish` to actually paste the copied resource(s) to the
 defined location or on :guilabel:`Cancel` to abort the operation.

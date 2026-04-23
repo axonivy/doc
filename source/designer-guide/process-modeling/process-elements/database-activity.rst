@@ -115,8 +115,8 @@ Query Definition
    Quote IvyScript variables
       IvyScript variables in the SQL query are quoted depending on the
       data type of the value of the variable. For example string values
-      are quoted with single quotes (e.g., hello -> 'hello'). Sometime
-      you do not want that the values are quoted because the variable do
+      are quoted with single quotes (e.g., hello -> 'hello'). Sometimes
+      you do not want the values to be quoted because the variable does
       not contain a single value but a part of an SQL query (e.g.
       "id=123 AND name=ivy"). Therefore you can disable the quoting with
       this check box.

@@ -91,7 +91,7 @@ need to configure the credentials of an administrator user in the maven
 Bind to Maven Lifecycle
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To deploy an ivy-archive (IAR) during it's maven build `lifecycle
+To deploy an ivy-archive (IAR) during its maven build `lifecycle
 <https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html>`_,
 configure an :code:`execution` which binds the :code:`deploy-to-engine` goal to a lifecycle phase.
 

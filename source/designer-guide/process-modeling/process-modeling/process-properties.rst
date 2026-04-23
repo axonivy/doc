@@ -4,8 +4,8 @@ Process Properties
 ------------------
 
 Like the process elements that are used inside a process, the process
-itself has an *inscription* that allows to specify and edit a processes
-properties. To open and show a the inscription mask of a process you
+itself has an *inscription* that allows you to specify and edit a process's
+properties. To open and show the inscription mask of a process you
 simply select the process in the :ref:`ivy-project-view`,
 right-click and select *inscription* from the pop-up menu.
 
@@ -68,7 +68,7 @@ service class and the WSDL. The namespace part will be used as
 should not be modified anymore as soon as clients start using the web
 service.
 
-The *Web Service authentication* options allows you to specify how
+The *Web Service authentication* options allow you to specify how
 clients are authenticated when invoking the web service. You can select
 one of the following available authentication methods:
 

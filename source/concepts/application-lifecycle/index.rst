@@ -20,7 +20,7 @@ In addition, new roles can also be added and deleted at runtime.
 By default, every Axon Ivy Engine comes with the :code:`default`` security
 system. This is sufficient in the vast majority of cases. An additional security
 system is only required if you want to set up a test environment on the same
-engine or operate :ref:`multi-tenancy <multi-tenancy>`. Security systems
+engine or operate :ref:`multi-tenancy <multi-tenancy>`. Security systems are
 completely sealed off from other security systems and can consist of several
 applications.
 
@@ -131,7 +131,7 @@ found in the following list:
   in this version. As soon as all cases of this version have been ended, the
   state will change to :code:`ARCHIVED` automatically.
 * **ARCHIVED**: The process model version has previously been in state
-  :code:`RELEASED`, but then another version was released, and running cases has
+  :code:`RELEASED`, but then another version was released, and running cases have
   been finished in this process model. Consequently, this version is now not in
   :code:`RELEASED` state anymore but has been :code:`ARCHIVED`. Actually the
   engine administrator can change a process model version from state

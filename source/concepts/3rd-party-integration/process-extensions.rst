@@ -27,7 +27,7 @@ Callable Sub Processes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 So this is for you if you have implemented something, that you 
-call repetivitly from multiple processes. 
+call repetitively from multiple processes. 
 Normally, all you change when you reuse this logic 
 is just the process data you work with.
 To name a few: 
@@ -188,7 +188,7 @@ elements, available in the process editor palette.
 
 However, to implement your own process elements 
 you need a hosting `Eclipse bundle <extensions-bundles>`
-in it there's just a interface that must be implemented.
+in which there is just an interface that must be implemented.
 
 :public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`
   You need to specify a name, an executor class. Optionally, you can also specify what kind

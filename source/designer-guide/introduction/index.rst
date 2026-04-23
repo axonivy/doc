@@ -7,7 +7,7 @@ on:
 * Install Axon Ivy Designer following the steps in the :ref:`installation instructions <designer-install>`.
 * Working with Axon Ivy Designer: Start with the :dev-url:`Quick Start Tutorial </tutorial>`.
 * Explore demo projects by :ref:`importing <importing-demo-projects>` them in the Axon Ivy Designer.
-* Read the engine guide to know how to adminsitrate an Axon Ivy Engine.
+* Read the engine guide to know how to administrate an Axon Ivy Engine.
 * Go through the Migration Notes to upgrade an existing Axon Ivy project.
 
 All above mentioned documentations are brief and tend to describe only necessary

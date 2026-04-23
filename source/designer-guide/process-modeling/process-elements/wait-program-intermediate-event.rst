@@ -93,7 +93,7 @@ API reference
 The Intermediate Event consumes a Java class that implements the
 :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
 interface. 
-This implementation is responsible to continue the process by calling 
+This implementation is responsible for continuing the process by calling 
 the method ``fireProcessIntermediateEventEx`` of 
 :public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`.
 The common way to implement an Intermediate Event Bean is to extend from 

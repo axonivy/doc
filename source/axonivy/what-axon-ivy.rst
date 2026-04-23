@@ -10,7 +10,7 @@ Here is how we do it:
 
 **Visualize**
     Our platform allows you to **document business processes fast and
-    intuitive**. A shared view of users, roles, departments and technical
+    intuitively**. A shared view of users, roles, departments and technical
     systems involved in a business process improves your work. HR recruitment
     profiles become clearer, bottlenecks become obvious, ideas for effective
     improvements arise from anyone involved in the process.
@@ -38,7 +38,7 @@ Here is how we do it:
     for all your business interactions. You will be able to measure KPIs based
     on the data that is produced during the execution of your business
     processes. Based on these insights, you can advance your business constantly
-    and effectively. The cost of business transformations become reasonable and
+    and effectively. The cost of business transformations becomes reasonable and
     predictable.
 
 The Axon Ivy Platform consists of the :ref:`Axon Ivy Designer <designer-guide>` which

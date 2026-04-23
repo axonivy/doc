@@ -2,7 +2,7 @@ Validating Axon Ivy projects and resources
 -----------------------------------------------
 
 Axon Ivy comes with various validators which verify that projects and
-its resources do not have any errors. After a resource has changed the
+their resources do not have any errors. After a resource has changed the
 responsible validator will run automatically and report errors or
 warnings.
 

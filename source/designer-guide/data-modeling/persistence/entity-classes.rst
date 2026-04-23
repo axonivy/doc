@@ -9,7 +9,7 @@ in a relational database. An Entity Class is mapped directly to a database table
 and the attributes of an Entity Class are mapped directly to the fields of a
 database table. Therefore the :ref:`database schema can be generated
 <persistence-generate-database-schema>` directly out of an Entity Class. It is
-possible to the create, read, update, and delete (CRUD) entity objects directly 
+possible to create, read, update, and delete (CRUD) entity objects directly
 from/to the database using either the :ref:`persistence-api` or more conveniently with 
 the entity's :ref:`data-repository-api`.
 

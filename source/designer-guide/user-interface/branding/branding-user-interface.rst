@@ -13,7 +13,7 @@ have been migrated to the :ref:`branding concept <branding-apply-to-templates>`.
 Apply Custom Styles and Branding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In :ref:`html-dialogs`, all branding resources are loaded css-variables the
+In :ref:`html-dialogs`, all branding resources are loaded as css-variables from the
 **ivy-branding** library. This is used by default in all :ref:`default templates
 <html-dialog-layouts>`. If you want to use it in your dialogs or own
 templates, too, you can do so as follows:

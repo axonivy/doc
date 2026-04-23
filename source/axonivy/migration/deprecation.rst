@@ -18,4 +18,4 @@ Deprecated features are documented on our :dev-url:`Deprecation and Removal page
 Deprecated Public API
 .....................
 
-Deprecated Public API are documented in our :public-api:`deprecated Public API page</deprecated-list.html>`.
+Deprecated Public APIs are documented in our :public-api:`deprecated Public API page</deprecated-list.html>`.

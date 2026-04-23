@@ -32,11 +32,11 @@ There are two ways to start a new workflow:
    The second way to start a new workflow is by a :ref:`process-element-trigger-step`. On call, it creates
    a new case and a new task to the Request Start with the defined
    configurations (and parameters). This offers a simple way to create
-   several workflows inside a other workflow.
+   several workflows inside another workflow.
 
    The trigger start can be configured on the :ref:`process-element-start-request-trigger-tab`.
 
-These two start types could be enabled or disabled separately.
+These two start types can be enabled or disabled separately.
 
 Inscription
 -----------

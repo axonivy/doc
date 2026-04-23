@@ -236,7 +236,7 @@ performs two tasks:
 .. note::
 
    Please be aware that any Sub Process that is being overridden must
-   have "use own data class" explicitly set in it's inscription. 
+   have "use own data class" explicitly set in its inscription. 
 
    If this is not the case the wizard refuses to create an override for this reason then you
    can set an explicit data class in the values tab of the original
@@ -269,7 +269,7 @@ Original Identifier
    (see :ref:`overrides`).
 
 Existing component
-   If you want to override the original compoenent with an already existing
+   If you want to override the original component with an already existing
    one, choose the button next to the Project drop-down box to select one
    from the current project.
 

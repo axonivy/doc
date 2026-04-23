@@ -155,7 +155,7 @@ Restrictions for the design of offline capable dialogs:
 
    The layout and the styling of an offline capable dialog should
    consider the client device where it will run. Most probably it will
-   be embedded in an mobile app on a device with a small touch-screen.
+   be embedded in a mobile app on a device with a small touch-screen.
 
 .. tip::
 
@@ -170,7 +170,7 @@ Geo Location
 ------------
 
 The mobile app sends the current position of the mobile device to the
-server. This information is then stored in a location services that are
+server. This information is then stored in location services that are
 available on the user that has worked with the mobile app and the tasks
 that have been worked on the mobile app.
 

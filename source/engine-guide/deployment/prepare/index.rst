@@ -7,7 +7,7 @@ Before deployment, the Axon Ivy project must be available as ivy-archive (IAR)
 or packed as a zip-archive (ZIP). Therefore, we recommend building the Axon Ivy
 projects with the help of Maven and the `project-build-plugin
 <http://axonivy.github.io/project-build-plugin/>`_ which is crafting the
-ivy-archives (IAR) in reproducible manor.
+ivy-archives (IAR) in a reproducible manner.
 
 In this build process, an
 executable :file:`*.iar`` file is generated from the sources of the Axon Ivy
@@ -35,7 +35,7 @@ the Axon Ivy Engine can determine the correct sequence itself.
 
 .. Warning:: 
 
-   The projects to be deployed must be at top level in a application zip. Many
+   The projects to be deployed must be at top level in an application zip. Many
    operating systems automatically create a parent folder within the zip. The
    following zip-archive won't be deployed.
 

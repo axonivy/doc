@@ -11,7 +11,7 @@ Element Details
 ---------------
 
 The Call Sub element allows to embed a process (independent subprocess)
-into an other. This is like jumping from the main process into the
+into another. This is like jumping from the main process into the
 called sub process, execute the sub process and afterwards jump back.
 Process data attributes from the main process are mapped to parameters
 for the called sub process and the called sub process will return result

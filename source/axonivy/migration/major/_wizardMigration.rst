@@ -1,6 +1,6 @@
 .. rubric:: Migration
 
-#. Do a backup of the system database and all of your data of your Axon ivy
+#. Do a backup of the system database and all of your data of your Axon Ivy
    Engine. If you run your Axon Ivy Engine in a Virtual Machine, then you can
    take a snapshot.
 #. Use the :ref:`migration-wizard` to migrate your Axon Ivy Engine. The

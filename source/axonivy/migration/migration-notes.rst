@@ -31,6 +31,6 @@ Migrating from these versions is no longer supported by the :ref:`migration-tool
 * :dev-url:`Migrating from 5.0 to 5.1 </doc/5.1.0/migration-notes>`
 * :dev-url:`Migrating from 4.3 to 5.0 </doc/5.0.5/migration-notes>`
 
-Please migrate first to a newer version that still support your old version and then migrate to the next version. 
+Please migrate first to a newer version that still supports your old version and then migrate to the next version. 
 E.g., for migrating from 6.0 to 12.0, first install 8.0 and migrate your old Axon Ivy Engine from 6.0 to 8.0 and then 
 install 12.0 and migrate from 8.0 to 12.0.

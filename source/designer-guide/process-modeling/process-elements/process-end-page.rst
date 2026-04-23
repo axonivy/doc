@@ -9,7 +9,7 @@ drawer of the process editor palette.
 Element Details
 ---------------
 
-This elements terminates the current process and displays a dialog page.
+This element terminates the current process and displays a dialog page.
 
 Inscription
 -----------
@@ -19,7 +19,7 @@ Inscription
 End Page Tab
 ~~~~~~~~~~~~
 
-On this tab you could define the web page displayed when a case ends
+On this tab you can define the web page displayed when a case ends
 with this End Page Element.
 
 Dialog Page

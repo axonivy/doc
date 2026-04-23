@@ -161,7 +161,7 @@ WSDL Client Generator
 ---------------------
 
 Some service details and classes will be generated using a WSDL specification.
-First of all you have to specify the :guilabel:`WSDL URL` (Please **use protocol prefixes** like:
+First of all, you have to specify the :guilabel:`WSDL URL` (Please **use protocol prefixes** like:
 :code:`https://myserver.ch/hello.wsdl` or :code:`file:/c:/temp/myWis.wsdl`). Then define your 
 :guilabel:`Namespace` and click the :guilabel:`Generate` button to start the generation process.
 

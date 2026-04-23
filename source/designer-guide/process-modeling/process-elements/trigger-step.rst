@@ -9,12 +9,12 @@ of the process editor palette.
 Element Details
 ---------------
 
-With the Trigger element its possible to start a new workflow. The
+With the Trigger element it's possible to start a new workflow. The
 trigger element triggers a :ref:`process-element-start-request`
 element, which has
 an enabled triggered start mechanism. On call, the trigger element
 creates a case and a task with the defined configuration on the
-:ref:`process-element-start-request`. element. The new
+:ref:`process-element-start-request`. element. The newly
 created task is returned to the Trigger element.
 
 On call, after the creation of the new case and task, the workflow goes
@@ -38,7 +38,7 @@ its name and its parameter type and order.
 
 .. include:: _tab-output.rst
 
-The variable ``result`` contains the created task that are returned by
+The variable ``result`` contains the created task that is returned by
 the triggered :ref:`process-element-start-request`.
 
 .. |image0| image:: /_images/process-editor/elements/trigger.png

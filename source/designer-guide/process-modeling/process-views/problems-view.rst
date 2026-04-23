@@ -4,7 +4,7 @@ Problems View
 -------------
 
 The problems view displays errors and warnings (problem markers) that
-exists in yours projects. You can double click an error or warning in
+exist in your projects. You can double click an error or warning in
 the view to open the associated editor.
 
 .. figure:: /_images/process-modeling/problem-view.png

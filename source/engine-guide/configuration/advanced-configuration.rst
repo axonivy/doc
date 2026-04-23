@@ -48,7 +48,7 @@ Business Calendar
 A business calendar defines the official business hours and business days.
 These settings are used for business calendar calculations, e.g., what date will
 it be in three business days.
-See at :ref:`Designer Guide <business-calendar>`
+See :ref:`Designer Guide <business-calendar>`
 and :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>`
 for more information.
 
@@ -125,7 +125,7 @@ The following values are allowed per field:
 Asterisk ( :code:`*` )
 """"""""""""""""""""""
  
-Asterisks (also known as wildcard) represents "all". For example, using :code:`* * * * *` will run every minute. Using :code:`* * * * 1` 
+Asterisks (also known as wildcards) represent "all". For example, using :code:`* * * * *` will run every minute. Using :code:`* * * * 1` 
 will run every minute only on Monday.
 
 Comma ( :code:`,` )

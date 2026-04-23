@@ -38,10 +38,10 @@ needed. You will notice that you can configure on the task tab multiple
 responsibles e.g. :ref:`Task Tab <process-element-tab-task>`. The same is also
 true for the expiry task configuration.
 
-All API's have been deprecated, which handles only one responsible. They were
+All APIs have been deprecated, which handles only one responsible. They were
 previously named :code:`activator`, therefore we have streamlined the naming to
 :code:`responsible` from deep in the core to the user interface, everywhere. Use
-the new API`s:
+the new APIs:
 
 - :code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`
 - :code:`ch.ivyteam.ivy.workflow.ITask.expiry()`

@@ -41,7 +41,7 @@ as part of the *\*.xhtml* file. In the standard layouts provided, handlers are
 already configured. See 
 :file:`webapps/ivy/WEB-INF/lib/ch.ivyteam.ivy.dialog.form.jsf-*-webjar.jar/META-INF/resources/ivy-form/layouts/include/exception.xhtml`
 for details. To customize the Ajax exception handling, you can copy the files to your
-project (e.g. to :file:`webContent/layouts/includes/exception.xhtml`) and adjust the your template to load this file.
+project (e.g. to :file:`webContent/layouts/includes/exception.xhtml`) and adjust your template to load this file.
 
 ::
 

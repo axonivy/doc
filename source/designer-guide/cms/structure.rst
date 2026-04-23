@@ -7,7 +7,7 @@ and files.
 
 - **Folders** are used to represent the hierarchical structure.
 - **Texts** are needed to store multilingual texts in the :file:`cms_*.yaml`.
-- **Files** represents images and documents stored directly in the CMS folder.
+- **Files** represent images and documents stored directly in the CMS folder.
 
 A content object can be uniquely addressed via a path (e.g.
 :code:`/test/label`), which in turn represents the hierarchical structure.

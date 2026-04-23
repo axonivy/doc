@@ -11,7 +11,7 @@ that allows you to select the location of the **workspace**. The
 workspace is the root directory where your work will be stored.
 
 After the workspace location is chosen, the workbench window is
-displayed. Initially, at the first start the Welcome Screen is
+displayed. Initially, at the first start, the Welcome Screen is
 displayed. On this screen, different links to tutorials and documents are
 displayed. New users should click on the :dev-url:`Quick Start Tutorial </tutorial>`
 to learn how to use Axon Ivy Designer.

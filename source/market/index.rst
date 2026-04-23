@@ -13,7 +13,7 @@ Install From the Market
 -----------------------
 
 Most of the extensions in the Axon Ivy Market can be installed in Axon Ivy Designer.
-Therefore you need to open the Market in Axon Ivy Designer
+To do so, open the Market in Axon Ivy Designer
 (:menuselection:`Axon Ivy --> Axon Ivy Market`).
 
 .. image:: /_images/market/market-designer-menu.png
@@ -29,9 +29,9 @@ project.
 Install From Another Source
 ---------------------------
 
-You are able to install extensions from third party sources. Therefore you can use
+You are able to install extensions from third-party sources. To do so, use
 the shortcut :guilabel:`CTRL` + :guilabel:`ALT` + :guilabel:`I` and provide the
-definition file as url.
+definition file as a URL.
 
 
 Craft Your Own Installable Product

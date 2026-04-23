@@ -15,7 +15,7 @@ Axon Ivy entities.
    Axon Ivy Project View with some content
 
 Some of the entries are categorized such as User Dialogs and processes,
-but in general double-clicking on the leafs opens the :ref:`corresponding editor <designer-reference-editors>`.
+but in general double-clicking on the leaves opens the :ref:`corresponding editor <designer-reference-editors>`.
 
 
 Filters

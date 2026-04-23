@@ -5,7 +5,7 @@ Inscription Browsers
 ========================
 
 Various process element inscriptions involve dynamic parts. 
-With convenient inline browser, you can select contents from your project to be used within the inscription configuration.
+With a convenient inline browser, you can select contents from your project to be used within the inscription configuration.
 
 
 

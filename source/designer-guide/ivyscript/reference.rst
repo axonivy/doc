@@ -98,7 +98,7 @@ A boolean has the values ``true`` and ``false``.
 The IvyScript ``Boolean`` is based on the
 :java-api:`java.lang.Boolean </java/lang/Boolean.html>`
 but has a simplified class reference definition.
-Type conversion and format methods has been added while most other methods are hidden.
+Type conversion and format methods have been added while most other methods are hidden.
 
 
 Date
@@ -154,8 +154,8 @@ Number objects are integer or fixed-point numbers or floating point numbers.
 - Integer are entered as: ``23`` or ``-10``
 - Fixed Point number are entered as: ``0.1`` or ``-123.57458``
 - Floating point numbers are given with exponent: ``1.2345E3`` or ``42.3234E-4``
-- The IvyScript Numbers are ``java.lang.Number`` objects but has a simplified and
-  extended class reference definition. Format methods has been added for
+- The IvyScript Numbers are ``java.lang.Number`` objects but have a simplified and
+  extended class reference definition. Format methods have been added for
   convenience.
 
 
@@ -166,9 +166,9 @@ String
 
 - You enter a String literal in double quotes: ``"Hello John"``
 - Strings can be concatenated with the + operator: ``"Hello "+"John"``
-- The IvyScript Strings are ``java.lang.String`` objects but has a
+- The IvyScript Strings are ``java.lang.String`` objects but have a
   simplified and extended class reference definition. Conversion and
-  format methods has been added for convenience.
+  format methods have been added for convenience.
 
 
 Record

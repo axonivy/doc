@@ -3,10 +3,10 @@
 Docker
 ==========
 
-It's good practice to keep your docker-engine save and sound, by frequently
+It's good practice to keep your docker-engine safe and sound, by frequently
 switching to the latest available docker image. We recommend to rely upon
 specific tags (e.g., ``12.0.1``) so that you know that absolutely no magic can
-happen when you role the solution out into production. 
+happen when you roll the solution out into production. 
 
 To update your engine to the latest version you are just required to switch your
 image version declaration to the latest hotfix in your release train (e.g., from

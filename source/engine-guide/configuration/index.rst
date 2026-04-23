@@ -13,12 +13,12 @@ environment and runtime behavior of the Axon Ivy Engine.
   :linenos:
 
 
-.. rubric:: Craft you own configuration
+.. rubric:: Craft your own configuration
 
 To craft your own configuration you would typically copy values from our
 **reference** files, located under :file:`[engineDir]/configuration/reference` or
 see the :ref:`configuration-file-reference` and adjust them according to your needs. 
-Alternative, you can also copy and modify whole **templates**,
+Alternatively, you can also copy and modify whole **templates**,
 which are provided under :file:`[enginDir]/configuration/templates`.
 
 As an Editor for the files, we recommend VS-Code or the engine-cockpit :ref:`engine-cockpit-config-editor`.
