@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-19 09:35+0000\n"
-"PO-Revision-Date: 2026-04-22 07:19+0000\n"
+"PO-Revision-Date: 2026-05-08 10:11+0000\n"
 "Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 2026.5-dev\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
@@ -12432,7 +12432,7 @@ msgstr "API について"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:93
 msgid "The Program Interface consumes a Java class that implements the :public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>` interface. This implementation is responsible for defining the element execution behavior in the method ``perform`` of :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`. The common way to implement a Program Interface Bean is to extend from :public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`."
-msgstr "プログラムインターフェースは、:public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` の ``perform`` メソッドで要素の実行動作を定義します。プログラムインターフェース Bean を実装する一般的な方法は、:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>` らの拡張です。"
+msgstr "プログラムインターフェースは、:public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` の ``perform`` メソッドで要素の実行動作を定義します。プログラムインターフェース Bean を実装する一般的な方法は、:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>` からの拡張です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:104
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:100
