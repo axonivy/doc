@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-19 09:35+0000\n"
-"PO-Revision-Date: 2026-05-08 10:11+0000\n"
+"PO-Revision-Date: 2026-05-18 03:17+0000\n"
 "Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.5-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
@@ -19611,7 +19611,6 @@ msgid "Users can customize the content language and formatting language in their
 msgstr "ユーザーは、自分のプロフィールでコンテンツ言語とフォーマット言語を個別にカスタマイズできます。:file:`[エンジンのディレクトリ]/system/cms` で、組み込まれたタスクメール通知に新しい翻訳を追加できます。"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:48
-#, fuzzy
 msgid "A business calendar defines the official business hours and business days. These settings are used for business calendar calculations, e.g., what date will it be in three business days. See :ref:`Designer Guide <business-calendar>` and :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>` for more information."
 msgstr "ビジネスカレンダーは、公式な営業時間と営業日を定義します。これらの設定は、3 営業日の日付など、ビジネスカレンダーの計算に使用されます。詳細については :ref:`デザイナーガイド<business-calendar>` :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>` を参照してください。"
 
@@ -19710,6 +19709,7 @@ msgid "Month"
 msgstr "月"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:120
+#, fuzzy
 msgid "1–12 or JAN–DEC"
 msgstr "1 ～ 12 または JAN ～ DEC"
 
@@ -19718,6 +19718,7 @@ msgid "Day of the week"
 msgstr "曜日"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:122
+#, fuzzy
 msgid "0–6 or SUN–SAT"
 msgstr "0 ～ 6 または SUN ～ SAT"
 
@@ -19730,7 +19731,6 @@ msgid "Asterisk ( :code:`*` )"
 msgstr "アスタリスク（ :code:`*` ）"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:128
-#, fuzzy
 msgid "Asterisks (also known as wildcards) represent \"all\". For example, using :code:`* * * * *` will run every minute. Using :code:`* * * * 1` will run every minute only on Monday."
 msgstr "アスタリスク（別名ワイルドカード）は、「すべて」を表します。例えば、 :code:`* * * * *` を使用すると、1 分ごとに実行されます。 :code:`* * * * 1` を使用すると、月曜のみ、1 分ごとに実行されます。"
 
