@@ -37,7 +37,9 @@ application **portal** of the Axon Ivy Engine.
     mvn com.axonivy.ivy.ci:project-build-plugin:12.0.0:deploy-to-engine \
       -Divy.deploy.file=myProject.iar \
       -Divy.deploy.engine.dir=c:/axonviy/engine \
-      -Divy.deploy.engine.app=portal
+      -Divy.deploy.engine.context=default \
+      -Divy.deploy.engine.app=portal \
+      -Divy.deploy.engine.app.version=released
 
 
 .. code:: bash
@@ -48,7 +50,9 @@ application **portal** of the Axon Ivy Engine.
       -Divy.deploy.file=myProject.iar \
       -Divy.deploy.method=HTTP \
       -Divy.deploy.engine.url=http://localhost:8080/ \
-      -Divy.deploy.engine.app=portal
+      -Divy.deploy.engine.context=default \
+      -Divy.deploy.engine.app=portal \
+      -Divy.deploy.engine.app.version=released
 
 
 .. _deployment-maven-plugin-build:

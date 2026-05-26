@@ -3,7 +3,9 @@
   <artifactId>project-build-plugin</artifactId>
   <extensions>true</extensions>
   <configuration>
+    <deployToEngineSecurityContext>default</deployToEngineSecurityContext>
     <deployToEngineApplication>portal</deployToEngineApplication>
+    <deployToEngineApplicationVersion>released</deployToEngineApplicationVersion>
     <deployMethod>HTTP</deployMethod>
     <deployServerId>serverId</deployServerId>
     <deployEngineUrl>http://localhost:8080/</deployEngineUrl>

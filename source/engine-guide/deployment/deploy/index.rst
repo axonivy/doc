@@ -21,6 +21,18 @@ deployed. We strongly recommend to **automate the deployment** in a CI/CD pipeli
 - **Maven-Plugin**: As part of the Axon Ivy Maven Plugin projects can be
   deployed within a :ref:`Maven build <deployment-maven-plugin>`.
 
+
+When deploying you need to decide into which application version you want to
+deploy. You can choose between :code:`new` and :code:`released` or an existing
+application version number.
+
+* :code:`new` will create a new application version with the next available
+  version number and will release it.
+* :code:`released` will deploy to the currently released version. If no version
+  is released yet, a new version will be created and released.
+* :code:`<version>` will deploy into an already existing version. If the
+  application version does not exist, the deployment will fail.
+
 .. toctree::
    :maxdepth: 1
    :hidden:
