@@ -3,7 +3,9 @@
   <artifactId>project-build-plugin</artifactId>
   <extensions>true</extensions>
   <configuration>
-    <deployToEngineApplication>Portal</deployToEngineApplication>
+    <deployToEngineSecurityContext>default</deployToEngineSecurityContext>
+    <deployToEngineApplication>portal</deployToEngineApplication>
+    <deployToEngineApplicationVersion>released</deployToEngineApplicationVersion>
     <deployEngineDirectory>c:/axonivy/engine</deployEngineDirectory>
   </configuration>
   <executions>

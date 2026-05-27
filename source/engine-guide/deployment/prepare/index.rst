@@ -27,12 +27,6 @@ Engine or part of the application zip itself.
     ├── hr.iar
     └── finance.iar
 
-Using the Application Zip has a significant advantage over deploying individual
-Axon Ivy projects. When deploying the individual Axon Ivy projects, they must be
-deployed in the correct order. The sequence is determined by the dependency tree
-between the Axon Ivy projects. If you pack all projects into an application zip,
-the Axon Ivy Engine can determine the correct sequence itself.
-
 .. Warning:: 
 
    The projects to be deployed must be at top level in an application zip. Many
@@ -51,10 +45,6 @@ the Axon Ivy Engine can determine the correct sequence itself.
 
 * You can provide an additional :file:`config` folder in the zip to
   :ref:`configure the application <deployment-configure-app>` at deploy time.
-* By providing :file:`deploy.options.yaml` as part of your deployable, you can
-  :ref:`influence the deployment behavior <deployment-options>`.
-* Take always care of the correct :ref:`versioning <deployment-versioning>` of
-  your Axon Ivy Projects.
 
 .. toctree::
    :maxdepth: 1

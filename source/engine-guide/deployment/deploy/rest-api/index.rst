@@ -17,18 +17,16 @@ Example how to deploy via curl:
 
 .. code:: bash
 
-    sh "curl -X POST http://localhost/system/api/apps/myApp -u admin:admin -H 'X-Requested-By: curl' -F fileToDeploy=@/tmp/app.zip"
+    sh "curl -X POST http://localhost/system/api/apps/default/myApp/deploy/released -u admin:admin -H 'X-Requested-By: curl' -F fileToDeploy=@/tmp/app.zip"
 
 Explanation:
 
 * :code:`-X POST`: You need to send a HTTP POST request.
-* :code:`http://localhost/system/api/apps/myApp`: URL targeting your
-  application.
+* :code:`http://localhost/system/api/apps/default/myApp/deploy/released`: URL targeting your
+  security context `default` and application `myApp`, specifying a new deployment.
 * :code:`-u admin:admin`: Username and password of an administrator user.
 * :code:`-H 'X-Requested-By: curl'`: HTTP Header to prevent CSRF attacks. Any
   value for :code:`curl` possible.
 * :code:`-F fileToDeploy=@/tmp/app.zip`: The file which needs to be deployed.
 
-The :code:`deploy.options.yaml` can be provided within the file to deploy or
-additionally specified in the HTTP request, read more here:
-:api-browser-url:`REST deployment API <system>`.
+Read more here: :api-browser-url:`REST deployment API <system>`.
