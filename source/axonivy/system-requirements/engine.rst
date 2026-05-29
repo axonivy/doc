@@ -38,6 +38,13 @@ instance. This also affects the minimum hardware requirements.
 * **Processors**:
   Minimum is 4 cores with 2 GHz. We recommend 16 cores with 2.5 GHz.
 
+File System
+^^^^^^^^^^^
+
+On Linux, the Axon Ivy Engine's directory requires a file system that fully
+supports the POSIX file operations. For example, Linux setups using SMB/CIFS
+shares with incomplete POSIX behavior are not supported. This is due to a `known
+limitation <https://bugs.openjdk.org/browse/JDK-8261790>`_ in the JDK itself.
 
 Software Requirements
 ---------------------
