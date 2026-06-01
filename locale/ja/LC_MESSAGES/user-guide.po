@@ -100,7 +100,7 @@ msgstr "移行の比較："
 #: ../../source/axonivy/migration/hotfix/windows.rst:4
 #: ../../source/axonivy/migration/major/windows.rst:4
 #: ../../source/axonivy/system-requirements/designer.rst
-#: ../../source/axonivy/system-requirements/engine.rst:62
+#: ../../source/axonivy/system-requirements/engine.rst:69
 #: ../../source/engine-guide/getting-started/index.rst:55
 #: ../../source/engine-guide/getting-started/windows/index.rst:4
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:22
@@ -127,8 +127,8 @@ msgstr "最小限"
 #: ../../source/axonivy/migration/hotfix/linux.rst:4
 #: ../../source/axonivy/migration/major/linux.rst:4
 #: ../../source/axonivy/system-requirements/designer.rst
-#: ../../source/axonivy/system-requirements/engine.rst:62
-#: ../../source/axonivy/system-requirements/engine.rst:76
+#: ../../source/axonivy/system-requirements/engine.rst:69
+#: ../../source/axonivy/system-requirements/engine.rst:83
 #: ../../source/engine-guide/getting-started/index.rst:47
 #: ../../source/engine-guide/getting-started/linux/index.rst:4
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
@@ -395,6 +395,7 @@ msgstr "ライセンス"
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:103
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:109
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:13
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:21
 msgid "|tag-ops-changed|"
 msgstr "|tag-ops-changed|"
 
@@ -625,7 +626,7 @@ msgstr "Axon Ivy Java API Maven依存関係"
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:22
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:42
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:63
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:21
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:54
 msgid "|tag-project-changed| |tag-project-auto-convert|"
 msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
@@ -783,14 +784,83 @@ msgid "You need to request a new license for Axon Ivy Engine 14.0."
 msgstr "Axon Ivy Engine 13.1 の新しいライセンスをリクエストする必要があります。"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:19
+#, fuzzy
+msgid "Tomcat HTTPS Connector SSL Settings"
+msgstr "その他の SSL の設定"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:23
+msgid "Some HTTPS connector SSL settings in :ref:`ivy-yaml` have moved."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:25
+msgid "The following settings were moved under :code:`Connector.HTTPS.SslHostConfig`:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:27
+msgid ":code:`Connector.HTTPS.ClientAuth` -> :code:`Connector.HTTPS.SslHostConfig.CertificateVerification`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:28
+msgid ":code:`Connector.HTTPS.SslProtocol` -> :code:`Connector.HTTPS.SslHostConfig.SslProtocol`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:29
+msgid ":code:`Connector.HTTPS.TruststoreFile` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreFile`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:30
+msgid ":code:`Connector.HTTPS.TruststorePass` -> :code:`Connector.HTTPS.SslHostConfig.TruststorePassword`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:31
+msgid ":code:`Connector.HTTPS.TruststoreType` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreType`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:33
+msgid "The following certificate settings were moved under :code:`Connector.HTTPS.SslHostConfig.Certificate`:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:35
+msgid ":code:`Connector.HTTPS.KeyAlias` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:36
+msgid ":code:`Connector.HTTPS.KeyPass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:37
+msgid ":code:`Connector.HTTPS.KeystoreFile` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreFile`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:38
+msgid ":code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:39
+msgid ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:42
+msgid "Hint:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:44
+msgid "This list is not exhaustive. If you use other attributes from the deprecated Tomcat connector SSL configuration, move them to the corresponding :code:`SslHostConfig` or :code:`SslHostConfig.Certificate` location as well, even if they are not listed explicitly in your :ref:`ivy-yaml`."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:48
+msgid "See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:52
 msgid "Remove UUID from Rest Client and GUID from Web Service Client"
 msgstr "WebサービスクライアントからUUIDを削除"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:23
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:56
 msgid "We have removed the UUID from the Rest Client and the GUID from the Web Service Client. This means we no longer use these IDs in your processes to reference the clients. Instead we use the YAML key of the client. This makes the client easier to identify and copy between projects. We do an automatic project conversion, but it can happen that we cannot find the client if it is defined in a different project. In this case, you need to manually update the client reference in your processes to use the YAML key of the client. The old ID is still available in the YAML configuration prefixed with `Legacy`, but you can remove this after you have migrated all your projects."
 msgstr "UUIDは、WebサービスクライアントのRestクライアントとGUIDから削除しました。 つまり、クライアントを参照するために、これらの ID をプロセスで使用しなくなりました。 代わりに、クライアントのYAMLキーを使用します。 これにより、クライアントはプロジェクト間で識別し、コピーしやすくなります。 自動プロジェクト変換を行いますが、異なるプロジェクトで定義されている場合、クライアントが見つからなくなる可能性があります。 この場合、クライアントのYAMLキーを使用するプロセスでクライアントの参照を手動で更新する必要があります。 古い ID は、`Legacy` と接頭辞した YAML 構成ではまだ利用できますが、すべてのプロジェクトを移行した後にこれを削除できます."
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:31
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:64
 msgid "We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPI, please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead."
 msgstr "また、:public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPIを廃止し、代わりに :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` を使用してください."
 
@@ -892,7 +962,7 @@ msgid "Minimum is 2 cores with 2 GHz, we recommend 8 cores with 2.5 GHz."
 msgstr "最低 2 GHz の 2 コア、2.5 GHz の 8 コアを推奨。"
 
 #: ../../source/axonivy/system-requirements/designer.rst:18
-#: ../../source/axonivy/system-requirements/engine.rst:43
+#: ../../source/axonivy/system-requirements/engine.rst:50
 msgid "Software Requirements"
 msgstr "ソフトウェア要件"
 
@@ -909,7 +979,7 @@ msgid "We test Axon Ivy Designer with `Eclipse Temurin <https://adoptium.net/>`_
 msgstr "Axon Ivy Designer は、`Eclipse Temurin <https://adoptium.net/>`_ でテストされています。"
 
 #: ../../source/axonivy/system-requirements/designer.rst:30
-#: ../../source/axonivy/system-requirements/engine.rst:56
+#: ../../source/axonivy/system-requirements/engine.rst:63
 msgid "Operating Systems"
 msgstr "オペレーティングシステム"
 
@@ -942,7 +1012,7 @@ msgid "Web Browsers"
 msgstr "ウェブブラウザ"
 
 #: ../../source/axonivy/system-requirements/designer.rst:47
-#: ../../source/axonivy/system-requirements/engine.rst:107
+#: ../../source/axonivy/system-requirements/engine.rst:114
 msgid "See :ref:`browser-system-requirements`."
 msgstr ":ref:`browser-system-requirements` を参照してください。"
 
@@ -992,163 +1062,172 @@ msgstr "**ディスクの空き容量** ：最低 2 GB、SSD では 50 GB を推
 msgid "**Processors**: Minimum is 4 cores with 2 GHz. We recommend 16 cores with 2.5 GHz."
 msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
 
-#: ../../source/axonivy/system-requirements/engine.rst:45
+#: ../../source/axonivy/system-requirements/engine.rst:42
+#, fuzzy
+msgid "File System"
+msgstr "ファイルシステム"
+
+#: ../../source/axonivy/system-requirements/engine.rst:44
+msgid "On Linux, the Axon Ivy Engine's directory requires a file system that fully supports the POSIX file operations. For example, Linux setups using SMB/CIFS shares with incomplete POSIX behavior are not supported. This is due to a `known limitation <https://bugs.openjdk.org/browse/JDK-8261790>`_ in the JDK itself."
+msgstr ""
+
+#: ../../source/axonivy/system-requirements/engine.rst:52
 #, fuzzy
 msgid "The Axon Ivy Engine needs Java SE 25 to run and is tested with `Eclipse Temurin <https://adoptium.net/>`_."
 msgstr "Axon Ivy Engine を実行するには、Java SE 21 が必要です。Axon Ivy Engine は、`Eclipse Temurin <https://adoptium.net/>`_ でテストされています。"
 
-#: ../../source/axonivy/system-requirements/engine.rst:48
+#: ../../source/axonivy/system-requirements/engine.rst:55
 #, fuzzy
 msgid "Note: Java SE 25 `Eclipse Temurin <https://adoptium.net/>`_ is already included in our Windows installation and the Docker container. On Linux, we do not include Java SE 25. You may want to use Java SE 25 provided by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_."
 msgstr "注：Java SE 21 `Eclipse Temurin <https://adoptium.net/>`_ は、Windows インストレーションと Docker コンテナに含まれています。Linux には Java SE 21 は含まれていません。お使いのオペレーティングシステムで提供される Java SE 21 を使用したり、`Eclipse Temurin <https://adoptium.net/>`_ をインストールすることも可能です。"
 
-#: ../../source/axonivy/system-requirements/engine.rst:58
+#: ../../source/axonivy/system-requirements/engine.rst:65
 msgid "The Enterprise Edition has some :ref:`advantages <cluster>` but also some :ref:`restrictions <cluster-restrictions>` compared to the Standard Edition."
 msgstr "Enterprise Edition には Standard Edition と比較していくつかの :ref:`利点<cluster>` がありますが :ref:`制限<cluster-restrictions>` いくつかあります。"
 
-#: ../../source/axonivy/system-requirements/engine.rst:62
+#: ../../source/axonivy/system-requirements/engine.rst:69
 msgid "Engine Type"
 msgstr "エンジンのタイプ"
 
-#: ../../source/axonivy/system-requirements/engine.rst:62
+#: ../../source/axonivy/system-requirements/engine.rst:69
 msgid "Container (Linux)"
 msgstr "コンテナ（Linux）"
 
-#: ../../source/axonivy/system-requirements/engine.rst:64
+#: ../../source/axonivy/system-requirements/engine.rst:71
 msgid "Standard Edition"
 msgstr "Standard Edition"
 
-#: ../../source/axonivy/system-requirements/engine.rst:64
-#: ../../source/axonivy/system-requirements/engine.rst:66
+#: ../../source/axonivy/system-requirements/engine.rst:71
+#: ../../source/axonivy/system-requirements/engine.rst:73
 msgid "Yes"
 msgstr "○"
 
-#: ../../source/axonivy/system-requirements/engine.rst:66
+#: ../../source/axonivy/system-requirements/engine.rst:73
 msgid "Enterprise Edition"
 msgstr "Enterprise Edition"
 
-#: ../../source/axonivy/system-requirements/engine.rst:66
+#: ../../source/axonivy/system-requirements/engine.rst:73
 msgid "No"
 msgstr "×"
 
-#: ../../source/axonivy/system-requirements/engine.rst:69
+#: ../../source/axonivy/system-requirements/engine.rst:76
 msgid "Supported Operating Systems"
 msgstr "サポートされるオペレーティングシステム"
 
-#: ../../source/axonivy/system-requirements/engine.rst:72
+#: ../../source/axonivy/system-requirements/engine.rst:79
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:9
 msgid "OS"
 msgstr "OS"
 
-#: ../../source/axonivy/system-requirements/engine.rst:72
-#: ../../source/axonivy/system-requirements/engine.rst:83
+#: ../../source/axonivy/system-requirements/engine.rst:79
+#: ../../source/axonivy/system-requirements/engine.rst:90
 msgid "Supported"
 msgstr "サポート対象"
 
-#: ../../source/axonivy/system-requirements/engine.rst:72
-#: ../../source/axonivy/system-requirements/engine.rst:83
+#: ../../source/axonivy/system-requirements/engine.rst:79
+#: ../../source/axonivy/system-requirements/engine.rst:90
 msgid "Tested"
 msgstr "テスト済み"
 
-#: ../../source/axonivy/system-requirements/engine.rst:74
+#: ../../source/axonivy/system-requirements/engine.rst:81
 msgid "Windows Server"
 msgstr "Windows Server"
 
-#: ../../source/axonivy/system-requirements/engine.rst:74
-#: ../../source/axonivy/system-requirements/engine.rst:91
+#: ../../source/axonivy/system-requirements/engine.rst:81
+#: ../../source/axonivy/system-requirements/engine.rst:98
 msgid "2019, 2022, 2025"
 msgstr "2019、2022、2025"
 
-#: ../../source/axonivy/system-requirements/engine.rst:74
+#: ../../source/axonivy/system-requirements/engine.rst:81
 msgid "2025"
 msgstr "2025"
 
-#: ../../source/axonivy/system-requirements/engine.rst:76
+#: ../../source/axonivy/system-requirements/engine.rst:83
 msgid "x64"
 msgstr "x64"
 
-#: ../../source/axonivy/system-requirements/engine.rst:76
+#: ../../source/axonivy/system-requirements/engine.rst:83
 msgid "Ubuntu 24.04"
 msgstr "Ubuntu 24.04"
 
-#: ../../source/axonivy/system-requirements/engine.rst:80
+#: ../../source/axonivy/system-requirements/engine.rst:87
 #: ../../source/engine-guide/configuration/system-database/index.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:26
 #: ../../source/engine-guide/reference/setup-wizard.rst:98
 msgid "System Database"
 msgstr "システムデータベース"
 
-#: ../../source/axonivy/system-requirements/engine.rst:83
+#: ../../source/axonivy/system-requirements/engine.rst:90
 msgid "Database System"
 msgstr "データベースシステム"
 
-#: ../../source/axonivy/system-requirements/engine.rst:85
+#: ../../source/axonivy/system-requirements/engine.rst:92
 #: ../../source/engine-guide/configuration/system-database/postgres.rst:4
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
-#: ../../source/axonivy/system-requirements/engine.rst:85
+#: ../../source/axonivy/system-requirements/engine.rst:92
 msgid "14 - 17"
 msgstr "14 ～ 17"
 
-#: ../../source/axonivy/system-requirements/engine.rst:85
+#: ../../source/axonivy/system-requirements/engine.rst:92
 msgid "14, 17"
 msgstr "14、17"
 
-#: ../../source/axonivy/system-requirements/engine.rst:87
+#: ../../source/axonivy/system-requirements/engine.rst:94
 msgid "MySQL (InnoDB)"
 msgstr "MySQL（InnoDB）"
 
-#: ../../source/axonivy/system-requirements/engine.rst:87
+#: ../../source/axonivy/system-requirements/engine.rst:94
 msgid "8.4 (LTS)"
 msgstr ""
 
-#: ../../source/axonivy/system-requirements/engine.rst:87
+#: ../../source/axonivy/system-requirements/engine.rst:94
 #, fuzzy
 msgid "8.4, 9.6"
 msgstr "8.4、9"
 
-#: ../../source/axonivy/system-requirements/engine.rst:89
+#: ../../source/axonivy/system-requirements/engine.rst:96
 msgid "MariaDB (InnoDB)"
 msgstr "MariaDB（InnoDB）"
 
-#: ../../source/axonivy/system-requirements/engine.rst:89
+#: ../../source/axonivy/system-requirements/engine.rst:96
 msgid "10.11 - 11"
 msgstr "10.11 ～ 11"
 
-#: ../../source/axonivy/system-requirements/engine.rst:89
+#: ../../source/axonivy/system-requirements/engine.rst:96
 msgid "10.11, 11"
 msgstr "10.11、11"
 
-#: ../../source/axonivy/system-requirements/engine.rst:91
+#: ../../source/axonivy/system-requirements/engine.rst:98
 #: ../../source/engine-guide/configuration/system-database/mssql.rst:4
 msgid "Microsoft SQL Server"
 msgstr "Microsoft SQL Server"
 
-#: ../../source/axonivy/system-requirements/engine.rst:91
+#: ../../source/axonivy/system-requirements/engine.rst:98
 msgid "2019, 2025"
 msgstr "2019、2025"
 
-#: ../../source/axonivy/system-requirements/engine.rst:93
+#: ../../source/axonivy/system-requirements/engine.rst:100
 msgid "Oracle Database"
 msgstr "Oracle Database"
 
-#: ../../source/axonivy/system-requirements/engine.rst:93
+#: ../../source/axonivy/system-requirements/engine.rst:100
 msgid "19, 23"
 msgstr "19、23"
 
-#: ../../source/axonivy/system-requirements/engine.rst:98
+#: ../../source/axonivy/system-requirements/engine.rst:105
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:43
 #: ../../source/engine-guide/integration/opensearch/index.rst:4
 msgid "OpenSearch"
 msgstr "OpenSearch"
 
-#: ../../source/axonivy/system-requirements/engine.rst:100
+#: ../../source/axonivy/system-requirements/engine.rst:107
 #, fuzzy
 msgid "Version 3.5. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
 msgstr "バージョン 2.19。 :ref:`自分の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
 
-#: ../../source/axonivy/system-requirements/engine.rst:105
+#: ../../source/axonivy/system-requirements/engine.rst:112
 msgid "Browsers"
 msgstr "ブラウザ"
 
