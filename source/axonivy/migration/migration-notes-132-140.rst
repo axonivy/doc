@@ -15,6 +15,39 @@ License
 You need to request a new license for Axon Ivy Engine 14.0.
 
 
+Tomcat HTTPS Connector SSL Settings
+***********************************
+
+|tag-ops-changed|
+
+Some HTTPS connector SSL settings in :ref:`ivy-yaml` have moved.
+
+The following settings were moved under :code:`Connector.HTTPS.SslHostConfig`:
+
+- :code:`Connector.HTTPS.ClientAuth` -> :code:`Connector.HTTPS.SslHostConfig.CertificateVerification`
+- :code:`Connector.HTTPS.SslProtocol` -> :code:`Connector.HTTPS.SslHostConfig.SslProtocol`
+- :code:`Connector.HTTPS.TruststoreFile` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreFile`
+- :code:`Connector.HTTPS.TruststorePass` -> :code:`Connector.HTTPS.SslHostConfig.TruststorePassword`
+- :code:`Connector.HTTPS.TruststoreType` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreType`
+
+The following certificate settings were moved under :code:`Connector.HTTPS.SslHostConfig.Certificate`:
+
+- :code:`Connector.HTTPS.KeyAlias` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`
+- :code:`Connector.HTTPS.KeyPass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`
+- :code:`Connector.HTTPS.KeystoreFile` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreFile`
+- :code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`
+- :code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`
+
+Hint:
+-----
+
+This list is not exhaustive. If you use other attributes from the deprecated Tomcat connector SSL configuration, 
+move them to the corresponding :code:`SslHostConfig` or :code:`SslHostConfig.Certificate` location as well, even 
+if they are not listed explicitly in your :ref:`ivy-yaml`.
+
+See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes.
+
+
 Remove UUID from Rest Client and GUID from Web Service Client
 *************************************************************
 
