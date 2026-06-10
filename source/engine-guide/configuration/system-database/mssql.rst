@@ -71,3 +71,9 @@ Non-TLS/SSL Connection
 By default, the Microsoft SQL Server driver connects using TLS/SSL. 
 If your SQL Server is not configured for TLS/SSL, you must add the following property to your connection configuration:
 ``encrypt=false``.
+
+Azure SQL Database
+******************
+
+If you use Azure SQL Database, you must add the following property to
+your connection configuration: ``database=<database-name>``.
