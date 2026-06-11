@@ -46,6 +46,10 @@ supports the POSIX file operations. For example, Linux setups using SMB/CIFS
 shares with incomplete POSIX behavior are not supported. This is due to a `known
 limitation <https://bugs.openjdk.org/browse/JDK-8261790>`_ in the JDK itself.
 
+This includes, but is not limited to:
+
+* Azure classic file share
+
 Software Requirements
 ---------------------
 
