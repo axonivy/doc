@@ -10,10 +10,12 @@ you get instant feedback in the dialog about the deployment.
 
 * Go to application detail view of your application
 
+..
   .. figure:: /_images/engine-cockpit/engine-cockpit-application-detail.png
      :align: center
 
 * Click on :guilabel:`Deployment`
 
+..
   .. figure:: /_images/engine-cockpit/engine-cockpit-dialog-deploy-app.png
      :align: center

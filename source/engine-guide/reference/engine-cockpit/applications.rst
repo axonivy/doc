@@ -17,7 +17,8 @@ button. This opens the **Deployment Dialog**. See
 :ref:`engine-cockpit-application-detail` for more information about the deployment
 dialog.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-applications.png
+..
+ .. figure:: /_images/engine-cockpit/engine-cockpit-applications.png
 
 
 .. _engine-cockpit-application-detail:
@@ -38,7 +39,8 @@ options here; see chapter :ref:`deployment-options` for more information.
     For CI/CD pipeline deployments refer to the :ref:`deployment-deploying`
     chapter.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-application-detail.png
+..
+ .. figure:: /_images/engine-cockpit/engine-cockpit-application-detail.png
 
 
 .. _engine-cockpit-pmv-detail:
@@ -50,5 +52,6 @@ The detail page of the **process model version** displays all information
 about a individual process model version. This includes basic information, 
 activity state and lists all dependencies from and to this process model version.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-pmv-detail.png
+..
+ .. figure:: /_images/engine-cockpit/engine-cockpit-pmv-detail.png
 
