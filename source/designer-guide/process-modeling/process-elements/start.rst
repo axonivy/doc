@@ -144,6 +144,13 @@ Anonymous
    limits the process to users that are registered in the Axon Ivy Engine
    as users.
 
+   .. warning::
+
+      By default, when creating a new process or start element, *Anonymous* is
+      checked. This means any unauthenticated user can execute the start via a
+      HTTP-Request / -Link without logging in. Ensure you review and restrict
+      these settings before deploying to a public or production environment.
+
 Violation error
    The selected exception element is thrown when the user lacks the
    required role. The error can be handled by a catching :ref:`process-element-error-start`.
