@@ -47,6 +47,33 @@ if they are not listed explicitly in your :ref:`ivy-yaml`.
 
 See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes.
 
+Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors
+*********************************************************************
+
+|tag-project-auto-convert| |tag-ops-removed|
+
+REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors instead of Apache HTTP Client 4-based connectors by default. 
+
+For REST clients, the Apache HTTP Client 4 based connector was removed.
+
+The Apache HTTP Client 4 library itself is still available but will be removed in a future version.
+
+Hint:
+-----
+
+For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting 
+the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`.
+This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. 
+You should migrate to Apache HTTP Client 5 based connectors as soon as possible.
+
+NTLM Authentication for REST and SOAP Web Service Client Connectors
+*******************************************************************
+
+|tag-ops-deprecated| 
+
+NTLM Authentication for REST and SOAP Web Service clients is deprecated and will be removed in a future version. 
+This is because NTLM support in the library Apache HTTP Client 5 was also deprecated and is no longer actively maintained.
+Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS.
 
 Remove UUID from Rest Client and GUID from Web Service Client
 *************************************************************
