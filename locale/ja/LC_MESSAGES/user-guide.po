@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-19 09:35+0000\n"
-"PO-Revision-Date: 2026-05-22 03:28+0000\n"
-"Last-Translator: wawa-axonivy <wawa.ivyteam@gmail.com>\n"
+"PO-Revision-Date: 2026-06-26 03:57+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
@@ -822,35 +822,35 @@ msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:35
 msgid ":code:`Connector.HTTPS.KeyAlias` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`"
-msgstr ""
+msgstr ":code:`コネクタ。 HTTPS.KeyAlias` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:36
 msgid ":code:`Connector.HTTPS.KeyPass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`"
-msgstr ""
+msgstr ":code:`コネクタ。 HTTPS.KeyPass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:37
 msgid ":code:`Connector.HTTPS.KeystoreFile` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreFile`"
-msgstr ""
+msgstr ":code:`Connector.HTTPS.KeystoreFile` -> :code:`Connector.HTTPS.SslHostConfig.CertificateキーストアFile`"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:38
 msgid ":code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`"
-msgstr ""
+msgstr ":code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificateキーストアパスワード`"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:39
 msgid ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
-msgstr ""
+msgstr ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificateキーストアタイプ`"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:42
 msgid "Hint:"
-msgstr ""
+msgstr "ヒント:"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:44
 msgid "This list is not exhaustive. If you use other attributes from the deprecated Tomcat connector SSL configuration, move them to the corresponding :code:`SslHostConfig` or :code:`SslHostConfig.Certificate` location as well, even if they are not listed explicitly in your :ref:`ivy-yaml`."
-msgstr ""
+msgstr "このリストは網羅的ではありません。 非推奨の Tomcat コネクタ SSL 設定から他の属性を使用する場合は、対応する :code:`SslHostConfig` または :code:`SslHostConfig.Certificate` の場所に移動します。 :ref:`ivy-yaml` に明示的にリストされていない場合でも."
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:48
 msgid "See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes."
-msgstr ""
+msgstr "特に非推奨の SSL コネクタ 属性の `Tomcat HTTP コネクタ参照 <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_ を参照してください."
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:52
 msgid "Remove UUID from Rest Client and GUID from Web Service Client"
@@ -1069,15 +1069,15 @@ msgstr "ファイルシステム"
 
 #: ../../source/axonivy/system-requirements/engine.rst:44
 msgid "On Linux, the Axon Ivy Engine's directory requires a file system that fully supports the POSIX file operations. For example, Linux setups using SMB/CIFS shares with incomplete POSIX behavior are not supported. This is due to a `known limitation <https://bugs.openjdk.org/browse/JDK-8261790>`_ in the JDK itself."
-msgstr ""
+msgstr "Linux では、Axon Ivy Engine のディレクトリには、POSIX ファイルの動作を完全にサポートするファイルシステムが必要です。 たとえば、SMB/CIFS による Linux のセットアップは、未完成の POSIX の動作では対応していません。 これは、JDK 自体の `既知の制限 <https://bugs.openjdk.org/browse/JDK-8261790>`_ によるものです."
 
 #: ../../source/axonivy/system-requirements/engine.rst:49
 msgid "This includes, but is not limited to:"
-msgstr ""
+msgstr "以下が含まれますが、以下に限定されません"
 
 #: ../../source/axonivy/system-requirements/engine.rst:51
 msgid "Azure classic file share"
-msgstr ""
+msgstr "Azureの古典的なファイル共有"
 
 #: ../../source/axonivy/system-requirements/engine.rst:56
 #, fuzzy
@@ -13164,7 +13164,7 @@ msgstr "このチェックボックスがオンの場合、匿名ユーザー（
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:149
 msgid "By default, when creating a new process or start element, *Anonymous* is checked. This means any unauthenticated user can execute the start via a HTTP-Request / -Link without logging in. Ensure you review and restrict these settings before deploying to a public or production environment."
-msgstr ""
+msgstr "デフォルトでは、新しいプロセスを作成するか、要素を始めるとき、*Anonymous* はチェックされます。 これは、ログオンせずにHTTP-Request / -Linkで起動を実行できる、未認証のユーザです。 公開または生産環境にデプロイする前に、これらの設定を見直し、制限することを確認してください."
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:154
 msgid "Violation error"
@@ -20471,7 +20471,7 @@ msgstr "Oracle Database"
 
 #: ../../source/engine-guide/configuration/system-database/mssql.rst:78
 msgid "If you use Azure SQL Database, you must add the following property to your connection configuration: ``database=<database-name>``."
-msgstr ""
+msgstr "Azure SQL データベースを使用する場合は、次のプロパティを接続構成に追加する必要があります。```database=<database-name>` です."
 
 #: ../../source/engine-guide/configuration/system-database/mysql.rst:4
 msgid "MySQL"
