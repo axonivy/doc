@@ -552,6 +552,7 @@ msgstr "この移行により、エンジンのオペレーションの一部が
 
 #: ../../source/axonivy/migration/_tagLegend.rst:13
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:91
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:72
 msgid "|tag-ops-deprecated|"
 msgstr "|tag-ops-deprecated|"
 
@@ -626,7 +627,7 @@ msgstr "Axon Ivy Java API Maven依存関係"
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:22
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:42
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:63
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:54
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:81
 msgid "|tag-project-changed| |tag-project-auto-convert|"
 msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
@@ -841,6 +842,7 @@ msgid ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostCon
 msgstr ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:42
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:62
 msgid "Hint:"
 msgstr "ヒント:"
 
@@ -852,15 +854,48 @@ msgstr "このリストは網羅的ではありません。 非推奨の Tomcat 
 msgid "See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes."
 msgstr "特に非推奨の SSL コネクタ 属性の `Tomcat HTTP コネクタ参照 <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_ を参照してください。"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:52
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:51
+msgid "Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:53
+#, fuzzy
+msgid "|tag-project-auto-convert| |tag-ops-removed|"
+msgstr "|tag-project-auto-convert|"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:55
+msgid "REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors instead of Apache HTTP Client 4-based connectors by default."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:57
+msgid "For REST clients, the Apache HTTP Client 4 based connector was removed."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:59
+msgid "The Apache HTTP Client 4 library itself is still available but will be removed in a future version."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:64
+msgid "For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`. This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. You should migrate to Apache HTTP Client 5 based connectors as soon as possible."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:70
+msgid "NTLM Authentication for REST and SOAP Web Service Client Connectors"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:74
+msgid "NTLM Authentication for REST and SOAP Web Service clients is deprecated and will be removed in a future version. This is because NTLM support in the library Apache HTTP Client 5 was also deprecated and is no longer actively maintained. Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:79
 msgid "Remove UUID from Rest Client and GUID from Web Service Client"
 msgstr "WebサービスクライアントからUUIDを削除"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:56
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:83
 msgid "We have removed the UUID from the Rest Client and the GUID from the Web Service Client. This means we no longer use these IDs in your processes to reference the clients. Instead we use the YAML key of the client. This makes the client easier to identify and copy between projects. We do an automatic project conversion, but it can happen that we cannot find the client if it is defined in a different project. In this case, you need to manually update the client reference in your processes to use the YAML key of the client. The old ID is still available in the YAML configuration prefixed with `Legacy`, but you can remove this after you have migrated all your projects."
 msgstr "UUIDは、WebサービスクライアントのRestクライアントとGUIDから削除しました。 つまり、クライアントを参照するために、これらの ID をプロセスで使用しなくなりました。 代わりに、クライアントのYAMLキーを使用します。 これにより、クライアントはプロジェクト間で識別し、コピーしやすくなります。 自動プロジェクト変換を行いますが、異なるプロジェクトで定義されている場合、クライアントが見つからなくなる可能性があります。 この場合、クライアントのYAMLキーを使用するプロセスでクライアントの参照を手動で更新する必要があります。 古い ID は、`Legacy` と接頭辞した YAML 構成ではまだ利用できますが、すべてのプロジェクトを移行した後にこれを削除できます."
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:64
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:91
 msgid "We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPI, please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead."
 msgstr "また、:public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPIを廃止し、代わりに :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` を使用してください."
 
