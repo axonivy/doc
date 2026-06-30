@@ -103,7 +103,8 @@ Authentication Section
 - :guilabel:`NTLM` 
   Adds support for NTLM (Windows) authentication. Optionally,
   you can configure the ``NTLM.domain`` and the ``NTLM.workstation`` in the
-  properties section.
+  properties section. This feature is deprecated and will be removed in a future version.
+  Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS.
 
 - :guilabel:`Username`
   The name of the user used to authenticate the client with the service.
@@ -197,7 +198,7 @@ of the calling element.
 
 You can configure the library used to create and manage connections by setting a
 connector provider ``jersey.client.connectorProvider``. By default, the Apache
-HTTP Client (``org.glassfish.jersey.apache.connector.ApacheConnectorProvider``)
+HTTP Client (``org.glassfish.jersey.apache5.connector.Apache5ConnectorProvider``)
 is used. This library uses a connection pool to reuse connections. By default,
 the connection pool is limited to 5 connections. You can see how many
 connections are currently in use by looking at the :ref:`life stats
