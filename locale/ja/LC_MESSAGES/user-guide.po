@@ -4199,13 +4199,13 @@ msgid "Press |generate-icon| to generate Data Classes, Forms and Processes from 
 msgstr "|generate-icon| を押して、データベース接続からデータクラス、フォーム、プロセスを生成します."
 
 #: ../../source/designer-guide/configuration/databases.rst:43
-#: ../../source/designer-guide/configuration/rest-clients.rst:239
+#: ../../source/designer-guide/configuration/rest-clients.rst:240
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:23
 msgid "Generate"
 msgstr "生成"
 
 #: ../../source/designer-guide/configuration/databases.rst:49
-#: ../../source/designer-guide/configuration/rest-clients.rst:215
+#: ../../source/designer-guide/configuration/rest-clients.rst:216
 msgid "Dynamic Properties"
 msgstr "ダイナミックプロパティ"
 
@@ -4449,218 +4449,220 @@ msgid ":guilabel:`HTTP Digest` Adds support for HTTP Digest authentication."
 msgstr ":guilabel:`HTTP Digest` HTTP Digest 認証のサポートを追加します。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:103
-msgid ":guilabel:`NTLM` Adds support for NTLM (Windows) authentication. Optionally, you can configure the ``NTLM.domain`` and the ``NTLM.workstation`` in the properties section."
+#, fuzzy
+msgid ":guilabel:`NTLM` Adds support for NTLM (Windows) authentication. Optionally, you can configure the ``NTLM.domain`` and the ``NTLM.workstation`` in the properties section. This feature is deprecated and will be removed in a future version. Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS."
 msgstr ":guilabel:`NTLM` NTLM（Windows）認証のサポートを追加します。任意で、プロパティセクションで ``NTLM.domain`` と ``NTLM.workstation`` を設定できます。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:108
+#: ../../source/designer-guide/configuration/rest-clients.rst:109
 msgid ":guilabel:`Username` The name of the user used to authenticate the client with the service."
 msgstr ":guilabel:`ユーザー名` サービスでクライアントを認証するのに使用されるユーザーの名前。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:111
+#: ../../source/designer-guide/configuration/rest-clients.rst:112
 msgid ":guilabel:`Password` The password of the user used to authenticate the client with the service."
 msgstr ":guilabel:`パスワード` サービスでクライアントを認証するのに使用されるユーザーのパスワード。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:115
+#: ../../source/designer-guide/configuration/rest-clients.rst:116
 #: ../../source/designer-guide/configuration/webservice-clients.rst:86
 msgid "Features Section"
 msgstr "機能セクション"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:117
+#: ../../source/designer-guide/configuration/rest-clients.rst:118
 #, fuzzy
 msgid "Shows the configured \"features\" classes. The classes configured here are registered in the WebTarget using the method ``register(Class)``. The classes need to implement a JAX-RS contract interface :code:`javax.ws.rs.core.Feature` and must have a default constructor."
 msgstr ":guilabel:`機能リスト` 設定されている\"機能\"クラスを表示します。ここで設定されたクラスは ``register(Class)`` メソッドを使用して WebTarget に登録されます。クラスは JAX-RS のコントラクトインターフェースを実装し、デフォルトのコンストラクタを持つ必要があります。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:124
+#: ../../source/designer-guide/configuration/rest-clients.rst:125
 #, fuzzy
 msgid "E.g. add the :code:`JsonFeature` that maps Java objects to JSON for requests and JSON to Java objects for responses."
 msgstr ":guilabel:`JSON` リクエストでは Java オブジェクトを JSON に、レスポンスでは JSON を Java オブジェクトにマッピングする機能を追加します。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:131
+#: ../../source/designer-guide/configuration/rest-clients.rst:132
 #: ../../source/designer-guide/configuration/webservice-clients.rst:97
 msgid "Properties Section"
 msgstr "プロパティセクション"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:133
+#: ../../source/designer-guide/configuration/rest-clients.rst:134
 msgid "Use Properties to customize the settings of the REST client or one of its features."
 msgstr "プロパティを使用して、REST クライアントまたはその機能の 1 つの設定をカスタマイズします。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:138
+#: ../../source/designer-guide/configuration/rest-clients.rst:139
 #: ../../source/designer-guide/configuration/webservice-clients.rst:105
 msgid "Change a property to a password to hide its value in the configuration and store it encrypted. This is especially useful for properties that contain sensitive information like credentials."
 msgstr "プロパティをパスワードに変更して、その値が設定で非表示にし、暗号化を保存します。 これは、特に資格情報などの機密情報を含むプロパティに便利です."
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:142
+#: ../../source/designer-guide/configuration/rest-clients.rst:143
 msgid "**Client Properties**"
 msgstr "**クライアントのプロパティ**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:144
+#: ../../source/designer-guide/configuration/rest-clients.rst:145
 msgid "Well known properties of REST clients are documented here: `org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__."
 msgstr "REST クライアントの主要なプロパティは、`org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__ に記載されています。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:147
+#: ../../source/designer-guide/configuration/rest-clients.rst:148
 #, fuzzy
 msgid "To configure SSL client authentication for a REST client call, specify the property :code:`SSL.keyAlias`. The value of this alias needs to correspond with a key alias available in the client keystore configured under :ref:`engine-cockpit-ssl`."
 msgstr "REST クライアント呼び出しの SSL クライアント認証を設定するには、*SSL.keyAlias* プロパティを指定します。このエイリアスの値は :ref:`engine-cockpit-ssl` で設定されたクライアントキーストアで利用可能なキーエイリアスに対応する必要があります。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:152
+#: ../../source/designer-guide/configuration/rest-clients.rst:153
 msgid "**JSON Properties**"
 msgstr "**JSON のプロパティ**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:154
+#: ../../source/designer-guide/configuration/rest-clients.rst:155
 #, fuzzy
 msgid "The :code:`JsonFeature` knows many properties that customize the serialization from JSON to Java objects and vice versa."
 msgstr "JSON 機能は、JSON から Java オブジェクト、Java オブジェクトから JSON へのシリアライズをカスタマイズする多くのプロパティを識別できます。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:157
+#: ../../source/designer-guide/configuration/rest-clients.rst:158
 msgid "It is possible to read a very complex JSON object with many fields back to a Java object that contains only a subset of these fields. To allow this incomplete but efficient mapping, the property ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES`` must be set to ``false``."
 msgstr "多くのフィールドを含む非常に複雑な JSON オブジェクトを、これらのフィールドのサブセットのみを含む Java オブジェクトに読み戻すことができます。この不完全だが効率的なマッピングを可能にするには、 ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES`` プロパティを ``false`` に設定する必要があります。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:162
+#: ../../source/designer-guide/configuration/rest-clients.rst:163
 msgid "Consult the Jackson documentation for a list of all configurable items:"
 msgstr "設定可能なすべての項目のリストについては、Jackson のドキュメントを参照してください。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:165
+#: ../../source/designer-guide/configuration/rest-clients.rst:166
 msgid "`Jackson Deserialization features <https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__ can be set using ``Deserialization.`` as a prefix. E.g., ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``"
 msgstr "`Jackson のデシリアライズ機能 <https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__ は、 ``Deserialization.`` をプレフィックスとして使用して設定できます。例： ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:168
+#: ../../source/designer-guide/configuration/rest-clients.rst:169
 msgid "`Jackson Serialization features <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__ can be set using ``Serialization.`` as a prefix. E.g., ``Serialization.WRITE_ENUMS_USING_INDEX``"
 msgstr "`Jackson のシリアライズ機能 <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__ は、 ``Serialization.`` をプレフィックスとして使用して設定できます。例： ``Serialization.WRITE_ENUMS_USING_INDEX``"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:171
+#: ../../source/designer-guide/configuration/rest-clients.rst:172
 msgid "**Path Properties**"
 msgstr "**パスのプロパティ**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:173
+#: ../../source/designer-guide/configuration/rest-clients.rst:174
 #, fuzzy, python-brace-format
 msgid "Properties can be defined as :code:`Path Properties`. Those are used in resource paths on calling activities. If your target resources contain templates like ``{api.version}`` which re-occur on every instance of a call activity, you should set it as a global path property in the REST Client, rather than re-declaring it on every instance of the calling element."
 msgstr "プレフィックスに ``PATH.`` が付いたプロパティは、アクティビティを呼び出す際のリソースパスで使用されます。ターゲットリソースに ``{api.version}`` のようなテンプレートが含まれており、呼び出しアクティビティのインスタンスごとに再表示される場合は、呼び出し元の要素のインスタンスごとに宣言し直すのではなく、REST クライアントでグローバルパスのプロパティとして設定する必要があります。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:181
+#: ../../source/designer-guide/configuration/rest-clients.rst:182
 #: ../../source/engine-guide/monitoring/logging.rst:61
 #: ../../source/engine-guide/monitoring/tracing.rst:31
 msgid "**Example:**"
 msgstr "**例：**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:183
+#: ../../source/designer-guide/configuration/rest-clients.rst:184
 #, python-brace-format
 msgid "If a valid resource of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``"
 msgstr "リモートサービスの有効なリソースが次のような場合：``https://api.twitter.com/{api.version}/status/...``"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:185
+#: ../../source/designer-guide/configuration/rest-clients.rst:186
 #, python-brace-format
 msgid "Then the path template ``{api.version}`` can be set globally on the REST Client as a property:"
 msgstr "REST クライアントで、パステンプレート ``{api.version}`` をプロパティとしてグローバルに設定できます。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:189
+#: ../../source/designer-guide/configuration/rest-clients.rst:190
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:123
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:38
 msgid "Type"
 msgstr "タイプ"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:189
+#: ../../source/designer-guide/configuration/rest-clients.rst:190
 msgid "Property"
 msgstr "プロパティ"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:189
+#: ../../source/designer-guide/configuration/rest-clients.rst:190
 msgid "Value"
 msgstr "値"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:191
+#: ../../source/designer-guide/configuration/rest-clients.rst:192
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:4
 msgid "Path"
 msgstr "パス"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:191
+#: ../../source/designer-guide/configuration/rest-clients.rst:192
 #, fuzzy
 msgid "api.version"
 msgstr "PATH.api.version"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:191
+#: ../../source/designer-guide/configuration/rest-clients.rst:192
 msgid "2"
 msgstr "2"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:194
+#: ../../source/designer-guide/configuration/rest-clients.rst:195
 msgid "The resolved URI would consequently be: ``https://api.twitter.com/2/status/...``"
 msgstr "解決された URI は次のようになります：``https://api.twitter.com/2/status/...``"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:196
+#: ../../source/designer-guide/configuration/rest-clients.rst:197
 msgid "**Connection Properties**"
 msgstr "**接続のプロパティ**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:198
-msgid "You can configure the library used to create and manage connections by setting a connector provider ``jersey.client.connectorProvider``. By default, the Apache HTTP Client (``org.glassfish.jersey.apache.connector.ApacheConnectorProvider``) is used. This library uses a connection pool to reuse connections. By default, the connection pool is limited to 5 connections. You can see how many connections are currently in use by looking at the :ref:`life stats <engine-cockpit-monitor-services>` in the :ref:`engine-cockpit`. If all connections are in use most of the time, consider increasing the maximum number of connections in the pool to avoid performance issues. Configure it by setting the property ``jersey.client.pool.maxConnections``."
+#: ../../source/designer-guide/configuration/rest-clients.rst:199
+#, fuzzy
+msgid "You can configure the library used to create and manage connections by setting a connector provider ``jersey.client.connectorProvider``. By default, the Apache HTTP Client (``org.glassfish.jersey.apache5.connector.Apache5ConnectorProvider``) is used. This library uses a connection pool to reuse connections. By default, the connection pool is limited to 5 connections. You can see how many connections are currently in use by looking at the :ref:`life stats <engine-cockpit-monitor-services>` in the :ref:`engine-cockpit`. If all connections are in use most of the time, consider increasing the maximum number of connections in the pool to avoid performance issues. Configure it by setting the property ``jersey.client.pool.maxConnections``."
 msgstr "``jersey.client.connectorProvider`` コネクタプロバイダーを設定して、接続の作成と管理に使用するライブラリを設定できます。デフォルトでは、Apache HTTP クライアント（ ``org.glassfish.jersey.apache.connector.ApacheConnectorProvider`` ）が使用されます。このライブラリは接続プールを使用して接続を再利用します。デフォルトでは、接続プールの接続数は 5 に制限されています。 :ref:`engine-cockpit` :ref:`ライフステータス<engine-cockpit-monitor-services>` 見て、現在使用されている接続の数を確認できます。 すべての接続がほとんどの時間使用されている場合は、パフォーマンスの問題を回避するためにプールの最大接続数を増やすことを検討してください。``jersey.client.pool.maxConnections`` プロパティを設定して、プールの最大接続数を設定できます。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:209
+#: ../../source/designer-guide/configuration/rest-clients.rst:210
 msgid "As an alternative to the Apache HTTP Client, you can use ``java.net.URLConnection`` from the Java core library (``org.glassfish.jersey.client.HttpUrlConnectorProvider``). This connection provider does not have a maximum connection limit but has other restrictions like missing NTLM support."
 msgstr "Apache HTTP クライアントの代わりとして、Java コアライブラリ（``org.glassfish.jersey.client.HttpUrlConnectorProvider``）の ``java.net.URLConnection`` を使用できます。この接続プロバイダーには最大接続数の制限はありませんが、NTLM のサポートがないなどの制約があります。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:217
+#: ../../source/designer-guide/configuration/rest-clients.rst:218
 msgid "You may need to adjust property values for multiple runtime environments. E.g., you call different service URIs for test and production, consequently with different credentials or OAUTH2 application identifiers."
 msgstr "複数の実行環境のプロパティ値を調整しなければならないことがあります。例えば、テスト環境と本番環境で異なるサービス URI を呼び出す場合、異なる認証情報や OAUTH2 アプリケーション識別子を使用します。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:221
+#: ../../source/designer-guide/configuration/rest-clients.rst:222
 #, python-brace-format
 msgid "If you anticipate this need, then you can simplify these configuration adjustments for operations by using :ref:`dynamic-config` expressions in both properties and other configuration values. E.g., the property ``appId=${ivy.var.cloudAppId}`` is evaluated at runtime and has the value of the variable called ``cloudAppId``. Thus, your database name is now configurable using variable ``cloudAppId``. Operations need to set this variable correctly; they do not need to dive into the configuration of this external database."
 msgstr "このようなニーズが予想される場合は、プロパティとその他の設定値の両方 :ref:`dynamic-config` 式を使用することで、これらのオペレーションの設定調整を簡素化できます。例えば、``appId=${ivy.var.cloudAppId}``  というプロパティは実行時に評価され、 ``cloudAppId`` という名前の変数の値を持ちます。そのため、データベース名は ``cloudAppId`` 変数を使用して設定可能です。オペレーションはこの変数を正しく設定する必要がありますが、この外部データベースの設定を行う必要はありません。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:233
+#: ../../source/designer-guide/configuration/rest-clients.rst:234
 msgid "OpenAPI Client Generator"
 msgstr "OpenAPI クライアントジェネレーター"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:235
+#: ../../source/designer-guide/configuration/rest-clients.rst:236
 #, fuzzy
 msgid "The OpenAPI client generator wizard provides validation and inscription editor simplification features for specific calls with a :ref:`process-element-rest-client-activity`. Press |generate-icon| to open the OpenAPI client generator wizard."
 msgstr "OpenAPI クライアントジェネレーターウィザードは :ref:`process-element-rest-client-activity` を含む特定の呼び出しの検証エディターとインスクリプションエディターの簡易機能を提供します。 *REST クラスの作成* ボタンをクリックすると、ウィザードが開始されます。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:244
+#: ../../source/designer-guide/configuration/rest-clients.rst:245
 msgid "**OpenAPI Clients**"
 msgstr "**OpenAPI クライアント**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:246
+#: ../../source/designer-guide/configuration/rest-clients.rst:247
 msgid "expose valid resource+method combos and their documentation"
 msgstr "有効なリソースとメソッドの組み合わせとそのドキュメントを公開します。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:247
+#: ../../source/designer-guide/configuration/rest-clients.rst:248
 msgid "display and validate typed query- and path parameters"
 msgstr "入力されたクエリパラメーターとパスパラメーターを表示、検証します。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:248
+#: ../../source/designer-guide/configuration/rest-clients.rst:249
 msgid "are aware of the payloads sent to and fro and generate Java objects for them"
 msgstr "送信、受信されたペイロードを認識し、Java オブジェクトを生成します。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:250
+#: ../../source/designer-guide/configuration/rest-clients.rst:251
 msgid "**Pre-Requisites**"
 msgstr "**前提条件**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:252
+#: ../../source/designer-guide/configuration/rest-clients.rst:253
 msgid "To generate an `OpenAPI <https://swagger.io/docs/specification/about/>`__ client, you need an OpenAPI 3.0 JSON service descriptor."
 msgstr "`OpenAPI <https://swagger.io/docs/specification/about/>`__ クライアントを生成するには、OpenAPI 3.0 JSONサービス記述子が必要です。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:254
+#: ../../source/designer-guide/configuration/rest-clients.rst:255
 msgid "The legacy Swagger 2.0 openapi.json format is also supported by the client generator."
 msgstr "レガシーな Swagger 2.0 の openapi.json フォーマットもクライアントジェネレーターでサポートされています。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:256
-#: ../../source/designer-guide/configuration/rest-clients.rst:260
+#: ../../source/designer-guide/configuration/rest-clients.rst:257
+#: ../../source/designer-guide/configuration/rest-clients.rst:261
 #, fuzzy
 msgid "OpenAPI Client Generator Wizard"
 msgstr "OpenAPI クライアントジェネレーター"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:264
+#: ../../source/designer-guide/configuration/rest-clients.rst:265
 msgid "**Migrate to OpenAPI**"
 msgstr "**OpenAPI への移行**"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:266
+#: ../../source/designer-guide/configuration/rest-clients.rst:267
 msgid "OpenAPI isn't the only popular format to describe REST service capabilities."
 msgstr "REST サービスの機能を記述するための一般的なフォーマットは、OpenAPI だけではありません。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:268
+#: ../../source/designer-guide/configuration/rest-clients.rst:269
 msgid "If you need to integrate an `OData service <https://www.odata.org/>`__, you can convert your OData service description with our `OData converter <http://odata-converter.axonivy.com>`__. The service description is usually available under the given service URL ending with :code:`$metadata` e.g. :code:`https://myService/cars/$metadata`"
 msgstr "`OData service <https://www.odata.org/>`__を統合する必要がある場合は、`OData converter <http://odata-converter.axonivy.com>`__を使用してODataサービス記述を変換できます。通常、サービス記述は、:code:`$metadata`で終わる指定されたサービスURL（例： :code:`https://myService/cars/$metadata`）で参照できます。"
 
-#: ../../source/designer-guide/configuration/rest-clients.rst:274
+#: ../../source/designer-guide/configuration/rest-clients.rst:275
 msgid "If you have other types of service descriptions, you may have a look at `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__. It is able to convert many other specification types to OpenAPI."
 msgstr "他のタイプのサービス記述がある場合は、 `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__ をチェックしてみてください。他の多くの仕様のタイプをOpenAPIに変換できます。"
 
