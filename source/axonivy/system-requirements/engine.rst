@@ -93,22 +93,22 @@ System Database
 +---------------------+-----------------------------+-----------+
 |Database System      |Supported                    | Tested    |
 +=====================+=============================+===========+
-|PostgreSQL           |14 - 17                      |14, 17     |
+|PostgreSQL           |15 - 18                      |15, 18     |
 +---------------------+-----------------------------+-----------+
-|MySQL (InnoDB)       |8.4 (LTS)                    |8.4, 9.6   |
+|MySQL (InnoDB)       |8.4, 9.7                     |8.4, 9.7   |
 +---------------------+-----------------------------+-----------+
-|MariaDB (InnoDB)     |10.11 - 11                   |10.11, 11  |
+|MariaDB (InnoDB)     |11.4, 12.3                   |11.4, 12.3 |
 +---------------------+-----------------------------+-----------+
-|Microsoft SQL Server |2019, 2022, 2025             |2019, 2025 |
+|Microsoft SQL Server |2022, 2025                   |2022, 2025 |
 +---------------------+-----------------------------+-----------+
-|Oracle Database      |19, 23                       |19, 23     |
+|Oracle Database      |19, 26                       |19, 26     |
 +---------------------+-----------------------------+-----------+
 
 
 OpenSearch
 -------------
 
-Version 3.5. Only required if you run your :ref:`own <opensearch-external>`
+Version 3.7. Only required if you run your :ref:`own <opensearch-external>`
 OpenSearch instance!
 
 
