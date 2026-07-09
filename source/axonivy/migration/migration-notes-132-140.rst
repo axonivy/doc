@@ -56,6 +56,10 @@ REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors i
 
 For REST clients, the Apache HTTP Client 4 based connector was removed.
 
+The project migration tool will automatically convert HTTP Client 4–based connectors to Apache HTTP Client 5 for you. 
+However, if you have custom code for REST or SOAP WebService features that directly references Apache HTTP Client 4 classes, 
+you must manually update those to the HTTP Client 5 equivalents (adjust imports and API usage) and re-test the integrations.
+
 The Apache HTTP Client 4 library itself is still available but will be removed in a future version.
 
 Hint:
