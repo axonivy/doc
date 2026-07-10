@@ -96,6 +96,34 @@ We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/
 please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead.
 
 
+Removal of the :code:`.classpath` File
+**************************************
+
+|tag-project-changed| |tag-project-auto-convert|
+
+The :code:`.classpath` file is no longer part of the project.
+Previously, the :code:`.classpath` file was used to reference local JAR files that were not available from a remote Maven repository.
+These JARs were added to the project's classpath for both design time and runtime.
+It also contained references to generated REST and web service client JARs.
+During automatic project conversion, generated client JARs are handled automatically.
+Specifically, the generated :code:`cxfClient_*.jar` and :code:`jaxRsClient_*.jar` files are unpacked into their corresponding :code:`src_generated` directories as part of the conversion process.
+If you have manually added additional local JAR references to the :code:`.classpath` file,
+you must declare them as Maven system-scoped dependencies to make those JARs available on the project's classpath.
+
+Example of a system-scoped dependency:
+
+.. code:: xml
+  
+  <dependency>
+    <groupId>local.jar.example</groupId>
+    <artifactId>custom-dependency</artifactId>
+    <version>1.0.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/lib/custom-lib-1.3.2.jar</systemPath>
+  </dependency>
+
+`For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_
+
 ------------
 
 .. include:: _tagLegend.rst
