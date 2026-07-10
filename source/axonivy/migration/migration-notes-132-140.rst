@@ -96,18 +96,18 @@ We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/
 please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead.
 
 
-Removal of the `.classpath` File
+Removal of the :code:`.classpath` File
 ********************************
 
 |tag-project-changed| |tag-project-auto-convert|
 
-The `.classpath` file is no longer part of the project.
-Previously, the `.classpath` file was used to reference local JAR files that were not available from a remote Maven repository.
+The :code:`.classpath` file is no longer part of the project.
+Previously, the :code:`.classpath` file was used to reference local JAR files that were not available from a remote Maven repository.
 These JARs were added to the project's classpath for both design time and runtime.
 It also contained references to generated REST and web service client JARs.
 During automatic project conversion, generated client JARs are handled automatically.
-Specifically, the generated `cxfClient_*.jar` and `jaxRsClient_*.jar` files are unpacked into their corresponding `src_generated` directories as part of the conversion process.
-If you have manually added additional local JAR references to the `.classpath` file,
+Specifically, the generated :code:`cxfClient_*.jar` and :code:`jaxRsClient_*.jar` files are unpacked into their corresponding :code:`src_generated` directories as part of the conversion process.
+If you have manually added additional local JAR references to the :code:`.classpath` file,
 you must declare them as Maven system-scoped dependencies to make those JARs available on the project's classpath.
 
 Example of a system-scoped dependency:
