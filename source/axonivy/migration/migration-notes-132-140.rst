@@ -97,7 +97,7 @@ please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRe
 
 
 Removal of the :code:`.classpath` File
-********************************
+**************************************
 
 |tag-project-changed| |tag-project-auto-convert|
 
