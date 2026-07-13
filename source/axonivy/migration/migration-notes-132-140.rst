@@ -38,14 +38,49 @@ The following certificate settings were moved under :code:`Connector.HTTPS.SslHo
 - :code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`
 - :code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`
 
-Hint:
------
 
-This list is not exhaustive. If you use other attributes from the deprecated Tomcat connector SSL configuration, 
-move them to the corresponding :code:`SslHostConfig` or :code:`SslHostConfig.Certificate` location as well, even 
-if they are not listed explicitly in your :ref:`ivy-yaml`.
+.. container:: admonition note toggle
 
-See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes.
+  .. container:: admonition-title header
+
+     **Hint**
+
+  .. container:: detail 
+
+    This list is not exhaustive. If you use other attributes from the deprecated Tomcat connector SSL configuration, 
+    move them to the corresponding :code:`SslHostConfig` or :code:`SslHostConfig.Certificate` location as well, even 
+    if they are not listed explicitly in your :ref:`ivy-yaml`.
+
+    See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes.
+
+
+Java EE to Jakarta EE Migration
+**************************
+
+|tag-project-auto-convert|
+
+We have updated our platform from Java EE (:code:`javax`) to Jakarta EE (:code:`jakarta`) API's and implementation libraries. 
+This means that all :code:`javax.*` packages have been replaced with :code:`jakarta.*` packages.
+The biggest change is that there is no longer a :code:`@ManagedBean` annotation, instead beans for Jakarta Faces (JSF) are resolved via 
+`CDI <https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1>`_.
+CDI beans need to be annotated with :code:`@Named` and they need to have a scope 
+(:code:`@RequestScoped`, :code:`@SessionScoped`, :code:`@ApplicationScoped`, :code:`@ViewScoped`) if they are used in JSF pages.
+If the beans are :code:`@SessionScoped` or :code:`@ViewScoped`, they need to implement the :code:`Serializable` interface.
+
+Beans can still be named via :code:`@Named("myBean")`, however this name needs to be unique within the whole application; otherwise the application will fail to start.
+If you don't define a name, the simple class name will be used like before (e.g. :code:`class MyBean` will be available as :code:`myBean` in JSF pages).
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Detail**
+
+  .. container:: detail 
+
+    We have also dropped internal scopes for :code:`@ApplicationScoped` and :code:`@SessionScoped` beans. 
+    This could lead to small behavior changes in the bean lifecycle, but the idea behind these scopes is still the same.
+
 
 Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors
 *********************************************************************
@@ -62,13 +97,19 @@ you must manually update those to the HTTP Client 5 equivalents (adjust imports 
 
 The Apache HTTP Client 4 library itself is still available but will be removed in a future version.
 
-Hint:
------
+.. container:: admonition note toggle
 
-For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting 
-the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`.
-This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. 
-You should migrate to Apache HTTP Client 5 based connectors as soon as possible.
+  .. container:: admonition-title header
+
+     **Hint**
+
+  .. container:: detail 
+
+    For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting 
+    the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`.
+    This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. 
+    You should migrate to Apache HTTP Client 5 based connectors as soon as possible.
+
 
 NTLM Authentication for REST and SOAP Web Service Client Connectors
 *******************************************************************
@@ -78,6 +119,7 @@ NTLM Authentication for REST and SOAP Web Service Client Connectors
 NTLM Authentication for REST and SOAP Web Service clients is deprecated and will be removed in a future version. 
 This is because NTLM support in the library Apache HTTP Client 5 was also deprecated and is no longer actively maintained.
 Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS.
+
 
 Remove UUID from Rest Client and GUID from Web Service Client
 *************************************************************
