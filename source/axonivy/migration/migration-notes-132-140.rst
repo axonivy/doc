@@ -55,7 +55,7 @@ The following certificate settings were moved under :code:`Connector.HTTPS.SslHo
 
 
 Java EE to Jakarta EE Migration
-**************************
+*******************************
 
 |tag-project-auto-convert|
 
