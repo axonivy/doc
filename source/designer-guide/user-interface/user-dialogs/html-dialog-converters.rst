@@ -45,5 +45,6 @@ Example:
 
 ::
 
-       @FacesConverter("MyCustomFacesConverter")
+       @FacesConverter(value = "MyCustomFacesConverter", managed = true)
+       @ApplicationScoped
        public class MyCustomFacesConverter implements Converter
