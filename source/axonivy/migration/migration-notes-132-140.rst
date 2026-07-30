@@ -70,6 +70,9 @@ If the beans are :code:`@SessionScoped` or :code:`@ViewScoped`, they need to imp
 Beans can still be named via :code:`@Named("myBean")`, however this name needs to be unique within the whole application; otherwise the application will fail to start.
 If you don't define a name, the simple class name will be used like before (e.g. :code:`class MyBean` will be available as :code:`myBean` in JSF pages).
 
+Also :code:`@FacesConverter` and :code:`@FacesValidator` are now CDI-managed and must be adapted accordingly.
+They must set :code:`managed = true`, and they also need to have a scope (see above).
+
 .. container:: admonition note toggle
 
   .. container:: admonition-title header
