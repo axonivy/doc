@@ -169,6 +169,41 @@ Example of a system-scoped dependency:
 
 `For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_
 
+Project Structure Improvements
+******************************
+
+|tag-project-changed| |tag-project-auto-convert|
+
+Some folders have been moved or renamed to improve the project structure.
+
+Workflow
+--------
+
+- Renamed :code:`processes` folder to :code:`process`.
+- Renamed :code:`dataclasses` folder to :code:`dataclass`.
+- Renamed :code:`src_hd` folder to :code:`dialog`.
+
+This change improves the consistency of folder names and better reflects their
+content.
+
+Generated Source Files
+----------------------
+
+The following folders containing generated source files have been moved to the
+:code:`target` folder:
+
+- :code:`libs/mvn-deps`
+- :code:`src_generated/dataclass`
+- :code:`src_generated/repo`
+- :code:`src_generated/wsprocess`
+
+These folders contain files that are generated during the build process by the
+`project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ and
+should not be modified directly. Therefore, they have been moved to the
+:code:`target` folder to indicate that they are generated files clearly and to
+avoid confusion with other source files. The corresponding entries in the
+:code:`.gitignore` file have been removed.
+
 ------------
 
 .. include:: _tagLegend.rst
