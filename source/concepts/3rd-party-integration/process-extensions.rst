@@ -169,32 +169,6 @@ Accessibility
 Process Editor > inscribe > Inscription Mask > ... > Java Class to
 execute > |image0|
 
-.. _provide-your-own-process-elements: 
-
-Dropin Elements
----------------------
-
-Instead of using the generic extendible process element with your Java
-class, you can go one step further and implement your own process
-elements, available in the process editor palette.
-
-.. warning::
-
-   Dropin Elements are hard to develop, build and :ref:`distribute<dropin-installation>`.
-   Therefore, their usage is strongly discouraged. 
-   For most customers it's 
-   preferable to work with :ref:`connector-process-elements`
-   or the :ref:`extensible-process-elements`. 
-
-However, to implement your own process elements 
-you need a hosting `Eclipse bundle <extensions-bundles>`
-in which there is just an interface that must be implemented.
-
-:public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`
-  You need to specify a name, an executor class. Optionally, you can also specify what kind
-  of process element you are providing (default is `Activity`), and a validator class.
-
-
 .. _extensions-bundles:
 
 Axon Ivy extensions bundles (Eclipse plugin)
