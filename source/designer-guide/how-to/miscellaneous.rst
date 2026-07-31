@@ -416,33 +416,6 @@ If you want to check for new versions manually use the menu :guilabel:`Axon Ivy`
 
 
 
-Eclipse Plugin Mechanism
-------------------------
-
-You need a database frontend in Axon Ivy? Or editing support for any
-other programming or data declaration languages such as C/C++, PHP or
-XML? Or you have UML models to view? No problem at all.
-
-Axon Ivy is based on the widely used
-`Eclipse <http://www.eclipse.org>`__ platform which offers a
-sophisticated plugin mechanism to integrate third-party modules. In
-these days, Eclipse which originally has been developed as an IDE for
-Java programmers evolved to a large and vibrant ecosystem and is used
-for a triad of different tools and systems in almost every work sector.
-Therefore a huge community exists that offers plugins (open source and
-commercial) and even web sites (`Eclipse Marketplace <http://marketplace.eclipse.org//>`__)
-for browsing and
-searching these plugins arose in the past years.
-
-And the conclusion, you can use all these plugins and integrate them
-into your Axon Ivy installation to interact seamlessly between your
-favorite plugin set and the built-in Axon Ivy features.
-
-.. note::
-
-   Please follow the installation instructions of the specific plugin to
-   integrate it into your Axon Ivy installation
-
 
 
 
