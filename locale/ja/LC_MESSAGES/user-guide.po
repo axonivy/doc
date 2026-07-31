@@ -512,7 +512,7 @@ msgid "We changed the Runtime logger name from :code:`runtime.[app name].[pm nam
 msgstr "ランタイムロガーの名前を :code:`runtime.[アプリ名].[PM 名].[カテゴリー]` から :code:`runtime.[セキュリティコンテキスト名].[カテゴリー].[アプリ名].[PM 名]` に変更しました。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:113
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:77
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:80
 msgid "**Detail**"
 msgstr "**詳細**"
 
@@ -554,7 +554,7 @@ msgstr "この移行により、エンジンのオペレーションの一部が
 
 #: ../../source/axonivy/migration/_tagLegend.rst:13
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:91
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:117
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:120
 msgid "|tag-ops-deprecated|"
 msgstr "|tag-ops-deprecated|"
 
@@ -629,8 +629,8 @@ msgstr "Axon Ivy Java API Maven依存関係"
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:22
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:42
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:63
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:127
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:144
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:130
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:147
 msgid "|tag-project-changed| |tag-project-auto-convert|"
 msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
@@ -845,7 +845,7 @@ msgid ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostCon
 msgstr ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:46
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:104
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:107
 #, fuzzy
 msgid "**Hint**"
 msgstr "**タイムアウト**"
@@ -870,72 +870,76 @@ msgstr ""
 msgid "Beans can still be named via :code:`@Named(\"myBean\")`, however this name needs to be unique within the whole application; otherwise the application will fail to start. If you don't define a name, the simple class name will be used like before (e.g. :code:`class MyBean` will be available as :code:`myBean` in JSF pages)."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:81
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:73
+msgid "Also :code:`@FacesConverter` and :code:`@FacesValidator` are now CDI-managed and must be adapted accordingly. They must set :code:`managed = true`, and they also need to have a scope (see above)."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:84
 msgid "We have also dropped internal scopes for :code:`@ApplicationScoped` and :code:`@SessionScoped` beans. This could lead to small behavior changes in the bean lifecycle, but the idea behind these scopes is still the same."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:86
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:89
 msgid "Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:88
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:91
 #, fuzzy
 msgid "|tag-project-auto-convert| |tag-ops-removed|"
 msgstr "|tag-project-auto-convert|"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:90
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:93
 msgid "REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors instead of Apache HTTP Client 4-based connectors by default."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:92
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:95
 msgid "For REST clients, the Apache HTTP Client 4 based connector was removed."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:94
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:97
 msgid "The project migration tool will automatically convert HTTP Client 4–based connectors to Apache HTTP Client 5 for you. However, if you have custom code for REST or SOAP WebService features that directly references Apache HTTP Client 4 classes, you must manually update those to the HTTP Client 5 equivalents (adjust imports and API usage) and re-test the integrations."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:98
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:101
 msgid "The Apache HTTP Client 4 library itself is still available but will be removed in a future version."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:108
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:111
 msgid "For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`. This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. You should migrate to Apache HTTP Client 5 based connectors as soon as possible."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:115
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:118
 msgid "NTLM Authentication for REST and SOAP Web Service Client Connectors"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:119
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:122
 msgid "NTLM Authentication for REST and SOAP Web Service clients is deprecated and will be removed in a future version. This is because NTLM support in the library Apache HTTP Client 5 was also deprecated and is no longer actively maintained. Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:125
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:128
 msgid "Remove UUID from Rest Client and GUID from Web Service Client"
 msgstr "WebサービスクライアントからUUIDを削除"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:129
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:132
 msgid "We have removed the UUID from the Rest Client and the GUID from the Web Service Client. This means we no longer use these IDs in your processes to reference the clients. Instead we use the YAML key of the client. This makes the client easier to identify and copy between projects. We do an automatic project conversion, but it can happen that we cannot find the client if it is defined in a different project. In this case, you need to manually update the client reference in your processes to use the YAML key of the client. The old ID is still available in the YAML configuration prefixed with `Legacy`, but you can remove this after you have migrated all your projects."
 msgstr "UUIDは、WebサービスクライアントのRestクライアントとGUIDから削除しました。 つまり、クライアントを参照するために、これらの ID をプロセスで使用しなくなりました。 代わりに、クライアントのYAMLキーを使用します。 これにより、クライアントはプロジェクト間で識別し、コピーしやすくなります。 自動プロジェクト変換を行いますが、異なるプロジェクトで定義されている場合、クライアントが見つからなくなる可能性があります。 この場合、クライアントのYAMLキーを使用するプロセスでクライアントの参照を手動で更新する必要があります。 古い ID は、`Legacy` と接頭辞した YAML 構成ではまだ利用できますが、すべてのプロジェクトを移行した後にこれを削除できます."
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:137
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:140
 msgid "We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPI, please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead."
 msgstr "また、:public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPIを廃止し、代わりに :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` を使用してください."
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:142
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:145
 msgid "Removal of the :code:`.classpath` File"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:146
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:149
 msgid "The :code:`.classpath` file is no longer part of the project. Previously, the :code:`.classpath` file was used to reference local JAR files that were not available from a remote Maven repository. These JARs were added to the project's classpath for both design time and runtime. It also contained references to generated REST and web service client JARs. During automatic project conversion, generated client JARs are handled automatically. Specifically, the generated :code:`cxfClient_*.jar` and :code:`jaxRsClient_*.jar` files are unpacked into their corresponding :code:`src_generated` directories as part of the conversion process. If you have manually added additional local JAR references to the :code:`.classpath` file, you must declare them as Maven system-scoped dependencies to make those JARs available on the project's classpath."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:155
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:158
 msgid "Example of a system-scoped dependency:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:167
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:170
 msgid "`For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_"
 msgstr ""
 
@@ -1606,194 +1610,6 @@ msgstr "汎用的な Java コードを実行します（リモートシステム
 msgid "Extendible Process Elements were the first solution for custom Process elements. Today however, they are rarely used, since the :ref:`connector-process-elements` offer a similar mechanism which requires less technical skills and offers a better integration into the Process editor tooling."
 msgstr "拡張可能なプロセス要素は、カスタムプロセス要素の最初のソリューションでした。しかしながら、現在では、技術的なスキルをあまり必要とせず、プロセスエディターツールへの統合も容易 :ref:`connector-process-elements` が同様のメカニズムを提供しているため、ほとんど使用されていません。"
 
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:153
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:161
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:164
-msgid "New Bean Class Wizard"
-msgstr "Bean クラスの作成ウィザード"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:155
-msgid "With the *New Bean Class Wizard* you can create a Java class that implements the interface of one of the extendible process elements. Optionally, it can also generate a UI editor for the configuration of the event for the corresponding bean. The generated Java class contains example code on how to implement the Java bean."
-msgstr "*Bean クラスの作成ウィザード* を使用して、拡張可能なプロセス要素の 1 つのインタフェースを実装する Java クラスを作成できます。また、任意で、対応する Bean のイベントを設定するための UI エディターも作成できます。作成された Java クラスには、Java Bean の実装方法に関するサンプルコードが含まれています。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:167
-#: ../../source/designer-guide/data-modeling/persistence/new-entity-class-wizard.rst:14
-#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:508
-#: ../../source/designer-guide/data-modeling/persistence/persistence-configuration-editor.rst:49
-#: ../../source/designer-guide/how-to/overrides.rst:167
-#: ../../source/designer-guide/how-to/overrides.rst:252
-#: ../../source/designer-guide/process-modeling/casemap.rst:21
-#: ../../source/designer-guide/process-modeling/process-modeling/new-process-group-wizard.rst:21
-#: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:10
-#: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:25
-#: ../../source/designer-guide/process-modeling/process-views/browsers.rst:13
-#: ../../source/designer-guide/process-modeling/process-views/problems-view.rst:18
-#: ../../source/designer-guide/process-modeling/process-views/process-inscription-editor-view.rst:12
-#: ../../source/designer-guide/process-modeling/process-views/process-json-inscription-view.rst:13
-#: ../../source/designer-guide/process-modeling/process-views/process-outline-view.rst:9
-#: ../../source/designer-guide/process-modeling/process-views/reference-view.rst:22
-#: ../../source/designer-guide/process-modeling/projects/deployment.rst:92
-#: ../../source/designer-guide/process-modeling/projects/deployment.rst:229
-#: ../../source/designer-guide/process-modeling/projects/exporting.rst:11
-#: ../../source/designer-guide/process-modeling/projects/importing.rst:13
-#: ../../source/designer-guide/process-modeling/projects/newProjectWizard.rst:20
-#: ../../source/designer-guide/process-modeling/simulation/debugger.rst:333
-#: ../../source/designer-guide/process-modeling/simulation/debugger.rst:484
-#: ../../source/designer-guide/process-modeling/simulation/simulation.rst:88
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:23
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:13
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:19
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:29
-#: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:22
-msgid "Accessibility"
-msgstr "アクセス方法"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:169
-msgid "Process Editor > inscribe > Inscription Mask > ... > Java Class to execute > |image0|"
-msgstr "プロセスエディター > ［インスクライブ］ > ［インスクリプションマスク］ > ... > 実行する Java クラス > |image0|"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:262
-#: ../../source/concepts/adaptive-case-management.rst:402
-#: ../../source/concepts/error-handling.rst:258
-#: ../../source/designer-guide/how-to/miscellaneous.rst:450
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:118
-#: ../../source/designer-guide/process-modeling/process-elements/alternative.rst:37
-#: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:58
-#: ../../source/designer-guide/process-modeling/process-elements/call-sub.rst:59
-#: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:157
-#: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:99
-#: ../../source/designer-guide/process-modeling/process-elements/embedded-subprocess.rst:23
-#: ../../source/designer-guide/process-modeling/process-elements/error-boundary-event.rst:45
-#: ../../source/designer-guide/process-modeling/process-elements/error-end.rst:42
-#: ../../source/designer-guide/process-modeling/process-elements/error-start.rst:44
-#: ../../source/designer-guide/process-modeling/process-elements/join.rst:38
-#: ../../source/designer-guide/process-modeling/process-elements/note.rst:18
-#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:40
-#: ../../source/designer-guide/process-modeling/process-elements/process-end.rst:19
-#: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:320
-#: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:52
-#: ../../source/designer-guide/process-modeling/process-elements/signal-boundary-event.rst:40
-#: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:46
-#: ../../source/designer-guide/process-modeling/process-elements/split.rst:46
-#: ../../source/designer-guide/process-modeling/process-elements/start.rst:293
-#: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:37
-#: ../../source/designer-guide/process-modeling/process-elements/task-switch-event.rst:22
-#: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:99
-#: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:44
-#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-event-start.rst:20
-#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-exit-end.rst:23
-#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:40
-#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-process-end.rst:20
-#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:53
-#: ../../source/designer-guide/process-modeling/process-elements/web-service-call-activity.rst:66
-#: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:159
-msgid "image0"
-msgstr "image0"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:175
-msgid "Dropin Elements"
-msgstr "ドロップイン要素"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:177
-msgid "Instead of using the generic extendible process element with your Java class, you can go one step further and implement your own process elements, available in the process editor palette."
-msgstr "Java クラスで拡張可能なジェネリックプロセス要素を使用する代わりに、さらに一歩進んで、プロセスエディターパレットで利用可能な独自のプロセス要素を実装できます。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:183
-#, fuzzy
-msgid "Dropin Elements are hard to develop, build and :ref:`distribute<dropin-installation>`. Therefore, their usage is strongly discouraged. For most customers it's preferable to work with :ref:`connector-process-elements` or the :ref:`extensible-process-elements`."
-msgstr "ドロップイン要素の開発、作成 :ref:`distribute<dropin-installation>` 難しいことから、使用はあまり推奨しません。ほとんどのお客様にとっては :ref:`connector-process-elements` や :ref:`extensible-process-elements` を使用する方が良いでしょう。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:189
-#, fuzzy
-msgid "However, to implement your own process elements you need a hosting `Eclipse bundle <extensions-bundles>` in which there is just an interface that must be implemented."
-msgstr "ただし、独自のプロセス要素を実装するには、ホストしている `Eclipse バンドル<extensions-bundles>` が必要です。バンドルには、実装する必要があるインターフェースが含まれています。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:193
-msgid ":public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`"
-msgstr ":public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:194
-msgid "You need to specify a name, an executor class. Optionally, you can also specify what kind of process element you are providing (default is `Activity`), and a validator class."
-msgstr "名前と Executor のクラスを指定する必要があります。また、任意で、提供するプロセス要素のタイプ（初期値は `Activity`）と Validator のクラスも指定できます。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:201
-msgid "Axon Ivy extensions bundles (Eclipse plugin)"
-msgstr "Axon Ivy 拡張機能のバンドル（Eclipse プラグイン）"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:203
-msgid "In order to provide an Axon Ivy extension for the Designer or Engine you need to provide it as an Eclipse plugin."
-msgstr "デザイナーまたはエンジンに Axon Ivy 拡張機能を提供するには、Eclipse プラグインとして提供する必要があります。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:207
-msgid "References"
-msgstr "リファレンス"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:209
-msgid "The extension development is an advanced programming task. Here we supply you with reference implementations, rather than explaining details of the tools we rely upon."
-msgstr "拡張機能の開発は、高度なプログラミング作業です。ここでは、私たちが活用しているツールの詳細を説明する代わりに、リファレンス実装を紹介します。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:213
-msgid "We have several active projects that you may use as template for your own development."
-msgstr "私たちのアクティブなプロジェクトをお客様の開発のテンプレートとして使用できます。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:216
-#, fuzzy
-msgid "`extension-demos <https://github.com/axonivy/extension-demos/>`_, show extensions to the logger infrastructure, database drivers, and tomcat webserver."
-msgstr "`extension-demos <https://github.com/axonivy/extension-demos/>`_ には、ロガーインフラストラクチャ、データベースドライバー、Tomcat ウェブサーバーの拡張が公開されています。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:218
-msgid "In the Market there are products that enrich the Designer development tooling, such as the `openai-assistant <https://github.com/axonivy-market/openai-connector/>`_ and the  `excel-dialog <https://github.com/axonivy-market/excel-importer/>`_."
-msgstr "マーケットには、`openai-assistant <https://github.com/axonivy-market/openai-connector/>`_ や `excel-dialog <https://github.com/axonivy-market/excel-importer/>`_ など、デザイナーの開発ツールを充実させる製品が取りそろえられています。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:221
-msgid "Eclipse"
-msgstr "Eclipse"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:223
-msgid "You can create your own Eclipse plugin in the Axon Ivy Designer by following these steps:"
-msgstr "以下の手順に従って、Axon Ivy Designer で独自の Eclipse プラグインを作成できます。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:226
-msgid "Start Axon Ivy Designer"
-msgstr "Axon Ivy Designer を起動します。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:228
-msgid "Create a new Plug-in Project using the New wizard. Menu: :guilabel:`File` > :guilabel:`New` > :guilabel:`Project ...` > :guilabel:`Plug-in Development` > :guilabel:`Plug-in Project`."
-msgstr ":guilabel:`ファイル` > :guilabel:`新規` > :guilabel:`プロジェクト ...` > :guilabel:`プラグイン開発` > :guilabel:`プラグインプロジェクト` メニューから新規ウィザードを使用して、新しいプラグインプロジェクトを作成します。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:231
-msgid "Develop your extension."
-msgstr "拡張機能を開発します。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:233
-msgid "Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the **Overview** tab and click on the link **Export Wizard**. As **Destination Directory** choose the ``dropins`` directory of your Axon Ivy Designer or Engine installation. Press the **Finish** button. Your plugin is created in the ``dropins/plugins`` directory."
-msgstr "**META-INF/MANIFEST.MF**ファイルエディターに戻ります。［**概要** ］タブを選択し、［**ウィザードをエクスポート** ］リンクをクリックします。**エクスポート先のディレクトリ** として、Axon Ivy DesignerまたはEngineインストール先の``dropins``ディレクトリを選択します。［**終了** ］ボタンを押します。プラグインが``dropins/plugins``ディレクトリに作成されます。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:244
-#: ../../source/designer-guide/introduction/installation/index.rst:4
-msgid "Installation"
-msgstr "インストール"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:246
-msgid "Follow these steps to install your extensions in an Axon Ivy Designer or Engine:"
-msgstr "以下の手順に従って、拡張機能を Axon Ivy Designer またはエンジンにインストールします。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:249
-msgid "Stop the running instance (if applicable)."
-msgstr "実行中のインスタンスを停止します（該当する場合）。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:251
-msgid "Copy your plugin (bundle) that contains your extension classes to the ``dropins`` directory inside the Axon Ivy Designer or Engine installation directory."
-msgstr "拡張クラスを含むプラグイン（バンドル）を Axon Ivy Designer の ``dropins`` ディレクトリまたはエンジンのインストールディレクトリにコピーします。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:255
-msgid "Start the Axon Ivy Designer or Engine."
-msgstr "Axon Ivy Designer またはエンジンを起動します。"
-
-#: ../../source/concepts/3rd-party-integration/process-extensions.rst:259
-msgid "If your extension is not active as expected, consult the ``dropins/README.html``."
-msgstr "拡張機能が期待どおりにアクティブにならない場合は、``dropins/README.html`` を参照してください。"
-
 #: ../../source/concepts/3rd-party-integration/restapi.rst:4
 msgid "REST Services"
 msgstr "REST サービス"
@@ -2055,6 +1871,43 @@ msgstr "そのため、リクエスト検証のフロントエンドでは、マ
 msgid "|image0|"
 msgstr "|image0|"
 
+#: ../../source/concepts/adaptive-case-management.rst:402
+#: ../../source/concepts/error-handling.rst:258
+#: ../../source/designer-guide/how-to/miscellaneous.rst:461
+#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:118
+#: ../../source/designer-guide/process-modeling/process-elements/alternative.rst:37
+#: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:58
+#: ../../source/designer-guide/process-modeling/process-elements/call-sub.rst:59
+#: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:157
+#: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:99
+#: ../../source/designer-guide/process-modeling/process-elements/embedded-subprocess.rst:23
+#: ../../source/designer-guide/process-modeling/process-elements/error-boundary-event.rst:45
+#: ../../source/designer-guide/process-modeling/process-elements/error-end.rst:42
+#: ../../source/designer-guide/process-modeling/process-elements/error-start.rst:44
+#: ../../source/designer-guide/process-modeling/process-elements/join.rst:38
+#: ../../source/designer-guide/process-modeling/process-elements/note.rst:18
+#: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:40
+#: ../../source/designer-guide/process-modeling/process-elements/process-end.rst:19
+#: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:320
+#: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:52
+#: ../../source/designer-guide/process-modeling/process-elements/signal-boundary-event.rst:40
+#: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:46
+#: ../../source/designer-guide/process-modeling/process-elements/split.rst:46
+#: ../../source/designer-guide/process-modeling/process-elements/start.rst:293
+#: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:37
+#: ../../source/designer-guide/process-modeling/process-elements/task-switch-event.rst:22
+#: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:99
+#: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:44
+#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-event-start.rst:20
+#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-exit-end.rst:23
+#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:40
+#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-process-end.rst:20
+#: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:53
+#: ../../source/designer-guide/process-modeling/process-elements/web-service-call-activity.rst:66
+#: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:159
+msgid "image0"
+msgstr "image0"
+
 #: ../../source/concepts/adaptive-case-management.rst:52
 #: ../../source/concepts/error-handling.rst:73
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:12
@@ -2067,7 +1920,7 @@ msgstr "|image1|"
 
 #: ../../source/concepts/adaptive-case-management.rst:403
 #: ../../source/concepts/error-handling.rst:259
-#: ../../source/designer-guide/how-to/miscellaneous.rst:451
+#: ../../source/designer-guide/how-to/miscellaneous.rst:462
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:104
 #: ../../source/designer-guide/how-to/workflow/states.rst:193
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:59
@@ -2111,7 +1964,7 @@ msgstr "|image2|"
 
 #: ../../source/concepts/adaptive-case-management.rst:404
 #: ../../source/concepts/error-handling.rst:260
-#: ../../source/designer-guide/how-to/miscellaneous.rst:452
+#: ../../source/designer-guide/how-to/miscellaneous.rst:463
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:105
 #: ../../source/designer-guide/how-to/workflow/states.rst:194
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:60
@@ -2123,7 +1976,7 @@ msgstr "|image2|"
 #: ../../source/designer-guide/process-modeling/process-elements/signal-boundary-event.rst:41
 #: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:47
 #: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:45
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:132
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:124
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:344
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:242
 msgid "image2"
@@ -6121,6 +5974,37 @@ msgstr "エンティティクラスの作成ウィザード"
 msgid "The New Entity Class wizard lets you create a new global Entity Class."
 msgstr "エンティティクラスの作成ウィザードでは、新しいグローバルエンティティクラスを作成できます。"
 
+#: ../../source/designer-guide/data-modeling/persistence/new-entity-class-wizard.rst:14
+#: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:508
+#: ../../source/designer-guide/data-modeling/persistence/persistence-configuration-editor.rst:49
+#: ../../source/designer-guide/how-to/overrides.rst:167
+#: ../../source/designer-guide/how-to/overrides.rst:252
+#: ../../source/designer-guide/process-modeling/casemap.rst:21
+#: ../../source/designer-guide/process-modeling/process-modeling/new-process-group-wizard.rst:21
+#: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:10
+#: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:25
+#: ../../source/designer-guide/process-modeling/process-views/browsers.rst:13
+#: ../../source/designer-guide/process-modeling/process-views/problems-view.rst:18
+#: ../../source/designer-guide/process-modeling/process-views/process-inscription-editor-view.rst:12
+#: ../../source/designer-guide/process-modeling/process-views/process-json-inscription-view.rst:13
+#: ../../source/designer-guide/process-modeling/process-views/process-outline-view.rst:9
+#: ../../source/designer-guide/process-modeling/process-views/reference-view.rst:22
+#: ../../source/designer-guide/process-modeling/projects/deployment.rst:92
+#: ../../source/designer-guide/process-modeling/projects/deployment.rst:229
+#: ../../source/designer-guide/process-modeling/projects/exporting.rst:11
+#: ../../source/designer-guide/process-modeling/projects/importing.rst:13
+#: ../../source/designer-guide/process-modeling/projects/newProjectWizard.rst:20
+#: ../../source/designer-guide/process-modeling/simulation/debugger.rst:333
+#: ../../source/designer-guide/process-modeling/simulation/debugger.rst:484
+#: ../../source/designer-guide/process-modeling/simulation/simulation.rst:88
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:23
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:13
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:19
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:29
+#: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:22
+msgid "Accessibility"
+msgstr "アクセス方法"
+
 #: ../../source/designer-guide/data-modeling/persistence/new-entity-class-wizard.rst:16
 msgid "File > New > Entity Class"
 msgstr "［ファイル］ > ［新規］ > ［エンティティクラス］"
@@ -7333,25 +7217,59 @@ msgstr "JVM（Java Virtual Machine）の情報（バージョン、ベンダー�
 msgid "Host information (host name, SHA-256 hashes of IP address and MAC address to identify the host without being able to read the original IP address and MAC address itself)"
 msgstr "ホストの情報（ホスト名、オリジナルの IP アドレスと MAC アドレスそのものを読み取らずにホストを特定するための IP アドレスと MAC アドレスの SHA-256 ハッシュ）"
 
-#: ../../source/designer-guide/how-to/miscellaneous.rst:420
-msgid "Eclipse Plugin Mechanism"
-msgstr "Eclipse プラグインの仕組み"
+#: ../../source/designer-guide/how-to/miscellaneous.rst:419
+msgid "Axon Ivy extensions bundles (Eclipse plugin)"
+msgstr "Axon Ivy 拡張機能のバンドル（Eclipse プラグイン）"
 
-#: ../../source/designer-guide/how-to/miscellaneous.rst:422
-msgid "You need a database frontend in Axon Ivy? Or editing support for any other programming or data declaration languages such as C/C++, PHP or XML? Or you have UML models to view? No problem at all."
-msgstr "Axon Ivy でデータベースフロントエンドが必要ですか。それとも、C/C++、PHP、XML などのプログラミング言語やデータ宣言言語の編集サポートが必要ですか。UML モデルを表示する必要がありますか。すべて問題ありません。"
+#: ../../source/designer-guide/how-to/miscellaneous.rst:421
+msgid "In order to provide an Axon Ivy extension for the Designer or Engine you need to provide it as an Eclipse plugin."
+msgstr "デザイナーまたはエンジンに Axon Ivy 拡張機能を提供するには、Eclipse プラグインとして提供する必要があります。"
 
-#: ../../source/designer-guide/how-to/miscellaneous.rst:426
-msgid "Axon Ivy is based on the widely used `Eclipse <http://www.eclipse.org>`__ platform which offers a sophisticated plugin mechanism to integrate third-party modules. In these days, Eclipse which originally has been developed as an IDE for Java programmers evolved to a large and vibrant ecosystem and is used for a triad of different tools and systems in almost every work sector. Therefore a huge community exists that offers plugins (open source and commercial) and even web sites (`Eclipse Marketplace <http://marketplace.eclipse.org//>`__) for browsing and searching these plugins arose in the past years."
-msgstr "Axon Ivyは、広く使用されている`Eclipse <http://www.eclipse.org>`__プラットフォームを基盤にしており、サードパーティ製モジュールを統合するための高度なプラグイン機構を提供しています。かつてはJavaプログラマー向けのIDEとして開発されたEclipseですが、現在では大規模で活気あるエコシステムへと進化し、あらゆる業界で多様なツールやシステムの基盤として利用されています。そのため、プラグイン（オープンソースおよび商用）を提供する巨大なコミュニティが存在し、最近では、これらのプラグインを閲覧、検索するためのウェブサイト（`Eclipse Marketplace <http://marketplace.eclipse.org//>`__ ）も誕生しています。"
+#: ../../source/designer-guide/how-to/miscellaneous.rst:425
+msgid "References"
+msgstr "リファレンス"
 
-#: ../../source/designer-guide/how-to/miscellaneous.rst:437
-msgid "And the conclusion, you can use all these plugins and integrate them into your Axon Ivy installation to interact seamlessly between your favorite plugin set and the built-in Axon Ivy features."
-msgstr "まとめると、これらすべてのプラグインを使用し、Axon Ivy インストレーションに統合して、お気に入りのプラグインセットと搭載されている Axon Ivy 機能をシームレスに連携させることができるということです。"
+#: ../../source/designer-guide/how-to/miscellaneous.rst:427
+msgid "The extension development is an advanced programming task. Here we supply you with reference implementations, rather than explaining details of the tools we rely upon."
+msgstr "拡張機能の開発は、高度なプログラミング作業です。ここでは、私たちが活用しているツールの詳細を説明する代わりに、リファレンス実装を紹介します。"
 
-#: ../../source/designer-guide/how-to/miscellaneous.rst:443
-msgid "Please follow the installation instructions of the specific plugin to integrate it into your Axon Ivy installation"
-msgstr "特定のプラグインを Axon Ivy インストレーションに統合するには、そのプラグインのインストール手順に従ってください。"
+#: ../../source/designer-guide/how-to/miscellaneous.rst:431
+msgid "We have several active projects that you may use as template for your own development."
+msgstr "私たちのアクティブなプロジェクトをお客様の開発のテンプレートとして使用できます。"
+
+#: ../../source/designer-guide/how-to/miscellaneous.rst:434
+#, fuzzy
+msgid "`extension-demos <https://github.com/axonivy/extension-demos/>`_, show extensions to the logger infrastructure, database drivers, and tomcat webserver."
+msgstr "`extension-demos <https://github.com/axonivy/extension-demos/>`_ には、ロガーインフラストラクチャ、データベースドライバー、Tomcat ウェブサーバーの拡張が公開されています。"
+
+#: ../../source/designer-guide/how-to/miscellaneous.rst:436
+msgid "In the Market there are products that enrich the Designer development tooling, such as the `openai-assistant <https://github.com/axonivy-market/openai-connector/>`_ and the  `excel-dialog <https://github.com/axonivy-market/excel-importer/>`_."
+msgstr "マーケットには、`openai-assistant <https://github.com/axonivy-market/openai-connector/>`_ や `excel-dialog <https://github.com/axonivy-market/excel-importer/>`_ など、デザイナーの開発ツールを充実させる製品が取りそろえられています。"
+
+#: ../../source/designer-guide/how-to/miscellaneous.rst:442
+#: ../../source/designer-guide/introduction/installation/index.rst:4
+msgid "Installation"
+msgstr "インストール"
+
+#: ../../source/designer-guide/how-to/miscellaneous.rst:444
+msgid "Follow these steps to install your extensions in an Axon Ivy Designer or Engine:"
+msgstr "以下の手順に従って、拡張機能を Axon Ivy Designer またはエンジンにインストールします。"
+
+#: ../../source/designer-guide/how-to/miscellaneous.rst:447
+msgid "Stop the running instance (if applicable)."
+msgstr "実行中のインスタンスを停止します（該当する場合）。"
+
+#: ../../source/designer-guide/how-to/miscellaneous.rst:449
+msgid "Copy your plugin (bundle) that contains your extension classes to the ``dropins`` directory inside the Axon Ivy Designer or Engine installation directory."
+msgstr "拡張クラスを含むプラグイン（バンドル）を Axon Ivy Designer の ``dropins`` ディレクトリまたはエンジンのインストールディレクトリにコピーします。"
+
+#: ../../source/designer-guide/how-to/miscellaneous.rst:453
+msgid "Start the Axon Ivy Designer or Engine."
+msgstr "Axon Ivy Designer またはエンジンを起動します。"
+
+#: ../../source/designer-guide/how-to/miscellaneous.rst:457
+msgid "If your extension is not active as expected, consult the ``dropins/README.html``."
+msgstr "拡張機能が期待どおりにアクティブにならない場合は、``dropins/README.html`` を参照してください。"
 
 #: ../../source/designer-guide/how-to/offline-tasks.rst:4
 msgid "Offline Tasks"
@@ -12469,11 +12387,11 @@ msgstr "PI（プログラムインターフェース）アクティビティ"
 msgid "|element| The *Program Interface Activity* element is located in the *Activity* drawer of the process editor palette."
 msgstr "|element| *プログラムインターフェースアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:124
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:121
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:122
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:118
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:39
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:51
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:131
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:123
 msgid "element"
 msgstr "element"
 
@@ -12522,89 +12440,89 @@ msgid "Java Class"
 msgstr "Java クラス"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:53
-msgid "Fully qualified name of the Java class that implements the :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` interface. Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java source file with an example implementation of the bean class."
+#, fuzzy
+msgid "Fully qualified name of the Java class that implements the :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` interface."
 msgstr "</ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:18
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:125
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:122
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:133
-msgid "add-button"
-msgstr "add-button"
-
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:59
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:57
 msgid "Program"
 msgstr "プログラム"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:60
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:58
 msgid "Defines the :ref:`process-element-error-start` element which can handle execution errors."
 msgstr "実行エラーを処理できる :ref:`process-element-error-start` 要素を定義します。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:62
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:54
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:60
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:53
 msgid "Timeout"
 msgstr "タイムアウト"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:63
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:61
 #, fuzzy
 msgid "Defines a timeout for the return call to the Java PI class. A timeout error can be handled by a catching :ref:`process-element-error-start`."
 msgstr "Java PI クラスの return 呼び出しのタイムアウトを定義します。タイムアウトエラーは、エラーをキャッチす :ref:`process-element-error-start` により処理できます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:68
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:48
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:54
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:62
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:66
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:45
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:51
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:61
 msgid "Configuration Tab"
 msgstr "設定タブ"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:70
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:68
 msgid "The custom editor UI provided by the implementation of :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` allows to configure its execution."
 msgstr ":public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` の実装で提供されるカスタムエディター UI を使用して、実行を設定できます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:74
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:68
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:72
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:67
 msgid "Editor Tab"
 msgstr "エディターのタブ"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:77
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:57
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:71
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:75
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:54
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:70
 msgid "A custom editor example"
 msgstr "カスタムエディターの例"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:81
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:73
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:81
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:79
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:70
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:80
 #: ../../source/designer-guide/user-interface/default-pages/index.rst:16
 msgid "Implementation"
 msgstr "実装"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:83
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:75
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:81
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:72
 msgid "To initiate a custom bean implementation for your third party system, you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| button on the Start Tab. The wizard will create a minimal sample implementation that works already. You can then adjust it to your needs."
 msgstr "サードパーティーシステムのカスタム Bean の実装を開始する場合、開始タブ :ref:`新規クラス<new-bean-class-wizard>` |add-button| ボタンが便利です。ウィザードで、そのまま使用できる最小限のサンプル実装を作成し、作成した実装を必要に合わせて調整できます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:91
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:83
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:91
+#: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:18
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:123
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:119
+msgid "add-button"
+msgstr "add-button"
+
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:89
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:80
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:83
 msgid "API reference"
 msgstr "API について"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:93
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:91
 msgid "The Program Interface consumes a Java class that implements the :public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>` interface. This implementation is responsible for defining the element execution behavior in the method ``perform`` of :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`. The common way to implement a Program Interface Bean is to extend from :public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`."
 msgstr "プログラムインターフェースは、:public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` の ``perform`` メソッドで要素の実行動作を定義します。プログラムインターフェース Bean を実装する一般的な方法は、:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>` からの拡張です。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:104
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:100
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:109
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:102
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:97
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:101
 msgid "Custom configuration"
 msgstr "カスタム設定"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:106
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:104
 msgid "Very likely, your Program Interface Activity implementation will accept configuration parameters defining the local environment. For instance, a system specific file to send to a legacy system."
 msgstr "おそらく、プログラムインターフェースアクティビティの実装では、レガシーシステムに送信するシステム固有のファイルなど、ローカル環境を定義する設定パラメーターを受け入れます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:110
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:108
 msgid "We help you with these configurations by providing an accessor for static element configurations via :public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>`."
 msgstr ":public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>` から静的要素を設定するためのアクセサを提供して、そのような設定を行うことができます。"
 
@@ -12628,9 +12546,9 @@ msgstr "1. :public-api:`initUiFields </ch/ivyteam/ivy/process/extension/ui/UiEdi
 msgid "2. The  :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>` provides methods to read and write configurations, in order to bind them to previously created ui widgets."
 msgstr "2. :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>` は、先に作成した UI ウィジェットにバインドするため、設定を読み書きするメソッドを提供します。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:117
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:114
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:123
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:115
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:111
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:115
 msgid "Example implementation"
 msgstr "実装の例"
 
@@ -12648,48 +12566,49 @@ msgid "The Program Start element allows you to start a process by a custom trigg
 msgstr "プログラム開始要素を使用して、カスタムトリガーによりプロセスを開始できます。ワークフローケースの開始に有用だと思うレガシーシステムや Java 実装を統合するのに最適です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:33
-msgid "Fully qualified name of the Java class that implements the :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` interface. Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java source file with an example implementation of the bean class or select an :ref:`existing one <process-element-program-start-existing-beans>`."
-msgstr ":public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します :ref:`既存の Bean<process-element-program-start-existing-beans>` を選択することもできます。"
+#, fuzzy
+msgid "Fully qualified name of the Java class that implements the :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` interface."
+msgstr ":public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` の実装で提供されるカスタムエディター UI を使用して、実行を設定できます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:40
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:37
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:30
 msgid "Permission"
 msgstr "権限"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:41
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:38
 msgid "Defines the role that is required to be able to start a process. The bean will set up an authorized session that calls the ``fireProcessStartEventRequest()`` from the ``eventRuntime`` to trigger a process."
 msgstr "プロセスを開始するのに必要なロールを定義します。Bean は、プロセスをトリガーするため、``eventRuntime`` から``fireProcessStartEventRequest()`` 呼び出す、許可されたセッションをセットアップします。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:50
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:47
 msgid "The custom editor UI provided by the implementation of :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` to configure its execution."
 msgstr ":public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` の実装で提供されるカスタムエディター UI を使用して、実行を設定できます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:63
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:60
 msgid "Existing Beans"
 msgstr "既存の Bean"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:65
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:62
 msgid "TimerBean"
 msgstr "TimerBean"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:66
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:63
 msgid "A bean that starts processes periodically with a defined delay or at certain times defined by a daily time or standard CRON expression. The configuration can either be configured directly or indirectly via a variable. If the variable changes the bean is reconfigured automatically."
 msgstr "定義された遅延で、または時刻や標準的な CRON 式で定義された時間に定期的にプロセスを開始する Bean。設定は直接、または変数により間接的に行うことができます。変数が変わると、Beam は自動的に再設定されます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:85
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:82
 #, fuzzy
 msgid "The Program Start consumes a Java class that implements the :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` interface. This implementation is responsible for initiating a new process by calling the method ``fireProcessStartEventRequest`` of :public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`. The common way to implement a Start Event Bean is to extend from :public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`."
 msgstr "プログラム開始は、:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>` の ``fireProcessStartEventRequest`` メソッドを呼び出して、新しいプロセスを開始します。イベント開始 Bean を実装する一般的な方法は、:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>` からの拡張です。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:94
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:91
 msgid "If you use an Axon Ivy Cluster, you may mark your implementation with the :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. This will enable your Program Start not only on the master node, but on all available nodes."
 msgstr "Axon Ivy Cluster を使用する場合、:public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` インターフェースで実装をマークできます。これにより、マスターノードだけでなく、使用可能なすべてのノードでプログラム開始が有効になります。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:102
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:99
 msgid "Very likely your Program Start implementation will accept configuration parameters to define the local environment. For instance a system specific file path to look for files being produced by a legacy system."
 msgstr "プログラムインターフェースアクティビティの実装では、レガシーシステムで作成されるファイルを検索するシステム固有のファイルパスなど、ローカル環境を定義する設定パラメーターを受け入れる可能性が高いです。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:106
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:103
 msgid "We help you with these configs by providing an accessor to statically configured element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>`."
 msgstr ":public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>` から静的に設定された要素を設定するためのアクセサを提供して、そのような設定を行うことができます。"
 
@@ -13751,26 +13670,27 @@ msgid "On this tab you define the Java class that the IntermediateEvent should i
 msgstr "このタブでは、中間イベントのインスタンスを作成する Java クラス、イベントの識別子、タイムアウト時の動作を定義します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:37
-msgid "Fully qualified name of the Java class that implements the :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>` interface. Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java source file with an example implementation of the bean class."
+#, fuzzy
+msgid "Fully qualified name of the Java class that implements the :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>` interface."
 msgstr ":public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>` インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:42
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:41
 msgid "Event ID"
 msgstr "イベント ID"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:43
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:42
 msgid "Because multiple cases (process instances) can wait on the same intermediate event you must specify which event belongs to which waiting case. Here, you specify the identifier of the event the current case should wait for."
 msgstr "複数のケース（プロセスインスタンス）が同じ中間イベントを待つ可能性があるため、どのイベントがどの待機中のケースに属しているのか指定する必要があります。ここでは、現在のケースが待つイベントの識別子を指定します。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:50
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:49
 msgid "The event identifier as a String must be unique. Do not use a static string like ``\"myID\"``. A good practice is to integrate the case identifier (``ivy.case.getId()``) into the event id."
 msgstr "イベントの識別子は一意の文字列でなければなりません。``\"myID\"`` のような静的な文字列は使用しないでください。ケースの識別子（``ivy.case.getId()``）をイベント ID に組み込むと良いでしょう。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:55
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:54
 msgid "You can specify how long the current case should wait for an intermediate event, and what will happen if no event has been received after this time. You may optionally start an exception process, delete the waiting task, or continue the waiting task without receiving an intermediate event."
 msgstr "現在のケースが中間イベントを待つ時間、その間にイベントを受信しなかった場合の動作を指定できます。任意で、例外プロセスを開始したり、待機中のタスクを削除したり、中間イベントを受信せずに待機中のタスクを継続させることができます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:64
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:63
 msgid "The custom editor UI provided by the implementation of :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/extension/IProcessIntermediateEventBean.html>` allows to configure its execution."
 msgstr ":public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/extension/IProcessIntermediateEventBean.html>` の実装で提供されるカスタムエディター UI を使用して、実行を設定できます。"
 
@@ -13786,24 +13706,20 @@ msgstr "この表で設定された値は情報提供のみで、このタスク
 msgid "This is a post construct code block for the Task that is defined in this tab. The created Task is provided as variable called ``task``. See :ref:`Code <process-element-tab-task-code>`."
 msgstr "このタブで定義されるタスクのポストコンストラクトコードブロックです。作成されたタスクは ``task`` という名前の変数として提供されます。 :ref:`コード<process-element-tab-task-code>` を参照してください。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:83
-msgid "To initiate a custom bean implementation for your third party system, you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| button on the Event Tab. The wizard will create a minimal sample implementation that works already. You can then adjust it to your needs."
-msgstr "サードパーティーシステムのカスタム Bean の実装を開始する場合、イベントタブ :ref:`新規クラス<new-bean-class-wizard>` |add-button| ボタンが便利です。ウィザードで、そのまま使用できる最小限のサンプル実装を作成し、作成した実装を必要に合わせて調整できます。"
-
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:93
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:85
 #, fuzzy
 msgid "The Intermediate Event consumes a Java class that implements the :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>` interface. This implementation is responsible for continuing the process by calling the method ``fireProcessIntermediateEventEx`` of :public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`. The common way to implement an Intermediate Event Bean is to extend from :public-api:`AbstractProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html>`."
 msgstr "中間イベントは、:public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>` の ``fireProcessIntermediateEventEx`` メソッドを呼び出して、プロセスを続行します。中間イベント Bean を実装する一般的な方法は、:public-api:`AbstractProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html>` からの拡張です。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:102
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:94
 msgid "If you use an Axon Ivy Cluster, you may mark your implementation with the :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. This will enable your Intermediate Event to be processed not only on the master node, but on all available nodes."
 msgstr "Axon Ivy Cluster を使用する場合、:public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` インターフェースで実装をマークできます。これにより、マスターノードだけでなく、使用可能なすべてのノードで中間イベントを処理できるようになります。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:111
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:103
 msgid "Very likely your Intermediate Event implementation will accept configuration parameters defining the local environment. For instance, a system specific file path to look for files being produced by a legacy system."
 msgstr "中間イベントの実装では、レガシーシステムで作成されるファイルを検索するシステム固有のファイルパスなど、ローカル環境を定義する設定パラメーターを受け入れる可能性が高いです。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:115
+#: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:107
 msgid "We help you with these configurations by providing an accessor for static element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html#getConfig()>`."
 msgstr ":public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>` から静的要素を設定するためのアクセサを提供して、そのような設定を行うことができます。"
 
@@ -26297,3 +26213,69 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 
 #~ msgid "Hint:"
 #~ msgstr "ヒント:"
+
+#~ msgid "New Bean Class Wizard"
+#~ msgstr "Bean クラスの作成ウィザード"
+
+#~ msgid "With the *New Bean Class Wizard* you can create a Java class that implements the interface of one of the extendible process elements. Optionally, it can also generate a UI editor for the configuration of the event for the corresponding bean. The generated Java class contains example code on how to implement the Java bean."
+#~ msgstr "*Bean クラスの作成ウィザード* を使用して、拡張可能なプロセス要素の 1 つのインタフェースを実装する Java クラスを作成できます。また、任意で、対応する Bean のイベントを設定するための UI エディターも作成できます。作成された Java クラスには、Java Bean の実装方法に関するサンプルコードが含まれています。"
+
+#~ msgid "Process Editor > inscribe > Inscription Mask > ... > Java Class to execute > |image0|"
+#~ msgstr "プロセスエディター > ［インスクライブ］ > ［インスクリプションマスク］ > ... > 実行する Java クラス > |image0|"
+
+#~ msgid "Dropin Elements"
+#~ msgstr "ドロップイン要素"
+
+#~ msgid "Instead of using the generic extendible process element with your Java class, you can go one step further and implement your own process elements, available in the process editor palette."
+#~ msgstr "Java クラスで拡張可能なジェネリックプロセス要素を使用する代わりに、さらに一歩進んで、プロセスエディターパレットで利用可能な独自のプロセス要素を実装できます。"
+
+#~ msgid "Dropin Elements are hard to develop, build and :ref:`distribute<dropin-installation>`. Therefore, their usage is strongly discouraged. For most customers it's preferable to work with :ref:`connector-process-elements` or the :ref:`extensible-process-elements`."
+#~ msgstr "ドロップイン要素の開発、作成 :ref:`distribute<dropin-installation>` 難しいことから、使用はあまり推奨しません。ほとんどのお客様にとっては :ref:`connector-process-elements` や :ref:`extensible-process-elements` を使用する方が良いでしょう。"
+
+#~ msgid "However, to implement your own process elements you need a hosting `Eclipse bundle <extensions-bundles>` in which there is just an interface that must be implemented."
+#~ msgstr "ただし、独自のプロセス要素を実装するには、ホストしている `Eclipse バンドル<extensions-bundles>` が必要です。バンドルには、実装する必要があるインターフェースが含まれています。"
+
+#~ msgid ":public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`"
+#~ msgstr ":public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`"
+
+#~ msgid "You need to specify a name, an executor class. Optionally, you can also specify what kind of process element you are providing (default is `Activity`), and a validator class."
+#~ msgstr "名前と Executor のクラスを指定する必要があります。また、任意で、提供するプロセス要素のタイプ（初期値は `Activity`）と Validator のクラスも指定できます。"
+
+#~ msgid "Eclipse"
+#~ msgstr "Eclipse"
+
+#~ msgid "You can create your own Eclipse plugin in the Axon Ivy Designer by following these steps:"
+#~ msgstr "以下の手順に従って、Axon Ivy Designer で独自の Eclipse プラグインを作成できます。"
+
+#~ msgid "Start Axon Ivy Designer"
+#~ msgstr "Axon Ivy Designer を起動します。"
+
+#~ msgid "Create a new Plug-in Project using the New wizard. Menu: :guilabel:`File` > :guilabel:`New` > :guilabel:`Project ...` > :guilabel:`Plug-in Development` > :guilabel:`Plug-in Project`."
+#~ msgstr ":guilabel:`ファイル` > :guilabel:`新規` > :guilabel:`プロジェクト ...` > :guilabel:`プラグイン開発` > :guilabel:`プラグインプロジェクト` メニューから新規ウィザードを使用して、新しいプラグインプロジェクトを作成します。"
+
+#~ msgid "Develop your extension."
+#~ msgstr "拡張機能を開発します。"
+
+#~ msgid "Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the **Overview** tab and click on the link **Export Wizard**. As **Destination Directory** choose the ``dropins`` directory of your Axon Ivy Designer or Engine installation. Press the **Finish** button. Your plugin is created in the ``dropins/plugins`` directory."
+#~ msgstr "**META-INF/MANIFEST.MF**ファイルエディターに戻ります。［**概要** ］タブを選択し、［**ウィザードをエクスポート** ］リンクをクリックします。**エクスポート先のディレクトリ** として、Axon Ivy DesignerまたはEngineインストール先の``dropins``ディレクトリを選択します。［**終了** ］ボタンを押します。プラグインが``dropins/plugins``ディレクトリに作成されます。"
+
+#~ msgid "Eclipse Plugin Mechanism"
+#~ msgstr "Eclipse プラグインの仕組み"
+
+#~ msgid "You need a database frontend in Axon Ivy? Or editing support for any other programming or data declaration languages such as C/C++, PHP or XML? Or you have UML models to view? No problem at all."
+#~ msgstr "Axon Ivy でデータベースフロントエンドが必要ですか。それとも、C/C++、PHP、XML などのプログラミング言語やデータ宣言言語の編集サポートが必要ですか。UML モデルを表示する必要がありますか。すべて問題ありません。"
+
+#~ msgid "Axon Ivy is based on the widely used `Eclipse <http://www.eclipse.org>`__ platform which offers a sophisticated plugin mechanism to integrate third-party modules. In these days, Eclipse which originally has been developed as an IDE for Java programmers evolved to a large and vibrant ecosystem and is used for a triad of different tools and systems in almost every work sector. Therefore a huge community exists that offers plugins (open source and commercial) and even web sites (`Eclipse Marketplace <http://marketplace.eclipse.org//>`__) for browsing and searching these plugins arose in the past years."
+#~ msgstr "Axon Ivyは、広く使用されている`Eclipse <http://www.eclipse.org>`__プラットフォームを基盤にしており、サードパーティ製モジュールを統合するための高度なプラグイン機構を提供しています。かつてはJavaプログラマー向けのIDEとして開発されたEclipseですが、現在では大規模で活気あるエコシステムへと進化し、あらゆる業界で多様なツールやシステムの基盤として利用されています。そのため、プラグイン（オープンソースおよび商用）を提供する巨大なコミュニティが存在し、最近では、これらのプラグインを閲覧、検索するためのウェブサイト（`Eclipse Marketplace <http://marketplace.eclipse.org//>`__ ）も誕生しています。"
+
+#~ msgid "And the conclusion, you can use all these plugins and integrate them into your Axon Ivy installation to interact seamlessly between your favorite plugin set and the built-in Axon Ivy features."
+#~ msgstr "まとめると、これらすべてのプラグインを使用し、Axon Ivy インストレーションに統合して、お気に入りのプラグインセットと搭載されている Axon Ivy 機能をシームレスに連携させることができるということです。"
+
+#~ msgid "Please follow the installation instructions of the specific plugin to integrate it into your Axon Ivy installation"
+#~ msgstr "特定のプラグインを Axon Ivy インストレーションに統合するには、そのプラグインのインストール手順に従ってください。"
+
+#~ msgid "Fully qualified name of the Java class that implements the :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` interface. Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java source file with an example implementation of the bean class or select an :ref:`existing one <process-element-program-start-existing-beans>`."
+#~ msgstr ":public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します :ref:`既存の Bean<process-element-program-start-existing-beans>` を選択することもできます。"
+
+#~ msgid "To initiate a custom bean implementation for your third party system, you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| button on the Event Tab. The wizard will create a minimal sample implementation that works already. You can then adjust it to your needs."
+#~ msgstr "サードパーティーシステムのカスタム Bean の実装を開始する場合、イベントタブ :ref:`新規クラス<new-bean-class-wizard>` |add-button| ボタンが便利です。ウィザードで、そのまま使用できる最小限のサンプル実装を作成し、作成した実装を必要に合わせて調整できます。"
