@@ -146,27 +146,3 @@ These generic elements are:
    offer a similar mechanism which requires less technical skills 
    and offers a better integration into the Process editor tooling.
 
-
-.. _new-bean-class-wizard:
-
-New Bean Class Wizard
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-With the *New Bean Class Wizard* you can create a Java class that
-implements the interface of one of the extendible process elements.
-Optionally, it can also generate a UI editor for the configuration of
-the event for the corresponding bean. The generated Java class contains
-example code on how to implement the Java bean.
-
-.. figure:: /_images/extensions/new-bean-class-wizard.png
-   :alt: New Bean Class Wizard
-
-   New Bean Class Wizard
-
-Accessibility
-^^^^^^^^^^^^^
-
-Process Editor > inscribe > Inscription Mask > ... > Java Class to
-execute > |image0|
-
-.. |image0| image:: /_images/extensions/new-bean-class-smart-button.png

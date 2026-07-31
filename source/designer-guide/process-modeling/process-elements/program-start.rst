@@ -33,9 +33,6 @@ Java Class
    Fully qualified name of the Java class that implements the
    :public-api:`IProcessStartEventBean
    </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` interface.
-   Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java source
-   file with an example implementation of the bean class or select an
-   :ref:`existing one <process-element-program-start-existing-beans>`.
 
 Permission
    Defines the role that is required to be able to start a process. The

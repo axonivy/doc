@@ -53,8 +53,6 @@ Java Class
    Fully qualified name of the Java class that implements the
    :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
    interface. 
-   Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java
-   source file with an example implementation of the bean class.
 
 Program
    Defines the :ref:`process-element-error-start` element which can handle execution errors.
