@@ -36,8 +36,7 @@ instantiate, the identifier of the event, and the timeout behavior.
 Java Class
    Fully qualified name of the Java class that implements the
    :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
-   interface. Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java
-   source file with an example implementation of the bean class.
+   interface.
 
 Event ID
    Because multiple cases (process instances) can wait on the same
@@ -79,13 +78,6 @@ allows to configure its execution.
 
 Implementation
 ---------------
-
-To initiate a custom bean implementation for your third party system, 
-you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` 
-|add-button| button on the Event Tab.
-The wizard will create a minimal sample implementation that works already. 
-You can then adjust it to your needs.
-
 
 API reference
 ~~~~~~~~~~~~~~~~~~~~

@@ -413,37 +413,48 @@ If you want to check for new versions manually use the menu :guilabel:`Axon Ivy`
 
 
 
+.. _extensions-bundles:
+
+Axon Ivy extensions bundles (Eclipse plugin)
+----------------------------------------------
+
+In order to provide an Axon Ivy extension for the Designer or Engine you
+need to provide it as an Eclipse plugin.
+
+References
+~~~~~~~~~~~
+
+The extension development is an advanced programming task. 
+Here we supply you with reference implementations, 
+rather than explaining details of the tools we rely upon.
+
+We have several active projects that you may use as template
+for your own development.
+
+* `extension-demos <https://github.com/axonivy/extension-demos/>`_, show extensions to the logger infrastructure, database drivers, and tomcat webserver.
+
+* In the Market there are products that enrich the Designer development tooling, such as the `openai-assistant <https://github.com/axonivy-market/openai-connector/>`_ and the  `excel-dialog <https://github.com/axonivy-market/excel-importer/>`_.
 
 
+.. _dropin-installation:
 
-Eclipse Plugin Mechanism
-------------------------
+Installation
+~~~~~~~~~~~
 
-You need a database frontend in Axon Ivy? Or editing support for any
-other programming or data declaration languages such as C/C++, PHP or
-XML? Or you have UML models to view? No problem at all.
+Follow these steps to install your extensions in an Axon Ivy Designer or
+Engine:
 
-Axon Ivy is based on the widely used
-`Eclipse <http://www.eclipse.org>`__ platform which offers a
-sophisticated plugin mechanism to integrate third-party modules. In
-these days, Eclipse which originally has been developed as an IDE for
-Java programmers evolved to a large and vibrant ecosystem and is used
-for a triad of different tools and systems in almost every work sector.
-Therefore a huge community exists that offers plugins (open source and
-commercial) and even web sites (`Eclipse Marketplace <http://marketplace.eclipse.org//>`__)
-for browsing and
-searching these plugins arose in the past years.
+#. Stop the running instance (if applicable).
 
-And the conclusion, you can use all these plugins and integrate them
-into your Axon Ivy installation to interact seamlessly between your
-favorite plugin set and the built-in Axon Ivy features.
+#. Copy your plugin (bundle) that contains your extension classes to the
+   ``dropins`` directory inside the Axon Ivy Designer or Engine
+   installation directory.
 
-.. note::
+#. Start the Axon Ivy Designer or Engine.
 
-   Please follow the installation instructions of the specific plugin to
-   integrate it into your Axon Ivy installation
+.. tip::
 
-
+   If your extension is not active as expected, consult the ``dropins/README.html``.
 
 
 
