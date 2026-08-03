@@ -69,6 +69,8 @@ TimerBean
 Implementation
 ---------------
 
+.. _new-bean-class-wizard:
+
 To initiate a custom bean implementation for your third party system, 
 you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| 
 button on the Start Tab.
