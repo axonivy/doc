@@ -439,7 +439,7 @@ for your own development.
 .. _dropin-installation:
 
 Installation
-~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 Follow these steps to install your extensions in an Axon Ivy Designer or
 Engine:
