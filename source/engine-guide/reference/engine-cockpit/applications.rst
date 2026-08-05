@@ -3,22 +3,23 @@
 Applications
 ------------
 
-The **applications** page lists all workflow applications running on the engine. 
+The **Applications** page lists all applications in the currently selected Security System.
 
-You control the state of these applications with start, stop and lock actions.
-Each application has its process models and process model versions. They can be
-started and stopped separately. You can add a new application by clicking on the
-:guilabel:`Add` button. By clicking on an application, you switch to the
-:ref:`engine-cockpit-application-detail`. A click on a process model version will
-open the :ref:`engine-cockpit-pmv-detail` view.
+Use the Security System tabs to switch between Security Systems.
+Each tab shows the applications belonging to that Security System.
 
-To deploy new versions of an application, you click on the :guilabel:`Deployment`
-button. This opens the **Deployment Dialog**. See
-:ref:`engine-cockpit-application-detail` for more information about the deployment
-dialog.
+The table shows the following information for each application:
 
-..
- .. figure:: /_images/engine-cockpit/engine-cockpit-applications.png
+* **Name** - The application name.
+* **Released** - The currently released version.
+* **Deprecated** - Any deprecated versions.
+
+To add a new application, click :guilabel:`Add`.
+
+Click an application to open the :ref:`engine-cockpit-application-detail` page,
+or click a version to open the :ref:`engine-cockpit-application-version-detail` view.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-applications.png
 
 
 .. _engine-cockpit-application-detail:
@@ -26,32 +27,54 @@ dialog.
 Application Detail
 ^^^^^^^^^^^^^^^^^^
 
-The **Application detail** page shows information similar to the Dashboard
-but specifically for the chosen application. In this page, you can change the 
-:ref:`engine-cockpit-security-system`, start or stop the
-application and edit the application's configuration settings.
+The **Application Detail** page lists all **versions** of the selected application.
 
-If you want to deploy a project, click on the :guilabel:`Deployment` button and select
-your :file:`.iar` or :file:`.zip` file. Note that you can set additional deployment
-options here; see chapter :ref:`deployment-options` for more information.
+For each version, the following actions are available:
 
-.. note:: 
-    For CI/CD pipeline deployments refer to the :ref:`deployment-deploying`
-    chapter.
+* :guilabel:`Activate` activates the version.
+* :guilabel:`Deactivate` deactivates the version.
+* :guilabel:`Release` releases the version and deprecates or archives the previous released one.
+* :guilabel:`Deprecate` deprecates the version, existing cases can still be completed.
+* :guilabel:`Archive` archives the version.
+* :guilabel:`Convert` converts the projects of the version to the newest version.
+* :guilabel:`Delete` deletes the version and all its projects.
 
-..
- .. figure:: /_images/engine-cockpit/engine-cockpit-application-detail.png
+To create a new version, use the dedicated action on this page.
+
+To deploy a project, click :guilabel:`Deployment` and select your :file:`.iar` or :file:`.zip` file.
+Additional deployment options can be configured here; see :ref:`deployment-options` for details.
+
+.. note::
+    For CI/CD pipeline deployments, refer to the :ref:`deployment-deploying` chapter.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-application-detail.png
 
 
-.. _engine-cockpit-pmv-detail:
+.. _engine-cockpit-application-version-detail:
 
-Pmv Detail
-^^^^^^^^^^
+Application Version Detail
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The detail page of the **process model version** displays all information
-about a individual process model version. This includes basic information, 
-activity state and lists all dependencies from and to this process model version.
+The **Application Version Detail** page shows all information about a specific
+application version, including basic information, states, and a list of all
+projects belonging to this version.
 
-..
- .. figure:: /_images/engine-cockpit/engine-cockpit-pmv-detail.png
+To deploy a project, click :guilabel:`Deployment` and select your :file:`.iar` or :file:`.zip` file.
+Additional deployment options can be configured here; see :ref:`deployment-options` for details.
+
+.. note::
+    For CI/CD pipeline deployments, refer to the :ref:`deployment-deploying` chapter.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-application-version-detail.png
+
+
+.. _engine-cockpit-project-detail:
+
+Project Detail
+^^^^^^^^^^^^^^
+
+The **Project Detail** page shows all information about an individual project,
+including basic information, state, and the projects it depends on or is required by.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-project-detail.png
 
