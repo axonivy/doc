@@ -58,3 +58,63 @@ properties and other configuration values. E.g., the property
 the variable called ``cloudDb``. Thus, your database name is now configurable
 using variable ``cloudDb``. Operations need to set this variable correctly; they
 do not need to dive into the configuration of this external database.
+
+.. _sql-query-runner:
+
+SQL Executor
+----------------
+
+The SQL Executor lets you inspect and query your database content directly
+within the Axon Ivy Designer without switching to an external database tool.
+Use it to browse table contents or develop and debug queries before using them
+in process steps.
+
+Open the SQL Executor by clicking |sql-query-runner-icon| in the Database
+Executor toolbar.
+
+.. |sql-query-runner-icon| image:: /_images/ui-icons/sql.svg
+   :alt: SQL Executor
+   :width: 16px
+   :height: 16px
+
+.. figure:: /_images/database-editor/sql-query-tester.png
+   :alt: SQL Executor
+   :align: center
+
+   SQL Executor
+
+Query Input
+^^^^^^^^^^^^^^^^^^
+
+- :guilabel:`Database Configuration`
+  Shows the name of the currently active database connection. Determined by
+  the selection in the Database Executor and cannot be changed within the SQL
+  Query Runner.
+
+- :guilabel:`Tables`
+  This dropdown lists all tables of the database. Selecting a table
+  automatically generates and executes a ``SELECT * FROM <table>`` query. A
+  quick way to inspect table contents without writing SQL manually.
+
+- :guilabel:`SQL Input Area`
+  Write any custom SQL query here.
+
+- :guilabel:`Last Query Output`
+  Displays the result of the last executed query. Also after clossing and 
+  reopening the SQL Executor, the last query output is still available.
+
+- :guilabel:`Execute`
+  Runs the query from the SQL input area and displays the result below.
+
+Query Result
+^^^^^^^^^^^^^^^^^^
+
+- ``SELECT`` queries return the result as a table with column headers and row
+  data.
+- ``INSERT``, ``UPDATE``, ``DELETE``, and ``CREATE`` statements return a
+  confirmation message.
+
+.. warning::
+  Do not use a production database with the SQL Executor. Use a dedicated
+  test database only. All SQL statements can be executed, including statements
+  that modify or delete data and schema definitions.
