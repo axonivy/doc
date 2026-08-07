@@ -72,6 +72,15 @@ By default, the Microsoft SQL Server driver connects using TLS/SSL.
 If your SQL Server is not configured for TLS/SSL, you must add the following property to your connection configuration:
 ``encrypt=false``.
 
+TLS/SSL Connection using a self-signed certificate
+**************************************************
+
+If you are using a self-signed certificate for TLS/SSL, you must add the certificate to the truststore and add the following property to your connection configuration: 
+``trustStore=/<ivy install dir>/configuration/truststore.p12`` and ``trustStorePassword=***``
+
+As an alternative you can disable the certificate validation (not recommended) by adding the following property to your connection configuration:
+``trustServerCertificate=true``.
+
 Azure SQL Database
 ******************
 
