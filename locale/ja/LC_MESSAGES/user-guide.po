@@ -631,6 +631,7 @@ msgstr "Axon Ivy Java API Maven依存関係"
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:63
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:130
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:147
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:175
 msgid "|tag-project-changed| |tag-project-auto-convert|"
 msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
@@ -941,6 +942,67 @@ msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:170
 msgid "`For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:173
+msgid "Project Structure Improvements"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:177
+msgid "Some folders have been moved or renamed to improve the project structure."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:180
+#: ../../source/concepts/testing/process-testing.rst:254
+#: ../../source/designer-guide/how-to/workflow/index.rst:2
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-workflow.rst:2
+#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:186
+msgid "Workflow"
+msgstr "Workflow"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:182
+msgid "Renamed :code:`processes` folder to :code:`process`."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:183
+msgid "Renamed :code:`dataclasses` folder to :code:`dataclass`."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:184
+msgid "Renamed :code:`src_hd` folder to :code:`dialog`."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:186
+msgid "This change improves the consistency of folder names and better reflects their content."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:190
+#, fuzzy
+msgid "Generated Source Files"
+msgstr "［一般］ > ［アーカイブファイル］"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:192
+msgid "The following folders containing generated source files have been moved to the :code:`target` folder:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:195
+msgid ":code:`libs/mvn-deps`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:196
+msgid ":code:`src_generated/dataclass`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:197
+msgid ":code:`src_generated/repo`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:198
+msgid ":code:`src_generated/wsprocess`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:200
+msgid "These folders contain files that are generated during the build process by the `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ and should not be modified directly. Therefore, they have been moved to the :code:`target` folder to indicate that they are generated files clearly and to avoid confusion with other source files. The corresponding entries in the :code:`.gitignore` file have been removed."
 msgstr ""
 
 #: ../../source/axonivy/migration/migration-tools.rst:4
@@ -1310,7 +1372,7 @@ msgstr "OpenSearch"
 
 #: ../../source/axonivy/system-requirements/engine.rst:115
 #, fuzzy
-msgid "Version 3.7. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
+msgid "Version 3.8. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
 msgstr "バージョン 2.19。 :ref:`自分の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:120
@@ -3318,13 +3380,6 @@ msgstr "History"
 #: ../../source/concepts/testing/process-testing.rst:243
 msgid "Use the :public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` to assert the executed process elements. You can either access the exact element objects or elements names."
 msgstr ":public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` を使用して、実行されたプロセス要素をアサートします。正確な要素オブジェクトにアクセスすることも、要素名にアクセスすることもできます。"
-
-#: ../../source/concepts/testing/process-testing.rst:254
-#: ../../source/designer-guide/how-to/workflow/index.rst:2
-#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-workflow.rst:2
-#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:186
-msgid "Workflow"
-msgstr "Workflow"
 
 #: ../../source/concepts/testing/process-testing.rst:256
 msgid "Use the :public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>` to access and assert the active ``case`` or ``task``. You can filter them by activator."
@@ -12388,7 +12443,7 @@ msgid "|element| The *Program Interface Activity* element is located in the *Act
 msgstr "|element| *プログラムインターフェースアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:122
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:118
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:120
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:39
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:51
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:123
@@ -12492,18 +12547,18 @@ msgid "Implementation"
 msgstr "実装"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:81
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:72
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:74
 msgid "To initiate a custom bean implementation for your third party system, you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| button on the Start Tab. The wizard will create a minimal sample implementation that works already. You can then adjust it to your needs."
 msgstr "サードパーティーシステムのカスタム Bean の実装を開始する場合、開始タブ :ref:`新規クラス<new-bean-class-wizard>` |add-button| ボタンが便利です。ウィザードで、そのまま使用できる最小限のサンプル実装を作成し、作成した実装を必要に合わせて調整できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:18
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:123
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:119
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:121
 msgid "add-button"
 msgstr "add-button"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:89
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:80
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:82
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:83
 msgid "API reference"
 msgstr "API について"
@@ -12513,7 +12568,7 @@ msgid "The Program Interface consumes a Java class that implements the :public-a
 msgstr "プログラムインターフェースは、:public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` の ``perform`` メソッドで要素の実行動作を定義します。プログラムインターフェース Bean を実装する一般的な方法は、:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>` からの拡張です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:102
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:97
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:99
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:101
 msgid "Custom configuration"
 msgstr "カスタム設定"
@@ -12547,7 +12602,7 @@ msgid "2. The  :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process
 msgstr "2. :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>` は、先に作成した UI ウィジェットにバインドするため、設定を読み書きするメソッドを提供します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:115
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:111
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:113
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:115
 msgid "Example implementation"
 msgstr "実装の例"
@@ -12595,20 +12650,20 @@ msgstr "TimerBean"
 msgid "A bean that starts processes periodically with a defined delay or at certain times defined by a daily time or standard CRON expression. The configuration can either be configured directly or indirectly via a variable. If the variable changes the bean is reconfigured automatically."
 msgstr "定義された遅延で、または時刻や標準的な CRON 式で定義された時間に定期的にプロセスを開始する Bean。設定は直接、または変数により間接的に行うことができます。変数が変わると、Beam は自動的に再設定されます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:82
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:84
 #, fuzzy
 msgid "The Program Start consumes a Java class that implements the :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` interface. This implementation is responsible for initiating a new process by calling the method ``fireProcessStartEventRequest`` of :public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`. The common way to implement a Start Event Bean is to extend from :public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`."
 msgstr "プログラム開始は、:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>` の ``fireProcessStartEventRequest`` メソッドを呼び出して、新しいプロセスを開始します。イベント開始 Bean を実装する一般的な方法は、:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>` からの拡張です。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:91
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:93
 msgid "If you use an Axon Ivy Cluster, you may mark your implementation with the :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. This will enable your Program Start not only on the master node, but on all available nodes."
 msgstr "Axon Ivy Cluster を使用する場合、:public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` インターフェースで実装をマークできます。これにより、マスターノードだけでなく、使用可能なすべてのノードでプログラム開始が有効になります。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:99
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:101
 msgid "Very likely your Program Start implementation will accept configuration parameters to define the local environment. For instance a system specific file path to look for files being produced by a legacy system."
 msgstr "プログラムインターフェースアクティビティの実装では、レガシーシステムで作成されるファイルを検索するシステム固有のファイルパスなど、ローカル環境を定義する設定パラメーターを受け入れる可能性が高いです。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:103
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:105
 msgid "We help you with these configs by providing an accessor to statically configured element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>`."
 msgstr ":public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>` から静的に設定された要素を設定するためのアクセサを提供して、そのような設定を行うことができます。"
 
@@ -17507,7 +17562,8 @@ msgid "Wizards"
 msgstr "ウィザード"
 
 #: ../../source/designer-guide/reference/reference.rst:55
-msgid ":ref:`new-bean-class-wizard`"
+#, fuzzy
+msgid ":ref:`New Bean Class wizard <new-bean-class-wizard>`"
 msgstr ":ref:`new-bean-class-wizard`"
 
 #: ../../source/designer-guide/reference/reference.rst:56
@@ -20457,11 +20513,23 @@ msgid "By default, the Microsoft SQL Server driver connects using TLS/SSL. If yo
 msgstr "既定では、Microsoft SQL Server ドライバーは TLS/SSL を使用して接続します。SQL Server が TLS/SSL 用に設定されていない場合は、接続設定に ``encrypt=false`` プロパティを追加する必要があります。"
 
 #: ../../source/engine-guide/configuration/system-database/mssql.rst:76
+msgid "TLS/SSL Connection using a self-signed certificate"
+msgstr ""
+
+#: ../../source/engine-guide/configuration/system-database/mssql.rst:78
+msgid "If you are using a self-signed certificate for TLS/SSL, you must add the certificate to the truststore and add the following property to your connection configuration: ``trustStore=/<ivy install dir>/configuration/truststore.p12`` and ``trustStorePassword=***``"
+msgstr ""
+
+#: ../../source/engine-guide/configuration/system-database/mssql.rst:81
+msgid "As an alternative you can disable the certificate validation (not recommended) by adding the following property to your connection configuration: ``trustServerCertificate=true``."
+msgstr ""
+
+#: ../../source/engine-guide/configuration/system-database/mssql.rst:85
 #, fuzzy
 msgid "Azure SQL Database"
 msgstr "Oracle Database"
 
-#: ../../source/engine-guide/configuration/system-database/mssql.rst:78
+#: ../../source/engine-guide/configuration/system-database/mssql.rst:87
 msgid "If you use Azure SQL Database, you must add the following property to your connection configuration: ``database=<database-name>``."
 msgstr "Azure SQL データベースを使用する場合は、次のプロパティを接続構成に追加する必要があります ``database=<database-name>`` です。"
 
@@ -23651,40 +23719,115 @@ msgid "Applications"
 msgstr "アプリケーション"
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:6
-msgid "The **applications** page lists all workflow applications running on the engine."
+#, fuzzy
+msgid "The **Applications** page lists all applications in the currently selected Security System."
 msgstr "**アプリケーション** ページには、エンジン上で実行されているすべてのワークフローアプリケーションが表示されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:8
-msgid "You control the state of these applications with start, stop and lock actions. Each application has its process models and process model versions. They can be started and stopped separately. You can add a new application by clicking on the :guilabel:`Add` button. By clicking on an application, you switch to the :ref:`engine-cockpit-application-detail`. A click on a process model version will open the :ref:`engine-cockpit-pmv-detail` view."
-msgstr "これらのアプリケーションの状態は、開始、停止、ロックの各アクションで制御します。各アプリケーションには、プロセスモデルとプロセスモデルバージョンがあります。これらは別々に開始したり停止したりすることができます。:guilabel:`追加` ボタンをクリックして新しいアプリケーションを追加できます。アプリケーションをクリックすると :ref:`engine-cockpit-application-detail` に切り替わります。プロセスモデルバージョンをクリックすると :ref:`engine-cockpit-pmv-detail` ビューが開きます。"
+msgid "Use the Security System tabs to switch between Security Systems. Each tab shows the applications belonging to that Security System."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:11
+msgid "The table shows the following information for each application:"
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:13
+#, fuzzy
+msgid "**Name** - The application name."
+msgstr "アプリケーションのシミュレーション"
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:14
+msgid "**Released** - The currently released version."
+msgstr ""
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:15
-msgid "To deploy new versions of an application, you click on the :guilabel:`Deployment` button. This opens the **Deployment Dialog**. See :ref:`engine-cockpit-application-detail` for more information about the deployment dialog."
-msgstr "アプリケーションの新しいバージョンを展開するには、:guilabel:`展開` ボタンをクリックします。これにより、**展開ダイアログ** が開きます。展開ダイアログの詳細については、 :ref:`engine-cockpit-application-detail` 」を参照してください。"
+msgid "**Deprecated** - Any deprecated versions."
+msgstr ""
 
-#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:27
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:17
+msgid "To add a new application, click :guilabel:`Add`."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:19
+msgid "Click an application to open the :ref:`engine-cockpit-application-detail` page, or click a version to open the :ref:`engine-cockpit-application-version-detail` view."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:28
 msgid "Application Detail"
 msgstr "アプリケーションの詳細"
 
-#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:29
-msgid "The **Application detail** page shows information similar to the Dashboard but specifically for the chosen application. In this page, you can change the :ref:`engine-cockpit-security-system`, start or stop the application and edit the application's configuration settings."
-msgstr "**アプリケーションの詳細ページ** には、ダッシュボードと同様の情報が表示されますが、選択したアプリケーションに特化した情報が表示されます。このページでは :ref:`engine-cockpit-security-system` の変更、アプリケーションの起動／停止、アプリケーションの設定の編集を行うことができます。"
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:30
+#, fuzzy
+msgid "The **Application Detail** page lists all **versions** of the selected application."
+msgstr "**アプリケーション** ページには、エンジン上で実行されているすべてのワークフローアプリケーションが表示されます。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:32
+#, fuzzy
+msgid "For each version, the following actions are available:"
+msgstr "Axon Ivy ユーザーには以下の出力フォーマットが有用です。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:34
-msgid "If you want to deploy a project, click on the :guilabel:`Deployment` button and select your :file:`.iar` or :file:`.zip` file. Note that you can set additional deployment options here; see chapter :ref:`deployment-options` for more information."
-msgstr "プロジェクトを展開する場合は、:guilabel:`Deployment` ボタンをクリックし、:file:`.iar` または :file:`.zip` ファイルを選択します。ここで追加の展開オプションを設定できます。詳細については、「:ref:`deployment-options`」の章を参照してください。"
+msgid ":guilabel:`Activate` activates the version."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:35
+#, fuzzy
+msgid ":guilabel:`Deactivate` deactivates the version."
+msgstr ":guilabel:`説明` REST クライアントの説明。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:36
+msgid ":guilabel:`Release` releases the version and deprecates or archives the previous released one."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:37
+msgid ":guilabel:`Deprecate` deprecates the version, existing cases can still be completed."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:38
+msgid ":guilabel:`Archive` archives the version."
+msgstr ""
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:39
-msgid "For CI/CD pipeline deployments refer to the :ref:`deployment-deploying` chapter."
+msgid ":guilabel:`Convert` converts the projects of the version to the newest version."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:40
+msgid ":guilabel:`Delete` deletes the version and all its projects."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:42
+msgid "To create a new version, use the dedicated action on this page."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:44
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:62
+#, fuzzy
+msgid "To deploy a project, click :guilabel:`Deployment` and select your :file:`.iar` or :file:`.zip` file. Additional deployment options can be configured here; see :ref:`deployment-options` for details."
+msgstr "プロジェクトを展開する場合は、:guilabel:`Deployment` ボタンをクリックし、:file:`.iar` または :file:`.zip` ファイルを選択します。ここで追加の展開オプションを設定できます。詳細については、「:ref:`deployment-options`」の章を参照してください。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:48
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:66
+#, fuzzy
+msgid "For CI/CD pipeline deployments, refer to the :ref:`deployment-deploying` chapter."
 msgstr "CI/CD パイプラインの展開については、「 :ref:`deployment-deploying` 」の章を参照してください。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:49
-msgid "Pmv Detail"
-msgstr "PMV の詳細"
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:56
+#, fuzzy
+msgid "Application Version Detail"
+msgstr "アプリケーションの詳細"
 
-#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:51
-msgid "The detail page of the **process model version** displays all information about a individual process model version. This includes basic information, activity state and lists all dependencies from and to this process model version."
-msgstr "**プロセスモデルバージョン** の詳細ページには、個々のプロセスモデルバージョンに関するすべての情報が表示されます。これには、基本情報、アクティビティの状態、このプロセスモデルバージョンとの依存関係が含まれます。"
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:58
+msgid "The **Application Version Detail** page shows all information about a specific application version, including basic information, states, and a list of all projects belonging to this version."
+msgstr ""
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:74
+#, fuzzy
+msgid "Project Detail"
+msgstr "ロールの詳細"
+
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:76
+msgid "The **Project Detail** page shows all information about an individual project, including basic information, state, and the projects it depends on or is required by."
+msgstr ""
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:10
 msgid "The view **Variables** displays all variables that are defined for each application. The variables can be configured in the project or set in the :ref:`app-yaml` file."
@@ -26279,3 +26422,18 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 
 #~ msgid "To initiate a custom bean implementation for your third party system, you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| button on the Event Tab. The wizard will create a minimal sample implementation that works already. You can then adjust it to your needs."
 #~ msgstr "サードパーティーシステムのカスタム Bean の実装を開始する場合、イベントタブ :ref:`新規クラス<new-bean-class-wizard>` |add-button| ボタンが便利です。ウィザードで、そのまま使用できる最小限のサンプル実装を作成し、作成した実装を必要に合わせて調整できます。"
+
+#~ msgid "You control the state of these applications with start, stop and lock actions. Each application has its process models and process model versions. They can be started and stopped separately. You can add a new application by clicking on the :guilabel:`Add` button. By clicking on an application, you switch to the :ref:`engine-cockpit-application-detail`. A click on a process model version will open the :ref:`engine-cockpit-pmv-detail` view."
+#~ msgstr "これらのアプリケーションの状態は、開始、停止、ロックの各アクションで制御します。各アプリケーションには、プロセスモデルとプロセスモデルバージョンがあります。これらは別々に開始したり停止したりすることができます。:guilabel:`追加` ボタンをクリックして新しいアプリケーションを追加できます。アプリケーションをクリックすると :ref:`engine-cockpit-application-detail` に切り替わります。プロセスモデルバージョンをクリックすると :ref:`engine-cockpit-pmv-detail` ビューが開きます。"
+
+#~ msgid "To deploy new versions of an application, you click on the :guilabel:`Deployment` button. This opens the **Deployment Dialog**. See :ref:`engine-cockpit-application-detail` for more information about the deployment dialog."
+#~ msgstr "アプリケーションの新しいバージョンを展開するには、:guilabel:`展開` ボタンをクリックします。これにより、**展開ダイアログ** が開きます。展開ダイアログの詳細については、 :ref:`engine-cockpit-application-detail` 」を参照してください。"
+
+#~ msgid "The **Application detail** page shows information similar to the Dashboard but specifically for the chosen application. In this page, you can change the :ref:`engine-cockpit-security-system`, start or stop the application and edit the application's configuration settings."
+#~ msgstr "**アプリケーションの詳細ページ** には、ダッシュボードと同様の情報が表示されますが、選択したアプリケーションに特化した情報が表示されます。このページでは :ref:`engine-cockpit-security-system` の変更、アプリケーションの起動／停止、アプリケーションの設定の編集を行うことができます。"
+
+#~ msgid "Pmv Detail"
+#~ msgstr "PMV の詳細"
+
+#~ msgid "The detail page of the **process model version** displays all information about a individual process model version. This includes basic information, activity state and lists all dependencies from and to this process model version."
+#~ msgstr "**プロセスモデルバージョン** の詳細ページには、個々のプロセスモデルバージョンに関するすべての情報が表示されます。これには、基本情報、アクティビティの状態、このプロセスモデルバージョンとの依存関係が含まれます。"
