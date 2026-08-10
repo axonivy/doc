@@ -85,6 +85,21 @@ They must set :code:`managed = true`, and they also need to have a scope (see ab
     This could lead to small behavior changes in the bean lifecycle, but the idea behind these scopes is still the same.
 
 
+PrimeFaces 15
+*************
+
+|tag-project-auto-convert|
+
+We have updated the PrimeFaces library to version 15.0. This version includes new components, bug fixes, and performance improvements.
+However, it also introduces some breaking changes that may affect your existing code.
+Some of them are converted automatically by our project converter (:code:`Running refactoring 'Primefaces 15`)
+, but you may need to manually adapt your code in some cases.
+Please read the official PrimeFaces migration guides for more information:
+
+- `PrimeFaces 14 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/14_0_0>`_
+- `PrimeFaces 15 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_
+
+
 Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors
 *********************************************************************
 
