@@ -78,11 +78,6 @@ allows to configure its execution.
 Implementation
 ---------------
 
-To initiate a custom bean implementation for your third party system, 
-you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| 
-button on the Start Tab.
-The wizard will create a minimal sample implementation that works already. 
-You can then adjust it to your needs.
 
 
 API reference

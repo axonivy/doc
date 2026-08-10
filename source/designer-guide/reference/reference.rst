@@ -52,7 +52,6 @@ Views
 Wizards
 -------
 
--  :ref:`New Bean Class wizard <new-bean-class-wizard>`
 -  :ref:`casemap-new-wizard`
 -  :ref:`data-class-new-wizard`
 -  :ref:`persistence-entity-class-new-wizard`
