@@ -9388,7 +9388,7 @@ msgid "Shows system information about the used Axon Ivy Designer application (e.
 msgstr "使用する Axon Ivy Designer アプリケーションのシステム情報（バージョン、ビルド番号など）を表示します。"
 
 #: ../../source/designer-guide/introduction/perspectives.rst:4
-#: ../../source/designer-guide/reference/reference.rst:74
+#: ../../source/designer-guide/reference/reference.rst:73
 msgid "Perspectives"
 msgstr "パースペクティブ"
 
@@ -9921,7 +9921,7 @@ msgid "Redo"
 msgstr "やり直す"
 
 #: ../../source/designer-guide/ivyscript/index.rst:4
-#: ../../source/designer-guide/reference/reference.rst:85
+#: ../../source/designer-guide/reference/reference.rst:84
 msgid "IvyScript"
 msgstr "IvyScript"
 
@@ -12442,8 +12442,8 @@ msgstr "PI（プログラムインターフェース）アクティビティ"
 msgid "|element| The *Program Interface Activity* element is located in the *Activity* drawer of the process editor palette."
 msgstr "|element| *プログラムインターフェースアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:122
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:120
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:117
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:111
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:39
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:51
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:123
@@ -12546,38 +12546,27 @@ msgstr "カスタムエディターの例"
 msgid "Implementation"
 msgstr "実装"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:81
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:74
-msgid "To initiate a custom bean implementation for your third party system, you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| button on the Start Tab. The wizard will create a minimal sample implementation that works already. You can then adjust it to your needs."
-msgstr "サードパーティーシステムのカスタム Bean の実装を開始する場合、開始タブ :ref:`新規クラス<new-bean-class-wizard>` |add-button| ボタンが便利です。ウィザードで、そのまま使用できる最小限のサンプル実装を作成し、作成した実装を必要に合わせて調整できます。"
-
-#: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:18
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:123
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:121
-msgid "add-button"
-msgstr "add-button"
-
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:89
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:82
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:84
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:73
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:83
 msgid "API reference"
 msgstr "API について"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:91
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:86
 msgid "The Program Interface consumes a Java class that implements the :public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>` interface. This implementation is responsible for defining the element execution behavior in the method ``perform`` of :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`. The common way to implement a Program Interface Bean is to extend from :public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`."
 msgstr "プログラムインターフェースは、:public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` の ``perform`` メソッドで要素の実行動作を定義します。プログラムインターフェース Bean を実装する一般的な方法は、:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>` からの拡張です。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:102
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:99
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:97
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:90
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:101
 msgid "Custom configuration"
 msgstr "カスタム設定"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:104
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:99
 msgid "Very likely, your Program Interface Activity implementation will accept configuration parameters defining the local environment. For instance, a system specific file to send to a legacy system."
 msgstr "おそらく、プログラムインターフェースアクティビティの実装では、レガシーシステムに送信するシステム固有のファイルなど、ローカル環境を定義する設定パラメーターを受け入れます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:108
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:103
 msgid "We help you with these configurations by providing an accessor for static element configurations via :public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>`."
 msgstr ":public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>` から静的要素を設定するためのアクセサを提供して、そのような設定を行うことができます。"
 
@@ -12601,8 +12590,8 @@ msgstr "1. :public-api:`initUiFields </ch/ivyteam/ivy/process/extension/ui/UiEdi
 msgid "2. The  :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>` provides methods to read and write configurations, in order to bind them to previously created ui widgets."
 msgstr "2. :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>` は、先に作成した UI ウィジェットにバインドするため、設定を読み書きするメソッドを提供します。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:115
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:113
+#: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:110
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:104
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:115
 msgid "Example implementation"
 msgstr "実装の例"
@@ -12650,20 +12639,20 @@ msgstr "TimerBean"
 msgid "A bean that starts processes periodically with a defined delay or at certain times defined by a daily time or standard CRON expression. The configuration can either be configured directly or indirectly via a variable. If the variable changes the bean is reconfigured automatically."
 msgstr "定義された遅延で、または時刻や標準的な CRON 式で定義された時間に定期的にプロセスを開始する Bean。設定は直接、または変数により間接的に行うことができます。変数が変わると、Beam は自動的に再設定されます。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:84
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:75
 #, fuzzy
 msgid "The Program Start consumes a Java class that implements the :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` interface. This implementation is responsible for initiating a new process by calling the method ``fireProcessStartEventRequest`` of :public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`. The common way to implement a Start Event Bean is to extend from :public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`."
 msgstr "プログラム開始は、:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` インターフェースを実装する Java クラスを消費します。この実装は、:public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>` の ``fireProcessStartEventRequest`` メソッドを呼び出して、新しいプロセスを開始します。イベント開始 Bean を実装する一般的な方法は、:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>` からの拡張です。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:93
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:84
 msgid "If you use an Axon Ivy Cluster, you may mark your implementation with the :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. This will enable your Program Start not only on the master node, but on all available nodes."
 msgstr "Axon Ivy Cluster を使用する場合、:public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` インターフェースで実装をマークできます。これにより、マスターノードだけでなく、使用可能なすべてのノードでプログラム開始が有効になります。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:101
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:92
 msgid "Very likely your Program Start implementation will accept configuration parameters to define the local environment. For instance a system specific file path to look for files being produced by a legacy system."
 msgstr "プログラムインターフェースアクティビティの実装では、レガシーシステムで作成されるファイルを検索するシステム固有のファイルパスなど、ローカル環境を定義する設定パラメーターを受け入れる可能性が高いです。"
 
-#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:105
+#: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:96
 msgid "We help you with these configs by providing an accessor to statically configured element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>`."
 msgstr ":public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>` から静的に設定された要素を設定するためのアクセサを提供して、そのような設定を行うことができます。"
 
@@ -13536,6 +13525,10 @@ msgstr "ダイアログ"
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:14
 msgid "Defines the User Dialog component to be started by its ID. You can either create a new-one by using the |add-button| button. Or pick an existing one from the dropdown list."
 msgstr "ID で開始されるユーザーダイアログコンポーネントを定義します。|add-button| ボタンを使用して、新しいコンポーネントを作成できます。または、ドロップダウンリストから既存のコンポーネントを選択します。"
+
+#: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:18
+msgid "add-button"
+msgstr "add-button"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:22
 msgid "Defines the *start method* that should be called on the selected User Dialog."
@@ -17562,83 +17555,78 @@ msgid "Wizards"
 msgstr "ウィザード"
 
 #: ../../source/designer-guide/reference/reference.rst:55
-#, fuzzy
-msgid ":ref:`New Bean Class wizard <new-bean-class-wizard>`"
-msgstr ":ref:`new-bean-class-wizard`"
-
-#: ../../source/designer-guide/reference/reference.rst:56
 msgid ":ref:`casemap-new-wizard`"
 msgstr ":ref:`casemap-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:57
+#: ../../source/designer-guide/reference/reference.rst:56
 msgid ":ref:`data-class-new-wizard`"
 msgstr ":ref:`data-class-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:58
+#: ../../source/designer-guide/reference/reference.rst:57
 msgid ":ref:`persistence-entity-class-new-wizard`"
 msgstr ":ref:`persistence-entity-class-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:59
+#: ../../source/designer-guide/reference/reference.rst:58
 msgid ":ref:`override-new-wizard`"
 msgstr ":ref:`override-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:60
+#: ../../source/designer-guide/reference/reference.rst:59
 msgid ":ref:`process-new-wizard`"
 msgstr ":ref:`process-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:61
+#: ../../source/designer-guide/reference/reference.rst:60
 msgid ":ref:`process-new-group-wizard`"
 msgstr ":ref:`process-new-group-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:62
+#: ../../source/designer-guide/reference/reference.rst:61
 msgid ":ref:`project-new-wizard`"
 msgstr ":ref:`project-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:63
+#: ../../source/designer-guide/reference/reference.rst:62
 msgid ":ref:`user-dialog-new-wizard`"
 msgstr ":ref:`user-dialog-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:64
+#: ../../source/designer-guide/reference/reference.rst:63
 msgid ":ref:`New HTML Dialog Wizard <html-dialog-multiple-views>`"
 msgstr ":ref:`HTML ダイアログの作成ウィザード<html-dialog-multiple-views>`"
 
-#: ../../source/designer-guide/reference/reference.rst:65
+#: ../../source/designer-guide/reference/reference.rst:64
 msgid ":ref:`refactoring-wizards-rename`"
 msgstr ":ref:`refactoring-wizards-rename`"
 
-#: ../../source/designer-guide/reference/reference.rst:66
+#: ../../source/designer-guide/reference/reference.rst:65
 msgid ":ref:`refactoring-wizards-move`"
 msgstr ":ref:`refactoring-wizards-move`"
 
-#: ../../source/designer-guide/reference/reference.rst:67
+#: ../../source/designer-guide/reference/reference.rst:66
 msgid ":ref:`refactoring-wizards-copy`"
 msgstr ":ref:`refactoring-wizards-copy`"
 
-#: ../../source/designer-guide/reference/reference.rst:68
+#: ../../source/designer-guide/reference/reference.rst:67
 msgid ":ref:`refactoring-wizards-delete`"
 msgstr ":ref:`refactoring-wizards-delete`"
 
-#: ../../source/designer-guide/reference/reference.rst:69
+#: ../../source/designer-guide/reference/reference.rst:68
 msgid ":ref:`Export Axon Ivy Archive wizard <designer-export-project>`"
 msgstr ":ref:`Axon Ivy Archive のエクスポートウィザード<designer-export-project>`"
 
-#: ../../source/designer-guide/reference/reference.rst:70
+#: ../../source/designer-guide/reference/reference.rst:69
 msgid ":ref:`Import Axon Ivy Archive wizard <designer-import-project>`"
 msgstr ":ref:`Axon Ivy Archive のインポートウィザード<designer-import-project>`"
 
-#: ../../source/designer-guide/reference/reference.rst:76
+#: ../../source/designer-guide/reference/reference.rst:75
 msgid "See :ref:`perspectives`."
 msgstr "「 :ref:`perspectives` 」を参照してください。"
 
-#: ../../source/designer-guide/reference/reference.rst:80
+#: ../../source/designer-guide/reference/reference.rst:79
 msgid "Process Elements"
 msgstr "プロセス要素"
 
-#: ../../source/designer-guide/reference/reference.rst:82
+#: ../../source/designer-guide/reference/reference.rst:81
 msgid "See :ref:`process-elements`."
 msgstr "「 :ref:`process-elements` 」を参照してください。"
 
-#: ../../source/designer-guide/reference/reference.rst:87
+#: ../../source/designer-guide/reference/reference.rst:86
 msgid "See :ref:`ivyscript`."
 msgstr "「 :ref:`ivyscript` 」を参照してください。"
 
@@ -26437,3 +26425,9 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 
 #~ msgid "The detail page of the **process model version** displays all information about a individual process model version. This includes basic information, activity state and lists all dependencies from and to this process model version."
 #~ msgstr "**プロセスモデルバージョン** の詳細ページには、個々のプロセスモデルバージョンに関するすべての情報が表示されます。これには、基本情報、アクティビティの状態、このプロセスモデルバージョンとの依存関係が含まれます。"
+
+#~ msgid "To initiate a custom bean implementation for your third party system, you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| button on the Start Tab. The wizard will create a minimal sample implementation that works already. You can then adjust it to your needs."
+#~ msgstr "サードパーティーシステムのカスタム Bean の実装を開始する場合、開始タブ :ref:`新規クラス<new-bean-class-wizard>` |add-button| ボタンが便利です。ウィザードで、そのまま使用できる最小限のサンプル実装を作成し、作成した実装を必要に合わせて調整できます。"
+
+#~ msgid ":ref:`New Bean Class wizard <new-bean-class-wizard>`"
+#~ msgstr ":ref:`new-bean-class-wizard`"
