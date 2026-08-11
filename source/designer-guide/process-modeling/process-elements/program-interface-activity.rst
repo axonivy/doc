@@ -78,38 +78,54 @@ allows to configure its execution.
 Implementation
 ---------------
 
-
+.. include:: _programMaven.rst
 
 API reference
 ~~~~~~~~~~~~~~~~~~~~
 
-The Program Interface consumes a Java class that implements the
-:public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>`
-interface. 
-This implementation is responsible for defining the element execution behavior in 
-the method ``perform`` of 
-:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`.
-The common way to implement a Program Interface Bean is to extend from 
-:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
+The Program Interface Activity consumes a Java class that implements the
+:code:`ch.ivyteam.ivy.process.program.activity.ProgramExecutor` interface.
 
-
-Custom configuration
-~~~~~~~~~~~~~~~~~~~~
-
-Very likely, your Program Interface Activity implementation will accept configuration parameters
-defining the local environment. For instance, a system specific file 
-to send to a legacy system. 
-
-We help you with these configurations by providing an accessor for static
-element configurations via :public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>`.
-
+By implementing the :code:`newExecution()` method, you can define 
+the execution behavior of the Program Interface Activity.
 
 .. include:: _programEditor.rst
- 
+
+
+Access configuration
+~~~~~~~~~~~~~~~~~~~~~
+
+If your program implements an editor with widgets,    
+you can access the configured values of a process element in your program 
+implementation from the :code:`ch.ivyteam.ivy.process.program.exec.ProgramContext`
+through the :code:`config()` method.
+
+The context also provides :code:`script()` as entry point to
+evaluate dynamic expressions configured on Script or Text widgets.
+
+If you change the configuration format at some point in time,
+you can migrate existing element configurations by implementing
+the :code:`ch.ivyteam.ivy.process.program.migrate.ProgramConfigMigrator` interface.
+
+
+Icon extension
+~~~~~~~~~~~~~~~~~~~~~
+
+To make your Program Interface Activity more recognizable, 
+you can supply a custom icon by implementing the 
+:code:`ch.ivyteam.ivy.process.program.element.ProgramIconDecorator` interface.
+
+The referenced icon will be shown by default on Program Activity elements.
+Furthermore, Program Activities with an icon will be displayed in the
+:ref:`process-element-extension-item` of the process editor.
+
+Implementing the :code:`ProgramIconDecorator` is highly recommended for
+Program Interface Activities that are being distributed as connectors to the :ref:`market`.
+
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. literalinclude:: includes/ErpLoader.java
+.. literalinclude:: includes/process-samples/src/com/axonivy/wf/custom/ErpLoader.java
       :language: java
       :linenos:
 

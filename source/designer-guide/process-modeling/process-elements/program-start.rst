@@ -69,17 +69,27 @@ TimerBean
 Implementation
 ---------------
 
+.. include:: _programMaven.rst
+
 API reference
 ~~~~~~~~~~~~~~~~~~~~
 
 The Program Start consumes a Java class that implements the
-:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
+:code:`ch.ivyteam.ivy.process.eventstart.IProcessStartEventBean`
 interface. 
-This implementation is responsible for initiating a new process by calling 
-the method ``fireProcessStartEventRequest`` of 
-:public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`.
-The common way to implement a Start Event Bean is to extend from 
-:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`.
+
+The common way to implement a Program Start is:
+
+1. Implement the :code:`initialize()` method:
+   
+   - fetch the :code:`IProcessStartEventBeanRuntime` and keep it in a member variable for later use
+   - define the polling interval to check for new runs
+   - (optional) read configuration parameters from custom widgets
+  
+2. Implement the :code:`poll()` method:
+   
+   - check for new runs and call the method :code:`fireProcessStartEventRequest()` of
+     :code:`IProcessStartEventBeanRuntime` to start a new process instance
 
 If you use an Axon Ivy Cluster, you may mark your implementation with the
 :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. 
@@ -94,7 +104,8 @@ to define the local environment. For instance a system specific file path to loo
 being produced by a legacy system. 
 
 We help you with these configs by providing an accessor to statically configured
-element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>`.
+element configuration via :code:`ch.ivyteam.ivy.process.extension.ProgramConfig`
+which is provided in the :code:`initialize()` method.
 
 
 .. include:: _programEditor.rst
@@ -103,7 +114,7 @@ element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/even
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. literalinclude:: includes/ErpInvoice.java
+.. literalinclude:: includes/process-samples/src/com/axonivy/wf/custom/ErpInvoice.java
       :language: java
       :linenos:
 

@@ -79,17 +79,27 @@ allows to configure its execution.
 Implementation
 ---------------
 
+.. include:: _programMaven.rst
+
 API reference
 ~~~~~~~~~~~~~~~~~~~~
 
-The Intermediate Event consumes a Java class that implements the
-:public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
+The Program Intermediate Event consumes a Java class that implements the
+:code:`ch.ivyteam.ivy.process.intermediateevent.IProcessIntermediateEventBean`
 interface. 
-This implementation is responsible for continuing the process by calling 
-the method ``fireProcessIntermediateEventEx`` of 
-:public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`.
-The common way to implement an Intermediate Event Bean is to extend from 
-:public-api:`AbstractProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html>`.
+
+The common way to implement a Program Intermediate Event is:
+
+1. Implement the :code:`initialize()` method:
+   
+   - fetch the :code:`IProcessIntermediateEventBeanRuntime` and keep it in a member variable for later use
+   - define the polling interval to check for new runs
+   - (optional) read configuration parameters from custom widgets
+  
+2. Implement the :code:`poll()` method:
+   
+   - check for new runs and call the method :code:`fireProcessIntermediateEventEx()` of
+     :code:`IProcessIntermediateEventBeanRuntime` to continue the process
 
 If you use an Axon Ivy Cluster, you may mark your implementation with the
 :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. 
@@ -104,8 +114,9 @@ Very likely your Intermediate Event implementation will accept configuration par
 defining the local environment. For instance, a system specific file path to look for files
 being produced by a legacy system. 
 
-We help you with these configurations by providing an accessor for static 
-element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html#getConfig()>`.
+We help you with these configs by providing an accessor to statically configured
+element configuration via :code:`ch.ivyteam.ivy.process.extension.ProgramConfig`
+which is provided in the :code:`initialize()` method.
 
 
 .. include:: _programEditor.rst
@@ -114,7 +125,7 @@ element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/inte
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. literalinclude:: includes/ErpPrintJob.java
+.. literalinclude:: includes/process-samples/src/com/axonivy/wf/custom/ErpPrintJob.java
       :language: java
       :linenos:
 
