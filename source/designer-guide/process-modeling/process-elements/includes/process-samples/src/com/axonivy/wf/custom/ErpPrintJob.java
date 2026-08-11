@@ -4,11 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.time.Duration;
 import java.util.List;
-import java.util.Optional;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -16,61 +12,77 @@ import org.apache.commons.lang3.StringUtils;
 
 import ch.ivyteam.ivy.persistence.PersistencyException;
 import ch.ivyteam.ivy.process.extension.ProgramConfig;
-import ch.ivyteam.ivy.process.extension.ui.ExtensionUiBuilder;
-import ch.ivyteam.ivy.process.extension.ui.IUiFieldEditor;
-import ch.ivyteam.ivy.process.extension.ui.UiEditorExtension;
-import ch.ivyteam.ivy.process.intermediateevent.AbstractProcessIntermediateEventBean;
+import ch.ivyteam.ivy.process.intermediateevent.IProcessIntermediateEventBean;
 import ch.ivyteam.ivy.process.intermediateevent.IProcessIntermediateEventBeanRuntime;
-import ch.ivyteam.util.PropertiesUtil;
+import ch.ivyteam.ivy.process.program.ui.ProgramEditorUi;
+import ch.ivyteam.ivy.process.program.ui.ProgramUiBuilder;
 
-public class ErpPrintJob extends AbstractProcessIntermediateEventBean {
+public class ErpPrintJob implements IProcessIntermediateEventBean, ProgramEditorUi {
 
-  public ErpPrintJob() {
-    super("ErpPrintJob", "Waits for ERP reports", File.class);
+  private IProcessIntermediateEventBeanRuntime runtime;
+  private String path;
+
+  @Override
+  public String getName() {
+    return "ErpPrintJob";
   }
 
   @Override
-  public void initialize(IProcessIntermediateEventBeanRuntime runtime, ProgramConfig config) {
-    super.initialize(runtime, config);
-    int seconds = Optional.ofNullable(config.get(Config.INTERVAL))
-      .map(Integer::parseInt).orElse(60);
-    runtime.poll().every(Duration.ofSeconds(seconds));
+  public String getDescription() {
+    return "Waits for ERP reports";
+  }
+
+  @Override
+  public Class<?> getResultObjectClass() {
+    return File.class;
+  }
+
+  @Override
+  public void initialize(IProcessIntermediateEventBeanRuntime eventRuntime, ProgramConfig config) {
+    try {
+      this.runtime = eventRuntime;
+      this.path = config.get(Config.PATH);
+      String interval = config.get(Config.INTERVAL);
+      if (interval != null) {
+        eventRuntime.poll().asDefinedByIvyScript(interval);
+      }
+    } catch (Exception ex) {
+      eventRuntime.getRuntimeLogLogger().error("Failed to initialize ErpPrintJob polling", ex);
+    }
   }
 
   @Override
   public void poll() {
-    String path = getConfig().get(Config.PATH);
-    try (Stream<Path> csv = Files.list(Path.of(path)).filter(f -> f.startsWith("erp-print"))) {
+    try (Stream<Path> csv = Files.list(Path.of(path)).filter(f -> f.getFileName().toString().startsWith("erp-print"))) {
       List<Path> reports = csv.collect(Collectors.toList());
-      for(Path report : reports) {
+      for (Path report : reports) {
         String fileName = report.getFileName().toString();
         String eventId = StringUtils.substringBefore(fileName, ".pdf");
         continueProcess(report.toFile(), eventId);
       }
     } catch (IOException ex) {
-      getEventBeanRuntime().getRuntimeLogLogger().error("Failed to check ERP for updates", ex);
+      runtime.getRuntimeLogLogger().error("Failed to check ERP for updates", ex);
     }
   }
 
   private void continueProcess(File report, String eventId) {
     try {
-      getEventBeanRuntime().fireProcessIntermediateEventEx(eventId, report, "");
+      runtime.fireProcessIntermediateEventEx(eventId, report, "");
     } catch (PersistencyException ex) {
-      getEventBeanRuntime().getRuntimeLogLogger().error("Failed to resume process with event"+ eventId, ex);
+      runtime.getRuntimeLogLogger().error("Failed to resume process with event" + eventId, ex);
     }
   }
 
-  public static class Editor extends UiEditorExtension {
+  @Override
+  public void editor(ProgramUiBuilder ui) {
+    ui.textField(Config.PATH)
+      .label("Path to read produced PDF files from:")
+      .create();
 
-    @Override
-    public void initUiFields(ExtensionUiBuilder ui) {
-      ui.label("Path to read produced PDF files from:").create();
-      ui.textField(Config.PATH).create();
-
-      ui.label("Interval in seconds to check for changes:").create();
-      ui.scriptField(Config.INTERVAL).requireType(Integer.class).create();
-    }
-
+    ui.scriptField(Config.INTERVAL)
+      .requireType(Integer.class)
+      .label("Interval in seconds to check for changes:")
+      .create();
   }
 
   private interface Config {

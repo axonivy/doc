@@ -3,72 +3,78 @@ package com.axonivy.wf.custom;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.time.Duration;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import ErpPrintJob.Config;
-import ch.ivyteam.ivy.process.eventstart.AbstractProcessStartEventBean;
+import ch.ivyteam.ivy.process.eventstart.IProcessStartEventBean;
 import ch.ivyteam.ivy.process.eventstart.IProcessStartEventBeanRuntime;
 import ch.ivyteam.ivy.process.extension.ProgramConfig;
-import ch.ivyteam.ivy.process.extension.ui.ExtensionUiBuilder;
-import ch.ivyteam.ivy.process.extension.ui.IUiFieldEditor;
-import ch.ivyteam.ivy.process.extension.ui.UiEditorExtension;
+import ch.ivyteam.ivy.process.program.ui.ProgramEditorUi;
+import ch.ivyteam.ivy.process.program.ui.ProgramUiBuilder;
 import ch.ivyteam.ivy.request.RequestException;
-import ch.ivyteam.util.PropertiesUtil;
 
-public class ErpInvoice extends AbstractProcessStartEventBean {
+public class ErpInvoice implements IProcessStartEventBean, ProgramEditorUi {
 
-  public ErpInvoice() {
-    super("ErpInvoice", "Integrates ERP updates driven by CSV files");
+  private IProcessStartEventBeanRuntime runtime;
+  private String path;
+
+  @Override
+  public String getName() {
+    return "ErpInvoice";
   }
 
   @Override
-  public void initialize(IProcessStartEventBeanRuntime runtime, ProgramConfig config) {
-    super.initialize(runtime, config);
-    int seconds = Optional.ofNullable(config.get(Config.INTERVAL))
-      .map(Integer::parseInt).orElse(60);
-    runtime.poll().every(Duration.ofSeconds(seconds));
+  public String getDescription() {
+    return "Integrates ERP updates driven by CSV files";
+  }
+
+  @Override
+  public void initialize(IProcessStartEventBeanRuntime eventRuntime, ProgramConfig config) {
+    try {
+      this.runtime = eventRuntime;
+      this.path = config.get(Config.PATH);
+      String interval = config.get(Config.INTERVAL);
+      if (interval != null) {
+        eventRuntime.poll().asDefinedByIvyScript(interval);
+      }
+    } catch (Exception ex) {
+      eventRuntime.getRuntimeLogLogger().error("Failed to initialize ErpInvoice polling", ex);
+    }
   }
 
   @Override
   public void poll() {
-    String path = getConfig().get(Config.PATH);
     try (Stream<Path> csv = Files.list(Path.of(path))) {
       List<Path> updates = csv.collect(Collectors.toList());
       startProcess("new stock items", Map.of("sheets", updates));
     } catch (IOException ex) {
-      getEventBeanRuntime().getRuntimeLogLogger().error("Failed to check ERP for updates", ex);
+      runtime.getRuntimeLogLogger().error("Failed to check ERP for updates", ex);
     }
   }
 
   private void startProcess(String firingReason, Map<String, Object> parameters) {
     try {
-      getEventBeanRuntime().processStarter()
-        .withReason(firingReason)
-        .withParameters(parameters)
-        .start();
+      runtime.processStarter()
+          .withParameters(parameters)
+          .withReason(firingReason)
+          .start();
     } catch (RequestException ex) {
-      getEventBeanRuntime().getRuntimeLogLogger().error("Failed to init ERP driven process", ex);
+      runtime.getRuntimeLogLogger().error("Failed to init ERP driven proces", ex);
     }
   }
 
-  public static class Editor extends UiEditorExtension {
+  @Override
+  public void editor(ProgramUiBuilder ui) {
+    ui.textField(Config.PATH)
+      .label("Path to read .CSV stock-item changes:")
+      .create();
 
-    @Override
-    public void initUiFields(ExtensionUiBuilder ui) {
-      ui.label("Path to read .CSV stock-item changes:").create();
-      ui.textField(Config.PATH).create();
-
-      ui.label("Interval in seconds to check for changes:").create();
-      ui.scriptField(Config.INTERVAL).requireType(Integer.class).create();
-    }
-
+    ui.scriptField(Config.INTERVAL)
+      .requireType(Integer.class)
+      .label("Interval in seconds to check for changes:")
+      .create();
   }
 
   private interface Config {
