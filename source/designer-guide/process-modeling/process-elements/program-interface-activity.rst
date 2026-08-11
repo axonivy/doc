@@ -90,6 +90,23 @@ By implementing the :code:`newExecution()` method, you can define
 the execution behavior of the Program Interface Activity.
 
 .. include:: _programEditor.rst
+
+
+Access configuration
+~~~~~~~~~~~~~~~~~~~~~
+
+If your program implements an editor with widgets,    
+you can access the configured values of a process element in your program 
+implementation from the :code:`ch.ivyteam.ivy.process.program.exec.ProgramContext`
+through the :code:`config()` method.
+
+The context also provides :code:`script()` as entry point to
+evaluate dynamic expressions configured on Script or Text widgets.
+
+If you change the configuration format at some point in time,
+you can migrate existing element configurations by implementing
+the :code:`ch.ivyteam.ivy.process.program.migrate.ProgramConfigMigrator` interface.
+
  
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
