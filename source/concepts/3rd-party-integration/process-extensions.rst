@@ -137,12 +137,3 @@ These generic elements are:
 :ref:`process-element-pi`
    Executes generic Java code (may interact with a remote system).
    Using this in new solutions is discouraged, see the warning below.
-
-
-.. warning::
-
-   Extendible Process Elements were the first solution for custom Process elements.
-   Today however, they are rarely used, since the :ref:`connector-process-elements`
-   offer a similar mechanism which requires less technical skills 
-   and offers a better integration into the Process editor tooling.
-
