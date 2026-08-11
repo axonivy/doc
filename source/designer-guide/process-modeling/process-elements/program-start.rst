@@ -69,6 +69,8 @@ TimerBean
 Implementation
 ---------------
 
+.. include:: _programMaven.rst
+
 API reference
 ~~~~~~~~~~~~~~~~~~~~
 

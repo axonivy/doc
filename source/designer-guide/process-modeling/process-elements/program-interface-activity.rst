@@ -78,7 +78,7 @@ allows to configure its execution.
 Implementation
 ---------------
 
-
+.. include:: _programMaven.rst
 
 API reference
 ~~~~~~~~~~~~~~~~~~~~
