@@ -80,7 +80,7 @@ interface.
 
 The common way to implement a Program Start is:
 
-1. Implement the :code:`intialize()` method:
+1. Implement the :code:`initialize()` method:
    
    - fetch the :code:`IProcessStartEventBeanRuntime` and keep it in a member variable for later use
    - define the polling interval to check for new runs
@@ -104,7 +104,8 @@ to define the local environment. For instance a system specific file path to loo
 being produced by a legacy system. 
 
 We help you with these configs by providing an accessor to statically configured
-element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>`.
+element configuration via :code:`ch.ivyteam.ivy.process.extension.ProgramConfig`
+which is provided in the :code:`initialize()` method.
 
 
 .. include:: _programEditor.rst

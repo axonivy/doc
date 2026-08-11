@@ -24,8 +24,8 @@ public class ErpLoader implements ProgramExecutor, ProgramEditorUi, ProgramIconD
       var statistics = context.script()
         .executeExpression(path, File.class)
         .filter(File::exists);
-      if (!statistics.isEmpty()) {
-        LOGGER.warn("Can't resolve statistics file from "+path);
+      if (statistics.isEmpty()) {
+        LOGGER.warn("Can't resolve statistics file from " + path);
         return;
       }
       ErpFileService.instance().reportStats(statistics.get());

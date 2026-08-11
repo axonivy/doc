@@ -1,8 +1,8 @@
 Maven dependency
 ~~~~~~~~~~~~~~~~~~~~
 
-In order to supply a Program implementation additional API is needed. 
-Add the following dependency to your project :file:`pom.xml` to get it:
+In order to supply a Program implementation, additional API is needed.
+Add the following dependency to your project's :file:`pom.xml` to get it:
 
 .. code-block:: xml
 

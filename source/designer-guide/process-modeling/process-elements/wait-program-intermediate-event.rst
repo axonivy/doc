@@ -114,8 +114,9 @@ Very likely your Intermediate Event implementation will accept configuration par
 defining the local environment. For instance, a system specific file path to look for files
 being produced by a legacy system. 
 
-We help you with these configurations by providing an accessor for static 
-element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html#getConfig()>`.
+We help you with these configs by providing an accessor to statically configured
+element configuration via :code:`ch.ivyteam.ivy.process.extension.ProgramConfig`
+which is provided in the :code:`initialize()` method.
 
 
 .. include:: _programEditor.rst

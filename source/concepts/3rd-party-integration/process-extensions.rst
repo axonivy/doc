@@ -136,4 +136,3 @@ These generic elements are:
 
 :ref:`process-element-pi`
    Executes generic Java code (may interact with a remote system).
-   Using this in new solutions is discouraged, see the warning below.

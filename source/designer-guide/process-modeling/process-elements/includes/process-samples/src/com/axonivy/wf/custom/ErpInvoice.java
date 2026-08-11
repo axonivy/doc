@@ -61,7 +61,7 @@ public class ErpInvoice implements IProcessStartEventBean, ProgramEditorUi {
           .withReason(firingReason)
           .start();
     } catch (RequestException ex) {
-      runtime.getRuntimeLogLogger().error("Failed to init ERP driven proces", ex);
+      runtime.getRuntimeLogLogger().error("Failed to init ERP driven process", ex);
     }
   }
 

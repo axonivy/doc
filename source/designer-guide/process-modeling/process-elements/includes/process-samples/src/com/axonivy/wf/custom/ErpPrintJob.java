@@ -69,7 +69,7 @@ public class ErpPrintJob implements IProcessIntermediateEventBean, ProgramEditor
     try {
       runtime.fireProcessIntermediateEventEx(eventId, report, "");
     } catch (PersistencyException ex) {
-      runtime.getRuntimeLogLogger().error("Failed to resume process with event" + eventId, ex);
+      runtime.getRuntimeLogLogger().error("Failed to resume process with event " + eventId, ex);
     }
   }
 

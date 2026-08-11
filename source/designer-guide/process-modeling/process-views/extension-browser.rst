@@ -6,7 +6,7 @@ Extension Item
 |extension-tool| The *Extensions* item is located in the
 :ref:`process-editor-tool-bar` of the process editor.
 
-On insert, this element will show a extension-browser, 
+On insert, this element will show an extension-browser, 
 which makes it possible to select an installed third-party connector. 
 
 
