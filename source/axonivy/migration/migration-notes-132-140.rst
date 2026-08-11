@@ -219,6 +219,42 @@ should not be modified directly. Therefore, they have been moved to the
 avoid confusion with other source files. The corresponding entries in the
 :code:`.gitignore` file have been removed.
 
+Program Elements replace IBpmnElementExtensions
+*************************************************************
+
+|tag-project-changed| |tag-project-auto-convert|
+
+We streamlined how to implement custom behavior for process elements.
+Program Elements can now provide a custom icon and can also appear in the
+:ref:`Extension <process-element-extension-item>` group of the process editor toolbar.
+Therefore, we removed the previous :code:`IBpmnElementExtension` interface and its infrastructure completely,
+which was used to contribute the icon and process-editor integration behavior.
+
+You are affected by this change if you run your solution with an extension in the :code:`dropin` directory
+that implements the :code:`IBpmnElementExtension` interface.
+
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Detail**
+
+  .. container:: detail 
+
+    If you have used `IBpmnElementExtension` elements in your project, the project-migration tool will
+    automatically convert occurrences of these elements into the new Program Element infrastructure. 
+    However, the execution behavior of these elements is not converted automatically. 
+    You need to implement the new Program Element interface and configure it on the corresponding element.
+
+    For implementation details, see the Program Elements reference:
+
+    -  :ref:`process-element-program-start`
+    -  :ref:`process-element-pi`
+    -  :ref:`process-element-wait-program-intermediate-event`
+
+
 ------------
+
 
 .. include:: _tagLegend.rst
