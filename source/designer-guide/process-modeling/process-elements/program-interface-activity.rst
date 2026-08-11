@@ -109,7 +109,7 @@ element configurations via :public-api:`getConfig() </ch/ivyteam/ivy/process/ext
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. literalinclude:: includes/ErpLoader.java
+.. literalinclude:: includes/process-samples/src/com/axonivy/wf/custom/ErpLoader.java
       :language: java
       :linenos:
 

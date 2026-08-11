@@ -114,7 +114,7 @@ element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/inte
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. literalinclude:: includes/ErpPrintJob.java
+.. literalinclude:: includes/process-samples/src/com/axonivy/wf/custom/ErpPrintJob.java
       :language: java
       :linenos:
 

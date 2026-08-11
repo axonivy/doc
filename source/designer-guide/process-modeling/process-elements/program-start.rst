@@ -103,7 +103,7 @@ element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/even
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. literalinclude:: includes/ErpInvoice.java
+.. literalinclude:: includes/process-samples/src/com/axonivy/wf/custom/ErpInvoice.java
       :language: java
       :linenos:
 
