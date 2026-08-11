@@ -83,26 +83,11 @@ Implementation
 API reference
 ~~~~~~~~~~~~~~~~~~~~
 
-The Program Interface consumes a Java class that implements the
-:public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>`
-interface. 
-This implementation is responsible for defining the element execution behavior in 
-the method ``perform`` of 
-:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`.
-The common way to implement a Program Interface Bean is to extend from 
-:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
+The Program Interface Activity consumes a Java class that implements the
+:code:`ch.ivyteam.ivy.process.program.activity.ProgramExecutor` interface.
 
-
-Custom configuration
-~~~~~~~~~~~~~~~~~~~~
-
-Very likely, your Program Interface Activity implementation will accept configuration parameters
-defining the local environment. For instance, a system specific file 
-to send to a legacy system. 
-
-We help you with these configurations by providing an accessor for static
-element configurations via :public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>`.
-
+By implementing the :code:`newExecution()` method, you can define 
+the execution behavior of the Program Interface Activity.
 
 .. include:: _programEditor.rst
  

@@ -84,14 +84,22 @@ Implementation
 API reference
 ~~~~~~~~~~~~~~~~~~~~
 
-The Intermediate Event consumes a Java class that implements the
-:public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
+The Program Intermediate Event consumes a Java class that implements the
+:code:`ch.ivyteam.ivy.process.intermediateevent.IProcessIntermediateEventBean`
 interface. 
-This implementation is responsible for continuing the process by calling 
-the method ``fireProcessIntermediateEventEx`` of 
-:public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`.
-The common way to implement an Intermediate Event Bean is to extend from 
-:public-api:`AbstractProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html>`.
+
+The common way to implement a Program Intermediate Event is:
+
+1. Implement the :code:`initialize()` method:
+   
+   - fetch the :code:`IProcessIntermediateEventBeanRuntime` and keep it in a member variable for later use
+   - define the polling interval to check for new runs
+   - (optional) read configuration parameters from custom widgets
+  
+2. Implement the :code:`poll()` method:
+   
+   - check for new runs and call the method :code:`fireProcessIntermediateEventEx()` of
+     :code:`IProcessIntermediateEventBeanRuntime` to continue the process
 
 If you use an Axon Ivy Cluster, you may mark your implementation with the
 :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. 
