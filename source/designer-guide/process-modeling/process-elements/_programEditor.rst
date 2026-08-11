@@ -1,16 +1,16 @@
-Custom editor
+Editor Tab UI
 ~~~~~~~~~~~~~~~~~~~~
 
-To define your custom configuration on the process inscription mask, you must supply
-an inner ``Editor`` class implementation. We recommend to extend your implementation
-from :public-api:`UiEditorExtension </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`.
+To define your custom inputs on the process inscription mask, 
+you simply add the :code:`ch.ivyteam.ivy.process.program.ui.ProgramEditorUi` interface 
+to your existing program implementation. 
 
-This editor class is responsible for two things: 
-Firstly, to create UI widgets, which display configuration values. 
-And secondly, to map configuration data onto these widgets:
+With this you get a fluent API to define custom UI widgets that are rendered 
+to the configuration tab.
 
-  1. The :public-api:`initUiFields </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>` method
-  supports you in creating widgets for the editor. Currently labels, scriptEditors and textEditors are supported.
+Supported widgets are:
 
-  2. The  :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>`
-  provides methods to read and write configurations, in order to bind them to previously created ui widgets.
+- Groups: to cluster multiple smaller widgets
+- Script: input for dynamic ivy-script values
+- Text: static text enriched with macro values
+- Multi-Select: to select multiple values from a list
