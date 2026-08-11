@@ -107,7 +107,21 @@ If you change the configuration format at some point in time,
 you can migrate existing element configurations by implementing
 the :code:`ch.ivyteam.ivy.process.program.migrate.ProgramConfigMigrator` interface.
 
- 
+
+Icon extension
+~~~~~~~~~~~~~~~~~~~~~
+
+To make your Program Interface Activity more recognizable, 
+you can supply a custom icon by implementing the 
+:code:`ch.ivyteam.ivy.process.program.element.ProgramIconDecorator` interface.
+
+The referenced icon will be shown by default on Program Activity elements.
+Furthermore, Program Activities with an icon will be displayed in the
+:ref:`process-element-extension-item` of the process editor.
+
+Implementing the :code:`ProgramIconDecorator` is highly recommended for
+Program Interface Activities that are being distributed as connectors to the :ref:`market`.
+
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 

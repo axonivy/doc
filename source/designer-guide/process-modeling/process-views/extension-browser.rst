@@ -13,10 +13,12 @@ which makes it possible to select an installed third-party connector.
 Extension Browser
 ~~~~~~~~~~~~~~~~~
 
-Lists insertable connectors: either OpenAPI RestService Clients or
-:ref:`process-element-sub-process-start` instances which are tagged as connector
-on the :ref:`process-element-tab-general`. Furthermore, it's an easy starting point
-to install additional connectors from the Market.
+Lists insertable connectors: 
+
+- :ref:`rest-clients-configuration` that are OpenAPI based.
+- :ref:`process-element-sub-process-start` instances which are tagged as connector on the :ref:`process-element-tab-general`.
+- :ref:`process-element-pi` which are decorated with an icon.
+
 
 |ext-browser|
 
