@@ -90,13 +90,13 @@ PrimeFaces 15
 
 |tag-project-auto-convert|
 
-We have updated the PrimeFaces library to version 15.0. This version includes new components, bug fixes, and performance improvements.
+We have updated the PrimeFaces library from version 13.0 to 15.0. This version includes new components, bug fixes, and performance improvements.
 However, it also introduces some breaking changes that may affect your existing code.
 Some of them are converted automatically by our project converter (:code:`Running refactoring 'Primefaces 15`)
 , but you may need to manually adapt your code in some cases.
 Please read the official PrimeFaces migration guides for more information:
 
-- `PrimeFaces 14 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/14_0_0>`_
+- `PrimeFaces 14 Migration Guide <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`_
 - `PrimeFaces 15 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_
 
 
