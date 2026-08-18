@@ -42,7 +42,7 @@ evolution of the platform, particularly with regard to scalability.
 
   .. container:: admonition-title header
 
-     **Hint**
+     **Details**
 
   .. container:: detail 
 
@@ -93,22 +93,14 @@ evolution of the platform, particularly with regard to scalability.
     **System Database**
 
     With the introduction of Application Versions, the database model has been
-    simplified. Projects and applications are no longer managed using the following
-    tables:
-
-    * :code:`IWA_Application`
-    * :code:`IWA_ProcessModel`
-    * :code:`IWA_ProcessModelVersion`
-    * :code:`IWA_Library`
-    * :code:`IWA_LibrarySpecification`
-    * :code:`IWA_LibraryVersionSpec`
+    simplified. Projects and applications are no longer managed using the
+    following tables: :code:`IWA_Application`, :code:`IWA_ProcessModel`,
+    :code:`IWA_ProcessModelVersion`, :code:`IWA_Library`,
+    :code:`IWA_LibrarySpecification`, :code:`IWA_LibraryVersionSpec`
 
     Instead, project and application information is now managed exclusively through
-    the following tables:
-
-    * :code:`IWA_Application`
-    * :code:`IWA_Project`
-
+    the following tables: :code:`IWA_Application`, :code:`IWA_Project`
+s
     This change reflects the new application-centric architecture and removes the
     previous database structures associated with Process Model Versions and their
     dependencies.
