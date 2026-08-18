@@ -100,7 +100,7 @@ evolution of the platform, particularly with regard to scalability.
 
     Instead, project and application information is now managed exclusively through
     the following tables: :code:`IWA_Application`, :code:`IWA_Project`
-s
+
     This change reflects the new application-centric architecture and removes the
     previous database structures associated with Process Model Versions and their
     dependencies.
