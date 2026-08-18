@@ -15,6 +15,121 @@ License
 You need to request a new license for Axon Ivy Engine 14.0.
 
 
+Application Versions
+********************
+
+The introduction of Application Versions represents a major shift in the
+fundamental architecture of the Axon Ivy Platform.
+
+Previously, individual projects on the Axon Ivy Engine were versioned at
+runtime. These versions were referred to as **Process Model Versions**. With the
+introduction of **Application Versions**, versioning has been moved to the
+application level.
+
+This change brings significant advantages, particularly in terms of the
+reliability and predictability of the Axon Ivy Engine. It reduces the amount of
+implicit and potentially unpredictable behavior caused by versioning individual
+projects and managing dependencies between them. Since these dependencies can
+change as projects are deployed and updated independently, determining which
+versions are actually used at runtime could become difficult to predict.
+
+By versioning the application as a whole, the platform provides a much more
+consistent and deterministic runtime environment. At the same time, this
+architectural change establishes an important foundation for the long-term
+evolution of the platform, particularly with regard to scalability.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    However, moving versioning from the project level to the application level
+    also introduces changes to several APIs:
+
+    **Deployment**
+
+    The target application version must always be specified using the following
+    parameters:
+
+    * Security Context
+    * Application Name
+    * Application Version
+
+    The Application Version can either reference a specific existing version or be
+    controlled using one of the two special keywords: :code:`new` or :code:`released`.
+
+    :code:`new` - A new Application Version is created and immediately transitioned to the
+    Released state. :code:`released` - The deployment targets the existing Released
+    Application Version. If no Released Application Version exists, a new version is
+    created and automatically transitioned to the Released state.
+
+    This allows deployments to either target a specific version explicitly or use
+    the lifecycle semantics provided by the new and released keywords.
+
+    To support this new deployment model, the :ref:`Deployment REST API
+    <deployment-rest-api>`, the :ref:`Deployment Directory
+    <deployment-directory>`, and the goals of the :ref:`project-build-plugin
+    <deployment-maven-plugin>` have been updated accordingly.
+
+    The :ref:`Cockpit <engine-cockpit-application>` has also been adapted to
+    reflect these changes and to support the new Application Version-based
+    deployment model.
+
+    **States**
+
+    Previously, various states were maintained at the Process Model Version level,
+    including the Release State and Activity State.
+
+    With the introduction of Application Versions, these states have been moved to
+    the Application Version level. The same states are now managed directly on
+    Application Versions rather than on individual Process Model Versions.
+
+    This ensures that the lifecycle and operational state of an application are
+    managed consistently as a whole, rather than independently for each project.
+
+    **System Database**
+
+    With the introduction of Application Versions, the database model has been
+    simplified. Projects and applications are no longer managed using the
+    following tables: :code:`IWA_Application`, :code:`IWA_ProcessModel`,
+    :code:`IWA_ProcessModelVersion`, :code:`IWA_Library`,
+    :code:`IWA_LibrarySpecification`, :code:`IWA_LibraryVersionSpec`
+
+    Instead, project and application information is now managed exclusively through
+    the following tables: :code:`IWA_Application`, :code:`IWA_Project`
+s
+    This change reflects the new application-centric architecture and removes the
+    previous database structures associated with Process Model Versions and their
+    dependencies.
+
+    **Version Number**
+
+    The Application Version Number is managed by the platform and is automatically
+    incremented by 1 each time a deployment targets new. The project version defined
+    in :file`pom.xml`` is still displayed in the Engine Cockpit, but it has no impact on the
+    runtime.
+
+    **Redeployment**
+
+    Redeployment is still supported. This means that projects can be deployed into
+    an existing Application Version, replacing projects that have already been
+    deployed. The project to be replaced is identified based on the project name
+    defined in the :file:`.ivyproject` file. Currently, no deployment validation is
+    performed.
+
+    **Application Directory Layout**
+
+    The directory structure now reflects the Application Version concept and follows
+    the hierarchy: Security System → Application → Version → Project. Each
+    Application Version has its own dedicated folder. On redeployment, a backup is
+    created for the entire Application Version folder. This ensures that all
+    projects and associated files belonging to the application version are backed up
+    consistently.
+
+
 Tomcat HTTPS Connector SSL Settings
 ***********************************
 
