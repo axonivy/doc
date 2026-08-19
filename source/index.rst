@@ -6,7 +6,6 @@ Axon Ivy
    :caption: Process Automation Platform
 
    axonivy/index
-   neo-designer/index
    designer-guide/index
    engine-guide/index
    concepts/index

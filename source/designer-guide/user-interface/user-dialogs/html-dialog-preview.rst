@@ -69,4 +69,4 @@ corresponding Html Dialog View and does not navigate into additional views
 (:ref:`html-dialog-multiple-views`) or Components
 (:ref:`form-editor-component` or :ref:`html-dialog-component`).
 
-.. |html-dialog-preview| image:: /_images/neo/editor-form-preview.png
+.. |html-dialog-preview| image:: /_images/vscode/editor-form-preview.png
