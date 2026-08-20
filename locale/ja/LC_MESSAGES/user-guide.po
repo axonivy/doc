@@ -101,8 +101,8 @@ msgstr "移行の比較："
 #: ../../source/introduction/migration/major/windows.rst:4
 #: ../../source/introduction/system-requirements/designer.rst
 #: ../../source/introduction/system-requirements/engine.rst:73
-#: ../../source/engine-guide/getting-started/index.rst:55
-#: ../../source/engine-guide/getting-started/windows/index.rst:4
+#: ../../source/introduction/getting-started/engine/index.rst:55
+#: ../../source/introduction/getting-started/engine/windows/index.rst:4
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:22
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
 msgid "Windows"
@@ -129,8 +129,8 @@ msgstr "最小限"
 #: ../../source/introduction/system-requirements/designer.rst
 #: ../../source/introduction/system-requirements/engine.rst:73
 #: ../../source/introduction/system-requirements/engine.rst:87
-#: ../../source/engine-guide/getting-started/index.rst:47
-#: ../../source/engine-guide/getting-started/linux/index.rst:4
+#: ../../source/introduction/getting-started/engine/index.rst:47
+#: ../../source/introduction/getting-started/engine/linux/index.rst:4
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
 msgid "Linux"
 msgstr "Linux"
@@ -1574,34 +1574,6 @@ msgstr "ブラウザ"
 msgid "System Requirements"
 msgstr "システム要件"
 
-#: ../../source/introduction/try-axon-ivy.rst:2
-msgid "Try Axon Ivy!"
-msgstr "Axon Ivy を試してみる"
-
-#: ../../source/introduction/try-axon-ivy.rst:4
-msgid "The Axon Ivy Designer is free of charge. You can start developing your projects right away."
-msgstr "Axon Ivy Designer は無料です。すぐにプロジェクトの開発を始められます。"
-
-#: ../../source/introduction/try-axon-ivy.rst:8
-msgid "We offer you two ways to try the Axon Ivy Engine:"
-msgstr "以下の 2 つの方法で Axon Ivy Engine を試すことができます。"
-
-#: ../../source/introduction/try-axon-ivy.rst:10
-msgid "**Demo Mode** The Axon Ivy Engine runs out of the box with a demo license and an in-memory database. As long as you don't restart the engine, you can do everything you can do with a licensed, production-ready engine."
-msgstr "**デモモード** ：デモライセンスとインメモリデータベースを使用して、追加設定なしで Axon Ivy Engine を実行できます。エンジンを再起動しない限り、ライセンス供与された本番環境用エンジンでできることはすべて行えます。"
-
-#: ../../source/introduction/try-axon-ivy.rst:15
-msgid "To try the Axon Ivy Engine this way, follow the Engine Guide Chapter :ref:`Getting Started <getting-started>` but skip the license installation."
-msgstr "デモモードで Axon Ivy Engine を試すには、エンジンガイドの :ref:`はじめに<getting-started>` の章に従います。ただし、ライセンスのインストールは省略してください。"
-
-#: ../../source/introduction/try-axon-ivy.rst:18
-msgid "**Cloud Trial** If you want to try an Axon Ivy Engine with a persisting database, you can get a trial engine in the cloud via https://www.axonivy.com/try-it-now. It comes complete with a two-week fully functional license and full web access to the engine."
-msgstr "**クラウドトライアル** ：永続データベースを使用して Axon Ivy Engine を試してみたい方は、https://www.axonivy.com/try-it-now からクラウドのトライアルエンジンを入手できます。2 週間のフル機能のライセンスと、エンジンへの完全なウェブアクセスが付属しています。"
-
-#: ../../source/introduction/try-axon-ivy.rst:23
-msgid "With this option, you don't need to install an engine - use a local Axon Ivy Designer to develop your trial project and deploy it to the Axon Ivy Engine in the cloud."
-msgstr "このオプションを使用すれば、エンジンをインストールする必要はありません。ローカルのAxon Ivy Designerを使用してトライアルプロジェクトを開発し、それをクラウド上のAxon Ivy Engineに展開できます。"
-
 #: ../../source/introduction/what-axon-ivy.rst:4
 msgid "What is Axon Ivy?"
 msgstr "Axon Ivy とは"
@@ -2038,7 +2010,7 @@ msgid "Once you have implemented the service, start the Axon Ivy Engine and clic
 msgstr "サービスを実装したら、Axon Ivy Engine を起動し、WSDL サービス定義へのリンクをクリックします。この WSDL またはリンクを、サービスを利用する必要のあるサードパーティーと共有します。"
 
 #: ../../source/concepts/3rd-party-integration/webservice.rst:40
-#: ../../source/engine-guide/getting-started/index.rst:4
+#: ../../source/introduction/getting-started/engine/index.rst:4
 msgid "Getting Started"
 msgstr "はじめに"
 
@@ -21348,615 +21320,615 @@ msgstr "実行中のタスクのコールスタック上にある埋め込みサ
 msgid "Changing the name or params of call subs if they are used in dependent projects."
 msgstr "依存関係にあるプロジェクトで使用されているサブプロセスの呼び出しの名前またはパラメーターの変更"
 
-#: ../../source/engine-guide/getting-started/docker/index.rst:4
-#: ../../source/engine-guide/getting-started/index.rst:38
+#: ../../source/introduction/getting-started/engine/docker/index.rst:4
+#: ../../source/introduction/getting-started/engine/index.rst:38
 msgid "Docker Image"
 msgstr "Docker イメージ"
 
-#: ../../source/engine-guide/getting-started/docker/index.rst:6
+#: ../../source/introduction/getting-started/engine/docker/index.rst:6
 msgid "In this chapter, you learn how to run the Axon Ivy Engine in a docker compose setup."
 msgstr "この章では、Docker Compose セットアップ環境で Axon Ivy Engine を実行する方法を学びます。"
 
-#: ../../source/engine-guide/getting-started/docker/more.rst:2
+#: ../../source/introduction/getting-started/engine/docker/more.rst:2
 msgid "More Information (Docker Image)"
 msgstr "詳しい情報（Docker イメージ）"
 
-#: ../../source/engine-guide/getting-started/docker/more.rst:4
+#: ../../source/introduction/getting-started/engine/docker/more.rst:4
 #, fuzzy
 msgid "The Axon Ivy Engine docker image is provided here: `Docker Hub <https://hub.docker.com/r/axonivy/axonivy-engine/>`_. The :file:`Dockerfile` of the Axon Ivy Engine image is open source and can be inspected on :link-url:`GitHub <docker-image>`. In case you want to build your own image, maybe with another base image, you can use this :file:`Dockerfile` as a template."
 msgstr "Axon Ivy Engine の Docker イメージは `Docker Hub <https://hub.docker.com/r/axonivy/axonivy-engine/>`_ に公開されています。Axon Ivy Engine イメージの :file:`Dockerfile` はオープンソースで、:link-url:`GitHub <docker-image>` で精査できます。別のベースイメージを使用して独自のイメージを作成したい場合は、この :file:`Dockerfile` をテンプレートとして使用できます。"
 
-#: ../../source/engine-guide/getting-started/docker/more.rst:11
+#: ../../source/introduction/getting-started/engine/docker/more.rst:11
 msgid "**Examples**"
 msgstr "**例**"
 
-#: ../../source/engine-guide/getting-started/docker/more.rst:13
+#: ../../source/introduction/getting-started/engine/docker/more.rst:13
 msgid "On GitHub in the :link-url:`docker-samples <docker-samples>` repository, you find many examples detailing how to use the Axon Ivy Engine docker image."
 msgstr "Axon Ivy Engine の Docker イメージの使用方法については、GitHub の :link-url:`docker-samples <docker-samples>` ポジトリにある例を参照してください。"
 
-#: ../../source/engine-guide/getting-started/docker/more.rst:16
+#: ../../source/introduction/getting-started/engine/docker/more.rst:16
 msgid "Have a look at our :link-url:`project-build-examples <build-examples-docker>`. It shows how to use Maven to build your own container image that contains an Axon Ivy Engine and your workflow application."
 msgstr ":link-url:`project-build-examples <build-examples-docker>` には、Maven を使用して、Axon Ivy Engine とワークフローアプリケーションを含むコンテナイメージを作成する方法が示されています。"
 
-#: ../../source/engine-guide/getting-started/docker/prepare.rst:2
+#: ../../source/introduction/getting-started/engine/docker/prepare.rst:2
 msgid "Prepare the Docker Image"
 msgstr "Docker イメージの準備"
 
-#: ../../source/engine-guide/getting-started/docker/prepare.rst:4
+#: ../../source/introduction/getting-started/engine/docker/prepare.rst:4
 msgid "Download and install **docker** and **docker-compose** from https://www.docker.com/."
 msgstr "https://www.docker.com/ から **docker** と **docker-compose** をダウンロードしてインストールします。"
 
-#: ../../source/engine-guide/getting-started/docker/prepare.rst:6
+#: ../../source/introduction/getting-started/engine/docker/prepare.rst:6
 msgid "To test your docker installation, execute the following command in a terminal:"
 msgstr "ターミナルで以下のコマンドを実行して、Docker インストールをテストします。"
 
-#: ../../source/engine-guide/getting-started/docker/prepare.rst:12
+#: ../../source/introduction/getting-started/engine/docker/prepare.rst:12
 msgid "Now you can connect to http://localhost:8080 - no joke. There, your Axon Ivy Engine is running and awaits your commands."
 msgstr "これで、http://localhost:8080 に接続できます。Axon Ivy Engine が実行中で、コマンドを待機しています。"
 
-#: ../../source/engine-guide/getting-started/docker/prepare.rst:15
+#: ../../source/introduction/getting-started/engine/docker/prepare.rst:15
 msgid "Now press :guilabel:`Ctrl+C` in the terminal or close the terminal to shutdown the Axon Ivy Engine."
 msgstr "ターミナルで :guilabel:`Ctrl + C` キーを押すか、ターミナルを閉じて Axon Ivy Engine をシャットダウンします。"
 
-#: ../../source/engine-guide/getting-started/docker/run.rst:2
+#: ../../source/introduction/getting-started/engine/docker/run.rst:2
 msgid "Run the Docker Image"
 msgstr "Docker イメージの実行"
 
-#: ../../source/engine-guide/getting-started/docker/run.rst:4
+#: ../../source/introduction/getting-started/engine/docker/run.rst:4
 msgid "Now, we will run the Axon Ivy Engine with a separate container that holds the system database - in this case, we use PostgreSQL. Create a new folder somewhere in your file system and copy-paste the following files to it:"
 msgstr "システムデータベースを保持する別個のコンテナを使用して、Axon Ivy Engine を実行します。この例では、PostgreSQL を使用しています。ファイルシステムのいずれかの場所に新しいフォルダーを作成し、以下のファイルをコピーして貼り付けます。"
 
-#: ../../source/engine-guide/getting-started/docker/run.rst:8
+#: ../../source/introduction/getting-started/engine/docker/run.rst:8
 msgid ":file:`compose.yaml`"
 msgstr ":file:`compose.yaml`"
 
-#: ../../source/engine-guide/getting-started/docker/run.rst:13
+#: ../../source/introduction/getting-started/engine/docker/run.rst:13
 msgid ":file:`ivy.yaml`"
 msgstr ":file:`ivy.yaml`"
 
-#: ../../source/engine-guide/getting-started/docker/run.rst:18
+#: ../../source/introduction/getting-started/engine/docker/run.rst:18
 msgid "Provide a valid license file in the same folder with the name :file:`licence.lic`. If you don't supply a license, then this example will still work, but the Axon Ivy Engine will run in :ref:`demo mode <demo-mode>`."
 msgstr "有効なライセンスファイルを :file:`licence.lic` という名前で同じフォルダーに格納します。ライセンスがなくても、この例は動作しますが、Axon Ivy Engine  :ref:`デモモード<demo-mode>` なります。"
 
-#: ../../source/engine-guide/getting-started/docker/run.rst:22
+#: ../../source/introduction/getting-started/engine/docker/run.rst:22
 msgid "Open a terminal and execute :code:`docker-compose up` in the folder where you saved :file:`compose.yaml`. After startup, the engine is available at http://localhost:8080."
 msgstr "ターミナルを開き、 :file:`compose.yaml` を保存したフォルダーで :code:`docker-compose up` を実行します。起動後、http://localhost:8080 でエンジンを使用できます。"
 
-#: ../../source/engine-guide/getting-started/index.rst:6
+#: ../../source/introduction/getting-started/engine/index.rst:6
 msgid "In this chapter, we help you to get up to speed with the Axon Ivy Engine with minimal effort. For productive use, the resulting configuration has to be updated later on; see :ref:`Non-Demo Setup <non-demo-setup>` below."
 msgstr "この章では、最小限の労力で Axon Ivy Engine を素早く習得するお手伝いをします。本番環境で使用できるように、設定を後で更新する必要があります。以下の :ref:`デモ以外のモードでのセットアップ<non-demo-setup>` を参照してください。"
 
-#: ../../source/engine-guide/getting-started/index.rst:10
+#: ../../source/introduction/getting-started/engine/index.rst:10
 msgid "You will learn how to install and configure an Axon Ivy Engine and, ultimately, how to bring your processes to life by deploying your Axon Ivy projects. As you will see, a minimal setup of an Axon Ivy Engine is straightforward. Next to the Axon Ivy Engine, you only need a browser of your choice (e.g., Firefox) and a database management system (e.g., PostgreSQL) for storing the data of the Axon Ivy Engine."
 msgstr "Axon Ivy Engine をインストールして設定する方法から、Axon Ivy プロジェクトを展開してプロセスを使用できるようにする方法まで学びます。以下に示すように、Axon Ivy Engine の最小セットアップは簡単です。Axon Ivy Engine の他に必要なのは、お好きなブラウザ（Firefox など）と Axon Ivy Engine のデータを格納するデータベース管理システム（PostgreSQL など）だけです。"
 
-#: ../../source/engine-guide/getting-started/index.rst:17
+#: ../../source/introduction/getting-started/engine/index.rst:17
 msgid "An Axon Ivy Engine ready to serve your applications includes these components:"
 msgstr "すぐにアプリケーションを実行できる Axon Ivy Engine には、以下のコンポーネントが含まれます。"
 
-#: ../../source/engine-guide/getting-started/index.rst:23
+#: ../../source/introduction/getting-started/engine/index.rst:23
 msgid "Choose your Platform"
 msgstr "プラットフォームの選択"
 
-#: ../../source/engine-guide/getting-started/index.rst:24
+#: ../../source/introduction/getting-started/engine/index.rst:24
 msgid "At this point, you need to choose a server platform. The Axon Ivy Engine runs on all modern runtime environments. If you already know what you want, simply click on the corresponding link below. If not, read the short descriptions below and select thereafter."
 msgstr "サーバープラットフォームを選択します。Axon Ivy Engine はすべての最新のランタイム環境で動作します。プラットフォームが決まっている場合は、以下の対応するリンクをクリックします。そうでない場合は、以下の簡単な説明を読んでから選択してください。"
 
-#: ../../source/engine-guide/getting-started/index.rst:39
+#: ../../source/introduction/getting-started/engine/index.rst:39
 msgid "We provide the Axon Ivy Engine as a Docker image. You can run the Axon Ivy Engine in a simple docker-compose setup or in orchestration platforms like Kubernetes or Openshift. This package provides optimal installation, configuration, and upgrade support."
 msgstr "Axon Ivy Engine は Docker イメージとして提供されます。シンプルな Docker Compose セットアップ環境、または Kubernetes、Openshift などのオーケストレーションプラットフォームで Axon Ivy Engine を実行できます。このパッケージでは、最適なインストール、設定、アップグレードのサポートが提供されます。"
 
-#: ../../source/engine-guide/getting-started/index.rst:44
+#: ../../source/introduction/getting-started/engine/index.rst:44
 msgid "For details, refer to :ref:`getting-started-docker`."
 msgstr "詳細については、「 :ref:`getting-started-docker` 」を参照してください。"
 
-#: ../../source/engine-guide/getting-started/index.rst:48
+#: ../../source/introduction/getting-started/engine/index.rst:48
 msgid "If you use a Linux system, choose this option. Compared to  Docker, more effort is required to install and subsequently, upgrade the Axon Ivy Engine."
 msgstr "Linux システムを使用する場合は、このオプションを選択してください。Docker と比較して、Axon Ivy Engine をインストール、アップグレードする際の労力は増えます。"
 
-#: ../../source/engine-guide/getting-started/index.rst:52
+#: ../../source/introduction/getting-started/engine/index.rst:52
 msgid "For details, refer to :ref:`getting-started-linux`."
 msgstr "詳細については、「 :ref:`getting-started-linux` 」を参照してください。"
 
-#: ../../source/engine-guide/getting-started/index.rst:56
+#: ../../source/introduction/getting-started/engine/index.rst:56
 #, fuzzy
 msgid "Windows is the operating system of choice in many places. Compared to Docker, more effort is required to install and later on upgrade the Axon Ivy Engine."
 msgstr "Windows は多くの場所で採用されているオペレーティングシステムです。Docker と比較して、Axon Ivy Engine をインストール、アップグレードする際の労力は増えます。"
 
-#: ../../source/engine-guide/getting-started/index.rst:60
+#: ../../source/introduction/getting-started/engine/index.rst:60
 msgid "For details, refer to :ref:`getting-started-windows`."
 msgstr "詳細については、「 :ref:`getting-started-windows` 」を参照してください。"
 
-#: ../../source/engine-guide/getting-started/index.rst:66
+#: ../../source/introduction/getting-started/engine/index.rst:66
 msgid "Non-Demo Setup"
 msgstr "デモ以外のモードでのセットアップ"
 
-#: ../../source/engine-guide/getting-started/index.rst:67
+#: ../../source/introduction/getting-started/engine/index.rst:67
 msgid "Out of the box, the Axon Ivy Engine runs in Demo mode without a license. In this mode, it uses an in-memory, non-persistent database."
 msgstr "Axon Ivy Engine はそのままライセンスなしでデモモードで動作します。このモードでは、永続的でないインメモリデータベースを使用します。"
 
-#: ../../source/engine-guide/getting-started/index.rst:70
+#: ../../source/introduction/getting-started/engine/index.rst:70
 msgid "To run an Axon Ivy Engine in non-Demo mode (i.e., for development, integration, test/acceptance and production environments), you have to order a :ref:`license <license>` for the Axon Ivy Engine and install the Axon Ivy Engine on a system that fulfills the :ref:`system requirements <engine-system-requirements>`."
 msgstr "デモ以外のモード（開発、統合、テスト／受け入れ、本番環境）で Axon Ivy Engine を実行するには、Axon Ivy Engine の :ref:`ライセンス<license>` を注文し :ref:`システム要件<engine-system-requirements>` 満たすシステムに Axon Ivy Engine をインストールする必要があります。"
 
-#: ../../source/engine-guide/getting-started/index.rst:75
+#: ../../source/introduction/getting-started/engine/index.rst:75
 msgid "Have a look at the :ref:`integration <integration>` capabilities of the Axon Ivy Engine! For example:"
 msgstr "Axon Ivy Engine の :ref:`統合<integration>` 機能を参照してください。"
 
-#: ../../source/engine-guide/getting-started/index.rst:78
+#: ../../source/introduction/getting-started/engine/index.rst:78
 msgid "For security reasons, we highly recommend employing a :ref:`reverse proxy <reverse-proxy>`."
 msgstr "セキュリティ上の理由から、 :ref:`リバースプロキシ<reverse-proxy>` を使用することを強くお勧めします。"
 
-#: ../../source/engine-guide/getting-started/index.rst:80
+#: ../../source/introduction/getting-started/engine/index.rst:80
 msgid "You can synchronize your users from an :ref:`external Identity Provider <identity-provider>` like Active Directory or Microsoft Entra ID to minimize and centralize the administration effort."
 msgstr "Active Directory や Microsoft Entra ID など :ref:`外部 ID プロバイダー<identity-provider>` らユーザーを同期して、管理の手間を最小限に抑え、一元化できます。"
 
-#: ../../source/engine-guide/getting-started/index.rst:84
+#: ../../source/introduction/getting-started/engine/index.rst:84
 msgid "For high availability, performance and scalability, you can :ref:`cluster <cluster>` the Axon Ivy Engine and use a separate :ref:`OpenSearch server or cluster <opensearch>`."
 msgstr "高い可用性、パフォーマンス、スケーラビリティを確保するため、Axon Ivy Engine を :ref:`クラスタ化<cluster>` し、別個の :ref:`OpenSearch サーバーまたはクラスタ<opensearch>` を使用できます。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:2
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:2
 msgid "Configure the Engine (Linux)"
 msgstr "エンジンの設定（Linux）"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:2
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:2
 msgid "Now, let's configure the Axon Ivy Engine with a license and a system database."
 msgstr "それでは、ライセンスとシステムデータベースを使用して Axon Ivy Engine を設定しましょう。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:4
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:4
 msgid "First, you have to provide a valid Axon Ivy Engine license. Please refer to :ref:`license`."
 msgstr "最初に、有効な Axon Ivy Engine のライセンスを提供します。「 :ref:`license` 」を参照してください。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:6
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:6
 msgid "If you do not have a license at this time, skip this section and continue with the next section. Your Axon Ivy Engine will run in Demo Mode."
 msgstr "この時点でライセンスが手元にない場合は、このセクションを飛ばして次のセクションに進んでください。Axon Ivy Engine はデモモードで動作します。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:10
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:10
 msgid "Besides the license, you need"
 msgstr "ライセンス以外には以下が必要です。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:12
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:12
 msgid "to have a supported SQL database management system server up and running"
 msgstr "サポートされている SQL データベース管理システムのサーバーが稼働していること。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:14
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:14
 msgid "a database user who has the rights to create new databases and execute data definition language (DDL), as well as data manipulation language (DML) statements. The configuration and creation of the system database differ depending on the database system you use. In the following chapters, we will use a PostgreSQL database server."
 msgstr "新しいデータベースを作成し、DDL（データ定義言語）と DML （データ操作言語）文を実行する権限を持つデータベースユーザー。システムデータベースの設定と作成は、使用するデータベースシステムによって異なります。以下の章では、PostgreSQL データベースサーバーを使用します。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:22
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:22
 msgid "We support that a DBA creates the database before you start the engine configuration. However, we do not support the external creation or migration of the database structure."
 msgstr "エンジンの設定を開始する前の DBA でのデータベースの作成をサポートします。ただし、データベース構造の外部作成や移行はサポートしません。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:26
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:26
 msgid "We require DDL permissions during installation and migrations. In normal operations, the database user provided to the engine needs DML permissions only."
 msgstr "設定と移行には、DDL の権限が必要です。通常の操作では、エンジンのデータベースユーザーには DML の権限のみ必要です。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:30
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:30
 msgid "There are multiple ways to configure the engine:"
 msgstr "エンジンを設定する方法は複数あります。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:32
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:32
 msgid "**Using the Engine Cockpit Setup Wizard or Migration Wizard**"
 msgstr "**エンジンコックピットのセットアップウィザードまたは移行ウィザードの使用**"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:34
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:34
 msgid "This is the most convenient way to configure the engine if this is a one-of-a-kind installation. Please refer to :ref:`Setup Wizard <setup-wizard>` or :ref:`Migration Wizard <migration-wizard>` for details."
 msgstr "これが唯一のインストレーションである場合は、エンジンを設定する最も便利な方法です。詳細については、 :ref:`セットアップウィザード<setup-wizard>` または「 :ref:`移行ウィザード<migration-wizard>` 」を参照してください。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:38
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:38
 msgid "**Manually**"
 msgstr "**手動**"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:40
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:40
 msgid "See below."
 msgstr "以下を参照してください。"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:42
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:42
 msgid "**Scripted**"
 msgstr "**スクリプト**"
 
-#: ../../source/engine-guide/getting-started/_prepare-configuration.rst:44
+#: ../../source/introduction/getting-started/engine/_prepare-configuration.rst:44
 msgid "If you have several environments and want to set them up in a standardized way, your best option is to automate the manual steps using scripts. We do not provide a script template because there are too many ways to supply licenses, database user credentials, and other data."
 msgstr "複数の環境があり、標準化された方法でセットアップしたい場合は、スクリプトを使用して手順を自動化するのが最善の選択肢です。ライセンス、データベースユーザーの資格情報などのデータを提供する方法はあまりにも多くあるため、スクリプトのテンプレートは提供しません。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:7
-#: ../../source/engine-guide/getting-started/windows/configure.rst:8
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:7
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:8
 msgid "Manual Setup"
 msgstr "手動セットアップ"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:9
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:9
 msgid "Shutdown the Axon Ivy Engine first by typing **shutdown**::"
 msgstr "最初に **shutdown** と入力して、Axon Ivy Engine をシャットダウンします。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:24
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:24
 msgid "Let's install the license. Copy the license file :file:`*.lic` into folder :file:`configuration`."
 msgstr "ライセンスをインストールしましょう。:file:`*.lic` ライセンスファイルを :file:`configuration` フォルダ－にコピーします。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:31
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:31
 msgid "To configure the system database, use the :code:`config-db` command of the **EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of the server running your DBMS system. Replace **dbuser** and **password** with the credentials of a database user with the permissions to create a new database and its structures (i.e., DDL permissions) on the database server."
 msgstr "システムデータベースを設定するには、**EngineConfigCli** ツールの :code:`config-db` コマンドを使用します。**yourdatabaseserver** を、DBMS システムを実行しているサーバーのホスト名に置き換えます。**dbuser** と ** password** を、データベースサーバーで新しいデータベースとその構造を作成する権限（DDL 権限）を持つデータベースユーザーの資格情報に置き換えます。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:43
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:43
 msgid "Now, let's create the system database with the :code:`create-db` command."
 msgstr ":code:`create-db` コマンドでシステムデータベースを作成しましょう。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:50
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:50
 msgid "The Axon Ivy Engine uses the system database to store **master data** like users, user attributes, roles, etc. as well as **runtime data** like applications, process models, process model versions, cases, tasks, and **process data**."
 msgstr "Axon Ivy Engine は、システムデータベースを使用して、ユーザー、ユーザー属性、ロールなどの**マスターデータ** や、アプリケーション、プロセスモデル、プロセスモデルバージョン、ケース、タスク、**プロセスデータ** などの**ランタイムデータ** を格納します。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:55
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:55
 msgid "Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` in directory :file:`/opt/ivy/engine/configuration/` as detailed below:"
 msgstr "次に、以下に詳しく示すように、:file:`/opt/ivy/engine/configuration/` ディレクトリ :ref:`ivy-yaml` を修正して、Axon Ivy Engine の管理者を定義します。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:63
-#: ../../source/engine-guide/getting-started/windows/configure.rst:52
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:63
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:52
 msgid "Administrators manage the Axon Ivy Engine. For example, they add or remove users, assign users to roles, enable, disable and deploy applications, etc. You need at least one administrator to manage the Axon Ivy Engine. In case of license problems, the Axon Ivy Engine sends mail notifications to the administrators."
 msgstr "管理者は Axon Ivy Engine を管理します。例えば、ユーザーの追加／削除、ユーザーのロールへの割り当て、アプリケーションの有効化／無効化／展開などを行います。Axon Ivy Engine を管理する管理者は 1 人以上必要です。ライセンスの問題が発生した場合、 Axon Ivy Engine から管理者にメール通知が送信されます。"
 
-#: ../../source/engine-guide/getting-started/_webserver.rst:2
+#: ../../source/introduction/getting-started/engine/_webserver.rst:2
 msgid "The Axon Ivy Engine internal web server provides connectors for the following protocols:"
 msgstr "Axon Ivy Engine の内部ウェブサーバーは、以下のプロトコルのコネクターを提供します。"
 
-#: ../../source/engine-guide/getting-started/_webserver.rst:5
+#: ../../source/introduction/getting-started/engine/_webserver.rst:5
 msgid "The **HTTP** Protocol is used by web browsers to communicate with a web server. This protocol is not secure since the communication is not encrypted. Axon Ivy Engine uses port 8080 for HTTP by default."
 msgstr "**HTTP** プロトコルは、ウェブブラウザがウェブサーバーと通信するのに使用されます。通信が暗号化されないため、このプロトコルは安全ではありません。デフォルトでは、Axon Ivy Engine はポート 8080 を HTTP に使用します。"
 
-#: ../../source/engine-guide/getting-started/_webserver.rst:9
+#: ../../source/introduction/getting-started/engine/_webserver.rst:9
 msgid "**HTTPS** is like HTTP, but secure. It uses TLS to encrypt all communication between the web browser and server. Axon Ivy Engine uses port 8443 for HTTPS by default."
 msgstr "**HTTPS** は HTTP に似ていますが、安全です。TLS を使用して、ウェブブラウザとサーバー間のすべての通信を暗号化します。デフォルトでは、Axon Ivy Engine はポート 8443 を HTTPS に使用します。"
 
-#: ../../source/engine-guide/getting-started/_webserver.rst:13
+#: ../../source/introduction/getting-started/engine/_webserver.rst:13
 msgid "Have a look at the :ref:`ivy.yaml <ivy-yaml>` to see how you can adjust parts of the web server and its connectors to your needs."
 msgstr "ウェブサーバーとその接続をニーズに合わせて調整する方法については、 :ref:`ivy.yaml <ivy-yaml>` を参照してください。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:70
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:70
 msgid "Now, start the Axon Ivy Engine again as a background process."
 msgstr "Axon Ivy Engine をバックグラウンドプロセスとして再度起動します。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:77
-#: ../../source/engine-guide/getting-started/windows/configure.rst:67
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:77
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:67
 msgid "If you have changed the HTTP Settings, the HTTP port of the Axon Ivy Engine may have changed!"
 msgstr "HTTP 設定を変更した場合、Axon Ivy Engine の HTTP ポートも変更されている可能性があります。"
 
-#: ../../source/engine-guide/getting-started/linux/configure.rst:79
+#: ../../source/introduction/getting-started/engine/linux/configure.rst:79
 msgid "Open a web browser and navigate to http://yourservername:yourportnumber/. As you see, the header with the demo mode message is gone. You now have a production-ready Axon Ivy Engine."
 msgstr "ウェブブラウザを開き、http://yourservername:yourportnumber/ に移動します。見てのとおり、ヘッダーのデモモードのメッセージが消えています。これで、本番環境で Axon Ivy Engine を実行できます。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:2
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:2
 msgid "Deploy an Axon Ivy Project"
 msgstr "Axon Ivy プロジェクトの展開"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:4
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:4
 msgid "In this chapter, we use just one of the deployment methods available. For details, refer to :ref:`Chapter Deployment <deployment>`."
 msgstr "この章では、使用可能な展開方法の 1 つのみ使用します。詳細については、「 :ref:`展開<deployment>` 」の章を参照してください。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:7
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:7
 msgid "Let's deploy an Axon Ivy project to the Axon Ivy Engine."
 msgstr "Axon Ivy プロジェクトを Axon Ivy Engine に展開しましょう。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:10
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:10
 msgid "First, navigate to the :file:`deploy` directory and download the demo application to that directory."
 msgstr "最初に、:file:`deploy` ディレクトリに移動し、デモアプリケーションをそのディレクトリにダウンロードします。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:20
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:20
 msgid "Here we deploy a new application by dropping a ZIP into the deploy folder. However, it is also possible to deploy packed projects (i.e., ``.iar`` archives) or unpacked projects."
 msgstr "ZIP をデプロイメントフォルダーにドロップして、新しいアプリケーションを展開します。パックされたプロジェクト（``.iar`` アーカイブ）やアンパックしたプロジェクトを展開することも可能です。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:23
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:23
 msgid "You can monitor the deployment with:"
 msgstr "以下により、展開を監視できます。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:29
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:29
 msgid "As soon as the deployment has finished successfully, the zip file is postfixed with :file:`.deployed`, e.g., :file:`demos.zip.deployed`. In case of an error, the postfix :file:`.notDeployed` is added, e.g., :file:`demos.zip.notDeployed`."
 msgstr "展開が正常に終了すると、ZIP ファイルに :file:`.deployed` というポストフィックスが付きます（例：:file:`demos.zip.deployed`）。エラーが発生した場合は、:file:`.notDeployed` というポストフィックスが追加されます（例：:file:`demos.zip.notDeployed`）。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:35
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:35
 msgid "An Axon Ivy Engine can run multiple applications at the same time."
 msgstr "Axon Ivy Engine は同時に複数のアプリケーションを実行できます。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:37
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:37
 msgid "Security Systems manage their users, tasks and cases. One or more applications can use a security system. Therefore, cases and tasks of all applications in a security system are visible in all applications within that security system."
 msgstr "セキュリティシステムは、アプリケーションのユーザー、タスク、ケースを管理します。1 つまたは複数のアプリケーションが 1 つのセキュリティシステムを使用できます。そのため、セキュリティシステム内のすべてのアプリケーションのケースとタスクが、そのセキュリティシステム内のすべてのアプリケーションに表示されます。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:42
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:42
 msgid "Therefore, you can use separate security systems to build multitenancy or stages (DEV, Q&A, PROD) without installing one Axon Ivy Engine per tenant and/or stage."
 msgstr "そのため、テナントやステージごとに Axon Ivy Engine をインストールしなくても、別個のセキュリティシステムを使用して、マルチテナンシーやステージ（DEV、Q&A、PROD）を構築できます。"
 
-#: ../../source/engine-guide/getting-started/_deploy-project.rst:46
+#: ../../source/introduction/getting-started/engine/_deploy-project.rst:46
 msgid "Refresh the main page of the Axon Ivy Engine. You see a new application. Congratulations - you have installed and configured your first Axon Ivy Engine and also deployed your first Axon Ivy processes!"
 msgstr "Axon Ivy Engine のメインページを更新します。新しいアプリケーションが表示されます。これで、最初の Axon Ivy Engine がインストール、設定され、最初の Axon Ivy プロセスも展開されました。"
 
-#: ../../source/engine-guide/getting-started/linux/index.rst:6
+#: ../../source/introduction/getting-started/engine/linux/index.rst:6
 msgid "In this section, you will learn how to install and configure an Axon Ivy Engine on a Linux server using the command line only. We don't supply an installation GUI on Linux. To test your configuration, you need a client machine with a web browser."
 msgstr "このセクションでは、コマンドラインのみを使用して、Axon Ivy Engine を Linux サーバーにインストールして設定する方法を学びます。Linux ではインストール GUI は提供されません。設定をテストするには、ウェブブラウザがインストールされたクライアントマシンが必要です。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:2
+#: ../../source/introduction/getting-started/engine/linux/install.rst:2
 msgid "Install the Engine (Linux)"
 msgstr "エンジンのインストール（Linux）"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:4
+#: ../../source/introduction/getting-started/engine/linux/install.rst:4
 msgid "We suggest you install the Axon Ivy Engine into a new folder called :file:`/opt/ivy/engine`. Create the directory and change the owner to your current user."
 msgstr "Axon Ivy Engine を :file:`/opt/ivy/engine` という名前の新しいフォルダーにインストールします。ディレクトリを作成し、所有者を現在のユーザーに変更します。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:14
+#: ../../source/introduction/getting-started/engine/linux/install.rst:14
 msgid "Replace **myuser** with the name of your current user."
 msgstr "**myuser** を現在のユーザーの名前に変更します。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:17
+#: ../../source/introduction/getting-started/engine/linux/install.rst:17
 #, fuzzy
 msgid "Instead of using your current user, we suggest using a special Linux user called **ivy**. First, create a new user and a group called ivy. Then, change the owner of the folder :file:`ivy` to the user **ivy**. After that, login as user **ivy** and work with this new user."
 msgstr "現在のユーザーを使用する代わりに、**ivy** という名前の特別な Linux ユーザーを使用することもできます。最初に、ivy という名前の新しいユーザーとグループを作成します。次に、:file:`ivy` フォルダーの所有者を **ivy** という名前のユーザーに変更します。その後、**ivy** という名前のユーザーとしてログインし、この新しいユーザーで作業します。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:35
+#: ../../source/introduction/getting-started/engine/linux/install.rst:35
 msgid "Download the latest engine:"
 msgstr "最新のエンジンをダウンロードします。"
 
-#: ../../source/engine-guide/getting-started/_packages.rst:3
+#: ../../source/introduction/getting-started/engine/_packages.rst:3
 #, fuzzy
 msgid "We provide the Axon Ivy Engine in different packages:"
 msgstr "Axon Ivy Engine はさまざまなパッケージで提供されています。"
 
-#: ../../source/engine-guide/getting-started/_packages.rst:5
+#: ../../source/introduction/getting-started/engine/_packages.rst:5
 msgid "**Docker** Docker Image for all platforms that can run Linux containers."
 msgstr "**Docker** Linux コンテナを実行できるすべてのプラットフォームに対応する Docker イメージ。"
 
-#: ../../source/engine-guide/getting-started/_packages.rst:7
+#: ../../source/introduction/getting-started/engine/_packages.rst:7
 msgid "**Linux** For all platforms (including Windows). It contains launchers for both Windows and Linux. No Java Runtime (JRE) is bundled, thus, you need to install one yourself. Axon Ivy Engine will use the JRE pointed to by the operating system environment variable ``IVY_JAVA_HOME``. If not set, Axon Ivy Engine falls back to the JRE pointed to by ``JAVA_HOME``."
 msgstr "**Linux** すべてのプラットフォーム（Windows を含む）に対応し、Windows と Linux の両方のランチャーが含まれます。Java Runtime Environment（JRE）はバンドルされていないため、自分でインストールする必要があります。Axon Ivy Engine は、オペレーティングシステムの環境変数 ``IVY_JAVA_HOME`` で指定された JRE を使用します。設定されていない場合、Axon Ivy Engine は ``JAVA_HOME`` で指定された JRE にフォールバックします。"
 
-#: ../../source/engine-guide/getting-started/_packages.rst:13
+#: ../../source/introduction/getting-started/engine/_packages.rst:13
 msgid "**Windows** The preferable package for Windows. It comes with a bundled Java Runtime; otherwise, it is identical to the Linux package. So, if you want to supply your own JRE, use the Linux package."
 msgstr "**Windows** Windows の推奨パッケージで、Java Runtime がバンドルされている以外は、Linux パッケージと同じです。独自の JRE を提供したい場合は、Linux パッケージを使用してください。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:46
+#: ../../source/introduction/getting-started/engine/linux/install.rst:46
 msgid "To install Axon Ivy Engine, unzip the downloaded file :file:`AxonIvyEngine*.zip` into a new :file:`AxonIvyEngine*` folder"
 msgstr "ダウンロードした :file:`AxonIvyEngine*.zip` ファイルを新しい :file:`AxonIvyEngine*` フォルダーに解凍し、Axon Ivy Engine をインストールします。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:56
+#: ../../source/introduction/getting-started/engine/linux/install.rst:56
 msgid "The most important folders of the Axon Ivy Engine are:"
 msgstr "Axon Ivy Engine の最も重要なフォルダーは以下のとおりです。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:58
+#: ../../source/introduction/getting-started/engine/linux/install.rst:58
 msgid ":file:`bin` folder which contains all the executables."
 msgstr "すべての実行ファイルを含む :file:`bin` フォルダー。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:59
+#: ../../source/introduction/getting-started/engine/linux/install.rst:59
 msgid ":file:`configuration` folder which contains the configuration files."
 msgstr "設定ファイルを含む :file:`configuration` フォルダー。"
 
-#: ../../source/engine-guide/getting-started/linux/install.rst:60
+#: ../../source/introduction/getting-started/engine/linux/install.rst:60
 msgid ":file:`deploy` folder which is used to deploy Axon Ivy projects."
 msgstr "Axon Ivy プロジェクトを展開するのに使用される :file:`deploy` フォルダー。"
 
-#: ../../source/engine-guide/getting-started/linux/prepare.rst:2
+#: ../../source/introduction/getting-started/engine/linux/prepare.rst:2
 msgid "Prepare your Server (Linux)"
 msgstr "サーバーの準備（Linux）"
 
-#: ../../source/engine-guide/getting-started/linux/prepare.rst:4
+#: ../../source/introduction/getting-started/engine/linux/prepare.rst:4
 #, fuzzy
 msgid "Add the software and tools needed for the installation and operation of the Axon Ivy Engine (sudo, wget, unzip, Java 25 runtime). Most distributions have these tools pre-installed, but some Docker images may not."
 msgstr "Axon Ivy Engine のインストールと操作に必要なソフトウェアとツール（sudo、wget、unzip、Java 21）を追加します。ほとんどのディストリビューションではこれらのツールがプリインストールされますが、Docker イメージはプリインストールされない場合があります。"
 
-#: ../../source/engine-guide/getting-started/linux/prepare.rst:8
+#: ../../source/introduction/getting-started/engine/linux/prepare.rst:8
 msgid "Make sure that your server fulfills the hardware and software requirements of the Axon Ivy Engine."
 msgstr "サーバーが Axon Ivy Engine のハードウェアおよびソフトウェア要件を満たしていることを確認してください。"
 
-#: ../../source/engine-guide/getting-started/linux/start.rst:2
+#: ../../source/introduction/getting-started/engine/linux/start.rst:2
 msgid "Start the Engine (Linux)"
 msgstr "エンジンの起動（Linux）"
 
-#: ../../source/engine-guide/getting-started/linux/start.rst:4
+#: ../../source/introduction/getting-started/engine/linux/start.rst:4
 msgid "To start the Axon Ivy Engine, navigate to the :file:`bin` folder and execute the :file:`AxonIvyEngine` binary"
 msgstr "Axon Ivy Engine を起動するため、:file:`bin` フォルダーに移動し、:file:`AxonIvyEngine` バイナリを実行します。"
 
-#: ../../source/engine-guide/getting-started/linux/start.rst:12
+#: ../../source/introduction/getting-started/engine/linux/start.rst:12
 #, fuzzy
 msgid "This will start the Axon Ivy Engine as a user process. On the last lines of the output, a URL is displayed"
 msgstr "Axon Ivy Engine がユーザープロセスとして起動します。出力の最後の行に URL が表示されます。"
 
-#: ../../source/engine-guide/getting-started/linux/start.rst:22
+#: ../../source/introduction/getting-started/engine/linux/start.rst:22
 msgid "Copy this URL. On your client machine open a web browser and navigate to that URL. This will display the Axon Ivy Engine main page."
 msgstr "この URL をコピーします。クライアントマシンでウェブブラウザを開き、その URL に移動します。Axon Ivy Engine のメインページが表示されます。"
 
-#: ../../source/engine-guide/getting-started/linux/start.rst:25
+#: ../../source/introduction/getting-started/engine/linux/start.rst:25
 msgid "Normally, you want to run Axon Ivy Engine as a daemon process and not as a user process. You can register and manage the Axon Ivy Engine daemon using ``systemd``."
 msgstr "通常は、Axon Ivy Engine をデーモンプロセスではなく、ユーザープロセスとして実行しますが、``systemd`` を使用して、Axon Ivy Engine のデーモンを登録、管理できます。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:2
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:2
 msgid "Use the Engine"
 msgstr "エンジンの使用"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:4
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:4
 msgid "The main page of the Axon Ivy Engine looks as follows:"
 msgstr "Axon Ivy Engine のメインページの外観は以下のとおりです。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:8
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:8
 msgid "The Axon Ivy Engine is running in :ref:`demo mode <demo-mode>`. This is because you have not installed a valid license yet."
 msgstr "Axon Ivy Engine  :ref:`デモモード<demo-mode>` 動作しています。これは、有効なライセンスをまだインストールしていないためです。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:12
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:12
 msgid "While running in demo mode, the Axon Ivy Engine is fully functional. However, everything is lost when you shut down the engine."
 msgstr "デモモードでの動作中、Axon Ivy Engine のすべての機能を実行できますが、エンジンをシャットダウンすると、すべて失われます。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:15
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:15
 msgid "For a quick spin, use the engine in demo mode to test the pre-installed Portal application by clicking on the :guilabel:`Home` link."
 msgstr "試しに、デモモードのエンジンを使用し、:guilabel:`ホーム` リンクをクリックして、プリインストールされたポータルアプリケーションをテストします。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:18
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:18
 #, fuzzy
 msgid "To log in, use one of the predefined demo users: **demo**, **guest**, or **admin**. The passwords of the demo users are equal to the user names (e.g. **demo** for the **demo** user). Login as **demo** and navigate to **Processes** by clicking on the third icon at the menu bar left. Then try to start the **Leave Request** process (Image of a Rocket)."
 msgstr "あらかじめ定義されたデモユーザー（**demo** 、**guest** 、**admin** ）のいずれかを使用してログインします。デモユーザーのパスワードはユーザー名と同じです（例えば、**demo** ユーザーのパスワードは **demo** になります）。**demo** としてログインし、左のメニューバーの 3 番目のアイコンをクリックして、**プロセス** に移動します。**休暇申請** プロセスを開始します（ロケットの画像）。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:25
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:25
 #, fuzzy
 msgid "Fill in the leave request form. Choose the **Portal Guest User** as **Approver**."
 msgstr "休暇申請フォームに入力します。**承認者** として**ポータルゲストユーザー** を選択します。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:29
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:29
 msgid "Press **Submit leave request** button. Your leave request is being submitted and you will be redirected back to the **Portal Dashboard**."
 msgstr "［**休暇申請を送信** ］ボタンをクリックします。休暇申請が送信され、**ポータルダッシュボード** にリダイレクトされます。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:32
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:32
 msgid "Then, log out as **demo** and log in as **guest**. On the task list, you now see the **open task** from the workflow process that you just started. Try to work on the task by clicking on it:"
 msgstr "**demo** としてログアウトし、**guest** としてログインします。タスクリストに、開始したばかりのワークフロープロセスからの **未完了のタスク** が表示されます。タスクをクリックして処理します。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:38
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:38
 #, fuzzy
 msgid "As **guest** user you can now **Approve** or **Reject** the leave request from the **demo** user. By doing so, you finish the process and there is no task left in your **Your Tasks** widget on the Dashboard."
 msgstr "**guest** ユーザーは、**demo** ユーザーからの休暇申請を **承認** または **却下** できます。これにより、プロセスを終了すると、ダッシュボードで **タスク** ウィジェットのタスクがなくなります。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:41
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:41
 msgid "Congratulations, you have successfully started your first process and finished all of its tasks. If you want to learn how to design and implement such processes have a look at the :ref:`Designer <designer-guide>` guide."
 msgstr "これで、最初のプロセスを開始し、すべてのタスクを終了しました。プロセスの設計、実装方法について知りたい場合は :ref:`デザイナー<designer-guide>` イドを参照してください。"
 
-#: ../../source/engine-guide/getting-started/_use-the-engine.rst:45
+#: ../../source/introduction/getting-started/engine/_use-the-engine.rst:45
 msgid "In Axon Ivy, a task is a piece of work (a part of a process) assigned to a user or a role. A user can work on a task if this task is assigned to him or if he has the role that the task is assigned to. When a user works on a task, the task disappears from the task list of other users who would be able to work on the task, too. Only one user can work on a task at a time. In a process, it is possible to define parallel tasks. Therefore, two or more users may work in parallel on different tasks of the same process instance. In Axon Ivy, a process instance is called a **case**."
 msgstr "Axon Ivy では、タスクはユーザーまたはロールに割り当てられる作業（プロセス）です。タスクがユーザーに割り当てられているか、タスクが割り当てられたロールをユーザーが持っている場合、ユーザーはタスクを処理できます。ユーザーがタスクに着手すると、そのタスクを処理できる他のユーザーのタスクリストからタスクが消えます。プロセスでは、並列タスクを定義できます。そのため、2 人以上のユーザーが同じプロセスインスタンスの異なるタスクを並行して処理する可能性があります。Axon Ivy では、プロセスインスタンスは**ケース** と呼ばれます。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:2
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:2
 msgid "Configure the Engine (Windows)"
 msgstr "エンジンの設定（Windows）"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:10
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:10
 msgid "Shutdown the Axon Ivy Engine first by stopping it. Use **ControlCenter.exe** or **ControlCenterC.exe**."
 msgstr "最初に Axon Ivy Engine を停止してシャットダウンします。**ControlCenter.exe** または **ControlCenterC.exe** を使用します。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:13
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:13
 msgid "Alternatively, you can use one of the engine executables with command line parameters as detailed in :ref:`Engine Launchers <engine-launchers>`. These are well-suited for scripting."
 msgstr "または、 :ref:`エンジンのランチャー<engine-launchers>` で説明しているように、コマンドラインパラメーターを使用して、エンジンの実行ファイルを使用できます。これらはスクリプトに適しています。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:17
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:17
 msgid "to stop an engine running as a console process, execute"
 msgstr "コンソールプロセスとして動作中のエンジンを停止するため、以下を実行します。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:24
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:24
 msgid "If you started the engine already as a service, you can also stop it in the **services.msc** console."
 msgstr "エンジンをサービスとして起動していた場合は、**services.msc** コンソールでも停止できます。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:27
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:27
 msgid "Install the license: Copy the license file (:file:`*.lic`) into the :file:`configuration` folder"
 msgstr "ライセンスをインストールします。ライセンスファイル（:file:`*.lic`）を :file:`configuration` フォルダ－にコピーします。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:35
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:35
 #, fuzzy
 msgid "To configure the system database, use the :code:`config-db` command of the **EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of the server running your DBMS system. Replace **dbuser** and **password** with the credentials of a technical database user with the permissions to create a new database and its structures (i.e., DDL permissions) on the database server."
 msgstr "システムデータベースを設定するには、**EngineConfigCli** ツールの :code:`config-db` コマンドを使用します。**yourdatabaseserver** を、DBMS システムを実行しているサーバーのホスト名に置き換えます。**dbuser** と **password** を、データベースサーバーで新しいデータベースとその構造を作成する権限（DDL 権限）を持つデータベースユーザーの資格情報に置き換えます。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:41
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:41
 msgid "Now, let's configure the database connection and create the system database:"
 msgstr "データベース接続を設定し、システムデータベースを作成しましょう。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:49
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:49
 msgid "Replace <yourdatabaseserver> with the DNS name of the database server, <dbuser> with the username and <password> with the password of the technical user."
 msgstr "<yourdatabaseserver> をデータベースサーバーの DNS 名、<dbuser> を技術ユーザーのユーザー名、<password> をパスワードに置き換えます。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:59
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:59
 msgid "Now, start the Axon Ivy Engine again."
 msgstr "Axon Ivy Engine を再度起動します。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:69
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:69
 msgid "Open a web browser and navigate to http://<yourservername>:<yourportnumber>/. As you see, the header with the demo mode message is gone. You now have a production-ready Axon Ivy Engine."
 msgstr "ウェブブラウザを開き、http://<yourservername>:<yourportnumber>/ に移動します。見てのとおり、ヘッダーのデモモードのメッセージが消えています。これで、本番環境で Axon Ivy Engine を実行できます。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:75
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:75
 msgid "Register the Axon Ivy Engine as a Windows Service"
 msgstr "Axon Ivy Engine の Windows サービス登録"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:77
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:77
 msgid "In Windows, you can register your Axon Ivy Engine as a service to execute it in the background. You can do this in a scriptable way using the command line. Windows provides the service configuration utility sc.exe for this purpose."
 msgstr "Windows では、Axon Ivy Engine をサービスとして登録し、バックグラウンドで実行できます。コマンドラインを使用し、スクリプトでこれを行うことができます。Windows には、そのためのサービス設定ユーティリティである sc.exe が用意されています。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:85
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:85
 #, fuzzy
 msgid "Replace :code:`[windowsServiceName]` with the name you want to use for the service, e.g. ivy_prod. The user specified by :code:`[username]` and :code:`[password]` is used to run the service."
 msgstr ":code:`[windowsServiceName]` をサービスに使用したい名前（例：ivy_prod）に置き換えます。 :code:`[username]` と :code:`[password]` で指定されたユーザーを使用して、サービスを実行します。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:89
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:89
 msgid "Refer to :ref:`Engine Service <engine-service>` for more details on running Axon Ivy as a service."
 msgstr "Axon Ivy をサービスとして実行する詳細については、「 :ref:`エンジンのサービス<engine-service>` 」を参照してください。"
 
-#: ../../source/engine-guide/getting-started/windows/configure.rst:93
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:93
 msgid "You can add dependencies to this service for instance to wait for a DBMS or an external OpenSearch to start before Windows starts the Axon Ivy Engine. Please consult the Windows documentation for further details."
 msgstr "例えば、DBMS や外部の OpenSearch が始動するのを待ってから、Windows が Axon Ivy Engine を起動するように、このサービスに依存関係を追加できます。詳細については、Windows のドキュメントを参照してください。"
 
-#: ../../source/engine-guide/getting-started/windows/deploy.rst:2
+#: ../../source/introduction/getting-started/engine/windows/deploy.rst:2
 msgid "Deploy a project"
 msgstr "プロジェクトの展開"
 
-#: ../../source/engine-guide/getting-started/windows/deploy.rst:4
+#: ../../source/introduction/getting-started/engine/windows/deploy.rst:4
 msgid "Let's deploy an Axon Ivy project to the Axon Ivy Engine. Download the :dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/14.0/zip>` and drop it in :file:`[engineDir]/deploy` folder. Refresh the main page of the Axon Ivy Engine. There will be a new section for this deployed app."
 msgstr "Axon IvyプロジェクトをAxon Ivy Engineに展開してみましょう。:dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-app/14.0/zip>` をダウンロードし、:file:`[engineDir]/deploy` フォルダーに配置します。Axon Ivy Engineのメインページを更新してください。この展開されたアプリ用の新しいセクションが表示されます。"
 
-#: ../../source/engine-guide/getting-started/windows/deploy.rst:9
+#: ../../source/introduction/getting-started/engine/windows/deploy.rst:9
 #, fuzzy
 msgid "Congratulations, you have installed and configured your first Axon Ivy Engine and deployed your first Axon Ivy project."
 msgstr "これで、最初の Axon Ivy Engine がインストール、設定され、最初の Axon Ivy プロジェクトが展開されました。"
 
-#: ../../source/engine-guide/getting-started/windows/index.rst:6
+#: ../../source/introduction/getting-started/engine/windows/index.rst:6
 msgid "In this section, you will learn how to install and configure an Axon Ivy Engine on a Windows machine:"
 msgstr "このセクションでは、Axon Ivy Engine を Windows マシンにインストールして設定する方法を学びます。"
 
-#: ../../source/engine-guide/getting-started/windows/install.rst:2
+#: ../../source/introduction/getting-started/engine/windows/install.rst:2
 msgid "Install the Engine (Windows)"
 msgstr "エンジンのインストール（Windows）"
 
-#: ../../source/engine-guide/getting-started/windows/install.rst:4
+#: ../../source/introduction/getting-started/engine/windows/install.rst:4
 msgid "We suggest that you install the Axon Ivy Engine into a new folder called :file:`ivy\\\\engine` on one of your drives (e.g., :file:`c:\\\\ivy\\\\engine`). Open a Windows Explorer, navigate to :file:`C:\\\\` and create those new folders."
 msgstr "Axon Ivy Engine をドライブの :file:`ivy\\\\engine` という名前の新しいフォルダーにインストールします（例：:file:`c:\\\\ivy\\\\engine`）。エクスプローラーを開き、:file:`C:\\\\` に移動し、新しいフォルダーを作成します。"
 
-#: ../../source/engine-guide/getting-started/windows/install.rst:8
+#: ../../source/introduction/getting-started/engine/windows/install.rst:8
 msgid "Then, navigate to the folder that contains your downloaded engine ZIP archive and copy :file:`AxonIvyEngine\\*.zip` to the newly created folder."
 msgstr "ダウンロードしたエンジンの ZIP アーカイブを含むフォルダーに移動し、:file:`AxonIvyEngine\\*.zip` を新しく作成したフォルダーにコピーします。"
 
-#: ../../source/engine-guide/getting-started/windows/install.rst:11
+#: ../../source/introduction/getting-started/engine/windows/install.rst:11
 msgid "Right click the :file:`AxonIvyEngine\\*.zip` file and press :guilabel:`Extract All ...` from the context menu."
 msgstr ":file:`AxonIvyEngine\\*.zip` ファイルを右クリップし、コンテキストメニューの:guilabel:`すべて展開 ...` をクリックします。"
 
-#: ../../source/engine-guide/getting-started/windows/install.rst:16
+#: ../../source/introduction/getting-started/engine/windows/install.rst:16
 msgid "On the appearing dialog, press button :guilabel:`Extract`. After the extraction completes, navigate into the new folder :file:`AxonIvyEngine`. The content of the installation folder looks like this:"
 msgstr "表示されたダイアログで、:guilabel:`展開` ボタンをクリックします。展開が完了したら、新しい :file:`AxonIvyEngine` フォルダーに移動します。インストールフォルダーの中身は以下のようになります。"
 
-#: ../../source/engine-guide/getting-started/windows/install.rst:23
+#: ../../source/introduction/getting-started/engine/windows/install.rst:23
 msgid "The most important folders in the Axon Ivy Engine installation folder are:"
 msgstr "Axon Ivy Engine のインストールフォルダーの最も重要なフォルダーは以下のとおりです。"
 
-#: ../../source/engine-guide/getting-started/windows/install.rst:25
+#: ../../source/introduction/getting-started/engine/windows/install.rst:25
 msgid "folder :file:`bin` contains all the executables"
 msgstr "すべての実行ファイルを含む :file:`bin` フォルダー。"
 
-#: ../../source/engine-guide/getting-started/windows/install.rst:26
+#: ../../source/introduction/getting-started/engine/windows/install.rst:26
 msgid "folder :file:`configuration` contains the configuration files."
 msgstr "設定ファイルを含む :file:`configuration` フォルダー。"
 
-#: ../../source/engine-guide/getting-started/windows/prepare.rst:2
+#: ../../source/introduction/getting-started/engine/windows/prepare.rst:2
 msgid "Prepare your Server"
 msgstr "サーバーの準備"
 
-#: ../../source/engine-guide/getting-started/windows/prepare.rst:4
+#: ../../source/introduction/getting-started/engine/windows/prepare.rst:4
 msgid "Make sure that your server fulfills the :ref:`engine-system-requirements` of the Axon Ivy Engine."
 msgstr "サーバーが Axon Ivy Engine の :ref:`engine-system-requirements` を満たしていることを確認してください。"
 
-#: ../../source/engine-guide/getting-started/windows/prepare.rst:8
+#: ../../source/introduction/getting-started/engine/windows/prepare.rst:8
 msgid "Download the Engine (Windows)"
 msgstr "エンジンのダウンロード（Windows）"
 
-#: ../../source/engine-guide/getting-started/windows/prepare.rst:10
+#: ../../source/introduction/getting-started/engine/windows/prepare.rst:10
 msgid ":dev-url:`Download </download>` the Windows package of Axon Ivy Engine and save the :file:`AxonIvyEngine\\*.zip` file to your temporary download folder."
 msgstr "Axon Ivy Engine の Windows パッケージを:dev-url:`ダウンロード</download>` 、:file:`AxonIvyEngine\\*.zip` ファイルを一時ダウンロードフォルダーに保存します。"
 
-#: ../../source/engine-guide/getting-started/windows/start.rst:2
+#: ../../source/introduction/getting-started/engine/windows/start.rst:2
 msgid "Start the Engine (Windows)"
 msgstr "エンジンの起動（Windows）"
 
-#: ../../source/engine-guide/getting-started/windows/start.rst:4
+#: ../../source/introduction/getting-started/engine/windows/start.rst:4
 msgid "Navigate to folder :file:`bin` and double click on :file:`AxonIvyEngineC.exe` to start the Axon Ivy Engine."
 msgstr ":file:`bin` フォルダーに移動し、:file:`AxonIvyEngineC.exe` をダブルクリックして、Axon Ivy Engine を起動します。"
 
-#: ../../source/engine-guide/getting-started/windows/start.rst:8
+#: ../../source/introduction/getting-started/engine/windows/start.rst:8
 msgid "You can use the :file:`AxonIvyEngineService.exe` to register Axon Ivy Engine as :ref:`Windows Service <engine-service>`."
 msgstr ":file:`AxonIvyEngineService.exe` を使用して、Axon Ivy Engine を :ref:`Windows サービス<engine-service>` して登録できます。"
 
-#: ../../source/engine-guide/getting-started/windows/start.rst:11
+#: ../../source/introduction/getting-started/engine/windows/start.rst:11
 msgid "After the Axon Ivy Engine has been started it opens a web browser displaying the main page of the Axon Ivy Engine."
 msgstr "Axon Ivy Engine の起動後、ウェブブラウザが開き、Axon Ivy Engine のメインページが表示されます。"
 
@@ -21965,8 +21937,8 @@ msgid "Engine Guide"
 msgstr "エンジンガイド"
 
 #: ../../source/engine-guide/index.rst:6
-msgid "This guide covers all aspects of an Axon Ivy Engine lifecycle, including installation, configuration and production operation. If you want to familiarize yourself with the Axon Ivy Engine, we recommend to dive into :ref:`getting-started`."
-msgstr "このガイドでは、インストール、設定、本番運用を含む Axon Ivy Engine のライフサイクル全般を取り上げます。Axon Ivy Engine の理解を深めたい場合は、「 :ref:`getting-started` 」をよく読むことをお勧めします。"
+msgid "This guide covers all aspects of an Axon Ivy Engine lifecycle, including installation, configuration and production operation. If you want to familiarize yourself with the Axon Ivy Engine, we recommend to dive into :ref:`Getting Started with the Engine <getting-started-engine>`."
+msgstr "このガイドでは、インストール、設定、本番運用を含む Axon Ivy Engine のライフサイクル全般を取り上げます。Axon Ivy Engine の理解を深めたい場合は、「 :ref:`エンジン入門 <getting-started-engine>` 」をよく読むことをお勧めします。"
 
 #: ../../source/engine-guide/integration/cluster/communication/index.rst:4
 msgid "Communication"

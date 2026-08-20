@@ -6,7 +6,7 @@ Introduction
 
    what-axon-ivy
    why-axon-ivy
-   try-axon-ivy
+   getting-started/index
    migration/index
    release-notes/index
    system-requirements/index
