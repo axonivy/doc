@@ -9,7 +9,7 @@ Axon Ivy
    designer-guide/index
    engine-guide/index
    concepts/index
-   portal/index
+   portal-guide/index
    market/index
    technical-info/index
    glossary/glossary
