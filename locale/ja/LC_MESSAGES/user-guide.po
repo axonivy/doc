@@ -16181,31 +16181,31 @@ msgstr "「 :ref:`ivyscript` 」を参照してください。"
 msgid "Troubleshooting"
 msgstr "トラブルシューティング"
 
-#: ../../source/engine-guide/troubleshooting/_intro.rst:1
+#: ../../source/introduction/getting-help.rst:1
 msgid "If you encounter any problems, check the following sources:"
 msgstr "問題が発生した場合は、以下のソースをチェックしてください。"
 
-#: ../../source/engine-guide/troubleshooting/_intro.rst:4
+#: ../../source/introduction/getting-help.rst:4
 msgid "Axon Ivy Community"
 msgstr "Axon Ivy コミュニティ"
 
-#: ../../source/engine-guide/troubleshooting/_intro.rst:5
+#: ../../source/introduction/getting-help.rst:5
 msgid "The `Axon Ivy Community <https://community.axonivy.com/>`_ (or the old `Axon Ivy Q&A <https://answers.axonivy.com/>`_) contains a considerable amount of knowledge and tips related to Axon Ivy Designer and Engine."
 msgstr "`Axon Ivy コミュニティ <https://community.axonivy.com/>`_ （旧 `Axon Ivy Q&A <https://answers.axonivy.com/>`_ ）には、Axon Ivy Designer と Engine に関する知識やヒントが豊富にあります。"
 
-#: ../../source/engine-guide/troubleshooting/_intro.rst:10
+#: ../../source/introduction/getting-help.rst:10
 msgid "Stack Overflow"
 msgstr "スタックオーバーフロー"
 
-#: ../../source/engine-guide/troubleshooting/_intro.rst:11
+#: ../../source/introduction/getting-help.rst:11
 msgid "Problems related to common technologies like Java, JSF, Primefaces are usually already answered on the web, e.g., on `Stack Overflow <https://stackoverflow.com/>`_."
 msgstr "通常、Java、JSF、PrimeFaces などの一般的なテクノロジーに関する問題は、`Stack Overflow <https://stackoverflow.com/>`_ などのウェブサイトで回答済みです。"
 
-#: ../../source/engine-guide/troubleshooting/_intro.rst:16
+#: ../../source/introduction/getting-help.rst:16
 msgid "Support"
 msgstr "サポート"
 
-#: ../../source/engine-guide/troubleshooting/_intro.rst:17
+#: ../../source/introduction/getting-help.rst:17
 msgid "You can get support via support@axonivy.com (support may be subject to charging, depending on your license agreement)."
 msgstr "support@axonivy.com からサポートを受けることができます（ライセンス契約によって、サポート料金がかかる場合があります）。"
 
