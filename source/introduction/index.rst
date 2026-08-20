@@ -1,5 +1,5 @@
-Axon Ivy
-**********
+Introduction
+************
 
 .. toctree::
    :maxdepth: 2
