@@ -25726,11 +25726,11 @@ msgstr "独自のインストール可能なプロダクトの作成"
 msgid "You are able to craft your own installable product. Read more about this here: :link-url:`Contributing to the Axon Ivy Market <market-contribute>`"
 msgstr "独自のインストール可能なプロダクトを作成できます。詳細については、:link-url:`Contributing to the Axon Ivy Market <market-contribute>` 参照してください。"
 
-#: ../../source/portal-guide/index.rst:4
-msgid "Portal Guide"
+#: ../../source/portal/index.rst:4
+msgid "Portal"
 msgstr "ポータルガイド"
 
-#: ../../source/portal-guide/index.rst:6
+#: ../../source/portal/index.rst:6
 #, fuzzy
 msgid "This page is just a placeholder. There is a server-side redirect to the correct portal guide."
 msgstr "これは単なるプレースホルダーです。サーバー側で正しいポータルガイドにリダイレクトされます。"

@@ -25,7 +25,7 @@ jobs:
         mkdir target
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2\
          make html BASEDIR=/doc 2> target/sphinx-errors.log
-        rm build/html/portal-guide/index.html
+        rm build/html/portal/index.html
         cat target/sphinx-errors.log\
          | sed -E 's|/doc/(.*\.rst):([0-9]+): ([A-Za-z]*): |::\L\3 file=\1,line=\2::|g'\
          | grep -v "image.not_readable"\
