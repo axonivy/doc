@@ -16177,37 +16177,8 @@ msgstr "「 :ref:`ivyscript` 」を参照してください。"
 
 #: ../../source/designer-guide/troubleshooting/index.rst:2
 #: ../../source/engine-guide/integration/cluster/communication/index.rst:51
-#: ../../source/engine-guide/troubleshooting/index.rst:2
 msgid "Troubleshooting"
 msgstr "トラブルシューティング"
-
-#: ../../source/introduction/getting-help.rst:1
-msgid "If you encounter any problems, check the following sources:"
-msgstr "問題が発生した場合は、以下のソースをチェックしてください。"
-
-#: ../../source/introduction/getting-help.rst:4
-msgid "Axon Ivy Community"
-msgstr "Axon Ivy コミュニティ"
-
-#: ../../source/introduction/getting-help.rst:5
-msgid "The `Axon Ivy Community <https://community.axonivy.com/>`_ (or the old `Axon Ivy Q&A <https://answers.axonivy.com/>`_) contains a considerable amount of knowledge and tips related to Axon Ivy Designer and Engine."
-msgstr "`Axon Ivy コミュニティ <https://community.axonivy.com/>`_ （旧 `Axon Ivy Q&A <https://answers.axonivy.com/>`_ ）には、Axon Ivy Designer と Engine に関する知識やヒントが豊富にあります。"
-
-#: ../../source/introduction/getting-help.rst:10
-msgid "Stack Overflow"
-msgstr "スタックオーバーフロー"
-
-#: ../../source/introduction/getting-help.rst:11
-msgid "Problems related to common technologies like Java, JSF, Primefaces are usually already answered on the web, e.g., on `Stack Overflow <https://stackoverflow.com/>`_."
-msgstr "通常、Java、JSF、PrimeFaces などの一般的なテクノロジーに関する問題は、`Stack Overflow <https://stackoverflow.com/>`_ などのウェブサイトで回答済みです。"
-
-#: ../../source/introduction/getting-help.rst:16
-msgid "Support"
-msgstr "サポート"
-
-#: ../../source/introduction/getting-help.rst:17
-msgid "You can get support via support@axonivy.com (support may be subject to charging, depending on your license agreement)."
-msgstr "support@axonivy.com からサポートを受けることができます（ライセンス契約によって、サポート料金がかかる場合があります）。"
 
 #: ../../source/designer-guide/troubleshooting/index.rst:8
 msgid "Error Dialogs"
@@ -23534,6 +23505,40 @@ msgstr "プロセス自動化プラットフォーム"
 msgid "Axon Ivy"
 msgstr "Axon Ivy"
 
+#: ../../source/introduction/getting-help.rst:4
+#, fuzzy
+msgid "Getting Help"
+msgstr "はじめに"
+
+#: ../../source/introduction/getting-help.rst:6
+msgid "If you encounter any problems, check the following sources:"
+msgstr "問題が発生した場合は、以下のソースをチェックしてください。"
+
+#: ../../source/introduction/getting-help.rst:9
+msgid "Support"
+msgstr "サポート"
+
+#: ../../source/introduction/getting-help.rst:10
+msgid "You can get support via support@axonivy.com (support may be subject to charging, depending on your license agreement)."
+msgstr "support@axonivy.com からサポートを受けることができます（ライセンス契約によって、サポート料金がかかる場合があります）。"
+
+#: ../../source/introduction/getting-help.rst:15
+msgid "Axon Ivy Community"
+msgstr "Axon Ivy コミュニティ"
+
+#: ../../source/introduction/getting-help.rst:16
+msgid "The `Axon Ivy Community <https://community.axonivy.com/>`_ (or the old `Axon Ivy Q&A <https://answers.axonivy.com/>`_) contains a considerable amount of knowledge and tips related to Axon Ivy Designer and Engine."
+msgstr "`Axon Ivy コミュニティ <https://community.axonivy.com/>`_ （旧 `Axon Ivy Q&A <https://answers.axonivy.com/>`_ ）には、Axon Ivy Designer と Engine に関する知識やヒントが豊富にあります。"
+
+#: ../../source/introduction/getting-help.rst:22
+#, fuzzy
+msgid "Tutorials"
+msgstr "Austria"
+
+#: ../../source/introduction/getting-help.rst:23
+msgid "We have on various topics tutorials available on our website. You can find them at `Axon Ivy Tutorials <https://www.axonivy.com/tutorials>`_."
+msgstr ""
+
 #: ../../source/introduction/getting-started/engine/docker/index.rst:4
 #: ../../source/introduction/getting-started/engine/index.rst:38
 msgid "Docker Image"
@@ -26747,3 +26752,9 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 
 #~ msgid "Users will start NEO Designer in a web browser using the url <ivy-engine>/neo They have to login with user name and password."
 #~ msgstr "ユーザーは、<ivy-engine>/neo という URL を使用して、ウェブブラウザで NEO Designer 起動します。ユーザー名とパスワードでログインする必要があります。"
+
+#~ msgid "Stack Overflow"
+#~ msgstr "スタックオーバーフロー"
+
+#~ msgid "Problems related to common technologies like Java, JSF, Primefaces are usually already answered on the web, e.g., on `Stack Overflow <https://stackoverflow.com/>`_."
+#~ msgstr "通常、Java、JSF、PrimeFaces などの一般的なテクノロジーに関する問題は、`Stack Overflow <https://stackoverflow.com/>`_ などのウェブサイトで回答済みです。"
