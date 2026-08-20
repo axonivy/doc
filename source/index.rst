@@ -10,6 +10,7 @@ Axon Ivy
    engine-guide/index
    concepts/index
    portal-guide/index
+   glossary/glossary
 
 .. toctree::
    :maxdepth: 1

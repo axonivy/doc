@@ -2484,7 +2484,7 @@ msgid "By default, every Axon Ivy Engine comes with the :code:`default`` securit
 msgstr "デフォルトでは、すべてのAxon Ivy Engineに :code:`default` セキュリティシステムが搭載されており、ほとんどの場合、これで十分です。追加のセキュリティシステムが必要になるのは、同じエンジン上にテスト環境を構築する場合や :ref:`multi-tenancy <multi-tenancy>` を運用する場合だけです。セキュリティシステムは他のセキュリティシステムから完全に隔離されており、複数のアプリケーションで構成できます。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:36
-#: ../../source/designer-guide/reference/glossary.rst:7
+#: ../../source/glossary/glossary.rst:7
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:63
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:68
 msgid "Application"
@@ -2495,7 +2495,7 @@ msgid "An application is part of a security system. Axon Ivy projects live in an
 msgstr "アプリケーションはセキュリティシステムの一部です。Axon Ivy プロジェクトは、アプリケーション内に存在します。理想的には、アプリケーションはリリースサイクルの異なる機能駆動型になります。この例では、人事プロセスは財務プロセスから独立しています。さらに、アプリケーションには、変数、REST クライアント、Web サービスクライアント、データベースなど、設定に対する主権があります。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:56
-#: ../../source/designer-guide/reference/glossary.rst:107
+#: ../../source/glossary/glossary.rst:107
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:70
 msgid "Process Model"
 msgstr "プロセスモデル"
@@ -2505,7 +2505,7 @@ msgid "A process model (PM) is part of an application, which ultimately represen
 msgstr "プロセスモデル（PM）はアプリケーションの一部であり、究極的には Axon Ivy プロジェクトを表します。とはいえ、PM は仮想的な構造体に過ぎず、Axon Ivy エンジン上で複数のバージョンの Axon Ivy プロジェクトを同時に実行することが可能です。これをプロセスモデルバージョン（PMV）といいます。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:79
-#: ../../source/designer-guide/reference/glossary.rst:118
+#: ../../source/glossary/glossary.rst:118
 msgid "Process Model Version"
 msgstr "プロセスモデルバージョン"
 
@@ -8583,7 +8583,7 @@ msgstr "セッションタイムアウトに達したユーザーダイアログ
 #: ../../source/designer-guide/how-to/workflow/states.rst:124
 #: ../../source/designer-guide/how-to/workflow/states.rst:175
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:4
-#: ../../source/designer-guide/reference/glossary.rst:187
+#: ../../source/glossary/glossary.rst:187
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:56
 msgid "User Dialog"
 msgstr "ユーザーダイアログ"
@@ -10990,7 +10990,7 @@ msgid "Case Map Element: Stage"
 msgstr "ケースマップの要素：ステージ"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:86
-#: ../../source/designer-guide/reference/glossary.rst:62
+#: ../../source/glossary/glossary.rst:62
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:15
 msgid "Process"
 msgstr "プロセス"
@@ -11294,7 +11294,7 @@ msgid "|image0| An unspecific activity."
 msgstr "|image0| 非特定のアクティビティ。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:20
-#: ../../source/designer-guide/reference/glossary.rst:181
+#: ../../source/glossary/glossary.rst:181
 msgid "User"
 msgstr "ユーザー"
 
@@ -11588,7 +11588,7 @@ msgid "The start tab defines the name and the input parameters to start the proc
 msgstr "開始タブでは、プロセスを開始するための名前と入力パラメーターを定義します。シグネチャは、パラメーターの型とその順番を含む名前の定義です :ref:`process-element-call-sub` :ref:`process-element-trigger-step` のような要素は、このシグネチャを参照します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:164
-#: ../../source/designer-guide/reference/glossary.rst:133
+#: ../../source/glossary/glossary.rst:133
 msgid "Signature"
 msgstr "シグネチャ"
 
@@ -13192,7 +13192,7 @@ msgstr "このタブでは、シグナル開始イベントがリスニングす
 
 #: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:32
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:224
-#: ../../source/designer-guide/reference/glossary.rst:19
+#: ../../source/glossary/glossary.rst:19
 msgid "Case"
 msgstr "ケース"
 
@@ -14243,7 +14243,7 @@ msgstr "簡単なプロセスデータの選択（2 ページ目）"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:68
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:19
-#: ../../source/designer-guide/reference/glossary.rst:72
+#: ../../source/glossary/glossary.rst:72
 msgid "Process Data"
 msgstr "プロセスデータ"
 
@@ -16609,7 +16609,7 @@ msgstr "image27"
 
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:187
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:257
-#: ../../source/designer-guide/reference/glossary.rst:53
+#: ../../source/glossary/glossary.rst:53
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:64
 msgid "Layout"
 msgstr "レイアウト"
@@ -17046,7 +17046,7 @@ msgid "Process elements with usage of external category"
 msgstr "外部カテゴリーを使用するプロセス要素"
 
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:506
-#: ../../source/designer-guide/reference/glossary.rst:82
+#: ../../source/glossary/glossary.rst:82
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:49
 msgid "Process Element"
 msgstr "プロセス要素"
@@ -17453,176 +17453,176 @@ msgstr "**ブレークポイントの無効化**"
 msgid "You can disable a specific breakpoint in the :ref:`debugger-breakpoints-view` or by clicking on the breakpoint in the :ref:`process-editor`. It is also possible to disable all breakpoints in the :ref:`debugger-breakpoints-view`."
 msgstr ":ref:`debugger-breakpoints-view` で、また :ref:`process-editor` でブレークポイントをクリックして、特定のブレークポイントを無効にすることができます :ref:`debugger-breakpoints-view` ですべてのブレークポイントを無効にすることも可能です。"
 
-#: ../../source/designer-guide/reference/glossary.rst:2
+#: ../../source/glossary/glossary.rst:2
 msgid "Glossary"
 msgstr "用語集"
 
-#: ../../source/designer-guide/reference/glossary.rst:4
+#: ../../source/glossary/glossary.rst:4
 msgid "This chapter provides an alphabetized glossary for specialized expressions and terms that are employed in this book."
 msgstr "この章では、本書に記載されている専門的な表現や用語をアルファベット順に説明します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:8
+#: ../../source/glossary/glossary.rst:8
 msgid "On the Axon Ivy Engine one or more Applications can exist. The Application defines the container wherein the :ref:`Process Models <glossar-process-model>` can be deployed."
 msgstr "Axon Ivy Engine では、1 つまたは複数のアプリケーションが存在できます。アプリケーションは :ref:`プロセスモデル<glossar-process-model>` 展開できるコンテナを定義します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:11
+#: ../../source/glossary/glossary.rst:11
 msgid "Also :Ref:`Users <glossar-user>` and :ref:`Roles <glossar-role>` are defined and :ref:`Tasks <glossar-task>` and :ref:`Cases <glossar-case>` are stored in an Application."
 msgstr "また、アプリケーションでは、 :Ref:`ユーザー<glossar-user>`  :ref:`ロール<glossar-role>` 定義され、 :ref:`タスク<glossar-task>` と :ref:`ケース<glossar-case>` が格納されます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:15
+#: ../../source/glossary/glossary.rst:15
 msgid "See also section :ref:`Application <application>`."
 msgstr "「 :ref:`アプリケーション<application>` 」のセクションも参照してください。"
 
-#: ../../source/designer-guide/reference/glossary.rst:20
+#: ../../source/glossary/glossary.rst:20
 msgid "A Case is one concrete instance of a :ref:`Process <glossar-process>`. It must not necessarily run through all :ref:`Steps <glossar-step>` of a :ref:`Process <glossar-process>`. A :ref:`Process <glossar-process>` may define a different handling for different Cases depending on the information of a Case. For example by using the :ref:`Alternative Element <process-element-alternative>`."
 msgstr "ケースは、 :ref:`プロセス<glossar-process>` の 1 つの具体的なインスタンスです。必ずしも :ref:`プロセス<glossar-process>` すべて :ref:`ステップ<glossar-step>` わたって実行される必要はありません :ref:`プロセス<glossar-process>` 、ケースの情報に従って、さまざまなケースのさまざまな処理を定義できます。例えば :ref:`代替要素<process-element-alternative>` 使用します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:28
+#: ../../source/glossary/glossary.rst:28
 msgid "A Case holds the information used to carry out the :ref:`Process <glossar-process>`. This is on the one hand information about the Case like the current position in the :ref:`Process <glossar-process>`. On the other hand this is information collected during the Case, which is passed from one :ref:`Step <glossar-step>` to the next in the form of the :ref:`Process Data <glossar-process-data>`"
 msgstr "ケースは、 :ref:`プロセス<glossar-process>` を実行するのに使用される情報を保持します。例えば :ref:`プロセス<glossar-process>` 現在位置など、ケースについての情報です。他方で、ケース中に収集される情報があり :ref:`プロセスデータ<glossar-process-data>` 形で一つの :ref:`ステップ<glossar-step>` から次のステップに受け渡されます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:37
+#: ../../source/glossary/glossary.rst:37
 msgid "Connector"
 msgstr "コネクター"
 
-#: ../../source/designer-guide/reference/glossary.rst:38
+#: ../../source/glossary/glossary.rst:38
 msgid "A Connector connects two :ref:`Steps <glossar-step>` of a :ref:`Process <glossar-process>`. This defines the sequence of these two steps."
 msgstr "コネクターは、 :ref:`プロセス<glossar-process>` の 2 つ :ref:`ステップ<glossar-step>` 接続し、これら 2 つのステップのシーケンスを定義します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:42
+#: ../../source/glossary/glossary.rst:42
 msgid "Form Field"
 msgstr "フォームフィールド"
 
-#: ../../source/designer-guide/reference/glossary.rst:43
+#: ../../source/glossary/glossary.rst:43
 msgid "A Form Field is a JSF code snippet which serves content for a specific data class field type (e.g., a Label and a Datepicker for a Date). The :ref:`New User Dialog Wizard <user-dialog-new-wizard>` create forms with Form Fields."
 msgstr "フォームフィールドは、特定のデータクラスのフィールドタイプ（ラベル、日付ピッカーなど）のコンテンツを提供する JSF コードスニペットです :ref:`ユーザーダイアログの作成ウィザード<user-dialog-new-wizard>` 、フォームフィールドを含むフォームを作成します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:48
+#: ../../source/glossary/glossary.rst:48
 msgid "HTML Dialog"
 msgstr "HTML ダイアログ"
 
-#: ../../source/designer-guide/reference/glossary.rst:49
+#: ../../source/glossary/glossary.rst:49
 msgid "A :ref:`HTML Dialog <html-dialogs>` is an implementation of a :ref:`User Dialog <user-dialogs>`. The HTML Dialog is implemented with (HTML/JSF)."
 msgstr ":ref:`HTML ダイアログ<html-dialogs>` は、 :ref:`ユーザーダイアログ<user-dialogs>` の実装です。HTML ダイアログは HTML/JSF で実装されます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:54
+#: ../../source/glossary/glossary.rst:54
 msgid "A Layout contains the main structure of an HTML page (e.g., a header, content and footer section). For :ref:`Web Pages <user-interface-web-page>` the layouts are defined in the :ref:`CMS <cms>`. For :ref:`HTML Dialogs <html-dialogs>` the layouts are defined in the webContent folder."
 msgstr "レイアウトには、HTML ページの主構造（ヘッダー、コンテンツ、フッターセクションなど）が格納されます :ref:`ウェブページ<user-interface-web-page>` レイアウトは :ref:`CMS <cms>` で定義されます :ref:`HTML ダイアログ<html-dialogs>` レイアウトは webContent フォルダーで定義されます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:63
+#: ../../source/glossary/glossary.rst:63
 msgid "A Process is an abstract description how a group of :ref:`Cases <glossar-case>` will be handled. It consists of :ref:`Process Elements <glossar-process-elements>` connected with each other. Every time a Process is started, a :ref:`Case <glossar-case>` and a :ref:`Task <glossar-task>` is created."
 msgstr "プロセスは、 :ref:`ケース<glossar-case>` のグループの処理方法についての要約で、互いに接続され :ref:`プロセス要素<glossar-process-elements>` 構成されます。プロセスが開始されるたびに :ref:`ケース<glossar-case>`  :ref:`タスク<glossar-task>` が作成されます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:73
+#: ../../source/glossary/glossary.rst:73
 #, fuzzy
 msgid "The Process Data is the data passed from one :ref:`Step <glossar-step>` to the next. It's represented by a data class used for the whole process. Even though every :ref:`Step <glossar-step>` can create a new instance of this data class to be passed to the next :ref:`Step <glossar-step>` it will always be an instance of the same data class."
 msgstr "プロセスデータは、一つ :ref:`ステップ<glossar-step>` ら次のステップに受け渡されるデータで、プロセス全体で使用されるデータクラスによって表されます。  :ref:`ステップ<glossar-step>` 次 :ref:`ステップ<glossar-step>` 受け渡すこのデータクラスの新しいインスタンスを作成できますが、常に同じデータクラスのインスタンスになります。"
 
-#: ../../source/designer-guide/reference/glossary.rst:83
+#: ../../source/glossary/glossary.rst:83
 msgid "Process Elements are the bricks a process is built of. Ordered with :ref:`Connectors <glossar-connector>` they become the :ref:`Step <glossar-step>` of a :ref:`Process <glossar-process>`."
 msgstr "プロセス要素は、プロセスを構築するレンガです :ref:`コネクター<glossar-connector>` 順番に並べられたプロセス要素は、 :ref:`プロセス<glossar-process>`  :ref:`ステップ<glossar-step>` なります。"
 
-#: ../../source/designer-guide/reference/glossary.rst:88
+#: ../../source/glossary/glossary.rst:88
 msgid "There are 3 groups of process elements."
 msgstr "以下の 3 つのグループのプロセス要素があります。"
 
-#: ../../source/designer-guide/reference/glossary.rst:90
+#: ../../source/glossary/glossary.rst:90
 msgid "Activities do something. Like running a script or let somebody else do something for example by showing a :ref:`user-dialogs`."
 msgstr "アクティビティは、スクリプトを実行したり、 :ref:`user-dialogs` を表示して誰かに何かを実行させるなど、何かを実行します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:93
+#: ../../source/glossary/glossary.rst:93
 msgid "Gateways structure a :ref:`Process <glossar-process>`. For example a :ref:`Alternative <process-element-alternative>` decides which way a :ref:`Case <glossar-case>` runs through the :ref:`Process <glossar-process>`."
 msgstr "ゲートウェイは :ref:`プロセス<glossar-process>` を構築します。例えば :ref:`代替<process-element-alternative>` 、 :ref:`プロセス<glossar-process>` におけ :ref:`ケース<glossar-case>` 経路を決定します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:99
+#: ../../source/glossary/glossary.rst:99
 msgid "Events are notifications of things that happen outside the process."
 msgstr "イベントは、プロセス外部で発生した事象の通知です。"
 
-#: ../../source/designer-guide/reference/glossary.rst:102
+#: ../../source/glossary/glossary.rst:102
 msgid "The chapter :ref:`process-elements` describes all the Process Elements available."
 msgstr "「 :ref:`process-elements` 」の章には、使用可能なすべてのプロセス要素が説明されています。"
 
-#: ../../source/designer-guide/reference/glossary.rst:108
+#: ../../source/glossary/glossary.rst:108
 msgid "A Process Model on the Engine corresponds to an Axon Ivy project on the Designer. The difference is that a Process Model may hold multiple different versions of the same Axon Ivy project. These are called :ref:`Process Model Version <glossar-process-model-version>`."
 msgstr "エンジンのプロセスモデルはデザイナーの Axon Ivy プロジェクトに対応します。違いは、プロセスモデルが同じ Axon Ivy プロジェクトの複数の異なるバージョンを格納できることです。これら :ref:`プロセスモデルバージョン<glossar-process-model-version>` 呼ばれます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:113
+#: ../../source/glossary/glossary.rst:113
 msgid "See also section :ref:`Process Model <process-model>` in chapter Deployment."
 msgstr "「 :ref:`プロセスモデル<process-model>` 」のセクションも参照してください。"
 
-#: ../../source/designer-guide/reference/glossary.rst:119
+#: ../../source/glossary/glossary.rst:119
 msgid "A :ref:`Process Model <glossar-process-model>` can have multiple versions called Process Model Versions. These versions allow to change an Axon Ivy project without worrying about the compatibility of currently running :ref:`Cases <glossar-case>` on the Engine."
 msgstr ":ref:`プロセスモデル<glossar-process-model>` は、プロセスモデルバージョンと呼ばれる複数のバージョンを設定できます。これらのバージョンを使用して、エンジンで実行中 :ref:`ケース<glossar-case>` 互換性を気にせずに、Axon Ivy プロジェクトを変更できます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:124
+#: ../../source/glossary/glossary.rst:124
 msgid "See also section :ref:`Process Model Version <process-model-version>` in chapter Deployment."
 msgstr "「 :ref:`プロセスモデルバージョン<process-model-version>` 」のセクションも参照してください。"
 
-#: ../../source/designer-guide/reference/glossary.rst:129
+#: ../../source/glossary/glossary.rst:129
 msgid "Role"
 msgstr "ロール"
 
-#: ../../source/designer-guide/reference/glossary.rst:130
+#: ../../source/glossary/glossary.rst:130
 msgid "A :ref:`User <glossar-user>` has one or multiple Roles which define what the user is allowed to do."
 msgstr ":ref:`ユーザー<glossar-user>` は、ユーザーが実行できる動作を定義するロールを 1 つ以上持ちます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:134
+#: ../../source/glossary/glossary.rst:134
 msgid "In computer programming, especially object-oriented programming, a method is commonly identified by its unique method signature. This usually includes the method name, and the number, types and order of its parameters, but usually excludes the return type(s) of the method."
 msgstr "コンピュータープログラミング、特にオブジェクト指向プログラミングでは、メソッドは一般的に一意のメソッドのシグネチャで識別されます。このシグネチャには通常、メソッド名、パラメーターの数、型、順序が含まれますが、通常はメソッドの戻り型は除外されます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:140
+#: ../../source/glossary/glossary.rst:140
 msgid "Within *Axon Ivy*, signatures act as unique identifiers for specific start elements (e.g., method starts, request starts, trigger starts, call sub starts), within the same process, only one element with the same signature may exist. The same holds true for signatures of start methods and events on a User Dialog interface."
 msgstr "*Axon Ivy* では、シグネチャは、特定の開始要素（メソッド開始、リクエスト開始、トリガー開始、サブプロセスの呼び出し開始など）の一意の識別子の役割を果たします。同じシグネチャを持つ要素は 1 つしか存在できません。ユーザーダイアログインターフェースの開始メソッドとイベントのシグネチャも同様です。"
 
-#: ../../source/designer-guide/reference/glossary.rst:148
+#: ../../source/glossary/glossary.rst:148
 msgid "Step"
 msgstr "ステップ"
 
-#: ../../source/designer-guide/reference/glossary.rst:149
+#: ../../source/glossary/glossary.rst:149
 msgid "A :ref:`Process Element <glossar-process-elements>` placed in a :ref:`Process <glossar-process>` becomes a Step of this :ref:`Process <glossar-process>`. The :ref:`Connectors <glossar-connector>` define the order of the Steps in a :ref:`Process <glossar-process>`."
 msgstr ":ref:`プロセス<glossar-process>` に配置され :ref:`プロセス要素<glossar-process-elements>` 、その :ref:`プロセス<glossar-process>` のステップになります :ref:`コネクター<glossar-connector>`  :ref:`プロセス<glossar-process>` のステップの順序を定義します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:157
+#: ../../source/glossary/glossary.rst:157
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:109
 msgid "Task"
 msgstr "タスク"
 
-#: ../../source/designer-guide/reference/glossary.rst:158
+#: ../../source/glossary/glossary.rst:158
 msgid "A Task is a unit of work which is indivisible. It has to be carried out by one user in one piece. If anything goes wrong during the execution of a task, we must return to the beginning of the task."
 msgstr "タスクは、分けられない作業単位です。1 つの部品内で 1 人のユーザーによって実行される必要があります。タスクの実行中に問題が発生した場合、タスクの最初に戻る必要があります。"
 
-#: ../../source/designer-guide/reference/glossary.rst:162
+#: ../../source/glossary/glossary.rst:162
 msgid "It's not possible to work on a :ref:`Case <glossar-case>` without a Task. Every time a new :ref:`Case <glossar-case>` is started a Task will be created. While working on a :ref:`Case <glossar-case>` / Task new Tasks can be created. This allows to interrupt the work on a :ref:`Case <glossar-case>` and to hand it over to another user if necessary."
 msgstr "タスクなしで、 :ref:`ケース<glossar-case>` で作業を行うことはできません。新し :ref:`ケース<glossar-case>` 開始されるたびに、タスクが作成されます :ref:`ケース<glossar-case>` タスクでの作業中に、新しいタスクを作成できます。これにより、必要に応じ :ref:`ケース<glossar-case>` の作業を中断し、他のユーザーに引き渡すことができます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:169
+#: ../../source/glossary/glossary.rst:169
 msgid "A Task consists of one or multiple :ref:`Steps <glossar-step>`. It begins for example with a :ref:`Request Start <process-element-start-request>` or a :ref:`Task Switch <process-element-task-switch-event>` Element. And ends for example with the next :ref:`Task Switch <process-element-task-switch-event>` Element or at the :ref:`Process End <process-element-process-end>`."
 msgstr "タスクは 1 つ以上の :ref:`ステップ<glossar-step>` で構成されます。例えば :ref:`リクエスト開始<process-element-start-request>` :ref:`タスクスイッチ<process-element-task-switch-event>` 素で開始し、次 :ref:`タスクスイッチ<process-element-task-switch-event>` 素や :ref:`プロセス終了<process-element-process-end>` で終了します。"
 
-#: ../../source/designer-guide/reference/glossary.rst:177
+#: ../../source/glossary/glossary.rst:177
 #, fuzzy
 msgid "Tasks can be assigned to a specific User, a Role or to Everybody."
 msgstr "特定のユーザー、ロール、または全員にタスクを割り当てることができます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:182
+#: ../../source/glossary/glossary.rst:182
 msgid "A User is a person interacting with a :ref:`Case <glossar-case>`. The user is identified by a unique user name."
 msgstr "ユーザーは、 :ref:`ケース<glossar-case>` とやり取りする人です。ユーザーは、一意のユーザー名で識別されます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:185
+#: ../../source/glossary/glossary.rst:185
 msgid "If a User is not identified, we speak of an anonymous User."
 msgstr "識別されないユーザーは、匿名のユーザーです。"
 
-#: ../../source/designer-guide/reference/glossary.rst:188
+#: ../../source/glossary/glossary.rst:188
 #, fuzzy
 msgid "A :ref:`user-dialogs` is a concept of a User Interface. User Dialogs can be implemented as HTML Dialog (HTML/JSF)."
 msgstr ":ref:`user-dialogs` は、ユーザーインターフェースのコンセプトです。HTML ダイアログは HTML/JSF で実装されます。"
 
-#: ../../source/designer-guide/reference/glossary.rst:191
+#: ../../source/glossary/glossary.rst:191
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:58
 msgid "View Type"
 msgstr "ビューのタイプ"
 
-#: ../../source/designer-guide/reference/glossary.rst:192
+#: ../../source/glossary/glossary.rst:192
 msgid "A View Type defines the default content of a :ref:`user-dialogs` View. Axon Ivy has predefined View Types, i.e., Page and Component."
 msgstr "ビューのタイプは、 :ref:`user-dialogs` ビューのデフォルトのコンテンツを定義します。Axon Ivy には、ページとコンポーネントの 2 つのビューのタイプがあらかじめ定義されています。"
 
