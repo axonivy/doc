@@ -6,4 +6,3 @@ System Requirements
 
    designer
    engine
-   browser

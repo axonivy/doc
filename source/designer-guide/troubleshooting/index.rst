@@ -1,8 +1,6 @@
 Troubleshooting
 ***************
 
-.. include:: ../../engine-guide/troubleshooting/_intro.rst
-
 
 Error Dialogs
 =============

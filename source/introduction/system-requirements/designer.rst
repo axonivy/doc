@@ -40,8 +40,3 @@ Operating Systems
    
    The Designer has some known bugs when running under macOS. 
    We are currently not able to fix those bugs or provide support. Use at your own risk.
-
-Web Browsers
-------------
-
-See :ref:`browser-system-requirements`.
