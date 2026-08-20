@@ -1,14 +1,22 @@
+Introduction
+============
+
+If you want to familiarize 
+yourself with the Axon Ivy Engine, we recommend to dive
+into :ref:`Getting Started with the Engine <getting-started-engine>`.
+
+
 .. _engine-system-requirements:
 
-Axon Ivy Engine
-===============
+Engine System Requirements
+--------------------------
 
 The following system requirements highly depend on the number of Named Users,
 Concurrent Users, and deployed applications.
 
 
 Hardware Requirements
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 By default, the Axon Ivy Engine runs a bundled OpenSearch server. It is possible
 to integrate with an :ref:`external <opensearch-external>` OpenSearch
@@ -51,7 +59,7 @@ This includes, but is not limited to:
 * Azure classic file share
 
 Software Requirements
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 The Axon Ivy Engine needs Java SE 25 to run and is tested with `Eclipse Temurin
 <https://adoptium.net/>`_.
@@ -64,7 +72,7 @@ by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_.
 .. _engine-system-requirements-os:
 
 Operating Systems
------------------
+~~~~~~~~~~~~~~~~~
 
 The Enterprise Edition has some :ref:`advantages <cluster>` 
 but also some :ref:`restrictions <cluster-restrictions>` compared to the Standard Edition.
@@ -88,7 +96,7 @@ Supported Operating Systems
 +---------------+-----------------+-------------+
 
 System Database
----------------
+~~~~~~~~~~~~~~~
 
 +---------------------+-----------------------------+-----------+
 |Database System      |Supported                    | Tested    |
@@ -110,7 +118,7 @@ System Database
 
 
 OpenSearch
--------------
+~~~~~~~~~~
 
 Version 3.8. Only required if you run your :ref:`own <opensearch-external>`
 OpenSearch instance!
@@ -119,7 +127,7 @@ OpenSearch instance!
 .. _browser-system-requirements:
 
 Web Browser
------------
+~~~~~~~~~~~
 
 All popular web browsers are supported:
 
