@@ -1,7 +1,7 @@
-.. _getting-started:
+.. _getting-started-engine:
 
-Getting Started
-***************
+Engine
+******
 
 In this chapter, we help you to get up to speed with the Axon Ivy Engine with
 minimal effort. For productive use, the resulting configuration has to be
