@@ -395,7 +395,7 @@ msgstr "ライセンス"
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:103
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:109
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:13
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:21
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:136
 msgid "|tag-ops-changed|"
 msgstr "|tag-ops-changed|"
 
@@ -413,8 +413,8 @@ msgstr "Axon IvyパブリックAPI Maven依存関係"
 
 #: ../../source/axonivy/migration/_tagLegend.rst:25
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:21
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:60
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:91
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:175
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:206
 msgid "|tag-project-auto-convert|"
 msgstr "|tag-project-auto-convert|"
 
@@ -513,8 +513,8 @@ msgid "We changed the Runtime logger name from :code:`runtime.[app name].[pm nam
 msgstr "ランタイムロガーの名前を :code:`runtime.[アプリ名].[PM 名].[カテゴリー]` から :code:`runtime.[セキュリティコンテキスト名].[カテゴリー].[アプリ名].[PM 名]` に変更しました。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:113
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:80
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:241
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:195
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:356
 msgid "**Detail**"
 msgstr "**詳細**"
 
@@ -556,7 +556,7 @@ msgstr "この移行により、エンジンのオペレーションの一部が
 
 #: ../../source/axonivy/migration/_tagLegend.rst:13
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:91
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:135
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:250
 msgid "|tag-ops-deprecated|"
 msgstr "|tag-ops-deprecated|"
 
@@ -631,10 +631,10 @@ msgstr "Axon Ivy Java API Maven依存関係"
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:22
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:42
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:63
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:145
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:162
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:190
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:225
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:260
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:277
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:305
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:340
 msgid "|tag-project-changed| |tag-project-auto-convert|"
 msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
@@ -793,186 +793,321 @@ msgstr "Axon Ivy Engine 13.1 の新しいライセンスをリクエストする
 
 #: ../../source/axonivy/migration/migration-notes-132-140.rst:19
 #, fuzzy
+msgid "Application Versions"
+msgstr "アプリケーションの詳細"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:21
+msgid "The introduction of Application Versions represents a major shift in the fundamental architecture of the Axon Ivy Platform."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:24
+msgid "Previously, individual projects on the Axon Ivy Engine were versioned at runtime. These versions were referred to as **Process Model Versions**. With the introduction of **Application Versions**, versioning has been moved to the application level."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:29
+msgid "This change brings significant advantages, particularly in terms of the reliability and predictability of the Axon Ivy Engine. It reduces the amount of implicit and potentially unpredictable behavior caused by versioning individual projects and managing dependencies between them. Since these dependencies can change as projects are deployed and updated independently, determining which versions are actually used at runtime could become difficult to predict."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:36
+msgid "By versioning the application as a whole, the platform provides a much more consistent and deterministic runtime environment. At the same time, this architectural change establishes an important foundation for the long-term evolution of the platform, particularly with regard to scalability."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:45
+#, fuzzy
+msgid "**Details**"
+msgstr "**詳細**"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:49
+msgid "However, moving versioning from the project level to the application level also introduces changes to several APIs:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:52
+#, fuzzy
+msgid "**Deployment**"
+msgstr "展開"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:54
+msgid "The target application version must always be specified using the following parameters:"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:57
+#, fuzzy
+msgid "Security Context"
+msgstr "セキュリティシステム"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:58
+#, fuzzy
+msgid "Application Name"
+msgstr "アプリケーション"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:59
+#, fuzzy
+msgid "Application Version"
+msgstr "アプリケーションの詳細"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:61
+msgid "The Application Version can either reference a specific existing version or be controlled using one of the two special keywords: :code:`new` or :code:`released`."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:64
+msgid ":code:`new` - A new Application Version is created and immediately transitioned to the Released state. :code:`released` - The deployment targets the existing Released Application Version. If no Released Application Version exists, a new version is created and automatically transitioned to the Released state."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:69
+msgid "This allows deployments to either target a specific version explicitly or use the lifecycle semantics provided by the new and released keywords."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:72
+msgid "To support this new deployment model, the :ref:`Deployment REST API <deployment-rest-api>`, the :ref:`Deployment Directory <deployment-directory>`, and the goals of the :ref:`project-build-plugin <deployment-maven-plugin>` have been updated accordingly."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:77
+msgid "The :ref:`Cockpit <engine-cockpit-application>` has also been adapted to reflect these changes and to support the new Application Version-based deployment model."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:81
+#, fuzzy
+msgid "**States**"
+msgstr "**起動**"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:83
+msgid "Previously, various states were maintained at the Process Model Version level, including the Release State and Activity State."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:86
+msgid "With the introduction of Application Versions, these states have been moved to the Application Version level. The same states are now managed directly on Application Versions rather than on individual Process Model Versions."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:90
+msgid "This ensures that the lifecycle and operational state of an application are managed consistently as a whole, rather than independently for each project."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:93
+#, fuzzy
+msgid "**System Database**"
+msgstr "システムデータベース"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:95
+msgid "With the introduction of Application Versions, the database model has been simplified. Projects and applications are no longer managed using the following tables: :code:`IWA_Application`, :code:`IWA_ProcessModel`, :code:`IWA_ProcessModelVersion`, :code:`IWA_Library`, :code:`IWA_LibrarySpecification`, :code:`IWA_LibraryVersionSpec`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:101
+msgid "Instead, project and application information is now managed exclusively through the following tables: :code:`IWA_Application`, :code:`IWA_Project`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:104
+msgid "This change reflects the new application-centric architecture and removes the previous database structures associated with Process Model Versions and their dependencies."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:108
+#, fuzzy
+msgid "**Version Number**"
+msgstr "**式**"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:110
+msgid "The Application Version Number is managed by the platform and is automatically incremented by 1 each time a deployment targets new. The project version defined in :file`pom.xml`` is still displayed in the Engine Cockpit, but it has no impact on the runtime."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:115
+#, fuzzy
+msgid "**Redeployment**"
+msgstr "展開"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:117
+msgid "Redeployment is still supported. This means that projects can be deployed into an existing Application Version, replacing projects that have already been deployed. The project to be replaced is identified based on the project name defined in the :file:`.ivyproject` file. Currently, no deployment validation is performed."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:123
+#, fuzzy
+msgid "**Application Directory Layout**"
+msgstr "アプリケーションのライフサイクル"
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:125
+msgid "The directory structure now reflects the Application Version concept and follows the hierarchy: Security System → Application → Version → Project. Each Application Version has its own dedicated folder. On redeployment, a backup is created for the entire Application Version folder. This ensures that all projects and associated files belonging to the application version are backed up consistently."
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:134
+#, fuzzy
 msgid "Tomcat HTTPS Connector SSL Settings"
 msgstr "その他の SSL の設定"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:23
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:138
 msgid "Some HTTPS connector SSL settings in :ref:`ivy-yaml` have moved."
 msgstr ":ref:`ivy-yaml` の HTTPS コネクタ SSL の設定が移動しました。"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:25
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:140
 msgid "The following settings were moved under :code:`Connector.HTTPS.SslHostConfig`:"
 msgstr "次の設定は :code:`Connector.HTTPS.SslHostConfig` で移動しました："
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:27
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:142
 msgid ":code:`Connector.HTTPS.ClientAuth` -> :code:`Connector.HTTPS.SslHostConfig.CertificateVerification`"
 msgstr ":code:`Connector.HTTPS.ClientAuth` -> :code:`Connector.HTTPS.SslHostConfig.CertificateVerification`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:28
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:143
 msgid ":code:`Connector.HTTPS.SslProtocol` -> :code:`Connector.HTTPS.SslHostConfig.SslProtocol`"
 msgstr ":code:`Connector.HTTPS.SslProtocol` -> :code:`Connector.HTTPS.SslHostConfig.SslProtocol`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:29
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:144
 msgid ":code:`Connector.HTTPS.TruststoreFile` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreFile`"
 msgstr ":code:`Connector.HTTPS.TruststoreFile` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreFile`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:30
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:145
 msgid ":code:`Connector.HTTPS.TruststorePass` -> :code:`Connector.HTTPS.SslHostConfig.TruststorePassword`"
 msgstr ":code:`Connector.HTTPS.TruststorePass` -> :code:`Connector.HTTPS.SslHostConfig.Truststoreパスワード`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:31
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:146
 msgid ":code:`Connector.HTTPS.TruststoreType` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreType`"
 msgstr ":code:`Connector.HTTPS.TruststoreType` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreType`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:33
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:148
 msgid "The following certificate settings were moved under :code:`Connector.HTTPS.SslHostConfig.Certificate`:"
 msgstr ":code:`Connector.HTTPS.SslHostConfig.Certificate` の下に次の証明書の設定が移動されました："
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:35
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:150
 msgid ":code:`Connector.HTTPS.KeyAlias` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`"
 msgstr ":code:`Connector. HTTPS.KeyAlias` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:36
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:151
 msgid ":code:`Connector.HTTPS.KeyPass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`"
 msgstr ":code:`Connector. HTTPS.KeyPass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:37
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:152
 msgid ":code:`Connector.HTTPS.KeystoreFile` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreFile`"
 msgstr ":code:`Connector.HTTPS.KeystoreFile` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreFile`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:38
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:153
 msgid ":code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`"
 msgstr ":code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:39
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:154
 msgid ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
 msgstr ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:46
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:122
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:161
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:237
 #, fuzzy
 msgid "**Hint**"
 msgstr "**タイムアウト**"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:50
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:165
 msgid "This list is not exhaustive. If you use other attributes from the deprecated Tomcat connector SSL configuration, move them to the corresponding :code:`SslHostConfig` or :code:`SslHostConfig.Certificate` location as well, even if they are not listed explicitly in your :ref:`ivy-yaml`."
 msgstr "このリストは網羅的ではありません。 非推奨の Tomcat コネクタ SSL 設定から他の属性を使用する場合は、対応する :code:`SslHostConfig` または :code:`SslHostConfig.Certificate` の場所に移動します。 :ref:`ivy-yaml` に明示的にリストされていない場合でも。"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:54
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:169
 msgid "See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes."
 msgstr "特に非推奨の SSL コネクタ 属性の `Tomcat HTTP コネクタ参照 <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_ を参照してください。"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:58
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:173
 msgid "Java EE to Jakarta EE Migration"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:62
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:177
 msgid "We have updated our platform from Java EE (:code:`javax`) to Jakarta EE (:code:`jakarta`) API's and implementation libraries. This means that all :code:`javax.*` packages have been replaced with :code:`jakarta.*` packages. The biggest change is that there is no longer a :code:`@ManagedBean` annotation, instead beans for Jakarta Faces (JSF) are resolved via `CDI <https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1>`_. CDI beans need to be annotated with :code:`@Named` and they need to have a scope (:code:`@RequestScoped`, :code:`@SessionScoped`, :code:`@ApplicationScoped`, :code:`@ViewScoped`) if they are used in JSF pages. If the beans are :code:`@SessionScoped` or :code:`@ViewScoped`, they need to implement the :code:`Serializable` interface."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:70
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:185
 msgid "Beans can still be named via :code:`@Named(\"myBean\")`, however this name needs to be unique within the whole application; otherwise the application will fail to start. If you don't define a name, the simple class name will be used like before (e.g. :code:`class MyBean` will be available as :code:`myBean` in JSF pages)."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:73
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:188
 msgid "Also :code:`@FacesConverter` and :code:`@FacesValidator` are now CDI-managed and must be adapted accordingly. They must set :code:`managed = true`, and they also need to have a scope (see above)."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:84
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:199
 msgid "We have also dropped internal scopes for :code:`@ApplicationScoped` and :code:`@SessionScoped` beans. This could lead to small behavior changes in the bean lifecycle, but the idea behind these scopes is still the same."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:89
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:204
 #, fuzzy
 msgid "PrimeFaces 15"
 msgstr "PrimeFlex"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:93
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:208
 msgid "We have updated the PrimeFaces library from version 13.0 to 15.0. This version includes new components, bug fixes, and performance improvements. However, it also introduces some breaking changes that may affect your existing code. Some of them are converted automatically by our project converter (:code:`Running refactoring 'Primefaces 15`) , but you may need to manually adapt your code in some cases. Please read the official PrimeFaces migration guides for more information:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:99
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:214
 msgid "`PrimeFaces 14 Migration Guide <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`_"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:100
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:215
 msgid "`PrimeFaces 15 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:104
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:219
 msgid "Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:106
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:221
 #, fuzzy
 msgid "|tag-project-auto-convert| |tag-ops-removed|"
 msgstr "|tag-project-auto-convert|"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:108
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:223
 msgid "REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors instead of Apache HTTP Client 4-based connectors by default."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:110
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:225
 msgid "For REST clients, the Apache HTTP Client 4 based connector was removed."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:112
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:227
 msgid "The project migration tool will automatically convert HTTP Client 4–based connectors to Apache HTTP Client 5 for you. However, if you have custom code for REST or SOAP WebService features that directly references Apache HTTP Client 4 classes, you must manually update those to the HTTP Client 5 equivalents (adjust imports and API usage) and re-test the integrations."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:116
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:231
 msgid "The Apache HTTP Client 4 library itself is still available but will be removed in a future version."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:126
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:241
 msgid "For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`. This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. You should migrate to Apache HTTP Client 5 based connectors as soon as possible."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:133
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:248
 msgid "NTLM Authentication for REST and SOAP Web Service Client Connectors"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:137
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:252
 msgid "NTLM Authentication for REST and SOAP Web Service clients is deprecated and will be removed in a future version. This is because NTLM support in the library Apache HTTP Client 5 was also deprecated and is no longer actively maintained. Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:143
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:258
 msgid "Remove UUID from Rest Client and GUID from Web Service Client"
 msgstr "WebサービスクライアントからUUIDを削除"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:147
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:262
 msgid "We have removed the UUID from the Rest Client and the GUID from the Web Service Client. This means we no longer use these IDs in your processes to reference the clients. Instead we use the YAML key of the client. This makes the client easier to identify and copy between projects. We do an automatic project conversion, but it can happen that we cannot find the client if it is defined in a different project. In this case, you need to manually update the client reference in your processes to use the YAML key of the client. The old ID is still available in the YAML configuration prefixed with `Legacy`, but you can remove this after you have migrated all your projects."
 msgstr "UUIDは、WebサービスクライアントのRestクライアントとGUIDから削除しました。 つまり、クライアントを参照するために、これらの ID をプロセスで使用しなくなりました。 代わりに、クライアントのYAMLキーを使用します。 これにより、クライアントはプロジェクト間で識別し、コピーしやすくなります。 自動プロジェクト変換を行いますが、異なるプロジェクトで定義されている場合、クライアントが見つからなくなる可能性があります。 この場合、クライアントのYAMLキーを使用するプロセスでクライアントの参照を手動で更新する必要があります。 古い ID は、`Legacy` と接頭辞した YAML 構成ではまだ利用できますが、すべてのプロジェクトを移行した後にこれを削除できます."
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:155
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:270
 msgid "We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPI, please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead."
 msgstr "また、:public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPIを廃止し、代わりに :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` を使用してください."
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:160
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:275
 msgid "Removal of the :code:`.classpath` File"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:164
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:279
 msgid "The :code:`.classpath` file is no longer part of the project. Previously, the :code:`.classpath` file was used to reference local JAR files that were not available from a remote Maven repository. These JARs were added to the project's classpath for both design time and runtime. It also contained references to generated REST and web service client JARs. During automatic project conversion, generated client JARs are handled automatically. Specifically, the generated :code:`cxfClient_*.jar` and :code:`jaxRsClient_*.jar` files are unpacked into their corresponding :code:`src_generated` directories as part of the conversion process. If you have manually added additional local JAR references to the :code:`.classpath` file, you must declare them as Maven system-scoped dependencies to make those JARs available on the project's classpath."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:173
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:288
 msgid "Example of a system-scoped dependency:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:185
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:300
 msgid "`For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:188
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:303
 msgid "Project Structure Improvements"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:192
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:307
 msgid "Some folders have been moved or renamed to improve the project structure."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:195
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:310
 #: ../../source/concepts/testing/process-testing.rst:254
 #: ../../source/designer-guide/how-to/workflow/index.rst:2
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-workflow.rst:2
@@ -980,82 +1115,82 @@ msgstr ""
 msgid "Workflow"
 msgstr "Workflow"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:197
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:312
 msgid "Renamed :code:`processes` folder to :code:`process`."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:198
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:313
 msgid "Renamed :code:`dataclasses` folder to :code:`dataclass`."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:199
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:314
 msgid "Renamed :code:`src_hd` folder to :code:`dialog`."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:201
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:316
 msgid "This change improves the consistency of folder names and better reflects their content."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:205
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:320
 #, fuzzy
 msgid "Generated Source Files"
 msgstr "［一般］ > ［アーカイブファイル］"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:207
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:322
 msgid "The following folders containing generated source files have been moved to the :code:`target` folder:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:210
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:325
 msgid ":code:`libs/mvn-deps`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:211
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:326
 msgid ":code:`src_generated/dataclass`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:212
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:327
 msgid ":code:`src_generated/repo`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:213
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:328
 msgid ":code:`src_generated/wsprocess`"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:215
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:330
 msgid "These folders contain files that are generated during the build process by the `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ and should not be modified directly. Therefore, they have been moved to the :code:`target` folder to indicate that they are generated files clearly and to avoid confusion with other source files. The corresponding entries in the :code:`.gitignore` file have been removed."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:223
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:338
 msgid "Program Elements replace IBpmnElementExtensions"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:227
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:342
 msgid "We streamlined how to implement custom behavior for process elements. Program Elements can now provide a custom icon and can also appear in the :ref:`Extension <process-element-extension-item>` group of the process editor toolbar. Therefore, we removed the previous :code:`IBpmnElementExtension` interface and its infrastructure completely, which was used to contribute the icon and process-editor integration behavior."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:233
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:348
 msgid "You are affected by this change if you run your solution with an extension in the :code:`dropin` directory that implements the :code:`IBpmnElementExtension` interface."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:245
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:360
 msgid "If you have used `IBpmnElementExtension` elements in your project, the project-migration tool will automatically convert occurrences of these elements into the new Program Element infrastructure. However, the execution behavior of these elements is not converted automatically. You need to implement the new Program Element interface and configure it on the corresponding element."
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:250
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:365
 msgid "For implementation details, see the Program Elements reference:"
 msgstr ""
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:252
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:367
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:131
 msgid ":ref:`process-element-program-start`"
 msgstr ":ref:`process-element-program-start`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:253
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:368
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:137
 msgid ":ref:`process-element-pi`"
 msgstr ":ref:`process-element-pi`"
 
-#: ../../source/axonivy/migration/migration-notes-132-140.rst:254
+#: ../../source/axonivy/migration/migration-notes-132-140.rst:369
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:134
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:45
 msgid ":ref:`process-element-wait-program-intermediate-event`"
@@ -1438,15 +1573,6 @@ msgstr "ブラウザ"
 #: ../../source/axonivy/system-requirements/index.rst:2
 msgid "System Requirements"
 msgstr "システム要件"
-
-#: ../../source/axonivy/system-requirements/neo.rst:4
-msgid "Axon Ivy NEO Designer"
-msgstr "Axon Ivy NEO Designer"
-
-#: ../../source/axonivy/system-requirements/neo.rst:6
-#, fuzzy
-msgid "NEO Designer users are working with a :ref:`web browser <browser-system-requirements>` that communicates with an :ref:`Axon Ivy Engine <engine-system-requirements>`."
-msgstr "NEO Designer のユーザーは、 :ref:`Axon Ivy Engine<engine-system-requirements>` と通信する :ref:`ウェブブラウザ<browser-system-requirements>` を使用して作業しています。"
 
 #: ../../source/axonivy/try-axon-ivy.rst:2
 msgid "Try Axon Ivy!"
@@ -1913,7 +2039,6 @@ msgstr "サービスを実装したら、Axon Ivy Engine を起動し、WSDL サ
 
 #: ../../source/concepts/3rd-party-integration/webservice.rst:40
 #: ../../source/engine-guide/getting-started/index.rst:4
-#: ../../source/neo-designer/gettingstarted.rst:4
 msgid "Getting Started"
 msgstr "はじめに"
 
@@ -8895,7 +9020,6 @@ msgid "Click on :guilabel:`Finish` to actually paste the copied resource(s) to t
 msgstr ":guilabel:`終了`をクリックすると、コピーされたリソースが実際に定義された場所に貼り付けられます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/index.rst:2
-#: ../../source/neo-designer/introduction.rst:4
 msgid "Introduction"
 msgstr "はじめに"
 
@@ -17982,7 +18106,7 @@ msgid "Of course, you can also define your own images or CSS files. Subsequently
 msgstr "もちろん、独自の画像や CSS ファイルも定義できます。定義後、**IVY のブランディング** リソースローダーを使用して、それらを読み込むことができます。例えば、現在のアプリケーションによって、カスタムエラーダイアログの画像を変更できます。"
 
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:34
-#: ../../source/index.rst:15
+#: ../../source/index.rst:14
 msgid "Resources"
 msgstr "リソース"
 
@@ -25602,122 +25726,6 @@ msgstr "独自のインストール可能なプロダクトの作成"
 msgid "You are able to craft your own installable product. Read more about this here: :link-url:`Contributing to the Axon Ivy Market <market-contribute>`"
 msgstr "独自のインストール可能なプロダクトを作成できます。詳細については、:link-url:`Contributing to the Axon Ivy Market <market-contribute>` 参照してください。"
 
-#: ../../source/neo-designer/gettingstarted.rst:7
-msgid "Create a Workspace"
-msgstr "ワークスペースの作成"
-
-#: ../../source/neo-designer/gettingstarted.rst:8
-msgid "To start working with NEO Designer you first create a workspace. A workspace is the development area where an application is built and tested. It's the space where your business processes are designed, previewed and simulated before they're deployed as a functioning application. In a newly created workspace, you will find a first main project as your starting point to begin your work."
-msgstr "NEO Designer の使用を開始するには、最初にワークスペースを作成します。ワークスペースは、アプリケーションを作成、テストする開発領域です。このスペースで、ビジネスプロセスを設計し、正常に機能するアプリケーションとして展開する前にプレビュー、シミュレーションを行います。新しく作成したワークスペースには、作業の開始点として最初のメインプロジェクトが表示されます。"
-
-#: ../../source/neo-designer/gettingstarted.rst:18
-msgid "Draw a Process model"
-msgstr "プロセスモデルの作成"
-
-#: ../../source/neo-designer/gettingstarted.rst:19
-#, fuzzy
-msgid "A process describes a sequence of automated steps that optimize workflows and enable efficient task management within an application. Start the Axon Ivy :ref:`process-editor` that is included in NEO Designer to design and edit a process model."
-msgstr "プロセスは、ワークフローを最適化し、アプリケーション内での効率的なタスク管理を可能にする、一連の自動化されたステップです。NEO Designer に含まれる Axon Ivy :ref:`process-editor` を起動して、プロセスモデルを設計、編集します。"
-
-#: ../../source/neo-designer/gettingstarted.rst:27
-msgid "Define the Data"
-msgstr "データの定義"
-
-#: ../../source/neo-designer/gettingstarted.rst:28
-msgid "A data class is used to define and structure the data within a process application. It is used to manage data consistently across processes and forms. Use the Axon Ivy :ref:`data-class-editor` that is part of NEO to define the list of data attributes used in the process."
-msgstr "データクラスを使用して、プロセスアプリケーション内のデータを定義し、構造化します。プロセスやフォーム全体で一貫してデータを管理するのに使用します。NEO に含まれる Axon Ivy :ref:`data-class-editor` を使用して、プロセスで使用されるデータの属性を定義します。"
-
-#: ../../source/neo-designer/gettingstarted.rst:36
-msgid "Create Forms"
-msgstr "フォームの作成"
-
-#: ../../source/neo-designer/gettingstarted.rst:37
-msgid "A form is a user interface element that facilitates data entry and interaction with the application, acting as a bridge between users and the system. The Axon Ivy :ref:`form-editor` is a graphical modeling tool to design dynamic forms."
-msgstr "フォームは、データの入力やアプリケーションとのインタラクションを容易にするユーザーインターフェースの要素で、ユーザーとシステムの橋渡しをします。Axon Ivy :ref:`form-editor` は、動的フォームを設計するためのグラフィカルなモデリングツールです。"
-
-#: ../../source/neo-designer/gettingstarted.rst:44
-msgid "Simulate the application"
-msgstr "アプリケーションのシミュレーション"
-
-#: ../../source/neo-designer/gettingstarted.rst:45
-#, fuzzy
-msgid "Included in NEO Designer is a simulator feature to execute and test a process with a single click."
-msgstr "NEO Designer に含まれるシミュレーター機能を使用して、プロセスをワンクリックで実行、テストできます。"
-
-#: ../../source/neo-designer/gettingstarted.rst:51
-#, fuzzy
-msgid "Configurations"
-msgstr "設定"
-
-#: ../../source/neo-designer/gettingstarted.rst:52
-#, fuzzy
-msgid "Configurations are the settings and parameters that define how an application behaves and interacts with other systems. Use the :ref:`variables-editor`, :ref:`cms-editor` or the :ref:`role-editor` to do so."
-msgstr "設定とパラメーターで、アプリケーションの動作と他のシステムとのインタラクションを定義します :ref:`variables-editor` を使用して、変数のキーと値を作成、削除、編集します。"
-
-#: ../../source/neo-designer/gettingstarted.rst:59
-msgid "Import more Projects"
-msgstr "プロジェクトのインポート"
-
-#: ../../source/neo-designer/gettingstarted.rst:60
-#, fuzzy
-msgid "Projects can be imported into the workspace either from the :ref:`market` or from a file. In the Axon Ivy market you can find and download reusable components, templates and solutions to accelerate development. In collaboration with a pro designer, packed project files will be shared."
-msgstr "プロジェクトを :ref:`market` またはファイルからワークスペースにインポートできます。Axon Ivy Market では、開発をスピードアップする、再利用可能なコンポーネント、テンプレート、ソリューションを見つけ、ダウンロードできます。プロの設計者と連携して、パックされたプロジェクトファイルを共有できます。"
-
-#: ../../source/neo-designer/gettingstarted.rst:65
-msgid "To use the components from imported projects they must be added as a dependency to the main project."
-msgstr "インポートしたプロジェクトのコンポーネントを使用するには、メインプロジェクトに依存するコンポーネントとして追加する必要があります。"
-
-#: ../../source/neo-designer/index.rst:4
-msgid "NEO Designer"
-msgstr "NEO Designer"
-
-#: ../../source/neo-designer/index.rst:6
-msgid "NEO Designer is the low-code entry into Axon Ivy. A web-based and easy to use app to build and simulate executable Axon Ivy process applications."
-msgstr "NEO Designer は、Axon Ivy のローコードアプリケーションです。ウェブベースで使いやすく、実行可能な Axon Ivy プロセスを作成、シミュレートできます。"
-
-#: ../../source/neo-designer/introduction.rst:6
-msgid "NEO Designer is a low-code platform that accelerates application development by using visual tools and pre-built components, enabling seamless collaboration between business users and developers. This platform simplifies the automation of business tasks, streamlining the development process and reducing complexity. Designed to enhance efficiency, NEO Designer supports the rapid deployment of scalable applications, tailored to meet specific business needs effectively."
-msgstr "NEO Designer は、ビジュアルツールとあらかじめ作成されたコンポーネントを使用して、アプリケーションの開発をスピードアップし、ビジネスユーザーと開発者のシームレスな連携を実現するローコードプラットフォームです。ビジネスタスクの自動化を簡素化し、開発プロセスを効率化し、複雑さを軽減します。効率の向上を目的に設計された NEO Designer は、スケーラブルなアプリケーションの迅速な展開をサポートし、効率的にビジネスニーズを満たします。"
-
-#: ../../source/neo-designer/introduction.rst:13
-msgid "NEO Designer is a web-based app that is available on the Axon Ivy Engine."
-msgstr "NEO Designer は Axon Ivy Engine で使用可能なウェブベースのアプリケーションです。"
-
-#: ../../source/neo-designer/localsetup.rst:4
-msgid "Local setup"
-msgstr "ローカルセットアップ"
-
-#: ../../source/neo-designer/localsetup.rst:6
-#, fuzzy
-msgid "It is possible to run NEO Designer based on a local installation. For that, download the Axon Ivy Engine suitable for your system. Install the engine following the :ref:`Engine Guide <engine-guide>` and start the engine. It will run in DEMO-MODE. No further configuration is needed."
-msgstr "NEO Designer をローカルにインストールして実行できます。システムに適した Axon Ivy Engine をダウンロードしてください :ref:`エンジンガイド<engine-guide>` 従ってエンジンをインストールし、起動すると、デモモードで動作します。追加設定は必要ありません。"
-
-#: ../../source/neo-designer/localsetup.rst:12
-msgid "The engine will open a default web browser showing the engine main page. Click the button to start NEO Designer."
-msgstr "エンジンにより、デフォルトのウェブブラウザが開き、エンジンのメインページが表示されます。ボタンをクリックして、NEO Designer を起動します。"
-
-#: ../../source/neo-designer/localsetup.rst:17
-msgid "In order to work with the NEO Designer you have to login with a predefined default user **neo** and password **neo**"
-msgstr "NEO Designer を使用して作業するには、あらかじめ定義されたデフォルトのユーザー名 **neo** とパスワード **neo** でログインする必要があります。"
-
-#: ../../source/neo-designer/serversetup.rst:4
-msgid "Server setup"
-msgstr "サーバーセットアップ"
-
-#: ../../source/neo-designer/serversetup.rst:6
-#, fuzzy
-msgid "The setup of an Axon Ivy Engine for the low-code development with the NEO Designer is straightforward. Download the Axon Ivy Engine suitable for your system. Install the engine following the :ref:`Engine Guide <engine-guide>`. Start the engine. It will run in DEMO-MODE. There is no need to configure a production setup like a system database or a search engine."
-msgstr "NEO Designer を使用したローコード開発用に Axon Ivy Engine をセットアップするのは簡単です。システムに適した Axon Ivy Engine をダウンロードしてください :ref:`エンジンガイド<engine-guide>` 従ってエンジンをインストールし、起動すると、デモモードで動作します。システムデータベースや検索エンジンのように、本番環境のセットアップは必要ありません。"
-
-#: ../../source/neo-designer/serversetup.rst:13
-#, fuzzy
-msgid "In order to work with the NEO Designer users must authenticate themselves. NEO users are managed in the **default** security system on the engine. The default security system must be configured to access an External Identity Provider. See the :ref:`Configuration chapter <configuration-security-system>` in the Engine Guide. It is also highly recommended to control the access to the Axon Ivy Engine with a :ref:`reverse-proxy`."
-msgstr "NEO Designer を使用するには、ユーザーは自身を認証する必要があります。NEO ユーザーはエンジンの**デフォルト** のセキュリティシステムで管理されます。外部の ID プロバイダーにアクセスするには、デフォルトのセキュリティシステムを設定する必要があります。 エンジンガイドの :ref:`設定<configuration-security-system>` の章を参照してください。 :ref:`reverse-proxy` で Axon Ivy Engine へのアクセスを制御することを強く推奨します。"
-
-#: ../../source/neo-designer/serversetup.rst:21
-msgid "Users will start NEO Designer in a web browser using the url <ivy-engine>/neo They have to login with user name and password."
-msgstr "ユーザーは、<ivy-engine>/neo という URL を使用して、ウェブブラウザで NEO Designer 起動します。ユーザー名とパスワードでログインする必要があります。"
-
 #: ../../source/portal-guide/index.rst:4
 msgid "Portal Guide"
 msgstr "ポータルガイド"
@@ -26673,3 +26681,90 @@ msgstr "これは単なるプレースホルダーであり、Javadocに置き�
 
 #~ msgid "We help you with these configurations by providing an accessor for static element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html#getConfig()>`."
 #~ msgstr ":public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>` から静的要素を設定するためのアクセサを提供して、そのような設定を行うことができます。"
+
+#~ msgid "Axon Ivy NEO Designer"
+#~ msgstr "Axon Ivy NEO Designer"
+
+#~ msgid "NEO Designer users are working with a :ref:`web browser <browser-system-requirements>` that communicates with an :ref:`Axon Ivy Engine <engine-system-requirements>`."
+#~ msgstr "NEO Designer のユーザーは、 :ref:`Axon Ivy Engine<engine-system-requirements>` と通信する :ref:`ウェブブラウザ<browser-system-requirements>` を使用して作業しています。"
+
+#~ msgid "Create a Workspace"
+#~ msgstr "ワークスペースの作成"
+
+#~ msgid "To start working with NEO Designer you first create a workspace. A workspace is the development area where an application is built and tested. It's the space where your business processes are designed, previewed and simulated before they're deployed as a functioning application. In a newly created workspace, you will find a first main project as your starting point to begin your work."
+#~ msgstr "NEO Designer の使用を開始するには、最初にワークスペースを作成します。ワークスペースは、アプリケーションを作成、テストする開発領域です。このスペースで、ビジネスプロセスを設計し、正常に機能するアプリケーションとして展開する前にプレビュー、シミュレーションを行います。新しく作成したワークスペースには、作業の開始点として最初のメインプロジェクトが表示されます。"
+
+#~ msgid "Draw a Process model"
+#~ msgstr "プロセスモデルの作成"
+
+#~ msgid "A process describes a sequence of automated steps that optimize workflows and enable efficient task management within an application. Start the Axon Ivy :ref:`process-editor` that is included in NEO Designer to design and edit a process model."
+#~ msgstr "プロセスは、ワークフローを最適化し、アプリケーション内での効率的なタスク管理を可能にする、一連の自動化されたステップです。NEO Designer に含まれる Axon Ivy :ref:`process-editor` を起動して、プロセスモデルを設計、編集します。"
+
+#~ msgid "Define the Data"
+#~ msgstr "データの定義"
+
+#~ msgid "A data class is used to define and structure the data within a process application. It is used to manage data consistently across processes and forms. Use the Axon Ivy :ref:`data-class-editor` that is part of NEO to define the list of data attributes used in the process."
+#~ msgstr "データクラスを使用して、プロセスアプリケーション内のデータを定義し、構造化します。プロセスやフォーム全体で一貫してデータを管理するのに使用します。NEO に含まれる Axon Ivy :ref:`data-class-editor` を使用して、プロセスで使用されるデータの属性を定義します。"
+
+#~ msgid "Create Forms"
+#~ msgstr "フォームの作成"
+
+#~ msgid "A form is a user interface element that facilitates data entry and interaction with the application, acting as a bridge between users and the system. The Axon Ivy :ref:`form-editor` is a graphical modeling tool to design dynamic forms."
+#~ msgstr "フォームは、データの入力やアプリケーションとのインタラクションを容易にするユーザーインターフェースの要素で、ユーザーとシステムの橋渡しをします。Axon Ivy :ref:`form-editor` は、動的フォームを設計するためのグラフィカルなモデリングツールです。"
+
+#~ msgid "Simulate the application"
+#~ msgstr "アプリケーションのシミュレーション"
+
+#~ msgid "Included in NEO Designer is a simulator feature to execute and test a process with a single click."
+#~ msgstr "NEO Designer に含まれるシミュレーター機能を使用して、プロセスをワンクリックで実行、テストできます。"
+
+#~ msgid "Configurations"
+#~ msgstr "設定"
+
+#~ msgid "Configurations are the settings and parameters that define how an application behaves and interacts with other systems. Use the :ref:`variables-editor`, :ref:`cms-editor` or the :ref:`role-editor` to do so."
+#~ msgstr "設定とパラメーターで、アプリケーションの動作と他のシステムとのインタラクションを定義します :ref:`variables-editor` を使用して、変数のキーと値を作成、削除、編集します。"
+
+#~ msgid "Import more Projects"
+#~ msgstr "プロジェクトのインポート"
+
+#~ msgid "Projects can be imported into the workspace either from the :ref:`market` or from a file. In the Axon Ivy market you can find and download reusable components, templates and solutions to accelerate development. In collaboration with a pro designer, packed project files will be shared."
+#~ msgstr "プロジェクトを :ref:`market` またはファイルからワークスペースにインポートできます。Axon Ivy Market では、開発をスピードアップする、再利用可能なコンポーネント、テンプレート、ソリューションを見つけ、ダウンロードできます。プロの設計者と連携して、パックされたプロジェクトファイルを共有できます。"
+
+#~ msgid "To use the components from imported projects they must be added as a dependency to the main project."
+#~ msgstr "インポートしたプロジェクトのコンポーネントを使用するには、メインプロジェクトに依存するコンポーネントとして追加する必要があります。"
+
+#~ msgid "NEO Designer"
+#~ msgstr "NEO Designer"
+
+#~ msgid "NEO Designer is the low-code entry into Axon Ivy. A web-based and easy to use app to build and simulate executable Axon Ivy process applications."
+#~ msgstr "NEO Designer は、Axon Ivy のローコードアプリケーションです。ウェブベースで使いやすく、実行可能な Axon Ivy プロセスを作成、シミュレートできます。"
+
+#~ msgid "NEO Designer is a low-code platform that accelerates application development by using visual tools and pre-built components, enabling seamless collaboration between business users and developers. This platform simplifies the automation of business tasks, streamlining the development process and reducing complexity. Designed to enhance efficiency, NEO Designer supports the rapid deployment of scalable applications, tailored to meet specific business needs effectively."
+#~ msgstr "NEO Designer は、ビジュアルツールとあらかじめ作成されたコンポーネントを使用して、アプリケーションの開発をスピードアップし、ビジネスユーザーと開発者のシームレスな連携を実現するローコードプラットフォームです。ビジネスタスクの自動化を簡素化し、開発プロセスを効率化し、複雑さを軽減します。効率の向上を目的に設計された NEO Designer は、スケーラブルなアプリケーションの迅速な展開をサポートし、効率的にビジネスニーズを満たします。"
+
+#~ msgid "NEO Designer is a web-based app that is available on the Axon Ivy Engine."
+#~ msgstr "NEO Designer は Axon Ivy Engine で使用可能なウェブベースのアプリケーションです。"
+
+#~ msgid "Local setup"
+#~ msgstr "ローカルセットアップ"
+
+#~ msgid "It is possible to run NEO Designer based on a local installation. For that, download the Axon Ivy Engine suitable for your system. Install the engine following the :ref:`Engine Guide <engine-guide>` and start the engine. It will run in DEMO-MODE. No further configuration is needed."
+#~ msgstr "NEO Designer をローカルにインストールして実行できます。システムに適した Axon Ivy Engine をダウンロードしてください :ref:`エンジンガイド<engine-guide>` 従ってエンジンをインストールし、起動すると、デモモードで動作します。追加設定は必要ありません。"
+
+#~ msgid "The engine will open a default web browser showing the engine main page. Click the button to start NEO Designer."
+#~ msgstr "エンジンにより、デフォルトのウェブブラウザが開き、エンジンのメインページが表示されます。ボタンをクリックして、NEO Designer を起動します。"
+
+#~ msgid "In order to work with the NEO Designer you have to login with a predefined default user **neo** and password **neo**"
+#~ msgstr "NEO Designer を使用して作業するには、あらかじめ定義されたデフォルトのユーザー名 **neo** とパスワード **neo** でログインする必要があります。"
+
+#~ msgid "Server setup"
+#~ msgstr "サーバーセットアップ"
+
+#~ msgid "The setup of an Axon Ivy Engine for the low-code development with the NEO Designer is straightforward. Download the Axon Ivy Engine suitable for your system. Install the engine following the :ref:`Engine Guide <engine-guide>`. Start the engine. It will run in DEMO-MODE. There is no need to configure a production setup like a system database or a search engine."
+#~ msgstr "NEO Designer を使用したローコード開発用に Axon Ivy Engine をセットアップするのは簡単です。システムに適した Axon Ivy Engine をダウンロードしてください :ref:`エンジンガイド<engine-guide>` 従ってエンジンをインストールし、起動すると、デモモードで動作します。システムデータベースや検索エンジンのように、本番環境のセットアップは必要ありません。"
+
+#~ msgid "In order to work with the NEO Designer users must authenticate themselves. NEO users are managed in the **default** security system on the engine. The default security system must be configured to access an External Identity Provider. See the :ref:`Configuration chapter <configuration-security-system>` in the Engine Guide. It is also highly recommended to control the access to the Axon Ivy Engine with a :ref:`reverse-proxy`."
+#~ msgstr "NEO Designer を使用するには、ユーザーは自身を認証する必要があります。NEO ユーザーはエンジンの**デフォルト** のセキュリティシステムで管理されます。外部の ID プロバイダーにアクセスするには、デフォルトのセキュリティシステムを設定する必要があります。 エンジンガイドの :ref:`設定<configuration-security-system>` の章を参照してください。 :ref:`reverse-proxy` で Axon Ivy Engine へのアクセスを制御することを強く推奨します。"
+
+#~ msgid "Users will start NEO Designer in a web browser using the url <ivy-engine>/neo They have to login with user name and password."
+#~ msgstr "ユーザーは、<ivy-engine>/neo という URL を使用して、ウェブブラウザで NEO Designer 起動します。ユーザー名とパスワードでログインする必要があります。"
