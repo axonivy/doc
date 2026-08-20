@@ -41,7 +41,7 @@ pipeline {
                "VERSION=${version} BRANCH_VERSION=${branchVersion} "+
                "VERSION_SWITCHER=true"
           }
-          sh "rm build/html/portal/index.html"
+          sh "rm build/html/portal-guide/index.html"
           sh "mkdir -p build/doc"
           sh "mv build/html build/doc/en"
 
@@ -65,7 +65,7 @@ pipeline {
                "LOCALEDIR=\"${env.WORKSPACE}/locale\" SPHINXOPTS=\"-D language='ja'\" "+
                "VERSION_SWITCHER=true"
           }
-          sh "rm build/html/portal/index.html"
+          sh "rm build/html/portal-guide/index.html"
           sh "mkdir -p build/doc"
           sh "mv build/html build/doc/ja"
 
