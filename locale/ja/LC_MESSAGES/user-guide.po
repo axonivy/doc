@@ -3846,7 +3846,7 @@ msgstr "プロジェクト「a」で定義された型のオブジェクトを�
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:43
 #: ../../source/engine-guide/integration/opensearch/index.rst:4
-#: ../../source/introduction/system-requirements/engine.rst:113
+#: ../../source/engine-guide/introduction/index.rst:121
 msgid "OpenSearch"
 msgstr "OpenSearch"
 
@@ -7403,6 +7403,7 @@ msgid "Click on :guilabel:`Finish` to actually paste the copied resource(s) to t
 msgstr ":guilabel:`終了`をクリックすると、コピーされたリソースが実際に定義された場所に貼り付けられます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/index.rst:2
+#: ../../source/engine-guide/introduction/index.rst:2
 #: ../../source/introduction/index.rst:2
 msgid "Introduction"
 msgstr "はじめに"
@@ -18916,9 +18917,9 @@ msgid "Character set as well as collation can be defined on several levels in th
 msgstr "文字セットと照合はデータシステムの複数のレベル（サーバー、データベース、表、列）で定義できます。どのレベルで定義できるかは、使用するデータベース管理システムによります。詳細については、データベース管理システムのドキュメントを参照してください。"
 
 #: ../../source/engine-guide/configuration/system-database/index.rst:4
+#: ../../source/engine-guide/introduction/index.rst:99
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:26
 #: ../../source/engine-guide/reference/setup-wizard.rst:98
-#: ../../source/introduction/system-requirements/engine.rst:91
 msgid "System Database"
 msgstr "システムデータベース"
 
@@ -18969,7 +18970,7 @@ msgid "If you experience bad query performance in Portal, then try to increase t
 msgstr "ポータルのクエリのパフォーマンスが低い場合は、データベースの :file:`my.cnf` 設定ファイルで ``innodb-buffer-pool-size`` の設定値を大きくしてみてください。"
 
 #: ../../source/engine-guide/configuration/system-database/mssql.rst:4
-#: ../../source/introduction/system-requirements/engine.rst:102
+#: ../../source/engine-guide/introduction/index.rst:110
 msgid "Microsoft SQL Server"
 msgstr "Microsoft SQL Server"
 
@@ -19122,7 +19123,7 @@ msgid "Be sure that the configuration of the database connection uses the new da
 msgstr "データベース接続の設定では、新しいデータベースと、システムデータベースの表を作成したいデータベースを反映した Oracle サービス ID を使用してください。"
 
 #: ../../source/engine-guide/configuration/system-database/postgres.rst:4
-#: ../../source/introduction/system-requirements/engine.rst:96
+#: ../../source/engine-guide/introduction/index.rst:104
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
@@ -19570,12 +19571,15 @@ msgid "Changing the name or params of call subs if they are used in dependent pr
 msgstr "依存関係にあるプロジェクトで使用されているサブプロセスの呼び出しの名前またはパラメーターの変更"
 
 #: ../../source/engine-guide/index.rst:4
-msgid "Engine Guide"
-msgstr "エンジンガイド"
+#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:80
+#: ../../source/introduction/getting-started/engine/index.rst:4
+msgid "Engine"
+msgstr "エンジン"
 
 #: ../../source/engine-guide/index.rst:6
-msgid "This guide covers all aspects of an Axon Ivy Engine lifecycle, including installation, configuration and production operation. If you want to familiarize yourself with the Axon Ivy Engine, we recommend to dive into :ref:`Getting Started with the Engine <getting-started-engine>`."
-msgstr "このガイドでは、インストール、設定、本番運用を含む Axon Ivy Engine のライフサイクル全般を取り上げます。Axon Ivy Engine の理解を深めたい場合は、「 :ref:`エンジン入門 <getting-started-engine>` 」をよく読むことをお勧めします。"
+#, fuzzy
+msgid "This guide covers all aspects of an Axon Ivy Engine lifecycle, including installation, configuration and production operation."
+msgstr "このガイドでは、インストール、設定、本番運用を含む Axon Ivy Engine のライフサイクル全般を取り上げます。"
 
 #: ../../source/engine-guide/integration/cluster/communication/index.rst:4
 msgid "Communication"
@@ -20412,6 +20416,276 @@ msgstr "ほとんどの WAF システムや IAM システムでは、識別さ�
 msgid "The only available access point has to be the WAF. Any traffic has to be routed via the WAF. The WAF tries to protect the web application behind it (e.g., Axon Ivy Engine) from attacks. The WAF uses the IAM to identify users and to protect certain resources from unauthorized access. The IAM itself may use a directory server like Microsoft Active Directory to authenticate users. The WAF can be configured to provide the name of the identified user either as HTTP header or HTTP cookie to the web application (Axon Ivy Engine)."
 msgstr "利用できるアクセスポイントは WAF のみとし、すべてのトラフィックを WAF 経由で転送する必要があります。WAF はその後方にあるウェブアプリケーション（Axon Ivy Engine など）を攻撃から保護します。WAF は IAM を使用してユーザーを識別し、リソースを不正アクセスから保護します。IAM は、Microsoft Active Directory などのディレクトリサーバーを使用して、ユーザーを認証します。識別したユーザーの名前を HTTP ヘッダーまたは HTTP Cookie としてウェブアプリケーション（Axon Ivy Engine）に提供するように WAF を設定できます。"
 
+#: ../../source/engine-guide/introduction/index.rst:4
+#, fuzzy
+msgid "If you want to familiarize yourself with the Axon Ivy Engine, we recommend to dive into :ref:`Getting Started with the Engine <getting-started-engine>`."
+msgstr "Axon Ivy Engine の理解を深めたい場合は、「 :ref:`エンジン入門 <getting-started-engine>` 」をよく読むことをお勧めします。"
+
+#: ../../source/engine-guide/introduction/index.rst:12
+#, fuzzy
+msgid "Engine System Requirements"
+msgstr "システム要件"
+
+#: ../../source/engine-guide/introduction/index.rst:14
+msgid "The following system requirements highly depend on the number of Named Users, Concurrent Users, and deployed applications."
+msgstr "以下のシステム要件は、名前付きユーザー、同時ユーザー、展開されるアプリケーションの数に大きく依存します。"
+
+#: ../../source/engine-guide/introduction/index.rst:19
+#: ../../source/introduction/system-requirements/designer.rst:9
+msgid "Hardware Requirements"
+msgstr "ハードウェア要件"
+
+#: ../../source/engine-guide/introduction/index.rst:21
+msgid "By default, the Axon Ivy Engine runs a bundled OpenSearch server. It is possible to integrate with an :ref:`external <opensearch-external>` OpenSearch instance. This also affects the minimum hardware requirements."
+msgstr "デフォルトでは、Axon Ivy Engine はバンドルされた OpenSearch サーバーを実行します :ref:`外部<opensearch-external>` OpenSearch インスタンスと統合することも可能ですが、最小ハードウェア要件にも影響が生じます。"
+
+#: ../../source/engine-guide/introduction/index.rst:27
+msgid "With bundled OpenSearch server (default)"
+msgstr "バンドルされている OpenSearch サーバーを使用（初期値）"
+
+#: ../../source/engine-guide/introduction/index.rst:28
+#, fuzzy
+msgid "**Memory (RAM)**: Minimum is 8 GB, we recommend using 32 GB."
+msgstr "**メモリ（RAM）** ：最低 8 GB、32 GB を推奨。"
+
+#: ../../source/engine-guide/introduction/index.rst:31
+msgid "**Disk Space**: Minimum is 20 GB, we recommend 100 GB on a Solid State Disk (SSD)."
+msgstr "**ディスクの空き容量** ：最低 20 GB、SSD では 100 GB を推奨。"
+
+#: ../../source/engine-guide/introduction/index.rst:34
+msgid "**Processors**: Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz."
+msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
+
+#: ../../source/engine-guide/introduction/index.rst:39
+msgid "With an external OpenSearch server"
+msgstr "外部の OpenSearch サーバーを使用"
+
+#: ../../source/engine-guide/introduction/index.rst:40
+msgid "**Memory (RAM)**: Minimum is 4 GB. We recommend using at least 16 GB."
+msgstr "**メモリ（RAM）** ：最低 4 GB、16 GB 以上を推奨。"
+
+#: ../../source/engine-guide/introduction/index.rst:43
+msgid "**Disk Space**: Minimum is 2 GB. We recommend 50 GB on a Solid State Disk (SSD)."
+msgstr "**ディスクの空き容量** ：最低 2 GB、SSD では 50 GB を推奨。"
+
+#: ../../source/engine-guide/introduction/index.rst:46
+msgid "**Processors**: Minimum is 4 cores with 2 GHz. We recommend 16 cores with 2.5 GHz."
+msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
+
+#: ../../source/engine-guide/introduction/index.rst:50
+#, fuzzy
+msgid "File System"
+msgstr "ファイルシステム"
+
+#: ../../source/engine-guide/introduction/index.rst:52
+msgid "On Linux, the Axon Ivy Engine's directory requires a file system that fully supports the POSIX file operations. For example, Linux setups using SMB/CIFS shares with incomplete POSIX behavior are not supported. This is due to a `known limitation <https://bugs.openjdk.org/browse/JDK-8261790>`_ in the JDK itself."
+msgstr "Linux では、Axon Ivy Engine のディレクトリには、POSIX ファイルの動作を完全にサポートするファイルシステムが必要です。 たとえば、SMB/CIFS による Linux のセットアップは、未完成の POSIX の動作では対応していません。 これは、JDK 自体の `既知の制限 <https://bugs.openjdk.org/browse/JDK-8261790>`_ によるものです。"
+
+#: ../../source/engine-guide/introduction/index.rst:57
+msgid "This includes, but is not limited to:"
+msgstr "以下が含まれますが、以下に限定されません："
+
+#: ../../source/engine-guide/introduction/index.rst:59
+msgid "Azure classic file share"
+msgstr "Azureの古典的なファイル共有"
+
+#: ../../source/engine-guide/introduction/index.rst:62
+#: ../../source/introduction/system-requirements/designer.rst:18
+msgid "Software Requirements"
+msgstr "ソフトウェア要件"
+
+#: ../../source/engine-guide/introduction/index.rst:64
+#, fuzzy
+msgid "The Axon Ivy Engine needs Java SE 25 to run and is tested with `Eclipse Temurin <https://adoptium.net/>`_."
+msgstr "Axon Ivy Engine を実行するには、Java SE 21 が必要です。Axon Ivy Engine は、`Eclipse Temurin <https://adoptium.net/>`_ でテストされています。"
+
+#: ../../source/engine-guide/introduction/index.rst:67
+#, fuzzy
+msgid "Note: Java SE 25 `Eclipse Temurin <https://adoptium.net/>`_ is already included in our Windows installation and the Docker container. On Linux, we do not include Java SE 25. You may want to use Java SE 25 provided by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_."
+msgstr "注：Java SE 21 `Eclipse Temurin <https://adoptium.net/>`_ は、Windows インストレーションと Docker コンテナに含まれています。Linux には Java SE 21 は含まれていません。お使いのオペレーティングシステムで提供される Java SE 21 を使用したり、`Eclipse Temurin <https://adoptium.net/>`_ をインストールすることも可能です。"
+
+#: ../../source/engine-guide/introduction/index.rst:75
+#: ../../source/introduction/system-requirements/designer.rst:30
+msgid "Operating Systems"
+msgstr "オペレーティングシステム"
+
+#: ../../source/engine-guide/introduction/index.rst:77
+msgid "The Enterprise Edition has some :ref:`advantages <cluster>` but also some :ref:`restrictions <cluster-restrictions>` compared to the Standard Edition."
+msgstr "Enterprise Edition には Standard Edition と比較していくつかの :ref:`利点<cluster>` がありますが :ref:`制限<cluster-restrictions>` いくつかあります。"
+
+#: ../../source/engine-guide/introduction/index.rst:81
+msgid "Engine Type"
+msgstr "エンジンのタイプ"
+
+#: ../../source/engine-guide/introduction/index.rst:81
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:22
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
+#: ../../source/introduction/getting-started/engine/index.rst:55
+#: ../../source/introduction/getting-started/engine/windows/index.rst:4
+#: ../../source/introduction/system-requirements/designer.rst
+#: ../../source/technical-info/migration/hotfix/index.rst:33
+#: ../../source/technical-info/migration/hotfix/windows.rst:4
+#: ../../source/technical-info/migration/major/windows.rst:4
+msgid "Windows"
+msgstr "Windows"
+
+#: ../../source/engine-guide/introduction/index.rst:81
+#: ../../source/engine-guide/introduction/index.rst:95
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
+#: ../../source/introduction/getting-started/engine/index.rst:47
+#: ../../source/introduction/getting-started/engine/linux/index.rst:4
+#: ../../source/introduction/system-requirements/designer.rst
+#: ../../source/technical-info/migration/hotfix/linux.rst:4
+#: ../../source/technical-info/migration/major/linux.rst:4
+msgid "Linux"
+msgstr "Linux"
+
+#: ../../source/engine-guide/introduction/index.rst:81
+msgid "Container (Linux)"
+msgstr "コンテナ（Linux）"
+
+#: ../../source/engine-guide/introduction/index.rst:83
+msgid "Standard Edition"
+msgstr "Standard Edition"
+
+#: ../../source/engine-guide/introduction/index.rst:83
+#: ../../source/engine-guide/introduction/index.rst:85
+msgid "Yes"
+msgstr "○"
+
+#: ../../source/engine-guide/introduction/index.rst:85
+msgid "Enterprise Edition"
+msgstr "Enterprise Edition"
+
+#: ../../source/engine-guide/introduction/index.rst:85
+msgid "No"
+msgstr "×"
+
+#: ../../source/engine-guide/introduction/index.rst:88
+msgid "Supported Operating Systems"
+msgstr "サポートされるオペレーティングシステム"
+
+#: ../../source/engine-guide/introduction/index.rst:91
+#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:9
+msgid "OS"
+msgstr "OS"
+
+#: ../../source/engine-guide/introduction/index.rst:91
+#: ../../source/engine-guide/introduction/index.rst:102
+msgid "Supported"
+msgstr "サポート対象"
+
+#: ../../source/engine-guide/introduction/index.rst:91
+#: ../../source/engine-guide/introduction/index.rst:102
+msgid "Tested"
+msgstr "テスト済み"
+
+#: ../../source/engine-guide/introduction/index.rst:93
+msgid "Windows Server"
+msgstr "Windows Server"
+
+#: ../../source/engine-guide/introduction/index.rst:93
+msgid "2019, 2022, 2025"
+msgstr "2019、2022、2025"
+
+#: ../../source/engine-guide/introduction/index.rst:93
+msgid "2025"
+msgstr "2025"
+
+#: ../../source/engine-guide/introduction/index.rst:95
+msgid "x64"
+msgstr "x64"
+
+#: ../../source/engine-guide/introduction/index.rst:95
+msgid "Ubuntu 24.04"
+msgstr "Ubuntu 24.04"
+
+#: ../../source/engine-guide/introduction/index.rst:102
+msgid "Database System"
+msgstr "データベースシステム"
+
+#: ../../source/engine-guide/introduction/index.rst:104
+msgid "15, 16, 17, 18"
+msgstr ""
+
+#: ../../source/engine-guide/introduction/index.rst:104
+#, fuzzy
+msgid "15, 18"
+msgstr "14、17"
+
+#: ../../source/engine-guide/introduction/index.rst:106
+msgid "MySQL (InnoDB)"
+msgstr "MySQL（InnoDB）"
+
+#: ../../source/engine-guide/introduction/index.rst:106
+#, fuzzy
+msgid "8.4, 9.6"
+msgstr "8.4、9"
+
+#: ../../source/engine-guide/introduction/index.rst:108
+msgid "MariaDB (InnoDB)"
+msgstr "MariaDB（InnoDB）"
+
+#: ../../source/engine-guide/introduction/index.rst:108
+#, fuzzy
+msgid "11.4, 12.3"
+msgstr "19、23"
+
+#: ../../source/engine-guide/introduction/index.rst:110
+#, fuzzy
+msgid "2022, 2025"
+msgstr "2019、2025"
+
+#: ../../source/engine-guide/introduction/index.rst:112
+msgid "Oracle Database"
+msgstr "Oracle Database"
+
+#: ../../source/engine-guide/introduction/index.rst:112
+#, fuzzy
+msgid "19, 26"
+msgstr "19、23"
+
+#: ../../source/engine-guide/introduction/index.rst:117
+msgid "MySQL 9.7 is not supported yet. `Read more here <https://community.axonivy.com/d/1239-warning-do-not-upgrade-to-mysql-97-foreign-key-cascade-deletes-are-broken>`_."
+msgstr ""
+
+#: ../../source/engine-guide/introduction/index.rst:123
+#, fuzzy
+msgid "Version 3.8. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
+msgstr "バージョン 2.19。 :ref:`自分の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
+
+#: ../../source/engine-guide/introduction/index.rst:130
+msgid "Web Browser"
+msgstr "ウェブブラウザ"
+
+#: ../../source/engine-guide/introduction/index.rst:132
+msgid "All popular web browsers are supported:"
+msgstr "すべての一般的なウェブブラウザに対応しています。"
+
+#: ../../source/engine-guide/introduction/index.rst:134
+msgid "Firefox"
+msgstr "Firefox"
+
+#: ../../source/engine-guide/introduction/index.rst:135
+msgid "Chrome"
+msgstr "Chrome"
+
+#: ../../source/engine-guide/introduction/index.rst:136
+msgid "Opera"
+msgstr "Opera"
+
+#: ../../source/engine-guide/introduction/index.rst:137
+msgid "Safari"
+msgstr "Safari"
+
+#: ../../source/engine-guide/introduction/index.rst:138
+msgid "Edge"
+msgstr "Edge"
+
+#: ../../source/engine-guide/introduction/index.rst:140
+msgid "For security reasons, we recommend using the latest available web browser versions. Most other web browsers that support the latest JavaScript, HTML 5 and CSS 3 specifications will work, too."
+msgstr "セキュリティ上の理由から、最新バージョンのウェブブラウザを使用することを推奨します。他にも、最新の JavaScript、HTML 5、CSS 3 の仕様に対応したほとんどのウェブブラウザでも動作します。"
+
 #: ../../source/engine-guide/monitoring/engine-cockpit.rst:4
 msgid "The **Engine Cockpit** allows you to monitor your engine."
 msgstr "**エンジンコックピット** では、エンジンを監視できます。"
@@ -21228,7 +21502,6 @@ msgid "Helper script to launch a Java program."
 msgstr "Java プログラムを起動するヘルパースクリプト。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/index.rst:2
-#: ../../source/introduction/system-requirements/engine.rst:4
 msgid "Axon Ivy Engine"
 msgstr "Axon Ivy Engine"
 
@@ -21269,18 +21542,6 @@ msgstr "コンソールのサポート"
 msgid ":file:`bin/AxonIvyEngine.exe`"
 msgstr ":file:`bin/AxonIvyEngine.exe`"
 
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:22
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
-#: ../../source/introduction/getting-started/engine/index.rst:55
-#: ../../source/introduction/getting-started/engine/windows/index.rst:4
-#: ../../source/introduction/system-requirements/designer.rst
-#: ../../source/introduction/system-requirements/engine.rst:73
-#: ../../source/technical-info/migration/hotfix/index.rst:33
-#: ../../source/technical-info/migration/hotfix/windows.rst:4
-#: ../../source/technical-info/migration/major/windows.rst:4
-msgid "Windows"
-msgstr "Windows"
-
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
 msgid ":file:`bin/AxonIvyEngineC.exe`"
 msgstr ":file:`bin/AxonIvyEngineC.exe`"
@@ -21288,17 +21549,6 @@ msgstr ":file:`bin/AxonIvyEngineC.exe`"
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
 msgid ":file:`bin/AxonIvyEngine`"
 msgstr ":file:`bin/AxonIvyEngine`"
-
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
-#: ../../source/introduction/getting-started/engine/index.rst:47
-#: ../../source/introduction/getting-started/engine/linux/index.rst:4
-#: ../../source/introduction/system-requirements/designer.rst
-#: ../../source/introduction/system-requirements/engine.rst:73
-#: ../../source/introduction/system-requirements/engine.rst:87
-#: ../../source/technical-info/migration/hotfix/linux.rst:4
-#: ../../source/technical-info/migration/major/linux.rst:4
-msgid "Linux"
-msgstr "Linux"
 
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:32
 msgid "The following options are available for the Axon Ivy Engine:"
@@ -21908,11 +22158,6 @@ msgstr "監視"
 msgid "The **Engine Cockpit** allows you to :ref:`monitor <monitoring>` your Axon Ivy Engine."
 msgstr "**エンジンコックピット** では、Axon Ivy Engine を :ref:`監視<monitoring>` できます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:9
-#: ../../source/introduction/system-requirements/engine.rst:83
-msgid "OS"
-msgstr "OS"
-
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:11
 msgid "The **OS** page shows an overview of the CPU load, memory load, network traffic and disk read-write activity. Additionally, the memory monitor displays the max and current memory usage of the JVM."
 msgstr "**OS** ページには、CPU 負荷、メモリ負荷、ネットワークトラフィック、ディスクの読み書きアクティビティの概要が表示されます。さらに、メモリの監視には、JVM の最大メモリ使用量と現在のメモリ使用量が表示されます。"
@@ -21976,11 +22221,6 @@ msgstr "MBean"
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:71
 msgid "The **MBeans** view displays a tree with all engine :ref:`jmx` MBeans. Click on one of the MBeans to see all of its attributes. Click on an attribute with numeric values to display the value of the attribute over time in a chart. You can add multiple attributes to the chart. Click on the remove icon in the table below the chart to remove the attribute from the chart."
 msgstr "**MBean** ビューには、エンジンのすべての :ref:`jmx` MBean がツリー表示されます。MBean の 1 つをクリックすると、そのすべての属性が表示されます。数値を含む属性をクリックすると、その属性の時系列の値がグラフに表示されます。複数の属性をグラフに追加できます。下の表の削除アイコンをクリックすると、表から属性が削除されます。"
-
-#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:80
-#: ../../source/introduction/getting-started/engine/index.rst:4
-msgid "Engine"
-msgstr "エンジン"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:82
 msgid "The **Engine** pages allow you to monitor some critical indicators of your Axon Ivy Engine:"
@@ -24164,11 +24404,6 @@ msgstr "Axon Ivy Designer"
 msgid "We recommend the following system setup for the Axon Ivy Designer:"
 msgstr "Axon Ivy Designer では、以下のシステムセットアップを推奨します。"
 
-#: ../../source/introduction/system-requirements/designer.rst:9
-#: ../../source/introduction/system-requirements/engine.rst:11
-msgid "Hardware Requirements"
-msgstr "ハードウェア要件"
-
 #: ../../source/introduction/system-requirements/designer.rst:11
 msgid "Hardware requirements may vary depending on how many projects you are working on in your workspace."
 msgstr "ハードウェアの要件は、ワークスペースで作業するプロジェクトの数によって異なる場合があります。"
@@ -24197,11 +24432,6 @@ msgstr "プロセッサ"
 msgid "Minimum is 2 cores with 2 GHz, we recommend 8 cores with 2.5 GHz."
 msgstr "最低 2 GHz の 2 コア、2.5 GHz の 8 コアを推奨。"
 
-#: ../../source/introduction/system-requirements/designer.rst:18
-#: ../../source/introduction/system-requirements/engine.rst:54
-msgid "Software Requirements"
-msgstr "ソフトウェア要件"
-
 #: ../../source/introduction/system-requirements/designer.rst:20
 msgid "Axon Ivy Designer needs Java SE 21 to run."
 msgstr "Axon Ivy Designer を実行するには、Java SE 21 が必要です。"
@@ -24213,11 +24443,6 @@ msgstr "なお、`Eclipse Temurin <https://adoptium.net/>`_ から提供され�
 #: ../../source/introduction/system-requirements/designer.rst:27
 msgid "We test Axon Ivy Designer with `Eclipse Temurin <https://adoptium.net/>`_."
 msgstr "Axon Ivy Designer は、`Eclipse Temurin <https://adoptium.net/>`_ でテストされています。"
-
-#: ../../source/introduction/system-requirements/designer.rst:30
-#: ../../source/introduction/system-requirements/engine.rst:67
-msgid "Operating Systems"
-msgstr "オペレーティングシステム"
 
 #: ../../source/introduction/system-requirements/designer.rst:32
 msgid "Windows 10 / 11 x64 with `WebView2 <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>`_ installed"
@@ -24242,223 +24467,6 @@ msgstr "**macOS**"
 #: ../../source/introduction/system-requirements/designer.rst:41
 msgid "The Designer has some known bugs when running under macOS. We are currently not able to fix those bugs or provide support. Use at your own risk."
 msgstr "macOS で動作するデザイナーには、いくつかの既知のバグがあります。現在、これらのバグを修正したり、サポートを提供することはできません。自己責任で使用してください。"
-
-#: ../../source/introduction/system-requirements/engine.rst:6
-msgid "The following system requirements highly depend on the number of Named Users, Concurrent Users, and deployed applications."
-msgstr "以下のシステム要件は、名前付きユーザー、同時ユーザー、展開されるアプリケーションの数に大きく依存します。"
-
-#: ../../source/introduction/system-requirements/engine.rst:13
-msgid "By default, the Axon Ivy Engine runs a bundled OpenSearch server. It is possible to integrate with an :ref:`external <opensearch-external>` OpenSearch instance. This also affects the minimum hardware requirements."
-msgstr "デフォルトでは、Axon Ivy Engine はバンドルされた OpenSearch サーバーを実行します :ref:`外部<opensearch-external>` OpenSearch インスタンスと統合することも可能ですが、最小ハードウェア要件にも影響が生じます。"
-
-#: ../../source/introduction/system-requirements/engine.rst:19
-msgid "With bundled OpenSearch server (default)"
-msgstr "バンドルされている OpenSearch サーバーを使用（初期値）"
-
-#: ../../source/introduction/system-requirements/engine.rst:20
-#, fuzzy
-msgid "**Memory (RAM)**: Minimum is 8 GB, we recommend using 32 GB."
-msgstr "**メモリ（RAM）** ：最低 8 GB、32 GB を推奨。"
-
-#: ../../source/introduction/system-requirements/engine.rst:23
-msgid "**Disk Space**: Minimum is 20 GB, we recommend 100 GB on a Solid State Disk (SSD)."
-msgstr "**ディスクの空き容量** ：最低 20 GB、SSD では 100 GB を推奨。"
-
-#: ../../source/introduction/system-requirements/engine.rst:26
-msgid "**Processors**: Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz."
-msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
-
-#: ../../source/introduction/system-requirements/engine.rst:31
-msgid "With an external OpenSearch server"
-msgstr "外部の OpenSearch サーバーを使用"
-
-#: ../../source/introduction/system-requirements/engine.rst:32
-msgid "**Memory (RAM)**: Minimum is 4 GB. We recommend using at least 16 GB."
-msgstr "**メモリ（RAM）** ：最低 4 GB、16 GB 以上を推奨。"
-
-#: ../../source/introduction/system-requirements/engine.rst:35
-msgid "**Disk Space**: Minimum is 2 GB. We recommend 50 GB on a Solid State Disk (SSD)."
-msgstr "**ディスクの空き容量** ：最低 2 GB、SSD では 50 GB を推奨。"
-
-#: ../../source/introduction/system-requirements/engine.rst:38
-msgid "**Processors**: Minimum is 4 cores with 2 GHz. We recommend 16 cores with 2.5 GHz."
-msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
-
-#: ../../source/introduction/system-requirements/engine.rst:42
-#, fuzzy
-msgid "File System"
-msgstr "ファイルシステム"
-
-#: ../../source/introduction/system-requirements/engine.rst:44
-msgid "On Linux, the Axon Ivy Engine's directory requires a file system that fully supports the POSIX file operations. For example, Linux setups using SMB/CIFS shares with incomplete POSIX behavior are not supported. This is due to a `known limitation <https://bugs.openjdk.org/browse/JDK-8261790>`_ in the JDK itself."
-msgstr "Linux では、Axon Ivy Engine のディレクトリには、POSIX ファイルの動作を完全にサポートするファイルシステムが必要です。 たとえば、SMB/CIFS による Linux のセットアップは、未完成の POSIX の動作では対応していません。 これは、JDK 自体の `既知の制限 <https://bugs.openjdk.org/browse/JDK-8261790>`_ によるものです。"
-
-#: ../../source/introduction/system-requirements/engine.rst:49
-msgid "This includes, but is not limited to:"
-msgstr "以下が含まれますが、以下に限定されません："
-
-#: ../../source/introduction/system-requirements/engine.rst:51
-msgid "Azure classic file share"
-msgstr "Azureの古典的なファイル共有"
-
-#: ../../source/introduction/system-requirements/engine.rst:56
-#, fuzzy
-msgid "The Axon Ivy Engine needs Java SE 25 to run and is tested with `Eclipse Temurin <https://adoptium.net/>`_."
-msgstr "Axon Ivy Engine を実行するには、Java SE 21 が必要です。Axon Ivy Engine は、`Eclipse Temurin <https://adoptium.net/>`_ でテストされています。"
-
-#: ../../source/introduction/system-requirements/engine.rst:59
-#, fuzzy
-msgid "Note: Java SE 25 `Eclipse Temurin <https://adoptium.net/>`_ is already included in our Windows installation and the Docker container. On Linux, we do not include Java SE 25. You may want to use Java SE 25 provided by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_."
-msgstr "注：Java SE 21 `Eclipse Temurin <https://adoptium.net/>`_ は、Windows インストレーションと Docker コンテナに含まれています。Linux には Java SE 21 は含まれていません。お使いのオペレーティングシステムで提供される Java SE 21 を使用したり、`Eclipse Temurin <https://adoptium.net/>`_ をインストールすることも可能です。"
-
-#: ../../source/introduction/system-requirements/engine.rst:69
-msgid "The Enterprise Edition has some :ref:`advantages <cluster>` but also some :ref:`restrictions <cluster-restrictions>` compared to the Standard Edition."
-msgstr "Enterprise Edition には Standard Edition と比較していくつかの :ref:`利点<cluster>` がありますが :ref:`制限<cluster-restrictions>` いくつかあります。"
-
-#: ../../source/introduction/system-requirements/engine.rst:73
-msgid "Engine Type"
-msgstr "エンジンのタイプ"
-
-#: ../../source/introduction/system-requirements/engine.rst:73
-msgid "Container (Linux)"
-msgstr "コンテナ（Linux）"
-
-#: ../../source/introduction/system-requirements/engine.rst:75
-msgid "Standard Edition"
-msgstr "Standard Edition"
-
-#: ../../source/introduction/system-requirements/engine.rst:75
-#: ../../source/introduction/system-requirements/engine.rst:77
-msgid "Yes"
-msgstr "○"
-
-#: ../../source/introduction/system-requirements/engine.rst:77
-msgid "Enterprise Edition"
-msgstr "Enterprise Edition"
-
-#: ../../source/introduction/system-requirements/engine.rst:77
-msgid "No"
-msgstr "×"
-
-#: ../../source/introduction/system-requirements/engine.rst:80
-msgid "Supported Operating Systems"
-msgstr "サポートされるオペレーティングシステム"
-
-#: ../../source/introduction/system-requirements/engine.rst:83
-#: ../../source/introduction/system-requirements/engine.rst:94
-msgid "Supported"
-msgstr "サポート対象"
-
-#: ../../source/introduction/system-requirements/engine.rst:83
-#: ../../source/introduction/system-requirements/engine.rst:94
-msgid "Tested"
-msgstr "テスト済み"
-
-#: ../../source/introduction/system-requirements/engine.rst:85
-msgid "Windows Server"
-msgstr "Windows Server"
-
-#: ../../source/introduction/system-requirements/engine.rst:85
-msgid "2019, 2022, 2025"
-msgstr "2019、2022、2025"
-
-#: ../../source/introduction/system-requirements/engine.rst:85
-msgid "2025"
-msgstr "2025"
-
-#: ../../source/introduction/system-requirements/engine.rst:87
-msgid "x64"
-msgstr "x64"
-
-#: ../../source/introduction/system-requirements/engine.rst:87
-msgid "Ubuntu 24.04"
-msgstr "Ubuntu 24.04"
-
-#: ../../source/introduction/system-requirements/engine.rst:94
-msgid "Database System"
-msgstr "データベースシステム"
-
-#: ../../source/introduction/system-requirements/engine.rst:96
-msgid "15, 16, 17, 18"
-msgstr ""
-
-#: ../../source/introduction/system-requirements/engine.rst:96
-#, fuzzy
-msgid "15, 18"
-msgstr "14、17"
-
-#: ../../source/introduction/system-requirements/engine.rst:98
-msgid "MySQL (InnoDB)"
-msgstr "MySQL（InnoDB）"
-
-#: ../../source/introduction/system-requirements/engine.rst:98
-#, fuzzy
-msgid "8.4, 9.6"
-msgstr "8.4、9"
-
-#: ../../source/introduction/system-requirements/engine.rst:100
-msgid "MariaDB (InnoDB)"
-msgstr "MariaDB（InnoDB）"
-
-#: ../../source/introduction/system-requirements/engine.rst:100
-#, fuzzy
-msgid "11.4, 12.3"
-msgstr "19、23"
-
-#: ../../source/introduction/system-requirements/engine.rst:102
-#, fuzzy
-msgid "2022, 2025"
-msgstr "2019、2025"
-
-#: ../../source/introduction/system-requirements/engine.rst:104
-msgid "Oracle Database"
-msgstr "Oracle Database"
-
-#: ../../source/introduction/system-requirements/engine.rst:104
-#, fuzzy
-msgid "19, 26"
-msgstr "19、23"
-
-#: ../../source/introduction/system-requirements/engine.rst:109
-msgid "MySQL 9.7 is not supported yet. `Read more here <https://community.axonivy.com/d/1239-warning-do-not-upgrade-to-mysql-97-foreign-key-cascade-deletes-are-broken>`_."
-msgstr ""
-
-#: ../../source/introduction/system-requirements/engine.rst:115
-#, fuzzy
-msgid "Version 3.8. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
-msgstr "バージョン 2.19。 :ref:`自分の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
-
-#: ../../source/introduction/system-requirements/engine.rst:122
-msgid "Web Browser"
-msgstr "ウェブブラウザ"
-
-#: ../../source/introduction/system-requirements/engine.rst:124
-msgid "All popular web browsers are supported:"
-msgstr "すべての一般的なウェブブラウザに対応しています。"
-
-#: ../../source/introduction/system-requirements/engine.rst:126
-msgid "Firefox"
-msgstr "Firefox"
-
-#: ../../source/introduction/system-requirements/engine.rst:127
-msgid "Chrome"
-msgstr "Chrome"
-
-#: ../../source/introduction/system-requirements/engine.rst:128
-msgid "Opera"
-msgstr "Opera"
-
-#: ../../source/introduction/system-requirements/engine.rst:129
-msgid "Safari"
-msgstr "Safari"
-
-#: ../../source/introduction/system-requirements/engine.rst:130
-msgid "Edge"
-msgstr "Edge"
-
-#: ../../source/introduction/system-requirements/engine.rst:132
-msgid "For security reasons, we recommend using the latest available web browser versions. Most other web browsers that support the latest JavaScript, HTML 5 and CSS 3 specifications will work, too."
-msgstr "セキュリティ上の理由から、最新バージョンのウェブブラウザを使用することを推奨します。他にも、最新の JavaScript、HTML 5、CSS 3 の仕様に対応したほとんどのウェブブラウザでも動作します。"
 
 #: ../../source/introduction/system-requirements/index.rst:2
 #: ../../source/technical-info/system-requirements.rst:2
@@ -26782,3 +26790,6 @@ msgstr ":ref:`browser-system-requirements` を参照してください。"
 
 #~ msgid "Browsers"
 #~ msgstr "ブラウザ"
+
+#~ msgid "Engine Guide"
+#~ msgstr "エンジンガイド"

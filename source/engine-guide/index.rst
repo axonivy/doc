@@ -6,8 +6,6 @@ Engine
 This guide covers all aspects of an Axon Ivy Engine lifecycle, including
 installation, configuration and production operation. 
 
-|
-
 .. toctree::
    :maxdepth: 2
 
