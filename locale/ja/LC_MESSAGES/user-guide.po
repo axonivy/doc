@@ -179,7 +179,7 @@ msgid "These generic elements are:"
 msgstr "以下のジェネリック要素があります。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:131
-#: ../../source/introduction/migration/migration-notes-132-140.rst:367
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:367
 msgid ":ref:`process-element-program-start`"
 msgstr ":ref:`process-element-program-start`"
 
@@ -189,7 +189,7 @@ msgstr "（外部）イベントの発生時に新しいプロセスの開始を
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:134
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:45
-#: ../../source/introduction/migration/migration-notes-132-140.rst:369
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:369
 msgid ":ref:`process-element-wait-program-intermediate-event`"
 msgstr ":ref:`process-element-wait-program-intermediate-event`"
 
@@ -198,7 +198,7 @@ msgid "Interrupts process execution until an (external) event occurs."
 msgstr "（外部）イベントが発生するまでプロセスの実行を中断します。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:137
-#: ../../source/introduction/migration/migration-notes-132-140.rst:368
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:368
 msgid ":ref:`process-element-pi`"
 msgstr ":ref:`process-element-pi`"
 
@@ -1919,7 +1919,7 @@ msgstr ":public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` �
 #: ../../source/designer-guide/how-to/workflow/index.rst:2
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-workflow.rst:2
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:186
-#: ../../source/introduction/migration/migration-notes-132-140.rst:310
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:310
 msgid "Workflow"
 msgstr "Workflow"
 
@@ -18464,8 +18464,8 @@ msgstr "Kubernetes で Axon Ivy Engine を実行する場合は、GitHub の :li
 #: ../../source/engine-guide/configuration/docker-container.rst:43
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:57
 #: ../../source/engine-guide/reference/setup-wizard.rst:45
-#: ../../source/introduction/migration/migration-notes-120-131.rst:11
-#: ../../source/introduction/migration/migration-notes-132-140.rst:11
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:11
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:11
 msgid "License"
 msgstr "ライセンス"
 
@@ -21273,9 +21273,9 @@ msgstr ":file:`bin/AxonIvyEngine.exe`"
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
 #: ../../source/introduction/getting-started/engine/index.rst:55
 #: ../../source/introduction/getting-started/engine/windows/index.rst:4
-#: ../../source/introduction/migration/hotfix/index.rst:33
-#: ../../source/introduction/migration/hotfix/windows.rst:4
-#: ../../source/introduction/migration/major/windows.rst:4
+#: ../../source/technical-info/migration/hotfix/index.rst:33
+#: ../../source/technical-info/migration/hotfix/windows.rst:4
+#: ../../source/technical-info/migration/major/windows.rst:4
 #: ../../source/introduction/system-requirements/designer.rst
 #: ../../source/introduction/system-requirements/engine.rst:73
 msgid "Windows"
@@ -21292,8 +21292,8 @@ msgstr ":file:`bin/AxonIvyEngine`"
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
 #: ../../source/introduction/getting-started/engine/index.rst:47
 #: ../../source/introduction/getting-started/engine/linux/index.rst:4
-#: ../../source/introduction/migration/hotfix/linux.rst:4
-#: ../../source/introduction/migration/major/linux.rst:4
+#: ../../source/technical-info/migration/hotfix/linux.rst:4
+#: ../../source/technical-info/migration/major/linux.rst:4
 #: ../../source/introduction/system-requirements/designer.rst
 #: ../../source/introduction/system-requirements/engine.rst:73
 #: ../../source/introduction/system-requirements/engine.rst:87
@@ -21510,9 +21510,9 @@ msgid "There are several ways to install your license."
 msgstr "ライセンスをインストールする方法は複数あります。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/license.rst:99
-#: ../../source/introduction/migration/hotfix/docker.rst:4
-#: ../../source/introduction/migration/hotfix/index.rst:33
-#: ../../source/introduction/migration/major/docker.rst:4
+#: ../../source/technical-info/migration/hotfix/docker.rst:4
+#: ../../source/technical-info/migration/hotfix/index.rst:33
+#: ../../source/technical-info/migration/major/docker.rst:4
 msgid "Docker"
 msgstr "Docker"
 
@@ -24156,340 +24156,340 @@ msgstr "Axon Ivy Engine の起動後、ウェブブラウザが開き、Axon Ivy
 msgid "Pro Designer"
 msgstr "デザイナーの UI"
 
-#: ../../source/introduction/migration/deprecation.rst:4
+#: ../../source/technical-info/migration/deprecation.rst:4
 msgid "Deprecation and Removal"
 msgstr "廃止と削除"
 
-#: ../../source/introduction/migration/deprecation.rst:6
+#: ../../source/technical-info/migration/deprecation.rst:6
 msgid "You should avoid using deprecated Public APIs and features. When migrating to a new version, check for deprecated Public APIs and features and replace them with the successor API or feature."
 msgstr "非推奨のパブリック API や機能の使用は避けるべきです。新しいバージョンに移行する際は、非推奨のパブリック API と機能を確認し、後継の API と機能に置き換えてください。"
 
-#: ../../source/introduction/migration/deprecation.rst:10
+#: ../../source/technical-info/migration/deprecation.rst:10
 msgid "This will help you later when you migrate to a version in which the previously Public APIs or features are no longer available."
 msgstr "以前に公開されていた API や機能が利用できなくなったバージョンに移行する際に役立ちます。"
 
-#: ../../source/introduction/migration/deprecation.rst:14
+#: ../../source/technical-info/migration/deprecation.rst:14
 msgid "Deprecated Features"
 msgstr "非推奨の機能"
 
-#: ../../source/introduction/migration/deprecation.rst:16
+#: ../../source/technical-info/migration/deprecation.rst:16
 msgid "Deprecated features are documented on our :dev-url:`Deprecation and Removal page </features/deprecation>`"
 msgstr "非推奨の機能は:dev-url:`「非推奨と削除」ページ</features/deprecation>` 記載されています。"
 
-#: ../../source/introduction/migration/deprecation.rst:19
+#: ../../source/technical-info/migration/deprecation.rst:19
 msgid "Deprecated Public API"
 msgstr "非推奨のパブリック API"
 
-#: ../../source/introduction/migration/deprecation.rst:21
+#: ../../source/technical-info/migration/deprecation.rst:21
 #, fuzzy
 msgid "Deprecated Public APIs are documented in our :public-api:`deprecated Public API page</deprecated-list.html>`."
 msgstr "非推奨のパブリック API は :public-api:`「非推奨のパブリック API」ページ</deprecated-list.html>` 記載されています。"
 
-#: ../../source/introduction/migration/hotfix/docker.rst:6
+#: ../../source/technical-info/migration/hotfix/docker.rst:6
 #, fuzzy
 msgid "It's good practice to keep your docker-engine safe and sound, by frequently switching to the latest available docker image. We recommend to rely upon specific tags (e.g., ``12.0.1``) so that you know that absolutely no magic can happen when you roll the solution out into production."
 msgstr "利用可能な最新の Docker イメージに頻繁に切り替えることで、docker-engine の正常な動作を維持できます。ソリューションを本番環境にロールアウトする際に、予期しないことが絶対に起きないように、特定のタグ（``12.0.1`` など）を活用することを推奨します。"
 
-#: ../../source/introduction/migration/hotfix/docker.rst:11
+#: ../../source/technical-info/migration/hotfix/docker.rst:11
 msgid "To update your engine to the latest version you are just required to switch your image version declaration to the latest hotfix in your release train (e.g., from ``axonivy/axonivy-engine:12.0.0`` to ``axonivy/axonivy-engine:12.0.2``). Then you can pull the new images, run integration tests and roll the update out into production."
 msgstr "エンジンを最新バージョンにアップデートするには、イメージのバージョン宣言をリリーストレインの最新のホットフィックスに切り替えるだけです（例：``axonivy/axonivy-engine:12.0.0`` から ``axonivy/axonivy-engine:12.0.2``）。その後、新しいイメージをプルし、統合テストを実行し、アップデートを本番環境にロールアウトすることができます。"
 
-#: ../../source/introduction/migration/hotfix/docker.rst:17
+#: ../../source/technical-info/migration/hotfix/docker.rst:17
 msgid "The command to pull the latest images may differ to the approach you are using to run docker. Here's a Docker-Compose example that pulls the new Axon Ivy Engine hotfix version:"
 msgstr "最新のイメージをプルするコマンドは、Docker の実行方法によって異なる場合があります。以下は、新しい Axon Ivy Engine のホットフィックスのバージョンをプルする Docker-Compose の例です。"
 
-#: ../../source/introduction/migration/hotfix/index.rst:5
+#: ../../source/technical-info/migration/hotfix/index.rst:5
 #, fuzzy
 msgid "Hotfix Update"
 msgstr "ホットフィックスのアップグレード"
 
-#: ../../source/introduction/migration/hotfix/index.rst:7
+#: ../../source/technical-info/migration/hotfix/index.rst:7
 #, fuzzy
 msgid "It's important to keep your productive Axon Ivy Engine stable and up to date. Otherwise, you risk being vulnerable to known **security leaks** and users may face inconveniences due to known and addressed **bug fixes**. In addition, **performance issues** may be solved and make using the Axon Ivy Engine more fun on a daily basis."
 msgstr "生産環境のAxon Ivy Engineを安定した最新の状態に保つことは重要です。そうしないと、既知の **セキュリティリーク** に対して無防備になったり、既に対処済みの **バグ修正** に関連する不具合によってユーザーが不便を感じたりする可能性があります。さらに、Axon Ivy Engineを安定した最新の状態に保つことで**パフォーマンスの問題** が解決され、Axon Ivy Engineの日常的使用がより快適になる場合もあります。"
 
-#: ../../source/introduction/migration/hotfix/index.rst:13
+#: ../../source/technical-info/migration/hotfix/index.rst:13
 msgid "This chapter focuses on hotfix migration in the same release train (e.g., from ``12.0.0`` to ``12.0.2``). If you want to jump from a major version to another (e.g., from ``10.0`` to ``12.0``) or minor version to another (e.g., from ``11.1`` to ``11.2``) please consult the :ref:`migration-upgrade-engine-major` chapter."
 msgstr "この章では、同じリリーストレインのホットフィックスへの移行（例：``12.0.0`` から ``12.0.2``）に焦点を当てます。メジャーバージョンから別のメジャーバージョン（例： ``10.0`` から ``12.0``）、マイナーバージョンから別のマイナーバージョン（例：``11.1`` から ``11.2``）に移行する場合は、 :ref:`migration-upgrade-engine-major` 」の章を参照してください。"
 
-#: ../../source/introduction/migration/hotfix/index.rst:19
-#: ../../source/introduction/migration/major/index.rst:41
+#: ../../source/technical-info/migration/hotfix/index.rst:19
+#: ../../source/technical-info/migration/major/index.rst:41
 msgid "The way to migrate to the latest hotfix highly depends on the hosting environment, so please jump right to the execution environment you are using:"
 msgstr "最新のホットフィックスへの移行方法は、ホスティング環境に大きく依存するため、使用している実行環境のページに移動してください。"
 
-#: ../../source/introduction/migration/hotfix/index.rst:30
+#: ../../source/technical-info/migration/hotfix/index.rst:30
 msgid "Migration comparison:"
 msgstr "移行の比較："
 
-#: ../../source/introduction/migration/hotfix/index.rst:33
+#: ../../source/technical-info/migration/hotfix/index.rst:33
 msgid "Any Linux"
 msgstr "すべての Linux"
 
-#: ../../source/introduction/migration/hotfix/index.rst:35
+#: ../../source/technical-info/migration/hotfix/index.rst:35
 msgid "Effort"
 msgstr "労力"
 
-#: ../../source/introduction/migration/hotfix/index.rst:35
+#: ../../source/technical-info/migration/hotfix/index.rst:35
 msgid "Medium"
 msgstr "中程度"
 
-#: ../../source/introduction/migration/hotfix/index.rst:35
+#: ../../source/technical-info/migration/hotfix/index.rst:35
 msgid "Minimal"
 msgstr "最小限"
 
-#: ../../source/introduction/migration/hotfix/linux.rst:6
+#: ../../source/technical-info/migration/hotfix/linux.rst:6
 msgid "This section describes the hotfix procedure for all Linux distributions."
 msgstr "このセクションでは、すべての Linux ディストリビューションのホットフィックス手順について説明します。"
 
-#: ../../source/introduction/migration/hotfix/linux.rst:8
-#: ../../source/introduction/migration/hotfix/windows.rst:9
-#: ../../source/introduction/migration/major/windows.rst:11
+#: ../../source/technical-info/migration/hotfix/linux.rst:8
+#: ../../source/technical-info/migration/hotfix/windows.rst:9
+#: ../../source/technical-info/migration/major/windows.rst:11
 #, fuzzy
 msgid "Download the latest Axon Ivy Engine hotfix version that matches your release train :dev-url:`/download` and unpack at your preferred place."
 msgstr ":dev-url:`/download` でリリーストレインと一致する最新バージョンの Axon Ivy Engine のホットフィックスをダウンロードし、任意の場所で解凍します。"
 
-#: ../../source/introduction/migration/hotfix/linux.rst:10
-#: ../../source/introduction/migration/hotfix/windows.rst:11
-#: ../../source/introduction/migration/major/docker.rst:16
-#: ../../source/introduction/migration/major/linux.rst:13
-#: ../../source/introduction/migration/major/windows.rst:13
+#: ../../source/technical-info/migration/hotfix/linux.rst:10
+#: ../../source/technical-info/migration/hotfix/windows.rst:11
+#: ../../source/technical-info/migration/major/docker.rst:16
+#: ../../source/technical-info/migration/major/linux.rst:13
+#: ../../source/technical-info/migration/major/windows.rst:13
 msgid "Stop the running Axon Ivy Engine instance."
 msgstr "実行中の Axon Ivy Engine インスタンスを停止します。"
 
-#: ../../source/introduction/migration/hotfix/linux.rst:11
-#: ../../source/introduction/migration/hotfix/windows.rst:12
+#: ../../source/technical-info/migration/hotfix/linux.rst:11
+#: ../../source/technical-info/migration/hotfix/windows.rst:12
 #, fuzzy
 msgid "Start the :ref:`migration-wizard`. The Migration Wizard will copy all relevant files from the old engine to the new engine during a hotfix update."
 msgstr ":ref:`migration-wizard` を起動します。移行ウィザードは、ホットフィックスのアップグレード中に、関連するすべてのファイルを古いエンジンから新しいエンジンにコピーします。"
 
-#: ../../source/introduction/migration/hotfix/windows.rst:6
+#: ../../source/technical-info/migration/hotfix/windows.rst:6
 msgid "This section describes the hotfix procedure for engines running on Windows without Docker."
 msgstr "このセクションでは、Docker を使用せずに Windows 上で動作するエンジンのホットフィックス手順について説明します。"
 
-#: ../../source/introduction/migration/index.rst:4
-#: ../../source/introduction/migration/major/_wizardMigration.rst:2
+#: ../../source/technical-info/migration/index.rst:4
+#: ../../source/technical-info/migration/major/_wizardMigration.rst:2
 msgid "Migration"
 msgstr "移行"
 
-#: ../../source/introduction/migration/index.rst:6
+#: ../../source/technical-info/migration/index.rst:6
 msgid "The migration process from one Axon Ivy Engine version to another differs highly among the supported operating systems and the kind of migration."
 msgstr "Axon Ivy Engine のバージョンの移行プロセスは、対応するオペレーティングシステムや移行のタイプによって大きく異なります。"
 
-#: ../../source/introduction/migration/index.rst:9
+#: ../../source/technical-info/migration/index.rst:9
 #, fuzzy
 msgid "**Hotfix Update**"
 msgstr "**ホットフィックスのアップグレード**"
 
-#: ../../source/introduction/migration/index.rst:11
+#: ../../source/technical-info/migration/index.rst:11
 #, fuzzy
 msgid "If you are looking for the update steps to keep your Axon Ivy Engine on the latest patch level (e.g., ``8.0.6`` > ``8.0.13``), please consult the :ref:`migration-update-engine-hotfix` chapter."
 msgstr "Axon Ivy Engine を最新のパッチレベル（例：``8.0.6`` から ``8.0.13``）で維持するアップデート手順を知りたい場合は、 :ref:`migration-upgrade-engine-hotfix` 」の章を参照してください。"
 
-#: ../../source/introduction/migration/index.rst:15
+#: ../../source/technical-info/migration/index.rst:15
 msgid "**Major / Minor Upgrade**"
 msgstr "**メジャー／マイナーアップグレード**"
 
-#: ../../source/introduction/migration/index.rst:17
+#: ../../source/technical-info/migration/index.rst:17
 msgid "When you aim for a migration to another major version (e.g., ``8.0.30`` > ``10.0.20``) or minor version (e.g., ``11.1`` > ``11.2``) please consult the :ref:`migration-upgrade-engine-major` chapter."
 msgstr "別のメジャーバージョン（例：``8.0.30`` から ``10.0.20``）やマイナーバージョン（例：``11.1`` から ``11.2``）への移行を行う場合は、「 :ref:`migration-upgrade-engine-major` 」の章を参照してください。"
 
-#: ../../source/introduction/migration/index.rst:21
+#: ../../source/technical-info/migration/index.rst:21
 msgid "**Migration Tools**"
 msgstr "**移行ツール**"
 
-#: ../../source/introduction/migration/index.rst:23
+#: ../../source/technical-info/migration/index.rst:23
 msgid "To ease the migration we provide :ref:`migration-tools`."
 msgstr "スムーズに移行できるように、 :ref:`migration-tools` を提供しています。"
 
-#: ../../source/introduction/migration/major/docker.rst:6
+#: ../../source/technical-info/migration/major/docker.rst:6
 #, fuzzy
 msgid "Docker's infrastructure enables you to automate various kinds of infrastructure setups. Consequently, the kind of major migration steps are various too and highly dependent on your concrete setup. However, here are the major steps to do when migrating a docker based Axon Ivy Engine to another major version."
 msgstr "Docker のインフラストラクチャでは、さまざまなインフラストラクチャのセットアップを自動化できます。そのため、主な移行手順もさまざまで、実際のセットアップに大きく依存します。ここでは、Docker ベースの Axon Ivy Engine を別のメジャーバージョンに移行する際の主な手順を紹介します。"
 
-#: ../../source/introduction/migration/major/docker.rst:13
-#: ../../source/introduction/migration/major/linux.rst:10
-#: ../../source/introduction/migration/major/windows.rst:10
+#: ../../source/technical-info/migration/major/docker.rst:13
+#: ../../source/technical-info/migration/major/linux.rst:10
+#: ../../source/technical-info/migration/major/windows.rst:10
 msgid "Preparation"
 msgstr "準備"
 
-#: ../../source/introduction/migration/major/docker.rst:14
+#: ../../source/technical-info/migration/major/docker.rst:14
 msgid "Switch your setup to the axonivy-engine tag you are aiming for. (e.g., from ``8.0.36`` to ``10.0.17``)"
 msgstr "セットアップを目的の axonivy-engine タグに切り替えます（例：``8.0.36`` から ``10.0.17``）。"
 
-#: ../../source/introduction/migration/major/_wizardMigration.rst:3
+#: ../../source/technical-info/migration/major/_wizardMigration.rst:3
 #, fuzzy
 msgid "Do a backup of the system database and all of your data of your Axon Ivy Engine. If you run your Axon Ivy Engine in a Virtual Machine, then you can take a snapshot."
 msgstr "Axon Ivy Engine のシステムデータベースとすべてのデータのバックアップを取ります。Axon Ivy Engine を仮想マシンで実行している場合は、スナップショットを取得できます。"
 
-#: ../../source/introduction/migration/major/_wizardMigration.rst:6
+#: ../../source/technical-info/migration/major/_wizardMigration.rst:6
 msgid "Use the :ref:`migration-wizard` to migrate your Axon Ivy Engine. The migration wizard is responsible to copy the configuration, error pages, dropins and many more to the new place. It will also update the schema of the system database. You can start using the wizard by starting the new Axon Ivy Engine. Browse to the Axon Ivy Engine URI (e.g., http://localhost:8080) and click on ``Setup Wizard`` > ``Migration Wizard``."
 msgstr ":ref:`migration-wizard` を使用して、Axon Ivy Engine を移行します。移行ウィザードは、設定、エラーページ、ドロップインなどを新しい場所にコピーします。また、システムデータのスキーマもアップデートします。ウィザードの使用を開始するには、新しい Axon Ivy Engine を起動します。Axon Ivy Engine の URI（例：http://localhost:8080）にアクセスし、［``セットアップウィザード``］、［``移行ウィザード``］の順にクリックしてください。"
 
-#: ../../source/introduction/migration/major/_wizardMigration.rst:12
+#: ../../source/technical-info/migration/major/_wizardMigration.rst:12
 msgid "Restart your Axon Ivy Engine."
 msgstr "Axon Ivy Engine を再起動します。"
 
-#: ../../source/introduction/migration/major/_wizardMigration.rst:13
+#: ../../source/technical-info/migration/major/_wizardMigration.rst:13
 msgid "Apply the :ref:`migration-upgrade-engine-post`."
 msgstr ":ref:`migration-upgrade-engine-post` を適用します。"
 
-#: ../../source/introduction/migration/major/index.rst:5
+#: ../../source/technical-info/migration/major/index.rst:5
 msgid "Major / Minor Upgrade"
 msgstr "メジャー／マイナーアップグレード"
 
-#: ../../source/introduction/migration/major/index.rst:7
+#: ../../source/technical-info/migration/major/index.rst:7
 msgid "Upgrades to a new Axon Ivy Engine version are warmly recommended to benefit from new features that will increase your productivity and ability to react to new business needs. You can have a look at the latest features here: :dev-url:`/news`"
 msgstr "生産性を向上させ、新しいビジネスニーズへの対応能力を高める新機能の恩恵を受けるため、新しい Axon Ivy Engine バージョンへのアップグレードを推奨します。最新の機能は :dev-url:`/news` でご覧いただけます。"
 
-#: ../../source/introduction/migration/major/index.rst:12
+#: ../../source/technical-info/migration/major/index.rst:12
 #, fuzzy
 msgid "This chapter focuses on migrations from one major version to another (e.g., from ``10.0`` to ``12.0``) or from one minor version to another (e.g., from ``11.1`` to ``11.2``). If you are only interested in applying hotfix updates (e.g., from ``12.0.0`` to ``12.0.2``), please consult the simpler :ref:`migration-update-engine-hotfix` chapter."
 msgstr "この章では、メジャーバージョンから別のメジャーバージョン（例：``10.0`` から ``12.0``）、マイナーバージョンから別のマイナーバージョン（例：``11.1`` から ``11.2``）への移行に焦点を当てます。ホットフィックスのアップグレード（例：``12.0.0`` から ``12.0.2``）にのみ興味がある場合は、よりシンプルな :ref:`migration-upgrade-engine-hotfix` 」の章を参照してください。"
 
-#: ../../source/introduction/migration/major/index.rst:18
+#: ../../source/technical-info/migration/major/index.rst:18
 msgid "Switching from a Long-Term-Supported (LTS) release train (e.g., `10.0``) to a LE (Leading Edge) release (e.g., ``11.2``) follows the same logic as described in this chapter. Nevertheless, be aware that we do not recommend casually switching from an LTS to a LE version as the possibility to face breaking changes is more likely and the effort to migrate between the LE versions is higher. See our release-cycle (:dev-url:`/release-cycle`) for more information on our release concept."
 msgstr "LTS（長期サポート）リリーストレイン（例：`10.0``）から LE（最新）リリース （例: ``11.2``）への切り替えは、この章で説明したのと同じロジックに従います。それでも、互換性を破る変更に直面する可能性が高くなり、LE バージョン間の移行にかかる労力も大きくなることから、軽い気持ちで LTS から LE に切り替えることは推奨しません。リリースコンセプトの詳細については、リリースサイクル（:dev-url:`/release-cycle`）を参照してください。"
 
-#: ../../source/introduction/migration/major/index.rst:26
+#: ../../source/technical-info/migration/major/index.rst:26
 msgid "**Backwards-compatibility**"
 msgstr "**下位互換性**"
 
-#: ../../source/introduction/migration/major/index.rst:28
+#: ../../source/technical-info/migration/major/index.rst:28
 msgid "The Axon Ivy Engine can run and execute workflow applications that have been built towards an older engine version. Even so, we do recommend to **simulate migrations to new versions in a testing environment** since there is a chance that your project relies upon a no longer supported infrastructure, such as old Primefaces versions, Java libraries, or internal Java classes from the Axon Ivy Engine. By sticking only to PublicAPI and best practices, however, you have a minimal risk to face these version incompatibilities."
 msgstr "Axon Ivy Engineは、古いエンジンバージョン向けに構築されたワークフローアプリケーションを実行することができます。それでも、プロジェクトが古いPrimeFacesバージョン、Javaライブラリ、またはAxon Ivy Engineの内部Javaクラスなど、もうサポートされていないインフラストラクチャに依存している可能性があるため、**テスト環境で新バージョンへの移行をシミュレーションすること** を推奨します。しかし、PublicAPIとベストプラクティスのみに従っていれば、これらのバージョン非互換性に直面するリスクは最小限に抑えられます。"
 
-#: ../../source/introduction/migration/major/index.rst:36
+#: ../../source/technical-info/migration/major/index.rst:36
 msgid "To start with, we warmly recommend to read the :ref:`Migration Notes <migration-notes>` for the versions you are migrating to. It documents possible breaking changes that may affect you and require manual adaptations in your project."
 msgstr "始めに、移行先のバージョン :ref:`移行に関する注記<migration-notes>` 読むことを推奨します。注記には、プロジェクトの手動での修正などの影響を及ぼす、互換性を破る可能性がある変更についてまとめられています。"
 
-#: ../../source/introduction/migration/major/linux.rst:6
+#: ../../source/technical-info/migration/major/linux.rst:6
 msgid "On Linux systems the migration is very similar to a hotfix migration. However, some additional steps are required at the end."
 msgstr "Linux システムでの移行は、ホットフィックスの移行と非常によく似ています。ただし、最後にいくつかの追加手順が必要です。"
 
-#: ../../source/introduction/migration/major/linux.rst:11
+#: ../../source/technical-info/migration/major/linux.rst:11
 msgid "Download the latest Axon Ivy Engine hotfix version that matches your main release :dev-url:`/download`"
 msgstr ":dev-url:`/download` でメインリリースと一致する最新バージョンの Axon Ivy Engine のホットフィックをダウンロードします。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:4
+#: ../../source/technical-info/migration/major/post-migration.rst:4
 msgid "Post Migration Steps"
 msgstr "移行後の手順"
 
-#: ../../source/introduction/migration/major/post-migration.rst:6
+#: ../../source/technical-info/migration/major/post-migration.rst:6
 msgid "After the Axon Ivy Engine has been updated, the existing Axon Ivy projects on the Axon Ivy Engine must also be converted. To do this, go to the :ref:`application overview <engine-cockpit-application>` in the Engine Cockpit. Axon Ivy projects that do not correspond to the current project version are not started and must first be converted using the :guilabel:`Convert` button."
 msgstr "Axon Ivy Engine をアップデートしたら、Axon Ivy Engine の既存の Axon Ivy プロジェクトも変換する必要があります。エンジンコックピットの :ref:`アプリケーションの概要<engine-cockpit-application>` にアクセスしてください。現在のプロジェクトのバージョンに対応していない Axon Ivy プロジェクトは開始されないため、最初に［ :guilabel:`変換` ］ボタンを使用して変換する必要があります。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:13
+#: ../../source/technical-info/migration/major/post-migration.rst:13
 msgid "Once all the required Axon Ivy projects have been converted, the processes can be tested. If errors are identified, check the :ref:`migration notes <migration-notes>` to see if any manual adjustments need to be made to the projects. If so, proceed as follows:"
 msgstr "必要な Axon Ivy プロジェクトがすべて変換されたら、プロセスをテストできます。エラーが確認された場合は :ref:`移行に関する注記<migration-notes>` チェックして、プロジェクトの手動調整が必要かどうか確認してください。必要な場合は、以下の手順に進みます。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:21
+#: ../../source/technical-info/migration/major/post-migration.rst:21
 msgid "Project-Migration"
 msgstr "プロジェクトの移行"
 
-#: ../../source/introduction/migration/major/post-migration.rst:23
+#: ../../source/technical-info/migration/major/post-migration.rst:23
 msgid "If you face incompatibilities in the UI or see errors in the logs while using the new Axon Ivy Engine, here's how you make your projects compatible with the new Axon Ivy Engine version."
 msgstr "新しい Axon Ivy Engine を使用しているときに UI の互換性の問題に直面したり、ログにエラーが表示されたりした場合は、以下の方法でプロジェクトを新しいバージョンの Axon Ivy Engine に対応させてください。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:27
+#: ../../source/technical-info/migration/major/post-migration.rst:27
 msgid "Download the latest Axon Ivy Designer which is available for the release you are migrating to."
 msgstr "移行先のリリースで利用可能な最新の Axon Ivy Designer をダウンロードします。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:29
+#: ../../source/technical-info/migration/major/post-migration.rst:29
 msgid "Import the version that is deployed on your Axon Ivy Engine from your source repository into your Axon Ivy Designer workspace."
 msgstr "Axon Ivy Engine に展開したバージョンをソースリポジトリから Axon Ivy Designer のワークスペースにインポートします。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:31
+#: ../../source/technical-info/migration/major/post-migration.rst:31
 msgid "Migrate the project according to the description in section :ref:`project-convert` of the Axon Ivy Designer Guide. Usually, this is achieved by invoking the project conversion action on each project. Some manual adaptations may be necessary."
 msgstr "Axon Ivy Designer ガイドの :ref:`project-convert` 」のセクションの説明に従ってプロジェクトを移行します。通常、これは各プロジェクトに対してプロジェクト変換アクションを呼び出すことで達成されます。手作業による調整が必要な場合もあります。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:35
+#: ../../source/technical-info/migration/major/post-migration.rst:35
 msgid "Test the migrated project in the Axon Ivy Designer."
 msgstr "移行したプロジェクトを Axon Ivy Designer でテストします。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:36
+#: ../../source/technical-info/migration/major/post-migration.rst:36
 msgid "All migrated projects must be re-deployed to the new, upgraded Axon Ivy Engine version."
 msgstr "移行したすべてのプロジェクトをアップグレードされた新しいバージョンの Axon Ivy Engine に展開し直す必要があります。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:39
+#: ../../source/technical-info/migration/major/post-migration.rst:39
 msgid "Not only the ``RELEASE`` process model version (PMVs) must be updated and re-deployed, but all ``DEPRECATED`` projects too."
 msgstr "``リリース`` プロセスモデルバージョン（PMV）だけでなく、すべての ``非推奨`` プロジェクトも更新し、展開し直す必要があります。"
 
-#: ../../source/introduction/migration/major/post-migration.rst:41
+#: ../../source/technical-info/migration/major/post-migration.rst:41
 msgid "Other versions in the states ``PREPARED`` or ``ARCHIVED`` may be easier to delete, rather than updating and redeploying."
 msgstr "``作成済み`` や ``アーカイブ済み`` の状態にある他のバージョンは、更新して展開し直すよりも、削除する方が簡単かもしれません。"
 
-#: ../../source/introduction/migration/major/windows.rst:6
+#: ../../source/technical-info/migration/major/windows.rst:6
 msgid "On Windows the migration is very similar to a hotfix migration. However, some additional steps are required at the end."
 msgstr "Windows での移行は、ホットフィックスの移行と非常によく似ています。ただし、最後にいくつかの追加手順が必要です。"
 
-#: ../../source/introduction/migration/migration-notes.rst:4
+#: ../../source/technical-info/migration/migration-notes.rst:4
 msgid "Migration Notes"
 msgstr "移行に関する注記"
 
-#: ../../source/introduction/migration/migration-notes.rst:6
+#: ../../source/technical-info/migration/migration-notes.rst:6
 msgid "This chapter informs you in detail about incompatibilities that were introduced between different Axon Ivy versions and tells you what needs to be done to get your existing projects working with the newest version. Go through the migration notes from version to version."
 msgstr "この章では、Axon Ivy の異なるバージョン間の非互換性について詳しく述べ、既存のプロジェクトを最新バージョンで動作させるためにすべきことを説明します。バージョンからバージョンへの移行に関する注記に目を通してください。"
 
-#: ../../source/introduction/migration/migration-notes.rst:20
+#: ../../source/technical-info/migration/migration-notes.rst:20
 msgid "Previous Migration Notes"
 msgstr "以前の移行に関する注記"
 
-#: ../../source/introduction/migration/migration-notes.rst:21
+#: ../../source/technical-info/migration/migration-notes.rst:21
 msgid ":ref:`migration-tools` still support migrating directly from this version:"
 msgstr ":ref:`migration-tools` は、このバージョンからの直接移行をサポートしています。"
 
-#: ../../source/introduction/migration/migration-notes.rst:23
+#: ../../source/technical-info/migration/migration-notes.rst:23
 msgid ":dev-url:`Migrating from 10.0 to 12.0 </doc/12.0/migration-notes>`"
 msgstr ":dev-url:`10.0 から 12.0 への移行</doc/12.0/migration-notes>`"
 
-#: ../../source/introduction/migration/migration-notes.rst:25
+#: ../../source/technical-info/migration/migration-notes.rst:25
 msgid "Migrating from these versions is no longer supported by the :ref:`migration-tools`:"
 msgstr "これらのバージョンからの移行は、 :ref:`migration-tools` のサポート対象外になりました。"
 
-#: ../../source/introduction/migration/migration-notes.rst:27
+#: ../../source/technical-info/migration/migration-notes.rst:27
 msgid ":dev-url:`Migrating from 8.0 to 10.0 </doc/10.0/migration-notes>`"
 msgstr ":dev-url:`8.0 から 10.0 への移行</doc/10.0/migration-notes>`"
 
-#: ../../source/introduction/migration/migration-notes.rst:28
+#: ../../source/technical-info/migration/migration-notes.rst:28
 msgid ":dev-url:`Migrating from 7.0 to 8.0 </doc/8.0.0/migration-notes>`"
 msgstr ":dev-url:`7.0 から 8.0 への移行</doc/8.0.0/migration-notes>`"
 
-#: ../../source/introduction/migration/migration-notes.rst:29
+#: ../../source/technical-info/migration/migration-notes.rst:29
 msgid ":dev-url:`Migrating from 6.0 to 7.0 </doc/7.0.0/migration-notes>`"
 msgstr ":dev-url:`6.0 から 7.0 への移行</doc/7.0.0/migration-notes>`"
 
-#: ../../source/introduction/migration/migration-notes.rst:30
+#: ../../source/technical-info/migration/migration-notes.rst:30
 msgid ":dev-url:`Migrating from 5.1 to 6.0 </doc/6.0.0/migration-notes>`"
 msgstr ":dev-url:`5.1 から 6.0 への移行</doc/6.0.0/migration-notes>`"
 
-#: ../../source/introduction/migration/migration-notes.rst:31
+#: ../../source/technical-info/migration/migration-notes.rst:31
 msgid ":dev-url:`Migrating from 5.0 to 5.1 </doc/5.1.0/migration-notes>`"
 msgstr ":dev-url:`5.0 から 5.1 への移行</doc/5.1.0/migration-notes>`"
 
-#: ../../source/introduction/migration/migration-notes.rst:32
+#: ../../source/technical-info/migration/migration-notes.rst:32
 msgid ":dev-url:`Migrating from 4.3 to 5.0 </doc/5.0.5/migration-notes>`"
 msgstr ":dev-url:`4.3 から 5.0 への移行</doc/5.0.5/migration-notes>`"
 
-#: ../../source/introduction/migration/migration-notes.rst:34
+#: ../../source/technical-info/migration/migration-notes.rst:34
 #, fuzzy
 msgid "Please migrate first to a newer version that still supports your old version and then migrate to the next version. E.g., for migrating from 6.0 to 12.0, first install 8.0 and migrate your old Axon Ivy Engine from 6.0 to 8.0 and then install 12.0 and migrate from 8.0 to 12.0."
 msgstr "古いバージョンをサポートしている新しいバージョンに移行してから、次のバージョンに移行してください。例えば 6.0 から 12.0 に移行する場合は、最初に 8.0 をインストールし、古い Axon Ivy Engine を 6.0 から 8.0 に移行してから、12.0 をインストールし、8.0 から 12.0 に移行します。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:4
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:4
 msgid "Migrating from 12.0 to 13.1"
 msgstr "12.0 から 13.1 への移行"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:6
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:6
 msgid "Upgrade to 13.1 is only supported from an Axon Ivy Engine 10.0 and higher. If you have an Axon Ivy Engine older than version 10.0 you need to first migrate to a version between 10.0 and 12.0."
 msgstr "13.1へのアップグレードは、Axon Ivy Engine 10.0以降からのみサポートされています。10.0より古いバージョンのAxon Ivy Engineを使用している場合は、まず10.0～12.0のバージョンへ移行しておく必要があります。"
 
-#: ../../source/introduction/migration/_tagLegend.rst:7
-#: ../../source/introduction/migration/migration-notes-120-131.rst:13
-#: ../../source/introduction/migration/migration-notes-120-131.rst:92
-#: ../../source/introduction/migration/migration-notes-120-131.rst:103
-#: ../../source/introduction/migration/migration-notes-131-132.rst:109
-#: ../../source/introduction/migration/migration-notes-132-140.rst:13
-#: ../../source/introduction/migration/migration-notes-132-140.rst:136
+#: ../../source/technical-info/migration/_tagLegend.rst:7
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:13
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:92
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:103
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:109
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:13
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:136
 msgid "|tag-ops-changed|"
 msgstr "|tag-ops-changed|"
 
@@ -24497,31 +24497,31 @@ msgstr "|tag-ops-changed|"
 msgid "tag-ops-changed"
 msgstr "tag-ops-changed"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:15
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:15
 msgid "You need to request a new license for Axon Ivy Engine 13.1."
 msgstr "Axon Ivy Engine 13.1 の新しいライセンスをリクエストする必要があります。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:19
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:19
 msgid "Axon Ivy Public API Maven dependency"
 msgstr "Axon IvyパブリックAPI Maven依存関係"
 
-#: ../../source/introduction/migration/_tagLegend.rst:25
-#: ../../source/introduction/migration/migration-notes-120-131.rst:21
-#: ../../source/introduction/migration/migration-notes-132-140.rst:175
-#: ../../source/introduction/migration/migration-notes-132-140.rst:206
+#: ../../source/technical-info/migration/_tagLegend.rst:25
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:21
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:175
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:206
 msgid "|tag-project-auto-convert|"
 msgstr "|tag-project-auto-convert|"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:23
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:23
 msgid "We now include the Axon Ivy Public API as Maven dependency in the project's :code:`pom.xml` file. To do this, we update the POM by adding :code:`ivy-project-parent` as parent and inserting the :code:`ivy-api` dependency. This setup allows you to develop the Java part of an Axon Ivy project outside the Eclipse-based PRO Designer - for example with Visual Studio Code. The conversion only takes place if no parent is defined in the :code:`pom.xml` of the project. Currently, this Maven dependency is not required if you continue developing with the Eclipse-based PRO Designer."
 msgstr "プロジェクトの :code:`pom.xml` ファイルに Axon Ivy Public API を Maven 依存関係として含められるようになりました。これを実行するには、POM に :code:`ivy-project-parent` を親として追加し、 :code:`ivy-api` 依存関係を挿入して更新します。このセットアップにより、Eclipse ベースの PRO Designer 以外の環境（ Visual Studio Code など ）で、Axon Ivy プロジェクトの Java 部分を開発できるようになります。この変換は、プロジェクトの :code:`pom.xml` に親が定義されていない場合にのみ発生します。現在のところ、Eclipse ベースの PRO Designer で引き続き開発する場合、この Maven 依存関係は必要ありません。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:31
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:31
 msgid "Multiple responsibles for a task and multiple roles for process starts"
 msgstr "1つのタスクに対する複数の担当と、プロセス開始に対する複数のロール"
 
-#: ../../source/introduction/migration/_tagLegend.rst:29
-#: ../../source/introduction/migration/migration-notes-120-131.rst:33
+#: ../../source/technical-info/migration/_tagLegend.rst:29
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:33
 msgid "|tag-project-changed|"
 msgstr "|tag-project-changed|"
 
@@ -24529,36 +24529,36 @@ msgstr "|tag-project-changed|"
 msgid "tag-project-changed"
 msgstr "tag-project-changed"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:35
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:35
 msgid "It's now possible to assign multiple responsibles to a task. There is no need to create dynamic roles anymore. You can simply assign a task to different roles if needed. You will notice that you can configure on the task tab multiple responsibles e.g. :ref:`Task Tab <process-element-tab-task>`. The same is also true for the expiry task configuration."
 msgstr "1つのタスクに複数の担当を割り当てることが可能になりました。動的ロールを作成する必要はもうありません。必要に応じて、1つのタスクを複数のロールに割り当てることができます。タスクタブでは、複数の担当を設定できることがわかります。（例：:ref:`Task Tab <process-element-tab-task>`）。期限切れタスクの設定についても同様です。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:41
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:41
 #, fuzzy
 msgid "All APIs have been deprecated, which handles only one responsible. They were previously named :code:`activator`, therefore we have streamlined the naming to :code:`responsible` from deep in the core to the user interface, everywhere. Use the new APIs:"
 msgstr "1名の担当しか処理しないすべてのAPIは非推奨となりました。これらは以前、 :code:`activator` という名称でしたが、コアの深い部分からユーザーインターフェイスに至るまで、一貫して :code:`responsible` という名称に統一しました。新しいAPIを使用してください："
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:46
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:46
 msgid ":code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`"
 msgstr ":code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:47
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:47
 msgid ":code:`ch.ivyteam.ivy.workflow.ITask.expiry()`"
 msgstr ":code:`ch.ivyteam.ivy.workflow.ITask.expiry()`"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:49
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:49
 msgid "The same applies to process starts. It's now possible to define multiple roles on a process start. You will notice that you can configure on the request tab of a start multiple roles e.g. :ref:`Start Event <process-element-start-request-tab-request>`."
 msgstr "プロセス開始についても同様です。プロセス開始に複数のロールを定義できるようになりました。開始イベントのリクエストタブで、複数のロールを設定できることがわかります（例：:ref:`Start Event <process-element-start-request-tab-request>`）。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:56
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:56
 #, fuzzy
 msgid "Support for Case Scope Override removed"
 msgstr "ケースの範囲のオーバーライドの削除"
 
-#: ../../source/introduction/migration/_tagLegend.rst:40
-#: ../../source/introduction/migration/migration-notes-120-131.rst:58
-#: ../../source/introduction/migration/migration-notes-120-131.rst:67
-#: ../../source/introduction/migration/migration-notes-120-131.rst:76
+#: ../../source/technical-info/migration/_tagLegend.rst:40
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:58
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:67
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:76
 msgid "|tag-project-removed|"
 msgstr "|tag-project-removed|"
 
@@ -24566,69 +24566,69 @@ msgstr "|tag-project-removed|"
 msgid "tag-project-removed"
 msgstr "tag-project-removed"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:60
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:60
 msgid "Case scope overriding has been deprecated in LTS 8.0 and has now been removed. Use :ref:`strict_overriding` if you rely on case scope overriding."
 msgstr "ケースの範囲のオーバーライドはLTS 8.0で非推奨となり、現在は削除されています。ケースの範囲のオーバーライドに依存している場合は、 :ref:`strict_overriding` を使用してください。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:65
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:65
 msgid "Removal of Serenity PrimeFaces themes"
 msgstr "Serenity PrimeFaces テーマの削除"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:69
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:69
 msgid "We removed the Serenity themes, including the :code:`serenity-ivy` theme. Please use the :ref:`freya-ivy <freya-themes>` theme instead."
 msgstr "Serenityテーマ（:code:`serenity-ivy` テーマを含む）を削除しました。代わりに :ref:`freya-ivy <freya-themes>` テーマを使用してください。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:74
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:74
 msgid "Removal of session role"
 msgstr "セッションロールの削除"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:78
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:78
 msgid "It was possible to assign a role directly to a session. This feature was intended primarily for unauthenticated sessions. In authenticated sessions (i.e., when a user is logged in), roles can and should be assigned directly to the user. The original idea behind this feature was to support edge cases where developers implemented their own authentication mechanisms—bypassing the platform’s built-in user management—and needed to assign a role to the session manually. This was made possible via the :code:`ISession#assignRole` method. Roles are now only supported for authenticated sessions backed by a user who has roles assigned, which means you now need to assign roles to a user."
 msgstr "以前は、ロールをセッションに直接割り当てることが可能でした。この機能は主に未認証セッション向けに設計されていました。認証済みセッション（つまりユーザーがログインしている状態）では、ロールはユーザーに直接割り当てることが可能であり、またそうあるべきです。この機能の本来の目的は、開発者がプラットフォームの組み込みユーザー管理を迂回して独自の認証メカニズムを実装し、セッションに手動でロールを割り当てる必要があるというような例外的なケースをサポートすることにありました。これを可能にしていたのが :code:`ISession#assignRole` メソッドでした。現在、ロールはユーザーにロールが割り当てられた認証済みセッションでのみサポートされます。つまり、今後は複数のロールを1人のユーザーに割り当てる必要があります。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:90
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:90
 msgid "Removal of Server Control Center for Windows"
 msgstr "Server Control Center for Windows の削除"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:94
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:94
 msgid "The Server Control Center for Windows has been removed. Prefer using Docker for Windows to run the Axon Ivy Engine. If you still want to run the Axon Ivy Engine on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe <engine-service>` to register the Axon Ivy Engine as a Windows Service."
 msgstr "Server Control Center for Windows は削除されました。Docker for Windows を使用して Axon Ivy Engine を実行することを推奨します。Docker を使用せずに Windows 上で Axon Ivy Engine を実行したい場合は、 :ref:`AxonIvyEngineService.exe<engine-service>` を使用して、Axon Ivy Engine を Windows サービスとして登録できます。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:101
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:101
 msgid "Changed Runtime logger name"
 msgstr "ランタイムロガーの名前の変更"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:105
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:105
 msgid "We changed the Runtime logger name from :code:`runtime.[app name].[pm name].[category]` to :code:`runtime.[security context name].[category].[app name].[pm name]`."
 msgstr "ランタイムロガーの名前を :code:`runtime.[アプリ名].[PM 名].[カテゴリー]` から :code:`runtime.[セキュリティコンテキスト名].[カテゴリー].[アプリ名].[PM 名]` に変更しました。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:113
-#: ../../source/introduction/migration/migration-notes-132-140.rst:195
-#: ../../source/introduction/migration/migration-notes-132-140.rst:356
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:113
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:195
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:356
 msgid "**Detail**"
 msgstr "**詳細**"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:117
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:117
 msgid "We added the security context name to the Runtime logger name and moved the category after the security context name. This is to make the logger name more unique and to be able to filter by security context name. The new logger name is: :code:`runtime.[security context name].[category].[app name].[pm name]`."
 msgstr "セキュリティコンテキスト名をランタイムロガー名に追加し、カテゴリーをセキュリティコンテキスト名の後ろに移動しました。これは、ロガー名の一意性を高め、セキュリティコンテキスト名でフィルタリングできるようにするためです。新しいロガー名は、 :code:`runtime.[セキュリティコンテキスト名].[カテゴリー].[アプリ名].[PM 名]` となります。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:121
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:121
 msgid "In case you have a custom :code:`log4j2.xml` configuration, you need to adapt the occurrences of the runtime logger name in your configuration."
 msgstr "カスタム :code:`log4j2.xml` 設定を使用している場合は、設定内にあるランタイムロガー名の記述を修正する必要があります。"
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:123
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:123
 msgid "From something like this:"
 msgstr "修正前："
 
-#: ../../source/introduction/migration/migration-notes-120-131.rst:131
+#: ../../source/technical-info/migration/migration-notes-120-131.rst:131
 msgid "To something like this:"
 msgstr "修正後："
 
-#: ../../source/introduction/migration/_tagLegend.rst:1
+#: ../../source/technical-info/migration/_tagLegend.rst:1
 msgid "**Tag Legend:**"
 msgstr "**タグの凡例：**"
 
-#: ../../source/introduction/migration/_tagLegend.rst:3
+#: ../../source/technical-info/migration/_tagLegend.rst:3
 msgid "|tag-ops-wizard|"
 msgstr "|tag-ops-wizard|"
 
@@ -24636,17 +24636,17 @@ msgstr "|tag-ops-wizard|"
 msgid "tag-ops-wizard"
 msgstr "tag-ops-wizard"
 
-#: ../../source/introduction/migration/_tagLegend.rst:5
+#: ../../source/technical-info/migration/_tagLegend.rst:5
 msgid "This migration is handled by the :ref:`migration-wizard`."
 msgstr "この移行は、 :ref:`migration-wizard` で処理されます。"
 
-#: ../../source/introduction/migration/_tagLegend.rst:9
+#: ../../source/technical-info/migration/_tagLegend.rst:9
 msgid "This migration will change something in the engine operation. If you are responsible for the operation of an engine, check if this change affects you."
 msgstr "この移行により、エンジンのオペレーションの一部が変更されます。エンジンのオペレーションの担当者は、この変更による影響がないか確認してください。"
 
-#: ../../source/introduction/migration/_tagLegend.rst:13
-#: ../../source/introduction/migration/migration-notes-131-132.rst:91
-#: ../../source/introduction/migration/migration-notes-132-140.rst:250
+#: ../../source/technical-info/migration/_tagLegend.rst:13
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:91
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:250
 msgid "|tag-ops-deprecated|"
 msgstr "|tag-ops-deprecated|"
 
@@ -24654,11 +24654,11 @@ msgstr "|tag-ops-deprecated|"
 msgid "tag-ops-deprecated"
 msgstr "tag-ops-deprecated"
 
-#: ../../source/introduction/migration/_tagLegend.rst:15
+#: ../../source/technical-info/migration/_tagLegend.rst:15
 msgid "This migration highlights behaviors or features that are deprecated. That functionality will be removed soon. If you are responsible for the operation of an engine, you should check if this change affects you."
 msgstr "この移行は、非推奨となる動作や機能を強調するものです。その機能はまもなく削除されます。エンジンのオペレーションの担当者は、この変更による影響がないか確認してください。"
 
-#: ../../source/introduction/migration/_tagLegend.rst:19
+#: ../../source/technical-info/migration/_tagLegend.rst:19
 msgid "|tag-ops-removed|"
 msgstr "|tag-ops-removed|"
 
@@ -24666,19 +24666,19 @@ msgstr "|tag-ops-removed|"
 msgid "tag-ops-removed"
 msgstr "tag-ops-removed"
 
-#: ../../source/introduction/migration/_tagLegend.rst:21
+#: ../../source/technical-info/migration/_tagLegend.rst:21
 msgid "This migration will remove a behavior or feature that has been available for the engine operation. If you are responsible for the operation of an engine, check if this change affects you."
 msgstr "この移行により、エンジンのオペレーションで利用可能であった動作や機能が削除されます。エンジンのオペレーションの担当者は、この変更による影響がないか確認してください。"
 
-#: ../../source/introduction/migration/_tagLegend.rst:27
+#: ../../source/technical-info/migration/_tagLegend.rst:27
 msgid "This migration is handled by the :ref:`Project Conversion <project-convert>` automatically."
 msgstr "この移行は、 :ref:`プロジェクトの変換<project-convert>` で自動的に処理されます。"
 
-#: ../../source/introduction/migration/_tagLegend.rst:31
+#: ../../source/technical-info/migration/_tagLegend.rst:31
 msgid "This migration will change a certain behavior in the projects. If you are a project developer, check if this change affects you."
 msgstr "この移行により、プロジェクトの特定の動作が変更されます。プロジェクト開発者は、この変更による影響がないか確認してください。"
 
-#: ../../source/introduction/migration/_tagLegend.rst:34
+#: ../../source/technical-info/migration/_tagLegend.rst:34
 msgid "|tag-project-deprecated|"
 msgstr "|tag-project-deprecated|"
 
@@ -24686,603 +24686,603 @@ msgstr "|tag-project-deprecated|"
 msgid "tag-project-deprecated"
 msgstr "tag-project-deprecated"
 
-#: ../../source/introduction/migration/_tagLegend.rst:36
+#: ../../source/technical-info/migration/_tagLegend.rst:36
 msgid "This migration will mark features or APIs as deprecated in projects. That functionality will be removed soon. If you are a project developer, check if this change affects you."
 msgstr "この移行は、プロジェクトの機能や API を非推奨としてマークします。その機能はまもなく削除されます。プロジェクト開発者は、この変更による影響がないか確認してください。"
 
-#: ../../source/introduction/migration/_tagLegend.rst:42
+#: ../../source/technical-info/migration/_tagLegend.rst:42
 msgid "This migration will remove a behavior or feature of a project. If you are a project developer, check if this change affects you."
 msgstr "この移行により、プロジェクトの動作や機能が削除されます。プロジェクト開発者は、この変更による影響がないか確認してください。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:4
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:4
 msgid "Migrating from 13.1 to 13.2"
 msgstr "13.1から13.2への移行"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:6
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:6
 msgid "Upgrading to version 13.2 is supported only from an Axon Ivy Engine 10.0 or higher. If your Axon Ivy Engine is older than version 10.0, you must first migrate to a version between 10.0 and 12.0."
 msgstr "バージョン13.2へのアップグレードは、Axon Ivy Engine 10.0以降でのみサポートされています。Axon Ivy Engineがバージョン10.0よりも古い場合は、最初に10.0～12.0のバージョンに移行する必要があります。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:11
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:11
 msgid "Final Eclipse-Based Axon Ivy PRO Designer"
 msgstr "最終的なEclipseベースのAxon Ivy PRO Designer"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:13
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:13
 msgid "This is the final release of the PRO Designer based on the `Eclipse IDE <https://eclipseide.org/>`_. Starting with LTS 14, the PRO Designer will transition to a `VS Code extension <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-13>`_. A Beta version is already available - try it out and share your feedback!"
 msgstr "これは、`Eclipse IDE <https://eclipseide.org/>`_ ベースのPRO Designerの最終リリースです。PRO DesignerはLTS 14から、`VS コード拡張子 <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-13>`_ に移行します。ベータ版は既に配布されているので、お試しの上、フィードバックをお寄せください。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:17
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:17
 msgid "`Learn more about this transition <https://community.axonivy.com/d/1149-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
 msgstr "`この移行に関する詳細はこちら <https://community.axonivy.com/d/1149-maintenance-mode-of-the-eclipse-based-pro-designer>`_"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:20
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:20
 msgid "Axon Ivy Java API Maven Dependency"
 msgstr "Axon Ivy Java API Maven依存関係"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:22
-#: ../../source/introduction/migration/migration-notes-131-132.rst:42
-#: ../../source/introduction/migration/migration-notes-131-132.rst:63
-#: ../../source/introduction/migration/migration-notes-132-140.rst:260
-#: ../../source/introduction/migration/migration-notes-132-140.rst:277
-#: ../../source/introduction/migration/migration-notes-132-140.rst:305
-#: ../../source/introduction/migration/migration-notes-132-140.rst:340
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:22
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:42
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:63
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:260
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:277
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:305
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:340
 msgid "|tag-project-changed| |tag-project-auto-convert|"
 msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:24
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:24
 msgid "The version of the :code:`ivy-project-parent`  in the :code:`pom.xml` file has been updated from 13.1 to 13.2."
 msgstr ":code:`pom.xml` ファイル内の :code:`ivy-project-parent` のバージョンが13.1から13.2へ更新されました。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:26
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:26
 msgid "For projects using :code:`ivy-project-parent`, the following dependencies have been replaced:"
 msgstr ":code:`ivy-project-parent` を使用するプロジェクトについて、次の依存関係が置換されました："
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:28
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:28
 msgid ":code:`unit-tester` → :code:`ìvy-test-api`"
 msgstr ":code:`unit-tester` → :code:`ìvy-test-api`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:29
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:29
 msgid ":code:`web-tester` → :code:`ìvy-web-test-api`"
 msgstr ":code:`web-tester` → :code:`ìvy-web-test-api`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:32
-#: ../../source/introduction/migration/migration-notes-131-132.rst:53
-#: ../../source/introduction/migration/migration-notes-131-132.rst:73
-#: ../../source/introduction/migration/migration-notes-131-132.rst:99
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:32
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:53
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:73
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:99
 msgid "What You Need to Do:"
 msgstr "必要なアクション："
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:34
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:34
 msgid "Run the project migration tool to automatically update your pom.xml file."
 msgstr "プロジェクト移行ツールを実行して、pom.xmlファイルを自動的に更新します。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:35
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:35
 #, fuzzy
 msgid "Execute your maven build and ensure everything compiles and all tests pass successfully."
 msgstr "Mavenビルドを実行し、すべてがコンパイルされ、すべてのテストが合格することを確認します。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:37
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:37
 #, fuzzy
 msgid "For more details about the Axon Ivy Java API and to troubleshoot issues, refer to `Troubleshoot Java Compilation Errors <https://community.axonivy.com/d/1150>`_."
 msgstr "Axon Ivy Java APIと問題解決の詳細については、`Troubleshoot Java Compilation Errors <https://community.axonivy.com/d/1150>`_ を参照してください。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:40
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:40
 msgid "Persistence API (Hibernate)"
 msgstr "永続性API（Hibernate）"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:44
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:44
 msgid "The Persistence API has been migrated from Java Persistence API (JPA) 2.2 to `Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_ 3.2. The implementation has been updated from `Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to `Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 7.0."
 msgstr "Persistence APIは、Java Persistence API (JPA) 2.2から`Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_ 3.2へ移行されました。実装は、`Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 5.6から`Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 7.0へ更新されました。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:47
-#: ../../source/introduction/migration/migration-notes-131-132.rst:67
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:47
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:67
 msgid "Package names have changed:"
 msgstr "パッケージ名が変更されました："
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:49
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:49
 msgid ":code:`javax.persistence` → :code:`jakarta.persistence`"
 msgstr ":code:`javax.persistence` → :code:`jakarta.persistence`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:50
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:50
 msgid ":code:`javax.transaction` → :code:`jakarta.transaction`"
 msgstr ":code:`javax.transaction` → :code:`jakarta.transaction`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:55
-#: ../../source/introduction/migration/migration-notes-131-132.rst:75
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:55
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:75
 msgid "Run the project migration tool to automatically update your code."
 msgstr "プロジェクト移行ツールを実行して、自動的にコードを更新します。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:56
-#: ../../source/introduction/migration/migration-notes-131-132.rst:76
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:56
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:76
 msgid "Use :guilabel:`File Search` in the Designer to ensure all references are updated."
 msgstr "Designerで :guilabel:`File Search` を使用し、すべての参照が更新されたことを確認します。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:58
-#: ../../source/introduction/migration/migration-notes-131-132.rst:86
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:58
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:86
 msgid "This marks the first step in the migration from Java EE to Jakarta EE. Further migrations will follow in future releases."
 msgstr "これは、Java EEからJakarta EEへの移行の最初のステップを示します。今後のリリースでさらなる移行が続きます。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:61
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:61
 msgid "Mail API"
 msgstr "Mail API"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:65
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:65
 msgid "The Mail API has been migrated from Java Mail API 1.6 to `Jakarta Mail API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0."
 msgstr "Mail APIは、Java Mail API 1.6から`Jakarta Mail API <https://jakarta.ee/specifications/mail/2.0/>`_ 2.0へ移行されました。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:69
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:69
 msgid ":code:`javax.mail` → :code:`jakarta.mail`"
 msgstr ":code:`javax.mail` → :code:`jakarta.mail`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:70
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:70
 msgid ":code:`javax.activation` → :code:`jakarta.activation`"
 msgstr ":code:`javax.activation` → :code:`jakarta.activation`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:79
-#: ../../source/introduction/migration/migration-notes-131-132.rst:116
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:79
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:116
 msgid "Recommendation:"
 msgstr "推奨："
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:81
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:81
 msgid "Instead of using the Jakarta Mail API, consider:"
 msgstr "Jakarta Mail APIを使用する代わりに次を検討してください："
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:83
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:83
 msgid "The :ref:`process-element-email-activity`"
 msgstr ":ref:`process-element-email-activity`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:84
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:84
 msgid "The new :public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-summary.html>`."
 msgstr "新しい:public-api:`Mail Public API </ch/ivyteam/ivy/mail/package-summary.html>`。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:89
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:89
 msgid "HttpHeaderSecurityFilter and RemoteIpFilter in web.xml"
 msgstr "web.xml内のHttpHeaderSecurityFilterおよびRemoteIpFilter"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:93
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:93
 msgid "You can now define the :ref:`reverse-proxy` HTTP Headers and security response :ref:`security-http-headers` in the :ref:`ivy-yaml` file. While it is still possible to configure these in :ref:`web-xml`, it is no longer recommended. If you continue to use :ref:`web-xml`, headers may appear twice."
 msgstr ":ref:`ivy-yaml` ファイル内で :ref:`reverse-proxy` HTTPヘッダーおよびセキュリティ応答 :ref:`security-http-headers` を定義できるようになりました。これらを :ref:`web-xml` 内でも設定できますが、今後は推奨しません。:ref:`web-xml` を使用し続ける場合、ヘッダーが2回表示される可能性があります。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:101
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:101
 msgid "Remove the following configurations from :ref:`web-xml` and migrate them to :ref:`ivy-yaml`:"
 msgstr "次の設定を :ref:`web-xml` から削除し、:ref:`ivy-yaml` へ移行してください："
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:103
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:103
 msgid ":code:`org.apache.catalina.filters.HttpHeaderSecurityFilter` → :code:`WebServer.HttpHeaders`"
 msgstr ":code:`org.apache.catalina.filters.HttpHeaderSecurityFilter` → :code:`WebServer.HttpHeaders`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:104
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:104
 msgid ":code:`org.apache.catalina.filters.RemoteIpFilter` → :code:`ReverseProxy.HttpHeaders`"
 msgstr ":code:`org.apache.catalina.filters.RemoteIpFilter` → :code:`ReverseProxy.HttpHeaders`"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:107
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:107
 msgid "Schema header in ivy.yaml and app.yaml"
 msgstr "ivy.yamlおよびapp.yaml内のスキーマヘッダー"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:111
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:111
 msgid "If your :ref:`ivy-yaml` and :ref:`app-yaml` do not include a schema header, the Axon Ivy Engine will now assume that they are in the latest version. Auto-migration of these files will not happen anymore."
 msgstr ":ref:`ivy-yaml` および :ref:`app-yaml` にスキーマヘッダーが指定されていない場合、Axon Ivy Engineはこれらのファイルが最新バージョンであるとみなし、自動移行を行わなくなります。"
 
-#: ../../source/introduction/migration/migration-notes-131-132.rst:118
+#: ../../source/technical-info/migration/migration-notes-131-132.rst:118
 msgid "Always version your configuration files by including a schema header."
 msgstr "常にスキーマヘッダーを付けて設定ファイルのバージョンを管理してください。"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:4
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:4
 #, fuzzy
 msgid "Migrating from 13.2 to 14.0"
 msgstr "13.1から13.2への移行"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:6
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:6
 #, fuzzy
 msgid "Upgrading to version 14.0 is supported only from an Axon Ivy Engine 10.0 or higher. If your Axon Ivy Engine is older than version 10.0, you must first migrate to a version between 10.0 and 12.0."
 msgstr "バージョン13.2へのアップグレードは、Axon Ivy Engine 10.0以降でのみサポートされています。Axon Ivy Engineがバージョン10.0よりも古い場合は、最初に10.0～12.0のバージョンに移行する必要があります。"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:15
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:15
 #, fuzzy
 msgid "You need to request a new license for Axon Ivy Engine 14.0."
 msgstr "Axon Ivy Engine 13.1 の新しいライセンスをリクエストする必要があります。"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:19
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:19
 #, fuzzy
 msgid "Application Versions"
 msgstr "アプリケーションの詳細"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:21
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:21
 msgid "The introduction of Application Versions represents a major shift in the fundamental architecture of the Axon Ivy Platform."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:24
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:24
 msgid "Previously, individual projects on the Axon Ivy Engine were versioned at runtime. These versions were referred to as **Process Model Versions**. With the introduction of **Application Versions**, versioning has been moved to the application level."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:29
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:29
 msgid "This change brings significant advantages, particularly in terms of the reliability and predictability of the Axon Ivy Engine. It reduces the amount of implicit and potentially unpredictable behavior caused by versioning individual projects and managing dependencies between them. Since these dependencies can change as projects are deployed and updated independently, determining which versions are actually used at runtime could become difficult to predict."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:36
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:36
 msgid "By versioning the application as a whole, the platform provides a much more consistent and deterministic runtime environment. At the same time, this architectural change establishes an important foundation for the long-term evolution of the platform, particularly with regard to scalability."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:45
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:45
 #, fuzzy
 msgid "**Details**"
 msgstr "**詳細**"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:49
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:49
 msgid "However, moving versioning from the project level to the application level also introduces changes to several APIs:"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:52
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:52
 #, fuzzy
 msgid "**Deployment**"
 msgstr "展開"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:54
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:54
 msgid "The target application version must always be specified using the following parameters:"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:57
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:57
 #, fuzzy
 msgid "Security Context"
 msgstr "セキュリティシステム"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:58
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:58
 #, fuzzy
 msgid "Application Name"
 msgstr "アプリケーション"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:59
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:59
 #, fuzzy
 msgid "Application Version"
 msgstr "アプリケーションの詳細"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:61
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:61
 msgid "The Application Version can either reference a specific existing version or be controlled using one of the two special keywords: :code:`new` or :code:`released`."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:64
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:64
 msgid ":code:`new` - A new Application Version is created and immediately transitioned to the Released state. :code:`released` - The deployment targets the existing Released Application Version. If no Released Application Version exists, a new version is created and automatically transitioned to the Released state."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:69
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:69
 msgid "This allows deployments to either target a specific version explicitly or use the lifecycle semantics provided by the new and released keywords."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:72
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:72
 msgid "To support this new deployment model, the :ref:`Deployment REST API <deployment-rest-api>`, the :ref:`Deployment Directory <deployment-directory>`, and the goals of the :ref:`project-build-plugin <deployment-maven-plugin>` have been updated accordingly."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:77
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:77
 msgid "The :ref:`Cockpit <engine-cockpit-application>` has also been adapted to reflect these changes and to support the new Application Version-based deployment model."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:81
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:81
 #, fuzzy
 msgid "**States**"
 msgstr "**起動**"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:83
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:83
 msgid "Previously, various states were maintained at the Process Model Version level, including the Release State and Activity State."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:86
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:86
 msgid "With the introduction of Application Versions, these states have been moved to the Application Version level. The same states are now managed directly on Application Versions rather than on individual Process Model Versions."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:90
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:90
 msgid "This ensures that the lifecycle and operational state of an application are managed consistently as a whole, rather than independently for each project."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:93
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:93
 #, fuzzy
 msgid "**System Database**"
 msgstr "システムデータベース"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:95
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:95
 msgid "With the introduction of Application Versions, the database model has been simplified. Projects and applications are no longer managed using the following tables: :code:`IWA_Application`, :code:`IWA_ProcessModel`, :code:`IWA_ProcessModelVersion`, :code:`IWA_Library`, :code:`IWA_LibrarySpecification`, :code:`IWA_LibraryVersionSpec`"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:101
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:101
 msgid "Instead, project and application information is now managed exclusively through the following tables: :code:`IWA_Application`, :code:`IWA_Project`"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:104
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:104
 msgid "This change reflects the new application-centric architecture and removes the previous database structures associated with Process Model Versions and their dependencies."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:108
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:108
 #, fuzzy
 msgid "**Version Number**"
 msgstr "**式**"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:110
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:110
 msgid "The Application Version Number is managed by the platform and is automatically incremented by 1 each time a deployment targets new. The project version defined in :file`pom.xml`` is still displayed in the Engine Cockpit, but it has no impact on the runtime."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:115
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:115
 #, fuzzy
 msgid "**Redeployment**"
 msgstr "展開"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:117
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:117
 msgid "Redeployment is still supported. This means that projects can be deployed into an existing Application Version, replacing projects that have already been deployed. The project to be replaced is identified based on the project name defined in the :file:`.ivyproject` file. Currently, no deployment validation is performed."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:123
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:123
 #, fuzzy
 msgid "**Application Directory Layout**"
 msgstr "アプリケーションのライフサイクル"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:125
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:125
 msgid "The directory structure now reflects the Application Version concept and follows the hierarchy: Security System → Application → Version → Project. Each Application Version has its own dedicated folder. On redeployment, a backup is created for the entire Application Version folder. This ensures that all projects and associated files belonging to the application version are backed up consistently."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:134
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:134
 #, fuzzy
 msgid "Tomcat HTTPS Connector SSL Settings"
 msgstr "その他の SSL の設定"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:138
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:138
 msgid "Some HTTPS connector SSL settings in :ref:`ivy-yaml` have moved."
 msgstr ":ref:`ivy-yaml` の HTTPS コネクタ SSL の設定が移動しました。"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:140
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:140
 msgid "The following settings were moved under :code:`Connector.HTTPS.SslHostConfig`:"
 msgstr "次の設定は :code:`Connector.HTTPS.SslHostConfig` で移動しました："
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:142
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:142
 msgid ":code:`Connector.HTTPS.ClientAuth` -> :code:`Connector.HTTPS.SslHostConfig.CertificateVerification`"
 msgstr ":code:`Connector.HTTPS.ClientAuth` -> :code:`Connector.HTTPS.SslHostConfig.CertificateVerification`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:143
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:143
 msgid ":code:`Connector.HTTPS.SslProtocol` -> :code:`Connector.HTTPS.SslHostConfig.SslProtocol`"
 msgstr ":code:`Connector.HTTPS.SslProtocol` -> :code:`Connector.HTTPS.SslHostConfig.SslProtocol`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:144
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:144
 msgid ":code:`Connector.HTTPS.TruststoreFile` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreFile`"
 msgstr ":code:`Connector.HTTPS.TruststoreFile` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreFile`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:145
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:145
 msgid ":code:`Connector.HTTPS.TruststorePass` -> :code:`Connector.HTTPS.SslHostConfig.TruststorePassword`"
 msgstr ":code:`Connector.HTTPS.TruststorePass` -> :code:`Connector.HTTPS.SslHostConfig.Truststoreパスワード`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:146
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:146
 msgid ":code:`Connector.HTTPS.TruststoreType` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreType`"
 msgstr ":code:`Connector.HTTPS.TruststoreType` -> :code:`Connector.HTTPS.SslHostConfig.TruststoreType`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:148
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:148
 msgid "The following certificate settings were moved under :code:`Connector.HTTPS.SslHostConfig.Certificate`:"
 msgstr ":code:`Connector.HTTPS.SslHostConfig.Certificate` の下に次の証明書の設定が移動されました："
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:150
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:150
 msgid ":code:`Connector.HTTPS.KeyAlias` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`"
 msgstr ":code:`Connector. HTTPS.KeyAlias` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:151
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:151
 msgid ":code:`Connector.HTTPS.KeyPass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`"
 msgstr ":code:`Connector. HTTPS.KeyPass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:152
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:152
 msgid ":code:`Connector.HTTPS.KeystoreFile` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreFile`"
 msgstr ":code:`Connector.HTTPS.KeystoreFile` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreFile`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:153
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:153
 msgid ":code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`"
 msgstr ":code:`Connector.HTTPS.KeystorePass` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:154
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:154
 msgid ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
 msgstr ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:161
-#: ../../source/introduction/migration/migration-notes-132-140.rst:237
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:161
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:237
 #, fuzzy
 msgid "**Hint**"
 msgstr "**タイムアウト**"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:165
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:165
 msgid "This list is not exhaustive. If you use other attributes from the deprecated Tomcat connector SSL configuration, move them to the corresponding :code:`SslHostConfig` or :code:`SslHostConfig.Certificate` location as well, even if they are not listed explicitly in your :ref:`ivy-yaml`."
 msgstr "このリストは網羅的ではありません。 非推奨の Tomcat コネクタ SSL 設定から他の属性を使用する場合は、対応する :code:`SslHostConfig` または :code:`SslHostConfig.Certificate` の場所に移動します。 :ref:`ivy-yaml` に明示的にリストされていない場合でも。"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:169
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:169
 msgid "See the `Tomcat HTTP Connector reference <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially the deprecated SSL connector attributes."
 msgstr "特に非推奨の SSL コネクタ 属性の `Tomcat HTTP コネクタ参照 <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_ を参照してください。"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:173
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:173
 msgid "Java EE to Jakarta EE Migration"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:177
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:177
 msgid "We have updated our platform from Java EE (:code:`javax`) to Jakarta EE (:code:`jakarta`) API's and implementation libraries. This means that all :code:`javax.*` packages have been replaced with :code:`jakarta.*` packages. The biggest change is that there is no longer a :code:`@ManagedBean` annotation, instead beans for Jakarta Faces (JSF) are resolved via `CDI <https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1>`_. CDI beans need to be annotated with :code:`@Named` and they need to have a scope (:code:`@RequestScoped`, :code:`@SessionScoped`, :code:`@ApplicationScoped`, :code:`@ViewScoped`) if they are used in JSF pages. If the beans are :code:`@SessionScoped` or :code:`@ViewScoped`, they need to implement the :code:`Serializable` interface."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:185
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:185
 msgid "Beans can still be named via :code:`@Named(\"myBean\")`, however this name needs to be unique within the whole application; otherwise the application will fail to start. If you don't define a name, the simple class name will be used like before (e.g. :code:`class MyBean` will be available as :code:`myBean` in JSF pages)."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:188
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:188
 msgid "Also :code:`@FacesConverter` and :code:`@FacesValidator` are now CDI-managed and must be adapted accordingly. They must set :code:`managed = true`, and they also need to have a scope (see above)."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:199
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:199
 msgid "We have also dropped internal scopes for :code:`@ApplicationScoped` and :code:`@SessionScoped` beans. This could lead to small behavior changes in the bean lifecycle, but the idea behind these scopes is still the same."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:204
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:204
 #, fuzzy
 msgid "PrimeFaces 15"
 msgstr "PrimeFlex"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:208
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:208
 msgid "We have updated the PrimeFaces library from version 13.0 to 15.0. This version includes new components, bug fixes, and performance improvements. However, it also introduces some breaking changes that may affect your existing code. Some of them are converted automatically by our project converter (:code:`Running refactoring 'Primefaces 15`) , but you may need to manually adapt your code in some cases. Please read the official PrimeFaces migration guides for more information:"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:214
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:214
 msgid "`PrimeFaces 14 Migration Guide <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`_"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:215
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:215
 msgid "`PrimeFaces 15 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:219
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:219
 msgid "Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:221
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:221
 #, fuzzy
 msgid "|tag-project-auto-convert| |tag-ops-removed|"
 msgstr "|tag-project-auto-convert|"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:223
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:223
 msgid "REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors instead of Apache HTTP Client 4-based connectors by default."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:225
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:225
 msgid "For REST clients, the Apache HTTP Client 4 based connector was removed."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:227
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:227
 msgid "The project migration tool will automatically convert HTTP Client 4–based connectors to Apache HTTP Client 5 for you. However, if you have custom code for REST or SOAP WebService features that directly references Apache HTTP Client 4 classes, you must manually update those to the HTTP Client 5 equivalents (adjust imports and API usage) and re-test the integrations."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:231
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:231
 msgid "The Apache HTTP Client 4 library itself is still available but will be removed in a future version."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:241
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:241
 msgid "For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`. This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. You should migrate to Apache HTTP Client 5 based connectors as soon as possible."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:248
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:248
 msgid "NTLM Authentication for REST and SOAP Web Service Client Connectors"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:252
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:252
 msgid "NTLM Authentication for REST and SOAP Web Service clients is deprecated and will be removed in a future version. This is because NTLM support in the library Apache HTTP Client 5 was also deprecated and is no longer actively maintained. Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:258
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:258
 msgid "Remove UUID from Rest Client and GUID from Web Service Client"
 msgstr "WebサービスクライアントからUUIDを削除"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:262
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:262
 msgid "We have removed the UUID from the Rest Client and the GUID from the Web Service Client. This means we no longer use these IDs in your processes to reference the clients. Instead we use the YAML key of the client. This makes the client easier to identify and copy between projects. We do an automatic project conversion, but it can happen that we cannot find the client if it is defined in a different project. In this case, you need to manually update the client reference in your processes to use the YAML key of the client. The old ID is still available in the YAML configuration prefixed with `Legacy`, but you can remove this after you have migrated all your projects."
 msgstr "UUIDは、WebサービスクライアントのRestクライアントとGUIDから削除しました。 つまり、クライアントを参照するために、これらの ID をプロセスで使用しなくなりました。 代わりに、クライアントのYAMLキーを使用します。 これにより、クライアントはプロジェクト間で識別し、コピーしやすくなります。 自動プロジェクト変換を行いますが、異なるプロジェクトで定義されている場合、クライアントが見つからなくなる可能性があります。 この場合、クライアントのYAMLキーを使用するプロセスでクライアントの参照を手動で更新する必要があります。 古い ID は、`Legacy` と接頭辞した YAML 構成ではまだ利用できますが、すべてのプロジェクトを移行した後にこれを削除できます."
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:270
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:270
 msgid "We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPI, please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead."
 msgstr "また、:public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPIを廃止し、代わりに :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` を使用してください."
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:275
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:275
 msgid "Removal of the :code:`.classpath` File"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:279
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:279
 msgid "The :code:`.classpath` file is no longer part of the project. Previously, the :code:`.classpath` file was used to reference local JAR files that were not available from a remote Maven repository. These JARs were added to the project's classpath for both design time and runtime. It also contained references to generated REST and web service client JARs. During automatic project conversion, generated client JARs are handled automatically. Specifically, the generated :code:`cxfClient_*.jar` and :code:`jaxRsClient_*.jar` files are unpacked into their corresponding :code:`src_generated` directories as part of the conversion process. If you have manually added additional local JAR references to the :code:`.classpath` file, you must declare them as Maven system-scoped dependencies to make those JARs available on the project's classpath."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:288
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:288
 msgid "Example of a system-scoped dependency:"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:300
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:300
 msgid "`For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:303
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:303
 msgid "Project Structure Improvements"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:307
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:307
 msgid "Some folders have been moved or renamed to improve the project structure."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:312
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:312
 msgid "Renamed :code:`processes` folder to :code:`process`."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:313
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:313
 msgid "Renamed :code:`dataclasses` folder to :code:`dataclass`."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:314
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:314
 msgid "Renamed :code:`src_hd` folder to :code:`dialog`."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:316
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:316
 msgid "This change improves the consistency of folder names and better reflects their content."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:320
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:320
 #, fuzzy
 msgid "Generated Source Files"
 msgstr "［一般］ > ［アーカイブファイル］"
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:322
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:322
 msgid "The following folders containing generated source files have been moved to the :code:`target` folder:"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:325
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:325
 msgid ":code:`libs/mvn-deps`"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:326
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:326
 msgid ":code:`src_generated/dataclass`"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:327
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:327
 msgid ":code:`src_generated/repo`"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:328
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:328
 msgid ":code:`src_generated/wsprocess`"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:330
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:330
 msgid "These folders contain files that are generated during the build process by the `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ and should not be modified directly. Therefore, they have been moved to the :code:`target` folder to indicate that they are generated files clearly and to avoid confusion with other source files. The corresponding entries in the :code:`.gitignore` file have been removed."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:338
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:338
 msgid "Program Elements replace IBpmnElementExtensions"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:342
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:342
 msgid "We streamlined how to implement custom behavior for process elements. Program Elements can now provide a custom icon and can also appear in the :ref:`Extension <process-element-extension-item>` group of the process editor toolbar. Therefore, we removed the previous :code:`IBpmnElementExtension` interface and its infrastructure completely, which was used to contribute the icon and process-editor integration behavior."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:348
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:348
 msgid "You are affected by this change if you run your solution with an extension in the :code:`dropin` directory that implements the :code:`IBpmnElementExtension` interface."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:360
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:360
 msgid "If you have used `IBpmnElementExtension` elements in your project, the project-migration tool will automatically convert occurrences of these elements into the new Program Element infrastructure. However, the execution behavior of these elements is not converted automatically. You need to implement the new Program Element interface and configure it on the corresponding element."
 msgstr ""
 
-#: ../../source/introduction/migration/migration-notes-132-140.rst:365
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:365
 msgid "For implementation details, see the Program Elements reference:"
 msgstr ""
 
-#: ../../source/introduction/migration/migration-tools.rst:4
+#: ../../source/technical-info/migration/migration-tools.rst:4
 msgid "Migration Tools"
 msgstr "移行ツール"
 
-#: ../../source/introduction/migration/migration-tools.rst:6
+#: ../../source/technical-info/migration/migration-tools.rst:6
 msgid "To ease the migration we provide two tools:"
 msgstr "スムーズに移行できるように、以下の 2 つのツールを提供しています。"
 
-#: ../../source/introduction/migration/migration-tools.rst:8
+#: ../../source/technical-info/migration/migration-tools.rst:8
 msgid "The :ref:`migration-wizard` helps you migrate an Axon Ivy Engine to the latest version."
 msgstr ":ref:`migration-wizard` では、Axon Ivy Engine を最新バージョンに移行できます。"
 
-#: ../../source/introduction/migration/migration-tools.rst:9
+#: ../../source/technical-info/migration/migration-tools.rst:9
 msgid "The :ref:`project-convert-wizard` helps you migrate Axon Ivy projects to the latest version."
 msgstr ":ref:`project-convert-wizard` では、Axon Ivy プロジェクトを最新バージョンに移行できます。"
 
-#: ../../source/introduction/release-notes/index.rst:4
+#: ../../source/technical-info/release-notes/index.rst:4
 msgid "Release Notes"
 msgstr "リリースノート"
 
-#: ../../source/introduction/release-notes/index.rst:89
+#: ../../source/technical-info/release-notes/index.rst:89
 msgid "Changes before 9.4.0"
 msgstr "9.4.0 よりも前の変更点"
 

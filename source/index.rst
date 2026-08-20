@@ -11,6 +11,7 @@ Axon Ivy
    concepts/index
    portal/index
    market/index
+   technical-info/index
    glossary/glossary
 
 .. toctree::
