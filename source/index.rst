@@ -5,7 +5,7 @@ Axon Ivy
    :maxdepth: 2
    :caption: Process Automation Platform
 
-   axonivy/index
+   introduction/index
    designer-guide/index
    engine-guide/index
    concepts/index
