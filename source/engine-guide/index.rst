@@ -19,4 +19,3 @@ into :ref:`Getting Started with the Engine <getting-started-engine>`.
    security/index
    monitoring/index
    reference/index
-   troubleshooting/index
