@@ -82,6 +82,7 @@ msgstr ":guilabel:`実行`、:guilabel:`Maven のインストール` の順に�
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:47
 #: ../../source/designer-guide/how-to/overrides.rst:102
+#: ../../source/designer/configuration.rst:2
 #: ../../source/engine-guide/configuration/index.rst:4
 #: ../../source/engine-guide/integration/cluster/configuration/index.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:2
@@ -2502,6 +2503,7 @@ msgid "Click on :guilabel:`Finish` to actually paste the copied resource(s) to t
 msgstr ":guilabel:`終了`をクリックすると、コピーされたリソースが実際に定義された場所に貼り付けられます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/index.rst:2
+#: ../../source/designer/introduction/index.rst:2
 #: ../../source/engine-guide/introduction/index.rst:2
 #: ../../source/introduction/index.rst:2
 msgid "Introduction"
@@ -3501,6 +3503,7 @@ msgid "Double clicking the tab of an editor or view will expand the part to full
 msgstr "エディターまたはビューのタブをダブルクリックすると、そのタブがワークベンチウィンドウ全体に拡大されます。拡大されたタブをもう一度ダブルクリックすると、デフォルトのサイズと場所に戻ります。"
 
 #: ../../source/designer-guide/troubleshooting/index.rst:2
+#: ../../source/designer/troubleshooting.rst:2
 #: ../../source/engine-guide/integration/cluster/communication/index.rst:51
 msgid "Troubleshooting"
 msgstr "トラブルシューティング"
@@ -3552,6 +3555,46 @@ msgstr "OutOfMemoryException：Java のヒープ領域"
 #: ../../source/designer-guide/troubleshooting/index.rst:51
 msgid "If this error occurs, then the Designer requests more memory than it is allowed to use. This can happen when a lot of data is used during the process simulations. Ensure, that your computer has enough memory. Then you can increase the maximal memory consumption of the Axon Ivy Designer. Just open the ``AxonIvyDesigner.ini`` and change the value in the line after ``-Xmx`` to a higher one."
 msgstr "このエラーが発生した場合、デザイナーは、使用可能メモリを超えるメモリをリクエストします。プロセスのシミュレーション中に大量のデータが使用されると、このエラーが発生することがあります。コンピューターに十分なメモリが搭載されていることを確認してください。確認後、Axon Ivy Designer の最大メモリ消費量を増やすことができます。``AxonIvyDesigner.ini`` を開き、``-Xmx`` の後の行の値をより大きい値に変更してください。"
+
+#: ../../source/designer/ai-development.rst:2
+msgid "AI-assisted development"
+msgstr ""
+
+#: ../../source/designer/commands.rst:2
+#, fuzzy
+msgid "Commands"
+msgstr "コメント"
+
+#: ../../source/designer/editors.rst:2
+#, fuzzy
+msgid "Editors"
+msgstr "エディター"
+
+#: ../../source/designer/index.rst:4
+#: ../../source/introduction/getting-started/designer/index.rst:4
+#, fuzzy
+msgid "Designer (VS Code Extension)"
+msgstr "CRON 式"
+
+#: ../../source/designer/index.rst:6
+#, fuzzy
+msgid "This guide covers all aspects of an Axon Ivy Designer VS Code Extension. Including installation, configuration, etc."
+msgstr "このガイドでは、インストール、設定、本番運用を含む Axon Ivy Engine のライフサイクル全般を取り上げます。"
+
+#: ../../source/designer/introduction/index.rst:4
+#, fuzzy
+msgid "If you want to familiarize yourself with the Axon Ivy Designer, we recommend to dive into :ref:`Getting Started with the Designer (VS Code Extension) <getting-started-designer-vscode>`."
+msgstr "Axon Ivy Engine の理解を深めたい場合は、「 :ref:`エンジン入門 <getting-started-engine>` 」をよく読むことをお勧めします。"
+
+#: ../../source/designer/introduction/index.rst:11
+#, fuzzy
+msgid "Designer (VS Code Extension) System Requirements"
+msgstr "システム要件"
+
+#: ../../source/designer/views.rst:2
+#, fuzzy
+msgid "Views"
+msgstr "ビュー"
 
 #: ../../source/engine-guide/configuration/administrators.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:8
@@ -5853,7 +5896,6 @@ msgid "The following system requirements highly depend on the number of Named Us
 msgstr "以下のシステム要件は、名前付きユーザー、同時ユーザー、展開されるアプリケーションの数に大きく依存します。"
 
 #: ../../source/engine-guide/introduction/index.rst:18
-#: ../../source/introduction/system-requirements/designer.rst:9
 msgid "Hardware Requirements"
 msgstr "ハードウェア要件"
 
@@ -5910,7 +5952,6 @@ msgid "Azure classic file share"
 msgstr "Azureの古典的なファイル共有"
 
 #: ../../source/engine-guide/introduction/index.rst:61
-#: ../../source/introduction/system-requirements/designer.rst:18
 msgid "Software Requirements"
 msgstr "ソフトウェア要件"
 
@@ -5923,7 +5964,6 @@ msgid "Note: Java SE 25 `Eclipse Temurin <https://adoptium.net/>`_ is already in
 msgstr "注：Java SE 25 `Eclipse Temurin <https://adoptium.net/>`_ は、Windows インストールと Docker コンテナに含まれています。Linux には Java SE 25 は含まれていません。お使いのオペレーティングシステムで提供される Java SE 25 を使用したり、`Eclipse Temurin <https://adoptium.net/>`_ をインストールしたりできます。"
 
 #: ../../source/engine-guide/introduction/index.rst:74
-#: ../../source/introduction/system-requirements/designer.rst:30
 msgid "Operating Systems"
 msgstr "オペレーティングシステム"
 
@@ -5940,7 +5980,6 @@ msgstr "エンジンのタイプ"
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
 #: ../../source/introduction/getting-started/engine/index.rst:55
 #: ../../source/introduction/getting-started/engine/windows/index.rst:4
-#: ../../source/introduction/system-requirements/designer.rst
 #: ../../source/technical-info/migration/hotfix/index.rst:33
 #: ../../source/technical-info/migration/hotfix/windows.rst:4
 #: ../../source/technical-info/migration/major/windows.rst:4
@@ -5952,7 +5991,6 @@ msgstr "Windows"
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
 #: ../../source/introduction/getting-started/engine/index.rst:47
 #: ../../source/introduction/getting-started/engine/linux/index.rst:4
-#: ../../source/introduction/system-requirements/designer.rst
 #: ../../source/technical-info/migration/hotfix/linux.rst:4
 #: ../../source/technical-info/migration/major/linux.rst:4
 msgid "Linux"
@@ -17535,87 +17573,6 @@ msgstr ":file:`AxonIvyEngineService.exe` を使用して、Axon Ivy Engine を :
 msgid "After the Axon Ivy Engine has been started it opens a web browser displaying the main page of the Axon Ivy Engine."
 msgstr "Axon Ivy Engine の起動後、ウェブブラウザが開き、Axon Ivy Engine のメインページが表示されます。"
 
-#: ../../source/introduction/getting-started/pro-designer/index.rst:4
-msgid "Pro Designer"
-msgstr "デザイナーの UI"
-
-#: ../../source/introduction/system-requirements/designer.rst:4
-msgid "Axon Ivy Designer"
-msgstr "Axon Ivy Designer"
-
-#: ../../source/introduction/system-requirements/designer.rst:6
-msgid "We recommend the following system setup for the Axon Ivy Designer:"
-msgstr "Axon Ivy Designer では、以下のシステムセットアップを推奨します。"
-
-#: ../../source/introduction/system-requirements/designer.rst:11
-msgid "Hardware requirements may vary depending on how many projects you are working on in your workspace."
-msgstr "ハードウェアの要件は、ワークスペースで作業するプロジェクトの数によって異なる場合があります。"
-
-#: ../../source/introduction/system-requirements/designer.rst
-msgid "Memory (RAM)"
-msgstr "メモリ（RAM）"
-
-#: ../../source/introduction/system-requirements/designer.rst:13
-msgid "Minimum is 3 GB, we recommend using at least 8 GB."
-msgstr "最低 3 GB、8 GB 以上を推奨。"
-
-#: ../../source/introduction/system-requirements/designer.rst
-msgid "Disk Space"
-msgstr "ディスクの空き容量"
-
-#: ../../source/introduction/system-requirements/designer.rst:14
-msgid "Minimum is 2 GB, we recommend at least 100 GB on a Solid State Disk (SSD)."
-msgstr "最低 2 GB、SSD では 100 GB 以上を推奨。"
-
-#: ../../source/introduction/system-requirements/designer.rst
-msgid "Processor"
-msgstr "プロセッサ"
-
-#: ../../source/introduction/system-requirements/designer.rst:15
-msgid "Minimum is 2 cores with 2 GHz, we recommend 8 cores with 2.5 GHz."
-msgstr "最低 2 GHz の 2 コア、2.5 GHz の 8 コアを推奨。"
-
-#: ../../source/introduction/system-requirements/designer.rst:20
-msgid "Axon Ivy Designer needs Java SE 21 to run."
-msgstr "Axon Ivy Designer を実行するには、Java SE 21 が必要です。"
-
-#: ../../source/introduction/system-requirements/designer.rst:22
-msgid "Note that Java SE 21 provided by `Eclipse Temurin <https://adoptium.net/>`_ is already included in our Windows and in our macOS installation. We do not include Java SE 21 on Linux. You may want to use Java SE 21 provided by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_."
-msgstr "なお、`Eclipse Temurin <https://adoptium.net/>`_ から提供される Java SE 21 は、Windows インストレーションと macOS インストレーションに含まれています。Linux には Java SE 21 は含まれていません。お使いのオペレーティングシステムで提供される Java SE 21 を使用したり、`Eclipse Temurin <https://adoptium.net/>`_ をインストールすることも可能です。"
-
-#: ../../source/introduction/system-requirements/designer.rst:27
-msgid "We test Axon Ivy Designer with `Eclipse Temurin <https://adoptium.net/>`_."
-msgstr "Axon Ivy Designer は、`Eclipse Temurin <https://adoptium.net/>`_ でテストされています。"
-
-#: ../../source/introduction/system-requirements/designer.rst:32
-msgid "Windows 10 / 11 x64 with `WebView2 <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>`_ installed"
-msgstr "`WebView2 <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>`_ がインストールされた Windows 10 または 11（64 ビット版）"
-
-#: ../../source/introduction/system-requirements/designer.rst:34
-msgid "Linux x64 with GTK 4 and X.org window system (tested on Ubuntu 24.04)"
-msgstr "GTK 4 および X.org ウィンドウシステムを搭載した Linux（64 ビット版）（Ubuntu 24.04 でテスト済み）"
-
-#: ../../source/introduction/system-requirements/designer.rst
-msgid "macOS"
-msgstr "macOS"
-
-#: ../../source/introduction/system-requirements/designer.rst:36
-msgid "BETA! macOS Monterey x64 (tested on macOS Monterey 12.6.3)"
-msgstr "ベータ版 - macOS Monterey（64 ビット版）（macOS Monterey 12.6.3 でテスト済み）"
-
-#: ../../source/introduction/system-requirements/designer.rst:39
-msgid "**macOS**"
-msgstr "**macOS**"
-
-#: ../../source/introduction/system-requirements/designer.rst:41
-msgid "The Designer has some known bugs when running under macOS. We are currently not able to fix those bugs or provide support. Use at your own risk."
-msgstr "macOS で動作するデザイナーには、いくつかの既知のバグがあります。現在、これらのバグを修正したり、サポートを提供することはできません。自己責任で使用してください。"
-
-#: ../../source/introduction/system-requirements/index.rst:2
-#: ../../source/technical-info/system-requirements.rst:2
-msgid "System Requirements"
-msgstr "システム要件"
-
 #: ../../source/introduction/what-axon-ivy.rst:4
 msgid "What is Axon Ivy?"
 msgstr "Axon Ivy とは"
@@ -25195,6 +25152,10 @@ msgstr "リリースノート"
 msgid "Changes before 9.4.0"
 msgstr "9.4.0 よりも前の変更点"
 
+#: ../../source/technical-info/system-requirements.rst:2
+msgid "System Requirements"
+msgstr "システム要件"
+
 #: ../../source/technical-info/system-requirements.rst:4
 msgid ":ref:`engine-system-requirements`"
 msgstr ":ref:`engine-system-requirements` を参照してください。"
@@ -26504,3 +26465,60 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "Together with the HTML Dialog Editor you will want to use the Eclipse properties view to define attributes for the UI elements of your dialog. Simply switch to the **Process Development Perspective** that will display the properties view at the bottom left area of the workbench window."
 #~ msgstr "HTML ダイアログエディターと Eclipse プロパティビューを一緒に使用して、ダイアログの UI 要素の属性を定義できます。**プロセス開発パースペクティブ** に切り替えると、プロパティビューがワークベンチウィンドウの左下に表示されます。"
+
+#~ msgid "Pro Designer"
+#~ msgstr "デザイナーの UI"
+
+#~ msgid "Axon Ivy Designer"
+#~ msgstr "Axon Ivy Designer"
+
+#~ msgid "We recommend the following system setup for the Axon Ivy Designer:"
+#~ msgstr "Axon Ivy Designer では、以下のシステムセットアップを推奨します。"
+
+#~ msgid "Hardware requirements may vary depending on how many projects you are working on in your workspace."
+#~ msgstr "ハードウェアの要件は、ワークスペースで作業するプロジェクトの数によって異なる場合があります。"
+
+#~ msgid "Memory (RAM)"
+#~ msgstr "メモリ（RAM）"
+
+#~ msgid "Minimum is 3 GB, we recommend using at least 8 GB."
+#~ msgstr "最低 3 GB、8 GB 以上を推奨。"
+
+#~ msgid "Disk Space"
+#~ msgstr "ディスクの空き容量"
+
+#~ msgid "Minimum is 2 GB, we recommend at least 100 GB on a Solid State Disk (SSD)."
+#~ msgstr "最低 2 GB、SSD では 100 GB 以上を推奨。"
+
+#~ msgid "Processor"
+#~ msgstr "プロセッサ"
+
+#~ msgid "Minimum is 2 cores with 2 GHz, we recommend 8 cores with 2.5 GHz."
+#~ msgstr "最低 2 GHz の 2 コア、2.5 GHz の 8 コアを推奨。"
+
+#~ msgid "Axon Ivy Designer needs Java SE 21 to run."
+#~ msgstr "Axon Ivy Designer を実行するには、Java SE 21 が必要です。"
+
+#~ msgid "Note that Java SE 21 provided by `Eclipse Temurin <https://adoptium.net/>`_ is already included in our Windows and in our macOS installation. We do not include Java SE 21 on Linux. You may want to use Java SE 21 provided by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_."
+#~ msgstr "なお、`Eclipse Temurin <https://adoptium.net/>`_ から提供される Java SE 21 は、Windows インストレーションと macOS インストレーションに含まれています。Linux には Java SE 21 は含まれていません。お使いのオペレーティングシステムで提供される Java SE 21 を使用したり、`Eclipse Temurin <https://adoptium.net/>`_ をインストールすることも可能です。"
+
+#~ msgid "We test Axon Ivy Designer with `Eclipse Temurin <https://adoptium.net/>`_."
+#~ msgstr "Axon Ivy Designer は、`Eclipse Temurin <https://adoptium.net/>`_ でテストされています。"
+
+#~ msgid "Windows 10 / 11 x64 with `WebView2 <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>`_ installed"
+#~ msgstr "`WebView2 <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>`_ がインストールされた Windows 10 または 11（64 ビット版）"
+
+#~ msgid "Linux x64 with GTK 4 and X.org window system (tested on Ubuntu 24.04)"
+#~ msgstr "GTK 4 および X.org ウィンドウシステムを搭載した Linux（64 ビット版）（Ubuntu 24.04 でテスト済み）"
+
+#~ msgid "macOS"
+#~ msgstr "macOS"
+
+#~ msgid "BETA! macOS Monterey x64 (tested on macOS Monterey 12.6.3)"
+#~ msgstr "ベータ版 - macOS Monterey（64 ビット版）（macOS Monterey 12.6.3 でテスト済み）"
+
+#~ msgid "**macOS**"
+#~ msgstr "**macOS**"
+
+#~ msgid "The Designer has some known bugs when running under macOS. We are currently not able to fix those bugs or provide support. Use at your own risk."
+#~ msgstr "macOS で動作するデザイナーには、いくつかの既知のバグがあります。現在、これらのバグを修正したり、サポートを提供することはできません。自己責任で使用してください。"
