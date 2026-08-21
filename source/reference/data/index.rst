@@ -1,3 +1,6 @@
+Data
+====
+
 .. _data-class-editor:
 
 Data Class Editor
