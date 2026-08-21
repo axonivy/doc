@@ -117,7 +117,7 @@ Event Bean Simulation
    Switch off the simulation of Process Start or Intermediate Event
    Beans when you want to focus on simulations of other elements (Event
    Bean simulation may pop up process editors with the corresponding
-   process and may overflow the :ref:`simulate-process-models-debugger-runtimelog-view`.
+   process and may overflow the :ref:`runtimelog-view`.
    In order to apply changes, the Engine must be restarted.
 
    -  Execute Start Event Beans in Simulation - If ticked, the Process

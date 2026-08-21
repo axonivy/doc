@@ -49,7 +49,7 @@ of a specific logger can be done easily:
 Runtime Log
 -----------
 
-The Runtime Log is a well-known :ref:`designer feature <simulate-process-models-debugger-runtimelog-view>` and disabled by default
+The Runtime Log is a well-known :ref:`designer feature <runtimelog-view>` and disabled by default
 in the Axon Ivy Engine to prevent a flood of log messages, which can decrease
 performance and filling the disk.
 But you can set the log level of a specific runtime logger and bring them even to another file to get the logs also on the Axon Ivy Engine.

@@ -3244,8 +3244,8 @@ msgid "Event Bean Simulation"
 msgstr "イベント Bean のシミュレーション"
 
 #: ../../source/designer-guide/introduction/preferences.rst:117
-msgid "Switch off the simulation of Process Start or Intermediate Event Beans when you want to focus on simulations of other elements (Event Bean simulation may pop up process editors with the corresponding process and may overflow the :ref:`simulate-process-models-debugger-runtimelog-view`. In order to apply changes, the Engine must be restarted."
-msgstr "他の要素のシミュレーションに集中したい場合は、プロセス開始または中間イベント Bean のシミュレーションをオフにします（イベント Bean のシミュレーションでは、対応するプロセスのプロセスエディターがポップアップし :ref:`simulate-process-models-debugger-runtimelog-view` がオーバーフローする可能性があります）。変更を適用するには、エンジンを再起動する必要があります。"
+msgid "Switch off the simulation of Process Start or Intermediate Event Beans when you want to focus on simulations of other elements (Event Bean simulation may pop up process editors with the corresponding process and may overflow the :ref:`runtimelog-view`. In order to apply changes, the Engine must be restarted."
+msgstr "他の要素のシミュレーションに集中したい場合は、プロセス開始または中間イベント Bean のシミュレーションをオフにします（イベント Bean のシミュレーションでは、対応するプロセスのプロセスエディターがポップアップし :ref:`runtimelog-view` がオーバーフローする可能性があります）。変更を適用するには、エンジンを再起動する必要があります。"
 
 #: ../../source/designer-guide/introduction/preferences.rst:123
 msgid "Execute Start Event Beans in Simulation - If ticked, the Process Start Event Beans are executed, otherwise not."
@@ -3537,8 +3537,8 @@ msgid "On the HTML error page use the :guilabel:`Open Error Report` button at th
 msgstr "HTML エラーページでは、エラーページの終わりにある:guilabel:`エラーレポートを開く` ボタンを使用して、エラーレポートを開きます。:guilabel:`CTRL + A` と :guilabel:`CTRL + C` を使用して、エラーレポートをクリップボードにコピーします。"
 
 #: ../../source/designer-guide/troubleshooting/index.rst:32
-msgid "The Event Details View of the :ref:`simulate-process-models-debugger-runtimelog-view` provides a button to generate and save an error report for a given log entry."
-msgstr ":ref:`simulate-process-models-debugger-runtimelog-view` のイベントの詳細ビューには、特定のログエントリのエラーレポートを作成して保存するボタンが表示されます。"
+msgid "The Event Details View of the :ref:`runtimelog-view` provides a button to generate and save an error report for a given log entry."
+msgstr ":ref:`runtimelog-view` のイベントの詳細ビューには、特定のログエントリのエラーレポートを作成して保存するボタンが表示されます。"
 
 #: ../../source/designer-guide/troubleshooting/index.rst:36
 msgid "Moreover, you can also use the menu :guilabel:`Axon Ivy` > :guilabel:`Debug` > :guilabel:`Save Debug Report` to generate and save such a report without an error."
@@ -6371,8 +6371,8 @@ msgid "Runtime Log"
 msgstr "ランタイムログ"
 
 #: ../../source/engine-guide/monitoring/logging.rst:52
-msgid "The Runtime Log is a well-known :ref:`designer feature <simulate-process-models-debugger-runtimelog-view>` and disabled by default in the Axon Ivy Engine to prevent a flood of log messages, which can decrease performance and filling the disk. But you can set the log level of a specific runtime logger and bring them even to another file to get the logs also on the Axon Ivy Engine."
-msgstr "ランタイムログはよく知られてい :ref:`デザイナーの機能<simulate-process-models-debugger-runtimelog-view>` あり、大量のログメッセージによってパフォーマンスが低下し、ディスクがいっぱいになるのを防ぐため、Axon Ivy Engine ではデフォルトで無効化されています。ただし、特定のランタイムロガーのログレベルを設定し、別のファイルに記録することで、Axon Ivy Engine でもログを確認できます。"
+msgid "The Runtime Log is a well-known :ref:`designer feature <runtimelog-view>` and disabled by default in the Axon Ivy Engine to prevent a flood of log messages, which can decrease performance and filling the disk. But you can set the log level of a specific runtime logger and bring them even to another file to get the logs also on the Axon Ivy Engine."
+msgstr "ランタイムログはよく知られてい :ref:`デザイナーの機能<runtimelog-view>` あり、大量のログメッセージによってパフォーマンスが低下し、ディスクがいっぱいになるのを防ぐため、Axon Ivy Engine ではデフォルトで無効化されています。ただし、特定のランタイムロガーのログレベルを設定し、別のファイルに記録することで、Axon Ivy Engine でもログを確認できます。"
 
 #: ../../source/engine-guide/monitoring/logging.rst:57
 msgid "The name of the runtime logger has a well defined format:"
@@ -20849,8 +20849,8 @@ msgid "``html`` - a :public-api:`IHTMLDialogContext </ch/ivyteam/ivy/htmldialog/
 msgstr "``html`` - :public-api:`IHTMLDialogContext </ch/ivyteam/ivy/htmldialog/IHTMLDialogContext.html>` ブジェクトで、Axon Ivy の HTML 環境を指定します。"
 
 #: ../../source/reference/process/ivyscript/reference.rst:348
-msgid "``log`` - a :public-api:`Logger </ch/ivyteam/log/Logger.html>` object. You can define log outputs here that will be collected for each run. You can see these log entries in the :ref:`Runtime Log View <simulate-process-models-debugger-runtimelog-view>`."
-msgstr "``log`` - a :public-api:`Logger </ch/ivyteam/log/Logger.html>` ブジェクトです。ここでは、実行ごとに収集されるログの出力を定義できます。これらのログエントリは :ref:`ランタイムログビュー<simulate-process-models-debugger-runtimelog-view>` 見ることができます。"
+msgid "``log`` - a :public-api:`Logger </ch/ivyteam/log/Logger.html>` object. You can define log outputs here that will be collected for each run. You can see these log entries in the :ref:`Runtime Log View <runtimelog-view>`."
+msgstr "``log`` - a :public-api:`Logger </ch/ivyteam/log/Logger.html>` ブジェクトです。ここでは、実行ごとに収集されるログの出力を定義できます。これらのログエントリは :ref:`ランタイムログビュー<runtimelog-view>` 見ることができます。"
 
 #: ../../source/reference/process/ivyscript/reference.rst:352
 msgid "``security`` - a :public-api:`ISecurityContext </ch/ivyteam/ivy/security/ISecurityContext.html>` object giving access to all security objects (all users, roles, sessions) for the application under execution. Can be used to build a whole user and role administration UI application. There is a security context for each application and vice versa."
@@ -26294,8 +26294,8 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 #~ msgid ":ref:`reference-view`"
 #~ msgstr ":ref:`reference-view`"
 
-#~ msgid ":ref:`simulate-process-models-debugger-runtimelog-view`"
-#~ msgstr ":ref:`simulate-process-models-debugger-runtimelog-view`"
+#~ msgid ":ref:`runtimelog-view`"
+#~ msgstr ":ref:`runtimelog-view`"
 
 #~ msgid ":ref:`debugger-variables-view`"
 #~ msgstr ":ref:`debugger-variables-view`"
