@@ -8,4 +8,3 @@ Introduction
    why-axon-ivy
    getting-started/index
    getting-help
-   system-requirements/index
