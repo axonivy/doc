@@ -12188,9 +12188,8 @@ msgid "A simple way to integrate Axon Ivy is to use a :ref:`external database <d
 msgstr "Axon Ivy を統合する簡単な方法は、:ref:`外部データベース<database-configuration>` を使用することです。Axon Ivy のプロセスから :ref:`process-element-db-activity` を使用してデータベースの内容を読み書きしたり、:ref:`JPA<persistence>` を使用して Java で統合したりできます。"
 
 #: ../../source/getting-productive/connectivity/index.rst:4
-#, fuzzy
 msgid "Connectivity"
-msgstr "ConnectivityDemos"
+msgstr "接続性"
 
 #: ../../source/getting-productive/connectivity/index.rst:6
 msgid "The basic idea of integrating Axon Ivy with 3rd party systems is either to invoke an operation on an external system out of an Ivy process (call; Axon Ivy is the client) or to have a remote system invoke an operation in Axon Ivy (being called; Axon Ivy is the server). There are several ways to implement these integrations."
@@ -13966,9 +13965,8 @@ msgid "Specify properties for the persistence unit. This is optional. This freed
 msgstr "永続性ユニットのプロパティを指定します。プロパティの指定は任意ですが、自由には責任が伴います。理解した上で行ってください。"
 
 #: ../../source/getting-productive/index.rst:4
-#, fuzzy
 msgid "Getting Productive"
-msgstr "はじめに"
+msgstr "生産性を高める"
 
 #: ../../source/getting-productive/multi-tenancy/index.rst:4
 msgid "Multi-Tenancy"
@@ -23119,9 +23117,8 @@ msgid "For debugging the signal data of a Signal event you can set a :ref:`simul
 msgstr "シグナルイベントのシグナルデータをデバッグするには、シグナル開始イベントまたはシグナル境界イベント :ref:`simulate-process-models-breakpoints` を設定し、変数ビューでシグナル変数を精査します。"
 
 #: ../../source/getting-productive/workflow/case-task.rst:2
-#, fuzzy
 msgid "Business Case, Technical Case, Task"
-msgstr "ビジネスケースデータ"
+msgstr "ビジネスケース、技術ケース、タスク"
 
 #: ../../source/getting-productive/workflow/case-task.rst:4
 #: ../../source/getting-productive/workflow/documents.rst:4
