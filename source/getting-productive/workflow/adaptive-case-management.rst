@@ -297,7 +297,7 @@ Send a Signal Manually in the Designer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 While developing a process it is possible to send a Signal manually in
-the :guilabel:`Signals` page of the :ref:`designer-workflow-ui`.
+the :guilabel:`Signals` page of the :ref:`dev-workflow-ui`.
 
 Receiving Signals
 ~~~~~~~~~~~~~~~~~
@@ -390,7 +390,7 @@ prefixes do not have to be shared necessarily.
 Tracing Signals
 ~~~~~~~~~~~~~~~
 
-Signals can be traced by using the :ref:`designer-workflow-ui`. It makes use of
+Signals can be traced by using the :ref:`dev-workflow-ui`. It makes use of
 the Public API for Signals (``ivy.wf.signals()``).
 
 .. tip::

@@ -15,4 +15,3 @@ process execution sequence.
   :maxdepth: 1
 
   simulation
-  debugger

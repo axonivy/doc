@@ -59,10 +59,6 @@ parts of process logic) they have an own Data Class which might not
 match the caller's data. Therefore parameters need to be mapped in both
 directions when entering and leaving an independent subprocess.
 
-To create an independent subprocess, select the *callable process*
-option from the :ref:`process-new-wizard`. The
-created process will contain special start and end elements that must
-encompass the process implementation.
 
 .. _process-kind-webservice:
 
@@ -85,10 +81,6 @@ other applications and not by a user directly, no user-interaction (HTML
 or User Dialogs) is allowed within such a process. If the process does
 contain user-interaction an exception will be thrown.
 
-To create a web service process, select the *Web Service Process* option
-from the :ref:`process-new-wizard`. The created
-process will contain special start and end elements that must encompass
-the process implementation.
 
 User Dialog Logic
 ~~~~~~~~~~~~~~~~~

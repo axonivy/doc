@@ -72,9 +72,7 @@ Deployment Descriptor Editor
 
 The Deployment Descriptor editor allows to edit a project's deployment
 properties as well as the required projects and their version ranges as
-described above. Most of those properties can already be specified in
-the :ref:`project-new-wizard`, when a project is
-initially created.
+described above.
 
 The deployment descriptor editor consists of two tabs:
 

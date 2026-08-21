@@ -120,8 +120,7 @@ Test User Editor
 
 Process designers can create, edit and remove test users in the user editor.
 Users need a password to authenticate themselves, and they need to be assigned to
-at least one role. Double click on the :guilabel:`Test Users` node in 
-:ref:`ivy-project-view` to start the Test User Editor.
+at least one role.
 
 .. note::
 

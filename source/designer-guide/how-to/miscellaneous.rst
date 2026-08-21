@@ -294,90 +294,6 @@ to the following:
 
 
 
-
-
-
-
-
-.. _designer-search:
-
-Axon Ivy Search
------------------
-
-In a workspace with many large projects it is sometimes hard to find
-specific Axon Ivy elements. Then a powerful search mechanism can save the
-day. To use the Axon Ivy search, just click on the |image1| symbol in
-the toolbar to open the search dialog. In the dialog that opens navigate
-to the Axon Ivy tab. At present, searching for 
-:ref:`cms`, :ref:`data-classes`, :ref:`persistence-entity-classes`,
-:ref:`Process Models <process-modeling>` and :ref:`Process Elements <process-elements>`
-is supported by Axon Ivy.
-
-Search page
-~~~~~~~~~~~
-
-|image2|
-
-Search string
-   Enter here the string you are searching for. You may use two
-   wild-cards: The *\* (star)* for any sequence of characters (may be
-   empty too). and the *? (question mark)* for a single character (e.g.
-   a*b matches each entity that starts with "a" and ends with "b" and
-   has 0, 1 or more characters in between whereas a?b matches all
-   strings with a length of three that start with an "a", end with "b"
-   and has one character in the middle)
-
-Search For / Search In
-   Select for what kind of entities you are looking for. Depending on
-   the chosen type, you can specify in which properties of the entity
-   the *search string* (see above) is searched in. If you select more
-   than one property, then be aware that the *search string* must occur
-   only in one of the chosen properties.
-
-Scope
-   You can decide whether you want to search in the full workspace or
-   only in the enclosing projects (the projects that are selected in the
-   :ref:`ivy-project-view`. If you choose *enclosing projects*
-   you may select whether you want to include searching in
-   dependent or required projects (see :ref:`project-deployment-descriptor`
-   chapter for more details about how you can define and use project dependencies). The
-   tool tip text tells which projects are currently selected.
-
-Recreate indices
-   The search indices in Axon Ivy are automatically updated if you add, edit
-   or delete entities. However, if you want to recreate the search
-   indices hit this button and all indices are deleted and recreated
-   from scratch in the background. Please be aware, that searching
-   during the time of index creation may not return correct results.
-
-
-.. note::
-
-   You may use as well other search facilities within this dialog to
-   search for parts that are not covered by the Axon Ivy search page.
-   e.g., if you write your own Java classes in the Axon Ivy Designer you
-   may use the Java search.
-
-Search result view
-~~~~~~~~~~~~~~~~~~
-
-After clicking on the search button, the search results are collected in
-the search result view. Double-click on matching entries and the
-corresponding resource is opened in its editor.
-
-.. figure:: /_images/designer-search/designer-search-result.png
-
-You can change the presentation layout for your search results by selecting a layout from
-the result view's menu:
-
-.. figure:: /_images/designer-search/designer-search-result-layout.png
-
-For standard searches, only *Project* and *Namespace* grouping is available.
-
-
-
-
-
 Update Notification
 -------------------
 
@@ -459,5 +375,3 @@ Engine:
 
 
 .. |image0| image:: /_images/system-events/system-events-concept.png
-.. |image1| image:: /_images/designer-search/designer-search-button.png
-.. |image2| image:: /_images/designer-search/designer-search-result.png
