@@ -26,7 +26,6 @@ development, to get to know new features or to eliminate potential problems.
 
    workbench
    perspectives
-   menus
    toolbar
    shortcuts
    preferences

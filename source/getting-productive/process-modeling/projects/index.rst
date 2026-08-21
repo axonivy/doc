@@ -59,6 +59,5 @@ which will prevent the application from running.
   ivyArchive
   importing
   converting
-  preferences
   deployment
   validate
