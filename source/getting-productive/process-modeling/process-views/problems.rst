@@ -1,5 +1,3 @@
-.. _problems-view:
-
 Problems
 --------
 

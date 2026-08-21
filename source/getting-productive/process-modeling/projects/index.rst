@@ -57,7 +57,5 @@ which will prevent the application from running.
   :maxdepth: 1
 
   ivyArchive
-  importing
-  converting
   deployment
   validate

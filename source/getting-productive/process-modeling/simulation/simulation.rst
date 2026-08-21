@@ -4,24 +4,8 @@ Simulation
 ----------
 
 A simulation can be started directly on the :ref:`Start Element
-<process-editor-quick-actions-start-process>` or on the Designer Workflow UI
-Overview page displayed either in the browser view of the :ref:`Process
-Development Perspective <perspectives-axonivy>` or in a separate browser window,
-depending on the setting in the :ref:`corresponding preference
-<workspace-preferences-process-engine>`. This Process Start Overview web page
-shows all processes that can be started by clicking on the link.
+<process-editor-quick-actions-start-process>` or on the :ref:`dev-workflow-ui`.
 
-The Web Services are displayed on the Process Start Overview page, too.
-By clicking a Web Service Process link, the corresponding WSDL is
-displayed.
-
-
-.. _designer-workflow-ui:
-
-.. figure:: /_images/simulation-debugging/process-start-overview.png
-   :alt: Designer Workflow UI
-
-   Designer Workflow UI
 
 .. tip::
 
@@ -31,43 +15,10 @@ displayed.
    :ref:`preferences <workspace-preferences-process-engine>`.
 
 
-Engine Actions
-~~~~~~~~~~~~~~
+Preferences
+~~~~~~~~~~~
 
-You are able to control the simulation and to influence the animation
-using the actions in the toolbar or the Axon Ivy menu.
-
-.. figure:: /_images/simulation-debugging/menu-engine.png
-   :alt: Engine Sub-Menu
-
-   Engine Sub-Menu
-
-Starting the engine and show overview page
-   Select the entry |image1| in the menu or as button in the toolbar to start
-   the Simulation Engine, open the Process Development Perspective and refresh
-   the Process Start Overview page.
-
-Starting the engine
-   Select the entry |image3| in the menu or as button  in the
-   toolbar to start the Simulation Engine and refresh the Process Start
-   Overview page but without opening the Process Development Perspective.
-
-Stopping the engine
-   Select the entry |image5| in the menu or the corresponding button in the
-   toolbar to stop the Simulation Engine.
-
-Adjust the engine animation speed
-   Select the entry |image7|\ in the menu or the corresponding button in the
-   toolbar to show the slider to adjust the speed of the animation. This
-   overwrites the :ref:`corresponding setting <workspace-preferences-process-engine>` in the
-   preferences.
-
-Suppressing the engine animation
-   Select the entry |image9| in the menu or the corresponding button in the
-   toolbar to switch the engine animation on and off. This overwrites
-   the :ref:`corresponding setting <workspace-preferences-process-engine>` in the
-   preferences.
-
+You are able to control the simulation flow and speed in the :ref:`preferences <designer-animation-config>`.
 
 
 .. _language-settings:
