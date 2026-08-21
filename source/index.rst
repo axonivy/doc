@@ -7,16 +7,10 @@ Axon Ivy
 
    introduction/index
    getting-productive/index
+   reference/index
    designer-guide/index
    engine-guide/index
-   concepts/index
    portal-guide/index
    market/index
    technical-info/index
    glossary/glossary
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Resources
-   
-   public-api/index

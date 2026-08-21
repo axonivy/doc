@@ -1,4 +1,154 @@
-.. _persistence-entity-class-editor-old:
+.. _data-class-editor:
+
+Data Class Editor
+-----------------
+
+Use this editor to add, delete, and edit your Data Class and its attributes.
+
+.. figure:: /_images/dataclass-editor/dataclass-editor.png
+   :alt: Data Class Editor
+
+   Data Class Editor
+
+.. note::
+  If you open an Entity Class, additional properties are configurable in this
+  editor. They are documented in the :ref:`persistence-entity-class-editor`.
+
+.. note::
+  If you are familiar with the Data Class editor from previous versions, you can
+  still use it by selecting *Open With > Data Class Editor (Classic)* in the
+  context menu of the Data Class.
+
+Features
+^^^^^^^^
+
+When you have no attribute selected, you can view and edit the properties of the
+Data Class.
+
+Name / Description
+  Name
+    Shows the fully qualified name of the Data Class. To change the name,
+    perform the "Rename" refactoring by selecting "Rename" in the context menu
+    of the Data Class in your project tree.
+  
+  Description
+    Use this field to document your Data Class.
+  
+Annotations
+  Use annotations on your Data Class for advanced configuration. The annotations
+  will be written as is into the generated Java file. Therefore, you need to use
+  the fully qualified name of the annotation and provide all desired arguments.
+
+Class type
+  Change the type of your Data Class:
+  
+    - :ref:`Data <data-classes>`
+    - :ref:`Business Data <business-data>`
+    - :ref:`Entity <persistence-entity-classes>`
+
+Attributes
+""""""""""
+
+The attributes specify the Data Class contents. Select an attribute in the table
+to view and edit its properties.
+
+Name / Type / Comment
+  Name
+    The name of your attribute. The name must not contain any special characters
+    or spaces.
+
+  Type
+    The type of your attribute. Press |data-type-browser-icon| to open the
+    :ref:`data-type-browser`.
+
+  Comment
+    Use this field to document your attribute.
+
+.. |data-type-browser-icon| image:: /_images/ui-icons/list-search.svg
+   :alt: Data Type Browser Button
+   :width: 16px
+   :height: 16px
+
+Properties
+  Persistent
+    Decide if the data should be persistent between task switches. If the data
+    is not set to be persistent, then you lose all information if the execution
+    of the process passes a task switch process element.
+
+Annotations
+  Use annotations on your attributes for advanced configuration. The annotations
+  will be written as is into the generated Java file. Therefore, you need to use
+  the fully qualified name of the annotation and provide all desired arguments.
+
+Attribute Refactoring
+^^^^^^^^^^^^^^^^^^^^^
+
+The Data Class editor supports Data Class attribute refactoring.
+
+Combine Attributes Refactoring
+""""""""""""""""""""""""""""""
+
+Over time, the number of attributes in a Data Class may become excessive. This
+decreases the maintainability and reusability of your process logic. Therefore,
+the editor allows you to combine multiple attributes from an existing Data Class
+into a new Data Class. The combined attributes will be replaced with a delegate
+attribute for the new Data Class.
+
+If you have a Data Class that describes a person, you could combine the
+attributes that belong to the address part into an extra address Data Class.
+
+.. list-table::
+  :width: 100%
+
+  * - .. figure:: /_images/data-class/data-class-editor-extract-refactoring-original-structure.png
+         :alt: Data Class before refactoring
+         :scale: 75
+      
+         Data Class before refactoring
+
+    - .. figure:: /_images/data-class/data-class-editor-extract-refactoring-modified-classes.png
+         :alt: Data Class after refactoring
+         :scale: 75
+      
+         Data Class after refactoring
+
+**Start Refactoring**
+
+Select the attributes to combine in the table, then press
+|combine-attributes-icon| to open the refactoring wizard.
+
+.. |combine-attributes-icon| image:: /_images/ui-icons/wrap-to-subprocess.svg
+   :alt: Combine Attributes Button
+   :width: 16px
+   :height: 16px
+
+**Define the new Data Class**
+
+The first refactoring wizard page lets you define the location and name of the
+Data Class.
+
+.. figure:: /_images/data-class/data-class-editor-extract-refactoring-wizard-page-1.png
+   :alt: Wizard Page 1 - Define the new Data Class
+
+   Wizard Page 1 - Define the new Data Class
+
+**Review modifications**
+
+The second page previews all changes that will be applied to your artifacts. You
+can inspect some of the changes within the textual compare view on the lower
+part of the page.
+
+.. figure:: /_images/data-class/data-class-editor-extract-refactoring-wizard-page-2.png
+   :alt: Wizard Page 2 - Review modifications
+
+   Wizard Page 2 - Review modifications
+
+The refactoring will modify all programmatic references to attributes.
+Statements written in Java, IvyScript, JSP or El-Expressions may be changed by
+this refactoring.
+
+
+.. _persistence-entity-class-editor:
 
 Entity Class Editor
 -------------------

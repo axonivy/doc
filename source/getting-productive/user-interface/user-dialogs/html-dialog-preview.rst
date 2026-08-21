@@ -28,7 +28,7 @@ or autocompletion logic can be tested.
 Accessibility
 ~~~~~~~~~~~~~
 
-If you have a :ref:`form-editor` or a :ref:`html-dialog-editor` open and
+If you have a :ref:`form-editor` or a :ref:`xhtml-editor` open and
 focused, a new button appears in the Toolbar :code:`Open Dialog Preview`. Or use
 the :code:`Play` button in the :ref:`Form Editor Toolbar
 <form-editor-tool-bar>`.
@@ -62,7 +62,7 @@ which gives you the possibility to select an element in the dialog, and it will
 open the corresponding Html Dialog View and reveals the code of the rendered
 element or selects it in the :ref:`form-editor`.
 
-If the view is an :ref:`html-dialog-editor` we try to find the selected element
+If the view is an :ref:`xhtml-editor` we try to find the selected element
 via the :code:`id` attribute. Because of this, it only works if the given element
 has an :code:`id` defined. The selection also only opens the direct
 corresponding Html Dialog View and does not navigate into additional views

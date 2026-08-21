@@ -152,7 +152,7 @@ View
 ^^^^
 
 The view of a User Dialog defines the *User Interface* which is presented to the end user.
-A view can be written via the :ref:`form-editor` or in plain code (JSF) via the :ref:`html-dialog-editor`.
+A view can be written via the :ref:`form-editor` or in plain code (JSF) via the :ref:`xhtml-editor`.
 
 
 Data

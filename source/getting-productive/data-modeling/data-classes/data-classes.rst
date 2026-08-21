@@ -61,7 +61,7 @@ Namespace
 Data Class Name
    Enter the name of your Data Class.
 
-.. _data-class-editor:
+.. _data-class-editor-old:
 
 Data Class Editor
 -----------------

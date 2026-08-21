@@ -13,3 +13,4 @@ Configuration
    dynamic-configs
    formats
    custom-fields
+   persistence

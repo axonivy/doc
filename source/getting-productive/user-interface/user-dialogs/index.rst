@@ -15,9 +15,7 @@ In Axon Ivy, we use :ref:`html-dialogs` - or HD for short
 
   user-dialog-concept
   new-user-dialog-wizard
-  form-editor
   html-dialogs
-  html-dialog-editor
   html-dialog-themes
   html-dialog-view-types
   html-dialog-preferences

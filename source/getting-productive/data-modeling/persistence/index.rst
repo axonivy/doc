@@ -34,7 +34,6 @@ intricate and specialized data manipulation tasks.
   entity-classes
   new-entity-class-wizard
   entity-class-editor
-  persistence-configuration-editor
   generate-database-schema
   data-repository-api
   persistence-api
