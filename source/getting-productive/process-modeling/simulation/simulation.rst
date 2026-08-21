@@ -7,14 +7,6 @@ A simulation can be started directly on the :ref:`Start Element
 <process-editor-quick-actions-start-process>` or on the :ref:`dev-workflow-ui`.
 
 
-.. tip::
-
-   You can switch off the simulation of Process Start Events and
-   Intermediate Process Events when you want to simulate or test other
-   parts of a project. Just set the corresponding options in the
-   :ref:`preferences <workspace-preferences-process-engine>`.
-
-
 Preferences
 ~~~~~~~~~~~
 
@@ -26,51 +18,9 @@ You are able to control the simulation flow and speed in the :ref:`preferences <
 Language Settings
 ~~~~~~~~~~~~~~~~~
 
-This dialog allows to edit the content, formatting and workflow
-languages. The :guilabel:`Simulation Languages` settings are used at design time for displaying
-the User Dialogs. If option ::guilabel:`Enable language simulation` is checked,
-the settings are also used at runtime. 
-
-:ref:`Workflow languages <workflow-languages>` controls for which languages case and task name and description are stored. 
-
-.. figure:: /_images/simulation-debugging/content-formatting-language-settings.png
-
-Accessibility
-^^^^^^^^^^^^^
-
-Press |image20d| in the toolbar.
-
-Settings
-^^^^^^^^^^^^^
-
-You can confîgure the following language settings:
-
-Enable language simulation
-   If checked, then the content and the formatting language settings will
-   be used while simulating. If **not** checked then the settings of the
-   browser will be used.
-
-Content Language
-   The content language is used to select the values of content objects.
-
-Formatting Language
-   The formatting language is used when objects are formatted using the
-   ``format()`` method.
-   
-Workflow Languages
-   The :ref:`languages <workflow-languages>` names and descriptions of cases or tasks are stored.
-
-
-How to use in IvyScript
-^^^^^^^^^^^^^^^^^^^^^^^
-
-To get or set the content or formatting language in IvyScript use
-``ivy.session.contentLocale`` respectively
-``ivy.session.formattingLocale``.
-
-Find out more about Axon Ivy's scripting language :ref:`ivyscript`.
-
-.. |image20d| image:: /_images/simulation-debugging/button-languages.png
+You can configure the language and formatting settings for a specific user in the :ref:`dev-workflow-ui`.
+:ref:`Workflow languages <workflow-languages>` can be added in the :ref:`engine-cockpit-security-system-detail`, 
+so the case and task name and descriptions are stored multilingual.
 
 
 
@@ -98,18 +48,9 @@ the process element is executed.
 
 **Add / Remove a breakpoint**
 
-You can add process element breakpoints in a :ref:`process-editor` or User Dialog Logic
-editor window by using the :ref:`Quick Action Menu
+You can add process element breakpoints in a :ref:`process-editor` by using the :ref:`Quick Action Menu
 <process-editor-quick-actions-toggle-breakpoint>`. Select the process step on
 which you intend to set the breakpoint and click on the bug.
-
-**Edit a breakpoint**
-
-You can add a *condition* to a breakpoint in the
-:ref:`debugger-breakpoints-view`. If you do so, the breakpoint is only active if
-the expression evaluates to `true` and will then suspend the execution. In the
-expression, you have access to all variables in the context of the process 
-step, including ``in``. 
 
 **Disable a breakpoint**
 
