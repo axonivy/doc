@@ -75,12 +75,6 @@ Shows the details of the selected Variable.
   If applicable, you can specify additional metadata for a Variable:
 
   * **Password:** This tells the Axon Ivy Engine to encrypt the value of this Variable.
-    
-    .. tip::
-      If you add a password Variable in the Axon Ivy Designer, 
-      you get a validation warning that the Variable is not
-      encrypted. You can fix this via a :ref:`problems-view` > *QuickFix*.
-      
   * **Daytime:** The value of this Variable is interpreted as a time of day.
   * **Enum:** You can use this option to define a list of possible values that
     this Variable is allowed to take on.
