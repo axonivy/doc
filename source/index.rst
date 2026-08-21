@@ -6,6 +6,7 @@ Axon Ivy
    :caption: Process Automation Platform
 
    introduction/index
+   getting-productive/index
    designer-guide/index
    engine-guide/index
    concepts/index

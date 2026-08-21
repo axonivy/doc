@@ -1,7 +1,7 @@
-.. _3rd-party-integration:
+.. _connectivity:
 
-3rd Party Integration
-*********************
+Connectivity
+************
 
 The basic idea of integrating Axon Ivy with 3rd party systems is either to
 invoke an operation on an external system out of an Ivy process (call; Axon Ivy is the client) or to have
