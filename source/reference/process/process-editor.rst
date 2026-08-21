@@ -85,7 +85,7 @@ Right
 |options-toggle| Open view options:
 
    - Darkmode: Toggle between dark and light theme.
-   - Grid: Toggle the grid mode. (You can also set the grid mode in the :ref:`process-editor-preferences`)
+   - Grid: Toggle the grid mode.
    - Custom Icon: Toggle between custom and default icons.
 
 .. |open-dataclass| image:: /_images/ui-icons/database-link.svg
