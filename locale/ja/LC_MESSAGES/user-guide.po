@@ -3558,41 +3558,34 @@ msgstr "このエラーが発生した場合、デザイナーは、使用可能
 
 #: ../../source/designer/ai-development.rst:2
 msgid "AI-assisted development"
-msgstr ""
+msgstr "AI 支援開発"
 
 #: ../../source/designer/commands.rst:2
-#, fuzzy
 msgid "Commands"
-msgstr "コメント"
+msgstr "コマンド"
 
 #: ../../source/designer/editors.rst:2
-#, fuzzy
 msgid "Editors"
 msgstr "エディター"
 
 #: ../../source/designer/index.rst:4
 #: ../../source/introduction/getting-started/designer/index.rst:4
-#, fuzzy
 msgid "Designer (VS Code Extension)"
-msgstr "CRON 式"
+msgstr "Designer（VS Code 拡張機能）"
 
 #: ../../source/designer/index.rst:6
-#, fuzzy
 msgid "This guide covers all aspects of an Axon Ivy Designer VS Code Extension. Including installation, configuration, etc."
-msgstr "このガイドでは、インストール、設定、本番運用を含む Axon Ivy Engine のライフサイクル全般を取り上げます。"
+msgstr "このガイドでは、Axon Ivy Designer VS Code 拡張機能のインストール、設定など、あらゆる側面について説明します。"
 
 #: ../../source/designer/introduction/index.rst:4
-#, fuzzy
 msgid "If you want to familiarize yourself with the Axon Ivy Designer, we recommend to dive into :ref:`Getting Started with the Designer (VS Code Extension) <getting-started-designer-vscode>`."
-msgstr "Axon Ivy Engine の理解を深めたい場合は、「 :ref:`エンジン入門 <getting-started-engine>` 」をよく読むことをお勧めします。"
+msgstr "Axon Ivy Designer に慣れたい場合は、:ref:`Designer（VS Code 拡張機能）入門 <getting-started-designer-vscode>` を詳しく学ぶことをお勧めします。"
 
 #: ../../source/designer/introduction/index.rst:11
-#, fuzzy
 msgid "Designer (VS Code Extension) System Requirements"
-msgstr "システム要件"
+msgstr "Designer（VS Code 拡張機能）のシステム要件"
 
 #: ../../source/designer/views.rst:2
-#, fuzzy
 msgid "Views"
 msgstr "ビュー"
 
