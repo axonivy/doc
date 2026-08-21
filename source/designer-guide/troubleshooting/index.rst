@@ -30,7 +30,7 @@ the error page to open the Error Report. Use :guilabel:`CTRL-A` and :guilabel:`C
 to copy the Error Report to the clipboard.
 
 The Event Details View of the
-:ref:`simulate-process-models-debugger-runtimelog-view` provides a
+:ref:`runtimelog-view` provides a
 button to generate and save an error report for a given log entry.
 
 Moreover, you can also use the menu :guilabel:`Axon Ivy` > :guilabel:`Debug` > :guilabel:`Save Debug Report`

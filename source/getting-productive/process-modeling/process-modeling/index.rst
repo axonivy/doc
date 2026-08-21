@@ -11,8 +11,6 @@ as the functionality of the :ref:`process-editor` and the different kinds of pro
   :maxdepth: 1
 
   process-kinds
-  new-process-wizard
-  new-process-group-wizard
   process-properties
   swimlanes
 
