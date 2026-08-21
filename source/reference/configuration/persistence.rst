@@ -1,7 +1,7 @@
 .. _persistence-configuration-editor:
 
-Persistence Configuration Editor
---------------------------------
+Persistence Editor
+------------------
 
 The Persistence Configuration Editor lets you configure the persistence
 units you use in your project and projects depending on it.

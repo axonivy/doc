@@ -51,6 +51,3 @@ changes a prompt to save the editor's changes will appear.
 Double clicking the tab of an editor or view will expand the part to
 full size of the workbench window. Double click the tab of an expanded
 part again to toggle back to default size and location.
-
-Have a look at our reference for all available :ref:`designer-reference-views`
-and :ref:`designer-reference-editors`.
