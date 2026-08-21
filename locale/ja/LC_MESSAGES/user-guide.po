@@ -18559,9 +18559,8 @@ msgid "Formats are defined in :file:`config/formats.yaml` of your project. The f
 msgstr "フォーマットは、プロジェクトの :file:`config/formats.yaml` で定義します。以下のリストに利用可能なすべてのプロパティを示します。"
 
 #: ../../source/reference/configuration/persistence.rst:4
-#, fuzzy
 msgid "Persistence Editor"
-msgstr "永続性 API"
+msgstr "永続性エディター"
 
 #: ../../source/reference/configuration/persistence.rst:6
 msgid "The Persistence Configuration Editor lets you configure the persistence units you use in your project and projects depending on it."
@@ -19702,9 +19701,8 @@ msgid "Dialog"
 msgstr "ダイアログ"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:4
-#, fuzzy
 msgid "XHTML Editor"
-msgstr "HTML ダイアログエディター"
+msgstr "XHTML エディター"
 
 #: ../../source/reference/process/error-handling.rst:6
 msgid "Errors are used to model exceptional process paths. With an error, the happy path of a process is left. An error is caught by an Error Boundary Event or Error Start Event if their Error Code pattern matches the Error Code."
@@ -24079,9 +24077,8 @@ msgid "The Java file in the ``src``-folder is under control of the Developer. Wh
 msgstr "``src`` フォルダーの Java ファイルは開発者が管理します。Web サービスの開始要素の設定が変更された場合は、Java ファイルでその変更を手動で適合させる必要があります。"
 
 #: ../../source/reference/process/smart-workflow.rst:2
-#, fuzzy
 msgid "Smart Workflow"
-msgstr "Workflow"
+msgstr "スマートワークフロー"
 
 #: ../../source/reference/public-api/index.rst:4
 msgid "This is just a placeholder and will be replaced with javadoc."
