@@ -47,8 +47,7 @@ additional maintenance efforts.
 
 The journey starts, now wrap your logic as follows:
 
-#. Create a new Process using the :ref:`process-new-wizard`. 
-   Select the type `Callable Sub Process` and finish the creation wizard.
+#. Create a new `Callable Sub Process`.
 
 #. Name the automatically defined start event, 
    and define your required input parameters and the results you want to provide.

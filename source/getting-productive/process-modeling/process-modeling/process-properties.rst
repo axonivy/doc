@@ -5,9 +5,7 @@ Process Properties
 
 Like the process elements that are used inside a process, the process
 itself has an *inscription* that allows you to specify and edit a process's
-properties. To open and show the inscription mask of a process you
-simply select the process in the :ref:`ivy-project-view`,
-right-click and select *inscription* from the pop-up menu.
+properties. 
 
 Name and Description
 ~~~~~~~~~~~~~~~~~~~~
@@ -24,9 +22,7 @@ used to define the process's data structure.
 |process-data-tab|
 
 Each process must be associated with a data class, otherwise the tab
-will show an error. The used data class is initially specified with the
-:ref:`process-new-wizard`, but you may change
-this association at any later time.
+will show an error.
 
 You can use the (C) button next to the data class field to select any
 existing data class that is visible to the edited process. Please note

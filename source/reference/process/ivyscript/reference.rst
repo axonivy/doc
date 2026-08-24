@@ -347,7 +347,7 @@ the objects are described in the :public-api:`Public API </>`):
 
 -  ``log`` - a :public-api:`Logger </ch/ivyteam/log/Logger.html>` object. You can define log outputs here that
    will be collected for each run. You can see these log entries in the
-   :ref:`Runtime Log View <simulate-process-models-debugger-runtimelog-view>`.
+   :ref:`Runtime Log View <runtimelog-view>`.
    
 -  ``security`` - a :public-api:`ISecurityContext </ch/ivyteam/ivy/security/ISecurityContext.html>` object giving access to all 
    security objects (all users, roles, sessions) for the application under execution. 

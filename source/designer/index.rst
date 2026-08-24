@@ -14,5 +14,5 @@ installation, configuration, etc.
    configuration
    commands
    editors
-   views
+   views/index
    troubleshooting

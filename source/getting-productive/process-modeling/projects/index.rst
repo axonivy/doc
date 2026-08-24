@@ -57,11 +57,5 @@ which will prevent the application from running.
   :maxdepth: 1
 
   ivyArchive
-  ivyProjectView
-  newProjectWizard
-  importing
-  exporting
-  converting
-  preferences
   deployment
   validate
