@@ -2364,9 +2364,8 @@ msgid "Importing demo projects"
 msgstr "デモプロジェクトのインポート"
 
 #: ../../source/designer/commands.rst:19
-#, fuzzy
 msgid "The Axon Ivy Designer can import several demo projects, which are provided from our Market (internet connection needed). Those demo projects are in the Axon Ivy Archive (\\*.iar) format and can be imported with the help of the :ref:`Axon Ivy Market <market>`."
-msgstr "Axon Ivy Designer では、Axon Ivy Market で提供されているるデモプロジェクトをインポートできます（インターネット接続が必要です）。 これらのデモプロジェクトは Axon Ivy Archive（\\*.iar）形式で、 :ref:`Axon Ivy Market <market>` またはようこそページの *Axon Ivy プロジェクト* のリンクからインポートできます。"
+msgstr "Axon Ivy Designer では、Axon Ivy Market で提供されている複数のデモプロジェクトをインポートできます（インターネット接続が必要です）。これらのデモプロジェクトは Axon Ivy Archive（\\*.iar）形式で、:ref:`Axon Ivy Market <market>` を使ってインポートできます。"
 
 #: ../../source/designer/commands.rst:24
 msgid "The following projects are available for Axon Ivy Designer:"
@@ -2429,9 +2428,8 @@ msgid "Exporting a Project"
 msgstr "プロジェクトのエクスポート"
 
 #: ../../source/designer/commands.rst:48
-#, fuzzy
 msgid "Axon Ivy projects can be exported from the workspace with the :code:`Axon Ivy: Export Axon Ivy Project Archive (.iar)` command."
-msgstr "*エクスポートウィザード* を使用して、Axon Ivy プロジェクトをワークスペースからさまざまな出力フォーマットにエクスポートできます。"
+msgstr ":code:`Axon Ivy: Export Axon Ivy Project Archive (.iar)` コマンドを使用して、ワークスペースから Axon Ivy プロジェクトをエクスポートできます。"
 
 #: ../../source/designer/commands.rst:56
 msgid "Converting Projects"
@@ -2446,9 +2444,8 @@ msgid "Converting Project Version"
 msgstr "プロジェクトのバージョンの変換"
 
 #: ../../source/designer/commands.rst:66
-#, fuzzy
 msgid "If the project format version changes with a new Axon Ivy release, then old projects will show an error marker, describing them as *out of date* or having an invalid version."
-msgstr "Axon Ivy の新規リリースでプロジェクトのフォーマットのバージョンが変更された場合、古いオブジェクトには、*古い* バージョンである、または無効なバージョンが含まれることを示すエラーマーカーが表示されます。これは、Axon Ivy プロジェクトの技術フォーマットが Axon Ivy の新規リリースで変更された場合に発生することがあります（アーティファクトを格納する方法の変更、新しいアーティファクトの導入など）。"
+msgstr "Axon Ivy の新しいリリースでプロジェクト形式のバージョンが変更されると、古いプロジェクトには、*期限切れ* またはバージョンが無効であることを示すエラーマーカーが表示されます。"
 
 #: ../../source/designer/commands.rst:70
 msgid "If you inspect your project's properties file :file:`.ivyproject`, you will see the project version. You will also see a warning indicator, when the project is out of date."
@@ -2463,40 +2460,36 @@ msgid "It is absolutely recommended that you create a copy of your project befor
 msgstr "変換ウィザードを呼び出す前に、プロジェクトのコピーを作成することを強く推奨します。または、プロジェクトをバージョンで管理できます。この場合は、変換ウィザードを呼び出す前に、すべてのプロジェクトがチェックインされていることを確認してください。何らかの理由で変換が失敗した場合に、簡単に古いバージョンにロールバックする（戻す）ことができます。"
 
 #: ../../source/designer/commands.rst:87
-#, fuzzy
 msgid "In the :ref:`migration-notes`, migration tasks marked with |tag-project-auto-convert| will run with this command."
-msgstr ":ref:`migration-notes` では、*プロジェクトの変換* ウィザードでプロジェクトコンバーターを使用可能な移行作業に |tag-project-auto-convert| のマークが付けられています。"
+msgstr ":ref:`migration-notes` で |tag-project-auto-convert| のマークが付いた移行タスクは、このコマンドで実行されます。"
 
 #: ../../../doc-build/<rst_epilogue>:6
 msgid "tag-project-auto-convert"
 msgstr "tag-project-auto-convert"
 
 #: ../../source/designer/configuration.rst:7
-#, fuzzy
 msgid "Process Animation"
-msgstr "プロセスの前提条件"
+msgstr "プロセスアニメーション"
 
 #: ../../source/designer/configuration.rst:9
 msgid "Configure the :code:`axonivy.process.animation.animate` preference to enable or disable the animation of the process engine in the Designer."
-msgstr ""
+msgstr "Designer でプロセスエンジンのアニメーションを有効または無効にするには、:code:`axonivy.process.animation.animate` 設定を構成します。"
 
 #: ../../source/designer/configuration.rst:16
-#, fuzzy
 msgid "Mode"
 msgstr "モード"
 
 #: ../../source/designer/configuration.rst:18
 msgid "Specify the process animation mode with the :code:`axonivy.process.animation.mode` preference. The following modes are available: all, currentProcess, openProcess, noDialogProcess, noEmbeddedProcess"
-msgstr ""
+msgstr ":code:`axonivy.process.animation.mode` 設定でプロセスアニメーションのモードを指定します。次のモードを利用できます: all、currentProcess、openProcess、noDialogProcess、noEmbeddedProcess"
 
 #: ../../source/designer/configuration.rst:25
-#, fuzzy
 msgid "Speed"
-msgstr "中断"
+msgstr "速度"
 
 #: ../../source/designer/configuration.rst:27
 msgid "Choose the speed of the process engine animation with the :code:`axonivy.process.animation.speed` preference."
-msgstr ""
+msgstr ":code:`axonivy.process.animation.speed` 設定でプロセスエンジンのアニメーション速度を選択します。"
 
 #: ../../source/designer/editors.rst:2
 msgid "Editors"
@@ -2551,9 +2544,8 @@ msgid "Runtime Log View"
 msgstr "ランタイムログビュー"
 
 #: ../../source/designer/views/index.rst:25
-#, fuzzy
 msgid "The Runtime Log view displays a list of events. This events occur during the simulation."
-msgstr "ランタイムログビューには、イベントのリストが表示されます。このイベントはシミュレーション中に発生します。Axon Ivy プロセスエンジンを起動すると、デフォルトではこのログビューが開き、すべてのエントリが消去されます。"
+msgstr "ランタイムログビューには、イベントの一覧が表示されます。これらのイベントはシミュレーション中に発生します。"
 
 #: ../../source/designer/views/index.rst:28
 msgid "-> tbd: add screenshot of view"
@@ -2568,9 +2560,8 @@ msgid "How to log"
 msgstr "ログ方法"
 
 #: ../../source/designer/views/index.rst:39
-#, fuzzy
 msgid "Besides the log events of some process elements, you can also log your own events. Open any process elements that contain IvyScript (like: Step, Web Service, etc.) and type a script like the one you find in the figure below:"
-msgstr "IvyScriptを含むプロセス要素（ステップ、Web サービスなど）を開き、以下の図のようなスクリプトを入力します。"
+msgstr "一部のプロセス要素のログイベントに加えて、独自のイベントも記録できます。IvyScript を含むプロセス要素（ステップ、Web サービスなど）を開き、以下の図にあるようなスクリプトを入力します。"
 
 #: ../../source/designer/views/index.rst:47
 msgid "Find out more about Axon Ivy scripting language :ref:`ivyscript`."
@@ -8437,9 +8428,8 @@ msgid "The journey starts, now wrap your logic as follows:"
 msgstr "まず、以下のようにロジックをラップします。"
 
 #: ../../source/getting-productive/connectivity/process-extensions.rst:50
-#, fuzzy
 msgid "Create a new `Callable Sub Process`."
-msgstr "呼び出し可能なサブプロセス"
+msgstr "新しい `Callable Sub Process` を作成します。"
 
 #: ../../source/getting-productive/connectivity/process-extensions.rst:52
 msgid "Name the automatically defined start event, and define your required input parameters and the results you want to provide."
@@ -10355,9 +10345,8 @@ msgid "Process Properties"
 msgstr "プロセスのプロパティ"
 
 #: ../../source/getting-productive/process-modeling/process-modeling/process-properties.rst:6
-#, fuzzy
 msgid "Like the process elements that are used inside a process, the process itself has an *inscription* that allows you to specify and edit a process's properties."
-msgstr "プロセス内部で使用されるプロセス要素と同様、プロセス自体にも *インスクリプション* があり、プロセスのプロパティを指定、編集できます。プロセスのインスクリプションマスクを開いて表示するには、 :ref:`ivy-project-view` でプロセスを選択して右クリックし、ポップアップメニューから［*インスクリプション*］を選択するだけです。"
+msgstr "プロセス内で使用されるプロセス要素と同様に、プロセス自体にも、プロセスのプロパティを指定および編集できる *インスクリプション* があります。"
 
 #: ../../source/getting-productive/process-modeling/process-modeling/process-properties.rst:11
 msgid "Name and Description"
@@ -10707,9 +10696,8 @@ msgid "This chapter introduces Views which are handy while working with processe
 msgstr "この章では、プロセスや :ref:`process-editor` で作業する際に便利なビューを紹介します。"
 
 #: ../../source/getting-productive/process-modeling/process-views/problems.rst:2
-#, fuzzy
 msgid "Problems"
-msgstr "ロール"
+msgstr "問題"
 
 #: ../../source/getting-productive/process-modeling/process-views/problems.rst:4
 msgid "In the process editor process elements that have errors are marked with an error overlay icon."
@@ -10828,9 +10816,8 @@ msgid "Deployment Descriptor Editor"
 msgstr "デプロイメント記述子エディター"
 
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:73
-#, fuzzy
 msgid "The Deployment Descriptor editor allows to edit a project's deployment properties as well as the required projects and their version ranges as described above."
-msgstr "デプロイメント記述子エディターでは、先に説明した必要なプロジェクトとそのバージョン範囲に加えて、プロジェクトの展開プロパティを編集できます。これらのプロパティのほとんどは、プロジェクトを最初に作成する際 :ref:`project-new-wizard` で指定できます。"
+msgstr "デプロイメント記述子エディターでは、プロジェクトのデプロイメントプロパティと、上述の必要なプロジェクトおよびそのバージョン範囲を編集できます。"
 
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:77
 msgid "The deployment descriptor editor consists of two tabs:"
@@ -11194,9 +11181,8 @@ msgid "Breakpoints"
 msgstr "ブレークポイント"
 
 #: ../../source/getting-productive/process-modeling/simulation/simulation.rst:32
-#, fuzzy
 msgid "A breakpoint is a marker that tells the simulation engine to pause the execution. It is then possible to inspect the execution history, to view the values of internal variables and evaluate user defined expressions without being interfered by the running execution. The execution has to be resumed by the user explicitly using the functionality of the :ref:`Debug View <debugger-debug-view>`."
-msgstr "ブレークポイントは、シミュレーションエンジンに実行の一時停止を伝えるマーカーです。実行中の実行に邪魔されずに、実行履歴を精査し、内部変数の値を表示し、ユーザーが定義した式を評価できます :ref:`デバッグビュー<debugger-debug-view>` 機能を使用して、ユーザーが明示的に実行を再開する必要があります :ref:`ブレークポイントビュー<debugger-debug-view>` ブレークポイントのリストを表示し、編集できます。"
+msgstr "ブレークポイントは、シミュレーションエンジンに実行を一時停止させるマーカーです。実行中の処理に妨げられることなく、実行履歴を確認したり、内部変数の値を表示したり、ユーザー定義の式を評価したりできます。実行は、:ref:`デバッグビュー <debugger-debug-view>` の機能を使用して、ユーザーが明示的に再開する必要があります。"
 
 #: ../../source/getting-productive/process-modeling/simulation/simulation.rst:42
 msgid "Process Element Breakpoints"
@@ -11211,9 +11197,8 @@ msgid "**Add / Remove a breakpoint**"
 msgstr "**ブレークポイントの追加／削除**"
 
 #: ../../source/getting-productive/process-modeling/simulation/simulation.rst:50
-#, fuzzy
 msgid "You can add process element breakpoints in a :ref:`process-editor` by using the :ref:`Quick Action Menu <process-editor-quick-actions-toggle-breakpoint>`. Select the process step on which you intend to set the breakpoint and click on the bug."
-msgstr ":ref:`クイックアクションメニュー<process-editor-quick-actions-toggle-breakpoint>` 使用して :ref:`process-editor` またはユーザーダイアログロジックエディターのウィンドウでプロセス要素のブレークポイントを追加できます。ブレークポイントを設定するプロセスステップを選択し、バグをクリックします。"
+msgstr ":ref:`クイックアクションメニュー <process-editor-quick-actions-toggle-breakpoint>` を使用して、:ref:`process-editor` でプロセス要素のブレークポイントを追加できます。ブレークポイントを設定するプロセスステップを選択し、バグアイコンをクリックします。"
 
 #: ../../source/getting-productive/process-modeling/simulation/simulation.rst:54
 msgid "**Disable a breakpoint**"
@@ -13623,9 +13608,8 @@ msgid "Send a Signal Manually in the Designer"
 msgstr "デザイナーでのシグナルの手動送信"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:299
-#, fuzzy
 msgid "While developing a process it is possible to send a Signal manually in the :guilabel:`Signals` page of the :ref:`dev-workflow-ui`."
-msgstr ":guilabel:`Signals` プロセスの開発中に、 :ref:`designer-workflow-ui` の :guilabel:`Signals` ページでシグナルを手動で送信できます。"
+msgstr "プロセスの開発中に、 :ref:`dev-workflow-ui` の :guilabel:`Signals` ページでシグナルを手動で送信できます。"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:303
 msgid "Receiving Signals"
@@ -13762,9 +13746,8 @@ msgid "Tracing Signals"
 msgstr "シグナルのトレース"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:393
-#, fuzzy
 msgid "Signals can be traced by using the :ref:`dev-workflow-ui`. It makes use of the Public API for Signals (``ivy.wf.signals()``)."
-msgstr "シグナルは、 :ref:`designer-workflow-ui` を使用してトレースできます。これには、シグナルのパブリック API（``ivy.wf.signals()``）を使用します。"
+msgstr "シグナルは :ref:`dev-workflow-ui` を使用してトレースできます。これには、シグナルのパブリック API（``ivy.wf.signals()``）を使用します。"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:398
 msgid "For debugging the signal data of a Signal event you can set a :ref:`simulate-process-models-breakpoints` on a Signal Start or Signal Boundary Event and inspect the signal variable in the 'Variables' view."
@@ -16517,9 +16500,8 @@ msgid "Test User Editor"
 msgstr "テストユーザーエディター"
 
 #: ../../source/reference/configuration/roles-users.rst:121
-#, fuzzy
 msgid "Process designers can create, edit and remove test users in the user editor. Users need a password to authenticate themselves, and they need to be assigned to at least one role."
-msgstr "プロセス設計者は、ユーザーエディターでテストユーザーを作成、編集、削除できます。ユーザーを認証するにはパスワードが必要で、少なくとも 1 つのロールに割り当てられている必要があります。テストユーザーエディターを起動するには、 :ref:`ivy-project-view` の :guilabel:`Test Users` ノードをダブルクリックします。"
+msgstr "プロセス設計者は、ユーザーエディターでテストユーザーを作成、編集、削除できます。ユーザーは自分自身を認証するためにパスワードが必要で、少なくとも 1 つのロールに割り当てる必要があります。"
 
 #: ../../source/reference/configuration/roles-users.rst:127
 msgid "Test users are only used in the process **simulation** within the Axon Ivy Designer. They are **not** uploaded to the engine during deployment. Users for processes deployed on the Axon Ivy Engine need to be created and configured on the engine."
@@ -22696,9 +22678,8 @@ msgid "The :ref:`migration-wizard` helps you migrate an Axon Ivy Engine to the l
 msgstr ":ref:`migration-wizard` では、Axon Ivy Engine を最新バージョンに移行できます。"
 
 #: ../../source/technical-info/migration/migration-tools.rst:9
-#, fuzzy
 msgid "The :ref:`project-convert` helps you migrate Axon Ivy projects to the latest version."
-msgstr ":ref:`project-convert-wizard` では、Axon Ivy プロジェクトを最新バージョンに移行できます。"
+msgstr ":ref:`project-convert` では、Axon Ivy プロジェクトを最新バージョンに移行できます。"
 
 #: ../../source/technical-info/release-cycle-tls.rst:2
 msgid "Release Cycle and Long Term Support"
