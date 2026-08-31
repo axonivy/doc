@@ -13888,9 +13888,8 @@ msgid "Support"
 msgstr "サポート"
 
 #: ../../source/introduction/getting-help.rst:10
-#, fuzzy
 msgid "You can get support via mail or ticket, find more information `here <https://dev.axonivy.com/support>`_ (support may be subject to additional charges, depending on your license agreement)."
-msgstr "support@axonivy.com からサポートを受けることができます（ライセンス契約によって、サポート料金がかかる場合があります）。"
+msgstr "メールまたはチケットでサポートを受けることができます。詳細については`こちら <https://dev.axonivy.com/support>`_をご覧ください（ライセンス契約によっては、追加料金が発生する場合があります）。"
 
 #: ../../source/introduction/getting-help.rst:15
 msgid "Axon Ivy Community"
