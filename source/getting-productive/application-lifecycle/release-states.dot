@@ -1,0 +1,30 @@
+digraph overview {
+  layout=neato;
+ 
+  node [shape=box, height="0.8", width="2", color="#007095", style=filled, fixedsize="true", margin=0, 
+        fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontcolor="white", fontsize=15
+       ]; 
+  
+  /* nodes */
+  start      [ label="START",           pos="0,0!", height="0.2", width="0.2", shape="point"];
+  created    [ label="CREATED",    pos="2,0!", height="0.8", width="1.5"];
+  prepared   [ label="PREPARED",   pos="5,0!", height="0.8", width="1.5"];
+  released   [ label="RELEASED",   pos="8,0!", height="0.8", width="1.5"];
+  deprecated [ label="DEPRECATED", pos="8,-2!", height="0.8", width="1.5"]
+  archived   [ label="ARCHIVED",   pos="5,-2!", height="0.8", width="1.5"]
+
+  /* edges */
+  start -> created;
+  created -> prepared;
+  prepared -> released;
+  released -> deprecated;
+  deprecated -> archived;
+  released -> archived;
+
+  /* edge labels */  
+  created_prepared    [ label="prepare",                      pos="3.5,0.2!", width="1.7", height="0.8", shape=none, fillcolor=none, fontcolor="black", fontsize="11" ];
+  prepared_released   [ label="release",                      pos="6.5,0.2!", width="1.7", height="0.8", shape=none, fillcolor=none, fontcolor="black", fontsize="11" ];
+  released_deprecated [ label="deprecate\n[running cases]",   pos="8.6,-1!", width="1.7", height="0.8", shape=none, fillcolor=none, fontcolor="black", fontsize="11" ];
+  deprecated_archived [ label="archive\n[no running cases]",  pos="6.5,-2!", width="1.7", height="0.8", shape=none, fillcolor=none, fontcolor="black", fontsize="11" ];
+  released_archived   [ label="archive\n[no running cases]",  pos="6.5,-1!", width="1.7", height="0.8", shape=none, fillcolor=none, fontcolor="black", fontsize="11" ];
+}

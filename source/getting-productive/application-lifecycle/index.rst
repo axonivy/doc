@@ -3,26 +3,25 @@
 Application Lifecycle
 *********************
 
-Axon Ivy projects can be installed on an Axon Ivy Engine to bring business
-processes to life. Several Axon Ivy projects can be installed on an Axon Ivy
-Engine. The following section explains how to manage individual Axon Ivy
-projects on an Axon Ivy Engine.
+Axon Ivy projects can be deployed to an Axon Ivy Engine to bring business
+processes to life. Multiple projects can be installed and managed on a single
+Axon Ivy Engine. This section explains how to manage individual Axon Ivy
+projects on the engine.
 
 Security System
 ---------------
 
-Users, roles and permissions are managed in a security system. :ref:`Users
-<configuration-security-system>` can be managed manually or made available via
-an identity provider. The role definitions are read from the project during
-deployment and the corresponding structures in the Axon Ivy Engine are adapted.
-In addition, new roles can also be added and deleted at runtime.
+Users, roles, and permissions are managed within a security system. :ref:`Users
+<configuration-security-system>` can be managed manually or provided through an
+identity provider. Role definitions are read from the project during deployment,
+and the corresponding role structures in the Axon Ivy Engine are updated
+accordingly. Roles can also be added or deleted at runtime.
 
-By default, every Axon Ivy Engine comes with the :code:`default`` security
-system. This is sufficient in the vast majority of cases. An additional security
-system is only required if you want to set up a test environment on the same
-engine or operate :ref:`multi-tenancy <multi-tenancy>`. Security systems are
-completely sealed off from other security systems and can consist of several
-applications.
+By default, every Axon Ivy Engine includes the :code:`default` security system,
+which is sufficient for most use cases. An additional security system is only
+required if you want to set up a test environment on the same engine or operate
+:ref:`multi-tenancy <multi-tenancy>`. Security systems are fully isolated from
+one another and can contain multiple applications.
 
 ::
 
@@ -35,11 +34,12 @@ applications.
 Application
 -----------
 
-An application is part of a security system. Axon Ivy projects live in an
-application. Ideally, applications are cut feature-driven with different release
-cycles. In our example, the HR processes are independent of the financial
-processes. Furthermore, applications have sovereignty over the configuration,
-such as variables, rest clients, web service clients and databases.
+An application is part of a security system and contains one or more Axon Ivy
+projects. Ideally, applications are organized around features and have their own
+release cycles. In our example, the HR processes are independent of the
+financial processes and can therefore be managed as separate applications.
+Applications also have ownership of their configuration, including variables,
+REST clients, web service clients, and databases.
 
 ::
 
@@ -50,98 +50,99 @@ such as variables, rest clients, web service clients and databases.
     └── Application "Finance"
 
 
-.. _process-model:
+.. _application-version:
 
-Process Model
--------------
+Application Version
+-------------------
 
-A process model (PM) is part of an application, which ultimately represents an
-Axon Ivy project. Nevertheless, it is only a virtual construct, as it is
-possible to run several versions of an Axon Ivy project at the same time on an
-Axon Ivy Engine, we refer to this as a Process Model Version (PMV).
-
-::
-
-    Security System "default"
-    ├── Application "Finance"
-    │   └── Process Model "Invoices"
-    ├── Application "HR"
-    │   └── Process Model "Vacation"
-    │   └── Process Model "Expenses"
-    Security System "test"
-    └── Application "Finance"
-        └── Process Model "Invoices"
-
-
-.. _process-model-version:
-
-Process Model Version
----------------------
-
-A process model can contain several versions of an Axon Ivy project, which is
-called process model version. This makes it possible to make breaking changes to
-projects without disturbing the old running cases. The disadvantage of multiple
-versions is that you also have to maintain multiple versions, for example a
-bugfix may have to be applied to each version. Tasks and cases are assigned to a
-process model version.
+An application is always versioned. When an application is deployed for the
+first time, it is assigned version 1. Projects are part of an application
+version. This means that different versions of the same project can run
+simultaneously on the same Axon Ivy Engine, as long as they belong to different
+application versions.
 
 ::
 
     Security System "default"
     ├── Application "Finance"
-    │   └── Process Model "Invoices"
-    |       └── ProcessModelVersion 1 (Project "Invoices", V1, 12 cases)
-    |       └── ProcessModelVersion 2 (Project "Invoices", V2, 104 cases)
+    │   └── Application Version 1
     ├── Application "HR"
-    │   └── Process Model "Vacation"
-    |   |   └── ProcessModelVersion 1 (Project "Vacation", V1, 4 cases)
-    │   └── Process Model "Expenses"
-    |       └── ProcessModelVersion 1 (Project "Expenses", V1, 16 cases)
+    │   └── Application Version 1
+    │   └── Application Version 2
     Security System "test"
     └── Application "Finance"
-        └── Process Model "Invoices"
-            └── ProcessModelVersion 1 (Project "Invoices", V1, 0 cases)
-            └── ProcessModelVersion 1 (Project "Invoices", V2, 4 cases)
+        └── Application Version 1
 
+Application versions allow you to make breaking changes to projects without
+affecting cases that are already running in an older version. The disadvantage
+of maintaining multiple application versions is that each version must be
+maintained separately. For example, a bug fix may need to be applied to multiple
+versions. Tasks and cases are always assigned to a specific application version.
 
-A process model version has a release state. The release state of a
-process model version is responsible how the version is used by the
-system. The most important release state is the state :code:`RELEASED`.
-Within a process model only one version can be in this state. All
-processes that are started in a process model are started in the
-released process model version. A complete list of release state can be
-found in the following list:
+An application version has a release state. The release state of a application
+version is responsible how the version is used by the Axon Ivy engine. The most
+important release state is the state :code:`RELEASED`. Within an application
+only one version can be in this state. All projects that are started in an
+application are started in the released application version. A complete list of
+release state can be found in the following list:
 
 .. rubric:: Release States
 
-* **PREPARED**: The process model version has been created and the project may
-  already have been deployed. However, the process model version is not yet
-  used.
-* **RELEASED**: The process model version is the currently released version.
-  This means that all new processes are started in this version. Program Start,
-  Web Service Process and Rest Endpoints are only active for process model
-  versions in this state. Only one process model version of a process model can
-  be in state :code:`RELEASED`. If a process model version gets released, then
-  the current released process model version gets :code:`DEPRECATED` or
-  :code:`ARCHIVED`.
-* **DEPRECATED**: The process model version has previously been in state
-  :code:`RELEASED`, but then another version was released. Therefore, this
-  version is now not in :code:`RELEASED` state but in :code:`DEPRECATED` state.
-  All cases that were started in this process model version will continue to run
-  in this version. As soon as all cases of this version have been ended, the
-  state will change to :code:`ARCHIVED` automatically.
-* **ARCHIVED**: The process model version has previously been in state
-  :code:`RELEASED`, but then another version was released, and running cases have
-  been finished in this process model. Consequently, this version is now not in
-  :code:`RELEASED` state anymore but has been :code:`ARCHIVED`. Actually the
-  engine administrator can change a process model version from state
-  :code:`ARCHIVED` back to state :code:`RELEASED` if necessary.
-* **DELETED**: The process model version has been deleted. All project data
-  belonging to this version has been deleted.
+* **CREATED**: The application version has been created in the database but is
+  not yet ready for use.
+
+* **PREPARED**: The application version is fully set up and ready to be
+  released.
+
+* **RELEASED**: The application version is the currently released version. All
+  new processes are started in this version. Program Start, Web Service Process,
+  and REST endpoints are only active for application versions in this state.
+  Only one application version per application can be **RELEASED** at a time.
+  When a new application version is released, the previously released version is
+  changed to **DEPRECATED** or **ARCHIVED**.
+
+* **DEPRECATED**: Open cases can still be completed in this application version,
+  but no new cases are started in it. New cases are only started in the
+  **RELEASED** application version.
+
+* **ARCHIVED**: The application version is no longer active. No new processes
+  can be started, and open cases can no longer be completed in this version.
+
 
 .. rubric:: Release State Transitions
  
-.. graphviz:: pmv-release-states.dot
+.. graphviz:: release-states.dot
+
+
+.. _project:
+
+Project
+-------
+
+A project represents an Axon Ivy project developed in the Axon Ivy Designer. It
+contains the business processes and related resources that make up a functional
+part of an application. This includes process models, user interfaces, data
+models, code, and other configuration required to implement the business
+processes. Projects are developed and maintained independently in the Axon Ivy
+Designer and are deployed as part of an application version to an Axon Ivy
+Engine.
+
+::
+
+    Security System "default"
+    ├── Application "Finance"
+    │   └── Application Version "1"
+    |   |   └── Project "Invoice" (12 cases)
+    |   └── Application Version "2"
+    |       └── Project "Invoice" (104 cases)
+    ├── Application "HR"
+    │   └── Application Version "1"
+    |       └── Project "Vacation" (4 cases)
+    |       └── Project "Expenses" (8 cases)
+    Security System "test"
+    └── Application "Finance"
+        └── Application Version "1"
+            └── Project "Invoices" (4 cases)
 
 
 Feature driven
