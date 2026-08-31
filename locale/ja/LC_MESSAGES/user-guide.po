@@ -1041,7 +1041,6 @@ msgstr "オーバーライドエディター"
 #: ../../source/designer-guide/how-to/overrides.rst:167
 #: ../../source/designer-guide/how-to/overrides.rst:252
 #: ../../source/designer/views/index.rst:31
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:14
 #: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:508
 #: ../../source/getting-productive/process-modeling/process-views/browsers.rst:13
 #: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:12
@@ -1073,8 +1072,6 @@ msgstr "Axon Ivy プロジェクトツリーでオーバーライドノードを
 #: ../../source/designer-guide/how-to/overrides.rst:175
 #: ../../source/designer-guide/how-to/overrides.rst:257
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:60
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:14
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:19
 #: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:14
 #: ../../source/reference/casemap/index.rst:26
 #: ../../source/reference/configuration/persistence.rst:54
@@ -2357,112 +2354,96 @@ msgid "You can import existing Axon Ivy projects into your workspace using the :
 msgstr ""
 
 #: ../../source/designer/commands.rst:17
-msgid "Importing demo projects"
-msgstr "デモプロジェクトのインポート"
-
-#: ../../source/designer/commands.rst:19
-msgid "The Axon Ivy Designer can import several demo projects, which are provided from our Market (internet connection needed). Those demo projects are in the Axon Ivy Archive (\\*.iar) format and can be imported with the help of the :ref:`Axon Ivy Market <market>`."
-msgstr "Axon Ivy Designer では、Axon Ivy Market で提供されている複数のデモプロジェクトをインポートできます（インターネット接続が必要です）。これらのデモプロジェクトは Axon Ivy Archive（\\*.iar）形式で、:ref:`Axon Ivy Market <market>` を使ってインポートできます。"
-
-#: ../../source/designer/commands.rst:24
-msgid "The following projects are available for Axon Ivy Designer:"
-msgstr "Axon Ivy Designer では以下のプロジェクトを使用できます。"
-
-#: ../../source/designer/commands.rst:26
-msgid "Demo projects for the Designer."
-msgstr "デザイナーのデモプロジェクト"
-
-#: ../../source/designer/commands.rst:29
-msgid "Project name"
-msgstr "プロジェクト名"
-
-#: ../../source/designer/commands.rst:29
-msgid "Demo content"
-msgstr "デモ内容"
-
-#: ../../source/designer/commands.rst:31
-msgid "ConnectivityDemos"
-msgstr "ConnectivityDemos"
-
-#: ../../source/designer/commands.rst:31
-msgid "Demonstrates the consuming and providing of :ref:`integration-rest` with ivy."
-msgstr "Ivy を使用した :ref:`integration-rest` の消費および提供のデモです。"
-
-#: ../../source/designer/commands.rst:33
-msgid "ErrorHandlingDemos"
-msgstr "ErrorHandlingDemos"
-
-#: ../../source/designer/commands.rst:33
-msgid "Samples that demonstrate the :ref:`error-handling`."
-msgstr ":ref:`error-handling` を示すサンプル。"
-
-#: ../../source/designer/commands.rst:35
-msgid "HTMLDialogDemos"
-msgstr "HTMLDialogDemos"
-
-#: ../../source/designer/commands.rst:35
-msgid "Demonstrates several JSF components that can be used in :ref:`html-dialogs`."
-msgstr ":ref:`html-dialogs` で使用できるいくつかの JSF コンポーネントのデモです。"
-
-#: ../../source/designer/commands.rst:37
-msgid "RuleEngineDemos"
-msgstr "RuleEngineDemos"
-
-#: ../../source/designer/commands.rst:37
-msgid "Shows how to use the :ref:`rule-engine`."
-msgstr ":ref:`rule-engine` の使用方法を示します。"
-
-#: ../../source/designer/commands.rst:39
-msgid "WorkflowDemos"
-msgstr "WorkflowDemos"
-
-#: ../../source/designer/commands.rst:39
-msgid "Demonstrates how to handle typical Workflow use cases, makes use of features like :ref:`Signals <signal-reference>` and :ref:`business-data`"
-msgstr "一般的なワークフローのユースケースの処理方法、 :ref:`シグナル<signal-reference>`  :ref:`business-data` などの機能の利用方法のデモです。"
-
-#: ../../source/designer/commands.rst:46
 msgid "Exporting a Project"
 msgstr "プロジェクトのエクスポート"
 
-#: ../../source/designer/commands.rst:48
+#: ../../source/designer/commands.rst:19
 msgid "Axon Ivy projects can be exported from the workspace with the :code:`Axon Ivy: Export Axon Ivy Project Archive (.iar)` command."
 msgstr ":code:`Axon Ivy: Export Axon Ivy Project Archive (.iar)` コマンドを使用して、ワークスペースから Axon Ivy プロジェクトをエクスポートできます。"
 
-#: ../../source/designer/commands.rst:56
+#: ../../source/designer/commands.rst:26
 msgid "Converting Projects"
 msgstr "プロジェクトの変換"
 
-#: ../../source/designer/commands.rst:58
+#: ../../source/designer/commands.rst:28
 msgid "You can convert your Axon Ivy projects to the latest project format using the :code:`Axon Ivy: Convert Project` command. When run, the command, the conversion log will show up in the console view."
 msgstr ""
 
-#: ../../source/designer/commands.rst:64
+#: ../../source/designer/commands.rst:34
 msgid "Converting Project Version"
 msgstr "プロジェクトのバージョンの変換"
 
-#: ../../source/designer/commands.rst:66
+#: ../../source/designer/commands.rst:36
 msgid "If the project format version changes with a new Axon Ivy release, then old projects will show an error marker, describing them as *out of date* or having an invalid version."
 msgstr "Axon Ivy の新しいリリースでプロジェクト形式のバージョンが変更されると、古いプロジェクトには、*期限切れ* またはバージョンが無効であることを示すエラーマーカーが表示されます。"
 
-#: ../../source/designer/commands.rst:70
+#: ../../source/designer/commands.rst:40
 msgid "If you inspect your project's properties file :file:`.ivyproject`, you will see the project version. You will also see a warning indicator, when the project is out of date."
 msgstr ""
 
-#: ../../source/designer/commands.rst:73
+#: ../../source/designer/commands.rst:43
 msgid "Axon Ivy can convert your old projects automatically to the newest project format for you. During this process, all existing artifacts will be converted (if necessary) so as to work with the new Axon Ivy version, and any missing but required artifacts will be added."
 msgstr "Axon Ivy では、古いプロジェクトを最新のプロジェクトのフォーマットに自動的に変換できます。このプロセスでは、新しいバージョンの Axon Ivy で使用できるように、すべての既存のアーティファクトが（必要に応じて）変換され、必要なアーティファクトが見つからない場合は追加されます。"
 
-#: ../../source/designer/commands.rst:80
+#: ../../source/designer/commands.rst:50
 msgid "It is absolutely recommended that you create a copy of your project before invoking the conversion. Alternatively you can have your project under version control. In this case, make sure that all your projects are checked in, before you invoke the conversion, so that you can easily roll back (revert) to the old version, if conversion should fail for some reason."
 msgstr "変換ウィザードを呼び出す前に、プロジェクトのコピーを作成することを強く推奨します。または、プロジェクトをバージョンで管理できます。この場合は、変換ウィザードを呼び出す前に、すべてのプロジェクトがチェックインされていることを確認してください。何らかの理由で変換が失敗した場合に、簡単に古いバージョンにロールバックする（戻す）ことができます。"
 
-#: ../../source/designer/commands.rst:87
+#: ../../source/designer/commands.rst:57
 msgid "In the :ref:`migration-notes`, migration tasks marked with |tag-project-auto-convert| will run with this command."
 msgstr ":ref:`migration-notes` で |tag-project-auto-convert| のマークが付いた移行タスクは、このコマンドで実行されます。"
 
 #: ../../../doc-build/<rst_epilogue>:6
 msgid "tag-project-auto-convert"
 msgstr "tag-project-auto-convert"
+
+#: ../../source/designer/commands.rst:64
+msgid "Install Market Products"
+msgstr "マーケット製品のインストール"
+
+#: ../../source/designer/commands.rst:66
+msgid "Our :ref:`Axon Ivy Market <market>` has many already built connectors to 3rd-party systems, utilites or demos that you can easily integrate into your Axon Ivy projects. Run the :code:`Axon Ivy: Install Market Product` command to integrate these market products or run the command :code:`Axon Ivy: Install Local Market Product` to integrate market products from a local source into your project."
+msgstr ""
+
+#: ../../source/designer/commands.rst:75
+msgid "Importing demo projects"
+msgstr "デモプロジェクトのインポート"
+
+#: ../../source/designer/commands.rst:77
+msgid "We have several demo projects which explain some typical use cases, e.g.:"
+msgstr ""
+
+#: ../../source/designer/commands.rst:79
+msgid "**Connectivity Features**"
+msgstr "**Connectivity Features**"
+
+#: ../../source/designer/commands.rst:80
+msgid "Demonstrates the consuming and providing of :ref:`integration-rest` with ivy."
+msgstr "Ivy を使用した :ref:`integration-rest` の消費および提供のデモです。"
+
+#: ../../source/designer/commands.rst:82
+msgid "**Error Handling Demos**"
+msgstr "**Error Handling Demos**"
+
+#: ../../source/designer/commands.rst:83
+msgid "Samples that demonstrate the :ref:`error-handling`."
+msgstr ":ref:`error-handling` を示すサンプル。"
+
+#: ../../source/designer/commands.rst:85
+msgid "**Html Dialog Demos**"
+msgstr "**Html Dialog Demos**"
+
+#: ../../source/designer/commands.rst:86
+msgid "Demonstrates several JSF components that can be used in :ref:`html-dialogs`."
+msgstr ":ref:`html-dialogs` で使用できるいくつかの JSF コンポーネントのデモです。"
+
+#: ../../source/designer/commands.rst:88
+msgid "**Workflow Demos**"
+msgstr "**Workflow Demos**"
+
+#: ../../source/designer/commands.rst:89
+msgid "Demonstrates how to handle typical Workflow use cases, makes use of features like :ref:`Signals <signal-reference>` and :ref:`business-data`"
+msgstr "一般的なワークフローのユースケースの処理方法、 :ref:`シグナル<signal-reference>`  :ref:`business-data` などの機能の利用方法のデモです。"
 
 #: ../../source/designer/configuration.rst:7
 msgid "Process Animation"
@@ -5201,94 +5182,94 @@ msgid "The :ref:`engine-cockpit` also contains a built-in :ref:`engine-cockpit-m
 msgstr "また、 :ref:`engine-cockpit` には、 :ref:`engine-cockpit-monitor-mbeans` ブラウザが組み込まれています。そのため、エンジンの状態を見るための外部の監視ツールをインストールする必要はありません。"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:57
-msgid "Where possible, Axon Ivy Engine MBeans names contain application, process model, process model version, or environment name."
-msgstr "可能な場合、Axon Ivy Engine の MBean の名前には、アプリケーション、プロセスモデル、プロセスモデルバージョン、または環境名が含まれます。"
+msgid "Where possible, Axon Ivy Engine MBeans names contain application, project, etc."
+msgstr "可能な場合、Axon Ivy Engine の MBean 名には、アプリケーション、プロジェクトなどが含まれます。"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:60
+#: ../../source/engine-guide/monitoring/jmx.rst:59
 msgid "**Examples of typical Axon Ivy MBean names:**"
 msgstr "**一般的な Axon Ivy の MBean の名前の例：**"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:68
-msgid "The name and description of an MBean are available in its meta information (see the Metadata tab in the MBeans tab of VisualVM). MBeans provide information through attributes and operations. The description of the attributes and operations is also contained in the meta information (also in the tool tips in the Attributes and Operations tab of VisualVM's MBeans tab)."
-msgstr "MBean の名前と説明はメタ情報で提供されます（VisualVM の［Metadata］タブを参照）。MBean は属性とオペレーションにより情報を提供します。また、属性とオペレーションの説明もメタ情報に含まれます（VisualVM の［MBeans］タブの［Attributes］タブと［Operations］タブのツールチップにも含まれます）。"
+#: ../../source/engine-guide/monitoring/jmx.rst:67
+msgid "The name and description of an MBean are available in its meta information. MBeans provide information through attributes and operations."
+msgstr ""
 
-#: ../../source/engine-guide/monitoring/jmx.rst:75
+#: ../../source/engine-guide/monitoring/jmx.rst:71
 msgid "Manipulating attribute values or calling operations on MBeans will immediately change the configuration of your system and can therefore harm your running applications."
 msgstr "MBean で属性値を操作したり、オペレーションを呼び出すと、すぐにシステムの設定が変更されるため、実行中のアプリケーションに悪影響が及ぶ可能性があります。"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:79
+#: ../../source/engine-guide/monitoring/jmx.rst:75
 msgid "If not mentioned otherwise, a manipulation only affects the currently running engine. These manipulations are not persistent. They won't survive an engine restart."
 msgstr "特に記載されていない場合、操作による影響を受けるのは、現在実行中のエンジンのみです。これらの操作は永続的ではなく、エンジンを再起動すると失われます。"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:83
+#: ../../source/engine-guide/monitoring/jmx.rst:79
 msgid "Manipulations that survive an engine restart contain the following text in the description of the attribute or operation: ``(Persistent)``."
 msgstr "エンジンの再起動後も存続する操作の属性またはオペレーションの説明には、``(Persistent)`` が含まれます。"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:86
+#: ../../source/engine-guide/monitoring/jmx.rst:82
 msgid "In addition to the MBeans provided by Axon Ivy, some third-party libraries included in Axon Ivy provide their own MBeans. One of them is Apache Tomcat, which serves as the internal web server. Its MBeans provide information about the handling of HTTP requests like request count, errors, execution time, sessions, and more. The Java Virtual Machine also provides some MBeans that contain information about memory used (Java heap), CPU load, uptime, etc."
 msgstr "Axon Ivy が提供する MBean に加えて、Axon Ivy に含まれるサードパーティーのライブラリにも独自の MBean が含まれる場合があります。その 1 つが、内部ウェブサーバーとして機能する Apache Tomcat です。Apache Tomcat の MBean は、リクエスト数、エラー、実行時間、セッションなど、HTTP リクエストの処理に関する情報を提供します。また、Java Virtual Machine も、使用メモリ（Java ヒープ）、CPU 負荷、稼働時間などに関する情報を含む MBean を提供します。"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:93
+#: ../../source/engine-guide/monitoring/jmx.rst:89
 msgid "The list below contains some of the provided information:"
 msgstr "提供される情報の一例を以下のリストに示します。"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:95
-msgid "**External Database** (connections, transactions, errors, execution times, etc.)"
-msgstr "**外部データベース** （接続、トランザクション、エラー、実行時間など）"
+#: ../../source/engine-guide/monitoring/jmx.rst:91
+msgid "**Database** (connections, transactions, errors, execution times, etc.)"
+msgstr "**データベース** （接続、トランザクション、エラー、実行時間など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:101
+#: ../../source/engine-guide/monitoring/jmx.rst:97
 msgid "**Web Service** (calls, errors, execution time, etc.)"
 msgstr "**Web サービス** （呼び出し、エラー、実行時間など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:107
+#: ../../source/engine-guide/monitoring/jmx.rst:103
 msgid "**REST Web Service** (calls, errors, execution time, slow calls, etc.)"
 msgstr "**REST Web サービス** （呼び出し、エラー、実行時間、遅い呼び出しなど）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:113
+#: ../../source/engine-guide/monitoring/jmx.rst:109
 msgid "**System Database** (connections, transactions, errors, execution time, etc.)"
 msgstr "**システムデータベース** （接続、トランザクション、エラー、実行時間など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:119
+#: ../../source/engine-guide/monitoring/jmx.rst:115
 msgid "**HTTP Requests** (count, errors, execution time, etc.)"
 msgstr "**HTTP リクエスト** （リクエスト数、エラー、実行時間など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:125
+#: ../../source/engine-guide/monitoring/jmx.rst:121
 msgid "**Number of Sessions** (HTTP sessions, Axon Ivy sessions, license relevant sessions, etc.)"
 msgstr "**セッション数** （HTTP セッション、Axon Ivy セッション、ライセンス関連セッションなど）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:132
+#: ../../source/engine-guide/monitoring/jmx.rst:128
 msgid "**Background jobs** (name, next execution time, etc.)"
 msgstr "**バックグラウンドジョブ** （名前、次の実行時間など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:140
+#: ../../source/engine-guide/monitoring/jmx.rst:136
 msgid "**Process Start Event Beans** (polls, executions, errors, execution time, etc.)"
 msgstr "**プロセス開始イベント Bean** （ポーリング、実行、エラー、実行時間など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:146
+#: ../../source/engine-guide/monitoring/jmx.rst:142
 msgid "**Process Intermediate Event Beans** (polls, firings, errors, execution time, etc.)"
 msgstr "**プロセス中間イベント Bean** （ポーリング、発火、エラー、実行時間など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:152
-msgid "**Application, Process Model and Process Model Version, Library information** (activity state, release state, name, description, etc.)"
-msgstr "**アプリケーション、プロセスモデル、プロセスモデルバージョン、ライブラリの情報** （アクティビティの状態、リリースの状態、名前、説明など）"
+#: ../../source/engine-guide/monitoring/jmx.rst:148
+msgid "**Application information** (activity state, release state, name, description, etc.)"
+msgstr "**アプリケーション情報** （アクティビティの状態、リリースの状態、名前、説明など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:160
+#: ../../source/engine-guide/monitoring/jmx.rst:154
 msgid "**Cluster, Cluster Nodes, and Cluster Communication information** (received and sent message, errors, execution time, etc.)"
 msgstr "**クラスタ、クラスタノード、クラスタの通信に関する情報** （受信／送信されたメッセージ、エラー、実行時間など）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:167
+#: ../../source/engine-guide/monitoring/jmx.rst:161
 msgid "**Thread Pool information** (core, maximum and current pool size, active threads, queue size)"
 msgstr "**スレッドプール情報** （コア、最大／現在のプールサイズ、アクティブなスレッド、キューのサイズ）"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:175
+#: ../../source/engine-guide/monitoring/jmx.rst:169
 msgid "**System Database Cache**"
 msgstr "**システムデータベースキャッシュ**"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:186
+#: ../../source/engine-guide/monitoring/jmx.rst:180
 msgid "**Memory (Java Heap, Perm Gen)**"
 msgstr "**メモリ（Java ヒープ、Perm Gen）**"
 
-#: ../../source/engine-guide/monitoring/jmx.rst:192
+#: ../../source/engine-guide/monitoring/jmx.rst:186
 msgid "**CPU Usage, Uptime**"
 msgstr "**CPU 使用量、稼働時間**"
 
@@ -5494,8 +5475,6 @@ msgid "An entry in the view is created for each executed process element. The ta
 msgstr "実行されるプロセス要素ごとに 1 つのエントリがビューに作成されます。表示される情報については、以下の表を参照してください。"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:64
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:17
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:30
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:140
 #: ../../source/getting-productive/user-interface/user-dialogs/new-user-dialog-wizard.rst:46
 #: ../../source/reference/casemap/index.rst:41
@@ -9093,285 +9072,13 @@ msgstr "データリポジトリは、標準的な CRUD 操作をデフォルト
 msgid "The implementation of the interface will automatically be created by Axon Ivy. To learn more about how to write your own repository methods visit `Jakarta Data: Repository Interfaces <https://jakarta.ee/specifications/data/1.0/jakarta-data-1.0#_repository_interfaces>`__."
 msgstr "インターフェイスの実装は Axon Ivy によって自動的に生成されます。独自のリポジトリメソッドの作成方法に関する詳細は、`Jakarta Data: Repository Interfaces <https://jakarta.ee/specifications/data/1.0/jakarta-data-1.0#_repository_interfaces>`__ を参照してください。"
 
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:4
-#: ../../source/reference/data/index.rst:90
-msgid "Entity Class Editor"
-msgstr "エンティティクラスエディター"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:6
-#: ../../source/reference/data/index.rst:92
-msgid "Use this editor to add, delete, and edit your Entity Class and its Attributes."
-msgstr "このエディターを使用して、エンティティクラスとその属性を追加、削除、編集します。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:9
-#: ../../source/reference/data/index.rst:95
-msgid "All the features mentioned in the :ref:`data-class-editor` apply to this editor as well. This is simply an extension of those features specific to Entity Classes."
-msgstr ":ref:`data-class-editor` で言及されているすべての機能は、このエディターにも適用されます。これは単にエンティティクラスに特化した機能を拡張したものです。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:16
-#: ../../source/reference/data/index.rst:102
-msgid "Database Table"
-msgstr "データベース表"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:18
-#: ../../source/reference/data/index.rst:104
-msgid "The name of the database table of your Entity Class. If not specified, the name of your Entity Class is used. This value is used when the database table of your Entity Class gets generated."
-msgstr "エンティティクラスのデータベース表の名前。指定されない場合は、エンティティクラスの名前が使用されます。エンティティクラスのデータベース表の生成時にこの値が使用されます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:22
-#: ../../source/reference/data/index.rst:108
-msgid "Data Repository"
-msgstr "データリポジトリ"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:23
-#: ../../source/reference/configuration/databases.rst:43
-#: ../../source/reference/configuration/rest-clients.rst:240
-#: ../../source/reference/data/index.rst:109
-msgid "Generate"
-msgstr "生成"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:24
-#: ../../source/reference/data/index.rst:110
-msgid "Select to create :ref:`data-repository-api` for the Entity Class."
-msgstr "選択すると、エンティティクラスの :ref:`data-repository-api` が作成されます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:27
-#: ../../source/reference/data/index.rst:53
-#: ../../source/reference/data/index.rst:113
-msgid "Attributes"
-msgstr "属性"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:29
-#: ../../source/reference/data/index.rst:115
-msgid "Database Field"
-msgstr "データベースフィールド"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:31
-#: ../../source/reference/data/index.rst:117
-msgid "The name of the database table column of this Attribute. This value is used when the database table of your Entity Class gets generated. Allowed characters are the letters A-Z, the digits 0-9, and the underscore ``_``."
-msgstr "この属性のデータベース表の列の名前。エンティティクラスのデータベース表の生成時にこの名前が使用されます。使用可能な文字は、英字（A ～ Z）、数字（0 ～ 9）、アンダースコア（``_``）です。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:35
-#: ../../source/reference/data/index.rst:121
-msgid "Length"
-msgstr "文字数"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:36
-#: ../../source/reference/data/index.rst:122
-msgid "The length of the field in the database table. The following Attribute types can have their length defined and have the specified default values:"
-msgstr "データベース表内のフィールドの文字数。以下の属性タイプには文字数を定義でき、指定された初期値を持ちます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:39
-#: ../../source/reference/data/index.rst:125
-msgid "``String`` : 255"
-msgstr "``String``：255"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:40
-#: ../../source/reference/data/index.rst:126
-msgid "``BigDecimal`` : 19,2"
-msgstr "``BigDecimal``：19、2"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:41
-#: ../../source/reference/data/index.rst:127
-msgid "``BigInteger`` : 19,2"
-msgstr "``BigInteger``：19、2"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:43
-#: ../../source/reference/data/index.rst:129
-msgid "Changing the length has only an effect if the database schema is recreated."
-msgstr "文字数の変更は、データベーススキーマを再作成した場合にのみ、有効です。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:45
-#: ../../source/reference/configuration/persistence.rst:79
-#: ../../source/reference/data/index.rst:75
-#: ../../source/reference/data/index.rst:131
-#: ../../source/reference/dialog/form-editor.rst:190
-#: ../../source/reference/process/process-elements/web-service-call-activity.rst:36
-msgid "Properties"
-msgstr "プロパティ"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:46
-#: ../../source/reference/data/index.rst:132
-msgid "**ID**: Defines the primary key field of an entity. Every Entity Class must have exactly one primary key."
-msgstr "**ID** ：エンティティの主キーフィールドを定義します。各エンティティクラスは 1 つの主キーを持つ必要があります。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:48
-#: ../../source/reference/data/index.rst:134
-msgid "**Generated**: Defines if the primary key should be generated automatically."
-msgstr "**Generated** ：主キーを自動的に生成するかどうかを定義します。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:50
-#: ../../source/reference/data/index.rst:136
-msgid "**Not nullable**: Defines whether the field value can be ``NULL`` in the database."
-msgstr "**Not nullable** ：データベースのフィールドの値を ``NULL`` にできるかどうかを定義します。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:52
-#: ../../source/reference/data/index.rst:138
-msgid "**Unique**: Defines whether the field value must be unique across the database table column."
-msgstr "**Unique** ：データベース表の列のフィールド値が一意でなければならないかどうかを定義します。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:54
-#: ../../source/reference/data/index.rst:140
-msgid "**Not updateable**: Defines whether the column is omitted in ``SQL UPDATE`` statements generated by the persistence provider."
-msgstr "**Not updateable** ：永続性プロバイダーが生成する ``SQL UPDATE`` 文で列を省略するかどうかを定義します。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:56
-#: ../../source/reference/data/index.rst:142
-msgid "**Not insertable**: Defines whether the column is omitted in ``SQL INSERT`` statements generated by the persistence provider."
-msgstr "**Not insertable** ：永続性プロバイダーが生成する ``SQL INSERT`` 文で列を省略するかどうかを定義します。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:58
-#: ../../source/reference/data/index.rst:144
-msgid "**Version**: Defines the version field of an entity. This is used as the optimistic lock value and ensures integrity when performing the merge operation. The following Attribute types can be used as version:"
-msgstr "**Version** ：エンティティのバージョンフィールドを定義します。これは楽観ロック値として使用され、マージ操作の実行時の整合性を保証します。以下の属性タイプをバージョンとして使用できます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:62
-#: ../../source/reference/data/index.rst:148
-msgid "``Short``"
-msgstr "``Short``"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:63
-#: ../../source/reference/data/index.rst:149
-msgid "``Integer``"
-msgstr "``Integer``"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:64
-#: ../../source/reference/data/index.rst:150
-msgid "``Long``"
-msgstr "``Long``"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:65
-#: ../../source/reference/data/index.rst:151
-msgid "``java.sql.Timestamp``"
-msgstr "``java.sql.Timestamp``"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:67
-#: ../../source/reference/data/index.rst:153
-msgid "Association"
-msgstr "アソシエーション"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:68
-#: ../../source/reference/data/index.rst:154
-msgid "Defines the association to another Entity Class. For a bidirectional relationship, an inverse association with a mapped-by specification must be configured on the referenced Entity Class."
-msgstr "別のエンティティクラスとのアソシエーションを定義します。双方向リレーションシップでは、参照されるエンティティクラスに mapped-by 指定の逆アソシエーションを設定する必要があります。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:72
-#: ../../source/reference/data/index.rst:158
-msgid "Cardinality"
-msgstr "Cardinality"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:73
-#: ../../source/reference/data/index.rst:159
-msgid "**One-to-One**: Defines a One-to-One (1:1) association to another Entity Class. Only allowed if the Attribute type is an Entity Class. The inverse association is another One-to-One association."
-msgstr "**One-to-One** ：別のエンティティクラスへの 1 対 1（1:1）のアソシエーションを定義します。属性タイプがエンティティクラスの場合にのみ許可されます。逆アソシエーションも 1 対 1 のアソシエーションです。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:77
-#: ../../source/reference/data/index.rst:163
-msgid "**Many-to-One**: Defines a Many-to-One (n:1) association to another Entity Class. Only allowed if the Attribute type is an Entity Class. The inverse association is a One-to-Many association."
-msgstr "**Many-to-One** ：別のエンティティクラスに対する多対 1（n:1）のアソシエーションを定義します。属性タイプがエンティティクラスの場合にのみ許可されます。逆アソシエーションは 1 対多のアソシエーションです。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:81
-#: ../../source/reference/data/index.rst:167
-msgid "**One-to-Many**: Defines a One-to-Many (1:n) association to another Entity Class. Only allowed if the Attribute type is a ``List`` or ``Set`` of an Entity Class. This association type always requires a mapped-by specification since it is the inverse of a Many-to-One association."
-msgstr "**One-to-Many** ：別のエンティティクラスへの 1 対多（1:n）のアソシエーションを定義します。属性タイプがエンティティクラスの ``List`` または ``Set`` である場合にのみ許可されます。このアソシエーションタイプは多対 1 のアソシエーションの逆であるため、常にmapped-by 指定が必要です。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:87
-#: ../../source/reference/data/index.rst:173
-msgid "A One-to-Many association comes with a significant performance impact. Only use it if it is absolutely necessary."
-msgstr "1 対多のアソシエーションはパフォーマンスに大きな影響を及ぼします。絶対に必要な場合のみ使用してください。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:90
-#: ../../source/reference/data/index.rst:176
-msgid "Cascade"
-msgstr "Cascade"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:91
-#: ../../source/reference/data/index.rst:177
-msgid "Defines the cascadable operations that are propagated to the associated Entity. If checked, operations performed on this Entity will be applied automatically to the associated Entity."
-msgstr "関連付けられたエンティティに伝搬されるカスケード可能な操作を定義します。選択されている場合、このエンティティで実行された操作は自動的に関連付けられたエンティティに適用されます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:95
-#: ../../source/reference/data/index.rst:181
-msgid "**Persist**: See :ref:`Persist an Entity Object <persistence-api-persist>`."
-msgstr "**Persist** ：「 :ref:`エンティティオブジェクトの永続化<persistence-api-persist>` 」を参照してください。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:98
-#: ../../source/reference/data/index.rst:184
-msgid "**Merge**: See :ref:`Merge an Entity Object <persistence-api-merge>`."
-msgstr "**Merge** ：「 :ref:`エンティティオブジェクトのマージ<persistence-api-merge>` 」を参照してください。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:100
-#: ../../source/reference/data/index.rst:186
-msgid "**Remove**: See :ref:`Remove an Entity Object <persistence-api-remove>`."
-msgstr "**Remove** ：「 :ref:`エンティティオブジェクトの削除<persistence-api-remove>` 」を参照してください。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:102
-#: ../../source/reference/data/index.rst:188
-msgid "**Refresh**: See :ref:`Refresh an Entity Object <persistence-api-refresh>`."
-msgstr "**Refresh** ：「 :ref:`エンティティオブジェクトの更新<persistence-api-refresh>` 」を参照してください。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:105
-#: ../../source/reference/data/index.rst:191
-msgid "Mapped by"
-msgstr "Mapped by"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:106
-#: ../../source/reference/data/index.rst:192
-msgid "Defines the Attribute that owns the relationship in the associated Entity. This value must be defined on the inverse (non-owning) side of the association."
-msgstr "関連付けられたエンティティ内でリレーションシップを所有する属性を定義します。アソシエーションの逆側（非所有側）でこの値を定義する必要があります。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:110
-#: ../../source/reference/data/index.rst:196
-msgid "Remove orphans"
-msgstr "Remove orphans"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:111
-#: ../../source/reference/data/index.rst:197
-msgid "If enabled and an Entity that is the target of a relationship is removed from the relationship (either by removal from the collection or by setting the relationship to null), the orphaned Entity will be removed. If the orphaned Entity is a detached, new, or removed Entity, the semantics do not apply."
-msgstr "有効にした場合、リレーションシップのターゲットであるエンティティがリレーションシップから削除されると（コレクションから削除、またはリレーションシップを NULL に設定）、孤立したエンティティが削除されます。孤立したエンティティが切り離されたエンティティ、新しいエンティティ、または削除されたエンティティである場合、セマンティクスは適用されません。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:117
-#: ../../source/reference/data/index.rst:203
-msgid "If enabled and the remove operation is applied to the source Entity, the remove operation will be propagated as defined in the cascade section."
-msgstr "有効にした場合、remove オペレーションがソースエンティティに適用されると、remove オペレーションは Cascade セクションで定義されているように伝搬されます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:120
-#: ../../source/reference/data/index.rst:206
-msgid "The remove operation is applied at the time of the flush operation. The orphans removal functionality is intended for Entities that are privately \"owned\" by their parent Entity."
-msgstr "remove オペレーションは flush オペレーション時に適用されます。孤立の削除機能は、親エンティティがプライベートに「所有」するエンティティを対象にしています。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:124
-#: ../../source/reference/data/index.rst:210
-msgid "**Example**:"
-msgstr "**例** ："
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:126
-#: ../../source/reference/data/index.rst:212
-msgid "A 'Basket' Entity holds a list of 'Product' Entities. What happens if ``basket.getProducts().remove(..)`` is called?"
-msgstr "「Basket」エンティティは「Product」エンティティのリストを保持しています。``basket.getProducts().remove(..)`` が呼び出されたらどうなるでしょうか。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:129
-#: ../../source/reference/data/index.rst:215
-msgid "Remove orphans is enabled: The product is removed from the list of referenced products even if the Entity is reloaded or refreshed."
-msgstr "Remove orphans が有効の場合：たとえエンティティが再度読み込まれたり、更新されたとしても、製品は参照される製品リストから削除されます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:132
-#: ../../source/reference/data/index.rst:218
-msgid "Remove orphans is disabled: The product stays in the list of referenced products if the Entity is reloaded or refreshed."
-msgstr "Remove orphans が無効の場合：たとえエンティティが再度読み込まれたり、更新されたとしても、製品は参照される製品リストに残ります。"
-
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:136
-#: ../../source/reference/data/index.rst:222
-msgid "Internally, the Jakarta Persistence API is used to implement Entity Classes and their relations. For further details, please refer to the official `Jakarta Persistence API documentation <https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html>`_."
-msgstr "内部的には、Java Persistence APIはエンティティクラスとその関係を実装するのに使用されます。詳細については、公式の`Jakarta Persistence API documentation <https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html>`_を参照してください。"
-
 #: ../../source/getting-productive/data-modeling/persistence/entity-classes.rst:6
 msgid "Entity Classes are like global :ref:`data-classes` but with additional information about where and how to store the data of a class and its attributes in a relational database. An Entity Class is mapped directly to a database table and the attributes of an Entity Class are mapped directly to the fields of a database table. Therefore the :ref:`database schema can be generated <persistence-generate-database-schema>` directly out of an Entity Class. It is possible to create, read, update, and delete (CRUD) entity objects directly from/to the database using either the :ref:`persistence-api` or more conveniently with the entity's :ref:`data-repository-api`."
 msgstr "エンティティクラスはグローバル :ref:`data-classes` に似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。エンティティクラスはデータベーステーブルに直接マッピングされ、エンティティクラスの属性はデータベーステーブルのフィールドに直接マッピングされます。したがって、:ref:`database schema can be generated <persistence-generate-database-schema>` はエンティティクラスから直接生成できます。データベースに対してエンティティオブジェクトの作成、読み取り、更新、削除（CRUD）を直接実行することが可能です。これは、 :ref:`persistence-api` を使用するか、より便利な方法としてエンティティの :ref:`data-repository-api` を利用して行えます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-classes.rst:16
-msgid "Entity Classes are created with the :ref:`persistence-entity-class-new-wizard` and can be edited afterward in the :ref:`persistence-entity-class-editor`. Both are similar to the wizard and editor for regular Data Classes but allow for the specification of additional settings necessary for automated persistence."
-msgstr "エンティティクラスは :ref:`persistence-entity-class-new-wizard` で作成され :ref:`persistence-entity-class-editor` で編集できます。どちらも通常のデータクラスのウィザードとエディターに似ていますが、自動永続化に必要な追加設定を指定できます。"
+msgid "Entity Classes can be edited in the :ref:`persistence-entity-class-editor`. It is similar to the wizard and editor for regular Data Classes but allows for the specification of additional settings necessary for automated persistence."
+msgstr "エンティティクラスは :ref:`persistence-entity-class-editor` で編集できます。このエディターは通常のデータクラス用のウィザードおよびエディターに似ていますが、自動永続化に必要な追加設定を指定できます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/generate-database-schema.rst:4
 msgid "Generate database schema"
@@ -9442,55 +9149,6 @@ msgstr "ビジネスプロセスやユーザーダイアログプロセスで自
 #: ../../source/getting-productive/data-modeling/persistence/index.rst:19
 msgid "You need to define at least one persistence unit configuration. A persistence unit manages some or all of your entity classes and specifies the database where those entities are stored. Once you have configured one or more persistence units, you can use them in your process steps either with the convenient :ref:`data-repository-api` or, for complex use cases, with the :ref:`persistence-api`. These APIs allow you to perform create, read, update, and delete (CRUD) operations on entity objects directly in the database. The :ref:`data-repository-api` provides a straightforward and efficient way to manage your data for most scenarios, while the :ref:`persistence-api` offers greater flexibility and control for handling more intricate and specialized data manipulation tasks."
 msgstr "少なくとも1つの永続性ユニット構成を定義する必要があります。永続性ユニットは、エンティティクラスの一部または全部を管理し、それらのエンティティの保存先のデータベースを指定します。1つ以上の永続性ユニットを設定すると、プロセスステップ内で便利な :ref:`data-repository-api` を使用するか、複雑なユースケースでは :ref:`persistence-api` を使用して、それらを利用できます。これらのAPIにより、データベース内のエンティティオブジェクトに対して、作成、読み取り、更新、削除（CRUD）操作を直接実行できます。 :ref:`data-repository-api` を使用すると、ほとんどのシナリオで簡単かつ効率的にデータを管理できます。一方、 :ref:`persistence-api` は、より複雑で専門的なデータ操作タスクを処理するための柔軟性と制御機能に優れています。"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:4
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:8
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:11
-msgid "New Entity Class Wizard"
-msgstr "エンティティクラスの作成ウィザード"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:6
-msgid "The New Entity Class wizard lets you create a new global Entity Class."
-msgstr "エンティティクラスの作成ウィザードでは、新しいグローバルエンティティクラスを作成できます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:16
-msgid "File > New > Entity Class"
-msgstr "［ファイル］ > ［新規］ > ［エンティティクラス］"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:21
-#: ../../source/reference/casemap/index.rst:30
-msgid "Project Name"
-msgstr "プロジェクト名"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:22
-msgid "Choose the name of the project the new Entity Class should belong to."
-msgstr "新しいエンティティクラスが属するプロジェクトの名前を選択します。"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:24
-#: ../../source/getting-productive/user-interface/user-dialogs/new-user-dialog-wizard.rst:40
-#: ../../source/reference/casemap/index.rst:33
-msgid "Namespace"
-msgstr "名前空間"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:25
-msgid "Choose a namespace for your Entity Class. The name space lets you create a structure to organize your data. Use the dot character '.' to separate the folders from each other. The namespace will be visible in the Axon Ivy project tree."
-msgstr "エンティティクラスの名前空間を選択します。名前空間を使用して、データを整理するための構造を作成できます。フォルダーを区切るには、ドット文字「.」を使用します。名前空間は Axon Ivy プロジェクトツリーに表示されます。"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:30
-msgid "Entity Class Name"
-msgstr "エンティティクラス名"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:31
-msgid "Enter the name of your Entity Class. Do not use the same name twice in your project, it may get confusing if you do so."
-msgstr "エンティティクラスの名前を入力します。プロジェクト内で同じ名前を 2 回使用しないでください。混乱を引き起こす可能性があります。"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:34
-msgid "Entity DB Table Name"
-msgstr "エンティティ DB の表名"
-
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:35
-msgid "Enter the name of the database table name of your Entity Class. If empty the name of your Entity Class is used. This name is used if the database table of this Entity Class is generated."
-msgstr "エンティティクラスのデータベース表の名前を入力します。空の場合は、エンティティクラスの名前が使用されます。エンティティクラスのデータベース表の生成時にこの名前が使用されます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:4
 msgid "Persistence API"
@@ -12642,6 +12300,11 @@ msgstr "プロジェクト"
 msgid "Choose the project that your User Dialog belongs to."
 msgstr "ユーザーダイアログが属するプロジェクトを選択します。"
 
+#: ../../source/getting-productive/user-interface/user-dialogs/new-user-dialog-wizard.rst:40
+#: ../../source/reference/casemap/index.rst:33
+msgid "Namespace"
+msgstr "名前空間"
+
 #: ../../source/getting-productive/user-interface/user-dialogs/new-user-dialog-wizard.rst:41
 msgid "Enter a namespace for your User Dialog. Use namespaces to group your User Dialogs. The grouping hierarchy is separated by the dot character. This is a similar concept to *packages* in the Java programming language."
 msgstr "ユーザーダイアログの名前空間を入力します。名前空間を使用して、ユーザーダイアログをグループ化します。グループの階層は、ドット文字で分けられます。これは、Java プログラミング言語の *パッケージ* と同様のコンセプトです。"
@@ -14451,7 +14114,7 @@ msgid "Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml
 msgstr "次に、以下に詳しく示すように、:file:`/opt/ivy/engine/configuration/` ディレクトリ :ref:`ivy-yaml` を修正して、Axon Ivy Engine の管理者を定義します。"
 
 #: ../../source/introduction/getting-started/engine/linux/configure.rst:63
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:52
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:49
 msgid "Administrators manage the Axon Ivy Engine. For example, they add or remove users, assign users to roles, enable, disable and deploy applications, etc. You need at least one administrator to manage the Axon Ivy Engine. In case of license problems, the Axon Ivy Engine sends mail notifications to the administrators."
 msgstr "管理者は Axon Ivy Engine を管理します。例えば、ユーザーの追加／削除、ユーザーのロールへの割り当て、アプリケーションの有効化／無効化／展開などを行います。Axon Ivy Engine を管理する管理者は 1 人以上必要です。ライセンスの問題が発生した場合、 Axon Ivy Engine から管理者にメール通知が送信されます。"
 
@@ -14476,7 +14139,7 @@ msgid "Now, start the Axon Ivy Engine again as a background process."
 msgstr "Axon Ivy Engine をバックグラウンドプロセスとして再度起動します。"
 
 #: ../../source/introduction/getting-started/engine/linux/configure.rst:77
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:67
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:64
 msgid "If you have changed the HTTP Settings, the HTTP port of the Axon Ivy Engine may have changed!"
 msgstr "HTTP 設定を変更した場合、Axon Ivy Engine の HTTP ポートも変更されている可能性があります。"
 
@@ -14673,62 +14336,58 @@ msgid "Configure the Engine (Windows)"
 msgstr "エンジンの設定（Windows）"
 
 #: ../../source/introduction/getting-started/engine/windows/configure.rst:10
-msgid "Shutdown the Axon Ivy Engine first by stopping it. Use **ControlCenter.exe** or **ControlCenterC.exe**."
-msgstr "最初に Axon Ivy Engine を停止してシャットダウンします。**ControlCenter.exe** または **ControlCenterC.exe** を使用します。"
+msgid "Shutdown the Axon Ivy Engine first by using one of the engine executables with command line parameters as detailed in :ref:`Engine Launchers <engine-launchers>`. These are well-suited for scripting."
+msgstr ":ref:`エンジンのランチャー<engine-launchers>` で説明しているように、コマンドラインパラメーターを指定してエンジンの実行ファイルのいずれかを使用し、まず Axon Ivy Engine をシャットダウンします。これらはスクリプトに適しています。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:13
-msgid "Alternatively, you can use one of the engine executables with command line parameters as detailed in :ref:`Engine Launchers <engine-launchers>`. These are well-suited for scripting."
-msgstr "または、 :ref:`エンジンのランチャー<engine-launchers>` で説明しているように、コマンドラインパラメーターを使用して、エンジンの実行ファイルを使用できます。これらはスクリプトに適しています。"
-
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:17
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:14
 msgid "to stop an engine running as a console process, execute"
 msgstr "コンソールプロセスとして動作中のエンジンを停止するため、以下を実行します。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:24
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:21
 msgid "If you started the engine already as a service, you can also stop it in the **services.msc** console."
 msgstr "エンジンをサービスとして起動していた場合は、**services.msc** コンソールでも停止できます。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:27
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:24
 msgid "Install the license: Copy the license file (:file:`*.lic`) into the :file:`configuration` folder"
 msgstr "ライセンスをインストールします。ライセンスファイル（:file:`*.lic`）を :file:`configuration` フォルダ－にコピーします。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:35
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:32
 msgid "To configure the system database, use the :code:`config-db` command of the **EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of the server running your DBMS system. Replace **dbuser** and **password** with the credentials of a technical database user with the permissions to create a new database and its structures (i.e., DDL permissions) on the database server."
 msgstr "システムデータベースを設定するには、**EngineConfigCli** ツールの :code:`config-db` コマンドを使用します。**yourdatabaseserver** を、DBMS システムを実行しているサーバーのホスト名に置き換えます。**dbuser** と **password** を、データベースサーバーで新しいデータベースとその構造を作成する権限（DDL 権限）を持つデータベースユーザーの資格情報に置き換えます。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:41
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:38
 msgid "Now, let's configure the database connection and create the system database:"
 msgstr "データベース接続を設定し、システムデータベースを作成しましょう。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:49
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:46
 msgid "Replace <yourdatabaseserver> with the DNS name of the database server, <dbuser> with the username and <password> with the password of the technical user."
 msgstr "<yourdatabaseserver> をデータベースサーバーの DNS 名、<dbuser> を技術ユーザーのユーザー名、<password> をパスワードに置き換えます。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:59
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:56
 msgid "Now, start the Axon Ivy Engine again."
 msgstr "Axon Ivy Engine を再度起動します。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:69
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:66
 msgid "Open a web browser and navigate to http://<yourservername>:<yourportnumber>/. As you see, the header with the demo mode message is gone. You now have a production-ready Axon Ivy Engine."
 msgstr "ウェブブラウザを開き、http://<yourservername>:<yourportnumber>/ に移動します。見てのとおり、ヘッダーのデモモードのメッセージが消えています。これで、本番環境で Axon Ivy Engine を実行できます。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:75
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:72
 msgid "Register the Axon Ivy Engine as a Windows Service"
 msgstr "Axon Ivy Engine の Windows サービス登録"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:77
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:74
 msgid "In Windows, you can register your Axon Ivy Engine as a service to execute it in the background. You can do this in a scriptable way using the command line. Windows provides the service configuration utility sc.exe for this purpose."
 msgstr "Windows では、Axon Ivy Engine をサービスとして登録し、バックグラウンドで実行できます。コマンドラインを使用し、スクリプトでこれを行うことができます。Windows には、そのためのサービス設定ユーティリティである sc.exe が用意されています。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:85
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:82
 msgid "Replace :code:`[windowsServiceName]` with the name you want to use for the service, e.g. ivy_prod. The user specified by :code:`[username]` and :code:`[password]` is used to run the service."
 msgstr ":code:`[windowsServiceName]` をサービスに使用したい名前（例：ivy_prod）に置き換えます。 :code:`[username]` と :code:`[password]` で指定されたユーザーを使用して、サービスを実行します。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:89
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:86
 msgid "Refer to :ref:`Engine Service <engine-service>` for more details on running Axon Ivy as a service."
 msgstr "Axon Ivy をサービスとして実行する詳細については、「 :ref:`エンジンのサービス<engine-service>` 」を参照してください。"
 
-#: ../../source/introduction/getting-started/engine/windows/configure.rst:93
+#: ../../source/introduction/getting-started/engine/windows/configure.rst:90
 msgid "You can add dependencies to this service for instance to wait for a DBMS or an external OpenSearch to start before Windows starts the Axon Ivy Engine. Please consult the Windows documentation for further details."
 msgstr "例えば、DBMS や外部の OpenSearch が始動するのを待ってから、Windows が Axon Ivy Engine を起動するように、このサービスに依存関係を追加できます。詳細については、Windows のドキュメントを参照してください。"
 
@@ -14764,19 +14423,19 @@ msgstr "ダウンロードしたエンジンの ZIP アーカイブを含むフ�
 msgid "Right click the :file:`AxonIvyEngine\\*.zip` file and press :guilabel:`Extract All ...` from the context menu."
 msgstr ":file:`AxonIvyEngine\\*.zip` ファイルを右クリップし、コンテキストメニューの:guilabel:`すべて展開 ...` をクリックします。"
 
-#: ../../source/introduction/getting-started/engine/windows/install.rst:16
-msgid "On the appearing dialog, press button :guilabel:`Extract`. After the extraction completes, navigate into the new folder :file:`AxonIvyEngine`. The content of the installation folder looks like this:"
-msgstr "表示されたダイアログで、:guilabel:`展開` ボタンをクリックします。展開が完了したら、新しい :file:`AxonIvyEngine` フォルダーに移動します。インストールフォルダーの中身は以下のようになります。"
+#: ../../source/introduction/getting-started/engine/windows/install.rst:14
+msgid "On the appearing dialog, press button :guilabel:`Extract`. After the extraction completes, navigate into the new folder :file:`AxonIvyEngine`."
+msgstr "表示されたダイアログで、:guilabel:`展開` ボタンをクリックします。展開が完了したら、新しい :file:`AxonIvyEngine` フォルダーに移動します。"
 
-#: ../../source/introduction/getting-started/engine/windows/install.rst:23
+#: ../../source/introduction/getting-started/engine/windows/install.rst:18
 msgid "The most important folders in the Axon Ivy Engine installation folder are:"
 msgstr "Axon Ivy Engine のインストールフォルダーの最も重要なフォルダーは以下のとおりです。"
 
-#: ../../source/introduction/getting-started/engine/windows/install.rst:25
+#: ../../source/introduction/getting-started/engine/windows/install.rst:20
 msgid "folder :file:`bin` contains all the executables"
 msgstr "すべての実行ファイルを含む :file:`bin` フォルダー。"
 
-#: ../../source/introduction/getting-started/engine/windows/install.rst:26
+#: ../../source/introduction/getting-started/engine/windows/install.rst:21
 msgid "folder :file:`configuration` contains the configuration files."
 msgstr "設定ファイルを含む :file:`configuration` フォルダー。"
 
@@ -14885,26 +14544,14 @@ msgid "Install From the Market"
 msgstr "マーケットからのインストール"
 
 #: ../../source/market/index.rst:15
-msgid "Most of the extensions in the Axon Ivy Market can be installed in Axon Ivy Designer. To do so, open the Market in Axon Ivy Designer (:menuselection:`Axon Ivy --> Axon Ivy Market`)."
-msgstr "Axon Ivy Market の拡張機能のほとんどは、Axon Ivy Designer でインストールできます。Axon Ivy Designer で Market を開いてください（:menuselection:`Axon Ivy --> Axon Ivy Market`）。"
+msgid "Please looks at the :ref:`designer-market-install` section for instructions on how to install from the market."
+msgstr ""
 
-#: ../../source/market/index.rst:21
-msgid "It will open the `Axon Ivy Market <https://market.axonivy.com>`_ in a view. Select your desired extension and click on the :guilabel:`Install` button in the header. Follow the installation wizard to empower your project."
-msgstr "ビューで `Axon Ivy Market <https://market.axonivy.com>`_が開いたら、必要な拡張機能を選択し、ヘッダーの:guilabel:`インストール` ボタンをクリックします。インストールウィザードの指示に従ってインストールし、プロジェクトを強化できます。"
-
-#: ../../source/market/index.rst:30
-msgid "Install From Another Source"
-msgstr "他のソースからのインストール"
-
-#: ../../source/market/index.rst:32
-msgid "You are able to install extensions from third-party sources. To do so, use the shortcut :guilabel:`CTRL` + :guilabel:`ALT` + :guilabel:`I` and provide the definition file as a URL."
-msgstr "サードパーティーのソースから拡張機能をインストールできます。:guilabel:`CTRL` + :guilabel:`ALT` + :guilabel:`I` のショートカットを使用し、定義ファイルを URL として提供できます。"
-
-#: ../../source/market/index.rst:38
+#: ../../source/market/index.rst:19
 msgid "Craft Your Own Installable Product"
 msgstr "独自のインストール可能なプロダクトの作成"
 
-#: ../../source/market/index.rst:40
+#: ../../source/market/index.rst:21
 msgid "You are able to craft your own installable product. Read more about this here: :link-url:`Contributing to the Axon Ivy Market <market-contribute>`"
 msgstr "独自のインストール可能なプロダクトを作成できます。詳細については、:link-url:`Contributing to the Axon Ivy Market <market-contribute>` 参照してください。"
 
@@ -14939,6 +14586,10 @@ msgstr "*ケースマップの作成ウィザード* では、新しいケース
 #: ../../source/reference/casemap/index.rst:23
 msgid "File > New > Case Map"
 msgstr "［ファイル］ > ［新規］ > ［ケースマップ］"
+
+#: ../../source/reference/casemap/index.rst:30
+msgid "Project Name"
+msgstr "プロジェクト名"
 
 #: ../../source/reference/casemap/index.rst:31
 msgid "Choose the project in which you want to create a new Case Map."
@@ -15542,6 +15193,12 @@ msgstr "データベーススキーマの生成"
 msgid "Press |generate-icon| to generate Data Classes, Forms and Processes from a Database Connection."
 msgstr "|generate-icon| を押して、データベース接続からデータクラス、フォーム、プロセスを生成します."
 
+#: ../../source/reference/configuration/databases.rst:43
+#: ../../source/reference/configuration/rest-clients.rst:240
+#: ../../source/reference/data/index.rst:109
+msgid "Generate"
+msgstr "生成"
+
 #: ../../source/reference/configuration/databases.rst:49
 #: ../../source/reference/configuration/rest-clients.rst:216
 msgid "Dynamic Properties"
@@ -15811,6 +15468,14 @@ msgstr "**プロジェクトと依存関係から:** リストされたクラス
 #: ../../source/reference/configuration/persistence.rst:77
 msgid "**Only Listed:** Only the explicitly listed classes are included. No automatic discovery."
 msgstr "**リストのみ:** 明示的にリストされているクラスのみが含まれています。 自動発見はありません."
+
+#: ../../source/reference/configuration/persistence.rst:79
+#: ../../source/reference/data/index.rst:75
+#: ../../source/reference/data/index.rst:131
+#: ../../source/reference/dialog/form-editor.rst:190
+#: ../../source/reference/process/process-elements/web-service-call-activity.rst:36
+msgid "Properties"
+msgstr "プロパティ"
 
 #: ../../source/reference/configuration/persistence.rst:80
 msgid "Specify properties for the persistence unit. This is optional. This freedom comes with responsibility - know what you are doing."
@@ -16588,6 +16253,11 @@ msgstr ":ref:`ビジネスデータ<business-data>`"
 msgid ":ref:`Entity <persistence-entity-classes>`"
 msgstr ":ref:`エンティティ<persistence-entity-classes>`"
 
+#: ../../source/reference/data/index.rst:53
+#: ../../source/reference/data/index.rst:113
+msgid "Attributes"
+msgstr "属性"
+
 #: ../../source/reference/data/index.rst:55
 msgid "The attributes specify the Data Class contents. Select an attribute in the table to view and edit its properties."
 msgstr "属性はデータクラスの内容を指定します。表で属性を選択すると、そのプロパティを表示、編集できます。"
@@ -16623,6 +16293,206 @@ msgstr "タスクスイッチ間でデータを永続化するかどうかを決
 #: ../../source/reference/data/index.rst:82
 msgid "Use annotations on your attributes for advanced configuration. The annotations will be written as is into the generated Java file. Therefore, you need to use the fully qualified name of the annotation and provide all desired arguments."
 msgstr "属性でアノテーションを使用して、高度な設定を行うことができます。アノテーションは、生成された Java ファイルにそのまま書き込まれます。そのため、アノテーションの完全修飾名を使用し、必要な引数をすべて指定する必要があります。"
+
+#: ../../source/reference/data/index.rst:90
+msgid "Entity Class Editor"
+msgstr "エンティティクラスエディター"
+
+#: ../../source/reference/data/index.rst:92
+msgid "Use this editor to add, delete, and edit your Entity Class and its Attributes."
+msgstr "このエディターを使用して、エンティティクラスとその属性を追加、削除、編集します。"
+
+#: ../../source/reference/data/index.rst:95
+msgid "All the features mentioned in the :ref:`data-class-editor` apply to this editor as well. This is simply an extension of those features specific to Entity Classes."
+msgstr ":ref:`data-class-editor` で言及されているすべての機能は、このエディターにも適用されます。これは単にエンティティクラスに特化した機能を拡張したものです。"
+
+#: ../../source/reference/data/index.rst:102
+msgid "Database Table"
+msgstr "データベース表"
+
+#: ../../source/reference/data/index.rst:104
+msgid "The name of the database table of your Entity Class. If not specified, the name of your Entity Class is used. This value is used when the database table of your Entity Class gets generated."
+msgstr "エンティティクラスのデータベース表の名前。指定されない場合は、エンティティクラスの名前が使用されます。エンティティクラスのデータベース表の生成時にこの値が使用されます。"
+
+#: ../../source/reference/data/index.rst:108
+msgid "Data Repository"
+msgstr "データリポジトリ"
+
+#: ../../source/reference/data/index.rst:110
+msgid "Select to create :ref:`data-repository-api` for the Entity Class."
+msgstr "選択すると、エンティティクラスの :ref:`data-repository-api` が作成されます。"
+
+#: ../../source/reference/data/index.rst:115
+msgid "Database Field"
+msgstr "データベースフィールド"
+
+#: ../../source/reference/data/index.rst:117
+msgid "The name of the database table column of this Attribute. This value is used when the database table of your Entity Class gets generated. Allowed characters are the letters A-Z, the digits 0-9, and the underscore ``_``."
+msgstr "この属性のデータベース表の列の名前。エンティティクラスのデータベース表の生成時にこの名前が使用されます。使用可能な文字は、英字（A ～ Z）、数字（0 ～ 9）、アンダースコア（``_``）です。"
+
+#: ../../source/reference/data/index.rst:121
+msgid "Length"
+msgstr "文字数"
+
+#: ../../source/reference/data/index.rst:122
+msgid "The length of the field in the database table. The following Attribute types can have their length defined and have the specified default values:"
+msgstr "データベース表内のフィールドの文字数。以下の属性タイプには文字数を定義でき、指定された初期値を持ちます。"
+
+#: ../../source/reference/data/index.rst:125
+msgid "``String`` : 255"
+msgstr "``String``：255"
+
+#: ../../source/reference/data/index.rst:126
+msgid "``BigDecimal`` : 19,2"
+msgstr "``BigDecimal``：19、2"
+
+#: ../../source/reference/data/index.rst:127
+msgid "``BigInteger`` : 19,2"
+msgstr "``BigInteger``：19、2"
+
+#: ../../source/reference/data/index.rst:129
+msgid "Changing the length has only an effect if the database schema is recreated."
+msgstr "文字数の変更は、データベーススキーマを再作成した場合にのみ、有効です。"
+
+#: ../../source/reference/data/index.rst:132
+msgid "**ID**: Defines the primary key field of an entity. Every Entity Class must have exactly one primary key."
+msgstr "**ID** ：エンティティの主キーフィールドを定義します。各エンティティクラスは 1 つの主キーを持つ必要があります。"
+
+#: ../../source/reference/data/index.rst:134
+msgid "**Generated**: Defines if the primary key should be generated automatically."
+msgstr "**Generated** ：主キーを自動的に生成するかどうかを定義します。"
+
+#: ../../source/reference/data/index.rst:136
+msgid "**Not nullable**: Defines whether the field value can be ``NULL`` in the database."
+msgstr "**Not nullable** ：データベースのフィールドの値を ``NULL`` にできるかどうかを定義します。"
+
+#: ../../source/reference/data/index.rst:138
+msgid "**Unique**: Defines whether the field value must be unique across the database table column."
+msgstr "**Unique** ：データベース表の列のフィールド値が一意でなければならないかどうかを定義します。"
+
+#: ../../source/reference/data/index.rst:140
+msgid "**Not updateable**: Defines whether the column is omitted in ``SQL UPDATE`` statements generated by the persistence provider."
+msgstr "**Not updateable** ：永続性プロバイダーが生成する ``SQL UPDATE`` 文で列を省略するかどうかを定義します。"
+
+#: ../../source/reference/data/index.rst:142
+msgid "**Not insertable**: Defines whether the column is omitted in ``SQL INSERT`` statements generated by the persistence provider."
+msgstr "**Not insertable** ：永続性プロバイダーが生成する ``SQL INSERT`` 文で列を省略するかどうかを定義します。"
+
+#: ../../source/reference/data/index.rst:144
+msgid "**Version**: Defines the version field of an entity. This is used as the optimistic lock value and ensures integrity when performing the merge operation. The following Attribute types can be used as version:"
+msgstr "**Version** ：エンティティのバージョンフィールドを定義します。これは楽観ロック値として使用され、マージ操作の実行時の整合性を保証します。以下の属性タイプをバージョンとして使用できます。"
+
+#: ../../source/reference/data/index.rst:148
+msgid "``Short``"
+msgstr "``Short``"
+
+#: ../../source/reference/data/index.rst:149
+msgid "``Integer``"
+msgstr "``Integer``"
+
+#: ../../source/reference/data/index.rst:150
+msgid "``Long``"
+msgstr "``Long``"
+
+#: ../../source/reference/data/index.rst:151
+msgid "``java.sql.Timestamp``"
+msgstr "``java.sql.Timestamp``"
+
+#: ../../source/reference/data/index.rst:153
+msgid "Association"
+msgstr "アソシエーション"
+
+#: ../../source/reference/data/index.rst:154
+msgid "Defines the association to another Entity Class. For a bidirectional relationship, an inverse association with a mapped-by specification must be configured on the referenced Entity Class."
+msgstr "別のエンティティクラスとのアソシエーションを定義します。双方向リレーションシップでは、参照されるエンティティクラスに mapped-by 指定の逆アソシエーションを設定する必要があります。"
+
+#: ../../source/reference/data/index.rst:158
+msgid "Cardinality"
+msgstr "Cardinality"
+
+#: ../../source/reference/data/index.rst:159
+msgid "**One-to-One**: Defines a One-to-One (1:1) association to another Entity Class. Only allowed if the Attribute type is an Entity Class. The inverse association is another One-to-One association."
+msgstr "**One-to-One** ：別のエンティティクラスへの 1 対 1（1:1）のアソシエーションを定義します。属性タイプがエンティティクラスの場合にのみ許可されます。逆アソシエーションも 1 対 1 のアソシエーションです。"
+
+#: ../../source/reference/data/index.rst:163
+msgid "**Many-to-One**: Defines a Many-to-One (n:1) association to another Entity Class. Only allowed if the Attribute type is an Entity Class. The inverse association is a One-to-Many association."
+msgstr "**Many-to-One** ：別のエンティティクラスに対する多対 1（n:1）のアソシエーションを定義します。属性タイプがエンティティクラスの場合にのみ許可されます。逆アソシエーションは 1 対多のアソシエーションです。"
+
+#: ../../source/reference/data/index.rst:167
+msgid "**One-to-Many**: Defines a One-to-Many (1:n) association to another Entity Class. Only allowed if the Attribute type is a ``List`` or ``Set`` of an Entity Class. This association type always requires a mapped-by specification since it is the inverse of a Many-to-One association."
+msgstr "**One-to-Many** ：別のエンティティクラスへの 1 対多（1:n）のアソシエーションを定義します。属性タイプがエンティティクラスの ``List`` または ``Set`` である場合にのみ許可されます。このアソシエーションタイプは多対 1 のアソシエーションの逆であるため、常にmapped-by 指定が必要です。"
+
+#: ../../source/reference/data/index.rst:173
+msgid "A One-to-Many association comes with a significant performance impact. Only use it if it is absolutely necessary."
+msgstr "1 対多のアソシエーションはパフォーマンスに大きな影響を及ぼします。絶対に必要な場合のみ使用してください。"
+
+#: ../../source/reference/data/index.rst:176
+msgid "Cascade"
+msgstr "Cascade"
+
+#: ../../source/reference/data/index.rst:177
+msgid "Defines the cascadable operations that are propagated to the associated Entity. If checked, operations performed on this Entity will be applied automatically to the associated Entity."
+msgstr "関連付けられたエンティティに伝搬されるカスケード可能な操作を定義します。選択されている場合、このエンティティで実行された操作は自動的に関連付けられたエンティティに適用されます。"
+
+#: ../../source/reference/data/index.rst:181
+msgid "**Persist**: See :ref:`Persist an Entity Object <persistence-api-persist>`."
+msgstr "**Persist** ：「 :ref:`エンティティオブジェクトの永続化<persistence-api-persist>` 」を参照してください。"
+
+#: ../../source/reference/data/index.rst:184
+msgid "**Merge**: See :ref:`Merge an Entity Object <persistence-api-merge>`."
+msgstr "**Merge** ：「 :ref:`エンティティオブジェクトのマージ<persistence-api-merge>` 」を参照してください。"
+
+#: ../../source/reference/data/index.rst:186
+msgid "**Remove**: See :ref:`Remove an Entity Object <persistence-api-remove>`."
+msgstr "**Remove** ：「 :ref:`エンティティオブジェクトの削除<persistence-api-remove>` 」を参照してください。"
+
+#: ../../source/reference/data/index.rst:188
+msgid "**Refresh**: See :ref:`Refresh an Entity Object <persistence-api-refresh>`."
+msgstr "**Refresh** ：「 :ref:`エンティティオブジェクトの更新<persistence-api-refresh>` 」を参照してください。"
+
+#: ../../source/reference/data/index.rst:191
+msgid "Mapped by"
+msgstr "Mapped by"
+
+#: ../../source/reference/data/index.rst:192
+msgid "Defines the Attribute that owns the relationship in the associated Entity. This value must be defined on the inverse (non-owning) side of the association."
+msgstr "関連付けられたエンティティ内でリレーションシップを所有する属性を定義します。アソシエーションの逆側（非所有側）でこの値を定義する必要があります。"
+
+#: ../../source/reference/data/index.rst:196
+msgid "Remove orphans"
+msgstr "Remove orphans"
+
+#: ../../source/reference/data/index.rst:197
+msgid "If enabled and an Entity that is the target of a relationship is removed from the relationship (either by removal from the collection or by setting the relationship to null), the orphaned Entity will be removed. If the orphaned Entity is a detached, new, or removed Entity, the semantics do not apply."
+msgstr "有効にした場合、リレーションシップのターゲットであるエンティティがリレーションシップから削除されると（コレクションから削除、またはリレーションシップを NULL に設定）、孤立したエンティティが削除されます。孤立したエンティティが切り離されたエンティティ、新しいエンティティ、または削除されたエンティティである場合、セマンティクスは適用されません。"
+
+#: ../../source/reference/data/index.rst:203
+msgid "If enabled and the remove operation is applied to the source Entity, the remove operation will be propagated as defined in the cascade section."
+msgstr "有効にした場合、remove オペレーションがソースエンティティに適用されると、remove オペレーションは Cascade セクションで定義されているように伝搬されます。"
+
+#: ../../source/reference/data/index.rst:206
+msgid "The remove operation is applied at the time of the flush operation. The orphans removal functionality is intended for Entities that are privately \"owned\" by their parent Entity."
+msgstr "remove オペレーションは flush オペレーション時に適用されます。孤立の削除機能は、親エンティティがプライベートに「所有」するエンティティを対象にしています。"
+
+#: ../../source/reference/data/index.rst:210
+msgid "**Example**:"
+msgstr "**例** ："
+
+#: ../../source/reference/data/index.rst:212
+msgid "A 'Basket' Entity holds a list of 'Product' Entities. What happens if ``basket.getProducts().remove(..)`` is called?"
+msgstr "「Basket」エンティティは「Product」エンティティのリストを保持しています。``basket.getProducts().remove(..)`` が呼び出されたらどうなるでしょうか。"
+
+#: ../../source/reference/data/index.rst:215
+msgid "Remove orphans is enabled: The product is removed from the list of referenced products even if the Entity is reloaded or refreshed."
+msgstr "Remove orphans が有効の場合：たとえエンティティが再度読み込まれたり、更新されたとしても、製品は参照される製品リストから削除されます。"
+
+#: ../../source/reference/data/index.rst:218
+msgid "Remove orphans is disabled: The product stays in the list of referenced products if the Entity is reloaded or refreshed."
+msgstr "Remove orphans が無効の場合：たとえエンティティが再度読み込まれたり、更新されたとしても、製品は参照される製品リストに残ります。"
+
+#: ../../source/reference/data/index.rst:222
+msgid "Internally, the Jakarta Persistence API is used to implement Entity Classes and their relations. For further details, please refer to the official `Jakarta Persistence API documentation <https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html>`_."
+msgstr "内部的には、Java Persistence APIはエンティティクラスとその関係を実装するのに使用されます。詳細については、公式の`Jakarta Persistence API documentation <https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html>`_を参照してください。"
 
 #: ../../source/reference/dialog/form-editor.rst:4
 msgid "Form Editor"
@@ -25722,3 +25592,75 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "CMS filesystem structure"
 #~ msgstr "CMS ファイルシステムの構造"
+
+#~ msgid "The Axon Ivy Designer can import several demo projects, which are provided from our Market (internet connection needed). Those demo projects are in the Axon Ivy Archive (\\*.iar) format and can be imported with the help of the :ref:`Axon Ivy Market <market>`."
+#~ msgstr "Axon Ivy Designer では、Axon Ivy Market で提供されている複数のデモプロジェクトをインポートできます（インターネット接続が必要です）。これらのデモプロジェクトは Axon Ivy Archive（\\*.iar）形式で、:ref:`Axon Ivy Market <market>` を使ってインポートできます。"
+
+#~ msgid "The following projects are available for Axon Ivy Designer:"
+#~ msgstr "Axon Ivy Designer では以下のプロジェクトを使用できます。"
+
+#~ msgid "Demo projects for the Designer."
+#~ msgstr "デザイナーのデモプロジェクト"
+
+#~ msgid "Project name"
+#~ msgstr "プロジェクト名"
+
+#~ msgid "Demo content"
+#~ msgstr "デモ内容"
+
+#~ msgid "ConnectivityDemos"
+#~ msgstr "ConnectivityDemos"
+
+#~ msgid "RuleEngineDemos"
+#~ msgstr "RuleEngineDemos"
+
+#~ msgid "Shows how to use the :ref:`rule-engine`."
+#~ msgstr ":ref:`rule-engine` の使用方法を示します。"
+
+#~ msgid "The name and description of an MBean are available in its meta information (see the Metadata tab in the MBeans tab of VisualVM). MBeans provide information through attributes and operations. The description of the attributes and operations is also contained in the meta information (also in the tool tips in the Attributes and Operations tab of VisualVM's MBeans tab)."
+#~ msgstr "MBean の名前と説明はメタ情報で提供されます（VisualVM の［Metadata］タブを参照）。MBean は属性とオペレーションにより情報を提供します。また、属性とオペレーションの説明もメタ情報に含まれます（VisualVM の［MBeans］タブの［Attributes］タブと［Operations］タブのツールチップにも含まれます）。"
+
+#~ msgid "**External Database** (connections, transactions, errors, execution times, etc.)"
+#~ msgstr "**外部データベース** （接続、トランザクション、エラー、実行時間など）"
+
+#~ msgid "New Entity Class Wizard"
+#~ msgstr "エンティティクラスの作成ウィザード"
+
+#~ msgid "The New Entity Class wizard lets you create a new global Entity Class."
+#~ msgstr "エンティティクラスの作成ウィザードでは、新しいグローバルエンティティクラスを作成できます。"
+
+#~ msgid "File > New > Entity Class"
+#~ msgstr "［ファイル］ > ［新規］ > ［エンティティクラス］"
+
+#~ msgid "Choose the name of the project the new Entity Class should belong to."
+#~ msgstr "新しいエンティティクラスが属するプロジェクトの名前を選択します。"
+
+#~ msgid "Choose a namespace for your Entity Class. The name space lets you create a structure to organize your data. Use the dot character '.' to separate the folders from each other. The namespace will be visible in the Axon Ivy project tree."
+#~ msgstr "エンティティクラスの名前空間を選択します。名前空間を使用して、データを整理するための構造を作成できます。フォルダーを区切るには、ドット文字「.」を使用します。名前空間は Axon Ivy プロジェクトツリーに表示されます。"
+
+#~ msgid "Entity Class Name"
+#~ msgstr "エンティティクラス名"
+
+#~ msgid "Enter the name of your Entity Class. Do not use the same name twice in your project, it may get confusing if you do so."
+#~ msgstr "エンティティクラスの名前を入力します。プロジェクト内で同じ名前を 2 回使用しないでください。混乱を引き起こす可能性があります。"
+
+#~ msgid "Entity DB Table Name"
+#~ msgstr "エンティティ DB の表名"
+
+#~ msgid "Enter the name of the database table name of your Entity Class. If empty the name of your Entity Class is used. This name is used if the database table of this Entity Class is generated."
+#~ msgstr "エンティティクラスのデータベース表の名前を入力します。空の場合は、エンティティクラスの名前が使用されます。エンティティクラスのデータベース表の生成時にこの名前が使用されます。"
+
+#~ msgid "Shutdown the Axon Ivy Engine first by stopping it. Use **ControlCenter.exe** or **ControlCenterC.exe**."
+#~ msgstr "最初に Axon Ivy Engine を停止してシャットダウンします。**ControlCenter.exe** または **ControlCenterC.exe** を使用します。"
+
+#~ msgid "Most of the extensions in the Axon Ivy Market can be installed in Axon Ivy Designer. To do so, open the Market in Axon Ivy Designer (:menuselection:`Axon Ivy --> Axon Ivy Market`)."
+#~ msgstr "Axon Ivy Market の拡張機能のほとんどは、Axon Ivy Designer でインストールできます。Axon Ivy Designer で Market を開いてください（:menuselection:`Axon Ivy --> Axon Ivy Market`）。"
+
+#~ msgid "It will open the `Axon Ivy Market <https://market.axonivy.com>`_ in a view. Select your desired extension and click on the :guilabel:`Install` button in the header. Follow the installation wizard to empower your project."
+#~ msgstr "ビューで `Axon Ivy Market <https://market.axonivy.com>`_が開いたら、必要な拡張機能を選択し、ヘッダーの:guilabel:`インストール` ボタンをクリックします。インストールウィザードの指示に従ってインストールし、プロジェクトを強化できます。"
+
+#~ msgid "Install From Another Source"
+#~ msgstr "他のソースからのインストール"
+
+#~ msgid "You are able to install extensions from third-party sources. To do so, use the shortcut :guilabel:`CTRL` + :guilabel:`ALT` + :guilabel:`I` and provide the definition file as a URL."
+#~ msgstr "サードパーティーのソースから拡張機能をインストールできます。:guilabel:`CTRL` + :guilabel:`ALT` + :guilabel:`I` のショートカットを使用し、定義ファイルを URL として提供できます。"
