@@ -1073,15 +1073,13 @@ msgstr "Axon Ivy プロジェクトツリーでオーバーライドノードを
 #: ../../source/designer-guide/how-to/overrides.rst:175
 #: ../../source/designer-guide/how-to/overrides.rst:257
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:60
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:51
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:86
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:14
 #: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:19
 #: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:14
 #: ../../source/reference/casemap/index.rst:26
 #: ../../source/reference/configuration/persistence.rst:54
 #: ../../source/reference/data/index.rst:26
-#: ../../source/reference/data/index.rst:167
+#: ../../source/reference/data/index.rst:100
 #: ../../source/reference/process/ivyscript/editor.rst:35
 msgid "Features"
 msgstr "機能"
@@ -2057,7 +2055,6 @@ msgstr "タスクの状態"
 #: ../../source/designer-guide/how-to/workflow/states.rst:109
 #: ../../source/designer-guide/how-to/workflow/states.rst:133
 #: ../../source/designer-guide/how-to/workflow/states.rst:183
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:136
 #: ../../source/reference/data/index.rst:76
 msgid "Persistent"
 msgstr "Persistent"
@@ -3656,7 +3653,6 @@ msgstr "ファイルの接尾辞"
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:35
 #: ../../source/engine-guide/reference/engine-config-cli.rst:12
 #: ../../source/engine-guide/reference/setup-wizard.rst:88
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:97
 #: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:387
 #: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:444
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:121
@@ -5498,8 +5494,6 @@ msgid "An entry in the view is created for each executed process element. The ta
 msgstr "実行されるプロセス要素ごとに 1 つのエントリがビューに作成されます。表示される情報については、以下の表を参照してください。"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:64
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:92
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:119
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:17
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:30
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:140
@@ -5507,8 +5501,8 @@ msgstr "実行されるプロセス要素ごとに 1 つのエントリがビュ
 #: ../../source/reference/casemap/index.rst:41
 #: ../../source/reference/data/index.rst:32
 #: ../../source/reference/data/index.rst:59
-#: ../../source/reference/data/index.rst:170
-#: ../../source/reference/data/index.rst:183
+#: ../../source/reference/data/index.rst:103
+#: ../../source/reference/data/index.rst:116
 #: ../../source/reference/process/process-elements/common-tabs.rst:169
 #: ../../source/reference/process/process-elements/start.rst:97
 msgid "Name"
@@ -9055,288 +9049,6 @@ msgstr "エンティティクラス"
 msgid ":ref:`persistence-entity-classes` are like Global Data Classes but with additional information on where and how to store the data of a class and its attributes to a relational database."
 msgstr ":ref:`persistence-entity-classes` はグローバルデータクラスに似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。"
 
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:40
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:45
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:48
-msgid "New Data Class Wizard"
-msgstr "データクラスの作成ウィザード"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:42
-msgid "The New Data Class wizard lets you create a new global Data Class. Start the wizard by selecting *File > New > Data Class*."
-msgstr "データクラスの作成ウィザードでは、新しいグローバルデータクラスを作成できます。 *［ファイル］、［新規］、［データクラス]* の順に選択して、ウィザードを開始します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:53
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:21
-#: ../../source/reference/casemap/index.rst:30
-msgid "Project Name"
-msgstr "プロジェクト名"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:54
-msgid "Choose the project, to which the new Data Class should belong."
-msgstr "新しいデータクラスが属するプロジェクトを選択します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:56
-#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:24
-#: ../../source/getting-productive/user-interface/user-dialogs/new-user-dialog-wizard.rst:40
-#: ../../source/reference/casemap/index.rst:33
-msgid "Namespace"
-msgstr "名前空間"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:57
-msgid "Choose a namespace for your Data Class. The namespace lets you create a structure to organize your data. Use the dot character '.' to separate the folders. The namespace will be visible in the Axon Ivy project tree."
-msgstr "データクラスの名前空間を選択します。名前空間を使用して、データを整理するための構造を作成できます。フォルダーを区切るには、ドット文字「.」を使用します。名前空間は Axon Ivy プロジェクトツリーに表示されます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:61
-msgid "Data Class Name"
-msgstr "データクラス名"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:62
-msgid "Enter the name of your Data Class."
-msgstr "データクラスの名前を入力します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:67
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:71
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:74
-#: ../../source/reference/data/index.rst:7
-#: ../../source/reference/data/index.rst:11
-#: ../../source/reference/data/index.rst:14
-msgid "Data Class Editor"
-msgstr "データクラスエディター"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:69
-#: ../../source/reference/data/index.rst:9
-msgid "Use this editor to add, delete, and edit your Data Class and its attributes."
-msgstr "このエディターを使用して、データクラスとその属性を追加、削除、編集します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:77
-#: ../../source/reference/data/index.rst:17
-msgid "If you open an Entity Class, additional properties are configurable in this editor. They are documented in the :ref:`persistence-entity-class-editor`."
-msgstr "エンティティクラスを開くと、追加のプロパティをこのエディターで設定できます。追加のプロパティ :ref:`persistence-entity-class-editor` に記載されています。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:81
-#: ../../source/reference/data/index.rst:21
-msgid "If you are familiar with the Data Class editor from previous versions, you can still use it by selecting *Open With > Data Class Editor (Classic)* in the context menu of the Data Class."
-msgstr "旧バージョンのデータクラスエディターを使用していた場合は、データクラスのコンテキストメニューで*［エディターで開く］、［Data Class Editor（クラシック）］を選択して、引き続き使用できます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:88
-#: ../../source/reference/data/index.rst:28
-msgid "When you have no attribute selected, you can view and edit the properties of the Data Class."
-msgstr "属性が選択されていない場合は、データクラスのプロパティを表示、編集できます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:91
-#: ../../source/reference/data/index.rst:31
-msgid "Name / Description"
-msgstr "名前／説明"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:93
-#: ../../source/reference/data/index.rst:33
-msgid "Shows the fully qualified name of the Data Class. To change the name, perform the \"Rename\" refactoring by selecting \"Rename\" in the context menu of the Data Class in your project tree."
-msgstr "データクラスの完全修飾名が表示されます。名前を変更するには、プロジェクトツリーのデータクラスのコンテキストメニューから［名前変更］を選択して、「名前変更」リファクタリングを実行します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:98
-#: ../../source/reference/data/index.rst:38
-msgid "Use this field to document your Data Class."
-msgstr "このフィールドを使用して、データクラスをドキュメント化します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:100
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:141
-#: ../../source/reference/data/index.rst:40
-#: ../../source/reference/data/index.rst:81
-#: ../../source/reference/process/process-elements/index.rst:149
-msgid "Annotations"
-msgstr "アノテーション"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:101
-#: ../../source/reference/data/index.rst:41
-msgid "Use annotations on your Data Class for advanced configuration. The annotations will be written as is into the generated Java file. Therefore, you need to use the fully qualified name of the annotation and provide all desired arguments."
-msgstr "データクラスでアノテーションを使用して、高度な設定を行うことができます。アノテーションは、生成された Java ファイルにそのまま書き込まれます。そのため、アノテーションの完全修飾名を使用し、必要な引数をすべて指定する必要があります。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:105
-#: ../../source/reference/data/index.rst:45
-msgid "Class type"
-msgstr "クラスタイプ"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:106
-#: ../../source/reference/data/index.rst:46
-msgid "Change the type of your Data Class:"
-msgstr "データクラスのタイプを変更します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:108
-#: ../../source/reference/data/index.rst:48
-msgid ":ref:`Data <data-classes>`"
-msgstr ":ref:`データ<data-classes>`"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:109
-#: ../../source/reference/data/index.rst:49
-msgid ":ref:`Business Data <business-data>`"
-msgstr ":ref:`ビジネスデータ<business-data>`"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:110
-#: ../../source/reference/data/index.rst:50
-msgid ":ref:`Entity <persistence-entity-classes>`"
-msgstr ":ref:`エンティティ<persistence-entity-classes>`"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:113
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:27
-#: ../../source/reference/data/index.rst:53
-#: ../../source/reference/data/index.rst:180
-msgid "Attributes"
-msgstr "属性"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:115
-#: ../../source/reference/data/index.rst:55
-msgid "The attributes specify the Data Class contents. Select an attribute in the table to view and edit its properties."
-msgstr "属性はデータクラスの内容を指定します。表で属性を選択すると、そのプロパティを表示、編集できます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:118
-#: ../../source/reference/data/index.rst:58
-msgid "Name / Type / Comment"
-msgstr "名前／タイプ／コメント"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:120
-#: ../../source/reference/data/index.rst:60
-msgid "The name of your attribute. The name must not contain any special characters or spaces."
-msgstr "属性の名前。名前に特殊文字やスペースを含めることはできません。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:123
-#: ../../source/reference/configuration/rest-clients.rst:190
-#: ../../source/reference/data/index.rst:63
-msgid "Type"
-msgstr "タイプ"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:124
-#: ../../source/reference/data/index.rst:64
-msgid "The type of your attribute. Press |data-type-browser-icon| to open the :ref:`data-type-browser`."
-msgstr "属性のタイプ。|data-type-browser-icon| をクリックすると、 :ref:`data-type-browser` が開きます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:130
-#: ../../source/reference/data/index.rst:70
-msgid "Data Type Browser Button"
-msgstr "データ型ブラウザボタン"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:127
-#: ../../source/reference/data/index.rst:67
-msgid "Comment"
-msgstr "コメント"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:128
-#: ../../source/reference/data/index.rst:68
-msgid "Use this field to document your attribute."
-msgstr "このフィールドを使用して、属性をドキュメント化します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:135
-#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:45
-#: ../../source/reference/configuration/persistence.rst:79
-#: ../../source/reference/data/index.rst:75
-#: ../../source/reference/data/index.rst:198
-#: ../../source/reference/dialog/form-editor.rst:190
-#: ../../source/reference/process/process-elements/web-service-call-activity.rst:36
-msgid "Properties"
-msgstr "プロパティ"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:137
-#: ../../source/reference/data/index.rst:77
-msgid "Decide if the data should be persistent between task switches. If the data is not set to be persistent, then you lose all information if the execution of the process passes a task switch process element."
-msgstr "タスクスイッチ間でデータを永続化するかどうかを決定します。データが永続に設定されていない場合、プロセスの実行がタスクスイッチプロセス要素を通過すると、すべての情報が失われます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:142
-#: ../../source/reference/data/index.rst:82
-msgid "Use annotations on your attributes for advanced configuration. The annotations will be written as is into the generated Java file. Therefore, you need to use the fully qualified name of the annotation and provide all desired arguments."
-msgstr "属性でアノテーションを使用して、高度な設定を行うことができます。アノテーションは、生成された Java ファイルにそのまま書き込まれます。そのため、アノテーションの完全修飾名を使用し、必要な引数をすべて指定する必要があります。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:147
-#: ../../source/reference/data/index.rst:87
-msgid "Attribute Refactoring"
-msgstr "属性のリファクタリング"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:149
-#: ../../source/reference/data/index.rst:89
-msgid "The Data Class editor supports Data Class attribute refactoring."
-msgstr "データクラスエディターは、データクラス属性のリファクタリングをサポートします。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:152
-#: ../../source/reference/data/index.rst:92
-msgid "Combine Attributes Refactoring"
-msgstr "属性結合リファクタリング"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:154
-#: ../../source/reference/data/index.rst:94
-msgid "Over time, the number of attributes in a Data Class may become excessive. This decreases the maintainability and reusability of your process logic. Therefore, the editor allows you to combine multiple attributes from an existing Data Class into a new Data Class. The combined attributes will be replaced with a delegate attribute for the new Data Class."
-msgstr "時間の経過とともに、データクラス内の属性の数が過剰になり、プロセスロジックの保守性と再利用性を低下することがあります。そのため、エディターでは、既存のデータクラスから複数の属性を新しいデータクラスに結合できます。結合された属性は、新しいデータクラスの委任属性に置き換えられます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:160
-#: ../../source/reference/data/index.rst:100
-msgid "If you have a Data Class that describes a person, you could combine the attributes that belong to the address part into an extra address Data Class."
-msgstr "人物を記述するデータクラスがある場合、住所の部分に属する属性を結合して、追加の住所データクラスにすることができます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:166
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:170
-#: ../../source/reference/data/index.rst:106
-#: ../../source/reference/data/index.rst:110
-msgid "Data Class before refactoring"
-msgstr "リファクタリング前のデータクラス"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:172
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:176
-#: ../../source/reference/data/index.rst:112
-#: ../../source/reference/data/index.rst:116
-msgid "Data Class after refactoring"
-msgstr "リファクタリング後のデータクラス"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:178
-#: ../../source/reference/data/index.rst:118
-msgid "**Start Refactoring**"
-msgstr "**リファクタリングの開始**"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:180
-#: ../../source/reference/data/index.rst:120
-msgid "Select the attributes to combine in the table, then press |combine-attributes-icon| to open the refactoring wizard."
-msgstr "表で結合する属性を選択し、|combine-attributes-icon| をクリックしてリファクタリングウィザードを開きます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:183
-#: ../../source/reference/data/index.rst:123
-msgid "Combine Attributes Button"
-msgstr "属性結合ボタン"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:188
-#: ../../source/reference/data/index.rst:128
-msgid "**Define the new Data Class**"
-msgstr "**新しいデータクラスの定義**"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:190
-#: ../../source/reference/data/index.rst:130
-msgid "The first refactoring wizard page lets you define the location and name of the Data Class."
-msgstr "リファクタリングウィザードの最初のページでは、データクラスの場所と名前を定義します。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:193
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:196
-#: ../../source/reference/data/index.rst:133
-#: ../../source/reference/data/index.rst:136
-msgid "Wizard Page 1 - Define the new Data Class"
-msgstr "ウィザードの 1 ページ目 - 新しいデータクラスの定義"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:198
-#: ../../source/reference/data/index.rst:138
-msgid "**Review modifications**"
-msgstr "**変更の確認**"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:200
-#: ../../source/reference/data/index.rst:140
-msgid "The second page previews all changes that will be applied to your artifacts. You can inspect some of the changes within the textual compare view on the lower part of the page."
-msgstr "2 ページ目では、アーティファクトに適用されるすべての変更をプレビューします。ページ下部のテキスト比較ビューで、変更の一部を精査できます。"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:204
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:207
-#: ../../source/reference/data/index.rst:144
-#: ../../source/reference/data/index.rst:147
-msgid "Wizard Page 2 - Review modifications"
-msgstr "ウィザードの 2 ページ目 - 変更の確認"
-
-#: ../../source/getting-productive/data-modeling/data-classes/data-classes.rst:209
-#: ../../source/reference/data/index.rst:149
-msgid "The refactoring will modify all programmatic references to attributes. Statements written in Java, IvyScript, JSP or El-Expressions may be changed by this refactoring."
-msgstr "リファクタリングにより、プログラムによる属性へのすべての参照が変更されます。Java、IvyScript、JSP、El-Expressions で書かれたステートメントは、このリファクタリングによって変更される可能性があります。"
-
 #: ../../source/getting-productive/data-modeling/index.rst:2
 msgid "Data Modeling"
 msgstr "データモデリング"
@@ -9382,259 +9094,274 @@ msgid "The implementation of the interface will automatically be created by Axon
 msgstr "インターフェイスの実装は Axon Ivy によって自動的に生成されます。独自のリポジトリメソッドの作成方法に関する詳細は、`Jakarta Data: Repository Interfaces <https://jakarta.ee/specifications/data/1.0/jakarta-data-1.0#_repository_interfaces>`__ を参照してください。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:4
-#: ../../source/reference/data/index.rst:157
+#: ../../source/reference/data/index.rst:90
 msgid "Entity Class Editor"
 msgstr "エンティティクラスエディター"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:6
-#: ../../source/reference/data/index.rst:159
+#: ../../source/reference/data/index.rst:92
 msgid "Use this editor to add, delete, and edit your Entity Class and its Attributes."
 msgstr "このエディターを使用して、エンティティクラスとその属性を追加、削除、編集します。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:9
-#: ../../source/reference/data/index.rst:162
+#: ../../source/reference/data/index.rst:95
 msgid "All the features mentioned in the :ref:`data-class-editor` apply to this editor as well. This is simply an extension of those features specific to Entity Classes."
 msgstr ":ref:`data-class-editor` で言及されているすべての機能は、このエディターにも適用されます。これは単にエンティティクラスに特化した機能を拡張したものです。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:16
-#: ../../source/reference/data/index.rst:169
+#: ../../source/reference/data/index.rst:102
 msgid "Database Table"
 msgstr "データベース表"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:18
-#: ../../source/reference/data/index.rst:171
+#: ../../source/reference/data/index.rst:104
 msgid "The name of the database table of your Entity Class. If not specified, the name of your Entity Class is used. This value is used when the database table of your Entity Class gets generated."
 msgstr "エンティティクラスのデータベース表の名前。指定されない場合は、エンティティクラスの名前が使用されます。エンティティクラスのデータベース表の生成時にこの値が使用されます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:22
-#: ../../source/reference/data/index.rst:175
+#: ../../source/reference/data/index.rst:108
 msgid "Data Repository"
 msgstr "データリポジトリ"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:23
 #: ../../source/reference/configuration/databases.rst:43
 #: ../../source/reference/configuration/rest-clients.rst:240
-#: ../../source/reference/data/index.rst:176
+#: ../../source/reference/data/index.rst:109
 msgid "Generate"
 msgstr "生成"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:24
-#: ../../source/reference/data/index.rst:177
+#: ../../source/reference/data/index.rst:110
 msgid "Select to create :ref:`data-repository-api` for the Entity Class."
 msgstr "選択すると、エンティティクラスの :ref:`data-repository-api` が作成されます。"
 
+#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:27
+#: ../../source/reference/data/index.rst:53
+#: ../../source/reference/data/index.rst:113
+msgid "Attributes"
+msgstr "属性"
+
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:29
-#: ../../source/reference/data/index.rst:182
+#: ../../source/reference/data/index.rst:115
 msgid "Database Field"
 msgstr "データベースフィールド"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:31
-#: ../../source/reference/data/index.rst:184
+#: ../../source/reference/data/index.rst:117
 msgid "The name of the database table column of this Attribute. This value is used when the database table of your Entity Class gets generated. Allowed characters are the letters A-Z, the digits 0-9, and the underscore ``_``."
 msgstr "この属性のデータベース表の列の名前。エンティティクラスのデータベース表の生成時にこの名前が使用されます。使用可能な文字は、英字（A ～ Z）、数字（0 ～ 9）、アンダースコア（``_``）です。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:35
-#: ../../source/reference/data/index.rst:188
+#: ../../source/reference/data/index.rst:121
 msgid "Length"
 msgstr "文字数"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:36
-#: ../../source/reference/data/index.rst:189
+#: ../../source/reference/data/index.rst:122
 msgid "The length of the field in the database table. The following Attribute types can have their length defined and have the specified default values:"
 msgstr "データベース表内のフィールドの文字数。以下の属性タイプには文字数を定義でき、指定された初期値を持ちます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:39
-#: ../../source/reference/data/index.rst:192
+#: ../../source/reference/data/index.rst:125
 msgid "``String`` : 255"
 msgstr "``String``：255"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:40
-#: ../../source/reference/data/index.rst:193
+#: ../../source/reference/data/index.rst:126
 msgid "``BigDecimal`` : 19,2"
 msgstr "``BigDecimal``：19、2"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:41
-#: ../../source/reference/data/index.rst:194
+#: ../../source/reference/data/index.rst:127
 msgid "``BigInteger`` : 19,2"
 msgstr "``BigInteger``：19、2"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:43
-#: ../../source/reference/data/index.rst:196
+#: ../../source/reference/data/index.rst:129
 msgid "Changing the length has only an effect if the database schema is recreated."
 msgstr "文字数の変更は、データベーススキーマを再作成した場合にのみ、有効です。"
 
+#: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:45
+#: ../../source/reference/configuration/persistence.rst:79
+#: ../../source/reference/data/index.rst:75
+#: ../../source/reference/data/index.rst:131
+#: ../../source/reference/dialog/form-editor.rst:190
+#: ../../source/reference/process/process-elements/web-service-call-activity.rst:36
+msgid "Properties"
+msgstr "プロパティ"
+
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:46
-#: ../../source/reference/data/index.rst:199
+#: ../../source/reference/data/index.rst:132
 msgid "**ID**: Defines the primary key field of an entity. Every Entity Class must have exactly one primary key."
 msgstr "**ID** ：エンティティの主キーフィールドを定義します。各エンティティクラスは 1 つの主キーを持つ必要があります。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:48
-#: ../../source/reference/data/index.rst:201
+#: ../../source/reference/data/index.rst:134
 msgid "**Generated**: Defines if the primary key should be generated automatically."
 msgstr "**Generated** ：主キーを自動的に生成するかどうかを定義します。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:50
-#: ../../source/reference/data/index.rst:203
+#: ../../source/reference/data/index.rst:136
 msgid "**Not nullable**: Defines whether the field value can be ``NULL`` in the database."
 msgstr "**Not nullable** ：データベースのフィールドの値を ``NULL`` にできるかどうかを定義します。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:52
-#: ../../source/reference/data/index.rst:205
+#: ../../source/reference/data/index.rst:138
 msgid "**Unique**: Defines whether the field value must be unique across the database table column."
 msgstr "**Unique** ：データベース表の列のフィールド値が一意でなければならないかどうかを定義します。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:54
-#: ../../source/reference/data/index.rst:207
+#: ../../source/reference/data/index.rst:140
 msgid "**Not updateable**: Defines whether the column is omitted in ``SQL UPDATE`` statements generated by the persistence provider."
 msgstr "**Not updateable** ：永続性プロバイダーが生成する ``SQL UPDATE`` 文で列を省略するかどうかを定義します。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:56
-#: ../../source/reference/data/index.rst:209
+#: ../../source/reference/data/index.rst:142
 msgid "**Not insertable**: Defines whether the column is omitted in ``SQL INSERT`` statements generated by the persistence provider."
 msgstr "**Not insertable** ：永続性プロバイダーが生成する ``SQL INSERT`` 文で列を省略するかどうかを定義します。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:58
-#: ../../source/reference/data/index.rst:211
+#: ../../source/reference/data/index.rst:144
 msgid "**Version**: Defines the version field of an entity. This is used as the optimistic lock value and ensures integrity when performing the merge operation. The following Attribute types can be used as version:"
 msgstr "**Version** ：エンティティのバージョンフィールドを定義します。これは楽観ロック値として使用され、マージ操作の実行時の整合性を保証します。以下の属性タイプをバージョンとして使用できます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:62
-#: ../../source/reference/data/index.rst:215
+#: ../../source/reference/data/index.rst:148
 msgid "``Short``"
 msgstr "``Short``"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:63
-#: ../../source/reference/data/index.rst:216
+#: ../../source/reference/data/index.rst:149
 msgid "``Integer``"
 msgstr "``Integer``"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:64
-#: ../../source/reference/data/index.rst:217
+#: ../../source/reference/data/index.rst:150
 msgid "``Long``"
 msgstr "``Long``"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:65
-#: ../../source/reference/data/index.rst:218
+#: ../../source/reference/data/index.rst:151
 msgid "``java.sql.Timestamp``"
 msgstr "``java.sql.Timestamp``"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:67
-#: ../../source/reference/data/index.rst:220
+#: ../../source/reference/data/index.rst:153
 msgid "Association"
 msgstr "アソシエーション"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:68
-#: ../../source/reference/data/index.rst:221
+#: ../../source/reference/data/index.rst:154
 msgid "Defines the association to another Entity Class. For a bidirectional relationship, an inverse association with a mapped-by specification must be configured on the referenced Entity Class."
 msgstr "別のエンティティクラスとのアソシエーションを定義します。双方向リレーションシップでは、参照されるエンティティクラスに mapped-by 指定の逆アソシエーションを設定する必要があります。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:72
-#: ../../source/reference/data/index.rst:225
+#: ../../source/reference/data/index.rst:158
 msgid "Cardinality"
 msgstr "Cardinality"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:73
-#: ../../source/reference/data/index.rst:226
+#: ../../source/reference/data/index.rst:159
 msgid "**One-to-One**: Defines a One-to-One (1:1) association to another Entity Class. Only allowed if the Attribute type is an Entity Class. The inverse association is another One-to-One association."
 msgstr "**One-to-One** ：別のエンティティクラスへの 1 対 1（1:1）のアソシエーションを定義します。属性タイプがエンティティクラスの場合にのみ許可されます。逆アソシエーションも 1 対 1 のアソシエーションです。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:77
-#: ../../source/reference/data/index.rst:230
+#: ../../source/reference/data/index.rst:163
 msgid "**Many-to-One**: Defines a Many-to-One (n:1) association to another Entity Class. Only allowed if the Attribute type is an Entity Class. The inverse association is a One-to-Many association."
 msgstr "**Many-to-One** ：別のエンティティクラスに対する多対 1（n:1）のアソシエーションを定義します。属性タイプがエンティティクラスの場合にのみ許可されます。逆アソシエーションは 1 対多のアソシエーションです。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:81
-#: ../../source/reference/data/index.rst:234
+#: ../../source/reference/data/index.rst:167
 msgid "**One-to-Many**: Defines a One-to-Many (1:n) association to another Entity Class. Only allowed if the Attribute type is a ``List`` or ``Set`` of an Entity Class. This association type always requires a mapped-by specification since it is the inverse of a Many-to-One association."
 msgstr "**One-to-Many** ：別のエンティティクラスへの 1 対多（1:n）のアソシエーションを定義します。属性タイプがエンティティクラスの ``List`` または ``Set`` である場合にのみ許可されます。このアソシエーションタイプは多対 1 のアソシエーションの逆であるため、常にmapped-by 指定が必要です。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:87
-#: ../../source/reference/data/index.rst:240
+#: ../../source/reference/data/index.rst:173
 msgid "A One-to-Many association comes with a significant performance impact. Only use it if it is absolutely necessary."
 msgstr "1 対多のアソシエーションはパフォーマンスに大きな影響を及ぼします。絶対に必要な場合のみ使用してください。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:90
-#: ../../source/reference/data/index.rst:243
+#: ../../source/reference/data/index.rst:176
 msgid "Cascade"
 msgstr "Cascade"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:91
-#: ../../source/reference/data/index.rst:244
+#: ../../source/reference/data/index.rst:177
 msgid "Defines the cascadable operations that are propagated to the associated Entity. If checked, operations performed on this Entity will be applied automatically to the associated Entity."
 msgstr "関連付けられたエンティティに伝搬されるカスケード可能な操作を定義します。選択されている場合、このエンティティで実行された操作は自動的に関連付けられたエンティティに適用されます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:95
-#: ../../source/reference/data/index.rst:248
+#: ../../source/reference/data/index.rst:181
 msgid "**Persist**: See :ref:`Persist an Entity Object <persistence-api-persist>`."
 msgstr "**Persist** ：「 :ref:`エンティティオブジェクトの永続化<persistence-api-persist>` 」を参照してください。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:98
-#: ../../source/reference/data/index.rst:251
+#: ../../source/reference/data/index.rst:184
 msgid "**Merge**: See :ref:`Merge an Entity Object <persistence-api-merge>`."
 msgstr "**Merge** ：「 :ref:`エンティティオブジェクトのマージ<persistence-api-merge>` 」を参照してください。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:100
-#: ../../source/reference/data/index.rst:253
+#: ../../source/reference/data/index.rst:186
 msgid "**Remove**: See :ref:`Remove an Entity Object <persistence-api-remove>`."
 msgstr "**Remove** ：「 :ref:`エンティティオブジェクトの削除<persistence-api-remove>` 」を参照してください。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:102
-#: ../../source/reference/data/index.rst:255
+#: ../../source/reference/data/index.rst:188
 msgid "**Refresh**: See :ref:`Refresh an Entity Object <persistence-api-refresh>`."
 msgstr "**Refresh** ：「 :ref:`エンティティオブジェクトの更新<persistence-api-refresh>` 」を参照してください。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:105
-#: ../../source/reference/data/index.rst:258
+#: ../../source/reference/data/index.rst:191
 msgid "Mapped by"
 msgstr "Mapped by"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:106
-#: ../../source/reference/data/index.rst:259
+#: ../../source/reference/data/index.rst:192
 msgid "Defines the Attribute that owns the relationship in the associated Entity. This value must be defined on the inverse (non-owning) side of the association."
 msgstr "関連付けられたエンティティ内でリレーションシップを所有する属性を定義します。アソシエーションの逆側（非所有側）でこの値を定義する必要があります。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:110
-#: ../../source/reference/data/index.rst:263
+#: ../../source/reference/data/index.rst:196
 msgid "Remove orphans"
 msgstr "Remove orphans"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:111
-#: ../../source/reference/data/index.rst:264
+#: ../../source/reference/data/index.rst:197
 msgid "If enabled and an Entity that is the target of a relationship is removed from the relationship (either by removal from the collection or by setting the relationship to null), the orphaned Entity will be removed. If the orphaned Entity is a detached, new, or removed Entity, the semantics do not apply."
 msgstr "有効にした場合、リレーションシップのターゲットであるエンティティがリレーションシップから削除されると（コレクションから削除、またはリレーションシップを NULL に設定）、孤立したエンティティが削除されます。孤立したエンティティが切り離されたエンティティ、新しいエンティティ、または削除されたエンティティである場合、セマンティクスは適用されません。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:117
-#: ../../source/reference/data/index.rst:270
+#: ../../source/reference/data/index.rst:203
 msgid "If enabled and the remove operation is applied to the source Entity, the remove operation will be propagated as defined in the cascade section."
 msgstr "有効にした場合、remove オペレーションがソースエンティティに適用されると、remove オペレーションは Cascade セクションで定義されているように伝搬されます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:120
-#: ../../source/reference/data/index.rst:273
+#: ../../source/reference/data/index.rst:206
 msgid "The remove operation is applied at the time of the flush operation. The orphans removal functionality is intended for Entities that are privately \"owned\" by their parent Entity."
 msgstr "remove オペレーションは flush オペレーション時に適用されます。孤立の削除機能は、親エンティティがプライベートに「所有」するエンティティを対象にしています。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:124
-#: ../../source/reference/data/index.rst:277
+#: ../../source/reference/data/index.rst:210
 msgid "**Example**:"
 msgstr "**例** ："
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:126
-#: ../../source/reference/data/index.rst:279
+#: ../../source/reference/data/index.rst:212
 msgid "A 'Basket' Entity holds a list of 'Product' Entities. What happens if ``basket.getProducts().remove(..)`` is called?"
 msgstr "「Basket」エンティティは「Product」エンティティのリストを保持しています。``basket.getProducts().remove(..)`` が呼び出されたらどうなるでしょうか。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:129
-#: ../../source/reference/data/index.rst:282
+#: ../../source/reference/data/index.rst:215
 msgid "Remove orphans is enabled: The product is removed from the list of referenced products even if the Entity is reloaded or refreshed."
 msgstr "Remove orphans が有効の場合：たとえエンティティが再度読み込まれたり、更新されたとしても、製品は参照される製品リストから削除されます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:132
-#: ../../source/reference/data/index.rst:285
+#: ../../source/reference/data/index.rst:218
 msgid "Remove orphans is disabled: The product stays in the list of referenced products if the Entity is reloaded or refreshed."
 msgstr "Remove orphans が無効の場合：たとえエンティティが再度読み込まれたり、更新されたとしても、製品は参照される製品リストに残ります。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-class-editor.rst:136
-#: ../../source/reference/data/index.rst:289
+#: ../../source/reference/data/index.rst:222
 msgid "Internally, the Jakarta Persistence API is used to implement Entity Classes and their relations. For further details, please refer to the official `Jakarta Persistence API documentation <https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html>`_."
 msgstr "内部的には、Java Persistence APIはエンティティクラスとその関係を実装するのに使用されます。詳細については、公式の`Jakarta Persistence API documentation <https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html>`_を参照してください。"
 
@@ -9730,9 +9457,20 @@ msgstr "エンティティクラスの作成ウィザードでは、新しいグ
 msgid "File > New > Entity Class"
 msgstr "［ファイル］ > ［新規］ > ［エンティティクラス］"
 
+#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:21
+#: ../../source/reference/casemap/index.rst:30
+msgid "Project Name"
+msgstr "プロジェクト名"
+
 #: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:22
 msgid "Choose the name of the project the new Entity Class should belong to."
 msgstr "新しいエンティティクラスが属するプロジェクトの名前を選択します。"
+
+#: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:24
+#: ../../source/getting-productive/user-interface/user-dialogs/new-user-dialog-wizard.rst:40
+#: ../../source/reference/casemap/index.rst:33
+msgid "Namespace"
+msgstr "名前空間"
 
 #: ../../source/getting-productive/data-modeling/persistence/new-entity-class-wizard.rst:25
 msgid "Choose a namespace for your Entity Class. The name space lets you create a structure to organize your data. Use the dot character '.' to separate the folders from each other. The namespace will be visible in the Axon Ivy project tree."
@@ -14150,8 +13888,8 @@ msgid "Support"
 msgstr "サポート"
 
 #: ../../source/introduction/getting-help.rst:10
-msgid "You can get support via support@axonivy.com (support may be subject to charging, depending on your license agreement)."
-msgstr "support@axonivy.com からサポートを受けることができます（ライセンス契約によって、サポート料金がかかる場合があります）。"
+msgid "You can get support via mail or ticket, find more information `here <https://dev.axonivy.com/support>`_ (support may be subject to additional charges, depending on your license agreement)."
+msgstr "メールまたはチケットでサポートを受けることができます。詳細については`こちら <https://dev.axonivy.com/support>`_をご覧ください（ライセンス契約によっては、追加料金が発生する場合があります）。"
 
 #: ../../source/introduction/getting-help.rst:15
 msgid "Axon Ivy Community"
@@ -15549,7 +15287,6 @@ msgid "You can override content objects of existing projects by defining the sam
 msgstr "依存プロジェクトで同じコンテンツオブジェクトを定義して、既存のプロジェクトのコンテンツオブジェクトをオーバーライドできます。"
 
 #: ../../source/reference/cms/overriding.rst:8
-#: ../../source/reference/cms/structure.rst:24
 msgid "**Example**"
 msgstr "**例**"
 
@@ -15665,36 +15402,6 @@ msgstr "コンテンツオブジェクトはパス（例： :code:`/test/label` 
 #: ../../source/reference/cms/structure.rst:17
 msgid "A locale defines the language and optionally the region. This allows you to define values for different languages and even for different regions. You can define a value for English :code:`en` or be more specific for US-English with :code:`en_US` or British-English with :code:`en_GB`."
 msgstr "ロケールは言語と、オプションで地域を定義します。これにより、異なる言語や異なる地域の値を定義できます。英語 :code:`en` の値を定義したり、より具体的にアメリカ英語 :code:`en_US` やイギリス英語 :code:`en_GB` を定義することもできます。"
-
-#: ../../source/reference/cms/structure.rst:26
-msgid "In this content management system you can see eight content objects. Where :code:`/`, :code:`/documents`, :code:`/images` and :code:`/labels`` are folders and serve only for hierarchical presentation. The content objects with real values are:"
-msgstr "このコンテンツ管理システムには、8つのコンテンツオブジェクトがあります。:code:`/`、:code:`/documents`、:code:`/images`および:code:`/labels``はフォルダーで、階層を表すためにのみ使用されます。実際の値を持つコンテンツオブジェクト："
-
-#: ../../source/reference/cms/structure.rst:30
-msgid ":code:`/documents/instruction` is a PDF file content object with two content object values for the languages English and German."
-msgstr ":code:`/documents/instruction` は、英語とドイツ語の 2 つのコンテンツオブジェクト値を持つ PDF ファイルコンテンツオブジェクトです。"
-
-#: ../../source/reference/cms/structure.rst:32
-msgid ":code:`/images/doc` is a PNG file content object with only one content object value and no language assignment."
-msgstr ":code:`/images/doc` は、PNG ファイルコンテンツオブジェクトです。コンテンツオブジェクトの値は 1 つだけで、言語の割り当てはありません。"
-
-#: ../../source/reference/cms/structure.rst:34
-msgid ":code:`/labels/birthday` and :code:`/labels/name` are texts with translations for English and German."
-msgstr ":code:`/labels/birthday` と :code:`/labels/name` は、英語とドイツ語に翻訳されたテキストです。"
-
-#: ../../source/reference/cms/structure.rst:37
-#: ../../source/reference/cms/structure.rst:41
-msgid "CMS example"
-msgstr "CMS の例"
-
-#: ../../source/reference/cms/structure.rst:43
-msgid "The CMS shown above is mapped transparently on the file system. The files are stored in the appropriate locations and the texts all in the :file:`cms_*.yaml` files. The locale information is appended to the end of the file."
-msgstr "上記の CMS は、ファイルシステム上に透過的にマッピングされます。ファイルは適切な場所に格納され、テキストはすべて :file:`cms_*.yaml` ファイルに格納されます。ロケール情報はファイルの最後に追加されます。"
-
-#: ../../source/reference/cms/structure.rst:47
-#: ../../source/reference/cms/structure.rst:51
-msgid "CMS filesystem structure"
-msgstr "CMS ファイルシステムの構造"
 
 #: ../../source/reference/cms/writing.rst:2
 msgid "Writing"
@@ -16302,6 +16009,11 @@ msgid "Then the path template ``{api.version}`` can be set globally on the REST 
 msgstr "REST クライアントで、パステンプレート ``{api.version}`` をプロパティとしてグローバルに設定できます。"
 
 #: ../../source/reference/configuration/rest-clients.rst:190
+#: ../../source/reference/data/index.rst:63
+msgid "Type"
+msgstr "タイプ"
+
+#: ../../source/reference/configuration/rest-clients.rst:190
 msgid "Property"
 msgstr "プロパティ"
 
@@ -16811,6 +16523,106 @@ msgstr ":guilabel:`WSDL URL` サービスの詳細とクラスは、ここで指
 #: ../../source/reference/configuration/webservice-clients.rst:168
 msgid "The generated files are compiled and packaged into a jar file. The generated jar file is located in the :file:`lib_ws/client` folder of the Axon Ivy project and automatically added to the project libraries."
 msgstr ":guilabel:`WS クラスの生成` 必須フィールドである :guilabel:`WSDL URL` と :guilabel:`ライブラリ` を指定した後、 :guilabel:`WS クラスの生成` をクリックすると、WSDL が読み込まれ、クライアントクラスが生成されます。生成されたファイルはコンパイルされ、jar ファイルにパッケージ化されます。生成された jar ファイルは Axon Ivy プロジェクトの *lib_ws/client* フォルダーに配置され、プロジェクトのライブラリに自動的に追加されます。"
+
+#: ../../source/reference/data/index.rst:7
+#: ../../source/reference/data/index.rst:11
+#: ../../source/reference/data/index.rst:14
+msgid "Data Class Editor"
+msgstr "データクラスエディター"
+
+#: ../../source/reference/data/index.rst:9
+msgid "Use this editor to add, delete, and edit your Data Class and its attributes."
+msgstr "このエディターを使用して、データクラスとその属性を追加、削除、編集します。"
+
+#: ../../source/reference/data/index.rst:17
+msgid "If you open an Entity Class, additional properties are configurable in this editor. They are documented in the :ref:`persistence-entity-class-editor`."
+msgstr "エンティティクラスを開くと、追加のプロパティをこのエディターで設定できます。追加のプロパティ :ref:`persistence-entity-class-editor` に記載されています。"
+
+#: ../../source/reference/data/index.rst:21
+msgid "If you are familiar with the Data Class editor from previous versions, you can still use it by selecting *Open With > Data Class Editor (Classic)* in the context menu of the Data Class."
+msgstr "旧バージョンのデータクラスエディターを使用していた場合は、データクラスのコンテキストメニューで*［エディターで開く］、［Data Class Editor（クラシック）］を選択して、引き続き使用できます。"
+
+#: ../../source/reference/data/index.rst:28
+msgid "When you have no attribute selected, you can view and edit the properties of the Data Class."
+msgstr "属性が選択されていない場合は、データクラスのプロパティを表示、編集できます。"
+
+#: ../../source/reference/data/index.rst:31
+msgid "Name / Description"
+msgstr "名前／説明"
+
+#: ../../source/reference/data/index.rst:33
+msgid "Shows the fully qualified name of the Data Class. To change the name, perform the \"Rename\" refactoring by selecting \"Rename\" in the context menu of the Data Class in your project tree."
+msgstr "データクラスの完全修飾名が表示されます。名前を変更するには、プロジェクトツリーのデータクラスのコンテキストメニューから［名前変更］を選択して、「名前変更」リファクタリングを実行します。"
+
+#: ../../source/reference/data/index.rst:38
+msgid "Use this field to document your Data Class."
+msgstr "このフィールドを使用して、データクラスをドキュメント化します。"
+
+#: ../../source/reference/data/index.rst:40
+#: ../../source/reference/data/index.rst:81
+#: ../../source/reference/process/process-elements/index.rst:149
+msgid "Annotations"
+msgstr "アノテーション"
+
+#: ../../source/reference/data/index.rst:41
+msgid "Use annotations on your Data Class for advanced configuration. The annotations will be written as is into the generated Java file. Therefore, you need to use the fully qualified name of the annotation and provide all desired arguments."
+msgstr "データクラスでアノテーションを使用して、高度な設定を行うことができます。アノテーションは、生成された Java ファイルにそのまま書き込まれます。そのため、アノテーションの完全修飾名を使用し、必要な引数をすべて指定する必要があります。"
+
+#: ../../source/reference/data/index.rst:45
+msgid "Class type"
+msgstr "クラスタイプ"
+
+#: ../../source/reference/data/index.rst:46
+msgid "Change the type of your Data Class:"
+msgstr "データクラスのタイプを変更します。"
+
+#: ../../source/reference/data/index.rst:48
+msgid ":ref:`Data <data-classes>`"
+msgstr ":ref:`データ<data-classes>`"
+
+#: ../../source/reference/data/index.rst:49
+msgid ":ref:`Business Data <business-data>`"
+msgstr ":ref:`ビジネスデータ<business-data>`"
+
+#: ../../source/reference/data/index.rst:50
+msgid ":ref:`Entity <persistence-entity-classes>`"
+msgstr ":ref:`エンティティ<persistence-entity-classes>`"
+
+#: ../../source/reference/data/index.rst:55
+msgid "The attributes specify the Data Class contents. Select an attribute in the table to view and edit its properties."
+msgstr "属性はデータクラスの内容を指定します。表で属性を選択すると、そのプロパティを表示、編集できます。"
+
+#: ../../source/reference/data/index.rst:58
+msgid "Name / Type / Comment"
+msgstr "名前／タイプ／コメント"
+
+#: ../../source/reference/data/index.rst:60
+msgid "The name of your attribute. The name must not contain any special characters or spaces."
+msgstr "属性の名前。名前に特殊文字やスペースを含めることはできません。"
+
+#: ../../source/reference/data/index.rst:64
+msgid "The type of your attribute. Press |data-type-browser-icon| to open the :ref:`data-type-browser`."
+msgstr "属性のタイプ。|data-type-browser-icon| をクリックすると、 :ref:`data-type-browser` が開きます。"
+
+#: ../../source/reference/data/index.rst:70
+msgid "Data Type Browser Button"
+msgstr "データ型ブラウザボタン"
+
+#: ../../source/reference/data/index.rst:67
+msgid "Comment"
+msgstr "コメント"
+
+#: ../../source/reference/data/index.rst:68
+msgid "Use this field to document your attribute."
+msgstr "このフィールドを使用して、属性をドキュメント化します。"
+
+#: ../../source/reference/data/index.rst:77
+msgid "Decide if the data should be persistent between task switches. If the data is not set to be persistent, then you lose all information if the execution of the process passes a task switch process element."
+msgstr "タスクスイッチ間でデータを永続化するかどうかを決定します。データが永続に設定されていない場合、プロセスの実行がタスクスイッチプロセス要素を通過すると、すべての情報が失われます。"
+
+#: ../../source/reference/data/index.rst:82
+msgid "Use annotations on your attributes for advanced configuration. The annotations will be written as is into the generated Java file. Therefore, you need to use the fully qualified name of the annotation and provide all desired arguments."
+msgstr "属性でアノテーションを使用して、高度な設定を行うことができます。アノテーションは、生成された Java ファイルにそのまま書き込まれます。そのため、アノテーションの完全修飾名を使用し、必要な引数をすべて指定する必要があります。"
 
 #: ../../source/reference/dialog/form-editor.rst:4
 msgid "Form Editor"
@@ -25820,3 +25632,93 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "Grid: Toggle the grid mode. (You can also set the grid mode in the :ref:`process-editor-preferences`)"
 #~ msgstr "グリッド：グリッドモードを切り替えます。 :ref:`process-editor-preferences` でグリッドモードを設定することもできます。）"
+
+#~ msgid "New Data Class Wizard"
+#~ msgstr "データクラスの作成ウィザード"
+
+#~ msgid "The New Data Class wizard lets you create a new global Data Class. Start the wizard by selecting *File > New > Data Class*."
+#~ msgstr "データクラスの作成ウィザードでは、新しいグローバルデータクラスを作成できます。 *［ファイル］、［新規］、［データクラス]* の順に選択して、ウィザードを開始します。"
+
+#~ msgid "Choose the project, to which the new Data Class should belong."
+#~ msgstr "新しいデータクラスが属するプロジェクトを選択します。"
+
+#~ msgid "Choose a namespace for your Data Class. The namespace lets you create a structure to organize your data. Use the dot character '.' to separate the folders. The namespace will be visible in the Axon Ivy project tree."
+#~ msgstr "データクラスの名前空間を選択します。名前空間を使用して、データを整理するための構造を作成できます。フォルダーを区切るには、ドット文字「.」を使用します。名前空間は Axon Ivy プロジェクトツリーに表示されます。"
+
+#~ msgid "Data Class Name"
+#~ msgstr "データクラス名"
+
+#~ msgid "Enter the name of your Data Class."
+#~ msgstr "データクラスの名前を入力します。"
+
+#~ msgid "Attribute Refactoring"
+#~ msgstr "属性のリファクタリング"
+
+#~ msgid "The Data Class editor supports Data Class attribute refactoring."
+#~ msgstr "データクラスエディターは、データクラス属性のリファクタリングをサポートします。"
+
+#~ msgid "Combine Attributes Refactoring"
+#~ msgstr "属性結合リファクタリング"
+
+#~ msgid "Over time, the number of attributes in a Data Class may become excessive. This decreases the maintainability and reusability of your process logic. Therefore, the editor allows you to combine multiple attributes from an existing Data Class into a new Data Class. The combined attributes will be replaced with a delegate attribute for the new Data Class."
+#~ msgstr "時間の経過とともに、データクラス内の属性の数が過剰になり、プロセスロジックの保守性と再利用性を低下することがあります。そのため、エディターでは、既存のデータクラスから複数の属性を新しいデータクラスに結合できます。結合された属性は、新しいデータクラスの委任属性に置き換えられます。"
+
+#~ msgid "If you have a Data Class that describes a person, you could combine the attributes that belong to the address part into an extra address Data Class."
+#~ msgstr "人物を記述するデータクラスがある場合、住所の部分に属する属性を結合して、追加の住所データクラスにすることができます。"
+
+#~ msgid "Data Class before refactoring"
+#~ msgstr "リファクタリング前のデータクラス"
+
+#~ msgid "Data Class after refactoring"
+#~ msgstr "リファクタリング後のデータクラス"
+
+#~ msgid "**Start Refactoring**"
+#~ msgstr "**リファクタリングの開始**"
+
+#~ msgid "Select the attributes to combine in the table, then press |combine-attributes-icon| to open the refactoring wizard."
+#~ msgstr "表で結合する属性を選択し、|combine-attributes-icon| をクリックしてリファクタリングウィザードを開きます。"
+
+#~ msgid "Combine Attributes Button"
+#~ msgstr "属性結合ボタン"
+
+#~ msgid "**Define the new Data Class**"
+#~ msgstr "**新しいデータクラスの定義**"
+
+#~ msgid "The first refactoring wizard page lets you define the location and name of the Data Class."
+#~ msgstr "リファクタリングウィザードの最初のページでは、データクラスの場所と名前を定義します。"
+
+#~ msgid "Wizard Page 1 - Define the new Data Class"
+#~ msgstr "ウィザードの 1 ページ目 - 新しいデータクラスの定義"
+
+#~ msgid "**Review modifications**"
+#~ msgstr "**変更の確認**"
+
+#~ msgid "The second page previews all changes that will be applied to your artifacts. You can inspect some of the changes within the textual compare view on the lower part of the page."
+#~ msgstr "2 ページ目では、アーティファクトに適用されるすべての変更をプレビューします。ページ下部のテキスト比較ビューで、変更の一部を精査できます。"
+
+#~ msgid "Wizard Page 2 - Review modifications"
+#~ msgstr "ウィザードの 2 ページ目 - 変更の確認"
+
+#~ msgid "The refactoring will modify all programmatic references to attributes. Statements written in Java, IvyScript, JSP or El-Expressions may be changed by this refactoring."
+#~ msgstr "リファクタリングにより、プログラムによる属性へのすべての参照が変更されます。Java、IvyScript、JSP、El-Expressions で書かれたステートメントは、このリファクタリングによって変更される可能性があります。"
+
+#~ msgid "In this content management system you can see eight content objects. Where :code:`/`, :code:`/documents`, :code:`/images` and :code:`/labels`` are folders and serve only for hierarchical presentation. The content objects with real values are:"
+#~ msgstr "このコンテンツ管理システムには、8つのコンテンツオブジェクトがあります。:code:`/`、:code:`/documents`、:code:`/images`および:code:`/labels``はフォルダーで、階層を表すためにのみ使用されます。実際の値を持つコンテンツオブジェクト："
+
+#~ msgid ":code:`/documents/instruction` is a PDF file content object with two content object values for the languages English and German."
+#~ msgstr ":code:`/documents/instruction` は、英語とドイツ語の 2 つのコンテンツオブジェクト値を持つ PDF ファイルコンテンツオブジェクトです。"
+
+#~ msgid ":code:`/images/doc` is a PNG file content object with only one content object value and no language assignment."
+#~ msgstr ":code:`/images/doc` は、PNG ファイルコンテンツオブジェクトです。コンテンツオブジェクトの値は 1 つだけで、言語の割り当てはありません。"
+
+#~ msgid ":code:`/labels/birthday` and :code:`/labels/name` are texts with translations for English and German."
+#~ msgstr ":code:`/labels/birthday` と :code:`/labels/name` は、英語とドイツ語に翻訳されたテキストです。"
+
+#~ msgid "CMS example"
+#~ msgstr "CMS の例"
+
+#~ msgid "The CMS shown above is mapped transparently on the file system. The files are stored in the appropriate locations and the texts all in the :file:`cms_*.yaml` files. The locale information is appended to the end of the file."
+#~ msgstr "上記の CMS は、ファイルシステム上に透過的にマッピングされます。ファイルは適切な場所に格納され、テキストはすべて :file:`cms_*.yaml` ファイルに格納されます。ロケール情報はファイルの最後に追加されます。"
+
+#~ msgid "CMS filesystem structure"
+#~ msgstr "CMS ファイルシステムの構造"
