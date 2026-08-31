@@ -1,0 +1,24 @@
+digraph acme_webshop {
+  graph [rankdir=TB, bgcolor="transparent", fontname="Helvetica", nodesep=0.55, ranksep=0.65, pad=0.12]
+  node [shape=box, style="rounded,filled", color="#1683a5", fillcolor="#ffffff", fontcolor="#243746", fontname="Helvetica", fontsize=11, margin="0.22,0.12"]
+  edge [color="#55717d", arrowsize=0.75, penwidth=1.1]
+
+  subgraph cluster_application {
+    label="Tailored Acme Webshop Application"
+    color="#d95757"
+    fontcolor="#b33b3b"
+    fontname="Helvetica"
+    fontsize=11
+    penwidth=1.2
+    style="rounded,dashed"
+
+    acme [label="Acme Webshop", fillcolor="#c9e8c4", color="#3c8f60", fontcolor="#285338", penwidth=1.4]
+    webshop [label="Webshop", fillcolor="#e7f2e2", fontcolor="#315b3a"]
+    frontend [label="Frontend\nDoOrder", fillcolor="#f3f8fa", fontcolor="#243746"]
+    backend [label="Backend\nProcessOrder", fillcolor="#f3f8fa", fontcolor="#243746"]
+    shipment [label="Shipment\nShipping", fillcolor="#f3f8fa", fontcolor="#243746"]
+
+    acme -> webshop [label="overrides"]
+    webshop -> {frontend backend shipment}
+  }
+}
