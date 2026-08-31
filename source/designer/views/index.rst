@@ -6,7 +6,39 @@ Views
 Debug View
 ----------
 
+.. _debugger-debug-process:
+
+Process Debug
+~~~~~~~~~~~~~
+
 tbd
+
+.. _debugger-debug-java:
+
+Java Debug
+~~~~~~~~~~
+
+You can debug java classes in the Axon Ivy Designer, by 
+add :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n` to the 
+VM arguments of the engine, e.g. via :ref:`designer-engine-config-args`. 
+If you do this change, you have to restart your engine, e.g. by run the :code:`Reload Window` command in Vs Code.
+
+Then add a java launch configuration to your :file:`.vscode/launch.json` file.
+
+.. code-block:: json
+
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "java",
+                "name": "Debug Axon Ivy Dev Engine",
+                "request": "attach",
+                "hostName": "localhost",
+                "port": "8000"
+            }
+        ]
+    }
 
 
 .. _problems-view:

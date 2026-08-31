@@ -1,6 +1,19 @@
 Configuration
 =============
 
+.. _designer-engine-config:
+
+Engine
+------
+
+.. _designer-engine-config-args:
+
+Engine Arguments
+~~~~~~~~~~~~~~~~
+
+If the extension manages the engine, you can configure additional VM args here.
+
+
 .. _designer-animation-config:
 
 Process Animation

@@ -358,7 +358,7 @@ the objects are described in the :public-api:`Public API </>`):
    Axon Ivy ``extensions``
 
 -  ``datacache`` - the reference to the :public-api:`IDataCacheContext </ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` instances
-   for the application and session (see :ref:`data-cache`)
+   for the application and session
 
 -  ``persistence`` - references to the existing persistence units in
    this application (see :ref:`persistence-configuration-editor`
