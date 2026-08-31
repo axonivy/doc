@@ -974,9 +974,8 @@ msgid "Knowing this, we can now specifically override and redefine components fr
 msgstr "これを踏まえて、*Acme Webshop* プロジェクト内でコンポーネントを再定義することで、元の一般的な *ウェブショップ* アプリケーションの特定のコンポーネントをオーバーライドして再定義できます。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:62
-#, fuzzy
 msgid "To define the *Acme web shop* project as an overriding project. you can define a :ref:`strict_overriding` in the generic *Web shop* application. To start with however, make sure your overriding project is dependent on the base project and that each override is defined in your overriding project."
-msgstr "*Acme Webshop* プロジェクトをオーバーライドする側のプロジェクトとして使用する方法は 2 つあります。1 つは、一般的な *ウェブショップ* アプリケーションで :ref:`strict_overriding` を定義する方法です。ただし、まず始めに、オーバーライドする側のプロジェクトがベースプロジェクトに依存しており、 :ref:`overrides-editor` 」で説明されているように、オーバーライドする側のプロジェクトで各オーバーライドが定義されていることを確認してください。"
+msgstr "*Acme web shop* プロジェクトをオーバーライドするプロジェクトとして定義するには、一般的な *Web shop* アプリケーションで :ref:`strict_overriding` を定義できます。ただし、まず、オーバーライドするプロジェクトがベースプロジェクトに依存しており、各オーバーライドがオーバーライドするプロジェクト内で定義されていることを確認してください。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:73
 msgid "Strict Overriding"
@@ -1003,9 +1002,8 @@ msgid "To strictly set the overriding project you have to configure it in the :r
 msgstr "オーバーライドするプロジェクトを厳密に設定するには、 :ref:`app-yaml` で設定する必要があります。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:112
-#, fuzzy
 msgid "While working on your project with strict overriding you have to define the overriding project in the **Designer** as well. This can easily be achieved with by setting the config in the :ref:`Engine Cockpit Application detail view <engine-cockpit-application-detail>`. Alternatively you can find the :ref:`app-yaml` for the Designer under *designerDir/configuration/app-designer.yaml*."
-msgstr "厳密にオーバーライドを設定したプロジェクトで作業する場合、オーバーライドするプロジェクトを**デザイナー** でも定義する必要があります。この定義は :ref:`overrides-editor` を使用して、簡単に行うことができます。また、*designerDir/configuration/app-designer.yaml* の下にあるデザイナーの :ref:`app-yaml` でも定義できます。"
+msgstr "厳密なオーバーライドを使用するプロジェクトで作業する場合、オーバーライドするプロジェクトを **Designer** でも定義する必要があります。これは、:ref:`Engine Cockpit Application detail view <engine-cockpit-application-detail>` で設定を行うことで簡単に実現できます。あるいは、Designer 用の :ref:`app-yaml` は *designerDir/configuration/app-designer.yaml* にあります。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:120
 msgid "Overrides cannot be \"stacked\" - you can only override a component that is not itself an override. Axon Ivy Designer will warn you about this."
@@ -11602,9 +11600,8 @@ msgid "To implement a user interaction that consists of several pages (for examp
 msgstr "複数のページで構成されるユーザーインタラクション（ウィザードなど）を実装する場合、1 つの HTML ダイアログに複数のビュー（.xhtml ファイル）を設定できます。これにより、複雑なユーザーインタラクションを 1 つの HTML ダイアログに入れ、ビジネスプロセスから取り出すことができます。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:11
-#, fuzzy
 msgid "You find an example of a multi-view HTML Dialog in the :ref:`HTMLDialogDemos project <importing-demo-projects>`."
-msgstr "Axon Ivy Designer に付属する :ref:`HTMLDialogDemos プロジェクト<importing-demo-projects>` あるマルチビューの HTML ダイアログの例を参照してください。"
+msgstr "マルチビュー HTML ダイアログの例は、:ref:`HTMLDialogDemos プロジェクト<importing-demo-projects>` にあります。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preferences.rst:4
 msgid "HTML Dialog Preferences"
