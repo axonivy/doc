@@ -24,8 +24,7 @@ has different parts:
 Accessibility
 ~~~~~~~~~~~~~
 
-Axon Ivy Project Tree > double click on a *process* node inside the
-project tree (|image3|)
+Axon Ivy Project Tree > double click on a *process* node inside the project tree
 
 .. _process-editor-tool-bar:
 
@@ -342,4 +341,3 @@ Jump out
 
 
 .. |image2| image:: /_images/process-editor/process-editor.png
-.. |image3| image:: /_images/process-modeling/process-node.png

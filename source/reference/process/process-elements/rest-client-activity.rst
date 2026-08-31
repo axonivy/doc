@@ -110,6 +110,9 @@ Error Tab
 
 -  **On Status Code not successful**: Fail automatically with an Error Code if the HTTP response status code is not in the 200 family. Pick '*>> Ignore Error*' if other status codes are valid and expected.
 
+
+.. _process-element-rest-client-activity-output-data-tab:
+
 Output Data Tab
 ~~~~~~~~~~~~~~~
 
@@ -148,7 +151,8 @@ JSON to Java
 The mapping of a JSON response body to a Java object is a simple task.
 Think of a service that returns a complex JSON. E.g:
 
-::
+.. code-block:: json
+   :caption: Example JSON
 
    {
      "id": 1,
@@ -176,39 +180,43 @@ Think of a service that returns a complex JSON. E.g:
 
 You can handle this complex JSON object with one of these solutions:
 
-1. **Map to Data Class**: Create a Data Class with the attributes you
-   need in the business process. Read the result body with this Data
+**Map to Data Class**:
+   Create a Data Class with the attributes you
+   need in the business process, e.g. :code:`name` as String, :code:`email` as String and :code:`phone` as String. 
+   Read the :ref:`result body <process-element-rest-client-activity-output-data-tab>` with this Data
    Class. Every attribute that matches by name (case sensitive) with an
    attribute in the JSON object will be mapped. Assign the ``result``
-   object to an attribute of your process data. This option should be
-   used if you want to reflect a small JSON structure.
+   object to an attribute of your process data. 
+   This option should be used if you want to reflect a small JSON structure.
 
-   |image9|
+   .. code-block:: java
+      :caption: Map to Data Class in code block
 
-   |image10|
+      out.user = result
 
-2. **Map to Generated Class**: Paste the JSON you receive from the
+**Map to Generated Class**: 
+   Paste the JSON you receive from the
    service into a Java object source generator like
    http://www.jsonschema2pojo.org/. Generate the Java sources for the
    JSON structure. Download the sources and add them to a special source
-   folder (E.g., ``src_generated``). Now you can read the response body
-   to an object of this generated class.
-
+   folder (E.g., ``src_generated``). Now you can :ref:`read the response body <process-element-rest-client-activity-output-data-tab>`
+   to an object of this generated class, like described before.
    This option should be used if you want to represent a complex JSON
    structure without writing code yourself.
 
-   |image11|
-
-   |image12|
-
-   |image13|
-
-3. **Map to JSON Node**: Read the result body as ``JsonNode`` object.
+**Map to JSON Node**: 
+   Read the :ref:`result body <process-element-rest-client-activity-output-data-tab>` 
+   as :code:`tools.jackson.databind.JsonNode` object.
    Navigate through the object tree and read its field values manually.
    This option should be used if you don't want to reflect the whole
    object structure and only need parts from the object tree.
 
-   |image14|
+   .. code-block:: java
+      :caption: Map to JSON Node in code block
+
+      out.name = result.get("name").asText();
+      out.city = result.get("address").get("city").asText();
+
 
 Customization
 -------------
@@ -229,7 +237,7 @@ will be applied to this client variable.
 
 **JAX-RS Example**:
 
-::
+.. code-block:: java
 
   import javax.ws.rs.client.Entity;
   import com.fasterxml.jackson.databind.JsonNode;
@@ -262,7 +270,7 @@ will be applied to this client variable.
   to the connection pool. Over time all connections in the pool are consumed and all new requests 
   will be blocked forever. 
 
-:: 
+.. code-block:: java
 
   Response response = client.request().put(Entity.form(map));
   try {
@@ -288,7 +296,7 @@ provides fluent API to call the remote REST service.
 
 **Java Example**
 
-::
+.. code-block:: java
 
    // retrieve pre-configured REST service client
    WebTarget client = Ivy.rest().client("myServiceName");
@@ -324,10 +332,4 @@ as an example:
 .. |image4| image:: /_images/process-inscription/rest-client-tab-request-body-raw.png
 .. |image5| image:: /_images/process-inscription/rest-client-tab-request-body-form.png
 .. |image6| image:: /_images/process-inscription/rest-client-tab-request-body-entity.png
-.. |image9| image:: /_images/process-elements/rest-client-activity-consume-data-class-structure.png
-.. |image10| image:: /_images/process-elements/rest-client-activity-consume-data-class.png
-.. |image11| image:: /_images/process-elements/rest-client-activity-consume-class-generator-site.png
-.. |image12| image:: /_images/process-elements/rest-client-activity-consume-generated-sources.png
-.. |image13| image:: /_images/process-elements/rest-client-activity-consume-generated-class.png
-.. |image14| image:: /_images/process-elements/rest-client-activity-consume-nodes-manually.png
 .. |image15| image:: /_images/process-inscription/rest-client-tab-request-jaxrs.png
