@@ -13,7 +13,6 @@ possible to create, read, update, and delete (CRUD) entity objects directly
 from/to the database using either the :ref:`persistence-api` or more conveniently with 
 the entity's :ref:`data-repository-api`.
 
-Entity Classes are created with the :ref:`persistence-entity-class-new-wizard`
-and can be edited afterward in the :ref:`persistence-entity-class-editor`. Both
-are similar to the wizard and editor for regular Data Classes but allow for the
+Entity Classes can be edited in the :ref:`persistence-entity-class-editor`. It is 
+similar to the wizard and editor for regular Data Classes but allows for the
 specification of additional settings necessary for automated persistence.

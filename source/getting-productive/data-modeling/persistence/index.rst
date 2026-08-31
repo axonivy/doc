@@ -32,8 +32,6 @@ intricate and specialized data manipulation tasks.
   :maxdepth: 1
 
   entity-classes
-  new-entity-class-wizard
-  entity-class-editor
   generate-database-schema
   data-repository-api
   persistence-api
