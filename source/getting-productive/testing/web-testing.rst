@@ -41,8 +41,6 @@ input values is displayed.
 .. literalinclude:: includes/webtesting/webtesting-test-extend.java
   :language: java
 
-.. figure:: /_images/testing/webtesting-run.gif
-
 .. tip::
 
   The :ref:`@IvyWebTest <web-tester>` annotation can be configured (e.g to
