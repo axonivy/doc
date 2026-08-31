@@ -14,11 +14,9 @@ In Axon Ivy, we use :ref:`html-dialogs` - or HD for short
   :maxdepth: 1
 
   user-dialog-concept
-  new-user-dialog-wizard
   html-dialogs
   html-dialog-themes
   html-dialog-view-types
-  html-dialog-preferences
   html-dialog-preview
   html-dialog-multiple-views
   html-dialog-converters
