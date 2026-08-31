@@ -5,12 +5,9 @@ This chapter provides an alphabetized glossary for specialized
 expressions and terms that are employed in this book.
 
 Application
-   On the Axon Ivy Engine one or more Applications can exist. The
-   Application defines the container wherein the :ref:`Process Models <glossar-process-model>` can be deployed.
-
-   Also :Ref:`Users <glossar-user>` and :ref:`Roles <glossar-role>`
-   are defined and :ref:`Tasks <glossar-task>` and
-   :ref:`Cases <glossar-case>` are stored in an Application.
+   On the Axon Ivy Engine one or more Applications can exist. The Application
+   defines the container wherein the :ref:`Projects
+   <glossar-project>` can be deployed.
 
    See also section :ref:`Application <application>`.
 
@@ -102,27 +99,25 @@ Process Element
    The chapter :ref:`process-elements`
    describes all the Process Elements available.
 
-.. _glossar-process-model:
+.. _glossar-application-version:
 
-Process Model
-   A Process Model on the Engine corresponds to an Axon Ivy project on
-   the Designer. The difference is that a Process Model may hold
-   multiple different versions of the same Axon Ivy project. These are
-   called :ref:`Process Model Version <glossar-process-model-version>`.
+Application Version
 
-   See also section :ref:`Process Model <process-model>` in
-   chapter Deployment.
-
-.. _glossar-process-model-version:
-
-Process Model Version
-   A :ref:`Process Model <glossar-process-model>` can have multiple
-   versions called Process Model Versions. These versions allow to
+   A :ref:`Application  <glossar-application>` can have multiple
+   versions called Application Versions. These versions allow to
    change an Axon Ivy project without worrying about the compatibility
    of currently running :ref:`Cases <glossar-case>` on the Engine.
 
-   See also section :ref:`Process Model Version <process-model-version>` in chapter
-   Deployment.
+   See also section :ref:`Process Model Version <process-model-version>`.   
+
+.. _glossar-project:
+
+Project
+   A Project on the Engine corresponds to an Axon Ivy project on the Designer.
+   The difference is that a Applicatinon may hold multiple different application
+   verions, which contains of the same Axon Ivy project.
+
+   See also section :ref:`Project <project>`.
 
 .. _glossar-role:
 
