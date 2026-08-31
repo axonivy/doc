@@ -48,14 +48,13 @@ monitoring tools provide a user interface to browse the available MBeans.
 Commonly, these MBeans are displayed in a tree built with the information
 provided in the names of the MBeans. 
 
-.. figure:: /_images/monitoring/visualvm-mbeans.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
 
 The :ref:`engine-cockpit` also contains a built-in
 :ref:`engine-cockpit-monitor-mbeans` browser. Therefore, you do not need to
 install an external monitoring tool for a glance at your engine's vital signs.
 
-Where possible, Axon Ivy Engine MBeans names contain application, process 
-model, process model version, or environment name. 
+Where possible, Axon Ivy Engine MBeans names contain application, project, etc. 
 
 **Examples of typical Axon Ivy MBean names:**
 
@@ -63,13 +62,10 @@ model, process model version, or environment name.
 
     ivy Engine:type=External Web Service,application=MyApplication,name=Echo (43838347ABCD)
     ivy Engine:type=Job Manager
-    ivy Engine:type=Process Start Event Bean,application=MyApplication,pm=MyProcessModel,pmv=1,name="MyStartEventBean (3485471349/start.ivp)"
+    ivy Engine:type=Process Start Event Bean,application=MyApplication,version=1,project=MyProcessModel,name="MyStartEventBean (3485471349/start.ivp)"
 
-The name and description of an MBean are available in its meta information (see
-the Metadata tab in the MBeans tab of VisualVM). MBeans provide information
-through attributes and operations. The description of the attributes and
-operations is also contained in the meta information (also in the tool tips in
-the Attributes and Operations tab of VisualVM's MBeans tab).
+The name and description of an MBean are available in its meta information. MBeans provide information
+through attributes and operations.
 
 .. warning::
     Manipulating attribute values or calling operations on MBeans will
@@ -92,23 +88,23 @@ contain information about memory used (Java heap), CPU load, uptime, etc.
 
 The list below contains some of the provided information:
 
-**External Database** (connections, transactions, errors, execution times, etc.)
+**Database** (connections, transactions, errors, execution times, etc.)
 
 .. code:: properties
         
-    ivy Engine:type=External Database,application=*,name=*
+    ivy Engine:type=Database,application=*,name=*
 
 **Web Service** (calls, errors, execution time, etc.)
 
 .. code:: properties
         
-    ivy Engine:type=External Web Service,application=*,name=*
+    ivy Engine:type=Web Service,application=*,name=*
 
 **REST Web Service** (calls, errors, execution time, slow calls, etc.)
 
 .. code:: properties
         
-    ivy Engine:type=External REST Web Service,application=*,name=*
+    ivy Engine:type=REST Web Service,application=*,name=*
 
 **System Database** (connections, transactions, errors, execution time, etc.)
 
@@ -141,21 +137,19 @@ The list below contains some of the provided information:
 
 .. code:: properties
    
-    ivy Engine:type=Process Start Event Bean,,application=*,pm=*,pmv=*,name=*
+    ivy Engine:type=Process Start Event Bean,,application=*,name=*
 
 **Process Intermediate Event Beans** (polls, firings, errors, execution time, etc.)
 
 .. code:: properties
 
-    ivy Engine:type=Process Intermediate Event Bean,application=*,pm=*,pmv=*,name=*
+    ivy Engine:type=Process Intermediate Event Bean,application=*,name=*
 
-**Application, Process Model and Process Model Version, Library information** (activity state, release state, name, description, etc.)
+**Application information** (activity state, release state, name, description, etc.)
 
 .. code:: properties
 
     ivy Engine:type=Application,name=*
-    ivy Engine:type=Process Model,application=*,name=*
-    ivy Engine:type=Process Model Version,application=*,pm=*,name=*
 
 **Cluster, Cluster Nodes, and Cluster Communication information** (received and sent message, errors, execution time, etc.)
 
