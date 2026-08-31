@@ -11,35 +11,6 @@ You can import existing Axon Ivy projects into your workspace using the
 :code:`Axon Ivy: Import Axon Ivy Project Archive (.iar or .zip)` command.
 
 
-.. _importing-demo-projects:
-
-Importing demo projects
-~~~~~~~~~~~~~~~~~~~~~~~
-
-The Axon Ivy Designer can import several demo projects, which are
-provided from our Market (internet connection needed). Those
-demo projects are in the Axon Ivy Archive (\*.iar) format and can be imported
-with the help of the :ref:`Axon Ivy Market <market>`.
-
-The following projects are available for Axon Ivy Designer:
-
-.. table:: Demo projects for the Designer.
-
-   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Project name       | Demo content                                                                                                                                                      |
-   +====================+===================================================================================================================================================================+
-   | ConnectivityDemos  | Demonstrates the consuming and providing of :ref:`integration-rest` with ivy.                                                                                     |
-   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | ErrorHandlingDemos | Samples that demonstrate the :ref:`error-handling`.                                                                                                               |
-   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | HTMLDialogDemos    | Demonstrates several JSF components that can be used in :ref:`html-dialogs`.                                                                                      |
-   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | RuleEngineDemos    | Shows how to use the :ref:`rule-engine`.                                                                                                                          |
-   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | WorkflowDemos      | Demonstrates how to handle typical Workflow use cases, makes use of features like :ref:`Signals <signal-reference>` and :ref:`business-data`                      |
-   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 .. _designer-export-project:
 
 Exporting a Project
@@ -47,7 +18,6 @@ Exporting a Project
 
 Axon Ivy projects can be exported from the workspace with the 
 :code:`Axon Ivy: Export Axon Ivy Project Archive (.iar)` command.
-
 
 
 .. _project-convert:
@@ -86,4 +56,36 @@ and any missing but required artifacts will be added.
 
 In the :ref:`migration-notes`, migration tasks marked with |tag-project-auto-convert| 
 will run with this command.
+
+
+.. _designer-market-install:
+
+Install Market Products
+-----------------------
+
+Our :ref:`Axon Ivy Market <market>` has many already built connectors to 3rd-party systems, utilites or demos 
+that you can easily integrate into your Axon Ivy projects.
+Run the :code:`Axon Ivy: Install Market Product` command to integrate these market products 
+or run the command :code:`Axon Ivy: Install Local Market Product` to integrate market products 
+from a local source into your project.
+
+.. _importing-demo-projects:
+
+Importing demo projects
+~~~~~~~~~~~~~~~~~~~~~~~
+
+We have several demo projects which explain some typical use cases, e.g.:
+
+**Connectivity Features**
+    Demonstrates the consuming and providing of :ref:`integration-rest` with ivy.
+   
+**Error Handling Demos**
+    Samples that demonstrate the :ref:`error-handling`.
+
+**Html Dialog Demos**
+    Demonstrates several JSF components that can be used in :ref:`html-dialogs`.
+   
+**Workflow Demos**
+    Demonstrates how to handle typical Workflow use cases, makes use of features like :ref:`Signals <signal-reference>` and :ref:`business-data`
+
 
