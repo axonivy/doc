@@ -2398,9 +2398,8 @@ msgid "tag-project-auto-convert"
 msgstr "tag-project-auto-convert"
 
 #: ../../source/designer/commands.rst:64
-#, fuzzy
 msgid "Install Market Products"
-msgstr "マーケットからのインストール"
+msgstr "マーケット製品のインストール"
 
 #: ../../source/designer/commands.rst:66
 msgid "Our :ref:`Axon Ivy Market <market>` has many already built connectors to 3rd-party systems, utilites or demos that you can easily integrate into your Axon Ivy projects. Run the :code:`Axon Ivy: Install Market Product` command to integrate these market products or run the command :code:`Axon Ivy: Install Local Market Product` to integrate market products from a local source into your project."
@@ -2415,36 +2414,32 @@ msgid "We have several demo projects which explain some typical use cases, e.g.:
 msgstr ""
 
 #: ../../source/designer/commands.rst:79
-#, fuzzy
 msgid "**Connectivity Features**"
-msgstr "セキュリティ機能"
+msgstr "**Connectivity Features**"
 
 #: ../../source/designer/commands.rst:80
 msgid "Demonstrates the consuming and providing of :ref:`integration-rest` with ivy."
 msgstr "Ivy を使用した :ref:`integration-rest` の消費および提供のデモです。"
 
 #: ../../source/designer/commands.rst:82
-#, fuzzy
 msgid "**Error Handling Demos**"
-msgstr "ErrorHandlingDemos"
+msgstr "**Error Handling Demos**"
 
 #: ../../source/designer/commands.rst:83
 msgid "Samples that demonstrate the :ref:`error-handling`."
 msgstr ":ref:`error-handling` を示すサンプル。"
 
 #: ../../source/designer/commands.rst:85
-#, fuzzy
 msgid "**Html Dialog Demos**"
-msgstr "HTMLDialogDemos"
+msgstr "**Html Dialog Demos**"
 
 #: ../../source/designer/commands.rst:86
 msgid "Demonstrates several JSF components that can be used in :ref:`html-dialogs`."
 msgstr ":ref:`html-dialogs` で使用できるいくつかの JSF コンポーネントのデモです。"
 
 #: ../../source/designer/commands.rst:88
-#, fuzzy
 msgid "**Workflow Demos**"
-msgstr "WorkflowDemos"
+msgstr "**Workflow Demos**"
 
 #: ../../source/designer/commands.rst:89
 msgid "Demonstrates how to handle typical Workflow use cases, makes use of features like :ref:`Signals <signal-reference>` and :ref:`business-data`"
@@ -5187,9 +5182,8 @@ msgid "The :ref:`engine-cockpit` also contains a built-in :ref:`engine-cockpit-m
 msgstr "また、 :ref:`engine-cockpit` には、 :ref:`engine-cockpit-monitor-mbeans` ブラウザが組み込まれています。そのため、エンジンの状態を見るための外部の監視ツールをインストールする必要はありません。"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:57
-#, fuzzy
 msgid "Where possible, Axon Ivy Engine MBeans names contain application, project, etc."
-msgstr "可能な場合、Axon Ivy Engine の MBean の名前には、アプリケーション、プロセスモデル、プロセスモデルバージョン、または環境名が含まれます。"
+msgstr "可能な場合、Axon Ivy Engine の MBean 名には、アプリケーション、プロジェクトなどが含まれます。"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:59
 msgid "**Examples of typical Axon Ivy MBean names:**"
@@ -5220,9 +5214,8 @@ msgid "The list below contains some of the provided information:"
 msgstr "提供される情報の一例を以下のリストに示します。"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:91
-#, fuzzy
 msgid "**Database** (connections, transactions, errors, execution times, etc.)"
-msgstr "**システムデータベース** （接続、トランザクション、エラー、実行時間など）"
+msgstr "**データベース** （接続、トランザクション、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:97
 msgid "**Web Service** (calls, errors, execution time, etc.)"
@@ -5257,9 +5250,8 @@ msgid "**Process Intermediate Event Beans** (polls, firings, errors, execution t
 msgstr "**プロセス中間イベント Bean** （ポーリング、発火、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:148
-#, fuzzy
 msgid "**Application information** (activity state, release state, name, description, etc.)"
-msgstr "**アプリケーション、プロセスモデル、プロセスモデルバージョン、ライブラリの情報** （アクティビティの状態、リリースの状態、名前、説明など）"
+msgstr "**アプリケーション情報** （アクティビティの状態、リリースの状態、名前、説明など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:154
 msgid "**Cluster, Cluster Nodes, and Cluster Communication information** (received and sent message, errors, execution time, etc.)"
@@ -9085,9 +9077,8 @@ msgid "Entity Classes are like global :ref:`data-classes` but with additional in
 msgstr "エンティティクラスはグローバル :ref:`data-classes` に似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。エンティティクラスはデータベーステーブルに直接マッピングされ、エンティティクラスの属性はデータベーステーブルのフィールドに直接マッピングされます。したがって、:ref:`database schema can be generated <persistence-generate-database-schema>` はエンティティクラスから直接生成できます。データベースに対してエンティティオブジェクトの作成、読み取り、更新、削除（CRUD）を直接実行することが可能です。これは、 :ref:`persistence-api` を使用するか、より便利な方法としてエンティティの :ref:`data-repository-api` を利用して行えます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/entity-classes.rst:16
-#, fuzzy
 msgid "Entity Classes can be edited in the :ref:`persistence-entity-class-editor`. It is similar to the wizard and editor for regular Data Classes but allows for the specification of additional settings necessary for automated persistence."
-msgstr "エンティティクラスは :ref:`persistence-entity-class-new-wizard` で作成され :ref:`persistence-entity-class-editor` で編集できます。どちらも通常のデータクラスのウィザードとエディターに似ていますが、自動永続化に必要な追加設定を指定できます。"
+msgstr "エンティティクラスは :ref:`persistence-entity-class-editor` で編集できます。このエディターは通常のデータクラス用のウィザードおよびエディターに似ていますが、自動永続化に必要な追加設定を指定できます。"
 
 #: ../../source/getting-productive/data-modeling/persistence/generate-database-schema.rst:4
 msgid "Generate database schema"
@@ -14345,9 +14336,8 @@ msgid "Configure the Engine (Windows)"
 msgstr "エンジンの設定（Windows）"
 
 #: ../../source/introduction/getting-started/engine/windows/configure.rst:10
-#, fuzzy
 msgid "Shutdown the Axon Ivy Engine first by using one of the engine executables with command line parameters as detailed in :ref:`Engine Launchers <engine-launchers>`. These are well-suited for scripting."
-msgstr "または、 :ref:`エンジンのランチャー<engine-launchers>` で説明しているように、コマンドラインパラメーターを使用して、エンジンの実行ファイルを使用できます。これらはスクリプトに適しています。"
+msgstr ":ref:`エンジンのランチャー<engine-launchers>` で説明しているように、コマンドラインパラメーターを指定してエンジンの実行ファイルのいずれかを使用し、まず Axon Ivy Engine をシャットダウンします。これらはスクリプトに適しています。"
 
 #: ../../source/introduction/getting-started/engine/windows/configure.rst:14
 msgid "to stop an engine running as a console process, execute"
@@ -14434,9 +14424,8 @@ msgid "Right click the :file:`AxonIvyEngine\\*.zip` file and press :guilabel:`Ex
 msgstr ":file:`AxonIvyEngine\\*.zip` ファイルを右クリップし、コンテキストメニューの:guilabel:`すべて展開 ...` をクリックします。"
 
 #: ../../source/introduction/getting-started/engine/windows/install.rst:14
-#, fuzzy
 msgid "On the appearing dialog, press button :guilabel:`Extract`. After the extraction completes, navigate into the new folder :file:`AxonIvyEngine`."
-msgstr "表示されたダイアログで、:guilabel:`展開` ボタンをクリックします。展開が完了したら、新しい :file:`AxonIvyEngine` フォルダーに移動します。インストールフォルダーの中身は以下のようになります。"
+msgstr "表示されたダイアログで、:guilabel:`展開` ボタンをクリックします。展開が完了したら、新しい :file:`AxonIvyEngine` フォルダーに移動します。"
 
 #: ../../source/introduction/getting-started/engine/windows/install.rst:18
 msgid "The most important folders in the Axon Ivy Engine installation folder are:"
