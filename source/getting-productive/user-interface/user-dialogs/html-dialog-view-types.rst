@@ -5,10 +5,6 @@ An HTML Dialog is either a page or a component. Both are complete HTML Dialogs.
 Both have their own model (data class), view, and controller (logic). This
 concept allows to build component-oriented UI design.
 
-.. note::
-
-   The templates for page and component are configured in the
-   :ref:`html-dialog-preferences`.
 
 HTML Dialog Page
 ^^^^^^^^^^^^^^^^
@@ -28,12 +24,7 @@ dialogs. An HTML Dialog Page references a layout and implements defined parts of
 it. For example, the layout provides the header- and footer-area whereas the
 content area is individually implemented on each dialog.
 
-Axon Ivy is delivered with a set of predefined layouts. The layout (together
-with the view type) is chosen in the :ref:`New User Dialog Wizard
-<user-dialog-new-wizard-page-1>`.
-
-For more information about templating, have a look at the official JSF
-documentation.
+Axon Ivy is delivered with a set of predefined layouts.
 
 
 Custom HTML Dialog Layouts
@@ -46,12 +37,8 @@ To add a custom layout - which is a normal XHTML file - it needs to be stored in
 the :file:`webContent` folder of the project. In doing so, the custom layout can
 now be referenced as a layout inside an HTML Dialog.
 
-To make the custom layout show up in the :ref:`New User Dialog Wizard
-<user-dialog-new-wizard-page-1>` (for selection of the view type), it has to be
-stored in the folder ``webContent/layouts`` of the project.
-
-The folder structure of ``webContent/layouts`` should follow the
-following contract:
+It is recommended to add custom layouts into the folder ``webContent/layouts``, following the
+structure:
 
 -  ``webContent/layouts/[MyTemplateName].xhtml``
 -  ``webContent/layouts/[A sub folder]/[for additional template content]``

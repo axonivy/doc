@@ -39,12 +39,6 @@ Connector
    :ref:`Process <glossar-process>`. This defines the sequence of
    these two steps.
 
-Form Field
-   A Form Field is a JSF code snippet which serves content for a
-   specific data class field type (e.g., a Label and a Datepicker for a
-   Date). The :ref:`New User Dialog Wizard <user-dialog-new-wizard>`
-   create forms with Form Fields.
-
 HTML Dialog
    A :ref:`HTML Dialog <html-dialogs>` is an implementation of a
    :ref:`User Dialog <user-dialogs>`. The HTML Dialog is implemented with
