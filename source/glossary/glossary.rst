@@ -4,6 +4,8 @@ Glossary
 This chapter provides an alphabetized glossary for specialized
 expressions and terms that are employed in this book.
 
+.. _glossar-application:
+
 Application
    On the Axon Ivy Engine one or more Applications can exist. The Application
    defines the container wherein the :ref:`Projects
@@ -108,7 +110,7 @@ Application Version
    change an Axon Ivy project without worrying about the compatibility
    of currently running :ref:`Cases <glossar-case>` on the Engine.
 
-   See also section :ref:`Process Model Version <process-model-version>`.   
+   See also section :ref:`Project <glossar-project>`.
 
 .. _glossar-project:
 
