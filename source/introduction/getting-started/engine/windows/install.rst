@@ -11,13 +11,8 @@ and copy :file:`AxonIvyEngine\*.zip` to the newly created folder.
 Right click the :file:`AxonIvyEngine\*.zip` file and press 
 :guilabel:`Extract All ...` from the context menu.
 
-.. figure:: /_images/engine-getting-started/unzip-windows.png
-
 On the appearing dialog, press button :guilabel:`Extract`. After the extraction
-completes, navigate into the new folder :file:`AxonIvyEngine`. The content of
-the installation folder looks like this:
-
-.. figure:: /_images/engine-getting-started/engine-folder.png
+completes, navigate into the new folder :file:`AxonIvyEngine`. 
 
 .. Hint:: 
   The most important folders in the Axon Ivy Engine installation folder are:

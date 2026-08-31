@@ -7,10 +7,7 @@ Configure the Engine (Windows)
 Manual Setup
 ^^^^^^^^^^^^
 
-Shutdown the Axon Ivy Engine first by stopping it. Use **ControlCenter.exe** or
-**ControlCenterC.exe**. 
-
-Alternatively, you can use one of the engine executables with command line
+Shutdown the Axon Ivy Engine first by using one of the engine executables with command line
 parameters as detailed in :ref:`Engine Launchers <engine-launchers>`. These are
 well-suited for scripting.
 
