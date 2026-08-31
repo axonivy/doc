@@ -974,7 +974,8 @@ msgid "Knowing this, we can now specifically override and redefine components fr
 msgstr "これを踏まえて、*Acme Webshop* プロジェクト内でコンポーネントを再定義することで、元の一般的な *ウェブショップ* アプリケーションの特定のコンポーネントをオーバーライドして再定義できます。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:62
-msgid "There are two ways to use the *Acme web shop* project as an overriding project. You can either define a :ref:`strict_overriding` in the generic *Web shop* application. To start with however, make sure your overriding project is dependent on the base project and that each override is defined in your overriding project as described in :ref:`overrides-editor`."
+#, fuzzy
+msgid "To define the *Acme web shop* project as an overriding project. you can define a :ref:`strict_overriding` in the generic *Web shop* application. To start with however, make sure your overriding project is dependent on the base project and that each override is defined in your overriding project."
 msgstr "*Acme Webshop* プロジェクトをオーバーライドする側のプロジェクトとして使用する方法は 2 つあります。1 つは、一般的な *ウェブショップ* アプリケーションで :ref:`strict_overriding` を定義する方法です。ただし、まず始めに、オーバーライドする側のプロジェクトがベースプロジェクトに依存しており、 :ref:`overrides-editor` 」で説明されているように、オーバーライドする側のプロジェクトで各オーバーライドが定義されていることを確認してください。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:73
@@ -1002,206 +1003,13 @@ msgid "To strictly set the overriding project you have to configure it in the :r
 msgstr "オーバーライドするプロジェクトを厳密に設定するには、 :ref:`app-yaml` で設定する必要があります。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:112
-msgid "While working on your project with strict overriding you have to define the overriding project in the **Designer** as well. This can easily be achieved with the :ref:`overrides-editor`. Alternatively you can find the :ref:`app-yaml` for the Designer under *designerDir/configuration/app-designer.yaml*."
+#, fuzzy
+msgid "While working on your project with strict overriding you have to define the overriding project in the **Designer** as well. This can easily be achieved with by setting the config in the :ref:`Engine Cockpit Application detail view <engine-cockpit-application-detail>`. Alternatively you can find the :ref:`app-yaml` for the Designer under *designerDir/configuration/app-designer.yaml*."
 msgstr "厳密にオーバーライドを設定したプロジェクトで作業する場合、オーバーライドするプロジェクトを**デザイナー** でも定義する必要があります。この定義は :ref:`overrides-editor` を使用して、簡単に行うことができます。また、*designerDir/configuration/app-designer.yaml* の下にあるデザイナーの :ref:`app-yaml` でも定義できます。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:120
 msgid "Overrides cannot be \"stacked\" - you can only override a component that is not itself an override. Axon Ivy Designer will warn you about this."
 msgstr "オーバーライドは「スタック」できません。それ自身がオーバーライドでないコンポーネントのみオーバーライドできます。Axon Ivy Designer では、これに関する警告が表示されます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:125
-msgid "Overrides Tool Reference"
-msgstr "オーバーライドツールについて"
-
-#: ../../source/designer-guide/how-to/overrides.rst:130
-msgid "Override editor"
-msgstr "オーバーライドエディター"
-
-#: ../../source/designer-guide/how-to/overrides.rst:132
-msgid "The Axon Ivy *Overrides Editor* shows the registered and active overrides for a specific project. The overrides are listed in 4 different sections: Sub Processes, HTML Dialogs, Content Objects and Configurations."
-msgstr "Axon Ivy の *オーバーライドエディター* には、特定のプロジェクトで登録されているアクティブなオーバーライドが表示されます。オーバーライドは、サブプロセス、HTML ダイアログ、コンテンツオブジェクト、設定の 4 つのセクションに表示されます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:137
-msgid "At the top of the editor, you can define the :ref:`strict_overriding` project. With this, you may simulate the overriding experience of the application within the Designer."
-msgstr "エディターの一番上では、 :ref:`strict_overriding` プロジェクトを定義できます。これにより、デザイナーでのアプリケーションのオーバーライドをシミュレートできます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:140
-msgid "Html Dialog and Sub Process overrides require - for technical reasons - the registration of a mapping (this is done automatically by the New Override Wizard) which maps the original component's identifier to the replacement identifier. This mapping is displayed in the Override Editor and can be deleted by selecting an entry and subsequently clicking on the *delete* icon in the section's tool bar. When clicking on the *wizard* icon in the tool bar, a new override mapping of that category can easily be added by entering all necessary information into the opening wizard."
-msgstr "HTML ダイアログとサブプロセスのオーバーライドでは、技術的な理由により、元のコンポーネントの識別子を置換後の識別子にマッピングするマッピングの登録が必要です（これはオーバーライドの作成ウィザードによって自動的に行われます）。このマッピングはオーバーライドエディターに表示され、エントリを選択し、セクションのツールバーの *削除* アイコンをクリックすることで削除できます。ツールバーの *ウィザード* アイコンをクリックすると開くウィザードに必要な情報をすべて入力して、そのカテゴリーの新しいオーバーライドマッピングを簡単に追加できます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:149
-msgid "Overrides of Content Objects and Configurations, on the other hand, do not require a renaming and an extra mapping between the original and the overriding component. They are simply created by adding a new Content Object or Configuration entry with the name of a component that already exists in a required project. At runtime, the new component will be found first and thus shadow the original value. For this type of override no special actions are available from the editor; you should use the respective editors (Content Editor and Configuration Editor) to create or delete overrides. The editor shows the overrides of that type for reasons of a centralized overview and for convenience, rather than to provide an interface to edit them."
-msgstr "一方、コンテンツオブジェクトと設定のオーバーライドでは、名前を変更し、元のコンポーネントとオーバーライドするコンポーネントの間にマッピングを追加する必要はありません。必要なプロジェクトにすでに存在するコンポーネントの名前で、新しいコンテンツオブジェクトまたは設定エントリを追加するだけで、作成されます。実行時に、新しいコンポーネントが最初に見つかると、元の値がシャドウされます。このタイプのオーバーライドでは、エディターから特殊なアクションを実行することはできません。オーバーライドを作成または削除するには、それぞれのエディター（コンテンツエディターと設定エディター）を使用する必要があります。エディターは、オーバーライドを編集するインターフェースを提供するためではなく、概要の一元化と利便性のために、このタイプのオーバーライドを表示します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:161
-#: ../../source/designer-guide/how-to/overrides.rst:164
-msgid "Override Editor"
-msgstr "オーバーライドエディター"
-
-#: ../../source/designer-guide/how-to/overrides.rst:167
-#: ../../source/designer-guide/how-to/overrides.rst:252
-#: ../../source/designer/views/index.rst:31
-#: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:508
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:13
-#: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:12
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:9
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:90
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:227
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preferences.rst:19
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preview.rst:29
-#: ../../source/getting-productive/user-interface/user-dialogs/new-user-dialog-wizard.rst:22
-#: ../../source/reference/casemap/index.rst:21
-#: ../../source/reference/configuration/persistence.rst:49
-#: ../../source/reference/dialog/form-editor.rst:23
-#: ../../source/reference/process/process-editor.rst:25
-msgid "Accessibility"
-msgstr "アクセス方法"
-
-#: ../../source/designer-guide/how-to/overrides.rst:169
-msgid "|override-tree-node|"
-msgstr "|override-tree-node|"
-
-#: ../../source/designer-guide/how-to/overrides.rst:212
-msgid "override-tree-node"
-msgstr "override-tree-node"
-
-#: ../../source/designer-guide/how-to/overrides.rst:171
-msgid "Axon Ivy Project Tree > double click on the Overrides node."
-msgstr "Axon Ivy プロジェクトツリーでオーバーライドノードをダブルクリックします。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:175
-#: ../../source/designer-guide/how-to/overrides.rst:257
-#: ../../source/engine-guide/reference/engine-cockpit/index.rst:60
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:14
-#: ../../source/reference/casemap/index.rst:26
-#: ../../source/reference/configuration/persistence.rst:54
-#: ../../source/reference/data/index.rst:26
-#: ../../source/reference/data/index.rst:100
-#: ../../source/reference/process/ivyscript/editor.rst:35
-msgid "Features"
-msgstr "機能"
-
-#: ../../source/designer-guide/how-to/overrides.rst:177
-msgid "Sub Process Overrides"
-msgstr "サブプロセスのオーバーライド"
-
-#: ../../source/designer-guide/how-to/overrides.rst:178
-msgid "This section shows all Sub Process overrides that are registered for the selected project. You can delete an existing override by pressing the *delete* icon in the section's tool bar. This will only delete the mapping (and thus the execution of the override) but not the replacement Sub Process itself. You can add new Sub Process overrides by clicking on the *wizard* icon in the tool bar (this can also be used to \"restore\" a previously deleted mapping)."
-msgstr "このセクションには、選択されたプロジェクトに登録されているすべてのサブプロセスのオーバーライドが表示されます。セクションのツールバーにある *削除* アイコンをクリックして、既存のオーバーライドを削除できます。削除されるのはマッピング（およびオーバーライドの実行）のみで、置換サブプロセス自体は削除されません。ツールバーの *ウィザード* アイコンをクリックして、新しいサブプロセスのオーバーライドを追加できます（これを使用して、先に削除したマッピングを「復元」することもできます）。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:186
-msgid "Html Dialog Overrides"
-msgstr "HTML ダイアログのオーバーライド"
-
-#: ../../source/designer-guide/how-to/overrides.rst:187
-msgid "This section shows all HTML Dialog (HD) overrides that are registered for the selected project."
-msgstr "このセクションには、選択されたプロジェクトに登録されているすべての HTML ダイアログ（HD）のオーバーライドが表示されます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:190
-msgid "Overrides can be defined for full HDs as well as for HD components. Override a full HD - defined in a (sub) process - or a HD component defined in a parent project by adding a mapping entry in this section. See chapter :ref:`user-dialogs` for more information about HDs."
-msgstr "HD だけでなく、HD のコンポーネントにもオーバーライドを定義できます。このセクションにマッピングエントリを追加して、（サブ）プロセスで定義された HD や、親プロジェクトで定義された HD のコンポーネントをオーバーライドできます。HD の詳細については :ref:`user-dialogs` 」の章を参照してください。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:195
-msgid "You can delete an existing override by pressing the *delete* icon in the section's tool bar. This will only delete the mapping (and thus the execution of the override) but not the replacement HD itself. You can add new HD overrides by clicking on the *wizard* icon in the tool bar (this can also be used to \"restore\" a previously deleted mapping or if you want to override a HD with an already existing dialog)."
-msgstr "セクションのツールバーにある *削除* アイコンをクリックして、既存のオーバーライドを削除できます。削除されるのはマッピング（およびオーバーライドの実行）のみで、置換 HD 自体は削除されません。ツールバーの *ウィザード* アイコンをクリックして、新しい HD のオーバーライドを追加できます（これを使用して、先に削除したマッピングを「復元」したり、すでに存在するダイアログで HD をオーバーライドすることもできます）。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:202
-msgid "Content Object Overrides"
-msgstr "コンテンツオブジェクトのオーバーライド"
-
-#: ../../source/designer-guide/how-to/overrides.rst:203
-msgid "This section shows all Content Objects that are redefined in the selected project, i.e.,the Content Objects for which there is an entry with the same URI in a required project. At execution time the redefined Content Object will be used."
-msgstr "このセクションには、選択されたプロジェクトで再定義されたすべてのコンテンツオブジェクト、つまり、必要なプロジェクトに同じ URI を持つエントリがあるコンテンツオブジェクトが表示されます。実行時には、再定義されたコンテンツオブジェクトが使用されます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:208
-msgid "You can delete overriding Content Objects directly from the list (multi-select a few lines and hit *Delete*) or use the Content Editor to add new overriding Content Objects."
-msgstr "オーバーライドコンテンツオブジェクトをリストから直接削除できます（行を複数選択して、*削除* をクリックします）。また、コンテンツエディターを使用して、新しいオーバーライドコンテンツオブジェクトを追加できます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:220
-#: ../../source/designer-guide/how-to/overrides.rst:245
-#: ../../source/designer-guide/how-to/overrides.rst:248
-msgid "New Override Wizard"
-msgstr "オーバーライドの作成ウィザード"
-
-#: ../../source/designer-guide/how-to/overrides.rst:222
-msgid "The *New Override Wizard* lets you create a new override. The wizard performs two tasks:"
-msgstr "*オーバーライドの作成ウィザード* では、新しいオーバーライドを作成できます。ウィザードは以下の 2 つのタスクを実行します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:225
-msgid "It will create an independent copy (snapshot) of the original component with a new name in the current project."
-msgstr "現在のプロジェクトに元のコンポーネントの独立したコピー（スナップショット）を新しい名前で作成します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:228
-msgid "It will create and register a mapping <original,replacement> in the list of overrides that are known to the system. The list of those mappings can later be inspected and edited with the :ref:`overrides-editor`."
-msgstr "マッピング（<元のコンポーネント,置換コンポーネント>）を作成し、システムが把握しているオーバーライドのリストに登録します。これらのマッピングのリストは :ref:`overrides-editor` で精査、編集できます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:233
-msgid "It will ask you if it should add the configuration for :ref:`strict_overriding` to the *designer/app.yaml* if necessary."
-msgstr "必要に応じて、*designer/app.yaml* に :ref:`strict_overriding` の設定を追加するかどうかを確認するメッセージを表示します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:238
-msgid "Please be aware that any Sub Process that is being overridden must have \"use own data class\" explicitly set in its inscription."
-msgstr "オーバーライドされるサブプロセスには、「独自のデータクラスを使用する」ことがインスクリプションに明示的に設定されていなければならないことに注意してください。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:241
-msgid "If this is not the case the wizard refuses to create an override for this reason then you can set an explicit data class in the values tab of the original process's inscription."
-msgstr "設定されていない場合、オーバーライドの作成が拒否されるため、元のプロセスのインスクリプションの値タブで明示的なデータクラスを設定してください。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:254
-msgid "File > New > Override"
-msgstr "［ファイル］ > ［新規］ > ［オーバーライド］"
-
-#: ../../source/designer-guide/how-to/overrides.rst:259
-msgid "Original Type"
-msgstr "元のコンポーネントのタイプ"
-
-#: ../../source/designer-guide/how-to/overrides.rst:260
-msgid "Choose the type of component for which an override replacement should be created (Html Dialog or Sub Process)."
-msgstr "オーバーライド置換を作成するコンポーネントのタイプ（HTML ダイアログまたはサブプロセス）を選択します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:263
-msgid "Original Identifier"
-msgstr "元のコンポーネントの識別子"
-
-#: ../../source/designer-guide/how-to/overrides.rst:264
-msgid "Specify the identifier of the original component that should be overridden at runtime. Use the button next to the text field to select from the available HTML Dialogs or Sub Processes. Please note that only components from required projects can be overridden, there is no point in defining an override for a component in the same project (see :ref:`overrides`)."
-msgstr "実行時にオーバーライドされる元のコンポーネントの識別子を指定します。テキストフィールドの横にあるボタンを使用して、利用可能なHTMLダイアログまたはサブプロセスから選択します。オーバーライドできるのは必要なプロジェクトのコンポーネントだけです。同じプロジェクト内のコンポーネントに対してオーバーライドを定義しても意味がありません（「:ref:`overrides`」を参照）。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:271
-msgid "Existing component"
-msgstr "既存のコンポーネント"
-
-#: ../../source/designer-guide/how-to/overrides.rst:272
-msgid "If you want to override the original component with an already existing one, choose the button next to the Project drop-down box to select one from the current project."
-msgstr "元のコンポーネントを既存のコンポーネントでオーバーライドする場合は、プロジェクトドロップダウンボックスの隣にあるボタンを選択し、現在のプロジェクトから選択します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:276
-msgid "Replacement Namespace"
-msgstr "置換コンポーネントの名前空間"
-
-#: ../../source/designer-guide/how-to/overrides.rst:277
-msgid "Chose a namespace for the replacement component."
-msgstr "置換コンポーネントの名前空間を選択します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:279
-msgid "Replacement Name"
-msgstr "置換コンポーネントの名前"
-
-#: ../../source/designer-guide/how-to/overrides.rst:280
-msgid "Enter the name of the replacement component."
-msgstr "置換コンポーネントの名前を入力します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:284
-msgid "If you create an override for a Sub Process, then a copy of the data class of the original component will be created (snapshot) and will be associated with the replacement process. The name of the copied data class will be inferred from the replacement component's identifier (namespace + name)."
-msgstr "サブプロセスのオーバーライドを作成すると、元のコンポーネントのデータクラスのコピーが作成され（スナップショット）、置換プロセスと関連付けられます。コピーされたデータクラスの名前は、置換コンポーネントの識別子（名前空間 + 名前）から推測されます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:290
-msgid "Finally..."
-msgstr "最後に..."
-
-#: ../../source/designer-guide/how-to/overrides.rst:291
-msgid "Select whether you want the respective component's editor to open on the replacement component once the override has been created."
-msgstr "オーバーライドが作成されたら、それぞれのコンポーネントのエディターを置換コンポーネントで開くかどうかを選択します。"
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:4
 msgid "Rule Engine"
@@ -2528,6 +2336,23 @@ msgstr "ランタイムログビューには、イベントの一覧が表示さ
 #: ../../source/designer/views/index.rst:28
 msgid "-> tbd: add screenshot of view"
 msgstr ""
+
+#: ../../source/designer/views/index.rst:31
+#: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:508
+#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:13
+#: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:12
+#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:9
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:90
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:227
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preferences.rst:19
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preview.rst:29
+#: ../../source/getting-productive/user-interface/user-dialogs/new-user-dialog-wizard.rst:22
+#: ../../source/reference/casemap/index.rst:21
+#: ../../source/reference/configuration/persistence.rst:49
+#: ../../source/reference/dialog/form-editor.rst:23
+#: ../../source/reference/process/process-editor.rst:25
+msgid "Accessibility"
+msgstr "アクセス方法"
 
 #: ../../source/designer/views/index.rst:33
 msgid "Command: :code:`Axon Ivy: Open Axon Ivy Runtime Log`"
@@ -6757,6 +6582,16 @@ msgstr "管理者ユーザーメニュー"
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:57
 msgid "Some items may not be available or shown depending on your engine."
 msgstr "エンジンによって、使用できない項目や表示されない項目があります。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/index.rst:60
+#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:14
+#: ../../source/reference/casemap/index.rst:26
+#: ../../source/reference/configuration/persistence.rst:54
+#: ../../source/reference/data/index.rst:26
+#: ../../source/reference/data/index.rst:100
+#: ../../source/reference/process/ivyscript/editor.rst:35
+msgid "Features"
+msgstr "機能"
 
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:61
 msgid "Additional configuration views of the cockpit are accessible via menu drawer."
@@ -11766,32 +11601,9 @@ msgstr "ビューが複数ある HTML ダイアログ"
 msgid "To implement a user interaction that consists of several pages (for example a wizard), one HTML Dialog can have multiple views (.xhtml files). This allows you to enclose a complex user interaction in one HTML Dialog and abstract it from the business process."
 msgstr "複数のページで構成されるユーザーインタラクション（ウィザードなど）を実装する場合、1 つの HTML ダイアログに複数のビュー（.xhtml ファイル）を設定できます。これにより、複雑なユーザーインタラクションを 1 つの HTML ダイアログに入れ、ビジネスプロセスから取り出すことができます。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:12
-msgid "How to Add a View"
-msgstr "ビューの追加方法"
-
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:14
-msgid "In the :guilabel:`New` menu in the Axon Ivy project tree you find the wizard :guilabel:`New HTML Dialog View` to add a view to an HTML Dialog. Just enter the name of the view and the XHTML file for the view is created and added to the HTML Dialog. In the Axon Ivy project tree, all view files of an HTML Dialog are displayed below the main node of that HTML Dialog."
-msgstr "Axon Ivy プロジェクトツリーの :guilabel:`New` メニューにある :guilabel:`HTML ダイアログビューの作成` ウィザードで、HTML ダイアログにビューを追加できます。ビューの名前を入力すると、ビューの XHTML ファイルが作成され、 HTML ダイアログに追加されます。Axon Ivy プロジェクトツリーでは、HTML ダイアログのすべてのビューファイルがその HTML ダイアログの主ノードの下に表示されます。"
-
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:20
-msgid "|html-dialog-new-wizard|"
-msgstr "|html-dialog-new-wizard|"
-
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:49
-msgid "html-dialog-new-wizard"
-msgstr "html-dialog-new-wizard"
-
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:23
-msgid "How to Switch Views During Runtime"
-msgstr "実行中のビューの切り替え方法"
-
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:25
-msgid "If you have created an HTML Dialog with several views you have to implement the navigation between the views for the user on your own. The basic solution is a ``commandButton`` with an ``update`` attribute to load the next view."
-msgstr "ビューが複数ある HTML ダイアログを作成した場合、自分でユーザーのビューの間にナビゲーションを実装する必要があります。基本的な解決策として、``commandButton`` と ``update`` 属性を使用し、次のビューをロードします。"
-
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:30
-msgid "You find an example of a multi-view HTML Dialog in the :ref:`HTMLDialogDemos project <importing-demo-projects>` that is provided with the Axon Ivy Designer."
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-multiple-views.rst:11
+#, fuzzy
+msgid "You find an example of a multi-view HTML Dialog in the :ref:`HTMLDialogDemos project <importing-demo-projects>`."
 msgstr "Axon Ivy Designer に付属する :ref:`HTMLDialogDemos プロジェクト<importing-demo-projects>` あるマルチビューの HTML ダイアログの例を参照してください。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preferences.rst:4
@@ -25664,3 +25476,141 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "You are able to install extensions from third-party sources. To do so, use the shortcut :guilabel:`CTRL` + :guilabel:`ALT` + :guilabel:`I` and provide the definition file as a URL."
 #~ msgstr "サードパーティーのソースから拡張機能をインストールできます。:guilabel:`CTRL` + :guilabel:`ALT` + :guilabel:`I` のショートカットを使用し、定義ファイルを URL として提供できます。"
+
+#~ msgid "Overrides Tool Reference"
+#~ msgstr "オーバーライドツールについて"
+
+#~ msgid "Override editor"
+#~ msgstr "オーバーライドエディター"
+
+#~ msgid "The Axon Ivy *Overrides Editor* shows the registered and active overrides for a specific project. The overrides are listed in 4 different sections: Sub Processes, HTML Dialogs, Content Objects and Configurations."
+#~ msgstr "Axon Ivy の *オーバーライドエディター* には、特定のプロジェクトで登録されているアクティブなオーバーライドが表示されます。オーバーライドは、サブプロセス、HTML ダイアログ、コンテンツオブジェクト、設定の 4 つのセクションに表示されます。"
+
+#~ msgid "At the top of the editor, you can define the :ref:`strict_overriding` project. With this, you may simulate the overriding experience of the application within the Designer."
+#~ msgstr "エディターの一番上では、 :ref:`strict_overriding` プロジェクトを定義できます。これにより、デザイナーでのアプリケーションのオーバーライドをシミュレートできます。"
+
+#~ msgid "Html Dialog and Sub Process overrides require - for technical reasons - the registration of a mapping (this is done automatically by the New Override Wizard) which maps the original component's identifier to the replacement identifier. This mapping is displayed in the Override Editor and can be deleted by selecting an entry and subsequently clicking on the *delete* icon in the section's tool bar. When clicking on the *wizard* icon in the tool bar, a new override mapping of that category can easily be added by entering all necessary information into the opening wizard."
+#~ msgstr "HTML ダイアログとサブプロセスのオーバーライドでは、技術的な理由により、元のコンポーネントの識別子を置換後の識別子にマッピングするマッピングの登録が必要です（これはオーバーライドの作成ウィザードによって自動的に行われます）。このマッピングはオーバーライドエディターに表示され、エントリを選択し、セクションのツールバーの *削除* アイコンをクリックすることで削除できます。ツールバーの *ウィザード* アイコンをクリックすると開くウィザードに必要な情報をすべて入力して、そのカテゴリーの新しいオーバーライドマッピングを簡単に追加できます。"
+
+#~ msgid "Overrides of Content Objects and Configurations, on the other hand, do not require a renaming and an extra mapping between the original and the overriding component. They are simply created by adding a new Content Object or Configuration entry with the name of a component that already exists in a required project. At runtime, the new component will be found first and thus shadow the original value. For this type of override no special actions are available from the editor; you should use the respective editors (Content Editor and Configuration Editor) to create or delete overrides. The editor shows the overrides of that type for reasons of a centralized overview and for convenience, rather than to provide an interface to edit them."
+#~ msgstr "一方、コンテンツオブジェクトと設定のオーバーライドでは、名前を変更し、元のコンポーネントとオーバーライドするコンポーネントの間にマッピングを追加する必要はありません。必要なプロジェクトにすでに存在するコンポーネントの名前で、新しいコンテンツオブジェクトまたは設定エントリを追加するだけで、作成されます。実行時に、新しいコンポーネントが最初に見つかると、元の値がシャドウされます。このタイプのオーバーライドでは、エディターから特殊なアクションを実行することはできません。オーバーライドを作成または削除するには、それぞれのエディター（コンテンツエディターと設定エディター）を使用する必要があります。エディターは、オーバーライドを編集するインターフェースを提供するためではなく、概要の一元化と利便性のために、このタイプのオーバーライドを表示します。"
+
+#~ msgid "Override Editor"
+#~ msgstr "オーバーライドエディター"
+
+#~ msgid "|override-tree-node|"
+#~ msgstr "|override-tree-node|"
+
+#~ msgid "override-tree-node"
+#~ msgstr "override-tree-node"
+
+#~ msgid "Axon Ivy Project Tree > double click on the Overrides node."
+#~ msgstr "Axon Ivy プロジェクトツリーでオーバーライドノードをダブルクリックします。"
+
+#~ msgid "Sub Process Overrides"
+#~ msgstr "サブプロセスのオーバーライド"
+
+#~ msgid "This section shows all Sub Process overrides that are registered for the selected project. You can delete an existing override by pressing the *delete* icon in the section's tool bar. This will only delete the mapping (and thus the execution of the override) but not the replacement Sub Process itself. You can add new Sub Process overrides by clicking on the *wizard* icon in the tool bar (this can also be used to \"restore\" a previously deleted mapping)."
+#~ msgstr "このセクションには、選択されたプロジェクトに登録されているすべてのサブプロセスのオーバーライドが表示されます。セクションのツールバーにある *削除* アイコンをクリックして、既存のオーバーライドを削除できます。削除されるのはマッピング（およびオーバーライドの実行）のみで、置換サブプロセス自体は削除されません。ツールバーの *ウィザード* アイコンをクリックして、新しいサブプロセスのオーバーライドを追加できます（これを使用して、先に削除したマッピングを「復元」することもできます）。"
+
+#~ msgid "Html Dialog Overrides"
+#~ msgstr "HTML ダイアログのオーバーライド"
+
+#~ msgid "This section shows all HTML Dialog (HD) overrides that are registered for the selected project."
+#~ msgstr "このセクションには、選択されたプロジェクトに登録されているすべての HTML ダイアログ（HD）のオーバーライドが表示されます。"
+
+#~ msgid "Overrides can be defined for full HDs as well as for HD components. Override a full HD - defined in a (sub) process - or a HD component defined in a parent project by adding a mapping entry in this section. See chapter :ref:`user-dialogs` for more information about HDs."
+#~ msgstr "HD だけでなく、HD のコンポーネントにもオーバーライドを定義できます。このセクションにマッピングエントリを追加して、（サブ）プロセスで定義された HD や、親プロジェクトで定義された HD のコンポーネントをオーバーライドできます。HD の詳細については :ref:`user-dialogs` 」の章を参照してください。"
+
+#~ msgid "You can delete an existing override by pressing the *delete* icon in the section's tool bar. This will only delete the mapping (and thus the execution of the override) but not the replacement HD itself. You can add new HD overrides by clicking on the *wizard* icon in the tool bar (this can also be used to \"restore\" a previously deleted mapping or if you want to override a HD with an already existing dialog)."
+#~ msgstr "セクションのツールバーにある *削除* アイコンをクリックして、既存のオーバーライドを削除できます。削除されるのはマッピング（およびオーバーライドの実行）のみで、置換 HD 自体は削除されません。ツールバーの *ウィザード* アイコンをクリックして、新しい HD のオーバーライドを追加できます（これを使用して、先に削除したマッピングを「復元」したり、すでに存在するダイアログで HD をオーバーライドすることもできます）。"
+
+#~ msgid "Content Object Overrides"
+#~ msgstr "コンテンツオブジェクトのオーバーライド"
+
+#~ msgid "This section shows all Content Objects that are redefined in the selected project, i.e.,the Content Objects for which there is an entry with the same URI in a required project. At execution time the redefined Content Object will be used."
+#~ msgstr "このセクションには、選択されたプロジェクトで再定義されたすべてのコンテンツオブジェクト、つまり、必要なプロジェクトに同じ URI を持つエントリがあるコンテンツオブジェクトが表示されます。実行時には、再定義されたコンテンツオブジェクトが使用されます。"
+
+#~ msgid "You can delete overriding Content Objects directly from the list (multi-select a few lines and hit *Delete*) or use the Content Editor to add new overriding Content Objects."
+#~ msgstr "オーバーライドコンテンツオブジェクトをリストから直接削除できます（行を複数選択して、*削除* をクリックします）。また、コンテンツエディターを使用して、新しいオーバーライドコンテンツオブジェクトを追加できます。"
+
+#~ msgid "New Override Wizard"
+#~ msgstr "オーバーライドの作成ウィザード"
+
+#~ msgid "The *New Override Wizard* lets you create a new override. The wizard performs two tasks:"
+#~ msgstr "*オーバーライドの作成ウィザード* では、新しいオーバーライドを作成できます。ウィザードは以下の 2 つのタスクを実行します。"
+
+#~ msgid "It will create an independent copy (snapshot) of the original component with a new name in the current project."
+#~ msgstr "現在のプロジェクトに元のコンポーネントの独立したコピー（スナップショット）を新しい名前で作成します。"
+
+#~ msgid "It will create and register a mapping <original,replacement> in the list of overrides that are known to the system. The list of those mappings can later be inspected and edited with the :ref:`overrides-editor`."
+#~ msgstr "マッピング（<元のコンポーネント,置換コンポーネント>）を作成し、システムが把握しているオーバーライドのリストに登録します。これらのマッピングのリストは :ref:`overrides-editor` で精査、編集できます。"
+
+#~ msgid "It will ask you if it should add the configuration for :ref:`strict_overriding` to the *designer/app.yaml* if necessary."
+#~ msgstr "必要に応じて、*designer/app.yaml* に :ref:`strict_overriding` の設定を追加するかどうかを確認するメッセージを表示します。"
+
+#~ msgid "Please be aware that any Sub Process that is being overridden must have \"use own data class\" explicitly set in its inscription."
+#~ msgstr "オーバーライドされるサブプロセスには、「独自のデータクラスを使用する」ことがインスクリプションに明示的に設定されていなければならないことに注意してください。"
+
+#~ msgid "If this is not the case the wizard refuses to create an override for this reason then you can set an explicit data class in the values tab of the original process's inscription."
+#~ msgstr "設定されていない場合、オーバーライドの作成が拒否されるため、元のプロセスのインスクリプションの値タブで明示的なデータクラスを設定してください。"
+
+#~ msgid "File > New > Override"
+#~ msgstr "［ファイル］ > ［新規］ > ［オーバーライド］"
+
+#~ msgid "Original Type"
+#~ msgstr "元のコンポーネントのタイプ"
+
+#~ msgid "Choose the type of component for which an override replacement should be created (Html Dialog or Sub Process)."
+#~ msgstr "オーバーライド置換を作成するコンポーネントのタイプ（HTML ダイアログまたはサブプロセス）を選択します。"
+
+#~ msgid "Original Identifier"
+#~ msgstr "元のコンポーネントの識別子"
+
+#~ msgid "Specify the identifier of the original component that should be overridden at runtime. Use the button next to the text field to select from the available HTML Dialogs or Sub Processes. Please note that only components from required projects can be overridden, there is no point in defining an override for a component in the same project (see :ref:`overrides`)."
+#~ msgstr "実行時にオーバーライドされる元のコンポーネントの識別子を指定します。テキストフィールドの横にあるボタンを使用して、利用可能なHTMLダイアログまたはサブプロセスから選択します。オーバーライドできるのは必要なプロジェクトのコンポーネントだけです。同じプロジェクト内のコンポーネントに対してオーバーライドを定義しても意味がありません（「:ref:`overrides`」を参照）。"
+
+#~ msgid "Existing component"
+#~ msgstr "既存のコンポーネント"
+
+#~ msgid "If you want to override the original component with an already existing one, choose the button next to the Project drop-down box to select one from the current project."
+#~ msgstr "元のコンポーネントを既存のコンポーネントでオーバーライドする場合は、プロジェクトドロップダウンボックスの隣にあるボタンを選択し、現在のプロジェクトから選択します。"
+
+#~ msgid "Replacement Namespace"
+#~ msgstr "置換コンポーネントの名前空間"
+
+#~ msgid "Chose a namespace for the replacement component."
+#~ msgstr "置換コンポーネントの名前空間を選択します。"
+
+#~ msgid "Replacement Name"
+#~ msgstr "置換コンポーネントの名前"
+
+#~ msgid "Enter the name of the replacement component."
+#~ msgstr "置換コンポーネントの名前を入力します。"
+
+#~ msgid "If you create an override for a Sub Process, then a copy of the data class of the original component will be created (snapshot) and will be associated with the replacement process. The name of the copied data class will be inferred from the replacement component's identifier (namespace + name)."
+#~ msgstr "サブプロセスのオーバーライドを作成すると、元のコンポーネントのデータクラスのコピーが作成され（スナップショット）、置換プロセスと関連付けられます。コピーされたデータクラスの名前は、置換コンポーネントの識別子（名前空間 + 名前）から推測されます。"
+
+#~ msgid "Finally..."
+#~ msgstr "最後に..."
+
+#~ msgid "Select whether you want the respective component's editor to open on the replacement component once the override has been created."
+#~ msgstr "オーバーライドが作成されたら、それぞれのコンポーネントのエディターを置換コンポーネントで開くかどうかを選択します。"
+
+#~ msgid "How to Add a View"
+#~ msgstr "ビューの追加方法"
+
+#~ msgid "In the :guilabel:`New` menu in the Axon Ivy project tree you find the wizard :guilabel:`New HTML Dialog View` to add a view to an HTML Dialog. Just enter the name of the view and the XHTML file for the view is created and added to the HTML Dialog. In the Axon Ivy project tree, all view files of an HTML Dialog are displayed below the main node of that HTML Dialog."
+#~ msgstr "Axon Ivy プロジェクトツリーの :guilabel:`New` メニューにある :guilabel:`HTML ダイアログビューの作成` ウィザードで、HTML ダイアログにビューを追加できます。ビューの名前を入力すると、ビューの XHTML ファイルが作成され、 HTML ダイアログに追加されます。Axon Ivy プロジェクトツリーでは、HTML ダイアログのすべてのビューファイルがその HTML ダイアログの主ノードの下に表示されます。"
+
+#~ msgid "|html-dialog-new-wizard|"
+#~ msgstr "|html-dialog-new-wizard|"
+
+#~ msgid "html-dialog-new-wizard"
+#~ msgstr "html-dialog-new-wizard"
+
+#~ msgid "How to Switch Views During Runtime"
+#~ msgstr "実行中のビューの切り替え方法"
+
+#~ msgid "If you have created an HTML Dialog with several views you have to implement the navigation between the views for the user on your own. The basic solution is a ``commandButton`` with an ``update`` attribute to load the next view."
+#~ msgstr "ビューが複数ある HTML ダイアログを作成した場合、自分でユーザーのビューの間にナビゲーションを実装する必要があります。基本的な解決策として、``commandButton`` と ``update`` 属性を使用し、次のビューをロードします。"
