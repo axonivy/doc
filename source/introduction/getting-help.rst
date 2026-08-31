@@ -7,8 +7,8 @@ If you encounter any problems, check the following sources:
 
 .. rubric:: Support
 
-You can get support via support@axonivy.com (support may be subject to charging,
-depending on your license agreement).
+You can get support via mail or ticket, find more information `here <https://dev.axonivy.com/support>`_
+(support may be subject to additional charges, depending on your license agreement).
 
 
 .. rubric:: Axon Ivy Community
