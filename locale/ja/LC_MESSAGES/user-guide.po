@@ -11246,12 +11246,10 @@ msgid "Often an initial larger process starts by gathering data that is later pr
 msgstr "多くの場合、最初の大規模なプロセスは、後に処理され、強化されるデータを収集することから始まります。このデータは通常、プロセスに貢献するドメインエキスパートが認識できる、ビジネスに関連するドメインデータです。銀行の与信担当者を考えてみましょう。与信担当者のプロセスのデータは単純化すると以下のようになります。"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:141
-#, fuzzy
 msgid "Data Class: CreditRequest"
-msgstr "データクラスエディター"
+msgstr "データクラス: CreditRequest"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:144
-#, fuzzy
 msgid "Attribute"
 msgstr "属性"
 
@@ -11262,35 +11260,30 @@ msgid "Type"
 msgstr "タイプ"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:146
-#, fuzzy
 msgid "``amount``"
-msgstr "``Long``"
+msgstr "``amount``"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:146
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:150
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:152
-#, fuzzy
 msgid "``Number``"
-msgstr "Number"
+msgstr "``Number``"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:148
-#, fuzzy
 msgid "``reason``"
-msgstr "理由"
+msgstr "``reason``"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:148
-#, fuzzy
 msgid "``String``"
-msgstr "``String``：255"
+msgstr "``String``"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:150
-#, fuzzy
 msgid "``salary``"
-msgstr "``signal``"
+msgstr "``salary``"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:152
 msgid "``amountOfOtherCreditsort``"
-msgstr ""
+msgstr "``amountOfOtherCreditsort``"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:156
 msgid "To store this kind of data Axon Ivy provides a simple repository that is called Business Data. This stored data can then be accessed by multiple process instances during the lifetime of a long living complex process. The repository provides access to the data with simple store and load functions similar to well known other repositories such as the EntityManager from JPA. But in comparison to JPA and similar technologies this repository can be used without any database or environment configuration."
@@ -11325,9 +11318,8 @@ msgid "A Case Map is divided into stages (in the sample above the stages are: Id
 msgstr "ケースマップは、複数のステージ（上記の例では、本人確認、信用格付け、承認）に分けられます。各ステージは、ビジネスプロセスのライフサイクルにおける特定のフェーズを定義します。ステージはプロセス（例：「個人データの収集」）で構成されます。デフォルトのフロー（いわゆる**ハッピーパス** ）は、左から右、上から下の順になります。ステージの最後のプロセスが終了すると、フローは現在のステージの右側のステージに続きます。通常、ステージには名前とアイコンがあります。これらのアイコンをワークフロー UI やプロセスで再利用することで、エンドユーザーは現在のビジネスケースがどのステージにあるかを把握できます。"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:223
-#, fuzzy
 msgid "Besides processes a stage of a Case Map can contain Sidesteps. Sidesteps can be started manually by the workflow user during the ongoing Business Case. A typical Sidestep could be a process which aborts the business process (e.g., abort request). The use of Sidesteps can reduce the time spent on technical round trips, for modeling rare and costly edge cases."
-msgstr "プロセスに加えて、サイドステップ（例：上記のケースマップの「外部支払能力サービス」）もケースマップのステージに含めることができます。サイドステップは、進行中のビジネスケースで、ワークフローのユーザーが手動で開始できます。一般的なサイドステップには、ビジネスプロセスを中止するプロセス（例：中止要求）があります。サイドステップを使用することで、まれでコストがかかるエッジケースをモデリングするための技術的なやり取りに費やす時間を削減できます。"
+msgstr "プロセスに加えて、ケースマップのステージにはサイドステップを含めることができます。サイドステップは、進行中のビジネスケースでワークフローのユーザーが手動で開始できます。一般的なサイドステップには、ビジネスプロセスを中止するプロセス（例：中止要求）があります。サイドステップを使用することで、まれでコストがかかるエッジケースをモデリングするための技術的なやり取りに費やす時間を削減できます。"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:231
 msgid "The dependencies between Case Map, Business Cases and Business Data are as follows: Processes started inside a Case Map create new cases inside the Business Case, which themselves contain tasks for the users. Data between processes can be easily shared using Business Data. A Business Case can be attached to a Case Map, which in turn controls the flow of the processes."
