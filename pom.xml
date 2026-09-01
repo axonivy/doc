@@ -157,6 +157,13 @@
                   <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
+
+                <artifactItem>
+                  <groupId>ch.ivyteam.casemap</groupId>
+                  <artifactId>case-map-editor-screenshots</artifactId>
+                  <version>${ivy-version}</version>
+                  <type>zip</type>
+                </artifactItem>
               </artifactItems>
             </configuration>
           </execution>
