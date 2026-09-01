@@ -4,9 +4,9 @@ Workflow
 ********
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   case-task
+   case-task/index
    adaptive-case-management
    documents
    notification

@@ -11,14 +11,14 @@ Task and Case queries
 The fluent workflow query API supports queries against all existing tasks
 and cases. You can write the queries in a SQL-like manner.
 
-.. literalinclude:: code-snippets/task-query/example.java
+.. literalinclude:: includes/task-query/example.java
    :language: java
 
 To retrieve all tasks that the current user can work on using the following
 code:
 
 
-.. literalinclude:: code-snippets/task-query/current_user.java
+.. literalinclude:: includes/task-query/current_user.java
    :language: java
 
 To execute a query, you need an instance of an IQueryExecutor. Retrieve it
@@ -36,7 +36,7 @@ Queries are executed against a single security context by default.
    results of global queries are invalid and meaningless.
 
 
-.. literalinclude:: code-snippets/task-query/IQueryExecutor.java
+.. literalinclude:: includes/task-query/IQueryExecutor.java
    :language: java
 
 
