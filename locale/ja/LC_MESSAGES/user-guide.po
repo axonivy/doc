@@ -81,12 +81,12 @@ msgid "Navigate to :guilabel:`Run as` > :guilabel:`Maven install`"
 msgstr ":guilabel:`実行`、:guilabel:`Maven のインストール` の順に移動します。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:47
-#: ../../source/designer-guide/how-to/overrides.rst:102
 #: ../../source/designer/configuration.rst:2
 #: ../../source/engine-guide/configuration/index.rst:4
 #: ../../source/engine-guide/integration/cluster/configuration/index.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:2
 #: ../../source/getting-productive/user-interface/branding/branding-engine.rst:21
+#: ../../source/getting-productive/workflow/overrides/index.rst:102
 #: ../../source/reference/configuration/index.rst:2
 msgid "Configuration"
 msgstr "設定"
@@ -358,319 +358,9 @@ msgstr "エキスパート"
 msgid "How to"
 msgstr "基礎知識"
 
-#: ../../source/designer-guide/how-to/offline-tasks.rst:4
-msgid "Offline Tasks"
-msgstr "オフラインタスク"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:6
-msgid "Offline tasks are designed for use on a mobile device without connection to the Axon Ivy Engine. Typically the task data and the task forms are loaded during the synchronization with the Axon Ivy Engine and then handled locally by an app on a mobile device (e.g., a smartphone or a tablet). When the form is completed, the mobile app will transfer the entered form data to the server as soon as the connection to the workflow server is back again. In turn, this will resume the task and continue the process execution."
-msgstr "オフラインタスクは、Axon Ivy Engineへの接続がない状態でモバイルデバイス上で使用できるよう設計されています。通常、タスクデータとタスクフォームはAxon Ivy Engineとの同期時に読み込まれ、その後スマートフォンやタブレットなどのモバイルデバイス上のアプリによってローカルで処理されます。フォーム入力が完了すると、モバイルアプリはワークフローサーバーへの接続が回復したタイミングで、入力されたフォームデータをサーバーに送信します。これによりタスクが再開され、プロセスの実行が続行されます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:17
-msgid "Offline Task in a Process"
-msgstr "プロセスのオフラインタスク"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:19
-msgid "An Offline Task is generated, when the process engine executes a :ref:`process-element-user-task` whereon an Offline Dialog is configured."
-msgstr "オフラインダイアログが設定され :ref:`process-element-user-task` をプロセスエンジンが実行すると、オフラインタスクが生成されます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:22
-msgid "The User Task element provides a different task handling than normal task switches do. On a User Task, when the form data (the actual dialog page) is requested, the corresponding task remains in state *suspended*. The task state will be changed to *resumed* when the form data is submitted. Compared to this, a normal Task must be resumed first and after that, an Html Dialog element that follows in process flow, will return the form data."
-msgstr "ユーザータスク要素は通常のタスクスイッチとは異なるタスク処理を提供します。ユーザータスクでは、フォームデータ（実際のダイアログページ）がリクエストされたとき、対応するタスクは *中断* 状態のままです。フォームデータが送信されると、タスクの状態は *再開* に変更されます。これと比較すると、通常のタスクは最初に再開される必要があり、その後、プロセスフローに続く HTML ダイアログ要素がフォームデータを返します。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:30
-msgid "Comparison of the execution sequence"
-msgstr "実行シーケンスの比較"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:34
-#: ../../source/reference/process/ivyscript/editor.rst:77
-msgid "Action"
-msgstr "アクション"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:34
-msgid "User Task element"
-msgstr "ユーザータスク要素"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:34
-msgid "Task Switch element followed by Html Dialog element"
-msgstr "HTML ダイアログ要素に続くタスクスイッチ要素"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:38
-msgid "Task picked up from task list"
-msgstr "タスクをタスクリストからピックアップ"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:38
-msgid "Task state remains unchanged."
-msgstr "タスクの状態は変わらない。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:41
-msgid "Dialog page from configured dialog is returned."
-msgstr "設定されたダイアログからダイアログページが返される。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:38
-#: ../../source/designer-guide/how-to/offline-tasks.rst:48
-msgid "Task state changes to resumed."
-msgstr "タスクの状態が再開に変わる。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:41
-msgid "Process flow continues to Html Dialog element. Dialog page from configured dialog is returned."
-msgstr "プロセスフローが HTML ダイアログ要素に続く。設定されたダイアログのダイアログページが返される。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:48
-msgid "Form data submitted"
-msgstr "フォームデータを送信"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:48
-#: ../../source/designer-guide/how-to/offline-tasks.rst:51
-msgid "Form data is mapped to dialog data."
-msgstr "フォームデータがダイアログデータにマッピングされる。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:52
-#: ../../source/designer-guide/how-to/offline-tasks.rst:55
-msgid "Dialog is closed, dialog data is mapped to process data."
-msgstr "ダイアログが閉じられ、ダイアログデータがプロセスデータにマッピングされる。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:60
-msgid "Process execution continues in context of the workflow user that submitted the form."
-msgstr "フォームを送信したワークフローユーザーのコンテキストでプロセスの実行が継続される。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:57
-msgid "Process execution continues in context of the workflow user that resumed the task."
-msgstr "タスクを再開したワークフローユーザーのコンテキストでプロセスの実行が継続される。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:70
-msgid "Offline Tasks can also be processed using a normal web browser as client. From a user's perspective they can be processed almost like normal tasks."
-msgstr "オフラインタスクは、通常のウェブブラウザをクライアントとして使用して処理することもできます。ユーザーから見ると、通常のタスクとほぼ同じように処理できます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:74
-msgid "Because of the different task handling of a User Task element, the session can be interrupted/terminated after the form data was loaded. Then the form can be processed offline. After reestablishing the connection and creating a new session, the form data can be submitted. This would not work with normal tasks, since they are reset, as soon as the corresponding session (the one that resumed the task) expires."
-msgstr "ユーザータスク要素のタスク処理は通常と異なるため、フォームデータの読み込み後にセッションを中断／終了できます。その後、フォームをオフラインで処理できます。接続を再確立し、新しいセッションを作成した後、フォームデータを送信できます。通常のタスクでは、対応するセッション (タスクを再開したセッション) が期限切れになるとすぐにリセットされるため、これは機能しません。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:83
-msgid "An offline aware application must manage the loading of the form data for required tasks, the presentation of the forms to the user during offline stages and the submission of the form data when the connection to the engine is established again. The Axon Ivy mobile app has full support for offline tasks."
-msgstr "オフライン対応アプリケーションは、必要なタスクのフォームデータの読み込み、オフライン段階でのユーザーへのフォームの表示、エンジンへの接続が再び確立されたときのフォームデータの送信を管理する必要があります。Axon Ivy モバイルアプリはオフラインタスクをフルサポートします。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:92
-msgid "Because the processing of an Offline Task may happen in parallel by several users, the task assignment should be set with caution. The form-submission of the first user will resume the task and continue the process. Subsequent form-submissions - from any user - will not be processed but responded with an error message."
-msgstr "オフラインタスクの処理は複数のユーザーによって並行して行われる可能性があるため、タスクの割り当ては慎重に設定してください。最初のユーザーのフォーム送信でタスクが再開され、処理が続行されます。それ以降のフォーム送信は、どのユーザーからのものであっても処理されず、エラーメッセージで応答されます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:98
-msgid "Process elements that follow a User Task element will be executed in the context of the same task. An error during the execution of these elements will result as an error response to the form submission and the whole user task is set back to suspended."
-msgstr "ユーザータスク要素に続くプロセス要素は、同じタスクのコンテキスト内で実行されます。これらのエレメントの実行中にエラーが発生した場合、フォームの送信に対するエラー応答が返され、ユーザータスク全体が中断状態に戻されます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:105
-msgid "Placing an Html Dialog element after an (Offline) User Task element is not a good idea, since it will not be handled correctly by an app that submitted the offline form. Generally it's best practice to place a task switch (Task Switch element of another User Task) as soon as possible after a User Task element."
-msgstr "（オフライン）ユーザータスク要素の後に HTML ダイアログ要素を配置することは、オフラインフォームを送信したアプリによって正しく処理されないため、良いとは言えません。一般的に、タスクスイッチ（別のユーザタスクのタスクスイッチ要素）をユーザータスク要素の後にできるだけ早く配置するのが最適です。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:115
-msgid "Offline Dialogs"
-msgstr "オフラインダイアログ"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:117
-msgid "An Offline Dialog is a special kind of HTML Dialog that warrants to be suitable for offline usage."
-msgstr "オフラインダイアログは、オフラインでの使用に適していることを保証する特別な種類の HTML ダイアログです。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:120
-msgid "Axon Ivy treats Offline Dialogs as separate view technology. Only when a User Task element is configured to use an Offline Dialog, it will generate Offline Tasks. Otherwise, normal tasks will be generated. From a technical point of view, an Offline Dialog is the same as a normal HTML Dialog. They both are User Dialogs built on top of the JSF technology."
-msgstr "Axon Ivy は、オフラインダイアログを別のビューテクノロジーとして扱います。ユーザータスク要素がオフラインダイアログを使用するように設定されている場合のみ、オフラインタスクが生成され、そうでない場合は通常のタスクが生成されます。技術的な観点からは、オフラインダイアログは通常の HTML ダイアログと同じです。どちらも JSF 技術をベースに構築されたユーザーダイアログです。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:126
-msgid "Even though there is no technical restriction - like a validation or similar - an Offline Dialog must omit any features that requires an active server connection before form submission. So, not all JSF features can be used. It's in the responsibility of the dialog developer to ensure the offline capability when developing an Offline Dialog."
-msgstr "たとえ検証などの技術的な制約がなくても、オフラインダイアログでは、フォームの送信前にアクティブなサーバー接続を必要とする機能を省く必要があります。そのため、JSF のすべての機能を使用できるわけではありません。オフラインダイアログを開発する場合、オフライン機能を保証するのはダイアログの開発者の責任です。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:132
-msgid "Restrictions for the design of offline capable dialogs:"
-msgstr "オフライン対応ダイアログのデザインの制約："
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:134
-msgid "The view should not rely on server side state e.g., session attributes, because it is executed solely on the client."
-msgstr "クライアントのみで実行されるため、ビューはサーバー側の状態（セッション属性など）に依存すべきではありません。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:137
-msgid "The dialog data fields defined as persistent are held in the client view state. So, these fields, together with fields submitted in the form, are available in the dialog logic (methods and events). All other data fields are only available in the start method to initialize the dialog. Anywhere else in the dialog logic, they will be set to null."
-msgstr "永続として定義されたダイアログのデータフィールドは、クライアントのビュー状態で保持されます。そのため、これらのフィールドは、フォームで送信されたフィールドとともに、ダイアログロジック（メソッドおよびイベント）で使用できます。その他のデータフィールドはすべて、ダイアログを初期化する start メソッドでのみ使用可能です。それ以外のダイアログロジックでは、これらのフィールドは null に設定されます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:144
-msgid "Owed to the offline capability, Ajax requests to the server are not possible. E.g., auto complete, lazy loading"
-msgstr "オフラインのため、サーバーへの Ajax リクエストは行えません（オートコンプリート、レイジーローディングなど）。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:147
-msgid "The entered data should be validated **before** form submission (:ref:`html-dialog-client-side-validation`). If only server side validation is performed, the user will get a late feedback, expressed as synchronization error when switching from offline to online."
-msgstr "入力されたデータは、フォーム送信の**前** 検証される必要があります :ref:`html-dialog-client-side-validation` ）。サーバーサイドの検証のみ実行された場合、ユーザーは、オフラインからオンラインに切り替わる際に同期エラーとして、遅いフィードバックを得ることになります。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:156
-msgid "The layout and the styling of an offline capable dialog should consider the client device where it will run. Most probably it will be embedded in a mobile app on a device with a small touch-screen."
-msgstr "オフライン対応ダイアログのレイアウトとスタイリングは、実行されるクライアントデバイスを考慮する必要があります。ほとんどの場合、小さなタッチスクリーンを備えたデバイス上のモバイルアプリに埋め込まれます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:162
-msgid "To avoid Ajax on form submission, a p:commandButton can be configured with the attribute ajax=\"false\":"
-msgstr "フォーム送信時の Ajax を回避するため、p:commandButton に ajax=\"false \"属性を設定できます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:170
-msgid "Geo Location"
-msgstr "ジオロケーション"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:172
-msgid "The mobile app sends the current position of the mobile device to the server. This information is then stored in location services that are available on the user that has worked with the mobile app and the tasks that have been worked on the mobile app."
-msgstr "モバイルアプリからサーバーにモバイルデバイスの現在位置が送信されます。この情報は、モバイルアプリで作業したユーザーとモバイルアプリで作業したタスクで利用可能な位置情報サービスに保存されます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:177
-msgid "Get latest position of a task:"
-msgstr "タスクの最新位置の取得："
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:185
-msgid "Get latest position of a user:"
-msgstr "ユーザーの最新位置の取得："
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:193
-msgid "The location service can also be used to store additional locations:"
-msgstr "また、位置情報サービスを利用して、さらに位置を保存することもできます。"
-
-#: ../../source/designer-guide/how-to/offline-tasks.rst:208
-msgid "More information can be found in the package :public-api:`ch.ivyteam.ivy.location </ch/ivyteam/ivy/location/package-summary.html>`. It defines the location service and types to create, store and manipulate location information and geo-positions."
-msgstr "詳細については、:public-api:`ch.ivyteam.ivy.location </ch/ivyteam/ivy/location/package-summary.html>` パッケージをご覧ください。パッケージでは、位置情報と地理的な位置を作成、保存、操作するための位置情報サービスとタイプを定義します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:4
-msgid "Overrides"
-msgstr "オーバーライド"
-
-#: ../../source/designer-guide/how-to/overrides.rst:6
-msgid "Applications are often implemented as a general solution for a problem and consist of multiple (dependent) projects. For many installations or customer projects it is desirable that certain parts of such a generic solution may be redefined in the context of a specific installation or customer."
-msgstr "多くの場合、アプリケーションは問題に対する一般的なソリューションとして実装され、複数の（依存する）プロジェクトで構成されます。多くのインストレーションや顧客のプロジェクトでは、そのような一般的なソリューションの特定の部分を特定のインストレーションや顧客のコンテキストで再定義できることが理想です。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:12
-msgid "To permit this, Axon Ivy knows various concepts of context-sensitive re-definitions:"
-msgstr "これを実現するため、Axon Ivy はコンテキストに応じた再定義のさまざまなコンセプトに対応します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:15
-msgid "Regular redefinition (e.g., for Content Objects and/or Configurations): Simply define an already existing artifact with the same name again in a different project."
-msgstr "通常の再定義（コンテンツオブジェクト、設定など）：すでに存在するアーティファクトを別のプロジェクトに同じ名前で再定義します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:19
-msgid "Redefinition with overrides (e.g., for HTML Dialogs, HTML Dialog components and/or Sub Processes): Define a replacement component for an already existing component."
-msgstr "オーバーライドによる再定義（HTML ダイアログ、HTML ダイアログコンポーネント、サブプロセスなど）：すでに存在するコンポーネントの置換コンポーネントを定義します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:23
-msgid "By defining overrides on project level, the lookup of a certain component can be redirected to a replacement component. When a component is referenced in a process model of that project then the lookup for this component will yield a different component (i.e., the replacement) at runtime instead of the originally referenced component."
-msgstr "プロジェクトレベルでオーバーライドを定義することにより、特定のコンポーネントのルックアップを置換コンポーネントにリダイレクトできます。あるコンポーネントがそのプロジェクトのプロセスモデルで参照されると、そのコンポーネントのルックアップは、元々参照されていたコンポーネントの代わりに、別のコンポーネント（置換コンポーネント）を実行時に生成します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:30
-msgid "Example: The Acme Web shop"
-msgstr "例：Acme ウェブショップ"
-
-#: ../../source/designer-guide/how-to/overrides.rst:32
-msgid "As an example, imagine a web shop application. It contains the following (generic) business process:"
-msgstr "例として、ウェブショップのアプリケーションをイメージしてください。そのアプリケーションには、以下のような（一般的な）ビジネスプロセスが含まれています。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:35
-msgid "Web Shop Process"
-msgstr "ウェブショップのプロセス"
-
-#: ../../source/designer-guide/how-to/overrides.rst:38
-msgid "The main process itself (Order) and each of the depicted sub processes (DoOrder, ProcessOrder, Shipment) are defined in their own projects. All of those projects together form a (generic) web shop application, depicted below. The web shop project contains the business process and its start; the Frontend project contains the DoOrder sub process; the Backend project contains the ProcessOrder sub process; the Shipment project contains the Shipping sub process."
-msgstr "メインプロセス（Order）と各サブプロセス（DoOrder、ProcessOrder、Shipment）はそれぞれのプロジェクトで定義されます。これらすべてのプロジェクトは、以下の図のような（一般的な）ウェブショップアプリケーションを形成します。ウェブショッププロジェクトにはビジネスプロセスとその開始が含まれ、Frontend プロジェクトには DoOrder サブプロセスが含まれ、Backend プロジェクトには ProcessOrder サブプロセスが含まれ、Shipment プロジェクトには Shipping サブプロセスが含まれます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:49
-msgid "We now define an additional project, *Acme web shop*. The new project is dependent on web shop and the intention is to bundle all Acme-specific overrides and adoptions in this project. The already existing projects plus this new project form together a more specific and customized *Acme web shop* application, with the following project dependency tree:"
-msgstr "ここに、*Acme Webshop*という追加のプロジェクトを定義します。この新しいプロジェクトは Webshop に依存しています。ここでは、Acme 固有のすべてのオーバーライドとアダプションをこのプロジェクトにまとめます。既存のプロジェクトとこの新しいプロジェクトは、以下のプロジェクトの依存関係ツリーを持つ、より限定的でカスタマイズされた *Acme Webshop* アプリケーションを形成します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:58
-msgid "Knowing this, we can now specifically override and redefine components from the original generic *web shop* application by redefining them inside the *Acme web shop* project."
-msgstr "これを踏まえて、*Acme Webshop* プロジェクト内でコンポーネントを再定義することで、元の一般的な *ウェブショップ* アプリケーションの特定のコンポーネントをオーバーライドして再定義できます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:62
-msgid "To define the *Acme web shop* project as an overriding project. you can define a :ref:`strict_overriding` in the generic *Web shop* application. To start with however, make sure your overriding project is dependent on the base project and that each override is defined in your overriding project."
-msgstr "*Acme web shop* プロジェクトをオーバーライドするプロジェクトとして定義するには、一般的な *Web shop* アプリケーションで :ref:`strict_overriding` を定義できます。ただし、まず、オーバーライドするプロジェクトがベースプロジェクトに依存しており、各オーバーライドがオーバーライドするプロジェクト内で定義されていることを確認してください。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:73
-msgid "Strict Overriding"
-msgstr "厳密なオーバーライド"
-
-#: ../../source/designer-guide/how-to/overrides.rst:75
-msgid "If you want to customize your standard product for a specific customer then the easiest way to realize overrides is by defining an overriding project which contains all the customized components. This means that overridden components are always resolved from the overriding project, if they exist."
-msgstr "特定の顧客向けの規格品をカスタマイズしたい場合、オーバーライドを実現する最も簡単な方法は、すべてのカスタマイズされたコンポーネントを含むオーバーライドする側のプロジェクトを定義することです。つまり、オーバーライドされたコンポーネントが存在する場合、常にオーバーライドするプロジェクトから解決されます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:81
-msgid "In our webshop example the overriding project would be the *Acme web shop*. Starting a process from either the *Web shop* or the specialized *Acme web shop* will always result in the overridden components being loaded. Not overridden components will still be loaded from the base *Web shop* project."
-msgstr "ウェブショップの例では、オーバーライドされるプロジェクトは *Acme Webshop* となります。*Webshop*、特殊化された *Acme Webshop* のどちらからプロセスを開始しても、常にオーバーライドされたコンポーネントが読み込まれます。オーバーライドされていないコンポーネントは引き続き、ベースとなる *Webshop* プロジェクトから読み込まれます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:87
-msgid "By defining the overriding project you can leave complex business processes in the base project and only define specialized components in the overriding project."
-msgstr "オーバーライドするプロジェクトを定義して、ベースプロジェクトの複雑なビジネスプロセスはそのままで、特殊なコンポーネントのみオーバーライドするプロジェクトで定義できます。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:91
-msgid "The lookup of components happens hierarchically. If the engine cannot locate an overridden component in the overriding project it will go down the dependency tree until it encounters the wanted component. So maybe you want to provide a third webshop which builds upon the *Acme web shop*. In this case the overriding project would be the most specialized web shop in the dependency tree."
-msgstr "コンポーネントの検索は階層的に行われます。エンジンがオーバーライドされたコンポーネントをオーバーライドされたプロジェクトで見つけることができなかった場合、目的のコンポーネントが見つかるまで依存関係ツリーを下っていきます。つまり、*Acme Webshop* をベースにした 3 番目のウェブショップを提供する場合、オーバーライドするプロジェクトは依存関係ツリーで最も特殊化されたウェブショップになります。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:104
-msgid "To strictly set the overriding project you have to configure it in the :ref:`app-yaml`."
-msgstr "オーバーライドするプロジェクトを厳密に設定するには、 :ref:`app-yaml` で設定する必要があります。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:112
-msgid "While working on your project with strict overriding you have to define the overriding project in the **Designer** as well. This can easily be achieved with by setting the config in the :ref:`Engine Cockpit Application detail view <engine-cockpit-application-detail>`. Alternatively you can find the :ref:`app-yaml` for the Designer under *designerDir/configuration/app-designer.yaml*."
-msgstr "厳密なオーバーライドを使用するプロジェクトで作業する場合、オーバーライドするプロジェクトを **Designer** でも定義する必要があります。これは、:ref:`Engine Cockpit Application detail view <engine-cockpit-application-detail>` で設定を行うことで簡単に実現できます。あるいは、Designer 用の :ref:`app-yaml` は *designerDir/configuration/app-designer.yaml* にあります。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:120
-msgid "Overrides cannot be \"stacked\" - you can only override a component that is not itself an override. Axon Ivy Designer will warn you about this."
-msgstr "オーバーライドは「スタック」できません。それ自身がオーバーライドでないコンポーネントのみオーバーライドできます。Axon Ivy Designer では、これに関する警告が表示されます。"
-
 #: ../../source/designer-guide/index.rst:4
 msgid "Designer Guide"
 msgstr "デザイナーガイド"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:2
-#: ../../source/designer/troubleshooting.rst:2
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:51
-msgid "Troubleshooting"
-msgstr "トラブルシューティング"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:6
-msgid "Error Dialogs"
-msgstr "エラーダイアログ"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:9
-msgid "Error Id"
-msgstr "エラー ID"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:11
-msgid "Error Dialogs shown to the user contain a unique error id. This error id can be used to search the log files for more information about this error."
-msgstr "ユーザーに表示されるエラーダイアログには、固有のエラー ID が表示されます。このエラー ID を使用して、ログファイルを検索し、エラーの詳細情報を得ることができます。"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:16
-msgid "Error Report"
-msgstr "エラーレポート"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:18
-msgid "On Error Dialogs it is possible to generate an Error Report. This report contains information about the error, the designer machine and the current state of the Axon Ivy Designer."
-msgstr "エラーダイアログでは、エラーレポートを作成できます。このレポートには、エラーに関する情報、デザイナーのマシン、Axon Ivy Designer の現在の状態が含まれます。"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:24
-msgid "If you need to contact the support because of an error, please generate an Error Report for it. Most of the time it contains the necessary information, to find and solve the problem."
-msgstr "エラーにより、サポートに連絡する必要がある場合は、エラーレポートを作成してください。ほとんどの場合、エラーレポートには、問題を見つけ、解決するために必要な情報が含まれます。"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:28
-msgid "On the HTML error page use the :guilabel:`Open Error Report` button at the end of the error page to open the Error Report. Use :guilabel:`CTRL-A` and :guilabel:`CTRL-C` to copy the Error Report to the clipboard."
-msgstr "HTML エラーページでは、エラーページの終わりにある:guilabel:`エラーレポートを開く` ボタンを使用して、エラーレポートを開きます。:guilabel:`CTRL + A` と :guilabel:`CTRL + C` を使用して、エラーレポートをクリップボードにコピーします。"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:32
-msgid "The Event Details View of the :ref:`runtimelog-view` provides a button to generate and save an error report for a given log entry."
-msgstr ":ref:`runtimelog-view` のイベントの詳細ビューには、特定のログエントリのエラーレポートを作成して保存するボタンが表示されます。"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:36
-msgid "Moreover, you can also use the menu :guilabel:`Axon Ivy` > :guilabel:`Debug` > :guilabel:`Save Debug Report` to generate and save such a report without an error."
-msgstr "また、メニューで :guilabel:`Axon Ivy`、:guilabel:`デバッグ`、:guilabel:`デバッグレポートを保存` の順に選択して、エラーを含まないレポートを作成して保存できます。"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:44
-msgid "Memory Problems"
-msgstr "メモリの問題"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:49
-msgid "OutOfMemoryException: Java Heap Space"
-msgstr "OutOfMemoryException：Java のヒープ領域"
-
-#: ../../source/designer-guide/troubleshooting/index.rst:51
-msgid "If this error occurs, then the Designer requests more memory than it is allowed to use. This can happen when a lot of data is used during the process simulations. Ensure, that your computer has enough memory. Then you can increase the maximal memory consumption of the Axon Ivy Designer. Just open the ``AxonIvyDesigner.ini`` and change the value in the line after ``-Xmx`` to a higher one."
-msgstr "このエラーが発生した場合、デザイナーは、使用可能メモリを超えるメモリをリクエストします。プロセスのシミュレーション中に大量のデータが使用されると、このエラーが発生することがあります。コンピューターに十分なメモリが搭載されていることを確認してください。確認後、Axon Ivy Designer の最大メモリ消費量を増やすことができます。``AxonIvyDesigner.ini`` を開き、``-Xmx`` の後の行の値をより大きい値に変更してください。"
 
 #: ../../source/designer/ai-development.rst:2
 msgid "AI-assisted development"
@@ -845,6 +535,11 @@ msgstr "Axon Ivy Designer に慣れたい場合は、:ref:`Designer（VS Code �
 #: ../../source/designer/introduction/index.rst:11
 msgid "Designer (VS Code Extension) System Requirements"
 msgstr "Designer（VS Code 拡張機能）のシステム要件"
+
+#: ../../source/designer/troubleshooting.rst:2
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:51
+msgid "Troubleshooting"
+msgstr "トラブルシューティング"
 
 #: ../../source/designer/views/index.rst:2
 msgid "Views"
@@ -12472,6 +12167,262 @@ msgstr ":code:`ivy.task`：通知が送られた際にアクティブだった�
 #: ../../source/getting-productive/workflow/notification.rst:172
 msgid ":code:`ivy.case`: The current :public-api:`ICase</ch/ivyteam/ivy/workflow/ICase.html>` that was active when the notification was sent."
 msgstr ":code:`ivy.case`：通知が送信された時にアクティブだった現在の :public-api:`ICase</ch/ivyteam/ivy/workflow/ICase.html>`"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:4
+msgid "Offline Tasks"
+msgstr "オフラインタスク"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:6
+msgid "Offline tasks are designed for use on a mobile device without connection to the Axon Ivy Engine. Typically the task data and the task forms are loaded during the synchronization with the Axon Ivy Engine and then handled locally by an app on a mobile device (e.g., a smartphone or a tablet). When the form is completed, the mobile app will transfer the entered form data to the server as soon as the connection to the workflow server is back again. In turn, this will resume the task and continue the process execution."
+msgstr "オフラインタスクは、Axon Ivy Engineへの接続がない状態でモバイルデバイス上で使用できるよう設計されています。通常、タスクデータとタスクフォームはAxon Ivy Engineとの同期時に読み込まれ、その後スマートフォンやタブレットなどのモバイルデバイス上のアプリによってローカルで処理されます。フォーム入力が完了すると、モバイルアプリはワークフローサーバーへの接続が回復したタイミングで、入力されたフォームデータをサーバーに送信します。これによりタスクが再開され、プロセスの実行が続行されます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:17
+msgid "Offline Task in a Process"
+msgstr "プロセスのオフラインタスク"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:19
+msgid "An Offline Task is generated, when the process engine executes a :ref:`process-element-user-task` whereon an Offline Dialog is configured."
+msgstr "オフラインダイアログが設定され :ref:`process-element-user-task` をプロセスエンジンが実行すると、オフラインタスクが生成されます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:22
+msgid "The User Task element provides a different task handling than normal task switches do. On a User Task, when the form data (the actual dialog page) is requested, the corresponding task remains in state *suspended*. The task state will be changed to *resumed* when the form data is submitted. Compared to this, a normal Task must be resumed first and after that, an Html Dialog element that follows in process flow, will return the form data."
+msgstr "ユーザータスク要素は通常のタスクスイッチとは異なるタスク処理を提供します。ユーザータスクでは、フォームデータ（実際のダイアログページ）がリクエストされたとき、対応するタスクは *中断* 状態のままです。フォームデータが送信されると、タスクの状態は *再開* に変更されます。これと比較すると、通常のタスクは最初に再開される必要があり、その後、プロセスフローに続く HTML ダイアログ要素がフォームデータを返します。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:30
+msgid "Comparison of the execution sequence"
+msgstr "実行シーケンスの比較"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:34
+#: ../../source/reference/process/ivyscript/editor.rst:77
+msgid "Action"
+msgstr "アクション"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:34
+msgid "User Task element"
+msgstr "ユーザータスク要素"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:34
+msgid "Task Switch element followed by Html Dialog element"
+msgstr "HTML ダイアログ要素に続くタスクスイッチ要素"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:38
+msgid "Task picked up from task list"
+msgstr "タスクをタスクリストからピックアップ"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:38
+msgid "Task state remains unchanged."
+msgstr "タスクの状態は変わらない。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:41
+msgid "Dialog page from configured dialog is returned."
+msgstr "設定されたダイアログからダイアログページが返される。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:38
+#: ../../source/getting-productive/workflow/offline-tasks.rst:48
+msgid "Task state changes to resumed."
+msgstr "タスクの状態が再開に変わる。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:41
+msgid "Process flow continues to Html Dialog element. Dialog page from configured dialog is returned."
+msgstr "プロセスフローが HTML ダイアログ要素に続く。設定されたダイアログのダイアログページが返される。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:48
+msgid "Form data submitted"
+msgstr "フォームデータを送信"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:48
+#: ../../source/getting-productive/workflow/offline-tasks.rst:51
+msgid "Form data is mapped to dialog data."
+msgstr "フォームデータがダイアログデータにマッピングされる。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:52
+#: ../../source/getting-productive/workflow/offline-tasks.rst:55
+msgid "Dialog is closed, dialog data is mapped to process data."
+msgstr "ダイアログが閉じられ、ダイアログデータがプロセスデータにマッピングされる。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:60
+msgid "Process execution continues in context of the workflow user that submitted the form."
+msgstr "フォームを送信したワークフローユーザーのコンテキストでプロセスの実行が継続される。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:57
+msgid "Process execution continues in context of the workflow user that resumed the task."
+msgstr "タスクを再開したワークフローユーザーのコンテキストでプロセスの実行が継続される。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:70
+msgid "Offline Tasks can also be processed using a normal web browser as client. From a user's perspective they can be processed almost like normal tasks."
+msgstr "オフラインタスクは、通常のウェブブラウザをクライアントとして使用して処理することもできます。ユーザーから見ると、通常のタスクとほぼ同じように処理できます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:74
+msgid "Because of the different task handling of a User Task element, the session can be interrupted/terminated after the form data was loaded. Then the form can be processed offline. After reestablishing the connection and creating a new session, the form data can be submitted. This would not work with normal tasks, since they are reset, as soon as the corresponding session (the one that resumed the task) expires."
+msgstr "ユーザータスク要素のタスク処理は通常と異なるため、フォームデータの読み込み後にセッションを中断／終了できます。その後、フォームをオフラインで処理できます。接続を再確立し、新しいセッションを作成した後、フォームデータを送信できます。通常のタスクでは、対応するセッション (タスクを再開したセッション) が期限切れになるとすぐにリセットされるため、これは機能しません。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:83
+msgid "An offline aware application must manage the loading of the form data for required tasks, the presentation of the forms to the user during offline stages and the submission of the form data when the connection to the engine is established again. The Axon Ivy mobile app has full support for offline tasks."
+msgstr "オフライン対応アプリケーションは、必要なタスクのフォームデータの読み込み、オフライン段階でのユーザーへのフォームの表示、エンジンへの接続が再び確立されたときのフォームデータの送信を管理する必要があります。Axon Ivy モバイルアプリはオフラインタスクをフルサポートします。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:92
+msgid "Because the processing of an Offline Task may happen in parallel by several users, the task assignment should be set with caution. The form-submission of the first user will resume the task and continue the process. Subsequent form-submissions - from any user - will not be processed but responded with an error message."
+msgstr "オフラインタスクの処理は複数のユーザーによって並行して行われる可能性があるため、タスクの割り当ては慎重に設定してください。最初のユーザーのフォーム送信でタスクが再開され、処理が続行されます。それ以降のフォーム送信は、どのユーザーからのものであっても処理されず、エラーメッセージで応答されます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:98
+msgid "Process elements that follow a User Task element will be executed in the context of the same task. An error during the execution of these elements will result as an error response to the form submission and the whole user task is set back to suspended."
+msgstr "ユーザータスク要素に続くプロセス要素は、同じタスクのコンテキスト内で実行されます。これらのエレメントの実行中にエラーが発生した場合、フォームの送信に対するエラー応答が返され、ユーザータスク全体が中断状態に戻されます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:105
+msgid "Placing an Html Dialog element after an (Offline) User Task element is not a good idea, since it will not be handled correctly by an app that submitted the offline form. Generally it's best practice to place a task switch (Task Switch element of another User Task) as soon as possible after a User Task element."
+msgstr "（オフライン）ユーザータスク要素の後に HTML ダイアログ要素を配置することは、オフラインフォームを送信したアプリによって正しく処理されないため、良いとは言えません。一般的に、タスクスイッチ（別のユーザタスクのタスクスイッチ要素）をユーザータスク要素の後にできるだけ早く配置するのが最適です。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:115
+msgid "Offline Dialogs"
+msgstr "オフラインダイアログ"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:117
+msgid "An Offline Dialog is a special kind of HTML Dialog that warrants to be suitable for offline usage."
+msgstr "オフラインダイアログは、オフラインでの使用に適していることを保証する特別な種類の HTML ダイアログです。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:120
+msgid "Axon Ivy treats Offline Dialogs as separate view technology. Only when a User Task element is configured to use an Offline Dialog, it will generate Offline Tasks. Otherwise, normal tasks will be generated. From a technical point of view, an Offline Dialog is the same as a normal HTML Dialog. They both are User Dialogs built on top of the JSF technology."
+msgstr "Axon Ivy は、オフラインダイアログを別のビューテクノロジーとして扱います。ユーザータスク要素がオフラインダイアログを使用するように設定されている場合のみ、オフラインタスクが生成され、そうでない場合は通常のタスクが生成されます。技術的な観点からは、オフラインダイアログは通常の HTML ダイアログと同じです。どちらも JSF 技術をベースに構築されたユーザーダイアログです。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:126
+msgid "Even though there is no technical restriction - like a validation or similar - an Offline Dialog must omit any features that requires an active server connection before form submission. So, not all JSF features can be used. It's in the responsibility of the dialog developer to ensure the offline capability when developing an Offline Dialog."
+msgstr "たとえ検証などの技術的な制約がなくても、オフラインダイアログでは、フォームの送信前にアクティブなサーバー接続を必要とする機能を省く必要があります。そのため、JSF のすべての機能を使用できるわけではありません。オフラインダイアログを開発する場合、オフライン機能を保証するのはダイアログの開発者の責任です。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:132
+msgid "Restrictions for the design of offline capable dialogs:"
+msgstr "オフライン対応ダイアログのデザインの制約："
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:134
+msgid "The view should not rely on server side state e.g., session attributes, because it is executed solely on the client."
+msgstr "クライアントのみで実行されるため、ビューはサーバー側の状態（セッション属性など）に依存すべきではありません。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:137
+msgid "The dialog data fields defined as persistent are held in the client view state. So, these fields, together with fields submitted in the form, are available in the dialog logic (methods and events). All other data fields are only available in the start method to initialize the dialog. Anywhere else in the dialog logic, they will be set to null."
+msgstr "永続として定義されたダイアログのデータフィールドは、クライアントのビュー状態で保持されます。そのため、これらのフィールドは、フォームで送信されたフィールドとともに、ダイアログロジック（メソッドおよびイベント）で使用できます。その他のデータフィールドはすべて、ダイアログを初期化する start メソッドでのみ使用可能です。それ以外のダイアログロジックでは、これらのフィールドは null に設定されます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:144
+msgid "Owed to the offline capability, Ajax requests to the server are not possible. E.g., auto complete, lazy loading"
+msgstr "オフラインのため、サーバーへの Ajax リクエストは行えません（オートコンプリート、レイジーローディングなど）。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:147
+msgid "The entered data should be validated **before** form submission (:ref:`html-dialog-client-side-validation`). If only server side validation is performed, the user will get a late feedback, expressed as synchronization error when switching from offline to online."
+msgstr "入力されたデータは、フォーム送信の**前** 検証される必要があります :ref:`html-dialog-client-side-validation` ）。サーバーサイドの検証のみ実行された場合、ユーザーは、オフラインからオンラインに切り替わる際に同期エラーとして、遅いフィードバックを得ることになります。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:156
+msgid "The layout and the styling of an offline capable dialog should consider the client device where it will run. Most probably it will be embedded in a mobile app on a device with a small touch-screen."
+msgstr "オフライン対応ダイアログのレイアウトとスタイリングは、実行されるクライアントデバイスを考慮する必要があります。ほとんどの場合、小さなタッチスクリーンを備えたデバイス上のモバイルアプリに埋め込まれます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:162
+msgid "To avoid Ajax on form submission, a p:commandButton can be configured with the attribute ajax=\"false\":"
+msgstr "フォーム送信時の Ajax を回避するため、p:commandButton に ajax=\"false \"属性を設定できます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:170
+msgid "Geo Location"
+msgstr "ジオロケーション"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:172
+msgid "The mobile app sends the current position of the mobile device to the server. This information is then stored in location services that are available on the user that has worked with the mobile app and the tasks that have been worked on the mobile app."
+msgstr "モバイルアプリからサーバーにモバイルデバイスの現在位置が送信されます。この情報は、モバイルアプリで作業したユーザーとモバイルアプリで作業したタスクで利用可能な位置情報サービスに保存されます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:177
+msgid "Get latest position of a task:"
+msgstr "タスクの最新位置の取得："
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:185
+msgid "Get latest position of a user:"
+msgstr "ユーザーの最新位置の取得："
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:193
+msgid "The location service can also be used to store additional locations:"
+msgstr "また、位置情報サービスを利用して、さらに位置を保存することもできます。"
+
+#: ../../source/getting-productive/workflow/offline-tasks.rst:208
+msgid "More information can be found in the package :public-api:`ch.ivyteam.ivy.location </ch/ivyteam/ivy/location/package-summary.html>`. It defines the location service and types to create, store and manipulate location information and geo-positions."
+msgstr "詳細については、:public-api:`ch.ivyteam.ivy.location </ch/ivyteam/ivy/location/package-summary.html>` パッケージをご覧ください。パッケージでは、位置情報と地理的な位置を作成、保存、操作するための位置情報サービスとタイプを定義します。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:4
+msgid "Overrides"
+msgstr "オーバーライド"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:6
+msgid "Applications are often implemented as a general solution for a problem and consist of multiple (dependent) projects. For many installations or customer projects it is desirable that certain parts of such a generic solution may be redefined in the context of a specific installation or customer."
+msgstr "多くの場合、アプリケーションは問題に対する一般的なソリューションとして実装され、複数の（依存する）プロジェクトで構成されます。多くのインストレーションや顧客のプロジェクトでは、そのような一般的なソリューションの特定の部分を特定のインストレーションや顧客のコンテキストで再定義できることが理想です。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:12
+msgid "To permit this, Axon Ivy knows various concepts of context-sensitive re-definitions:"
+msgstr "これを実現するため、Axon Ivy はコンテキストに応じた再定義のさまざまなコンセプトに対応します。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:15
+msgid "Regular redefinition (e.g., for Content Objects and/or Configurations): Simply define an already existing artifact with the same name again in a different project."
+msgstr "通常の再定義（コンテンツオブジェクト、設定など）：すでに存在するアーティファクトを別のプロジェクトに同じ名前で再定義します。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:19
+msgid "Redefinition with overrides (e.g., for HTML Dialogs, HTML Dialog components and/or Sub Processes): Define a replacement component for an already existing component."
+msgstr "オーバーライドによる再定義（HTML ダイアログ、HTML ダイアログコンポーネント、サブプロセスなど）：すでに存在するコンポーネントの置換コンポーネントを定義します。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:23
+msgid "By defining overrides on project level, the lookup of a certain component can be redirected to a replacement component. When a component is referenced in a process model of that project then the lookup for this component will yield a different component (i.e., the replacement) at runtime instead of the originally referenced component."
+msgstr "プロジェクトレベルでオーバーライドを定義することにより、特定のコンポーネントのルックアップを置換コンポーネントにリダイレクトできます。あるコンポーネントがそのプロジェクトのプロセスモデルで参照されると、そのコンポーネントのルックアップは、元々参照されていたコンポーネントの代わりに、別のコンポーネント（置換コンポーネント）を実行時に生成します。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:30
+msgid "Example: The Acme Web shop"
+msgstr "例：Acme ウェブショップ"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:32
+msgid "As an example, imagine a web shop application. It contains the following (generic) business process:"
+msgstr "例として、ウェブショップのアプリケーションをイメージしてください。そのアプリケーションには、以下のような（一般的な）ビジネスプロセスが含まれています。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:35
+msgid "Web Shop Process"
+msgstr "ウェブショップのプロセス"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:38
+msgid "The main process itself (Order) and each of the depicted sub processes (DoOrder, ProcessOrder, Shipment) are defined in their own projects. All of those projects together form a (generic) web shop application, depicted below. The web shop project contains the business process and its start; the Frontend project contains the DoOrder sub process; the Backend project contains the ProcessOrder sub process; the Shipment project contains the Shipping sub process."
+msgstr "メインプロセス（Order）と各サブプロセス（DoOrder、ProcessOrder、Shipment）はそれぞれのプロジェクトで定義されます。これらすべてのプロジェクトは、以下の図のような（一般的な）ウェブショップアプリケーションを形成します。ウェブショッププロジェクトにはビジネスプロセスとその開始が含まれ、Frontend プロジェクトには DoOrder サブプロセスが含まれ、Backend プロジェクトには ProcessOrder サブプロセスが含まれ、Shipment プロジェクトには Shipping サブプロセスが含まれます。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:49
+msgid "We now define an additional project, *Acme web shop*. The new project is dependent on web shop and the intention is to bundle all Acme-specific overrides and adoptions in this project. The already existing projects plus this new project form together a more specific and customized *Acme web shop* application, with the following project dependency tree:"
+msgstr "ここに、*Acme Webshop*という追加のプロジェクトを定義します。この新しいプロジェクトは Webshop に依存しています。ここでは、Acme 固有のすべてのオーバーライドとアダプションをこのプロジェクトにまとめます。既存のプロジェクトとこの新しいプロジェクトは、以下のプロジェクトの依存関係ツリーを持つ、より限定的でカスタマイズされた *Acme Webshop* アプリケーションを形成します。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:58
+msgid "Knowing this, we can now specifically override and redefine components from the original generic *web shop* application by redefining them inside the *Acme web shop* project."
+msgstr "これを踏まえて、*Acme Webshop* プロジェクト内でコンポーネントを再定義することで、元の一般的な *ウェブショップ* アプリケーションの特定のコンポーネントをオーバーライドして再定義できます。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:62
+msgid "To define the *Acme web shop* project as an overriding project. you can define a :ref:`strict_overriding` in the generic *Web shop* application. To start with however, make sure your overriding project is dependent on the base project and that each override is defined in your overriding project."
+msgstr "*Acme web shop* プロジェクトをオーバーライドするプロジェクトとして定義するには、一般的な *Web shop* アプリケーションで :ref:`strict_overriding` を定義できます。ただし、まず、オーバーライドするプロジェクトがベースプロジェクトに依存しており、各オーバーライドがオーバーライドするプロジェクト内で定義されていることを確認してください。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:73
+msgid "Strict Overriding"
+msgstr "厳密なオーバーライド"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:75
+msgid "If you want to customize your standard product for a specific customer then the easiest way to realize overrides is by defining an overriding project which contains all the customized components. This means that overridden components are always resolved from the overriding project, if they exist."
+msgstr "特定の顧客向けの規格品をカスタマイズしたい場合、オーバーライドを実現する最も簡単な方法は、すべてのカスタマイズされたコンポーネントを含むオーバーライドする側のプロジェクトを定義することです。つまり、オーバーライドされたコンポーネントが存在する場合、常にオーバーライドするプロジェクトから解決されます。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:81
+msgid "In our webshop example the overriding project would be the *Acme web shop*. Starting a process from either the *Web shop* or the specialized *Acme web shop* will always result in the overridden components being loaded. Not overridden components will still be loaded from the base *Web shop* project."
+msgstr "ウェブショップの例では、オーバーライドされるプロジェクトは *Acme Webshop* となります。*Webshop*、特殊化された *Acme Webshop* のどちらからプロセスを開始しても、常にオーバーライドされたコンポーネントが読み込まれます。オーバーライドされていないコンポーネントは引き続き、ベースとなる *Webshop* プロジェクトから読み込まれます。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:87
+msgid "By defining the overriding project you can leave complex business processes in the base project and only define specialized components in the overriding project."
+msgstr "オーバーライドするプロジェクトを定義して、ベースプロジェクトの複雑なビジネスプロセスはそのままで、特殊なコンポーネントのみオーバーライドするプロジェクトで定義できます。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:91
+msgid "The lookup of components happens hierarchically. If the engine cannot locate an overridden component in the overriding project it will go down the dependency tree until it encounters the wanted component. So maybe you want to provide a third webshop which builds upon the *Acme web shop*. In this case the overriding project would be the most specialized web shop in the dependency tree."
+msgstr "コンポーネントの検索は階層的に行われます。エンジンがオーバーライドされたコンポーネントをオーバーライドされたプロジェクトで見つけることができなかった場合、目的のコンポーネントが見つかるまで依存関係ツリーを下っていきます。つまり、*Acme Webshop* をベースにした 3 番目のウェブショップを提供する場合、オーバーライドするプロジェクトは依存関係ツリーで最も特殊化されたウェブショップになります。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:104
+msgid "To strictly set the overriding project you have to configure it in the :ref:`app-yaml`."
+msgstr "オーバーライドするプロジェクトを厳密に設定するには、 :ref:`app-yaml` で設定する必要があります。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:112
+msgid "While working on your project with strict overriding you have to define the overriding project in the **Designer** as well. This can easily be achieved with by setting the config in the :ref:`Engine Cockpit Application detail view <engine-cockpit-application-detail>`. Alternatively you can find the :ref:`app-yaml` for the Designer under *designerDir/configuration/app-designer.yaml*."
+msgstr "厳密なオーバーライドを使用するプロジェクトで作業する場合、オーバーライドするプロジェクトを **Designer** でも定義する必要があります。これは、:ref:`Engine Cockpit Application detail view <engine-cockpit-application-detail>` で設定を行うことで簡単に実現できます。あるいは、Designer 用の :ref:`app-yaml` は *designerDir/configuration/app-designer.yaml* にあります。"
+
+#: ../../source/getting-productive/workflow/overrides/index.rst:120
+msgid "Overrides cannot be \"stacked\" - you can only override a component that is not itself an override. Axon Ivy Designer will warn you about this."
+msgstr "オーバーライドは「スタック」できません。それ自身がオーバーライドでないコンポーネントのみオーバーライドできます。Axon Ivy Designer では、これに関する警告が表示されます。"
 
 #: ../../source/glossary/glossary.rst:2
 msgid "Glossary"
@@ -25472,3 +25423,39 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "``rules`` - references to the :ref:`rule engine integration <rule-engine>` within Axon Ivy."
 #~ msgstr "``rules`` - Axon Ivy 内の :ref:`ルールエンジンの統合<rule-engine>` への参照。"
+
+#~ msgid "Error Dialogs"
+#~ msgstr "エラーダイアログ"
+
+#~ msgid "Error Id"
+#~ msgstr "エラー ID"
+
+#~ msgid "Error Dialogs shown to the user contain a unique error id. This error id can be used to search the log files for more information about this error."
+#~ msgstr "ユーザーに表示されるエラーダイアログには、固有のエラー ID が表示されます。このエラー ID を使用して、ログファイルを検索し、エラーの詳細情報を得ることができます。"
+
+#~ msgid "Error Report"
+#~ msgstr "エラーレポート"
+
+#~ msgid "On Error Dialogs it is possible to generate an Error Report. This report contains information about the error, the designer machine and the current state of the Axon Ivy Designer."
+#~ msgstr "エラーダイアログでは、エラーレポートを作成できます。このレポートには、エラーに関する情報、デザイナーのマシン、Axon Ivy Designer の現在の状態が含まれます。"
+
+#~ msgid "If you need to contact the support because of an error, please generate an Error Report for it. Most of the time it contains the necessary information, to find and solve the problem."
+#~ msgstr "エラーにより、サポートに連絡する必要がある場合は、エラーレポートを作成してください。ほとんどの場合、エラーレポートには、問題を見つけ、解決するために必要な情報が含まれます。"
+
+#~ msgid "On the HTML error page use the :guilabel:`Open Error Report` button at the end of the error page to open the Error Report. Use :guilabel:`CTRL-A` and :guilabel:`CTRL-C` to copy the Error Report to the clipboard."
+#~ msgstr "HTML エラーページでは、エラーページの終わりにある:guilabel:`エラーレポートを開く` ボタンを使用して、エラーレポートを開きます。:guilabel:`CTRL + A` と :guilabel:`CTRL + C` を使用して、エラーレポートをクリップボードにコピーします。"
+
+#~ msgid "The Event Details View of the :ref:`runtimelog-view` provides a button to generate and save an error report for a given log entry."
+#~ msgstr ":ref:`runtimelog-view` のイベントの詳細ビューには、特定のログエントリのエラーレポートを作成して保存するボタンが表示されます。"
+
+#~ msgid "Moreover, you can also use the menu :guilabel:`Axon Ivy` > :guilabel:`Debug` > :guilabel:`Save Debug Report` to generate and save such a report without an error."
+#~ msgstr "また、メニューで :guilabel:`Axon Ivy`、:guilabel:`デバッグ`、:guilabel:`デバッグレポートを保存` の順に選択して、エラーを含まないレポートを作成して保存できます。"
+
+#~ msgid "Memory Problems"
+#~ msgstr "メモリの問題"
+
+#~ msgid "OutOfMemoryException: Java Heap Space"
+#~ msgstr "OutOfMemoryException：Java のヒープ領域"
+
+#~ msgid "If this error occurs, then the Designer requests more memory than it is allowed to use. This can happen when a lot of data is used during the process simulations. Ensure, that your computer has enough memory. Then you can increase the maximal memory consumption of the Axon Ivy Designer. Just open the ``AxonIvyDesigner.ini`` and change the value in the line after ``-Xmx`` to a higher one."
+#~ msgstr "このエラーが発生した場合、デザイナーは、使用可能メモリを超えるメモリをリクエストします。プロセスのシミュレーション中に大量のデータが使用されると、このエラーが発生することがあります。コンピューターに十分なメモリが搭載されていることを確認してください。確認後、Axon Ivy Designer の最大メモリ消費量を増やすことができます。``AxonIvyDesigner.ini`` を開き、``-Xmx`` の後の行の値をより大きい値に変更してください。"
