@@ -172,9 +172,12 @@ User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` have to be
 implemented such that no data is modified.
 
 The CSRF protection filter is enabled by default. However, it can be turned off
-in an environment where the clients can be trusted (e.g., intranet). See the 
-property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-yaml`
-
+in an environment where the clients can be trusted (e.g., intranet). 
+Global disabling for all REST resources is achieved by the 
+property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-yaml`.
+If disabling is only required for a specific REST resource, 
+the annotation ``@ch.ivyteam.ivy.engine.rest.service.annotation.csrf.DisableCsrfProtection`` 
+can be applied on the resource class.
 
 Workflow API
 ------------
