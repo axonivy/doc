@@ -368,8 +368,6 @@ the objects are described in the :public-api:`Public API </>`):
 -  ``var`` - references to the variables that are defined for
    this application (see :ref:`variables` for more information)
 
--  ``rules`` - references to the :ref:`rule engine integration <rule-engine>` within Axon Ivy.
-
 
 .. note::
 
