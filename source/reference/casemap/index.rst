@@ -10,36 +10,6 @@ big picture <adapative-case-management-big-picture>`.
 The Case Map controls which processes are executed automatically in
 which order and which processes can be started manually by users.
 
-.. _casemap-new-wizard:
-
-Case Map Wizard
----------------
-
-The *New Case Maps Wizard* lets you create a new Case Map.
-
-Accessibility
-~~~~~~~~~~~~~
-
-File > New > Case Map
-
-Features
-~~~~~~~~
-
-.. figure:: /_images/casemap/new-casemap-wizard.png
-
-Project Name
-   Choose the project in which you want to create a new Case Map.
-
-Namespace
-   Select a process group where the new Case Map will be inserted.
-   Select the ``<default>`` process group to create a Case Map directly
-   below the project's processes folder. You can click on the group
-   folder button to open the *New Process Group Wizard*, if you want to
-   create a new group "on the fly". The process groups are listed
-   relative to the project's *processes* folder.
-
-Name
-   Enter the name of the Case Map that you want to create.
 
 .. _casemap-editor:
 
@@ -51,7 +21,7 @@ in the designer. Use it to create and edit Case Maps. At first you
 typically want to name your case map and add new stages by clicking on
 the plus (+) symbol.
 
-.. figure:: /_images/casemap/casemap-editor.png
+.. figure:: /_images/case-map-editor/case-map-editor.png
    :alt: Case Map Editor
 
    Case Map Editor
@@ -74,10 +44,9 @@ in the Workflow UI with its name and icon.
 A business process can programmatically switch to another stage by using
 the case map API (``ivy.casemap``).
 
-The position of a Stage in a case map can be changed via the menu on the
-stage.
+The position of a Stage in a case map can be changed via drag and drop or arrow keys.
 
-.. figure:: /_images/casemap/casemap-element-stage.png
+.. figure:: /_images/case-map-editor/case-map-stage.png
    :alt: Case Map Element: Stage
 
    Case Map Element: Stage
@@ -91,7 +60,7 @@ which entry condition evaluates to true, will be started.
 
 Processes and Sidesteps can be rearranged by drag and drop.
 
-.. figure:: /_images/casemap/casemap-element-process.png
+.. figure:: /_images/case-map-editor/case-map-process.png
    :alt: Case Map Element: Process
 
    Case Map Element: Process
@@ -100,15 +69,14 @@ Processes and Sidesteps can be rearranged by drag and drop.
 Process Precondition
 ''''''''''''''''''''
 
-Preconditions can be set on a process and define whether a process
+Preconditions |precondition| can be set on a process and define whether a process
 should be skipped. The precondition on the first process in the case map
 is not evaluated. If a precondition is not met, the execution continues
 on the next process. For script features see :ref:`casemap-scripting`.
 
-.. figure:: /_images/casemap/casemap-element-precondition.png
-   :alt: Precondition symbol
+.. |precondition| image:: /_images/ui-icons/condition.svg
+   :width: 2em   
 
-   Precondition symbol
 
 Sidestep
 ^^^^^^^^
@@ -124,11 +92,6 @@ Sidestep Precondition
 Decides whether that Sidestep can be currently started or not. For
 script features see :ref:`casemap-scripting`.
 
-.. figure:: /_images/casemap/casemap-element-precondition.png
-   :alt: Sidestep Precondition symbol
-
-   Sidestep Precondition symbol
-
 
 .. _casemap-scripting:
 
@@ -139,7 +102,7 @@ Scripts within a Case Map can be written in ivyScript.
 
 A simple Process Precondition could be implemented as follows:
 
-::
+.. code-block:: java
 
    businessCase.getCreatorUserName().equals("Bruno") && creditDossier.needsApproval
 
@@ -155,66 +118,6 @@ its simple name (e.g., if the full-qualified name of the class is
 The variable value will be loaded from the :ref:`Business Data
 Repository <business-data>`.
 
-.. figure:: /_images/casemap/credit-dossier-data.png
-   :alt: Sample DataClass with @BusinessCaseData annotation
-
-   Sample DataClass with @BusinessCaseData annotation
-
-
-Case Map Animation
-~~~~~~~~~~~~~~~~~~
-
-.. figure:: /_images/casemap/casemap-editor-animation.png
-
-The execution of a Case Map can be followed in the Case Map Editor. As
-known from the BPM processes the currently executing and already
-executed elements in the Case Map will be marked. It uses the
-:ref:`simulation` known from the BPM processes.
-
-
-Case Map Statistics (Preview)
------------------------------
-
-The Case Map provides the ability to display different process metrics
-of a Case Map in an early version. The monitoring can be enabled via the
-Case Map menu on the right-hand side. Currently the Case Map statistics
-only displays the metrics of the actual linked process, metrics of other
-processes that might have been started from this process are not
-considered.
-
-.. figure:: /_images/casemap/casemap-metrics-process.png
-   :alt: Process metrics
-
-   Process metrics
-
-
-Tasks
-~~~~~
-
-The tasks statistics are based on the expiration dates of the Case Map
-tasks. Therefore, the task count is only based on tasks with an
-expiration date. The tasks are divided into following three categories:
-
-On time
-   Considers the average throughput time to calculate if the tasks are
-   on time. A task is considered on time when the expiry date of the
-   task is more than half of the average throughput time away from the
-   current time.
-
-On risk
-   Considers the average throughput time to calculate if the tasks are
-   on risk. A task is considered on risk when the expiry date of the
-   task is the half of the average throughput time away from the current
-   time.
-
-Overdue
-   The task count of expired tasks.
-
-
-Throughput time
-~~~~~~~~~~~~~~~
-
-The average throughput time per task of this process is displayed.
 
 
 .. _casemap-execution:
