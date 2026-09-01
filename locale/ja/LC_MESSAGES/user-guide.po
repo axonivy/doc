@@ -581,17 +581,9 @@ msgstr "ウェブショップのプロセス"
 msgid "The main process itself (Order) and each of the depicted sub processes (DoOrder, ProcessOrder, Shipment) are defined in their own projects. All of those projects together form a (generic) web shop application, depicted below. The web shop project contains the business process and its start; the Frontend project contains the DoOrder sub process; the Backend project contains the ProcessOrder sub process; the Shipment project contains the Shipping sub process."
 msgstr "メインプロセス（Order）と各サブプロセス（DoOrder、ProcessOrder、Shipment）はそれぞれのプロジェクトで定義されます。これらすべてのプロジェクトは、以下の図のような（一般的な）ウェブショップアプリケーションを形成します。ウェブショッププロジェクトにはビジネスプロセスとその開始が含まれ、Frontend プロジェクトには DoOrder サブプロセスが含まれ、Backend プロジェクトには ProcessOrder サブプロセスが含まれ、Shipment プロジェクトには Shipping サブプロセスが含まれます。"
 
-#: ../../source/designer-guide/how-to/overrides.rst:46
-msgid "Overriding 1"
-msgstr "オーバーライド 1"
-
 #: ../../source/designer-guide/how-to/overrides.rst:49
 msgid "We now define an additional project, *Acme web shop*. The new project is dependent on web shop and the intention is to bundle all Acme-specific overrides and adoptions in this project. The already existing projects plus this new project form together a more specific and customized *Acme web shop* application, with the following project dependency tree:"
 msgstr "ここに、*Acme Webshop*という追加のプロジェクトを定義します。この新しいプロジェクトは Webshop に依存しています。ここでは、Acme 固有のすべてのオーバーライドとアダプションをこのプロジェクトにまとめます。既存のプロジェクトとこの新しいプロジェクトは、以下のプロジェクトの依存関係ツリーを持つ、より限定的でカスタマイズされた *Acme Webshop* アプリケーションを形成します。"
-
-#: ../../source/designer-guide/how-to/overrides.rst:55
-msgid "Overriding 2"
-msgstr "オーバーライド 2"
 
 #: ../../source/designer-guide/how-to/overrides.rst:58
 msgid "Knowing this, we can now specifically override and redefine components from the original generic *web shop* application by redefining them inside the *Acme web shop* project."
@@ -916,46 +908,46 @@ msgid "A Service Level Agreement (SLA) defines that a task needs to be processed
 msgstr "SLA（サービスレベル合意書）には、タスクを翌営業日の終わりまでに処理する必要があることが定められています。タスクの有効期限を翌営業日に設定して、これを実装します。"
 
 #: ../../source/designer-guide/how-to/workflow/business-calendar.rst:39
-msgid "If the default calendar does not apply, you can set the business calendar on the case:"
-msgstr "デフォルトカレンダーが適用されない場合は、ケースにビジネスカレンダーを設定できます。"
+msgid "If the default calendar does not apply, you can set the business calendar on the case (:ref:`process-element-tab-code`):"
+msgstr "デフォルトカレンダーが適用されない場合は、ケースにビジネスカレンダーを設定できます（:ref:`process-element-tab-code`）。"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:44
-msgid "Set the timeout duration to two business days, using the current calendar."
-msgstr "現在のカレンダーを使用して、タイムアウト期間を 2 営業日に設定します。"
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:46
+msgid "Set the timeout duration to two business days, using the current calendar. (:ref:`process-element-tab-task`)"
+msgstr "現在のカレンダーを使用して、タイムアウト期間を 2 営業日に設定します（:ref:`process-element-tab-task`）。"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:48
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:53
 msgid "A payment application automatically corrects the payment date entered to the next business day if necessary:"
 msgstr "決済アプリケーションは、必要に応じて入力された支払日を自動的に翌営業日に修正します。"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:56
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:61
 msgid "You can set a calendar on tasks, cases, or applications. The variable (ivy.cal) references the calendar that is valid for the current context. It determines the valid calendar by checking:"
 msgstr "タスク、ケース、アプリケーションにカレンダーを設定できます。(ivy.cal) 変数は、現在のコンテキストで有効なカレンダーを参照し、以下をチェックして有効なカレンダーを決定します。"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:60
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:65
 msgid "the current task"
 msgstr "現在のタスク"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:61
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:66
 msgid "the current case"
 msgstr "現在のケース"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:62
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:67
 msgid "the current application"
 msgstr "現在のアプリケーション"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:63
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:68
 msgid "the root calendar of the current application, if none of the above have been set explicitly."
 msgstr "上記のいずれも明示的に設定されていない場合は、現在のアプリケーションのルートカレンダー"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:66
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:71
 msgid "You can use another calendar by referencing it by its name:"
 msgstr "カレンダーを名前で参照して、別のカレンダーを使用できます。"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:72
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:77
 msgid "If you want to configure business calendars for test purposes in your Axon Ivy Designer environment, you can change (or create if it doesn't exist yet) the ``app-designer.yaml`` file in folder ``<designer_path>/configuration``. Note that all values in this file are valid for all projects in your workspace and that they don't get cleared after a restart."
 msgstr "Axon Ivy Designer 環境でテスト用にビジネスカレンダーを設定したい場合は、``<デザイナーのパス>/configuration`` フォルダーにある ``app-designer.yaml`` ファイルを変更できます（ファイルがない場合は作成できます）。このファイルのすべての値はワークスペース内のすべてのプロジェクトに対して有効であり、再起動してもクリアされないことに注意してください。"
 
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:78
+#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:83
 msgid "See chapter :ref:`configuration-business-calendar` in the Engine Guide on how to configure business calendars on your Engine instance."
 msgstr "エンジンインスタンスでビジネスカレンダーを設定する方法については、エンジンガイドの :ref:`configuration-business-calendar` 」のセクションを参照してください。"
 
@@ -973,7 +965,7 @@ msgstr "Axon Ivy ワークフローは、**プロセスインスタンス** の�
 msgid "|image0|"
 msgstr "|image0|"
 
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:118
+#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:116
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:402
 #: ../../source/reference/process/error-handling.rst:258
 #: ../../source/reference/process/process-elements/alternative.rst:37
@@ -1074,12 +1066,10 @@ msgid "The first **Case** of a process always acts as the **Business Case** (see
 msgstr "プロセスの最初の **ケース** は常に **ビジネスケース** となります（「最初のケース」の図を参照）。**ビジネスケース** に後から接続されたすべての **ケース** は、 **ビジネスケース** のサブケースとなります（「複数のケース」の図を参照）。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:107
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:110
 msgid "First Case"
 msgstr "最初のケース"
 
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:112
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:115
+#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:111
 msgid "Multiple Cases"
 msgstr "複数のケース"
 
@@ -2039,7 +2029,6 @@ msgstr ""
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:90
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:227
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preview.rst:29
-#: ../../source/reference/casemap/index.rst:21
 #: ../../source/reference/configuration/persistence.rst:49
 #: ../../source/reference/dialog/form-editor.rst:23
 #: ../../source/reference/process/process-editor.rst:25
@@ -3407,8 +3396,8 @@ msgid "Deployment Options"
 msgstr "展開オプション"
 
 #: ../../source/engine-guide/deployment/prepare/deployment-options/index.rst:6
-msgid "With deployment options you can influence the deployment behavior. For example, whether test users should be deployed, in which process model version the Axon Ivy project should be installed. All options and their detailed description are defined in the following :file:`deploy.options.yaml`."
-msgstr "展開オプションを使用して、例えば、テストユーザーを展開するか、どのプロセスモデルバージョンに Axon Ivy プロジェクトをインストールするかなど、展開の動作を制御できます。すべてのオプションとその詳細は、以下の :file:`deploy.options.yaml` で定義されます。"
+msgid "With deployment options you can influence the deployment behavior. All options and their detailed description are defined in the following :file:`deploy.options.yaml`."
+msgstr "展開オプションを使用して、展開の動作を制御できます。すべてのオプションとその詳細な説明は、以下の :file:`deploy.options.yaml` で定義されています。"
 
 #: ../../source/engine-guide/deployment/prepare/index.rst:4
 msgid "Prepare"
@@ -3580,38 +3569,6 @@ msgstr "ケースドキュメントについては、:ref:`documents-s3` で説�
 #: ../../source/engine-guide/integration/cluster/deployment/index.rst:6
 msgid "Axon Ivy Engine Enterprise Editions support all available :ref:`deployment methods <deployment-deploying>`. However, the application directory must be shared. In container environments, when using the official Axon Ivy Docker image, you need to provide a persistent volume for the application directory, which is by default located at :code:`/ivy/applications`."
 msgstr "Axon Ivy Engine Enterprise Edition は、利用可能なすべての :ref:`deployment methods <deployment-deploying>` をサポートしています。ただし、アプリケーションディレクトリは共有されている必要があります。コンテナ環境では、公式の Axon Ivy Docker イメージを使用する場合、アプリケーションディレクトリ（デフォルトでは :code:`/ivy/applications`）に対して永続性ボリュームを提供する必要があります。"
-
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:13
-msgid "Container Image"
-msgstr "コンテナイメージ"
-
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:15
-msgid "You can also create your own container image based on the official Axon Ivy Engine image. To do so, include your Axon Ivy Application along with all required Process Model Versions (including old versions too) for runtime in the deployment directory :code:`/ivy/deploy`. In this setup, there is no need to share the application directory across nodes."
-msgstr "公式の Axon Ivy Engine イメージをベースにして独自のコンテナイメージを作成することもできます。そのためには、実行に必要なすべてのプロセスモデルバージョン（古いバージョンも含む）とともに Axon Ivy アプリケーションを、デプロイメントディレクトリ :code:`/ivy/deploy` に含めます。この設定では、ノード間でアプリケーションディレクトリを共有する必要はありません。"
-
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:26
-msgid "A CI/CD pipeline can look like this:"
-msgstr "CI/CD パイプラインはこのようになります。"
-
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:30
-msgid "The build server is cloning the Axon Ivy Projects from a SCM system like GitHub."
-msgstr "ビルドサーバーは、GitHub などの SCM システムから Axon Ivy プロジェクトをクローンしています。"
-
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:32
-msgid "The build server is building the Axon Ivy Projects and creating an application zip."
-msgstr "ビルドサーバーは Axon Ivy プロジェクトをビルドし、アプリケーション ZIP を作成しています。"
-
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:34
-msgid "The build server is creating a Docker image based on the official Axon Ivy Engine Image."
-msgstr "ビルドサーバーは、公式の Axon Ivy Engine イメージをベースにして Docker イメージを作成しています。"
-
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:36
-msgid "The build server is publishing the image to an internal or external image registry."
-msgstr "ビルドサーバーは、内部または外部のイメージレジストリにイメージを公開しています。"
-
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:37
-msgid "The container orchestration platform (e.g., Kubernetes) is deploying the new image to the cluster."
-msgstr "コンテナオーケストレーションプラットフォーム（例：Kubernetes）は、新しいイメージをクラスタに展開しています。"
 
 #: ../../source/engine-guide/integration/cluster/index.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:262
@@ -4987,7 +4944,6 @@ msgstr "実行されるプロセス要素ごとに 1 つのエントリがビュ
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:64
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:140
-#: ../../source/reference/casemap/index.rst:41
 #: ../../source/reference/data/index.rst:32
 #: ../../source/reference/data/index.rst:59
 #: ../../source/reference/data/index.rst:103
@@ -6268,7 +6224,6 @@ msgstr "エンジンによって、使用できない項目や表示されない
 
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:60
 #: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:14
-#: ../../source/reference/casemap/index.rst:26
 #: ../../source/reference/configuration/persistence.rst:54
 #: ../../source/reference/data/index.rst:26
 #: ../../source/reference/data/index.rst:100
@@ -8170,22 +8125,22 @@ msgid "User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` have to 
 msgstr "``GET``、``HEAD``、``OPTIONS`` を使用してユーザーが提供する REST サービスは、データが変更されないように実装する必要があります。"
 
 #: ../../source/getting-productive/connectivity/restapi.rst:174
-msgid "The CSRF protection filter is enabled by default. However, it can be turned off in an environment where the clients can be trusted (e.g., intranet). See the property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-yaml`"
-msgstr "CSRF 保護フィルターはデフォルトで有効になっていますが、クライアントが信頼できる環境（イントラネットなど）ではオフにすることができます :ref:`ivy-yaml` の ``REST.Servlet.CSRF.Protection`` プロパティを参照してください。"
+msgid "The CSRF protection filter is enabled by default. However, it can be turned off in an environment where the clients can be trusted (e.g., intranet). Global disabling for all REST resources is achieved by the property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-yaml`. If disabling is only required for a specific REST resource, the annotation ``@ch.ivyteam.ivy.engine.rest.service.annotation.csrf.DisableCsrfProtection`` can be applied on the resource class."
+msgstr "CSRF 保護フィルターはデフォルトで有効になっています。ただし、クライアントを信頼できる環境（イントラネットなど）では無効にできます。すべての REST リソースで無効にするには、:ref:`ivy-yaml` の ``REST.Servlet.CSRF.Protection`` プロパティを設定します。特定の REST リソースだけで無効にする場合は、リソースクラスに ``@ch.ivyteam.ivy.engine.rest.service.annotation.csrf.DisableCsrfProtection`` アノテーションを付けます。"
 
-#: ../../source/getting-productive/connectivity/restapi.rst:180
+#: ../../source/getting-productive/connectivity/restapi.rst:183
 msgid "Workflow API"
 msgstr "ワークフロー API"
 
-#: ../../source/getting-productive/connectivity/restapi.rst:182
+#: ../../source/getting-productive/connectivity/restapi.rst:185
 msgid "Axon Ivy provides a basic :ref:`Workflow API REST Service <workflow-api>`. You can use it to enable remote systems to request information about tasks of a user etc."
 msgstr "Axon Ivy は基本的な :ref:`ワークフロー API REST サービス<workflow-api>` を提供しています。これを使用して、リモートシステムからユーザーのタスクに関する情報を要求できます。"
 
-#: ../../source/getting-productive/connectivity/restapi.rst:188
+#: ../../source/getting-productive/connectivity/restapi.rst:191
 msgid "Pretty printing"
 msgstr "プリティプリント"
 
-#: ../../source/getting-productive/connectivity/restapi.rst:190
+#: ../../source/getting-productive/connectivity/restapi.rst:193
 msgid "If you add the query param `pretty` to the URL to any REST Service provided by the Axon Ivy Engine which produce JSON, then you get a pretty formatted JSON e.g., http://localhost:8081/designer/api/engine/info?pretty"
 msgstr "JSON を生成する Axon Ivy Engine の REST サービスの URL にクエリパラメーター `pretty` を追加すると、整形された JSON が得られます（例：http://localhost:8081/designer/api/engine/info?pretty）。"
 
@@ -11879,7 +11834,6 @@ msgid "task-switch-gateway"
 msgstr "task-switch-gateway"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/user-dialog-concept.rst:102
-#: ../../source/reference/casemap/index.rst:192
 msgid "Tasks"
 msgstr "タスク"
 
@@ -12707,7 +12661,7 @@ msgid "A Layout contains the main structure of an HTML page (e.g., a header, con
 msgstr "レイアウトには、HTML ページの主構造（ヘッダー、コンテンツ、フッターセクションなど）が格納されます :ref:`ウェブページ<user-interface-web-page>` レイアウトは :ref:`CMS <cms>` で定義されます :ref:`HTML ダイアログ<html-dialogs>` レイアウトは webContent フォルダーで定義されます。"
 
 #: ../../source/glossary/glossary.rst:55
-#: ../../source/reference/casemap/index.rst:86
+#: ../../source/reference/casemap/index.rst:55
 #: ../../source/reference/process/index.rst:2
 msgid "Process"
 msgstr "プロセス"
@@ -13879,228 +13833,128 @@ msgstr "ケースマップを使用して、長い実行プロセスを複数の
 msgid "The Case Map controls which processes are executed automatically in which order and which processes can be started manually by users."
 msgstr "ケースマップは、どのプロセスをどの順番で自動的に実行し、どのプロセスをユーザーが手動で開始できるかを制御します。"
 
-#: ../../source/reference/casemap/index.rst:16
-msgid "Case Map Wizard"
-msgstr "ケースマップウィザード"
-
-#: ../../source/reference/casemap/index.rst:18
-msgid "The *New Case Maps Wizard* lets you create a new Case Map."
-msgstr "*ケースマップの作成ウィザード* では、新しいケースマップを作成できます。"
-
-#: ../../source/reference/casemap/index.rst:23
-msgid "File > New > Case Map"
-msgstr "［ファイル］ > ［新規］ > ［ケースマップ］"
-
-#: ../../source/reference/casemap/index.rst:30
-msgid "Project Name"
-msgstr "プロジェクト名"
-
-#: ../../source/reference/casemap/index.rst:31
-msgid "Choose the project in which you want to create a new Case Map."
-msgstr "新しいケースマップを作成するプロジェクトを選択します。"
-
-#: ../../source/reference/casemap/index.rst:33
-msgid "Namespace"
-msgstr "名前空間"
-
-#: ../../source/reference/casemap/index.rst:34
-msgid "Select a process group where the new Case Map will be inserted. Select the ``<default>`` process group to create a Case Map directly below the project's processes folder. You can click on the group folder button to open the *New Process Group Wizard*, if you want to create a new group \"on the fly\". The process groups are listed relative to the project's *processes* folder."
-msgstr "新しいケースマップを挿入するプロセスグループを選択します。 ``<default>`` プロセスグループを選択すると、プロジェクトのプロセスフォルダーの直下にケースマップが作成されます。新しいグループを「その場」で作成したい場合は、グループフォルダーボタンをクリックして、 *プロセスグループの作成ウィザード* を開くことができます。プロセスグループは、プロジェクトの *プロセス* フォルダーを基準に一覧表示されます。"
-
-#: ../../source/reference/casemap/index.rst:42
-msgid "Enter the name of the Case Map that you want to create."
-msgstr "作成するケースマップの名前を入力します。"
-
-#: ../../source/reference/casemap/index.rst:47
-#: ../../source/reference/casemap/index.rst:54
-#: ../../source/reference/casemap/index.rst:57
+#: ../../source/reference/casemap/index.rst:17
+#: ../../source/reference/casemap/index.rst:24
+#: ../../source/reference/casemap/index.rst:27
 msgid "Case Map Editor"
 msgstr "ケースマップエディター"
 
-#: ../../source/reference/casemap/index.rst:49
+#: ../../source/reference/casemap/index.rst:19
 msgid "The Case map editor is the editor that is shown when you open a case map in the designer. Use it to create and edit Case Maps. At first you typically want to name your case map and add new stages by clicking on the plus (+) symbol."
 msgstr "ケースマップエディターは、デザイナーでケースマップを開いたときに表示されるエディターです。ケースマップの作成と編集に使用します。一般的には、最初にケースマップに名前を付け、プラス（+）記号をクリックして新しいステージを追加します。"
 
-#: ../../source/reference/casemap/index.rst:60
+#: ../../source/reference/casemap/index.rst:30
 msgid "Case Map Element Reference"
 msgstr "ケースマップの要素について"
 
-#: ../../source/reference/casemap/index.rst:63
+#: ../../source/reference/casemap/index.rst:33
 msgid "Stage"
 msgstr "ステージ"
 
-#: ../../source/reference/casemap/index.rst:65
+#: ../../source/reference/casemap/index.rst:35
 msgid "A case map is divided into stages. Each stage defines a certain phase in the life of a business process. A stage is a container for multiple processes that belong to each other in a logical order. Within a stage the processes are executed from top to bottom. If the last process of a stage has finished the execution continues on the stage to the right. Besides processes a stage can also contain Sidesteps, that are valid in the current stage. The actual stage of a Business Case is also displayed in the Workflow UI with its name and icon."
 msgstr "ケースマップはステージに分けられます。各ステージは、ビジネスプロセスのライフサイクルにおける特定のフェーズを定義します。ステージは、論理的な順序で互いに属する複数のプロセスのコンテナです。ステージ内では、プロセスは上から下に実行されます。ステージの最後のプロセスが終了すると、右側のステージで実行が続行されます。ステージには、プロセスの他に、現在のステージで有効なサイドステップを含めることができます。ビジネスケースの実際のステージは、ワークフロー UI に名前とアイコンで表示されます。"
 
-#: ../../source/reference/casemap/index.rst:74
+#: ../../source/reference/casemap/index.rst:44
 msgid "A business process can programmatically switch to another stage by using the case map API (``ivy.casemap``)."
 msgstr "ビジネスプロセスは、ケースマップ API（``ivy.casemap``）を使用して、プログラムで別のステージに切り替えることができます。"
 
-#: ../../source/reference/casemap/index.rst:77
-msgid "The position of a Stage in a case map can be changed via the menu on the stage."
-msgstr "ケースマップ内のステージの位置は、ステージ上のメニューで変更できます。"
+#: ../../source/reference/casemap/index.rst:47
+msgid "The position of a Stage in a case map can be changed via drag and drop or arrow keys."
+msgstr "ケースマップ内のステージの位置は、ドラッグアンドドロップまたは矢印キーで変更できます。"
 
-#: ../../source/reference/casemap/index.rst:80
-#: ../../source/reference/casemap/index.rst:83
+#: ../../source/reference/casemap/index.rst:49
+#: ../../source/reference/casemap/index.rst:52
 msgid "Case Map Element: Stage"
 msgstr "ケースマップの要素：ステージ"
 
-#: ../../source/reference/casemap/index.rst:88
+#: ../../source/reference/casemap/index.rst:57
 msgid "A process in the Case Map references a process start of an Axon Ivy process. If the business process enters a stage, the first process, which entry condition evaluates to true, will be started."
 msgstr "ケースマップのプロセスは、Axon Ivy プロセスのプロセス開始を参照します。ビジネスプロセスがステージに入ると、エントリ条件が真と評価される最初のプロセスが開始されます。"
 
-#: ../../source/reference/casemap/index.rst:92
+#: ../../source/reference/casemap/index.rst:61
 msgid "Processes and Sidesteps can be rearranged by drag and drop."
 msgstr "プロセスやサイドステップは、ドラッグアンドドロップで並べ替えることができます。"
 
-#: ../../source/reference/casemap/index.rst:94
-#: ../../source/reference/casemap/index.rst:97
+#: ../../source/reference/casemap/index.rst:63
+#: ../../source/reference/casemap/index.rst:66
 msgid "Case Map Element: Process"
 msgstr "ケースマップの要素：プロセス"
 
-#: ../../source/reference/casemap/index.rst:101
+#: ../../source/reference/casemap/index.rst:70
 msgid "Process Precondition"
 msgstr "プロセスの前提条件"
 
-#: ../../source/reference/casemap/index.rst:103
-msgid "Preconditions can be set on a process and define whether a process should be skipped. The precondition on the first process in the case map is not evaluated. If a precondition is not met, the execution continues on the next process. For script features see :ref:`casemap-scripting`."
-msgstr "プロセスに前提条件を設定し、プロセスをスキップするかどうかを定義できます。ケースマップの最初のプロセスの前提条件は評価されません。前提条件が満たされない場合、実行は次のプロセスで継続されます。スクリプトの機能については、 :ref:`casemap-scripting` 」を参照してください。"
+#: ../../source/reference/casemap/index.rst:72
+msgid "Preconditions |precondition| can be set on a process and define whether a process should be skipped. The precondition on the first process in the case map is not evaluated. If a precondition is not met, the execution continues on the next process. For script features see :ref:`casemap-scripting`."
+msgstr "前提条件 |precondition| をプロセスに設定して、プロセスをスキップするかどうかを定義できます。ケースマップの最初のプロセスの前提条件は評価されません。前提条件が満たされない場合、実行は次のプロセスで継続されます。スクリプト機能については、:ref:`casemap-scripting` を参照してください。"
 
-#: ../../source/reference/casemap/index.rst:108
-#: ../../source/reference/casemap/index.rst:111
-msgid "Precondition symbol"
-msgstr "前提条件の記号"
+#: ../../source/reference/casemap/index.rst:77
+msgid "precondition"
+msgstr "前提条件"
 
-#: ../../source/reference/casemap/index.rst:114
+#: ../../source/reference/casemap/index.rst:82
 msgid "Sidestep"
 msgstr "サイドステップ"
 
-#: ../../source/reference/casemap/index.rst:116
+#: ../../source/reference/casemap/index.rst:84
 msgid "Sidesteps are optionally executable processes. Sidesteps like processes belong to a stage. They can be manually started at any time during the ongoing business process. A typical Sidestep could be a process which is used to involve a supervisor to ask for clarification."
 msgstr "サイドステップは、任意で実行可能なプロセスです。プロセスと同様、サイドステップもステージに属します。進行中のビジネスプロセス中、いつでも手動で開始できます。一般的なサイドステップは、スーパーバイザーに説明を求めるためのプロセスです。"
 
-#: ../../source/reference/casemap/index.rst:122
+#: ../../source/reference/casemap/index.rst:90
 msgid "Sidestep Precondition"
 msgstr "サイドステップの前提条件"
 
-#: ../../source/reference/casemap/index.rst:124
+#: ../../source/reference/casemap/index.rst:92
 msgid "Decides whether that Sidestep can be currently started or not. For script features see :ref:`casemap-scripting`."
 msgstr "サイドステップを現在開始できるかどうかを決定します。スクリプトの機能については、 :ref:`casemap-scripting` 」を参照してください。"
 
-#: ../../source/reference/casemap/index.rst:127
-#: ../../source/reference/casemap/index.rst:130
-msgid "Sidestep Precondition symbol"
-msgstr "サイドステップの前提条件の記号"
-
-#: ../../source/reference/casemap/index.rst:136
+#: ../../source/reference/casemap/index.rst:99
 msgid "Case Map scripting"
 msgstr "ケースマップのスクリプティング"
 
-#: ../../source/reference/casemap/index.rst:138
+#: ../../source/reference/casemap/index.rst:101
 msgid "Scripts within a Case Map can be written in ivyScript."
 msgstr "ケースマップ内のスクリプトは、ivyScript で記述できます。"
 
-#: ../../source/reference/casemap/index.rst:140
+#: ../../source/reference/casemap/index.rst:103
 msgid "A simple Process Precondition could be implemented as follows:"
 msgstr "単純なプロセスの前提条件は以下のように実装できます。"
 
-#: ../../source/reference/casemap/index.rst:147
+#: ../../source/reference/casemap/index.rst:110
 msgid "Available variables"
 msgstr "利用可能な変数"
 
-#: ../../source/reference/casemap/index.rst:149
+#: ../../source/reference/casemap/index.rst:112
 msgid "Within Case Map scripts the running Business Case is always accessible through the variable ``businessCase``."
 msgstr "ケースマップのスクリプト内では、実行中のビジネスケースは常に ``businessCase`` 変数からアクセスできます。"
 
-#: ../../source/reference/casemap/index.rst:152
+#: ../../source/reference/casemap/index.rst:115
 msgid "Any class that is annotated with ``@BusinessCaseData`` is accessible by its simple name (e.g., if the full-qualified name of the class is ``com.axonivy.CreditDossier`` the simple name is: ``creditDossier``). The variable value will be loaded from the :ref:`Business Data Repository <business-data>`."
 msgstr "``@BusinessCaseData`` というアノテーションが付けられたクラスは、単純名でアクセスできます（例えば、クラスの完全修飾名が ``com.axonivy.CreditDossier`` である場合、単純名は ``creditDossier`` です）。変数の値は :ref:`ビジネスデータリポジトリ<business-data>` から読み込まれます。"
 
-#: ../../source/reference/casemap/index.rst:158
-#: ../../source/reference/casemap/index.rst:161
-msgid "Sample DataClass with @BusinessCaseData annotation"
-msgstr "@BusinessCaseData というアノテーションが付けられたデータクラスの例"
-
-#: ../../source/reference/casemap/index.rst:165
-msgid "Case Map Animation"
-msgstr "ケースマップのアニメーション"
-
-#: ../../source/reference/casemap/index.rst:169
-msgid "The execution of a Case Map can be followed in the Case Map Editor. As known from the BPM processes the currently executing and already executed elements in the Case Map will be marked. It uses the :ref:`simulation` known from the BPM processes."
-msgstr "ケースマップの実行は、ケースマップエディターでフォローできます。BPM プロセスと同様、ケースマップの現在実行中の要素やすでに実行された要素にはマークが付けられます。BPM プロセスでよく見られる :ref:`simulation` が使用されます。"
-
-#: ../../source/reference/casemap/index.rst:176
-msgid "Case Map Statistics (Preview)"
-msgstr "ケースマップの統計（プレビュー）"
-
-#: ../../source/reference/casemap/index.rst:178
-msgid "The Case Map provides the ability to display different process metrics of a Case Map in an early version. The monitoring can be enabled via the Case Map menu on the right-hand side. Currently the Case Map statistics only displays the metrics of the actual linked process, metrics of other processes that might have been started from this process are not considered."
-msgstr "ケースマップは、ケースマップのさまざまなプロセスメトリクスを表示する機能を初期バージョンで提供します。モニタリングは、右側の［ケースマップ］メニューから有効にすることができます。現在のところ、ケースマップの統計には、実際にリンクされたプロセスのメトリクスのみ表示され、このプロセスから開始された可能性がある他のプロセスのメトリクスは考慮されません。"
-
-#: ../../source/reference/casemap/index.rst:185
-#: ../../source/reference/casemap/index.rst:188
-msgid "Process metrics"
-msgstr "プロセスのメトリクス"
-
-#: ../../source/reference/casemap/index.rst:194
-msgid "The tasks statistics are based on the expiration dates of the Case Map tasks. Therefore, the task count is only based on tasks with an expiration date. The tasks are divided into following three categories:"
-msgstr "タスクの統計は、ケースマップのタスクの有効期限に基づいています。そのため、タスクのカウントは有効期限のあるタスクのみに基づいています。タスクは以下の 3 つのカテゴリーに分けられます。"
-
-#: ../../source/reference/casemap/index.rst:198
-msgid "On time"
-msgstr "期限内"
-
-#: ../../source/reference/casemap/index.rst:199
-msgid "Considers the average throughput time to calculate if the tasks are on time. A task is considered on time when the expiry date of the task is more than half of the average throughput time away from the current time."
-msgstr "平均スループット時間を考慮して、タスクが期限内かどうかを計算します。タスクの有効期限が現在時刻から平均スループット時間の半分以上ある場合、そのタスクは期限内とみなされます。"
-
-#: ../../source/reference/casemap/index.rst:204
-msgid "On risk"
-msgstr "危険"
-
-#: ../../source/reference/casemap/index.rst:205
-msgid "Considers the average throughput time to calculate if the tasks are on risk. A task is considered on risk when the expiry date of the task is the half of the average throughput time away from the current time."
-msgstr "平均スループット時間を考慮して、タスクが期限内に達成されない危険があるかどうかを計算します。タスクの有効期限が現在時刻から平均スループット時間の半分の場合、そのタスクは危険とみなされます。"
-
-#: ../../source/reference/casemap/index.rst:210
-msgid "Overdue"
-msgstr "期限超過"
-
-#: ../../source/reference/casemap/index.rst:211
-msgid "The task count of expired tasks."
-msgstr "期限切れのタスクの数。"
-
-#: ../../source/reference/casemap/index.rst:215
-msgid "Throughput time"
-msgstr "スループット時間"
-
-#: ../../source/reference/casemap/index.rst:217
-msgid "The average throughput time per task of this process is displayed."
-msgstr "このプロセスのタスクごとの平均スループット時間が表示されます。"
-
-#: ../../source/reference/casemap/index.rst:223
+#: ../../source/reference/casemap/index.rst:126
 msgid "Workflow execution of Case Map Processes"
 msgstr "ケースマップのプロセスのワークフローの実行"
 
-#: ../../source/reference/casemap/index.rst:225
+#: ../../source/reference/casemap/index.rst:128
 msgid "The execution of a process in a Case Map is the same as when it is executed as a standalone process. For each started instance it will create a task and a case. You can configure the created case and task by using the Case and Task tab on the :ref:`process-element-start-request` inscription mask."
 msgstr "ケースマップ内のプロセスの実行は、スタンドアロンプロセスとして実行される場合と同じです。開始されたインスタンスごとに、タスクとケースが作成されます。作成されたケースとタスクは :ref:`process-element-start-request` インスクリプションマスクのケースタブとタスクタブを使用して設定できます。"
 
-#: ../../source/reference/casemap/index.rst:232
+#: ../../source/reference/casemap/index.rst:135
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:89
 msgid "Responsible role"
 msgstr "担当ロール"
 
-#: ../../source/reference/casemap/index.rst:234
+#: ../../source/reference/casemap/index.rst:137
 msgid "By default the responsible role that can work on the created task is the one configured on the Request tab of the :ref:`process-element-start-request`. If the :ref:`process-element-start-request` is triggerable then also the information on the Trigger tab is considered and the task is assigned to the responsible role or user configured on this tab. To automatically execute a process, configure the :ref:`process-element-start-request` to be triggerable and set the responsible role to ``SYSTEM``."
 msgstr "デフォルトでは、作成されたタスクを処理できる担当ロールは :ref:`process-element-start-request` のリクエストタブで設定されたロールです :ref:`process-element-start-request` がトリガー可能の場合は、トリガータブの情報も考慮され、タスクはこのタブで設定された担当ロールまたはユーザーに割り当てられます。プロセスを自動的に実行するには :ref:`process-element-start-request` をトリガー可能に設定し、担当ロールを ``システム`` に設定します。"
 
-#: ../../source/reference/casemap/index.rst:243
+#: ../../source/reference/casemap/index.rst:146
 msgid "Stage switching"
 msgstr "ステージの切り替え"
 
-#: ../../source/reference/casemap/index.rst:245
+#: ../../source/reference/casemap/index.rst:148
 msgid "When a stage change happens the Case Map does not cancel tasks that were started in the stage before the switching happened. This is mainly important if the stage switch was performed programmatically using the ``ivy.casemap`` API. The process developer should consider to change the state (e.g., destroy) of existing tasks manually before switching to another stage change."
 msgstr "ステージが切り替わった場合、ケースマップは切り替わる前のステージで開始されたタスクをキャンセルしません。このことは主に、``ivy.casemap`` API を使用して、プログラムでステージの切り替えを行った場合に重要です。プロセス開発者は、別のステージに切り替える前に、既存のタスクの状態を手動で変更する（破棄など）ことを考慮する必要があります。"
 
@@ -25535,3 +25389,108 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "image14"
 #~ msgstr "image14"
+
+#~ msgid "Overriding 1"
+#~ msgstr "オーバーライド 1"
+
+#~ msgid "Overriding 2"
+#~ msgstr "オーバーライド 2"
+
+#~ msgid "Container Image"
+#~ msgstr "コンテナイメージ"
+
+#~ msgid "You can also create your own container image based on the official Axon Ivy Engine image. To do so, include your Axon Ivy Application along with all required Process Model Versions (including old versions too) for runtime in the deployment directory :code:`/ivy/deploy`. In this setup, there is no need to share the application directory across nodes."
+#~ msgstr "公式の Axon Ivy Engine イメージをベースにして独自のコンテナイメージを作成することもできます。そのためには、実行に必要なすべてのプロセスモデルバージョン（古いバージョンも含む）とともに Axon Ivy アプリケーションを、デプロイメントディレクトリ :code:`/ivy/deploy` に含めます。この設定では、ノード間でアプリケーションディレクトリを共有する必要はありません。"
+
+#~ msgid "A CI/CD pipeline can look like this:"
+#~ msgstr "CI/CD パイプラインはこのようになります。"
+
+#~ msgid "The build server is cloning the Axon Ivy Projects from a SCM system like GitHub."
+#~ msgstr "ビルドサーバーは、GitHub などの SCM システムから Axon Ivy プロジェクトをクローンしています。"
+
+#~ msgid "The build server is building the Axon Ivy Projects and creating an application zip."
+#~ msgstr "ビルドサーバーは Axon Ivy プロジェクトをビルドし、アプリケーション ZIP を作成しています。"
+
+#~ msgid "The build server is creating a Docker image based on the official Axon Ivy Engine Image."
+#~ msgstr "ビルドサーバーは、公式の Axon Ivy Engine イメージをベースにして Docker イメージを作成しています。"
+
+#~ msgid "The build server is publishing the image to an internal or external image registry."
+#~ msgstr "ビルドサーバーは、内部または外部のイメージレジストリにイメージを公開しています。"
+
+#~ msgid "The container orchestration platform (e.g., Kubernetes) is deploying the new image to the cluster."
+#~ msgstr "コンテナオーケストレーションプラットフォーム（例：Kubernetes）は、新しいイメージをクラスタに展開しています。"
+
+#~ msgid "Case Map Wizard"
+#~ msgstr "ケースマップウィザード"
+
+#~ msgid "The *New Case Maps Wizard* lets you create a new Case Map."
+#~ msgstr "*ケースマップの作成ウィザード* では、新しいケースマップを作成できます。"
+
+#~ msgid "File > New > Case Map"
+#~ msgstr "［ファイル］ > ［新規］ > ［ケースマップ］"
+
+#~ msgid "Project Name"
+#~ msgstr "プロジェクト名"
+
+#~ msgid "Choose the project in which you want to create a new Case Map."
+#~ msgstr "新しいケースマップを作成するプロジェクトを選択します。"
+
+#~ msgid "Namespace"
+#~ msgstr "名前空間"
+
+#~ msgid "Select a process group where the new Case Map will be inserted. Select the ``<default>`` process group to create a Case Map directly below the project's processes folder. You can click on the group folder button to open the *New Process Group Wizard*, if you want to create a new group \"on the fly\". The process groups are listed relative to the project's *processes* folder."
+#~ msgstr "新しいケースマップを挿入するプロセスグループを選択します。 ``<default>`` プロセスグループを選択すると、プロジェクトのプロセスフォルダーの直下にケースマップが作成されます。新しいグループを「その場」で作成したい場合は、グループフォルダーボタンをクリックして、 *プロセスグループの作成ウィザード* を開くことができます。プロセスグループは、プロジェクトの *プロセス* フォルダーを基準に一覧表示されます。"
+
+#~ msgid "Enter the name of the Case Map that you want to create."
+#~ msgstr "作成するケースマップの名前を入力します。"
+
+#~ msgid "Precondition symbol"
+#~ msgstr "前提条件の記号"
+
+#~ msgid "Sidestep Precondition symbol"
+#~ msgstr "サイドステップの前提条件の記号"
+
+#~ msgid "Sample DataClass with @BusinessCaseData annotation"
+#~ msgstr "@BusinessCaseData というアノテーションが付けられたデータクラスの例"
+
+#~ msgid "Case Map Animation"
+#~ msgstr "ケースマップのアニメーション"
+
+#~ msgid "The execution of a Case Map can be followed in the Case Map Editor. As known from the BPM processes the currently executing and already executed elements in the Case Map will be marked. It uses the :ref:`simulation` known from the BPM processes."
+#~ msgstr "ケースマップの実行は、ケースマップエディターでフォローできます。BPM プロセスと同様、ケースマップの現在実行中の要素やすでに実行された要素にはマークが付けられます。BPM プロセスでよく見られる :ref:`simulation` が使用されます。"
+
+#~ msgid "Case Map Statistics (Preview)"
+#~ msgstr "ケースマップの統計（プレビュー）"
+
+#~ msgid "The Case Map provides the ability to display different process metrics of a Case Map in an early version. The monitoring can be enabled via the Case Map menu on the right-hand side. Currently the Case Map statistics only displays the metrics of the actual linked process, metrics of other processes that might have been started from this process are not considered."
+#~ msgstr "ケースマップは、ケースマップのさまざまなプロセスメトリクスを表示する機能を初期バージョンで提供します。モニタリングは、右側の［ケースマップ］メニューから有効にすることができます。現在のところ、ケースマップの統計には、実際にリンクされたプロセスのメトリクスのみ表示され、このプロセスから開始された可能性がある他のプロセスのメトリクスは考慮されません。"
+
+#~ msgid "Process metrics"
+#~ msgstr "プロセスのメトリクス"
+
+#~ msgid "The tasks statistics are based on the expiration dates of the Case Map tasks. Therefore, the task count is only based on tasks with an expiration date. The tasks are divided into following three categories:"
+#~ msgstr "タスクの統計は、ケースマップのタスクの有効期限に基づいています。そのため、タスクのカウントは有効期限のあるタスクのみに基づいています。タスクは以下の 3 つのカテゴリーに分けられます。"
+
+#~ msgid "On time"
+#~ msgstr "期限内"
+
+#~ msgid "Considers the average throughput time to calculate if the tasks are on time. A task is considered on time when the expiry date of the task is more than half of the average throughput time away from the current time."
+#~ msgstr "平均スループット時間を考慮して、タスクが期限内かどうかを計算します。タスクの有効期限が現在時刻から平均スループット時間の半分以上ある場合、そのタスクは期限内とみなされます。"
+
+#~ msgid "On risk"
+#~ msgstr "危険"
+
+#~ msgid "Considers the average throughput time to calculate if the tasks are on risk. A task is considered on risk when the expiry date of the task is the half of the average throughput time away from the current time."
+#~ msgstr "平均スループット時間を考慮して、タスクが期限内に達成されない危険があるかどうかを計算します。タスクの有効期限が現在時刻から平均スループット時間の半分の場合、そのタスクは危険とみなされます。"
+
+#~ msgid "Overdue"
+#~ msgstr "期限超過"
+
+#~ msgid "The task count of expired tasks."
+#~ msgstr "期限切れのタスクの数。"
+
+#~ msgid "Throughput time"
+#~ msgstr "スループット時間"
+
+#~ msgid "The average throughput time per task of this process is displayed."
+#~ msgstr "このプロセスのタスクごとの平均スループット時間が表示されます。"
