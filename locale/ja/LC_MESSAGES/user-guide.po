@@ -303,11 +303,6 @@ msgstr "知識"
 #: ../../source/designer-guide/how-to/data-storage.rst:89
 #: ../../source/designer-guide/how-to/data-storage.rst:91
 #: ../../source/designer-guide/how-to/data-storage.rst:93
-#: ../../source/designer-guide/how-to/rule-engine.rst:101
-#: ../../source/designer-guide/how-to/rule-engine.rst:103
-#: ../../source/designer-guide/how-to/rule-engine.rst:105
-#: ../../source/designer-guide/how-to/rule-engine.rst:107
-#: ../../source/designer-guide/how-to/rule-engine.rst:109
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
 msgid "yes"
@@ -326,11 +321,6 @@ msgstr "（○）"
 #: ../../source/designer-guide/how-to/data-storage.rst:89
 #: ../../source/designer-guide/how-to/data-storage.rst:91
 #: ../../source/designer-guide/how-to/data-storage.rst:93
-#: ../../source/designer-guide/how-to/rule-engine.rst:101
-#: ../../source/designer-guide/how-to/rule-engine.rst:103
-#: ../../source/designer-guide/how-to/rule-engine.rst:105
-#: ../../source/designer-guide/how-to/rule-engine.rst:107
-#: ../../source/designer-guide/how-to/rule-engine.rst:109
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:22
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:37
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:39
@@ -393,7 +383,6 @@ msgid "Comparison of the execution sequence"
 msgstr "実行シーケンスの比較"
 
 #: ../../source/designer-guide/how-to/offline-tasks.rst:34
-#: ../../source/designer-guide/how-to/rule-engine.rst:96
 #: ../../source/reference/process/ivyscript/editor.rst:77
 msgid "Action"
 msgstr "アクション"
@@ -624,1121 +613,6 @@ msgstr "厳密なオーバーライドを使用するプロジェクトで作業
 #: ../../source/designer-guide/how-to/overrides.rst:120
 msgid "Overrides cannot be \"stacked\" - you can only override a component that is not itself an override. Axon Ivy Designer will warn you about this."
 msgstr "オーバーライドは「スタック」できません。それ自身がオーバーライドでないコンポーネントのみオーバーライドできます。Axon Ivy Designer では、これに関する警告が表示されます。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:4
-msgid "Rule Engine"
-msgstr "ルールエンジン"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:6
-msgid "A Rule Engine is basically a software system that maintains and executes a given set of rules. More specifically, rules in a rule engine are usually described in a declarative way. Mostly in the notion of conditions and actions. Or in more developer friendly words, it's a bunch of if-then statements. For example, let's take a simple rule for computing the premium for a car insurance:"
-msgstr "基本的に、ルールエンジンは指定されたルールセットを管理、実行するソフトウェアシステムです。より具体的に言うと、ルールエンジンのルールは通常、宣言的に記述されます。ほとんどの場合、条件とアクションという概念で記述されます。開発者が理解しやすい言葉で言えば、if-then 文の集まりです。例えば、自動車保険の保険料を計算する簡単なルールを考えてみましょう。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:29
-msgid "You can imagine that with this approach you end up pretty soon into the `Spaghetti-code <https://en.wikipedia.org/wiki/Spaghetti_code>`__ anti-pattern. You have to take care of all the dependencies and relations between all the facts on your own leading to a forever-growing if-then statement that is almost impossible to maintain."
-msgstr "このアプローチでは、すぐに`スパゲッティコード<https://en.wikipedia.org/wiki/Spaghetti_code>`__ アンチパターンになってしまうことは想像がつくでしょう。すべてのファクト間の依存関係やリレーションを自分で処理しなければならないため、if-then 文が永遠に増え続け、管理がほぼ不可能になります。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:35
-msgid "In a rule engine, you create simple standalone rules and you let the rule engine decide what to fire when. The subtlety is that rules can be written in any order, the engine picks the ones for which the condition is true, and then evaluates the corresponding actions. So instead of the massive if statement, you write the following rules:"
-msgstr "ルールエンジンでは、単純なスタンドアロンのルールを作成し、何をいつ実行するかをルールエンジンに決定させます。巧妙なのは、ルールはどのような順番で書いてもよく、エンジンが条件が真になるものを選び、対応するアクションを評価する点です。つまり、膨大な if 文の代わりに、以下のルールを書きます。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:61
-msgid "Because of this simplification it might even be possible for non-developers to define or configure the rules (a little bit of tool support helps too)."
-msgstr "このように単純化することで、開発者でなくてもルールの定義や設定ができるようになるかもしれません（ツールのサポートも少しは役に立ちます）。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:65
-msgid "In short, a rule engine helps you to decouple your production rules from the REST of the code and makes it much more maintainable for both developers and domain experts. But remember that everything has its flip side. Adding a rule engine means adding another level of complexity into your architecture (you replace plain code with a new system). And as the size of your rule sets grow, so does the potential impact to the performance. For more information about rule engines, please refer to one of the many available resources in the Internet."
-msgstr "要するに、ルールエンジンを使えば、プロダクションルールをコードの REST から切り離すことができ、開発者にとっても、ドメインエキスパートにとっても、管理しやすくなります。ただし、何事にも裏表があります。ルールエンジンを追加するということは、アーキテクチャに別のレベルの複雑さを追加するということです（プレーンなコードを新しいシステムに置き換えることになります）。また、ルールセットのサイズが大きくなればなるほど、パフォーマンスへの潜在的な影響も大きくなります。ルールエンジンの詳細については、インターネットで入手可能な多くのリソースを参照してください。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:76
-msgid "In Axon Ivy, we integrate the open source rule engine `Drools <https://www.drools.org>`__ to give you the flexibility to use a rule engine if you want. We wrapped some of the most basic features of Drools into our own UI and API. If you need more than that, then simply use the normal full blown Drools API."
-msgstr "Axon Ivy には、オープンソースのルールエンジンである `Drools <https://www.drools.org>`__ が統合されており、必要に応じてルールエンジンを柔軟に使用できます。また、Drools の最も基本的な機能のいくつかを独自の UI と API にラップしました。他の機能が必要な場合は、標準の Drools API を使用してください。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:85
-msgid "Decision tables and DRL files"
-msgstr "デシジョン表と DRL ファイル"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:87
-msgid "We support two formats for defining rules: decision tables and rules written in the Drools Rule Language (DRL). A decision table is like the name says a table that can contain many rules. The columns usually make up the variables of the preconditions/actions whereas each row in the table specifies one rule. Let's see the decision table for our example:"
-msgstr "Axon Ivy では、デシジョン表と Drools Rule Language（DRL）で書かれたルールの 2 つの形式でルールを定義できます。デシジョン表は、その名のとおり、多くのルールを格納できる表です。列は通常、前提条件／アクションの変数を構成し、表の行ごとに 1 つのルールを指定します。この例のデシジョン表を見てみましょう。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:93
-msgid "Decision table"
-msgstr "デシジョン表"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:96
-msgid "Pre-Condition"
-msgstr "前提条件"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:99
-msgid "lives in dodgy area"
-msgstr "危険な地域に住んでいる"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:99
-msgid "price min"
-msgstr "最低料額"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:99
-msgid "prices max"
-msgstr "最高料額"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:99
-msgid "lives in bumpy street area"
-msgstr "でこぼこ道の多い地域に住んでいる"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:99
-msgid "type of car"
-msgstr "車種"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:99
-msgid "addition to basic premium"
-msgstr "基本保険料に追加"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:101
-msgid "0"
-msgstr "0"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:101
-#: ../../source/designer-guide/how-to/rule-engine.rst:103
-msgid "50000"
-msgstr "50000"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:101
-#: ../../source/designer-guide/how-to/rule-engine.rst:109
-msgid "100"
-msgstr "100"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:103
-#: ../../source/designer-guide/how-to/rule-engine.rst:105
-msgid "100000"
-msgstr "100000"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:103
-msgid "200"
-msgstr "200"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:105
-msgid "300"
-msgstr "300"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:107
-msgid "sports car"
-msgstr "スポーツカー"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:107
-msgid "500"
-msgstr "500"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:109
-msgid "sedan"
-msgstr "セダン"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:112
-msgid "Decision tables are simple to understand and maintain, especially for domain experts. On the other hand, the more variables and rules you use, the more your decision table bloats up and makes it hard to maintain."
-msgstr "デシジョン表は、特にドメインエキスパートにとっては、理解しやすく、管理も簡単です。その一方で、使用する変数やルールが増えれば増えるほど、デシジョン表は肥大化し、管理が難しくなります。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:116
-msgid "The Drools Rule Language (DRL) on the other hand is more oriented towards developers. It is the native rule language of Drools. Let's see a rule in DRL:"
-msgstr "一方、Drools Rule Language（DRL）は開発者向けです。Drools のネイティブルール言語である DRL で書かれたルールを見てみましょう。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:130
-msgid "Use the context menu entry *New*, the menu *File > New* or the tool bar button *New* to create either a new decision table or a DRL rule file. The rules will be shown in the project tree below their root folder *Rules*."
-msgstr "コンテキストメニューの［*新規*］、メニューの［*ファイル*］>［*新規*］、またはツールバーの［*新規*］を使用して、新しいデシジョン表または DRL ルールファイルを作成します。ルールはプロジェクトツリーのルートフォルダー *Rules* の下に表示されます。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:137
-msgid "Execute rules"
-msgstr "ルールの実行"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:139
-msgid "Before we see how you can use the rule engine to do something, let's once more make very clear the difference between logic in source code and using a rule engine. In code you have to explicitly define which part of the code to call, you are in control and responsibility to do the right things in the right order. In a rule engine this is different, you simply tell the rule engine to execute and it does find out itself which rules apply and which rules to fire."
-msgstr "ルールエンジンの使用方法を見る前に、もう一度、ソースコードのロジックとルールエンジンを使用することの違いを明確にしておきましょう。コードでは、コードのどの部分を呼び出すかを明示的に定義する必要があり、正しいことを正しい順番で実行する責任を負うのはコードの作成者です。ルールエンジンの場合はこれとは異なり、単にルールエンジンに実行を指示するだけで、どのルールが適用され、どのルールを実行すべきかをルールエンジンが自ら見つけ出します。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:147
-msgid "To run the rule engine you have to use the :public-api:`Public API of the rule engine </ch/ivyteam/ivy/rule/engine/api/package-summary.html>` to build and execute rules on data objects. In a script step you can use ``ivy.rules`` and in a Java class use :public-api:`Rules </ch/ivyteam/ivy/rule/engine/api/Rules.html>`. First you will need to create a :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` with all rules."
-msgstr "ルールエンジンを実行するには、:public-api:`ルールエンジンのパブリック API </ch/ivyteam/ivy/rule/engine/api/package-summary.html>` 使用して、データオブジェクトに対してルールを作成し、実行する必要があります。スクリプトステップでは ``ivy.rules`` を使用し、Java クラスでは :public-api:`ルール</ch/ivyteam/ivy/rule/engine/api/Rules.html>` 使用します。最初に、すべてのルールを含む :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` を作成する必要があります。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:165
-msgid "Use the namespace to group rule files that belong together and use the corresponding API to load all rule files of the same namespace together. You can also load the rule files from your dependent projects. And you can override rules and rules files by having a rule or rule file with the same name in the overriding project."
-msgstr "名前空間を使用して、一緒に属するルールファイルをグループ化し、対応する API を使用して、同じ名前空間のすべてのルールファイルを一緒に読み込みます。また、依存プロジェクトからルールファイルを読み込むこともできます。オーバーライドするプロジェクトに同じ名前のルールやルールファイルがあれば、ルールやルールファイルをオーバーライドできます。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:171
-msgid "Now, what you need too is an instance of the data model that you used in the pre-conditions and the actions of your rules. You can either give the root object of your data or a list of objects."
-msgstr "ここで必要なのは、ルールの事前条件とアクションで使用したデータモデルのインスタンスです。データのルートオブジェクトまたはオブジェクトのリストを指定できます。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:179
-msgid "You should now see the result of the actions applied in the data that you passed into the rule engine before."
-msgstr "前にルールエンジンに渡したデータに適用されたアクションの結果が表示されます。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:184
-msgid "To use the rule engine `Drools <https://www.drools.org>`__ directly, you must add the *Rule Engine Libraries* to the project's classpath. To do this, right-click on the project and select *Properties*. Navigate to *Axon Ivy* > *Java* and check *Rule Engine Libraries*."
-msgstr "`Drools <https://www.drools.org>`__ ルールエンジンを直接使用するには、*ルールエンジンのライブラリ* をプロジェクトのクラスパスに追加する必要があります。プロジェクトを右クリックして［*プロパティ*］を選択します。［*Axon Ivy*］、［*Java*］の順に移動し、［*ルールエンジンのライブラリ*］チェックボックスをオンにします。"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:190
-msgid "Demo project"
-msgstr "デモプロジェクト"
-
-#: ../../source/designer-guide/how-to/rule-engine.rst:192
-msgid "To help you learn how to use the rule engine integration, we created a small demo project called :ref:`RuleEngineDemos <importing-demo-projects>`."
-msgstr "ルールエンジンの統合の使用方法の理解に役立つ :ref:`RuleEngineDemos<importing-demo-projects>` という名前の小さなデモプロジェクトを作成しました。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:3
-msgid "API"
-msgstr "API"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:5
-msgid "There are several APIs to manipulate and query workflow tasks and cases."
-msgstr "ワークフローのタスクやケースを操作し、照会するための API がいくつかあります。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:9
-msgid "Task and Case queries"
-msgstr "タスクとケースのクエリ"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:11
-msgid "The fluent workflow query API supports queries against all existing tasks and cases. You can write the queries in a SQL-like manner."
-msgstr "ワークフロークエリの Fluent API は、既存のすべてのタスクとケースに対するクエリをサポートします。SQL と同じようにクエリを作成できます。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:17
-msgid "To retrieve all tasks that the current user can work on using the following code:"
-msgstr "現在のユーザーが作業できるすべてのタスクを取得するには、以下のコードを使用します。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:24
-msgid "To execute a query, you need an instance of an IQueryExecutor. Retrieve it through the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`."
-msgstr "クエリを実行するには、IQueryExecutor のインスタンスが必要です :ref:`ivy 環境変数<ivyscript-reference-environmentvariable>` ら取得してください。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:28
-msgid "Queries are executed against a single security context by default."
-msgstr "デフォルトでは、クエリは 1 つのセキュリティコンテキストに対して実行されます。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:33
-msgid "You can execute queries over all security contexts on the engine and their applications in the global workflow context using the Query Executor. However, multiple security contexts cannot share a user. Therefore, the results of global queries are invalid and meaningless."
-msgstr "クエリ実行プログラムを使用して、エンジン上のすべてのセキュリティコンテキストと、グローバルワークフローコンテキストのアプリケーションに対してクエリを実行できます。ただし、複数のセキュリティコンテキストでユーザーを共有することはできません。そのため、グローバルクエリの結果は無効であり、無意味です。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:44
-msgid "Task and Case manipulation"
-msgstr "タスクとケースの操作"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:46
-msgid "The API to manipulate tasks and cases is available through the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`."
-msgstr "タスクとケースを操作する API は :ref:`ivy 環境変数<ivyscript-reference-environmentvariable>` から入手できます。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:49
-msgid "``ivy.case`` (ICase): represents the currently executing process"
-msgstr "``ivy.case`` （ICase）： 現在実行中のプロセスを表します。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:51
-msgid "``ivy.task`` (ITask): represents the user's current work unit in the currently executing process."
-msgstr "``ivy.task`` （ITask）： 現在実行中のプロセスにおけるユーザーの現在の作業単位を表します。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:54
-msgid "``ivy.wf`` (IWorkflowContext): addresses all workflow tasks and cases of all users for the current security context."
-msgstr "``ivy.wf`` （IWorkflowContext）： 現在のセキュリティコンテキストのすべてのユーザーのすべてのワークフロータスクとケースを扱います。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:57
-msgid "``ivy.session`` (IWorkflowSession): gives access to all workflow tasks and cases of the current user."
-msgstr "``ivy.session`` （IWorkflowSession）： 現在のユーザーのすべてのワークフロータスクとケースへのアクセスを許可します。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:64
-#: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:4
-msgid "REST API"
-msgstr "REST API"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:66
-msgid "There is an :api-browser-url:`REST workflow API <default#/workflow>` available that allows third-party services to interact with workflow Tasks, Cases, and the like."
-msgstr "ワークフローのタスクやケースなどとサードパーティサービスとの連携を可能にする :api-browser-url:`REST workflow API <default#/workflow>` が利用可能です。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:69
-msgid "The workflow API is enabled by default. Disable it by setting the configuration to ``REST.Servlet.API: false``."
-msgstr "ワークフロー API はデフォルトで有効になっています。``REST.Servlet.API: false`` に設定すると、無効になります。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:76
-msgid "You can browse this API by using the :ref:`integration-rest-api-browser`."
-msgstr ":ref:`integration-rest-api-browser` を使用して、この API を参照できます。"
-
-#: ../../source/designer-guide/how-to/workflow/api.rst:78
-msgid "If any REST workflow API is missing for your specific use case, keep in mind that you can provide additional APIs very easily by creating REST API service classes in your project. See :ref:`integration-rest-provider`"
-msgstr "特定のユースケースの REST ワークフロー API が見つからない場合は、プロジェクト内で REST API サービスクラスを作成して、簡単に追加の API を提供できます。 :ref:`integration-rest-provider` 」を参照ください。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:5
-#: ../../source/engine-guide/configuration/advanced-configuration.rst:46
-#: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:22
-msgid "Business Calendar"
-msgstr "ビジネスカレンダー"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:7
-msgid "A business calendar defines the official business hours and business days. Business calendars are organized in a tree structure, with a root calendar defining the application default values and child calendars inheriting all values from their ancestor, e.g.,"
-msgstr "ビジネスカレンダーでは、正式な営業時間と営業日を定義します。ビジネスカレンダーはツリー構造で構成され、ルートカレンダーがアプリケーションの初期値を定義し、子カレンダーが先祖からすべての値を継承します。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:12
-msgid "IvyGlobal"
-msgstr "IvyGlobal"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:14
-msgid "Switzerland"
-msgstr "Switzerland"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:16
-msgid "Zurich"
-msgstr "Zurich"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:17
-msgid "Zug"
-msgstr "Zug"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:19
-msgid "Austria"
-msgstr "Austria"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:20
-msgid "Germany"
-msgstr "Germany"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:22
-msgid "Above, you see the business calendar definitions for Axon Ivy. We define a global root with three countries. For Switzerland, we also add two regions, Zurich and Zug, each with their local public holidays besides the ones they inherit from Switzerland and IvyGlobal."
-msgstr "上記の例は、Axon Ivy のビジネスカレンダーの定義です。グローバルルートに 3 つの国を定義しています。Switzerland については、Zurich と Zug の 2 つの地域も追加し、それぞれ、スイスと IvyGlobal から受け継いだ祝祭日に加えて、それぞれの地域の祝祭日を設定しています。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:27
-msgid "Use business calendars API :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>` to make calculations related to business days or business hours. This is very useful for process steps that need to work with business days, rather than with calendar days."
-msgstr "ビジネスカレンダー API :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>` 使用して、営業日や営業時間に関連する計算を行います。これは、暦日ではなく、営業日で作業する必要があるプロセスステップに非常に便利です。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:33
-msgid "For example:"
-msgstr "例："
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:35
-msgid "A Service Level Agreement (SLA) defines that a task needs to be processed by the end of the next business day. Implement this by setting the task expiry to the business day after the next."
-msgstr "SLA（サービスレベル合意書）には、タスクを翌営業日の終わりまでに処理する必要があることが定められています。タスクの有効期限を翌営業日に設定して、これを実装します。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:39
-msgid "If the default calendar does not apply, you can set the business calendar on the case (:ref:`process-element-tab-code`):"
-msgstr "デフォルトカレンダーが適用されない場合は、ケースにビジネスカレンダーを設定できます（:ref:`process-element-tab-code`）。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:46
-msgid "Set the timeout duration to two business days, using the current calendar. (:ref:`process-element-tab-task`)"
-msgstr "現在のカレンダーを使用して、タイムアウト期間を 2 営業日に設定します（:ref:`process-element-tab-task`）。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:53
-msgid "A payment application automatically corrects the payment date entered to the next business day if necessary:"
-msgstr "決済アプリケーションは、必要に応じて入力された支払日を自動的に翌営業日に修正します。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:61
-msgid "You can set a calendar on tasks, cases, or applications. The variable (ivy.cal) references the calendar that is valid for the current context. It determines the valid calendar by checking:"
-msgstr "タスク、ケース、アプリケーションにカレンダーを設定できます。(ivy.cal) 変数は、現在のコンテキストで有効なカレンダーを参照し、以下をチェックして有効なカレンダーを決定します。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:65
-msgid "the current task"
-msgstr "現在のタスク"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:66
-msgid "the current case"
-msgstr "現在のケース"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:67
-msgid "the current application"
-msgstr "現在のアプリケーション"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:68
-msgid "the root calendar of the current application, if none of the above have been set explicitly."
-msgstr "上記のいずれも明示的に設定されていない場合は、現在のアプリケーションのルートカレンダー"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:71
-msgid "You can use another calendar by referencing it by its name:"
-msgstr "カレンダーを名前で参照して、別のカレンダーを使用できます。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:77
-msgid "If you want to configure business calendars for test purposes in your Axon Ivy Designer environment, you can change (or create if it doesn't exist yet) the ``app-designer.yaml`` file in folder ``<designer_path>/configuration``. Note that all values in this file are valid for all projects in your workspace and that they don't get cleared after a restart."
-msgstr "Axon Ivy Designer 環境でテスト用にビジネスカレンダーを設定したい場合は、``<デザイナーのパス>/configuration`` フォルダーにある ``app-designer.yaml`` ファイルを変更できます（ファイルがない場合は作成できます）。このファイルのすべての値はワークスペース内のすべてのプロジェクトに対して有効であり、再起動してもクリアされないことに注意してください。"
-
-#: ../../source/designer-guide/how-to/workflow/business-calendar.rst:83
-msgid "See chapter :ref:`configuration-business-calendar` in the Engine Guide on how to configure business calendars on your Engine instance."
-msgstr "エンジンインスタンスでビジネスカレンダーを設定する方法については、エンジンガイドの :ref:`configuration-business-calendar` 」のセクションを参照してください。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:3
-msgid "Cases and Tasks"
-msgstr "ケースとタスク"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:5
-msgid "The Axon Ivy workflow manages the execution of **process instances**. A **process instance** is represented by one **Case** and one or more **Tasks**. The **Case** exists from the first process step until the last process step and holds information about its **process instance**. The **Case** is finished when the process is terminated - either completed or aborted. A **Case** is composed of one or more connected **Tasks**. Each **Task** defines a unit of work, which has to be done as one working step. Therefore, a **Task** is to be executed by a user or role - the **Task** is assigned to a user or a role. A **Task** is started by a process-start or a task-switch element and ends at the next task-switch element or process-end element."
-msgstr "Axon Ivy ワークフローは、**プロセスインスタンス** の実行を管理します。**プロセスインスタンス** は、1つの **ケース** と 1つ以上の **タスク** で表されます。**ケース** は最初のプロセスステップから最後のプロセスステップまで存在し、その **プロセスインスタンス** に関する情報を保持します。プロセスが終了（完了または中止）すると、**ケース** が終了します。**ケース** は 1つ以上の接続された **タスク** で構成されます。各 **タスク** は 1つの作業ステップとして実行される作業単位を定義します。そのため、**タスク** はユーザーまたはロールによって実行され、ユーザーまたはロールに割り当てられます。**タスク** はプロセス開始要素またはタスクスイッチ要素によって開始され、次のタスクスイッチ要素またはプロセス終了要素で終了します。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:16
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:50
-#: ../../source/reference/process/error-handling.rst:67
-msgid "|image0|"
-msgstr "|image0|"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:116
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:402
-#: ../../source/reference/process/error-handling.rst:258
-#: ../../source/reference/process/process-elements/alternative.rst:37
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:58
-#: ../../source/reference/process/process-elements/call-sub.rst:59
-#: ../../source/reference/process/process-elements/database-activity.rst:157
-#: ../../source/reference/process/process-elements/email-activity.rst:99
-#: ../../source/reference/process/process-elements/embedded-subprocess.rst:23
-#: ../../source/reference/process/process-elements/error-boundary-event.rst:45
-#: ../../source/reference/process/process-elements/error-end.rst:42
-#: ../../source/reference/process/process-elements/error-start.rst:44
-#: ../../source/reference/process/process-elements/join.rst:38
-#: ../../source/reference/process/process-elements/note.rst:18
-#: ../../source/reference/process/process-elements/process-end-page.rst:40
-#: ../../source/reference/process/process-elements/process-end.rst:19
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:328
-#: ../../source/reference/process/process-elements/script-step.rst:52
-#: ../../source/reference/process/process-elements/signal-boundary-event.rst:40
-#: ../../source/reference/process/process-elements/signal-start.rst:46
-#: ../../source/reference/process/process-elements/split.rst:46
-#: ../../source/reference/process/process-elements/start.rst:293
-#: ../../source/reference/process/process-elements/sub-process-start.rst:37
-#: ../../source/reference/process/process-elements/task-switch-event.rst:22
-#: ../../source/reference/process/process-elements/task-switch-gateway.rst:99
-#: ../../source/reference/process/process-elements/trigger-step.rst:44
-#: ../../source/reference/process/process-elements/user-dialog-event-start.rst:20
-#: ../../source/reference/process/process-elements/user-dialog-exit-end.rst:23
-#: ../../source/reference/process/process-elements/user-dialog-method-start.rst:40
-#: ../../source/reference/process/process-elements/user-dialog-process-end.rst:20
-#: ../../source/reference/process/process-elements/user-dialog-start.rst:53
-#: ../../source/reference/process/process-elements/web-service-call-activity.rst:66
-#: ../../source/reference/process/process-elements/web-service-process-start.rst:159
-msgid "image0"
-msgstr "image0"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:21
-msgid "Multilingual Name and Description of Cases and Tasks"
-msgstr "ケースとタスクの多言語の名前と説明"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:23
-msgid "You can define the name and description of a :ref:`case <process-element-tab-case>` or :ref:`task <process-element-tab-task>` using multilingual texts from the CMS. Because of performance and system database space reasons, name and description are only stored in the configured workflow languages and not for every language available in the current CMS. Configure available Workflow languages using :ref:`Security System <engine-cockpit-security-system-detail>` in the :ref:`Engine Cockpit <engine-cockpit>` or, for the Designer, in the :ref:`Language Settings <language-settings>`."
-msgstr "CMS の多言語テキストを使用して、 :ref:`ケース<process-element-tab-case>`  :ref:`タスク<process-element-tab-task>` 名前と説明を定義できます。パフォーマンスとシステムデータベース容量の理由から、名前と説明は設定されたワークフロー言語にのみ保存され、現在の CMS で利用可能なすべての言語には保存されません。利用可能なワークフロー言語の設定は :ref:`エンジンコックピット<engine-cockpit>` の :ref:`セキュリティシステム<engine-cockpit-security-system-detail>` またはデザイナーの :ref:`言語設定<language-settings>` で行います。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:33
-msgid "An end user sees the name and description of a case or task in his preferred language if that language is a supported workflow language. If not, the default workflow language is used. This same language is used when searching for and sorting the names and descriptions of cases and tasks."
-msgstr "エンドユーザーは、その言語がサポートされているワークフロー言語であれば、指定した言語でケースまたはタスクの名前と説明を表示できます。そうでない場合は、デフォルトのワークフロー言語が使用されます。ケースとタスクの名前と説明を検索し、並べ替える際にも、同じ言語が使用されます。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:38
-msgid "As a process developer, you should configure the primary language of your process application as its default workflow language. Add additional workflow languages only if you use multilingual texts from the CMS in your case and task inscriptions and if you have supplied them in multiple languages. If your projects support different sets of languages, consider to configure only the common set of languages that all your projects support as additional workflow languages."
-msgstr "プロセス開発者は、プロセスアプリケーションの主言語をデフォルトのワークフロー言語として設定する必要があります。ケースやタスクのインスクリプションに CMS の多言語テキストを使用する場合や多言語で提供する場合にのみ、追加のワークフロー言語を追加してください。プロジェクトが異なる言語セットをサポートしている場合、すべてのプロジェクトがサポートする共通言語のみを追加のワークフロー言語として設定することを検討してください。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:46
-msgid "Cases and tasks support only those languages available at their creation. If you add another workflow language to an existing application with active cases and tasks, then"
-msgstr "ケースとタスクは、作成時に使用可能な言語のみをサポートします。アクティブなケースとタスクがある既存のアプリケーションに別のワークフロー言語を追加した場合、"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:50
-msgid "the name and description in the default workflow language of all your existing cases and tasks are copied to the new language."
-msgstr "既存のすべてのケースとタスクのデフォルトのワークフロー言語の名前と説明が新しい言語にコピーされます。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:53
-msgid "all existing cases and tasks do not support the new language."
-msgstr "すべての既存のケースとタスクは、新しい言語をサポートしません。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:55
-msgid "cases and tasks added later support all languages available at the time of their creation."
-msgstr "後から追加されたケースやタスクは、作成時に利用可能なすべての言語をサポートします。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:60
-msgid "Adding workflow languages increases the size of your system database and may take a long time because the name and description in the default workflow language of all existing cases and tasks are copied to all new workflow language entries for their names and descriptions."
-msgstr "ワークフロー言語を追加すると、既存のすべてのケースとタスクのデフォルトのワークフロー言語の名前と説明が新しいすべてのワークフロー言語のエントリの名前と説明にコピーされるため、システムデータベースのサイズが大きくなり、時間がかかる場合があります。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:67
-msgid "You can use CMS entries and workflow data in task names, as shown below: :code:`<%=ivy.cms.co(\"/TaskDescriptions/verifyRequest\")%>: <%=in1.amount%> <%=ivy.cms.co(\"/Dialogs/procurementRequest/piecesOf\")%>  '<%=in1.description%>' <%=ivy.cms.co(\"/Dialogs/procurementRequest/forTotal\")%> <%=in1.totalPrice%><%=ivy.cms.co(\"/TaskDescriptions/currencySymbol\")%>` to create the name :code:`Verify Request: 10 pieces of 'Apple' for a total of 10$`. Find more examples in the :ref:`Workflow Demo <importing-demo-projects>` project."
-msgstr ":code:`<%=ivy.cms.co(\"/TaskDescriptions/verifyRequest\")%>: <%=in1.amount%> <%=ivy.cms.co(\"/Dialogs/procurementRequest/piecesOf\")%>  '<%=in1.description%>' <%=ivy.cms.co(\"/Dialogs/procurementRequest/forTotal\")%> <%=in1.totalPrice%><%=ivy.cms.co(\"/TaskDescriptions/currencySymbol\")%>` という CMS エントリとワークフローデータをタスク名に使用して、 :code:`Verify Request: 10 pieces of 'Apple' for a total of 10$` という名前を作成できます。その他の例については :ref:`WorkflowDemos<importing-demo-projects>` プロジェクトを参照してください。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:74
-msgid "If you delete a workflow language, then all names and descriptions of all existing cases and tasks in that language will be deleted permanently from the system database. Adding the language again later on will not bring this data back!"
-msgstr "ワークフロー言語を削除すると、その言語のすべての既存のケースとタスクの名前と説明がシステムデータベースから永久に削除されます。後でその言語を再び追加しても、削除されたデータは戻りません。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:82
-msgid "Business Case"
-msgstr "ビジネスケース"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:84
-msgid "Modern processes are loosely coupled and highly :ref:`adaptive <adaptive-case-management>`. Business processes can break out of the standard process flow and trigger asynchronous processes or send a :ref:`signal <signal-reference>` that starts various other processes. As every running process creates a new **Case**, it can get difficult for the workflow users to track the history and context of a **Task**."
-msgstr "最近のプロセスは疎結合で、高度 :ref:`アダプティブ<adaptive-case-management>` す。ビジネスプロセスは、標準的なプロセスフローだけでなく、非同期プロセスをトリガーしたり :ref:`シグナル<signal-reference>` を送信して他のさまざまなプロセスを開始したりすることができます。実行中のすべてのプロセスで新しい**ケース** が作成されるため、ワークフローユーザーが**タスク** の履歴とコンテキストを追跡するのは大変です。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:91
-msgid "To clarify the workflow view, multiple **Cases** can be attached to a single **Business Case**. :ref:`Triggered <process-element-start-request-trigger-tab>` or :ref:`signaled <process-element-signal-start-tab-signal>` process-starts define in their inscription whether the started **Case** should be attached to the **Business Case** of the calling **Case**. Moreover, any **Case** can be attached to a **Business Case** using the API. If a case map is started, a **Business Case** is automatically created. See :ref:`casemap-execution`."
-msgstr "ワークフローを分かりやすく表示するため、複数の **ケース** を 1つの **ビジネスケース** に接続できます。:ref:`Triggered <process-element-start-request-trigger-tab>` または :ref:`signaled <process-element-signal-start-tab-signal>` プロセス開始要素は、そのインスクリプション内で、開始された **ケース** を呼び出し元の **ケース** の **ビジネスケース** に接続すべきかどうかを定義します。さらに、API を使用して、任意の **ケース** を **ビジネスケース** に接続できます。ケースマップが開始されると、自動的に **ビジネスケース** が作成されます。「 :ref:`casemap-execution` 」を参照してください。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:102
-msgid "Lifecycle"
-msgstr "アプリケーションのライフサイクル"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:104
-msgid "The first **Case** of a process always acts as the **Business Case** (see image 'First Case'). All **Cases** attached later to the **Business Case** are subcases of the **Business Case** (see image 'Multiple Cases')."
-msgstr "プロセスの最初の **ケース** は常に **ビジネスケース** となります（「最初のケース」の図を参照）。**ビジネスケース** に後から接続されたすべての **ケース** は、 **ビジネスケース** のサブケースとなります（「複数のケース」の図を参照）。"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:107
-msgid "First Case"
-msgstr "最初のケース"
-
-#: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:111
-msgid "Multiple Cases"
-msgstr "複数のケース"
-
-#: ../../source/designer-guide/how-to/workflow/categories.rst:4
-msgid "Categories"
-msgstr "カテゴリー"
-
-#: ../../source/designer-guide/how-to/workflow/categories.rst:8
-msgid "Start, Case, and Task Categories"
-msgstr "開始、ケース、タスクカテゴリー"
-
-#: ../../source/designer-guide/how-to/workflow/categories.rst:10
-msgid "You can assign a Start, Case, or Task to a category. A category is a structured String (e.g., ``Finance/Invoices``). It categorizes Starts, Cases, or Tasks into a hierarchical structure. It is an important identification attribute besides the name of a Start, Case, or Task."
-msgstr "開始、ケース、タスクをカテゴリーに割り当てることができます。カテゴリーは構造化された文字列です（例：``Finance/Invoices``）。カテゴリーは、開始、ケース、タスクを階層構造に分類します。開始、ケース、タスクの名前に加えて重要な識別属性です。"
-
-#: ../../source/designer-guide/how-to/workflow/categories.rst:15
-msgid "The ``Category`` API allows getting localized information from the CMS. For example, the ``name`` of the category ``Finance/Invoices`` is stored in the CMS at ``/Categories/Finance/Invoices/name``."
-msgstr "``カテゴリー`` API は、CMS からローカライズされた情報を取得できます。例えば、 ``Finance/Invoices`` というカテゴリーの ``名前`` は、CMS の ``/Categories/Finance/Invoices/name`` に保存されています。"
-
-#: ../../source/designer-guide/how-to/workflow/categories.rst:19
-msgid "To display a tooltip or an icon for a category on start lists, configure the ``tooltip`` and ``cssIcon`` in the CMS (i.e.,``/Categories/Finance/Invoice/cssIcon``)."
-msgstr "開始リストにカテゴリーのツールチップやアイコンを表示するには、CMS で ``tooltip`` と ``cssIcon`` を設定します（例：``/Categories/Finance/Invoice/cssIcon``）。"
-
-#: ../../source/designer-guide/how-to/workflow/categories.rst:22
-msgid "The following example shows a simple use of a category on the Case level. The API on the Task level is identical."
-msgstr "以下の例は、ケースレベルでのカテゴリーの単純な使用例を示しています。タスクレベルの API は同じです。"
-
-#: ../../source/designer-guide/how-to/workflow/categories.rst:34
-msgid "The project :ref:`WorkflowDemos <importing-demo-projects>` demonstrates the use of start, case, and task categorization. The case category serves to categorize the overall process (i.e.,Business Case). The task category serves to categorize a single unit of work, or a set of units of work. Because of the separation of case and task categorization, you can handle even complex use cases."
-msgstr ":ref:`WorkflowDemos<importing-demo-projects>` プロジェクトは、開始、ケース、タスクカテゴリーの使用の一例です。ケースカテゴリーはプロセス全体（ビジネスケース）を分類します。タスクカテゴリーは、単一の作業単位、または一連の作業単位を分類します。ケースとタスクのカテゴリーが分かれているため、複雑なユースケースも扱うことができます。"
-
-#: ../../source/designer-guide/how-to/workflow/categories.rst:41
-msgid "An example: In a mid-sized company, the process to request an address change for a customer exists in multiple forms. There is one in the customer portal and one for partner agencies. The process executed by the customer portal has the case category 'CustomerPortal/AddressChange'. The process executed by a partner agency has the case category 'Partner/Customers/AddressChange'. Both processes invoke a task to have a user or department validate the address. This user or department also does the final address verification. So, in both cases, this task has the category 'AddressVerification'. This allows the user or department to filter tasks no matter where they have originated."
-msgstr "例：ある中堅企業には、顧客の住所変更を依頼するプロセスが複数の形態で存在し、顧客ポータルに 1 つ、パートナー代理店に 1 つあります。顧客ポータルで実行されるプロセスには、'CustomerPortal/AddressChange' というケースカテゴリーがあります。パートナー代理店で実行されるプロセスには、'Partner/Customers/AddressChange' というケースカテゴリーがあります。どちらのプロセスも、ユーザーまたは部署に住所を確認させるタスクを呼び出します。ユーザーまたは部署は、最終的な住所確認も行います。そのため、両方のケースのタスクに 'AddressVerification' というカテゴリーがあり、ユーザーや部署は、タスクがどこから発生したかに関係なく、タスクをフィルタリングできます。"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:4
-#: ../../source/reference/configuration/custom-fields.rst:4
-#: ../../source/reference/process/process-elements/start.rst:115
-msgid "Custom Fields"
-msgstr "カスタムフィールド"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:6
-msgid "Use custom fields to add additional business relevant information dynamically as key/value pairs on :ref:`Starts<process-element-tab-start-custom-fields>`, :ref:`Cases<process-element-tab-case-custom-fields>` and :ref:`Tasks <process-element-tab-task-custom-fields>`."
-msgstr "カスタムフィールドを使用すると、 :ref:`Starts <process-element-tab-start-custom-fields>`、 :ref:`Cases <process-element-tab-case-custom-fields>`、 :ref:`Tasks <process-element-tab-task-custom-fields>` に対して、ビジネスに関連する追加情報をキー/値ペアとして動的に追加できます。"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:11
-msgid "Examples of custom fields are:"
-msgstr "カスタムフィールドの例："
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:13
-msgid "branchLocation - The location of the branch that is responsible for a task"
-msgstr "branchLocation - タスクを担当する支店の場所"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:14
-msgid "customerId - The id of the customer a case is working on"
-msgstr "customerId - ケースが扱う顧客の ID"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:15
-msgid "orderAmount - The amount of money of the order associated with a case"
-msgstr "orderAmount - ケースに関連付けられた注文の金額"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:17
-msgid "The :ref:`developer workflow UI <dev-workflow-ui>` and the :ref:`Portal application <portal-guide>` will display custom fields on their task and case detail pages. In the :ref:`Portal application <portal-guide>`, custom fields can also be added as additional columns in :ref:`task <dev-workflow-ui-task-details>` and :ref:`case <dev-workflow-ui-case-details>` lists, as well as for filtering task- and case lists in dashboards. You can also use custom fields to search for task and cases."
-msgstr ":ref:`開発者ワークフロー UI <dev-workflow-ui>` :ref:`ポータルアプリケーション<portal-guide>` タスクとケースの詳細ページに、カスタムフィールドが表示されます。 :ref:`ポータルアプリケーション<portal-guide>` では、カスタムフィールドを :ref:`タスク<dev-workflow-ui-task-details>` リスト :ref:`ケース<dev-workflow-ui-case-details>` ストの追加列として追加し、ダッシュボードでタスクリストやケースリストをフィルタリングできます。また、カスタムフィールドを使用して、タスクやケースを検索できます。"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:26
-msgid "Meta Information"
-msgstr "メタ情報"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:28
-msgid "You can use custom fields directly on the process elements without any additional configuration. However, we suggest that you provide additional information (meta information) for custom fields that are used often or are visible to end-users in the :ref:`Portal application <portal-guide>`. Meta information for :ref:`custom fields <custom-fields-config>` can be provided in the file :file:`<project>/config/custom-fields.yaml`. Additionally, you can provide some attributes of the meta information in :ref:`multiple languages <custom-fields-locale>` using the :ref:`CMS <cms>`."
-msgstr "追加設定なしで、カスタムフィールドをプロセス要素で直接使用できます。ただし、頻繁に使用されるカスタムフィールドや :ref:`ポータルアプリケーション<portal-guide>` エンドユーザーに表示するカスタムフィールドについては、追加情報（メタ情報）を設定することを推奨します :ref:`カスタムフィールド<custom-fields-config>` メタ情報は、:file:`<project>/config/custom-fields.yaml` ファイルに設定できます。さらに、 :ref:`CMS<cms>` を使用して、メタ情報の属性 :ref:`多言語<custom-fields-locale>` 設定できます。"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:38
-msgid "Custom Fields API"
-msgstr "カスタムフィールド API"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:40
-msgid "You can access custom fields using the following API:"
-msgstr "以下の API を使用して、カスタムフィールドにアクセスできます。"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:42
-msgid ":public-api:`ITask.customFields() </ch/ivyteam/ivy/workflow/ITask.html#customFields()>`"
-msgstr ":public-api:`ITask.customFields() </ch/ivyteam/ivy/workflow/ITask.html#customFields()>`"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:43
-msgid ":public-api:`ICase.customFields() </ch/ivyteam/ivy/workflow/ICase.html#customFields()>`"
-msgstr ":public-api:`ICase.customFields() </ch/ivyteam/ivy/workflow/ICase.html#customFields()>`"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:44
-msgid ":public-api:`IWebStartable.customFields() </ch/ivyteam/ivy/workflow/start/IWebStartable.html#customFields()>`"
-msgstr ":public-api:`IWebStartable.customFields() </ch/ivyteam/ivy/workflow/start/IWebStartable.html#customFields()>`"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:50
-msgid "To search for tasks and cases by custom fields, use the following API:"
-msgstr "カスタムフィールドでタスクとケースを検索するには、以下の API を使用します。"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:52
-msgid ":public-api:`TaskQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/TaskQuery.IFilterableColumns.html#customField()>`"
-msgstr ":public-api:`TaskQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/TaskQuery.IFilterableColumns.html#customField()>`"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:53
-msgid ":public-api:`CaseQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/CaseQuery.IFilterableColumns.html#customField()>`"
-msgstr ":public-api:`CaseQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/CaseQuery.IFilterableColumns.html#customField()>`"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:63
-msgid "You can access the meta information of custom fields with the following API:"
-msgstr "以下の API を使用して、カスタムフィールドのメタ情報にアクセスできます。"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:65
-msgid ":public-api:`ICustomFieldMeta </ch/ivyteam/ivy/workflow/custom/field/ICustomFieldMeta.html>`"
-msgstr ":public-api:`ICustomFieldMeta </ch/ivyteam/ivy/workflow/custom/field/ICustomFieldMeta.html>`"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:66
-msgid ":public-api:`ICustomField.meta() </ch/ivyteam/ivy/workflow/custom/field/ICustomField.html#meta()>`"
-msgstr ":public-api:`ICustomField.meta() </ch/ivyteam/ivy/workflow/custom/field/ICustomField.html#meta()>`"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:67
-msgid ":public-api:`IStartCustomField.meta(String) </ch/ivyteam/ivy/workflow/start/IStartCustomFields.html#meta(java.lang.String)>`"
-msgstr ":public-api:`IStartCustomField.meta(String) </ch/ivyteam/ivy/workflow/start/IStartCustomFields.html#meta(java.lang.String)>`"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:73
-msgid "To access additional attributes, use this API:"
-msgstr "その他の属性にアクセスするには、以下の API を使用します。"
-
-#: ../../source/designer-guide/how-to/workflow/custom-fields.rst:79
-msgid "To access localized values, use this API:"
-msgstr "ローカライズされた値にアクセスするには、以下の API を使用します。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:4
-msgid "Developer Workflow UI"
-msgstr "開発者ワークフロー UI"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:7
-msgid "Login Table"
-msgstr "ログイン表"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:9
-msgid "On the login table, you see all the users with their roles. You can switch between users. Users currently logged-in are highlighted in the table."
-msgstr "ログイン表には、すべてのユーザーとそのロールが表示されます。ユーザーを切り替えることができます。現在ログインしているユーザーは、表内で強調表示されます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:12
-#: ../../source/designer-guide/how-to/workflow/states.rst:19
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:199
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:52
-#: ../../source/reference/process/error-handling.rst:73
-#: ../../source/reference/process/process-elements/process-end-page.rst:37
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:59
-msgid "|image1|"
-msgstr "|image1|"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:103
-#: ../../source/designer-guide/how-to/workflow/states.rst:193
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:239
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:403
-#: ../../source/reference/process/error-handling.rst:259
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:59
-#: ../../source/reference/process/process-elements/process-end-page.rst:41
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:329
-msgid "image1"
-msgstr "image1"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:17
-msgid "Case Details"
-msgstr "ケースの詳細"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:19
-msgid "The new Case Details view is an overview of the most important information about the case. You can also have an overview of a Case Map or case hierarchy. If a Case Map has sidesteps, you can start them in the Case Map panel."
-msgstr "新しいケースの詳細ビューには、ケースに関する最も重要な情報の概要が表示されます。ケースマップまたはケース階層の概要も表示できます。ケースマップにサイドステップがある場合は、ケースマップパネルでサイドステップを開始できます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:23
-#: ../../source/designer-guide/how-to/workflow/states.rst:57
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:71
-#: ../../source/reference/process/error-handling.rst:97
-#: ../../source/reference/process/process-editor.rst:22
-#: ../../source/reference/process/process-elements/call-sub.rst:33
-#: ../../source/reference/process/process-elements/error-boundary-event.rst:31
-#: ../../source/reference/process/process-elements/error-end.rst:30
-#: ../../source/reference/process/process-elements/error-start.rst:31
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:71
-#: ../../source/reference/process/process-elements/signal-boundary-event.rst:28
-#: ../../source/reference/process/process-elements/signal-start.rst:30
-#: ../../source/reference/process/process-elements/trigger-step.rst:37
-#: ../../source/reference/process/process-elements/wait-program-intermediate-event.rst:34
-msgid "|image2|"
-msgstr "|image2|"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:104
-#: ../../source/designer-guide/how-to/workflow/states.rst:194
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:240
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:404
-#: ../../source/reference/process/error-handling.rst:260
-#: ../../source/reference/process/process-editor.rst:343
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:60
-#: ../../source/reference/process/process-elements/call-sub.rst:60
-#: ../../source/reference/process/process-elements/error-boundary-event.rst:46
-#: ../../source/reference/process/process-elements/error-end.rst:43
-#: ../../source/reference/process/process-elements/error-start.rst:45
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:330
-#: ../../source/reference/process/process-elements/signal-boundary-event.rst:41
-#: ../../source/reference/process/process-elements/signal-start.rst:47
-#: ../../source/reference/process/process-elements/trigger-step.rst:45
-#: ../../source/reference/process/process-elements/wait-program-intermediate-event.rst:135
-msgid "image2"
-msgstr "image2"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:25
-msgid "The :ref:`custom fields <custom-fields>` defined for a case are displayed here."
-msgstr "ケースに定義された :ref:`カスタムフィールド<custom-fields>` がここに表示されます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:30
-msgid "Task Details"
-msgstr "タスクの詳細"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:32
-msgid "On the Task Details view, you can see all the information about the task. In the top right corner of the panel, you see the actions dropdown. You can execute some actions on the task, e.g., change its state or delegate the task to a different role or user."
-msgstr "タスクの詳細ビューには、タスクに関するすべての情報が表示されます。パネルの右上にはアクションのドロップダウンがあります。タスクの状態を変更する、タスクを別のロールやユーザーに委任するといったアクションをタスクで実行できます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:37
-#: ../../source/designer-guide/how-to/workflow/states.rst:115
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:90
-#: ../../source/reference/process/error-handling.rst:177
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:78
-msgid "|image3|"
-msgstr "|image3|"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:105
-#: ../../source/designer-guide/how-to/workflow/states.rst:195
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:241
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:405
-#: ../../source/reference/process/error-handling.rst:261
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:61
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:331
-msgid "image3"
-msgstr "image3"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:39
-msgid "The :ref:`custom fields <custom-fields>` defined for a task are displayed here."
-msgstr "タスクに定義された :ref:`カスタムフィールド<custom-fields>` がここに表示されます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:43
-msgid "Developer Section"
-msgstr "開発者セクション"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:45
-msgid "The Developer section in the navigation bar will show up if your user has the permissions `IPermission.TASK_READ_ALL` and `IPermission.CASE_READ_ALL`. The \"Developer\" user in designer has these permissions."
-msgstr "ユーザーに `IPermission.TASK_READ_ALL` 権限と `IPermission.CASE_READ_ALL` 権限がある場合、ナビゲーションバーに開発者セクションが表示されます。デザイナーの「開発者」ユーザーはこれらの権限を持っています。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:49
-msgid "Additionally, you find information and some tools like Signals, Intermediate Events, Cleanup and API Browser."
-msgstr "さらに、情報や、シグナル、中間イベント、クリーンアップ、API ブラウザなどのツールが表示されます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:54
-#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:221
-#: ../../source/reference/process/process-elements/index.rst:68
-msgid "Intermediate Events"
-msgstr "中間イベント"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:56
-msgid "On the Intermediate Events page, you will be able to see all active Intermediate Events and their sub-events."
-msgstr "中間イベントページには、すべてのアクティブな中間イベントとそのサブイベントが表示されます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:59
-msgid "|image4| |image5|"
-msgstr "|image4| |image5|"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:106
-#: ../../source/designer-guide/how-to/workflow/states.rst:196
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:242
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:406
-#: ../../source/reference/process/error-handling.rst:262
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:62
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:332
-#: ../../source/reference/process/process-elements/start.rst:294
-msgid "image4"
-msgstr "image4"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:107
-#: ../../source/designer-guide/how-to/workflow/states.rst:197
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:243
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:407
-#: ../../source/reference/process/error-handling.rst:263
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:63
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:333
-msgid "image5"
-msgstr "image5"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:64
-#: ../../source/getting-productive/connectivity/restapi.rst:119
-msgid "API Browser"
-msgstr "API ブラウザ"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:66
-msgid "Browse through available REST resources in the API Browser."
-msgstr "API ブラウザでは、利用可能な REST リソースを参照できます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:68
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:236
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:339
-#: ../../source/reference/process/error-handling.rst:226
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:105
-#: ../../source/reference/process/process-elements/start.rst:237
-msgid "|image6|"
-msgstr "|image6|"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:108
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:244
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:408
-#: ../../source/reference/process/error-handling.rst:264
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:64
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:334
-#: ../../source/reference/process/process-elements/start.rst:295
-msgid "image6"
-msgstr "image6"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:72
-msgid "Signals"
-msgstr "シグナル"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:74
-msgid "The first box on the Signals page is where you can send a signal with or without a payload. You can either type in your signal code that can be autocompleted or use the dropdown and choose a visible signal. If you have any waiting or boundary signals, you can fire them directly by clicking the paper plane icon on the table in the Boundary signals box."
-msgstr "シグナルページの最初のボックスでは、ペイロードの有無にかかわらず、シグナルを送信できます。自動入力されるシグナルコードを入力するか、ドロップダウンを使用して表示されるシグナルを選択できます。待機中のシグナルや境界シグナルがある場合は、境界シグナルボックスの表にある紙飛行機のアイコンをクリックして、直接発信できます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:80
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:348
-msgid "|image7|"
-msgstr "|image7|"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:109
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:409
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:65
-msgid "image7"
-msgstr "image7"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:83
-#: ../../source/engine-guide/configuration/notification/index.rst:44
-msgid "Cleanup"
-msgstr "クリーンアップ"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:85
-msgid "On the cleanup page, you can delete different types of data from the running Axon Ivy Engine. You will see four checkboxes:"
-msgstr "クリーンアップページでは、さまざまなタイプのデータを実行中の Axon Ivy Engine から削除できます。4 つのチェックボックスが表示されます。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:88
-msgid "The first one deletes all Cases, Tasks, and dependent objects like documents or custom fields from the system database."
-msgstr "最初のチェックボックスは、すべてのケース、タスク、ドキュメントやカスタムフィールドのような依存オブジェクトをシステムデータベースから削除します。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:91
-msgid "The second checkbox deletes business data from the system database as well as from the associated Search Engine index."
-msgstr "2 番目のチェックボックスは、ビジネスデータをシステムデータベースと関連する検索エンジンのインデックスから削除します。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:94
-msgid "The third checkbox deletes OAuth2 identity tokens which you might have collected by calling third-party REST services."
-msgstr "3 番目のチェックボックスは、サードパーティーの REST サービスを呼び出して収集した OAuth2 ID トークンを削除します。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:97
-msgid "And the last checkbox clears data caches like the cache of a Database or a web service request. Find additional information :ref:`process-element-tab-data-cache`."
-msgstr "最後のチェックボックスは、データベースや Web サービスリクエストのキャッシュなどのデータキャッシュをクリアします。詳しくは :ref:`process-element-tab-data-cache` を参照してください。"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:100
-msgid "|image8|"
-msgstr "|image8|"
-
-#: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:110
-msgid "image8"
-msgstr "image8"
-
-#: ../../source/designer-guide/how-to/workflow/index.rst:2
-#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:186
-#: ../../source/getting-productive/testing/process-testing.rst:254
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-workflow.rst:2
-#: ../../source/getting-productive/workflow/index.rst:4
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:310
-msgid "Workflow"
-msgstr "Workflow"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:5
-msgid "States"
-msgstr "状態"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:7
-msgid "During process execution, the corresponding case and tasks have various states. Typically, cases start non-persistently, i.e., they are stored in memory only. At this time, their state is CREATED. As soon as a case hits a task switch, Axon Ivy persists the case and its tasks by storing them in the system database. You can retrieve persisted cases and tasks only with the query APIs. Non-persisted cases and tasks are not retrievable by API."
-msgstr "プロセスの実行中、対応するケースとタスクはさまざまな状態になります。通常、ケースは永続化されていない状態で開始し、メモリにのみ格納されます。このときのケースの状態は「作成済み」です。ケースがタスクスイッチにヒットするとすぐに、Axon Ivy はケースとそのタスクをシステムデータベースに保存して永続化します。永続化されたケースとタスクは、クエリ API でのみ取得できます。永続化されていないケースとタスクを API で取得することはできません。"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:17
-#: ../../source/designer-guide/how-to/workflow/states.rst:21
-msgid "Process without Task switch"
-msgstr "タスクスイッチのないプロセス"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:24
-#: ../../source/designer-guide/how-to/workflow/states.rst:43
-#: ../../source/designer-guide/how-to/workflow/states.rst:62
-#: ../../source/designer-guide/how-to/workflow/states.rst:175
-msgid "Process start"
-msgstr "プロセス開始"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:24
-#: ../../source/designer-guide/how-to/workflow/states.rst:62
-msgid "Process end"
-msgstr "プロセス終了"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:26
-#: ../../source/designer-guide/how-to/workflow/states.rst:45
-#: ../../source/designer-guide/how-to/workflow/states.rst:64
-#: ../../source/designer-guide/how-to/workflow/states.rst:98
-#: ../../source/designer-guide/how-to/workflow/states.rst:128
-#: ../../source/designer-guide/how-to/workflow/states.rst:177
-msgid "Case state"
-msgstr "ケースの状態"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:26
-#: ../../source/designer-guide/how-to/workflow/states.rst:28
-#: ../../source/designer-guide/how-to/workflow/states.rst:45
-#: ../../source/designer-guide/how-to/workflow/states.rst:47
-#: ../../source/designer-guide/how-to/workflow/states.rst:64
-#: ../../source/designer-guide/how-to/workflow/states.rst:66
-#: ../../source/designer-guide/how-to/workflow/states.rst:177
-#: ../../source/designer-guide/how-to/workflow/states.rst:179
-#: ../../source/designer-guide/how-to/workflow/states.rst:181
-msgid "CREATED"
-msgstr "作成済み"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:26
-#: ../../source/designer-guide/how-to/workflow/states.rst:28
-#: ../../source/designer-guide/how-to/workflow/states.rst:64
-#: ../../source/designer-guide/how-to/workflow/states.rst:66
-#: ../../source/designer-guide/how-to/workflow/states.rst:69
-#: ../../source/designer-guide/how-to/workflow/states.rst:101
-msgid "DONE"
-msgstr "完了"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:28
-#: ../../source/designer-guide/how-to/workflow/states.rst:47
-#: ../../source/designer-guide/how-to/workflow/states.rst:179
-msgid "Task state"
-msgstr "タスクの状態"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:30
-#: ../../source/designer-guide/how-to/workflow/states.rst:49
-#: ../../source/designer-guide/how-to/workflow/states.rst:72
-#: ../../source/designer-guide/how-to/workflow/states.rst:109
-#: ../../source/designer-guide/how-to/workflow/states.rst:133
-#: ../../source/designer-guide/how-to/workflow/states.rst:183
-#: ../../source/reference/data/index.rst:76
-msgid "Persistent"
-msgstr "Persistent"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:30
-#: ../../source/designer-guide/how-to/workflow/states.rst:49
-#: ../../source/designer-guide/how-to/workflow/states.rst:72
-msgid "NO"
-msgstr "×"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:36
-msgid "Process with session timeout"
-msgstr "セッションタイムアウトを含むプロセス"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:38
-msgid "|image19|"
-msgstr "|image19|"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:198
-msgid "image19"
-msgstr "image19"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:40
-msgid "Process with User Dialog that reaches a session timeout"
-msgstr "セッションタイムアウトに達したユーザーダイアログを含むプロセス"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:43
-#: ../../source/designer-guide/how-to/workflow/states.rst:124
-#: ../../source/designer-guide/how-to/workflow/states.rst:175
-#: ../../source/getting-productive/user-interface/user-dialogs/user-dialog-concept.rst:56
-#: ../../source/glossary/glossary.rst:178
-#: ../../source/reference/process/process-elements/user-dialog.rst:4
-msgid "User Dialog"
-msgstr "ユーザーダイアログ"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:45
-#: ../../source/designer-guide/how-to/workflow/states.rst:47
-msgid "DESTROYED"
-msgstr "破棄"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:55
-#: ../../source/designer-guide/how-to/workflow/states.rst:59
-#: ../../source/designer-guide/how-to/workflow/states.rst:90
-msgid "Process with Task switch"
-msgstr "タスクスイッチを含むプロセス"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:62
-#: ../../source/designer-guide/how-to/workflow/states.rst:124
-msgid "Task switch"
-msgstr "タスクスイッチ"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:64
-#: ../../source/designer-guide/how-to/workflow/states.rst:98
-#: ../../source/designer-guide/how-to/workflow/states.rst:128
-msgid "RUNNING"
-msgstr "実行中"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:66
-#: ../../source/designer-guide/how-to/workflow/states.rst:101
-#: ../../source/designer-guide/how-to/workflow/states.rst:130
-msgid "Task state (Task 1)"
-msgstr "タスクの状態（タスク 1）"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:69
-#: ../../source/designer-guide/how-to/workflow/states.rst:105
-msgid "Task state (Task 2)"
-msgstr "タスクの状態（タスク 2）"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:69
-#: ../../source/designer-guide/how-to/workflow/states.rst:105
-#: ../../source/designer-guide/how-to/workflow/states.rst:130
-msgid "SUSPENDED"
-msgstr "中断"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:72
-#: ../../source/designer-guide/how-to/workflow/states.rst:109
-#: ../../source/designer-guide/how-to/workflow/states.rst:133
-#: ../../source/designer-guide/how-to/workflow/states.rst:183
-msgid "YES"
-msgstr "○"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:78
-msgid "Task switch states in detail"
-msgstr "タスクスイッチの状態の詳細"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:80
-msgid "|image20|"
-msgstr "|image20|"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:199
-msgid "image20"
-msgstr "image20"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:82
-msgid "In detail, the tasks are going to more technical task states inside a task switch element. After a task reaches a task switch, its state is READY_FOR_JOIN. As soon as all input tasks have arrived at the task switch, Axon Ivy sets the states of these input tasks to JOINING and joins their process data sets into one process data set forwarded to all output tasks. Then, Axon Ivy marks input tasks as DONE. It then creates the output tasks in state SUSPENDED."
-msgstr "詳しく言うと、タスクはタスクスイッチ要素の内部でより技術的なタスク状態に移行します。タスクがタスクスイッチに達した後の状態は「結合準備完了」です。すべての入力タスクがタスクスイッチに到着するとすぐに、Axon Ivy はこれらの入力タスクの状態を「結合中」に設定し、それらのプロセスデータセットをすべての出力タスクに転送される 1 つのプロセスデータセットに結合します。その後、Axon Ivy は入力タスクを「完了」とマークし、「中断」状態の出力タスクを作成します。"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:93
-msgid "Before Task switch"
-msgstr "タスクスイッチの前"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:93
-msgid "Task switch (reached)"
-msgstr "タスクスイッチ（到達）"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:93
-msgid "Task switch (entry)"
-msgstr "タスクスイッチ（エントリ）"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:93
-msgid "Task switch (done/out put)"
-msgstr "タスクスイッチ（完了／出力）"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:93
-msgid "After Task switch"
-msgstr "タスクスイッチの後"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:98
-msgid "CREATED/ RUNNING"
-msgstr "作成済み／実行中"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:101
-msgid "CREATED/ RESUMED"
-msgstr "作成済み／再開済み"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:101
-msgid "READY_FOR _JOIN"
-msgstr "結合準備完了"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:101
-msgid "JOINING"
-msgstr "結合中"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:105
-#: ../../source/designer-guide/how-to/workflow/states.rst:130
-msgid "RESUMED"
-msgstr "再開済み"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:109
-msgid "NO/YES"
-msgstr "×／○"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:113
-#: ../../source/designer-guide/how-to/workflow/states.rst:121
-msgid "Task with session timeout"
-msgstr "セッションタイムアウトを含むタスク"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:117
-msgid "If a user resumes a task with a user dialog and the session of the user times out, Axon Ivy sets the task state back to SUSPENDED and resets the associated case to the task switch element."
-msgstr "ユーザーがユーザーダイアログでタスクを再開し、ユーザーのセッションがタイムアウトした場合、Axon Ivy はタスクの状態を「中断」に戻し、関連付けられたケースをタスクスイッチ要素にリセットします。"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:124
-msgid "Task switch (after session timeout)"
-msgstr "タスクスイッチ（セッションタイムアウト後）"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:137
-#: ../../source/reference/process/process-elements/user-task.rst:4
-msgid "User Task"
-msgstr "ユーザータスク"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:139
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:131
-#: ../../source/reference/process/error-handling.rst:189
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:89
-#: ../../source/reference/process/process-elements/start.rst:189
-msgid "|image4|"
-msgstr "|image4|"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:141
-msgid "A User Task combines a Task Switch Event and a User Dialog. If the user starts to work on an ordinary HTML User Dialog, Axon Ivy changes the task state to RESUMED. If this is an 'Offline Dialog', Axon Ivy does not change the task state before the user submits the task form. Once submitted, Axon Ivy changes the state from SUSPENDED to RESUMED. Axon Ivy then executes subsequent steps until the task is finally DONE. See also :ref:`offline-tasks`."
-msgstr "ユーザータスクは、タスクスイッチイベントとユーザーダイアログを組み合わせたものです。ユーザーが通常の HTML ユーザーダイアログで作業を開始した場合、Axon Ivy はタスクの状態を「再開済み」に変更します。「オフラインダイアログ」の場合は、ユーザーがタスクフォームを送信するまで、Axon Ivy はタスクの状態を変更しません。送信後、Axon Ivy は状態を「中断」から「再開済み」に変更します。その後、Axon Ivy は、タスクが最終的に「完了」されるまで、後続のステップを実行します。「 :ref:`offline-tasks` 」も参照してください。"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:152
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:310
-#: ../../source/reference/process/process-elements/signal-boundary-event.rst:4
-msgid "Signal Boundary Event"
-msgstr "シグナル境界イベント"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:154
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:332
-#: ../../source/reference/process/error-handling.rst:216
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:95
-msgid "|image5|"
-msgstr "|image5|"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:156
-msgid "A User Task with an attached Signal Boundary Event listens for a signal while its task is in SUSPENDED state. After receiving the signal, Axon Ivy destroys the task. Execution continues with a newly created follow-up task."
-msgstr "シグナル境界イベントが接続されたユーザータスクは、そのタスクが中断状態の間、シグナルをリスニングします。シグナルを受信すると、Axon Ivy はタスクを破棄します。新しく作成された後続タスクで実行が継続されます。"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:163
-msgid "Case Map with session timeout"
-msgstr "セッションタイムアウトを含むケースマップ"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:165
-msgid "|image22|"
-msgstr "|image22|"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:200
-msgid "image22"
-msgstr "image22"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:167
-msgid "When a task is created by :ref:`casemap`, its initial state is SUSPENDED. Axon Ivy immediately persists the task in the database. If the user session expires while working on this initial task, Axon Ivy will delete it, along with the associated Case and Business Case."
-msgstr ":ref:`casemap` によって作成されるタスクの初期状態は「中断」です。Axon Ivy は直ちにそのタスクをデータベースに保存して永続化します。この初期タスクの作業中にユーザーセッションが期限切れになると、Axon Ivy は関連付けられたケースとビジネスケースとともにタスクを削除します。"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:172
-msgid "Case Map with User Dialog that reaches a session timeout"
-msgstr "セッションタイムアウトに達したユーザーダイアログを含むケースマップ"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:177
-#: ../../source/designer-guide/how-to/workflow/states.rst:179
-#: ../../source/designer-guide/how-to/workflow/states.rst:181
-msgid "(deleted)"
-msgstr "（削除済み）"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:181
-msgid "Business Case state"
-msgstr "ビジネスケースの状態"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:187
-msgid "Other task states"
-msgstr "その他のタスクの状態"
-
-#: ../../source/designer-guide/how-to/workflow/states.rst:189
-msgid "There are more task states, mainly for task synchronisation, error handling, intermediate events, or user aborts. To learn more about task states, refer to the enumeration ``ch.ivyteam.ivy.workflow.TaskState`` in public API."
-msgstr "タスクの同期、エラー処理、中間イベント、ユーザーによる中断など、他にも多くのタスクの状態があります。タスクの状態の詳細については、パブリック API の ``ch.ivyteam.ivy.workflow.TaskState`` 列挙を参照してください。"
 
 #: ../../source/designer-guide/index.rst:4
 msgid "Designer Guide"
@@ -1986,7 +860,6 @@ msgstr "プロセスデバッグ"
 
 #: ../../source/designer/views/index.rst:14
 #: ../../source/designer/views/index.rst:49
-#: ../../source/getting-productive/workflow/case-task.rst:4
 #: ../../source/getting-productive/workflow/documents.rst:4
 #: ../../source/reference/dialog/xhtml-editor.rst:6
 #: ../../source/reference/process/smart-workflow.rst:4
@@ -2112,6 +985,12 @@ msgstr "セキュリティシステムごとに、デフォルトのコンテン
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:39
 msgid "Users can customize the content language and formatting language in their profile independently. You can add new translations for the built-in task mail notifications in :file:`[engineDir]/system/cms`."
 msgstr "ユーザーは、自分のプロフィールでコンテンツ言語とフォーマット言語を個別にカスタマイズできます。:file:`[エンジンのディレクトリ]/system/cms` で、組み込まれたタスクメール通知に新しい翻訳を追加できます。"
+
+#: ../../source/engine-guide/configuration/advanced-configuration.rst:46
+#: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:22
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:5
+msgid "Business Calendar"
+msgstr "ビジネスカレンダー"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:48
 msgid "A business calendar defines the official business hours and business days. These settings are used for business calendar calculations, e.g., what date will it be in three business days. See :ref:`Designer Guide <business-calendar>` and :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>` for more information."
@@ -2599,6 +1478,11 @@ msgstr "**新しいタスク** ：ユーザーに新しいタスクが割り当�
 #: ../../source/engine-guide/configuration/notification/index.rst:41
 msgid "**business**: If new business relevant event happens or new business information is available"
 msgstr "**ビジネス** ：ビジネスに関連するイベントが発生した場合、または新しいビジネス情報が利用可能になった場合"
+
+#: ../../source/engine-guide/configuration/notification/index.rst:44
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:83
+msgid "Cleanup"
+msgstr "クリーンアップ"
 
 #: ../../source/engine-guide/configuration/notification/index.rst:45
 msgid "By default, notifications are deleted from the database if they are older than 90 days. This duration can be adjusted using the `Cleanup:DaysUntilDeletion` property."
@@ -3306,6 +2190,11 @@ msgstr ":file:`pom.xml` ファイルが配置されているディレクトリ�
 #: ../../source/engine-guide/deployment/deploy/maven-plugin/index.rst:112
 msgid "Further examples are documented on GitHub in the :link-url:`project-build-examples <build-examples>` repository."
 msgstr "GitHub の:link-url:`project-build-examples <build-examples>` ポジトリには、さらなる例がドキュメント化されています。"
+
+#: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:4
+#: ../../source/getting-productive/workflow/case-task/api.rst:64
+msgid "REST API"
+msgstr "REST API"
 
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:6
 msgid "The Axon Ivy Engine comes with :api-browser-url:`REST deployment API <system>` which can be used to deploy new applications or projects. It can be inspected with the :ref:`integration-rest-api-browser`."
@@ -6399,6 +5288,14 @@ msgstr "使用可能なすべてのヘルスチェックを表示するには、
 msgid "On the **Health Checks** view a list of all health checks is displayed. You see when a check will be executed next. Use the :guilabel:`Disable` and :guilabel:`Enable` buttons to disable or enable a check. With the :guilabel:`Run check now` button you can immediately execute a check."
 msgstr "**ヘルスチェック** ビューには、すべてのヘルスチェックのリストが表示されます。次にチェックが実行される日時が表示されます。:guilabel:`無効` ボタンと:guilabel:`有効` ボタンを使用して、チェックを無効または有効にします。:guilabel:`今すぐチェックを実行` ボタンを使用して、すぐにチェックを実行できます。"
 
+#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:186
+#: ../../source/getting-productive/testing/process-testing.rst:254
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-workflow.rst:2
+#: ../../source/getting-productive/workflow/index.rst:4
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:310
+msgid "Workflow"
+msgstr "Workflow"
+
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:188
 msgid "**Documents**: Workflow and case documents"
 msgstr "**ドキュメント** ：ワークフローとケースのドキュメント"
@@ -6432,6 +5329,12 @@ msgstr "**開始イベント** ビューには、すべてのプロセス開始�
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:213
 msgid "Press on the name of a start event to see even more detail information of the start event like configuration, errors, poll and execution information."
 msgstr "開始イベントの名前をクリックすると、設定、エラー、ポーリング、実行の情報など、開始イベントの詳細が表示されます。"
+
+#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:221
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:54
+#: ../../source/reference/process/process-elements/index.rst:68
+msgid "Intermediate Events"
+msgstr "中間イベント"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:223
 msgid "The **Intermediate Events** view displays a table with all process intermediate events. The table shows the name, description, and request path of the intermediate event. It also shows when the poll method will be called the next time. How often the intermediate event has fired (:guilabel:`Executions`) and how many of those attempts have failed (:guilabel:`Errors`). You can start and stop or schedule the execution of the poll method of a intermediate event."
@@ -8066,6 +6969,11 @@ msgstr "以下の例で強調表示されている行は、これらのオプシ
 #: ../../source/getting-productive/connectivity/restapi.rst:105
 msgid "**Example OpenApiResource.java**"
 msgstr "**OpenApiResource.java の例**"
+
+#: ../../source/getting-productive/connectivity/restapi.rst:119
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:64
+msgid "API Browser"
+msgstr "API ブラウザ"
 
 #: ../../source/getting-productive/connectivity/restapi.rst:121
 msgid "You can easily inspect all `OpenAPI <https://www.openapis.org/>`__ services with the API Browser. It gives consumers of your services not only a detailed service description, but a simple client to fire real calls against the services, too."
@@ -9855,6 +8763,27 @@ msgstr "プロジェクトグラフビュー"
 msgid "The Project Graph view shows the dependency graph of all projects in the workspace."
 msgstr "プロジェクトグラフビューには、ワークスペースのすべてのプロジェクトの依存関係グラフが表示されます。"
 
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:199
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:52
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:12
+#: ../../source/getting-productive/workflow/case-task/states.rst:19
+#: ../../source/reference/process/error-handling.rst:73
+#: ../../source/reference/process/process-elements/process-end-page.rst:37
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:59
+msgid "|image1|"
+msgstr "|image1|"
+
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:239
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:411
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:103
+#: ../../source/getting-productive/workflow/case-task/states.rst:193
+#: ../../source/reference/process/error-handling.rst:259
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:59
+#: ../../source/reference/process/process-elements/process-end-page.rst:41
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:329
+msgid "image1"
+msgstr "image1"
+
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:203
 msgid "Toolbar actions"
 msgstr "ツールバーのアクション"
@@ -9863,17 +8792,67 @@ msgstr "ツールバーのアクション"
 msgid "|image2| Refreshes the complete graph. Manually moved nodes will be rearranged by the auto layout algorithm."
 msgstr "|image2| グラフ全体を更新します。ノードを手動で移動すると、自動レイアウトアルゴリズムによって、ノードが並び替えられます。"
 
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:240
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:412
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:104
+#: ../../source/getting-productive/workflow/case-task/states.rst:194
+#: ../../source/reference/process/error-handling.rst:260
+#: ../../source/reference/process/process-editor.rst:343
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:60
+#: ../../source/reference/process/process-elements/call-sub.rst:60
+#: ../../source/reference/process/process-elements/error-boundary-event.rst:46
+#: ../../source/reference/process/process-elements/error-end.rst:43
+#: ../../source/reference/process/process-elements/error-start.rst:45
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:330
+#: ../../source/reference/process/process-elements/signal-boundary-event.rst:41
+#: ../../source/reference/process/process-elements/signal-start.rst:47
+#: ../../source/reference/process/process-elements/trigger-step.rst:45
+#: ../../source/reference/process/process-elements/wait-program-intermediate-event.rst:135
+msgid "image2"
+msgstr "image2"
+
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:208
 msgid "|image3| Selects the zoom level of the view."
 msgstr "|image3| ビューのズームレベルを選択します。"
+
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:241
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:413
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:105
+#: ../../source/getting-productive/workflow/case-task/states.rst:195
+#: ../../source/reference/process/error-handling.rst:261
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:61
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:331
+msgid "image3"
+msgstr "image3"
 
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:210
 msgid "|image4| Selects the layout algorithm that arranges the nodes and dependency edges in the view."
 msgstr "|image4| ビューのノードと依存関係エッジを並び替えるレイアウトアルゴリズムを選択します。"
 
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:242
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:414
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:106
+#: ../../source/getting-productive/workflow/case-task/states.rst:196
+#: ../../source/reference/process/error-handling.rst:262
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:62
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:332
+#: ../../source/reference/process/process-elements/start.rst:294
+msgid "image4"
+msgstr "image4"
+
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:213
 msgid "|image5| Automatically opens the Project Graph whenever a Library Descriptor Editor is opened."
 msgstr "|image5| ライブラリ記述子エディターが開かれると、プロジェクトグラフを自動的に開きます。"
+
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:243
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:415
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:107
+#: ../../source/getting-productive/workflow/case-task/states.rst:197
+#: ../../source/reference/process/error-handling.rst:263
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:63
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:333
+msgid "image5"
+msgstr "image5"
 
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:218
 msgid "Graph actions"
@@ -9902,6 +8881,25 @@ msgstr "CTRL + 3（クイックアクセス）でプロジェクトグラフを�
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:233
 msgid "Deployment Descriptor Editor -> Open Project Graph from header toolbar"
 msgstr "デプロイメント記述子エディターのヘッダーのツールバーからプロジェクトグラフを開きます。"
+
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:236
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:347
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:68
+#: ../../source/reference/process/error-handling.rst:226
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:105
+#: ../../source/reference/process/process-elements/start.rst:237
+msgid "|image6|"
+msgstr "|image6|"
+
+#: ../../source/getting-productive/process-modeling/projects/deployment.rst:244
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:416
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:108
+#: ../../source/reference/process/error-handling.rst:264
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:64
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:334
+#: ../../source/reference/process/process-elements/start.rst:295
+msgid "image6"
+msgstr "image6"
 
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:248
 msgid "Adding additional dependencies"
@@ -11712,6 +10710,15 @@ msgid "dialog-call"
 msgstr "dialog-call"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/user-dialog-concept.rst:56
+#: ../../source/getting-productive/workflow/case-task/states.rst:43
+#: ../../source/getting-productive/workflow/case-task/states.rst:124
+#: ../../source/getting-productive/workflow/case-task/states.rst:175
+#: ../../source/glossary/glossary.rst:178
+#: ../../source/reference/process/process-elements/user-dialog.rst:4
+msgid "User Dialog"
+msgstr "ユーザーダイアログ"
+
+#: ../../source/getting-productive/user-interface/user-dialogs/user-dialog-concept.rst:56
 msgid "Opens another User Dialog"
 msgstr "別のユーザーダイアログを開きます。"
 
@@ -12111,6 +11118,48 @@ msgstr "厳密に定義されたプロセスをトリガーできます。プロ
 msgid "So in the request verification front end, a manager could simply trigger the process to enrich the request with a trigger call activity."
 msgstr "そのため、リクエスト検証のフロントエンドでは、マネージャーがプロセスをトリガーするだけで、リクエストに呼び出しトリガーアクティビティが組み込まれます。"
 
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:50
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:16
+#: ../../source/reference/process/error-handling.rst:67
+msgid "|image0|"
+msgstr "|image0|"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:410
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:80
+#: ../../source/reference/process/error-handling.rst:258
+#: ../../source/reference/process/process-elements/alternative.rst:37
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:58
+#: ../../source/reference/process/process-elements/call-sub.rst:59
+#: ../../source/reference/process/process-elements/database-activity.rst:157
+#: ../../source/reference/process/process-elements/email-activity.rst:99
+#: ../../source/reference/process/process-elements/embedded-subprocess.rst:23
+#: ../../source/reference/process/process-elements/error-boundary-event.rst:45
+#: ../../source/reference/process/process-elements/error-end.rst:42
+#: ../../source/reference/process/process-elements/error-start.rst:44
+#: ../../source/reference/process/process-elements/join.rst:38
+#: ../../source/reference/process/process-elements/note.rst:18
+#: ../../source/reference/process/process-elements/process-end-page.rst:40
+#: ../../source/reference/process/process-elements/process-end.rst:19
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:328
+#: ../../source/reference/process/process-elements/script-step.rst:52
+#: ../../source/reference/process/process-elements/signal-boundary-event.rst:40
+#: ../../source/reference/process/process-elements/signal-start.rst:46
+#: ../../source/reference/process/process-elements/split.rst:46
+#: ../../source/reference/process/process-elements/start.rst:293
+#: ../../source/reference/process/process-elements/sub-process-start.rst:37
+#: ../../source/reference/process/process-elements/task-switch-event.rst:22
+#: ../../source/reference/process/process-elements/task-switch-gateway.rst:99
+#: ../../source/reference/process/process-elements/trigger-step.rst:44
+#: ../../source/reference/process/process-elements/user-dialog-event-start.rst:20
+#: ../../source/reference/process/process-elements/user-dialog-exit-end.rst:23
+#: ../../source/reference/process/process-elements/user-dialog-method-start.rst:40
+#: ../../source/reference/process/process-elements/user-dialog-process-end.rst:20
+#: ../../source/reference/process/process-elements/user-dialog-start.rst:53
+#: ../../source/reference/process/process-elements/web-service-call-activity.rst:66
+#: ../../source/reference/process/process-elements/web-service-process-start.rst:159
+msgid "image0"
+msgstr "image0"
+
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:54
 msgid "**Signals**"
 msgstr "**シグナル**"
@@ -12122,6 +11171,23 @@ msgstr "プロセス間の結合は緩やかな方が望ましい場合がほと
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:63
 msgid "As example think of an employee that starts to work in a company. When the employee is registered from HR, other processes can setup the environment for this employee. An IT responsible will setup a new desktop workstation while an office administrator will get the personal keys for the employee. To do these tasks in parallel and loosely coupled signals are the first choice. The IT- and the office-process could listen to employee entry signals fired by the HR process."
 msgstr "例として、ある会社で働き始めた従業員を考えてみましょう。その従業員が人事部から登録されると、他のプロセスがその従業員の環境をセットアップします。IT 担当者は新しいデスクトップワークステーションをセットアップし、オフィスマネージャーは従業員のパーソナルキーを取得します。このタスクを並行して行うには、疎結合のシグナルが最初の選択肢になります。IT プロセスとオフィスプロセスは、HR プロセスから発信される従業員入社シグナルをリスニングします。"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:71
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:23
+#: ../../source/getting-productive/workflow/case-task/states.rst:57
+#: ../../source/reference/process/error-handling.rst:97
+#: ../../source/reference/process/process-editor.rst:22
+#: ../../source/reference/process/process-elements/call-sub.rst:33
+#: ../../source/reference/process/process-elements/error-boundary-event.rst:31
+#: ../../source/reference/process/process-elements/error-end.rst:30
+#: ../../source/reference/process/process-elements/error-start.rst:31
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:71
+#: ../../source/reference/process/process-elements/signal-boundary-event.rst:28
+#: ../../source/reference/process/process-elements/signal-start.rst:30
+#: ../../source/reference/process/process-elements/trigger-step.rst:37
+#: ../../source/reference/process/process-elements/wait-program-intermediate-event.rst:34
+msgid "|image2|"
+msgstr "|image2|"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:74
 msgid "Keeping Loosely Coupled Processes in Same Context"
@@ -12135,280 +11201,1089 @@ msgstr "実世界のアジャイルプロセスの実行には、多くの異な
 msgid "The entity that can glue multiple process cases together is the :ref:`business-case`. All cases and tasks that belong to the same Business Case are presented to the user of a workflow screen as related cases. Therefore, triggerable- and signalable-process start must define whether they belong to the same Business Case as the invoking process case. This can be done with a simple configuration on these starts. See :ref:`process-element-signal-start` and :ref:`Trigger Start <process-element-start-request-trigger-tab>` inscription for details."
 msgstr "複数のプロセスケースを結合できるエンティティ :ref:`business-case` です。同じビジネスケースに属するすべてのケースとタスクが、関連するケースとしてユーザーのワークフロー画面に表示されます。そのため、トリガー可能なプロセスとシグナル可能なプロセスは、呼び出し側のプロセスケースと同じビジネスケースに属しているかどうかを定義する必要があります。この定義は、これらの開始に関する簡単な設定で行うことができます。詳細については :ref:`process-element-signal-start` :ref:`トリガーの開始<process-element-start-request-trigger-tab>` インスクリプションを参照してください。"
 
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:90
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:37
+#: ../../source/getting-productive/workflow/case-task/states.rst:115
+#: ../../source/reference/process/error-handling.rst:177
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:78
+msgid "|image3|"
+msgstr "|image3|"
+
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:92
 msgid "You can also use the Public API to attach the current case to an existing Business Case."
 msgstr "また、パブリック API を使用して、既存のビジネスケースに現在のケースを接続することもできます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:102
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:101
 msgid "For workflow front end developers we offer an API to list all tasks or cases of a Business Case. So showing the involved cases and tasks to a workflow user is a simple implementation. For more details see the Public API of ch.ivyteam.ivy.workflow.businesscase.IBusinessCase."
 msgstr "ワークフローのフロントエンド開発者向けに、ビジネスケースのすべてのタスクとケースをリストアップする API を提供しています。そのため、ワークフローのユーザーへの関係するケースとタスクの表示を簡単に実装できます。詳細については、ch.ivyteam.ivy.workflow.businesscase.IBusinessCase のパブリック API を参照してください。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:113
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:112
 msgid "Aborting Tasks"
 msgstr "タスクの中止"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:115
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:114
 msgid "A long running process could end up with many open tasks that have to be executed by human users. But eventually the environment of the case changes and it does no longer make any sense to complete the open tasks. For instance, think of a car leasing process. If the customer decides shortly before contract signing that he requires leather seats instead of the furnished ones, the car will get more expensive. So the whole credit assessment process has to be run again and thus, the open approval tasks become obsolete."
 msgstr "長時間実行されるプロセスでは、多くの未完了のタスクを人が実行しなければならないことがあります。しかし、最終的にケースの環境が変わると、未完了のタスクを完了する意味がなくなってしまいます。例えば、カーリースのプロセスを考えてみましょう。顧客が契約直前に、付属のシートではなく、革張りのシートに決めた場合、車の値段は高くなります。そのため、信用評価プロセス全体をやり直す必要があり、その結果、未完了の承認タスクは不要になります。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:123
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:122
 msgid "A :ref:`process-element-user-task` can support abortion by listening to a signal. The UserTask activity can subscribe to an abortion signal by adding a :ref:`process-element-signal-boundary-event` on it. When the signal that the credit amount of the car changed, is fired from another process the listening UserTask will be aborted. And the process continues at the Signal Boundary Event. Typically, after the Signal Boundary a clean up process follows."
 msgstr ":ref:`process-element-user-task` は、シグナルをリスニングすることで、中止に対応できます :ref:`process-element-signal-boundary-event` を追加することで、UserTask アクティビティは中止シグナルをサブスクライブできます。車のクレジット額が変更されたというシグナルが他のプロセスから発信されると、リスニングしている UserTask は中止され、プロセスはシグナル境界イベントで続行されます。通常、シグナル境界の後にクリーンアッププロセスが続きます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:134
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:130
+#: ../../source/getting-productive/workflow/case-task/states.rst:139
+#: ../../source/reference/process/error-handling.rst:189
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:89
+#: ../../source/reference/process/process-elements/start.rst:189
+msgid "|image4|"
+msgstr "|image4|"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:133
 msgid "Share Data Between Processes"
 msgstr "プロセス間のデータの共有"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:136
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:135
 msgid "Often an initial larger process starts by gathering data that is later processed and enriched. This data is typically business relevant domain data that can be recognized by domain experts that contribute to the process. Think of a bank employee who grants credits. The data for his processes could look as follows when simplified:"
 msgstr "多くの場合、最初の大規模なプロセスは、後に処理され、強化されるデータを収集することから始まります。このデータは通常、プロセスに貢献するドメインエキスパートが認識できる、ビジネスに関連するドメインデータです。銀行の与信担当者を考えてみましょう。与信担当者のプロセスのデータは単純化すると以下のようになります。"
 
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:141
+#, fuzzy
+msgid "Data Class: CreditRequest"
+msgstr "データクラスエディター"
+
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:144
+#, fuzzy
+msgid "Attribute"
+msgstr "属性"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:144
+#: ../../source/reference/configuration/rest-clients.rst:190
+#: ../../source/reference/data/index.rst:63
+msgid "Type"
+msgstr "タイプ"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:146
+#, fuzzy
+msgid "``amount``"
+msgstr "``Long``"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:146
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:150
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:152
+#, fuzzy
+msgid "``Number``"
+msgstr "Number"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:148
+#, fuzzy
+msgid "``reason``"
+msgstr "理由"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:148
+#, fuzzy
+msgid "``String``"
+msgstr "``String``：255"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:150
+#, fuzzy
+msgid "``salary``"
+msgstr "``signal``"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:152
+msgid "``amountOfOtherCreditsort``"
+msgstr ""
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:156
 msgid "To store this kind of data Axon Ivy provides a simple repository that is called Business Data. This stored data can then be accessed by multiple process instances during the lifetime of a long living complex process. The repository provides access to the data with simple store and load functions similar to well known other repositories such as the EntityManager from JPA. But in comparison to JPA and similar technologies this repository can be used without any database or environment configuration."
 msgstr "このデータを保存するために、Axon Ivy にはビジネスデータと呼ばれるシンプルなリポジトリが用意されています。この保存されたデータは、長期間の複雑なプロセスの有効期間中、複数のプロセスインスタンスからアクセスできます。このリポジトリは、JPA の EntityManager などのよく知られている他のリポジトリと同様に、シンプルな保存機能とロード機能によるデータへのアクセスを提供します。ただし、JPA や類似のテクノロジーと比較して、このリポジトリはデータベース設定や環境設定なしで使用できます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:158
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:170
 msgid "By annotating a data class with the ``@BusinessCaseData`` annotation, all values of the annotated data class are automatically associated with the context of the current Business Case. The data is then shared and accessible from all processes belonging to the Business Case. Multiple data classes of different types can be used inside a Business Case."
 msgstr "``@BusinessCaseData`` アノテーションでデータクラスに注釈を付けることにより、注釈付きデータクラスのすべての値が、現在のビジネスケースのコンテキストに自動的に関連付けられます。その後、データは共有され、ビジネスケースに属するすべてのプロセスからアクセスできるようになります。ビジネスケース内では、異なるタイプの複数のデータクラスを使用できます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:165
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:177
 msgid "Business Data Analytics"
 msgstr "ビジネスデータ分析"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:167
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:179
 msgid "Running business processes typically generate highly valuable data, which could influence critical business decisions. Based on the stored data you will typically want to visualize KPIs on a management dashboard. In our credit sample, you may want to visualize the aggregated sum of all open credits. The data in the Business Data repository is stored in form that is easily accessible and explorable with a tool like `Kibana <https://www.elastic.co/products/kibana>`__."
 msgstr "一般的に、ビジネスプロセスを実行すると、重要なビジネス上の意思決定に影響を与える可能性がある、非常に有用なデータが生成されます。保存されたデータをベースに、KPI を管理ダッシュボードに可視化したいと思う人も多いことでしょう。与信の例では、すべてのオープンクレジットの集計を可視化したいと思うかもしれません。ビジネスデータリポジトリのデータは、`Kibana <https://www.elastic.co/products/kibana>`__ のようなツールを使用して簡単にアクセスでき、探索可能な形式で保存されます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:181
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:193
 msgid "Regaining the Big Picture"
 msgstr "全体像の把握"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:183
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:195
 msgid "Real world BPM projects have shown that big processes tend to get increasingly complex and need to be split up into huge process landscapes, which leads to an intransparent main process flow. Users of the process often do not see how their work contributes to the bigger business process and therefore great opportunities for improvements are not seized. There is also a big need for a unique view of adaptive case operations that can be used by process contributors. Like an overview of optional tasks that a clerk can start at any time."
 msgstr "実世界の BPM プロジェクトでは、大規模なプロセスはますます複雑化している傾向が見られます。プロセスを巨大なプロセスランドスケープに分割する必要があり、その結果、メインのプロセスフローが不明瞭になっています。プロセスのユーザーは、自分たちの業務がより大きなビジネスプロセスにどのように貢献しているのか分かっていないことが多く、改善の大きな機会を逃しています。また、事務員がいつでも開始できるオプションタスクの概要など、プロセスへの貢献者が使用できる、アダプティブなケースのオペレーションのユニークな視点に対する大きなニーズもあります。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:192
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:204
 msgid "The Case Map addresses the needs for flexible and agile Business Cases by providing a clear and simple view on the main process and its execution. With the Case Map you can easily orchestrate the main flow of processes and the business can identify and track the stages where a running process instance is."
 msgstr "ケースマップは、メインプロセスとその実行に関する明確でシンプルなビューを提供することで、柔軟で俊敏なビジネスケースのニーズに対応します。ケースマップを使用することで、プロセスのメインフローを簡単にオーケストレーションすることができ、ビジネスでは、実行中のプロセスインスタンスがあるステージを特定し、追跡することができます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:199
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:211
 msgid "A Case Map is divided into stages (in the sample above the stages are: Identification, Credit rating and Approval). Each stage defines a certain phase in the life cycle of a business process. A stage consists of processes (e.g. \"Collect personal data\"). The default flow (also known as the **happy path**) is from left to right and from top to bottom. If the last process of a stage has finished the flow continues on the stage to the right of the current stage. Stages typically have a name and icon. The idea is to reuse these icons in Workflow UIs and processes to give the end user a hint in which stage the current Business Case is."
 msgstr "ケースマップは、複数のステージ（上記の例では、本人確認、信用格付け、承認）に分けられます。各ステージは、ビジネスプロセスのライフサイクルにおける特定のフェーズを定義します。ステージはプロセス（例：「個人データの収集」）で構成されます。デフォルトのフロー（いわゆる**ハッピーパス** ）は、左から右、上から下の順になります。ステージの最後のプロセスが終了すると、フローは現在のステージの右側のステージに続きます。通常、ステージには名前とアイコンがあります。これらのアイコンをワークフロー UI やプロセスで再利用することで、エンドユーザーは現在のビジネスケースがどのステージにあるかを把握できます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:211
-msgid "Besides processes a stage of a Case Map can contain Sidesteps (e.g., \"External solvency service\" in the Case Map above). Sidesteps can be started manually by the workflow user during the ongoing Business Case. A typical Sidestep could be a process which aborts the business process (e.g., abort request). The use of Sidesteps can reduce the time spent on technical round trips, for modeling rare and costly edge cases."
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:223
+#, fuzzy
+msgid "Besides processes a stage of a Case Map can contain Sidesteps. Sidesteps can be started manually by the workflow user during the ongoing Business Case. A typical Sidestep could be a process which aborts the business process (e.g., abort request). The use of Sidesteps can reduce the time spent on technical round trips, for modeling rare and costly edge cases."
 msgstr "プロセスに加えて、サイドステップ（例：上記のケースマップの「外部支払能力サービス」）もケースマップのステージに含めることができます。サイドステップは、進行中のビジネスケースで、ワークフローのユーザーが手動で開始できます。一般的なサイドステップには、ビジネスプロセスを中止するプロセス（例：中止要求）があります。サイドステップを使用することで、まれでコストがかかるエッジケースをモデリングするための技術的なやり取りに費やす時間を削減できます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:220
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:231
 msgid "The dependencies between Case Map, Business Cases and Business Data are as follows: Processes started inside a Case Map create new cases inside the Business Case, which themselves contain tasks for the users. Data between processes can be easily shared using Business Data. A Business Case can be attached to a Case Map, which in turn controls the flow of the processes."
 msgstr "ケースマップ、ビジネスケース、ビジネスデータ間の依存関係は、次のとおりです。ケースマップ内で開始されたプロセスによって、ビジネスケース内に新しいケースが作成され、それらのケースにユーザーのタスクが格納されます。プロセス間のデータは、ビジネスデータを使用して簡単に共有できます。ビジネスケースをケースマップに接続し、プロセスのフローを制御します。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:226
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:229
-msgid "Relationship between Business Case, Business Data and Case Map."
-msgstr "ビジネスケース、ビジネスデータ、ケースマップの関係。"
-
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:232
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:240
 msgid "Conclusion"
 msgstr "まとめ"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:234
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:242
 msgid "To reiterate: signals and triggers can be used to loosely or tightly couple different processes. The innovative Case Map brings order to chaos of spaghetti BPM. A domain expert always has a simple graphical view on the Business Case to which he contributes. The Case Map empowers the domain expert to control the process execution by starting optional Sidesteps or gracefully skipping large parts of the pre-modeled standard flow."
 msgstr "繰り返すと、シグナルとトリガーを使用して、異なるプロセスを疎結合にしたり、密結合にしたりすることができます。革新的なケースマップは、無秩序で混沌とした BPM に秩序をもたらします。ドメインエキスパートは常に、自分が貢献するビジネスケースをシンプルなグラフィカル表示で見ることができます。ケースマップにより、ドメインエキスパートは、オプションのサイドステップを開始したり、事前にモデリングされた標準的なフローの大部分を潔くスキップして、プロセスの実行を制御できます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:241
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:249
 msgid "The Case Map gives the developer and the user a common language to talk about a complex process landscape. The Case Map can be read and understood by anyone that contributes to the process without an introduction. This brings back the old BPM ideas that stood the test of time."
 msgstr "ケースマップにより、開発者とユーザーは、共通の言語で複雑なプロセスランドスケープについて論じることができます。ケースマップは、プロセスに貢献する誰もが、説明なしに読んで理解できます。これは、古くからある BPM の考え方に立ち返るものです。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:252
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:260
 msgid "Signal Reference"
 msgstr "シグナルについて"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:254
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:262
 msgid "Signals inform an unknown number of recipients that a specific event has happened. Signals are sent application-wide without the need for project dependency between the sender and receiver."
 msgstr "シグナルは、特定のイベントが発生したことを不特定多数の受信者に通知します。シグナルは、アプリケーション全体に送信され、送信者と受信者の間でのプロジェクトの依存関係は必要ありません。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:259
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:267
 msgid "Sending Signals"
 msgstr "シグナルの送信"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:261
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:269
 msgid "A Signal is sent programmatically and consists of a Signal Code and optional signal data."
 msgstr "シグナルはプログラムで送信され、シグナルコードとオプションのシグナルデータで構成されます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:266
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:274
 msgid "Signal codes are defined as strings. Only letters and numbers ``[A-Za-z0-9]`` as well as the colon ``:`` as a separator are allowed."
 msgstr "シグナルコードは文字列として定義されます。英数字 ``[A-Za-z0-9]`` と、区切り文字としてコロン ``:`` のみ使用できます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:269
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:277
 msgid "Valid: ``hr:employee:quit``, ``flight:cancel:no:LX1398``"
 msgstr "有効：``hr:employee:quit``、``flight:cancel:no:LX1398``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:272
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:280
 msgid "Send a Signal Programmatically"
 msgstr "プログラムでのシグナルの送信"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:274
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:282
 msgid "Send a signal with a custom signal code using the following IvyScript code:"
 msgstr "以下の IvyScript コードを使用するカスタムシグナルコードでシグナルを送信します。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:291
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:299
 msgid "It is not recommended to use data classes as signal data as not all receiving projects might have access to these data classes. Better send an id which references an object in a database or send payload data that is encoded as string (e.g., JSON)."
 msgstr "すべての受信プロジェクトがこれらのデータクラスにアクセスできるとは限らないため、データクラスをシグナルデータとして使用することは推奨されません。データベースのオブジェクトを参照する ID を送信するか、文字列（JSON など）にエンコードされたペイロードデータを送信する方が良いでしょう。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:297
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:305
 msgid "Send a Signal Manually in the Designer"
 msgstr "デザイナーでのシグナルの手動送信"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:299
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:307
 msgid "While developing a process it is possible to send a Signal manually in the :guilabel:`Signals` page of the :ref:`dev-workflow-ui`."
 msgstr "プロセスの開発中に、 :ref:`dev-workflow-ui` の :guilabel:`Signals` ページでシグナルを手動で送信できます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:303
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:311
 msgid "Receiving Signals"
 msgstr "シグナルの受信"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:305
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:313
 msgid "Signals are received by Signal Boundary Events and Signal Start Events. Receivers can either register for an explicit signal code or a generic :ref:`signal-receive-patterns`."
 msgstr "シグナルは、シグナル境界イベントとシグナル開始イベントによって受信されます。レシーバーは、明示的なシグナルコード、一般的 :ref:`signal-receive-patterns` のいずれかを登録できます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:312
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:318
+#: ../../source/getting-productive/workflow/case-task/states.rst:152
+#: ../../source/reference/process/process-elements/signal-boundary-event.rst:4
+msgid "Signal Boundary Event"
+msgstr "シグナル境界イベント"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:320
 msgid "A :ref:`process-element-signal-boundary-event` attached to a User Task Element destroys the task if a matching signal is received and the task is in SUSPENDED state (see also :ref:`signal-boundary-event` in the Workflow chapter). The inscribed pattern on the Signal Boundary Event defines the filter for awaited signal codes:"
 msgstr "ユーザータスク要素に接続され :ref:`process-element-signal-boundary-event` は、一致するシグナルが受信され、タスクが中断状態の場合、タスクを破棄します（「ワークフロー」の章の :ref:`signal-boundary-event` 」も参照）。シグナル境界イベントのインスクリプションされたパターンは、受信待ちのシグナルコードのフィルターを定義します。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:318
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:326
 msgid "Listen for a canceled order signal with a specific id defined as macro:"
 msgstr "マクロとして定義された特定の ID を持つキャンセルされた命令シグナルのリスニング："
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:325
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:333
 msgid "Listen for signals that have a ``created`` postfix. E.g (``user:created``, ``order:created``)."
 msgstr "ポストフィックスが ``created`` のシグナルのリスニング（例：``user:created``、``order:created``）："
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:335
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:340
+#: ../../source/getting-productive/workflow/case-task/states.rst:154
+#: ../../source/reference/process/error-handling.rst:216
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:95
+msgid "|image5|"
+msgstr "|image5|"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:343
 msgid "Do not send a signal in a task that is aborted by that signal. Instead, use an additional System task to send the signal. Otherwise, the task that sends the signal will be destroyed leading to an error in the execution of that task."
 msgstr "シグナルによって中止されるタスク内でシグナルを送信しないでください。代わりに、追加のシステムタスクを使用して、シグナルを送信します。そうしないと、シグナルを送信したタスクが破壊され、そのタスクの実行がエラーになります。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:343
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:351
 msgid "Signal Start Event"
 msgstr "シグナル開始イベント"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:345
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:353
 msgid "With a :ref:`process-element-signal-start` a new process is started if a matching signal code is received."
 msgstr ":ref:`process-element-signal-start` では、一致するシグナルコードが受信された場合に新しいプロセスが開始されます。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:353
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:356
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:80
+msgid "|image7|"
+msgstr "|image7|"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:417
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:109
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:65
+msgid "image7"
+msgstr "image7"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:361
 msgid "Signal Patterns"
 msgstr "シグナルのパターン"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:355
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:363
 msgid "Receivers can listen to a specific signal by its full qualified name. Besides, it is also possible to catch multiple signal sources by listening to its common prefix. Moreover, signal listener pattern can contain wildcards (*) so that the prefixes do not have to be shared necessarily."
 msgstr "レシーバーは、完全修飾名で特定のシグナルをリスニングできます。また、共通のプレフィックスをリスニングすることで、複数のシグナルソースをキャッチできます。さらに、シグナルリスナーのパターンにはワイルドカード（*）を含めることができるため、プレフィックスを必ずしも共有する必要はありません。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:365
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:373
 msgid "Signal receivers for signal code Signal 'airport:passenger:boarding:3424'"
 msgstr "シグナルコード「airport:passenger:boarding:3424」のシグナルレシーバー"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:368
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:376
 msgid "Listener pattern"
 msgstr "リスナーのパターン"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:368
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:376
 msgid "Fired?"
 msgstr "発信？"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:368
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:376
 msgid "Reason"
 msgstr "理由"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:370
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:378
 msgid "``airport:passenger:boarding:3424``"
 msgstr "``airport:passenger:boarding:3424``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:370
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:372
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:374
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:376
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:378
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:380
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:382
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:384
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:386
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:390
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:392
 msgid "true"
 msgstr "○"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:370
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:378
 msgid "Full qualified match"
 msgstr "完全修飾名の一致"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:372
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:380
 msgid "``airport:passenger:boarding``"
 msgstr "``airport:passenger:boarding``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:372
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:374
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:376
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:380
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:382
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:384
 msgid "Prefix matches"
 msgstr "プレフィックスが一致"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:374
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:382
 msgid "``airport:passenger``"
 msgstr "``airport:passenger``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:376
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:384
 msgid "``airport``"
 msgstr "``airport``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:378
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:386
 msgid "Empty matches all signals by prefix"
 msgstr "空はプレフィックスによりすべてのシグナルに一致"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:380
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:388
 msgid "``airport:crew:boarding``"
 msgstr "``airport:crew:boarding``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:380
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:386
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:388
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:394
 msgid "false"
 msgstr "×"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:380
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:388
 msgid "Different prefix part: ``crew``"
 msgstr "プレフィックスの ``crew`` が異なる"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:382
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:390
 msgid "``airport:*:boarding``"
 msgstr "``airport:*:boarding``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:382
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:384
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:390
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:392
 msgid "Wildcard matches"
 msgstr "ワイルドカードが一致"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:384
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:392
 msgid "``*:*:boarding``"
 msgstr "``*:*:boarding``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:386
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:394
 msgid "``*:boarding``"
 msgstr "``*:boarding``"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:386
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:394
 msgid "Only one wildcard instead of two"
 msgstr "2 つではなく、1 つのワイルドカードのみ"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:391
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:399
 msgid "Tracing Signals"
 msgstr "シグナルのトレース"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:393
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:401
 msgid "Signals can be traced by using the :ref:`dev-workflow-ui`. It makes use of the Public API for Signals (``ivy.wf.signals()``)."
 msgstr "シグナルは :ref:`dev-workflow-ui` を使用してトレースできます。これには、シグナルのパブリック API（``ivy.wf.signals()``）を使用します。"
 
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:398
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:406
 msgid "For debugging the signal data of a Signal event you can set a :ref:`simulate-process-models-breakpoints` on a Signal Start or Signal Boundary Event and inspect the signal variable in the 'Variables' view."
 msgstr "シグナルイベントのシグナルデータをデバッグするには、シグナル開始イベントまたはシグナル境界イベント :ref:`simulate-process-models-breakpoints` を設定し、変数ビューでシグナル変数を精査します。"
 
-#: ../../source/getting-productive/workflow/case-task.rst:2
+#: ../../source/getting-productive/workflow/case-task/api.rst:3
+msgid "API"
+msgstr "API"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:5
+msgid "There are several APIs to manipulate and query workflow tasks and cases."
+msgstr "ワークフローのタスクやケースを操作し、照会するための API がいくつかあります。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:9
+msgid "Task and Case queries"
+msgstr "タスクとケースのクエリ"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:11
+msgid "The fluent workflow query API supports queries against all existing tasks and cases. You can write the queries in a SQL-like manner."
+msgstr "ワークフロークエリの Fluent API は、既存のすべてのタスクとケースに対するクエリをサポートします。SQL と同じようにクエリを作成できます。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:17
+msgid "To retrieve all tasks that the current user can work on using the following code:"
+msgstr "現在のユーザーが作業できるすべてのタスクを取得するには、以下のコードを使用します。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:24
+msgid "To execute a query, you need an instance of an IQueryExecutor. Retrieve it through the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`."
+msgstr "クエリを実行するには、IQueryExecutor のインスタンスが必要です :ref:`ivy 環境変数<ivyscript-reference-environmentvariable>` ら取得してください。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:28
+msgid "Queries are executed against a single security context by default."
+msgstr "デフォルトでは、クエリは 1 つのセキュリティコンテキストに対して実行されます。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:33
+msgid "You can execute queries over all security contexts on the engine and their applications in the global workflow context using the Query Executor. However, multiple security contexts cannot share a user. Therefore, the results of global queries are invalid and meaningless."
+msgstr "クエリ実行プログラムを使用して、エンジン上のすべてのセキュリティコンテキストと、グローバルワークフローコンテキストのアプリケーションに対してクエリを実行できます。ただし、複数のセキュリティコンテキストでユーザーを共有することはできません。そのため、グローバルクエリの結果は無効であり、無意味です。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:44
+msgid "Task and Case manipulation"
+msgstr "タスクとケースの操作"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:46
+msgid "The API to manipulate tasks and cases is available through the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`."
+msgstr "タスクとケースを操作する API は :ref:`ivy 環境変数<ivyscript-reference-environmentvariable>` から入手できます。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:49
+msgid "``ivy.case`` (ICase): represents the currently executing process"
+msgstr "``ivy.case`` （ICase）： 現在実行中のプロセスを表します。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:51
+msgid "``ivy.task`` (ITask): represents the user's current work unit in the currently executing process."
+msgstr "``ivy.task`` （ITask）： 現在実行中のプロセスにおけるユーザーの現在の作業単位を表します。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:54
+msgid "``ivy.wf`` (IWorkflowContext): addresses all workflow tasks and cases of all users for the current security context."
+msgstr "``ivy.wf`` （IWorkflowContext）： 現在のセキュリティコンテキストのすべてのユーザーのすべてのワークフロータスクとケースを扱います。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:57
+msgid "``ivy.session`` (IWorkflowSession): gives access to all workflow tasks and cases of the current user."
+msgstr "``ivy.session`` （IWorkflowSession）： 現在のユーザーのすべてのワークフロータスクとケースへのアクセスを許可します。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:66
+msgid "There is an :api-browser-url:`REST workflow API <default#/workflow>` available that allows third-party services to interact with workflow Tasks, Cases, and the like."
+msgstr "ワークフローのタスクやケースなどとサードパーティサービスとの連携を可能にする :api-browser-url:`REST workflow API <default#/workflow>` が利用可能です。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:69
+msgid "The workflow API is enabled by default. Disable it by setting the configuration to ``REST.Servlet.API: false``."
+msgstr "ワークフロー API はデフォルトで有効になっています。``REST.Servlet.API: false`` に設定すると、無効になります。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:76
+msgid "You can browse this API by using the :ref:`integration-rest-api-browser`."
+msgstr ":ref:`integration-rest-api-browser` を使用して、この API を参照できます。"
+
+#: ../../source/getting-productive/workflow/case-task/api.rst:78
+msgid "If any REST workflow API is missing for your specific use case, keep in mind that you can provide additional APIs very easily by creating REST API service classes in your project. See :ref:`integration-rest-provider`"
+msgstr "特定のユースケースの REST ワークフロー API が見つからない場合は、プロジェクト内で REST API サービスクラスを作成して、簡単に追加の API を提供できます。 :ref:`integration-rest-provider` 」を参照ください。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:7
+msgid "A business calendar defines the official business hours and business days. Business calendars are organized in a tree structure, with a root calendar defining the application default values and child calendars inheriting all values from their ancestor, e.g.,"
+msgstr "ビジネスカレンダーでは、正式な営業時間と営業日を定義します。ビジネスカレンダーはツリー構造で構成され、ルートカレンダーがアプリケーションの初期値を定義し、子カレンダーが先祖からすべての値を継承します。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:12
+msgid "IvyGlobal"
+msgstr "IvyGlobal"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:14
+msgid "Switzerland"
+msgstr "Switzerland"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:16
+msgid "Zurich"
+msgstr "Zurich"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:17
+msgid "Zug"
+msgstr "Zug"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:19
+msgid "Austria"
+msgstr "Austria"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:20
+msgid "Germany"
+msgstr "Germany"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:22
+msgid "Above, you see the business calendar definitions for Axon Ivy. We define a global root with three countries. For Switzerland, we also add two regions, Zurich and Zug, each with their local public holidays besides the ones they inherit from Switzerland and IvyGlobal."
+msgstr "上記の例は、Axon Ivy のビジネスカレンダーの定義です。グローバルルートに 3 つの国を定義しています。Switzerland については、Zurich と Zug の 2 つの地域も追加し、それぞれ、スイスと IvyGlobal から受け継いだ祝祭日に加えて、それぞれの地域の祝祭日を設定しています。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:27
+msgid "Use business calendars API :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>` to make calculations related to business days or business hours. This is very useful for process steps that need to work with business days, rather than with calendar days."
+msgstr "ビジネスカレンダー API :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>` 使用して、営業日や営業時間に関連する計算を行います。これは、暦日ではなく、営業日で作業する必要があるプロセスステップに非常に便利です。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:33
+msgid "For example:"
+msgstr "例："
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:35
+msgid "A Service Level Agreement (SLA) defines that a task needs to be processed by the end of the next business day. Implement this by setting the task expiry to the business day after the next."
+msgstr "SLA（サービスレベル合意書）には、タスクを翌営業日の終わりまでに処理する必要があることが定められています。タスクの有効期限を翌営業日に設定して、これを実装します。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:39
+msgid "If the default calendar does not apply, you can set the business calendar on the case (:ref:`process-element-tab-code`):"
+msgstr "デフォルトカレンダーが適用されない場合は、ケースにビジネスカレンダーを設定できます（:ref:`process-element-tab-code`）。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:46
+msgid "Set the timeout duration to two business days, using the current calendar. (:ref:`process-element-tab-task`)"
+msgstr "現在のカレンダーを使用して、タイムアウト期間を 2 営業日に設定します（:ref:`process-element-tab-task`）。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:53
+msgid "A payment application automatically corrects the payment date entered to the next business day if necessary:"
+msgstr "決済アプリケーションは、必要に応じて入力された支払日を自動的に翌営業日に修正します。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:61
+msgid "You can set a calendar on tasks, cases, or applications. The variable (ivy.cal) references the calendar that is valid for the current context. It determines the valid calendar by checking:"
+msgstr "タスク、ケース、アプリケーションにカレンダーを設定できます。(ivy.cal) 変数は、現在のコンテキストで有効なカレンダーを参照し、以下をチェックして有効なカレンダーを決定します。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:65
+msgid "the current task"
+msgstr "現在のタスク"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:66
+msgid "the current case"
+msgstr "現在のケース"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:67
+msgid "the current application"
+msgstr "現在のアプリケーション"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:68
+msgid "the root calendar of the current application, if none of the above have been set explicitly."
+msgstr "上記のいずれも明示的に設定されていない場合は、現在のアプリケーションのルートカレンダー"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:71
+msgid "You can use another calendar by referencing it by its name:"
+msgstr "カレンダーを名前で参照して、別のカレンダーを使用できます。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:77
+msgid "If you want to configure business calendars for test purposes in your Axon Ivy Designer environment, you can change (or create if it doesn't exist yet) the ``app-designer.yaml`` file in folder ``<designer_path>/configuration``. Note that all values in this file are valid for all projects in your workspace and that they don't get cleared after a restart."
+msgstr "Axon Ivy Designer 環境でテスト用にビジネスカレンダーを設定したい場合は、``<デザイナーのパス>/configuration`` フォルダーにある ``app-designer.yaml`` ファイルを変更できます（ファイルがない場合は作成できます）。このファイルのすべての値はワークスペース内のすべてのプロジェクトに対して有効であり、再起動してもクリアされないことに注意してください。"
+
+#: ../../source/getting-productive/workflow/case-task/business-calendar.rst:83
+msgid "See chapter :ref:`configuration-business-calendar` in the Engine Guide on how to configure business calendars on your Engine instance."
+msgstr "エンジンインスタンスでビジネスカレンダーを設定する方法については、エンジンガイドの :ref:`configuration-business-calendar` 」のセクションを参照してください。"
+
+#: ../../source/getting-productive/workflow/case-task/business-case.rst:4
+msgid "Business Case"
+msgstr "ビジネスケース"
+
+#: ../../source/getting-productive/workflow/case-task/business-case.rst:6
+msgid "Modern processes are loosely coupled and highly :ref:`adaptive <adaptive-case-management>`. Business processes can break out of the standard process flow and trigger asynchronous processes or send a :ref:`signal <signal-reference>` that starts various other processes. As every running process creates a new **Case**, it can get difficult for the workflow users to track the history and context of a **Task**."
+msgstr "最近のプロセスは疎結合で、高度 :ref:`アダプティブ<adaptive-case-management>` す。ビジネスプロセスは、標準的なプロセスフローだけでなく、非同期プロセスをトリガーしたり :ref:`シグナル<signal-reference>` を送信して他のさまざまなプロセスを開始したりすることができます。実行中のすべてのプロセスで新しい**ケース** が作成されるため、ワークフローユーザーが**タスク** の履歴とコンテキストを追跡するのは大変です。"
+
+#: ../../source/getting-productive/workflow/case-task/business-case.rst:13
+msgid "To clarify the workflow view, multiple **Cases** can be attached to a single **Business Case**. :ref:`Triggered <process-element-start-request-trigger-tab>` or :ref:`signaled <process-element-signal-start-tab-signal>` process-starts define in their inscription whether the started **Case** should be attached to the **Business Case** of the calling **Case**. Moreover, any **Case** can be attached to a **Business Case** using the API. If a case map is started, a **Business Case** is automatically created. See :ref:`casemap-execution`."
+msgstr "ワークフローを分かりやすく表示するため、複数の **ケース** を 1つの **ビジネスケース** に接続できます。:ref:`Triggered <process-element-start-request-trigger-tab>` または :ref:`signaled <process-element-signal-start-tab-signal>` プロセス開始要素は、そのインスクリプション内で、開始された **ケース** を呼び出し元の **ケース** の **ビジネスケース** に接続すべきかどうかを定義します。さらに、API を使用して、任意の **ケース** を **ビジネスケース** に接続できます。ケースマップが開始されると、自動的に **ビジネスケース** が作成されます。「 :ref:`casemap-execution` 」を参照してください。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:3
+msgid "Cases and Tasks"
+msgstr "ケースとタスク"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:5
+msgid "The Axon Ivy workflow manages the execution of **process instances**. A **process instance** is represented by one **Case** and one or more **Tasks**. The **Case** exists from the first process step until the last process step and holds information about its **process instance**. The **Case** is finished when the process is terminated - either completed or aborted. A **Case** is composed of one or more connected **Tasks**. Each **Task** defines a unit of work, which has to be done as one working step. Therefore, a **Task** is to be executed by a user or role - the **Task** is assigned to a user or a role. A **Task** is started by a process-start or a task-switch element and ends at the next task-switch element or process-end element."
+msgstr "Axon Ivy ワークフローは、**プロセスインスタンス** の実行を管理します。**プロセスインスタンス** は、1つの **ケース** と 1つ以上の **タスク** で表されます。**ケース** は最初のプロセスステップから最後のプロセスステップまで存在し、その **プロセスインスタンス** に関する情報を保持します。プロセスが終了（完了または中止）すると、**ケース** が終了します。**ケース** は 1つ以上の接続された **タスク** で構成されます。各 **タスク** は 1つの作業ステップとして実行される作業単位を定義します。そのため、**タスク** はユーザーまたはロールによって実行され、ユーザーまたはロールに割り当てられます。**タスク** はプロセス開始要素またはタスクスイッチ要素によって開始され、次のタスクスイッチ要素またはプロセス終了要素で終了します。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:21
+msgid "Multilingual Name and Description of Cases and Tasks"
+msgstr "ケースとタスクの多言語の名前と説明"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:23
+msgid "You can define the name and description of a :ref:`case <process-element-tab-case>` or :ref:`task <process-element-tab-task>` using multilingual texts from the CMS. Because of performance and system database space reasons, name and description are only stored in the configured workflow languages and not for every language available in the current CMS. Configure available Workflow languages using :ref:`Security System <engine-cockpit-security-system-detail>` in the :ref:`Engine Cockpit <engine-cockpit>` or, for the Designer, in the :ref:`Language Settings <language-settings>`."
+msgstr "CMS の多言語テキストを使用して、 :ref:`ケース<process-element-tab-case>`  :ref:`タスク<process-element-tab-task>` 名前と説明を定義できます。パフォーマンスとシステムデータベース容量の理由から、名前と説明は設定されたワークフロー言語にのみ保存され、現在の CMS で利用可能なすべての言語には保存されません。利用可能なワークフロー言語の設定は :ref:`エンジンコックピット<engine-cockpit>` の :ref:`セキュリティシステム<engine-cockpit-security-system-detail>` またはデザイナーの :ref:`言語設定<language-settings>` で行います。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:33
+msgid "An end user sees the name and description of a case or task in his preferred language if that language is a supported workflow language. If not, the default workflow language is used. This same language is used when searching for and sorting the names and descriptions of cases and tasks."
+msgstr "エンドユーザーは、その言語がサポートされているワークフロー言語であれば、指定した言語でケースまたはタスクの名前と説明を表示できます。そうでない場合は、デフォルトのワークフロー言語が使用されます。ケースとタスクの名前と説明を検索し、並べ替える際にも、同じ言語が使用されます。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:38
+msgid "As a process developer, you should configure the primary language of your process application as its default workflow language. Add additional workflow languages only if you use multilingual texts from the CMS in your case and task inscriptions and if you have supplied them in multiple languages. If your projects support different sets of languages, consider to configure only the common set of languages that all your projects support as additional workflow languages."
+msgstr "プロセス開発者は、プロセスアプリケーションの主言語をデフォルトのワークフロー言語として設定する必要があります。ケースやタスクのインスクリプションに CMS の多言語テキストを使用する場合や多言語で提供する場合にのみ、追加のワークフロー言語を追加してください。プロジェクトが異なる言語セットをサポートしている場合、すべてのプロジェクトがサポートする共通言語のみを追加のワークフロー言語として設定することを検討してください。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:46
+msgid "Cases and tasks support only those languages available at their creation. If you add another workflow language to an existing application with active cases and tasks, then"
+msgstr "ケースとタスクは、作成時に使用可能な言語のみをサポートします。アクティブなケースとタスクがある既存のアプリケーションに別のワークフロー言語を追加した場合、"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:50
+msgid "the name and description in the default workflow language of all your existing cases and tasks are copied to the new language."
+msgstr "既存のすべてのケースとタスクのデフォルトのワークフロー言語の名前と説明が新しい言語にコピーされます。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:53
+msgid "all existing cases and tasks do not support the new language."
+msgstr "すべての既存のケースとタスクは、新しい言語をサポートしません。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:55
+msgid "cases and tasks added later support all languages available at the time of their creation."
+msgstr "後から追加されたケースやタスクは、作成時に利用可能なすべての言語をサポートします。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:60
+msgid "Adding workflow languages increases the size of your system database and may take a long time because the name and description in the default workflow language of all existing cases and tasks are copied to all new workflow language entries for their names and descriptions."
+msgstr "ワークフロー言語を追加すると、既存のすべてのケースとタスクのデフォルトのワークフロー言語の名前と説明が新しいすべてのワークフロー言語のエントリの名前と説明にコピーされるため、システムデータベースのサイズが大きくなり、時間がかかる場合があります。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:67
+msgid "You can use CMS entries and workflow data in task names, as shown below: :code:`<%=ivy.cms.co(\"/TaskDescriptions/verifyRequest\")%>: <%=in1.amount%> <%=ivy.cms.co(\"/Dialogs/procurementRequest/piecesOf\")%>  '<%=in1.description%>' <%=ivy.cms.co(\"/Dialogs/procurementRequest/forTotal\")%> <%=in1.totalPrice%><%=ivy.cms.co(\"/TaskDescriptions/currencySymbol\")%>` to create the name :code:`Verify Request: 10 pieces of 'Apple' for a total of 10$`. Find more examples in the :ref:`Workflow Demo <importing-demo-projects>` project."
+msgstr ":code:`<%=ivy.cms.co(\"/TaskDescriptions/verifyRequest\")%>: <%=in1.amount%> <%=ivy.cms.co(\"/Dialogs/procurementRequest/piecesOf\")%>  '<%=in1.description%>' <%=ivy.cms.co(\"/Dialogs/procurementRequest/forTotal\")%> <%=in1.totalPrice%><%=ivy.cms.co(\"/TaskDescriptions/currencySymbol\")%>` という CMS エントリとワークフローデータをタスク名に使用して、 :code:`Verify Request: 10 pieces of 'Apple' for a total of 10$` という名前を作成できます。その他の例については :ref:`WorkflowDemos<importing-demo-projects>` プロジェクトを参照してください。"
+
+#: ../../source/getting-productive/workflow/case-task/cases-and-tasks.rst:74
+msgid "If you delete a workflow language, then all names and descriptions of all existing cases and tasks in that language will be deleted permanently from the system database. Adding the language again later on will not bring this data back!"
+msgstr "ワークフロー言語を削除すると、その言語のすべての既存のケースとタスクの名前と説明がシステムデータベースから永久に削除されます。後でその言語を再び追加しても、削除されたデータは戻りません。"
+
+#: ../../source/getting-productive/workflow/case-task/categories.rst:4
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: ../../source/getting-productive/workflow/case-task/categories.rst:8
+msgid "Start, Case, and Task Categories"
+msgstr "開始、ケース、タスクカテゴリー"
+
+#: ../../source/getting-productive/workflow/case-task/categories.rst:10
+msgid "You can assign a Start, Case, or Task to a category. A category is a structured String (e.g., ``Finance/Invoices``). It categorizes Starts, Cases, or Tasks into a hierarchical structure. It is an important identification attribute besides the name of a Start, Case, or Task."
+msgstr "開始、ケース、タスクをカテゴリーに割り当てることができます。カテゴリーは構造化された文字列です（例：``Finance/Invoices``）。カテゴリーは、開始、ケース、タスクを階層構造に分類します。開始、ケース、タスクの名前に加えて重要な識別属性です。"
+
+#: ../../source/getting-productive/workflow/case-task/categories.rst:15
+msgid "The ``Category`` API allows getting localized information from the CMS. For example, the ``name`` of the category ``Finance/Invoices`` is stored in the CMS at ``/Categories/Finance/Invoices/name``."
+msgstr "``カテゴリー`` API は、CMS からローカライズされた情報を取得できます。例えば、 ``Finance/Invoices`` というカテゴリーの ``名前`` は、CMS の ``/Categories/Finance/Invoices/name`` に保存されています。"
+
+#: ../../source/getting-productive/workflow/case-task/categories.rst:19
+msgid "To display a tooltip or an icon for a category on start lists, configure the ``tooltip`` and ``cssIcon`` in the CMS (i.e.,``/Categories/Finance/Invoice/cssIcon``)."
+msgstr "開始リストにカテゴリーのツールチップやアイコンを表示するには、CMS で ``tooltip`` と ``cssIcon`` を設定します（例：``/Categories/Finance/Invoice/cssIcon``）。"
+
+#: ../../source/getting-productive/workflow/case-task/categories.rst:22
+msgid "The following example shows a simple use of a category on the Case level. The API on the Task level is identical."
+msgstr "以下の例は、ケースレベルでのカテゴリーの単純な使用例を示しています。タスクレベルの API は同じです。"
+
+#: ../../source/getting-productive/workflow/case-task/categories.rst:34
+msgid "The project :ref:`WorkflowDemos <importing-demo-projects>` demonstrates the use of start, case, and task categorization. The case category serves to categorize the overall process (i.e.,Business Case). The task category serves to categorize a single unit of work, or a set of units of work. Because of the separation of case and task categorization, you can handle even complex use cases."
+msgstr ":ref:`WorkflowDemos<importing-demo-projects>` プロジェクトは、開始、ケース、タスクカテゴリーの使用の一例です。ケースカテゴリーはプロセス全体（ビジネスケース）を分類します。タスクカテゴリーは、単一の作業単位、または一連の作業単位を分類します。ケースとタスクのカテゴリーが分かれているため、複雑なユースケースも扱うことができます。"
+
+#: ../../source/getting-productive/workflow/case-task/categories.rst:41
+msgid "An example: In a mid-sized company, the process to request an address change for a customer exists in multiple forms. There is one in the customer portal and one for partner agencies. The process executed by the customer portal has the case category 'CustomerPortal/AddressChange'. The process executed by a partner agency has the case category 'Partner/Customers/AddressChange'. Both processes invoke a task to have a user or department validate the address. This user or department also does the final address verification. So, in both cases, this task has the category 'AddressVerification'. This allows the user or department to filter tasks no matter where they have originated."
+msgstr "例：ある中堅企業には、顧客の住所変更を依頼するプロセスが複数の形態で存在し、顧客ポータルに 1 つ、パートナー代理店に 1 つあります。顧客ポータルで実行されるプロセスには、'CustomerPortal/AddressChange' というケースカテゴリーがあります。パートナー代理店で実行されるプロセスには、'Partner/Customers/AddressChange' というケースカテゴリーがあります。どちらのプロセスも、ユーザーまたは部署に住所を確認させるタスクを呼び出します。ユーザーまたは部署は、最終的な住所確認も行います。そのため、両方のケースのタスクに 'AddressVerification' というカテゴリーがあり、ユーザーや部署は、タスクがどこから発生したかに関係なく、タスクをフィルタリングできます。"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:4
+#: ../../source/reference/configuration/custom-fields.rst:4
+#: ../../source/reference/process/process-elements/start.rst:115
+msgid "Custom Fields"
+msgstr "カスタムフィールド"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:6
+msgid "Use custom fields to add additional business relevant information dynamically as key/value pairs on :ref:`Starts<process-element-tab-start-custom-fields>`, :ref:`Cases<process-element-tab-case-custom-fields>` and :ref:`Tasks <process-element-tab-task-custom-fields>`."
+msgstr "カスタムフィールドを使用すると、 :ref:`Starts <process-element-tab-start-custom-fields>`、 :ref:`Cases <process-element-tab-case-custom-fields>`、 :ref:`Tasks <process-element-tab-task-custom-fields>` に対して、ビジネスに関連する追加情報をキー/値ペアとして動的に追加できます。"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:11
+msgid "Examples of custom fields are:"
+msgstr "カスタムフィールドの例："
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:13
+msgid "branchLocation - The location of the branch that is responsible for a task"
+msgstr "branchLocation - タスクを担当する支店の場所"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:14
+msgid "customerId - The id of the customer a case is working on"
+msgstr "customerId - ケースが扱う顧客の ID"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:15
+msgid "orderAmount - The amount of money of the order associated with a case"
+msgstr "orderAmount - ケースに関連付けられた注文の金額"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:17
+msgid "The :ref:`developer workflow UI <dev-workflow-ui>` and the :ref:`Portal application <portal-guide>` will display custom fields on their task and case detail pages. In the :ref:`Portal application <portal-guide>`, custom fields can also be added as additional columns in :ref:`task <dev-workflow-ui-task-details>` and :ref:`case <dev-workflow-ui-case-details>` lists, as well as for filtering task- and case lists in dashboards. You can also use custom fields to search for task and cases."
+msgstr ":ref:`開発者ワークフロー UI <dev-workflow-ui>` :ref:`ポータルアプリケーション<portal-guide>` タスクとケースの詳細ページに、カスタムフィールドが表示されます。 :ref:`ポータルアプリケーション<portal-guide>` では、カスタムフィールドを :ref:`タスク<dev-workflow-ui-task-details>` リスト :ref:`ケース<dev-workflow-ui-case-details>` ストの追加列として追加し、ダッシュボードでタスクリストやケースリストをフィルタリングできます。また、カスタムフィールドを使用して、タスクやケースを検索できます。"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:26
+msgid "Meta Information"
+msgstr "メタ情報"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:28
+msgid "You can use custom fields directly on the process elements without any additional configuration. However, we suggest that you provide additional information (meta information) for custom fields that are used often or are visible to end-users in the :ref:`Portal application <portal-guide>`. Meta information for :ref:`custom fields <custom-fields-config>` can be provided in the file :file:`<project>/config/custom-fields.yaml`. Additionally, you can provide some attributes of the meta information in :ref:`multiple languages <custom-fields-locale>` using the :ref:`CMS <cms>`."
+msgstr "追加設定なしで、カスタムフィールドをプロセス要素で直接使用できます。ただし、頻繁に使用されるカスタムフィールドや :ref:`ポータルアプリケーション<portal-guide>` エンドユーザーに表示するカスタムフィールドについては、追加情報（メタ情報）を設定することを推奨します :ref:`カスタムフィールド<custom-fields-config>` メタ情報は、:file:`<project>/config/custom-fields.yaml` ファイルに設定できます。さらに、 :ref:`CMS<cms>` を使用して、メタ情報の属性 :ref:`多言語<custom-fields-locale>` 設定できます。"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:38
+msgid "Custom Fields API"
+msgstr "カスタムフィールド API"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:40
+msgid "You can access custom fields using the following API:"
+msgstr "以下の API を使用して、カスタムフィールドにアクセスできます。"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:42
+msgid ":public-api:`ITask.customFields() </ch/ivyteam/ivy/workflow/ITask.html#customFields()>`"
+msgstr ":public-api:`ITask.customFields() </ch/ivyteam/ivy/workflow/ITask.html#customFields()>`"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:43
+msgid ":public-api:`ICase.customFields() </ch/ivyteam/ivy/workflow/ICase.html#customFields()>`"
+msgstr ":public-api:`ICase.customFields() </ch/ivyteam/ivy/workflow/ICase.html#customFields()>`"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:44
+msgid ":public-api:`IWebStartable.customFields() </ch/ivyteam/ivy/workflow/start/IWebStartable.html#customFields()>`"
+msgstr ":public-api:`IWebStartable.customFields() </ch/ivyteam/ivy/workflow/start/IWebStartable.html#customFields()>`"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:50
+msgid "To search for tasks and cases by custom fields, use the following API:"
+msgstr "カスタムフィールドでタスクとケースを検索するには、以下の API を使用します。"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:52
+msgid ":public-api:`TaskQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/TaskQuery.IFilterableColumns.html#customField()>`"
+msgstr ":public-api:`TaskQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/TaskQuery.IFilterableColumns.html#customField()>`"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:53
+msgid ":public-api:`CaseQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/CaseQuery.IFilterableColumns.html#customField()>`"
+msgstr ":public-api:`CaseQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/CaseQuery.IFilterableColumns.html#customField()>`"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:63
+msgid "You can access the meta information of custom fields with the following API:"
+msgstr "以下の API を使用して、カスタムフィールドのメタ情報にアクセスできます。"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:65
+msgid ":public-api:`ICustomFieldMeta </ch/ivyteam/ivy/workflow/custom/field/ICustomFieldMeta.html>`"
+msgstr ":public-api:`ICustomFieldMeta </ch/ivyteam/ivy/workflow/custom/field/ICustomFieldMeta.html>`"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:66
+msgid ":public-api:`ICustomField.meta() </ch/ivyteam/ivy/workflow/custom/field/ICustomField.html#meta()>`"
+msgstr ":public-api:`ICustomField.meta() </ch/ivyteam/ivy/workflow/custom/field/ICustomField.html#meta()>`"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:67
+msgid ":public-api:`IStartCustomField.meta(String) </ch/ivyteam/ivy/workflow/start/IStartCustomFields.html#meta(java.lang.String)>`"
+msgstr ":public-api:`IStartCustomField.meta(String) </ch/ivyteam/ivy/workflow/start/IStartCustomFields.html#meta(java.lang.String)>`"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:73
+msgid "To access additional attributes, use this API:"
+msgstr "その他の属性にアクセスするには、以下の API を使用します。"
+
+#: ../../source/getting-productive/workflow/case-task/custom-fields.rst:79
+msgid "To access localized values, use this API:"
+msgstr "ローカライズされた値にアクセスするには、以下の API を使用します。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:4
+msgid "Developer Workflow UI"
+msgstr "開発者ワークフロー UI"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:7
+msgid "Login Table"
+msgstr "ログイン表"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:9
+msgid "On the login table, you see all the users with their roles. You can switch between users. Users currently logged-in are highlighted in the table."
+msgstr "ログイン表には、すべてのユーザーとそのロールが表示されます。ユーザーを切り替えることができます。現在ログインしているユーザーは、表内で強調表示されます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:17
+msgid "Case Details"
+msgstr "ケースの詳細"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:19
+msgid "The new Case Details view is an overview of the most important information about the case. You can also have an overview of a Case Map or case hierarchy. If a Case Map has sidesteps, you can start them in the Case Map panel."
+msgstr "新しいケースの詳細ビューには、ケースに関する最も重要な情報の概要が表示されます。ケースマップまたはケース階層の概要も表示できます。ケースマップにサイドステップがある場合は、ケースマップパネルでサイドステップを開始できます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:25
+msgid "The :ref:`custom fields <custom-fields>` defined for a case are displayed here."
+msgstr "ケースに定義された :ref:`カスタムフィールド<custom-fields>` がここに表示されます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:30
+msgid "Task Details"
+msgstr "タスクの詳細"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:32
+msgid "On the Task Details view, you can see all the information about the task. In the top right corner of the panel, you see the actions dropdown. You can execute some actions on the task, e.g., change its state or delegate the task to a different role or user."
+msgstr "タスクの詳細ビューには、タスクに関するすべての情報が表示されます。パネルの右上にはアクションのドロップダウンがあります。タスクの状態を変更する、タスクを別のロールやユーザーに委任するといったアクションをタスクで実行できます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:39
+msgid "The :ref:`custom fields <custom-fields>` defined for a task are displayed here."
+msgstr "タスクに定義された :ref:`カスタムフィールド<custom-fields>` がここに表示されます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:43
+msgid "Developer Section"
+msgstr "開発者セクション"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:45
+msgid "The Developer section in the navigation bar will show up if your user has the permissions `IPermission.TASK_READ_ALL` and `IPermission.CASE_READ_ALL`. The \"Developer\" user in designer has these permissions."
+msgstr "ユーザーに `IPermission.TASK_READ_ALL` 権限と `IPermission.CASE_READ_ALL` 権限がある場合、ナビゲーションバーに開発者セクションが表示されます。デザイナーの「開発者」ユーザーはこれらの権限を持っています。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:49
+msgid "Additionally, you find information and some tools like Signals, Intermediate Events, Cleanup and API Browser."
+msgstr "さらに、情報や、シグナル、中間イベント、クリーンアップ、API ブラウザなどのツールが表示されます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:56
+msgid "On the Intermediate Events page, you will be able to see all active Intermediate Events and their sub-events."
+msgstr "中間イベントページには、すべてのアクティブな中間イベントとそのサブイベントが表示されます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:59
+msgid "|image4| |image5|"
+msgstr "|image4| |image5|"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:66
+msgid "Browse through available REST resources in the API Browser."
+msgstr "API ブラウザでは、利用可能な REST リソースを参照できます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:72
+msgid "Signals"
+msgstr "シグナル"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:74
+msgid "The first box on the Signals page is where you can send a signal with or without a payload. You can either type in your signal code that can be autocompleted or use the dropdown and choose a visible signal. If you have any waiting or boundary signals, you can fire them directly by clicking the paper plane icon on the table in the Boundary signals box."
+msgstr "シグナルページの最初のボックスでは、ペイロードの有無にかかわらず、シグナルを送信できます。自動入力されるシグナルコードを入力するか、ドロップダウンを使用して表示されるシグナルを選択できます。待機中のシグナルや境界シグナルがある場合は、境界シグナルボックスの表にある紙飛行機のアイコンをクリックして、直接発信できます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:85
+msgid "On the cleanup page, you can delete different types of data from the running Axon Ivy Engine. You will see four checkboxes:"
+msgstr "クリーンアップページでは、さまざまなタイプのデータを実行中の Axon Ivy Engine から削除できます。4 つのチェックボックスが表示されます。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:88
+msgid "The first one deletes all Cases, Tasks, and dependent objects like documents or custom fields from the system database."
+msgstr "最初のチェックボックスは、すべてのケース、タスク、ドキュメントやカスタムフィールドのような依存オブジェクトをシステムデータベースから削除します。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:91
+msgid "The second checkbox deletes business data from the system database as well as from the associated Search Engine index."
+msgstr "2 番目のチェックボックスは、ビジネスデータをシステムデータベースと関連する検索エンジンのインデックスから削除します。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:94
+msgid "The third checkbox deletes OAuth2 identity tokens which you might have collected by calling third-party REST services."
+msgstr "3 番目のチェックボックスは、サードパーティーの REST サービスを呼び出して収集した OAuth2 ID トークンを削除します。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:97
+msgid "And the last checkbox clears data caches like the cache of a Database or a web service request. Find additional information :ref:`process-element-tab-data-cache`."
+msgstr "最後のチェックボックスは、データベースや Web サービスリクエストのキャッシュなどのデータキャッシュをクリアします。詳しくは :ref:`process-element-tab-data-cache` を参照してください。"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:100
+msgid "|image8|"
+msgstr "|image8|"
+
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:110
+msgid "image8"
+msgstr "image8"
+
+#: ../../source/getting-productive/workflow/case-task/index.rst:2
 msgid "Business Case, Technical Case, Task"
 msgstr "ビジネスケース、技術ケース、タスク"
+
+#: ../../source/getting-productive/workflow/case-task/lifecycle.rst:2
+msgid "Lifecycle"
+msgstr "アプリケーションのライフサイクル"
+
+#: ../../source/getting-productive/workflow/case-task/lifecycle.rst:4
+msgid "The first **Case** of a process always acts as the **Business Case** (see image 'First Case'). All **Cases** attached later to the **Business Case** are subcases of the **Business Case** (see image 'Multiple Cases')."
+msgstr "プロセスの最初の **ケース** は常に **ビジネスケース** となります（「最初のケース」の図を参照）。**ビジネスケース** に後から接続されたすべての **ケース** は、 **ビジネスケース** のサブケースとなります（「複数のケース」の図を参照）。"
+
+#: ../../source/getting-productive/workflow/case-task/lifecycle.rst:7
+msgid "First Case"
+msgstr "最初のケース"
+
+#: ../../source/getting-productive/workflow/case-task/lifecycle.rst:11
+msgid "Multiple Cases"
+msgstr "複数のケース"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:5
+msgid "States"
+msgstr "状態"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:7
+msgid "During process execution, the corresponding case and tasks have various states. Typically, cases start non-persistently, i.e., they are stored in memory only. At this time, their state is CREATED. As soon as a case hits a task switch, Axon Ivy persists the case and its tasks by storing them in the system database. You can retrieve persisted cases and tasks only with the query APIs. Non-persisted cases and tasks are not retrievable by API."
+msgstr "プロセスの実行中、対応するケースとタスクはさまざまな状態になります。通常、ケースは永続化されていない状態で開始し、メモリにのみ格納されます。このときのケースの状態は「作成済み」です。ケースがタスクスイッチにヒットするとすぐに、Axon Ivy はケースとそのタスクをシステムデータベースに保存して永続化します。永続化されたケースとタスクは、クエリ API でのみ取得できます。永続化されていないケースとタスクを API で取得することはできません。"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:17
+#: ../../source/getting-productive/workflow/case-task/states.rst:21
+msgid "Process without Task switch"
+msgstr "タスクスイッチのないプロセス"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:24
+#: ../../source/getting-productive/workflow/case-task/states.rst:43
+#: ../../source/getting-productive/workflow/case-task/states.rst:62
+#: ../../source/getting-productive/workflow/case-task/states.rst:175
+msgid "Process start"
+msgstr "プロセス開始"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:24
+#: ../../source/getting-productive/workflow/case-task/states.rst:62
+msgid "Process end"
+msgstr "プロセス終了"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:26
+#: ../../source/getting-productive/workflow/case-task/states.rst:45
+#: ../../source/getting-productive/workflow/case-task/states.rst:64
+#: ../../source/getting-productive/workflow/case-task/states.rst:98
+#: ../../source/getting-productive/workflow/case-task/states.rst:128
+#: ../../source/getting-productive/workflow/case-task/states.rst:177
+msgid "Case state"
+msgstr "ケースの状態"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:26
+#: ../../source/getting-productive/workflow/case-task/states.rst:28
+#: ../../source/getting-productive/workflow/case-task/states.rst:45
+#: ../../source/getting-productive/workflow/case-task/states.rst:47
+#: ../../source/getting-productive/workflow/case-task/states.rst:64
+#: ../../source/getting-productive/workflow/case-task/states.rst:66
+#: ../../source/getting-productive/workflow/case-task/states.rst:177
+#: ../../source/getting-productive/workflow/case-task/states.rst:179
+#: ../../source/getting-productive/workflow/case-task/states.rst:181
+msgid "CREATED"
+msgstr "作成済み"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:26
+#: ../../source/getting-productive/workflow/case-task/states.rst:28
+#: ../../source/getting-productive/workflow/case-task/states.rst:64
+#: ../../source/getting-productive/workflow/case-task/states.rst:66
+#: ../../source/getting-productive/workflow/case-task/states.rst:69
+#: ../../source/getting-productive/workflow/case-task/states.rst:101
+msgid "DONE"
+msgstr "完了"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:28
+#: ../../source/getting-productive/workflow/case-task/states.rst:47
+#: ../../source/getting-productive/workflow/case-task/states.rst:179
+msgid "Task state"
+msgstr "タスクの状態"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:30
+#: ../../source/getting-productive/workflow/case-task/states.rst:49
+#: ../../source/getting-productive/workflow/case-task/states.rst:72
+#: ../../source/getting-productive/workflow/case-task/states.rst:109
+#: ../../source/getting-productive/workflow/case-task/states.rst:133
+#: ../../source/getting-productive/workflow/case-task/states.rst:183
+#: ../../source/reference/data/index.rst:76
+msgid "Persistent"
+msgstr "Persistent"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:30
+#: ../../source/getting-productive/workflow/case-task/states.rst:49
+#: ../../source/getting-productive/workflow/case-task/states.rst:72
+msgid "NO"
+msgstr "×"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:36
+msgid "Process with session timeout"
+msgstr "セッションタイムアウトを含むプロセス"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:38
+msgid "|image19|"
+msgstr "|image19|"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:198
+msgid "image19"
+msgstr "image19"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:40
+msgid "Process with User Dialog that reaches a session timeout"
+msgstr "セッションタイムアウトに達したユーザーダイアログを含むプロセス"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:45
+#: ../../source/getting-productive/workflow/case-task/states.rst:47
+msgid "DESTROYED"
+msgstr "破棄"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:55
+#: ../../source/getting-productive/workflow/case-task/states.rst:59
+#: ../../source/getting-productive/workflow/case-task/states.rst:90
+msgid "Process with Task switch"
+msgstr "タスクスイッチを含むプロセス"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:62
+#: ../../source/getting-productive/workflow/case-task/states.rst:124
+msgid "Task switch"
+msgstr "タスクスイッチ"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:64
+#: ../../source/getting-productive/workflow/case-task/states.rst:98
+#: ../../source/getting-productive/workflow/case-task/states.rst:128
+msgid "RUNNING"
+msgstr "実行中"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:66
+#: ../../source/getting-productive/workflow/case-task/states.rst:101
+#: ../../source/getting-productive/workflow/case-task/states.rst:130
+msgid "Task state (Task 1)"
+msgstr "タスクの状態（タスク 1）"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:69
+#: ../../source/getting-productive/workflow/case-task/states.rst:105
+msgid "Task state (Task 2)"
+msgstr "タスクの状態（タスク 2）"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:69
+#: ../../source/getting-productive/workflow/case-task/states.rst:105
+#: ../../source/getting-productive/workflow/case-task/states.rst:130
+msgid "SUSPENDED"
+msgstr "中断"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:72
+#: ../../source/getting-productive/workflow/case-task/states.rst:109
+#: ../../source/getting-productive/workflow/case-task/states.rst:133
+#: ../../source/getting-productive/workflow/case-task/states.rst:183
+msgid "YES"
+msgstr "○"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:78
+msgid "Task switch states in detail"
+msgstr "タスクスイッチの状態の詳細"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:80
+msgid "|image20|"
+msgstr "|image20|"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:199
+msgid "image20"
+msgstr "image20"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:82
+msgid "In detail, the tasks are going to more technical task states inside a task switch element. After a task reaches a task switch, its state is READY_FOR_JOIN. As soon as all input tasks have arrived at the task switch, Axon Ivy sets the states of these input tasks to JOINING and joins their process data sets into one process data set forwarded to all output tasks. Then, Axon Ivy marks input tasks as DONE. It then creates the output tasks in state SUSPENDED."
+msgstr "詳しく言うと、タスクはタスクスイッチ要素の内部でより技術的なタスク状態に移行します。タスクがタスクスイッチに達した後の状態は「結合準備完了」です。すべての入力タスクがタスクスイッチに到着するとすぐに、Axon Ivy はこれらの入力タスクの状態を「結合中」に設定し、それらのプロセスデータセットをすべての出力タスクに転送される 1 つのプロセスデータセットに結合します。その後、Axon Ivy は入力タスクを「完了」とマークし、「中断」状態の出力タスクを作成します。"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:93
+msgid "Before Task switch"
+msgstr "タスクスイッチの前"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:93
+msgid "Task switch (reached)"
+msgstr "タスクスイッチ（到達）"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:93
+msgid "Task switch (entry)"
+msgstr "タスクスイッチ（エントリ）"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:93
+msgid "Task switch (done/out put)"
+msgstr "タスクスイッチ（完了／出力）"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:93
+msgid "After Task switch"
+msgstr "タスクスイッチの後"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:98
+msgid "CREATED/ RUNNING"
+msgstr "作成済み／実行中"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:101
+msgid "CREATED/ RESUMED"
+msgstr "作成済み／再開済み"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:101
+msgid "READY_FOR _JOIN"
+msgstr "結合準備完了"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:101
+msgid "JOINING"
+msgstr "結合中"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:105
+#: ../../source/getting-productive/workflow/case-task/states.rst:130
+msgid "RESUMED"
+msgstr "再開済み"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:109
+msgid "NO/YES"
+msgstr "×／○"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:113
+#: ../../source/getting-productive/workflow/case-task/states.rst:121
+msgid "Task with session timeout"
+msgstr "セッションタイムアウトを含むタスク"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:117
+msgid "If a user resumes a task with a user dialog and the session of the user times out, Axon Ivy sets the task state back to SUSPENDED and resets the associated case to the task switch element."
+msgstr "ユーザーがユーザーダイアログでタスクを再開し、ユーザーのセッションがタイムアウトした場合、Axon Ivy はタスクの状態を「中断」に戻し、関連付けられたケースをタスクスイッチ要素にリセットします。"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:124
+msgid "Task switch (after session timeout)"
+msgstr "タスクスイッチ（セッションタイムアウト後）"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:137
+#: ../../source/reference/process/process-elements/user-task.rst:4
+msgid "User Task"
+msgstr "ユーザータスク"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:141
+msgid "A User Task combines a Task Switch Event and a User Dialog. If the user starts to work on an ordinary HTML User Dialog, Axon Ivy changes the task state to RESUMED. If this is an 'Offline Dialog', Axon Ivy does not change the task state before the user submits the task form. Once submitted, Axon Ivy changes the state from SUSPENDED to RESUMED. Axon Ivy then executes subsequent steps until the task is finally DONE. See also :ref:`offline-tasks`."
+msgstr "ユーザータスクは、タスクスイッチイベントとユーザーダイアログを組み合わせたものです。ユーザーが通常の HTML ユーザーダイアログで作業を開始した場合、Axon Ivy はタスクの状態を「再開済み」に変更します。「オフラインダイアログ」の場合は、ユーザーがタスクフォームを送信するまで、Axon Ivy はタスクの状態を変更しません。送信後、Axon Ivy は状態を「中断」から「再開済み」に変更します。その後、Axon Ivy は、タスクが最終的に「完了」されるまで、後続のステップを実行します。「 :ref:`offline-tasks` 」も参照してください。"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:156
+msgid "A User Task with an attached Signal Boundary Event listens for a signal while its task is in SUSPENDED state. After receiving the signal, Axon Ivy destroys the task. Execution continues with a newly created follow-up task."
+msgstr "シグナル境界イベントが接続されたユーザータスクは、そのタスクが中断状態の間、シグナルをリスニングします。シグナルを受信すると、Axon Ivy はタスクを破棄します。新しく作成された後続タスクで実行が継続されます。"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:163
+msgid "Case Map with session timeout"
+msgstr "セッションタイムアウトを含むケースマップ"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:165
+msgid "|image22|"
+msgstr "|image22|"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:200
+msgid "image22"
+msgstr "image22"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:167
+msgid "When a task is created by :ref:`casemap`, its initial state is SUSPENDED. Axon Ivy immediately persists the task in the database. If the user session expires while working on this initial task, Axon Ivy will delete it, along with the associated Case and Business Case."
+msgstr ":ref:`casemap` によって作成されるタスクの初期状態は「中断」です。Axon Ivy は直ちにそのタスクをデータベースに保存して永続化します。この初期タスクの作業中にユーザーセッションが期限切れになると、Axon Ivy は関連付けられたケースとビジネスケースとともにタスクを削除します。"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:172
+msgid "Case Map with User Dialog that reaches a session timeout"
+msgstr "セッションタイムアウトに達したユーザーダイアログを含むケースマップ"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:177
+#: ../../source/getting-productive/workflow/case-task/states.rst:179
+#: ../../source/getting-productive/workflow/case-task/states.rst:181
+msgid "(deleted)"
+msgstr "（削除済み）"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:181
+msgid "Business Case state"
+msgstr "ビジネスケースの状態"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:187
+msgid "Other task states"
+msgstr "その他のタスクの状態"
+
+#: ../../source/getting-productive/workflow/case-task/states.rst:189
+msgid "There are more task states, mainly for task synchronisation, error handling, intermediate events, or user aborts. To learn more about task states, refer to the enumeration ``ch.ivyteam.ivy.workflow.TaskState`` in public API."
+msgstr "タスクの同期、エラー処理、中間イベント、ユーザーによる中断など、他にも多くのタスクの状態があります。タスクの状態の詳細については、パブリック API の ``ch.ivyteam.ivy.workflow.TaskState`` 列挙を参照してください。"
 
 #: ../../source/getting-productive/workflow/notification.rst:6
 msgid "The Axon Ivy Engine sends notifications to users via different notification channels based on subscription management."
@@ -14836,11 +14711,6 @@ msgid "Then the path template ``{api.version}`` can be set globally on the REST 
 msgstr "REST クライアントで、パステンプレート ``{api.version}`` をプロパティとしてグローバルに設定できます。"
 
 #: ../../source/reference/configuration/rest-clients.rst:190
-#: ../../source/reference/data/index.rst:63
-msgid "Type"
-msgstr "タイプ"
-
-#: ../../source/reference/configuration/rest-clients.rst:190
 msgid "Property"
 msgstr "プロパティ"
 
@@ -17232,11 +17102,7 @@ msgstr "``persistence`` - このアプリケーション内の既存の永続性
 msgid "``var`` - references to the variables that are defined for this application (see :ref:`variables` for more information)"
 msgstr "``var`` - このアプリケーションに定義されている変数への参照（詳細については、「 :ref:`variables` 」を参照）。"
 
-#: ../../source/reference/process/ivyscript/reference.rst:371
-msgid "``rules`` - references to the :ref:`rule engine integration <rule-engine>` within Axon Ivy."
-msgstr "``rules`` - Axon Ivy 内の :ref:`ルールエンジンの統合<rule-engine>` への参照。"
-
-#: ../../source/reference/process/ivyscript/reference.rst:376
+#: ../../source/reference/process/ivyscript/reference.rst:374
 msgid "The ``html`` object is only available within a business process."
 msgstr "``html`` オブジェクトはビジネスプロセス内でのみ使用可能です。"
 
@@ -25494,3 +25360,123 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "The average throughput time per task of this process is displayed."
 #~ msgstr "このプロセスのタスクごとの平均スループット時間が表示されます。"
+
+#~ msgid "Rule Engine"
+#~ msgstr "ルールエンジン"
+
+#~ msgid "A Rule Engine is basically a software system that maintains and executes a given set of rules. More specifically, rules in a rule engine are usually described in a declarative way. Mostly in the notion of conditions and actions. Or in more developer friendly words, it's a bunch of if-then statements. For example, let's take a simple rule for computing the premium for a car insurance:"
+#~ msgstr "基本的に、ルールエンジンは指定されたルールセットを管理、実行するソフトウェアシステムです。より具体的に言うと、ルールエンジンのルールは通常、宣言的に記述されます。ほとんどの場合、条件とアクションという概念で記述されます。開発者が理解しやすい言葉で言えば、if-then 文の集まりです。例えば、自動車保険の保険料を計算する簡単なルールを考えてみましょう。"
+
+#~ msgid "You can imagine that with this approach you end up pretty soon into the `Spaghetti-code <https://en.wikipedia.org/wiki/Spaghetti_code>`__ anti-pattern. You have to take care of all the dependencies and relations between all the facts on your own leading to a forever-growing if-then statement that is almost impossible to maintain."
+#~ msgstr "このアプローチでは、すぐに`スパゲッティコード<https://en.wikipedia.org/wiki/Spaghetti_code>`__ アンチパターンになってしまうことは想像がつくでしょう。すべてのファクト間の依存関係やリレーションを自分で処理しなければならないため、if-then 文が永遠に増え続け、管理がほぼ不可能になります。"
+
+#~ msgid "In a rule engine, you create simple standalone rules and you let the rule engine decide what to fire when. The subtlety is that rules can be written in any order, the engine picks the ones for which the condition is true, and then evaluates the corresponding actions. So instead of the massive if statement, you write the following rules:"
+#~ msgstr "ルールエンジンでは、単純なスタンドアロンのルールを作成し、何をいつ実行するかをルールエンジンに決定させます。巧妙なのは、ルールはどのような順番で書いてもよく、エンジンが条件が真になるものを選び、対応するアクションを評価する点です。つまり、膨大な if 文の代わりに、以下のルールを書きます。"
+
+#~ msgid "Because of this simplification it might even be possible for non-developers to define or configure the rules (a little bit of tool support helps too)."
+#~ msgstr "このように単純化することで、開発者でなくてもルールの定義や設定ができるようになるかもしれません（ツールのサポートも少しは役に立ちます）。"
+
+#~ msgid "In short, a rule engine helps you to decouple your production rules from the REST of the code and makes it much more maintainable for both developers and domain experts. But remember that everything has its flip side. Adding a rule engine means adding another level of complexity into your architecture (you replace plain code with a new system). And as the size of your rule sets grow, so does the potential impact to the performance. For more information about rule engines, please refer to one of the many available resources in the Internet."
+#~ msgstr "要するに、ルールエンジンを使えば、プロダクションルールをコードの REST から切り離すことができ、開発者にとっても、ドメインエキスパートにとっても、管理しやすくなります。ただし、何事にも裏表があります。ルールエンジンを追加するということは、アーキテクチャに別のレベルの複雑さを追加するということです（プレーンなコードを新しいシステムに置き換えることになります）。また、ルールセットのサイズが大きくなればなるほど、パフォーマンスへの潜在的な影響も大きくなります。ルールエンジンの詳細については、インターネットで入手可能な多くのリソースを参照してください。"
+
+#~ msgid "In Axon Ivy, we integrate the open source rule engine `Drools <https://www.drools.org>`__ to give you the flexibility to use a rule engine if you want. We wrapped some of the most basic features of Drools into our own UI and API. If you need more than that, then simply use the normal full blown Drools API."
+#~ msgstr "Axon Ivy には、オープンソースのルールエンジンである `Drools <https://www.drools.org>`__ が統合されており、必要に応じてルールエンジンを柔軟に使用できます。また、Drools の最も基本的な機能のいくつかを独自の UI と API にラップしました。他の機能が必要な場合は、標準の Drools API を使用してください。"
+
+#~ msgid "Decision tables and DRL files"
+#~ msgstr "デシジョン表と DRL ファイル"
+
+#~ msgid "We support two formats for defining rules: decision tables and rules written in the Drools Rule Language (DRL). A decision table is like the name says a table that can contain many rules. The columns usually make up the variables of the preconditions/actions whereas each row in the table specifies one rule. Let's see the decision table for our example:"
+#~ msgstr "Axon Ivy では、デシジョン表と Drools Rule Language（DRL）で書かれたルールの 2 つの形式でルールを定義できます。デシジョン表は、その名のとおり、多くのルールを格納できる表です。列は通常、前提条件／アクションの変数を構成し、表の行ごとに 1 つのルールを指定します。この例のデシジョン表を見てみましょう。"
+
+#~ msgid "Decision table"
+#~ msgstr "デシジョン表"
+
+#~ msgid "Pre-Condition"
+#~ msgstr "前提条件"
+
+#~ msgid "lives in dodgy area"
+#~ msgstr "危険な地域に住んでいる"
+
+#~ msgid "price min"
+#~ msgstr "最低料額"
+
+#~ msgid "prices max"
+#~ msgstr "最高料額"
+
+#~ msgid "lives in bumpy street area"
+#~ msgstr "でこぼこ道の多い地域に住んでいる"
+
+#~ msgid "type of car"
+#~ msgstr "車種"
+
+#~ msgid "addition to basic premium"
+#~ msgstr "基本保険料に追加"
+
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgid "50000"
+#~ msgstr "50000"
+
+#~ msgid "100"
+#~ msgstr "100"
+
+#~ msgid "100000"
+#~ msgstr "100000"
+
+#~ msgid "200"
+#~ msgstr "200"
+
+#~ msgid "300"
+#~ msgstr "300"
+
+#~ msgid "sports car"
+#~ msgstr "スポーツカー"
+
+#~ msgid "500"
+#~ msgstr "500"
+
+#~ msgid "sedan"
+#~ msgstr "セダン"
+
+#~ msgid "Decision tables are simple to understand and maintain, especially for domain experts. On the other hand, the more variables and rules you use, the more your decision table bloats up and makes it hard to maintain."
+#~ msgstr "デシジョン表は、特にドメインエキスパートにとっては、理解しやすく、管理も簡単です。その一方で、使用する変数やルールが増えれば増えるほど、デシジョン表は肥大化し、管理が難しくなります。"
+
+#~ msgid "The Drools Rule Language (DRL) on the other hand is more oriented towards developers. It is the native rule language of Drools. Let's see a rule in DRL:"
+#~ msgstr "一方、Drools Rule Language（DRL）は開発者向けです。Drools のネイティブルール言語である DRL で書かれたルールを見てみましょう。"
+
+#~ msgid "Use the context menu entry *New*, the menu *File > New* or the tool bar button *New* to create either a new decision table or a DRL rule file. The rules will be shown in the project tree below their root folder *Rules*."
+#~ msgstr "コンテキストメニューの［*新規*］、メニューの［*ファイル*］>［*新規*］、またはツールバーの［*新規*］を使用して、新しいデシジョン表または DRL ルールファイルを作成します。ルールはプロジェクトツリーのルートフォルダー *Rules* の下に表示されます。"
+
+#~ msgid "Execute rules"
+#~ msgstr "ルールの実行"
+
+#~ msgid "Before we see how you can use the rule engine to do something, let's once more make very clear the difference between logic in source code and using a rule engine. In code you have to explicitly define which part of the code to call, you are in control and responsibility to do the right things in the right order. In a rule engine this is different, you simply tell the rule engine to execute and it does find out itself which rules apply and which rules to fire."
+#~ msgstr "ルールエンジンの使用方法を見る前に、もう一度、ソースコードのロジックとルールエンジンを使用することの違いを明確にしておきましょう。コードでは、コードのどの部分を呼び出すかを明示的に定義する必要があり、正しいことを正しい順番で実行する責任を負うのはコードの作成者です。ルールエンジンの場合はこれとは異なり、単にルールエンジンに実行を指示するだけで、どのルールが適用され、どのルールを実行すべきかをルールエンジンが自ら見つけ出します。"
+
+#~ msgid "To run the rule engine you have to use the :public-api:`Public API of the rule engine </ch/ivyteam/ivy/rule/engine/api/package-summary.html>` to build and execute rules on data objects. In a script step you can use ``ivy.rules`` and in a Java class use :public-api:`Rules </ch/ivyteam/ivy/rule/engine/api/Rules.html>`. First you will need to create a :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` with all rules."
+#~ msgstr "ルールエンジンを実行するには、:public-api:`ルールエンジンのパブリック API </ch/ivyteam/ivy/rule/engine/api/package-summary.html>` 使用して、データオブジェクトに対してルールを作成し、実行する必要があります。スクリプトステップでは ``ivy.rules`` を使用し、Java クラスでは :public-api:`ルール</ch/ivyteam/ivy/rule/engine/api/Rules.html>` 使用します。最初に、すべてのルールを含む :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` を作成する必要があります。"
+
+#~ msgid "Use the namespace to group rule files that belong together and use the corresponding API to load all rule files of the same namespace together. You can also load the rule files from your dependent projects. And you can override rules and rules files by having a rule or rule file with the same name in the overriding project."
+#~ msgstr "名前空間を使用して、一緒に属するルールファイルをグループ化し、対応する API を使用して、同じ名前空間のすべてのルールファイルを一緒に読み込みます。また、依存プロジェクトからルールファイルを読み込むこともできます。オーバーライドするプロジェクトに同じ名前のルールやルールファイルがあれば、ルールやルールファイルをオーバーライドできます。"
+
+#~ msgid "Now, what you need too is an instance of the data model that you used in the pre-conditions and the actions of your rules. You can either give the root object of your data or a list of objects."
+#~ msgstr "ここで必要なのは、ルールの事前条件とアクションで使用したデータモデルのインスタンスです。データのルートオブジェクトまたはオブジェクトのリストを指定できます。"
+
+#~ msgid "You should now see the result of the actions applied in the data that you passed into the rule engine before."
+#~ msgstr "前にルールエンジンに渡したデータに適用されたアクションの結果が表示されます。"
+
+#~ msgid "To use the rule engine `Drools <https://www.drools.org>`__ directly, you must add the *Rule Engine Libraries* to the project's classpath. To do this, right-click on the project and select *Properties*. Navigate to *Axon Ivy* > *Java* and check *Rule Engine Libraries*."
+#~ msgstr "`Drools <https://www.drools.org>`__ ルールエンジンを直接使用するには、*ルールエンジンのライブラリ* をプロジェクトのクラスパスに追加する必要があります。プロジェクトを右クリックして［*プロパティ*］を選択します。［*Axon Ivy*］、［*Java*］の順に移動し、［*ルールエンジンのライブラリ*］チェックボックスをオンにします。"
+
+#~ msgid "Demo project"
+#~ msgstr "デモプロジェクト"
+
+#~ msgid "To help you learn how to use the rule engine integration, we created a small demo project called :ref:`RuleEngineDemos <importing-demo-projects>`."
+#~ msgstr "ルールエンジンの統合の使用方法の理解に役立つ :ref:`RuleEngineDemos<importing-demo-projects>` という名前の小さなデモプロジェクトを作成しました。"
+
+#~ msgid "Relationship between Business Case, Business Data and Case Map."
+#~ msgstr "ビジネスケース、ビジネスデータ、ケースマップの関係。"
+
+#~ msgid "``rules`` - references to the :ref:`rule engine integration <rule-engine>` within Axon Ivy."
+#~ msgstr "``rules`` - Axon Ivy 内の :ref:`ルールエンジンの統合<rule-engine>` への参照。"
