@@ -92,10 +92,9 @@ details.
 You can also use the Public API to attach the current case to an existing
 Business Case.
 
-::
+.. code-block:: java
 
-   if (in.departement.equals("HR")) // evaluate attachment by runtime conditions
-   {
+   if (in.departement.equals("HR")) { // evaluate attachment by runtime conditions
      ivy.case.attachToBusinessCase(in.callerCaseId)
    }
 
@@ -104,7 +103,7 @@ a Business Case. So showing the involved cases and tasks to a workflow user is a
 simple implementation. For more details see the Public API of
 ch.ivyteam.ivy.workflow.businesscase.IBusinessCase.
 
-::
+.. code-block:: java
 
    ivy.case.getBusinessCase().tasks().allActive(); // get involved tasks that are active
    ivy.case.getBusinessCase().tasks().all(); // get all involved tasks
@@ -139,7 +138,20 @@ recognized by domain experts that contribute to the process. Think of a bank
 employee who grants credits. The data for his processes could look as follows
 when simplified:
 
-.. figure:: /_images/adaptive-case-management/acm-business-data.png 
+.. table:: Data Class: CreditRequest
+
+   +----------------------------------------------------+----------------------------+
+   | Attribute                                          | Type                       |
+   +====================================================+============================+
+   | ``amount``                                         | ``Number``                 |
+   +----------------------------------------------------+----------------------------+
+   | ``reason``                                         | ``String``                 |
+   +----------------------------------------------------+----------------------------+
+   | ``salary``                                         | ``Number``                 |
+   +----------------------------------------------------+----------------------------+
+   | ``amountOfOtherCreditsort``                        | ``Number``                 |
+   +----------------------------------------------------+----------------------------+
+   
 
 To store this kind of data Axon Ivy provides a simple repository that is
 called Business Data. This stored data can then be accessed by multiple process
@@ -149,7 +161,7 @@ known other repositories such as the EntityManager from JPA. But in comparison
 to JPA and similar technologies this repository can be used without any database
 or environment configuration.
 
-::
+.. code-block:: java
 
    CreditRequest creditRequest = ivy.repo.get(CreditRequest.class); // load a CreditRequest from the Business Data Repo
    creditRequest.amount = 30000; // modify a field
@@ -194,7 +206,7 @@ providing a clear and simple view on the main process and its execution. With
 the Case Map you can easily orchestrate the main flow of processes and the
 business can identify and track the stages where a running process instance is.
 
-.. figure:: /_images/adaptive-case-management/casemap-lending.png 
+.. figure:: /_images/case-map-editor/case-map-editor.png 
 
 A Case Map is divided into stages (in the sample above the stages are:
 Identification, Credit rating and Approval). Each stage defines a certain phase
@@ -206,16 +218,15 @@ Stages typically have a name and icon. The idea is to reuse these icons in
 Workflow UIs and processes to give the end user a hint in which stage the
 current Business Case is.
 
-.. figure:: /_images/adaptive-case-management/acm-casemap-portal.png 
+.. figure:: /_images/dev-wf-ui/workflow-ui-caseMap.png 
 
-Besides processes a stage of a Case Map can contain Sidesteps (e.g., "External
-solvency service" in the Case Map above). Sidesteps can be started manually by
+Besides processes a stage of a Case Map can contain Sidesteps. Sidesteps can be started manually by
 the workflow user during the ongoing Business Case. A typical Sidestep could be
 a process which aborts the business process (e.g., abort request). The use of
 Sidesteps can reduce the time spent on technical round trips, for modeling rare
 and costly edge cases.
 
-.. figure:: /_images/adaptive-case-management/acm-casemap-portal-sidestep.png 
+.. figure:: /_images/dev-wf-ui/workflow-ui-caseMap-sidestepMenu.png 
 
 The dependencies between Case Map, Business Cases and Business Data are as
 follows: Processes started inside a Case Map create new cases inside the
@@ -223,10 +234,7 @@ Business Case, which themselves contain tasks for the users. Data between
 processes can be easily shared using Business Data. A Business Case can be
 attached to a Case Map, which in turn controls the flow of the processes.
 
-.. figure:: /_images/adaptive-case-management/casemap-businesscase-relation.png
-   :alt: Relationship between Business Case, Business Data and Case Map.
-
-   Relationship between Business Case, Business Data and Case Map.
+.. graphviz:: adaptive-case-management.dot
 
 Conclusion
 ~~~~~~~~~~
@@ -402,7 +410,7 @@ the Public API for Signals (``ivy.wf.signals()``).
 .. |image0| image:: /_images/adaptive-case-management/invoke-triggerable-start.png
 .. |image1| image:: /_images/adaptive-case-management/triggerable-start-request.png
 .. |image2| image:: /_images/adaptive-case-management/hr-signaled-processes.png
-.. |image3| image:: /_images/adaptive-case-management/attach-to-signaled-case-inscription.png
+.. |image3| image:: /_images/process-inscription/signal-start-event-tab-signal.png
 .. |image4| image:: /_images/adaptive-case-management/credit-amount-change-listener.png
 .. |image5| image:: /_images/adaptive-case-management/signal-boundary.png
 .. |image6| image:: /_images/adaptive-case-management/quit-task-over-signalboundery.png
