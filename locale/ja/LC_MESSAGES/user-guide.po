@@ -908,14 +908,12 @@ msgid "A Service Level Agreement (SLA) defines that a task needs to be processed
 msgstr "SLA（サービスレベル合意書）には、タスクを翌営業日の終わりまでに処理する必要があることが定められています。タスクの有効期限を翌営業日に設定して、これを実装します。"
 
 #: ../../source/designer-guide/how-to/workflow/business-calendar.rst:39
-#, fuzzy
 msgid "If the default calendar does not apply, you can set the business calendar on the case (:ref:`process-element-tab-code`):"
-msgstr "デフォルトカレンダーが適用されない場合は、ケースにビジネスカレンダーを設定できます。"
+msgstr "デフォルトカレンダーが適用されない場合は、ケースにビジネスカレンダーを設定できます（:ref:`process-element-tab-code`）。"
 
 #: ../../source/designer-guide/how-to/workflow/business-calendar.rst:46
-#, fuzzy
 msgid "Set the timeout duration to two business days, using the current calendar. (:ref:`process-element-tab-task`)"
-msgstr "現在のカレンダーを使用して、タイムアウト期間を 2 営業日に設定します。"
+msgstr "現在のカレンダーを使用して、タイムアウト期間を 2 営業日に設定します（:ref:`process-element-tab-task`）。"
 
 #: ../../source/designer-guide/how-to/workflow/business-calendar.rst:53
 msgid "A payment application automatically corrects the payment date entered to the next business day if necessary:"
@@ -3398,9 +3396,8 @@ msgid "Deployment Options"
 msgstr "展開オプション"
 
 #: ../../source/engine-guide/deployment/prepare/deployment-options/index.rst:6
-#, fuzzy
 msgid "With deployment options you can influence the deployment behavior. All options and their detailed description are defined in the following :file:`deploy.options.yaml`."
-msgstr "展開オプションを使用して、例えば、テストユーザーを展開するか、どのプロセスモデルバージョンに Axon Ivy プロジェクトをインストールするかなど、展開の動作を制御できます。すべてのオプションとその詳細は、以下の :file:`deploy.options.yaml` で定義されます。"
+msgstr "展開オプションを使用して、展開の動作を制御できます。すべてのオプションとその詳細な説明は、以下の :file:`deploy.options.yaml` で定義されています。"
 
 #: ../../source/engine-guide/deployment/prepare/index.rst:4
 msgid "Prepare"
@@ -8128,9 +8125,8 @@ msgid "User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` have to 
 msgstr "``GET``、``HEAD``、``OPTIONS`` を使用してユーザーが提供する REST サービスは、データが変更されないように実装する必要があります。"
 
 #: ../../source/getting-productive/connectivity/restapi.rst:174
-#, fuzzy
 msgid "The CSRF protection filter is enabled by default. However, it can be turned off in an environment where the clients can be trusted (e.g., intranet). Global disabling for all REST resources is achieved by the property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-yaml`. If disabling is only required for a specific REST resource, the annotation ``@ch.ivyteam.ivy.engine.rest.service.annotation.csrf.DisableCsrfProtection`` can be applied on the resource class."
-msgstr "CSRF 保護フィルターはデフォルトで有効になっていますが、クライアントが信頼できる環境（イントラネットなど）ではオフにすることができます :ref:`ivy-yaml` の ``REST.Servlet.CSRF.Protection`` プロパティを参照してください。"
+msgstr "CSRF 保護フィルターはデフォルトで有効になっています。ただし、クライアントを信頼できる環境（イントラネットなど）では無効にできます。すべての REST リソースで無効にするには、:ref:`ivy-yaml` の ``REST.Servlet.CSRF.Protection`` プロパティを設定します。特定の REST リソースだけで無効にする場合は、リソースクラスに ``@ch.ivyteam.ivy.engine.rest.service.annotation.csrf.DisableCsrfProtection`` アノテーションを付けます。"
 
 #: ../../source/getting-productive/connectivity/restapi.rst:183
 msgid "Workflow API"
@@ -13864,9 +13860,8 @@ msgid "A business process can programmatically switch to another stage by using 
 msgstr "ビジネスプロセスは、ケースマップ API（``ivy.casemap``）を使用して、プログラムで別のステージに切り替えることができます。"
 
 #: ../../source/reference/casemap/index.rst:47
-#, fuzzy
 msgid "The position of a Stage in a case map can be changed via drag and drop or arrow keys."
-msgstr "ケースマップ内のステージの位置は、ステージ上のメニューで変更できます。"
+msgstr "ケースマップ内のステージの位置は、ドラッグアンドドロップまたは矢印キーで変更できます。"
 
 #: ../../source/reference/casemap/index.rst:49
 #: ../../source/reference/casemap/index.rst:52
@@ -13891,12 +13886,10 @@ msgid "Process Precondition"
 msgstr "プロセスの前提条件"
 
 #: ../../source/reference/casemap/index.rst:72
-#, fuzzy
 msgid "Preconditions |precondition| can be set on a process and define whether a process should be skipped. The precondition on the first process in the case map is not evaluated. If a precondition is not met, the execution continues on the next process. For script features see :ref:`casemap-scripting`."
-msgstr "プロセスに前提条件を設定し、プロセスをスキップするかどうかを定義できます。ケースマップの最初のプロセスの前提条件は評価されません。前提条件が満たされない場合、実行は次のプロセスで継続されます。スクリプトの機能については、 :ref:`casemap-scripting` 」を参照してください。"
+msgstr "前提条件 |precondition| をプロセスに設定して、プロセスをスキップするかどうかを定義できます。ケースマップの最初のプロセスの前提条件は評価されません。前提条件が満たされない場合、実行は次のプロセスで継続されます。スクリプト機能については、:ref:`casemap-scripting` を参照してください。"
 
 #: ../../source/reference/casemap/index.rst:77
-#, fuzzy
 msgid "precondition"
 msgstr "前提条件"
 
