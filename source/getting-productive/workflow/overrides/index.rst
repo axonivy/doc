@@ -104,7 +104,7 @@ Configuration
    To strictly set the overriding project you have to configure it in
    the :ref:`app-yaml`.
 
-   .. literalinclude:: includes/sample-projectOverride.yaml
+   .. literalinclude:: sample-projectOverride.yaml
       :language: yaml
 
    .. note::
