@@ -1436,9 +1436,8 @@ msgid "The third checkbox deletes OAuth2 identity tokens which you might have co
 msgstr "3 番目のチェックボックスは、サードパーティーの REST サービスを呼び出して収集した OAuth2 ID トークンを削除します。"
 
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:97
-#, fuzzy
 msgid "And the last checkbox clears data caches like the cache of a Database or a web service request. Find additional information :ref:`process-element-tab-data-cache`."
-msgstr "最後のチェックボックスは、データベースやウェブサービスのリクエストのキャッシュなど、データキャッシュをクリアします。その他の情報については、 :ref:`data-cache` 」と「 :ref:`process-element-tab-data-cache` 」を参照してください。"
+msgstr "最後のチェックボックスは、データベースや Web サービスリクエストのキャッシュなどのデータキャッシュをクリアします。詳しくは :ref:`process-element-tab-data-cache` を参照してください。"
 
 #: ../../source/designer-guide/how-to/workflow/dev-workflow-ui.rst:100
 msgid "|image8|"
@@ -1925,9 +1924,8 @@ msgid "Engine"
 msgstr "エンジン"
 
 #: ../../source/designer/configuration.rst:12
-#, fuzzy
 msgid "Engine Arguments"
-msgstr "エンジンのモード"
+msgstr "エンジン引数"
 
 #: ../../source/designer/configuration.rst:14
 msgid "If the extension manages the engine, you can configure additional VM args here."
@@ -1993,9 +1991,8 @@ msgid "Debug View"
 msgstr "デバッグビュー"
 
 #: ../../source/designer/views/index.rst:12
-#, fuzzy
 msgid "Process Debug"
-msgstr "プロセスモデル"
+msgstr "プロセスデバッグ"
 
 #: ../../source/designer/views/index.rst:14
 #: ../../source/designer/views/index.rst:49
@@ -2007,9 +2004,8 @@ msgid "tbd"
 msgstr ""
 
 #: ../../source/designer/views/index.rst:19
-#, fuzzy
 msgid "Java Debug"
-msgstr "Java の型"
+msgstr "Java デバッグ"
 
 #: ../../source/designer/views/index.rst:21
 msgid "You can debug java classes in the Axon Ivy Designer, by add :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n` to the VM arguments of the engine, e.g. via :ref:`designer-engine-config-args`. If you do this change, you have to restart your engine, e.g. by run the :code:`Reload Window` command in Vs Code."
@@ -7750,24 +7746,20 @@ msgid "Application Lifecycle"
 msgstr "アプリケーションのライフサイクル"
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:6
-#, fuzzy
 msgid "Axon Ivy projects can be deployed to an Axon Ivy Engine to bring business processes to life. Multiple projects can be installed and managed on a single Axon Ivy Engine. This section explains how to manage individual Axon Ivy projects on the engine."
-msgstr "Axon Ivy Engine に Axon Ivy プロジェクトをインストールして、ビジネスプロセスを実現できます。Axon Ivy Engine には、複数の Axon Ivy プロジェクトをインストールできます。以下のセクションでは、Axon Ivy Engine で個々の Axon Ivy プロジェクトを管理する方法について説明します。"
+msgstr "Axon Ivy プロジェクトを Axon Ivy Engine にデプロイして、ビジネスプロセスを実行できます。1 つの Axon Ivy Engine に複数のプロジェクトをインストールして管理できます。このセクションでは、Engine 上で個々の Axon Ivy プロジェクトを管理する方法を説明します。"
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:14
-#, fuzzy
 msgid "Users, roles, and permissions are managed within a security system. :ref:`Users <configuration-security-system>` can be managed manually or provided through an identity provider. Role definitions are read from the project during deployment, and the corresponding role structures in the Axon Ivy Engine are updated accordingly. Roles can also be added or deleted at runtime."
-msgstr "ユーザー、ロール、権限は、セキュリティシステムで管理されます :ref:`ユーザー<configuration-security-system>` 、手動で管理することも、ID プロバイダーを介して利用できるようにすることも可能です。ロールの定義は、展開時にプロジェクトから読み込まれ、Axon Ivy Engine の対応する構造が適応されます。さらに、実行時に新しいロールを追加したり削除することもできます。"
+msgstr "ユーザー、ロール、権限はセキュリティシステムで管理されます。:ref:`ユーザー <configuration-security-system>` は手動で管理することも、ID プロバイダーを介して提供することもできます。ロール定義はデプロイ時にプロジェクトから読み込まれ、Axon Ivy Engine の対応するロール構造が更新されます。ロールは実行時に追加または削除することもできます。"
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:20
-#, fuzzy
 msgid "By default, every Axon Ivy Engine includes the :code:`default` security system, which is sufficient for most use cases. An additional security system is only required if you want to set up a test environment on the same engine or operate :ref:`multi-tenancy <multi-tenancy>`. Security systems are fully isolated from one another and can contain multiple applications."
-msgstr "デフォルトでは、すべてのAxon Ivy Engineに :code:`default` セキュリティシステムが搭載されており、ほとんどの場合、これで十分です。追加のセキュリティシステムが必要になるのは、同じエンジン上にテスト環境を構築する場合や :ref:`multi-tenancy <multi-tenancy>` を運用する場合だけです。セキュリティシステムは他のセキュリティシステムから完全に隔離されており、複数のアプリケーションで構成できます。"
+msgstr "デフォルトでは、すべての Axon Ivy Engine に :code:`default` セキュリティシステムが含まれており、ほとんどのユースケースにはこれで十分です。同じ Engine 上にテスト環境を構築する場合や :ref:`マルチテナンシー <multi-tenancy>` を運用する場合にのみ、追加のセキュリティシステムが必要です。セキュリティシステムは互いに完全に分離されており、複数のアプリケーションを含めることができます。"
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:37
-#, fuzzy
 msgid "An application is part of a security system and contains one or more Axon Ivy projects. Ideally, applications are organized around features and have their own release cycles. In our example, the HR processes are independent of the financial processes and can therefore be managed as separate applications. Applications also have ownership of their configuration, including variables, REST clients, web service clients, and databases."
-msgstr "アプリケーションはセキュリティシステムの一部です。Axon Ivy プロジェクトは、アプリケーション内に存在します。理想的には、アプリケーションはリリースサイクルの異なる機能駆動型になります。この例では、人事プロセスは財務プロセスから独立しています。さらに、アプリケーションには、変数、REST クライアント、Web サービスクライアント、データベースなど、設定に対する主権があります。"
+msgstr "アプリケーションはセキュリティシステムの一部であり、1 つ以上の Axon Ivy プロジェクトを含みます。理想的には、アプリケーションは機能を中心に構成され、それぞれ独自のリリースサイクルを持ちます。この例では、人事プロセスは財務プロセスから独立しているため、別々のアプリケーションとして管理できます。アプリケーションは、変数、REST クライアント、Web サービスクライアント、データベースなどの設定も所有します。"
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:56
 #: ../../source/glossary/glossary.rst:100
@@ -7784,9 +7776,8 @@ msgid "Application versions allow you to make breaking changes to projects witho
 msgstr ""
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:82
-#, fuzzy
 msgid "An application version has a release state. The release state of a application version is responsible how the version is used by the Axon Ivy engine. The most important release state is the state :code:`RELEASED`. Within an application only one version can be in this state. All projects that are started in an application are started in the released application version. A complete list of release state can be found in the following list:"
-msgstr "プロセスモデルバージョンには、リリース状態が設定されます。プロセスモデルバージョンのリリース状態によって、そのバージョンがシステムでどのように使用されるかが決まります。最も重要なリリース状態は、 :code:`リリース済み` です。プロセスモデル内でこの状態になることができるバージョンは 1 つだけです。プロセスモデル内で開始されるすべてのプロセスは、リリース済みのプロセスモデルバージョンで開始されます。すべてのリリース状態は以下のとおりです。"
+msgstr "アプリケーションバージョンにはリリース状態があります。アプリケーションバージョンのリリース状態によって、Axon Ivy Engine がそのバージョンをどのように使用するかが決まります。最も重要なリリース状態は :code:`RELEASED` です。1 つのアプリケーションでこの状態にできるバージョンは 1 つだけです。アプリケーションで開始されるすべてのプロジェクトは、リリース済みのアプリケーションバージョンで開始されます。リリース状態の完全な一覧を次に示します。"
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:90
 msgid "Release States"
@@ -7801,9 +7792,8 @@ msgid "**PREPARED**: The application version is fully set up and ready to be rel
 msgstr ""
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:97
-#, fuzzy
 msgid "**RELEASED**: The application version is the currently released version. All new processes are started in this version. Program Start, Web Service Process, and REST endpoints are only active for application versions in this state. Only one application version per application can be **RELEASED** at a time. When a new application version is released, the previously released version is changed to **DEPRECATED** or **ARCHIVED**."
-msgstr "**リリース済み** ：プロセスモデルバージョンは、現在リリースされているバージョンです。つまり、すべての新しいプロセスがこのバージョンで開始されます。プログラム開始、Web サービスプロセス、REST エンドポイントは、この状態のプロセスモデルバージョンに対してのみ有効です。プロセスモデルの 1 つのバージョンだけが :code:`リリース済み` 状態になることができます。プロセスモデルバージョンがリリースされると、現在リリースされているプロセスモデルバージョンは :code:`非推奨` または :code:`アーカイブ済み` になります。"
+msgstr "**RELEASED**: アプリケーションバージョンが現在リリースされているバージョンです。すべての新しいプロセスはこのバージョンで開始されます。プログラム開始、Web サービスプロセス、REST エンドポイントは、この状態のアプリケーションバージョンでのみ有効です。1 つのアプリケーションで同時に **RELEASED** にできるアプリケーションバージョンは 1 つだけです。新しいアプリケーションバージョンがリリースされると、以前にリリースされたバージョンは **DEPRECATED** または **ARCHIVED** に変更されます。"
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:104
 msgid "**DEPRECATED**: Open cases can still be completed in this application version, but no new cases are started in it. New cases are only started in the **RELEASED** application version."
@@ -12671,9 +12661,8 @@ msgid "This chapter provides an alphabetized glossary for specialized expression
 msgstr "この章では、本書に記載されている専門的な表現や用語をアルファベット順に説明します。"
 
 #: ../../source/glossary/glossary.rst:10
-#, fuzzy
 msgid "On the Axon Ivy Engine one or more Applications can exist. The Application defines the container wherein the :ref:`Projects <glossar-project>` can be deployed."
-msgstr "Axon Ivy Engine では、1 つまたは複数のアプリケーションが存在できます。アプリケーションは :ref:`プロセスモデル<glossar-process-model>` 展開できるコンテナを定義します。"
+msgstr "Axon Ivy Engine には、1 つ以上のアプリケーションを作成できます。アプリケーションは :ref:`プロジェクト <glossar-project>` をデプロイできるコンテナを定義します。"
 
 #: ../../source/glossary/glossary.rst:14
 msgid "See also section :ref:`Application <application>`."
@@ -12756,24 +12745,20 @@ msgid "The chapter :ref:`process-elements` describes all the Process Elements av
 msgstr "「 :ref:`process-elements` 」の章には、使用可能なすべてのプロセス要素が説明されています。"
 
 #: ../../source/glossary/glossary.rst:102
-#, fuzzy
 msgid "A :ref:`Application  <glossar-application>` can have multiple versions called Application Versions. These versions allow to change an Axon Ivy project without worrying about the compatibility of currently running :ref:`Cases <glossar-case>` on the Engine."
-msgstr ":ref:`プロセスモデル<glossar-process-model>` は、プロセスモデルバージョンと呼ばれる複数のバージョンを設定できます。これらのバージョンを使用して、エンジンで実行中 :ref:`ケース<glossar-case>` 互換性を気にせずに、Axon Ivy プロジェクトを変更できます。"
+msgstr ":ref:`アプリケーション <glossar-application>` には、アプリケーションバージョンと呼ばれる複数のバージョンを設定できます。これらのバージョンを使用すると、Engine で現在実行中の :ref:`ケース <glossar-case>` との互換性を気にせずに Axon Ivy プロジェクトを変更できます。"
 
 #: ../../source/glossary/glossary.rst:107
-#, fuzzy
 msgid "See also section :ref:`Project <glossar-project>`."
-msgstr "「 :ref:`アプリケーション<application>` 」のセクションも参照してください。"
+msgstr "「 :ref:`プロジェクト <glossar-project>` 」のセクションも参照してください。"
 
 #: ../../source/glossary/glossary.rst:112
-#, fuzzy
 msgid "A Project on the Engine corresponds to an Axon Ivy project on the Designer. The difference is that a Applicatinon may hold multiple different application verions, which contains of the same Axon Ivy project."
-msgstr "エンジンのプロセスモデルはデザイナーの Axon Ivy プロジェクトに対応します。違いは、プロセスモデルが同じ Axon Ivy プロジェクトの複数の異なるバージョンを格納できることです。これら :ref:`プロセスモデルバージョン<glossar-process-model-version>` 呼ばれます。"
+msgstr "Engine 上のプロジェクトは、Designer 上の Axon Ivy プロジェクトに対応します。違いは、アプリケーションが同じ Axon Ivy プロジェクトを含む複数の異なるアプリケーションバージョンを保持できることです。"
 
 #: ../../source/glossary/glossary.rst:116
-#, fuzzy
 msgid "See also section :ref:`Project <project>`."
-msgstr "「 :ref:`アプリケーション<application>` 」のセクションも参照してください。"
+msgstr "「 :ref:`プロジェクト <project>` 」のセクションも参照してください。"
 
 #: ../../source/glossary/glossary.rst:120
 msgid "Role"
@@ -17382,9 +17367,8 @@ msgid "``extensions`` - a :public-api:`IExtensions </ch/ivyteam/ivy/extension/IE
 msgstr "``extensions`` - :public-api:`IExtensions </ch/ivyteam/ivy/extension/IExtensions.html>` ンスタンスで、Axon Ivy の ``拡張機能`` にアクセスできます。"
 
 #: ../../source/reference/process/ivyscript/reference.rst:360
-#, fuzzy
 msgid "``datacache`` - the reference to the :public-api:`IDataCacheContext </ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` instances for the application and session"
-msgstr "``datacache`` - アプリケーションおよびセッション用の :public-api:`IDataCacheContext </ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` インスタンスへの参照（「 :ref:`data-cache` 」を参照）"
+msgstr "``datacache`` - アプリケーションおよびセッション用の :public-api:`IDataCacheContext </ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` インスタンスへの参照"
 
 #: ../../source/reference/process/ivyscript/reference.rst:363
 msgid "``persistence`` - references to the existing persistence units in this application (see :ref:`persistence-configuration-editor` and :ref:`persistence-api` for more information about the API of the :ref:`Persistence <persistence>`)"
@@ -17427,9 +17411,8 @@ msgid "the :ref:`process-editor-quick-actions`, where you find quick actions acc
 msgstr "現在の選択に合わせてクイックアクションが表示される :ref:`process-editor-quick-actions`"
 
 #: ../../source/reference/process/process-editor.rst:27
-#, fuzzy
 msgid "Axon Ivy Project Tree > double click on a *process* node inside the project tree"
-msgstr "Axon Ivy プロジェクトツリーで *プロセス* ノード（|image3|）をダブルクリックします。"
+msgstr "Axon Ivy プロジェクトツリー > プロジェクトツリー内の *プロセス* ノードをダブルクリックします"
 
 #: ../../source/reference/process/process-editor.rst:32
 msgid "Tool Bar"
@@ -19470,23 +19453,20 @@ msgid "The mapping of a JSON response body to a Java object is a simple task. Th
 msgstr "JSON 応答ボディから Java オブジェクトへのマッピングは簡単です。以下のような複雑な JSON を返すサービスを考えてみましょう。"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:154
-#, fuzzy
 msgid "Example JSON"
-msgstr "例"
+msgstr "JSON の例"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:181
 msgid "You can handle this complex JSON object with one of these solutions:"
 msgstr "以下のいずれかの方法で、このような複雑な JSON オブジェクトを処理できます。"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:183
-#, fuzzy
 msgid "**Map to Data Class**:"
-msgstr "データクラスの移行"
+msgstr "**データクラスにマッピング**："
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:184
-#, fuzzy
 msgid "Create a Data Class with the attributes you need in the business process, e.g. :code:`name` as String, :code:`email` as String and :code:`phone` as String. Read the :ref:`result body <process-element-rest-client-activity-output-data-tab>` with this Data Class. Every attribute that matches by name (case sensitive) with an attribute in the JSON object will be mapped. Assign the ``result`` object to an attribute of your process data. This option should be used if you want to reflect a small JSON structure."
-msgstr "**データクラスにマッピング** ：ビジネスプロセスで必要な属性を含むデータクラスを作成します。このデータクラスを使用して、結果のボディを読み取ります。JSON オブジェクトの属性と名前（大文字と小文字を区別）が一致するすべての属性がマッピングされます。``result`` オブジェクトをプロセスデータの属性に割り当てます。小さな JSON 構造を反映したい場合は、このオプションを使用してください。"
+msgstr "ビジネスプロセスで必要な属性（例：String 型の :code:`name`、String 型の :code:`email`、String 型の :code:`phone`）を持つデータクラスを作成します。このデータクラスで :ref:`結果のボディ <process-element-rest-client-activity-output-data-tab>` を読み取ります。JSON オブジェクトの属性と名前（大文字と小文字を区別）が一致するすべての属性がマッピングされます。``result`` オブジェクトをプロセスデータの属性に割り当てます。小さな JSON 構造を表現したい場合は、この方法を使用してください。"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:192
 msgid "Map to Data Class in code block"
@@ -19497,18 +19477,16 @@ msgid "**Map to Generated Class**:"
 msgstr ""
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:198
-#, fuzzy
 msgid "Paste the JSON you receive from the service into a Java object source generator like http://www.jsonschema2pojo.org/. Generate the Java sources for the JSON structure. Download the sources and add them to a special source folder (E.g., ``src_generated``). Now you can :ref:`read the response body <process-element-rest-client-activity-output-data-tab>` to an object of this generated class, like described before. This option should be used if you want to represent a complex JSON structure without writing code yourself."
-msgstr "**生成されたクラスにマッピング** ：http://www.jsonschema2pojo.org/ などの Java オブジェクトソースジェネレーターにサービスから受け取った JSON を貼り付けます。JSON 構造用に Java ソースを生成します。ソースをダウンロードし、専用のソースフォルダー（``src_generated`` など）に追加します。これで、この生成されたクラスのオブジェクトに対する応答ボディを読み取ることができます。"
+msgstr "http://www.jsonschema2pojo.org/ などの Java オブジェクトソースジェネレーターに、サービスから受け取った JSON を貼り付けます。JSON 構造用の Java ソースを生成します。ソースをダウンロードし、専用のソースフォルダー（例：``src_generated``）に追加します。これで、前述の方法で :ref:`応答ボディ <process-element-rest-client-activity-output-data-tab>` をこの生成されたクラスのオブジェクトとして読み取れます。自分でコードを書かずに複雑な JSON 構造を表現したい場合は、この方法を使用してください。"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:207
 msgid "**Map to JSON Node**:"
 msgstr ""
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:208
-#, fuzzy
 msgid "Read the :ref:`result body <process-element-rest-client-activity-output-data-tab>` as :code:`tools.jackson.databind.JsonNode` object. Navigate through the object tree and read its field values manually. This option should be used if you don't want to reflect the whole object structure and only need parts from the object tree."
-msgstr "**JSON ノードにマッピング** ：結果のボディを ``JsonNode`` オブジェクトとして読み取ります。オブジェクトツリーを移動し、フィールドの値を手動で読み取ります。オブジェクト構造全体を反映せず、オブジェクトツリーの一部のみ必要な場合に、このオプションを使用してください。"
+msgstr ":ref:`結果のボディ <process-element-rest-client-activity-output-data-tab>` を :code:`tools.jackson.databind.JsonNode` オブジェクトとして読み取ります。オブジェクトツリーをたどり、フィールドの値を手動で読み取ります。オブジェクト構造全体を表現する必要がなく、オブジェクトツリーの一部だけが必要な場合は、この方法を使用してください。"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:214
 msgid "Map to JSON Node in code block"
