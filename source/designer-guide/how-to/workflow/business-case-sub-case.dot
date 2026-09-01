@@ -1,0 +1,96 @@
+digraph business_case_sub_case {
+  graph [
+    bgcolor="transparent"
+    rankdir=TB
+    nodesep=0.7
+    ranksep=0.65
+    pad=0.15
+    fontname="Roboto,Helvetica Neue,Arial,sans-serif"
+  ]
+
+  node [
+    shape=box
+    style="filled"
+    color="#3d4a57"
+    fillcolor="#ffffff"
+    fontcolor="#202a33"
+    fontname="Roboto,Helvetica Neue,Arial,sans-serif"
+    fontsize=14
+    margin="0.18,0.12"
+  ]
+
+  edge [
+    color="#3d4a57"
+    penwidth=1.2
+    arrowsize=0.75
+    fontname="Roboto,Helvetica Neue,Arial,sans-serif"
+    fontsize=11
+    fontcolor="#3d4a57"
+  ]
+
+  business_case [
+    label="Case\n(Business Case)"
+    fillcolor="#f6d98b"
+    fontcolor="#202a33"
+    width=2.25
+    height=0.8
+  ]
+  task [label="Task" fontcolor="#202a33" width=2.25 height=0.8]
+  sub_case [
+    label="Case\n(Sub Case)"
+    fillcolor="#a9c5ee"
+    fontcolor="#202a33"
+    width=2.25
+    height=0.8
+  ]
+  sub_task [label="Task" fontcolor="#202a33" width=2.25 height=0.8]
+  first_note [
+    label="The first case is\nstill the business case."
+    shape=note
+    style="filled"
+    fillcolor="#f7f8fa"
+    color="#98a4ae"
+    fontcolor="#202a33"
+    fontsize=12
+    width=2.2
+  ]
+  sub_note [
+    label="Additional cases\nare sub cases of\nthe business case."
+    shape=note
+    style="filled"
+    fillcolor="#f7f8fa"
+    color="#98a4ae"
+    fontcolor="#202a33"
+    fontsize=12
+    width=2.2
+  ]
+
+  {rank=same; business_case; first_note}
+  {rank=same; task; sub_case; sub_note}
+  business_case -> task [
+    dir=both
+    arrowtail=diamond
+    arrowhead=none
+    headlabel="1..*"
+    labeldistance=2
+    labelangle=45
+  ]
+  business_case -> sub_case [
+    dir=both
+    arrowtail=diamond
+    arrowhead=none
+    headlabel="1..*"
+    labeldistance=2
+    labelangle=-45
+  ]
+  sub_case -> sub_task [
+    dir=both
+    arrowtail=diamond
+    arrowhead=none
+    headlabel="1..*"
+    labeldistance=2
+    labelangle=45
+  ]
+  business_case -> first_note [style=dashed color="#98a4ae" dir=none]
+  sub_case -> sub_note [style=dashed color="#98a4ae" dir=none]
+}

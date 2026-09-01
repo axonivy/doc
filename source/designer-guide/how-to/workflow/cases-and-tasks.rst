@@ -104,15 +104,13 @@ Lifecycle
 The first **Case** of a process always acts as the **Business Case** (see image 'First Case').
 All **Cases** attached later to the **Business Case** are subcases of the **Business Case** (see image 'Multiple Cases').
 
-.. figure:: /_images/workflow/business-case-first-case.png
-   :alt: First Case
+.. graphviz:: business-case-first-case.dot
+   :align: center
+   :caption: First Case
 
-   First Case
-
-.. figure:: /_images/workflow/business-case-sub-case.png
-   :alt: Multiple Cases
-
-   Multiple Cases
+.. graphviz:: business-case-sub-case.dot
+   :align: center
+   :caption: Multiple Cases
 
 
 .. |image0| image:: /_images/workflow/workflow-case-and-task.png

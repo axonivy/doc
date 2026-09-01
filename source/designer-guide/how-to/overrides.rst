@@ -43,8 +43,8 @@ start; the Frontend project contains the DoOrder sub process; the
 Backend project contains the ProcessOrder sub process; the Shipment
 project contains the Shipping sub process.
 
-.. figure:: /_images/overrides/case-scope-1.png
-   :alt: Overriding 1
+.. graphviz:: case-scope-1.dot
+   :align: center
 
 We now define an additional project, *Acme web shop*. The new project is
 dependent on web shop and the intention is to bundle all Acme-specific
@@ -52,8 +52,8 @@ overrides and adoptions in this project. The already existing projects
 plus this new project form together a more specific and customized *Acme
 web shop* application, with the following project dependency tree:
 
-.. figure:: /_images/overrides/case-scope-2.png
-   :alt: Overriding 2
+.. graphviz:: case-scope-2.dot
+   :align: center
 
 Knowing this, we can now specifically override and redefine components
 from the original generic *web shop* application by redefining them
