@@ -37,18 +37,23 @@ For example:
    to the business day after the next.
 
    If the default calendar does not apply, you can set the business calendar on
-   the case:
+   the case (:ref:`process-element-tab-code`):
    
-   .. figure:: /_images/business-calendar/business-calendar-request-start.png
+   .. code-block:: java
 
-   Set the timeout duration to two business days, using the current calendar.
+      ivy.case.setBusinessCalendar(ivy.cal.get("Zug"));
+
+   Set the timeout duration to two business days, using the current calendar. 
+   (:ref:`process-element-tab-task`)
    
-   .. figure:: /_images/business-calendar/business-calendar-task-switch.png
+   .. code-block:: java
+      
+      ivy.cal.getWorkDayIn(2).getDurationFromNow();
 
 -  A payment application automatically corrects the payment date entered to the
    next business day if necessary:
 
-   ::
+   .. code-block:: java
 
       // e.g., on the Start tab of a Request Start Inscription Mask
       out.paymentDate = ivy.cal.getWorkDayIn(out.paymentDate, 0);
@@ -65,7 +70,7 @@ current context. It determines the valid calendar by checking:
 
 You can use another calendar by referencing it by its name:
 
-::
+.. code-block:: java
 
    ivy.cal.get("Zug").getWorkDayIn(2);
 
