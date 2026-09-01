@@ -7,4 +7,3 @@ Designer Guide
    :maxdepth: 2
 
    how-to/index
-   troubleshooting/index
