@@ -258,8 +258,6 @@ values of previous executions in the memory and re-use them on follow up
 executions. This is an optimization for external systems that execute
 expensive operations or have slow response times.
 
-For more information about this topic, please refer to the :ref:`data-cache` section.
-
 .. figure:: /_images/process-inscription/common-tab-data-cache.png
    :alt: Data Cache tab
 

@@ -10,4 +10,3 @@ How to
    overrides
    rule-engine
    continuous-integration
-   miscellaneous
