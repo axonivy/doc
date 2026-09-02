@@ -6959,12 +6959,10 @@ msgid "Data Modeling"
 msgstr "データモデリング"
 
 #: ../../source/getting-productive/data-modeling/index.rst:4
-#, fuzzy
 msgid "Axon Ivy provides multiple possibilities to manage and store project-specific data. This chapter provides an overview of all the possibilities with their advantages and disadvantages. Which one should be used depends on the use case."
 msgstr "Axon Ivy では、複数の方法でプロジェクト固有のデータを管理、格納できます。この章では、メリットとデメリットとともに、すべての方法の概要を説明します。どの方法を使用すべきかはケースバイケースです。"
 
 #: ../../source/getting-productive/data-modeling/index.rst:9
-#, fuzzy
 msgid "**Content Management**"
 msgstr "コンテンツ管理"
 
@@ -6973,7 +6971,6 @@ msgid "Stores static multi language content like labels, texts, titles, images. 
 msgstr "ラベル、テキスト、タイトル、画像などの静的な多言語コンテンツを格納します。詳細については、「 :ref:`cms` 」の章を参照してください。"
 
 #: ../../source/getting-productive/data-modeling/index.rst:14
-#, fuzzy
 msgid "**Filesystem**"
 msgstr "ファイルシステム"
 
@@ -6982,17 +6979,15 @@ msgid "Data can be stored in files, see the :ref:`documents` chapter for more in
 msgstr ""
 
 #: ../../source/getting-productive/data-modeling/index.rst:21
-#, fuzzy
 msgid "**Variables**"
 msgstr "変数"
 
 #: ../../source/getting-productive/data-modeling/index.rst:23
 #, fuzzy
 msgid "Stores simple name/value configuration pairs. On the Axon Ivy Engine there is a :ref:`UI <engine-cockpit-variables>` to change the values of a Variable. More information can be found in the chapter :ref:`variables`. If you like variables on the user level, consider using ``User Properties`` (see :public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>`)."
-msgstr "単純な名前と値のペアを格納します。Axon Ivy Engine には、変数の値を変更するための :ref:`UI<engine-cockpit-variables>` が搭載されています。詳細については、「 :ref:`variables` 」の章を参照してください。"
+msgstr "単純な名前と値のペアを格納します。Axon Ivy Engine には、変数の値を変更するための :ref:`UI <engine-cockpit-variables>` があります。詳細については、:ref:`variables` の章を参照してください。ユーザーレベルで変数を使用する場合は、``User Properties``（:public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>` を参照）の使用を検討してください。"
 
 #: ../../source/getting-productive/data-modeling/index.rst:28
-#, fuzzy
 msgid "**Business Data**"
 msgstr "ビジネスデータ"
 
@@ -7001,14 +6996,13 @@ msgid "With business data you can store data without a schema in an `OpenSearch 
 msgstr ""
 
 #: ../../source/getting-productive/data-modeling/index.rst:33
-#, fuzzy
 msgid "**Database**"
 msgstr "データベース"
 
 #: ../../source/getting-productive/data-modeling/index.rst:35
 #, fuzzy
 msgid "Stores and accesses data in database systems. A dedicated database server is necessary and the database schema must be managed outside of Axon Ivy (see :ref:`process-element-db-activity`). You can also use the Java Persistence API (JPA) to manage database access and generate database schema (see :ref:`persistence`)."
-msgstr "データベースシステムにデータを格納し、アクセスします。独自のデータベースサーバーが必要で、データベーススキーマを Axon Ivy の外部で管理する必要があります。詳細については、「 :ref:`process-element-db-activity` 」の章を参照してください。"
+msgstr "データベースシステムにデータを格納し、アクセスします。専用のデータベースサーバーが必要で、データベーススキーマを Axon Ivy の外部で管理する必要があります（:ref:`process-element-db-activity` を参照）。Java Persistence API（JPA）を使用してデータベースアクセスを管理し、データベーススキーマを生成することもできます（:ref:`persistence` を参照）。"
 
 #: ../../source/getting-productive/data-modeling/persistence/data-repository-api.rst:4
 msgid "Data Repository API"
