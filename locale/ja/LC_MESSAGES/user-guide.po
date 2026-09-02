@@ -164,196 +164,6 @@ msgstr ":guilabel:`Build` セクションで ``clean verify`` というゴール
 msgid ":guilabel:`Save` the Job and :guilabel:`Run` it"
 msgstr "ジョブを:guilabel:`保存` して:guilabel:`実行` します。"
 
-#: ../../source/designer-guide/how-to/data-storage.rst:2
-msgid "Data Storage"
-msgstr "データの格納"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:4
-msgid "Axon Ivy provides multiple possibilities to manage and store project specific data. This chapter provides an overview of all the possibilities with their advantages and disadvantages. Which one should be used depends from case to case."
-msgstr "Axon Ivy では、複数の方法でプロジェクト固有のデータを管理、格納できます。この章では、メリットとデメリットとともに、すべての方法の概要を説明します。どの方法を使用すべきかはケースバイケースです。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:10
-#: ../../source/designer-guide/how-to/data-storage.rst:77
-msgid "Content Management"
-msgstr "コンテンツ管理"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:12
-msgid "Stores static multi language content like labels, texts, titles, images. More information can be found in the chapter :ref:`cms`."
-msgstr "ラベル、テキスト、タイトル、画像などの静的な多言語コンテンツを格納します。詳細については、「 :ref:`cms` 」の章を参照してください。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:16
-#: ../../source/designer-guide/how-to/data-storage.rst:79
-msgid "Web Content Folder"
-msgstr "ウェブコンテンツフォルダー"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:18
-msgid "Stores static web files (CSS, JavaScript, Images, JSF-Templates) used in HTML User Dialogs."
-msgstr "HTML ユーザーダイアログで使用される静的ウェブファイル（CSS、JavaScript、画像、JSF テンプレート）を保存します。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:22
-#: ../../source/designer-guide/how-to/data-storage.rst:81
-msgid "Filesystem"
-msgstr "ファイルシステム"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:24
-msgid "Data can be stored in files. Access and management has to be implemented in the project itself."
-msgstr "データをファイルに保存できます。アクセスや管理はプロジェクト自体に実装する必要があります。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:28
-#: ../../source/designer-guide/how-to/data-storage.rst:83
-msgid "HTML User Dialog Resources"
-msgstr "HTML ユーザーダイアログリソース"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:30
-msgid "Stores static web files (CSS, JavaScript, Images, etc.) that are only used in the HTML User Dialog."
-msgstr "HTML ユーザーダイアログでのみ使用される静的ウェブファイル（CSS、JavaScript、画像など）を保存します。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:34
-#: ../../source/designer-guide/how-to/data-storage.rst:85
-#: ../../source/getting-productive/connectivity/database.rst:2
-#: ../../source/reference/process/process-elements/database-activity.rst:65
-msgid "Database"
-msgstr "データベース"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:36
-msgid "Stores and accesses data in database systems. A dedicated database server is necessary and the database schema must be managed outside of Axon Ivy. More information can be found in the chapter :ref:`process-element-db-activity`."
-msgstr "データベースシステムにデータを格納し、アクセスします。独自のデータベースサーバーが必要で、データベーススキーマを Axon Ivy の外部で管理する必要があります。詳細については、「 :ref:`process-element-db-activity` 」の章を参照してください。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:42
-msgid "Persistency (Jakarta Persistence API)"
-msgstr "永続性（Jakarta Persistence API）"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:44
-msgid "Stores and accesses data in database systems. A dedicated database server is necessary. The database schema can be generated. JPA is a Jakarta EE standard that is well documented and widely used. More information can be found in the chapter :ref:`persistence`."
-msgstr "データベースシステムにデータを格納し、アクセスします。独自のデータベースサーバーが必要です。データベーススキーマを生成できます。JPAは文書化が充実しており広く利用されているJakarta EEの標準です。詳細については、「:ref:`persistence`」の章を参照してください。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:50
-#: ../../source/designer-guide/how-to/data-storage.rst:87
-msgid "Web Service"
-msgstr "Web サービス"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:52
-msgid "Stores and accesses data in external systems by using web services. More information can be found in the chapter :ref:`process-element-web-service-call-activity`."
-msgstr "Web サービスを使用して外部システムのデータを格納し、アクセスします。詳細については、 :ref:`process-element-web-service-call-activity` 」の章を参照してください。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:56
-#: ../../source/designer-guide/how-to/data-storage.rst:91
-#: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:8
-#: ../../source/reference/configuration/variables.rst:4
-msgid "Variables"
-msgstr "変数"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:58
-msgid "Stores simple name/value configuration pairs. On the Axon Ivy Engine there is a :ref:`UI <engine-cockpit-variables>` to change the values of a Variable. More information can be found in the chapter :ref:`variables`."
-msgstr "単純な名前と値のペアを格納します。Axon Ivy Engine には、変数の値を変更するための :ref:`UI<engine-cockpit-variables>` が搭載されています。詳細については、「 :ref:`variables` 」の章を参照してください。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:63
-#: ../../source/designer-guide/how-to/data-storage.rst:93
-msgid "User Properties"
-msgstr "ユーザープロパティ"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:65
-msgid "Stores simple name/value pairs per user. Can be used to store user settings. More information can be found in the Public API :public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>`."
-msgstr "ユーザーごとに単純な名前と値のペアを格納します。ユーザー設定を保存するのに使用できます。詳細については、パブリック API :public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>` 参照してください。"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:72
-msgid "Summary"
-msgstr "まとめ"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:75
-msgid "Concept"
-msgstr "コンセプト"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:75
-#: ../../source/reference/cms/overriding.rst:2
-msgid "Overriding"
-msgstr "オーバーライド"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:75
-#: ../../source/getting-productive/data-modeling/business-data/limitations.rst:29
-msgid "Project Dependencies"
-msgstr "プロジェクトの依存関係"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:75
-#: ../../source/reference/public-api/index.rst:2
-msgid "Public API"
-msgstr "パブリック API"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:75
-msgid "Web Accessible"
-msgstr "ウェブアクセス可能"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:75
-msgid "Designer UI"
-msgstr "デザイナーの UI"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:75
-msgid "Engine UI"
-msgstr "エンジンの UI"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:75
-msgid "Knowledge"
-msgstr "知識"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:77
-#: ../../source/designer-guide/how-to/data-storage.rst:79
-#: ../../source/designer-guide/how-to/data-storage.rst:83
-#: ../../source/designer-guide/how-to/data-storage.rst:85
-#: ../../source/designer-guide/how-to/data-storage.rst:87
-#: ../../source/designer-guide/how-to/data-storage.rst:89
-#: ../../source/designer-guide/how-to/data-storage.rst:91
-#: ../../source/designer-guide/how-to/data-storage.rst:93
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
-msgid "yes"
-msgstr "○"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:77
-msgid "(yes)"
-msgstr "（○）"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:77
-#: ../../source/designer-guide/how-to/data-storage.rst:79
-#: ../../source/designer-guide/how-to/data-storage.rst:81
-#: ../../source/designer-guide/how-to/data-storage.rst:83
-#: ../../source/designer-guide/how-to/data-storage.rst:85
-#: ../../source/designer-guide/how-to/data-storage.rst:87
-#: ../../source/designer-guide/how-to/data-storage.rst:89
-#: ../../source/designer-guide/how-to/data-storage.rst:91
-#: ../../source/designer-guide/how-to/data-storage.rst:93
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:22
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:37
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:39
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:41
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:43
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:45
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:47
-#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:49
-msgid "no"
-msgstr "×"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:77
-#: ../../source/designer-guide/how-to/data-storage.rst:79
-#: ../../source/designer-guide/how-to/data-storage.rst:83
-msgid "Novice"
-msgstr "初心者"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:81
-#: ../../source/designer-guide/how-to/data-storage.rst:85
-#: ../../source/designer-guide/how-to/data-storage.rst:87
-#: ../../source/designer-guide/how-to/data-storage.rst:91
-#: ../../source/designer-guide/how-to/data-storage.rst:93
-msgid "Advanced"
-msgstr "上級者"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:89
-msgid "Persistency"
-msgstr "永続性"
-
-#: ../../source/designer-guide/how-to/data-storage.rst:89
-msgid "Expert"
-msgstr "エキスパート"
-
 #: ../../source/designer-guide/how-to/index.rst:2
 msgid "How to"
 msgstr "基礎知識"
@@ -555,7 +365,7 @@ msgstr "プロセスデバッグ"
 
 #: ../../source/designer/views/index.rst:14
 #: ../../source/designer/views/index.rst:49
-#: ../../source/getting-productive/workflow/documents.rst:4
+#: ../../source/getting-productive/workflow/documents.rst:6
 #: ../../source/reference/dialog/xhtml-editor.rst:6
 #: ../../source/reference/process/smart-workflow.rst:4
 msgid "tbd"
@@ -4195,9 +4005,25 @@ msgstr "コンソールのサポート"
 msgid ":file:`bin/AxonIvyEngine.exe`"
 msgstr ":file:`bin/AxonIvyEngine.exe`"
 
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:22
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:37
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:39
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:41
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:43
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:45
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:47
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:49
+msgid "no"
+msgstr "×"
+
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
 msgid ":file:`bin/AxonIvyEngineC.exe`"
 msgstr ":file:`bin/AxonIvyEngineC.exe`"
+
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:24
+#: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
+msgid "yes"
+msgstr "○"
 
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
 msgid ":file:`bin/AxonIvyEngine`"
@@ -4697,6 +4523,11 @@ msgstr "ロールの詳細"
 msgid "The **Project Detail** page shows all information about an individual project, including basic information, state, and the projects it depends on or is required by."
 msgstr ""
 
+#: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:8
+#: ../../source/reference/configuration/variables.rst:4
+msgid "Variables"
+msgstr "変数"
+
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:10
 msgid "The view **Variables** displays all variables that are defined for each application. The variables can be configured in the project or set in the :ref:`app-yaml` file."
 msgstr "**変数** ビューには、各アプリケーションで定義されているすべての変数が表示されます。変数はプロジェクトまたは :ref:`app-yaml` ファイルで設定できます。"
@@ -5004,7 +4835,7 @@ msgid "**Intermediate Events**: Process intermediate events and their metrics"
 msgstr "**中間イベント** ：プロセス中間イベントとそのメトリクス"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:193
-#: ../../source/getting-productive/workflow/documents.rst:2
+#: ../../source/getting-productive/workflow/documents.rst:4
 msgid "Documents"
 msgstr "ドキュメント"
 
@@ -6409,6 +6240,11 @@ msgstr "開発者は、アプリケーションを使用してプロセスをパ
 msgid "Read :ref:`deployment` If you want to learn how you can craft your own applications and deploy them on an Axon Ivy Engine."
 msgstr "アプリケーションを作成方法や Axon Ivy Engine への展開方法について知りたい場合は、「 :ref:`展開<deployment>` 」を参照してください。"
 
+#: ../../source/getting-productive/connectivity/database.rst:2
+#: ../../source/reference/process/process-elements/database-activity.rst:65
+msgid "Database"
+msgstr "データベース"
+
 #: ../../source/getting-productive/connectivity/database.rst:4
 msgid "A simple way to integrate Axon Ivy is to use a :ref:`external database <database-configuration>`. From an Axon Ivy process, you can read and write database contents using a :ref:`process-element-db-activity` or integrate in Java using :ref:`JPA <persistence>`."
 msgstr "Axon Ivy を統合する簡単な方法は、:ref:`外部データベース<database-configuration>` を使用することです。Axon Ivy のプロセスから :ref:`process-element-db-activity` を使用してデータベースの内容を読み書きしたり、:ref:`JPA<persistence>` を使用して Java で統合したりできます。"
@@ -6953,6 +6789,10 @@ msgstr "``IUser``、``ITask`` のようなパブリック API オブジェクト
 msgid "Do not change the type of a stored field (e.g., from ``Number`` to ``String``)! The serialization of data you stored previously will fail, and Axon Ivy cannot find Business Data with the new type via the search API as the search index is `strongly typed <https://opensearch.org/docs/latest/field-types/>`__."
 msgstr "格納されたフィールドの型を変更しないでください（``Number`` から ``String`` など）。検索インデックスは `strongly typed <https://opensearch.org/docs/latest/field-types/>`__ のため、以前に保存したデータのシリアライズに失敗し、Axon Ivy は検索 API から新しい型を持つビジネスデータを見つけられません。"
 
+#: ../../source/getting-productive/data-modeling/business-data/limitations.rst:29
+msgid "Project Dependencies"
+msgstr "プロジェクトの依存関係"
+
 #: ../../source/getting-productive/data-modeling/business-data/limitations.rst:30
 msgid "When using the same Business Data value type in the projects 'a' and 'b', it is best to define the data classes for the business data in a separate project 'base'. Then define a dependency from projects 'a' and 'b' to project 'base'."
 msgstr "プロジェクト「a」と「b」で同じビジネスデータ値型を使用する場合は、ビジネスデータのデータクラスを別のプロジェクト「base」で定義するのが最適です。それから、プロジェクト「a」と「b」からプロジェクト「base」への依存関係を定義します。"
@@ -7117,6 +6957,58 @@ msgstr ":ref:`persistence-entity-classes` はグローバルデータクラス�
 #: ../../source/getting-productive/data-modeling/index.rst:2
 msgid "Data Modeling"
 msgstr "データモデリング"
+
+#: ../../source/getting-productive/data-modeling/index.rst:4
+#, fuzzy
+msgid "Axon Ivy provides multiple possibilities to manage and store project-specific data. This chapter provides an overview of all the possibilities with their advantages and disadvantages. Which one should be used depends on the use case."
+msgstr "Axon Ivy では、複数の方法でプロジェクト固有のデータを管理、格納できます。この章では、メリットとデメリットとともに、すべての方法の概要を説明します。どの方法を使用すべきかはケースバイケースです。"
+
+#: ../../source/getting-productive/data-modeling/index.rst:9
+#, fuzzy
+msgid "**Content Management**"
+msgstr "コンテンツ管理"
+
+#: ../../source/getting-productive/data-modeling/index.rst:11
+msgid "Stores static multi language content like labels, texts, titles, images. More information can be found in the chapter :ref:`cms`."
+msgstr "ラベル、テキスト、タイトル、画像などの静的な多言語コンテンツを格納します。詳細については、「 :ref:`cms` 」の章を参照してください。"
+
+#: ../../source/getting-productive/data-modeling/index.rst:14
+#, fuzzy
+msgid "**Filesystem**"
+msgstr "ファイルシステム"
+
+#: ../../source/getting-productive/data-modeling/index.rst:16
+msgid "Data can be stored in files, see the :ref:`documents` chapter for more info. Static web files (CSS, JavaScript, Images, etc.) you place best beside your HTML Dialog's or in the :file:`webContent` folder. The :file:`webContent` folder can also contain :ref:`html-dialog-layouts`."
+msgstr ""
+
+#: ../../source/getting-productive/data-modeling/index.rst:21
+#, fuzzy
+msgid "**Variables**"
+msgstr "変数"
+
+#: ../../source/getting-productive/data-modeling/index.rst:23
+#, fuzzy
+msgid "Stores simple name/value configuration pairs. On the Axon Ivy Engine there is a :ref:`UI <engine-cockpit-variables>` to change the values of a Variable. More information can be found in the chapter :ref:`variables`. If you like variables on the user level, consider using ``User Properties`` (see :public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>`)."
+msgstr "単純な名前と値のペアを格納します。Axon Ivy Engine には、変数の値を変更するための :ref:`UI<engine-cockpit-variables>` が搭載されています。詳細については、「 :ref:`variables` 」の章を参照してください。"
+
+#: ../../source/getting-productive/data-modeling/index.rst:28
+#, fuzzy
+msgid "**Business Data**"
+msgstr "ビジネスデータ"
+
+#: ../../source/getting-productive/data-modeling/index.rst:30
+msgid "With business data you can store data without a schema in an `OpenSearch <https://opensearch.org/>`__ instance. Have a look at the :ref:`business-data` chapter for more information."
+msgstr ""
+
+#: ../../source/getting-productive/data-modeling/index.rst:33
+#, fuzzy
+msgid "**Database**"
+msgstr "データベース"
+
+#: ../../source/getting-productive/data-modeling/index.rst:35
+#, fuzzy
+msgid "Stores and accesses data in database systems. A dedicated database server is necessary and the database schema must be managed outside of Axon Ivy (see :ref:`process-element-db-activity`). You can also use the Java Persistence API (JPA) to manage database access and generate database schema (see :ref:`persistence`)."
+msgstr "データベースシステムにデータを格納し、アクセスします。独自のデータベースサーバーが必要で、データベーススキーマを Axon Ivy の外部で管理する必要があります。詳細については、「 :ref:`process-element-db-activity` 」の章を参照してください。"
 
 #: ../../source/getting-productive/data-modeling/persistence/data-repository-api.rst:4
 msgid "Data Repository API"
@@ -13913,6 +13805,10 @@ msgstr "コンテンツ管理システム"
 msgid "The Content Management System (CMS) is used to store all kinds of content for user dialogs, mails and any other use in your business processes. The main use is to store multilingual texts to internationalize your application. But also whole files like images and documents can be stored multilingual in the CMS."
 msgstr "コンテンツ管理システム（CMS）は、ユーザーのダイアログやメールなど、ビジネスプロセスで使用するあらゆる種類のコンテンツを保存するのに使用されます。主な用途は、アプリケーションを国際化するために多言語のテキストを保存することですが、画像やドキュメントのようなファイル全体を CMS に多言語で保存することもできます。"
 
+#: ../../source/reference/cms/overriding.rst:2
+msgid "Overriding"
+msgstr "オーバーライド"
+
 #: ../../source/reference/cms/overriding.rst:4
 msgid "You can override content objects of existing projects by defining the same content object in your dependent project."
 msgstr "依存プロジェクトで同じコンテンツオブジェクトを定義して、既存のプロジェクトのコンテンツオブジェクトをオーバーライドできます。"
@@ -20212,6 +20108,10 @@ msgstr "``src`` フォルダーの Java ファイルは開発者が管理しま�
 msgid "Smart Workflow"
 msgstr "スマートワークフロー"
 
+#: ../../source/reference/public-api/index.rst:2
+msgid "Public API"
+msgstr "パブリック API"
+
 #: ../../source/reference/public-api/index.rst:4
 msgid "This is just a placeholder and will be replaced with javadoc."
 msgstr "これは単なるプレースホルダーであり、Javadocに置き換えられます。"
@@ -25459,3 +25359,72 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "If this error occurs, then the Designer requests more memory than it is allowed to use. This can happen when a lot of data is used during the process simulations. Ensure, that your computer has enough memory. Then you can increase the maximal memory consumption of the Axon Ivy Designer. Just open the ``AxonIvyDesigner.ini`` and change the value in the line after ``-Xmx`` to a higher one."
 #~ msgstr "このエラーが発生した場合、デザイナーは、使用可能メモリを超えるメモリをリクエストします。プロセスのシミュレーション中に大量のデータが使用されると、このエラーが発生することがあります。コンピューターに十分なメモリが搭載されていることを確認してください。確認後、Axon Ivy Designer の最大メモリ消費量を増やすことができます。``AxonIvyDesigner.ini`` を開き、``-Xmx`` の後の行の値をより大きい値に変更してください。"
+
+#~ msgid "Data Storage"
+#~ msgstr "データの格納"
+
+#~ msgid "Web Content Folder"
+#~ msgstr "ウェブコンテンツフォルダー"
+
+#~ msgid "Stores static web files (CSS, JavaScript, Images, JSF-Templates) used in HTML User Dialogs."
+#~ msgstr "HTML ユーザーダイアログで使用される静的ウェブファイル（CSS、JavaScript、画像、JSF テンプレート）を保存します。"
+
+#~ msgid "Data can be stored in files. Access and management has to be implemented in the project itself."
+#~ msgstr "データをファイルに保存できます。アクセスや管理はプロジェクト自体に実装する必要があります。"
+
+#~ msgid "HTML User Dialog Resources"
+#~ msgstr "HTML ユーザーダイアログリソース"
+
+#~ msgid "Stores static web files (CSS, JavaScript, Images, etc.) that are only used in the HTML User Dialog."
+#~ msgstr "HTML ユーザーダイアログでのみ使用される静的ウェブファイル（CSS、JavaScript、画像など）を保存します。"
+
+#~ msgid "Persistency (Jakarta Persistence API)"
+#~ msgstr "永続性（Jakarta Persistence API）"
+
+#~ msgid "Stores and accesses data in database systems. A dedicated database server is necessary. The database schema can be generated. JPA is a Jakarta EE standard that is well documented and widely used. More information can be found in the chapter :ref:`persistence`."
+#~ msgstr "データベースシステムにデータを格納し、アクセスします。独自のデータベースサーバーが必要です。データベーススキーマを生成できます。JPAは文書化が充実しており広く利用されているJakarta EEの標準です。詳細については、「:ref:`persistence`」の章を参照してください。"
+
+#~ msgid "Web Service"
+#~ msgstr "Web サービス"
+
+#~ msgid "Stores and accesses data in external systems by using web services. More information can be found in the chapter :ref:`process-element-web-service-call-activity`."
+#~ msgstr "Web サービスを使用して外部システムのデータを格納し、アクセスします。詳細については、 :ref:`process-element-web-service-call-activity` 」の章を参照してください。"
+
+#~ msgid "User Properties"
+#~ msgstr "ユーザープロパティ"
+
+#~ msgid "Stores simple name/value pairs per user. Can be used to store user settings. More information can be found in the Public API :public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>`."
+#~ msgstr "ユーザーごとに単純な名前と値のペアを格納します。ユーザー設定を保存するのに使用できます。詳細については、パブリック API :public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>` 参照してください。"
+
+#~ msgid "Summary"
+#~ msgstr "まとめ"
+
+#~ msgid "Concept"
+#~ msgstr "コンセプト"
+
+#~ msgid "Web Accessible"
+#~ msgstr "ウェブアクセス可能"
+
+#~ msgid "Designer UI"
+#~ msgstr "デザイナーの UI"
+
+#~ msgid "Engine UI"
+#~ msgstr "エンジンの UI"
+
+#~ msgid "Knowledge"
+#~ msgstr "知識"
+
+#~ msgid "(yes)"
+#~ msgstr "（○）"
+
+#~ msgid "Novice"
+#~ msgstr "初心者"
+
+#~ msgid "Advanced"
+#~ msgstr "上級者"
+
+#~ msgid "Persistency"
+#~ msgstr "永続性"
+
+#~ msgid "Expert"
+#~ msgstr "エキスパート"
