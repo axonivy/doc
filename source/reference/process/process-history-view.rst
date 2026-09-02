@@ -1,7 +1,7 @@
-.. _simulate-process-models-debugger-history-view:
+.. _process-history-view:
 
 History View
-~~~~~~~~~~~~
+------------
 
 In this view you see the values of your process data (the ``in``
 variable) during all runs of the currently selected process element in

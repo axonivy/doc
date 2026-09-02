@@ -18,6 +18,13 @@ has different parts:
 
 -  the :ref:`process-editor-quick-actions`, where you find quick actions according to the current selection
 
+-  the :ref:`process-inscription-view`, where you can see the inscriptions of the process.
+
+-  the :ref:`process-outline-view`, where you can see the outline of the process.
+
+-  the :ref:`process-history-view`, where you can see the history of process executions.
+
+
 
 |image2|
 
@@ -66,12 +73,48 @@ You can create many different elements by selecting the desired element and addi
 it to a position in the diagram. To keep the overview they are divided into
 different categories: 
 
-- All Elements
-- Events
-- Gateways
-- Activities
-- Artifacts
-- :ref:`Extensions <process-element-extension-item>`
+|all-elements| All Elements
+
+|events| Events
+
+|gateways| Gateways
+
+|activities| Activities
+
+|artifacts| Artifacts
+
+|extensions| :ref:`Extensions <process-element-extension-item>`
+
+.. _process-element-extension-item:
+
+Extension
+'''''''''
+
+Lists insertable connectors: 
+
+- :ref:`rest-clients-configuration` that are OpenAPI based.
+- :ref:`process-element-sub-process-start` instances which are tagged as :code:`connector` on the :ref:`process-element-tab-general`.
+- :ref:`process-element-pi` which are decorated with an icon.
+
+.. figure:: /_images/process-editor/extensions.png
+
+.. |all-elements| image:: /_images/ui-icons/task.svg
+   :width: 2em
+
+.. |events| image:: /_images/ui-icons/start.svg
+   :width: 2em
+
+.. |gateways| image:: /_images/ui-icons/gateways-group.svg
+   :width: 2em
+
+.. |activities| image:: /_images/ui-icons/activities-group.svg
+   :width: 2em
+
+.. |artifacts| image:: /_images/ui-icons/pool-swimlanes.svg
+   :width: 2em
+
+.. |extensions| image:: /_images/ui-icons/extension.svg
+   :width: 2em
 
 
 Right
@@ -163,7 +206,7 @@ available actions can be different based on the element type:
 Only available on the :ref:`Start Element <process-element-start-request>`
 
 |info-action| Information about the current selection (:ref:`problem markers 
-<problems-view>`, :ref:`name <process-element-tab-general>`, :ref:`description 
+<process-editor-problems>`, :ref:`name <process-element-tab-general>`, :ref:`description 
 <process-element-tab-general>`, PID, conditions, etc.).
 
 |search-action| Search all usages of this start event. *Only available on some start events*
@@ -338,6 +381,17 @@ Jump out
 
 .. |jump-out-action| image:: /_images/ui-icons/jump-out.svg
    :width: 2em   
+
+
+.. _process-editor-problems:
+
+Problems
+^^^^^^^^
+
+In the process editor process elements that have errors are marked with
+an error overlay icon.
+
+.. figure:: /_images/process-editor/process-editor-problem.png
 
 
 .. |image2| image:: /_images/process-editor/process-editor.png

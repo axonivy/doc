@@ -2,9 +2,12 @@ Process
 *******
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   process-editor
+   process-editor/index
+   process-inscription-view
+   process-outline-view
+   process-history-view
    process-elements/index
    error-handling
    ivyscript/index

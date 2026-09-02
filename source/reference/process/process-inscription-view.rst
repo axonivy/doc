@@ -1,22 +1,26 @@
+.. _process-inscription-view:
+
+Inscription View
+----------------
+
+The Inscription View displays the :ref:`inscription<process-elements>` of the currently selected element. 
+Simply double click on an element to open its Inscription View.
+
+|img-outline-view0|
+
+
+.. |img-outline-view0| image:: /_images/process-inscription/example-inscription-view.png
+
 
 .. _process-inscription-browsers:
 
 Inscription Browsers
-========================
+~~~~~~~~~~~~~~~~~~~~
 
 Various process element inscriptions involve dynamic parts. 
 With a convenient inline browser, you can select contents from your project to be used within the inscription configuration.
 
-
-
-Accessibility
-~~~~~~~~~~~~~
-
 |search-action| The search button on inscription inputs will open the browsers for selection.
-
-**Apply**: adds the selected attribute to your process element inscription.
-
-**Cancel**: closes the browser and re-opens the process element inscription.
 
 .. |search-action| image:: /_images/ui-icons/list-search.svg
    :width: 2em   
@@ -25,7 +29,7 @@ Accessibility
 .. _attribute-method-browser:
 
 Attribute Browser
-----------------------------
+''''''''''''''''''
 
 A browser to select valid attributes of the process data for scriptable process element configurations.
 
@@ -41,7 +45,7 @@ attributes in the current context (such as ``in``, ``out``, ``param``, ...).
 .. _function-browser:
 
 Function Browser
-----------------
+'''''''''''''''''
 
 This browser is used to construct and insert IvyScript expressions in inscription masks. 
 Those expressions are based on the environment in the context of the current process or on
@@ -60,7 +64,7 @@ environment variables <ivyscript-reference-environmentvariable>`
 .. _data-type-browser:
 
 Data Type Browser
------------------
+''''''''''''''''''
 
 The data type browser is used to choose a data types in inscription masks.
 By default DataClasses from your project or its dependencies can be selected.
@@ -79,7 +83,7 @@ By default DataClasses from your project or its dependencies can be selected.
 .. _cms-browser:
 
 CMS Browser
------------------
+''''''''''''''''''
 
 The CMS browser selects translatable contents from the :ref:`cms`. 
 
@@ -97,7 +101,7 @@ The CMS browser selects translatable contents from the :ref:`cms`.
 .. _role-browser:
 
 Role Browser
------------------
+''''''''''''''''''
 
 Selects a role of your project.
 
@@ -109,7 +113,7 @@ Selects a role of your project.
 .. _large-code-browser:
 
 Fullscreen Code Browser
---------------------------
+''''''''''''''''''''''''''
 
 Renders the scripts in a :ref:`process-element-tab-code` at full size. 
 

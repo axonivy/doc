@@ -6,5 +6,4 @@ Process Modeling
 
    projects/index
    process-modeling/index
-   process-views/index
    simulation/index
