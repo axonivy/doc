@@ -1,7 +1,7 @@
 .. _designer-guide-vscode:
 
-Designer (VS Code Extension)
-============================
+Designer
+========
 
 This guide covers all aspects of an Axon Ivy Designer VS Code Extension. Including
 installation, configuration, etc. 

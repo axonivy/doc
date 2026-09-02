@@ -1,5 +1,5 @@
-Technical and Release Information
-=================================
+Release Information
+===================
 
 .. toctree::
    :maxdepth: 2

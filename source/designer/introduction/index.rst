@@ -7,5 +7,7 @@ into :ref:`Getting Started with the Designer (VS Code Extension) <getting-starte
 
 .. _designer-system-requirements:
 
-Designer (VS Code Extension) System Requirements
-------------------------------------------------
+Designer System Requirements
+----------------------------
+
+tbd
