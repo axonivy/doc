@@ -39,7 +39,7 @@ As **guest** user you can now **Approve** or **Reject** the leave request from t
 By doing so, you finish the process and there is no task left in your **Your Tasks** widget on the Dashboard.
 
 Congratulations, you have successfully started your first process and finished all of its tasks. 
-If you want to learn how to design and implement such processes have a look at the :ref:`Designer <designer-guide>` guide.
+If you want to learn how to design and implement such processes have a look at the :ref:`getting-productive` guide.
 
 .. Note::
   In Axon Ivy, a task is a piece of work (a part of a process) assigned to a user

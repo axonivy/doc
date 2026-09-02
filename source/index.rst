@@ -9,7 +9,6 @@ Axon Ivy
    getting-productive/index
    reference/index
    designer/index
-   designer-guide/index
    engine-guide/index
    portal-guide/index
    market/index
