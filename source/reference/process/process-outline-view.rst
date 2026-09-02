@@ -1,14 +1,13 @@
+.. _process-outline-view:
+
 Process Outline View
 --------------------
 
 The outline view displays all elements of the current process editor.
+On the :ref:`process-inscription-view` click the toggle button in the top right corner to open the outline view.
 
 |img-outline-view0|
 
-Accessibility
-~~~~~~~~~~~~~
-
-Process Editor > Open inscription sidebar > Toggle outline
 
 Features
 ~~~~~~~~
