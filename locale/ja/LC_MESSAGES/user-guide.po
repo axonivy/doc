@@ -260,15 +260,12 @@ msgstr ""
 
 #: ../../source/designer/views/index.rst:63
 #: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:508
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:13
-#: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:12
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:9
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:90
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:227
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preview.rst:29
 #: ../../source/reference/configuration/persistence.rst:49
 #: ../../source/reference/dialog/form-editor.rst:23
-#: ../../source/reference/process/process-editor.rst:25
+#: ../../source/reference/process/process-editor/index.rst:32
 msgid "Accessibility"
 msgstr "アクセス方法"
 
@@ -827,7 +824,6 @@ msgid "Send a notification only if the absent user does not have an active subst
 msgstr "不在ユーザーにアクティブな代行者がいない場合のみ通知を送信する場合： :code:`noActiveSubstitute`"
 
 #: ../../source/engine-guide/configuration/notification/index.rst:33
-#: ../../source/reference/process/process-editor.rst:70
 msgid "Events"
 msgstr "イベント"
 
@@ -4497,11 +4493,11 @@ msgid "Some items may not be available or shown depending on your engine."
 msgstr "エンジンによって、使用できない項目や表示されない項目があります。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:60
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:14
 #: ../../source/reference/configuration/persistence.rst:54
 #: ../../source/reference/data/index.rst:26
 #: ../../source/reference/data/index.rst:100
 #: ../../source/reference/process/ivyscript/editor.rst:35
+#: ../../source/reference/process/process-outline-view.rst:13
 msgid "Features"
 msgstr "機能"
 
@@ -7556,7 +7552,6 @@ msgid "**Database**"
 msgstr "データベース"
 
 #: ../../source/getting-productive/data-modeling/index.rst:35
-#, fuzzy
 msgid "Stores and accesses data in database systems. A dedicated database server is necessary and the database schema must be managed outside of Axon Ivy (see :ref:`process-element-db-activity`). You can also use the Java Persistence API (JPA) to manage database access and generate database schema (see :ref:`persistence`)."
 msgstr "データベースシステムにデータを格納し、アクセスします。専用のデータベースサーバーが必要で、データベーススキーマを Axon Ivy の外部で管理する必要があります（:ref:`process-element-db-activity` を参照）。Java Persistence API（JPA）を使用してデータベースアクセスを管理し、データベーススキーマを生成することもできます（:ref:`persistence` を参照）。"
 
@@ -8434,253 +8429,6 @@ msgstr "選択したプール内に新しい埋め込みレーンを作成しま
 msgid "Please note, that pools and lanes do not have any *syntactical* meaning whatsoever; their purpose is purely semantical. A pool or lane is *not* a container that elements are placed in or associated with. They are simply a structured \"coloring\" of the process' background; they do not grow or shrink when you change the processes logic and need to be adjusted manually."
 msgstr "プールとレーンはいかなる *構造的な* 意味を持たないことに注意してください。これらの目的は純粋に意味的なものです。プールやレーンは、要素が配置される、または関連付けられるコンテナでは *ありません*。プールとレーンは、プロセスの背景の構造化された「色付け」であり、プロセスロジックを変更しても拡大／縮小されないため、手動で調整する必要があります。"
 
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:5
-msgid "Inscription Browsers"
-msgstr "インスクリプションブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:7
-msgid "Various process element inscriptions involve dynamic parts. With a convenient inline browser, you can select contents from your project to be used within the inscription configuration."
-msgstr "プロセス要素のインスクリプションには、動的な部分が含まれます。便利なインラインブラウザを使用して、インスクリプションの設定内で使用するプロジェクトのコンテンツを選択できます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:15
-msgid "|search-action| The search button on inscription inputs will open the browsers for selection."
-msgstr "|search-action| インスクリプションの入力の検索ボタンをクリックすると、ブラウザが開き、属性を選択できます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:21
-#: ../../source/reference/process/process-editor.rst:217
-#: ../../source/reference/process/process-elements/common-tabs.rst:142
-#: ../../source/reference/process/process-elements/database-activity.rst:137
-msgid "search-action"
-msgstr "search-action"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:17
-msgid "**Apply**: adds the selected attribute to your process element inscription."
-msgstr "**適用** ：選択した属性をプロセス要素のインスクリプションに追加します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:19
-msgid "**Cancel**: closes the browser and re-opens the process element inscription."
-msgstr "**キャンセル** ：ブラウザを閉じ、プロセス要素のインスクリプションを再び開きます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:28
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:32
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:35
-msgid "Attribute Browser"
-msgstr "属性ブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:30
-msgid "A browser to select valid attributes of the process data for scriptable process element configurations."
-msgstr "スクリプト可能なプロセス要素の設定で有効なプロセスデータの属性を選択するブラウザです。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:37
-msgid "In the upper left area, you can choose between the different process attributes in the current context (such as ``in``, ``out``, ``param``, ...)."
-msgstr "左上の領域では、現在のコンテキストでプロセス属性を選択できます（``in``、``out``、``param`` など）。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:44
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:50
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:53
-msgid "Function Browser"
-msgstr "機能ブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:46
-msgid "This browser is used to construct and insert IvyScript expressions in inscription masks. Those expressions are based on the environment in the context of the current process or on general-purpose functions."
-msgstr "このブラウザを使用して、 IvyScript 式を作成し、インスクリプションマスクに挿入します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:55
-msgid "A description of the accessible objects can be found in the section :ref:`ivy environment variables <ivyscript-reference-environmentvariable>`"
-msgstr "アクセス可能なオブジェクトの説明については、「:ref:`ivy environment variables <ivyscript-reference-environmentvariable>`」のセクションを参照してください。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:63
-msgid "Data Type Browser"
-msgstr "データ型ブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:65
-msgid "The data type browser is used to choose a data types in inscription masks. By default DataClasses from your project or its dependencies can be selected."
-msgstr "データ型ブラウザを使用して、インスクリプションマスクのデータ型を選択します。デフォルトでは、プロジェクトまたはその依存関係のデータクラスを選択できます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:68
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:71
-msgid "Type Browser"
-msgstr "型ブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:73
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:91
-msgid "**Options**"
-msgstr "**オプション**"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:75
-msgid "`Search over all types`: include types from Java libraries."
-msgstr "`すべての型を検索`：Java ライブラリの型を含めます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:76
-msgid "`Use Type as List`: will pick a List of the selected type."
-msgstr "`リストとして型を使用`：選択したタイプのリストを選択します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:82
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:86
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:89
-msgid "CMS Browser"
-msgstr "CMS ブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:84
-msgid "The CMS browser selects translatable contents from the :ref:`cms`."
-msgstr "CMS ブラウザは、 :ref:`cms` から翻訳可能なコンテンツを選択します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:93
-msgid "`Enable required projects`: lookup CMS contents from dependent projects too."
-msgstr "`必要なプロジェクトを有効化`：依存関係にあるプロジェクトの CMS コンテンツも検索します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:100
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:104
-msgid "Role Browser"
-msgstr "ロールブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:102
-msgid "Selects a role of your project."
-msgstr "プロジェクトのロールを選択します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:112
-msgid "Fullscreen Code Browser"
-msgstr "フルスクリーンコードブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:114
-msgid "Renders the scripts in a :ref:`process-element-tab-code` at full size."
-msgstr ":ref:`process-element-tab-code` をフルサイズで表示して、スクリプトを作成します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/browsers.rst:116
-msgid "Fullscreen"
-msgstr "フルスクリーン"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:4
-msgid "Extension Item"
-msgstr "拡張機能"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:6
-msgid "|extension-tool| The *Extensions* item is located in the :ref:`process-editor-tool-bar` of the process editor."
-msgstr "|extension-tool| *拡張機能* は、プロセスエディターの :ref:`process-editor-tool-bar` にあります。"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:26
-msgid "Extension Toolbar Item"
-msgstr "拡張機能ツールバー"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:9
-msgid "On insert, this element will show an extension-browser, which makes it possible to select an installed third-party connector."
-msgstr "挿入時、この要素が拡張機能ブラウザに表示され、インストールされているサードパーティーのコネクターを選択できるようになります。"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:14
-msgid "Extension Browser"
-msgstr "拡張機能ブラウザ"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:16
-msgid "Lists insertable connectors:"
-msgstr ""
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:18
-msgid ":ref:`rest-clients-configuration` that are OpenAPI based."
-msgstr "OpenAPI ベースの :ref:`rest-clients-configuration`。"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:19
-msgid ":ref:`process-element-sub-process-start` instances which are tagged as connector on the :ref:`process-element-tab-general`."
-msgstr "OpenAPI REST サービスクライアント :ref:`process-element-tab-general` でコネクターとしてタグ付けされ :ref:`process-element-sub-process-start` インスタンスのいずれかの挿入可能なコネクターを一覧表示します。さらに、ここから簡単に Market の追加コネクターをインストールできます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:20
-msgid ":ref:`process-element-pi` which are decorated with an icon."
-msgstr "アイコンが付いた :ref:`process-element-pi`。"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:23
-msgid "|ext-browser|"
-msgstr "|ext-browser|"
-
-#: ../../source/getting-productive/process-modeling/process-views/extension-browser.rst:25
-msgid "ext-browser"
-msgstr "ext-browser"
-
-#: ../../source/getting-productive/process-modeling/process-views/history-view.rst:4
-msgid "History View"
-msgstr "履歴ビュー"
-
-#: ../../source/getting-productive/process-modeling/process-views/history-view.rst:6
-msgid "In this view you see the values of your process data (the ``in`` variable) during all runs of the currently selected process element in the process editor. The topmost tree entry shows the data of the first execution of the selected element during the first request whereas the entry at the bottom corresponds to the most current execution."
-msgstr "このビューでは、プロセスエディターで現在選択されているプロセス要素のすべての実行中のプロセスデータの値（``in`` 変数）が表示されます。一番上のツリー項目には、最初のリクエスト中の選択された要素の最初の実行のデータが表示されます。一番下の項目は最新の実行に対応します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/history-view.rst:12
-#: ../../source/getting-productive/process-modeling/process-views/history-view.rst:15
-msgid "History view in action"
-msgstr "動作中の履歴ビュー"
-
-#: ../../source/getting-productive/process-modeling/process-views/history-view.rst:19
-msgid "In case of memory shortage during simulation or due to history settings process data snapshots may be discarded. This is indicated by the message \"history data no longer available\"."
-msgstr "シミュレーション中にメモリが不足した場合、または履歴の設定により、プロセスデータのスナップショットが破棄されることがあります。その場合、「履歴データは使用できません」というメッセージが表示されます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/index.rst:4
-msgid "Process Views"
-msgstr "プロセスビュー"
-
-#: ../../source/getting-productive/process-modeling/process-views/index.rst:6
-msgid "This chapter introduces Views which are handy while working with processes and the :ref:`process-editor`."
-msgstr "この章では、プロセスや :ref:`process-editor` で作業する際に便利なビューを紹介します。"
-
-#: ../../source/getting-productive/process-modeling/process-views/problems.rst:2
-msgid "Problems"
-msgstr "問題"
-
-#: ../../source/getting-productive/process-modeling/process-views/problems.rst:4
-msgid "In the process editor process elements that have errors are marked with an error overlay icon."
-msgstr "プロセスエディターでは、エラーが発生しているプロセス要素がエラーオーバーレイアイコンでマークされます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:4
-msgid "Inscription View"
-msgstr "インスクリプションビュー"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:6
-msgid "The Inscription View displays the :ref:`inscription<process-elements>` of the currently selected element."
-msgstr "インスクリプションビューには、現在選択されている要素の :ref:`インスクリプション<process-elements>` が表示されます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:8
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:6
-msgid "|img-outline-view0|"
-msgstr "|img-outline-view0|"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:17
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:27
-msgid "img-outline-view0"
-msgstr "img-outline-view0"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-inscription-editor-view.rst:14
-msgid "Double click on an element or click on the toggle Inscription View button in the top right of the editor."
-msgstr "要素をダブルクリックするか、エディターの右上にあるインスクリプションビューのトグルボタンをクリックします。"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:2
-msgid "Process Outline View"
-msgstr "プロセスアウトラインビュー"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:4
-msgid "The outline view displays all elements of the current process editor."
-msgstr "アウトラインビューには、現在のプロセスエディターのすべての要素が表示されます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:11
-msgid "Process Editor > Open inscription sidebar > Toggle outline"
-msgstr "プロセスエディターからインスクリプションサイドバーを開き、アウトラインを切り替えます。"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:16
-msgid "The outline view has the following features:"
-msgstr "アウトラインビューの機能は以下のとおりです。"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:18
-msgid "Selection"
-msgstr "選択"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:19
-msgid "Process elements which are selected in the outline view are selected in the process editor and vice versa, which helps to search and manipulate elements, especially in large processes."
-msgstr "アウトラインビューで選択したプロセス要素がプロセスエディター、プロセスエディターで選択したプロセス要素がアウトラインビューに表示されます。特に、大きなプロセスで要素を検索、操作するのに便利です。"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:23
-msgid "Classification"
-msgstr "分類"
-
-#: ../../source/getting-productive/process-modeling/process-views/process-outline-view.rst:24
-msgid "Elements are grouped by their BPMN type, where the element type is visualized with an icon in front of the element name."
-msgstr "要素が BPMN のタイプでグループ化され、要素名の前のアイコンで要素のタイプが視覚的に表示されます。"
-
 #: ../../source/getting-productive/process-modeling/projects/deployment.rst:6
 msgid "Project Deployment Descriptor"
 msgstr "プロジェクトデプロイメント記述子"
@@ -8934,7 +8682,7 @@ msgstr "|image2| グラフ全体を更新します。ノードを手動で移動
 #: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:104
 #: ../../source/getting-productive/workflow/case-task/states.rst:194
 #: ../../source/reference/process/error-handling.rst:260
-#: ../../source/reference/process/process-editor.rst:343
+#: ../../source/reference/process/process-editor/index.rst:397
 #: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:60
 #: ../../source/reference/process/process-elements/call-sub.rst:60
 #: ../../source/reference/process/process-elements/error-boundary-event.rst:46
@@ -10711,7 +10459,7 @@ msgstr "例として、ある会社で働き始めた従業員を考えてみま
 #: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:23
 #: ../../source/getting-productive/workflow/case-task/states.rst:57
 #: ../../source/reference/process/error-handling.rst:97
-#: ../../source/reference/process/process-editor.rst:22
+#: ../../source/reference/process/process-editor/index.rst:29
 #: ../../source/reference/process/process-elements/call-sub.rst:33
 #: ../../source/reference/process/process-elements/error-boundary-event.rst:31
 #: ../../source/reference/process/process-elements/error-end.rst:30
@@ -15358,7 +15106,7 @@ msgid "The **Tool Bar** collects all tools that can be helpful for working with 
 msgstr "**ツールバー** には、フォームエディターでの作業に有用なすべてのツールがまとめられています。"
 
 #: ../../source/reference/dialog/form-editor.rst:37
-#: ../../source/reference/process/process-editor.rst:38
+#: ../../source/reference/process/process-editor/index.rst:45
 msgid "Left"
 msgstr "左"
 
@@ -15387,27 +15135,27 @@ msgid "Preview Mode: simulate how the form will look like for the end user"
 msgstr "プレビューモード：フォームがエンドユーザーにどのように表示されるかをシミュレートします。"
 
 #: ../../source/reference/dialog/form-editor.rst:46
-#: ../../source/reference/process/process-editor.rst:45
+#: ../../source/reference/process/process-editor/index.rst:52
 msgid "|undo-tool| Undo: your last changes."
 msgstr "|undo-tool| 直前の変更を元に戻します。"
 
 #: ../../source/reference/dialog/form-editor.rst:56
-#: ../../source/reference/process/process-editor.rst:55
+#: ../../source/reference/process/process-editor/index.rst:62
 msgid "undo-tool"
 msgstr "undo-tool"
 
 #: ../../source/reference/dialog/form-editor.rst:48
-#: ../../source/reference/process/process-editor.rst:47
+#: ../../source/reference/process/process-editor/index.rst:54
 msgid "|redo-tool| Redo: your last changes."
 msgstr "|redo-tool| 直前の変更をやり直します。"
 
 #: ../../source/reference/dialog/form-editor.rst:59
-#: ../../source/reference/process/process-editor.rst:58
+#: ../../source/reference/process/process-editor/index.rst:65
 msgid "redo-tool"
 msgstr "redo-tool"
 
 #: ../../source/reference/dialog/form-editor.rst:63
-#: ../../source/reference/process/process-editor.rst:63
+#: ../../source/reference/process/process-editor/index.rst:70
 msgid "Center"
 msgstr "中央"
 
@@ -15464,7 +15212,7 @@ msgid "data"
 msgstr "data"
 
 #: ../../source/reference/dialog/form-editor.rst:100
-#: ../../source/reference/process/process-editor.rst:78
+#: ../../source/reference/process/process-editor/index.rst:121
 msgid "Right"
 msgstr "右"
 
@@ -15481,7 +15229,7 @@ msgid "|open-dataclass| Opens the :ref:`data-class-editor` of the form."
 msgstr "|open-dataclass| フォームの :ref:`data-class-editor` を開きます。"
 
 #: ../../source/reference/dialog/form-editor.rst:117
-#: ../../source/reference/process/process-editor.rst:90
+#: ../../source/reference/process/process-editor/index.rst:133
 msgid "open-dataclass"
 msgstr "open-dataclass"
 
@@ -15498,17 +15246,17 @@ msgid "|inscription-toggle| Opens or closes the :ref:`form-editor-properties` of
 msgstr "|inscription-toggle| 選択されたコンポーネントの :ref:`form-editor-properties` を開閉します。"
 
 #: ../../source/reference/dialog/form-editor.rst:126
-#: ../../source/reference/process/process-editor.rst:96
+#: ../../source/reference/process/process-editor/index.rst:139
 msgid "inscription-toggle"
 msgstr "inscription-toggle"
 
 #: ../../source/reference/dialog/form-editor.rst:110
-#: ../../source/reference/process/process-editor.rst:84
+#: ../../source/reference/process/process-editor/index.rst:127
 msgid "|options-toggle| Open view options:"
 msgstr "|options-toggle| ビューオプションを開きます。"
 
 #: ../../source/reference/dialog/form-editor.rst:123
-#: ../../source/reference/process/process-editor.rst:93
+#: ../../source/reference/process/process-editor/index.rst:136
 msgid "options-toggle"
 msgstr "options-toggle"
 
@@ -15517,7 +15265,7 @@ msgid "Theme: Toggle between dark and light theme."
 msgstr "テーマ：ダークテーマとライトテーマを切り替えます。"
 
 #: ../../source/reference/dialog/form-editor.rst:133
-#: ../../source/reference/process/process-editor.rst:125
+#: ../../source/reference/process/process-editor/index.rst:168
 msgid "Editor Area"
 msgstr "エディター領域"
 
@@ -15534,7 +15282,7 @@ msgid "On each component you have a :ref:`form-editor-quick-actions`, which prov
 msgstr "コンポーネントごとに :ref:`form-editor-quick-actions` があり、便利なアクションが表示されます。"
 
 #: ../../source/reference/dialog/form-editor.rst:149
-#: ../../source/reference/process/process-editor.rst:153
+#: ../../source/reference/process/process-editor/index.rst:196
 msgid "Quick Action Menu"
 msgstr "クイックアクションメニュー"
 
@@ -16893,362 +16641,446 @@ msgstr "``var`` - このアプリケーションに定義されている変数�
 msgid "The ``html`` object is only available within a business process."
 msgstr "``html`` オブジェクトはビジネスプロセス内でのみ使用可能です。"
 
-#: ../../source/reference/process/process-editor.rst:4
+#: ../../source/reference/process/process-editor/index.rst:4
 msgid "Process Editor"
 msgstr "プロセスエディター"
 
-#: ../../source/reference/process/process-editor.rst:6
+#: ../../source/reference/process/process-editor/index.rst:6
 msgid "The Process editor is used to design and edit the different process kinds (mostly *business* and *User Dialog logic* processes). The Process editor has different parts:"
 msgstr "プロセスエディターを使用して、さまざまな種類のプロセス（ほとんどが *ビジネス* プロセスと *ユーザーダイアログロジック* プロセス）を設計、編集します。プロセスエディターには以下のパーツが含まれています。"
 
-#: ../../source/reference/process/process-editor.rst:10
+#: ../../source/reference/process/process-editor/index.rst:10
 msgid "the :ref:`process-editor-area`, where the process logic is constructed element for element"
 msgstr "要素のプロセスロジックが構築される :ref:`process-editor-area`"
 
-#: ../../source/reference/process/process-editor.rst:13
+#: ../../source/reference/process/process-editor/index.rst:13
 msgid "the :ref:`process-editor-tool-bar`, where some tools are located and also all elements, which can be added to the process"
 msgstr "ツールとプロセスに追加できるすべての要素が配置される :ref:`process-editor-tool-bar`"
 
-#: ../../source/reference/process/process-editor.rst:16
+#: ../../source/reference/process/process-editor/index.rst:16
 msgid "the :ref:`process-editor-viewport-tool-bar`, where some tools for the viewport are located"
 msgstr "ビューポートのツールが配置される :ref:`process-editor-viewport-tool-bar`"
 
-#: ../../source/reference/process/process-editor.rst:19
+#: ../../source/reference/process/process-editor/index.rst:19
 msgid "the :ref:`process-editor-quick-actions`, where you find quick actions according to the current selection"
 msgstr "現在の選択に合わせてクイックアクションが表示される :ref:`process-editor-quick-actions`"
 
-#: ../../source/reference/process/process-editor.rst:27
+#: ../../source/reference/process/process-editor/index.rst:21
+msgid "the :ref:`process-inscription-view`, where you can see the inscriptions of the process."
+msgstr ""
+
+#: ../../source/reference/process/process-editor/index.rst:23
+msgid "the :ref:`process-outline-view`, where you can see the outline of the process."
+msgstr ""
+
+#: ../../source/reference/process/process-editor/index.rst:25
+msgid "the :ref:`process-history-view`, where you can see the history of process executions."
+msgstr ":ref:`process-history-view` では、プロセスの実行履歴を確認できます。"
+
+#: ../../source/reference/process/process-editor/index.rst:34
 msgid "Axon Ivy Project Tree > double click on a *process* node inside the project tree"
 msgstr "Axon Ivy プロジェクトツリー > プロジェクトツリー内の *プロセス* ノードをダブルクリックします"
 
-#: ../../source/reference/process/process-editor.rst:32
+#: ../../source/reference/process/process-editor/index.rst:39
 msgid "Tool Bar"
 msgstr "ツールバー"
 
-#: ../../source/reference/process/process-editor.rst:34
+#: ../../source/reference/process/process-editor/index.rst:41
 msgid "The **Tool Bar** collects all tools that can be helpful for working with the process editor:"
 msgstr "**ツールバー** には、プロセスエディターでの作業に有用なすべてのツールがまとめられています。"
 
-#: ../../source/reference/process/process-editor.rst:40
+#: ../../source/reference/process/process-editor/index.rst:47
 msgid "|select-tool| Select: an element in your process."
 msgstr "|select-tool| プロセス内の要素を選択します。"
 
-#: ../../source/reference/process/process-editor.rst:49
+#: ../../source/reference/process/process-editor/index.rst:56
 msgid "select-tool"
 msgstr "select-tool"
 
-#: ../../source/reference/process/process-editor.rst:42
+#: ../../source/reference/process/process-editor/index.rst:49
 msgid "|marquee-tool| Marquee: grab multiple elements from your process. The Marquee Tool can also be started if you hold *Shift* or you can select multiple elements by hold *Ctrl*."
 msgstr "|marquee-tool| プロセスの複数の要素を囲みます（マーキー）。*Shift* キーを押し続けてマーキーツールを始動させることもできます。または、*Ctrl* キーを押して複数の要素を選択できます。"
 
-#: ../../source/reference/process/process-editor.rst:52
+#: ../../source/reference/process/process-editor/index.rst:59
 msgid "marquee-tool"
 msgstr "marquee-tool"
 
-#: ../../source/reference/process/process-editor.rst:65
+#: ../../source/reference/process/process-editor/index.rst:72
 msgid "You can create many different elements by selecting the desired element and adding it to a position in the diagram. To keep the overview they are divided into different categories:"
 msgstr "要素を選択し、図に追加して、さまざまな要素を作成できます。見やすいように、要素はカテゴリーに分けて表示されます。"
 
-#: ../../source/reference/process/process-editor.rst:69
-msgid "All Elements"
-msgstr "すべての要素"
+#: ../../source/reference/process/process-editor/index.rst:76
+msgid "|all-elements| All Elements"
+msgstr "|all-elements| すべての要素"
 
-#: ../../source/reference/process/process-editor.rst:71
-#: ../../source/reference/process/process-editor.rst:202
+#: ../../source/reference/process/process-editor/index.rst:101
+msgid "all-elements"
+msgstr "all-elements"
+
+#: ../../source/reference/process/process-editor/index.rst:78
+msgid "|events| Events"
+msgstr "|events| イベント"
+
+#: ../../source/reference/process/process-editor/index.rst:104
+msgid "events"
+msgstr "events"
+
+#: ../../source/reference/process/process-editor/index.rst:80
+msgid "|gateways| Gateways"
+msgstr "|gateways| ゲートウェイ"
+
+#: ../../source/reference/process/process-editor/index.rst:107
+msgid "gateways"
+msgstr "gateways"
+
+#: ../../source/reference/process/process-editor/index.rst:82
+msgid "|activities| Activities"
+msgstr "|activities| アクティビティ"
+
+#: ../../source/reference/process/process-editor/index.rst:110
+msgid "activities"
+msgstr "activities"
+
+#: ../../source/reference/process/process-editor/index.rst:84
+msgid "|artifacts| Artifacts"
+msgstr "|artifacts| アーティファクト"
+
+#: ../../source/reference/process/process-editor/index.rst:113
+msgid "artifacts"
+msgstr "artifacts"
+
+#: ../../source/reference/process/process-editor/index.rst:86
+msgid "|extensions| :ref:`Extensions <process-element-extension-item>`"
+msgstr "|extensions| :ref:`拡張機能 <process-element-extension-item>`"
+
+#: ../../source/reference/process/process-editor/index.rst:116
+msgid "extensions"
+msgstr "extensions"
+
+#: ../../source/reference/process/process-editor/index.rst:91
+msgid "Extension"
+msgstr "拡張機能"
+
+#: ../../source/reference/process/process-editor/index.rst:93
+msgid "Lists insertable connectors:"
+msgstr ""
+
+#: ../../source/reference/process/process-editor/index.rst:95
+msgid ":ref:`rest-clients-configuration` that are OpenAPI based."
+msgstr "OpenAPI ベースの :ref:`rest-clients-configuration`。"
+
+#: ../../source/reference/process/process-editor/index.rst:96
+msgid ":ref:`process-element-sub-process-start` instances which are tagged as :code:`connector` on the :ref:`process-element-tab-general`."
+msgstr ":ref:`process-element-tab-general` で :code:`connector` としてタグ付けされた :ref:`process-element-sub-process-start` インスタンス。"
+
+#: ../../source/reference/process/process-editor/index.rst:97
+msgid ":ref:`process-element-pi` which are decorated with an icon."
+msgstr "アイコンが付いた :ref:`process-element-pi`。"
+
+#: ../../source/reference/process/process-editor/index.rst:123
+msgid "|open-dataclass| Opens the :ref:`data-class-editor` of the process."
+msgstr "|open-dataclass| プロセスの :ref:`data-class-editor` を開きます。"
+
+#: ../../source/reference/process/process-editor/index.rst:125
+msgid "|inscription-toggle| Opens or closes the :ref:`process-inscription-view` of the process."
+msgstr "|inscription-toggle| プロセスの :ref:`process-inscription-view` を開閉します。"
+
+#: ../../source/reference/process/process-editor/index.rst:129
+msgid "Darkmode: Toggle between dark and light theme."
+msgstr "ダークモード：ダークテーマとライトテーマを切り替えます。"
+
+#: ../../source/reference/process/process-editor/index.rst:130
+msgid "Grid: Toggle the grid mode."
+msgstr ""
+
+#: ../../source/reference/process/process-editor/index.rst:131
+msgid "Custom Icon: Toggle between custom and default icons."
+msgstr "カスタムアイコン：カスタムアイコンとデフォルトアイコンを切り替えします。"
+
+#: ../../source/reference/process/process-editor/index.rst:146
+msgid "Viewport Tool Bar"
+msgstr "ビューポートツールバー"
+
+#: ../../source/reference/process/process-editor/index.rst:148
+msgid "|origin-view-tool| Reset process editor to the origin viewport."
+msgstr "|origin-view-tool| プロセスエディターを元のビューポートにリセットします。"
+
+#: ../../source/reference/process/process-editor/index.rst:156
+msgid "origin-view-tool"
+msgstr "origin-view-tool"
+
+#: ../../source/reference/process/process-editor/index.rst:150
+msgid "|fit-to-screen-tool| Fit the whole diagram (or your current selection) to the process editor screen."
+msgstr "|fit-to-screen-tool| 図全体（または現在の選択）をプロセスエディター画面いっぱいに表示します。"
+
+#: ../../source/reference/process/process-editor/index.rst:159
+msgid "fit-to-screen-tool"
+msgstr "fit-to-screen-tool"
+
+#: ../../source/reference/process/process-editor/index.rst:152
+msgid "|center-tool| Center the whole diagram (or your current selection) in the process editor screen."
+msgstr "|center-tool| 図全体（または現在の選択）をプロセスエディター画面の中央に置きます。"
+
+#: ../../source/reference/process/process-editor/index.rst:162
+msgid "center-tool"
+msgstr "center-tool"
+
+#: ../../source/reference/process/process-editor/index.rst:154
+msgid "Zoom level: Displays the current zoom level of the process editor."
+msgstr "ズームレベル：プロセスエディターの現在のズームレベルを表示します。"
+
+#: ../../source/reference/process/process-editor/index.rst:170
+msgid "Processes are designed, drawn and modified in the process editor area. Select an element from the palette, then click in the process editor area to place it. Click and drag elements to move them."
+msgstr "プロセスは、プロセスエディター領域で設計、描画、修正されます。パレットから要素を選択し、プロセスエディター領域内をクリックして配置します。要素を移動するには、クリックしてドラッグします。"
+
+#: ../../source/reference/process/process-editor/index.rst:174
+msgid "Connectors are drawn between two elements by using the **Connector Tool** in the :ref:`process-editor-tool-bar` or clicking on the first element and select the **Connector Tool** over the :ref:`process-editor-quick-actions`. You can also add more bend waypoints to a connector or move them, by selecting the connector and dragging the handles. To reconnect an existing connector select the connector and move the target handle to another element."
+msgstr ":ref:`process-editor-tool-bar` にある**コネクターツール** を使用するか、最初の要素をクリックし、 :ref:`process-editor-quick-actions` で**コネクターツール** を選択して、2 つの要素の間にコネクターを描画します。また、コネクターにさらに多くの折れ線ウェイポイントを追加したり、コネクターを選択し、ハンドルをドラッグして、ウェイポイントを移動できます。既存のコネクターを再接続するには、コネクターを選択し、ハンドルを他の要素に移動します。"
+
+#: ../../source/reference/process/process-editor/index.rst:181
+msgid "On each element you have a :ref:`process-editor-quick-actions`, which provides useful actions to edit the element. If you select multiple elements, you have access to the :ref:`process-editor-quick-actions-multi`. And also on :ref:`connectors <process-editor-quick-actions-connector>` and :ref:`swimlanes <process-editor-quick-actions-lanes>` you will get a Quick Action Menu."
+msgstr "要素ごと :ref:`process-editor-quick-actions` があり、要素を編集するのに便利なアクションが表示されます。複数の要素を選択する場合は :ref:`process-editor-quick-actions-multi` にアクセスできます。クイックアクションメニューは :ref:`コネクター<process-editor-quick-actions-connector>` :ref:`スイムレーン<process-editor-quick-actions-lanes>` も表示されます。"
+
+#: ../../source/reference/process/process-editor/index.rst:187
+msgid "To scroll in the process editor simply drag the diagram. If you want to Zoom, use your mouse wheel. To undo/redo or copy/paste you can use the **Edit** menu of the IDE or use the default shortcuts (`Ctrl + C`, `Ctrl + V`, etc.)."
+msgstr "プロセスエディター内でスクロールするには、図をドラッグします。ズームするには、マウスホイールを使用します。IDE の**編集** メニューを使用するか、デフォルトのショートカット（「Ctrl + C」、「Ctrl + V」など）を使用して、直前の変更を元に戻したりやり直したり、コピーや貼り付けを行うことができます。"
+
+#: ../../source/reference/process/process-editor/index.rst:198
+msgid "To open the **Quick Action Menu** simply select an element in the editor. The available actions can be different based on the element type:"
+msgstr "**クイックアクションメニュー** を開くには、エディターで要素を選択します。使用可能なアクションは、要素のタイプによって異なります。"
+
+#: ../../source/reference/process/process-editor/index.rst:201
+#: ../../source/reference/process/process-editor/index.rst:284
+#: ../../source/reference/process/process-editor/index.rst:308
+#: ../../source/reference/process/process-editor/index.rst:345
+msgid "|delete-action| Delete the current selection."
+msgstr "|delete-action| 現在の選択を削除します。"
+
+#: ../../source/reference/process/process-editor/index.rst:357
+msgid "delete-action"
+msgstr "delete-action"
+
+#: ../../source/reference/process/process-editor/index.rst:205
+msgid "|start-action| Starts/Runs the selected process. Only available on the :ref:`Start Element <process-element-start-request>`"
+msgstr "|start-action| 選択したプロセスを開始／実行します :ref:`開始要素<process-element-start-request>` のみ使用できます。"
+
+#: ../../source/reference/process/process-editor/index.rst:258
+msgid "start-action"
+msgstr "start-action"
+
+#: ../../source/reference/process/process-editor/index.rst:208
+msgid "|info-action| Information about the current selection (:ref:`problem markers <process-editor-problems>`, :ref:`name <process-element-tab-general>`, :ref:`description <process-element-tab-general>`, PID, conditions, etc.)."
+msgstr "|info-action| 現在の選択に関する情報（:ref:`問題マーカー <process-editor-problems>`、:ref:`名前 <process-element-tab-general>`、:ref:`説明 <process-element-tab-general>`、PID、条件など）。"
+
+#: ../../source/reference/process/process-editor/index.rst:361
+msgid "info-action"
+msgstr "info-action"
+
+#: ../../source/reference/process/process-editor/index.rst:212
+msgid "|search-action| Search all usages of this start event. *Only available on some start events*"
+msgstr "|search-action| この開始イベントのすべての使用状況を検索します。*いくつかの開始イベントでのみ使用できます*。"
+
+#: ../../source/reference/process/process-editor/index.rst:260
+#: ../../source/reference/process/process-elements/common-tabs.rst:142
+#: ../../source/reference/process/process-elements/database-activity.rst:137
+#: ../../source/reference/process/process-inscription-view.rst:25
+msgid "search-action"
+msgstr "search-action"
+
+#: ../../source/reference/process/process-editor/index.rst:217
+msgid "|breakpoint-action| Toggle Breakpoint: To suspend the execution. :ref:`process-element-breakpoints` can be added to process elements."
+msgstr "|breakpoint-action| ブレークポイントの切り替え：実行を中断するには :ref:`process-element-breakpoints` をプロセス要素に追加します。"
+
+#: ../../source/reference/process/process-editor/index.rst:262
+msgid "breakpoint-action"
+msgstr "breakpoint-action"
+
+#: ../../source/reference/process/process-editor/index.rst:220
+msgid "|jump-in-action| Enters the embedded or referenced process and shows the encapsulated process. *Only available on elements with an reference to another process*"
+msgstr "|jump-in-action| 埋め込まれたプロセスや参照されるプロセスを入力し、カプセル化されたプロセスを表示します。*別のプロセスへの参照が設定された要素でのみ使用できます*。"
+
+#: ../../source/reference/process/process-editor/index.rst:264
+msgid "jump-in-action"
+msgstr "jump-in-action"
+
+#: ../../source/reference/process/process-editor/index.rst:223
+msgid "|unwrap-action|  The elements encapsulated by the embedded subprocess are placed into the current process. Only available on :ref:`process-element-embedded-sub` or :ref:`process-element-bpmn-activity`"
+msgstr "|unwrap-action| 埋め込みサブプロセスにカプセル化された要素が現在のプロセスに配置されます :ref:`process-element-embedded-sub` または :ref:`process-element-bpmn-activity` でのみ使用できます。"
+
+#: ../../source/reference/process/process-editor/index.rst:266
+msgid "unwrap-action"
+msgstr "unwrap-action"
+
+#: ../../source/reference/process/process-editor/index.rst:227
+#: ../../source/reference/process/process-editor/index.rst:318
+#: ../../source/reference/process/process-editor/index.rst:347
+msgid "|edit-label-action| Opens an inline editor for the label of the currently selected element."
+msgstr "|edit-label-action| 現在選択されている要素のラベルのインラインエディターを開きます。"
+
+#: ../../source/reference/process/process-editor/index.rst:359
+msgid "edit-label-action"
+msgstr "edit-label-action"
+
+#: ../../source/reference/process/process-editor/index.rst:229
+msgid "|goto-source-action| Jump to the referenced view or java class. *Only available on elements with a referenced view or java class*"
+msgstr "|goto-source-action| 参照されるビューまたは Java クラスにジャンプします。*参照されるビューまたは Java クラスを持つ要素でのみ使用できます*。"
+
+#: ../../source/reference/process/process-editor/index.rst:268
+msgid "goto-source-action"
+msgstr "goto-source-action"
+
+#: ../../source/reference/process/process-editor/index.rst:232
+msgid "|icon-action| Changes the icon of the process element. You can select a standard icon, reset to the default or choose an icon from the folder :code:`webContent/icons/` (supported formats are :code:`.svg`, :code:`.png`, :code:`.jpg`, :code:`.jpeg`, :code:`.gif`, :code:`.webp`)."
+msgstr "|icon-action| プロセス要素のアイコンを変更します。 標準のアイコンを選択し、デフォルトにリセットするか、フォルダー:code:`webContent/icons/`（サポートされている形式は :code:`.svg`、:code:`.png`、:code:`.jpg`、:code:`.jpeg`、:code:`.gif`、:code:`.webp`）から選択できます。"
+
+#: ../../source/reference/process/process-editor/index.rst:270
+msgid "icon-action"
+msgstr "icon-action"
+
+#: ../../source/reference/process/process-editor/index.rst:238
+msgid "Add Element:"
+msgstr "要素の追加："
+
+#: ../../source/reference/process/process-editor/index.rst:239
+msgid "Directly insert an element to the process workflow. There are three categories of elements:"
+msgstr "要素をプロセスワークフローに直接挿入します。以下の 3 つのカテゴリーの要素があります。"
+
+#: ../../source/reference/process/process-editor/index.rst:242
+msgid "Events: All possible event elements (also for :ref:`process-element-error-boundary-event` and :ref:`process-element-signal-boundary-event`)"
+msgstr "イベント：すべてのイベント要素（:ref:`process-element-error-boundary-event` および :ref:`process-element-signal-boundary-event` も含む）"
+
+#: ../../source/reference/process/process-editor/index.rst:245
 #: ../../source/reference/process/process-elements/index.rst:101
 msgid "Gateways"
 msgstr "ゲートウェイ"
 
-#: ../../source/reference/process/process-editor.rst:72
-#: ../../source/reference/process/process-editor.rst:203
+#: ../../source/reference/process/process-editor/index.rst:246
 msgid "Activities"
 msgstr "アクティビティ"
 
-#: ../../source/reference/process/process-editor.rst:73
-msgid "Artifacts"
-msgstr "アーティファクト"
-
-#: ../../source/reference/process/process-editor.rst:74
-msgid ":ref:`Extensions <process-element-extension-item>`"
-msgstr ":ref:`拡張機能<process-element-extension-item>`"
-
-#: ../../source/reference/process/process-editor.rst:80
-msgid "|open-dataclass| Opens the :ref:`data-class-editor` of the process."
-msgstr "|open-dataclass| プロセスの :ref:`data-class-editor` を開きます。"
-
-#: ../../source/reference/process/process-editor.rst:82
-msgid "|inscription-toggle| Opens or closes the :ref:`process-inscription-view` of the process."
-msgstr "|inscription-toggle| プロセスの :ref:`process-inscription-view` を開閉します。"
-
-#: ../../source/reference/process/process-editor.rst:86
-msgid "Darkmode: Toggle between dark and light theme."
-msgstr "ダークモード：ダークテーマとライトテーマを切り替えます。"
-
-#: ../../source/reference/process/process-editor.rst:87
-msgid "Grid: Toggle the grid mode."
-msgstr ""
-
-#: ../../source/reference/process/process-editor.rst:88
-msgid "Custom Icon: Toggle between custom and default icons."
-msgstr "カスタムアイコン：カスタムアイコンとデフォルトアイコンを切り替えします。"
-
-#: ../../source/reference/process/process-editor.rst:103
-msgid "Viewport Tool Bar"
-msgstr "ビューポートツールバー"
-
-#: ../../source/reference/process/process-editor.rst:105
-msgid "|origin-view-tool| Reset process editor to the origin viewport."
-msgstr "|origin-view-tool| プロセスエディターを元のビューポートにリセットします。"
-
-#: ../../source/reference/process/process-editor.rst:113
-msgid "origin-view-tool"
-msgstr "origin-view-tool"
-
-#: ../../source/reference/process/process-editor.rst:107
-msgid "|fit-to-screen-tool| Fit the whole diagram (or your current selection) to the process editor screen."
-msgstr "|fit-to-screen-tool| 図全体（または現在の選択）をプロセスエディター画面いっぱいに表示します。"
-
-#: ../../source/reference/process/process-editor.rst:116
-msgid "fit-to-screen-tool"
-msgstr "fit-to-screen-tool"
-
-#: ../../source/reference/process/process-editor.rst:109
-msgid "|center-tool| Center the whole diagram (or your current selection) in the process editor screen."
-msgstr "|center-tool| 図全体（または現在の選択）をプロセスエディター画面の中央に置きます。"
-
-#: ../../source/reference/process/process-editor.rst:119
-msgid "center-tool"
-msgstr "center-tool"
-
-#: ../../source/reference/process/process-editor.rst:111
-msgid "Zoom level: Displays the current zoom level of the process editor."
-msgstr "ズームレベル：プロセスエディターの現在のズームレベルを表示します。"
-
-#: ../../source/reference/process/process-editor.rst:127
-msgid "Processes are designed, drawn and modified in the process editor area. Select an element from the palette, then click in the process editor area to place it. Click and drag elements to move them."
-msgstr "プロセスは、プロセスエディター領域で設計、描画、修正されます。パレットから要素を選択し、プロセスエディター領域内をクリックして配置します。要素を移動するには、クリックしてドラッグします。"
-
-#: ../../source/reference/process/process-editor.rst:131
-msgid "Connectors are drawn between two elements by using the **Connector Tool** in the :ref:`process-editor-tool-bar` or clicking on the first element and select the **Connector Tool** over the :ref:`process-editor-quick-actions`. You can also add more bend waypoints to a connector or move them, by selecting the connector and dragging the handles. To reconnect an existing connector select the connector and move the target handle to another element."
-msgstr ":ref:`process-editor-tool-bar` にある**コネクターツール** を使用するか、最初の要素をクリックし、 :ref:`process-editor-quick-actions` で**コネクターツール** を選択して、2 つの要素の間にコネクターを描画します。また、コネクターにさらに多くの折れ線ウェイポイントを追加したり、コネクターを選択し、ハンドルをドラッグして、ウェイポイントを移動できます。既存のコネクターを再接続するには、コネクターを選択し、ハンドルを他の要素に移動します。"
-
-#: ../../source/reference/process/process-editor.rst:138
-msgid "On each element you have a :ref:`process-editor-quick-actions`, which provides useful actions to edit the element. If you select multiple elements, you have access to the :ref:`process-editor-quick-actions-multi`. And also on :ref:`connectors <process-editor-quick-actions-connector>` and :ref:`swimlanes <process-editor-quick-actions-lanes>` you will get a Quick Action Menu."
-msgstr "要素ごと :ref:`process-editor-quick-actions` があり、要素を編集するのに便利なアクションが表示されます。複数の要素を選択する場合は :ref:`process-editor-quick-actions-multi` にアクセスできます。クイックアクションメニューは :ref:`コネクター<process-editor-quick-actions-connector>` :ref:`スイムレーン<process-editor-quick-actions-lanes>` も表示されます。"
-
-#: ../../source/reference/process/process-editor.rst:144
-msgid "To scroll in the process editor simply drag the diagram. If you want to Zoom, use your mouse wheel. To undo/redo or copy/paste you can use the **Edit** menu of the IDE or use the default shortcuts (`Ctrl + C`, `Ctrl + V`, etc.)."
-msgstr "プロセスエディター内でスクロールするには、図をドラッグします。ズームするには、マウスホイールを使用します。IDE の**編集** メニューを使用するか、デフォルトのショートカット（「Ctrl + C」、「Ctrl + V」など）を使用して、直前の変更を元に戻したりやり直したり、コピーや貼り付けを行うことができます。"
-
-#: ../../source/reference/process/process-editor.rst:155
-msgid "To open the **Quick Action Menu** simply select an element in the editor. The available actions can be different based on the element type:"
-msgstr "**クイックアクションメニュー** を開くには、エディターで要素を選択します。使用可能なアクションは、要素のタイプによって異なります。"
-
-#: ../../source/reference/process/process-editor.rst:158
-#: ../../source/reference/process/process-editor.rst:241
-#: ../../source/reference/process/process-editor.rst:265
-#: ../../source/reference/process/process-editor.rst:302
-msgid "|delete-action| Delete the current selection."
-msgstr "|delete-action| 現在の選択を削除します。"
-
-#: ../../source/reference/process/process-editor.rst:314
-msgid "delete-action"
-msgstr "delete-action"
-
-#: ../../source/reference/process/process-editor.rst:162
-msgid "|start-action| Starts/Runs the selected process. Only available on the :ref:`Start Element <process-element-start-request>`"
-msgstr "|start-action| 選択したプロセスを開始／実行します :ref:`開始要素<process-element-start-request>` のみ使用できます。"
-
-#: ../../source/reference/process/process-editor.rst:215
-msgid "start-action"
-msgstr "start-action"
-
-#: ../../source/reference/process/process-editor.rst:165
-#: ../../source/reference/process/process-editor.rst:267
-msgid "|info-action| Information about the current selection (:ref:`problem markers <problems-view>`, :ref:`name <process-element-tab-general>`, :ref:`description <process-element-tab-general>`, PID, conditions, etc.)."
-msgstr "|info-action| 現在の選択に関する情報（:ref:`problem markers <problems-view>`、:ref:`name <process-element-tab-general>`、:ref:`description <process-element-tab-general>`、PID、条件など）。"
-
-#: ../../source/reference/process/process-editor.rst:318
-msgid "info-action"
-msgstr "info-action"
-
-#: ../../source/reference/process/process-editor.rst:169
-msgid "|search-action| Search all usages of this start event. *Only available on some start events*"
-msgstr "|search-action| この開始イベントのすべての使用状況を検索します。*いくつかの開始イベントでのみ使用できます*。"
-
-#: ../../source/reference/process/process-editor.rst:174
-msgid "|breakpoint-action| Toggle Breakpoint: To suspend the execution. :ref:`process-element-breakpoints` can be added to process elements."
-msgstr "|breakpoint-action| ブレークポイントの切り替え：実行を中断するには :ref:`process-element-breakpoints` をプロセス要素に追加します。"
-
-#: ../../source/reference/process/process-editor.rst:219
-msgid "breakpoint-action"
-msgstr "breakpoint-action"
-
-#: ../../source/reference/process/process-editor.rst:177
-msgid "|jump-in-action| Enters the embedded or referenced process and shows the encapsulated process. *Only available on elements with an reference to another process*"
-msgstr "|jump-in-action| 埋め込まれたプロセスや参照されるプロセスを入力し、カプセル化されたプロセスを表示します。*別のプロセスへの参照が設定された要素でのみ使用できます*。"
-
-#: ../../source/reference/process/process-editor.rst:221
-msgid "jump-in-action"
-msgstr "jump-in-action"
-
-#: ../../source/reference/process/process-editor.rst:180
-msgid "|unwrap-action|  The elements encapsulated by the embedded subprocess are placed into the current process. Only available on :ref:`process-element-embedded-sub` or :ref:`process-element-bpmn-activity`"
-msgstr "|unwrap-action| 埋め込みサブプロセスにカプセル化された要素が現在のプロセスに配置されます :ref:`process-element-embedded-sub` または :ref:`process-element-bpmn-activity` でのみ使用できます。"
-
-#: ../../source/reference/process/process-editor.rst:223
-msgid "unwrap-action"
-msgstr "unwrap-action"
-
-#: ../../source/reference/process/process-editor.rst:184
-#: ../../source/reference/process/process-editor.rst:275
-#: ../../source/reference/process/process-editor.rst:304
-msgid "|edit-label-action| Opens an inline editor for the label of the currently selected element."
-msgstr "|edit-label-action| 現在選択されている要素のラベルのインラインエディターを開きます。"
-
-#: ../../source/reference/process/process-editor.rst:316
-msgid "edit-label-action"
-msgstr "edit-label-action"
-
-#: ../../source/reference/process/process-editor.rst:186
-msgid "|goto-source-action| Jump to the referenced view or java class. *Only available on elements with a referenced view or java class*"
-msgstr "|goto-source-action| 参照されるビューまたは Java クラスにジャンプします。*参照されるビューまたは Java クラスを持つ要素でのみ使用できます*。"
-
-#: ../../source/reference/process/process-editor.rst:225
-msgid "goto-source-action"
-msgstr "goto-source-action"
-
-#: ../../source/reference/process/process-editor.rst:189
-msgid "|icon-action| Changes the icon of the process element. You can select a standard icon, reset to the default or choose an icon from the folder :code:`webContent/icons/` (supported formats are :code:`.svg`, :code:`.png`, :code:`.jpg`, :code:`.jpeg`, :code:`.gif`, :code:`.webp`)."
-msgstr "|icon-action| プロセス要素のアイコンを変更します。 標準のアイコンを選択し、デフォルトにリセットするか、フォルダー:code:`webContent/icons/`（サポートされている形式は :code:`.svg`、:code:`.png`、:code:`.jpg`、:code:`.jpeg`、:code:`.gif`、:code:`.webp`）から選択できます。"
-
-#: ../../source/reference/process/process-editor.rst:227
-msgid "icon-action"
-msgstr "icon-action"
-
-#: ../../source/reference/process/process-editor.rst:195
-msgid "Add Element:"
-msgstr "要素の追加："
-
-#: ../../source/reference/process/process-editor.rst:196
-msgid "Directly insert an element to the process workflow. There are three categories of elements:"
-msgstr "要素をプロセスワークフローに直接挿入します。以下の 3 つのカテゴリーの要素があります。"
-
-#: ../../source/reference/process/process-editor.rst:199
-msgid "Events: All possible event elements (also for :ref:`process-element-error-boundary-event` and :ref:`process-element-signal-boundary-event`)"
-msgstr "イベント：すべてのイベント要素（:ref:`process-element-error-boundary-event` および :ref:`process-element-signal-boundary-event` も含む）"
-
-#: ../../source/reference/process/process-editor.rst:207
+#: ../../source/reference/process/process-editor/index.rst:250
 msgid "Press the key :guilabel:`A` to get a list of all elements. You can also navigate through the list with the :guilabel:`Arrow` keys and add an element with the :guilabel:`Enter` key."
 msgstr ":guilabel:`A` キーを押して、すべての要素のリストを取得できます。また、:guilabel:`矢印` キーを押してリスト内を移動し、:guilabel:`Enter` キーで要素を追加できます。"
 
-#: ../../source/reference/process/process-editor.rst:211
+#: ../../source/reference/process/process-editor/index.rst:254
 msgid "|connect-action| The **Connection Tool** can connect the current element with another. *Only available if the element has no outgoing connector or supports multiple outgoing connectors*"
 msgstr "|connect-action| **接続ツール** で現在の要素を他の要素と接続できます。*要素に出力コネクターがないか、複数の出力コネクターをサポートしている場合のみ、使用できます*。"
 
-#: ../../source/reference/process/process-editor.rst:229
+#: ../../source/reference/process/process-editor/index.rst:272
 msgid "connect-action"
 msgstr "connect-action"
 
-#: ../../source/reference/process/process-editor.rst:235
+#: ../../source/reference/process/process-editor/index.rst:278
 msgid "Multi-Selection Quick Action Menu"
 msgstr "複数選択クイックアクションメニュー"
 
-#: ../../source/reference/process/process-editor.rst:237
+#: ../../source/reference/process/process-editor/index.rst:280
 msgid "If you select multiple elements, e.g with the **Marquee Tool** of the :ref:`process-editor-tool-bar`, you get access to a **Multi-Selection Quick Action Menu**. The following actions are available:"
 msgstr ":ref:`process-editor-tool-bar` の**マーキーツール** などで複数の要素を選択すると、**複数選択クイックアクションメニュー** にアクセスできます。以下のアクションを実行できます。"
 
-#: ../../source/reference/process/process-editor.rst:243
+#: ../../source/reference/process/process-editor/index.rst:286
 msgid "|wrap-action| Wrap the current selection into an embedded process."
 msgstr "|wrap-action| 現在の選択を埋め込みプロセスにラップします。"
 
-#: ../../source/reference/process/process-editor.rst:249
+#: ../../source/reference/process/process-editor/index.rst:292
 msgid "wrap-action"
 msgstr "wrap-action"
 
-#: ../../source/reference/process/process-editor.rst:245
+#: ../../source/reference/process/process-editor/index.rst:288
 msgid "|auto-align-action| Aligns the selected elements *horizontally* and *vertically*."
 msgstr "|auto-align-action| 選択した要素を *水平方向* および *垂直方向* に配置します。"
 
-#: ../../source/reference/process/process-editor.rst:252
+#: ../../source/reference/process/process-editor/index.rst:295
 msgid "auto-align-action"
 msgstr "auto-align-action"
 
-#: ../../source/reference/process/process-editor.rst:260
+#: ../../source/reference/process/process-editor/index.rst:303
 msgid "Connector Quick Action Menu"
 msgstr "コネクタークイックアクションメニュー"
 
-#: ../../source/reference/process/process-editor.rst:262
+#: ../../source/reference/process/process-editor/index.rst:305
 msgid "To open the **Connector Quick Action Menu** select a connector. The following actions are available:"
 msgstr "**コネクタークイックアクションメニュー** を開くには、コネクターを選択します。以下のアクションを実行できます。"
 
-#: ../../source/reference/process/process-editor.rst:271
+#: ../../source/reference/process/process-editor/index.rst:310
+msgid "|info-action| Information about the current selection (:ref:`problem markers <problems-view>`, :ref:`name <process-element-tab-general>`, :ref:`description <process-element-tab-general>`, PID, conditions, etc.)."
+msgstr "|info-action| 現在の選択に関する情報（:ref:`problem markers <problems-view>`、:ref:`name <process-element-tab-general>`、:ref:`description <process-element-tab-general>`、PID、条件など）。"
+
+#: ../../source/reference/process/process-editor/index.rst:314
 msgid "|straigten-action| Straighten: Change layout of the arrow path to a straight line."
 msgstr "|straigten-action| 矢印のパスのレイアウトを直線に変更します（整列）。"
 
-#: ../../source/reference/process/process-editor.rst:285
+#: ../../source/reference/process/process-editor/index.rst:328
 msgid "straigten-action"
 msgstr "straigten-action"
 
-#: ../../source/reference/process/process-editor.rst:273
+#: ../../source/reference/process/process-editor/index.rst:316
 msgid "|bend-action| Bend: Change layout of the arrow path to horizontal and vertical lines with 90° angles."
 msgstr "|bend-action| 矢印のパスのレイアウトを 90° の水平・垂直の折れ線に変更します（折れ線）。"
 
-#: ../../source/reference/process/process-editor.rst:287
+#: ../../source/reference/process/process-editor/index.rst:330
 msgid "bend-action"
 msgstr "bend-action"
 
-#: ../../source/reference/process/process-editor.rst:279
+#: ../../source/reference/process/process-editor/index.rst:322
 msgid "|reconnect-action| Trigger a reconnection of the selected connector, by selecting a new target element."
 msgstr "|reconnect-action| 新しいターゲット要素を選択して、選択したコネクターの再接続をトリガーします。"
 
-#: ../../source/reference/process/process-editor.rst:289
+#: ../../source/reference/process/process-editor/index.rst:332
 msgid "reconnect-action"
 msgstr "reconnect-action"
 
-#: ../../source/reference/process/process-editor.rst:283
+#: ../../source/reference/process/process-editor/index.rst:326
 msgid "You can also trigger a reconnection by pressing the target handle on the selected connector"
 msgstr "また、選択したコネクターのターゲットハンドルをクリックして、再接続をトリガーすることもできます。"
 
-#: ../../source/reference/process/process-editor.rst:297
+#: ../../source/reference/process/process-editor/index.rst:340
 msgid "Swimlane Quick Action Menu"
 msgstr "スイムレーンクイックアクションメニュー"
 
-#: ../../source/reference/process/process-editor.rst:299
+#: ../../source/reference/process/process-editor/index.rst:342
 msgid "To open the **Swimlane Quick Action Menu** select a pool or a lane. The following actions are available:"
 msgstr "**スイムレーンクイックアクションメニュー** を開くには、プールまたはレーンを選択します。以下のアクションを実行できます。"
 
-#: ../../source/reference/process/process-editor.rst:308
+#: ../../source/reference/process/process-editor/index.rst:351
 msgid "|lane-action| Adds a lane to a pool."
 msgstr "|lane-action| レーンをプールに追加します。"
 
-#: ../../source/reference/process/process-editor.rst:310
+#: ../../source/reference/process/process-editor/index.rst:353
 msgid "lane-action"
 msgstr "lane-action"
 
-#: ../../source/reference/process/process-editor.rst:325
+#: ../../source/reference/process/process-editor/index.rst:368
 msgid "Shortcut Keys"
 msgstr "ショートカットキー"
 
-#: ../../source/reference/process/process-editor.rst:327
+#: ../../source/reference/process/process-editor/index.rst:370
 msgid "Some of the *tools* and *quick actions* are available with shortcut keys. To use them, select the element, then press the associated key."
 msgstr "*ツール* や *クイックアクション* の中には、ショートカットキーを使用できるものがあります。ショートカットキーを使用するには、要素を選択し、関連付けられたキーを押します。"
 
-#: ../../source/reference/process/process-editor.rst:332
+#: ../../source/reference/process/process-editor/index.rst:375
 msgid "Jump out"
 msgstr "ジャンプアウト"
 
-#: ../../source/reference/process/process-editor.rst:334
+#: ../../source/reference/process/process-editor/index.rst:377
 msgid "|jump-out-action| Visible in the top left of the :ref:`process-editor-area` to jump out of an *embedded subprocess* to the process that contains the *Embedded Sub* element."
 msgstr "|jump-out-action| :ref:`process-editor-area` の左上に表示され、*埋め込みサブプロセス* から *埋め込みサブプロセス* 要素を含むプロセスにジャンプアウトします。"
 
-#: ../../source/reference/process/process-editor.rst:339
+#: ../../source/reference/process/process-editor/index.rst:382
 msgid "jump-out-action"
 msgstr "jump-out-action"
 
-#: ../../source/reference/process/process-editor.rst:337
+#: ../../source/reference/process/process-editor/index.rst:380
 msgid "*Only active if you're in an embedded subprocess*"
 msgstr "*埋め込みサブプロセスでのみアクティブになります*。"
+
+#: ../../source/reference/process/process-editor/index.rst:389
+msgid "Problems"
+msgstr "問題"
+
+#: ../../source/reference/process/process-editor/index.rst:391
+msgid "In the process editor process elements that have errors are marked with an error overlay icon."
+msgstr "プロセスエディターでは、エラーが発生しているプロセス要素がエラーオーバーレイアイコンでマークされます。"
 
 #: ../../source/reference/process/process-elements/alternative.rst:4
 msgid "Alternative"
@@ -20051,6 +19883,170 @@ msgstr "Java ファイルは ``[プロジェクト]/src_wsproc/[完全修飾名]
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:155
 msgid "The Java file in the ``src``-folder is under control of the Developer. When a WS Start element configuration changes, the change has to be adapted manually in the Java file."
 msgstr "``src`` フォルダーの Java ファイルは開発者が管理します。Web サービスの開始要素の設定が変更された場合は、Java ファイルでその変更を手動で適合させる必要があります。"
+
+#: ../../source/reference/process/process-history-view.rst:4
+msgid "History View"
+msgstr "履歴ビュー"
+
+#: ../../source/reference/process/process-history-view.rst:6
+msgid "In this view you see the values of your process data (the ``in`` variable) during all runs of the currently selected process element in the process editor. The topmost tree entry shows the data of the first execution of the selected element during the first request whereas the entry at the bottom corresponds to the most current execution."
+msgstr "このビューでは、プロセスエディターで現在選択されているプロセス要素のすべての実行中のプロセスデータの値（``in`` 変数）が表示されます。一番上のツリー項目には、最初のリクエスト中の選択された要素の最初の実行のデータが表示されます。一番下の項目は最新の実行に対応します。"
+
+#: ../../source/reference/process/process-history-view.rst:12
+#: ../../source/reference/process/process-history-view.rst:15
+msgid "History view in action"
+msgstr "動作中の履歴ビュー"
+
+#: ../../source/reference/process/process-history-view.rst:19
+msgid "In case of memory shortage during simulation or due to history settings process data snapshots may be discarded. This is indicated by the message \"history data no longer available\"."
+msgstr "シミュレーション中にメモリが不足した場合、または履歴の設定により、プロセスデータのスナップショットが破棄されることがあります。その場合、「履歴データは使用できません」というメッセージが表示されます。"
+
+#: ../../source/reference/process/process-inscription-view.rst:4
+msgid "Inscription View"
+msgstr "インスクリプションビュー"
+
+#: ../../source/reference/process/process-inscription-view.rst:6
+msgid "The Inscription View displays the :ref:`inscription<process-elements>` of the currently selected element. Simply double click on an element to open its Inscription View."
+msgstr "インスクリプションビューには、現在選択されている要素の :ref:`インスクリプション <process-elements>` が表示されます。要素をダブルクリックすると、インスクリプションビューが開きます。"
+
+#: ../../source/reference/process/process-inscription-view.rst:9
+#: ../../source/reference/process/process-outline-view.rst:9
+msgid "|img-outline-view0|"
+msgstr "|img-outline-view0|"
+
+#: ../../source/reference/process/process-inscription-view.rst:12
+#: ../../source/reference/process/process-outline-view.rst:26
+msgid "img-outline-view0"
+msgstr "img-outline-view0"
+
+#: ../../source/reference/process/process-inscription-view.rst:18
+msgid "Inscription Browsers"
+msgstr "インスクリプションブラウザ"
+
+#: ../../source/reference/process/process-inscription-view.rst:20
+msgid "Various process element inscriptions involve dynamic parts. With a convenient inline browser, you can select contents from your project to be used within the inscription configuration."
+msgstr "プロセス要素のインスクリプションには、動的な部分が含まれます。便利なインラインブラウザを使用して、インスクリプションの設定内で使用するプロジェクトのコンテンツを選択できます。"
+
+#: ../../source/reference/process/process-inscription-view.rst:23
+msgid "|search-action| The search button on inscription inputs will open the browsers for selection."
+msgstr "|search-action| インスクリプションの入力の検索ボタンをクリックすると、ブラウザが開き、属性を選択できます。"
+
+#: ../../source/reference/process/process-inscription-view.rst:32
+#: ../../source/reference/process/process-inscription-view.rst:36
+#: ../../source/reference/process/process-inscription-view.rst:39
+msgid "Attribute Browser"
+msgstr "属性ブラウザ"
+
+#: ../../source/reference/process/process-inscription-view.rst:34
+msgid "A browser to select valid attributes of the process data for scriptable process element configurations."
+msgstr "スクリプト可能なプロセス要素の設定で有効なプロセスデータの属性を選択するブラウザです。"
+
+#: ../../source/reference/process/process-inscription-view.rst:41
+msgid "In the upper left area, you can choose between the different process attributes in the current context (such as ``in``, ``out``, ``param``, ...)."
+msgstr "左上の領域では、現在のコンテキストでプロセス属性を選択できます（``in``、``out``、``param`` など）。"
+
+#: ../../source/reference/process/process-inscription-view.rst:48
+#: ../../source/reference/process/process-inscription-view.rst:54
+#: ../../source/reference/process/process-inscription-view.rst:57
+msgid "Function Browser"
+msgstr "機能ブラウザ"
+
+#: ../../source/reference/process/process-inscription-view.rst:50
+msgid "This browser is used to construct and insert IvyScript expressions in inscription masks. Those expressions are based on the environment in the context of the current process or on general-purpose functions."
+msgstr "このブラウザを使用して、 IvyScript 式を作成し、インスクリプションマスクに挿入します。"
+
+#: ../../source/reference/process/process-inscription-view.rst:59
+msgid "A description of the accessible objects can be found in the section :ref:`ivy environment variables <ivyscript-reference-environmentvariable>`"
+msgstr "アクセス可能なオブジェクトの説明については、「:ref:`ivy environment variables <ivyscript-reference-environmentvariable>`」のセクションを参照してください。"
+
+#: ../../source/reference/process/process-inscription-view.rst:67
+msgid "Data Type Browser"
+msgstr "データ型ブラウザ"
+
+#: ../../source/reference/process/process-inscription-view.rst:69
+msgid "The data type browser is used to choose a data types in inscription masks. By default DataClasses from your project or its dependencies can be selected."
+msgstr "データ型ブラウザを使用して、インスクリプションマスクのデータ型を選択します。デフォルトでは、プロジェクトまたはその依存関係のデータクラスを選択できます。"
+
+#: ../../source/reference/process/process-inscription-view.rst:72
+#: ../../source/reference/process/process-inscription-view.rst:75
+msgid "Type Browser"
+msgstr "型ブラウザ"
+
+#: ../../source/reference/process/process-inscription-view.rst:77
+#: ../../source/reference/process/process-inscription-view.rst:95
+msgid "**Options**"
+msgstr "**オプション**"
+
+#: ../../source/reference/process/process-inscription-view.rst:79
+msgid "`Search over all types`: include types from Java libraries."
+msgstr "`すべての型を検索`：Java ライブラリの型を含めます。"
+
+#: ../../source/reference/process/process-inscription-view.rst:80
+msgid "`Use Type as List`: will pick a List of the selected type."
+msgstr "`リストとして型を使用`：選択したタイプのリストを選択します。"
+
+#: ../../source/reference/process/process-inscription-view.rst:86
+#: ../../source/reference/process/process-inscription-view.rst:90
+#: ../../source/reference/process/process-inscription-view.rst:93
+msgid "CMS Browser"
+msgstr "CMS ブラウザ"
+
+#: ../../source/reference/process/process-inscription-view.rst:88
+msgid "The CMS browser selects translatable contents from the :ref:`cms`."
+msgstr "CMS ブラウザは、 :ref:`cms` から翻訳可能なコンテンツを選択します。"
+
+#: ../../source/reference/process/process-inscription-view.rst:97
+msgid "`Enable required projects`: lookup CMS contents from dependent projects too."
+msgstr "`必要なプロジェクトを有効化`：依存関係にあるプロジェクトの CMS コンテンツも検索します。"
+
+#: ../../source/reference/process/process-inscription-view.rst:104
+#: ../../source/reference/process/process-inscription-view.rst:108
+msgid "Role Browser"
+msgstr "ロールブラウザ"
+
+#: ../../source/reference/process/process-inscription-view.rst:106
+msgid "Selects a role of your project."
+msgstr "プロジェクトのロールを選択します。"
+
+#: ../../source/reference/process/process-inscription-view.rst:116
+msgid "Fullscreen Code Browser"
+msgstr "フルスクリーンコードブラウザ"
+
+#: ../../source/reference/process/process-inscription-view.rst:118
+msgid "Renders the scripts in a :ref:`process-element-tab-code` at full size."
+msgstr ":ref:`process-element-tab-code` をフルサイズで表示して、スクリプトを作成します。"
+
+#: ../../source/reference/process/process-inscription-view.rst:120
+msgid "Fullscreen"
+msgstr "フルスクリーン"
+
+#: ../../source/reference/process/process-outline-view.rst:4
+msgid "Process Outline View"
+msgstr "プロセスアウトラインビュー"
+
+#: ../../source/reference/process/process-outline-view.rst:6
+msgid "The outline view displays all elements of the current process editor. On the :ref:`process-inscription-view` click the toggle button in the top right corner to open the outline view."
+msgstr ""
+
+#: ../../source/reference/process/process-outline-view.rst:15
+msgid "The outline view has the following features:"
+msgstr "アウトラインビューの機能は以下のとおりです。"
+
+#: ../../source/reference/process/process-outline-view.rst:17
+msgid "Selection"
+msgstr "選択"
+
+#: ../../source/reference/process/process-outline-view.rst:18
+msgid "Process elements which are selected in the outline view are selected in the process editor and vice versa, which helps to search and manipulate elements, especially in large processes."
+msgstr "アウトラインビューで選択したプロセス要素がプロセスエディター、プロセスエディターで選択したプロセス要素がアウトラインビューに表示されます。特に、大きなプロセスで要素を検索、操作するのに便利です。"
+
+#: ../../source/reference/process/process-outline-view.rst:22
+msgid "Classification"
+msgstr "分類"
+
+#: ../../source/reference/process/process-outline-view.rst:23
+msgid "Elements are grouped by their BPMN type, where the element type is visualized with an icon in front of the element name."
+msgstr "要素が BPMN のタイプでグループ化され、要素名の前のアイコンで要素のタイプが視覚的に表示されます。"
 
 #: ../../source/reference/process/smart-workflow.rst:2
 msgid "Smart Workflow"
@@ -25427,3 +25423,45 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "Writing good software without tests is nearly impossible, and we want to make it as easy as possible for you to write tests for your Axon Ivy project. Let's get started!"
 #~ msgstr "テストなしで良いソフトウェアを作成することはほぼ不可能であり、私たちは、Axon Ivy プロジェクトのテストコードの作成をできるだけ簡単なものにしたいと考えています。それでは、始めましょう！"
+
+#~ msgid "**Apply**: adds the selected attribute to your process element inscription."
+#~ msgstr "**適用** ：選択した属性をプロセス要素のインスクリプションに追加します。"
+
+#~ msgid "**Cancel**: closes the browser and re-opens the process element inscription."
+#~ msgstr "**キャンセル** ：ブラウザを閉じ、プロセス要素のインスクリプションを再び開きます。"
+
+#~ msgid "Extension Item"
+#~ msgstr "拡張機能"
+
+#~ msgid "|extension-tool| The *Extensions* item is located in the :ref:`process-editor-tool-bar` of the process editor."
+#~ msgstr "|extension-tool| *拡張機能* は、プロセスエディターの :ref:`process-editor-tool-bar` にあります。"
+
+#~ msgid "Extension Toolbar Item"
+#~ msgstr "拡張機能ツールバー"
+
+#~ msgid "On insert, this element will show an extension-browser, which makes it possible to select an installed third-party connector."
+#~ msgstr "挿入時、この要素が拡張機能ブラウザに表示され、インストールされているサードパーティーのコネクターを選択できるようになります。"
+
+#~ msgid "Extension Browser"
+#~ msgstr "拡張機能ブラウザ"
+
+#~ msgid "|ext-browser|"
+#~ msgstr "|ext-browser|"
+
+#~ msgid "ext-browser"
+#~ msgstr "ext-browser"
+
+#~ msgid "Process Views"
+#~ msgstr "プロセスビュー"
+
+#~ msgid "This chapter introduces Views which are handy while working with processes and the :ref:`process-editor`."
+#~ msgstr "この章では、プロセスや :ref:`process-editor` で作業する際に便利なビューを紹介します。"
+
+#~ msgid "Double click on an element or click on the toggle Inscription View button in the top right of the editor."
+#~ msgstr "要素をダブルクリックするか、エディターの右上にあるインスクリプションビューのトグルボタンをクリックします。"
+
+#~ msgid "The outline view displays all elements of the current process editor."
+#~ msgstr "アウトラインビューには、現在のプロセスエディターのすべての要素が表示されます。"
+
+#~ msgid "Process Editor > Open inscription sidebar > Toggle outline"
+#~ msgstr "プロセスエディターからインスクリプションサイドバーを開き、アウトラインを切り替えます。"
