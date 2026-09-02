@@ -20,158 +20,6 @@ msgstr ""
 "X-Generator: Weblate 2026.7.dev0\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: ../../source/designer-guide/how-to/continuous-integration.rst:4
-msgid "Continuous Integration"
-msgstr "継続的インテグレーション"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:6
-msgid "Axon Ivy Projects are designed to be built on a continuous integration (CI) server like Jenkins."
-msgstr "Axon Ivy プロジェクトは、Jenkins のような継続的インテグレーション（CI）サーバー上で構築されるように設計されています。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:11
-msgid "Maven build plugin"
-msgstr "Maven ビルドプラグイン"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:13
-msgid "The `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ is a Maven plugin that can build Axon Ivy Projects on a developer machine or on a continuous integration server. The plugin provides the following main features:"
-msgstr "`project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ は Maven プラグインで、Axon Ivy プロジェクトを開発者マシンまたは継続的インテグレーションサーバー上で ビルドできます。このプラグインの主な機能は以下のとおりです。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:18
-msgid "**Compilation** of Axon Ivy Projects"
-msgstr "Axon Ivy プロジェクトの**コンパイル**"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:20
-msgid "**Testing** of unit tests against an Axon Ivy Project or the Axon Ivy core classes"
-msgstr "Axon Ivy プロジェクトまたは Axon Ivy のコアクラスに対する単体テストの**テスト**"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:23
-msgid "**Packaging** of built Axon Ivy Projects as IAR (ivy archive) artifacts"
-msgstr "IAR（ivy アーカイブ）のアーティファクトとしてビルドされた Axon Ivy プロジェクトの**パッケージ化**"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:25
-msgid "**Installation** of IAR artifacts into the local Maven repository"
-msgstr "IAR のアーティファクトの Maven のローカルリポジトリへの**インストール**"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:27
-msgid "**Deployment** of IAR artifacts to an Axon Ivy Engine"
-msgstr "IAR のアーティファクトの Axon Ivy Engine への展開"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:31
-msgid "Runtime"
-msgstr "ランタイム"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:33
-msgid "The Designer has a built in Maven runtime that allows to start Maven with zero initial configuration effort. A local maven build can be started as follows:"
-msgstr "デザイナーには Maven ランタイムが組み込まれており、初期設定なしで Maven を使い始められます。Maven のローカルビルドは次のように開始できます。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:37
-msgid "Switch to the Java perspective"
-msgstr "Java パースペクティブに切り替えます。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:39
-msgid "Expand an Axon Ivy Project in the Axon Ivy Project Tree view"
-msgstr "Axon Ivy のプロジェクトツリービューで Axon Ivy プロジェクトを展開します。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:41
-msgid "Open the context menu of the file ``pom.xml`` by right clicking it"
-msgstr "``pom.xml`` ファイルを右クリックしてコンテキストメニューを開きます。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:43
-msgid "Navigate to :guilabel:`Run as` > :guilabel:`Maven install`"
-msgstr ":guilabel:`実行`、:guilabel:`Maven のインストール` の順に移動します。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:47
-#: ../../source/designer/configuration.rst:2
-#: ../../source/engine-guide/configuration/index.rst:4
-#: ../../source/engine-guide/integration/cluster/configuration/index.rst:4
-#: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:2
-#: ../../source/getting-productive/user-interface/branding/branding-engine.rst:21
-#: ../../source/getting-productive/workflow/overrides/index.rst:102
-#: ../../source/reference/configuration/index.rst:2
-msgid "Configuration"
-msgstr "設定"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:49
-msgid "Axon Ivy Projects declare their ids and dependencies in the :ref:`project-deployment-descriptor`. This deployment descriptor can be easily edited with the corresponding Axon Ivy editor and is stored as Maven Project Object Model (``pom.xml``). Therefore each Axon Ivy Project has by default the ``pom.xml`` which is needed by maven to build it."
-msgstr "Axon Ivy プロジェクトは、 :ref:`project-deployment-descriptor` で ID と依存関係を宣言します。このデプロイメント記述子は対応する Axon Ivy エディターで簡単に編集でき、Maven Project Object Model（``pom.xml``）として保存されます。そのため、各 Axon Ivy プロジェクトにはデフォルトで、Maven がプロジェクトをビルドするのに必要な ``pom.xml`` が含まれます。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:55
-msgid "However advanced Maven users can adjust this default configuration and use additional Maven plugins or dependencies in the pom.xml. But not all POM entries should be modified, some are required or limited in usage in Axon Ivy Projects:"
-msgstr "なお、Maven の上級ユーザーは、この初期設定を調整し、pom.xml で追加の Maven プラグインや依存関係を使用できます。ただし、すべての POM エントリを変更する必要はなく、Axon Ivy プロジェクトでは必須であったり、使用が制限されているものもあります。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:60
-msgid "``<groupId/>``\\ and ``<version/>``\\ Must be set in every Axon Ivy Project POM. It can not be inherited from a parent POM (even tough this is valid in plain Maven)."
-msgstr "``<groupId/>``\\および``<version/>``\\は、すべてのAxon IvyプロジェクトPOM 設定する必要があります。親POMから継承することはできません（プレーンなMavenでは有効です）。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:64
-msgid "``<packaging>iar</packaging>`` Provides the custom Axon Ivy Project lifecycle, must not be modified."
-msgstr "``<packaging>iar</packaging>`` は、カスタムAxon Ivyプロジェクトのライフサイクルを提供します。変更しないでください。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:67
-msgid "Dependencies with ``<type>iar</type>`` will be manipulated by the :ref:`project-deployment-descriptor`. Therefore additional configurations like the ``<scope>`` could get lost through the simple editor usage."
-msgstr "``<type>iar</type>`` との依存関係は :ref:`project-deployment-descriptor` で操作されます。そのため、 ``<scope>`` のような追加の設定は、単純なエディターの使用によって失われる可能性があります。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:72
-#, python-brace-format
-msgid "Values that can be manipulated with the simple :ref:`project-deployment-descriptor` can not contain Maven properties. For instance ``<version>${myVersionProp}</version>`` is prohibited."
-msgstr "単純な :ref:`project-deployment-descriptor` で操作できる値に Maven プロパティを含めることはできません。例えば、 ``<version>${myVersionProp}</version>`` は禁止されています。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:77
-msgid "The version must be qualified like ``<version>5.0.0-SNAPSHOT</version>.`` A version like ``<version>5-SNAPSHOT</version>`` is prohibited."
-msgstr "バージョンは ``<version>5.0.0-SNAPSHOT</version>`` のように修飾する必要があります。 ``<version>5-SNAPSHOT</version>`` のようなバージョンは禁止されています。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:83
-msgid "Technical documentation"
-msgstr "技術ドキュメント"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:85
-msgid "The detailed plugin goal and parameter documentation is on `Github.io <https://axonivy.github.io/project-build-plugin>`__"
-msgstr "プラグインのゴールとパラメーターの詳細なドキュメントは `Github.io <https://axonivy.github.io/project-build-plugin>`__ にあります。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:88
-msgid "The source code of the Axon Ivy project build plugin is available on :link-url:`Github.com <build-plugin>`."
-msgstr "Axon Ivy プロジェクトビルドプラグインのソースコードは :link-url:`Github.com<build-plugin>` で公開されています。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:93
-msgid "Continuous Integration Job with Jenkins"
-msgstr "Jenkins による継続的インテグレーションジョブ"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:95
-msgid "The following steps are needed to build an Axon Ivy Project on a Jenkins CI server."
-msgstr "Jenkins CI サーバー上で Axon Ivy プロジェクトをビルドするには、以下の手順が必要です。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:98
-msgid "Install Jenkins as described in the `Jenkins Wiki <https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins>`__"
-msgstr "`Jenkins Wiki <https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins>`__ に説明されているとおり、Jenkins をインストールします。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:101
-msgid "Install a Maven runtime in Jenkins via :guilabel:`Manage` > :guilabel:`Configure` > :guilabel:`Maven` > :guilabel:`Maven installation` > :guilabel:`Choose auto installation`"
-msgstr ":guilabel:`管理` 、 :guilabel:`設定` 、 :guilabel:`Maven` 、 :guilabel:`Maven のインストール` 、 :guilabel:`自動インストールを選択` の順に選択して、Maven ランタイムを Jenkins にインストールします。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:105
-msgid "Create a new Jenkins Job. Select :guilabel:`Maven-Project` as job style."
-msgstr "新しい Jenkins ジョブを作成します。ジョブのスタイルとして :guilabel:`Maven-Project` を選択します。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:107
-msgid "Provide a link to the source code of the Axon Ivy Project in the ``Source-Code-Management`` section"
-msgstr "``Source-Code-Management`` セクションに Axon Ivy プロジェクトのソースコードへのリンクを追加します。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:110
-msgid "Configure the goals ``clean verify`` in the :guilabel:`Build` section"
-msgstr ":guilabel:`Build` セクションで ``clean verify`` というゴールを設定します。"
-
-#: ../../source/designer-guide/how-to/continuous-integration.rst:112
-msgid ":guilabel:`Save` the Job and :guilabel:`Run` it"
-msgstr "ジョブを:guilabel:`保存` して:guilabel:`実行` します。"
-
-#: ../../source/designer-guide/how-to/index.rst:2
-msgid "How to"
-msgstr "基礎知識"
-
-#: ../../source/designer-guide/index.rst:4
-msgid "Designer Guide"
-msgstr "デザイナーガイド"
-
 #: ../../source/designer/ai-development.rst:2
 msgid "AI-assisted development"
 msgstr "AI 支援開発"
@@ -279,6 +127,17 @@ msgstr "**Workflow Demos**"
 #: ../../source/designer/commands.rst:89
 msgid "Demonstrates how to handle typical Workflow use cases, makes use of features like :ref:`Signals <signal-reference>` and :ref:`business-data`"
 msgstr "一般的なワークフローのユースケースの処理方法、 :ref:`シグナル<signal-reference>`  :ref:`business-data` などの機能の利用方法のデモです。"
+
+#: ../../source/designer/configuration.rst:2
+#: ../../source/engine-guide/configuration/index.rst:4
+#: ../../source/engine-guide/integration/cluster/configuration/index.rst:4
+#: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:2
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:50
+#: ../../source/getting-productive/user-interface/branding/branding-engine.rst:21
+#: ../../source/getting-productive/workflow/overrides/index.rst:102
+#: ../../source/reference/configuration/index.rst:2
+msgid "Configuration"
+msgstr "設定"
 
 #: ../../source/designer/configuration.rst:7
 #: ../../source/engine-guide/index.rst:4
@@ -1946,7 +1805,7 @@ msgid "The :ref:`Engine Cockpit <engine-cockpit-cluster>` includes a view that d
 msgstr ":ref:`Engine Cockpit <engine-cockpit-cluster>` には、クラスタ内の実行中のノードをすべて表示するビューがあります。デフォルトでは、ノード名は自動生成されますが :ref:`ivy.yaml <ivy-yaml>` 設定ファイルでカスタマイズできます。"
 
 #: ../../source/engine-guide/integration/cluster/data/index.rst:4
-#: ../../source/getting-productive/testing/process-testing.rst:267
+#: ../../source/getting-productive/ci-testing/process-testing.rst:267
 #: ../../source/getting-productive/user-interface/user-dialogs/user-dialog-concept.rst:159
 #: ../../source/reference/data/index.rst:2
 msgid "Data"
@@ -4815,7 +4674,7 @@ msgid "On the **Health Checks** view a list of all health checks is displayed. Y
 msgstr "**ヘルスチェック** ビューには、すべてのヘルスチェックのリストが表示されます。次にチェックが実行される日時が表示されます。:guilabel:`無効` ボタンと:guilabel:`有効` ボタンを使用して、チェックを無効または有効にします。:guilabel:`今すぐチェックを実行` ボタンを使用して、すぐにチェックを実行できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:186
-#: ../../source/getting-productive/testing/process-testing.rst:254
+#: ../../source/getting-productive/ci-testing/process-testing.rst:254
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-workflow.rst:2
 #: ../../source/getting-productive/workflow/index.rst:4
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:310
@@ -6239,6 +6098,713 @@ msgstr "開発者は、アプリケーションを使用してプロセスをパ
 #: ../../source/getting-productive/application-lifecycle/index.rst:225
 msgid "Read :ref:`deployment` If you want to learn how you can craft your own applications and deploy them on an Axon Ivy Engine."
 msgstr "アプリケーションを作成方法や Axon Ivy Engine への展開方法について知りたい場合は、「 :ref:`展開<deployment>` 」を参照してください。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:4
+msgid "Continuous Integration"
+msgstr "継続的インテグレーション"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:6
+#, fuzzy
+msgid "Axon Ivy Projects are designed to be built on a continuous integration (CI) server (e.g. `Jenkins <https://www.jenkins.io/>`__, `GitHub Actions <https://github.com/features/actions>`__, etc.)."
+msgstr "Axon Ivy プロジェクトは、Jenkins のような継続的インテグレーション（CI）サーバー上で構築されるように設計されています。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:11
+msgid "Maven build plugin"
+msgstr "Maven ビルドプラグイン"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:13
+msgid "The `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ is a Maven plugin that can build Axon Ivy Projects on a developer machine or on a continuous integration server. The plugin provides the following main features:"
+msgstr "`project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ は Maven プラグインで、Axon Ivy プロジェクトを開発者マシンまたは継続的インテグレーションサーバー上で ビルドできます。このプラグインの主な機能は以下のとおりです。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:18
+msgid "**Compilation** of Axon Ivy Projects"
+msgstr "Axon Ivy プロジェクトの**コンパイル**"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:20
+#, fuzzy
+msgid "**Validation** of Axon Ivy processes and configurations"
+msgstr "Axon Ivy プロジェクトとリソースの検証"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:22
+msgid "**Testing** of unit tests against an Axon Ivy Project or the Axon Ivy core classes"
+msgstr "Axon Ivy プロジェクトまたは Axon Ivy のコアクラスに対する単体テストの**テスト**"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:25
+msgid "**Packaging** of built Axon Ivy Projects as IAR (ivy archive) artifacts"
+msgstr "IAR（ivy アーカイブ）のアーティファクトとしてビルドされた Axon Ivy プロジェクトの**パッケージ化**"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:27
+msgid "**Installation** of IAR artifacts into the local Maven repository"
+msgstr "IAR のアーティファクトの Maven のローカルリポジトリへの**インストール**"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:29
+msgid "**Deployment** of IAR artifacts to an Axon Ivy Engine"
+msgstr "IAR のアーティファクトの Axon Ivy Engine への展開"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:33
+msgid "Runtime"
+msgstr "ランタイム"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:35
+msgid "If you like to build you Axon Ivy Project with Maven, you need to have Maven installed on your system. Now you simply run maven command beside you ``pom.xml`` file (e.g. :code:`mvn clean verify`)."
+msgstr ""
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:38
+msgid "The :ref:`designer-guide-vscode` has maven capabilites built-in, if you have the `Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed (what should be the case if you have our extension installed)."
+msgstr ""
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:42
+msgid "Open the maven view (or run command :code:`Explorer: Focus on Maven View`)"
+msgstr ""
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:44
+#, fuzzy
+msgid "Open the context menu of the project by right clicking it"
+msgstr "``pom.xml`` ファイルを右クリックしてコンテキストメニューを開きます。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:46
+#, fuzzy
+msgid "Navigate to :guilabel:`Run Maven Commands` > :guilabel:`verify`"
+msgstr ":guilabel:`実行`、:guilabel:`Maven のインストール` の順に移動します。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:52
+msgid "Axon Ivy Projects declare their ids and dependencies in the :ref:`project-deployment-descriptor`. This deployment descriptor can be easily edited with the corresponding Axon Ivy editor and is stored as Maven Project Object Model (``pom.xml``). Therefore each Axon Ivy Project has by default the ``pom.xml`` which is needed by maven to build it."
+msgstr "Axon Ivy プロジェクトは、 :ref:`project-deployment-descriptor` で ID と依存関係を宣言します。このデプロイメント記述子は対応する Axon Ivy エディターで簡単に編集でき、Maven Project Object Model（``pom.xml``）として保存されます。そのため、各 Axon Ivy プロジェクトにはデフォルトで、Maven がプロジェクトをビルドするのに必要な ``pom.xml`` が含まれます。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:58
+msgid "However advanced Maven users can adjust this default configuration and use additional Maven plugins or dependencies in the pom.xml. But not all POM entries should be modified, some are required or limited in usage in Axon Ivy Projects:"
+msgstr "なお、Maven の上級ユーザーは、この初期設定を調整し、pom.xml で追加の Maven プラグインや依存関係を使用できます。ただし、すべての POM エントリを変更する必要はなく、Axon Ivy プロジェクトでは必須であったり、使用が制限されているものもあります。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:63
+msgid "``<groupId/>``\\ and ``<version/>``\\ Must be set in every Axon Ivy Project POM. It can not be inherited from a parent POM (even tough this is valid in plain Maven)."
+msgstr "``<groupId/>``\\および``<version/>``\\は、すべてのAxon IvyプロジェクトPOM 設定する必要があります。親POMから継承することはできません（プレーンなMavenでは有効です）。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:67
+msgid "``<packaging>iar</packaging>`` Provides the custom Axon Ivy Project lifecycle, must not be modified."
+msgstr "``<packaging>iar</packaging>`` は、カスタムAxon Ivyプロジェクトのライフサイクルを提供します。変更しないでください。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:70
+msgid "The version must be qualified like ``<version>5.0.0-SNAPSHOT</version>.`` A version like ``<version>5-SNAPSHOT</version>`` is prohibited."
+msgstr "バージョンは ``<version>5.0.0-SNAPSHOT</version>`` のように修飾する必要があります。 ``<version>5-SNAPSHOT</version>`` のようなバージョンは禁止されています。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:76
+msgid "Technical documentation"
+msgstr "技術ドキュメント"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:78
+msgid "The detailed plugin goal and parameter documentation is on `Github.io <https://axonivy.github.io/project-build-plugin>`__"
+msgstr "プラグインのゴールとパラメーターの詳細なドキュメントは `Github.io <https://axonivy.github.io/project-build-plugin>`__ にあります。"
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:81
+msgid "The source code of the Axon Ivy project build plugin is available on :link-url:`Github.com <build-plugin>`."
+msgstr "Axon Ivy プロジェクトビルドプラグインのソースコードは :link-url:`Github.com<build-plugin>` で公開されています。"
+
+#: ../../source/getting-productive/ci-testing/index.rst:4
+#, fuzzy
+msgid "CI and Testing"
+msgstr "テスト"
+
+#: ../../source/getting-productive/ci-testing/index.rst:6
+msgid "Continuous integration (CI) helps you verify changes continuously instead of waiting until the end of a development cycle. A CI server can automatically build your Axon Ivy projects, validate processes and configurations, run tests, and create deployable artifacts whenever changes are committed. This makes problems visible early and keeps the project in a releasable state."
+msgstr ""
+
+#: ../../source/getting-productive/ci-testing/index.rst:12
+#, fuzzy
+msgid "Testing is an essential part of this process. Writing test code can sometimes be tedious and time consuming, but in the long run tests make your life a lot easier:"
+msgstr "テストコードの作成は、時には退屈で、時間がかかりますが、長い目で見れば、これらのテストによって、日常業務がずっと楽になります。以下の点について考えてみましょう。"
+
+#: ../../source/getting-productive/ci-testing/index.rst:16
+#, fuzzy
+msgid "Tests make the **functionality of software more reliable**."
+msgstr "テストにより、**ソフトウェアの機能を信頼できる** ものにすることができます。"
+
+#: ../../source/getting-productive/ci-testing/index.rst:18
+msgid "Tests help maintain **quality** as the project evolves."
+msgstr ""
+
+#: ../../source/getting-productive/ci-testing/index.rst:20
+msgid "**Repetitive tasks** can be reduced to a minimum. Let the computer do it!"
+msgstr "**繰り返しの作業** を最小限に減らせます。コンピューターに任せましょう！"
+
+#: ../../source/getting-productive/ci-testing/index.rst:22
+#, fuzzy
+msgid "Tests ensure that your software **does what it is supposed to do**, even after a code change or platform update."
+msgstr "ソフトウェアが（コード変更後やプラットフォームのアップデートの後などに）**すべきこと** を確実に実行させることができます。"
+
+#: ../../source/getting-productive/ci-testing/index.rst:28
+#, fuzzy
+msgid "The following testing guide is based on a :link-url:`demo project <build-examples-test-project>` and uses the name ``crm`` for the project to be tested, ``crmTests`` for the :ref:`process-<process-testing>` and :ref:`unit-testing<unit-testing>` tests, and ``crmIntegrationTests`` for the :ref:`web-testing<web-testing>` tests."
+msgstr "以下のガイドは :link-url:`デモプロジェクト<build-examples-test-project>` ベースにしており、テスト対象のプロジェクトに ``crm`` という名前を使用し :ref:`プロセス<process-testing>` と :ref:`単体テスト<unit-testing>` の 2 つのテストプロジェクト ``crmTests`` と、 :ref:`ウェブテスト<web-testing>` 用の ``crmIntegrationTests`` を使用しています。"
+
+#: ../../source/getting-productive/ci-testing/index.rst:34
+msgid "Since this documentation only shows how to setup a test project and perform simple tests, you should take a closer look at the demo project."
+msgstr "このドキュメントでは、テストプロジェクトのセットアップと簡単なテストの実行方法のみ説明しています。詳細はデモプロジェクトで確認してください。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:4
+msgid "Process Testing"
+msgstr "プロセスのテスト"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:6
+msgid "At this point you should already know how to create working processes. Because software tends to evolve over the years and might receive breaking changes, you should assure its integrity with process tests. As the name implies those tests are meant to run through your processes and act like a user might interact with them. By ensuring that the functionality still works the same way and does not change accidentally, these tests prevent you from introducing bugs and errors in your processes."
+msgstr "作業プロセスの作成方法についてはすでに知っているはずです。ソフトウェアは何年もかけて進化していくものであり、互換性を破る変更が行われる可能性があることから、プロセステストでその完全性を保証する必要があります。その名のとおり、プロセステストでは、プロセスを実行し、ユーザーのようにプロセスとやり取りします。機能が同じように動作し、誤って変更されないようにすることで、プロセスでのバグやエラーの発生を防ぎます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:15
+msgid "Setup Test Project"
+msgstr "テストプロジェクトのセットアップ"
+
+#: ../../source/getting-productive/ci-testing/includes/_test-project-setup.rst:3
+msgid "To get started you have to create a test project. The 'Axon Ivy Test Project' wizard will help you to create a test project with all required configurations plus a simple sample test."
+msgstr "まず始めに、テストプロジェクトを作成する必要があります。'Axon Ivy テストプロジェクト'ウィザードを使用して、すべての必要な設定と簡単なサンプルテストを含むテストプロジェクトを作成します。"
+
+#: ../../source/getting-productive/ci-testing/includes/_test-project-setup.rst:7
+msgid "Add a new Axon Ivy Test Project"
+msgstr "新しい Axon Ivy テストプロジェクトを追加します。"
+
+#: ../../source/getting-productive/ci-testing/includes/_test-project-setup.rst:9
+msgid "Right click on a project you would like to write tests for."
+msgstr "テストを作成したいプロジェクトを右クリックします。"
+
+#: ../../source/getting-productive/ci-testing/includes/_test-project-setup.rst:11
+msgid "Select: New -> Axon Ivy Test Project in the context menu."
+msgstr "コンテキストメニューで［新規］、［Axon Ivy テストプロジェクト］の順に選択します。"
+
+#: ../../source/getting-productive/ci-testing/includes/_test-project-setup.rst:13
+msgid "Pick the test flavor |TESTKIND| to include in the 'New Axon Ivy Test Project' wizard."
+msgstr "'新しい Axon Ivy テストプロジェクト'ウィザードで、テストフレーバー |TESTKIND| を選択します。"
+
+#: ../../source/getting-productive/ci-testing/includes/_test-project-setup.rst:15
+msgid "Finish the wizard."
+msgstr "ウィザードを終了します。"
+
+#: ../../source/getting-productive/ci-testing/includes/_test-project-setup.rst:17
+msgid "A sample test will be generated into the ``src_test`` directory of the newly created project."
+msgstr "新しく作成したプロジェクトの ``src_test`` ディレクトリにサンプルテストが作成されます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:20
+msgid "You now have a simple test called ``SampleIvyProcessTest``."
+msgstr "``SampleIvyProcessTest`` という名前の簡単なテストが完成しました。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:22
+msgid "Note a few things at this point:"
+msgstr "いくつか注意点があります。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:24
+msgid "Line 28:"
+msgstr "28 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:25
+msgid "The test class is annotated as an :public-api:`@IvyProcessTest </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`, this enables you to run this test as a process test."
+msgstr "テストクラスには :public-api:`@IvyProcessTest </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>` というアノテーションが付けられており、このテストをプロセステストとして実行できます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:29
+msgid "Line 31:"
+msgstr "31 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:30
+msgid "As you want to test a specific process in this test class, the generated test class defines the :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` under test in a constant called ``testee``. The passed in ``String`` argument defines the process to run the test against. Replace ``MyProcess`` with a process that actually exists in your project under test."
+msgstr "このテストクラスの特定のプロセスをテストしたいため、作成されたテストクラスは ``testee`` という名前の定数に :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` を定義します。渡された ``String`` 引数はテストを実行するプロセスを定義します。``MyProcess`` をテスト対象のプロジェクトに実際に存在するプロセスに置き換えてください。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:37
+msgid "Line 35:"
+msgstr "35 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:38
+msgid "The process under test can be directly started since it has only one start element. If your process under test contains multiple start elements you need to define the start element to be executed by using the :public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>` selector."
+msgstr "テスト対象のプロセスには開始要素が 1 つしかないため、直接開始できます。テスト対象のプロセスに複数の開始要素が含まれている場合は、:public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>` セレクタを使用して、実行する開始要素を定義する必要があります。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:44
+msgid "Line 34:"
+msgstr "34 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:45
+msgid "In each test method you have to pass in a :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`. This client is supplied by the process testing framework and represents an Axon Ivy Engine that can run and drive your processes along."
+msgstr "test メソッドごとに :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>` 渡す必要があります。このクライアントはプロセステストフレームワークによって提供され、プロセスを実行できる Axon Ivy Engine を表します。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:52
+msgid "Write a Process Test"
+msgstr "プロセステストの作成"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:54
+msgid "Now that everything is ready you can start writing your first actual process test. Let's start by simply testing the following process:"
+msgstr "すべての準備が整ったら、最初の実際のプロセステストを作成できます。まず始めに、以下のプロセスをテストしてみましょう。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:61
+msgid "Execute a Process"
+msgstr "プロセスの実行"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:68
+msgid "Now let's have a closer look at the code:"
+msgstr "それでは、コードを詳しく見ていきましょう。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:70
+msgid "Line 11-14:"
+msgstr "11 ～ 14 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:71
+msgid "Here you tell your ``BpmClient`` that you want to test and execute your start element. After calling the :ref:`execute<process-testing-start>` method the ``BpmClient`` drives your process just after the first task."
+msgstr "ここでは、開始要素をテストして実行したいことを ``BpmClient`` に伝えます。 :ref:`execute<process-testing-start>` ソッドを呼び出すと、 ``BpmClient`` は最初のタスクのすぐ後にプロセスを実行します。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:77
+msgid "Note that the ``BpmClient`` does not run through the whole process at once but runs task by task. It also ignores ``skipTaskList`` flags and stops the execution at ``system tasks``."
+msgstr "``BpmClient`` はプロセス全体を一度に実行するのではなく、タスクごとに実行することに注意してください。また、``skipTaskList`` フラグを無視し、``システムタスク`` で実行を停止します。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:81
+msgid "Line 16-17:"
+msgstr "16 ～ 17 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:82
+msgid "You have multiple APIs to assert your processes, one of it is the :ref:`process-testing-history`. The ``History`` gives you access to the executed process elements, in this example we just assert the names of the executed elements."
+msgstr "プロセスをアサートするための API は複数あり、その一つ :ref:`process-testing-history` です。 ``History`` を使用して、実行したプロセス要素にアクセスできます。この例では、実行された要素の名前をアサートしています。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:87
+msgid "Line 19:"
+msgstr "19 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:88
+msgid "The :ref:`process-testing-workflow` API gives you access to the ``Case``, ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch information about active ``Cases``/``Tasks``, executed ``Tasks`` or the ``Session``."
+msgstr ":ref:`process-testing-workflow` API では、``ケース`` や ``タスク``、実行中のプロセスの ``セッション`` にアクセスできます。この API を使用して、アクティブな ``ケース``／``タスク``、実行された ``タスク``、または ``セッション`` に関する情報を取得できます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:94
+msgid "Continue the Process Execution"
+msgstr "プロセスの実行の継続"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:96
+msgid "As noted above the ``BpmClient`` does not run through the whole process at once. This means we now want to continue the current process."
+msgstr "先に述べたように、``BpmClient`` はプロセス全体を一度に実行しません。ここでは現在のプロセスを続行します。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:104
+msgid "We introduced two new things in the code above:"
+msgstr "上のコードでは、2つの新しいことを導入しました。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:106
+#: ../../source/getting-productive/ci-testing/process-testing.rst:147
+msgid "Line 17:"
+msgstr "17 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:107
+msgid "To drive our process along you need to tell your ``BpmClient`` that it should just execute any active task. In this case there is only one possible active task that can be executed, the task from the ``UserTask`` element called ``write invoice``."
+msgstr "プロセスを続行するには、``BpmClient`` にすべてのアクティブなタスクを実行するよう指示する必要があります。このケースの実行可能なアクティブタスクは、``UserTask`` 要素の ``write invoice`` という名前のタスクのみです。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:112
+#: ../../source/getting-productive/ci-testing/process-testing.rst:150
+msgid "Line 18:"
+msgstr "18 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:113
+msgid "Of course, you cannot just execute a task without declaring an appropriate ``Session``. To declare said ``Session`` you can call the :ref:`process-testing-as` method and append the desired ``Session``, ``User`` or ``Role`` that should execute the next task."
+msgstr "もちろん、適切な ``セッション`` を宣言せずにタスクを実行することはできません。``セッション`` を宣言するには :ref:`process-testing-as` メソッドを呼び出して、次のタスクを実行する ``セッション``、``ユーザー`` または ``ロール`` を追加します。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:118
+msgid "If you execute this test then you will face the following error:"
+msgstr "このテストを実行すると、以下のエラーが発生します。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:124
+msgid "To fix this we need to introduce you to two more concepts, mocking elements and asserting process data."
+msgstr "この問題を解決するには、要素のモック化とプロセスデータのアサートというさらに 2 つのコンセプトを導入する必要があります。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:129
+msgid "Mock Dialogs and Assert Data"
+msgstr "ダイアログのモック化とデータのアサート"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:131
+msgid "Process tests are not meant to assert UI elements such as HTML Dialogs. Because dialogs are an important data input interface between users and your processes, you have to mock those inputs. If you want to test the dialogs themselves, refer to chapter  :ref:`web-testing`."
+msgstr "プロセステストは、HTML ダイアログのような UI 要素をアサートするためのものではありません。ダイアログはユーザーとプロセスの間の重要なデータ入力インターフェースであるため、これらの入力をモック化する必要があります。ダイアログそのものをテストしたい場合は、 :ref:`web-testing` 」の章を参照してください。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:136
+msgid "Let us add a UI mock for the UI of the UserTask 'write invoice' element."
+msgstr "UserTask の 'write invoice' 要素の UI モックを追加してみましょう。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:143
+msgid "Line 16:"
+msgstr "16 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:144
+msgid "Here you are telling the ``BpmClient`` that you are declaring a :ref:`process-testing-mock` for an element."
+msgstr "ここでは、要素に対して :ref:`process-testing-mock` を宣言していることを ``BpmClient`` に伝えています。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:148
+msgid "Here you select the element whose UI you want to mock by its name."
+msgstr "ここでは、UI をモック化したい要素の名前を選択します。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:151
+msgid "The HTML Dialog of the UserTask 'write invoice' returns a single value called ``total``. So let's mock the UI part to simulate that the user enters a total of ``935`` on the UI."
+msgstr "UserTask 'write invoice' の HTML ダイアログは、``total`` という単一の値を返します。それでは、ユーザーが UI で合計 ``935`` を入力することをシミュレートするため、UI 部分をモック化してみましょう。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:155
+msgid "Line 29-30:"
+msgstr "29 ～ 30 行目："
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:156
+msgid "With the :ref:`process-testing-data` API you can assert the process data of the executed elements."
+msgstr ":ref:`process-testing-data` API を使用して、実行された要素のプロセスデータをアサートできます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:159
+msgid "Congratulations, you have learned all about the tools and most important APIs to assert your process continuation. In the next section we will have a closer look at some of the APIs."
+msgstr "ここでは、プロセスの継続をアサートするためのツールと最も重要な API について学びました。次のセクションでは、いくつかの API についてさらに詳しく見ていきます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:165
+msgid "API Reference"
+msgstr "API について"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:167
+msgid "The following section describes some of the more common API calls you can use. If you want to see the full functionality of each API you can follow the links in each subsection to the :public-api:`Public API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>`."
+msgstr "以下のセクションでは、より一般的な API コールについて説明します。各 API のすべての機能を知りたい場合は、各サブセクションの :public-api:`パブリック API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>` へのリンクをクリックしてください。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:176
+#: ../../source/getting-productive/ci-testing/web-testing.rst:62
+msgid "Select"
+msgstr "Select"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:178
+msgid "There are multiple ways to select processes and elements. The easiest way is to find them by their :public-api:`name</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`."
+msgstr "プロセスや要素を選択する方法は複数あります。最も簡単な方法は、:public-api:`名前</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` よる検索です。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:189
+#: ../../source/reference/process/process-elements/_tab-call.rst:21
+#: ../../source/reference/process/process-elements/start.rst:4
+msgid "Start"
+msgstr "Start"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:191
+msgid "To :public-api:`start</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` an execution, you need to tell the ``BpmClient`` which ``BpmProcess`` or ``BpmElement`` you want to run. To proceed with the execution, either tell the ``BpmClient`` to continue with the previous :public-api:`execution</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` or choose the next desired ``task``. Using a ``task`` is especially useful if there are multiple active ``tasks`` available."
+msgstr "実行を :public-api:`開始</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` るには、実行したい ``BpmProcess`` または ``BpmElement`` を ``BpmClient`` に指示する必要があります。実行を進めるには、前の :public-api:`実行</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` を継続するよう ``BpmClient`` に指示するか、次の ``タスク`` を選択します。アクティブな ``タスク`` が複数ある場合は特に、``タスク`` を使用すると便利です。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:202
+msgid "To test callable subprocesses use the ``subProcess`` method instead of the ``process`` method."
+msgstr "呼び出し可能なサブプロセスをテストするには、``process`` メソッドの代わりに ``subProcess`` メソッドを使用します。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:210
+msgid "As"
+msgstr "As"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:212
+msgid "Most processes require a specific ``user`` or ``role`` to be executed. You can define them by calling :public-api:`as</ch/ivyteam/ivy/bpm/engine/client/RequestBuilder.html#as()>`."
+msgstr "ほとんどのプロセスは、実行するのに特定の ``ユーザー`` または ``ロール`` が必要です。:public-api:`as</ch/ivyteam/ivy/bpm/engine/client/RequestBuilder.html#as()>` を呼び出して、これらを定義できます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:223
+msgid "Mock"
+msgstr "Mock"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:225
+msgid "There are two ways of :public-api:`mocking</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>` an element. Either you mock the entire element or the UI or call part. If you mock the entire element nothing configured on the element is tested at all. On the other hand if you mock the UI or call part of an element its mapping code is executed and tested."
+msgstr "要素を :public-api:`モック化</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>` る方法は 2 つあります。要素全体をモック化するか、UI または呼び出し部分をモック化します。要素全体をモック化した場合、要素に設定されたものはすべてテストされません。一方、要素の UI または呼び出し部分をモック化した場合は、そのマッピングコードが実行され、テストされます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:232
+msgid "If your process runs through an HTML Dialog you always need to mock it."
+msgstr "プロセスを HTML ダイアログから実行する場合は、必ずモック化する必要があります。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:241
+msgid "History"
+msgstr "History"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:243
+msgid "Use the :public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` to assert the executed process elements. You can either access the exact element objects or elements names."
+msgstr ":public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` を使用して、実行されたプロセス要素をアサートします。正確な要素オブジェクトにアクセスすることも、要素名にアクセスすることもできます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:256
+msgid "Use the :public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>` to access and assert the active ``case`` or ``task``. You can filter them by activator."
+msgstr ":public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>` を使用して、アクティブな ``ケース`` または ``タスク`` にアクセスし、アサートします。アクティベーターでフィルタリングすることができます。"
+
+#: ../../source/getting-productive/ci-testing/process-testing.rst:269
+msgid "With the :public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>` API you can assert the process data at different points in your process. You can get the ``data`` from the last executed element or from any element during execution. If an element is executed multiple times you can access the ``data`` of each execution in an ordered list."
+msgstr ":public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>` APIを使用して、プロセスのさまざまなポイントでプロセスデータをアサートできます。最後に実行された要素や実行中の任意の要素から ``データ`` を取得できます。要素が複数回実行された場合は、実行順にそれぞれの ``データ`` にアクセスできます。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:4
+msgid "Unit Tests"
+msgstr "単体テスト"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:6
+msgid "You can easily write Unit Tests in the Axon Ivy Designer to test your Java source code using JUnit 5. If your code uses the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` environment you can either mock it or use the :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation that correctly sets up the environment."
+msgstr "Axon Ivy Designer で簡単に単体テストを作成し、JUnit5 を使用して Java ソースコードをテストできます。:public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` 環境を使用してコードをテストする場合は、モック化するか、環境を正しく設定する :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` アノテーションを使用します。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:15
+msgid "How to Write Unit Tests"
+msgstr "単体テストの作成方法"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:20
+#: ../../source/getting-productive/ci-testing/web-testing.rst:20
+msgid "Run test"
+msgstr "テストを実行します。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:22
+#: ../../source/getting-productive/ci-testing/web-testing.rst:22
+msgid "Make sure the Axon Ivy Engine is started with your projects"
+msgstr "Axon Ivy Engine がプロジェクトと一緒に起動されていることを確認します。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:24
+#: ../../source/getting-productive/ci-testing/web-testing.rst:24
+msgid "To run this test right-click inside this class -> Run As -> JUnit Test"
+msgstr "このテストを実行するには、このクラス内を右クリックし、［実行］、［JUnit テスト］の順に選択します。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:26
+#: ../../source/getting-productive/ci-testing/web-testing.rst:26
+msgid "A new **JUnit** View should be opened and the test should be green."
+msgstr "新しい **JUnit** ビューが開き、テストが緑色で表示されます。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:29
+msgid "This is all you need to start writing conventional Unit Tests."
+msgstr "従来の単体テストの作成を開始できます。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:33
+msgid "Set Up the Axon Ivy Environment"
+msgstr "Axon Ivy 環境のセットアップ"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:35
+msgid "To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` context the ``SampleIvyTest`` class is annotated with the :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation."
+msgstr ":public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` コンテキストにアクセスするには、``SampleIvyTest`` クラスに :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` というアノテーションを付けます。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:41
+msgid "If you run your test with ``@IvyTest`` (without process) the bpm engine does not get started. This speeds up test execution."
+msgstr "テストを ``@IvyTest`` （プロセスなし）で実行すると、bpm エンジンは起動しません。これにより、テストの実行速度が向上します。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:45
+msgid "Write a Unit Test"
+msgstr "単体テストの作成"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:47
+msgid "Here we test a class called ``OrderUtil``. This class needs access to different ``Ivy`` resources like :ref:`Variables <variables>`. Without properly setting up the ``Ivy`` environment we would have to mock all those resources."
+msgstr "ここでは、``OrderUtil`` という名前のクラスをテストします。このクラスは、 :ref:`変数<variables>` など、さまざまな ``Ivy`` リソースにアクセスする必要があります。 ``Ivy`` 環境を適切に設定しなければ、これらのリソースをすべてモック化することになります。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:56
+msgid "Have a look at the :link-url:`demo project <build-examples-unit-tests>` to see what else is possible."
+msgstr "その他の機能については、link-url:`デモプロジェクト<build-examples-unit-tests>` 参照してください。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:64
+#: ../../source/getting-productive/ci-testing/web-testing.rst:126
+msgid "Change Application Runtime"
+msgstr "アプリケーションランタイムの変更"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:66
+msgid "For some test cases, you may need to use a different value for a :ref:`Variable <variables>` or change an app configuration. In this case use ``AppFixture`` to change the value. The value gets automatically reset to the original value after the test execution. All you have to do is to tell the test that you want an instance of the :code:`AppFixure` class. Let's have a look at it:"
+msgstr "テストケースによっては、 :ref:`変数<variables>` に別の値を使用したり、アプリの設定を変更したりする必要があります。このような場合は、``AppFixture`` を使用して値を変更します。テストの実行後、値は自動的に元の値にリセットされます。必要なのは、 :code:`AppFixure` クラスのインスタンスが欲しいことをテストに伝えるだけです。それでは見てみましょう。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:76
+msgid "Or you can change an app configuration, e.g change the URL of a :ref:`RestClient <rest-clients-configuration>`:"
+msgstr "また、 :ref:`RestClient<rest-clients-configuration>` の URL を変更するなど、アプリの設定を変更することもできます。"
+
+#: ../../source/getting-productive/ci-testing/unit-testing.rst:83
+msgid "Furthermore it is possible to use the ``AppFixture`` to login with an existing user. You can either login with a user name or with an ``IUser`` object. In the example below we injected the ``IUser`` object as a method parameter."
+msgstr "さらに、``AppFixture`` を使用して、既存のユーザーでログインすることも可能です。ユーザー名または ``IUser`` オブジェクトでログインできます。以下の例では、メソッドのパラメーターとして ``IUser`` オブジェクトを挿入しています。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:4
+msgid "Web Testing"
+msgstr "ウェブテスト"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:6
+msgid "Imagine you have just built a workflow app containing multiple user dialogs. Do you really want to always click through the full process, even if you only changed a small part of it? However, you should make sure that the functionality (happy path) of this process is still valid."
+msgstr "複数のユーザーダイアログを含むワークフローアプリを作成したとします。アプリのほんの一部を変更しただけで、プロセス全体を見直さなければならないのは、気が重いものですが、このプロセスの機能性（ハッピーパス）がまだ有効であることを確認する必要があります。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:11
+msgid "**Web Integration Tests** will always follow the same steps and can be automated."
+msgstr "**ウェブ統合テスト** では常に同じ手順を実行しますが、これを自動化できます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:15
+msgid "Setup a Test Project"
+msgstr "テストプロジェクトのセットアップ"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:30
+msgid "Write a Web Test"
+msgstr "ウェブテストの作成"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:32
+msgid "Let's start by extending our test class generated before with a :link-url:`real test implementation <build-examples-web-test-base>`. First, we need to start a process. To do this you can use the ``EngineUrl`` utility from the :ref:`web-tester`."
+msgstr "先ほど作成したテストクラスを :link-url:`実際のテスト実装<build-examples-web-test-base>` で拡張してみましょう。最初に、プロセスを開始する必要があります。それには、 :ref:`web-tester` の ``EngineUrl`` ユーティリティを使用します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:37
+msgid "This process opens a dialog with two input fields (``firstname`` and ``lastname``) and a ``submit`` button. After submitting, a second dialog with your input values is displayed."
+msgstr "このプロセスでは、2 つの入力フィールド（``firstname`` と ``lastname``）と ``submit`` ボタンを表示するダイアログが開きます。送信後、入力値を含む 2 番目のダイアログが表示されます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:46
+msgid "The :ref:`@IvyWebTest <web-tester>` annotation can be configured (e.g to select a ``browser`` or to start the test ``headless``)."
+msgstr ":ref:`@IvyWebTest <web-tester>` アノテーションを設定できます（``ブラウザ`` の選択、``ヘッドレス`` テストの開始など）。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:51
+msgid "Select, Do and Check"
+msgstr "選択、実行、チェック"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:53
+msgid "Now let's take a look at how this test works. Basically, there are three things you need to know:"
+msgstr "それでは、このテストの仕組みを見てみましょう。基本的に知っておくべきことは、以下の 3 つです。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:56
+msgid "**Select** an element"
+msgstr "要素を**選択する**"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:57
+msgid "**Do an action** on the selected element"
+msgstr "選択した要素で**アクションを実行する**"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:58
+msgid "**Check a condition** on the selected element"
+msgstr "選択された要素の**条件をチェックする**"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:64
+msgid "To work with a **single element** you need to first select the correct one. Usually you use the ``By.id`` selector to do this:"
+msgstr "**単一の要素** を扱うには、最初に正しい要素を選択する必要があります。通常は ``By.id`` セレクタを使用します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:73
+msgid "To evaluate the real id of an element you can use your browser's **Developer Tools**."
+msgstr "要素の実際の ID を評価するには、ブラウザの**開発者ツール** を使用します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:76
+msgid "There are many more options to use selectors, e.g you can select multiple elements:"
+msgstr "複数の要素を選択するなど、セレクタの活用方法は他にもたくさんあります。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:83
+msgid "Have a look at the :link-url:`demo project <build-examples-web-test-select>` to see more options."
+msgstr "その他の活用方法については、:link-url:`デモプロジェクト<build-examples-web-test-select>` 参照してください。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:88
+msgid "Execute an Action"
+msgstr "アクションの実行"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:90
+msgid "On the selected element you can perform some actions:"
+msgstr "選択した要素に対して、いくつかのアクションを実行できます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:100
+msgid "Check a Condition"
+msgstr "条件のチェック"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:102
+msgid "On your selected element you can check certain conditions (e.g is the element *visible* or contains a specific *value*):"
+msgstr "選択した要素について、特定の条件（その要素が *表示* に設定されているか、特定の *値* を含んでいるかなど）をチェックできます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:111
+msgid "You can check multiple conditions on an item or check a condition before performing an action on the item by chaining the method calls:"
+msgstr "メソッドコールを連鎖させることで、項目の複数の条件をチェックしたり、項目に対してアクションを実行する前に条件をチェックすることができます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:121
+msgid "Have a look at the :link-url:`demo project <build-examples-web-test-condition>` to see more options."
+msgstr "その他の活用方法については、:link-url:`デモプロジェクト<build-examples-web-test-select>` 参照してください。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:128
+msgid "For some test cases, you may need to run your web tests with a different user or you need another value for a variable or app configuration. In this case the `WebAppFixture` util can help you to achieve this. Unlike the :ref:`AppFixture <unit-testing-app-fixture>` of :ref:`unit-testing`, the changed values are **not** automatically reset after the test run. Let's have a look at it:"
+msgstr "テストケースによっては、別のユーザーでウェブテストを実行する必要があったり、変数やアプリの設定に別の値が必要になります。このような場合は、`WebAppFixture` ユーティリティを使用します。 :ref:`unit-testing` の :ref:`AppFixture<unit-testing-app-fixture>` と異なり、変更された値はテスト実行後に自動的にリセット**されません** 。それでは見てみましょう。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:133
+msgid "You can change the current user or log out to an anonymous session:"
+msgstr "現在のユーザーを変更したり、匿名セッションにログアウトできます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:139
+msgid "If you want to change the value of a variable, you can proceed as follows:"
+msgstr "変数の値を変更したい場合は、以下のように進めます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:145
+msgid "Or you can change an app configuration, e.g the URL of a :ref:`RestClient <rest-clients-configuration>`:"
+msgstr "また、 :ref:`RestClient<rest-clients-configuration>` の URL など、アプリの設定を変更することもできます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:154
+msgid "Run Automated"
+msgstr "実行の自動化"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:156
+msgid "Let's have a look at how you can run your web tests fully automated (:ref:`continuous-integration`). This is especially important if you want fast feedback on breaking changes done by a team member."
+msgstr "ウェブテストを完全に自動化する方法を見てみましょう（ :ref:`continuous-integration` ）。テストの自動化は、チームメンバーが行った互換性を破る変更についての迅速なフィードバックが必要な場合は特に重要です。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:164
+msgid "Module Build"
+msgstr "モジュールのビルド"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:166
+msgid "Both projects, production and test project, need to be compiled during the same run. To do this, we need to first setup a Maven module build:"
+msgstr "同じ実行中に、本番プロジェクトとテストプロジェクトの両方をコンパイルする必要があります。最初に、Maven モジュールのビルドをセットアップします。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:169
+msgid "Create Maven module"
+msgstr "Maven モジュールを作成します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:171
+msgid "Delete projects ``crm`` and ``crmIntegrationTests`` from your Axon Ivy Designer workspace."
+msgstr "Axon Ivy Designer ワークスペースから ``crm`` プロジェクトと ``crmIntegrationTests`` プロジェクトを削除します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:173
+msgid "Open your workspace folder and move both projects into a new folder, e.g :file:`compile-test`"
+msgstr "ワークスペースフォルダーを開き、両方のプロジェクトを新しいフォルダー（例：:file:`compile-test`）に移動します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:176
+msgid "Create a :file:`pom.xml` file in the :file:`compile-test` folder."
+msgstr ":file:`compile-test` フォルダーに :file:`pom.xml` ファイルを作成します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:178
+msgid "Add the following code to the :link-url:`pom.xml <build-examples-web-test-pom>` file (ensure the correct **modules** ``crm`` and ``crmIntegrationTests`` are set):"
+msgstr "以下のコードを:link-url:`pom.xml<build-examples-web-test-pom>` ファイルに追加します（``crm`` と ``crmIntegrationTests`` **モジュール** が正しく設定されていることを確認します）。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:185
+msgid "Your :link-url:`folder structure <build-examples>` should now look as follows:"
+msgstr ":link-url:`フォルダー構造<build-examples>` 以下のようになります。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:195
+msgid "Run module build in Axon Ivy Designer"
+msgstr "Axon Ivy Designer でモジュールのビルドを実行します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:197
+msgid "In your Axon Ivy Designer open the **Import** Wizard, then **Existing Maven Projects**"
+msgstr "Axon Ivy Designerで**インポート**ウィザードを開き、次に**既存のMavenプロジェクト**を開きます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:200
+msgid "Select :file:`compile-test/pom.xml` with sub projects (``crm`` and ``crmIntegrationTests`` should be visible here) and click **Finish**"
+msgstr "サブプロジェクト（``crm`` と ``crmIntegrationTests`` がここに表示されているはずです）を含む :file:`compile-test/pom.xml` を選択し、［**終了** ］をクリックします。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:203
+msgid "Right-click on ``compile-test`` -> Run As -> Maven build"
+msgstr "``compile-test`` を右クリックし、［実行］、［Maven ビルド］の順に選択します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:205
+msgid "Set **Goals** to ``clean verify`` and click **Run**"
+msgstr "**ゴール**を``clean verify``に設定し、［**実行**］をクリックします。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:207
+msgid "This triggers a run that starts and ends with something similar to:"
+msgstr "始まりと終わりが以下のような実行がトリガーされます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:212
+msgid "Congratulations, you can now run your tests fully automated with Maven!"
+msgstr "Maven で完全に自動化されたテストを実行できるようになります。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:216
+msgid "Further Resources"
+msgstr "参考情報"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:218
+msgid "If you want to know more about web testing, have a look at the :link-url:`second test in our demo project <build-examples-web-test>` or at our :link-url:`other demo projects <demos>` and how they are tested."
+msgstr "ウェブテストについてもっと知りたい場合は、 :link-url:`デモプロジェクトの 2 番目のテスト<build-examples-web-test>` 、 :link-url:`その他のデモプロジェクト<demos>` それらのテスト方法を参照してください。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:222
+msgid "If you want to learn more about how to build a CI/CD pipeline, take a look at the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`."
+msgstr "CI/CD パイプラインの構築方法についてもっと知りたい場合は、:dev-url:`チュートリアルのセクション</tutorial>` ある **CI/CD の動画** をご覧ください。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:227
+msgid "Selenium"
+msgstr "Selenium"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:229
+msgid "Selenium is an open source web testing framework. It works across different browsers and platforms. To communicate with the browser, Selenium provides the **WebDriver** specification."
+msgstr "Selenium は、オープンソースのウェブテストフレームワークで、さまざまなブラウザやプラットフォームで動作します。ブラウザと通信するために、Selenium は **WebDriver** 仕様を提供しています。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:233
+msgid "In our tests we use the `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_, `API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_) framework, which is based on the Selenium WebDriver. If you’re more familiar with plain Selenium tests the following comparison can give you a quick overview about the differences and benefits: `Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_. Or you can simply write your tests with the normal Selenium API by accessing the driver object:"
+msgstr "私たちのテストでは、Selenium WebDriver をベースにした `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_ 、 `API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_ ) フレームワークを使用しています。 `Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_ では、Selenium のテストについて詳しい方向けに、Selenide と Seleniumを比較し、違いと利点について簡単にまとめています。また、ドライバオブジェクトにアクセスして、通常の Selenium API を使用してテストを作成することもできます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:251
+msgid "Web-Tester"
+msgstr "Web-Tester"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:253
+msgid "With the :link-url:`web-tester <webtester>` project we provide the testing annotation ``@IvyWebTest``. This annotation sets up the browser connection for you. It can be configured with some parameters:"
+msgstr ":link-url:`web-tester <webtester>` プロジェクトでは、テスト用のアノテーションである ``@IvyWebTest`` を提供しています。このアノテーションは、ブラウザの接続を設定し、いくつかのパラメーターで設定できます。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:262
+msgid "**browser**: The browser which should run the test e.g: chrome, firefox, ie, phantomjs, htmlunit, safari, opera"
+msgstr "**browser** ：テストを実行するブラウザ（例：chrome、firefox、ie、phantomjs、htmlunit、safari、opera）"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:265
+msgid "**headless**: Controls if the browser should start with a UI or not."
+msgstr "**headless** ：ブラウザを UI で開始するかどうかを制御します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:267
+msgid "**reportFolder**: when a test fails the test framework automatically takes screenshots. This folder defines where these screenshots are saved to."
+msgstr "**reportFolder** ：テストが失敗すると、テストフレームワークは自動的にスクリーンショットを撮ります。このフォルダーは、それらのスクリーンショットの保存先を定義します。"
 
 #: ../../source/getting-productive/connectivity/database.rst:2
 #: ../../source/reference/process/process-elements/database-activity.rst:65
@@ -8665,608 +9231,6 @@ msgstr "**ブレークポイントの無効化**"
 #: ../../source/getting-productive/process-modeling/simulation/simulation.rst:56
 msgid "You can disable a specific breakpoint in the :ref:`debugger-debug-view` or by clicking on the breakpoint in the :ref:`process-editor`. It is also possible to disable all breakpoints in the :ref:`debugger-debug-view`."
 msgstr ":ref:`debugger-debug-view` で、また :ref:`process-editor` でブレークポイントをクリックして、特定のブレークポイントを無効にすることができます :ref:`debugger-debug-view` ですべてのブレークポイントを無効にすることも可能です。"
-
-#: ../../source/getting-productive/testing/index.rst:4
-msgid "Testing"
-msgstr "テスト"
-
-#: ../../source/getting-productive/testing/index.rst:6
-msgid "Writing test code can sometimes be tedious and time consuming, however, in the long run these tests make your life a lot easier. Think about the following points:"
-msgstr "テストコードの作成は、時には退屈で、時間がかかりますが、長い目で見れば、これらのテストによって、日常業務がずっと楽になります。以下の点について考えてみましょう。"
-
-#: ../../source/getting-productive/testing/index.rst:9
-msgid "Tests can make the **functionality of a software reliable**"
-msgstr "テストにより、**ソフトウェアの機能を信頼できる** ものにすることができます。"
-
-#: ../../source/getting-productive/testing/index.rst:11
-msgid "Through tests **quality** can be maintained"
-msgstr "テストを通じて**品質** を維持できます。"
-
-#: ../../source/getting-productive/testing/index.rst:13
-msgid "**Repetitive tasks** can be reduced to a minimum. Let the computer do it!"
-msgstr "**繰り返しの作業** を最小限に減らせます。コンピューターに任せましょう！"
-
-#: ../../source/getting-productive/testing/index.rst:15
-msgid "Ensure that your software **does what it supposed to do** (e.g., after a code change or even a platform update)."
-msgstr "ソフトウェアが（コード変更後やプラットフォームのアップデートの後などに）**すべきこと** を確実に実行させることができます。"
-
-#: ../../source/getting-productive/testing/index.rst:18
-msgid "Writing good software without tests is nearly impossible, and we want to make it as easy as possible for you to write tests for your Axon Ivy project. Let's get started!"
-msgstr "テストなしで良いソフトウェアを作成することはほぼ不可能であり、私たちは、Axon Ivy プロジェクトのテストコードの作成をできるだけ簡単なものにしたいと考えています。それでは、始めましょう！"
-
-#: ../../source/getting-productive/testing/index.rst:24
-msgid "The following guide is based on a :link-url:`demo project <build-examples-test-project>` and uses the name ``crm`` for the project to be tested and the two testing projects ``crmTests`` for the :ref:`process-<process-testing>` and :ref:`unit-testing<unit-testing>` as well as ``crmIntegrationTests`` for the :ref:`web-testing<web-testing>`."
-msgstr "以下のガイドは :link-url:`デモプロジェクト<build-examples-test-project>` ベースにしており、テスト対象のプロジェクトに ``crm`` という名前を使用し :ref:`プロセス<process-testing>` と :ref:`単体テスト<unit-testing>` の 2 つのテストプロジェクト ``crmTests`` と、 :ref:`ウェブテスト<web-testing>` 用の ``crmIntegrationTests`` を使用しています。"
-
-#: ../../source/getting-productive/testing/index.rst:30
-msgid "Since this documentation only shows how to setup a test project and perform simple tests, you should take a closer look at the demo project."
-msgstr "このドキュメントでは、テストプロジェクトのセットアップと簡単なテストの実行方法のみ説明しています。詳細はデモプロジェクトで確認してください。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:4
-msgid "Process Testing"
-msgstr "プロセスのテスト"
-
-#: ../../source/getting-productive/testing/process-testing.rst:6
-msgid "At this point you should already know how to create working processes. Because software tends to evolve over the years and might receive breaking changes, you should assure its integrity with process tests. As the name implies those tests are meant to run through your processes and act like a user might interact with them. By ensuring that the functionality still works the same way and does not change accidentally, these tests prevent you from introducing bugs and errors in your processes."
-msgstr "作業プロセスの作成方法についてはすでに知っているはずです。ソフトウェアは何年もかけて進化していくものであり、互換性を破る変更が行われる可能性があることから、プロセステストでその完全性を保証する必要があります。その名のとおり、プロセステストでは、プロセスを実行し、ユーザーのようにプロセスとやり取りします。機能が同じように動作し、誤って変更されないようにすることで、プロセスでのバグやエラーの発生を防ぎます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:15
-msgid "Setup Test Project"
-msgstr "テストプロジェクトのセットアップ"
-
-#: ../../source/getting-productive/testing/includes/_test-project-setup.rst:3
-msgid "To get started you have to create a test project. The 'Axon Ivy Test Project' wizard will help you to create a test project with all required configurations plus a simple sample test."
-msgstr "まず始めに、テストプロジェクトを作成する必要があります。'Axon Ivy テストプロジェクト'ウィザードを使用して、すべての必要な設定と簡単なサンプルテストを含むテストプロジェクトを作成します。"
-
-#: ../../source/getting-productive/testing/includes/_test-project-setup.rst:7
-msgid "Add a new Axon Ivy Test Project"
-msgstr "新しい Axon Ivy テストプロジェクトを追加します。"
-
-#: ../../source/getting-productive/testing/includes/_test-project-setup.rst:9
-msgid "Right click on a project you would like to write tests for."
-msgstr "テストを作成したいプロジェクトを右クリックします。"
-
-#: ../../source/getting-productive/testing/includes/_test-project-setup.rst:11
-msgid "Select: New -> Axon Ivy Test Project in the context menu."
-msgstr "コンテキストメニューで［新規］、［Axon Ivy テストプロジェクト］の順に選択します。"
-
-#: ../../source/getting-productive/testing/includes/_test-project-setup.rst:13
-msgid "Pick the test flavor |TESTKIND| to include in the 'New Axon Ivy Test Project' wizard."
-msgstr "'新しい Axon Ivy テストプロジェクト'ウィザードで、テストフレーバー |TESTKIND| を選択します。"
-
-#: ../../source/getting-productive/testing/includes/_test-project-setup.rst:15
-msgid "Finish the wizard."
-msgstr "ウィザードを終了します。"
-
-#: ../../source/getting-productive/testing/includes/_test-project-setup.rst:17
-msgid "A sample test will be generated into the ``src_test`` directory of the newly created project."
-msgstr "新しく作成したプロジェクトの ``src_test`` ディレクトリにサンプルテストが作成されます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:20
-msgid "You now have a simple test called ``SampleIvyProcessTest``."
-msgstr "``SampleIvyProcessTest`` という名前の簡単なテストが完成しました。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:22
-msgid "Note a few things at this point:"
-msgstr "いくつか注意点があります。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:24
-msgid "Line 28:"
-msgstr "28 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:25
-msgid "The test class is annotated as an :public-api:`@IvyProcessTest </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`, this enables you to run this test as a process test."
-msgstr "テストクラスには :public-api:`@IvyProcessTest </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>` というアノテーションが付けられており、このテストをプロセステストとして実行できます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:29
-msgid "Line 31:"
-msgstr "31 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:30
-msgid "As you want to test a specific process in this test class, the generated test class defines the :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` under test in a constant called ``testee``. The passed in ``String`` argument defines the process to run the test against. Replace ``MyProcess`` with a process that actually exists in your project under test."
-msgstr "このテストクラスの特定のプロセスをテストしたいため、作成されたテストクラスは ``testee`` という名前の定数に :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` を定義します。渡された ``String`` 引数はテストを実行するプロセスを定義します。``MyProcess`` をテスト対象のプロジェクトに実際に存在するプロセスに置き換えてください。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:37
-msgid "Line 35:"
-msgstr "35 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:38
-msgid "The process under test can be directly started since it has only one start element. If your process under test contains multiple start elements you need to define the start element to be executed by using the :public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>` selector."
-msgstr "テスト対象のプロセスには開始要素が 1 つしかないため、直接開始できます。テスト対象のプロセスに複数の開始要素が含まれている場合は、:public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>` セレクタを使用して、実行する開始要素を定義する必要があります。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:44
-msgid "Line 34:"
-msgstr "34 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:45
-msgid "In each test method you have to pass in a :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`. This client is supplied by the process testing framework and represents an Axon Ivy Engine that can run and drive your processes along."
-msgstr "test メソッドごとに :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>` 渡す必要があります。このクライアントはプロセステストフレームワークによって提供され、プロセスを実行できる Axon Ivy Engine を表します。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:52
-msgid "Write a Process Test"
-msgstr "プロセステストの作成"
-
-#: ../../source/getting-productive/testing/process-testing.rst:54
-msgid "Now that everything is ready you can start writing your first actual process test. Let's start by simply testing the following process:"
-msgstr "すべての準備が整ったら、最初の実際のプロセステストを作成できます。まず始めに、以下のプロセスをテストしてみましょう。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:61
-msgid "Execute a Process"
-msgstr "プロセスの実行"
-
-#: ../../source/getting-productive/testing/process-testing.rst:68
-msgid "Now let's have a closer look at the code:"
-msgstr "それでは、コードを詳しく見ていきましょう。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:70
-msgid "Line 11-14:"
-msgstr "11 ～ 14 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:71
-msgid "Here you tell your ``BpmClient`` that you want to test and execute your start element. After calling the :ref:`execute<process-testing-start>` method the ``BpmClient`` drives your process just after the first task."
-msgstr "ここでは、開始要素をテストして実行したいことを ``BpmClient`` に伝えます。 :ref:`execute<process-testing-start>` ソッドを呼び出すと、 ``BpmClient`` は最初のタスクのすぐ後にプロセスを実行します。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:77
-msgid "Note that the ``BpmClient`` does not run through the whole process at once but runs task by task. It also ignores ``skipTaskList`` flags and stops the execution at ``system tasks``."
-msgstr "``BpmClient`` はプロセス全体を一度に実行するのではなく、タスクごとに実行することに注意してください。また、``skipTaskList`` フラグを無視し、``システムタスク`` で実行を停止します。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:81
-msgid "Line 16-17:"
-msgstr "16 ～ 17 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:82
-msgid "You have multiple APIs to assert your processes, one of it is the :ref:`process-testing-history`. The ``History`` gives you access to the executed process elements, in this example we just assert the names of the executed elements."
-msgstr "プロセスをアサートするための API は複数あり、その一つ :ref:`process-testing-history` です。 ``History`` を使用して、実行したプロセス要素にアクセスできます。この例では、実行された要素の名前をアサートしています。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:87
-msgid "Line 19:"
-msgstr "19 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:88
-msgid "The :ref:`process-testing-workflow` API gives you access to the ``Case``, ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch information about active ``Cases``/``Tasks``, executed ``Tasks`` or the ``Session``."
-msgstr ":ref:`process-testing-workflow` API では、``ケース`` や ``タスク``、実行中のプロセスの ``セッション`` にアクセスできます。この API を使用して、アクティブな ``ケース``／``タスク``、実行された ``タスク``、または ``セッション`` に関する情報を取得できます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:94
-msgid "Continue the Process Execution"
-msgstr "プロセスの実行の継続"
-
-#: ../../source/getting-productive/testing/process-testing.rst:96
-msgid "As noted above the ``BpmClient`` does not run through the whole process at once. This means we now want to continue the current process."
-msgstr "先に述べたように、``BpmClient`` はプロセス全体を一度に実行しません。ここでは現在のプロセスを続行します。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:104
-msgid "We introduced two new things in the code above:"
-msgstr "上のコードでは、2つの新しいことを導入しました。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:106
-#: ../../source/getting-productive/testing/process-testing.rst:147
-msgid "Line 17:"
-msgstr "17 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:107
-msgid "To drive our process along you need to tell your ``BpmClient`` that it should just execute any active task. In this case there is only one possible active task that can be executed, the task from the ``UserTask`` element called ``write invoice``."
-msgstr "プロセスを続行するには、``BpmClient`` にすべてのアクティブなタスクを実行するよう指示する必要があります。このケースの実行可能なアクティブタスクは、``UserTask`` 要素の ``write invoice`` という名前のタスクのみです。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:112
-#: ../../source/getting-productive/testing/process-testing.rst:150
-msgid "Line 18:"
-msgstr "18 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:113
-msgid "Of course, you cannot just execute a task without declaring an appropriate ``Session``. To declare said ``Session`` you can call the :ref:`process-testing-as` method and append the desired ``Session``, ``User`` or ``Role`` that should execute the next task."
-msgstr "もちろん、適切な ``セッション`` を宣言せずにタスクを実行することはできません。``セッション`` を宣言するには :ref:`process-testing-as` メソッドを呼び出して、次のタスクを実行する ``セッション``、``ユーザー`` または ``ロール`` を追加します。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:118
-msgid "If you execute this test then you will face the following error:"
-msgstr "このテストを実行すると、以下のエラーが発生します。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:124
-msgid "To fix this we need to introduce you to two more concepts, mocking elements and asserting process data."
-msgstr "この問題を解決するには、要素のモック化とプロセスデータのアサートというさらに 2 つのコンセプトを導入する必要があります。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:129
-msgid "Mock Dialogs and Assert Data"
-msgstr "ダイアログのモック化とデータのアサート"
-
-#: ../../source/getting-productive/testing/process-testing.rst:131
-msgid "Process tests are not meant to assert UI elements such as HTML Dialogs. Because dialogs are an important data input interface between users and your processes, you have to mock those inputs. If you want to test the dialogs themselves, refer to chapter  :ref:`web-testing`."
-msgstr "プロセステストは、HTML ダイアログのような UI 要素をアサートするためのものではありません。ダイアログはユーザーとプロセスの間の重要なデータ入力インターフェースであるため、これらの入力をモック化する必要があります。ダイアログそのものをテストしたい場合は、 :ref:`web-testing` 」の章を参照してください。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:136
-msgid "Let us add a UI mock for the UI of the UserTask 'write invoice' element."
-msgstr "UserTask の 'write invoice' 要素の UI モックを追加してみましょう。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:143
-msgid "Line 16:"
-msgstr "16 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:144
-msgid "Here you are telling the ``BpmClient`` that you are declaring a :ref:`process-testing-mock` for an element."
-msgstr "ここでは、要素に対して :ref:`process-testing-mock` を宣言していることを ``BpmClient`` に伝えています。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:148
-msgid "Here you select the element whose UI you want to mock by its name."
-msgstr "ここでは、UI をモック化したい要素の名前を選択します。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:151
-msgid "The HTML Dialog of the UserTask 'write invoice' returns a single value called ``total``. So let's mock the UI part to simulate that the user enters a total of ``935`` on the UI."
-msgstr "UserTask 'write invoice' の HTML ダイアログは、``total`` という単一の値を返します。それでは、ユーザーが UI で合計 ``935`` を入力することをシミュレートするため、UI 部分をモック化してみましょう。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:155
-msgid "Line 29-30:"
-msgstr "29 ～ 30 行目："
-
-#: ../../source/getting-productive/testing/process-testing.rst:156
-msgid "With the :ref:`process-testing-data` API you can assert the process data of the executed elements."
-msgstr ":ref:`process-testing-data` API を使用して、実行された要素のプロセスデータをアサートできます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:159
-msgid "Congratulations, you have learned all about the tools and most important APIs to assert your process continuation. In the next section we will have a closer look at some of the APIs."
-msgstr "ここでは、プロセスの継続をアサートするためのツールと最も重要な API について学びました。次のセクションでは、いくつかの API についてさらに詳しく見ていきます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:165
-msgid "API Reference"
-msgstr "API について"
-
-#: ../../source/getting-productive/testing/process-testing.rst:167
-msgid "The following section describes some of the more common API calls you can use. If you want to see the full functionality of each API you can follow the links in each subsection to the :public-api:`Public API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>`."
-msgstr "以下のセクションでは、より一般的な API コールについて説明します。各 API のすべての機能を知りたい場合は、各サブセクションの :public-api:`パブリック API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>` へのリンクをクリックしてください。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:176
-#: ../../source/getting-productive/testing/web-testing.rst:62
-msgid "Select"
-msgstr "Select"
-
-#: ../../source/getting-productive/testing/process-testing.rst:178
-msgid "There are multiple ways to select processes and elements. The easiest way is to find them by their :public-api:`name</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`."
-msgstr "プロセスや要素を選択する方法は複数あります。最も簡単な方法は、:public-api:`名前</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` よる検索です。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:189
-#: ../../source/reference/process/process-elements/_tab-call.rst:21
-#: ../../source/reference/process/process-elements/start.rst:4
-msgid "Start"
-msgstr "Start"
-
-#: ../../source/getting-productive/testing/process-testing.rst:191
-msgid "To :public-api:`start</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` an execution, you need to tell the ``BpmClient`` which ``BpmProcess`` or ``BpmElement`` you want to run. To proceed with the execution, either tell the ``BpmClient`` to continue with the previous :public-api:`execution</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` or choose the next desired ``task``. Using a ``task`` is especially useful if there are multiple active ``tasks`` available."
-msgstr "実行を :public-api:`開始</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` るには、実行したい ``BpmProcess`` または ``BpmElement`` を ``BpmClient`` に指示する必要があります。実行を進めるには、前の :public-api:`実行</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` を継続するよう ``BpmClient`` に指示するか、次の ``タスク`` を選択します。アクティブな ``タスク`` が複数ある場合は特に、``タスク`` を使用すると便利です。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:202
-msgid "To test callable subprocesses use the ``subProcess`` method instead of the ``process`` method."
-msgstr "呼び出し可能なサブプロセスをテストするには、``process`` メソッドの代わりに ``subProcess`` メソッドを使用します。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:210
-msgid "As"
-msgstr "As"
-
-#: ../../source/getting-productive/testing/process-testing.rst:212
-msgid "Most processes require a specific ``user`` or ``role`` to be executed. You can define them by calling :public-api:`as</ch/ivyteam/ivy/bpm/engine/client/RequestBuilder.html#as()>`."
-msgstr "ほとんどのプロセスは、実行するのに特定の ``ユーザー`` または ``ロール`` が必要です。:public-api:`as</ch/ivyteam/ivy/bpm/engine/client/RequestBuilder.html#as()>` を呼び出して、これらを定義できます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:223
-msgid "Mock"
-msgstr "Mock"
-
-#: ../../source/getting-productive/testing/process-testing.rst:225
-msgid "There are two ways of :public-api:`mocking</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>` an element. Either you mock the entire element or the UI or call part. If you mock the entire element nothing configured on the element is tested at all. On the other hand if you mock the UI or call part of an element its mapping code is executed and tested."
-msgstr "要素を :public-api:`モック化</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>` る方法は 2 つあります。要素全体をモック化するか、UI または呼び出し部分をモック化します。要素全体をモック化した場合、要素に設定されたものはすべてテストされません。一方、要素の UI または呼び出し部分をモック化した場合は、そのマッピングコードが実行され、テストされます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:232
-msgid "If your process runs through an HTML Dialog you always need to mock it."
-msgstr "プロセスを HTML ダイアログから実行する場合は、必ずモック化する必要があります。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:241
-msgid "History"
-msgstr "History"
-
-#: ../../source/getting-productive/testing/process-testing.rst:243
-msgid "Use the :public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` to assert the executed process elements. You can either access the exact element objects or elements names."
-msgstr ":public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` を使用して、実行されたプロセス要素をアサートします。正確な要素オブジェクトにアクセスすることも、要素名にアクセスすることもできます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:256
-msgid "Use the :public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>` to access and assert the active ``case`` or ``task``. You can filter them by activator."
-msgstr ":public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>` を使用して、アクティブな ``ケース`` または ``タスク`` にアクセスし、アサートします。アクティベーターでフィルタリングすることができます。"
-
-#: ../../source/getting-productive/testing/process-testing.rst:269
-msgid "With the :public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>` API you can assert the process data at different points in your process. You can get the ``data`` from the last executed element or from any element during execution. If an element is executed multiple times you can access the ``data`` of each execution in an ordered list."
-msgstr ":public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>` APIを使用して、プロセスのさまざまなポイントでプロセスデータをアサートできます。最後に実行された要素や実行中の任意の要素から ``データ`` を取得できます。要素が複数回実行された場合は、実行順にそれぞれの ``データ`` にアクセスできます。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:4
-msgid "Unit Tests"
-msgstr "単体テスト"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:6
-msgid "You can easily write Unit Tests in the Axon Ivy Designer to test your Java source code using JUnit 5. If your code uses the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` environment you can either mock it or use the :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation that correctly sets up the environment."
-msgstr "Axon Ivy Designer で簡単に単体テストを作成し、JUnit5 を使用して Java ソースコードをテストできます。:public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` 環境を使用してコードをテストする場合は、モック化するか、環境を正しく設定する :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` アノテーションを使用します。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:15
-msgid "How to Write Unit Tests"
-msgstr "単体テストの作成方法"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:20
-#: ../../source/getting-productive/testing/web-testing.rst:20
-msgid "Run test"
-msgstr "テストを実行します。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:22
-#: ../../source/getting-productive/testing/web-testing.rst:22
-msgid "Make sure the Axon Ivy Engine is started with your projects"
-msgstr "Axon Ivy Engine がプロジェクトと一緒に起動されていることを確認します。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:24
-#: ../../source/getting-productive/testing/web-testing.rst:24
-msgid "To run this test right-click inside this class -> Run As -> JUnit Test"
-msgstr "このテストを実行するには、このクラス内を右クリックし、［実行］、［JUnit テスト］の順に選択します。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:26
-#: ../../source/getting-productive/testing/web-testing.rst:26
-msgid "A new **JUnit** View should be opened and the test should be green."
-msgstr "新しい **JUnit** ビューが開き、テストが緑色で表示されます。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:29
-msgid "This is all you need to start writing conventional Unit Tests."
-msgstr "従来の単体テストの作成を開始できます。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:33
-msgid "Set Up the Axon Ivy Environment"
-msgstr "Axon Ivy 環境のセットアップ"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:35
-msgid "To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` context the ``SampleIvyTest`` class is annotated with the :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation."
-msgstr ":public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` コンテキストにアクセスするには、``SampleIvyTest`` クラスに :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` というアノテーションを付けます。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:41
-msgid "If you run your test with ``@IvyTest`` (without process) the bpm engine does not get started. This speeds up test execution."
-msgstr "テストを ``@IvyTest`` （プロセスなし）で実行すると、bpm エンジンは起動しません。これにより、テストの実行速度が向上します。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:45
-msgid "Write a Unit Test"
-msgstr "単体テストの作成"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:47
-msgid "Here we test a class called ``OrderUtil``. This class needs access to different ``Ivy`` resources like :ref:`Variables <variables>`. Without properly setting up the ``Ivy`` environment we would have to mock all those resources."
-msgstr "ここでは、``OrderUtil`` という名前のクラスをテストします。このクラスは、 :ref:`変数<variables>` など、さまざまな ``Ivy`` リソースにアクセスする必要があります。 ``Ivy`` 環境を適切に設定しなければ、これらのリソースをすべてモック化することになります。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:56
-msgid "Have a look at the :link-url:`demo project <build-examples-unit-tests>` to see what else is possible."
-msgstr "その他の機能については、link-url:`デモプロジェクト<build-examples-unit-tests>` 参照してください。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:64
-#: ../../source/getting-productive/testing/web-testing.rst:126
-msgid "Change Application Runtime"
-msgstr "アプリケーションランタイムの変更"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:66
-msgid "For some test cases, you may need to use a different value for a :ref:`Variable <variables>` or change an app configuration. In this case use ``AppFixture`` to change the value. The value gets automatically reset to the original value after the test execution. All you have to do is to tell the test that you want an instance of the :code:`AppFixure` class. Let's have a look at it:"
-msgstr "テストケースによっては、 :ref:`変数<variables>` に別の値を使用したり、アプリの設定を変更したりする必要があります。このような場合は、``AppFixture`` を使用して値を変更します。テストの実行後、値は自動的に元の値にリセットされます。必要なのは、 :code:`AppFixure` クラスのインスタンスが欲しいことをテストに伝えるだけです。それでは見てみましょう。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:76
-msgid "Or you can change an app configuration, e.g change the URL of a :ref:`RestClient <rest-clients-configuration>`:"
-msgstr "また、 :ref:`RestClient<rest-clients-configuration>` の URL を変更するなど、アプリの設定を変更することもできます。"
-
-#: ../../source/getting-productive/testing/unit-testing.rst:83
-msgid "Furthermore it is possible to use the ``AppFixture`` to login with an existing user. You can either login with a user name or with an ``IUser`` object. In the example below we injected the ``IUser`` object as a method parameter."
-msgstr "さらに、``AppFixture`` を使用して、既存のユーザーでログインすることも可能です。ユーザー名または ``IUser`` オブジェクトでログインできます。以下の例では、メソッドのパラメーターとして ``IUser`` オブジェクトを挿入しています。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:4
-msgid "Web Testing"
-msgstr "ウェブテスト"
-
-#: ../../source/getting-productive/testing/web-testing.rst:6
-msgid "Imagine you have just built a workflow app containing multiple user dialogs. Do you really want to always click through the full process, even if you only changed a small part of it? However, you should make sure that the functionality (happy path) of this process is still valid."
-msgstr "複数のユーザーダイアログを含むワークフローアプリを作成したとします。アプリのほんの一部を変更しただけで、プロセス全体を見直さなければならないのは、気が重いものですが、このプロセスの機能性（ハッピーパス）がまだ有効であることを確認する必要があります。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:11
-msgid "**Web Integration Tests** will always follow the same steps and can be automated."
-msgstr "**ウェブ統合テスト** では常に同じ手順を実行しますが、これを自動化できます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:15
-msgid "Setup a Test Project"
-msgstr "テストプロジェクトのセットアップ"
-
-#: ../../source/getting-productive/testing/web-testing.rst:30
-msgid "Write a Web Test"
-msgstr "ウェブテストの作成"
-
-#: ../../source/getting-productive/testing/web-testing.rst:32
-msgid "Let's start by extending our test class generated before with a :link-url:`real test implementation <build-examples-web-test-base>`. First, we need to start a process. To do this you can use the ``EngineUrl`` utility from the :ref:`web-tester`."
-msgstr "先ほど作成したテストクラスを :link-url:`実際のテスト実装<build-examples-web-test-base>` で拡張してみましょう。最初に、プロセスを開始する必要があります。それには、 :ref:`web-tester` の ``EngineUrl`` ユーティリティを使用します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:37
-msgid "This process opens a dialog with two input fields (``firstname`` and ``lastname``) and a ``submit`` button. After submitting, a second dialog with your input values is displayed."
-msgstr "このプロセスでは、2 つの入力フィールド（``firstname`` と ``lastname``）と ``submit`` ボタンを表示するダイアログが開きます。送信後、入力値を含む 2 番目のダイアログが表示されます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:46
-msgid "The :ref:`@IvyWebTest <web-tester>` annotation can be configured (e.g to select a ``browser`` or to start the test ``headless``)."
-msgstr ":ref:`@IvyWebTest <web-tester>` アノテーションを設定できます（``ブラウザ`` の選択、``ヘッドレス`` テストの開始など）。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:51
-msgid "Select, Do and Check"
-msgstr "選択、実行、チェック"
-
-#: ../../source/getting-productive/testing/web-testing.rst:53
-msgid "Now let's take a look at how this test works. Basically, there are three things you need to know:"
-msgstr "それでは、このテストの仕組みを見てみましょう。基本的に知っておくべきことは、以下の 3 つです。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:56
-msgid "**Select** an element"
-msgstr "要素を**選択する**"
-
-#: ../../source/getting-productive/testing/web-testing.rst:57
-msgid "**Do an action** on the selected element"
-msgstr "選択した要素で**アクションを実行する**"
-
-#: ../../source/getting-productive/testing/web-testing.rst:58
-msgid "**Check a condition** on the selected element"
-msgstr "選択された要素の**条件をチェックする**"
-
-#: ../../source/getting-productive/testing/web-testing.rst:64
-msgid "To work with a **single element** you need to first select the correct one. Usually you use the ``By.id`` selector to do this:"
-msgstr "**単一の要素** を扱うには、最初に正しい要素を選択する必要があります。通常は ``By.id`` セレクタを使用します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:73
-msgid "To evaluate the real id of an element you can use your browser's **Developer Tools**."
-msgstr "要素の実際の ID を評価するには、ブラウザの**開発者ツール** を使用します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:76
-msgid "There are many more options to use selectors, e.g you can select multiple elements:"
-msgstr "複数の要素を選択するなど、セレクタの活用方法は他にもたくさんあります。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:83
-msgid "Have a look at the :link-url:`demo project <build-examples-web-test-select>` to see more options."
-msgstr "その他の活用方法については、:link-url:`デモプロジェクト<build-examples-web-test-select>` 参照してください。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:88
-msgid "Execute an Action"
-msgstr "アクションの実行"
-
-#: ../../source/getting-productive/testing/web-testing.rst:90
-msgid "On the selected element you can perform some actions:"
-msgstr "選択した要素に対して、いくつかのアクションを実行できます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:100
-msgid "Check a Condition"
-msgstr "条件のチェック"
-
-#: ../../source/getting-productive/testing/web-testing.rst:102
-msgid "On your selected element you can check certain conditions (e.g is the element *visible* or contains a specific *value*):"
-msgstr "選択した要素について、特定の条件（その要素が *表示* に設定されているか、特定の *値* を含んでいるかなど）をチェックできます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:111
-msgid "You can check multiple conditions on an item or check a condition before performing an action on the item by chaining the method calls:"
-msgstr "メソッドコールを連鎖させることで、項目の複数の条件をチェックしたり、項目に対してアクションを実行する前に条件をチェックすることができます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:121
-msgid "Have a look at the :link-url:`demo project <build-examples-web-test-condition>` to see more options."
-msgstr "その他の活用方法については、:link-url:`デモプロジェクト<build-examples-web-test-select>` 参照してください。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:128
-msgid "For some test cases, you may need to run your web tests with a different user or you need another value for a variable or app configuration. In this case the `WebAppFixture` util can help you to achieve this. Unlike the :ref:`AppFixture <unit-testing-app-fixture>` of :ref:`unit-testing`, the changed values are **not** automatically reset after the test run. Let's have a look at it:"
-msgstr "テストケースによっては、別のユーザーでウェブテストを実行する必要があったり、変数やアプリの設定に別の値が必要になります。このような場合は、`WebAppFixture` ユーティリティを使用します。 :ref:`unit-testing` の :ref:`AppFixture<unit-testing-app-fixture>` と異なり、変更された値はテスト実行後に自動的にリセット**されません** 。それでは見てみましょう。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:133
-msgid "You can change the current user or log out to an anonymous session:"
-msgstr "現在のユーザーを変更したり、匿名セッションにログアウトできます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:139
-msgid "If you want to change the value of a variable, you can proceed as follows:"
-msgstr "変数の値を変更したい場合は、以下のように進めます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:145
-msgid "Or you can change an app configuration, e.g the URL of a :ref:`RestClient <rest-clients-configuration>`:"
-msgstr "また、 :ref:`RestClient<rest-clients-configuration>` の URL など、アプリの設定を変更することもできます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:154
-msgid "Run Automated"
-msgstr "実行の自動化"
-
-#: ../../source/getting-productive/testing/web-testing.rst:156
-msgid "Let's have a look at how you can run your web tests fully automated (:ref:`continuous-integration`). This is especially important if you want fast feedback on breaking changes done by a team member."
-msgstr "ウェブテストを完全に自動化する方法を見てみましょう（ :ref:`continuous-integration` ）。テストの自動化は、チームメンバーが行った互換性を破る変更についての迅速なフィードバックが必要な場合は特に重要です。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:164
-msgid "Module Build"
-msgstr "モジュールのビルド"
-
-#: ../../source/getting-productive/testing/web-testing.rst:166
-msgid "Both projects, production and test project, need to be compiled during the same run. To do this, we need to first setup a Maven module build:"
-msgstr "同じ実行中に、本番プロジェクトとテストプロジェクトの両方をコンパイルする必要があります。最初に、Maven モジュールのビルドをセットアップします。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:169
-msgid "Create Maven module"
-msgstr "Maven モジュールを作成します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:171
-msgid "Delete projects ``crm`` and ``crmIntegrationTests`` from your Axon Ivy Designer workspace."
-msgstr "Axon Ivy Designer ワークスペースから ``crm`` プロジェクトと ``crmIntegrationTests`` プロジェクトを削除します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:173
-msgid "Open your workspace folder and move both projects into a new folder, e.g :file:`compile-test`"
-msgstr "ワークスペースフォルダーを開き、両方のプロジェクトを新しいフォルダー（例：:file:`compile-test`）に移動します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:176
-msgid "Create a :file:`pom.xml` file in the :file:`compile-test` folder."
-msgstr ":file:`compile-test` フォルダーに :file:`pom.xml` ファイルを作成します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:178
-msgid "Add the following code to the :link-url:`pom.xml <build-examples-web-test-pom>` file (ensure the correct **modules** ``crm`` and ``crmIntegrationTests`` are set):"
-msgstr "以下のコードを:link-url:`pom.xml<build-examples-web-test-pom>` ファイルに追加します（``crm`` と ``crmIntegrationTests`` **モジュール** が正しく設定されていることを確認します）。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:185
-msgid "Your :link-url:`folder structure <build-examples>` should now look as follows:"
-msgstr ":link-url:`フォルダー構造<build-examples>` 以下のようになります。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:195
-msgid "Run module build in Axon Ivy Designer"
-msgstr "Axon Ivy Designer でモジュールのビルドを実行します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:197
-msgid "In your Axon Ivy Designer open the **Import** Wizard, then **Existing Maven Projects**"
-msgstr "Axon Ivy Designerで**インポート**ウィザードを開き、次に**既存のMavenプロジェクト**を開きます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:200
-msgid "Select :file:`compile-test/pom.xml` with sub projects (``crm`` and ``crmIntegrationTests`` should be visible here) and click **Finish**"
-msgstr "サブプロジェクト（``crm`` と ``crmIntegrationTests`` がここに表示されているはずです）を含む :file:`compile-test/pom.xml` を選択し、［**終了** ］をクリックします。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:203
-msgid "Right-click on ``compile-test`` -> Run As -> Maven build"
-msgstr "``compile-test`` を右クリックし、［実行］、［Maven ビルド］の順に選択します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:205
-msgid "Set **Goals** to ``clean verify`` and click **Run**"
-msgstr "**ゴール**を``clean verify``に設定し、［**実行**］をクリックします。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:207
-msgid "This triggers a run that starts and ends with something similar to:"
-msgstr "始まりと終わりが以下のような実行がトリガーされます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:212
-msgid "Congratulations, you can now run your tests fully automated with Maven!"
-msgstr "Maven で完全に自動化されたテストを実行できるようになります。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:216
-msgid "Further Resources"
-msgstr "参考情報"
-
-#: ../../source/getting-productive/testing/web-testing.rst:218
-msgid "If you want to know more about web testing, have a look at the :link-url:`second test in our demo project <build-examples-web-test>` or at our :link-url:`other demo projects <demos>` and how they are tested."
-msgstr "ウェブテストについてもっと知りたい場合は、 :link-url:`デモプロジェクトの 2 番目のテスト<build-examples-web-test>` 、 :link-url:`その他のデモプロジェクト<demos>` それらのテスト方法を参照してください。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:222
-msgid "If you want to learn more about how to build a CI/CD pipeline, take a look at the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`."
-msgstr "CI/CD パイプラインの構築方法についてもっと知りたい場合は、:dev-url:`チュートリアルのセクション</tutorial>` ある **CI/CD の動画** をご覧ください。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:227
-msgid "Selenium"
-msgstr "Selenium"
-
-#: ../../source/getting-productive/testing/web-testing.rst:229
-msgid "Selenium is an open source web testing framework. It works across different browsers and platforms. To communicate with the browser, Selenium provides the **WebDriver** specification."
-msgstr "Selenium は、オープンソースのウェブテストフレームワークで、さまざまなブラウザやプラットフォームで動作します。ブラウザと通信するために、Selenium は **WebDriver** 仕様を提供しています。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:233
-msgid "In our tests we use the `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_, `API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_) framework, which is based on the Selenium WebDriver. If you’re more familiar with plain Selenium tests the following comparison can give you a quick overview about the differences and benefits: `Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_. Or you can simply write your tests with the normal Selenium API by accessing the driver object:"
-msgstr "私たちのテストでは、Selenium WebDriver をベースにした `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_ 、 `API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_ ) フレームワークを使用しています。 `Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_ では、Selenium のテストについて詳しい方向けに、Selenide と Seleniumを比較し、違いと利点について簡単にまとめています。また、ドライバオブジェクトにアクセスして、通常の Selenium API を使用してテストを作成することもできます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:251
-msgid "Web-Tester"
-msgstr "Web-Tester"
-
-#: ../../source/getting-productive/testing/web-testing.rst:253
-msgid "With the :link-url:`web-tester <webtester>` project we provide the testing annotation ``@IvyWebTest``. This annotation sets up the browser connection for you. It can be configured with some parameters:"
-msgstr ":link-url:`web-tester <webtester>` プロジェクトでは、テスト用のアノテーションである ``@IvyWebTest`` を提供しています。このアノテーションは、ブラウザの接続を設定し、いくつかのパラメーターで設定できます。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:262
-msgid "**browser**: The browser which should run the test e.g: chrome, firefox, ie, phantomjs, htmlunit, safari, opera"
-msgstr "**browser** ：テストを実行するブラウザ（例：chrome、firefox、ie、phantomjs、htmlunit、safari、opera）"
-
-#: ../../source/getting-productive/testing/web-testing.rst:265
-msgid "**headless**: Controls if the browser should start with a UI or not."
-msgstr "**headless** ：ブラウザを UI で開始するかどうかを制御します。"
-
-#: ../../source/getting-productive/testing/web-testing.rst:267
-msgid "**reportFolder**: when a test fails the test framework automatically takes screenshots. This folder defines where these screenshots are saved to."
-msgstr "**reportFolder** ：テストが失敗すると、テストフレームワークは自動的にスクリーンショットを撮ります。このフォルダーは、それらのスクリーンショットの保存先を定義します。"
 
 #: ../../source/getting-productive/user-interface/branding/branding-engine.rst:4
 msgid "Engine Branding"
@@ -13286,7 +13250,8 @@ msgid "As **guest** user you can now **Approve** or **Reject** the leave request
 msgstr "**guest** ユーザーは、**demo** ユーザーからの休暇申請を **承認** または **却下** できます。これにより、プロセスを終了すると、ダッシュボードで **タスク** ウィジェットのタスクがなくなります。"
 
 #: ../../source/introduction/getting-started/engine/_use-the-engine.rst:41
-msgid "Congratulations, you have successfully started your first process and finished all of its tasks. If you want to learn how to design and implement such processes have a look at the :ref:`Designer <designer-guide>` guide."
+#, fuzzy
+msgid "Congratulations, you have successfully started your first process and finished all of its tasks. If you want to learn how to design and implement such processes have a look at the :ref:`getting-productive` guide."
 msgstr "これで、最初のプロセスを開始し、すべてのタスクを終了しました。プロセスの設計、実装方法について知りたい場合は :ref:`デザイナー<designer-guide>` イドを参照してください。"
 
 #: ../../source/introduction/getting-started/engine/_use-the-engine.rst:45
@@ -13466,7 +13431,8 @@ msgid "The digitalization of your company can **evolve over time**. We favor sma
 msgstr "企業のデジタル化は、**時間ともに進化** します。私たちは、大がかりなソリューションよりも、予測可能な小さな改善を優先します。Axon Ivy プラットフォームでは、既存の環境から素早く簡単に始めることができます。実行中のプロセスに貢献すべきユーザーにタスク通知を送信することから始めることも可能です。最終的には、プラットフォームがすべてのビジネスインタラクションの単一のインターフェイスになります。ビジネスプロセスの実行中に生成されるデータに基づいて KPI を評価できるようになり、これらの洞察から、常に効果的にビジネスを前進させることができます。ビジネストランスフォーメーションのコストは適正で、予測可能なものになります。"
 
 #: ../../source/introduction/what-axon-ivy.rst:44
-msgid "The Axon Ivy Platform consists of the :ref:`Axon Ivy Designer <designer-guide>` which enables the drawing, simulation and implementation of automated business processes, and the application server :ref:`Axon Ivy Engine <engine-guide>` that executes your business cases and provides a shared interface for process users."
+#, fuzzy
+msgid "The Axon Ivy Platform consists of the :ref:`Axon Ivy Designer <designer-guide-vscode>` which enables the drawing, simulation and implementation of automated business processes, and the application server :ref:`Axon Ivy Engine <engine-guide>` that executes your business cases and provides a shared interface for process users."
 msgstr "Axon Ivy プラットフォームは、自動化されたビジネスプロセスの作成、シミュレーション、実装を可能にする :ref:`Axon Ivy Designer<designer-guide>` と、ビジネスケースを実行し、プロセスユーザーに共有インターフェースを提供する :ref:`Axon Ivy Engine<engine-guide>` アプリケーションサーバーで構成されます。"
 
 #: ../../source/introduction/why-axon-ivy.rst:4
@@ -25422,3 +25388,54 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "Expert"
 #~ msgstr "エキスパート"
+
+#~ msgid "The Designer has a built in Maven runtime that allows to start Maven with zero initial configuration effort. A local maven build can be started as follows:"
+#~ msgstr "デザイナーには Maven ランタイムが組み込まれており、初期設定なしで Maven を使い始められます。Maven のローカルビルドは次のように開始できます。"
+
+#~ msgid "Switch to the Java perspective"
+#~ msgstr "Java パースペクティブに切り替えます。"
+
+#~ msgid "Expand an Axon Ivy Project in the Axon Ivy Project Tree view"
+#~ msgstr "Axon Ivy のプロジェクトツリービューで Axon Ivy プロジェクトを展開します。"
+
+#~ msgid "Dependencies with ``<type>iar</type>`` will be manipulated by the :ref:`project-deployment-descriptor`. Therefore additional configurations like the ``<scope>`` could get lost through the simple editor usage."
+#~ msgstr "``<type>iar</type>`` との依存関係は :ref:`project-deployment-descriptor` で操作されます。そのため、 ``<scope>`` のような追加の設定は、単純なエディターの使用によって失われる可能性があります。"
+
+#~ msgid "Values that can be manipulated with the simple :ref:`project-deployment-descriptor` can not contain Maven properties. For instance ``<version>${myVersionProp}</version>`` is prohibited."
+#~ msgstr "単純な :ref:`project-deployment-descriptor` で操作できる値に Maven プロパティを含めることはできません。例えば、 ``<version>${myVersionProp}</version>`` は禁止されています。"
+
+#~ msgid "Continuous Integration Job with Jenkins"
+#~ msgstr "Jenkins による継続的インテグレーションジョブ"
+
+#~ msgid "The following steps are needed to build an Axon Ivy Project on a Jenkins CI server."
+#~ msgstr "Jenkins CI サーバー上で Axon Ivy プロジェクトをビルドするには、以下の手順が必要です。"
+
+#~ msgid "Install Jenkins as described in the `Jenkins Wiki <https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins>`__"
+#~ msgstr "`Jenkins Wiki <https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins>`__ に説明されているとおり、Jenkins をインストールします。"
+
+#~ msgid "Install a Maven runtime in Jenkins via :guilabel:`Manage` > :guilabel:`Configure` > :guilabel:`Maven` > :guilabel:`Maven installation` > :guilabel:`Choose auto installation`"
+#~ msgstr ":guilabel:`管理` 、 :guilabel:`設定` 、 :guilabel:`Maven` 、 :guilabel:`Maven のインストール` 、 :guilabel:`自動インストールを選択` の順に選択して、Maven ランタイムを Jenkins にインストールします。"
+
+#~ msgid "Create a new Jenkins Job. Select :guilabel:`Maven-Project` as job style."
+#~ msgstr "新しい Jenkins ジョブを作成します。ジョブのスタイルとして :guilabel:`Maven-Project` を選択します。"
+
+#~ msgid "Provide a link to the source code of the Axon Ivy Project in the ``Source-Code-Management`` section"
+#~ msgstr "``Source-Code-Management`` セクションに Axon Ivy プロジェクトのソースコードへのリンクを追加します。"
+
+#~ msgid "Configure the goals ``clean verify`` in the :guilabel:`Build` section"
+#~ msgstr ":guilabel:`Build` セクションで ``clean verify`` というゴールを設定します。"
+
+#~ msgid ":guilabel:`Save` the Job and :guilabel:`Run` it"
+#~ msgstr "ジョブを:guilabel:`保存` して:guilabel:`実行` します。"
+
+#~ msgid "How to"
+#~ msgstr "基礎知識"
+
+#~ msgid "Designer Guide"
+#~ msgstr "デザイナーガイド"
+
+#~ msgid "Through tests **quality** can be maintained"
+#~ msgstr "テストを通じて**品質** を維持できます。"
+
+#~ msgid "Writing good software without tests is nearly impossible, and we want to make it as easy as possible for you to write tests for your Axon Ivy project. Let's get started!"
+#~ msgstr "テストなしで良いソフトウェアを作成することはほぼ不可能であり、私たちは、Axon Ivy プロジェクトのテストコードの作成をできるだけ簡単なものにしたいと考えています。それでは、始めましょう！"
