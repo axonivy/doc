@@ -4,7 +4,7 @@ Continuous Integration
 ======================
 
 Axon Ivy Projects are designed to be built on a continuous integration (CI)
-server like Jenkins.
+server (e.g. `Jenkins <https://www.jenkins.io/>`__, `GitHub Actions <https://github.com/features/actions>`__, etc.).
 
 
 Maven build plugin
@@ -16,6 +16,8 @@ on a continuous integration server. The plugin provides the following
 main features:
 
 -  **Compilation** of Axon Ivy Projects
+
+-  **Validation** of Axon Ivy processes and configurations
 
 -  **Testing** of unit tests against an Axon Ivy Project or the Axon Ivy core
    classes
@@ -30,17 +32,18 @@ main features:
 Runtime
 ~~~~~~~
 
-The Designer has a built in Maven runtime that allows to start Maven
-with zero initial configuration effort. A local maven build can be
-started as follows:
+If you like to build you Axon Ivy Project with Maven, you need to have Maven installed on your system.
+Now you simply run maven command beside you ``pom.xml`` file (e.g. :code:`mvn clean verify`).
 
-1. Switch to the Java perspective
+The :ref:`designer-guide-vscode` has maven capabilites built-in, if you have the 
+`Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed 
+(what should be the case if you have our extension installed).
 
-2. Expand an Axon Ivy Project in the Axon Ivy Project Tree view
+1. Open the maven view (or run command :code:`Explorer: Focus on Maven View`)
 
-3. Open the context menu of the file ``pom.xml`` by right clicking it
+2. Open the context menu of the project by right clicking it
 
-4. Navigate to :guilabel:`Run as` > :guilabel:`Maven install`
+3. Navigate to :guilabel:`Run Maven Commands` > :guilabel:`verify`
 
 
 Configuration
@@ -64,16 +67,6 @@ Axon Ivy Projects:
 -  ``<packaging>iar</packaging>`` Provides the custom Axon Ivy Project
    lifecycle, must not be modified.
 
--  Dependencies with ``<type>iar</type>`` will be manipulated by the
-   :ref:`project-deployment-descriptor`. Therefore additional
-   configurations like the ``<scope>`` could get lost through the simple
-   editor usage.
-
--  Values that can be manipulated with the simple
-   :ref:`project-deployment-descriptor` can not contain Maven
-   properties. For instance ``<version>${myVersionProp}</version>`` is
-   prohibited.
-
 -  The version must be qualified like
    ``<version>5.0.0-SNAPSHOT</version>.`` A version like
    ``<version>5-SNAPSHOT</version>`` is prohibited.
@@ -88,25 +81,3 @@ Technical documentation
 -  The source code of the Axon Ivy project build plugin is available on
    :link-url:`Github.com <build-plugin>`.
 
-
-Continuous Integration Job with Jenkins
----------------------------------------
-
-The following steps are needed to build an Axon Ivy Project on a Jenkins CI
-server.
-
-#. Install Jenkins as described in the `Jenkins
-   Wiki <https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins>`__
-
-#. Install a Maven runtime in Jenkins via :guilabel:`Manage` >
-   :guilabel:`Configure` > :guilabel:`Maven` >
-   :guilabel:`Maven installation` > :guilabel:`Choose auto installation`
-
-#. Create a new Jenkins Job. Select :guilabel:`Maven-Project` as job style.
-
-#. Provide a link to the source code of the Axon Ivy Project in the
-   ``Source-Code-Management`` section
-
-#. Configure the goals ``clean verify`` in the :guilabel:`Build` section
-
-#. :guilabel:`Save` the Job and :guilabel:`Run` it

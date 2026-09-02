@@ -11,6 +11,6 @@ Getting Productive
    user-interface/index
    connectivity/index
    workflow/index
-   testing/index
+   ci-testing/index
    application-lifecycle/index
    multi-tenancy/index

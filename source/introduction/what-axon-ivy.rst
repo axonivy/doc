@@ -41,7 +41,7 @@ Here is how we do it:
     and effectively. The cost of business transformations becomes reasonable and
     predictable.
 
-The Axon Ivy Platform consists of the :ref:`Axon Ivy Designer <designer-guide>` which
+The Axon Ivy Platform consists of the :ref:`Axon Ivy Designer <designer-guide-vscode>` which
 enables the drawing, simulation and implementation of automated business
 processes, and the application server :ref:`Axon Ivy Engine <engine-guide>` that
 executes your business cases and provides a shared interface for process users.
