@@ -6104,9 +6104,8 @@ msgid "Continuous Integration"
 msgstr "継続的インテグレーション"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:6
-#, fuzzy
 msgid "Axon Ivy Projects are designed to be built on a continuous integration (CI) server (e.g. `Jenkins <https://www.jenkins.io/>`__, `GitHub Actions <https://github.com/features/actions>`__, etc.)."
-msgstr "Axon Ivy プロジェクトは、Jenkins のような継続的インテグレーション（CI）サーバー上で構築されるように設計されています。"
+msgstr "Axon Ivy プロジェクトは、`Jenkins <https://www.jenkins.io/>`__ や `GitHub Actions <https://github.com/features/actions>`__ などの継続的インテグレーション（CI）サーバー上で構築されるように設計されています。"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:11
 msgid "Maven build plugin"
@@ -6121,9 +6120,8 @@ msgid "**Compilation** of Axon Ivy Projects"
 msgstr "Axon Ivy プロジェクトの**コンパイル**"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:20
-#, fuzzy
 msgid "**Validation** of Axon Ivy processes and configurations"
-msgstr "Axon Ivy プロジェクトとリソースの検証"
+msgstr "Axon Ivy プロセスと設定の**検証**"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:22
 msgid "**Testing** of unit tests against an Axon Ivy Project or the Axon Ivy core classes"
@@ -6158,14 +6156,12 @@ msgid "Open the maven view (or run command :code:`Explorer: Focus on Maven View`
 msgstr ""
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:44
-#, fuzzy
 msgid "Open the context menu of the project by right clicking it"
-msgstr "``pom.xml`` ファイルを右クリックしてコンテキストメニューを開きます。"
+msgstr "プロジェクトを右クリックしてコンテキストメニューを開きます。"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:46
-#, fuzzy
 msgid "Navigate to :guilabel:`Run Maven Commands` > :guilabel:`verify`"
-msgstr ":guilabel:`実行`、:guilabel:`Maven のインストール` の順に移動します。"
+msgstr ":guilabel:`Run Maven Commands` > :guilabel:`verify` に移動します。"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:52
 msgid "Axon Ivy Projects declare their ids and dependencies in the :ref:`project-deployment-descriptor`. This deployment descriptor can be easily edited with the corresponding Axon Ivy editor and is stored as Maven Project Object Model (``pom.xml``). Therefore each Axon Ivy Project has by default the ``pom.xml`` which is needed by maven to build it."
@@ -6200,23 +6196,20 @@ msgid "The source code of the Axon Ivy project build plugin is available on :lin
 msgstr "Axon Ivy プロジェクトビルドプラグインのソースコードは :link-url:`Github.com<build-plugin>` で公開されています。"
 
 #: ../../source/getting-productive/ci-testing/index.rst:4
-#, fuzzy
 msgid "CI and Testing"
-msgstr "テスト"
+msgstr "CI とテスト"
 
 #: ../../source/getting-productive/ci-testing/index.rst:6
 msgid "Continuous integration (CI) helps you verify changes continuously instead of waiting until the end of a development cycle. A CI server can automatically build your Axon Ivy projects, validate processes and configurations, run tests, and create deployable artifacts whenever changes are committed. This makes problems visible early and keeps the project in a releasable state."
 msgstr ""
 
 #: ../../source/getting-productive/ci-testing/index.rst:12
-#, fuzzy
 msgid "Testing is an essential part of this process. Writing test code can sometimes be tedious and time consuming, but in the long run tests make your life a lot easier:"
-msgstr "テストコードの作成は、時には退屈で、時間がかかりますが、長い目で見れば、これらのテストによって、日常業務がずっと楽になります。以下の点について考えてみましょう。"
+msgstr "テストはこのプロセスに不可欠です。テストコードの作成は、時には退屈で時間がかかりますが、長い目で見れば、テストによって作業がずっと楽になります。"
 
 #: ../../source/getting-productive/ci-testing/index.rst:16
-#, fuzzy
 msgid "Tests make the **functionality of software more reliable**."
-msgstr "テストにより、**ソフトウェアの機能を信頼できる** ものにすることができます。"
+msgstr "テストにより、ソフトウェアの**機能の信頼性を高める**ことができます。"
 
 #: ../../source/getting-productive/ci-testing/index.rst:18
 msgid "Tests help maintain **quality** as the project evolves."
@@ -6227,14 +6220,12 @@ msgid "**Repetitive tasks** can be reduced to a minimum. Let the computer do it!
 msgstr "**繰り返しの作業** を最小限に減らせます。コンピューターに任せましょう！"
 
 #: ../../source/getting-productive/ci-testing/index.rst:22
-#, fuzzy
 msgid "Tests ensure that your software **does what it is supposed to do**, even after a code change or platform update."
-msgstr "ソフトウェアが（コード変更後やプラットフォームのアップデートの後などに）**すべきこと** を確実に実行させることができます。"
+msgstr "テストにより、コード変更後やプラットフォームの更新後でも、ソフトウェアが**期待どおりに動作する**ことを確認できます。"
 
 #: ../../source/getting-productive/ci-testing/index.rst:28
-#, fuzzy
 msgid "The following testing guide is based on a :link-url:`demo project <build-examples-test-project>` and uses the name ``crm`` for the project to be tested, ``crmTests`` for the :ref:`process-<process-testing>` and :ref:`unit-testing<unit-testing>` tests, and ``crmIntegrationTests`` for the :ref:`web-testing<web-testing>` tests."
-msgstr "以下のガイドは :link-url:`デモプロジェクト<build-examples-test-project>` ベースにしており、テスト対象のプロジェクトに ``crm`` という名前を使用し :ref:`プロセス<process-testing>` と :ref:`単体テスト<unit-testing>` の 2 つのテストプロジェクト ``crmTests`` と、 :ref:`ウェブテスト<web-testing>` 用の ``crmIntegrationTests`` を使用しています。"
+msgstr "以下のテストガイドは :link-url:`デモプロジェクト<build-examples-test-project>` をベースにしています。テスト対象のプロジェクトには ``crm``、:ref:`process-<process-testing>` と :ref:`unit-testing<unit-testing>` のテストには ``crmTests``、:ref:`web-testing<web-testing>` のテストには ``crmIntegrationTests`` という名前を使用します。"
 
 #: ../../source/getting-productive/ci-testing/index.rst:34
 msgid "Since this documentation only shows how to setup a test project and perform simple tests, you should take a closer look at the demo project."
@@ -7542,16 +7533,15 @@ msgstr "ファイルシステム"
 
 #: ../../source/getting-productive/data-modeling/index.rst:16
 msgid "Data can be stored in files, see the :ref:`documents` chapter for more info. Static web files (CSS, JavaScript, Images, etc.) you place best beside your HTML Dialog's or in the :file:`webContent` folder. The :file:`webContent` folder can also contain :ref:`html-dialog-layouts`."
-msgstr ""
+msgstr "データはファイルに格納できます。詳細については、:ref:`documents` の章を参照してください。静的な Web ファイル（CSS、JavaScript、画像など）は、HTML ダイアログの横、または :file:`webContent` フォルダーに配置するのが最適です。:file:`webContent` フォルダーには :ref:`html-dialog-layouts` も格納できます。"
 
 #: ../../source/getting-productive/data-modeling/index.rst:21
 msgid "**Variables**"
 msgstr "変数"
 
 #: ../../source/getting-productive/data-modeling/index.rst:23
-#, fuzzy
 msgid "Stores simple name/value configuration pairs. On the Axon Ivy Engine there is a :ref:`UI <engine-cockpit-variables>` to change the values of a Variable. More information can be found in the chapter :ref:`variables`. If you like variables on the user level, consider using ``User Properties`` (see :public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>`)."
-msgstr "単純な名前と値のペアを格納します。Axon Ivy Engine には、変数の値を変更するための :ref:`UI <engine-cockpit-variables>` があります。詳細については、:ref:`variables` の章を参照してください。ユーザーレベルで変数を使用する場合は、``User Properties``（:public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>` を参照）の使用を検討してください。"
+msgstr "単純な名前と値の設定ペアを格納します。Axon Ivy Engine には、変数の値を変更するための :ref:`UI <engine-cockpit-variables>` があります。詳細については、:ref:`variables` の章を参照してください。ユーザーレベルで変数を使用する場合は、``User Properties`` （:public-api:`IUser </ch/ivyteam/ivy/security/IUser.html>`）の使用を検討してください。"
 
 #: ../../source/getting-productive/data-modeling/index.rst:28
 msgid "**Business Data**"
@@ -7559,7 +7549,7 @@ msgstr "ビジネスデータ"
 
 #: ../../source/getting-productive/data-modeling/index.rst:30
 msgid "With business data you can store data without a schema in an `OpenSearch <https://opensearch.org/>`__ instance. Have a look at the :ref:`business-data` chapter for more information."
-msgstr ""
+msgstr "ビジネスデータを使用すると、スキーマなしで `OpenSearch <https://opensearch.org/>`__ インスタンスにデータを格納できます。詳細については、:ref:`business-data` の章を参照してください。"
 
 #: ../../source/getting-productive/data-modeling/index.rst:33
 msgid "**Database**"
@@ -13250,9 +13240,8 @@ msgid "As **guest** user you can now **Approve** or **Reject** the leave request
 msgstr "**guest** ユーザーは、**demo** ユーザーからの休暇申請を **承認** または **却下** できます。これにより、プロセスを終了すると、ダッシュボードで **タスク** ウィジェットのタスクがなくなります。"
 
 #: ../../source/introduction/getting-started/engine/_use-the-engine.rst:41
-#, fuzzy
 msgid "Congratulations, you have successfully started your first process and finished all of its tasks. If you want to learn how to design and implement such processes have a look at the :ref:`getting-productive` guide."
-msgstr "これで、最初のプロセスを開始し、すべてのタスクを終了しました。プロセスの設計、実装方法について知りたい場合は :ref:`デザイナー<designer-guide>` イドを参照してください。"
+msgstr "最初のプロセスを正常に開始し、そのすべてのタスクを完了しました。このようなプロセスの設計と実装方法については、:ref:`getting-productive` ガイドを参照してください。"
 
 #: ../../source/introduction/getting-started/engine/_use-the-engine.rst:45
 msgid "In Axon Ivy, a task is a piece of work (a part of a process) assigned to a user or a role. A user can work on a task if this task is assigned to him or if he has the role that the task is assigned to. When a user works on a task, the task disappears from the task list of other users who would be able to work on the task, too. Only one user can work on a task at a time. In a process, it is possible to define parallel tasks. Therefore, two or more users may work in parallel on different tasks of the same process instance. In Axon Ivy, a process instance is called a **case**."
@@ -13431,9 +13420,8 @@ msgid "The digitalization of your company can **evolve over time**. We favor sma
 msgstr "企業のデジタル化は、**時間ともに進化** します。私たちは、大がかりなソリューションよりも、予測可能な小さな改善を優先します。Axon Ivy プラットフォームでは、既存の環境から素早く簡単に始めることができます。実行中のプロセスに貢献すべきユーザーにタスク通知を送信することから始めることも可能です。最終的には、プラットフォームがすべてのビジネスインタラクションの単一のインターフェイスになります。ビジネスプロセスの実行中に生成されるデータに基づいて KPI を評価できるようになり、これらの洞察から、常に効果的にビジネスを前進させることができます。ビジネストランスフォーメーションのコストは適正で、予測可能なものになります。"
 
 #: ../../source/introduction/what-axon-ivy.rst:44
-#, fuzzy
 msgid "The Axon Ivy Platform consists of the :ref:`Axon Ivy Designer <designer-guide-vscode>` which enables the drawing, simulation and implementation of automated business processes, and the application server :ref:`Axon Ivy Engine <engine-guide>` that executes your business cases and provides a shared interface for process users."
-msgstr "Axon Ivy プラットフォームは、自動化されたビジネスプロセスの作成、シミュレーション、実装を可能にする :ref:`Axon Ivy Designer<designer-guide>` と、ビジネスケースを実行し、プロセスユーザーに共有インターフェースを提供する :ref:`Axon Ivy Engine<engine-guide>` アプリケーションサーバーで構成されます。"
+msgstr "Axon Ivy プラットフォームは、自動化されたビジネスプロセスの作図、シミュレーション、実装を可能にする :ref:`Axon Ivy Designer <designer-guide-vscode>` と、ビジネスケースを実行し、プロセスユーザーに共有インターフェースを提供するアプリケーションサーバー :ref:`Axon Ivy Engine <engine-guide>` で構成されます。"
 
 #: ../../source/introduction/why-axon-ivy.rst:4
 msgid "Why Axon Ivy?"
