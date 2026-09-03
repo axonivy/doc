@@ -1,0 +1,15 @@
+digraph deployment_descriptor {
+  rankdir=LR;
+  graph [fontname="Roboto,Helvetica Neue,Arial,sans-serif", nodesep=0.6, ranksep=0.9];
+  node [shape=box, style="rounded,filled", color="#007095", fillcolor="#eaf7fb", fontcolor="#17324d", fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontsize=13, margin="0.18,0.12"];
+  edge [color="#444444", fontcolor="#17324d", fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontsize=11];
+
+  project_a [label=<
+    <FONT COLOR="#17324d"><FONT POINT-SIZE="16"><B>Project A</B></FONT><BR/>ID: com.proj.a<BR/>Version: 1</FONT>
+  >];
+  project_b [label=<
+    <FONT COLOR="#17324d"><FONT POINT-SIZE="16"><B>Project B</B></FONT><BR/>ID: com.proj.b<BR/>Version: 4</FONT>
+  >];
+
+  project_a -> project_b [label="requires"];
+}

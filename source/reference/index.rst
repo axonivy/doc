@@ -10,4 +10,5 @@ Reference
    casemap/index
    cms/index
    configuration/index
+   project/index
    public-api/index
