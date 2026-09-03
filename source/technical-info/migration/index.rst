@@ -22,6 +22,15 @@ chapter.
 
 To ease the migration we provide :ref:`migration-tools`. 
 
+**Migration Notes**
+
+Have a look at our :ref:`migration-notes` to see what has changed.
+
+**Deprecations**
+
+We also always deprecate well known features and API's before remove them. 
+Please refer to our :ref:`deprecation` chapter to be informed about.
+
 .. toctree::
    :hidden:
    :maxdepth: 3

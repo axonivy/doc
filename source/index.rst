@@ -7,9 +7,14 @@ Axon Ivy
 
    introduction/index
    getting-productive/index
-   reference/index
    designer/index
    engine-guide/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Reference
+
+   reference/index
    portal-guide/index
    market/index
    technical-info/index
