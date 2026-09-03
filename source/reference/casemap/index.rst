@@ -1,7 +1,7 @@
 .. _casemap:
 
-Case Maps
-=========
+Case Map
+========
 
 Case Maps can be used to split a long running process into multiple
 short running processes. See: :ref:`Adaptive Case Management: Regaining the
