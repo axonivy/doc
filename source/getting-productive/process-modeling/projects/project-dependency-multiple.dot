@@ -1,0 +1,28 @@
+digraph deployment_descriptor_graph {
+  rankdir=LR;
+  graph [fontname="Roboto,Helvetica Neue,Arial,sans-serif", nodesep=0.6, ranksep=0.9];
+  node [shape=box, style="rounded,filled", color="#007095", fillcolor="#eaf7fb", fontcolor="#17324d", fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontsize=12, margin="0.18,0.12"];
+  edge [color="#444444", fontcolor="#17324d", fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontsize=10];
+
+  project_a [label=<
+    <FONT COLOR="#17324d"><FONT POINT-SIZE="15"><B>Project A</B></FONT><BR/>ID: com.acme.a<BR/>Version: 2</FONT>
+  >];
+  project_b [label=<
+    <FONT COLOR="#17324d"><FONT POINT-SIZE="15"><B>Project B</B></FONT><BR/>ID: com.acme.b<BR/>Version: 5</FONT>
+  >];
+  project_c [label=<
+    <FONT COLOR="#17324d"><FONT POINT-SIZE="15"><B>Project C</B></FONT><BR/>ID: org.foo.bar<BR/>Version: 1</FONT>
+  >];
+  project_d [label=<
+    <FONT COLOR="#17324d"><FONT POINT-SIZE="15"><B>Project D</B></FONT><BR/>ID: org.foo.baz<BR/>Version: 9</FONT>
+  >];
+  project_e [label=<
+    <FONT COLOR="#17324d"><FONT POINT-SIZE="15"><B>Project E</B></FONT><BR/>ID: base<BR/>Version: 21</FONT>
+  >];
+
+  project_a -> project_b [label="[..8]"];
+  project_a -> project_c [label="[1.."];
+  project_b -> project_d [label="[9.."];
+  project_b -> project_e [label="[18.."];
+  project_c -> project_d [label="[9..9]"];
+}

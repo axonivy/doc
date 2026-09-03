@@ -1,6 +1,18 @@
 Views
 =====
 
+.. _designer-maven-view:
+
+Maven View
+----------
+
+The Maven view displays the Maven projects and dependencies available in the
+current workspace. Axon Ivy projects resolved from a Maven repository are
+shown here as well, even when their source projects are not part of the
+workspace.
+
+To open the view, run the :code:`Explorer: Focus on Maven View` command.
+
 .. _debugger-debug-view:
 
 Debug View

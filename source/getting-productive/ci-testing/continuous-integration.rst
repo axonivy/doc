@@ -7,6 +7,8 @@ Axon Ivy Projects are designed to be built on a continuous integration (CI)
 server (e.g. `Jenkins <https://www.jenkins.io/>`__, `GitHub Actions <https://github.com/features/actions>`__, etc.).
 
 
+.. _project-build-plugin:
+
 Maven build plugin
 ------------------
 
@@ -35,11 +37,11 @@ Runtime
 If you like to build you Axon Ivy Project with Maven, you need to have Maven installed on your system.
 Now you simply run maven command beside you ``pom.xml`` file (e.g. :code:`mvn clean verify`).
 
-The :ref:`designer-guide-vscode` has maven capabilites built-in, if you have the 
+The :ref:`designer-guide-vscode` has Maven capabilities built-in, if you have the
 `Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed 
 (what should be the case if you have our extension installed).
 
-1. Open the maven view (or run command :code:`Explorer: Focus on Maven View`)
+1. Open the :ref:`designer-maven-view`
 
 2. Open the context menu of the project by right clicking it
 
@@ -49,11 +51,10 @@ The :ref:`designer-guide-vscode` has maven capabilites built-in, if you have the
 Configuration
 ~~~~~~~~~~~~~
 
-Axon Ivy Projects declare their ids and dependencies in the
-:ref:`project-deployment-descriptor`. This deployment descriptor
-can be easily edited with the corresponding Axon Ivy editor and is stored as
-Maven Project Object Model (``pom.xml``). Therefore each Axon Ivy Project has by
-default the ``pom.xml`` which is needed by maven to build it.
+Axon Ivy Projects declare their Maven coordinates and dependencies in the
+:ref:`project-descriptor`, stored as Maven Project Object Model (``pom.xml``).
+Therefore each Axon Ivy Project has a ``pom.xml`` which is needed by Maven to
+build it.
 
 However advanced Maven users can adjust this default configuration and
 use additional Maven plugins or dependencies in the pom.xml. But not all
