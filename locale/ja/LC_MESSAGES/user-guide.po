@@ -9632,7 +9632,8 @@ msgid "Ajax Method Call API"
 msgstr "Ajax メソッドの呼び出し API"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-ajax-method-call.rst:4
-msgid "Methods of an HTML Dialog can be called with JavaScript through a REST-like interface. You can use this Ajax method call API of Axon Ivy to integrate JavaScript libraries like D3, jQuery or your own JavaScript frameworks. See the Ajax Method Call Demo in the HTML Dialog Demo Project:"
+#, fuzzy
+msgid "Methods of an HTML Dialog can be called with JavaScript through a REST-like interface. You can use this Ajax method call API of Axon Ivy to integrate JavaScript libraries like D3, jQuery or your own JavaScript frameworks. See the Ajax Method Call Demo in the :ref:`HTML Dialog Demo Project <importing-demo-projects>`:"
 msgstr "JavaScript を使用し、REST に似たインターフェースから HTML ダイアログのメソッドを呼び出すことができます。この Axon Ivy の Ajax メソッドの呼び出し API を使用して、D3、jQuery、独自の JavaScript フレームワークなどの JavaScript ライブラリを統合できます。HTMLDialogDemos プロジェクトにある Ajax メソッドの呼び出しのデモを参照してください。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-converters.rst:2
@@ -9760,59 +9761,59 @@ msgstr "``@SessionScoped`` - Bean は、セッションの全期間にわたっ�
 msgid "``@RequestScoped`` - an instance of the bean is created for each new request and thrown away after the response has been sent. This is the default scope that will be used when no scope is set specifically."
 msgstr "``@RequestScoped`` - 新しいリクエストごとに Bean のインスタンスが作成され、応答の送信後に破棄されます。これは、スコープが設定されない場合に使用されるデフォルトのスコープです。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:22
-msgid "JSF 2.0 introduced an additional scope @ViewScoped and offers the possibility to define custom scopes. This is basically also supported in Axon Ivy, but it is recommended to use it with care since it might not behave as expected."
-msgstr "JSF 2.0 では追加のスコープとして @ViewScoped が導入され、カスタムスコープを定義できるようになりました。基本的には Axon Ivy でもサポートされていますが、期待どおりに動作しない可能性があるため、慎重に使用することを推奨します。"
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:20
+msgid "``@ViewScoped`` - the bean lives as long as the user is interacting with the same view (page) in the browser. This scope is useful for keeping the state of the bean while navigating within the same view."
+msgstr ""
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:27
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:32
 msgid "In the :ref:`HTMLDialogDemo Project <importing-demo-projects>` that is included in the Axon Ivy Designer you find an example."
 msgstr "Axon Ivy Designer に含まれる :ref:`HTMLDialogDemo プロジェクト<importing-demo-projects>` 例を参照してください。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:31
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:36
 msgid "Bean Validation (JSR 303)"
 msgstr "Bean の検証（JSR 303）"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:33
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:38
 msgid "The *JSR 303* is a specification that defines a metadata model for bean validation. The fields of the JavaBean classes, that are used for storing the data, are annotated to describe the constraints and their validation. Experienced programmers can use JSR 303 annotations in Axon Ivy projects. The validation information will then be considered by HTML Dialogs when the field of the class is bound to a widget. There is no validation information given in the \\*.xhtml file of the HTML Dialog itself. However, the HTML Dialog uses the annotations of the fields to validate the user input."
 msgstr "*JSR 303* は、Bean 検証のためのメタデータモデルを定義する仕様です。データの格納に使用される JavaBean クラスのフィールドに、制約と検証について説明するアノテーションが付けられます。経験豊富なプログラマーは、 JSR 303 のアノテーションを Axon Ivy プロジェクトで使用できます。クラスのフィールドがウィジェットにバインドされる場合、HTML ダイアログで検証情報を考慮します。HTML ダイアログの \\*.xhtml ファイル自体には検証情報はありませんが、HTML ダイアログは、フィールドのアノテーションを使用して、ユーザー入力を検証します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:43
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:48
 msgid "All annotations defined in the package `javax.validation.constraints` are supported. For the validation messages you can use Axon Ivy macros to get the message content from the :ref:`cms`. For example:"
 msgstr "`javax.validation.constraints` パッケージで定義されたすべてのアノテーションがサポートされます。検証メッセージでは、Axon Ivy マクロを使用して、 :ref:`cms` からメッセージコンテンツを取得できます。例えば、"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:47
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:52
 msgid "``@NotNull`` means that a value is required"
 msgstr "``@NotNull`` は、値が必要なことを意味します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:49
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:54
 msgid "``@Size`` restricts the length of a string or array or the size of a collection or map"
 msgstr "``@Size`` は、文字列や配列の長さ、コレクションやマップのサイズを制限します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:52
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:57
 msgid "``@Max`` restricts the maximum allowed value"
 msgstr "``@Max`` は、最大許容値を制限します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:54
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:59
 msgid "``@Min`` restricts the minimum allowed value"
 msgstr "``@Min`` は、最小許容値を制限します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:56
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:61
 msgid "``@Pattern`` restricts a string to a given regular expression"
 msgstr "``@Pattern`` は、特定の正規表現に対する文字列を制限します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:58
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:63
 msgid "``@Digits`` restricts the maximum number of digits of the integer and faction part"
 msgstr "``@Digits`` は、整数部および小数部の最大桁数を制限します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:61
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:66
 msgid "``@Future`` restricts a date to the dates in the future"
 msgstr "``@Future`` は、未来の日付に対する日付を制限します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:63
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:68
 msgid "``@Past`` restricts a date to the dates in the past"
 msgstr "``@Past`` は、過去の日付に対する日付を制限します。"
 
-#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:78
+#: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-managed-beans.rst:83
 msgid "There will always be validation requirements for which these standard annotation will not suffice. For these cases it is possible to create your own annotation. You find an example in the :ref:`HTMLDialogDemo Project <importing-demo-projects>`."
 msgstr "標準的なアノテーションでは満たすことができない検証要件は必ずあるものです。そのような場合は、独自のアノテーションを作成できます :ref:`HTMLDialogDemo プロジェクト<importing-demo-projects>` 例を参照してください。"
 
@@ -9909,7 +9910,8 @@ msgid "The theme called **freya-ivy-light** is configured as the default. New di
 msgstr "**freya-ivy-light** という名前のテーマがデフォルトとして設定されています。コア彼現在のレイアウト（テンプレート）を選択した場合、このテーマで新しいダイアログが作成されますが、以下の手順により、別のデフォルトのテーマを簡単に設定できます。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-themes.rst:18
-msgid "The `PrimeFaces Built-In Themes <https://primefaces.github.io/primefaces/11_0_0/#/core/themes?id=built-in-themes>`__ are already included in the product. In addition, the core offers a :ref:`freya-ivy <freya-themes>` theme. To use your own theme, copy your themeXY.jar file into the folder **/webapps/ivy/WEB-INF/lib** of Designer and Engine respectively."
+#, fuzzy
+msgid "The `PrimeFaces Built-In Themes <https://primefaces.github.io/primefaces/15_0_0/#/core/themes?id=built-in-themes>`__ are already included in the product. In addition, the core offers a :ref:`freya-ivy <freya-themes>` theme. To use your own theme, copy your themeXY.jar file into the folder **/webapps/ivy/WEB-INF/lib** of Designer and Engine respectively."
 msgstr "製品には、`PrimeFaces Built-In Themes <https://primefaces.github.io/primefaces/11_0_0/#/core/themes?id=built-in-themes>`__ がすでに含まれます。さらに、コアからも :ref:`freya-ivy <freya-themes>` テーマが提供されます。独自のテーマを使用するには、作成した themeXY.jar ファイルをデザイナーとエンジンの **/webapps/ivy/WEB-INF/lib** フォルダーにそれぞれコピーします。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-themes.rst:25
@@ -25507,3 +25509,6 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "It is recommended not to change these settings. It could lead to problems while running the projects."
 #~ msgstr "これらの設定を変更しないことを推奨します。プロジェクトの実行中に問題を引き起こす可能性があります。"
+
+#~ msgid "JSF 2.0 introduced an additional scope @ViewScoped and offers the possibility to define custom scopes. This is basically also supported in Axon Ivy, but it is recommended to use it with care since it might not behave as expected."
+#~ msgstr "JSF 2.0 では追加のスコープとして @ViewScoped が導入され、カスタムスコープを定義できるようになりました。基本的には Axon Ivy でもサポートされていますが、期待どおりに動作しない可能性があるため、慎重に使用することを推奨します。"
