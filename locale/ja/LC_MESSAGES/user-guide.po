@@ -7216,9 +7216,8 @@ msgid "Now let's have a closer look at the code:"
 msgstr "それでは、コードを詳しく見ていきましょう。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:70
-#, fuzzy
 msgid "Line 9-12:"
-msgstr "31 行目："
+msgstr "9 ～ 12 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:71
 msgid "Here you tell your ``BpmClient`` that you want to test and execute your start element. After calling the :ref:`execute<process-testing-start>` method the ``BpmClient`` drives your process just after the first task."
@@ -7229,9 +7228,8 @@ msgid "Note that the ``BpmClient`` does not run through the whole process at onc
 msgstr "``BpmClient`` はプロセス全体を一度に実行するのではなく、タスクごとに実行することに注意してください。また、``skipTaskList`` フラグを無視し、``システムタスク`` で実行を停止します。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:81
-#, fuzzy
 msgid "Line 14-15:"
-msgstr "16 ～ 17 行目："
+msgstr "14 ～ 15 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:82
 msgid "You have multiple APIs to assert your processes, one of it is the :ref:`process-testing-history`. The ``History`` gives you access to the executed process elements, in this example we just assert the names of the executed elements."
@@ -7293,9 +7291,8 @@ msgid "Let us add a UI mock for the UI of the UserTask 'write invoice' element."
 msgstr "UserTask の 'write invoice' 要素の UI モックを追加してみましょう。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:143
-#, fuzzy
 msgid "Line 15:"
-msgstr "35 行目："
+msgstr "15 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:144
 msgid "Here you are telling the ``BpmClient`` that you are declaring a :ref:`process-testing-mock` for an element."
@@ -7310,9 +7307,8 @@ msgid "The HTML Dialog of the UserTask 'write invoice' returns a single value ca
 msgstr "UserTask 'write invoice' の HTML ダイアログは、``total`` という単一の値を返します。それでは、ユーザーが UI で合計 ``935`` を入力することをシミュレートするため、UI 部分をモック化してみましょう。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:155
-#, fuzzy
 msgid "Line 28-29:"
-msgstr "28 行目："
+msgstr "28 ～ 29 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:156
 msgid "With the :ref:`process-testing-data` API you can assert the process data of the executed elements."
@@ -11962,9 +11958,8 @@ msgid "``withContentFrom`` accepts different types like simple text or other doc
 msgstr ""
 
 #: ../../source/getting-productive/workflow/documents.rst:44
-#, fuzzy
 msgid "Reading documents"
-msgstr "方法／ドキュメント"
+msgstr "ドキュメントの読み取り"
 
 #: ../../source/getting-productive/workflow/documents.rst:46
 msgid "Look up a document by its path or list all documents in a context."
@@ -11983,9 +11978,8 @@ msgid "For long-running processes, keep only the documents that are required by 
 msgstr ""
 
 #: ../../source/getting-productive/workflow/documents.rst:76
-#, fuzzy
 msgid "Storage Provider"
-msgstr "キーストアのプロバイダー"
+msgstr "ストレージプロバイダー"
 
 #: ../../source/getting-productive/workflow/documents.rst:78
 msgid "The underlying storage provider is selected by the Engine configuration. The API remains the same when documents are stored locally or in S3, so an application does not need provider-specific document code. See the :ref:`document-storage` configuration for an overview and the :ref:`documents-local` and :ref:`documents-s3` sections for provider-specific settings. The provider can be configured per security system. For clustered Engines, use S3 or make the local storage root available to every node."
