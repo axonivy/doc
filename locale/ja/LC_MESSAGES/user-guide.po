@@ -202,9 +202,8 @@ msgid "If you want to familiarize yourself with the Axon Ivy Designer, we recomm
 msgstr "Axon Ivy Designer に慣れたい場合は、:ref:`Designer（VS Code 拡張機能）入門 <getting-started-designer-vscode>` を詳しく学ぶことをお勧めします。"
 
 #: ../../source/designer/introduction/index.rst:11
-#, fuzzy
 msgid "Designer System Requirements"
-msgstr "システム要件"
+msgstr "Designer のシステム要件"
 
 #: ../../source/designer/introduction/index.rst:13
 #: ../../source/designer/views/index.rst:14
@@ -16944,9 +16943,8 @@ msgid "|color-action| Changes the color of an element."
 msgstr ""
 
 #: ../../source/reference/process/process-editor/index.rst:363
-#, fuzzy
 msgid "color-action"
-msgstr "icon-action"
+msgstr "color-action"
 
 #: ../../source/reference/process/process-editor/_select-color-quick-action.rst:5
 msgid "To define new colors or edit existing ones, press the :guilabel:`plus` or the :guilabel:`edit` buttons in the color palette. Valid colors are every possible `css color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__."
@@ -20076,9 +20074,8 @@ msgid "This is just a placeholder and will be replaced with javadoc."
 msgstr "これは単なるプレースホルダーであり、Javadocに置き換えられます。"
 
 #: ../../source/technical-info/index.rst:2
-#, fuzzy
 msgid "Release Information"
-msgstr "メタ情報"
+msgstr "リリース情報"
 
 #: ../../source/technical-info/migration/deprecation.rst:4
 msgid "Deprecation and Removal"
@@ -20218,18 +20215,16 @@ msgid "To ease the migration we provide :ref:`migration-tools`."
 msgstr "スムーズに移行できるように、 :ref:`migration-tools` を提供しています。"
 
 #: ../../source/technical-info/migration/index.rst:25
-#, fuzzy
 msgid "**Migration Notes**"
-msgstr "移行に関する注記"
+msgstr "**移行に関する注意事項**"
 
 #: ../../source/technical-info/migration/index.rst:27
 msgid "Have a look at our :ref:`migration-notes` to see what has changed."
 msgstr ""
 
 #: ../../source/technical-info/migration/index.rst:29
-#, fuzzy
 msgid "**Deprecations**"
-msgstr "**制限**"
+msgstr "**非推奨**"
 
 #: ../../source/technical-info/migration/index.rst:31
 msgid "We also always deprecate well known features and API's before remove them. Please refer to our :ref:`deprecation` chapter to be informed about."
