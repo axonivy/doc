@@ -3,7 +3,7 @@ More Information (Docker Image)
 
 The Axon Ivy Engine docker image is provided here: `Docker Hub
 <https://hub.docker.com/r/axonivy/axonivy-engine/>`_. The :file:`Dockerfile`
-of the Axon Ivy Engine image is open source and can be inspected on
+of the Axon Ivy Engine image and its changelog is open source and can be inspected on
 :link-url:`GitHub <docker-image>`. In case you want
 to build your own image, maybe with another base image, you can use
 this :file:`Dockerfile` as a template.
