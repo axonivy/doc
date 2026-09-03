@@ -46,6 +46,13 @@ Common Tabs
 
    common-tabs
 
+Process
+-------
+
+.. toctree::
+   :maxdepth: 1
+
+   process
 
 Start Events
 ------------
@@ -145,11 +152,12 @@ BPMN Activities
    bpmn-activity-elements
 
 
-Annotations
------------
+Artifacts
+---------
 
 .. toctree::
    :maxdepth: 1
 
    note
+   swimlanes
 

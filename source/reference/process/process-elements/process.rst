@@ -1,7 +1,7 @@
 .. _process-properties:
 
-Process Properties
-------------------
+Process
+-------
 
 Like the process elements that are used inside a process, the process
 itself has an *inscription* that allows you to specify and edit a process's

@@ -39,7 +39,7 @@ the :code:`Play` button in the :ref:`Form Editor Toolbar
 Auto-Refresh
 ~~~~~~~~~~~~
 
-If you have a dialog open (via Preview or :ref:`simulation`) in the
+If you have a dialog open (via Preview or :ref:`simulate-process-models`) in the
 :ref:`dev-workflow-ui` and you make changes to the User Dialog View file, it
 will trigger an auto-refresh of the view. State which is only represented in the
 UI and is not held in the data will then be lost. This auto-refresh can be
