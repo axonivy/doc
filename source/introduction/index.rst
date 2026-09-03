@@ -6,5 +6,5 @@ Introduction
 
    what-axon-ivy
    why-axon-ivy
-   getting-started/index
+   getting-started
    getting-help

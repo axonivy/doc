@@ -1,9 +1,4 @@
-.. _getting-started-designer-vscode:
-
-Designer
-********
-
-.. _designer-install:
+.. _designer-installation:
 
 Installation
 ============
@@ -23,8 +18,11 @@ To install the Axon Ivy Designer:
    from the Visual Studio Code Marketplace. Search for "Axon Ivy PRO Designer
    14" in the Extensions view and click :guilabel:`Install`.
 
-Comprehensive Requirements
---------------------------
+
+.. _designer-system-requirements:
+
+Designer System Requirements
+----------------------------
 
 These are the detailed requirements to ensure the Axon Ivy Designer works
 correctly, especially in corporate environments.

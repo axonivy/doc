@@ -1,7 +1,7 @@
-.. _getting-started-engine:
+.. _engine-installation:
 
-Engine
-******
+Installation
+************
 
 In this chapter, we help you to get up to speed with the Axon Ivy Engine with
 minimal effort. For productive use, the resulting configuration has to be
@@ -22,43 +22,27 @@ An Axon Ivy Engine ready to serve your applications includes these components:
 .. rubric:: Choose your Platform
 
 At this point, you need to choose a server platform. The Axon Ivy Engine runs on
-all modern runtime environments. If you already know what you want, simply click
-on the corresponding link below. If not, read the short descriptions below and
-select thereafter.
-
-.. toctree::
-   :maxdepth: 1
-
-   docker/index
-   linux/index
-   windows/index
+all modern runtime environments.
 
 
 .. rubric:: Docker Image
 
-We provide the Axon Ivy Engine as a Docker image. You can run the Axon Ivy
+We provide the Axon Ivy Engine as a :ref:`Docker image <getting-started-docker>`. You can run the Axon Ivy
 Engine in a simple docker-compose setup or in orchestration platforms like
 Kubernetes or Openshift. This package provides optimal installation,
 configuration, and upgrade support.
 
-For details, refer to :ref:`getting-started-docker`.
-
 .. rubric:: Linux
 
-If you use a Linux system, choose this option.
+If you use a :ref:`Linux system <getting-started-linux>`, choose this option.
 Compared to  Docker, more effort is required to install and
 subsequently, upgrade the Axon Ivy Engine.
 
-For details, refer to :ref:`getting-started-linux`.
-
 .. rubric:: Windows
 
-Windows is the operating system of choice in many places. Compared to Docker,
+:ref:`Windows <getting-started-windows>` is the operating system of choice in many places. Compared to Docker,
 more effort is required to install and later on upgrade the
 Axon Ivy Engine.
-
-For details, refer to :ref:`getting-started-windows`.
-
 
 .. _non-demo-setup:
 
@@ -84,3 +68,17 @@ For example:
 * For high availability, performance and scalability, you can :ref:`cluster
   <cluster>` the Axon Ivy Engine and use a separate :ref:`OpenSearch server or
   cluster <opensearch>`.
+
+.. rubric:: System Requirements 
+
+See the :ref:`engine-system-requirements` for details.
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   docker/index
+   linux/index
+   windows/index
+   system-requirements

@@ -1,10 +1,3 @@
-Introduction
-============
-
-If you want to familiarize yourself with the Axon Ivy Engine, we recommend to dive
-into :ref:`Getting Started with the Engine <getting-started-engine>`.
-
-
 .. _engine-system-requirements:
 
 Engine System Requirements
