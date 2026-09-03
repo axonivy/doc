@@ -533,7 +533,6 @@ msgstr "プロセスデバッグ"
 
 #: ../../source/designer/views/index.rst:26
 #: ../../source/designer/views/index.rst:61
-#: ../../source/getting-productive/workflow/documents.rst:6
 #: ../../source/reference/dialog/xhtml-editor.rst:6
 #: ../../source/reference/process/smart-workflow.rst:4
 msgid "tbd"
@@ -7217,8 +7216,9 @@ msgid "Now let's have a closer look at the code:"
 msgstr "それでは、コードを詳しく見ていきましょう。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:70
-msgid "Line 11-14:"
-msgstr "11 ～ 14 行目："
+#, fuzzy
+msgid "Line 9-12:"
+msgstr "31 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:71
 msgid "Here you tell your ``BpmClient`` that you want to test and execute your start element. After calling the :ref:`execute<process-testing-start>` method the ``BpmClient`` drives your process just after the first task."
@@ -7229,7 +7229,8 @@ msgid "Note that the ``BpmClient`` does not run through the whole process at onc
 msgstr "``BpmClient`` はプロセス全体を一度に実行するのではなく、タスクごとに実行することに注意してください。また、``skipTaskList`` フラグを無視し、``システムタスク`` で実行を停止します。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:81
-msgid "Line 16-17:"
+#, fuzzy
+msgid "Line 14-15:"
 msgstr "16 ～ 17 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:82
@@ -7237,8 +7238,10 @@ msgid "You have multiple APIs to assert your processes, one of it is the :ref:`p
 msgstr "プロセスをアサートするための API は複数あり、その一つ :ref:`process-testing-history` です。 ``History`` を使用して、実行したプロセス要素にアクセスできます。この例では、実行された要素の名前をアサートしています。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:87
-msgid "Line 19:"
-msgstr "19 行目："
+#: ../../source/getting-productive/ci-testing/process-testing.rst:112
+#: ../../source/getting-productive/ci-testing/process-testing.rst:150
+msgid "Line 17:"
+msgstr "17 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:88
 msgid "The :ref:`process-testing-workflow` API gives you access to the ``Case``, ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch information about active ``Cases``/``Tasks``, executed ``Tasks`` or the ``Session``."
@@ -7258,17 +7261,12 @@ msgstr "上のコードでは、2つの新しいことを導入しました。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:106
 #: ../../source/getting-productive/ci-testing/process-testing.rst:147
-msgid "Line 17:"
-msgstr "17 行目："
+msgid "Line 16:"
+msgstr "16 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:107
 msgid "To drive our process along you need to tell your ``BpmClient`` that it should just execute any active task. In this case there is only one possible active task that can be executed, the task from the ``UserTask`` element called ``write invoice``."
 msgstr "プロセスを続行するには、``BpmClient`` にすべてのアクティブなタスクを実行するよう指示する必要があります。このケースの実行可能なアクティブタスクは、``UserTask`` 要素の ``write invoice`` という名前のタスクのみです。"
-
-#: ../../source/getting-productive/ci-testing/process-testing.rst:112
-#: ../../source/getting-productive/ci-testing/process-testing.rst:150
-msgid "Line 18:"
-msgstr "18 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:113
 msgid "Of course, you cannot just execute a task without declaring an appropriate ``Session``. To declare said ``Session`` you can call the :ref:`process-testing-as` method and append the desired ``Session``, ``User`` or ``Role`` that should execute the next task."
@@ -7295,8 +7293,9 @@ msgid "Let us add a UI mock for the UI of the UserTask 'write invoice' element."
 msgstr "UserTask の 'write invoice' 要素の UI モックを追加してみましょう。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:143
-msgid "Line 16:"
-msgstr "16 行目："
+#, fuzzy
+msgid "Line 15:"
+msgstr "35 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:144
 msgid "Here you are telling the ``BpmClient`` that you are declaring a :ref:`process-testing-mock` for an element."
@@ -7311,8 +7310,9 @@ msgid "The HTML Dialog of the UserTask 'write invoice' returns a single value ca
 msgstr "UserTask 'write invoice' の HTML ダイアログは、``total`` という単一の値を返します。それでは、ユーザーが UI で合計 ``935`` を入力することをシミュレートするため、UI 部分をモック化してみましょう。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:155
-msgid "Line 29-30:"
-msgstr "29 ～ 30 行目："
+#, fuzzy
+msgid "Line 28-29:"
+msgstr "28 行目："
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:156
 msgid "With the :ref:`process-testing-data` API you can assert the process data of the executed elements."
@@ -7323,6 +7323,7 @@ msgid "Congratulations, you have learned all about the tools and most important 
 msgstr "ここでは、プロセスの継続をアサートするためのツールと最も重要な API について学びました。次のセクションでは、いくつかの API についてさらに詳しく見ていきます。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:165
+#: ../../source/getting-productive/workflow/documents.rst:88
 msgid "API Reference"
 msgstr "API について"
 
@@ -7650,39 +7651,35 @@ msgstr "参考情報"
 msgid "If you want to know more about web testing, have a look at the :link-url:`second test in our demo project <build-examples-web-test>` or at our :link-url:`other demo projects <demos>` and how they are tested."
 msgstr "ウェブテストについてもっと知りたい場合は、 :link-url:`デモプロジェクトの 2 番目のテスト<build-examples-web-test>` 、 :link-url:`その他のデモプロジェクト<demos>` それらのテスト方法を参照してください。"
 
-#: ../../source/getting-productive/ci-testing/web-testing.rst:222
-msgid "If you want to learn more about how to build a CI/CD pipeline, take a look at the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`."
-msgstr "CI/CD パイプラインの構築方法についてもっと知りたい場合は、:dev-url:`チュートリアルのセクション</tutorial>` ある **CI/CD の動画** をご覧ください。"
-
-#: ../../source/getting-productive/ci-testing/web-testing.rst:227
+#: ../../source/getting-productive/ci-testing/web-testing.rst:224
 msgid "Selenium"
 msgstr "Selenium"
 
-#: ../../source/getting-productive/ci-testing/web-testing.rst:229
+#: ../../source/getting-productive/ci-testing/web-testing.rst:226
 msgid "Selenium is an open source web testing framework. It works across different browsers and platforms. To communicate with the browser, Selenium provides the **WebDriver** specification."
 msgstr "Selenium は、オープンソースのウェブテストフレームワークで、さまざまなブラウザやプラットフォームで動作します。ブラウザと通信するために、Selenium は **WebDriver** 仕様を提供しています。"
 
-#: ../../source/getting-productive/ci-testing/web-testing.rst:233
+#: ../../source/getting-productive/ci-testing/web-testing.rst:230
 msgid "In our tests we use the `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_, `API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_) framework, which is based on the Selenium WebDriver. If you’re more familiar with plain Selenium tests the following comparison can give you a quick overview about the differences and benefits: `Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_. Or you can simply write your tests with the normal Selenium API by accessing the driver object:"
 msgstr "私たちのテストでは、Selenium WebDriver をベースにした `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_ 、 `API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_ ) フレームワークを使用しています。 `Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_ では、Selenium のテストについて詳しい方向けに、Selenide と Seleniumを比較し、違いと利点について簡単にまとめています。また、ドライバオブジェクトにアクセスして、通常の Selenium API を使用してテストを作成することもできます。"
 
-#: ../../source/getting-productive/ci-testing/web-testing.rst:251
+#: ../../source/getting-productive/ci-testing/web-testing.rst:248
 msgid "Web-Tester"
 msgstr "Web-Tester"
 
-#: ../../source/getting-productive/ci-testing/web-testing.rst:253
+#: ../../source/getting-productive/ci-testing/web-testing.rst:250
 msgid "With the :link-url:`web-tester <webtester>` project we provide the testing annotation ``@IvyWebTest``. This annotation sets up the browser connection for you. It can be configured with some parameters:"
 msgstr ":link-url:`web-tester <webtester>` プロジェクトでは、テスト用のアノテーションである ``@IvyWebTest`` を提供しています。このアノテーションは、ブラウザの接続を設定し、いくつかのパラメーターで設定できます。"
 
-#: ../../source/getting-productive/ci-testing/web-testing.rst:262
+#: ../../source/getting-productive/ci-testing/web-testing.rst:259
 msgid "**browser**: The browser which should run the test e.g: chrome, firefox, ie, phantomjs, htmlunit, safari, opera"
 msgstr "**browser** ：テストを実行するブラウザ（例：chrome、firefox、ie、phantomjs、htmlunit、safari、opera）"
 
-#: ../../source/getting-productive/ci-testing/web-testing.rst:265
+#: ../../source/getting-productive/ci-testing/web-testing.rst:262
 msgid "**headless**: Controls if the browser should start with a UI or not."
 msgstr "**headless** ：ブラウザを UI で開始するかどうかを制御します。"
 
-#: ../../source/getting-productive/ci-testing/web-testing.rst:267
+#: ../../source/getting-productive/ci-testing/web-testing.rst:264
 msgid "**reportFolder**: when a test fails the test framework automatically takes screenshots. This folder defines where these screenshots are saved to."
 msgstr "**reportFolder** ：テストが失敗すると、テストフレームワークは自動的にスクリーンショットを撮ります。このフォルダーは、それらのスクリーンショットの保存先を定義します。"
 
@@ -11935,6 +11932,72 @@ msgstr "その他のタスクの状態"
 #: ../../source/getting-productive/workflow/case-task/states.rst:189
 msgid "There are more task states, mainly for task synchronisation, error handling, intermediate events, or user aborts. To learn more about task states, refer to the enumeration ``ch.ivyteam.ivy.workflow.TaskState`` in public API."
 msgstr "タスクの同期、エラー処理、中間イベント、ユーザーによる中断など、他にも多くのタスクの状態があります。タスクの状態の詳細については、パブリック API の ``ch.ivyteam.ivy.workflow.TaskState`` 列挙を参照してください。"
+
+#: ../../source/getting-productive/workflow/documents.rst:6
+msgid "Documents are files that belong to a workflow. Use them for content that is created or uploaded while a process is running, for example an invoice, evidence, or a generated report. The document API stores the document content and its metadata, such as its name, path, size, and creation information."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:11
+msgid "The API is available in two scopes:"
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:13
+msgid "``ivy.case.documents()`` manages documents attached to the current case."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:14
+msgid "``ivy.wf.documents()`` manages documents attached to the current workflow context."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:18
+msgid "Adding and writing documents"
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:20
+msgid "Create a document with a path, then write its content. Paths use ``/`` as the separator and can contain folders. The path must be unique in the selected case or workflow context. Use the case scope for files that belong to a case, and the workflow scope for files that belong to the current workflow context."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:40
+msgid "``withContentFrom`` accepts different types like simple text or other documents."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:44
+#, fuzzy
+msgid "Reading documents"
+msgstr "方法／ドキュメント"
+
+#: ../../source/getting-productive/workflow/documents.rst:46
+msgid "Look up a document by its path or list all documents in a context."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:62
+msgid "Moving and deleting documents"
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:64
+msgid "Move a document to a new path or delete it when it is no longer needed."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:71
+msgid "For long-running processes, keep only the documents that are required by the business process and use stable, meaningful paths."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:76
+#, fuzzy
+msgid "Storage Provider"
+msgstr "キーストアのプロバイダー"
+
+#: ../../source/getting-productive/workflow/documents.rst:78
+msgid "The underlying storage provider is selected by the Engine configuration. The API remains the same when documents are stored locally or in S3, so an application does not need provider-specific document code. See the :ref:`document-storage` configuration for an overview and the :ref:`documents-local` and :ref:`documents-s3` sections for provider-specific settings. The provider can be configured per security system. For clustered Engines, use S3 or make the local storage root available to every node."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:90
+msgid ":public-api:`IDocumentService </ch/ivyteam/ivy/workflow/document/IDocumentService.html>` contains the complete service API."
+msgstr ""
+
+#: ../../source/getting-productive/workflow/documents.rst:92
+msgid ":public-api:`IDocument </ch/ivyteam/ivy/workflow/document/IDocument.html>` contains document metadata and content access methods."
+msgstr ""
 
 #: ../../source/getting-productive/workflow/notification.rst:6
 msgid "The Axon Ivy Engine sends notifications to users via different notification channels based on subscription management."
@@ -25510,3 +25573,18 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "JSF 2.0 introduced an additional scope @ViewScoped and offers the possibility to define custom scopes. This is basically also supported in Axon Ivy, but it is recommended to use it with care since it might not behave as expected."
 #~ msgstr "JSF 2.0 では追加のスコープとして @ViewScoped が導入され、カスタムスコープを定義できるようになりました。基本的には Axon Ivy でもサポートされていますが、期待どおりに動作しない可能性があるため、慎重に使用することを推奨します。"
+
+#~ msgid "Line 11-14:"
+#~ msgstr "11 ～ 14 行目："
+
+#~ msgid "Line 19:"
+#~ msgstr "19 行目："
+
+#~ msgid "Line 18:"
+#~ msgstr "18 行目："
+
+#~ msgid "Line 29-30:"
+#~ msgstr "29 ～ 30 行目："
+
+#~ msgid "If you want to learn more about how to build a CI/CD pipeline, take a look at the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`."
+#~ msgstr "CI/CD パイプラインの構築方法についてもっと知りたい場合は、:dev-url:`チュートリアルのセクション</tutorial>` ある **CI/CD の動画** をご覧ください。"
