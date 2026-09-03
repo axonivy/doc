@@ -9632,9 +9632,8 @@ msgid "Ajax Method Call API"
 msgstr "Ajax メソッドの呼び出し API"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-ajax-method-call.rst:4
-#, fuzzy
 msgid "Methods of an HTML Dialog can be called with JavaScript through a REST-like interface. You can use this Ajax method call API of Axon Ivy to integrate JavaScript libraries like D3, jQuery or your own JavaScript frameworks. See the Ajax Method Call Demo in the :ref:`HTML Dialog Demo Project <importing-demo-projects>`:"
-msgstr "JavaScript を使用し、REST に似たインターフェースから HTML ダイアログのメソッドを呼び出すことができます。この Axon Ivy の Ajax メソッドの呼び出し API を使用して、D3、jQuery、独自の JavaScript フレームワークなどの JavaScript ライブラリを統合できます。HTMLDialogDemos プロジェクトにある Ajax メソッドの呼び出しのデモを参照してください。"
+msgstr "HTML ダイアログのメソッドは、REST に似たインターフェースを介して JavaScript から呼び出すことができます。Axon Ivy の Ajax メソッド呼び出し API を使用して、D3、jQuery、独自の JavaScript フレームワークなどの JavaScript ライブラリを統合できます。:ref:`HTML ダイアログデモプロジェクト <importing-demo-projects>` にある Ajax メソッド呼び出しのデモを参照してください。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-converters.rst:2
 msgid "Converters"
@@ -9910,9 +9909,8 @@ msgid "The theme called **freya-ivy-light** is configured as the default. New di
 msgstr "**freya-ivy-light** という名前のテーマがデフォルトとして設定されています。コア彼現在のレイアウト（テンプレート）を選択した場合、このテーマで新しいダイアログが作成されますが、以下の手順により、別のデフォルトのテーマを簡単に設定できます。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-themes.rst:18
-#, fuzzy
 msgid "The `PrimeFaces Built-In Themes <https://primefaces.github.io/primefaces/15_0_0/#/core/themes?id=built-in-themes>`__ are already included in the product. In addition, the core offers a :ref:`freya-ivy <freya-themes>` theme. To use your own theme, copy your themeXY.jar file into the folder **/webapps/ivy/WEB-INF/lib** of Designer and Engine respectively."
-msgstr "製品には、`PrimeFaces Built-In Themes <https://primefaces.github.io/primefaces/11_0_0/#/core/themes?id=built-in-themes>`__ がすでに含まれます。さらに、コアからも :ref:`freya-ivy <freya-themes>` テーマが提供されます。独自のテーマを使用するには、作成した themeXY.jar ファイルをデザイナーとエンジンの **/webapps/ivy/WEB-INF/lib** フォルダーにそれぞれコピーします。"
+msgstr "製品には、`PrimeFaces Built-In Themes <https://primefaces.github.io/primefaces/15_0_0/#/core/themes?id=built-in-themes>`__ がすでに含まれています。さらに、コアから :ref:`freya-ivy <freya-themes>` テーマも提供されます。独自のテーマを使用するには、テーマの themeXY.jar ファイルをデザイナーとエンジンそれぞれの **/webapps/ivy/WEB-INF/lib** フォルダーにコピーします。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-themes.rst:25
 msgid "The parameter ``primefaces.THEME`` can be set as a head attribute in your **template.xhtml** file."
