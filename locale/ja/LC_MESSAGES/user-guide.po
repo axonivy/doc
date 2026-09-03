@@ -534,7 +534,6 @@ msgstr "プロセスデバッグ"
 #: ../../source/designer/views/index.rst:26
 #: ../../source/designer/views/index.rst:61
 #: ../../source/reference/dialog/xhtml-editor.rst:6
-#: ../../source/reference/process/smart-workflow.rst:4
 msgid "tbd"
 msgstr ""
 
@@ -12774,6 +12773,26 @@ msgstr "独自のインストール可能なプロダクトの作成"
 msgid "You are able to craft your own installable product. Read more about this here: :link-url:`Contributing to the Axon Ivy Market <market-contribute>`"
 msgstr "独自のインストール可能なプロダクトを作成できます。詳細については、:link-url:`Contributing to the Axon Ivy Market <market-contribute>` 参照してください。"
 
+#: ../../source/market/index.rst:26
+msgid "Popular Market Artifacts"
+msgstr ""
+
+#: ../../source/market/index.rst:28
+msgid "**Axon Ivy Smart Workflow**"
+msgstr "**Axon Ivy スマートワークフロー**"
+
+#: ../../source/market/index.rst:29
+msgid "`Smart Workflow <https://market.axonivy.com/smart-workflow>`__ brings AI directly into Axon Ivy, so developers can build, run, and improve AI agents inside existing Axon processes. It lets business workflows leverage large language models to understand natural language, make autonomous decisions, and adapt to changing requirements — all without heavy architectural changes."
+msgstr ""
+
+#: ../../source/market/index.rst:36
+msgid "**Axon Ivy IDP**"
+msgstr "**Axon Ivy IDP**"
+
+#: ../../source/market/index.rst:37
+msgid "`Axon Ivy IDP <https://market.axonivy.com/idp-utils>`__ is an Intelligent Document Processing solution that automates the extraction, classification, and analysis of unstructured data. It streamlines document-intensive processes such as invoice management, claims processing, and customer onboarding using AI-powered OCR, handwriting text recognition (HTR), and machine learning algorithms to increase the accuracy and efficiency in data management."
+msgstr ""
+
 #: ../../source/portal-guide/index.rst:4
 msgid "Portal"
 msgstr "ポータルガイド"
@@ -19778,10 +19797,6 @@ msgstr "分類"
 #: ../../source/reference/process/process-outline-view.rst:23
 msgid "Elements are grouped by their BPMN type, where the element type is visualized with an icon in front of the element name."
 msgstr "要素が BPMN のタイプでグループ化され、要素名の前のアイコンで要素のタイプが視覚的に表示されます。"
-
-#: ../../source/reference/process/smart-workflow.rst:2
-msgid "Smart Workflow"
-msgstr "スマートワークフロー"
 
 #: ../../source/reference/project/index.rst:4
 msgid "Project Descriptor"
