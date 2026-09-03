@@ -2107,14 +2107,12 @@ msgid "Choose your Platform"
 msgstr "プラットフォームの選択"
 
 #: ../../source/engine-guide/installation/index.rst:24
-#, fuzzy
 msgid "At this point, you need to choose a server platform. The Axon Ivy Engine runs on all modern runtime environments."
-msgstr "サーバープラットフォームを選択します。Axon Ivy Engine はすべての最新のランタイム環境で動作します。プラットフォームが決まっている場合は、以下の対応するリンクをクリックします。そうでない場合は、以下の簡単な説明を読んでから選択してください。"
+msgstr "この時点で、サーバープラットフォームを選択する必要があります。Axon Ivy Engine は、最新のすべてのランタイム環境で動作します。"
 
 #: ../../source/engine-guide/installation/index.rst:30
-#, fuzzy
 msgid "We provide the Axon Ivy Engine as a :ref:`Docker image <getting-started-docker>`. You can run the Axon Ivy Engine in a simple docker-compose setup or in orchestration platforms like Kubernetes or Openshift. This package provides optimal installation, configuration, and upgrade support."
-msgstr "Axon Ivy Engine は Docker イメージとして提供されます。シンプルな Docker Compose セットアップ環境、または Kubernetes、Openshift などのオーケストレーションプラットフォームで Axon Ivy Engine を実行できます。このパッケージでは、最適なインストール、設定、アップグレードのサポートが提供されます。"
+msgstr "Axon Ivy Engine は :ref:`Docker イメージ <getting-started-docker>` として提供されます。シンプルな Docker Compose セットアップ環境、または Kubernetes、Openshift などのオーケストレーションプラットフォームで Axon Ivy Engine を実行できます。このパッケージでは、最適なインストール、設定、アップグレードのサポートが提供されます。"
 
 #: ../../source/engine-guide/installation/index.rst:36
 #: ../../source/engine-guide/installation/linux/index.rst:4
@@ -2127,9 +2125,8 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../../source/engine-guide/installation/index.rst:37
-#, fuzzy
 msgid "If you use a :ref:`Linux system <getting-started-linux>`, choose this option. Compared to  Docker, more effort is required to install and subsequently, upgrade the Axon Ivy Engine."
-msgstr "Linux システムを使用する場合は、このオプションを選択してください。Docker と比較して、Axon Ivy Engine をインストール、アップグレードする際の労力は増えます。"
+msgstr ":ref:`Linux <getting-started-linux>` システムを使用する場合は、このオプションを選択してください。Docker と比べて、Axon Ivy Engine のインストールおよびその後のアップグレードには、より多くの手間がかかります。"
 
 #: ../../source/engine-guide/installation/index.rst:42
 #: ../../source/engine-guide/installation/system-requirements.rst:73
@@ -2143,9 +2140,8 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../source/engine-guide/installation/index.rst:43
-#, fuzzy
 msgid ":ref:`Windows <getting-started-windows>` is the operating system of choice in many places. Compared to Docker, more effort is required to install and later on upgrade the Axon Ivy Engine."
-msgstr "Windows は多くの場所で採用されているオペレーティングシステムです。Docker と比較して、Axon Ivy Engine をインストール、アップグレードする際の労力は増えます。"
+msgstr ":ref:`Windows <getting-started-windows>` は多くの場所で採用されているオペレーティングシステムです。Docker と比較して、Axon Ivy Engine のインストールおよびその後のアップグレードには、より多くの手間がかかります。"
 
 #: ../../source/engine-guide/installation/index.rst:50
 msgid "Non-Demo Setup"
@@ -2181,9 +2177,8 @@ msgid "System Requirements"
 msgstr "システム要件"
 
 #: ../../source/engine-guide/installation/index.rst:74
-#, fuzzy
 msgid "See the :ref:`engine-system-requirements` for details."
-msgstr ":ref:`engine-system-requirements` を参照してください。"
+msgstr "詳細については、:ref:`engine-system-requirements` を参照してください。"
 
 #: ../../source/engine-guide/installation/linux/configure.rst:2
 msgid "Configure the Engine (Linux)"
@@ -9636,18 +9631,16 @@ msgid "It is recommended not to change these settings. It could lead to problems
 msgstr "これらの設定を変更しないことを推奨します。プロジェクトの実行中に問題を引き起こす可能性があります。"
 
 #: ../../source/getting-productive/process-modeling/simulation/index.rst:4
-#, fuzzy
 msgid "Simulating processes"
-msgstr "プロセスモデルのシミュレーション"
+msgstr "プロセスのシミュレーション"
 
 #: ../../source/getting-productive/process-modeling/simulation/index.rst:6
 msgid "This chapter deals with Axon Ivy debugging and simulation features. Processes, workflows, User Dialogs and changes on these should be tested before being deployed on an Axon Ivy production Engine. Therefore the Designer allows to simulate processes on your local computer, to debug it in depth and to inspect the execution history of all variable values. Hereby the process flow can be animated to visually observe the actual process execution sequence."
 msgstr "この章では、Axon Ivy のデバッグ機能とシミュレーション機能を扱います。プロセス、ワークフロー、ユーザーダイアログとそれらの変更を Axon Ivy の本番エンジンに展開する前にテストする必要があります。デザイナーを使用して、ローカルコンピューターでプロセスをシミュレートし、徹底的にデバッグし、すべての変数の値の実行履歴を精査できます。プロセスフローをアニメーション化し、実際のプロセスの実行シーケンスを視覚的に表示できます。"
 
 #: ../../source/getting-productive/process-modeling/simulation/index.rst:16
-#, fuzzy
 msgid "Start a simulation"
-msgstr "シミュレーション"
+msgstr "シミュレーションの開始"
 
 #: ../../source/getting-productive/process-modeling/simulation/index.rst:18
 msgid "A simulation can be started directly on the :ref:`Start Element <process-editor-quick-actions-start-process>` or on the :ref:`dev-workflow-ui`."
@@ -10310,9 +10303,8 @@ msgid "Auto-Refresh"
 msgstr "オートリフレッシュ"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preview.rst:42
-#, fuzzy
 msgid "If you have a dialog open (via Preview or :ref:`simulate-process-models`) in the :ref:`dev-workflow-ui` and you make changes to the User Dialog View file, it will trigger an auto-refresh of the view. State which is only represented in the UI and is not held in the data will then be lost. This auto-refresh can be disabled by clicking on the :code:`Disable auto refresh` button in the :ref:`dev-workflow-ui`."
-msgstr ":ref:`dev-workflow-ui` で（プレビューまたは :ref:`simulation` を通じて）ダイアログを開いている状態で、ユーザーダイアログビューファイルに変更を加えると、ビューのオートリフレッシュがトリガーされます。UI のみに保持され、データとして保持されていない状態は、このとき失われます。このオートリフレッシュは、:ref:`dev-workflow-ui` 内の :code:`Disable auto refresh` ボタンをクリックすることで無効にできます。"
+msgstr ":ref:`dev-workflow-ui` でプレビューまたは :ref:`simulate-process-models` を通じてダイアログを開いている状態で、ユーザーダイアログビューファイルに変更を加えると、ビューのオートリフレッシュがトリガーされます。UI にのみ表示され、データに保持されていない状態は、その時点で失われます。このオートリフレッシュは、:ref:`dev-workflow-ui` 内の :code:`Disable auto refresh` ボタンをクリックすることで無効にできます。"
 
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preview.rst:51
 msgid "Some changes cannot be refreshed. In these cases, an error will be shown, and the preview needs to be restarted."
@@ -12962,9 +12954,8 @@ msgid "We have on various topics tutorials available on our website. You can fin
 msgstr "さまざまなトピックのチュートリアルをウェブサイトで提供しています。`Axon Ivy Tutorials <https://www.axonivy.com/tutorials>`_ でご覧いただけます。"
 
 #: ../../source/introduction/getting-started.rst:4
-#, fuzzy
 msgid "**Designer**"
-msgstr "**シグナル**"
+msgstr "**Designer**"
 
 #: ../../source/introduction/getting-started.rst:6
 msgid "The Axon Ivy Designer is the development environment where you can model, design, and implement your business processes and applications. It provides tools for creating process diagrams, forms, and business logic, and allows you to test and debug your applications locally before deploying them to the Axon Ivy Engine."
@@ -12975,9 +12966,8 @@ msgid "To install a designer, follow the instructions in the :ref:`designer inst
 msgstr ""
 
 #: ../../source/introduction/getting-started.rst:13
-#, fuzzy
 msgid "**Engine**"
-msgstr "**終了ページ**"
+msgstr "**Engine**"
 
 #: ../../source/introduction/getting-started.rst:15
 msgid "The Axon Ivy Engine is the runtime environment where your business processes and applications are executed. It handles process orchestration, task management, and integration with external systems. The Engine ensures that your applications run reliably and efficiently in a production environment."
@@ -18160,9 +18150,8 @@ msgid "BPMN Activities"
 msgstr "BPMN アクティビティ"
 
 #: ../../source/reference/process/process-elements/index.rst:156
-#, fuzzy
 msgid "Artifacts"
-msgstr "artifacts"
+msgstr "アーティファクト"
 
 #: ../../source/reference/process/process-elements/join.rst:2
 msgid "Join"
