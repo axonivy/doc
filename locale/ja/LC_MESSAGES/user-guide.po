@@ -132,7 +132,7 @@ msgstr "一般的なワークフローのユースケースの処理方法、 :r
 #: ../../source/engine-guide/configuration/index.rst:4
 #: ../../source/engine-guide/integration/cluster/configuration/index.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:2
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:50
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:52
 #: ../../source/getting-productive/user-interface/branding/branding-engine.rst:21
 #: ../../source/getting-productive/workflow/overrides/index.rst:102
 #: ../../source/reference/configuration/index.rst:2
@@ -512,53 +512,64 @@ msgid "Views"
 msgstr "ビュー"
 
 #: ../../source/designer/views/index.rst:7
+#, fuzzy
+msgid "Maven View"
+msgstr "保存"
+
+#: ../../source/designer/views/index.rst:9
+msgid "The Maven view displays the Maven projects and dependencies available in the current workspace. Axon Ivy projects resolved from a Maven repository are shown here as well, even when their source projects are not part of the workspace."
+msgstr ""
+
+#: ../../source/designer/views/index.rst:14
+msgid "To open the view, run the :code:`Explorer: Focus on Maven View` command."
+msgstr ""
+
+#: ../../source/designer/views/index.rst:19
 msgid "Debug View"
 msgstr "デバッグビュー"
 
-#: ../../source/designer/views/index.rst:12
+#: ../../source/designer/views/index.rst:24
 msgid "Process Debug"
 msgstr "プロセスデバッグ"
 
-#: ../../source/designer/views/index.rst:14
-#: ../../source/designer/views/index.rst:49
+#: ../../source/designer/views/index.rst:26
+#: ../../source/designer/views/index.rst:61
 #: ../../source/getting-productive/workflow/documents.rst:6
 #: ../../source/reference/dialog/xhtml-editor.rst:6
 #: ../../source/reference/process/smart-workflow.rst:4
 msgid "tbd"
 msgstr ""
 
-#: ../../source/designer/views/index.rst:19
+#: ../../source/designer/views/index.rst:31
 msgid "Java Debug"
 msgstr "Java デバッグ"
 
-#: ../../source/designer/views/index.rst:21
+#: ../../source/designer/views/index.rst:33
 msgid "You can debug java classes in the Axon Ivy Designer, by add :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n` to the VM arguments of the engine, e.g. via :ref:`designer-engine-config-args`. If you do this change, you have to restart your engine, e.g. by run the :code:`Reload Window` command in Vs Code."
 msgstr ""
 
-#: ../../source/designer/views/index.rst:26
+#: ../../source/designer/views/index.rst:38
 msgid "Then add a java launch configuration to your :file:`.vscode/launch.json` file."
 msgstr ""
 
-#: ../../source/designer/views/index.rst:47
+#: ../../source/designer/views/index.rst:59
 msgid "Problems View"
 msgstr "問題ビュー"
 
-#: ../../source/designer/views/index.rst:55
+#: ../../source/designer/views/index.rst:67
 msgid "Runtime Log View"
 msgstr "ランタイムログビュー"
 
-#: ../../source/designer/views/index.rst:57
+#: ../../source/designer/views/index.rst:69
 msgid "The Runtime Log view displays a list of events. This events occur during the simulation."
 msgstr "ランタイムログビューには、イベントの一覧が表示されます。これらのイベントはシミュレーション中に発生します。"
 
-#: ../../source/designer/views/index.rst:60
+#: ../../source/designer/views/index.rst:72
 msgid "-> tbd: add screenshot of view"
 msgstr ""
 
-#: ../../source/designer/views/index.rst:63
+#: ../../source/designer/views/index.rst:75
 #: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:508
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:90
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:227
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-preview.rst:29
 #: ../../source/reference/configuration/persistence.rst:49
 #: ../../source/reference/dialog/form-editor.rst:23
@@ -566,19 +577,19 @@ msgstr ""
 msgid "Accessibility"
 msgstr "アクセス方法"
 
-#: ../../source/designer/views/index.rst:65
+#: ../../source/designer/views/index.rst:77
 msgid "Command: :code:`Axon Ivy: Open Axon Ivy Runtime Log`"
 msgstr ""
 
-#: ../../source/designer/views/index.rst:69
+#: ../../source/designer/views/index.rst:81
 msgid "How to log"
 msgstr "ログ方法"
 
-#: ../../source/designer/views/index.rst:71
+#: ../../source/designer/views/index.rst:83
 msgid "Besides the log events of some process elements, you can also log your own events. Open any process elements that contain IvyScript (like: Step, Web Service, etc.) and type a script like the one you find in the figure below:"
 msgstr "一部のプロセス要素のログイベントに加えて、独自のイベントも記録できます。IvyScript を含むプロセス要素（ステップ、Web サービスなど）を開き、以下の図にあるようなスクリプトを入力します。"
 
-#: ../../source/designer/views/index.rst:79
+#: ../../source/designer/views/index.rst:91
 msgid "Find out more about Axon Ivy scripting language :ref:`ivyscript`."
 msgstr "Axon Ivy のスクリプト言語の詳細については、「 :ref:`ivyscript` 」を参照してください。"
 
@@ -1075,7 +1086,6 @@ msgid "As an Editor for the files, we recommend VS-Code or the engine-cockpit :r
 msgstr "ファイルのエディターとして、VS-Code またはエンジンコックピット :ref:`engine-cockpit-config-editor` をお勧めします。なお、ほとんどの設定は :ref:`engine-cockpit` の UI でも調整できます。"
 
 #: ../../source/engine-guide/configuration/index.rst:28
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:147
 msgid "Version"
 msgstr "バージョン"
 
@@ -1683,7 +1693,6 @@ msgstr "ファイルの接尾辞"
 #: ../../source/engine-guide/reference/setup-wizard.rst:88
 #: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:387
 #: ../../source/getting-productive/data-modeling/persistence/persistence-api.rst:444
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:121
 #: ../../source/reference/configuration/persistence.rst:66
 #: ../../source/reference/data/index.rst:37
 #: ../../source/reference/process/process-elements/common-tabs.rst:33
@@ -4078,7 +4087,6 @@ msgid "An entry in the view is created for each executed process element. The ta
 msgstr "実行されるプロセス要素ごとに 1 つのエントリがビューに作成されます。表示される情報については、以下の表を参照してください。"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:64
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:140
 #: ../../source/reference/data/index.rst:32
 #: ../../source/reference/data/index.rst:59
 #: ../../source/reference/data/index.rst:103
@@ -6989,91 +6997,92 @@ msgstr "継続的インテグレーション"
 msgid "Axon Ivy Projects are designed to be built on a continuous integration (CI) server (e.g. `Jenkins <https://www.jenkins.io/>`__, `GitHub Actions <https://github.com/features/actions>`__, etc.)."
 msgstr "Axon Ivy プロジェクトは、`Jenkins <https://www.jenkins.io/>`__ や `GitHub Actions <https://github.com/features/actions>`__ などの継続的インテグレーション（CI）サーバー上で構築されるように設計されています。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:11
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:13
 msgid "Maven build plugin"
 msgstr "Maven ビルドプラグイン"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:13
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:15
 msgid "The `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ is a Maven plugin that can build Axon Ivy Projects on a developer machine or on a continuous integration server. The plugin provides the following main features:"
 msgstr "`project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ は Maven プラグインで、Axon Ivy プロジェクトを開発者マシンまたは継続的インテグレーションサーバー上で ビルドできます。このプラグインの主な機能は以下のとおりです。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:18
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:20
 msgid "**Compilation** of Axon Ivy Projects"
 msgstr "Axon Ivy プロジェクトの**コンパイル**"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:20
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:22
 msgid "**Validation** of Axon Ivy processes and configurations"
 msgstr "Axon Ivy プロセスと設定の**検証**"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:22
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:24
 msgid "**Testing** of unit tests against an Axon Ivy Project or the Axon Ivy core classes"
 msgstr "Axon Ivy プロジェクトまたは Axon Ivy のコアクラスに対する単体テストの**テスト**"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:25
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:27
 msgid "**Packaging** of built Axon Ivy Projects as IAR (ivy archive) artifacts"
 msgstr "IAR（ivy アーカイブ）のアーティファクトとしてビルドされた Axon Ivy プロジェクトの**パッケージ化**"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:27
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:29
 msgid "**Installation** of IAR artifacts into the local Maven repository"
 msgstr "IAR のアーティファクトの Maven のローカルリポジトリへの**インストール**"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:29
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:31
 msgid "**Deployment** of IAR artifacts to an Axon Ivy Engine"
 msgstr "IAR のアーティファクトの Axon Ivy Engine への展開"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:33
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:35
 msgid "Runtime"
 msgstr "ランタイム"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:35
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:37
 msgid "If you like to build you Axon Ivy Project with Maven, you need to have Maven installed on your system. Now you simply run maven command beside you ``pom.xml`` file (e.g. :code:`mvn clean verify`)."
 msgstr ""
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:38
-msgid "The :ref:`designer-guide-vscode` has maven capabilites built-in, if you have the `Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed (what should be the case if you have our extension installed)."
-msgstr ""
-
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:42
-msgid "Open the maven view (or run command :code:`Explorer: Focus on Maven View`)"
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:40
+msgid "The :ref:`designer-guide-vscode` has Maven capabilities built-in, if you have the `Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed (what should be the case if you have our extension installed)."
 msgstr ""
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:44
+msgid "Open the :ref:`designer-maven-view`"
+msgstr ""
+
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:46
 msgid "Open the context menu of the project by right clicking it"
 msgstr "プロジェクトを右クリックしてコンテキストメニューを開きます。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:46
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:48
 msgid "Navigate to :guilabel:`Run Maven Commands` > :guilabel:`verify`"
 msgstr ":guilabel:`Run Maven Commands` > :guilabel:`verify` に移動します。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:52
-msgid "Axon Ivy Projects declare their ids and dependencies in the :ref:`project-deployment-descriptor`. This deployment descriptor can be easily edited with the corresponding Axon Ivy editor and is stored as Maven Project Object Model (``pom.xml``). Therefore each Axon Ivy Project has by default the ``pom.xml`` which is needed by maven to build it."
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:54
+#, fuzzy
+msgid "Axon Ivy Projects declare their Maven coordinates and dependencies in the :ref:`project-descriptor`, stored as Maven Project Object Model (``pom.xml``). Therefore each Axon Ivy Project has a ``pom.xml`` which is needed by Maven to build it."
 msgstr "Axon Ivy プロジェクトは、 :ref:`project-deployment-descriptor` で ID と依存関係を宣言します。このデプロイメント記述子は対応する Axon Ivy エディターで簡単に編集でき、Maven Project Object Model（``pom.xml``）として保存されます。そのため、各 Axon Ivy プロジェクトにはデフォルトで、Maven がプロジェクトをビルドするのに必要な ``pom.xml`` が含まれます。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:58
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:59
 msgid "However advanced Maven users can adjust this default configuration and use additional Maven plugins or dependencies in the pom.xml. But not all POM entries should be modified, some are required or limited in usage in Axon Ivy Projects:"
 msgstr "なお、Maven の上級ユーザーは、この初期設定を調整し、pom.xml で追加の Maven プラグインや依存関係を使用できます。ただし、すべての POM エントリを変更する必要はなく、Axon Ivy プロジェクトでは必須であったり、使用が制限されているものもあります。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:63
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:64
 msgid "``<groupId/>``\\ and ``<version/>``\\ Must be set in every Axon Ivy Project POM. It can not be inherited from a parent POM (even tough this is valid in plain Maven)."
 msgstr "``<groupId/>``\\および``<version/>``\\は、すべてのAxon IvyプロジェクトPOM 設定する必要があります。親POMから継承することはできません（プレーンなMavenでは有効です）。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:67
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:68
 msgid "``<packaging>iar</packaging>`` Provides the custom Axon Ivy Project lifecycle, must not be modified."
 msgstr "``<packaging>iar</packaging>`` は、カスタムAxon Ivyプロジェクトのライフサイクルを提供します。変更しないでください。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:70
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:71
 msgid "The version must be qualified like ``<version>5.0.0-SNAPSHOT</version>.`` A version like ``<version>5-SNAPSHOT</version>`` is prohibited."
 msgstr "バージョンは ``<version>5.0.0-SNAPSHOT</version>`` のように修飾する必要があります。 ``<version>5-SNAPSHOT</version>`` のようなバージョンは禁止されています。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:76
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:77
 msgid "Technical documentation"
 msgstr "技術ドキュメント"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:78
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:79
 msgid "The detailed plugin goal and parameter documentation is on `Github.io <https://axonivy.github.io/project-build-plugin>`__"
 msgstr "プラグインのゴールとパラメーターの詳細なドキュメントは `Github.io <https://axonivy.github.io/project-build-plugin>`__ にあります。"
 
-#: ../../source/getting-productive/ci-testing/continuous-integration.rst:81
+#: ../../source/getting-productive/ci-testing/continuous-integration.rst:82
 msgid "The source code of the Axon Ivy project build plugin is available on :link-url:`Github.com <build-plugin>`."
 msgstr "Axon Ivy プロジェクトビルドプラグインのソースコードは :link-url:`Github.com<build-plugin>` で公開されています。"
 
@@ -9153,482 +9162,49 @@ msgstr "*プロセスベースのユーザーダイアログ* の呼び出し（
 msgid "However, from an abstract point of view, a User Dialog is nothing else than a function call. It is invoked with a list of (optional) arguments and returns a list of result values. This is exactly the same behavior as a callable process offers."
 msgstr "ただし、抽象的な視点から言うと、ユーザーダイアログは機能呼び出しに過ぎません。ユーザーダイアログは（任意の）引数のリストで呼び出され、結果の値のリストを返します。これは、呼び出し可能プロセスとまったく同じ動作です。"
 
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:6
-msgid "Project Deployment Descriptor"
-msgstr "プロジェクトデプロイメント記述子"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:8
-msgid "Each Axon Ivy project has a *deployment descriptor*. The deployment descriptor defines various properties of a project that are important with respect to deployment on the engine. Specifically the descriptor defines:"
-msgstr "Axon Ivy の各プロジェクトには *デプロイメント記述子* があります。デプロイメント記述子は、エンジンへの展開に関して重要なプロジェクトのプロパティを定義します。具体的には、記述子は以下を定義します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:13
-msgid "A *unique project ID* (i.e., a fully qualified symbolic name) for the project, by which it can be identified and referenced. Also a current *development version* of the project is defined (please note that this version may, but does not necessarily have to be, identical with the project model version on the engine into which the project will eventually be deployed)."
-msgstr "プロジェクトの識別や参照に使用される、プロジェクトの*一意のプロジェクト ID*（完全修飾識別名）。また、現在の *開発バージョン* も定義されます（必ずしもそうではありませんが、このバージョンは、プロジェクトが最終的に展開されるエンジンのプロジェクトモデルバージョンと同じであることに注意してください）。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:20
-msgid "The *dependencies of a project to other projects* and the exact version range of those projects that must be available in order for the project to work. Once a project is referenced in this way, its artifacts may be used inside the referencing project. This applies especially to the following artifacts: User Dialogs, Data Classes, Web Service Configurations, CMS Entries, Configurations, Java classes or Java libraries (JAR files)."
-msgstr "*プロジェクトの他のプロジェクトへの依存関係* と、プロジェクトでの作業に必要な、それらのプロジェクトのバージョンの正確な範囲。この方法でプロジェクトを参照しない場合は、参照元のプロジェクトのアーティファクトを使用できます。対象となるアーティファクトには、ユーザーダイアログ、データクラス、Web サービス設定、CMS エントリ、設定、Java クラス、Java ライブラリ（JAR ファイル）があります。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:28
-msgid "Information about the implementor of the project and its purpose."
-msgstr "プロジェクトの実装者およびその目的に関する情報。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:30
-msgid "The following figure illustrates the above:"
-msgstr "上記を以下の図で説明します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:32
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:35
-msgid "A project dependency, defined by the Project Deployment Descriptor"
-msgstr "プロジェクトデプロイメント記述子で定義されるプロジェクトの依存関係"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:37
-msgid "Since referenced projects may in turn reference other projects, a whole (acyclic) dependency graph may be constructed this way. All artifacts of projects that are reachable from some project in this way (i.e., by following the arrows) can be used."
-msgstr "参照先のプロジェクトが他のプロジェクトを参照する可能性があるため、全体的な依存関係グラフ（非巡回グラフ）はこのように構築できます。この方法で（矢印をたどることにより）他のプロジェクトから到達可能なプロジェクトのすべてのアーティファクトを使用できます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:42
-msgid "The following figure illustrates this feature. For example, a User Dialog defined in *Project D* may be used in *Project A*. A Data Class that is defined in *Project E* may also be used in *Project A*. However, it is not possible to use a sub process defined in *Project B* from *Project C* (unless *Project B* is added as required project in the deployment descriptor of *Project C*)."
-msgstr "この機能を以下の図で説明します。例えば、*Project D* で定義されたユーザーダイアログを *Project A* で使用できます。同様に、*Project E* で定義されたデータクラスを *Project A* で使用できます。ただし、*Project B* で定義されたサブプロセスを *Project C* から使用することはできません（*Project B* が、*Project C* のデプロイメント記述子で必要なプロジェクトとして追加されている場合を除く）。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:49
-msgid "The search order to look up reused artifacts is breadth first. The order in which directly referenced projects are looked up, can be defined in the :ref:`project-deployment-descriptor`."
-msgstr "再使用されたアーティファクトの検索順序は幅優先です。直接参照されるプロジェクトの検索順序 :ref:`project-deployment-descriptor` で定義できます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:53
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:56
-msgid "Project Dependency Graph"
-msgstr "プロジェクトの依存関係グラフ"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:58
-msgid "Projects may be required with a specific version or within a specific version range. This is also illustrated in the above figure."
-msgstr "プロジェクトが特定のバージョンまたは特定のバージョン範囲になければならない場合があります。上の図ではそのことも説明されています。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:61
-msgid "When deploying projects on the engine, the availability of the required projects (and their versions) is checked. If the required project versions cannot be resolved, then a project cannot be deployed. Therefore projects must be deployed *bottom up*, i.e., one must start by deploying first the required projects that are lowest in the dependency hierarchy."
-msgstr "プロジェクトをエンジンに展開する際は、必要なプロジェクト（とそのバージョン）が使用可能な確認します。必要なプロジェクトのバージョンを解決できない場合、そのプロジェクトは展開できません。そのため、プロジェクトは *下から上に* 展開しなければなりません。つまり、依存関係の階層の一番下にある必要なプロジェクトを最初に展開する必要があります。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:71
-msgid "Deployment Descriptor Editor"
-msgstr "デプロイメント記述子エディター"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:73
-msgid "The Deployment Descriptor editor allows to edit a project's deployment properties as well as the required projects and their version ranges as described above."
-msgstr "デプロイメント記述子エディターでは、プロジェクトのデプロイメントプロパティと、上述の必要なプロジェクトおよびそのバージョン範囲を編集できます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:77
-msgid "The deployment descriptor editor consists of two tabs:"
-msgstr "デプロイメント記述子エディターは以下の 2 つのタブで構成されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:79
-msgid "The *Deployment* tab is used to configure the project's own deployment information."
-msgstr "［*展開*］タブを使用して、プロジェクト独自の展開情報を設定します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:82
-msgid "The *Required Projects* tab is used to define other projects (possibly in a specific version) that the project depends on."
-msgstr "［*必要なプロジェクト*］タブを使用して、プロジェクトが依存する（特定のバージョンの）他のプロジェクトを定義します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:85
-msgid "The deployment description is stored as Maven pom.xml, allowing Ivy Projects to be built on a continuous integration server. See :ref:`continuous-integration`."
-msgstr "デプロイメント記述子は Maven の pom.xml として格納され、継続的インテグレーションサーバーで Ivy プロジェクトを作成できます。「 :ref:`continuous-integration` 」を参照してください。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:92
-msgid "Axon Ivy Project Tree -> double click on the *Deployment* node inside the project tree (|imagef0|)"
-msgstr "Axon Ivy プロジェクトツリーで *展開* ノードをダブルクリックします（|imagef0|）。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:238
-msgid "imagef0"
-msgstr "imagef0"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:96
-msgid "Deployment Tab"
-msgstr "展開タブ"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:100
-msgid "Group ID"
-msgstr "グループ ID"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:101
-msgid "Identifies your project uniquely across all projects. It has to follow the package name rules, which means that it has to contain at least the domain name you control, and you can create as many subgroups as you want. e.g., ``com.acme.ria``."
-msgstr "すべてのプロジェクトでプロジェクトを一意に識別します。パッケージ名の規則に従う必要があり、少なくとも管理するドメイン名を含める必要があります。また、必要な数だけサブグループを作成できます（例：``com.acme.ria``）。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:106
-msgid "Project ID"
-msgstr "プロジェクト ID"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:107
-msgid "You can choose any name you want in lowercase letters and without special symbols, e.g., ``users`` or ``user-manager``."
-msgstr "特殊文字を含まない好きな名前を選び、小文字で入力します（例：``users``、``user-manager``）。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:110
-msgid "On deployment to the Axon Ivy Engine the concatenated Group ID + Project ID will act as unique identifier of the project."
-msgstr "Axon Ivy Engine への展開時には、グループ ID + プロジェクト ID がプロジェクトの一意の識別子となります。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:113
-msgid "Project Version"
-msgstr "プロジェクトバージョン"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:114
-msgid "The current development version of the project."
-msgstr "プロジェクトの現在の展開バージョン。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:116
-msgid "Provider"
-msgstr "プロバイダー"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:117
-msgid "The name of the user or company that implements and maintains (i.e. provides) the project. The provider setting has no functional purpose. It is for documentation only."
-msgstr "プロジェクトを実装、維持する（提供する）ユーザーまたは会社の名前。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:122
-msgid "A (short) description of the project's purpose and contents. The description setting has no functional purpose. It is for documentation only."
-msgstr "プロジェクトの目的と内容の（簡単な）説明。説明の設定に機能的な目的はなく、説明のみを目的としています。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:127
-msgid "Required Projects Tab"
-msgstr "必要なプロジェクトタブ"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:129
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:132
-msgid "Deployment Descriptor Editor: Required Libraries Tab"
-msgstr "デプロイメント記述子エディター - ［必要なプロジェクト］タブ"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:134
-msgid "Required Projects"
-msgstr "必要なプロジェクト"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:135
-msgid "A table shows the list of the required projects, both with their name and their ID (as defined in the project's deployment descriptor). The table also shows the version range in which the referenced project must be available."
-msgstr "必要なプロジェクトとその名前、ID（プロジェクトデプロイメント記述子で定義）のリストが表に表示されます。また、参照先のプロジェクトを使用できるバージョン範囲も表示されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:141
-msgid "The display name of the required project (how it is shown in the workspace)."
-msgstr "必要なプロジェクトの表示名（ワークスペースに表示される名前）。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:144
-msgid "ID"
-msgstr "ID"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:145
-msgid "The unique identifier of the required project."
-msgstr "必要なプロジェクトの一意の識別子。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:148
-msgid "The range specification of the version that the referenced project is required to have."
-msgstr "参照先のプロジェクトに必要なバージョンの範囲を指定します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:151
-msgid "Note that the order in the table defines the order how referenced artifacts are searched (Use the **Up Button** and **Down Button** to change the order). The general search order in the dependency graph is *breadth first*, but the order that you define here is the search order that will be used on a specific node when searching the graph."
-msgstr "表での順序によって、参照先のアーティファクトの検索順序が決まることに注意してください（順序を変更するには、**上ボタン** または **下ボタン** を使用します）。依存関係グラフの一般的な検索順序は *幅優先* ですが、グラフを検索する際、ここで定義した順序が特定のノードで使用されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:157
-msgid "Clicking the *Add* button brings up a dialog with a selection box, in which any of the projects that are currently present in the workspace may be selected as required project. Closed projects or projects that are already (directly) required, cannot be selected."
-msgstr "［*追加*］ボタンをクリックすると、選択ボタンを含むダイアログが表示され、現在、ワークスペースにあるプロジェクトを必要なプロジェクトとして選択できます。閉じられたプロジェクトや、すでに（直接）必要なプロジェクトは選択できません。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:162
-msgid "Selecting an entry in the table and subsequently clicking the *Remove* button removes a project dependency."
-msgstr "表でエントリを選択し、［*削除*］ボタンをクリックすると、プロジェクトの依存関係が削除されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:165
-msgid "Required Project Details"
-msgstr "必要なプロジェクトの詳細"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:166
-msgid "Shows the details of the currently selected project."
-msgstr "現在選択されているプロジェクトの詳細が表示されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:168
-msgid "Group and Project ID"
-msgstr "グループとプロジェクト ID"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:169
-msgid "The identifiers of the required project (not editable)."
-msgstr "必要なプロジェクトの識別子（編集不可）。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:171
-msgid "Maximum Version"
-msgstr "最大バージョン"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:172
-msgid "Optionally specify the maximum version that the required project needs to have. Choose whether you want to include or exclude this maximal version by checking the **Inclusive** box"
-msgstr "任意で、必要なプロジェクトの最大バージョンを指定します。［**含める** ］チェックボックスで、この最大バージョンを含めるか除外するかを選択します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:176
-msgid "Minimum Version"
-msgstr "最小バージョン"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:177
-msgid "Optionally specify the minimum version that the required project needs to have. Choose whether you want to include or exclude this minimal version by checking the **Inclusive** box"
-msgstr "任意で、必要なプロジェクトの最小バージョンを指定します。［**含める** ］チェックボックスで、この最小バージョンを含めるか除外するかを選択します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:183
-msgid "Beware of cycles in the project dependencies! You should never require a project B from a project A, if B also requires A (or if B requires any project that in turn requires A, which would form a larger cycle). Error markers will be displayed when the workspace is built, and cycles are detected as this condition can lead to endless recursion and other unpredictable behavior when looking up artifacts."
-msgstr "プロジェクトの依存関係の巡回に注意してください。プロジェクト B もプロジェクト A を必要とする場合（または、プロジェクト B がプロジェクト A を必要とするプロジェクトを必要とする場合、より大きな巡回が形成されます）、プロジェクト A からプロジェクト B を必要プロジェクトに設定しないでください。このような条件は際限のない再帰につながり、アーティファクトの検索時に予期しない動作が行われる可能性があるため、ワークスペースの作成時にエラーマーカーが表示され、巡回が検出されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:194
-msgid "Project Graph view"
-msgstr "プロジェクトグラフビュー"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:196
-msgid "The Project Graph view shows the dependency graph of all projects in the workspace."
-msgstr "プロジェクトグラフビューには、ワークスペースのすべてのプロジェクトの依存関係グラフが表示されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:199
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:52
-#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:12
-#: ../../source/getting-productive/workflow/case-task/states.rst:19
-#: ../../source/reference/process/error-handling.rst:73
-#: ../../source/reference/process/process-elements/process-end-page.rst:37
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:59
-msgid "|image1|"
-msgstr "|image1|"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:239
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:411
-#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:103
-#: ../../source/getting-productive/workflow/case-task/states.rst:193
-#: ../../source/reference/process/error-handling.rst:259
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:59
-#: ../../source/reference/process/process-elements/process-end-page.rst:41
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:329
-msgid "image1"
-msgstr "image1"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:203
-msgid "Toolbar actions"
-msgstr "ツールバーのアクション"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:205
-msgid "|image2| Refreshes the complete graph. Manually moved nodes will be rearranged by the auto layout algorithm."
-msgstr "|image2| グラフ全体を更新します。ノードを手動で移動すると、自動レイアウトアルゴリズムによって、ノードが並び替えられます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:240
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:412
-#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:104
-#: ../../source/getting-productive/workflow/case-task/states.rst:194
-#: ../../source/reference/process/error-handling.rst:260
-#: ../../source/reference/process/process-editor/index.rst:397
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:60
-#: ../../source/reference/process/process-elements/call-sub.rst:60
-#: ../../source/reference/process/process-elements/error-boundary-event.rst:46
-#: ../../source/reference/process/process-elements/error-end.rst:43
-#: ../../source/reference/process/process-elements/error-start.rst:45
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:330
-#: ../../source/reference/process/process-elements/signal-boundary-event.rst:41
-#: ../../source/reference/process/process-elements/signal-start.rst:47
-#: ../../source/reference/process/process-elements/trigger-step.rst:45
-#: ../../source/reference/process/process-elements/wait-program-intermediate-event.rst:135
-msgid "image2"
-msgstr "image2"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:208
-msgid "|image3| Selects the zoom level of the view."
-msgstr "|image3| ビューのズームレベルを選択します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:241
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:413
-#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:105
-#: ../../source/getting-productive/workflow/case-task/states.rst:195
-#: ../../source/reference/process/error-handling.rst:261
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:61
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:331
-msgid "image3"
-msgstr "image3"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:210
-msgid "|image4| Selects the layout algorithm that arranges the nodes and dependency edges in the view."
-msgstr "|image4| ビューのノードと依存関係エッジを並び替えるレイアウトアルゴリズムを選択します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:242
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:414
-#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:106
-#: ../../source/getting-productive/workflow/case-task/states.rst:196
-#: ../../source/reference/process/error-handling.rst:262
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:62
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:332
-#: ../../source/reference/process/process-elements/start.rst:294
-msgid "image4"
-msgstr "image4"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:213
-msgid "|image5| Automatically opens the Project Graph whenever a Library Descriptor Editor is opened."
-msgstr "|image5| ライブラリ記述子エディターが開かれると、プロジェクトグラフを自動的に開きます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:243
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:415
-#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:107
-#: ../../source/getting-productive/workflow/case-task/states.rst:197
-#: ../../source/reference/process/error-handling.rst:263
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:63
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:333
-msgid "image5"
-msgstr "image5"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:218
-msgid "Graph actions"
-msgstr "グラフのアクション"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:220
-msgid "Double click on a node to open its Library Descriptor Editor"
-msgstr "ノードをダブルクリックして、そのノードのライブラリ記述子エディターを開きます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:222
-msgid "Drag a node to improve the layout"
-msgstr "ノードをドラッグして、レイアウトを改善します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:224
-msgid "Click on a node to highlight it"
-msgstr "ノードをクリックして強調表示します。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:229
-msgid "Windows -> Show View -> Axon Ivy -> Project Graph"
-msgstr "［ウィンドウ］ > ［ビューを表示］ > ［Axon Ivy］ > ［プロジェクトグラフ］"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:231
-msgid "CTRL + 3 (Quick Access) -> Project Graph"
-msgstr "CTRL + 3（クイックアクセス）でプロジェクトグラフを開きます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:233
-msgid "Deployment Descriptor Editor -> Open Project Graph from header toolbar"
-msgstr "デプロイメント記述子エディターのヘッダーのツールバーからプロジェクトグラフを開きます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:236
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:347
-#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:68
-#: ../../source/reference/process/error-handling.rst:226
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:105
-#: ../../source/reference/process/process-elements/start.rst:237
-msgid "|image6|"
-msgstr "|image6|"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:244
-#: ../../source/getting-productive/workflow/adaptive-case-management.rst:416
-#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:108
-#: ../../source/reference/process/error-handling.rst:264
-#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:64
-#: ../../source/reference/process/process-elements/rest-client-activity.rst:334
-#: ../../source/reference/process/process-elements/start.rst:295
-msgid "image6"
-msgstr "image6"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:248
-msgid "Adding additional dependencies"
-msgstr "追加の依存関係の追加"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:250
-msgid "To add Java libraries to your projects that are not included in the Axon Ivy platform, you can include them as Maven dependencies."
-msgstr "Axon Ivy プラットフォームに含まれていない Java ライブラリをプロジェクトに追加する場合、Maven の依存関係として含めることができます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:253
-msgid "To add a new dependency, open the Deployment Descriptor with the Maven POM Editor by right clicking on the Deployment Descriptor file and choosing **Open With -> Maven POM Editor** or click on the **Open with Maven POM Editor** action in the toolbar of the :ref:`deployment-descriptor-editor`."
-msgstr "新しい依存関係を追加するには、デプロイメント記述子ファイルを右クリックし、**［エディターで開く］、［Maven POM Editor］** の順に選択して Maven POM Editor でデプロイメント記述子を開くか、:ref:`deployment-descriptor-editor` のツールバーで［**Maven POM Editor で開く**］アクションをクリックします。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:258
-msgid "Then go to the *Dependencies* tab and click **Add...** to add a new dependency. All libraries included in the dependencies will be added to the classpath and are also included in the packaged Axon Ivy project."
-msgstr "［*依存関係*］ タブに移動し、［**追加...** ］をクリックして新しい依存関係を追加します。依存関係に含まれるすべてのライブラリがクラスパスに追加され、パッケージ化された Axon Ivy プロジェクトにも入れられます。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:263
-msgid "Automatic import of required Axon ivy Projects"
-msgstr "必要な Axon Ivy プロジェクトの自動インポート"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:265
-msgid "By default, Axon Ivy Designer automatically imports other required Axon ivy projects from available Maven repositories. E.g., if your project has a dependency on the Axon ivy project ``com.axonivy.portal:portal-components`` and has configured the Maven repository of the Axon Ivy market ``https://maven.axonivy.com/`` then Axon Ivy Designer downloads the project from the repository and automatically imports it to the workspace."
-msgstr "デフォルトでは、Axon Ivy Designer は他の必要な Axon Ivy プロジェクトを Maven リポジトリから自動的にインポートします。例えば、プロジェクトが ``com.axonivy.portal:portal-components`` という Axon Ivy プロジェクトに依存し、Axon Ivy Market ``https://maven.axonivy.com/`` の Maven リポジトリが設定されている場合、Axon Ivy Designer はそのリポジトリからプロジェクトをダウンロードし、自動的にワークスペースにインポートします。"
-
-#: ../../source/getting-productive/process-modeling/projects/deployment.rst:270
-msgid "In some use cases, this automatic import is not desirable (E.g., project migration, etc.). For these cases, you can turn off the automatic import in the preferences. On the toolbar of the :ref:`deployment-descriptor-editor`, you can see if the **Auto Import** is on or off. There is also an action to trigger the execution of the automatic import. This action works even if **Auto Import** is turned off. A log with the executed tasks is shown to better understand what the automatic import is doing."
-msgstr "一部のユースケースでは、この自動インポートが望ましくない場合があります（例：プロジェクトの移行など）。そのような場合には、環境設定で自動インポートを無効にできます。 :ref:`deployment-descriptor-editor` のツールバーでは、**自動インポート** のオン/オフを確認できます。また、自動インポートの実行を手動でトリガーするアクションもあり、これは **自動インポート** がオフの場合でも動作します。自動インポートが何を行っているかを理解しやすいように、実行されたタスクのログが表示されます。"
-
 #: ../../source/getting-productive/process-modeling/projects/index.rst:2
 msgid "Projects"
 msgstr "プロジェクト"
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:4
-msgid "Axon Ivy Projects can be seen as development modules that encapsulate the processes and other artifacts that form an application. An Axon Ivy project roughly comprises of processes, User Dialogs, Data Classes, a Content Management System and various configurations. All of those aspects are explained in separate chapters of this document."
+#, fuzzy
+msgid "Axon Ivy Projects are development modules that encapsulate the processes and other artifacts that form an application. An Axon Ivy project roughly comprises processes, User Dialogs, Data Classes, a Content Management System and various configurations."
 msgstr "Axon Ivy プロジェクトは、アプリケーションを構成するプロセスとその他のアーティファクトをカプセル化する開発モジュールのようなものです。大まかに言うと、Axon Ivy プロジェクトは、プロセス、ユーザーダイアログ、データクラス、コンテンツ管理システム、各種設定から構成されます。これらすべてを本書の各章で説明します。"
 
-#: ../../source/getting-productive/process-modeling/projects/index.rst:10
-msgid "Projects can be reused, i.e., any project can depend on functionality which is implemented by another project. Projects that implement reused functionality and/or artifacts are called **required projects** with respect to the project that makes use of that functionality. The latter is in turn called the **dependent project*** with respect to its required projects."
-msgstr "プロジェクトは再利用できます。つまり、任意のプロジェクトは、他のプロジェクトで実装される機能に依存できます。再利用される機能やアーティファクトを実装するプロジェクトは、その機能を利用するプロジェクトから見て **必要なプロジェクト** と呼ばれます。逆に、機能を利用するプロジェクトは、必要なプロジェクトから見て **依存プロジェクト** と呼ばれます。"
+#: ../../source/getting-productive/process-modeling/projects/index.rst:9
+msgid "Projects can be reused when a project depends on functionality implemented by another project, with the providing project called the **required project** and the using project called the **dependent project**."
+msgstr ""
 
-#: ../../source/getting-productive/process-modeling/projects/index.rst:17
-msgid "Once you have finished your development you will usually want to install the implemented application or workflow on an Axon Ivy Engine. Projects form the single unit of deployment for this purpose, i.e., you deploy each project into a container on the engine which is called *process model version*. A project may be deployed in multiple versions on the engine; each process model version therefore contains a snapshot of a project at a specific point of time in development. See chapter :ref:`deployment` for more information on this topic."
-msgstr "開発が終了したら、実装したアプリケーションやワークフローを Axon Ivy Engine にインストールします。この場合、プロジェクトは 1 つの展開単位を形成します。つまり、*プロセスモデルバージョン* と呼ばれるエンジンのコンテナに各プロジェクトを展開します。プロジェクトを複数のバージョンでエンジンに展開でき、各プロセスモデルバージョンには、開発時点のプロジェクトのスナップショットが格納されます。詳細については、「 :ref:`deployment` 」の章を参照してください。"
+#: ../../source/getting-productive/process-modeling/projects/index.rst:13
+msgid "In the Designer, projects are created and organized in a VS Code *workspace*. Required projects can be present in the workspace or resolved from a Maven repository. See the :ref:`project-descriptor` for information about declaring these dependencies in :file:`pom.xml`."
+msgstr ""
+
+#: ../../source/getting-productive/process-modeling/projects/index.rst:19
+#, fuzzy
+msgid "Project dependencies"
+msgstr "プロジェクトの依存関係"
+
+#: ../../source/getting-productive/process-modeling/projects/index.rst:21
+#, fuzzy
+msgid "The following graph illustrates a project dependency:"
+msgstr "上記を以下の図で説明します。"
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:26
-msgid "The data that specifies a project's deployment information is contained in the project's :ref:`project-deployment-descriptor`. The deployment descriptor (formerly known as library) specifies all of the required projects and the specific versions in which they must be present on the engine in order for the deployed project to work. The descriptor also defines an unique deployment ID and the development version of a project (*not* equal to the process model version), as well as some information about the project provider and a description of the project itself."
-msgstr "プロジェクトの展開情報を指定するデータは、プロジェクト :ref:`project-deployment-descriptor` に格納されます。デプロイメント記述子（以前の「ライブラリ」）は、展開されたプロジェクトが機能するように、すべての必要なプロジェクトとそれらのエンジン上でのバージョンを指定します。また、記述子は、一意のデプロイメント ID とプロジェクトの開発バージョン（プロセスモデルバージョンと同じでは *ありません*）、プロジェクトプロバイダーに関する情報、プロジェクトの説明を定義します。"
+msgid "Dependencies can form a larger graph because required projects may have dependencies of their own. All artifacts reachable through this graph can be reused by the dependent project. The lookup order of directly referenced projects determines which artifact is used when multiple projects provide the same artifact."
+msgstr ""
 
-#: ../../source/getting-productive/process-modeling/projects/index.rst:35
-msgid "On the engine, a project in a specific development state/version corresponds to a process model version, as explained above. On the engine, all the deployed versions of a project are children of a *process model* container (which corresponds to the project as an entity without a specific version). The process models themselves are part of an *application* (see chapter :ref:`deployment` for a more thorough explanation)."
-msgstr "先に説明したように、エンジンでは、特定の開発状態／バージョンのプロジェクトがプロセスモデルバージョンに対応します。エンジンでは、展開されるプロジェクトのすべてのバージョンが、（特定のバージョンを持たないエンティティとしてプロジェクトに対応する）*プロセスモデル* コンテナの子になります。プロセスモデル自体は *アプリケーション* の一部です（詳細については、「 :ref:`deployment` 」の章を参照）。"
-
-#: ../../source/getting-productive/process-modeling/projects/index.rst:43
-msgid "In the Designer, projects may only exist in one version at a given point of time. Projects are created and organized inside an Eclipse *workspace*. Roughly, on the Designer, the *workspace* corresponds to the *application* on the engine. Since projects can only exist in one version on the Designer, there is no *process model* equivalent necessary in the Designer."
-msgstr "デザイナーでは、プロジェクトはある時点の 1 つのバージョンとしてのみ存在できます。プロジェクトは、Eclipse の *ワークスペース* 内で作成、編成されます。大まかに言うと、デザイナーの *ワークステーション* はエンジンの *アプリケーション* に対応します。デザイナーではプロジェクトは 1 つのバージョンでしか存在できないため、デザイナーでは *プロセスモデル* に相当するものは必要ありません。"
-
-#: ../../source/getting-productive/process-modeling/projects/index.rst:50
-msgid "When working on a project, which depends on other projects, then the required projects need to be present as well in the Designer, which means that they must be present in the current workspace. Otherwise dependencies cannot be resolved and reused artifacts are not available, which will prevent the application from running."
-msgstr "他のプロジェクトに依存するプロジェクトで作業する場合、必要なプロジェクトをデザイナーに表示する必要があります。つまり、これらのプロジェクトを現在のワークスペースに表示する必要があります。そうでない場合、依存関係を解決できず、再利用されるアーティファクトを使用できないため、アプリケーションが動作しません。"
-
-#: ../../source/getting-productive/process-modeling/projects/ivyArchive.rst:2
+#: ../../source/getting-productive/process-modeling/projects/index.rst:36
 msgid "Ivy Archives"
 msgstr "Ivy Archive"
 
-#: ../../source/getting-productive/process-modeling/projects/ivyArchive.rst:4
-msgid "There are two different types of Axon Ivy projects available. Normal Axon Ivy projects are used to develop artifacts. Artifacts in those projects are changed frequently. Once the artifacts of a project are developed and stable you can export the normal Axon Ivy project to an Axon Ivy Archive. Archives are pre-built Axon Ivy projects that are stored in one single ``*.iar`` file."
+#: ../../source/getting-productive/process-modeling/projects/index.rst:38
+#, fuzzy
+msgid "Normal Axon Ivy projects are used to develop artifacts that change frequently. Once the artifacts are stable, you can export the project to an Axon Ivy Archive, a pre-built project stored in a single ``*.iar`` file."
 msgstr "使用可能な Axon Ivy プロジェクトは 2 種類あります。通常の Axon Ivy プロジェクトはアーティファクトの開発に使用されます。これらのプロジェクトのアーティファクトは頻繁に変更されます。開発されたプロジェクトのアーティファクトが安定している場合は、通常の Axon Ivy プロジェクトを Axon Ivy Archive にエクスポートできます。アーカイブは、あらかじめ作成され、1 つの ``*.iar`` ファイルに格納された Axon Ivy プロジェクトです。"
 
-#: ../../source/getting-productive/process-modeling/projects/ivyArchive.rst:11
-msgid "You can import Axon Ivy Archives to a workspace like normal Axon Ivy projects. All artifacts of an Ivy Archive can be viewed but not edited. Archives contain all built artifacts. Therefore, they do not have to be built or validated again in the workspace. As a consequence, Axon Ivy Archives will improve your workspace build, refresh, and update times."
-msgstr "通常の Axon Ivy プロジェクトと同様、Axon Ivy Archive をワークスペースにインポートできます。Axon Ivy Archive のすべてのアーティファクトを表示できますが、編集することはできません。アーカイブには作成されたすべてのアーティファクトが格納されます。そのため、ワークスペースで作成したり検証し直す必要はありません。結果として、Axon Ivy Archive はワークスペースの作成、再読み込み、更新時間が改善されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/ivyArchive.rst:17
-msgid "There are multiple ways to create or import Axon Ivy Archives:"
-msgstr "以下の複数の方法で Axon Ivy Archive を作成、インポートできます。"
-
-#: ../../source/getting-productive/process-modeling/projects/ivyArchive.rst:19
-msgid "Axon Ivy Archives can be :ref:`exported <designer-export-project>` and :ref:`imported <designer-import-project>`."
-msgstr "Axon Ivy Archive を :ref:`エクスポート<designer-export-project>`  :ref:`インポート<designer-import-project>` きます。"
-
-#: ../../source/getting-productive/process-modeling/projects/ivyArchive.rst:22
-msgid "Axon Ivy Projects can be packed (archived) or unpacked (unarchived) inside the workspace."
-msgstr "Axon Ivy プロジェクトをパック（アーカイブ）し、ワークスペース内でアンパック（展開）できます。"
-
-#: ../../source/getting-productive/process-modeling/projects/ivyArchive.rst:31
-msgid "Axon Ivy Archives are not validated automatically. You can start the validation manually by using the context menu."
-msgstr "Axon Ivy Archive は自動的に検証されません。コンテキストメニューを使用して、手動で検証を開始できます。"
-
-#: ../../source/getting-productive/process-modeling/projects/validate.rst:2
-msgid "Validating Axon Ivy projects and resources"
-msgstr "Axon Ivy プロジェクトとリソースの検証"
-
-#: ../../source/getting-productive/process-modeling/projects/validate.rst:4
-msgid "Axon Ivy comes with various validators which verify that projects and their resources do not have any errors. After a resource has changed the responsible validator will run automatically and report errors or warnings."
-msgstr "Axon Ivy には、プロジェクトとそのリソースにエラーがないことを確認するさまざまなバリデーターが付属しています。リソースを変更すると、そのリソースのバリデーターが自動的に実行され、エラーや警告が報告されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/validate.rst:10
-msgid "Validating projects and resources"
-msgstr "プロジェクトとリソースの検証"
-
-#: ../../source/getting-productive/process-modeling/projects/validate.rst:12
-msgid "To manually validate a project or a resource you can right click on it and select **Validate**."
-msgstr "プロジェクトやリソースを手動で検証するには、プロジェクトまたはリソースを右クリックし、［**検証** ］を選択します。"
-
-#: ../../source/getting-productive/process-modeling/projects/validate.rst:17
-msgid "After the validation the errors are shown in the **Problems view**."
-msgstr "検証後、エラーが**問題ビュー** に表示されます。"
-
-#: ../../source/getting-productive/process-modeling/projects/validate.rst:22
-msgid "Validation preference"
-msgstr "検証の環境設定"
-
-#: ../../source/getting-productive/process-modeling/projects/validate.rst:24
-msgid "Go to **Window -> Preferences -> Validation** to get an overview of the validations that are run."
-msgstr "**［ウィンドウ］、［環境設定］、［検証］** の順に選択して、実行された検証の概要を表示できます。"
-
-#: ../../source/getting-productive/process-modeling/projects/validate.rst:29
-msgid "It is recommended not to change these settings. It could lead to problems while running the projects."
-msgstr "これらの設定を変更しないことを推奨します。プロジェクトの実行中に問題を引き起こす可能性があります。"
+#: ../../source/getting-productive/process-modeling/projects/index.rst:42
+msgid "For information about exporting and importing project archives, see the :ref:`designer-export-project` and :ref:`designer-import-project` commands. Imported archives can be viewed but not edited and do not have to be built or validated again in the workspace."
+msgstr ""
 
 #: ../../source/getting-productive/process-modeling/simulation/index.rst:4
 msgid "Simulating processes"
@@ -11167,6 +10743,25 @@ msgstr "|image0|"
 msgid "image0"
 msgstr "image0"
 
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:52
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:12
+#: ../../source/getting-productive/workflow/case-task/states.rst:19
+#: ../../source/reference/process/error-handling.rst:73
+#: ../../source/reference/process/process-elements/process-end-page.rst:37
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:59
+msgid "|image1|"
+msgstr "|image1|"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:411
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:103
+#: ../../source/getting-productive/workflow/case-task/states.rst:193
+#: ../../source/reference/process/error-handling.rst:259
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:59
+#: ../../source/reference/process/process-elements/process-end-page.rst:41
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:329
+msgid "image1"
+msgstr "image1"
+
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:54
 msgid "**Signals**"
 msgstr "**シグナル**"
@@ -11196,6 +10791,24 @@ msgstr "例として、ある会社で働き始めた従業員を考えてみま
 msgid "|image2|"
 msgstr "|image2|"
 
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:412
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:104
+#: ../../source/getting-productive/workflow/case-task/states.rst:194
+#: ../../source/reference/process/error-handling.rst:260
+#: ../../source/reference/process/process-editor/index.rst:397
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:60
+#: ../../source/reference/process/process-elements/call-sub.rst:60
+#: ../../source/reference/process/process-elements/error-boundary-event.rst:46
+#: ../../source/reference/process/process-elements/error-end.rst:43
+#: ../../source/reference/process/process-elements/error-start.rst:45
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:330
+#: ../../source/reference/process/process-elements/signal-boundary-event.rst:41
+#: ../../source/reference/process/process-elements/signal-start.rst:47
+#: ../../source/reference/process/process-elements/trigger-step.rst:45
+#: ../../source/reference/process/process-elements/wait-program-intermediate-event.rst:135
+msgid "image2"
+msgstr "image2"
+
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:74
 msgid "Keeping Loosely Coupled Processes in Same Context"
 msgstr "同じコンテキストでの疎結合のプロセスの維持"
@@ -11215,6 +10828,15 @@ msgstr "複数のプロセスケースを結合できるエンティティ :ref:
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:78
 msgid "|image3|"
 msgstr "|image3|"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:413
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:105
+#: ../../source/getting-productive/workflow/case-task/states.rst:195
+#: ../../source/reference/process/error-handling.rst:261
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:61
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:331
+msgid "image3"
+msgstr "image3"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:92
 msgid "You can also use the Public API to attach the current case to an existing Business Case."
@@ -11243,6 +10865,16 @@ msgstr ":ref:`process-element-user-task` は、シグナルをリスニングす
 #: ../../source/reference/process/process-elements/start.rst:189
 msgid "|image4|"
 msgstr "|image4|"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:414
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:106
+#: ../../source/getting-productive/workflow/case-task/states.rst:196
+#: ../../source/reference/process/error-handling.rst:262
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:62
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:332
+#: ../../source/reference/process/process-elements/start.rst:294
+msgid "image4"
+msgstr "image4"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:133
 msgid "Share Data Between Processes"
@@ -11421,9 +11053,35 @@ msgstr "ポストフィックスが ``created`` のシグナルのリスニン�
 msgid "|image5|"
 msgstr "|image5|"
 
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:415
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:107
+#: ../../source/getting-productive/workflow/case-task/states.rst:197
+#: ../../source/reference/process/error-handling.rst:263
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:63
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:333
+msgid "image5"
+msgstr "image5"
+
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:343
 msgid "Do not send a signal in a task that is aborted by that signal. Instead, use an additional System task to send the signal. Otherwise, the task that sends the signal will be destroyed leading to an error in the execution of that task."
 msgstr "シグナルによって中止されるタスク内でシグナルを送信しないでください。代わりに、追加のシステムタスクを使用して、シグナルを送信します。そうしないと、シグナルを送信したタスクが破壊され、そのタスクの実行がエラーになります。"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:347
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:68
+#: ../../source/reference/process/error-handling.rst:226
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:105
+#: ../../source/reference/process/process-elements/start.rst:237
+msgid "|image6|"
+msgstr "|image6|"
+
+#: ../../source/getting-productive/workflow/adaptive-case-management.rst:416
+#: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:108
+#: ../../source/reference/process/error-handling.rst:264
+#: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:64
+#: ../../source/reference/process/process-elements/rest-client-activity.rst:334
+#: ../../source/reference/process/process-elements/start.rst:295
+msgid "image6"
+msgstr "image6"
 
 #: ../../source/getting-productive/workflow/adaptive-case-management.rst:351
 msgid "Signal Start Event"
@@ -20074,6 +19732,66 @@ msgstr "要素が BPMN のタイプでグループ化され、要素名の前の
 msgid "Smart Workflow"
 msgstr "スマートワークフロー"
 
+#: ../../source/reference/project/index.rst:4
+#, fuzzy
+msgid "Project Descriptor"
+msgstr "プロジェクトデプロイメント記述子"
+
+#: ../../source/reference/project/index.rst:6
+msgid "Each Axon Ivy project has a Maven project descriptor, :file:`pom.xml`. The POM defines the project's Maven coordinates and its dependencies to other projects and libraries."
+msgstr ""
+
+#: ../../source/reference/project/index.rst:11
+#, fuzzy
+msgid "Project coordinates"
+msgstr "プロジェクト ID"
+
+#: ../../source/reference/project/index.rst:13
+msgid "The project's ``groupId``, ``artifactId`` and ``version`` identify it in Maven. Define all three values in the project's own POM so that other projects can reference it. The ``artifactId`` is the project name and the version should follow Maven's version format."
+msgstr ""
+
+#: ../../source/reference/project/index.rst:19
+#, fuzzy
+msgid "Adding a dependency"
+msgstr "依存関係"
+
+#: ../../source/reference/project/index.rst:21
+msgid "Add dependencies to the ``<dependencies>`` section of the POM. Every dependency is identified by its Maven coordinates: ``groupId``, ``artifactId`` and ``version``. The version can be omitted when it is provided by the project's parent POM or dependency management."
+msgstr ""
+
+#: ../../source/reference/project/index.rst:26
+msgid "For example, the following dependency references another Axon Ivy project. It can be in the same workspace or in a Maven repository:"
+msgstr ""
+
+#: ../../source/reference/project/index.rst:40
+msgid "Axon Ivy projects are IAR artifacts. Always set ``<type>iar</type>`` when adding an Axon Ivy project dependency. The ``groupId``, ``artifactId`` and ``version`` must match the referenced project's POM. Projects outside the workspace are resolved from the configured Maven repositories."
+msgstr ""
+
+#: ../../source/reference/project/index.rst:45
+msgid "The Designer displays projects resolved from Maven repositories in the :ref:`designer-maven-view`. The :ref:`project-build-plugin` handles these dependencies automatically during a Maven build."
+msgstr ""
+
+#: ../../source/reference/project/index.rst:50
+msgid "Maven libraries"
+msgstr ""
+
+#: ../../source/reference/project/index.rst:52
+msgid "Libraries published to a Maven repository use the same coordinates. JAR dependencies normally use Maven's default type, so no ``<type>`` is needed:"
+msgstr ""
+
+#: ../../source/reference/project/index.rst:63
+msgid "Maven resolves these dependencies from the repositories configured in the POM or inherited from its parent. The dependency's classes and resources are then available to the project according to its Maven scope."
+msgstr ""
+
+#: ../../source/reference/project/index.rst:71
+#, fuzzy
+msgid "Ivy Project Properties"
+msgstr "ivy.cache.properties"
+
+#: ../../source/reference/project/index.rst:73
+msgid "The :file:`.ivyproject` file contains the current project version and the project name. The project name is used to match the project during redeployment."
+msgstr ""
+
 #: ../../source/reference/public-api/index.rst:2
 msgid "Public API"
 msgstr "パブリック API"
@@ -25526,3 +25244,276 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "For details, refer to :ref:`getting-started-windows`."
 #~ msgstr "詳細については、「 :ref:`getting-started-windows` 」を参照してください。"
+
+#~ msgid "The :ref:`designer-guide-vscode` has maven capabilites built-in, if you have the `Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed (what should be the case if you have our extension installed)."
+#~ msgstr ""
+
+#~ msgid "Open the maven view (or run command :code:`Explorer: Focus on Maven View`)"
+#~ msgstr ""
+
+#~ msgid "Each Axon Ivy project has a *deployment descriptor*. The deployment descriptor defines various properties of a project that are important with respect to deployment on the engine. Specifically the descriptor defines:"
+#~ msgstr "Axon Ivy の各プロジェクトには *デプロイメント記述子* があります。デプロイメント記述子は、エンジンへの展開に関して重要なプロジェクトのプロパティを定義します。具体的には、記述子は以下を定義します。"
+
+#~ msgid "A *unique project ID* (i.e., a fully qualified symbolic name) for the project, by which it can be identified and referenced. Also a current *development version* of the project is defined (please note that this version may, but does not necessarily have to be, identical with the project model version on the engine into which the project will eventually be deployed)."
+#~ msgstr "プロジェクトの識別や参照に使用される、プロジェクトの*一意のプロジェクト ID*（完全修飾識別名）。また、現在の *開発バージョン* も定義されます（必ずしもそうではありませんが、このバージョンは、プロジェクトが最終的に展開されるエンジンのプロジェクトモデルバージョンと同じであることに注意してください）。"
+
+#~ msgid "The *dependencies of a project to other projects* and the exact version range of those projects that must be available in order for the project to work. Once a project is referenced in this way, its artifacts may be used inside the referencing project. This applies especially to the following artifacts: User Dialogs, Data Classes, Web Service Configurations, CMS Entries, Configurations, Java classes or Java libraries (JAR files)."
+#~ msgstr "*プロジェクトの他のプロジェクトへの依存関係* と、プロジェクトでの作業に必要な、それらのプロジェクトのバージョンの正確な範囲。この方法でプロジェクトを参照しない場合は、参照元のプロジェクトのアーティファクトを使用できます。対象となるアーティファクトには、ユーザーダイアログ、データクラス、Web サービス設定、CMS エントリ、設定、Java クラス、Java ライブラリ（JAR ファイル）があります。"
+
+#~ msgid "Information about the implementor of the project and its purpose."
+#~ msgstr "プロジェクトの実装者およびその目的に関する情報。"
+
+#~ msgid "A project dependency, defined by the Project Deployment Descriptor"
+#~ msgstr "プロジェクトデプロイメント記述子で定義されるプロジェクトの依存関係"
+
+#~ msgid "Since referenced projects may in turn reference other projects, a whole (acyclic) dependency graph may be constructed this way. All artifacts of projects that are reachable from some project in this way (i.e., by following the arrows) can be used."
+#~ msgstr "参照先のプロジェクトが他のプロジェクトを参照する可能性があるため、全体的な依存関係グラフ（非巡回グラフ）はこのように構築できます。この方法で（矢印をたどることにより）他のプロジェクトから到達可能なプロジェクトのすべてのアーティファクトを使用できます。"
+
+#~ msgid "The following figure illustrates this feature. For example, a User Dialog defined in *Project D* may be used in *Project A*. A Data Class that is defined in *Project E* may also be used in *Project A*. However, it is not possible to use a sub process defined in *Project B* from *Project C* (unless *Project B* is added as required project in the deployment descriptor of *Project C*)."
+#~ msgstr "この機能を以下の図で説明します。例えば、*Project D* で定義されたユーザーダイアログを *Project A* で使用できます。同様に、*Project E* で定義されたデータクラスを *Project A* で使用できます。ただし、*Project B* で定義されたサブプロセスを *Project C* から使用することはできません（*Project B* が、*Project C* のデプロイメント記述子で必要なプロジェクトとして追加されている場合を除く）。"
+
+#~ msgid "The search order to look up reused artifacts is breadth first. The order in which directly referenced projects are looked up, can be defined in the :ref:`project-deployment-descriptor`."
+#~ msgstr "再使用されたアーティファクトの検索順序は幅優先です。直接参照されるプロジェクトの検索順序 :ref:`project-deployment-descriptor` で定義できます。"
+
+#~ msgid "Project Dependency Graph"
+#~ msgstr "プロジェクトの依存関係グラフ"
+
+#~ msgid "Projects may be required with a specific version or within a specific version range. This is also illustrated in the above figure."
+#~ msgstr "プロジェクトが特定のバージョンまたは特定のバージョン範囲になければならない場合があります。上の図ではそのことも説明されています。"
+
+#~ msgid "When deploying projects on the engine, the availability of the required projects (and their versions) is checked. If the required project versions cannot be resolved, then a project cannot be deployed. Therefore projects must be deployed *bottom up*, i.e., one must start by deploying first the required projects that are lowest in the dependency hierarchy."
+#~ msgstr "プロジェクトをエンジンに展開する際は、必要なプロジェクト（とそのバージョン）が使用可能な確認します。必要なプロジェクトのバージョンを解決できない場合、そのプロジェクトは展開できません。そのため、プロジェクトは *下から上に* 展開しなければなりません。つまり、依存関係の階層の一番下にある必要なプロジェクトを最初に展開する必要があります。"
+
+#~ msgid "Deployment Descriptor Editor"
+#~ msgstr "デプロイメント記述子エディター"
+
+#~ msgid "The Deployment Descriptor editor allows to edit a project's deployment properties as well as the required projects and their version ranges as described above."
+#~ msgstr "デプロイメント記述子エディターでは、プロジェクトのデプロイメントプロパティと、上述の必要なプロジェクトおよびそのバージョン範囲を編集できます。"
+
+#~ msgid "The deployment descriptor editor consists of two tabs:"
+#~ msgstr "デプロイメント記述子エディターは以下の 2 つのタブで構成されます。"
+
+#~ msgid "The *Deployment* tab is used to configure the project's own deployment information."
+#~ msgstr "［*展開*］タブを使用して、プロジェクト独自の展開情報を設定します。"
+
+#~ msgid "The *Required Projects* tab is used to define other projects (possibly in a specific version) that the project depends on."
+#~ msgstr "［*必要なプロジェクト*］タブを使用して、プロジェクトが依存する（特定のバージョンの）他のプロジェクトを定義します。"
+
+#~ msgid "The deployment description is stored as Maven pom.xml, allowing Ivy Projects to be built on a continuous integration server. See :ref:`continuous-integration`."
+#~ msgstr "デプロイメント記述子は Maven の pom.xml として格納され、継続的インテグレーションサーバーで Ivy プロジェクトを作成できます。「 :ref:`continuous-integration` 」を参照してください。"
+
+#~ msgid "Axon Ivy Project Tree -> double click on the *Deployment* node inside the project tree (|imagef0|)"
+#~ msgstr "Axon Ivy プロジェクトツリーで *展開* ノードをダブルクリックします（|imagef0|）。"
+
+#~ msgid "imagef0"
+#~ msgstr "imagef0"
+
+#~ msgid "Deployment Tab"
+#~ msgstr "展開タブ"
+
+#~ msgid "Group ID"
+#~ msgstr "グループ ID"
+
+#~ msgid "Identifies your project uniquely across all projects. It has to follow the package name rules, which means that it has to contain at least the domain name you control, and you can create as many subgroups as you want. e.g., ``com.acme.ria``."
+#~ msgstr "すべてのプロジェクトでプロジェクトを一意に識別します。パッケージ名の規則に従う必要があり、少なくとも管理するドメイン名を含める必要があります。また、必要な数だけサブグループを作成できます（例：``com.acme.ria``）。"
+
+#~ msgid "You can choose any name you want in lowercase letters and without special symbols, e.g., ``users`` or ``user-manager``."
+#~ msgstr "特殊文字を含まない好きな名前を選び、小文字で入力します（例：``users``、``user-manager``）。"
+
+#~ msgid "On deployment to the Axon Ivy Engine the concatenated Group ID + Project ID will act as unique identifier of the project."
+#~ msgstr "Axon Ivy Engine への展開時には、グループ ID + プロジェクト ID がプロジェクトの一意の識別子となります。"
+
+#~ msgid "Project Version"
+#~ msgstr "プロジェクトバージョン"
+
+#~ msgid "The current development version of the project."
+#~ msgstr "プロジェクトの現在の展開バージョン。"
+
+#~ msgid "Provider"
+#~ msgstr "プロバイダー"
+
+#~ msgid "The name of the user or company that implements and maintains (i.e. provides) the project. The provider setting has no functional purpose. It is for documentation only."
+#~ msgstr "プロジェクトを実装、維持する（提供する）ユーザーまたは会社の名前。"
+
+#~ msgid "A (short) description of the project's purpose and contents. The description setting has no functional purpose. It is for documentation only."
+#~ msgstr "プロジェクトの目的と内容の（簡単な）説明。説明の設定に機能的な目的はなく、説明のみを目的としています。"
+
+#~ msgid "Required Projects Tab"
+#~ msgstr "必要なプロジェクトタブ"
+
+#~ msgid "Deployment Descriptor Editor: Required Libraries Tab"
+#~ msgstr "デプロイメント記述子エディター - ［必要なプロジェクト］タブ"
+
+#~ msgid "Required Projects"
+#~ msgstr "必要なプロジェクト"
+
+#~ msgid "A table shows the list of the required projects, both with their name and their ID (as defined in the project's deployment descriptor). The table also shows the version range in which the referenced project must be available."
+#~ msgstr "必要なプロジェクトとその名前、ID（プロジェクトデプロイメント記述子で定義）のリストが表に表示されます。また、参照先のプロジェクトを使用できるバージョン範囲も表示されます。"
+
+#~ msgid "The display name of the required project (how it is shown in the workspace)."
+#~ msgstr "必要なプロジェクトの表示名（ワークスペースに表示される名前）。"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "The unique identifier of the required project."
+#~ msgstr "必要なプロジェクトの一意の識別子。"
+
+#~ msgid "The range specification of the version that the referenced project is required to have."
+#~ msgstr "参照先のプロジェクトに必要なバージョンの範囲を指定します。"
+
+#~ msgid "Note that the order in the table defines the order how referenced artifacts are searched (Use the **Up Button** and **Down Button** to change the order). The general search order in the dependency graph is *breadth first*, but the order that you define here is the search order that will be used on a specific node when searching the graph."
+#~ msgstr "表での順序によって、参照先のアーティファクトの検索順序が決まることに注意してください（順序を変更するには、**上ボタン** または **下ボタン** を使用します）。依存関係グラフの一般的な検索順序は *幅優先* ですが、グラフを検索する際、ここで定義した順序が特定のノードで使用されます。"
+
+#~ msgid "Clicking the *Add* button brings up a dialog with a selection box, in which any of the projects that are currently present in the workspace may be selected as required project. Closed projects or projects that are already (directly) required, cannot be selected."
+#~ msgstr "［*追加*］ボタンをクリックすると、選択ボタンを含むダイアログが表示され、現在、ワークスペースにあるプロジェクトを必要なプロジェクトとして選択できます。閉じられたプロジェクトや、すでに（直接）必要なプロジェクトは選択できません。"
+
+#~ msgid "Selecting an entry in the table and subsequently clicking the *Remove* button removes a project dependency."
+#~ msgstr "表でエントリを選択し、［*削除*］ボタンをクリックすると、プロジェクトの依存関係が削除されます。"
+
+#~ msgid "Required Project Details"
+#~ msgstr "必要なプロジェクトの詳細"
+
+#~ msgid "Shows the details of the currently selected project."
+#~ msgstr "現在選択されているプロジェクトの詳細が表示されます。"
+
+#~ msgid "Group and Project ID"
+#~ msgstr "グループとプロジェクト ID"
+
+#~ msgid "The identifiers of the required project (not editable)."
+#~ msgstr "必要なプロジェクトの識別子（編集不可）。"
+
+#~ msgid "Maximum Version"
+#~ msgstr "最大バージョン"
+
+#~ msgid "Optionally specify the maximum version that the required project needs to have. Choose whether you want to include or exclude this maximal version by checking the **Inclusive** box"
+#~ msgstr "任意で、必要なプロジェクトの最大バージョンを指定します。［**含める** ］チェックボックスで、この最大バージョンを含めるか除外するかを選択します。"
+
+#~ msgid "Minimum Version"
+#~ msgstr "最小バージョン"
+
+#~ msgid "Optionally specify the minimum version that the required project needs to have. Choose whether you want to include or exclude this minimal version by checking the **Inclusive** box"
+#~ msgstr "任意で、必要なプロジェクトの最小バージョンを指定します。［**含める** ］チェックボックスで、この最小バージョンを含めるか除外するかを選択します。"
+
+#~ msgid "Beware of cycles in the project dependencies! You should never require a project B from a project A, if B also requires A (or if B requires any project that in turn requires A, which would form a larger cycle). Error markers will be displayed when the workspace is built, and cycles are detected as this condition can lead to endless recursion and other unpredictable behavior when looking up artifacts."
+#~ msgstr "プロジェクトの依存関係の巡回に注意してください。プロジェクト B もプロジェクト A を必要とする場合（または、プロジェクト B がプロジェクト A を必要とするプロジェクトを必要とする場合、より大きな巡回が形成されます）、プロジェクト A からプロジェクト B を必要プロジェクトに設定しないでください。このような条件は際限のない再帰につながり、アーティファクトの検索時に予期しない動作が行われる可能性があるため、ワークスペースの作成時にエラーマーカーが表示され、巡回が検出されます。"
+
+#~ msgid "Project Graph view"
+#~ msgstr "プロジェクトグラフビュー"
+
+#~ msgid "The Project Graph view shows the dependency graph of all projects in the workspace."
+#~ msgstr "プロジェクトグラフビューには、ワークスペースのすべてのプロジェクトの依存関係グラフが表示されます。"
+
+#~ msgid "Toolbar actions"
+#~ msgstr "ツールバーのアクション"
+
+#~ msgid "|image2| Refreshes the complete graph. Manually moved nodes will be rearranged by the auto layout algorithm."
+#~ msgstr "|image2| グラフ全体を更新します。ノードを手動で移動すると、自動レイアウトアルゴリズムによって、ノードが並び替えられます。"
+
+#~ msgid "|image3| Selects the zoom level of the view."
+#~ msgstr "|image3| ビューのズームレベルを選択します。"
+
+#~ msgid "|image4| Selects the layout algorithm that arranges the nodes and dependency edges in the view."
+#~ msgstr "|image4| ビューのノードと依存関係エッジを並び替えるレイアウトアルゴリズムを選択します。"
+
+#~ msgid "|image5| Automatically opens the Project Graph whenever a Library Descriptor Editor is opened."
+#~ msgstr "|image5| ライブラリ記述子エディターが開かれると、プロジェクトグラフを自動的に開きます。"
+
+#~ msgid "Graph actions"
+#~ msgstr "グラフのアクション"
+
+#~ msgid "Double click on a node to open its Library Descriptor Editor"
+#~ msgstr "ノードをダブルクリックして、そのノードのライブラリ記述子エディターを開きます。"
+
+#~ msgid "Drag a node to improve the layout"
+#~ msgstr "ノードをドラッグして、レイアウトを改善します。"
+
+#~ msgid "Click on a node to highlight it"
+#~ msgstr "ノードをクリックして強調表示します。"
+
+#~ msgid "Windows -> Show View -> Axon Ivy -> Project Graph"
+#~ msgstr "［ウィンドウ］ > ［ビューを表示］ > ［Axon Ivy］ > ［プロジェクトグラフ］"
+
+#~ msgid "CTRL + 3 (Quick Access) -> Project Graph"
+#~ msgstr "CTRL + 3（クイックアクセス）でプロジェクトグラフを開きます。"
+
+#~ msgid "Deployment Descriptor Editor -> Open Project Graph from header toolbar"
+#~ msgstr "デプロイメント記述子エディターのヘッダーのツールバーからプロジェクトグラフを開きます。"
+
+#~ msgid "Adding additional dependencies"
+#~ msgstr "追加の依存関係の追加"
+
+#~ msgid "To add Java libraries to your projects that are not included in the Axon Ivy platform, you can include them as Maven dependencies."
+#~ msgstr "Axon Ivy プラットフォームに含まれていない Java ライブラリをプロジェクトに追加する場合、Maven の依存関係として含めることができます。"
+
+#~ msgid "To add a new dependency, open the Deployment Descriptor with the Maven POM Editor by right clicking on the Deployment Descriptor file and choosing **Open With -> Maven POM Editor** or click on the **Open with Maven POM Editor** action in the toolbar of the :ref:`deployment-descriptor-editor`."
+#~ msgstr "新しい依存関係を追加するには、デプロイメント記述子ファイルを右クリックし、**［エディターで開く］、［Maven POM Editor］** の順に選択して Maven POM Editor でデプロイメント記述子を開くか、:ref:`deployment-descriptor-editor` のツールバーで［**Maven POM Editor で開く**］アクションをクリックします。"
+
+#~ msgid "Then go to the *Dependencies* tab and click **Add...** to add a new dependency. All libraries included in the dependencies will be added to the classpath and are also included in the packaged Axon Ivy project."
+#~ msgstr "［*依存関係*］ タブに移動し、［**追加...** ］をクリックして新しい依存関係を追加します。依存関係に含まれるすべてのライブラリがクラスパスに追加され、パッケージ化された Axon Ivy プロジェクトにも入れられます。"
+
+#~ msgid "Automatic import of required Axon ivy Projects"
+#~ msgstr "必要な Axon Ivy プロジェクトの自動インポート"
+
+#~ msgid "By default, Axon Ivy Designer automatically imports other required Axon ivy projects from available Maven repositories. E.g., if your project has a dependency on the Axon ivy project ``com.axonivy.portal:portal-components`` and has configured the Maven repository of the Axon Ivy market ``https://maven.axonivy.com/`` then Axon Ivy Designer downloads the project from the repository and automatically imports it to the workspace."
+#~ msgstr "デフォルトでは、Axon Ivy Designer は他の必要な Axon Ivy プロジェクトを Maven リポジトリから自動的にインポートします。例えば、プロジェクトが ``com.axonivy.portal:portal-components`` という Axon Ivy プロジェクトに依存し、Axon Ivy Market ``https://maven.axonivy.com/`` の Maven リポジトリが設定されている場合、Axon Ivy Designer はそのリポジトリからプロジェクトをダウンロードし、自動的にワークスペースにインポートします。"
+
+#~ msgid "In some use cases, this automatic import is not desirable (E.g., project migration, etc.). For these cases, you can turn off the automatic import in the preferences. On the toolbar of the :ref:`deployment-descriptor-editor`, you can see if the **Auto Import** is on or off. There is also an action to trigger the execution of the automatic import. This action works even if **Auto Import** is turned off. A log with the executed tasks is shown to better understand what the automatic import is doing."
+#~ msgstr "一部のユースケースでは、この自動インポートが望ましくない場合があります（例：プロジェクトの移行など）。そのような場合には、環境設定で自動インポートを無効にできます。 :ref:`deployment-descriptor-editor` のツールバーでは、**自動インポート** のオン/オフを確認できます。また、自動インポートの実行を手動でトリガーするアクションもあり、これは **自動インポート** がオフの場合でも動作します。自動インポートが何を行っているかを理解しやすいように、実行されたタスクのログが表示されます。"
+
+#~ msgid "Projects can be reused, i.e., any project can depend on functionality which is implemented by another project. Projects that implement reused functionality and/or artifacts are called **required projects** with respect to the project that makes use of that functionality. The latter is in turn called the **dependent project*** with respect to its required projects."
+#~ msgstr "プロジェクトは再利用できます。つまり、任意のプロジェクトは、他のプロジェクトで実装される機能に依存できます。再利用される機能やアーティファクトを実装するプロジェクトは、その機能を利用するプロジェクトから見て **必要なプロジェクト** と呼ばれます。逆に、機能を利用するプロジェクトは、必要なプロジェクトから見て **依存プロジェクト** と呼ばれます。"
+
+#~ msgid "Once you have finished your development you will usually want to install the implemented application or workflow on an Axon Ivy Engine. Projects form the single unit of deployment for this purpose, i.e., you deploy each project into a container on the engine which is called *process model version*. A project may be deployed in multiple versions on the engine; each process model version therefore contains a snapshot of a project at a specific point of time in development. See chapter :ref:`deployment` for more information on this topic."
+#~ msgstr "開発が終了したら、実装したアプリケーションやワークフローを Axon Ivy Engine にインストールします。この場合、プロジェクトは 1 つの展開単位を形成します。つまり、*プロセスモデルバージョン* と呼ばれるエンジンのコンテナに各プロジェクトを展開します。プロジェクトを複数のバージョンでエンジンに展開でき、各プロセスモデルバージョンには、開発時点のプロジェクトのスナップショットが格納されます。詳細については、「 :ref:`deployment` 」の章を参照してください。"
+
+#~ msgid "The data that specifies a project's deployment information is contained in the project's :ref:`project-deployment-descriptor`. The deployment descriptor (formerly known as library) specifies all of the required projects and the specific versions in which they must be present on the engine in order for the deployed project to work. The descriptor also defines an unique deployment ID and the development version of a project (*not* equal to the process model version), as well as some information about the project provider and a description of the project itself."
+#~ msgstr "プロジェクトの展開情報を指定するデータは、プロジェクト :ref:`project-deployment-descriptor` に格納されます。デプロイメント記述子（以前の「ライブラリ」）は、展開されたプロジェクトが機能するように、すべての必要なプロジェクトとそれらのエンジン上でのバージョンを指定します。また、記述子は、一意のデプロイメント ID とプロジェクトの開発バージョン（プロセスモデルバージョンと同じでは *ありません*）、プロジェクトプロバイダーに関する情報、プロジェクトの説明を定義します。"
+
+#~ msgid "On the engine, a project in a specific development state/version corresponds to a process model version, as explained above. On the engine, all the deployed versions of a project are children of a *process model* container (which corresponds to the project as an entity without a specific version). The process models themselves are part of an *application* (see chapter :ref:`deployment` for a more thorough explanation)."
+#~ msgstr "先に説明したように、エンジンでは、特定の開発状態／バージョンのプロジェクトがプロセスモデルバージョンに対応します。エンジンでは、展開されるプロジェクトのすべてのバージョンが、（特定のバージョンを持たないエンティティとしてプロジェクトに対応する）*プロセスモデル* コンテナの子になります。プロセスモデル自体は *アプリケーション* の一部です（詳細については、「 :ref:`deployment` 」の章を参照）。"
+
+#~ msgid "In the Designer, projects may only exist in one version at a given point of time. Projects are created and organized inside an Eclipse *workspace*. Roughly, on the Designer, the *workspace* corresponds to the *application* on the engine. Since projects can only exist in one version on the Designer, there is no *process model* equivalent necessary in the Designer."
+#~ msgstr "デザイナーでは、プロジェクトはある時点の 1 つのバージョンとしてのみ存在できます。プロジェクトは、Eclipse の *ワークスペース* 内で作成、編成されます。大まかに言うと、デザイナーの *ワークステーション* はエンジンの *アプリケーション* に対応します。デザイナーではプロジェクトは 1 つのバージョンでしか存在できないため、デザイナーでは *プロセスモデル* に相当するものは必要ありません。"
+
+#~ msgid "When working on a project, which depends on other projects, then the required projects need to be present as well in the Designer, which means that they must be present in the current workspace. Otherwise dependencies cannot be resolved and reused artifacts are not available, which will prevent the application from running."
+#~ msgstr "他のプロジェクトに依存するプロジェクトで作業する場合、必要なプロジェクトをデザイナーに表示する必要があります。つまり、これらのプロジェクトを現在のワークスペースに表示する必要があります。そうでない場合、依存関係を解決できず、再利用されるアーティファクトを使用できないため、アプリケーションが動作しません。"
+
+#~ msgid "You can import Axon Ivy Archives to a workspace like normal Axon Ivy projects. All artifacts of an Ivy Archive can be viewed but not edited. Archives contain all built artifacts. Therefore, they do not have to be built or validated again in the workspace. As a consequence, Axon Ivy Archives will improve your workspace build, refresh, and update times."
+#~ msgstr "通常の Axon Ivy プロジェクトと同様、Axon Ivy Archive をワークスペースにインポートできます。Axon Ivy Archive のすべてのアーティファクトを表示できますが、編集することはできません。アーカイブには作成されたすべてのアーティファクトが格納されます。そのため、ワークスペースで作成したり検証し直す必要はありません。結果として、Axon Ivy Archive はワークスペースの作成、再読み込み、更新時間が改善されます。"
+
+#~ msgid "There are multiple ways to create or import Axon Ivy Archives:"
+#~ msgstr "以下の複数の方法で Axon Ivy Archive を作成、インポートできます。"
+
+#~ msgid "Axon Ivy Archives can be :ref:`exported <designer-export-project>` and :ref:`imported <designer-import-project>`."
+#~ msgstr "Axon Ivy Archive を :ref:`エクスポート<designer-export-project>`  :ref:`インポート<designer-import-project>` きます。"
+
+#~ msgid "Axon Ivy Projects can be packed (archived) or unpacked (unarchived) inside the workspace."
+#~ msgstr "Axon Ivy プロジェクトをパック（アーカイブ）し、ワークスペース内でアンパック（展開）できます。"
+
+#~ msgid "Axon Ivy Archives are not validated automatically. You can start the validation manually by using the context menu."
+#~ msgstr "Axon Ivy Archive は自動的に検証されません。コンテキストメニューを使用して、手動で検証を開始できます。"
+
+#~ msgid "Validating Axon Ivy projects and resources"
+#~ msgstr "Axon Ivy プロジェクトとリソースの検証"
+
+#~ msgid "Axon Ivy comes with various validators which verify that projects and their resources do not have any errors. After a resource has changed the responsible validator will run automatically and report errors or warnings."
+#~ msgstr "Axon Ivy には、プロジェクトとそのリソースにエラーがないことを確認するさまざまなバリデーターが付属しています。リソースを変更すると、そのリソースのバリデーターが自動的に実行され、エラーや警告が報告されます。"
+
+#~ msgid "Validating projects and resources"
+#~ msgstr "プロジェクトとリソースの検証"
+
+#~ msgid "To manually validate a project or a resource you can right click on it and select **Validate**."
+#~ msgstr "プロジェクトやリソースを手動で検証するには、プロジェクトまたはリソースを右クリックし、［**検証** ］を選択します。"
+
+#~ msgid "After the validation the errors are shown in the **Problems view**."
+#~ msgstr "検証後、エラーが**問題ビュー** に表示されます。"
+
+#~ msgid "Validation preference"
+#~ msgstr "検証の環境設定"
+
+#~ msgid "Go to **Window -> Preferences -> Validation** to get an overview of the validations that are run."
+#~ msgstr "**［ウィンドウ］、［環境設定］、［検証］** の順に選択して、実行された検証の概要を表示できます。"
+
+#~ msgid "It is recommended not to change these settings. It could lead to problems while running the projects."
+#~ msgstr "これらの設定を変更しないことを推奨します。プロジェクトの実行中に問題を引き起こす可能性があります。"
