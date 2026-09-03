@@ -68,7 +68,7 @@ then available to the project according to its Maven scope.
 .. _ivy-project-properties:
 
 Ivy Project Properties
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 The :file:`.ivyproject` file contains the current project version and the project name.
 The project name is used to match the project during redeployment.
