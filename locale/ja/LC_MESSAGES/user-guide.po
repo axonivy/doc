@@ -512,9 +512,8 @@ msgid "Views"
 msgstr "ビュー"
 
 #: ../../source/designer/views/index.rst:7
-#, fuzzy
 msgid "Maven View"
-msgstr "保存"
+msgstr "Maven ビュー"
 
 #: ../../source/designer/views/index.rst:9
 msgid "The Maven view displays the Maven projects and dependencies available in the current workspace. Axon Ivy projects resolved from a Maven repository are shown here as well, even when their source projects are not part of the workspace."
@@ -7054,9 +7053,8 @@ msgid "Navigate to :guilabel:`Run Maven Commands` > :guilabel:`verify`"
 msgstr ":guilabel:`Run Maven Commands` > :guilabel:`verify` に移動します。"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:54
-#, fuzzy
 msgid "Axon Ivy Projects declare their Maven coordinates and dependencies in the :ref:`project-descriptor`, stored as Maven Project Object Model (``pom.xml``). Therefore each Axon Ivy Project has a ``pom.xml`` which is needed by Maven to build it."
-msgstr "Axon Ivy プロジェクトは、 :ref:`project-deployment-descriptor` で ID と依存関係を宣言します。このデプロイメント記述子は対応する Axon Ivy エディターで簡単に編集でき、Maven Project Object Model（``pom.xml``）として保存されます。そのため、各 Axon Ivy プロジェクトにはデフォルトで、Maven がプロジェクトをビルドするのに必要な ``pom.xml`` が含まれます。"
+msgstr "Axon Ivy プロジェクトは、Maven Project Object Model（``pom.xml``）として保存される :ref:`project-descriptor` で、Maven 座標と依存関係を宣言します。そのため、各 Axon Ivy プロジェクトには、Maven がビルドに必要とする ``pom.xml`` があります。"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:59
 msgid "However advanced Maven users can adjust this default configuration and use additional Maven plugins or dependencies in the pom.xml. But not all POM entries should be modified, some are required or limited in usage in Axon Ivy Projects:"
@@ -9167,9 +9165,8 @@ msgid "Projects"
 msgstr "プロジェクト"
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:4
-#, fuzzy
 msgid "Axon Ivy Projects are development modules that encapsulate the processes and other artifacts that form an application. An Axon Ivy project roughly comprises processes, User Dialogs, Data Classes, a Content Management System and various configurations."
-msgstr "Axon Ivy プロジェクトは、アプリケーションを構成するプロセスとその他のアーティファクトをカプセル化する開発モジュールのようなものです。大まかに言うと、Axon Ivy プロジェクトは、プロセス、ユーザーダイアログ、データクラス、コンテンツ管理システム、各種設定から構成されます。これらすべてを本書の各章で説明します。"
+msgstr "Axon Ivy プロジェクトは、アプリケーションを構成するプロセスやその他のアーティファクトをカプセル化した開発モジュールです。大まかに言うと、Axon Ivy プロジェクトは、プロセス、ユーザーダイアログ、データクラス、コンテンツ管理システム、各種設定から構成されます。"
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:9
 msgid "Projects can be reused when a project depends on functionality implemented by another project, with the providing project called the **required project** and the using project called the **dependent project**."
@@ -9180,14 +9177,12 @@ msgid "In the Designer, projects are created and organized in a VS Code *workspa
 msgstr ""
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:19
-#, fuzzy
 msgid "Project dependencies"
 msgstr "プロジェクトの依存関係"
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:21
-#, fuzzy
 msgid "The following graph illustrates a project dependency:"
-msgstr "上記を以下の図で説明します。"
+msgstr "次のグラフは、プロジェクトの依存関係を示しています。"
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:26
 msgid "Dependencies can form a larger graph because required projects may have dependencies of their own. All artifacts reachable through this graph can be reused by the dependent project. The lookup order of directly referenced projects determines which artifact is used when multiple projects provide the same artifact."
@@ -9198,9 +9193,8 @@ msgid "Ivy Archives"
 msgstr "Ivy Archive"
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:38
-#, fuzzy
 msgid "Normal Axon Ivy projects are used to develop artifacts that change frequently. Once the artifacts are stable, you can export the project to an Axon Ivy Archive, a pre-built project stored in a single ``*.iar`` file."
-msgstr "使用可能な Axon Ivy プロジェクトは 2 種類あります。通常の Axon Ivy プロジェクトはアーティファクトの開発に使用されます。これらのプロジェクトのアーティファクトは頻繁に変更されます。開発されたプロジェクトのアーティファクトが安定している場合は、通常の Axon Ivy プロジェクトを Axon Ivy Archive にエクスポートできます。アーカイブは、あらかじめ作成され、1 つの ``*.iar`` ファイルに格納された Axon Ivy プロジェクトです。"
+msgstr "通常の Axon Ivy プロジェクトは、頻繁に変更されるアーティファクトの開発に使用します。アーティファクトが安定したら、プロジェクトを Axon Ivy Archive にエクスポートできます。これは、1 つの ``*.iar`` ファイルに格納されたビルド済みのプロジェクトです。"
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:42
 msgid "For information about exporting and importing project archives, see the :ref:`designer-export-project` and :ref:`designer-import-project` commands. Imported archives can be viewed but not edited and do not have to be built or validated again in the workspace."
@@ -19733,27 +19727,24 @@ msgid "Smart Workflow"
 msgstr "スマートワークフロー"
 
 #: ../../source/reference/project/index.rst:4
-#, fuzzy
 msgid "Project Descriptor"
-msgstr "プロジェクトデプロイメント記述子"
+msgstr "プロジェクト記述子"
 
 #: ../../source/reference/project/index.rst:6
 msgid "Each Axon Ivy project has a Maven project descriptor, :file:`pom.xml`. The POM defines the project's Maven coordinates and its dependencies to other projects and libraries."
 msgstr ""
 
 #: ../../source/reference/project/index.rst:11
-#, fuzzy
 msgid "Project coordinates"
-msgstr "プロジェクト ID"
+msgstr "プロジェクト座標"
 
 #: ../../source/reference/project/index.rst:13
 msgid "The project's ``groupId``, ``artifactId`` and ``version`` identify it in Maven. Define all three values in the project's own POM so that other projects can reference it. The ``artifactId`` is the project name and the version should follow Maven's version format."
 msgstr ""
 
 #: ../../source/reference/project/index.rst:19
-#, fuzzy
 msgid "Adding a dependency"
-msgstr "依存関係"
+msgstr "依存関係の追加"
 
 #: ../../source/reference/project/index.rst:21
 msgid "Add dependencies to the ``<dependencies>`` section of the POM. Every dependency is identified by its Maven coordinates: ``groupId``, ``artifactId`` and ``version``. The version can be omitted when it is provided by the project's parent POM or dependency management."
@@ -19784,9 +19775,8 @@ msgid "Maven resolves these dependencies from the repositories configured in the
 msgstr ""
 
 #: ../../source/reference/project/index.rst:71
-#, fuzzy
 msgid "Ivy Project Properties"
-msgstr "ivy.cache.properties"
+msgstr "Ivy プロジェクトのプロパティ"
 
 #: ../../source/reference/project/index.rst:73
 msgid "The :file:`.ivyproject` file contains the current project version and the project name. The project name is used to match the project during redeployment."
