@@ -219,9 +219,6 @@ If you want to know more about web testing, have a look at the
 :link-url:`second test in our demo project <build-examples-web-test>` or at 
 our :link-url:`other demo projects <demos>` and how they are tested.
 
-If you want to learn more about how to build a CI/CD pipeline, take a look at
-the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`.
-
 
 Selenium
 ^^^^^^^^

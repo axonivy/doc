@@ -62,12 +62,12 @@ Execute a Process
 
 .. literalinclude:: includes/processtesting/processtesting-test-part1.java
     :language: java
-    :emphasize-lines: 11, 12, 13, 14, 16, 17, 19
+    :emphasize-lines: 9, 10, 11, 12, 14, 15, 17
     :linenos:
 
 Now let's have a closer look at the code:
 
-Line 11-14:
+Line 9-12:
   Here you tell your ``BpmClient`` that you want to test and execute your start
   element. After calling the :ref:`execute<process-testing-start>` method the
   ``BpmClient`` drives your process just after the first task.
@@ -78,13 +78,13 @@ Line 11-14:
   runs task by task. It also ignores ``skipTaskList`` flags and stops the
   execution at ``system tasks``.
 
-Line 16-17:
+Line 14-15:
   You have multiple APIs to assert your processes, one of it is the
   :ref:`process-testing-history`. The ``History`` gives you access to the
   executed process elements, in this example we just assert the names of the
   executed elements.
 
-Line 19:
+Line 17:
   The :ref:`process-testing-workflow` API gives you access to the ``Case``,
   ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch
   information about active ``Cases``/``Tasks``, executed ``Tasks`` or the
@@ -98,18 +98,18 @@ This means we now want to continue the current process.
 
 .. literalinclude:: includes/processtesting/processtesting-test-part2.java
     :language: java
-    :emphasize-lines: 17, 18
+    :emphasize-lines: 16, 17
     :linenos:
 
 We introduced two new things in the code above:
 
-Line 17:
+Line 16:
   To drive our process along you need to tell your ``BpmClient`` that it should
   just execute any active task. In this case there is only one possible active
   task that can be executed, the task from the ``UserTask`` element called
   ``write invoice``.
 
-Line 18:
+Line 17:
   Of course, you cannot just execute a task without declaring an appropriate
   ``Session``. To declare said ``Session`` you can call the
   :ref:`process-testing-as` method and append the desired ``Session``, ``User``
@@ -137,22 +137,22 @@ Let us add a UI mock for the UI of the UserTask 'write invoice' element.
 
 .. literalinclude:: includes/processtesting/processtesting-test-part3.java
     :language: java
-    :emphasize-lines: 16, 17, 18, 29, 30
+    :emphasize-lines: 15, 16, 17, 28, 29
     :linenos:
 
-Line 16:
+Line 15:
   Here you are telling the ``BpmClient`` that you are declaring a
   :ref:`process-testing-mock` for an element.
 
-Line 17:
+Line 16:
   Here you select the element whose UI you want to mock by its name.
 
-Line 18:
+Line 17:
   The HTML Dialog of the UserTask 'write invoice' returns a single value called
   ``total``. So let's mock the UI part to simulate that the user enters a total
   of ``935`` on the UI.
 
-Line 29-30:
+Line 28-29:
   With the :ref:`process-testing-data` API you can assert the process data of
   the executed elements.
 
