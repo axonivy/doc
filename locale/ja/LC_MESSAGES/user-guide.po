@@ -2039,8 +2039,8 @@ msgid "More Information (Docker Image)"
 msgstr "詳しい情報（Docker イメージ）"
 
 #: ../../source/engine-guide/installation/docker/more.rst:4
-msgid "The Axon Ivy Engine docker image is provided here: `Docker Hub <https://hub.docker.com/r/axonivy/axonivy-engine/>`_. The :file:`Dockerfile` of the Axon Ivy Engine image is open source and can be inspected on :link-url:`GitHub <docker-image>`. In case you want to build your own image, maybe with another base image, you can use this :file:`Dockerfile` as a template."
-msgstr "Axon Ivy Engine の Docker イメージは `Docker Hub <https://hub.docker.com/r/axonivy/axonivy-engine/>`_ に公開されています。Axon Ivy Engine イメージの :file:`Dockerfile` はオープンソースで、:link-url:`GitHub <docker-image>` で精査できます。別のベースイメージを使用して独自のイメージを作成したい場合は、この :file:`Dockerfile` をテンプレートとして使用できます。"
+msgid "The Axon Ivy Engine docker image is provided here: `Docker Hub <https://hub.docker.com/r/axonivy/axonivy-engine/>`_. The :file:`Dockerfile` of the Axon Ivy Engine image and its changelog is open source and can be inspected on :link-url:`GitHub <docker-image>`. In case you want to build your own image, maybe with another base image, you can use this :file:`Dockerfile` as a template."
+msgstr "Axon Ivy Engine の Docker イメージは、こちらの `Docker Hub <https://hub.docker.com/r/axonivy/axonivy-engine/>`_ で提供されています。Axon Ivy Engine イメージの :file:`Dockerfile` とその変更履歴はオープンソースであり、:link-url:`GitHub <docker-image>` で確認できます。別のベースイメージを使用するなどして独自のイメージをビルドしたい場合は、この :file:`Dockerfile` をテンプレートとして使用できます。"
 
 #: ../../source/engine-guide/installation/docker/more.rst:11
 msgid "**Examples**"
@@ -12726,7 +12726,7 @@ msgid "This page is just a placeholder. There is a server-side redirect to the c
 msgstr "これは単なるプレースホルダーです。サーバー側で正しいポータルガイドにリダイレクトされます。"
 
 #: ../../source/reference/casemap/index.rst:4
-msgid "Case Maps"
+msgid "Case Map"
 msgstr "ケースマップ"
 
 #: ../../source/reference/casemap/index.rst:6
