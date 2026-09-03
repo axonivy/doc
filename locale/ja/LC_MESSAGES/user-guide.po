@@ -184,8 +184,8 @@ msgstr "エディター"
 
 #: ../../source/designer/index.rst:4
 #: ../../source/introduction/getting-started/designer/index.rst:4
-msgid "Designer (VS Code Extension)"
-msgstr "Designer（VS Code 拡張機能）"
+msgid "Designer"
+msgstr ""
 
 #: ../../source/designer/index.rst:6
 msgid "This guide covers all aspects of an Axon Ivy Designer VS Code Extension. Including installation, configuration, etc."
@@ -202,8 +202,18 @@ msgid "If you want to familiarize yourself with the Axon Ivy Designer, we recomm
 msgstr "Axon Ivy Designer に慣れたい場合は、:ref:`Designer（VS Code 拡張機能）入門 <getting-started-designer-vscode>` を詳しく学ぶことをお勧めします。"
 
 #: ../../source/designer/introduction/index.rst:11
-msgid "Designer (VS Code Extension) System Requirements"
-msgstr "Designer（VS Code 拡張機能）のシステム要件"
+#, fuzzy
+msgid "Designer System Requirements"
+msgstr "システム要件"
+
+#: ../../source/designer/introduction/index.rst:13
+#: ../../source/designer/views/index.rst:14
+#: ../../source/designer/views/index.rst:49
+#: ../../source/getting-productive/workflow/documents.rst:6
+#: ../../source/reference/dialog/xhtml-editor.rst:6
+#: ../../source/reference/process/smart-workflow.rst:4
+msgid "tbd"
+msgstr ""
 
 #: ../../source/designer/troubleshooting.rst:2
 #: ../../source/engine-guide/integration/cluster/communication/index.rst:51
@@ -221,14 +231,6 @@ msgstr "デバッグビュー"
 #: ../../source/designer/views/index.rst:12
 msgid "Process Debug"
 msgstr "プロセスデバッグ"
-
-#: ../../source/designer/views/index.rst:14
-#: ../../source/designer/views/index.rst:49
-#: ../../source/getting-productive/workflow/documents.rst:6
-#: ../../source/reference/dialog/xhtml-editor.rst:6
-#: ../../source/reference/process/smart-workflow.rst:4
-msgid "tbd"
-msgstr ""
 
 #: ../../source/designer/views/index.rst:19
 msgid "Java Debug"
@@ -5516,7 +5518,7 @@ msgstr "<command> help"
 msgid "Get help to a specific command e.g., ``EngineConfigCli config-db help``"
 msgstr "特定のコマンドのヘルプを表示します（例：``EngineConfigCli config-db help``）。"
 
-#: ../../source/engine-guide/reference/index.rst:2
+#: ../../source/engine-guide/reference/index.rst:2 ../../source/index.rst:13
 #: ../../source/reference/index.rst:2
 msgid "Reference"
 msgstr "リファレンス"
@@ -16937,6 +16939,19 @@ msgstr "|icon-action| プロセス要素のアイコンを変更します。 標
 msgid "icon-action"
 msgstr "icon-action"
 
+#: ../../source/reference/process/process-editor/_select-color-quick-action.rst:1
+msgid "|color-action| Changes the color of an element."
+msgstr ""
+
+#: ../../source/reference/process/process-editor/index.rst:363
+#, fuzzy
+msgid "color-action"
+msgstr "icon-action"
+
+#: ../../source/reference/process/process-editor/_select-color-quick-action.rst:5
+msgid "To define new colors or edit existing ones, press the :guilabel:`plus` or the :guilabel:`edit` buttons in the color palette. Valid colors are every possible `css color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__."
+msgstr ""
+
 #: ../../source/reference/process/process-editor/index.rst:238
 msgid "Add Element:"
 msgstr "要素の追加："
@@ -20061,8 +20076,9 @@ msgid "This is just a placeholder and will be replaced with javadoc."
 msgstr "これは単なるプレースホルダーであり、Javadocに置き換えられます。"
 
 #: ../../source/technical-info/index.rst:2
-msgid "Technical and Release Information"
-msgstr "技術ドキュメント"
+#, fuzzy
+msgid "Release Information"
+msgstr "メタ情報"
 
 #: ../../source/technical-info/migration/deprecation.rst:4
 msgid "Deprecation and Removal"
@@ -20200,6 +20216,24 @@ msgstr "**移行ツール**"
 #: ../../source/technical-info/migration/index.rst:23
 msgid "To ease the migration we provide :ref:`migration-tools`."
 msgstr "スムーズに移行できるように、 :ref:`migration-tools` を提供しています。"
+
+#: ../../source/technical-info/migration/index.rst:25
+#, fuzzy
+msgid "**Migration Notes**"
+msgstr "移行に関する注記"
+
+#: ../../source/technical-info/migration/index.rst:27
+msgid "Have a look at our :ref:`migration-notes` to see what has changed."
+msgstr ""
+
+#: ../../source/technical-info/migration/index.rst:29
+#, fuzzy
+msgid "**Deprecations**"
+msgstr "**制限**"
+
+#: ../../source/technical-info/migration/index.rst:31
+msgid "We also always deprecate well known features and API's before remove them. Please refer to our :ref:`deprecation` chapter to be informed about."
+msgstr ""
 
 #: ../../source/technical-info/migration/major/docker.rst:6
 msgid "Docker's infrastructure enables you to automate various kinds of infrastructure setups. Consequently, the kind of major migration steps are various too and highly dependent on your concrete setup. However, here are the major steps to do when migrating a docker based Axon Ivy Engine to another major version."
@@ -25465,3 +25499,12 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "Process Editor > Open inscription sidebar > Toggle outline"
 #~ msgstr "プロセスエディターからインスクリプションサイドバーを開き、アウトラインを切り替えます。"
+
+#~ msgid "Designer (VS Code Extension)"
+#~ msgstr "Designer（VS Code 拡張機能）"
+
+#~ msgid "Designer (VS Code Extension) System Requirements"
+#~ msgstr "Designer（VS Code 拡張機能）のシステム要件"
+
+#~ msgid "Technical and Release Information"
+#~ msgstr "技術ドキュメント"
