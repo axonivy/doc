@@ -12778,18 +12778,16 @@ msgid "Popular Market Artifacts"
 msgstr ""
 
 #: ../../source/market/index.rst:28
-#, fuzzy
 msgid "**Axon Ivy Smart Workflow**"
-msgstr "スマートワークフロー"
+msgstr "**Axon Ivy スマートワークフロー**"
 
 #: ../../source/market/index.rst:29
 msgid "`Smart Workflow <https://market.axonivy.com/smart-workflow>`__ brings AI directly into Axon Ivy, so developers can build, run, and improve AI agents inside existing Axon processes. It lets business workflows leverage large language models to understand natural language, make autonomous decisions, and adapt to changing requirements — all without heavy architectural changes."
 msgstr ""
 
 #: ../../source/market/index.rst:36
-#, fuzzy
 msgid "**Axon Ivy IDP**"
-msgstr "Axon Ivy"
+msgstr "**Axon Ivy IDP**"
 
 #: ../../source/market/index.rst:37
 msgid "`Axon Ivy IDP <https://market.axonivy.com/idp-utils>`__ is an Intelligent Document Processing solution that automates the extraction, classification, and analysis of unstructured data. It streamlines document-intensive processes such as invoice management, claims processing, and customer onboarding using AI-powered OCR, handwriting text recognition (HTR), and machine learning algorithms to increase the accuracy and efficiency in data management."
