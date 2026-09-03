@@ -9,7 +9,7 @@ installation, configuration and production operation.
 .. toctree::
    :maxdepth: 2
 
-   introduction/index
+   installation/index
    configuration/index
    integration/index
    deployment/index

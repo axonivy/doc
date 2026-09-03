@@ -9,7 +9,7 @@ installation, configuration, etc.
 .. toctree::
    :maxdepth: 2
 
-   introduction/index
+   installation/index
    ai-development
    configuration
    commands
