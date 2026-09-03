@@ -17,12 +17,17 @@ lifecycle scope of the managed bean:
    request and thrown away after the response has been sent. This is the
    default scope that will be used when no scope is set specifically.
 
-.. note::
+-  ``@ViewScoped`` - the bean lives as long as the user is interacting with the same view 
+   (page) in the browser. This scope is useful for keeping the state of the 
+   bean while navigating within the same view.
 
-   JSF 2.0 introduced an additional scope @ViewScoped and offers the
-   possibility to define custom scopes. This is basically also supported
-   in Axon Ivy, but it is recommended to use it with care since it might
-   not behave as expected.
+.. code-block:: java
+
+   @RequestScoped
+   @Named("myPersonBean")
+   public class Person {
+       // class body here
+   }
 
 In the :ref:`HTMLDialogDemo Project <importing-demo-projects>` that is included in
 the Axon Ivy Designer you find an example.

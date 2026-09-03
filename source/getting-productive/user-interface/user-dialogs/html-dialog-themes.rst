@@ -16,7 +16,7 @@ the core. However, you can easily configure another default theme with the
 following steps:
 
 -  The `PrimeFaces Built-In Themes
-   <https://primefaces.github.io/primefaces/11_0_0/#/core/themes?id=built-in-themes>`__
+   <https://primefaces.github.io/primefaces/15_0_0/#/core/themes?id=built-in-themes>`__
    are already included in the product. In addition, the
    core offers a :ref:`freya-ivy <freya-themes>` theme. To use your own theme, copy your
    themeXY.jar file into the folder **/webapps/ivy/WEB-INF/lib** of Designer and
