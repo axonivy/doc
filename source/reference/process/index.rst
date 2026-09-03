@@ -11,4 +11,3 @@ Process
    process-elements/index
    error-handling
    ivyscript/index
-   smart-workflow

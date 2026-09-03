@@ -1,4 +1,0 @@
-Smart Workflow
-==============
-
-tbd
