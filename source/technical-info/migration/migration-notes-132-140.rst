@@ -231,17 +231,15 @@ and most projects are automatically converted to work as before.
 
   .. container:: detail 
 
-    Changed have the properties to configure RestClients.
-    There are new properties to fine tune serialization behavior.
-    See the properties prefixed with `JSON.DateTime.` and `JSON.Enum.`.
+    The configurable RestClient properties have been updated to match Jackson 3.
+    See the new properties prefixed with :code:`JSON.DateTime.` and :code: `JSON.Enum.`.
 
-    Jackson's JsonNode type is suggested to read raw RestClientCall results, 
+    Jackson's :code:`JsonNode` type is suggested to read raw RestClientCall results,
     occurrences of these are automatically converted in existing processes.
 
-    If you have used Jackson for custom JSON serialization solutions. 
-    Most Java problems can be addressed by correcting namespace imports
-    from `com.fasterxml.jackson` to `tools.jackson` (E.g. `com.fasterxml.jackson.mapper.JsonNode` to `tools.jackson.mapper.JsonNode`).
-    The exception is the widely used `com.fasterxml.annotation.` namespace, which remains untouched.
+    If you have used Jackson for custom JSON serialization solutions, most Java problems can be addressed by correcting namespace imports
+    from :code:`com.fasterxml.jackson` to :code:`tools.jackson` (e.g. :code:`com.fasterxml.jackson.databind.JsonNode` to :code:`tools.jackson.databind.JsonNode`).
+    The exception is the widely used :code:`com.fasterxml.jackson.annotation` namespace, which remains untouched.
 
     For a detailed list of changes see the `Jackson3 Migration guide <https://github.com/FasterXML/jackson/blob/main/jackson3/MIGRATING_TO_JACKSON_3.md>`_
 
