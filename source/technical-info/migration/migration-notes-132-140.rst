@@ -214,6 +214,37 @@ Please read the official PrimeFaces migration guides for more information:
 - `PrimeFaces 14 Migration Guide <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`_
 - `PrimeFaces 15 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_
 
+Jackson 3
+*************
+
+|tag-project-changed| |tag-project-auto-convert|
+
+The JSON library Jackson was switched from Jackson 2 to Jackson 3.
+Jackson is mainly used for REST service communication,
+and most projects are automatically converted to work as before.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    Changed have the properties to configure RestClients.
+    There are new properties to fine tune serialization behavior.
+    See the properties prefixed with `JSON.DateTime.` and `JSON.Enum.`.
+
+    Jackson's JsonNode type is suggested to read raw RestClientCall results, 
+    occurrences of these are automatically converted in existing processes.
+
+    If you have used Jackson for custom JSON serialization solutions. 
+    Most Java problems can be addressed by correcting namespace imports
+    from `com.fasterxml.jackson` to `tools.jackson` (E.g. `com.fasterxml.jackson.mapper.JsonNode` to `tools.jackson.mapper.JsonNode`).
+    The exception is the widely used `com.fasterxml.annotation.` namespace, which remains untouched.
+
+    For a detailed list of changes see the `Jackson3 Migration guide <https://github.com/FasterXML/jackson/blob/main/jackson3/MIGRATING_TO_JACKSON_3.md>`_
+
 
 Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors
 *********************************************************************
