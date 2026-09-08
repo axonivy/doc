@@ -20,11 +20,11 @@ re-definitions:
    and/or Sub Processes): Define a replacement component for an already
    existing component.
 
-By defining overrides on project level, the lookup of a certain
-component can be redirected to a replacement component. When a component
-is referenced in a process model of that project then the lookup for
-this component will yield a different component (i.e., the replacement)
-at runtime instead of the originally referenced component.
+By defining overrides on project level, the lookup of a certain component can be
+redirected to a replacement component. When a component is referenced in a
+project then the lookup for this component will yield a different component
+(i.e., the replacement) at runtime instead of the originally referenced
+component.
 
 Example: The Acme Web shop
 --------------------------

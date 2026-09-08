@@ -14,7 +14,7 @@ output, a URL is displayed
 
 .. code:: bash
 
-    [100%] Service ProcessModelVersion Portal/AxonIvyExpress$1 started [0ms]
+    [100%] Project default/portal/1/portal started [0ms]
     Go to http://yourservername:8080/ to see the info page of Axon Ivy Engine.
     Axon Ivy Engine is running and ready to serve. [9375ms]
     Type 'shutdown' and confirm with ENTER to stop the running engine instance

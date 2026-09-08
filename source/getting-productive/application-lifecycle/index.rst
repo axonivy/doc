@@ -121,7 +121,7 @@ Project
 
 A project represents an Axon Ivy project developed in the Axon Ivy Designer. It
 contains the business processes and related resources that make up a functional
-part of an application. This includes process models, user interfaces, data
+part of an application. This includes processes, user interfaces, data
 models, code, and other configuration required to implement the business
 processes. Projects are developed and maintained independently in the Axon Ivy
 Designer and are deployed as part of an application version to an Axon Ivy

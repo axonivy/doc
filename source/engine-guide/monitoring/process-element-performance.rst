@@ -60,44 +60,44 @@ divided into two categories, internal and external.
 An entry in the view is created for each executed process element. The table below
 shows what information is available.
 
-+-----------------+----------------------------------------------------------------+
-| Name            | Description                                                    |
-+=================+================================================================+
-| Entry ID        | Entry ID. Useful to order the entries by their first execution.|
-+-----------------+----------------------------------------------------------------+
-| Application     | Application of the process element.                            |
-+-----------------+----------------------------------------------------------------+
-| Process Model   | Process Model of the process element.                          |
-+-----------------+----------------------------------------------------------------+
-| PM Version      | Process Model Version of the process element.                  |
-+-----------------+----------------------------------------------------------------+
-| Process Path    | The path to the process.                                       |
-+-----------------+----------------------------------------------------------------+
-| Element ID      | The identifier of the process element.                         |
-+-----------------+----------------------------------------------------------------+
-| Element Name    | The first line of the process element name (display name).     |
-+-----------------+----------------------------------------------------------------+
-| Element Type    | The type of the process element.                               |
-+-----------------+----------------------------------------------------------------+
-| Total Time      | Total time [ms] of internal and external execution.            |
-+-----------------+----------------------------------------------------------------+
-| Int. Executions | Total internal executions of the process element.              |
-+-----------------+----------------------------------------------------------------+
-| Total Int. Time | Total internal time [ms] of process engine executions.         |
-+-----------------+----------------------------------------------------------------+
-| Min. Int. Time  | Minimum internal process engine execution time [ms].           |
-+-----------------+----------------------------------------------------------------+
-| Avg. Int. Time  | Average internal process engine execution time [ms].           |
-+-----------------+----------------------------------------------------------------+
-| Max. Int. Time  | Maximum internal process engine execution time [ms].           |
-+-----------------+----------------------------------------------------------------+
-| Ext. Executions | Total external execution count.                                |
-+-----------------+----------------------------------------------------------------+
-| Total Ext. Time | Total external execution time [ms].                            |
-+-----------------+----------------------------------------------------------------+
-| Min. Ext. Time  | Minimum external execution time [ms].                          |
-+-----------------+----------------------------------------------------------------+
-| Avg. Ext. Time  | Average external execution time [ms].                          |
-+-----------------+----------------------------------------------------------------+
-| Max. Ext. Time  | Maximum external execution time [ms].                          |
-+-----------------+----------------------------------------------------------------+
++------------------------+----------------------------------------------------------------+
+| Name                   | Description                                                    |
++========================+================================================================+
+| Entry ID               | Entry ID. Useful to order the entries by their first execution.|
++------------------------+----------------------------------------------------------------+
+| Application            | Application of the process element.                            |
++------------------------+----------------------------------------------------------------+
+| Application Version    | Application Version of the process element.                    |
++------------------------+----------------------------------------------------------------+
+| Project                | Project of the process element.                                |
++------------------------+----------------------------------------------------------------+
+| Process Path           | The path to the process.                                       |
++------------------------+----------------------------------------------------------------+
+| Element ID             | The identifier of the process element.                         |
++------------------------+----------------------------------------------------------------+
+| Element Name           | The first line of the process element name (display name).     |
++------------------------+----------------------------------------------------------------+
+| Element Type           | The type of the process element.                               |
++------------------------+----------------------------------------------------------------+
+| Total Time             | Total time [ms] of internal and external execution.            |
++------------------------+----------------------------------------------------------------+
+| Int. Executions        | Total internal executions of the process element.              |
++------------------------+----------------------------------------------------------------+
+| Total Int. Time        | Total internal time [ms] of process engine executions.         |
++------------------------+----------------------------------------------------------------+
+| Min. Int. Time         | Minimum internal process engine execution time [ms].           |
++------------------------+----------------------------------------------------------------+
+| Avg. Int. Time         | Average internal process engine execution time [ms].           |
++------------------------+----------------------------------------------------------------+
+| Max. Int. Time         | Maximum internal process engine execution time [ms].           |
++------------------------+----------------------------------------------------------------+
+| Ext. Executions        | Total external execution count.                                |
++------------------------+----------------------------------------------------------------+
+| Total Ext. Time        | Total external execution time [ms].                            |
++------------------------+----------------------------------------------------------------+
+| Min. Ext. Time         | Minimum external execution time [ms].                          |
++------------------------+----------------------------------------------------------------+
+| Avg. Ext. Time         | Average external execution time [ms].                          |
++------------------------+----------------------------------------------------------------+
+| Max. Ext. Time         | Maximum external execution time [ms].                          |
++------------------------+----------------------------------------------------------------+

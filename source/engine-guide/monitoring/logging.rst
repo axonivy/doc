@@ -56,7 +56,7 @@ But you can set the log level of a specific runtime logger and bring them even t
 
 The name of the runtime logger has a well defined format:
 
-**runtimelog.[security context name].[category].[app name].[process model name]**
+**runtimelog.[security context name].[category].[app name].[project name]**
 
 **Example:**
 
