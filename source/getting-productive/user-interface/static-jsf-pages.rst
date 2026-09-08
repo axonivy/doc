@@ -27,11 +27,11 @@ Access Static Pages
 **URL**
 
 To access these pages with a browser you need to call
-``http://<servername>:<port>/<application>/faces/view/<process model>/<xhtml
+``http://<servername>:<port>/<application>/faces/view/<project>/<xhtml
 file in webContent/view>``. Assuming that you have a XHTML page with the name
 test.xhtml in your :file:`webContent/view` folder, an <application name> App and
-a <processmodel> PM, you can call the URL
-``http://localhost:8080/App/faces/view/PM/test.xhtml`` to get your static
+a <project> Project, you can call the URL
+``http://localhost:8080/App/faces/view/Project/test.xhtml`` to get your static
 JSF page.
 The recommended way to create the static JSF page URL is to use the
 ``Ivy.html().viewLink(String viewPath)`` method.

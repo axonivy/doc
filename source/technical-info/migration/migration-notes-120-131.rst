@@ -102,8 +102,8 @@ Changed Runtime logger name
 
 |tag-ops-changed|
 
-We changed the Runtime logger name from :code:`runtime.[app name].[pm name].[category]` to
-:code:`runtime.[security context name].[category].[app name].[pm name]`.
+We changed the Runtime logger name from :code:`runtime.[app name].[project name].[category]` to
+:code:`runtime.[security context name].[category].[app name].[project name]`.
 
 
 .. container:: admonition note toggle
@@ -116,7 +116,7 @@ We changed the Runtime logger name from :code:`runtime.[app name].[pm name].[cat
 
     We added the security context name to the Runtime logger name and moved the category after the security context name.
     This is to make the logger name more unique and to be able to filter by security context name.
-    The new logger name is: :code:`runtime.[security context name].[category].[app name].[pm name]`.
+    The new logger name is: :code:`runtime.[security context name].[category].[app name].[project name]`.
 
     In case you have a custom :code:`log4j2.xml` configuration, you need to adapt the occurrences of the runtime logger name in your configuration.
 

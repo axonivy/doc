@@ -10,10 +10,9 @@ Element Details
 ---------------
 
 An embedded subprocess folds a part of a process into a box. This makes
-hierarchical structuring of the process model possible. Subprocesses
-can be created top down or bottom up, either by selecting and wrapping parts
-of a process or by inserting an (initially empty) embedded sub element
-from the palette.
+hierarchical structuring of the process possible. Subprocesses can be created
+top down or bottom up, either by selecting and wrapping parts of a process or by
+inserting an (initially empty) embedded sub element from the palette.
 
 Inscription
 -----------

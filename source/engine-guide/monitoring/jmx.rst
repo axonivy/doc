@@ -62,7 +62,7 @@ Where possible, Axon Ivy Engine MBeans names contain application, project, etc.
 
     ivy Engine:type=External Web Service,application=MyApplication,name=Echo (43838347ABCD)
     ivy Engine:type=Job Manager
-    ivy Engine:type=Process Start Event Bean,application=MyApplication,version=1,project=MyProcessModel,name="MyStartEventBean (3485471349/start.ivp)"
+    ivy Engine:type=Process Start Event Bean,application=MyApplication,version=1,project=MyProject,name="MyStartEventBean (3485471349/start.ivp)"
 
 The name and description of an MBean are available in its meta information. MBeans provide information
 through attributes and operations.

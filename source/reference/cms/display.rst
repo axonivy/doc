@@ -39,11 +39,11 @@ you can use :code:`ivy.cm.ref`.
 
 The generated link then looks as follows:
   
-  ``/<appName>/cm/<processModelAndVersion>/<cmsPath>.<extension>?l=<locale>&v=<version>``
+  ``/<appName>/<appVersion>/cm/<project>/<cmsPath>.<extension>?l=<locale>&v=<version>``
 
   e.g.
 
-  ``/designer/cm/cms$1/documents/instruction.pdf?l=en&v=1641303359499``
+  ``/portal/1/cm/portal/documents/instruction.pdf?l=en&v=1641303359499``
 
 If you want to generate a link with a specific locale then you can use the advanced API:
 
