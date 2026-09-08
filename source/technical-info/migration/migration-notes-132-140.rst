@@ -219,9 +219,9 @@ Jackson 3
 
 |tag-project-changed| |tag-project-auto-convert|
 
-The JSON library Jackson was switched from Jackson2 to 3. 
-Jackson is mainly used for REST service communication 
-and most projects are auto converted to work as before.
+The JSON library Jackson was switched from Jackson 2 to Jackson 3.
+Jackson is mainly used for REST service communication,
+and most projects are automatically converted to work as before.
 
 .. container:: admonition note toggle
 
