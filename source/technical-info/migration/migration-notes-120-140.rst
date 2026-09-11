@@ -1,0 +1,677 @@
+.. _migrate-120-140:
+
+Migrating from 12.0 to 14.0
+===========================
+
+Upgrade to 14.0 is only supported from an Axon Ivy Engine 10.0 and higher. If
+you have an Axon Ivy Engine older than version 10.0 you need to first migrate to
+a version between 10.0 and 12.0.
+
+License
+*******
+
+|tag-ops-changed|
+
+You need to request a new license for Axon Ivy Engine 14.0.
+
+----
+
+Updates
+*******
+
+Java 25
+-------
+
+|tag-project-changed| |tag-project-auto-convert| |tag-ops-changed|
+
+We updated Java to version 25:
+
+- Convert your Axon Ivy projects to the latest version to use the new Java 25
+  features. 
+- You may have to update third-party libraries that do not yet support Java 25
+  to newer versions.
+- Use Java 25 to run your Maven project builds.
+- Use an `Adoptium / Eclipse Temurin JDK or JRE
+  <https://adoptium.net/temurin/releases?version=25>`_ to run Axon Ivy on Linux
+  or macOS.
+
+Java EE to Jakarta EE Migration
+-------------------------------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+We have updated our platform from Java EE (:code:`javax`) to Jakarta EE
+(:code:`jakarta`) API's and implementation libraries. This means that all
+:code:`javax.*` packages have been replaced with :code:`jakarta.*` packages. The
+biggest change is that there is no longer a :code:`@ManagedBean` annotation,
+instead beans for Jakarta Faces (JSF) are resolved via `CDI
+<https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1>`_. CDI beans
+need to be annotated with :code:`@Named` and they need to have a scope
+(:code:`@RequestScoped`, :code:`@SessionScoped`, :code:`@ApplicationScoped`,
+:code:`@ViewScoped`) if they are used in JSF pages. If the beans are
+:code:`@SessionScoped` or :code:`@ViewScoped`, they need to implement the
+:code:`Serializable` interface.
+
+Beans can still be named via :code:`@Named("myBean")`, however this name needs
+to be unique within the whole application; otherwise the application will fail
+to start. If you don't define a name, the simple class name will be used like
+before (e.g. :code:`class MyBean` will be available as :code:`myBean` in JSF
+pages).
+
+Also :code:`@FacesConverter` and :code:`@FacesValidator` are now CDI-managed and
+must be adapted accordingly. They must set :code:`managed = true`, and they also
+need to have a scope (see above).
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Detail**
+
+  .. container:: detail 
+
+    We have also dropped internal scopes for :code:`@ApplicationScoped` and
+    :code:`@SessionScoped` beans. This could lead to small behavior changes in
+    the bean lifecycle, but the idea behind these scopes is still the same.
+
+Persistence API (Hibernate)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Persistence API has been migrated from Java Persistence API (JPA) 2.2 to
+`Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_
+3.2. The implementation has been updated from `Hibernate
+<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to `Hibernate
+<https://hibernate.org/orm/documentation/7.0/>`_ 7.0.
+
+Mail API 
+^^^^^^^^
+
+The Mail API has been migrated from Java Mail API 1.6 to `Jakarta Mail API
+<https://jakarta.ee/specifications/mail/2.0/>`_ 2.0.
+
+**Recommendation:**
+
+Instead of using the Jakarta Mail API, consider:
+
+- The :ref:`process-element-email-activity`
+- The new :public-api:`Mail Public API
+  </ch/ivyteam/ivy/mail/package-summary.html>`.
+
+PrimeFaces 15
+-------------
+
+|tag-project-auto-convert|
+
+We have updated the PrimeFaces library from version 13.0 to 15.0. This version
+includes new components, bug fixes, and performance improvements. However, it
+also introduces some breaking changes that may affect your existing code. Some
+of them are converted automatically by our project converter (:code:`Running
+refactoring 'Primefaces 15`) , but you may need to manually adapt your code in
+some cases. Please read the official PrimeFaces migration guides for more
+information:
+
+- `PrimeFaces 14 Migration Guide
+  <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`_
+- `PrimeFaces 15 Migration Guide
+  <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_
+
+Jackson 3
+---------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+The JSON library Jackson was switched from Jackson 2 to Jackson 3. Jackson is
+mainly used for REST service communication, and most projects are automatically
+converted to work as before.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    The configurable RestClient properties have been updated to match Jackson 3.
+    See the new properties prefixed with :code:`JSON.DateTime.` and :code:
+    `JSON.Enum.`.
+
+    Jackson's :code:`JsonNode` type is suggested to read raw RestClientCall
+    results, occurrences of these are automatically converted in existing
+    processes.
+
+    If you have used Jackson for custom JSON serialization solutions, most Java
+    problems can be addressed by correcting namespace imports from
+    :code:`com.fasterxml.jackson` to :code:`tools.jackson` (e.g.
+    :code:`com.fasterxml.jackson.databind.JsonNode` to
+    :code:`tools.jackson.databind.JsonNode`). The exception is the widely used
+    :code:`com.fasterxml.jackson.annotation` namespace, which remains untouched.
+
+    For a detailed list of changes see the `Jackson3 Migration guide
+    <https://github.com/FasterXML/jackson/blob/main/jackson3/MIGRATING_TO_JACKSON_3.md>`_
+
+----
+
+Engine Changes
+**************
+
+Application Versions
+--------------------
+
+|tag-ops-changed|
+
+The introduction of Application Versions represents a major shift in the
+fundamental architecture of the Axon Ivy Platform.
+
+Previously, individual projects on the Axon Ivy Engine were versioned at
+runtime. These versions were referred to as **Process Model Versions**. With the
+introduction of **Application Versions**, versioning has been moved to the
+application level.
+
+This change brings significant advantages, particularly in terms of the
+reliability and predictability of the Axon Ivy Engine. It reduces the amount of
+implicit and potentially unpredictable behavior caused by versioning individual
+projects and managing dependencies between them. Since these dependencies can
+change as projects are deployed and updated independently, determining which
+versions are actually used at runtime could become difficult to predict.
+
+By versioning the application as a whole, the platform provides a much more
+consistent and deterministic runtime environment. At the same time, this
+architectural change establishes an important foundation for the long-term
+evolution of the platform, particularly with regard to scalability.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    However, moving versioning from the project level to the application level
+    also introduces changes to several APIs:
+
+    **Deployment**
+
+    The target application version must always be specified using the following
+    parameters:
+
+    * Security Context
+    * Application Name
+    * Application Version
+
+    The Application Version can either reference a specific existing version or
+    be controlled using one of the two special keywords: :code:`new` or
+    :code:`released`.
+
+    :code:`new` - A new Application Version is created and immediately
+    transitioned to the Released state. :code:`released` - The deployment
+    targets the existing Released Application Version. If no Released
+    Application Version exists, a new version is created and automatically
+    transitioned to the Released state.
+
+    This allows deployments to either target a specific version explicitly or
+    use the lifecycle semantics provided by the new and released keywords.
+
+    To support this new deployment model, the :ref:`Deployment REST API
+    <deployment-rest-api>`, the :ref:`Deployment Directory
+    <deployment-directory>`, and the goals of the :ref:`project-build-plugin
+    <deployment-maven-plugin>` have been updated accordingly.
+
+    The :ref:`Cockpit <engine-cockpit-application>` has also been adapted to
+    reflect these changes and to support the new Application Version-based
+    deployment model.
+
+    **States**
+
+    Previously, various states were maintained at the Process Model Version
+    level, including the Release State and Activity State.
+
+    With the introduction of Application Versions, these states have been moved
+    to the Application Version level. The same states are now managed directly
+    on Application Versions rather than on individual Process Model Versions.
+
+    This ensures that the lifecycle and operational state of an application are
+    managed consistently as a whole, rather than independently for each project.
+
+    **System Database**
+
+    With the introduction of Application Versions, the database model has been
+    simplified. Projects and applications are no longer managed using the
+    following tables: :code:`IWA_Application`, :code:`IWA_ProcessModel`,
+    :code:`IWA_ProcessModelVersion`, :code:`IWA_Library`,
+    :code:`IWA_LibrarySpecification`, :code:`IWA_LibraryVersionSpec`
+
+    Instead, project and application information is now managed exclusively
+    through the following tables: :code:`IWA_Application`, :code:`IWA_Project`
+
+    This change reflects the new application-centric architecture and removes
+    the previous database structures associated with Process Model Versions and
+    their dependencies.
+
+    **Version Number**
+
+    The Application Version Number is managed by the platform and is
+    automatically incremented by 1 each time a deployment targets new. The
+    project version defined in :file`pom.xml`` is still displayed in the Engine
+    Cockpit, but it has no impact on the runtime.
+
+    **Redeployment**
+
+    Redeployment is still supported. This means that projects can be deployed
+    into an existing Application Version, replacing projects that have already
+    been deployed. The project to be replaced is identified based on the project
+    name defined in the :file:`.ivyproject` file. Currently, no deployment
+    validation is performed.
+
+    **Application Directory Layout**
+
+    The directory structure now reflects the Application Version concept and
+    follows the hierarchy: Security System → Application → Version → Project.
+    Each Application Version has its own dedicated folder. On redeployment, a
+    backup is created for the entire Application Version folder. This ensures
+    that all projects and associated files belonging to the application version
+    are backed up consistently.
+
+Changed Runtime logger name
+---------------------------
+
+|tag-ops-changed|
+
+We changed the Runtime logger name from :code:`runtime.[app name].[project
+name].[category]` to :code:`runtime.[security context name].[category].[app
+name].[project name]`.
+
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Detail**
+
+  .. container:: detail 
+
+    We added the security context name to the Runtime logger name and moved the
+    category after the security context name. This is to make the logger name
+    more unique and to be able to filter by security context name. The new
+    logger name is: :code:`runtime.[security context name].[category].[app
+    name].[project name]`.
+
+    In case you have a custom :code:`log4j2.xml` configuration, you need to
+    adapt the occurrences of the runtime logger name in your configuration.
+
+    From something like this:
+
+    .. code-block:: xml
+
+      <Logger name="runtimelog.myapp.hrm.rest_client" level="DEBUG">
+        <AppenderRef ref="RuntimeLog"/>
+      </Logger>
+
+    To something like this:
+
+    .. code-block:: xml
+
+      <Logger name="runtimelog.securitycontext.rest_client.myapp.hrm"
+      level="DEBUG">
+        <AppenderRef ref="RuntimeLog"/>
+      </Logger>
+
+Schema header in ivy.yaml and app.yaml
+--------------------------------------
+
+|tag-ops-changed|
+
+If your :ref:`ivy-yaml` and :ref:`app-yaml` do not include a schema header, the
+Axon Ivy Engine will now assume that they are in the latest version.
+Auto-migration of these files will not happen anymore. 
+
+Recommendation:
+^^^^^^^^^^^^^^^
+
+Always version your configuration files by including a schema header.
+
+Tomcat HTTPS Connector SSL Settings
+-----------------------------------
+
+|tag-ops-changed|
+
+Some HTTPS connector SSL settings in :ref:`ivy-yaml` have moved.
+
+The following settings were moved under :code:`Connector.HTTPS.SslHostConfig`:
+
+- :code:`Connector.HTTPS.ClientAuth` ->
+  :code:`Connector.HTTPS.SslHostConfig.CertificateVerification`
+- :code:`Connector.HTTPS.SslProtocol` ->
+  :code:`Connector.HTTPS.SslHostConfig.SslProtocol`
+- :code:`Connector.HTTPS.TruststoreFile` ->
+  :code:`Connector.HTTPS.SslHostConfig.TruststoreFile`
+- :code:`Connector.HTTPS.TruststorePass` ->
+  :code:`Connector.HTTPS.SslHostConfig.TruststorePassword`
+- :code:`Connector.HTTPS.TruststoreType` ->
+  :code:`Connector.HTTPS.SslHostConfig.TruststoreType`
+
+The following certificate settings were moved under
+:code:`Connector.HTTPS.SslHostConfig.Certificate`:
+
+- :code:`Connector.HTTPS.KeyAlias` ->
+  :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyAlias`
+- :code:`Connector.HTTPS.KeyPass` ->
+  :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeyPassword`
+- :code:`Connector.HTTPS.KeystoreFile` ->
+  :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreFile`
+- :code:`Connector.HTTPS.KeystorePass` ->
+  :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystorePassword`
+- :code:`Connector.HTTPS.KeystoreType` ->
+  :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`
+
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Hint**
+
+  .. container:: detail 
+
+    This list is not exhaustive. If you use other attributes from the deprecated
+    Tomcat connector SSL configuration, move them to the corresponding
+    :code:`SslHostConfig` or :code:`SslHostConfig.Certificate` location as well,
+    even if they are not listed explicitly in your :ref:`ivy-yaml`.
+
+    See the `Tomcat HTTP Connector reference
+    <https://tomcat.apache.org/tomcat-9.0-doc/config/http.html>`_, especially
+    the deprecated SSL connector attributes.
+
+HttpHeaderSecurityFilter and RemoteIpFilter in web.xml
+------------------------------------------------------
+
+|tag-ops-deprecated|
+
+You can now define the :ref:`reverse-proxy` HTTP Headers and security response
+:ref:`security-http-headers` in the :ref:`ivy-yaml` file. While it is still
+possible to configure these in :ref:`web-xml`, it is no longer recommended. If
+you continue to use :ref:`web-xml`, headers may appear twice.
+
+What You Need to Do:
+^^^^^^^^^^^^^^^^^^^^
+
+Remove the following configurations from :ref:`web-xml` and migrate them to
+:ref:`ivy-yaml`:
+
+- :code:`org.apache.catalina.filters.HttpHeaderSecurityFilter` →
+  :code:`WebServer.HttpHeaders`
+- :code:`org.apache.catalina.filters.RemoteIpFilter` →
+  :code:`ReverseProxy.HttpHeaders`
+
+----
+
+Ivy Project Changes
+*******************
+
+Axon Ivy Public API Maven dependency
+------------------------------------
+
+|tag-project-auto-convert|
+
+We now include the Axon Ivy Public API as Maven dependency in the project's
+:code:`pom.xml` file. To do this, we update the POM by adding
+:code:`ivy-project-parent` as parent and inserting the :code:`ivy-api`
+dependency. This setup allows you to develop the Java part of an Axon Ivy
+project in any IDE that supports Maven - for example with Visual Studio Code.
+The conversion only takes place if no parent is defined in the :code:`pom.xml`
+of the project.
+
+Project Structure Improvements
+------------------------------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+Some folders have been moved or renamed to improve the project structure.
+
+Workflow
+--------
+
+- Renamed :code:`processes` folder to :code:`process`.
+- Renamed :code:`dataclasses` folder to :code:`dataclass`.
+- Renamed :code:`src_hd` folder to :code:`dialog`.
+
+This change improves the consistency of folder names and better reflects their
+content.
+
+Generated Source Files
+----------------------
+
+The following folders containing generated source files have been moved to the
+:code:`target` folder:
+
+- :code:`libs/mvn-deps`
+- :code:`src_generated/dataclass`
+- :code:`src_generated/repo`
+- :code:`src_generated/wsprocess`
+
+These folders contain files that are generated during the build process by the
+`project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ and
+should not be modified directly. Therefore, they have been moved to the
+:code:`target` folder to indicate that they are generated files clearly and to
+avoid confusion with other source files. The corresponding entries in the
+:code:`.gitignore` file have been removed.
+
+Multiple responsibles for a task and multiple roles for process starts
+----------------------------------------------------------------------
+
+|tag-project-changed|
+
+It's now possible to assign multiple responsibles to a task. There is no need to
+create dynamic roles anymore. You can simply assign a task to different roles if
+needed. You will notice that you can configure on the task tab multiple
+responsibles e.g. :ref:`Task Tab <process-element-tab-task>`. The same is also
+true for the expiry task configuration.
+
+All APIs have been deprecated, which handles only one responsible. They were
+previously named :code:`activator`, therefore we have streamlined the naming to
+:code:`responsible` from deep in the core to the user interface, everywhere. Use
+the new APIs:
+
+- :code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`
+- :code:`ch.ivyteam.ivy.workflow.ITask.expiry()`
+
+The same applies to process starts. It's now possible to define multiple roles
+on a process start. You will notice that you can configure on the request tab of
+a start multiple roles e.g. :ref:`Start Event
+<process-element-start-request-tab-request>`.
+
+Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors
+---------------------------------------------------------------------
+
+|tag-project-auto-convert| |tag-ops-removed|
+
+REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors
+instead of Apache HTTP Client 4-based connectors by default. 
+
+For REST clients, the Apache HTTP Client 4 based connector was removed.
+
+The project migration tool will automatically convert HTTP Client 4–based
+connectors to Apache HTTP Client 5 for you. However, if you have custom code for
+REST or SOAP WebService features that directly references Apache HTTP Client 4
+classes, you must manually update those to the HTTP Client 5 equivalents (adjust
+imports and API usage) and re-test the integrations.
+
+The Apache HTTP Client 4 library itself is still available but will be removed
+in a future version.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Hint**
+
+  .. container:: detail 
+
+    For SOAP Web Service clients, this behavior can be changed back to Apache
+    HTTP Client 4 engine-wide by setting the
+    :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system
+    property in the :ref:`configuration/jvm.options <jvm-options>` file of your
+    Engine to :code:`true`. This is a last resort option and should only be used
+    if you have a SOAP Web Service that is not compatible with Apache HTTP
+    Client 5. You should migrate to Apache HTTP Client 5 based connectors as
+    soon as possible.
+
+Remove UUID from Rest Client and GUID from Web Service Client
+-------------------------------------------------------------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+We have removed the UUID from the Rest Client and the GUID from the Web Service
+Client. This means we no longer use these IDs in your processes to reference the
+clients. Instead we use the YAML key of the client. This makes the client easier
+to identify and copy between projects. We do an automatic project conversion,
+but it can happen that we cannot find the client if it is defined in a different
+project. In this case, you need to manually update the client reference in your
+processes to use the YAML key of the client. The old ID is still available in
+the YAML configuration prefixed with `Legacy`, but you can remove this after you
+have migrated all your projects.
+
+We also deprecated the :public-api:`ivy.rest.client(UUID)
+</ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>`
+PublicAPI, please use :public-api:`ivy.rest.client(String)
+</ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>`
+instead.
+
+Removal of the :code:`.classpath` File
+--------------------------------------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+The :code:`.classpath` file is no longer part of the project. Previously, the
+:code:`.classpath` file was used to reference local JAR files that were not
+available from a remote Maven repository. These JARs were added to the project's
+classpath for both design time and runtime. It also contained references to
+generated REST and web service client JARs. During automatic project conversion,
+generated client JARs are handled automatically. Specifically, the generated
+:code:`cxfClient_*.jar` and :code:`jaxRsClient_*.jar` files are unpacked into
+their corresponding :code:`src_generated` directories as part of the conversion
+process. If you have manually added additional local JAR references to the
+:code:`.classpath` file, you must declare them as Maven system-scoped
+dependencies to make those JARs available on the project's classpath.
+
+Example of a system-scoped dependency:
+
+.. code:: xml
+  
+  <dependency>
+    <groupId>local.jar.example</groupId>
+    <artifactId>custom-dependency</artifactId>
+    <version>1.0.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/lib/custom-lib-1.3.2.jar</systemPath>
+  </dependency>
+
+`For more information, see the Maven documentation on system dependencies
+<https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_
+
+Program Elements replace IBpmnElementExtensions
+-----------------------------------------------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+We streamlined how to implement custom behavior for process elements. Program
+Elements can now provide a custom icon and can also appear in the
+:ref:`Extension <process-element-extension-item>` group of the process editor
+toolbar. Therefore, we removed the previous :code:`IBpmnElementExtension`
+interface and its infrastructure completely, which was used to contribute the
+icon and process-editor integration behavior.
+
+You are affected by this change if you run your solution with an extension in
+the :code:`dropin` directory that implements the :code:`IBpmnElementExtension`
+interface.
+
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Detail**
+
+  .. container:: detail 
+
+    If you have used `IBpmnElementExtension` elements in your project, the
+    project-migration tool will automatically convert occurrences of these
+    elements into the new Program Element infrastructure. However, the execution
+    behavior of these elements is not converted automatically. You need to
+    implement the new Program Element interface and configure it on the
+    corresponding element.
+
+    For implementation details, see the Program Elements reference:
+
+    -  :ref:`process-element-program-start`
+    -  :ref:`process-element-pi`
+    -  :ref:`process-element-wait-program-intermediate-event`
+
+Support for Case Scope Override removed
+---------------------------------------
+
+|tag-project-removed|
+
+Case scope overriding has been deprecated in LTS 8.0 and has now been removed.
+Use :ref:`strict_overriding` if you rely on case scope overriding.
+
+Removal of Serenity PrimeFaces themes
+-------------------------------------
+
+|tag-project-removed|
+
+We removed the Serenity themes, including the :code:`serenity-ivy` theme. Please
+use the :ref:`freya-ivy <freya-themes>` theme instead.
+
+
+Removal of session role
+-----------------------
+
+|tag-project-removed| 
+
+It was possible to assign a role directly to a session. This feature was
+intended primarily for unauthenticated sessions. In authenticated sessions
+(i.e., when a user is logged in), roles can and should be assigned directly to
+the user. The original idea behind this feature was to support edge cases where
+developers implemented their own authentication mechanisms—bypassing the
+platform’s built-in user management—and needed to assign a role to the session
+manually. This was made possible via the :code:`ISession#assignRole` method.
+Roles are now only supported for authenticated sessions backed by a user who has
+roles assigned, which means you now need to assign roles to a user.
+
+----
+
+Deprecation and Removals
+************************
+
+Removal of Eclipse-Based Axon Ivy Designer
+------------------------------------------
+
+The Axon Ivy Designer is now available as a `VS Code extension
+<https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-14>`_.
+
+Removal of Server Control Center for Windows
+--------------------------------------------
+
+|tag-ops-removed|
+
+The Server Control Center for Windows has been removed. Prefer using Docker for
+Windows to run the Axon Ivy Engine. If you still want to run the Axon Ivy Engine
+on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe
+<engine-service>` to register the Axon Ivy Engine as a Windows Service.
+
+NTLM Authentication for REST and SOAP Web Service Client Connectors
+-------------------------------------------------------------------
+
+|tag-ops-deprecated| 
+
+NTLM Authentication for REST and SOAP Web Service clients is deprecated and will
+be removed in a future version. This is because NTLM support in the library
+Apache HTTP Client 5 was also deprecated and is no longer actively maintained.
+Microsoft recommends using more modern and secure authentication methods such as
+Basic or Digest Authentication combined with TLS.
+
+----
+
+.. include:: _tagLegend.rst
