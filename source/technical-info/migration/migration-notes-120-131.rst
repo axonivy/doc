@@ -89,7 +89,7 @@ has roles assigned, which means you now need to assign roles to a user.
 Removal of Server Control Center for Windows
 ********************************************
 
-|tag-ops-changed|
+|tag-ops-removed|
 
 The Server Control Center for Windows has been removed. Prefer using Docker for
 Windows to run the Axon Ivy Engine. If you still want to run the Axon Ivy Engine
