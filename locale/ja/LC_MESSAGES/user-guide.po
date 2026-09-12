@@ -2272,14 +2272,15 @@ msgid "Now, let's create the system database with the :code:`create-db` command.
 msgstr ":code:`create-db` コマンドでシステムデータベースを作成しましょう。"
 
 #: ../../source/engine-guide/installation/linux/configure.rst:50
-msgid "The Axon Ivy Engine uses the system database to store **master data** like users, user attributes, roles, etc. as well as **runtime data** like applications, process models, process model versions, cases, tasks, and **process data**."
+#, fuzzy
+msgid "The Axon Ivy Engine uses the system database to store **master data** like users, user attributes, roles, etc. as well as **runtime data** like applications, projects, cases, tasks, and **process data**."
 msgstr "Axon Ivy Engine は、システムデータベースを使用して、ユーザー、ユーザー属性、ロールなどの**マスターデータ** や、アプリケーション、プロセスモデル、プロセスモデルバージョン、ケース、タスク、**プロセスデータ** などの**ランタイムデータ** を格納します。"
 
-#: ../../source/engine-guide/installation/linux/configure.rst:55
+#: ../../source/engine-guide/installation/linux/configure.rst:54
 msgid "Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` in directory :file:`/opt/ivy/engine/configuration/` as detailed below:"
 msgstr "次に、以下に詳しく示すように、:file:`/opt/ivy/engine/configuration/` ディレクトリ :ref:`ivy-yaml` を修正して、Axon Ivy Engine の管理者を定義します。"
 
-#: ../../source/engine-guide/installation/linux/configure.rst:63
+#: ../../source/engine-guide/installation/linux/configure.rst:62
 #: ../../source/engine-guide/installation/windows/configure.rst:49
 msgid "Administrators manage the Axon Ivy Engine. For example, they add or remove users, assign users to roles, enable, disable and deploy applications, etc. You need at least one administrator to manage the Axon Ivy Engine. In case of license problems, the Axon Ivy Engine sends mail notifications to the administrators."
 msgstr "管理者は Axon Ivy Engine を管理します。例えば、ユーザーの追加／削除、ユーザーのロールへの割り当て、アプリケーションの有効化／無効化／展開などを行います。Axon Ivy Engine を管理する管理者は 1 人以上必要です。ライセンスの問題が発生した場合、 Axon Ivy Engine から管理者にメール通知が送信されます。"
@@ -2300,16 +2301,16 @@ msgstr "**HTTPS** は HTTP に似ていますが、安全です。TLS を使用�
 msgid "Have a look at the :ref:`ivy.yaml <ivy-yaml>` to see how you can adjust parts of the web server and its connectors to your needs."
 msgstr "ウェブサーバーとその接続をニーズに合わせて調整する方法については、 :ref:`ivy.yaml <ivy-yaml>` を参照してください。"
 
-#: ../../source/engine-guide/installation/linux/configure.rst:70
+#: ../../source/engine-guide/installation/linux/configure.rst:69
 msgid "Now, start the Axon Ivy Engine again as a background process."
 msgstr "Axon Ivy Engine をバックグラウンドプロセスとして再度起動します。"
 
-#: ../../source/engine-guide/installation/linux/configure.rst:77
+#: ../../source/engine-guide/installation/linux/configure.rst:76
 #: ../../source/engine-guide/installation/windows/configure.rst:64
 msgid "If you have changed the HTTP Settings, the HTTP port of the Axon Ivy Engine may have changed!"
 msgstr "HTTP 設定を変更した場合、Axon Ivy Engine の HTTP ポートも変更されている可能性があります。"
 
-#: ../../source/engine-guide/installation/linux/configure.rst:79
+#: ../../source/engine-guide/installation/linux/configure.rst:78
 msgid "Open a web browser and navigate to http://yourservername:yourportnumber/. As you see, the header with the demo mode message is gone. You now have a production-ready Axon Ivy Engine."
 msgstr "ウェブブラウザを開き、http://yourservername:yourportnumber/ に移動します。見てのとおり、ヘッダーのデモモードのメッセージが消えています。これで、本番環境で Axon Ivy Engine を実行できます。"
 
@@ -3943,7 +3944,8 @@ msgid "The name of the runtime logger has a well defined format:"
 msgstr "ランタイムロガーの名前にはよく定義されたフォーマットが使用されています。"
 
 #: ../../source/engine-guide/monitoring/logging.rst:59
-msgid "**runtimelog.[security context name].[category].[app name].[process model name]**"
+#, fuzzy
+msgid "**runtimelog.[security context name].[category].[app name].[project name]**"
 msgstr "**runtimelog.[セキュリティコンテキスト名].[カテゴリー].[アプリケーション名].[プロセスモデル名]**"
 
 #: ../../source/engine-guide/monitoring/logging.rst:61
@@ -4106,20 +4108,27 @@ msgid "Application of the process element."
 msgstr "プロセス要素のアプリケーション。"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:70
-msgid "Process Model"
-msgstr "プロセスモデル"
+#: ../../source/getting-productive/application-lifecycle/index.rst:56
+#: ../../source/glossary/glossary.rst:100
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:59
+msgid "Application Version"
+msgstr "アプリケーションの詳細"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:70
-msgid "Process Model of the process element."
+#, fuzzy
+msgid "Application Version of the process element."
+msgstr "プロセス要素のアプリケーション。"
+
+#: ../../source/engine-guide/monitoring/process-element-performance.rst:72
+#: ../../source/getting-productive/application-lifecycle/index.rst:120
+#: ../../source/glossary/glossary.rst:111
+msgid "Project"
+msgstr "プロジェクト"
+
+#: ../../source/engine-guide/monitoring/process-element-performance.rst:72
+#, fuzzy
+msgid "Project of the process element."
 msgstr "プロセス要素のプロセスモデル。"
-
-#: ../../source/engine-guide/monitoring/process-element-performance.rst:72
-msgid "PM Version"
-msgstr "PM Version"
-
-#: ../../source/engine-guide/monitoring/process-element-performance.rst:72
-msgid "Process Model Version of the process element."
-msgstr "プロセス要素のプロセスモデルバージョン。"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:74
 msgid "Process Path"
@@ -5564,7 +5573,7 @@ msgstr "**ヘルスチェック** ビューには、すべてのヘルスチェ�
 #: ../../source/getting-productive/ci-testing/process-testing.rst:254
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-workflow.rst:2
 #: ../../source/getting-productive/workflow/index.rst:4
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:310
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:339
 msgid "Workflow"
 msgstr "Workflow"
 
@@ -6891,12 +6900,6 @@ msgstr "デフォルトでは、すべての Axon Ivy Engine に :code:`default`
 msgid "An application is part of a security system and contains one or more Axon Ivy projects. Ideally, applications are organized around features and have their own release cycles. In our example, the HR processes are independent of the financial processes and can therefore be managed as separate applications. Applications also have ownership of their configuration, including variables, REST clients, web service clients, and databases."
 msgstr "アプリケーションはセキュリティシステムの一部であり、1 つ以上の Axon Ivy プロジェクトを含みます。理想的には、アプリケーションは機能を中心に構成され、それぞれ独自のリリースサイクルを持ちます。この例では、人事プロセスは財務プロセスから独立しているため、別々のアプリケーションとして管理できます。アプリケーションは、変数、REST クライアント、Web サービスクライアント、データベースなどの設定も所有します。"
 
-#: ../../source/getting-productive/application-lifecycle/index.rst:56
-#: ../../source/glossary/glossary.rst:100
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:59
-msgid "Application Version"
-msgstr "アプリケーションの詳細"
-
 #: ../../source/getting-productive/application-lifecycle/index.rst:58
 msgid "An application is always versioned. When an application is deployed for the first time, it is assigned version 1. Projects are part of an application version. This means that different versions of the same project can run simultaneously on the same Axon Ivy Engine, as long as they belong to different application versions."
 msgstr ""
@@ -6937,13 +6940,8 @@ msgstr ""
 msgid "Release State Transitions"
 msgstr "リリース状態の遷移"
 
-#: ../../source/getting-productive/application-lifecycle/index.rst:120
-#: ../../source/glossary/glossary.rst:111
-msgid "Project"
-msgstr "プロジェクト"
-
 #: ../../source/getting-productive/application-lifecycle/index.rst:122
-msgid "A project represents an Axon Ivy project developed in the Axon Ivy Designer. It contains the business processes and related resources that make up a functional part of an application. This includes process models, user interfaces, data models, code, and other configuration required to implement the business processes. Projects are developed and maintained independently in the Axon Ivy Designer and are deployed as part of an application version to an Axon Ivy Engine."
+msgid "A project represents an Axon Ivy project developed in the Axon Ivy Designer. It contains the business processes and related resources that make up a functional part of an application. This includes processes, user interfaces, data models, code, and other configuration required to implement the business processes. Projects are developed and maintained independently in the Axon Ivy Designer and are deployed as part of an application version to an Axon Ivy Engine."
 msgstr ""
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:149
@@ -7832,7 +7830,7 @@ msgid "These generic elements are:"
 msgstr "以下のジェネリック要素があります。"
 
 #: ../../source/getting-productive/connectivity/process-extensions.rst:130
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:367
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:396
 msgid ":ref:`process-element-program-start`"
 msgstr ":ref:`process-element-program-start`"
 
@@ -7842,7 +7840,7 @@ msgstr "（外部）イベントの発生時に新しいプロセスの開始を
 
 #: ../../source/getting-productive/connectivity/process-extensions.rst:133
 #: ../../source/getting-productive/process-modeling/process-modeling/index.rst:55
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:369
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:398
 msgid ":ref:`process-element-wait-program-intermediate-event`"
 msgstr ":ref:`process-element-wait-program-intermediate-event`"
 
@@ -7851,7 +7849,7 @@ msgid "Interrupts process execution until an (external) event occurs."
 msgstr "（外部）イベントが発生するまでプロセスの実行を中断します。"
 
 #: ../../source/getting-productive/connectivity/process-extensions.rst:136
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:368
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:397
 msgid ":ref:`process-element-pi`"
 msgstr ":ref:`process-element-pi`"
 
@@ -9604,7 +9602,8 @@ msgid "**URL**"
 msgstr "**URL**"
 
 #: ../../source/getting-productive/user-interface/static-jsf-pages.rst:29
-msgid "To access these pages with a browser you need to call ``http://<servername>:<port>/<application>/faces/view/<process model>/<xhtml file in webContent/view>``. Assuming that you have a XHTML page with the name test.xhtml in your :file:`webContent/view` folder, an <application name> App and a <processmodel> PM, you can call the URL ``http://localhost:8080/App/faces/view/PM/test.xhtml`` to get your static JSF page. The recommended way to create the static JSF page URL is to use the ``Ivy.html().viewLink(String viewPath)`` method."
+#, fuzzy
+msgid "To access these pages with a browser you need to call ``http://<servername>:<port>/<application>/faces/view/<project>/<xhtml file in webContent/view>``. Assuming that you have a XHTML page with the name test.xhtml in your :file:`webContent/view` folder, an <application name> App and a <project> Project, you can call the URL ``http://localhost:8080/App/faces/view/Project/test.xhtml`` to get your static JSF page. The recommended way to create the static JSF page URL is to use the ``Ivy.html().viewLink(String viewPath)`` method."
 msgstr "ブラウザでこれらのページにアクセスするには、``http://<servername>:<port>/<application>/faces/view/<process model>/<xhtml file in webContent/view>`` を呼び出す必要があります。例えば、:file:`webContent/view` フォルダーに test.xhtml という名前の XHTML ページ、 <application name> という名前のアプリ、<processmodel> という PM があると仮定した場合、``http://localhost:8080/App/faces/view/PM/test.xhtml`` という URL を呼び出して、静的 JSF ページにアクセスできます。静的 JSF ページの URL を作成する場合、``Ivy.html().viewLink(String viewPath)`` メソッドを使用することを推奨します。"
 
 #: ../../source/getting-productive/user-interface/static-jsf-pages.rst:41
@@ -10701,7 +10700,7 @@ msgstr "|image0|"
 #: ../../source/reference/process/process-elements/call-sub.rst:59
 #: ../../source/reference/process/process-elements/database-activity.rst:157
 #: ../../source/reference/process/process-elements/email-activity.rst:99
-#: ../../source/reference/process/process-elements/embedded-subprocess.rst:23
+#: ../../source/reference/process/process-elements/embedded-subprocess.rst:22
 #: ../../source/reference/process/process-elements/error-boundary-event.rst:45
 #: ../../source/reference/process/process-elements/error-end.rst:42
 #: ../../source/reference/process/process-elements/error-start.rst:44
@@ -12381,7 +12380,8 @@ msgid "Redefinition with overrides (e.g., for HTML Dialogs, HTML Dialog componen
 msgstr "オーバーライドによる再定義（HTML ダイアログ、HTML ダイアログコンポーネント、サブプロセスなど）：すでに存在するコンポーネントの置換コンポーネントを定義します。"
 
 #: ../../source/getting-productive/workflow/overrides/index.rst:23
-msgid "By defining overrides on project level, the lookup of a certain component can be redirected to a replacement component. When a component is referenced in a process model of that project then the lookup for this component will yield a different component (i.e., the replacement) at runtime instead of the originally referenced component."
+#, fuzzy
+msgid "By defining overrides on project level, the lookup of a certain component can be redirected to a replacement component. When a component is referenced in a project then the lookup for this component will yield a different component (i.e., the replacement) at runtime instead of the originally referenced component."
 msgstr "プロジェクトレベルでオーバーライドを定義することにより、特定のコンポーネントのルックアップを置換コンポーネントにリダイレクトできます。あるコンポーネントがそのプロジェクトのプロセスモデルで参照されると、そのコンポーネントのルックアップは、元々参照されていたコンポーネントの代わりに、別のコンポーネント（置換コンポーネント）を実行時に生成します。"
 
 #: ../../source/getting-productive/workflow/overrides/index.rst:30
@@ -13052,7 +13052,8 @@ msgid "The generated link then looks as follows:"
 msgstr "生成されるリンクは以下のようになります。"
 
 #: ../../source/reference/cms/display.rst:42
-msgid "``/<appName>/cm/<processModelAndVersion>/<cmsPath>.<extension>?l=<locale>&v=<version>``"
+#, fuzzy
+msgid "``/<appName>/<appVersion>/cm/<project>/<cmsPath>.<extension>?l=<locale>&v=<version>``"
 msgstr "``/<appName>/cm/<processModelAndVersion>/<cmsPath>.<extension>?l=<locale>&v=<version>``"
 
 #: ../../source/reference/cms/display.rst:44
@@ -13060,7 +13061,8 @@ msgid "e.g."
 msgstr "例："
 
 #: ../../source/reference/cms/display.rst:46
-msgid "``/designer/cm/cms$1/documents/instruction.pdf?l=en&v=1641303359499``"
+#, fuzzy
+msgid "``/portal/1/cm/portal/documents/instruction.pdf?l=en&v=1641303359499``"
 msgstr "``/designer/cm/cms$1/documents/instruction.pdf?l=en&v=1641303359499``"
 
 #: ../../source/reference/cms/display.rst:48
@@ -16123,7 +16125,8 @@ msgid "``cal`` - an :public-api:`IDefaultBusinessCalendar </ch/ivyteam/ivy/appli
 msgstr "``cal`` - :public-api:`IDefaultBusinessCalendar </ch/ivyteam/ivy/application/calendar/IDefaultBusinessCalendar.html>` ブジェクトで、ビジネスカレンダーの情報と計算にアクセスできます。"
 
 #: ../../source/reference/process/ivyscript/reference.rst:307
-msgid "``request`` - an :public-api:`IProcessModelVersionRequest </ch/ivyteam/ivy/request/IProcessModelVersionRequest.html>` object, the representation of the request against the server to execute the current step"
+#, fuzzy
+msgid "``request`` - an :public-api:`ProjectRequest </ch/ivyteam/ivy/request/ProjectRequest.html>` object, the representation of the request against the server to execute the current step"
 msgstr "``request`` - :public-api:`IProcessModelVersionRequest </ch/ivyteam/ivy/request/IProcessModelVersionRequest.html>` ブジェクトで、現在のステップを実行するサーバーに対するリクエストを表します。"
 
 #: ../../source/reference/process/ivyscript/reference.rst:311
@@ -16720,7 +16723,7 @@ msgstr "代替ゲートウェイ要素は、終了条件の評価に応じて、
 #: ../../source/reference/process/process-elements/call-sub.rst:26
 #: ../../source/reference/process/process-elements/database-activity.rst:16
 #: ../../source/reference/process/process-elements/email-activity.rst:20
-#: ../../source/reference/process/process-elements/embedded-subprocess.rst:19
+#: ../../source/reference/process/process-elements/embedded-subprocess.rst:18
 #: ../../source/reference/process/process-elements/error-boundary-event.rst:21
 #: ../../source/reference/process/process-elements/error-end.rst:20
 #: ../../source/reference/process/process-elements/error-start.rst:21
@@ -17736,7 +17739,8 @@ msgid "|image0| The *Subprocess* element is located in the *Activity* drawer of 
 msgstr "|image0| *サブプロセス* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/reference/process/process-elements/embedded-subprocess.rst:12
-msgid "An embedded subprocess folds a part of a process into a box. This makes hierarchical structuring of the process model possible. Subprocesses can be created top down or bottom up, either by selecting and wrapping parts of a process or by inserting an (initially empty) embedded sub element from the palette."
+#, fuzzy
+msgid "An embedded subprocess folds a part of a process into a box. This makes hierarchical structuring of the process possible. Subprocesses can be created top down or bottom up, either by selecting and wrapping parts of a process or by inserting an (initially empty) embedded sub element from the palette."
 msgstr "埋め込みサブプロセスは、プロセスの一部をボックスに入れます。これにより、プロセスモデルの階層構造化が可能になります。プロセスのラップ部分を選択するか、（初期状態は空の）埋め込みサブ要素をパレットから挿入して、サブプロセスを上から下、または下から上に取得します。"
 
 #: ../../source/reference/process/process-elements/error-boundary-event.rst:6
@@ -20126,11 +20130,13 @@ msgid "All migrated projects must be re-deployed to the new, upgraded Axon Ivy E
 msgstr "移行したすべてのプロジェクトをアップグレードされた新しいバージョンの Axon Ivy Engine に展開し直す必要があります。"
 
 #: ../../source/technical-info/migration/major/post-migration.rst:39
-msgid "Not only the ``RELEASE`` process model version (PMVs) must be updated and re-deployed, but all ``DEPRECATED`` projects too."
+#, fuzzy
+msgid "Not only the projects in the :code:`RELEASED` application version must be updated and re-deployed, but all in the :code:`DEPRECATED` application versions too."
 msgstr "``リリース`` プロセスモデルバージョン（PMV）だけでなく、すべての ``非推奨`` プロジェクトも更新し、展開し直す必要があります。"
 
-#: ../../source/technical-info/migration/major/post-migration.rst:41
-msgid "Other versions in the states ``PREPARED`` or ``ARCHIVED`` may be easier to delete, rather than updating and redeploying."
+#: ../../source/technical-info/migration/major/post-migration.rst:42
+#, fuzzy
+msgid "Other versions in the states :code:`PREPARED` or :code:`ARCHIVED` may be easier to delete, rather than updating and redeploying."
 msgstr "``作成済み`` や ``アーカイブ済み`` の状態にある他のバージョンは、更新して展開し直すよりも、削除する方が簡単かもしれません。"
 
 #: ../../source/technical-info/migration/major/windows.rst:6
@@ -20311,17 +20317,19 @@ msgid "Changed Runtime logger name"
 msgstr "ランタイムロガーの名前の変更"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:105
-msgid "We changed the Runtime logger name from :code:`runtime.[app name].[pm name].[category]` to :code:`runtime.[security context name].[category].[app name].[pm name]`."
+#, fuzzy
+msgid "We changed the Runtime logger name from :code:`runtime.[app name].[project name].[category]` to :code:`runtime.[security context name].[category].[app name].[project name]`."
 msgstr "ランタイムロガーの名前を :code:`runtime.[アプリ名].[PM 名].[カテゴリー]` から :code:`runtime.[セキュリティコンテキスト名].[カテゴリー].[アプリ名].[PM 名]` に変更しました。"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:113
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:195
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:356
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:385
 msgid "**Detail**"
 msgstr "**詳細**"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:117
-msgid "We added the security context name to the Runtime logger name and moved the category after the security context name. This is to make the logger name more unique and to be able to filter by security context name. The new logger name is: :code:`runtime.[security context name].[category].[app name].[pm name]`."
+#, fuzzy
+msgid "We added the security context name to the Runtime logger name and moved the category after the security context name. This is to make the logger name more unique and to be able to filter by security context name. The new logger name is: :code:`runtime.[security context name].[category].[app name].[project name]`."
 msgstr "セキュリティコンテキスト名をランタイムロガー名に追加し、カテゴリーをセキュリティコンテキスト名の後ろに移動しました。これは、ロガー名の一意性を高め、セキュリティコンテキスト名でフィルタリングできるようにするためです。新しいロガー名は、 :code:`runtime.[セキュリティコンテキスト名].[カテゴリー].[アプリ名].[PM 名]` となります。"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:121
@@ -20358,7 +20366,7 @@ msgstr "この移行により、エンジンのオペレーションの一部が
 
 #: ../../source/technical-info/migration/_tagLegend.rst:13
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:91
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:250
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:279
 msgid "|tag-ops-deprecated|"
 msgstr "|tag-ops-deprecated|"
 
@@ -20433,10 +20441,11 @@ msgstr "Axon Ivy Java API Maven依存関係"
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:22
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:42
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:63
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:260
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:277
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:305
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:340
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:220
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:289
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:306
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:334
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:369
 msgid "|tag-project-changed| |tag-project-auto-convert|"
 msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
@@ -20609,6 +20618,7 @@ msgid "By versioning the application as a whole, the platform provides a much mo
 msgstr ""
 
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:45
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:230
 msgid "**Details**"
 msgstr "**詳細**"
 
@@ -20765,7 +20775,7 @@ msgid ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostCon
 msgstr ":code:`Connector.HTTPS.KeystoreType` -> :code:`Connector.HTTPS.SslHostConfig.Certificate.CertificateKeystoreType`"
 
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:161
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:237
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:266
 msgid "**Hint**"
 msgstr "**タイムアウト**"
 
@@ -20813,139 +20823,163 @@ msgstr ""
 msgid "`PrimeFaces 15 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:219
-msgid "Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors"
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:218
+msgid "Jackson 3"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:221
-msgid "|tag-project-auto-convert| |tag-ops-removed|"
-msgstr "|tag-project-auto-convert|"
-
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:223
-msgid "REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors instead of Apache HTTP Client 4-based connectors by default."
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:222
+msgid "The JSON library Jackson was switched from Jackson 2 to Jackson 3. Jackson is mainly used for REST service communication, and most projects are automatically converted to work as before."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:225
-msgid "For REST clients, the Apache HTTP Client 4 based connector was removed."
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:234
+msgid "The configurable RestClient properties have been updated to match Jackson 3. See the new properties prefixed with :code:`JSON.DateTime.` and :code: `JSON.Enum.`."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:227
-msgid "The project migration tool will automatically convert HTTP Client 4–based connectors to Apache HTTP Client 5 for you. However, if you have custom code for REST or SOAP WebService features that directly references Apache HTTP Client 4 classes, you must manually update those to the HTTP Client 5 equivalents (adjust imports and API usage) and re-test the integrations."
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:237
+msgid "Jackson's :code:`JsonNode` type is suggested to read raw RestClientCall results, occurrences of these are automatically converted in existing processes."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:231
-msgid "The Apache HTTP Client 4 library itself is still available but will be removed in a future version."
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:240
+msgid "If you have used Jackson for custom JSON serialization solutions, most Java problems can be addressed by correcting namespace imports from :code:`com.fasterxml.jackson` to :code:`tools.jackson` (e.g. :code:`com.fasterxml.jackson.databind.JsonNode` to :code:`tools.jackson.databind.JsonNode`). The exception is the widely used :code:`com.fasterxml.jackson.annotation` namespace, which remains untouched."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:241
-msgid "For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`. This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. You should migrate to Apache HTTP Client 5 based connectors as soon as possible."
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:244
+msgid "For a detailed list of changes see the `Jackson3 Migration guide <https://github.com/FasterXML/jackson/blob/main/jackson3/MIGRATING_TO_JACKSON_3.md>`_"
 msgstr ""
 
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:248
+msgid "Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors"
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:250
+msgid "|tag-project-auto-convert| |tag-ops-removed|"
+msgstr "|tag-project-auto-convert|"
+
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:252
+msgid "REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors instead of Apache HTTP Client 4-based connectors by default."
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:254
+msgid "For REST clients, the Apache HTTP Client 4 based connector was removed."
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:256
+msgid "The project migration tool will automatically convert HTTP Client 4–based connectors to Apache HTTP Client 5 for you. However, if you have custom code for REST or SOAP WebService features that directly references Apache HTTP Client 4 classes, you must manually update those to the HTTP Client 5 equivalents (adjust imports and API usage) and re-test the integrations."
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:260
+msgid "The Apache HTTP Client 4 library itself is still available but will be removed in a future version."
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:270
+msgid "For SOAP Web Service clients, this behavior can be changed back to Apache HTTP Client 4 engine-wide by setting the :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system property in the :ref:`configuration/jvm.options <jvm-options>` file of your Engine to :code:`true`. This is a last resort option and should only be used if you have a SOAP Web Service that is not compatible with Apache HTTP Client 5. You should migrate to Apache HTTP Client 5 based connectors as soon as possible."
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:277
 msgid "NTLM Authentication for REST and SOAP Web Service Client Connectors"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:252
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:281
 msgid "NTLM Authentication for REST and SOAP Web Service clients is deprecated and will be removed in a future version. This is because NTLM support in the library Apache HTTP Client 5 was also deprecated and is no longer actively maintained. Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:258
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:287
 msgid "Remove UUID from Rest Client and GUID from Web Service Client"
 msgstr "WebサービスクライアントからUUIDを削除"
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:262
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:291
 msgid "We have removed the UUID from the Rest Client and the GUID from the Web Service Client. This means we no longer use these IDs in your processes to reference the clients. Instead we use the YAML key of the client. This makes the client easier to identify and copy between projects. We do an automatic project conversion, but it can happen that we cannot find the client if it is defined in a different project. In this case, you need to manually update the client reference in your processes to use the YAML key of the client. The old ID is still available in the YAML configuration prefixed with `Legacy`, but you can remove this after you have migrated all your projects."
 msgstr "UUIDは、WebサービスクライアントのRestクライアントとGUIDから削除しました。 つまり、クライアントを参照するために、これらの ID をプロセスで使用しなくなりました。 代わりに、クライアントのYAMLキーを使用します。 これにより、クライアントはプロジェクト間で識別し、コピーしやすくなります。 自動プロジェクト変換を行いますが、異なるプロジェクトで定義されている場合、クライアントが見つからなくなる可能性があります。 この場合、クライアントのYAMLキーを使用するプロセスでクライアントの参照を手動で更新する必要があります。 古い ID は、`Legacy` と接頭辞した YAML 構成ではまだ利用できますが、すべてのプロジェクトを移行した後にこれを削除できます."
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:270
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:299
 msgid "We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPI, please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead."
 msgstr "また、:public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPIを廃止し、代わりに :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` を使用してください."
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:275
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:304
 msgid "Removal of the :code:`.classpath` File"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:279
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:308
 msgid "The :code:`.classpath` file is no longer part of the project. Previously, the :code:`.classpath` file was used to reference local JAR files that were not available from a remote Maven repository. These JARs were added to the project's classpath for both design time and runtime. It also contained references to generated REST and web service client JARs. During automatic project conversion, generated client JARs are handled automatically. Specifically, the generated :code:`cxfClient_*.jar` and :code:`jaxRsClient_*.jar` files are unpacked into their corresponding :code:`src_generated` directories as part of the conversion process. If you have manually added additional local JAR references to the :code:`.classpath` file, you must declare them as Maven system-scoped dependencies to make those JARs available on the project's classpath."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:288
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:317
 msgid "Example of a system-scoped dependency:"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:300
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:329
 msgid "`For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:303
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:332
 msgid "Project Structure Improvements"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:307
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:336
 msgid "Some folders have been moved or renamed to improve the project structure."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:312
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:341
 msgid "Renamed :code:`processes` folder to :code:`process`."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:313
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:342
 msgid "Renamed :code:`dataclasses` folder to :code:`dataclass`."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:314
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:343
 msgid "Renamed :code:`src_hd` folder to :code:`dialog`."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:316
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:345
 msgid "This change improves the consistency of folder names and better reflects their content."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:320
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:349
 msgid "Generated Source Files"
 msgstr "［一般］ > ［アーカイブファイル］"
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:322
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:351
 msgid "The following folders containing generated source files have been moved to the :code:`target` folder:"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:325
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:354
 msgid ":code:`libs/mvn-deps`"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:326
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:355
 msgid ":code:`src_generated/dataclass`"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:327
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:356
 msgid ":code:`src_generated/repo`"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:328
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:357
 msgid ":code:`src_generated/wsprocess`"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:330
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:359
 msgid "These folders contain files that are generated during the build process by the `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ and should not be modified directly. Therefore, they have been moved to the :code:`target` folder to indicate that they are generated files clearly and to avoid confusion with other source files. The corresponding entries in the :code:`.gitignore` file have been removed."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:338
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:367
 msgid "Program Elements replace IBpmnElementExtensions"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:342
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:371
 msgid "We streamlined how to implement custom behavior for process elements. Program Elements can now provide a custom icon and can also appear in the :ref:`Extension <process-element-extension-item>` group of the process editor toolbar. Therefore, we removed the previous :code:`IBpmnElementExtension` interface and its infrastructure completely, which was used to contribute the icon and process-editor integration behavior."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:348
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:377
 msgid "You are affected by this change if you run your solution with an extension in the :code:`dropin` directory that implements the :code:`IBpmnElementExtension` interface."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:360
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:389
 msgid "If you have used `IBpmnElementExtension` elements in your project, the project-migration tool will automatically convert occurrences of these elements into the new Program Element infrastructure. However, the execution behavior of these elements is not converted automatically. You need to implement the new Program Element interface and configure it on the corresponding element."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:365
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:394
 msgid "For implementation details, see the Program Elements reference:"
 msgstr ""
 
@@ -25597,3 +25631,15 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "If you want to learn more about how to build a CI/CD pipeline, take a look at the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`."
 #~ msgstr "CI/CD パイプラインの構築方法についてもっと知りたい場合は、:dev-url:`チュートリアルのセクション</tutorial>` ある **CI/CD の動画** をご覧ください。"
+
+#~ msgid "Process Model"
+#~ msgstr "プロセスモデル"
+
+#~ msgid "PM Version"
+#~ msgstr "PM Version"
+
+#~ msgid "Process Model Version of the process element."
+#~ msgstr "プロセス要素のプロセスモデルバージョン。"
+
+#~ msgid "A project represents an Axon Ivy project developed in the Axon Ivy Designer. It contains the business processes and related resources that make up a functional part of an application. This includes process models, user interfaces, data models, code, and other configuration required to implement the business processes. Projects are developed and maintained independently in the Axon Ivy Designer and are deployed as part of an application version to an Axon Ivy Engine."
+#~ msgstr ""
