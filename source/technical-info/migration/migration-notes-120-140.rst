@@ -7,153 +7,28 @@ Upgrade to 14.0 is only supported from an Axon Ivy Engine 10.0 and higher. If
 you have an Axon Ivy Engine older than version 10.0 you need to first migrate to
 a version between 10.0 and 12.0.
 
+----
+
+Engine Changes
+**************
+
 License
-*******
+-------
 
 |tag-ops-changed|
 
 You need to request a new license for Axon Ivy Engine 14.0.
 
-----
-
-Updates
-*******
-
 Java 25
 -------
 
-|tag-project-changed| |tag-project-auto-convert| |tag-ops-changed|
+|tag-ops-changed|
 
 We updated Java to version 25:
 
-- Convert your Axon Ivy projects to the latest version to use the new Java 25
-  features. 
-- You may have to update third-party libraries that do not yet support Java 25
-  to newer versions.
-- Use Java 25 to run your Maven project builds.
 - Use an `Adoptium / Eclipse Temurin JDK or JRE
   <https://adoptium.net/temurin/releases?version=25>`_ to run Axon Ivy on Linux
   or macOS.
-
-Java EE to Jakarta EE Migration
--------------------------------
-
-|tag-project-changed| |tag-project-auto-convert|
-
-We have updated our platform from Java EE (:code:`javax`) to Jakarta EE
-(:code:`jakarta`) API's and implementation libraries. This means that all
-:code:`javax.*` packages have been replaced with :code:`jakarta.*` packages. The
-biggest change is that there is no longer a :code:`@ManagedBean` annotation,
-instead beans for Jakarta Faces (JSF) are resolved via `CDI
-<https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1>`_. CDI beans
-need to be annotated with :code:`@Named` and they need to have a scope
-(:code:`@RequestScoped`, :code:`@SessionScoped`, :code:`@ApplicationScoped`,
-:code:`@ViewScoped`) if they are used in JSF pages. If the beans are
-:code:`@SessionScoped` or :code:`@ViewScoped`, they need to implement the
-:code:`Serializable` interface.
-
-Beans can still be named via :code:`@Named("myBean")`, however this name needs
-to be unique within the whole application; otherwise the application will fail
-to start. If you don't define a name, the simple class name will be used like
-before (e.g. :code:`class MyBean` will be available as :code:`myBean` in JSF
-pages).
-
-Also :code:`@FacesConverter` and :code:`@FacesValidator` are now CDI-managed and
-must be adapted accordingly. They must set :code:`managed = true`, and they also
-need to have a scope (see above).
-
-.. container:: admonition note toggle
-
-  .. container:: admonition-title header
-
-     **Detail**
-
-  .. container:: detail 
-
-    We have also dropped internal scopes for :code:`@ApplicationScoped` and
-    :code:`@SessionScoped` beans. This could lead to small behavior changes in
-    the bean lifecycle, but the idea behind these scopes is still the same.
-
-Persistence API (Hibernate)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The Persistence API has been migrated from Java Persistence API (JPA) 2.2 to
-`Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_
-3.2. The implementation has been updated from `Hibernate
-<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to `Hibernate
-<https://hibernate.org/orm/documentation/7.0/>`_ 7.0.
-
-Mail API 
-^^^^^^^^
-
-The Mail API has been migrated from Java Mail API 1.6 to `Jakarta Mail API
-<https://jakarta.ee/specifications/mail/2.0/>`_ 2.0.
-
-**Recommendation:**
-
-Instead of using the Jakarta Mail API, consider:
-
-- The :ref:`process-element-email-activity`
-- The new :public-api:`Mail Public API
-  </ch/ivyteam/ivy/mail/package-summary.html>`.
-
-PrimeFaces 15
--------------
-
-|tag-project-auto-convert|
-
-We have updated the PrimeFaces library from version 13.0 to 15.0. This version
-includes new components, bug fixes, and performance improvements. However, it
-also introduces some breaking changes that may affect your existing code. Some
-of them are converted automatically by our project converter (:code:`Running
-refactoring 'Primefaces 15`) , but you may need to manually adapt your code in
-some cases. Please read the official PrimeFaces migration guides for more
-information:
-
-- `PrimeFaces 14 Migration Guide
-  <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`_
-- `PrimeFaces 15 Migration Guide
-  <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_
-
-Jackson 3
----------
-
-|tag-project-changed| |tag-project-auto-convert|
-
-The JSON library Jackson was switched from Jackson 2 to Jackson 3. Jackson is
-mainly used for REST service communication, and most projects are automatically
-converted to work as before.
-
-.. container:: admonition note toggle
-
-  .. container:: admonition-title header
-
-     **Details**
-
-  .. container:: detail 
-
-    The configurable RestClient properties have been updated to match Jackson 3.
-    See the new properties prefixed with :code:`JSON.DateTime.` and :code:
-    `JSON.Enum.`.
-
-    Jackson's :code:`JsonNode` type is suggested to read raw RestClientCall
-    results, occurrences of these are automatically converted in existing
-    processes.
-
-    If you have used Jackson for custom JSON serialization solutions, most Java
-    problems can be addressed by correcting namespace imports from
-    :code:`com.fasterxml.jackson` to :code:`tools.jackson` (e.g.
-    :code:`com.fasterxml.jackson.databind.JsonNode` to
-    :code:`tools.jackson.databind.JsonNode`). The exception is the widely used
-    :code:`com.fasterxml.jackson.annotation` namespace, which remains untouched.
-
-    For a detailed list of changes see the `Jackson3 Migration guide
-    <https://github.com/FasterXML/jackson/blob/main/jackson3/MIGRATING_TO_JACKSON_3.md>`_
-
-----
-
-Engine Changes
-**************
 
 Application Versions
 --------------------
@@ -409,6 +284,193 @@ Remove the following configurations from :ref:`web-xml` and migrate them to
 Ivy Project Changes
 *******************
 
+Java 25
+-------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+We updated Java to version 25:
+
+- Convert your Axon Ivy projects to the latest version to use the new Java 25
+  features. 
+- You may have to update third-party libraries that do not yet support Java 25
+  to newer versions.
+- Use Java 25 to run your Maven project builds.
+- Use an `Adoptium / Eclipse Temurin JDK or JRE
+  <https://adoptium.net/temurin/releases?version=25>`_ to run Axon Ivy on Linux
+  or macOS.
+
+Java EE to Jakarta EE Migration
+-------------------------------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+We have updated our platform from Java EE (:code:`javax`) to Jakarta EE
+(:code:`jakarta`) API's and implementation libraries.
+
+Package Name Changes
+^^^^^^^^^^^^^^^^^^^^
+
+Most :code:`javax.*` packages have been replaced with :code:`jakarta.*`
+packages.
+
+Faces (JSF)
+^^^^^^^^^^^
+
+There is no longer a :code:`@ManagedBean` annotation, instead beans for Jakarta
+Faces (JSF) are resolved via `CDI
+<https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1>`_. CDI beans
+need to be annotated with :code:`@Named` and they need to have a scope
+(:code:`@RequestScoped`, :code:`@SessionScoped`, :code:`@ApplicationScoped`,
+:code:`@ViewScoped`) if they are used in JSF pages. If the beans are
+:code:`@SessionScoped` or :code:`@ViewScoped`, they need to implement the
+:code:`Serializable` interface.
+
+Beans can still be named via :code:`@Named("myBean")`, however this name needs
+to be unique within the whole application; otherwise the application will fail
+to start. If you don't define a name, the simple class name will be used like
+before (e.g. :code:`class MyBean` will be available as :code:`myBean` in JSF
+pages).
+
+Also :code:`@FacesConverter` and :code:`@FacesValidator` are now CDI-managed and
+must be adapted accordingly. They must set :code:`managed = true`, and they also
+need to have a scope (see above).
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Detail**
+
+  .. container:: detail 
+
+    We have also dropped internal scopes for :code:`@ApplicationScoped` and
+    :code:`@SessionScoped` beans. This could lead to small behavior changes in
+    the bean lifecycle, but the idea behind these scopes is still the same.
+
+Persistence API (Hibernate)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Persistence API has been migrated from Java Persistence API (JPA) 2.2 to
+`Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_
+3.2. The implementation has been updated from `Hibernate
+<https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to `Hibernate
+<https://hibernate.org/orm/documentation/7.0/>`_ 7.0.
+
+Mail API 
+^^^^^^^^
+
+The Mail API has been migrated from Java Mail API 1.6 to `Jakarta Mail API
+<https://jakarta.ee/specifications/mail/2.0/>`_ 2.0.
+
+**Recommendation:**
+
+Instead of using the Jakarta Mail API, consider:
+
+- The :ref:`process-element-email-activity`
+- The new :public-api:`Mail Public API
+  </ch/ivyteam/ivy/mail/package-summary.html>`.
+
+REST and WebService
+^^^^^^^^^^^^^^^^^^^
+
+The REST and WebService APIs have been migrated from Java EE to Jakarta EE. If
+you have custom REST or WebService code, run the project migration tool and then
+build and test your project to verify the converted integrations.
+
+Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors
+---------------------------------------------------------------------
+
+|tag-project-auto-convert| |tag-ops-removed|
+
+REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors
+instead of Apache HTTP Client 4-based connectors by default. 
+
+For REST clients, the Apache HTTP Client 4 based connector was removed.
+
+The project migration tool will automatically convert HTTP Client 4–based
+connectors to Apache HTTP Client 5 for you. However, if you have custom code for
+REST or SOAP WebService features that directly references Apache HTTP Client 4
+classes, you must manually update those to the HTTP Client 5 equivalents (adjust
+imports and API usage) and re-test the integrations.
+
+The Apache HTTP Client 4 library itself is still available but will be removed
+in a future version.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Hint**
+
+  .. container:: detail 
+
+    For SOAP Web Service clients, this behavior can be changed back to Apache
+    HTTP Client 4 engine-wide by setting the
+    :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system
+    property in the :ref:`configuration/jvm.options <jvm-options>` file of your
+    Engine to :code:`true`. This is a last resort option and should only be used
+    if you have a SOAP Web Service that is not compatible with Apache HTTP
+    Client 5. You should migrate to Apache HTTP Client 5 based connectors as
+    soon as possible.
+
+PrimeFaces 15
+-------------
+
+|tag-project-auto-convert|
+
+We have updated the PrimeFaces library from version 13.0 to 15.0. This version
+includes new components, bug fixes, and performance improvements. However, it
+also introduces some breaking changes that may affect your existing code. Some
+of them are converted automatically by our project converter (:code:`Running
+refactoring 'Primefaces 15`) , but you may need to manually adapt your code in
+some cases. Please read the official PrimeFaces migration guides for more
+information:
+
+- `PrimeFaces 14 Migration Guide
+  <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`_
+- `PrimeFaces 15 Migration Guide
+  <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_
+
+Notably, Charts have been changed and are not migrated automatically. You will
+need to manually update your chart configurations to be compatible with
+PrimeFaces 15.
+
+Jackson 3
+---------
+
+|tag-project-changed| |tag-project-auto-convert|
+
+The JSON library Jackson was switched from Jackson 2 to Jackson 3. Jackson is
+mainly used for REST service communication, and most projects are automatically
+converted to work as before.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    The configurable RestClient properties have been updated to match Jackson 3.
+    See the new properties prefixed with :code:`JSON.DateTime.` and :code:
+    `JSON.Enum.`.
+
+    Jackson's :code:`JsonNode` type is suggested to read raw RestClientCall
+    results, occurrences of these are automatically converted in existing
+    processes.
+
+    If you have used Jackson for custom JSON serialization solutions, most Java
+    problems can be addressed by correcting namespace imports from
+    :code:`com.fasterxml.jackson` to :code:`tools.jackson` (e.g.
+    :code:`com.fasterxml.jackson.databind.JsonNode` to
+    :code:`tools.jackson.databind.JsonNode`). The exception is the widely used
+    :code:`com.fasterxml.jackson.annotation` namespace, which remains untouched.
+
+    For a detailed list of changes see the `Jackson3 Migration guide
+    <https://github.com/FasterXML/jackson/blob/main/jackson3/MIGRATING_TO_JACKSON_3.md>`_
+
 Axon Ivy Public API Maven dependency
 ------------------------------------
 
@@ -480,42 +542,6 @@ The same applies to process starts. It's now possible to define multiple roles
 on a process start. You will notice that you can configure on the request tab of
 a start multiple roles e.g. :ref:`Start Event
 <process-element-start-request-tab-request>`.
-
-Apache HTTP Client 4 and 5 REST and SOAP WebService Client Connectors
----------------------------------------------------------------------
-
-|tag-project-auto-convert| |tag-ops-removed|
-
-REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors
-instead of Apache HTTP Client 4-based connectors by default. 
-
-For REST clients, the Apache HTTP Client 4 based connector was removed.
-
-The project migration tool will automatically convert HTTP Client 4–based
-connectors to Apache HTTP Client 5 for you. However, if you have custom code for
-REST or SOAP WebService features that directly references Apache HTTP Client 4
-classes, you must manually update those to the HTTP Client 5 equivalents (adjust
-imports and API usage) and re-test the integrations.
-
-The Apache HTTP Client 4 library itself is still available but will be removed
-in a future version.
-
-.. container:: admonition note toggle
-
-  .. container:: admonition-title header
-
-     **Hint**
-
-  .. container:: detail 
-
-    For SOAP Web Service clients, this behavior can be changed back to Apache
-    HTTP Client 4 engine-wide by setting the
-    :code:`ch.ivyteam.ivy.webservice.exec.cxf.http.conduit.use.apache.4` system
-    property in the :ref:`configuration/jvm.options <jvm-options>` file of your
-    Engine to :code:`true`. This is a last resort option and should only be used
-    if you have a SOAP Web Service that is not compatible with Apache HTTP
-    Client 5. You should migrate to Apache HTTP Client 5 based connectors as
-    soon as possible.
 
 Remove UUID from Rest Client and GUID from Web Service Client
 -------------------------------------------------------------
@@ -608,38 +634,6 @@ interface.
     -  :ref:`process-element-pi`
     -  :ref:`process-element-wait-program-intermediate-event`
 
-Support for Case Scope Override removed
----------------------------------------
-
-|tag-project-removed|
-
-Case scope overriding has been deprecated in LTS 8.0 and has now been removed.
-Use :ref:`strict_overriding` if you rely on case scope overriding.
-
-Removal of Serenity PrimeFaces themes
--------------------------------------
-
-|tag-project-removed|
-
-We removed the Serenity themes, including the :code:`serenity-ivy` theme. Please
-use the :ref:`freya-ivy <freya-themes>` theme instead.
-
-
-Removal of session role
------------------------
-
-|tag-project-removed| 
-
-It was possible to assign a role directly to a session. This feature was
-intended primarily for unauthenticated sessions. In authenticated sessions
-(i.e., when a user is logged in), roles can and should be assigned directly to
-the user. The original idea behind this feature was to support edge cases where
-developers implemented their own authentication mechanisms—bypassing the
-platform’s built-in user management—and needed to assign a role to the session
-manually. This was made possible via the :code:`ISession#assignRole` method.
-Roles are now only supported for authenticated sessions backed by a user who has
-roles assigned, which means you now need to assign roles to a user.
-
 ----
 
 Deprecation and Removals
@@ -671,6 +665,38 @@ be removed in a future version. This is because NTLM support in the library
 Apache HTTP Client 5 was also deprecated and is no longer actively maintained.
 Microsoft recommends using more modern and secure authentication methods such as
 Basic or Digest Authentication combined with TLS.
+
+Support for Case Scope Override removed
+---------------------------------------
+
+|tag-project-removed|
+
+Case scope overriding has been deprecated in LTS 8.0 and has now been removed.
+Use :ref:`strict_overriding` if you rely on case scope overriding.
+
+Removal of Serenity PrimeFaces themes
+-------------------------------------
+
+|tag-project-removed|
+
+We removed the Serenity themes, including the :code:`serenity-ivy` theme. Please
+use the :ref:`freya-ivy <freya-themes>` theme instead.
+
+
+Removal of session role
+-----------------------
+
+|tag-project-removed| 
+
+It was possible to assign a role directly to a session. This feature was
+intended primarily for unauthenticated sessions. In authenticated sessions
+(i.e., when a user is logged in), roles can and should be assigned directly to
+the user. The original idea behind this feature was to support edge cases where
+developers implemented their own authentication mechanisms—bypassing the
+platform’s built-in user management—and needed to assign a role to the session
+manually. This was made possible via the :code:`ISession#assignRole` method.
+Roles are now only supported for authenticated sessions backed by a user who has
+roles assigned, which means you now need to assign roles to a user.
 
 ----
 
