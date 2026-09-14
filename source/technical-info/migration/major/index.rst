@@ -21,17 +21,7 @@ this chapter. Nevertheless, be aware that we do not recommend casually switching
 from an LTS to a LE version as the possibility to face breaking changes is more
 likely and the effort to migrate between the LE versions is higher. See our
 release-cycle (:dev-url:`/release-cycle`) for more information on our release
-concept. 
-
-**Backwards-compatibility**
-
-The Axon Ivy Engine can run and execute workflow applications that have been built
-towards an older engine version. Even so, we do recommend to **simulate
-migrations to new versions in a testing environment** since there is a chance
-that your project relies upon a no longer supported infrastructure, such as old
-Primefaces versions, Java libraries, or internal Java classes from the
-Axon Ivy Engine. By sticking only to PublicAPI and best practices, however, you have
-a minimal risk to face these version incompatibilities.
+concept.
 
 To start with, we warmly recommend to read the :ref:`Migration Notes
 <migration-notes>` for the versions you are migrating to. It documents 

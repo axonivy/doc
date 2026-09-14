@@ -7,6 +7,16 @@ Upgrading to version 14.0 is supported only from an Axon Ivy Engine 10.0 or high
 If your Axon Ivy Engine is older than version 10.0, you must first 
 migrate to a version between 10.0 and 12.0.
 
+.. warning::
+  Before migrating, read the chapter :ref:`migration-upgrade-engine-major`
+  carefully to ensure you know how to properly upgrade the Axon Ivy Engine and
+  running projects.
+
+.. warning::
+  Only Process Model Versions in state :code:`RELEASED` will be migrated. This
+  means you need to finish all Cases in Process Model Versions with state
+  :code:`DEPRECATED` you care about.
+
 License
 *******
 
@@ -17,6 +27,8 @@ You need to request a new license for Axon Ivy Engine 14.0.
 
 Application Versions
 ********************
+
+|tag-ops-changed|
 
 The introduction of Application Versions represents a major shift in the
 fundamental architecture of the Axon Ivy Platform.
