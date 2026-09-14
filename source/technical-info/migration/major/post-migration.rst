@@ -3,6 +3,10 @@
 Post Migration Steps
 ====================
 
+After the migration completes successfully, open the Engine Cockpit and run all
+:ref:`health checks <health>`. If any warnings are reported, it is highly
+recommended to address them before proceeding with the subsequent steps.
+
 After the Axon Ivy Engine has been updated, the existing Axon Ivy projects on
 the Axon Ivy Engine must also be converted. Follow these steps and check the
 :ref:`migration notes <migration-notes>` to see if any manual adjustments need
