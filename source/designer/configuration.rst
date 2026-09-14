@@ -1,3 +1,5 @@
+.. _designer-config:
+
 Configuration
 =============
 
