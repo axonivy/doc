@@ -6,18 +6,24 @@ Installation
 Quick Start
 -----------
 
-To install the Axon Ivy Designer:
+To install and use the Axon Ivy Designer:
 
 #. Check that your system meets the :ref:`system requirements
    <designer-system-requirements>`.
-#. `Download <https://code.visualstudio.com/download>`_ the latest Visual Studio
-   Code.
-#. Run Visual Studio Code.
-#. Install the `Axon Ivy Designer extension
+#. `Download <https://code.visualstudio.com/download>`_ the latest VS Code IDE.
+#. Run VS Code.
+#. Install the `Axon Ivy Designer Extension
    <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-14>`_
-   from the Visual Studio Code Marketplace. Search for "Axon Ivy PRO Designer
-   14" in the Extensions view and click :guilabel:`Install`.
+   from the VS Code Marketplace. Search for "Axon Ivy PRO Designer
+   14" in the Extensions view and click :guilabel:`Install`. See
+   `VS Code Extensions <https://code.visualstudio.com/docs/configure/extensions/extensions>`_
+   for more information about installing and managing extensions.
 
+Notes & Tips
+-------------
+- Keep VS Code up-to-date. VS Code itself has weekly releases and will often prompt you to update. Not doing so might break the Extensions functionality.
+- VS Code will take care of updating the extensions automatically. You don't have to configure or update extension versions unless you want to work with a specific version as described in :ref:`designer-advanced-project-setup`.
+- The Axon Ivy extension automatically installs the necessary Java and Maven extensions. They are also keep up-to-date by VS Code. Those extensions are needed for the Axon Ivy extension to work properly. This means that, apart from having a working Java and Maven installation on your system as described in the :ref:`designer-install-comprehensive-requirements`, you don't have to install any other VS Code extensions apart from the Axon Ivy extension itself.
 
 .. _designer-system-requirements:
 
@@ -40,10 +46,12 @@ item.
 
    * - Requirement
      - Details
-   * - :ref:`System <designer-system-requirements>`
-     - See :ref:`system requirements <designer-system-requirements>`.
+   * - :ref:`Java <designer-install-java>`
+     - Java Development Kit (JDK) 25 must be installed.
+   * - :ref:`Maven <designer-install-maven>`
+     - Maven 3.9 must be installed.
    * - :ref:`User permissions <designer-install-user-permissions>`
-     - Read/write on workspace directory, permission to open local ports.
+     - Read/write access to workspace directory, permission to open local ports.
    * - :ref:`Localhost <designer-install-integrated-engine>`
      - Must not be blocked, must bypass the proxy.
    * - :ref:`Network access <designer-install-network-access>`
