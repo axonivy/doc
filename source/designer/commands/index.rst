@@ -244,12 +244,16 @@ Opens the Axon Ivy Engine log.
 Import / Export
 ~~~~~~~~~~~~~~~
 
+.. _designer-import-project:
+
 Import Project Archive (.iar or .zip)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :code:`Axon Ivy: Import Project Archive (.iar or .zip)`
 
 Lets you import and unpack an archived Axon Ivy project (``.iar``) or a collection of multiple projects (``.zip``).
 If the import is successful, the project(s) will be **unpacked** and added to your workspace.
+
+.. _designer-export-project:
 
 Export Project Archive (.iar)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
