@@ -20,8 +20,8 @@ This means that the Axon Ivy Designer setup consists of three parts:
    :maxdepth: 2
 
    installation/index
-   vscode-basics/index
-   first-steps/index
+   vscode-basics
+   first-steps
    ai-development
    advanced-project-setup
    commands/index

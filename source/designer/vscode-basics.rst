@@ -52,6 +52,23 @@ As explained later in more detail in :ref:`commands`, the Designer contributes i
 These commands can be used to work with the Axon Ivy platform.
 
 
+
+Notifications
+-------------
+
+`VS Code Documentation: Notifications <https://code.visualstudio.com/api/ux-guidelines/notifications>`_
+
+The notifications are located at the bottom-right of the screen, indicated by the bell icon. 
+
+Most commands provide feedback through the notifications, it is therefore advisable to always keep an eye on that list.
+
+Apart from error and success messages, the notification often offers additional actions like jumping to a log to see more details.
+
+By default, notifications vanish after some time if not dismissed manually. You can bring up the full list by running the command :code:`Notifications: Show Notifications`
+
+.. figure:: /_images/designer/vscode-basics/notifications_axonivy.png
+
+
 .. _designer-basics-settings:
 
 Settings
@@ -157,20 +174,3 @@ Clicking it will open a context menu with different commands and options.
     :alt: Axon Ivy status bar at the bottom of the window
 
     Axon Ivy status bar at the bottom of the window
-
-
-
-Notifications
--------------
-
-`VS Code Documentation: Notifications <https://code.visualstudio.com/api/ux-guidelines/notifications>`_
-
-The notifications are located at the bottom-right of the screen.
-The Designer extension provides feedback about progress and ongoing operations not only through the status bar, but also through notifications.
-Normally, notifications inform you about concluded operations or errors that might need your attention.
-They often offer you to jump to a more in depth log in one of the Axon Ivy Output Views
-
-.. figure:: /_images/designer/vscode-basics/notifications_axonivy.png
-    :alt: Axon Ivy Notifications
-
-    Axon Ivy Notifications
