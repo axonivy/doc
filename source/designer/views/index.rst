@@ -28,7 +28,7 @@ It reports Axon Ivy specific problems (e.g. an outdated project) coming from the
 Clicking the error will open the file where the error is located.
 If available, the small lightbulb to the left of the error in the Problems view offers a fix for the problem.
 
-.. figure:: ./images/problem_view.png
+.. figure:: /_images/designer/views/problem_view.png
     :alt: Problem view with one Axon Ivy error (project outdated) and one Java error (missing ;)
 
     Problem view with one Axon Ivy error (project outdated) and one Java error (missing ;)
@@ -109,7 +109,7 @@ The Output view is by default located in the bottom-middle panel.
 Use the dropdown on the right to switch between different channels.
 All the ``Axon Ivy`` channels provide logs for different operations and allow you to trace and understand the operations by the extension.
 
-.. figure:: ./images/output_view.png
+.. figure:: /_images/designer/views/output_view.png
 
 
 Codegen Log

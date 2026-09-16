@@ -17,14 +17,14 @@ There are two tree views where you can right-click: The built-in file explorer a
 
 The file explorer shows a broad collection of commands you most commonly use across your projects. It groups commands by logical sets.
 
-.. figure:: ./images/context_file_explorer.png
+.. figure:: /_images/designer/commands/context_file_explorer.png
     :alt: Right-click in the file explorer displays the Axon Ivy context menu with the most useful commands
 
     Right-click in the file explorer display the Axon Ivy context menu with the most useful commands
 
 The Axon Ivy Projects menu only shows commands you execute on that specific project (e.g. deploy, export, etc.)
 
-.. figure:: ./images/context_axon_ivy_projects.png
+.. figure:: /_images/designer/commands/context_axon_ivy_projects.png
     :alt: Right-click in the Axon Ivy Projects view displays the project context menu
 
     Right-click in the Axon Ivy Projects view displays the project context menu
@@ -41,24 +41,24 @@ For example, when creating a new process, the dialog first asks you in which pro
 
 When you invoke that command via the context menu, the command will intelligently prefill the project for you if possible.
 
-.. figure:: ./images/tree_selection1.png
+.. figure:: /_images/designer/commands/tree_selection1.png
     :alt: Select "my-first-project" and invoke New Business Process via context menu.
 
     Select "my-first-project" and invoke New Business Process via context menu.
 
-.. figure:: ./images/tree_selection2.png
+.. figure:: /_images/designer/commands/tree_selection2.png
     :alt: The dialog will directly start at step 2/3, prefilling the project input with your tree selection.
 
     The dialog will directly start at step 2/3, prefilling the project input with your tree selection.
 
-.. figure:: ./images/tree_selection3.png
+.. figure:: /_images/designer/commands/tree_selection3.png
     :alt: When you press the back button, you see the prefilled project selection and can change it if desired.
 
     When you press the back button, you see the prefilled project selection and can change it if desired.
 
 On the other hand, if you invoke a command via the Command Palette with :code:`Axon Ivy: New Business Process` there will never be any prefilling
 
-.. figure:: ./images/tree_no_selection.png
+.. figure:: /_images/designer/commands/tree_no_selection.png
     :alt: Invoking via the Command Palette takes you to the first step of the dialog.
 
     Invoking via the Command Palette takes you to the first step of the dialog.

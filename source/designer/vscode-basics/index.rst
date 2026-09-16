@@ -43,7 +43,7 @@ and typing ``>``.
 In the Command Palette, you can enter a search string to find matching commands.
 To see Axon Ivy-related commands, for example, type ``Axon Ivy:`` to display commands contributed by the Designer extension.
 
-.. figure:: ./images/commandpalette_axonivy.png
+.. figure:: /_images/designer/vscode-basics/commandpalette_axonivy.png
     :alt: Command Palette
 
     Command Palette
@@ -68,7 +68,7 @@ You can open the Settings UI by pressing ``Ctrl+,`` or by opening the Command Pa
 
 You can switch to the Workspace settings by clicking the :code:`Workspace` tab or directly by executing the command :code:`Preferences: Open Workspace Settings (UI)`
 
-.. figure:: ./images/settings_workspace.png
+.. figure:: /_images/designer/vscode-basics/settings_workspace.png
 
 .. warning::
     Unless you clean them up regularly, using the User settings could potentially lead to a messy configuration with unintended consequences. It is **safer to stick to Workspace settings only**. The downside is that you will have to replicate some settings when starting a fresh workspace.
@@ -86,7 +86,7 @@ The reason for this is, that you don't want to have more extensions installed th
 
 Follow the VS Code docs above on how to create a profile. A very simple Axon Ivy profile would look like this:
 
-.. figure:: ./images/profiles_axonivy.png
+.. figure:: /_images/designer/vscode-basics/profiles_axonivy.png
     :alt: A simple Axon Ivy profile with the minimum of extensions required
 
     A simple Axon Ivy profile with the minimum of extensions required
@@ -112,7 +112,7 @@ in the associated editor.
 For example, the Designer provides, among others, a specialized :ref:`designer-editors-process`
 for ``.p.json`` files that displays a graphical view of an Axon Ivy process.
 
-.. figure:: ./images/editor_axonivy.png
+.. figure:: /_images/designer/vscode-basics/editor_axonivy.png
     :alt: Double-clicking ``BusinessProcess.p.json`` opens the graphical Process Editor.
 
     Double clicking ``BusinessProcess.p.json`` opens the graphical Process Editor.
@@ -134,7 +134,7 @@ Users can interact with the entries to trigger actions or open related resources
 The Axon Ivy Designer contributes its own **Axon Ivy Projects** tree view, which displays all Axon Ivy projects
 in the currently open workspace.
 
-.. figure:: ./images/treeview_axonivy.png
+.. figure:: /_images/designer/vscode-basics/treeview_axonivy.png
     :alt: The Axon Ivy Projects tree view
 
     The Axon Ivy Projects tree view
@@ -148,7 +148,7 @@ The Axon Ivy extension contributes its own status bar.
 Hovering over the status bar will display information regarding the state of the extension and the engine it is connected to.
 Clicking it will open a context menu with different commands and options.
 
-.. figure:: ./images/statusbar_axonivy.png
+.. figure:: /_images/designer/vscode-basics/statusbar_axonivy.png
     :alt: Axon Ivy status bar at the bottom of the window
 
     Axon Ivy status bar at the bottom of the window
@@ -165,7 +165,7 @@ The Designer extension provides feedback about progress and ongoing operations n
 Normally, notifications inform you about concluded operations or errors that might need your attention.
 They often offer you to jump to a more in depth log in one of the Axon Ivy Output Views
 
-.. figure:: ./images/notifications_axonivy.png
+.. figure:: /_images/designer/vscode-basics/notifications_axonivy.png
     :alt: Axon Ivy Notifications
 
     Axon Ivy Notifications
