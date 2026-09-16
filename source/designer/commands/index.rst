@@ -390,6 +390,8 @@ Adds a dependency to an Axon Ivy project.
 
 
 
+.. _designer-market-install:
+
 Market
 ~~~~~~
 Our :ref:`Axon Ivy Market <market>` has many already built connectors to 3rd-party systems, utilities or demos 
