@@ -75,6 +75,8 @@ Which browser is used to open the Axon Ivy content.
 By default, this is set to the internal VS Code browser.
 Change it to :code:`externalBrowser` if you want to open the content in your systems browser.
 
+.. _designer-settings-workspace-validation:
+
 Workspace Validation
 ~~~~~~~~~~~~~~~~~~~~
 This setting lets you enable and disable the different validators in case you don't want to see the warnings and errors.
@@ -90,17 +92,15 @@ Axon Ivy > Process > Animation
 
 Process Animation
 ~~~~~~~~~~~~~~~~~
-
-Configure the :code:`axonivy.process.animation.animate` preference to enable or 
-disable the animation of the process engine in the Designer.
+This setting lets you enable or disable the process animation.
+If enabled, whenever you simulate a process, the animation will visually guide you through the triggered processes.
 
 
 .. _designer-animation-mode-config:
 
 Mode
 ~~~~
-
-Specify the process animation mode with the :code:`axonivy.process.animation.mode` preference. 
+Specify the process animation mode this setting.
 The following modes are available: all, currentProcess, openProcess, noDialogProcess, noEmbeddedProcess
 
 
@@ -108,8 +108,7 @@ The following modes are available: all, currentProcess, openProcess, noDialogPro
 
 Speed
 ~~~~~
-
-Choose the speed of the process engine animation with the :code:`axonivy.process.animation.speed` preference.
+Adjust the speed of the process animation.
 
 
 Axon Ivy > Local Mcp

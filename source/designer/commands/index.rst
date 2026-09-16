@@ -310,6 +310,7 @@ Open Dialog Preview
 Opens a preview of the selected dialog.
 
 
+
 .. _project-convert:
 
 Project Conversion
@@ -432,6 +433,12 @@ Attach Process Debugger
 :code:`Axon Ivy: Attach Process Debugger`
 
 Attaches the process debugger, which allows you to debug your processes. Refer to the :ref:`debug-process` for more information about debugging.
+
+Open Portal
+^^^^^^^^^^^
+:code:`Axon Ivy: Open Portal`
+
+Opens the Axon Ivy portal.
 
 Open Developer Workflow UI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

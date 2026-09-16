@@ -26,7 +26,9 @@ It shows diagnostic messages in your open files and even across your workspace, 
 It reports Axon Ivy specific problems (e.g. an outdated project) coming from the extension, as well as general problems (for example if one of your Java files contains an error).
 
 Clicking the error will open the file where the error is located.
-If available, the small lightbulb to the left of the error in the Problems view offers a fix for the problem.
+If available, the a right-click or a small lightbulb to the left of the problem marker offers a fix for the problem.
+
+Refer to the :ref:`designer-settings-workspace-validation` setting to configure for which kind of problems you want to enable/disable problem markers.
 
 .. figure:: /_images/designer/views/problem_view.png
     :alt: Problem view with one Axon Ivy error (project outdated) and one Java error (missing ;)
@@ -40,7 +42,7 @@ If available, the small lightbulb to the left of the error in the Problems view 
 Run and Debug View
 ------------------
 
-`VS Code Debugging <https://code.visualstudio.com/docs/debugtest/debugging>`_
+`VS Code Documentation: Debugging <https://code.visualstudio.com/docs/debugtest/debugging>`_
 
 Command: ``> View: Show Run and Debug``
 

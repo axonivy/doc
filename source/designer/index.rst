@@ -25,7 +25,7 @@ This means that the Axon Ivy Designer setup consists of three parts:
    ai-development
    advanced-project-setup
    commands/index
-   configuration
+   designer-settings
    editors
    views/index
    debug

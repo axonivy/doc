@@ -4,14 +4,14 @@ VS Code Basics
 Before diving into the Axon Ivy-specific functionality provided by the Designer extension, this chapter introduces some fundamental VS Code concepts used by the Designer.
 
 VS Code itself is very well documented.
-For an in-depth introduction, refer to the `VS Code Documentation <https://code.visualstudio.com/docs>`_
-and for a UI overview specifically to `VS Code UI <https://code.visualstudio.com/docs/editing/getting-started/userinterface>`_.
+For an in-depth introduction, refer to the `VS Code Documentation: Documentation <https://code.visualstudio.com/docs>`_
+and for a UI overview specifically to `VS Code Documentation: UI <https://code.visualstudio.com/docs/editing/getting-started/userinterface>`_.
 
 
 Workspace
 ---------
 
-`VS Code workspace <https://code.visualstudio.com/docs/editing/workspaces/workspaces>`_
+`VS Code Documentation: Workspace <https://code.visualstudio.com/docs/editing/workspaces/workspaces>`_
 
 The VS Code workspace represents the folder or set of folders that are currently open.
 The file explorer view on the left displays the folders and files in the workspace.
@@ -26,7 +26,7 @@ An Axon Ivy project is simply a folder with specific files in it and the Designe
 Command and the Command Palette
 -------------------------------
 
-`VS Code Command Palette <https://code.visualstudio.com/docs/editing/getting-started/userinterface#_command-palette>`_
+`VS Code Documentation: Command Palette <https://code.visualstudio.com/docs/editing/getting-started/userinterface#_command-palette>`_
 
 A command is an action that can be executed by the user.
 Virtually everything you can do within VS Code can be achieved by running the respective commands.
@@ -57,7 +57,7 @@ These commands can be used to work with the Axon Ivy platform.
 Settings
 --------
 
-`VS Code Settings <https://code.visualstudio.com/docs/configure/settings>`_
+`VS Code Documentation: Settings <https://code.visualstudio.com/docs/configure/settings>`_
 
 You can configure almost all UIs and behaviors in the VS Code settings. They are a list of key-value pairs in ``settings.json`` files. As with commands, there are many built-in settings, but also extensions can supply their own settings that steer the behavior of the extension.
 The Axon Ivy Designer supplies its own small set of settings, which are explained in more depth in the :ref:`designer-settings`.
@@ -77,7 +77,7 @@ You can switch to the Workspace settings by clicking the :code:`Workspace` tab o
 Profiles
 --------
 
-`VS Code Profiles <https://code.visualstudio.com/docs/configure/profiles>`_
+`VS Code Documentation: Profiles <https://code.visualstudio.com/docs/configure/profiles>`_
 
 A VS Code profile is a saved set of VS Code configurations, settings and installed extensions.
 You might use VS Code not only for Axon Ivy projects, but also for, for example, Python development which is completely independent of your work with Axon Ivy.
@@ -128,7 +128,7 @@ Clicking it will offer you the option to switch to the default *Text Editor*.
 Tree View
 ---------
 
-`VS Code View <https://code.visualstudio.com/docs/editing/getting-started/userinterface#_views>`_
+`VS Code Documentation: View <https://code.visualstudio.com/docs/editing/getting-started/userinterface#_views>`_
 
 A view in VS Code is a UI container where specific information is displayed.
 A tree view displays information in a hierarchical structure, typically on the left-hand side of VS Code.
@@ -163,7 +163,7 @@ Clicking it will open a context menu with different commands and options.
 Notifications
 -------------
 
-`VS Code Notifications <https://code.visualstudio.com/api/ux-guidelines/notifications>`_
+`VS Code Documentation: Notifications <https://code.visualstudio.com/api/ux-guidelines/notifications>`_
 
 The notifications are located at the bottom-right of the screen.
 The Designer extension provides feedback about progress and ongoing operations not only through the status bar, but also through notifications.
