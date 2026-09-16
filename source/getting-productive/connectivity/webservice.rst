@@ -43,5 +43,5 @@ Check out our :dev-url:`video tutorials </tutorial>` to see web service
 integrations in action.
 
 If you are looking for web service integration examples with Axon Ivy, have a
-look at the :ref:`ConnectivityDemos <importing-demo-projects>` sample project in
+look at the :ref:`ConnectivityDemos <demo-projects>` sample project in
 the Designer.

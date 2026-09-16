@@ -130,7 +130,7 @@ Create and save with own Id:
 Samples
 ~~~~~~~
 
-The :ref:`WorkflowDemos sample project <importing-demo-projects>`
+The :ref:`WorkflowDemos sample project <demo-projects>`
 of the Axon Ivy Designer contains examples of the Business Data Store usage.
 
 Refer to the Public API ``BusinessDataRepository`` for more code samples.

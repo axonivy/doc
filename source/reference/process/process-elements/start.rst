@@ -123,7 +123,7 @@ Custom Fields
 
       To display an icon for a start on start lists configure the ``cssIcon``
       custom field. You can find a list of possible icons in the :ref:`Html
-      Dialog Demos <importing-demo-projects>`.
+      Dialog Demos <demo-projects>`.
 
       .. include:: _embedInFrame.rst
       If ``embedInFrame`` is set to ``false`` on the request tab custom fields, the

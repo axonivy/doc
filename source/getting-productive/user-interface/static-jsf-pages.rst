@@ -51,4 +51,4 @@ implement a :ref:`End Page <process-element-end-page>`, :ref:`Task Switch
 Gateway <process-element-task-switch-gateway>` or :ref:`Task Switch Event
 <process-element-task-switch-event>` element and choose the XHTML file as its
 end page. See the related example in the :ref:`HTMLDialogDemos
-<importing-demo-projects>`.
+<demo-projects>`.
