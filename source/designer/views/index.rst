@@ -125,6 +125,8 @@ Extension Log
 ~~~~~~~~~~~~~
 The Extension log contains information about warnings and errors that pertain the extension itself.
 
+.. _runtimelog-view:
+
 Runtime Log
 ~~~~~~~~~~~
 The Runtime log displays a list of events which occur during the simulation.
