@@ -107,7 +107,7 @@ In addition to the standard text editor, extensions can provide custom editors f
 These custom editors are associated with certain file extensions and offer a specialized interface
 for viewing or editing their content.
 When an editor is linked to a file extension, opening a file with that extension automatically opens it
-in the associated editor.
+in the associated editor by default.
 
 For example, the Designer provides, among others, a specialized :ref:`designer-editors-process`
 for ``.p.json`` files that displays a graphical view of an Axon Ivy process.
@@ -116,6 +116,11 @@ for ``.p.json`` files that displays a graphical view of an Axon Ivy process.
     :alt: Double-clicking ``BusinessProcess.p.json`` opens the graphical Process Editor.
 
     Double clicking ``BusinessProcess.p.json`` opens the graphical Process Editor.
+
+VS Code offers you the option to switch the editor to the default text editor.
+The button is located on the top-right corner, where it says *Axon Ivy Process Editor*.
+Clicking it will offer you the option to switch to the default *Text Editor*.
+
 
 
 .. _designer-basics-tree-view:

@@ -153,11 +153,11 @@ Creates a new Axon Ivy case map. Refer to the :ref:`casemap` for more informatio
 
 
 
-Open Config Editors
-~~~~~~~~~~~~~~~~~~~
-The config editors will prompt you for a project on which to open the respective config editor.
+Open Editors
+~~~~~~~~~~~~
+All the editors will prompt you for a project on which to open the respective config editor.
 
-Except for the :code:`Custom Field` editor, all those editors are Axon Ivy specific editors as described in the :ref:`editor introduction <designer-basics-editor>`. Those editors are therefore linked to specific file types or names.
+Except for the :code:`Custom Field` editor, all those editors are Axon Ivy specific editors as described in the :ref:`editor introduction <designer-basics-editor>` and in more detail in the :ref:`designer-editors` chapter. Those editors are therefore linked to specific file types or names.
 
 For example, invoking :code:`Axon Ivy: Open Database Editor` in the project :code:`X` will open the database editor of that project. The same could be achieved by double-clicking the :code:`config/databases.yaml` file in the project.
 
