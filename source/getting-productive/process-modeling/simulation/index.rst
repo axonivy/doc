@@ -69,4 +69,6 @@ You can disable a specific breakpoint in the :ref:`designer-views-run-and-debug-
 on the breakpoint in the :ref:`process-editor`. It is also possible to disable all
 breakpoints in the :ref:`designer-views-run-and-debug-view`. 
 
-For more information about Debugging in the Designer, see :ref:`debug`.
+
+.. note::
+    For more information about debugging in the Designer, see :ref:`debug`.

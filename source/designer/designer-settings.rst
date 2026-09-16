@@ -18,6 +18,7 @@ Some of the settings are of a purely technical nature.
 Only the settings relevant for your work with the extension are listed here.
 
 
+.. _designer-engine-config-args:
 
 Axon Ivy > Engine
 -----------------
@@ -38,8 +39,7 @@ Engine URL
 ~~~~~~~~~~
 Can be ignored, not relevant.
 
-
-.. _designer-engine-config-args:
+.. _designer-settings-vmargs:
 
 Vm Args
 ~~~~~~~

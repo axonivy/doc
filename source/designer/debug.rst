@@ -3,35 +3,36 @@
 Debugging
 =========
 
-This chapter covers the two setups in the Designer on how to debug: Process and Java code itself
+This chapter explains how to debug your Axon Ivy processes.
+There are two things you can debug
+
+1. The Axon Ivy process itself. Inspect you process elements when simulating to understand your process.
+2. The Axon Ivy engine and the Java classes that are executed during your process. This means your own Java files as well as stepping into the engine code.
+
 
 .. _debug-process:
 
 Process Debug
 -------------
+- In your open process, :ref:`add a breakpoint <process-editor-quick-actions-toggle-breakpoint>` on a process element
+- There should pop up a notification in the bottom-left corner, telling you that you have no running debug session. Press :code:`Start Process Debug` to start a session.
+- If no notification appears, start a debug session with the command :code:`Axon Ivy: Attach Process Debugger`
+- After starting the session, the :ref:`designer-views-run-and-debug-view` should indicate that you have a new debug session running. You should also see the debug toolbar.
+- Start your process simulation. The simulation should stop at the breakpoint and you can inspect the variables in the :ref:`designer-views-run-and-debug-view`.
 
-- Add breakpoint in the process editor
-- VS Code will ask you to attach a debug session
-- If later, show where to click (Axon Ivy Projects View or Command)
-- Run Process, see how you focus on Run and Debug automatically
-
+.. figure:: /_images/designer/debug/debug_process.png
 
 
 .. _debug-java:
 
 Java Debug
-~~~~~~~~~~
-
-- Refer to config vmArgs
-- Where to click to add launch.json
-- Where to click to actually start the launch.json
-
-You can debug java classes in the Axon Ivy Designer, by 
-add :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n` to the 
-VM arguments of the engine, e.g. via :ref:`designer-engine-config-args`. 
-If you do this change, you have to restart your engine, e.g. by run the :code:`Reload Window` command in Vs Code.
-
-Then add a java launch configuration to your :file:`.vscode/launch.json` file.
+----------
+- Set a breakpoint somewhere in a Java file as described here `Setting a breakpoint <https://code.visualstudio.com/docs/debugtest/debugging#_breakpoints>`_
+- Update the :ref:`designer-settings-vmargs` setting with the string :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n`
+- Restart the extension, so that the settings can take effect by running :code:`Developer: Reload Window`
+- Create a new :code:`launch.json` configuration as described here: `Create a debug configuration file <https://code.visualstudio.com/docs/debugtest/debugging-configuration#_create-a-debug-configuration-file>`_
+- Select `Java`
+- Then add a java launch configuration to your :file:`.vscode/launch.json` file.
 
 .. code-block:: json
 
@@ -48,3 +49,4 @@ Then add a java launch configuration to your :file:`.vscode/launch.json` file.
         ]
     }
 
+Starting your process simulation should now stop at the breakpoint and let you inspect you Java classes.

@@ -49,6 +49,8 @@ Command: ``> View: Show Run and Debug``
 The built-int Run and Debug view container is located on the far left side in the activity bar and is a collection of views used to debug your code.
 This container contains multiple views revolving around debugging, setting breakpoints and stepping thorough your code.
 
+For more information about debugging in the Designer, see :ref:`debug`.
+
 
 .. _designer-views-breakpoints-view:
 
