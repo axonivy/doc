@@ -55,22 +55,43 @@ The following editors are all linked to configuration files found by default in 
 
 Database Editor
 ~~~~~~~~~~~~~~~
-Les you edit and managed your data base connections.
+Lets you edit and manage your data base connections.
 It is linked to the file name pattern :code:`database.yaml`
 
 See :ref:`database-configuration-editor`
 
 Rest Client Editor
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+Lets you edit and manage your REST clients.
+It is linked to the file name pattern :code:`rest-client.yaml`
+
+See :ref:`rest-client-configuration-editor`
 
 Role Editor
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+Lets you create and edit your roles.
+It is linked to the file name pattern :code:`roles.yaml`
+
+See :ref:`role-editor`
 
 User Editor
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+Lets you create and edit your users.
+It is linked to the file name pattern :code:`users.yaml`
+
+See :ref:`test-user-editor`
 
 Variable Editor
 ~~~~~~~~~~~~~~~
+Lets you add and edit your custom variables.
+It is linked to the file name pattern :code:`variables.yaml`
+
+See :ref:`variables-editor`
+
 
 Web Service Client Editor
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Lets you add and manage your web service clients.
+It is linked to the file name pattern :code:`webservice-clients.yaml`
+
+See :ref:`webservice-clients-configuration`
