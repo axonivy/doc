@@ -30,7 +30,7 @@ After starting VS Code, the window will probably look similar to this:
 
     VS Code without an open workspace
 
-1. This is the File Explorer view that shows the folders and files in your workspace. Since we have not yet opened a workspace, it is empty.
+1. This is the file explorer view that shows the folders and files in your workspace. Since we have not yet opened a workspace, it is empty.
 2. The Axon Ivy Projects view also tells you that there are no Axon Ivy projects in your workspace.
 3. The Welcome page of the Designer extension is always shown upon start.
 

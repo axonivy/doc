@@ -1,25 +1,95 @@
-.. _designer-config:
+.. _designer-settings:
 
-Configuration
-=============
+Designer Settings
+=================
 
-.. _designer-engine-config:
+This chapters covers the different settings the Axon Ivy Designer extensions provides to configure the behavior.
 
-Engine
-------
+For a general introduction to VS Code settings, refer to :ref:`designer-basics-settings`.
+
+Open the settings UI to the **Workspace** settings by executing the command :code:`Preferences: Open Workspace Settings (UI)`
+and then search for :code:`@ext:axonivy.vscode-designer-14`.
+
+Alternatively, you can click the status bar and press :code:`Open Axon Ivy Settings`.
+
+This will give you a list of all available settings of the Axon Ivy Designer.
+
+Some of the settings are of a purely technical nature.
+Only the settings relevant for your work with the extension are listed here.
+
+
+
+Axon Ivy > Engine
+-----------------
+
+Run By Extension
+~~~~~~~~~~~~~~~~
+This setting must always be activated. Deactivating it is for extension debugging only and will break your Axon Ivy Designer.
+
+
+Release Train
+~~~~~~~~~~~~~~~~
+Advanced use only. This setting should be empty.
+
+Only set it, if you want to work with a specific extension or engine verison, as described in :ref:`designer-advanced-project-setup`
+
+
+Engine URL
+~~~~~~~~~~
+Can be ignored, not relevant.
+
 
 .. _designer-engine-config-args:
 
-Engine Arguments
+Vm Args
+~~~~~~~
+Here you can specify additional arguments for the engine that is run in the background by the extension.
+
+As mentioned in the description, this is mainly used for debugging your Java classes. Refer to the :ref:`debug-java` chapter for more information about debugging.
+ 
+
+
+Axon Ivy > Project
+------------------
+
+Exclude Patterns
 ~~~~~~~~~~~~~~~~
+Allows you to specify patterns that should be excluded from the Axon Ivy project scanner.
+This might be useful if you have many different projects in your workspace.
 
-If the extension manages the engine, you can configure additional VM args here.
 
+Maximum Number
+~~~~~~~~~~~~~~
+Upper limit for the number of projects that will be detected.
+
+
+
+
+
+Axon Ivy
+--------
+
+Browser
+~~~~~~~
+Which browser is used to open the Axon Ivy content.
+By default, this is set to the internal VS Code browser.
+Change it to :code:`externalBrowser` if you want to open the content in your systems browser.
+
+Workspace Validation
+~~~~~~~~~~~~~~~~~~~~
+This setting lets you enable and disable the different validators in case you don't want to see the warnings and errors.
+During development, it can be helpful to temporarily disable the validators for specific file types.
+
+
+
+
+Axon Ivy > Process > Animation
+------------------------------
 
 .. _designer-animation-config:
 
 Process Animation
------------------
+~~~~~~~~~~~~~~~~~
 
 Configure the :code:`axonivy.process.animation.animate` preference to enable or 
 disable the animation of the process engine in the Designer.
@@ -40,3 +110,8 @@ Speed
 ~~~~~
 
 Choose the speed of the process engine animation with the :code:`axonivy.process.animation.speed` preference.
+
+
+Axon Ivy > Local Mcp
+--------------------
+tbd
