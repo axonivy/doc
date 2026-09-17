@@ -104,14 +104,18 @@ The Axon Ivy Designer supplies its own small set of settings, which are explaine
 
 VS Code settings come in a layered system: User and Workspace settings. User settings are applied globally for each new Workspace you open, while Workspace settings only apply to your current workspace. If both are set, Workspace settings win. If only a User setting is set, it will be applied to new workspaces automatically.
 
-You can open the Settings UI by pressing ``Ctrl+,`` or by opening the Command Palette (``Ctrl+Shift+P``) and executing the command ``Preferences: Open Settings (UI)``. This will open the User settings, as visible in the :code:`User` tab.
+.. warning::
+    Unless you clean them up regularly, using the User settings could potentially lead to a messy configuration with unintended consequences. It is **safer to stick to Workspace settings only**. The downside is that you will have to replicate some settings when starting a fresh workspace.
+
+You can open the Settings UI by pressing ``Ctrl+,`` or by opening the Command Palette (``Ctrl+Shift+P``) and executing the command ``Preferences: Open Settings (UI)``. This will open the User settings by default, as visible in the :code:`User` tab.
 
 You can switch to the Workspace settings by clicking the :code:`Workspace` tab or directly by executing the command :code:`Preferences: Open Workspace Settings (UI)`
 
 .. figure:: /_images/designer/vscode-basics/settings_workspace.png
+    :alt: Switch to the **Workspace** tab.
 
-.. warning::
-    Unless you clean them up regularly, using the User settings could potentially lead to a messy configuration with unintended consequences. It is **safer to stick to Workspace settings only**. The downside is that you will have to replicate some settings when starting a fresh workspace.
+    Switch to the **Workspace** tab.
+
 
 
 Profiles
