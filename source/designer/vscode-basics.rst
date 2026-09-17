@@ -53,20 +53,43 @@ These commands can be used to work with the Axon Ivy platform.
 
 
 
-Notifications
--------------
+Notifications & Status Bar
+--------------------------
+The VS Code UI communicates progress and errors through two elements: The notifications list in the bottom-right and the status bar in the bottom-left.
+
+.. note::
+    When working in VS Code executing commands, it is helpful to always keep an eye on both UI elements, as they help you keep informed about the status of the extension and its operations.
+
+**Notifications**
 
 `VS Code Documentation: Notifications <https://code.visualstudio.com/api/ux-guidelines/notifications>`_
 
 The notifications are located at the bottom-right of the screen, indicated by the bell icon. 
-
-Most commands provide feedback through the notifications, it is therefore advisable to always keep an eye on that list.
+This is the primary UI element that helps you understand if a command was successful or if there was an error.
 
 Apart from error and success messages, the notification often offers additional actions like jumping to a log to see more details.
 
 By default, notifications vanish after some time if not dismissed manually. You can bring up the full list by running the command :code:`Notifications: Show Notifications`
 
 .. figure:: /_images/designer/vscode-basics/notifications_axonivy.png
+
+**Status Bar**
+
+The status bar is a UI part located at the bottom-left of the VS Code window and displays contextual information from specific extensions.
+
+The Axon Ivy extension contributes its own status bar.
+
+Hovering over the status bar will display information regarding the state of the extension and the engine it is connected to.
+Clicking it will open a context menu with different commands and options.
+
+.. figure:: /_images/designer/vscode-basics/statusbar_axonivy.png
+    :alt: Axon Ivy status bar at the bottom of the window
+
+    Axon Ivy status bar at the bottom of the window
+
+
+
+
 
 
 .. _designer-basics-settings:
@@ -160,17 +183,3 @@ in the currently open workspace.
     :alt: The Axon Ivy Projects tree view
 
     The Axon Ivy Projects tree view
-
-
-Status Bar
-----------
-
-The status bar is a UI part located at the bottom of the VS Code window and displays contextual information.
-The Axon Ivy extension contributes its own status bar.
-Hovering over the status bar will display information regarding the state of the extension and the engine it is connected to.
-Clicking it will open a context menu with different commands and options.
-
-.. figure:: /_images/designer/vscode-basics/statusbar_axonivy.png
-    :alt: Axon Ivy status bar at the bottom of the window
-
-    Axon Ivy status bar at the bottom of the window
