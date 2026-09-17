@@ -1,4 +1,5 @@
 .. _market:
+
 Market
 ======
 The `Axon Ivy Market <https://market.axonivy.com>`_ provides powerful add-ons for the Axon Ivy platform.
