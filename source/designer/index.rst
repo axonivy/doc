@@ -7,7 +7,7 @@ This guide covers all aspects of the **Axon Ivy Designer VS Code Extension**.
 
 Starting from version 14, the Axon Ivy Designer is provided as a
 `VS Code Extension <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-14>`_.
-This combines the general strenghts of the Visual Studio Code IDE with 
+This combines the general strengths of the Visual Studio Code IDE with 
 the specific functionality of the Axon Ivy Designer.
 
 This means that the Axon Ivy Designer setup consists of three parts:

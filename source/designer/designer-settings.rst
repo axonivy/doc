@@ -3,7 +3,7 @@
 Designer Settings
 =================
 
-This chapters covers the different settings the Axon Ivy Designer extensions provides to configure the behavior.
+This chapters covers the different VS Code settings the Axon Ivy Designer provides to configure the behavior of the extension.
 
 For a general introduction to VS Code settings, refer to :ref:`designer-basics-settings`.
 
@@ -32,7 +32,7 @@ Release Train
 ~~~~~~~~~~~~~~~~
 Advanced use only. This setting should be empty.
 
-Only set it, if you want to work with a specific extension or engine verison, as described in :ref:`designer-advanced-project-setup`
+Only set it, if you want to work with a specific extension or engine version, as described in :ref:`designer-advanced-project-setup`
 
 
 Engine URL
@@ -100,7 +100,7 @@ If enabled, whenever you simulate a process, the animation will visually guide y
 
 Mode
 ~~~~
-Specify the process animation mode this setting.
+Specify the process animation mode.
 The following modes are available: all, currentProcess, openProcess, noDialogProcess, noEmbeddedProcess
 
 

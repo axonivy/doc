@@ -12,7 +12,7 @@ Process Editor
 --------------
 The most important visual editor is the process editor.
 It allows you to design and edit your processes.
-It is linked to the filetype :code:`p.json`.
+It is linked to the filetype :code:`.p.json`.
 
 See :ref:`process-editor`.
 
@@ -20,23 +20,23 @@ See :ref:`process-editor`.
 Form Editor
 -----------
 The form editor lets you build UIs with drag-and-drop.
-It is linked to the filetype :code:`f.json`.
+It is linked to the filetype :code:`.f.json`.
 
 See :ref:`form-editor`.
 
 
 Data Class Editor
 -----------------
-The data class editor lets you edit you data objects.
-It is linked to the filetype :code:`d.json`.
+The data class editor lets you edit your data objects.
+It is linked to the filetype :code:`.d.json`.
 
 See :ref:`data-class-editor`.
 
 
 Case Map Editor
 -----------------
-The case map editor lets you edit you case maps.
-It is linked to the filetype :code:`m.json`.
+The case map editor lets you edit your case maps.
+It is linked to the filetype :code:`.m.json`.
 
 See :ref:`casemap-editor`.
 
@@ -55,7 +55,7 @@ The following editors are all linked to configuration files found by default in 
 
 Database Editor
 ~~~~~~~~~~~~~~~
-Lets you edit and manage your data base connections.
+Lets you edit and manage your database connections.
 It is linked to the file name pattern :code:`database.yaml`
 
 See :ref:`database-configuration-editor`

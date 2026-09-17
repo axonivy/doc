@@ -23,7 +23,7 @@ Notes & Tips
 -------------
 - Keep VS Code up-to-date. VS Code itself has weekly releases and will often prompt you to update. Not doing so might break the Extensions functionality.
 - VS Code will take care of updating the extensions automatically. You don't have to configure or update extension versions unless you want to work with a specific version as described in :ref:`designer-advanced-project-setup`.
-- The Axon Ivy extension automatically installs the necessary Java and Maven extensions. They are also keep up-to-date by VS Code. Those extensions are needed for the Axon Ivy extension to work properly. This means that, apart from having a working Java and Maven installation on your system as described in the :ref:`designer-install-comprehensive-requirements`, you don't have to install any other VS Code extensions apart from the Axon Ivy extension itself.
+- The Axon Ivy extension automatically installs the necessary Java and Maven extensions. They are also kept up-to-date by VS Code. Those extensions are needed for the Axon Ivy extension to work properly. This means that, apart from having a working Java and Maven installation on your system as described in the :ref:`designer-install-comprehensive-requirements`, you don't have to install any other VS Code extensions apart from the Axon Ivy extension itself.
 
 .. _designer-system-requirements:
 

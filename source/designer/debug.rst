@@ -28,7 +28,10 @@ Process Debug
 Java Debug
 ----------
 - Set a breakpoint somewhere in a Java file as described here `Setting a breakpoint <https://code.visualstudio.com/docs/debugtest/debugging#_breakpoints>`_
-- Update the :ref:`designer-settings-vmargs` setting with the string :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n`
+- Update the :ref:`designer-settings-vmargs` setting with the string
+
+    :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n`
+
 - Restart the extension, so that the settings can take effect by running :code:`Developer: Reload Window`
 - Create a new :code:`launch.json` configuration as described here: `Create a debug configuration file <https://code.visualstudio.com/docs/debugtest/debugging-configuration#_create-a-debug-configuration-file>`_
 - Select `Java`
@@ -49,4 +52,4 @@ Java Debug
         ]
     }
 
-Starting your process simulation should now stop at the breakpoint and let you inspect you Java classes.
+Starting your process simulation should now stop at the breakpoint and let you inspect your Java classes.

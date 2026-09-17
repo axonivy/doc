@@ -17,7 +17,7 @@ If you want to hide a view, you can right click on the view title and look for t
 Problems View
 -------------
 
-Command: ``> User View Container: Focus on Problems View``
+Command: ``Focus on Problems View``
 
 The Problems view is normally located in the bottom-center panel.
 It is a built-in view.
@@ -26,7 +26,7 @@ It shows diagnostic messages in your open files and even across your workspace, 
 It reports Axon Ivy specific problems (e.g. an outdated project) coming from the extension, as well as general problems (for example if one of your Java files contains an error).
 
 Clicking the error will open the file where the error is located.
-If available, the a right-click or a small lightbulb to the left of the problem marker offers a fix for the problem.
+If available, a small lightbulb or a right-click context menu offers a fix for the problem.
 
 Refer to the :ref:`designer-settings-workspace-validation` setting to configure for which kind of problems you want to enable/disable problem markers.
 
@@ -44,10 +44,10 @@ Run and Debug View
 
 `VS Code Documentation: Debugging <https://code.visualstudio.com/docs/debugtest/debugging>`_
 
-Command: ``> View: Show Run and Debug``
+Command: ``View: Show Run and Debug``
 
-The built-int Run and Debug view container is located on the far left side in the activity bar and is a collection of views used to debug your code.
-This container contains multiple views revolving around debugging, setting breakpoints and stepping thorough your code.
+The built-in Run and Debug view container is located on the far left side in the activity bar and is a collection of views used to debug your code.
+This container contains multiple views revolving around debugging, setting breakpoints and stepping through your code.
 
 For more information about debugging in the Designer, see :ref:`debug`.
 
@@ -57,7 +57,7 @@ For more information about debugging in the Designer, see :ref:`debug`.
 Breakpoints View
 ~~~~~~~~~~~~~~~~
 
-Command: ``> Run and Debug: Focus on Breakpoints View``
+Command: ``Run and Debug: Focus on Breakpoints View``
 
 One very useful view within the Run and Debug view container is the Breakpoints view where you can see your currently set breakpoints and enable/disable or remove them.
 
@@ -76,7 +76,7 @@ It is automatically shown as soon as a debug session is ongoing.
 Maven View
 ----------
 
-Command: ``> Explorer: Focus on Maven View``
+Command: ``Explorer: Focus on Maven View``
 
 The Maven view displays the Maven projects and dependencies available in the current workspace.
 It is supplied by the Maven extension and is normally shown in the left bar.
@@ -89,7 +89,7 @@ Axon Ivy projects resolved from a Maven repository are shown here as well, even 
 Java Projects View
 ------------------
 
-Command: ``> Explorer: Focus on Java Projects View``
+Command: ``Explorer: Focus on Java Projects View``
 
 The Java Projects view displays the Java projects found in your workspace.
 It is supplied by the Java extension and is normally shown in the left bar.
@@ -107,7 +107,7 @@ Axon Ivy Output Views
 
 Apart from the :ref:`Axon Ivy Projects tree view <designer-basics-tree-view>`, the Designer also provides different logs in the Output view.
 
-Command: ``> Output: Focus on OUtput View``
+Command: ``Output: Focus on Output View``
 
 The Output view is by default located in the bottom-middle panel.
 Use the dropdown on the right to switch between different channels.

@@ -18,16 +18,16 @@ There are two tree views where you can right-click: The built-in file explorer a
 The file explorer shows a broad collection of commands you most commonly use across your projects. It groups commands by logical sets. Access it by right-clicking anywhere in the file explorer and hover over :code:`Axon Ivy >`
 
 .. figure:: /_images/designer/commands/context_file_explorer.png
-    :alt: Right-click in the file explorer displays the Axon Ivy context menu with the most useful commands
+    :alt: Right-click in the file explorer displays the Axon Ivy context menu with the most useful commands.
 
-    Right-click in the file explorer display the Axon Ivy context menu with the most useful commands
+    Right-click in the file explorer displays the Axon Ivy context menu with the most useful commands.
 
 The Axon Ivy Projects menu only shows commands you execute on that specific project (e.g. deploy, export, etc.)
 
 .. figure:: /_images/designer/commands/context_axon_ivy_projects.png
-    :alt: Right-click in the Axon Ivy Projects view displays the project context menu
+    :alt: Right-click in the Axon Ivy Projects view displays the project context menu.
 
-    Right-click in the Axon Ivy Projects view displays the project context menu
+    Right-click in the Axon Ivy Projects view displays the project context menu.
 
 The difference between the two context menus is only the selection of the commands.
 
@@ -259,7 +259,7 @@ Import / Export
 
 Process Editor
 ~~~~~~~~~~~~~~
-The following commands are only active if you have an open :code:`p.pjson` file in the Process Editor.
+The following commands are only active if you have an open :code:`.p.json` file in the Process Editor.
 
 **Fit to Screen**
     :code:`Axon Ivy: Fit to Screen`
@@ -285,7 +285,7 @@ The following commands are only active if you have an open :code:`p.pjson` file 
 
 Form Editor
 ~~~~~~~~~~~
-The following commands are only active if you have an open :code:`f.json` file in the Form Editor.
+The following commands are only active if you have an open :code:`.f.json` file in the Form Editor.
 
 **Open Dialog Preview**
     :code:`Axon Ivy: Open Dialog Preview`
@@ -300,7 +300,7 @@ Project Conversion
 ~~~~~~~~~~~~~~~~~~
 When you update your Axon Ivy engine, projects can become outdated.
 In that case, the :ref:`problem view <problems-view>` will show a problem marker, indicating that the projects need to be **converted**.
-Clicking on the problem or will let you inspect your project's properties file :file:`.ivyproject`, you will see the project version. 
+Clicking on the problem marker lets you inspect your project's properties file :file:`.ivyproject`, you will see the project version. 
 You will also see a warning indicator, when the project is out of date. 
 
 Axon Ivy can convert your old projects automatically to the newest project format for you.
@@ -352,7 +352,7 @@ Those projects pertain the management and setup of your Axon Ivy projects.
 **Deploy all Projects**
     :code:`Axon Ivy: Deploy all Projects`
 
-    Shortcut to execute the deploy on all all Axon Ivy projects in the workspace.
+    Shortcut to execute the deploy command on all Axon Ivy projects in the workspace.
 
 **Stop BPM Engine of Project**
     :code:`Axon Ivy: Stop BPM Engine of Project`
