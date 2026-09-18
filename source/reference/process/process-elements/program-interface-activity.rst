@@ -51,7 +51,7 @@ On this tab you define the Java class to be executed.
 
 Java Class
    Fully qualified name of the Java class that implements the
-   :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
+   :code:`ch.ivyteam.ivy.process.program.activity.ProgramExecutor`
    interface. 
 
 Program
@@ -66,7 +66,7 @@ Configuration Tab
 ~~~~~~~~~~~~~~~~~
 
 The custom editor UI provided by the implementation of 
-:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
+:code:`ch.ivyteam.ivy.process.program.ui.ProgramEditorUi`
 allows to configure its execution.
 
 .. figure:: /_images/process-inscription/program-interface-tab-configuration.png
