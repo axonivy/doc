@@ -6,7 +6,7 @@ Advanced project setup
 **TODO: Diagram or just write it up nicely**
 
 .. note::
-    This chatper is only relevant if you want to set up your VS Code Extension with a non-default version.
+    This chapter is only relevant if you want to set up your VS Code extension with a non-default version.
     If you want to work with the newest default version of the Designer, you can skip this chapter and stick with 
 
 This chapter describes advanced projects setups when working with the VS Code Designer, for example using an older engine version where you need to switch the release train manually.
@@ -15,7 +15,7 @@ This chapter describes advanced projects setups when working with the VS Code De
 Why would you want to change release trains
 -------------------------------------------
 
-Explain the setup where this chatper might be relevant, e.g. you want to work with an LTS / Milestone / nightly
+Explain the setup where this chapter might be relevant, e.g. you want to work with an LTS / Milestone / nightly
 
 
 .. _designer-switching-release-train:

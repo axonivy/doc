@@ -6,15 +6,15 @@ Designer
 This guide covers all aspects of the **Axon Ivy Designer**.
 
 Starting from version 14, the Axon Ivy Designer is provided as a
-`VS Code Extension <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-14>`_.
+`VS Code extension <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-14>`_.
 This combines the general strengths of the Visual Studio Code IDE with 
 the specific functionality of the Axon Ivy Designer.
 
 This means that the Axon Ivy Designer setup consists of three parts:
 
 #. **VS Code IDE** - Managed independently of Axon Ivy. The platform where the Designer runs in.
-#. **The VS Code Extension "Axon Ivy PRO Designer 14"** - Supplied and managed by Axon Ivy, runs within VS Code. Supplies the UI for the user to manage, draw and visualize processes.
-#. **The Axon Ivy Engine** - Supplied by Axon Ivy, independent from the Designer. Is by default installed automatically by the Designer Extension. For more advanced setups with specific engine versions, refer to :ref:`designer-advanced-project-setup`
+#. **The VS Code extension "Axon Ivy PRO Designer 14"** - Supplied and managed by Axon Ivy, runs within VS Code. Supplies the UI for the user to manage, draw and visualize processes.
+#. **The Axon Ivy Engine** - Supplied by Axon Ivy, independent from the Designer. Is by default installed automatically by the Designer extension. For more advanced setups with specific engine versions, refer to :ref:`designer-advanced-project-setup`
 
 .. toctree::
    :maxdepth: 2
