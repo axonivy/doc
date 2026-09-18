@@ -12,3 +12,4 @@ Reference
    configuration/index
    project/index
    public-api/index
+   extension-api/index
