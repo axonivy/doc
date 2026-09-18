@@ -2,7 +2,7 @@
 
 Editors
 =======
-As explained in the :ref:`VS Code Editor Basics <designer-basics-editor>`, the VS Code Designer provides custom editors for various Axon Ivy filename patterns or file types.
+As explained in the :ref:`VS Code Editor Basics <designer-basics-editor>`, the Designer provides custom editors for various Axon Ivy filename patterns or file types.
 
 If a file with a matching filename or file type is opened, VS Code will open it by default in the associated editor.
 
@@ -23,6 +23,14 @@ The form editor lets you build UIs with drag-and-drop.
 It is linked to the filetype :code:`.f.json`.
 
 See :ref:`form-editor`.
+
+
+XHTML Editor
+------------
+The XHTML editor lets you edit your UIs built with Jakarta Faces or static XHTML.
+It is linked to the filetype :code:`.xhtml`.
+
+See :ref:`xhtml-editor`.
 
 
 Data Class Editor

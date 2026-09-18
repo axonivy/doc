@@ -31,7 +31,7 @@ To install a local product, you can execute the command :code:`Axon Ivy: Install
 
 
 
-Popular Market artifacts
+Popular Market Artifacts
 ------------------------
 
 **Axon Ivy Smart Workflow**

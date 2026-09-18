@@ -9,7 +9,7 @@ Advanced project setup
     This chapter is only relevant if you want to set up your VS Code extension with a non-default version.
     If you want to work with the newest default version of the Designer, you can skip this chapter and stick with 
 
-This chapter describes advanced projects setups when working with the VS Code Designer, for example using an older engine version where you need to switch the release train manually.
+This chapter describes advanced projects setups when working with the Designer, for example using an older engine version where you need to switch the release train manually.
 
 
 Why would you want to change release trains
