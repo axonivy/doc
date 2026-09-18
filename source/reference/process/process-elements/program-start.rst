@@ -45,8 +45,8 @@ Configuration Tab
 ~~~~~~~~~~~~~~~~~
 
 The custom editor UI provided by the implementation of 
-:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
-to configure its execution.
+:code:`ch.ivyteam.ivy.process.program.ui.ProgramEditorUi`
+allows to configure its execution.
 
 .. figure:: /_images/process-inscription/program-start-tab-configuration.png
    :alt: Configuration Tab

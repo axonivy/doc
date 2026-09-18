@@ -61,7 +61,7 @@ Configuration Tab
 ~~~~~~~~~~~~~~~~~
 
 The custom editor UI provided by the implementation of 
-:public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/extension/IProcessIntermediateEventBean.html>`
+:code:`ch.ivyteam.ivy.process.program.ui.ProgramEditorUi`
 allows to configure its execution.
 
 .. figure:: /_images/process-inscription/wait-intermediate-event-tab-configuration.png
