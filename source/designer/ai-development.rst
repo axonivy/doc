@@ -3,6 +3,8 @@ AI-assisted development
 
 Visual Studio Code and our Designer extension are a perfect match to create and edit Axon Ivy projects.
 
+<!-- screenshot: chat tools -->
+
 Prompting
 ~~~~~~~~~~
 
