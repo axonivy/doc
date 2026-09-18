@@ -1,0 +1,11 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "mvn verify": true
+  },
+  "chat.tools.urls.autoApprove": {
+    "https://json-schema.axonivy.com": {
+      "approveRequest": true,
+      "approveResponse": true
+    }
+  }
+}
