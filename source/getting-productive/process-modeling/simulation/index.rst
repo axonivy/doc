@@ -46,7 +46,7 @@ execution. It is then possible to inspect the execution history, to view
 the values of internal variables and evaluate user defined expressions
 without being interfered by the running execution. The execution has to be
 resumed by the user explicitly using the functionality of the
-:ref:`Debug View <debugger-debug-view>`.
+:ref:`designer-views-run-and-debug-view`.
 
 .. _process-element-breakpoints:
 
@@ -65,6 +65,10 @@ which you intend to set the breakpoint and click on the bug.
 
 **Disable a breakpoint**
 
-You can disable a specific breakpoint in the :ref:`debugger-debug-view` or by clicking
+You can disable a specific breakpoint in the :ref:`designer-views-run-and-debug-view` or by clicking
 on the breakpoint in the :ref:`process-editor`. It is also possible to disable all
-breakpoints in the :ref:`debugger-debug-view`. 
+breakpoints in the :ref:`designer-views-run-and-debug-view`. 
+
+
+.. note::
+    For more information about debugging in the Designer, see :ref:`debug`.

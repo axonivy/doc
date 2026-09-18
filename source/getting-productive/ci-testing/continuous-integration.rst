@@ -41,7 +41,7 @@ The :ref:`designer-guide-vscode` has Maven capabilities built-in, if you have th
 `Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed 
 (what should be the case if you have our extension installed).
 
-1. Open the :ref:`designer-maven-view`
+1. Open the :ref:`designer-views-maven-view`
 
 2. Open the context menu of the project by right clicking it
 

@@ -43,7 +43,7 @@ adding an Axon Ivy project dependency. The ``groupId``, ``artifactId`` and
 workspace are resolved from the configured Maven repositories.
 
 The Designer displays projects resolved from Maven repositories in the
-:ref:`designer-maven-view`. The :ref:`project-build-plugin` handles these
+:ref:`designer-views-maven-view`. The :ref:`project-build-plugin` handles these
 dependencies automatically during a Maven build.
 
 Maven libraries
