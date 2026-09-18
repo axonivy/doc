@@ -11,13 +11,14 @@ To install and use the Axon Ivy Designer:
 #. Check that your system meets the :ref:`system requirements
    <designer-system-requirements>`.
 #. `Download <https://code.visualstudio.com/download>`_ the latest VS Code IDE.
-#. Run VS Code.
+#. Start VS Code.
 #. Install the `Axon Ivy Designer Extension
    <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-14>`_
    from the VS Code Marketplace. Search for "Axon Ivy PRO Designer
    14" in the Extensions view and click :guilabel:`Install`. See
    `VS Code Extensions <https://code.visualstudio.com/docs/configure/extensions/extensions>`_
    for more information about installing and managing extensions.
+#. If you are new to the Axon Ivy platform, start with :ref:`getting-productive` to learn about the functionality of Axon Ivy.
 
 Notes & Tips
 -------------

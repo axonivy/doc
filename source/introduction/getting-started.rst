@@ -1,6 +1,9 @@
 Getting Started
 ***************
 
+If you are new to the Axon Ivy platform, we recommend starting with :ref:`getting-productive` before moving on to the Designer and Engine.
+This chapter introduces the key Axon Ivy concepts and terminology, helping you build an understanding of the platform and its capabilities.
+
 **Designer**
 
 The Axon Ivy Designer is the development environment where you can model, design, 
