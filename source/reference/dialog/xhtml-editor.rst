@@ -100,5 +100,5 @@ Multiple validators can be suppressed by separating them with commas:
 .. |xhtml-editor-hover| image:: /_images/vscode/editor-xhtml-hover.png
 .. |xhtml-editor-actions| image:: /_images/vscode/editor-xhtml-code-actions.png
 
-.. _Jakarta Faces: https://dev.axonivy.com/doc/14.0/en/getting-productive/user-interface/user-dialogs/html-dialogs.html
-.. _Layout: https://dev.axonivy.com/doc/14.0/en/getting-productive/user-interface/user-dialogs/html-dialog-view-types.html
+.. _Jakarta Faces: https://dev.axonivy.com/doc/15.1/en/getting-productive/user-interface/user-dialogs/html-dialogs.html
+.. _Layout: https://dev.axonivy.com/doc/15.1/en/getting-productive/user-interface/user-dialogs/html-dialog-view-types.html
