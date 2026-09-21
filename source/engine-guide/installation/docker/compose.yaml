@@ -1,6 +1,6 @@
 services:
   ivy:
-    image: axonivy/axonivy-engine:14.0    
+    image: axonivy/axonivy-engine:15.1    
     ports:
      - 8080:8080
     volumes:
