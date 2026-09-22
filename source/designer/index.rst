@@ -16,7 +16,7 @@ This means that the Designer setup consists of three parts:
 
 #. **VS Code IDE** - Managed independently of Axon Ivy. The platform where the Designer runs in.
 #. **The VS Code extension "Axon Ivy PRO Designer 14"** - The Designer itself, supplied and managed by Axon Ivy, runs within VS Code. It provides the UI for the user to manage, draw and visualize Axon Ivy processes.
-#. **The Axon Ivy Engine** - Supplied by Axon Ivy, independent from the Designer. Is by default installed automatically by the Designer extension. Refer to :ref:`engine-guide` for more information about the engine. For more advanced setups with specific engine versions, refer to :ref:`designer-advanced-project-setup`
+#. **The Axon Ivy Engine** - Supplied by Axon Ivy, independent from the Designer. Is by default installed automatically by the Designer extension. Refer to :ref:`engine-guide` for more information about the engine. For more advanced setups with specific engine versions, refer to :ref:`designer-advanced-setup`
 
 .. toctree::
    :maxdepth: 2

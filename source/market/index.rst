@@ -17,7 +17,7 @@ If you're not sure about how to execute a command, refer to the :ref:`Commands i
 If you want to browse the available extensions in more detail check our market website: `Axon Ivy Market <https://market.axonivy.com>`_
 
 
-Install a local artifact
+Install a Local artifact
 ------------------------
 Installing a market product locally lets you use Axon Ivy's guided, dependency-resolving installation mechanism from your own or an internal source instead of the public online market.
 

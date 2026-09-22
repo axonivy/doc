@@ -451,7 +451,7 @@ Miscellaneous
 **Switch Engine release train**
     :code:`Axon Ivy: Switch Engine release train`
 
-    Switches the Axon Ivy Engine release train. For advanced use only, refer to :ref:`designer-advanced-project-setup` for more information.
+    Switches the Axon Ivy Engine release train. For advanced use only, refer to :ref:`designer-advanced-setup` for more information.
 
 **Reveal Project in File System**
     :code:`Axon Ivy: Reveal Project in File System`

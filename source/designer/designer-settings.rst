@@ -32,7 +32,7 @@ Release Train
 ~~~~~~~~~~~~~~~~
 Advanced use only. This setting should be empty.
 
-Only set it, if you want to work with a specific extension or engine version, as described in :ref:`designer-advanced-project-setup`
+Only set it, if you want to work with a specific extension or engine version, as described in :ref:`designer-advanced-setup`
 
 
 Engine URL

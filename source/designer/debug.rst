@@ -6,7 +6,7 @@ Debugging
 This chapter explains how to debug your Axon Ivy processes.
 There are two things you can debug
 
-1. The Axon Ivy process itself. Inspect you process elements when simulating to understand your process.
+1. The Axon Ivy process itself. Inspect your process elements when simulating to understand the process.
 2. The Axon Ivy engine and the Java classes that are executed during your process. This means your own Java files as well as stepping into the engine code.
 
 
