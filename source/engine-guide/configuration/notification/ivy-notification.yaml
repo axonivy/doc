@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://json-schema.axonivy.com/ivy/13.2.7/ivy.json
+# yaml-language-server: $schema=https://json-schema.axonivy.com/14.0/ivy/ivy.json
 # sample ivy.yaml that configures the web channel
 SecuritySystems:
   default:
@@ -9,6 +9,9 @@ SecuritySystems:
       #Decision whether a mail notification should be sent to an absent user.
       #possible values are 'always', 'never' and 'noActiveSubstitute'
       NotifyAbsentUser: always
+      #Decision whether a notification should be sent to a permanent substitute.
+      #possible values are 'always' and 'onlyIfAbsent'
+      NotifyPermanentSubstitute: always
       Channels:
         # each channel has it's own identifier
         web:
