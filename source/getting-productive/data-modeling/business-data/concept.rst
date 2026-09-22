@@ -59,5 +59,5 @@ Business Data supports optimistic locking. It is possible to check if the
 current version is up to date and save only if there are differences. It is
 possible to update a value partially so that multiple participants can work on
 different parts of the same Business Data value. See the *Concurrent
-Modification* :ref:`WorkflowDemos projects <importing-demo-projects>` for a
+Modification* :ref:`WorkflowDemos projects <demo-projects>` for a
 practical example.

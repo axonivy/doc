@@ -67,7 +67,7 @@ tasks, then
    You can use CMS entries and workflow data in task names, as shown below:
    :code:`<%=ivy.cms.co("/TaskDescriptions/verifyRequest")%>: <%=in1.amount%> <%=ivy.cms.co("/Dialogs/procurementRequest/piecesOf")%>  '<%=in1.description%>' <%=ivy.cms.co("/Dialogs/procurementRequest/forTotal")%> <%=in1.totalPrice%><%=ivy.cms.co("/TaskDescriptions/currencySymbol")%>`
    to create the name :code:`Verify Request: 10 pieces of 'Apple' for a total of 10$`.
-   Find more examples in the :ref:`Workflow Demo <importing-demo-projects>` project.
+   Find more examples in the :ref:`Workflow Demo <demo-projects>` project.
 
 .. warning::
 

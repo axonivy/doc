@@ -29,7 +29,7 @@ lifecycle scope of the managed bean:
        // class body here
    }
 
-In the :ref:`HTMLDialogDemo Project <importing-demo-projects>` that is included in
+In the :ref:`HTMLDialogDemo Project <demo-projects>` that is included in
 the Axon Ivy Designer you find an example.
 
 Bean Validation (JSR 303)
@@ -82,7 +82,7 @@ message content from the :ref:`cms`. For example:
 
 There will always be validation requirements for which these standard
 annotation will not suffice. For these cases it is possible to create
-your own annotation. You find an example in the :ref:`HTMLDialogDemo Project <importing-demo-projects>`.
+your own annotation. You find an example in the :ref:`HTMLDialogDemo Project <demo-projects>`.
 
 ::
 

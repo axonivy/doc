@@ -31,7 +31,7 @@ The API on the Task level is identical.
 
 .. tip::
 
-   The project :ref:`WorkflowDemos <importing-demo-projects>` demonstrates the
+   The project :ref:`WorkflowDemos <demo-projects>` demonstrates the
    use of start, case, and task categorization. The case category serves to
    categorize the overall process (i.e.,Business Case). The task category serves
    to categorize a single unit of work, or a set of units of work. Because of

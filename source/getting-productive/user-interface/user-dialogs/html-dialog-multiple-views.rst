@@ -9,4 +9,4 @@ to enclose a complex user interaction in one HTML Dialog and abstract it from
 the business process.
 
 You find an example of a multi-view HTML Dialog in the :ref:`HTMLDialogDemos
-project <importing-demo-projects>`.
+project <demo-projects>`.

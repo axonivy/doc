@@ -41,5 +41,3 @@ Axon Ivy Archive, a pre-built project stored in a single ``*.iar`` file.
 
 For information about exporting and importing project archives, see the
 :ref:`designer-export-project` and :ref:`designer-import-project` commands.
-Imported archives can be viewed but not edited and do not have to be built or
-validated again in the workspace.

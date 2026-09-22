@@ -8,6 +8,44 @@ troubleshooting the Axon Ivy Designer. It is intended for both end users and IT
 administrators who need to ensure the Designer runs correctly, especially in
 corporate environments.
 
+.. note::
+
+  The Axon Ivy Designer Extension automatically installs the Java and Maven extensions to provide things like syntax highlighting in VS Code, but not a working Java and Maven installation itself. Therefore, you must make sure you have those two installed before starting the Designer.
+
+
+.. _designer-install-java:
+
+Java
+----
+
+The Axon Ivy Designer requires the Java Development Kit (JDK) with version 25 to be installed.
+
+To check if your system already has JDK 25 installed, run the following command from a terminal ::
+
+  > java --version
+  openjdk 25.0.3 2026-04-21 LTS
+  OpenJDK Runtime Environment Temurin-25.0.3+9 (build 25.0.3+9-LTS)
+  OpenJDK 64-Bit Server VM Temurin-25.0.3+9 (build 25.0.3+9-LTS, mixed mode, sharing)
+
+If the command returns ``Command 'java' not found`` or a major version older than 25, we recommend installing `Eclipse Temurin <https://adoptium.net/>`_.
+
+
+.. _designer-install-maven:
+
+Maven
+-----
+
+The Axon Ivy Designer requires the system to have Maven 3.9.x installed.
+
+To check if your system already has Maven 3.9.x installed, run the following command from a terminal ::
+
+  > mvn --version
+  Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+  Maven home: PATH/TO/MVN/INSTALLATION
+  Java version: 25.0.3, ....
+
+If the command returns ``Command 'mvn' not found`` or a different version than 3.9.x, follow the `Maven installation <https://maven.apache.org/install?utm_source=openai>`_
+
 .. _designer-install-user-permissions:
 
 User Permissions
@@ -107,7 +145,7 @@ Proxy settings also need to be configured at the JVM level. This is done by
 adding system properties to the ``jvm.options`` file located in the Engine
 directory.
 
-Locate the Engine downloaded to Visual Studio Code's global storage directory,
+Locate the Engine downloaded to VS Code's global storage directory,
 typically at
 ``%APPDATA%\Code\User\globalStorage\axonivy.vscode-designer-14\engines``
 (Windows) or
@@ -144,8 +182,7 @@ the corporate CA certificate must be imported into the JVM's trust store.
 To import a corporate CA certificate:
 
 #. Obtain the CA certificate file (e.g., ``corporate-ca.crt``).
-#. Locate the directory of the JRE used by Maven and to start the Engine.
-   Usually, where the environment variable ``JAVA_HOME`` points to.
+#. Locate the directory of the JRE used by Maven and to start the Engine. This is usually where the environment variable ``JAVA_HOME`` points to.
 #. Import the certificate using the ``keytool`` command:
 
    .. code-block:: text

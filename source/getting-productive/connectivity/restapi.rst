@@ -23,7 +23,7 @@ To call a remote REST service, you have to define it in the
 :ref:`rest-clients-configuration`. After that, you can use a
 :ref:`process-element-rest-client-activity` to call the REST service.
 
-Find examples in the :ref:`ConnectivityDemos <importing-demo-projects>` project.
+Find examples in the :ref:`ConnectivityDemos <demo-projects>` project.
 
 
 .. _integration-rest-provider:
@@ -61,7 +61,7 @@ Further information is available in the `JAX-RS API Specification
 <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__.
 
 Many example REST services are available in the :ref:`ConnectivityDemos
-<importing-demo-projects>`.
+<demo-projects>`.
 
 
 .. _integration-rest-api-spec:
@@ -156,7 +156,7 @@ security annotations headers:
 
 You can review the security annotations in the demo project :link-url:`Secure
 Service <demos-connect-secure-service-java>` within the :ref:`ConnectivityDemos
-<importing-demo-projects>`.
+<demo-projects>`.
 
 CSRF Protection
 ^^^^^^^^^^^^^^^
