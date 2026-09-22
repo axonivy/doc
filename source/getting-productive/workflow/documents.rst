@@ -48,14 +48,14 @@ Look up a document by its path or list all documents in a context.
 .. code-block:: java
 
     IDocument invoice = ivy.case.documents().get("invoices/2026-001.pdf");
-    String text = ivy.wf.documents().get(new Path("notes/processing.txt"))
+    String text = ivy.wf.documents().get(Path.of("notes/processing.txt"))
         .read()
         .useEncoding("UTF-8")
         .asString();
 
     List<IDocument> caseDocuments = ivy.case.documents().getAll();
     List<IDocument> invoices = ivy.case.documents()
-        .getAllBelow(new Path("invoices"));
+        .getAllBelow(Path.of("invoices"));
 
 
 Moving and deleting documents
@@ -65,7 +65,7 @@ Move a document to a new path or delete it when it is no longer needed.
 
 .. code-block:: java
 
-	 ivy.case.documents().move(invoice, new Path("invoices/processed/2026-001.pdf"));
+	 ivy.case.documents().move(invoice, Path.of("invoices/processed/2026-001.pdf"));
 	 ivy.case.documents().delete(invoice);
 
 For long-running processes, keep only the documents that are required by the
