@@ -29,6 +29,11 @@ There is a global option to disable notifications if a user is absent; if no pro
 - Does not send a notification if the user is absent: :code:`never`
 - Send a notification only if the absent user does not have an active substitute: :code:`noActiveSubstitute`
 
+Permanent substitutes can be configured independently from absent users:
+
+- Send a notification to permanent substitutes regardless of the user's absence: :code:`always`
+- Send a notification to permanent substitutes only if the user is absent: :code:`onlyIfAbsent`
+
 .. rubric:: Events
 
 You can configure which events are sent over which channels. If nothing is
