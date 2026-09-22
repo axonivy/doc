@@ -10,7 +10,7 @@ corporate environments.
 
 .. note::
 
-  The Axon Ivy Designer Extension automatically installs the Java and Maven extensions to provide things like syntax highlighting in VS Code, but not a working Java and Maven installation itself. Therefore, you must make sure you have those two installed before starting the Designer.
+  The Axon Ivy Designer Extension automatically installs the Java and Maven extensions to provide things like syntax highlighting in VS Code, but not a working Java and Maven installation itself. Therefore, it should make sure that you have those two installed before starting the Designer.
 
 
 .. _designer-install-java:
@@ -18,7 +18,8 @@ corporate environments.
 Java
 ----
 
-The Axon Ivy Designer requires the Java Development Kit (JDK) with version 25 to be installed.
+The Axon Ivy Designer depends on the Java extension to work. The Java extension is automatically installed with the Designer.
+The Designer requires the Java Development Kit (JDK) to have version 25.
 
 To check if your system already has JDK 25 installed, run the following command from a terminal ::
 
@@ -29,13 +30,34 @@ To check if your system already has JDK 25 installed, run the following command 
 
 If the command returns ``Command 'java' not found`` or a major version older than 25, we recommend installing `Eclipse Temurin <https://adoptium.net/>`_.
 
+After the installation of JDK 25, you must configure the path in the Java extension.
+There are two ways to do so, for more details refer to the `Java extension documentation <https://marketplace.visualstudio.com/items?itemName=redhat.java&ssr=false>`_ :
+
+- Either, set the :code:`JAVA_HOME` environment variable. To check this, open a terminal an print the environment variable
+  
+  .. code-block:: bash
+    
+    > echo $JAVA_HOME
+    /path/to/the/java/installation/
+
+  This should normally be set automatically when you install the JDK.
+
+- Or you can configure the path to the JDK within VS Code with a :ref:`VS Code Setting <designer-basics-settings>`. To do so, specify the path to your Java installation in :code:`java.jdt.ls.java.home` either in the workspace or user settings.
+
+
+
 
 .. _designer-install-maven:
 
 Maven
 -----
 
-The Axon Ivy Designer requires the system to have Maven 3.9.x installed.
+To use full functionality of the Axon Ivy Designer, the system should have Maven 3.9.x installed.
+
+.. note::
+  Strictly speaking, the Designer works without a Maven 3.9.x installation, but will report errors on a few operations.
+  It is therefore strictly recommended to properly set up a Maven installation.
+  The extension will check the installation at startup and warn you accordingly.
 
 To check if your system already has Maven 3.9.x installed, run the following command from a terminal ::
 
@@ -45,6 +67,9 @@ To check if your system already has Maven 3.9.x installed, run the following com
   Java version: 25.0.3, ....
 
 If the command returns ``Command 'mvn' not found`` or a different version than 3.9.x, follow the `Maven installation <https://maven.apache.org/install?utm_source=openai>`_
+
+
+
 
 .. _designer-install-user-permissions:
 
