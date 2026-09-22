@@ -292,7 +292,7 @@ Send a signal with a custom signal code using the following IvyScript code:
    ivy.wf.signals().send("order:canceled:"+in.order.id);
 
    // send signal with signal data
-   ivy.wf.signals().send(new SignalCode("user:created"), in.employee.name);
+   ivy.wf.signals().send(SignalCode.of("user:created"), in.employee.name);
 
 .. tip::
 
