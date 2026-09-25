@@ -7406,8 +7406,8 @@ msgstr "**ヘルスチェック** ビューには、すべてのヘルスチェ�
 #: ../../source/getting-productive/ci-testing/process-testing.rst:254
 #: ../../source/getting-productive/user-interface/user-dialogs/html-dialog-workflow.rst:2
 #: ../../source/getting-productive/workflow/index.rst:4
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:505
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:351
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:521
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:368
 msgid "Workflow"
 msgstr "Workflow"
 
@@ -9660,8 +9660,8 @@ msgid "These generic elements are:"
 msgstr "以下のジェネリック要素があります。"
 
 #: ../../source/getting-productive/connectivity/process-extensions.rst:130
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:643
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:408
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:659
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:425
 msgid ":ref:`process-element-program-start`"
 msgstr ":ref:`process-element-program-start`"
 
@@ -9671,8 +9671,8 @@ msgstr "（外部）イベントの発生時に新しいプロセスの開始を
 
 #: ../../source/getting-productive/connectivity/process-extensions.rst:133
 #: ../../source/getting-productive/process-modeling/process-modeling/index.rst:55
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:645
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:410
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:661
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:427
 msgid ":ref:`process-element-wait-program-intermediate-event`"
 msgstr ":ref:`process-element-wait-program-intermediate-event`"
 
@@ -9681,8 +9681,8 @@ msgid "Interrupts process execution until an (external) event occurs."
 msgstr "（外部）イベントが発生するまでプロセスの実行を中断します。"
 
 #: ../../source/getting-productive/connectivity/process-extensions.rst:136
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:644
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:409
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:660
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:426
 msgid ":ref:`process-element-pi`"
 msgstr ":ref:`process-element-pi`"
 
@@ -21967,7 +21967,8 @@ msgid "Deprecated Features"
 msgstr "非推奨の機能"
 
 #: ../../source/technical-info/migration/deprecation.rst:16
-msgid "Deprecated features are documented on our :dev-url:`Deprecation and Removal page </features/deprecation>`"
+#, fuzzy
+msgid "Deprecated features are documented on our :dev-url:`Deprecation and Removal page </deprecation>`"
 msgstr "非推奨の機能は:dev-url:`「非推奨と削除」ページ</features/deprecation>` 記載されています。"
 
 #: ../../source/technical-info/migration/deprecation.rst:19
@@ -22300,13 +22301,15 @@ msgid "We now include the Axon Ivy Public API as Maven dependency in the project
 msgstr "プロジェクトの :code:`pom.xml` ファイルに Axon Ivy Public API を Maven 依存関係として含められるようになりました。これを実行するには、POM に :code:`ivy-project-parent` を親として追加し、 :code:`ivy-api` 依存関係を挿入して更新します。このセットアップにより、Eclipse ベースの PRO Designer 以外の環境（ Visual Studio Code など ）で、Axon Ivy プロジェクトの Java 部分を開発できるようになります。この変換は、プロジェクトの :code:`pom.xml` に親が定義されていない場合にのみ発生します。現在のところ、Eclipse ベースの PRO Designer で引き続き開発する場合、この Maven 依存関係は必要ありません。"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:31
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:533
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:549
 msgid "Multiple responsibles for a task and multiple roles for process starts"
 msgstr "1つのタスクに対する複数の担当と、プロセス開始に対する複数のロール"
 
 #: ../../source/technical-info/migration/_tagLegend.rst:29
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:33
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:535
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:501
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:551
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:347
 msgid "|tag-project-changed|"
 msgstr "|tag-project-changed|"
 
@@ -22315,32 +22318,32 @@ msgid "tag-project-changed"
 msgstr "tag-project-changed"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:35
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:537
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:553
 msgid "It's now possible to assign multiple responsibles to a task. There is no need to create dynamic roles anymore. You can simply assign a task to different roles if needed. You will notice that you can configure on the task tab multiple responsibles e.g. :ref:`Task Tab <process-element-tab-task>`. The same is also true for the expiry task configuration."
 msgstr "1つのタスクに複数の担当を割り当てることが可能になりました。動的ロールを作成する必要はもうありません。必要に応じて、1つのタスクを複数のロールに割り当てることができます。タスクタブでは、複数の担当を設定できることがわかります。（例：:ref:`Task Tab <process-element-tab-task>`）。期限切れタスクの設定についても同様です。"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:41
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:543
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:559
 msgid "All APIs have been deprecated, which handles only one responsible. They were previously named :code:`activator`, therefore we have streamlined the naming to :code:`responsible` from deep in the core to the user interface, everywhere. Use the new APIs:"
 msgstr "1名の担当しか処理しないすべてのAPIは非推奨となりました。これらは以前、 :code:`activator` という名称でしたが、コアの深い部分からユーザーインターフェイスに至るまで、一貫して :code:`responsible` という名称に統一しました。新しいAPIを使用してください："
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:46
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:548
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:564
 msgid ":code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`"
 msgstr ":code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:47
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:549
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:565
 msgid ":code:`ch.ivyteam.ivy.workflow.ITask.expiry()`"
 msgstr ":code:`ch.ivyteam.ivy.workflow.ITask.expiry()`"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:49
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:551
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:567
 msgid "The same applies to process starts. It's now possible to define multiple roles on a process start. You will notice that you can configure on the request tab of a start multiple roles e.g. :ref:`Start Event <process-element-start-request-tab-request>`."
 msgstr "プロセス開始についても同様です。プロセス開始に複数のロールを定義できるようになりました。開始イベントのリクエストタブで、複数のロールを設定できることがわかります（例：:ref:`Start Event <process-element-start-request-tab-request>`）。"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:56
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:680
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:696
 msgid "Support for Case Scope Override removed"
 msgstr "ケースの範囲のオーバーライドの削除"
 
@@ -22348,9 +22351,9 @@ msgstr "ケースの範囲のオーバーライドの削除"
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:58
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:67
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:76
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:682
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:690
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:699
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:698
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:706
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:715
 msgid "|tag-project-removed|"
 msgstr "|tag-project-removed|"
 
@@ -22359,38 +22362,38 @@ msgid "tag-project-removed"
 msgstr "tag-project-removed"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:60
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:684
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:700
 msgid "Case scope overriding has been deprecated in LTS 8.0 and has now been removed. Use :ref:`strict_overriding` if you rely on case scope overriding."
 msgstr "ケースの範囲のオーバーライドはLTS 8.0で非推奨となり、現在は削除されています。ケースの範囲のオーバーライドに依存している場合は、 :ref:`strict_overriding` を使用してください。"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:65
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:688
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:704
 msgid "Removal of Serenity PrimeFaces themes"
 msgstr "Serenity PrimeFaces テーマの削除"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:69
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:692
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:708
 msgid "We removed the Serenity themes, including the :code:`serenity-ivy` theme. Please use the :ref:`freya-ivy <freya-themes>` theme instead."
 msgstr "Serenityテーマ（:code:`serenity-ivy` テーマを含む）を削除しました。代わりに :ref:`freya-ivy <freya-themes>` テーマを使用してください。"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:74
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:697
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:713
 msgid "Removal of session role"
 msgstr "セッションロールの削除"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:78
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:701
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:717
 msgid "It was possible to assign a role directly to a session. This feature was intended primarily for unauthenticated sessions. In authenticated sessions (i.e., when a user is logged in), roles can and should be assigned directly to the user. The original idea behind this feature was to support edge cases where developers implemented their own authentication mechanisms—bypassing the platform’s built-in user management—and needed to assign a role to the session manually. This was made possible via the :code:`ISession#assignRole` method. Roles are now only supported for authenticated sessions backed by a user who has roles assigned, which means you now need to assign roles to a user."
 msgstr "以前は、ロールをセッションに直接割り当てることが可能でした。この機能は主に未認証セッション向けに設計されていました。認証済みセッション（つまりユーザーがログインしている状態）では、ロールはユーザーに直接割り当てることが可能であり、またそうあるべきです。この機能の本来の目的は、開発者がプラットフォームの組み込みユーザー管理を迂回して独自の認証メカニズムを実装し、セッションに手動でロールを割り当てる必要があるというような例外的なケースをサポートすることにありました。これを可能にしていたのが :code:`ISession#assignRole` メソッドでした。現在、ロールはユーザーにロールが割り当てられた認証済みセッションでのみサポートされます。つまり、今後は複数のロールを1人のユーザーに割り当てる必要があります。"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:90
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:659
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:675
 msgid "Removal of Server Control Center for Windows"
 msgstr "Server Control Center for Windows の削除"
 
 #: ../../source/technical-info/migration/_tagLegend.rst:19
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:92
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:661
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:677
 msgid "|tag-ops-removed|"
 msgstr "|tag-ops-removed|"
 
@@ -22399,7 +22402,7 @@ msgid "tag-ops-removed"
 msgstr "tag-ops-removed"
 
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:94
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:663
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:679
 msgid "The Server Control Center for Windows has been removed. Prefer using Docker for Windows to run the Axon Ivy Engine. If you still want to run the Axon Ivy Engine on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe <engine-service>` to register the Axon Ivy Engine as a Windows Service."
 msgstr "Server Control Center for Windows は削除されました。Docker for Windows を使用して Axon Ivy Engine を実行することを推奨します。Docker を使用せずに Windows 上で Axon Ivy Engine を実行したい場合は、 :ref:`AxonIvyEngineService.exe<engine-service>` を使用して、Axon Ivy Engine を Windows サービスとして登録できます。"
 
@@ -22416,9 +22419,9 @@ msgstr "Runtime ロガー名を :code:`runtime.[アプリ名].[プロジェク�
 #: ../../source/technical-info/migration/migration-notes-120-131.rst:113
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:175
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:353
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:630
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:646
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:207
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:397
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:414
 msgid "**Detail**"
 msgstr "**詳細**"
 
@@ -22464,7 +22467,7 @@ msgstr "この移行により、エンジンのオペレーションの一部が
 
 #: ../../source/technical-info/migration/_tagLegend.rst:13
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:274
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:671
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:687
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:91
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:291
 msgid "|tag-ops-deprecated|"
@@ -22848,18 +22851,18 @@ msgstr "Ivy プロジェクトの変更点"
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:300
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:316
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:452
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:500
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:559
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:580
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:612
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:516
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:575
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:596
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:628
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:22
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:42
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:63
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:232
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:301
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:318
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:346
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:381
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:363
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:398
 msgid "|tag-project-changed| |tag-project-auto-convert|"
 msgstr "|tag-project-changed| |tag-project-auto-convert|"
 
@@ -23055,149 +23058,165 @@ msgstr ""
 msgid "We now include the Axon Ivy Public API as Maven dependency in the project's :code:`pom.xml` file. To do this, we update the POM by adding :code:`ivy-project-parent` as parent and inserting the :code:`ivy-api` dependency. This setup allows you to develop the Java part of an Axon Ivy project in any IDE that supports Maven - for example with Visual Studio Code. The conversion only takes place if no parent is defined in the :code:`pom.xml` of the project."
 msgstr "Axon Ivy Public API をプロジェクトの :code:`pom.xml` ファイルに Maven 依存関係として含めるようになりました。これを行うには、POM に :code:`ivy-project-parent` を親として追加し、:code:`ivy-api` 依存関係を挿入します。これにより、Visual Studio Code など、Maven に対応した任意の IDE で Axon Ivy プロジェクトの Java 部分を開発できます。この変換は、プロジェクトの :code:`pom.xml` に親が定義されていない場合にのみ行われます。"
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:498
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:344
-msgid "Project Structure Improvements"
-msgstr ""
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:499
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:345
+#, fuzzy
+msgid "Axon Ivy Extension API"
+msgstr "Java 拡張 API"
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:502
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:348
-msgid "Some folders have been moved or renamed to improve the project structure."
-msgstr ""
-
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:507
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:353
-msgid "Renamed :code:`processes` folder to :code:`process`."
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:503
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:349
+msgid "The available API for projects has been reduced. By default there are fewer third-party dependencies. Additionally, some technical Public API has been migrated to the new :doc:`Extension API <../../reference/extension-api/index>`."
 msgstr ""
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:508
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:354
-msgid "Renamed :code:`dataclasses` folder to :code:`dataclass`."
+msgid "If you have compile errors after migrating to 14, please check our extension APIs. The idea is that you opt-in to using the new Extension APIs where necessary, without getting the overhead of it in most projects, that do not require it."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:509
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:355
-msgid "Renamed :code:`src_hd` folder to :code:`dialog`."
-msgstr ""
-
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:511
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:357
-msgid "This change improves the consistency of folder names and better reflects their content."
-msgstr ""
-
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:515
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:514
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:361
-msgid "Generated Source Files"
-msgstr "［一般］ > ［アーカイブファイル］"
-
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:517
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:363
-msgid "The following folders containing generated source files have been moved to the :code:`target` folder:"
+msgid "Project Structure Improvements"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:520
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:366
-msgid ":code:`libs/mvn-deps`"
-msgstr ""
-
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:521
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:367
-msgid ":code:`src_generated/dataclass`"
-msgstr ""
-
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:522
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:368
-msgid ":code:`src_generated/repo`"
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:518
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:365
+msgid "Some folders have been moved or renamed to improve the project structure."
 msgstr ""
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:523
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:369
-msgid ":code:`src_generated/wsprocess`"
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:370
+msgid "Renamed :code:`processes` folder to :code:`process`."
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:524
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:371
+msgid "Renamed :code:`dataclasses` folder to :code:`dataclass`."
 msgstr ""
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:525
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:371
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:372
+msgid "Renamed :code:`src_hd` folder to :code:`dialog`."
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:527
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:374
+msgid "This change improves the consistency of folder names and better reflects their content."
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:531
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:378
+msgid "Generated Source Files"
+msgstr "［一般］ > ［アーカイブファイル］"
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:533
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:380
+msgid "The following folders containing generated source files have been moved to the :code:`target` folder:"
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:536
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:383
+msgid ":code:`libs/mvn-deps`"
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:537
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:384
+msgid ":code:`src_generated/dataclass`"
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:538
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:385
+msgid ":code:`src_generated/repo`"
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:539
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:386
+msgid ":code:`src_generated/wsprocess`"
+msgstr ""
+
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:541
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:388
 msgid "These folders contain files that are generated during the build process by the `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ and should not be modified directly. Therefore, they have been moved to the :code:`target` folder to indicate that they are generated files clearly and to avoid confusion with other source files. The corresponding entries in the :code:`.gitignore` file have been removed."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:557
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:573
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:299
 msgid "Remove UUID from Rest Client and GUID from Web Service Client"
 msgstr "WebサービスクライアントからUUIDを削除"
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:561
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:577
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:303
 msgid "We have removed the UUID from the Rest Client and the GUID from the Web Service Client. This means we no longer use these IDs in your processes to reference the clients. Instead we use the YAML key of the client. This makes the client easier to identify and copy between projects. We do an automatic project conversion, but it can happen that we cannot find the client if it is defined in a different project. In this case, you need to manually update the client reference in your processes to use the YAML key of the client. The old ID is still available in the YAML configuration prefixed with `Legacy`, but you can remove this after you have migrated all your projects."
 msgstr "UUIDは、WebサービスクライアントのRestクライアントとGUIDから削除しました。 つまり、クライアントを参照するために、これらの ID をプロセスで使用しなくなりました。 代わりに、クライアントのYAMLキーを使用します。 これにより、クライアントはプロジェクト間で識別し、コピーしやすくなります。 自動プロジェクト変換を行いますが、異なるプロジェクトで定義されている場合、クライアントが見つからなくなる可能性があります。 この場合、クライアントのYAMLキーを使用するプロセスでクライアントの参照を手動で更新する必要があります。 古い ID は、`Legacy` と接頭辞した YAML 構成ではまだ利用できますが、すべてのプロジェクトを移行した後にこれを削除できます."
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:571
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:587
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:311
 msgid "We also deprecated the :public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPI, please use :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` instead."
 msgstr "また、:public-api:`ivy.rest.client(UUID) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.util.UUID)>` PublicAPIを廃止し、代わりに :public-api:`ivy.rest.client(String) </ch/ivyteam/ivy/rest/client/IRestClientContext.html#client(java.lang.String)>` を使用してください."
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:578
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:594
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:316
 msgid "Removal of the :code:`.classpath` File"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:582
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:598
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:320
 msgid "The :code:`.classpath` file is no longer part of the project. Previously, the :code:`.classpath` file was used to reference local JAR files that were not available from a remote Maven repository. These JARs were added to the project's classpath for both design time and runtime. It also contained references to generated REST and web service client JARs. During automatic project conversion, generated client JARs are handled automatically. Specifically, the generated :code:`cxfClient_*.jar` and :code:`jaxRsClient_*.jar` files are unpacked into their corresponding :code:`src_generated` directories as part of the conversion process. If you have manually added additional local JAR references to the :code:`.classpath` file, you must declare them as Maven system-scoped dependencies to make those JARs available on the project's classpath."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:594
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:610
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:329
 msgid "Example of a system-scoped dependency:"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:606
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:622
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:341
 msgid "`For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:610
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:379
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:626
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:396
 msgid "Program Elements replace IBpmnElementExtensions"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:614
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:383
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:630
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:400
 msgid "We streamlined how to implement custom behavior for process elements. Program Elements can now provide a custom icon and can also appear in the :ref:`Extension <process-element-extension-item>` group of the process editor toolbar. Therefore, we removed the previous :code:`IBpmnElementExtension` interface and its infrastructure completely, which was used to contribute the icon and process-editor integration behavior."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:621
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:389
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:637
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:406
 msgid "You are affected by this change if you run your solution with an extension in the :code:`dropin` directory that implements the :code:`IBpmnElementExtension` interface."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:634
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:401
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:650
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:418
 msgid "If you have used `IBpmnElementExtension` elements in your project, the project-migration tool will automatically convert occurrences of these elements into the new Program Element infrastructure. However, the execution behavior of these elements is not converted automatically. You need to implement the new Program Element interface and configure it on the corresponding element."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:641
-#: ../../source/technical-info/migration/migration-notes-132-140.rst:406
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:657
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:423
 msgid "For implementation details, see the Program Elements reference:"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:650
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:666
 msgid "Deprecation and Removals"
 msgstr "非推奨化と削除"
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:653
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:669
 msgid "Removal of Eclipse-Based Axon Ivy Designer"
 msgstr "Eclipse ベースの Axon Ivy Designer の削除"
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:655
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:671
 msgid "The Axon Ivy Designer is now available as a `VS Code extension <https://marketplace.visualstudio.com/items?itemName=axonivy.vscode-designer-14>`_."
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:669
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:685
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:289
 msgid "NTLM Authentication for REST and SOAP Web Service Client Connectors"
 msgstr ""
 
-#: ../../source/technical-info/migration/migration-notes-120-140.rst:673
+#: ../../source/technical-info/migration/migration-notes-120-140.rst:689
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:293
 msgid "NTLM Authentication for REST and SOAP Web Service clients is deprecated and will be removed in a future version. This is because NTLM support in the library Apache HTTP Client 5 was also deprecated and is no longer actively maintained. Microsoft recommends using more modern and secure authentication methods such as Basic or Digest Authentication combined with TLS."
 msgstr ""
