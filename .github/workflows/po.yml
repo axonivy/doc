@@ -14,14 +14,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7
+    - name: Resolve documentation version
+      run: |
+        version=dev
+        branch_version=master
+        if [[ "$GITHUB_REF_NAME" == release/* ]]; then
+          version="${GITHUB_REF_NAME##*/}"
+          branch_version="$version"
+        fi
+        echo "VERSION=$version" >> "$GITHUB_ENV"
+        echo "BRANCH_VERSION=$branch_version" >> "$GITHUB_ENV"
     - name: POT Templates
       run: | 
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make \
-          gettext BASEDIR=/doc GETTEXT_COMPACT=user-guide
+          gettext BASEDIR=/doc VERSION="$VERSION" BRANCH_VERSION="$BRANCH_VERSION" GETTEXT_COMPACT=user-guide
     - name: Update PO Languages
       run: |
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make\
-          generatePO BASEDIR=/doc LOCALEDIR=/doc/locale LANGUAGE=ja O="--line-width -1"
+          generatePO BASEDIR=/doc VERSION="$VERSION" BRANCH_VERSION="$BRANCH_VERSION" LOCALEDIR=/doc/locale LANGUAGE=ja O="--line-width -1"
     - name: Locale Diff
       id: locale-diff
       run: |
