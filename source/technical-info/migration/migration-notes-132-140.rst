@@ -340,6 +340,23 @@ Example of a system-scoped dependency:
 
 `For more information, see the Maven documentation on system dependencies <https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#system-dependencies>`_
 
+
+Axon Ivy Extension API
+******************************
+
+|tag-project-changed|
+
+The available API for projects has been reduced. 
+By default there are fewer third-party dependencies.
+Additionally, some technical Public API has been 
+migrated to the new :doc:`Extension API <../../reference/extension-api/index>`.
+
+If you have compile errors after migrating to 14, please check our extension APIs.
+The idea is that you opt-in to using the new Extension APIs where necessary,
+without getting the overhead of it in most projects, that do not require it.
+
+
+
 Project Structure Improvements
 ******************************
 
