@@ -13,7 +13,7 @@ Public APIs or features are no longer available.
 Deprecated Features
 ...................
 
-Deprecated features are documented on our :dev-url:`Deprecation and Removal page </features/deprecation>`
+Deprecated features are documented on our :dev-url:`Deprecation and Removal page </deprecation>`
 
 Deprecated Public API
 .....................
