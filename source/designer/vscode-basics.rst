@@ -43,7 +43,7 @@ and typing ``>``.
 In the Command Palette, you can enter a search string to find matching commands.
 To see Axon Ivy-related commands, for example, type ``Axon Ivy:`` to display commands contributed by the Designer extension.
 
-.. figure:: /_images/designer/vscode-basics/commandpalette_axonivy.png
+.. figure:: /_images/vscode/command-palette.png
     :alt: Command Palette
 
     Command Palette
@@ -71,7 +71,7 @@ Apart from error and success messages, the notification often offers additional 
 
 By default, notifications vanish after some time if not dismissed manually. You can bring up the full list by running the command :code:`Notifications: Show Notifications`
 
-.. figure:: /_images/designer/vscode-basics/notifications_axonivy.png
+.. figure:: /_images/vscode/notifications.png
 
 **Status Bar**
 
@@ -82,7 +82,7 @@ The Axon Ivy extension contributes its own status bar.
 Hovering over the status bar will display information regarding the state of the extension and the engine it is connected to.
 Clicking it will open a context menu with different commands and options.
 
-.. figure:: /_images/designer/vscode-basics/statusbar_axonivy.png
+.. figure:: /_images/vscode/status-bar.png
     :alt: Axon Ivy status bar at the bottom of the window
 
     Axon Ivy status bar at the bottom of the window
@@ -111,7 +111,7 @@ You can open the Settings UI by pressing ``Ctrl+,`` or by opening the Command Pa
 
 You can switch to the Workspace settings by clicking the :code:`Workspace` tab or directly by executing the command :code:`Preferences: Open Workspace Settings (UI)`
 
-.. figure:: /_images/designer/vscode-basics/settings_workspace.png
+.. figure:: /_images/vscode/settings.png
     :alt: Switch to the **Workspace** tab.
 
     Switch to the **Workspace** tab.
@@ -130,7 +130,7 @@ The reason for this is, that you don't want to have more extensions installed th
 
 Follow the VS Code docs above on how to create a profile. A very simple Axon Ivy profile would look like this:
 
-.. figure:: /_images/designer/vscode-basics/profiles_axonivy.png
+.. figure:: /_images/vscode/profiles.png
     :alt: A simple Axon Ivy profile with the minimum of extensions required
 
     A simple Axon Ivy profile with the minimum of extensions required
@@ -156,7 +156,7 @@ in the associated editor by default.
 For example, the Designer provides, among others, a specialized :ref:`designer-editors-process`
 for ``.p.json`` files that displays a graphical view of an Axon Ivy process.
 
-.. figure:: /_images/designer/vscode-basics/editor_axonivy.png
+.. figure:: /_images/vscode/editor-process.png
     :alt: Double-clicking ``BusinessProcess.p.json`` opens the graphical Process Editor.
 
     Double clicking ``BusinessProcess.p.json`` opens the graphical Process Editor.
@@ -183,7 +183,7 @@ Users can interact with the entries to trigger actions or open related resources
 The Axon Ivy Designer contributes its own **Axon Ivy Projects** tree view, which displays all Axon Ivy projects
 in the currently open workspace.
 
-.. figure:: /_images/designer/vscode-basics/treeview_axonivy.png
+.. figure:: /_images/vscode/axonivy-tree-view.png
     :alt: The Axon Ivy Projects tree view
 
     The Axon Ivy Projects tree view
