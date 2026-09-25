@@ -20,7 +20,7 @@ jobs:
         branch_version=master
         if [[ "$GITHUB_REF_NAME" == release/* ]]; then
           version="${GITHUB_REF_NAME##*/}"
-          branch_version="$version"
+          branch_version="$GITHUB_REF_NAME"
         fi
         echo "VERSION=$version" >> "$GITHUB_ENV"
         echo "BRANCH_VERSION=$branch_version" >> "$GITHUB_ENV"
