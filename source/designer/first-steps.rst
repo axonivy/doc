@@ -14,7 +14,7 @@ To bring up the VS Code extension view, you can either
 #. Click the extension icon in the activity bar on the far left.
 #. Open the Command Palette via ``Ctrl+Shift+P`` and search for the command ``View: Show Extensions``.
 
-.. figure:: /_images/designer/first-steps/start_extension_installed.png
+.. figure:: /_images/vscode/extensions.png
     :alt: Axon Ivy extension is installed in the extension view
 
     Axon Ivy extension is installed in the extension view
@@ -25,7 +25,7 @@ Open a Workspace
 
 After starting VS Code, the window will probably look similar to this:
 
-.. figure:: /_images/designer/first-steps/start_screen.png
+.. figure:: /_images/vscode/empty-workspace.png
     :alt: VS Code without an open workspace.
 
     VS Code without an open workspace.
@@ -43,7 +43,7 @@ At this point, there is still no Axon Ivy project in the workspace, but the exte
 This is shown in the ``Output`` tab.
 You are now ready to create an Axon Ivy project.
 
-.. figure:: /_images/designer/first-steps/start_open_workspace.png
+.. figure:: /_images/vscode/empty-project.png
     :alt: Open workspace without an Axon Ivy project.
 
     Open workspace without an Axon Ivy project.
@@ -56,7 +56,7 @@ You can now create your first Axon Ivy project within the open workspace. To do 
 This will open a dialog in the top middle. Enter a name and press enter.
 For steps 2 and 3 of the dialog, accept the proposed default namespace and group ID by pressing enter twice.
 
-.. figure:: /_images/designer/first-steps/start_first_project.png
+.. figure:: /_images/vscode/new-project.png
     :alt: Creating an Axon Ivy project will add it to the workspace.
 
     Creating an Axon Ivy project will add it to the workspace.
