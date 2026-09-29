@@ -22040,7 +22040,7 @@ msgstr ":dev-url:`/download` でリリーストレインと一致する最新バ
 
 #: ../../source/technical-info/migration/hotfix/linux.rst:10
 #: ../../source/technical-info/migration/hotfix/windows.rst:11
-#: ../../source/technical-info/migration/major/docker.rst:16
+#: ../../source/technical-info/migration/major/docker.rst:21
 #: ../../source/technical-info/migration/major/linux.rst:13
 #: ../../source/technical-info/migration/major/windows.rst:13
 msgid "Stop the running Axon Ivy Engine instance."
@@ -22108,13 +22108,17 @@ msgstr ""
 msgid "Docker's infrastructure enables you to automate various kinds of infrastructure setups. Consequently, the kind of major migration steps are various too and highly dependent on your concrete setup. However, here are the major steps to do when migrating a docker based Axon Ivy Engine to another major version."
 msgstr "Docker のインフラストラクチャでは、さまざまなインフラストラクチャのセットアップを自動化できます。そのため、主な移行手順もさまざまで、実際のセットアップに大きく依存します。ここでは、Docker ベースの Axon Ivy Engine を別のメジャーバージョンに移行する際の主な手順を紹介します。"
 
-#: ../../source/technical-info/migration/major/docker.rst:13
+#: ../../source/technical-info/migration/major/docker.rst:12
+msgid "All changes to the official Docker images are documented in the `CHANGELOG <https://github.com/axonivy/docker-image/blob/master/CHANGELOG.md>`_. In particular, changes to paths or volumes are important to ensure a smooth migration process."
+msgstr ""
+
+#: ../../source/technical-info/migration/major/docker.rst:18
 #: ../../source/technical-info/migration/major/linux.rst:10
 #: ../../source/technical-info/migration/major/windows.rst:10
 msgid "Preparation"
 msgstr "準備"
 
-#: ../../source/technical-info/migration/major/docker.rst:14
+#: ../../source/technical-info/migration/major/docker.rst:19
 msgid "Switch your setup to the axonivy-engine tag you are aiming for. (e.g., from ``8.0.36`` to ``10.0.17``)"
 msgstr "セットアップを目的の axonivy-engine タグに切り替えます（例：``8.0.36`` から ``10.0.17``）。"
 
