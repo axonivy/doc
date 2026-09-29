@@ -9,6 +9,11 @@ various too and highly dependent on your concrete setup. However, here are the
 major steps to do when migrating a docker based Axon Ivy Engine to another major
 version.
 
+All changes to the official Docker images are documented in the `CHANGELOG
+<https://github.com/axonivy/docker-image/blob/master/CHANGELOG.md>`_. In
+particular, changes to paths or volumes are important to ensure a smooth
+migration process.
+
 .. rubric:: Preparation
 
 #. Switch your setup to the axonivy-engine tag you are aiming for. (e.g., from
