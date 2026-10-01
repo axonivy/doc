@@ -1268,9 +1268,8 @@ msgid "Mode"
 msgstr "モード"
 
 #: ../../source/designer/designer-settings.rst:103
-#, fuzzy
 msgid "Specify the process animation mode. The following modes are available:"
-msgstr "プロセスアニメーションのモードを指定します。利用できるモードは、all、currentProcess、openProcess、noDialogProcess、noEmbeddedProcess です。"
+msgstr "プロセスアニメーションのモードを指定します。次のモードを利用できます："
 
 #: ../../source/designer/designer-settings.rst:106
 msgid "Show and open all touched processes (default)"
@@ -1281,14 +1280,12 @@ msgid "Follow only in the current editor on top"
 msgstr ""
 
 #: ../../source/designer/designer-settings.rst:108
-#, fuzzy
 msgid "Follow only in open editors"
-msgstr "エディターを開く"
+msgstr "開いているエディターのみを追従"
 
 #: ../../source/designer/designer-settings.rst:109
-#, fuzzy
 msgid "Do not enter dialog logic"
-msgstr "ユーザーダイアログロジック"
+msgstr "ダイアログロジックに入らない"
 
 #: ../../source/designer/designer-settings.rst:110
 msgid "Follow only top-level business processes"
@@ -4573,9 +4570,8 @@ msgid "OpenSearch"
 msgstr "OpenSearch"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:115
-#, fuzzy
 msgid "Version 3.8/3.9. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
-msgstr "バージョン 3.8。:ref:`独自の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
+msgstr "バージョン 3.8/3.9。:ref:`独自の <opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:122
 msgid "Web Browser"
@@ -21995,9 +21991,8 @@ msgid "Deprecated Features"
 msgstr "非推奨の機能"
 
 #: ../../source/technical-info/migration/deprecation.rst:16
-#, fuzzy
 msgid "Deprecated features are documented on our :dev-url:`Deprecation and Removal page </deprecation>`"
-msgstr "非推奨の機能は:dev-url:`「非推奨と削除」ページ</features/deprecation>` 記載されています。"
+msgstr "非推奨の機能は、:dev-url:`「非推奨と削除」ページ </deprecation>` に記載されています。"
 
 #: ../../source/technical-info/migration/deprecation.rst:19
 msgid "Deprecated Public API"
@@ -23092,9 +23087,8 @@ msgstr "Axon Ivy Public API をプロジェクトの :code:`pom.xml` ファイ�
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:499
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:345
-#, fuzzy
 msgid "Axon Ivy Extension API"
-msgstr "Java 拡張 API"
+msgstr "Axon Ivy 拡張 API"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:503
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:349
