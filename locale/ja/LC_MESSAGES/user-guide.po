@@ -1268,23 +1268,50 @@ msgid "Mode"
 msgstr "モード"
 
 #: ../../source/designer/designer-settings.rst:103
-msgid "Specify the process animation mode. The following modes are available: all, currentProcess, openProcess, noDialogProcess, noEmbeddedProcess"
+#, fuzzy
+msgid "Specify the process animation mode. The following modes are available:"
 msgstr "プロセスアニメーションのモードを指定します。利用できるモードは、all、currentProcess、openProcess、noDialogProcess、noEmbeddedProcess です。"
 
+#: ../../source/designer/designer-settings.rst:106
+msgid "Show and open all touched processes (default)"
+msgstr ""
+
+#: ../../source/designer/designer-settings.rst:107
+msgid "Follow only in the current editor on top"
+msgstr ""
+
+#: ../../source/designer/designer-settings.rst:108
+#, fuzzy
+msgid "Follow only in open editors"
+msgstr "エディターを開く"
+
+#: ../../source/designer/designer-settings.rst:109
+#, fuzzy
+msgid "Do not enter dialog logic"
+msgstr "ユーザーダイアログロジック"
+
 #: ../../source/designer/designer-settings.rst:110
-msgid "Speed"
-msgstr "速度"
-
-#: ../../source/designer/designer-settings.rst:111
-msgid "Adjust the speed of the process animation."
-msgstr "プロセスアニメーションの速度を調整します。"
-
-#: ../../source/designer/designer-settings.rst:115
-msgid "Axon Ivy > Local Mcp"
+msgid "Follow only top-level business processes"
 msgstr ""
 
 #: ../../source/designer/designer-settings.rst:116
-msgid "tbd"
+msgid "Speed"
+msgstr "速度"
+
+#: ../../source/designer/designer-settings.rst:117
+msgid "Adjust the speed of the process animation."
+msgstr "プロセスアニメーションの速度を調整します。"
+
+#: ../../source/designer/designer-settings.rst:121
+msgid "Axon Ivy > Local Mcp"
+msgstr ""
+
+#: ../../source/designer/designer-settings.rst:122
+msgid "Enable local loopback MCP endpoints for third-party harness automation clients."
+msgstr ""
+
+#: ../../source/designer/designer-settings.rst:126
+msgid "Use only on trusted machines."
 msgstr ""
 
 #: ../../source/designer/editors.rst:4
@@ -4546,7 +4573,8 @@ msgid "OpenSearch"
 msgstr "OpenSearch"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:115
-msgid "Version 3.8. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
+#, fuzzy
+msgid "Version 3.8/3.9. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
 msgstr "バージョン 3.8。:ref:`独自の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:122
@@ -28102,3 +28130,6 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "Other versions in the states ``PREPARED`` or ``ARCHIVED`` may be easier to delete, rather than updating and redeploying."
 #~ msgstr "``作成済み`` や ``アーカイブ済み`` の状態にある他のバージョンは、更新して展開し直すよりも、削除する方が簡単かもしれません。"
+
+#~ msgid "tbd"
+#~ msgstr ""
