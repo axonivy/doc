@@ -17,14 +17,14 @@ There are two tree views where you can right-click: The built-in file explorer a
 
 The file explorer shows a broad collection of commands you most commonly use across your projects. It groups commands by logical sets. Access it by right-clicking anywhere in the file explorer and hover over :code:`Axon Ivy >`
 
-.. figure:: /_images/designer/commands/context_file_explorer.png
+.. figure:: /_images/vscode/axonivy-context-menu.png
     :alt: Right-click in the file explorer displays the Axon Ivy context menu with the most useful commands.
 
     Right-click in the file explorer displays the Axon Ivy context menu with the most useful commands.
 
 The Axon Ivy Projects menu only shows commands you execute on that specific project (e.g. deploy, export, etc.)
 
-.. figure:: /_images/designer/commands/context_axon_ivy_projects.png
+.. figure:: /_images/vscode/project-context-menu.png
     :alt: Right-click in the Axon Ivy Projects view displays the project context menu.
 
     Right-click in the Axon Ivy Projects view displays the project context menu.
@@ -43,29 +43,24 @@ When you invoke that command via the context menu, it matters where you placed y
 
 - Right-click on a project or any of its sub folders: The invoked command will prefill the project selection with that project, if applicable.
 
-.. figure:: /_images/designer/commands/tree_selection1.png
+.. figure:: /_images/vscode/axonivy-context-menu.png
     :alt: Right-click on an existing project will set this as the project input.
 
     Right-click on an existing project will set this as the project input.
 
-.. figure:: /_images/designer/commands/tree_selection2.png
+.. figure:: /_images/vscode/axonivy-new-process-dialog-2.png
     :alt: The dialog will directly start at step 2/3, prefilling the project input with your tree selection.
 
     The dialog will directly start at step 2/3, prefilling the project input with your tree selection.
 
-.. figure:: /_images/designer/commands/tree_selection3.png
+.. figure:: /_images/vscode/axonivy-new-process-dialog-1.png
     :alt: When you press the back button, you see the prefilled project selection and can change it if desired.
 
     When you press the back button, you see the prefilled project selection and can change it if desired.
 
 - Right-click in the free space below the folders: No selection is made, you will have to specify the project manually.
 
-.. figure:: /_images/designer/commands/tree_noselection1.png
-    :alt: Right-click on the empty space below the folders will not set select a project.
-    
-    Right-click on the empty space below the folders will not set select a project.
-
-.. figure:: /_images/designer/commands/tree_noselection2.png
+.. figure:: /_images/vscode/axonivy-new-process-dialog-1-empty.png
     :alt: The dialog will start at the first step, asking for a project input.
     
     The dialog will start at the first step, asking for a project input.
