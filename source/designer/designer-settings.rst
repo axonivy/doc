@@ -101,7 +101,13 @@ If enabled, whenever you simulate a process, the animation will visually guide y
 Mode
 ~~~~
 Specify the process animation mode.
-The following modes are available: all, currentProcess, openProcess, noDialogProcess, noEmbeddedProcess
+The following modes are available: 
+
+- Show and open all touched processes (default)
+- Follow only in the current editor on top
+- Follow only in open editors
+- Do not enter dialog logic
+- Follow only top-level business processes
 
 
 .. _designer-animation-speed-config:
@@ -113,4 +119,9 @@ Adjust the speed of the process animation.
 
 Axon Ivy > Local Mcp
 --------------------
-tbd
+Enable local loopback MCP endpoints for third-party harness automation clients. 
+
+.. warning::
+  
+   Use only on trusted machines.
+
