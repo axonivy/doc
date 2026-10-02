@@ -30,10 +30,10 @@ If available, a small lightbulb or a right-click context menu offers a fix for t
 
 Refer to the :ref:`designer-settings-workspace-validation` setting to configure for which kind of problems you want to enable/disable problem markers.
 
-.. figure:: /_images/designer/views/problem_view.png
-    :alt: Problem view with one Axon Ivy error (project outdated) and one Java error (missing ;)
+.. figure:: /_images/vscode/problems-view.png
+    :alt: Problem view with one Axon Ivy error (project outdated)
 
-    Problem view with one Axon Ivy error (project outdated) and one Java error (missing ;)
+    Problem view with one Axon Ivy error (project outdated)
 
 
 
@@ -113,7 +113,7 @@ The Output view is by default located in the bottom-middle panel.
 Use the dropdown on the right to switch between different channels.
 All the ``Axon Ivy`` channels provide logs for different operations and allow you to trace and understand the operations by the extension.
 
-.. figure:: /_images/designer/views/output_view.png
+.. figure:: /_images/vscode/output-view.png
 
 
 Codegen Log
