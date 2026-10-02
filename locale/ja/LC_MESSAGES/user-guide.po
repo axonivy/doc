@@ -309,489 +309,484 @@ msgstr ""
 
 #: ../../source/designer/commands/index.rst:63
 #: ../../source/designer/commands/index.rst:66
-msgid "Right-click on the empty space below the folders will not set select a project."
-msgstr ""
-
-#: ../../source/designer/commands/index.rst:68
-#: ../../source/designer/commands/index.rst:71
 msgid "The dialog will start at the first step, asking for a project input."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:73
+#: ../../source/designer/commands/index.rst:68
 msgid "This is the same as invoking the command via the Command Palette with :code:`Axon Ivy: New Business Process`, which will never prefill anything."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:76
+#: ../../source/designer/commands/index.rst:71
 msgid "If there is only one Axon Ivy project in your workspace, this project will automatically be preselected. This means that commands that only have a single input step \"Select project\" will execute without asking for input."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:79
+#: ../../source/designer/commands/index.rst:74
 msgid "Example: :code:`Axon Ivy: Reveal Project in File Explorer` consists of one step only: Selecting the project to reveal. If there is only one project, invoking this command will automatically select it and reveal the project in the file explorer without asking for your input."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:84
+#: ../../source/designer/commands/index.rst:79
 msgid "Command Feedback"
 msgstr "コマンドの実行結果"
 
-#: ../../source/designer/commands/index.rst:86
+#: ../../source/designer/commands/index.rst:81
 msgid "Not all commands ask you for your input. Some commands simply execute in the background."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:88
+#: ../../source/designer/commands/index.rst:83
 msgid "After invoking a command, keep an eye on the notifications list and the status bar at the bottom right and left. They usually provide feedback about ongoing operations."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:91
+#: ../../source/designer/commands/index.rst:86
 msgid "For more detailed feedback, you can check the :ref:`log views <designer-views-axonivy-views>`."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:97
+#: ../../source/designer/commands/index.rst:92
 msgid "List of all Commands"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:100
+#: ../../source/designer/commands/index.rst:95
 msgid "New"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:101
+#: ../../source/designer/commands/index.rst:96
 msgid "All commands that create new Axon Ivy resources, except for :code:`New Project`, will first ask you for a project in which to create the new resource in."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:103
+#: ../../source/designer/commands/index.rst:98
 msgid "**New Project**"
 msgstr "**新しいプロジェクト**"
 
-#: ../../source/designer/commands/index.rst:104
+#: ../../source/designer/commands/index.rst:99
 msgid ":code:`Axon Ivy: New Project`"
 msgstr ":code:`Axon Ivy: New Project`"
 
-#: ../../source/designer/commands/index.rst:106
+#: ../../source/designer/commands/index.rst:101
 msgid "Creates a new Axon Ivy project."
 msgstr "新しい Axon Ivy プロジェクトを作成します。"
 
-#: ../../source/designer/commands/index.rst:108
+#: ../../source/designer/commands/index.rst:103
 msgid "**New Business Process**"
 msgstr "**新しいビジネスプロセス**"
 
-#: ../../source/designer/commands/index.rst:109
+#: ../../source/designer/commands/index.rst:104
 msgid ":code:`Axon Ivy: New Business Process`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:111
+#: ../../source/designer/commands/index.rst:106
 msgid "Creates a new Axon Ivy business process. Refer to the :ref:`process-modeling` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:113
+#: ../../source/designer/commands/index.rst:108
 msgid "**New Callable Sub Process**"
 msgstr "**新しい呼び出し可能なサブプロセス**"
 
-#: ../../source/designer/commands/index.rst:114
+#: ../../source/designer/commands/index.rst:109
 msgid ":code:`Axon Ivy: New Callable Sub Process`"
 msgstr ":code:`Axon Ivy: New Callable Sub Process`"
 
-#: ../../source/designer/commands/index.rst:116
+#: ../../source/designer/commands/index.rst:111
 msgid "Creates a new Axon Ivy callable subprocess. Refer to the :ref:`process-modeling` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:118
+#: ../../source/designer/commands/index.rst:113
 msgid "**New Web Service Process**"
 msgstr "**新しい Web サービスプロセス**"
 
-#: ../../source/designer/commands/index.rst:119
+#: ../../source/designer/commands/index.rst:114
 msgid ":code:`Axon Ivy: New Web Service Process`"
 msgstr ":code:`Axon Ivy: New Web Service Process`"
 
-#: ../../source/designer/commands/index.rst:121
+#: ../../source/designer/commands/index.rst:116
 msgid "Creates a new Axon Ivy web service process. Refer to the :ref:`process-modeling` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:123
+#: ../../source/designer/commands/index.rst:118
 msgid "**New Html Dialog (JSF)**"
 msgstr "**新しい HTML ダイアログ (JSF)**"
 
-#: ../../source/designer/commands/index.rst:124
+#: ../../source/designer/commands/index.rst:119
 msgid ":code:`Axon Ivy: New Html Dialog (JSF)`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:126
+#: ../../source/designer/commands/index.rst:121
 msgid "Creates a new Axon Ivy HTML dialog based on JSF. Refer to the :ref:`user-dialogs` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:128
+#: ../../source/designer/commands/index.rst:123
 msgid "**New Dialog Form**"
 msgstr "**新しいダイアログフォーム**"
 
-#: ../../source/designer/commands/index.rst:129
+#: ../../source/designer/commands/index.rst:124
 msgid ":code:`Axon Ivy: New Dialog Form`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:131
+#: ../../source/designer/commands/index.rst:126
 msgid "Creates a new Axon Ivy dialog form. Refer to the :ref:`user-dialogs` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:133
+#: ../../source/designer/commands/index.rst:128
 msgid "**New Offline Dialog (JSF)**"
 msgstr "**新しいオフラインダイアログ (JSF)**"
 
-#: ../../source/designer/commands/index.rst:134
+#: ../../source/designer/commands/index.rst:129
 msgid ":code:`Axon Ivy: New Offline Dialog (JSF)`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:136
+#: ../../source/designer/commands/index.rst:131
 msgid "Creates a new Axon Ivy offline dialog based on JSF. Refer to the :ref:`user-dialogs` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:138
+#: ../../source/designer/commands/index.rst:133
 msgid "**New Data Class**"
 msgstr "**新しいデータクラス**"
 
-#: ../../source/designer/commands/index.rst:139
+#: ../../source/designer/commands/index.rst:134
 msgid ":code:`Axon Ivy: New Data Class`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:141
+#: ../../source/designer/commands/index.rst:136
 msgid "Creates a new Axon Ivy data class. Refer to the :ref:`data-classes` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:143
+#: ../../source/designer/commands/index.rst:138
 msgid "**New Entity Class**"
 msgstr "**新しいエンティティクラス**"
 
-#: ../../source/designer/commands/index.rst:144
+#: ../../source/designer/commands/index.rst:139
 msgid ":code:`Axon Ivy: New Entity Class`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:146
+#: ../../source/designer/commands/index.rst:141
 msgid "Creates a new Axon Ivy entity class. Refer to the :ref:`data-classes` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:148
+#: ../../source/designer/commands/index.rst:143
 msgid "**New Case Map**"
 msgstr "**新しいケースマップ**"
 
-#: ../../source/designer/commands/index.rst:149
+#: ../../source/designer/commands/index.rst:144
 msgid ":code:`Axon Ivy: New Case Map`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:151
+#: ../../source/designer/commands/index.rst:146
 msgid "Creates a new Axon Ivy case map. Refer to the :ref:`casemap` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:156
+#: ../../source/designer/commands/index.rst:151
 msgid "Open Editors"
 msgstr "エディターを開く"
 
-#: ../../source/designer/commands/index.rst:157
+#: ../../source/designer/commands/index.rst:152
 msgid "All the editors will prompt you for a project on which to open the respective config editor."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:159
+#: ../../source/designer/commands/index.rst:154
 msgid "Except for the :code:`Custom Field` editor, all those editors are Axon Ivy specific editors as described in the :ref:`editor introduction <designer-basics-editor>` and in more detail in the :ref:`designer-editors` chapter. Those editors are therefore linked to specific file types or names."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:161
+#: ../../source/designer/commands/index.rst:156
 msgid "For example, invoking :code:`Axon Ivy: Open Database Editor` in project X will open the database editor of that project. The same could be achieved by double-clicking the :code:`config/databases.yaml` file of project X."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:163
+#: ../../source/designer/commands/index.rst:158
 msgid "**Open CMS Editor**"
 msgstr "**CMS エディターを開く**"
 
-#: ../../source/designer/commands/index.rst:164
+#: ../../source/designer/commands/index.rst:159
 msgid ":code:`Axon Ivy: Open CMS Editor`"
 msgstr ":code:`Axon Ivy: Open CMS Editor`"
 
-#: ../../source/designer/commands/index.rst:166
+#: ../../source/designer/commands/index.rst:161
 msgid "Opens the Axon Ivy CMS editor."
 msgstr "Axon Ivy CMS エディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:168
+#: ../../source/designer/commands/index.rst:163
 msgid "**Open Custom Field Editor**"
 msgstr "**カスタムフィールドエディターを開く**"
 
-#: ../../source/designer/commands/index.rst:169
+#: ../../source/designer/commands/index.rst:164
 msgid ":code:`Axon Ivy: Open Custom Field Editor`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:171
+#: ../../source/designer/commands/index.rst:166
 msgid "Opens the Axon Ivy custom field editor."
 msgstr "Axon Ivy カスタムフィールドエディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:173
+#: ../../source/designer/commands/index.rst:168
 msgid "**Open Database Editor**"
 msgstr "**データベースエディターを開く**"
 
-#: ../../source/designer/commands/index.rst:174
+#: ../../source/designer/commands/index.rst:169
 msgid ":code:`Axon Ivy: Open Database Editor`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:176
+#: ../../source/designer/commands/index.rst:171
 msgid "Opens the Axon Ivy database editor."
 msgstr "Axon Ivy データベースエディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:178
+#: ../../source/designer/commands/index.rst:173
 msgid "**Open Persistence Editor**"
 msgstr "**永続化エディターを開く**"
 
-#: ../../source/designer/commands/index.rst:179
+#: ../../source/designer/commands/index.rst:174
 msgid ":code:`Axon Ivy: Open Persistence Editor`"
 msgstr ":code:`Axon Ivy: Open Persistence Editor`"
 
-#: ../../source/designer/commands/index.rst:181
+#: ../../source/designer/commands/index.rst:176
 msgid "Opens the Axon Ivy persistence editor."
 msgstr "Axon Ivy 永続化エディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:183
+#: ../../source/designer/commands/index.rst:178
 msgid "**Open Rest Client Editor**"
 msgstr "**REST クライアントエディターを開く**"
 
-#: ../../source/designer/commands/index.rst:184
+#: ../../source/designer/commands/index.rst:179
 msgid ":code:`Axon Ivy: Open Rest Client Editor`"
 msgstr ":code:`Axon Ivy: Open Rest Client Editor`"
 
-#: ../../source/designer/commands/index.rst:186
+#: ../../source/designer/commands/index.rst:181
 msgid "Opens the Axon Ivy REST client editor."
 msgstr "Axon Ivy REST クライアントエディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:188
+#: ../../source/designer/commands/index.rst:183
 msgid "**Open Role Editor**"
 msgstr "**ロールエディターを開く**"
 
-#: ../../source/designer/commands/index.rst:189
+#: ../../source/designer/commands/index.rst:184
 msgid ":code:`Axon Ivy: Open Role Editor`"
 msgstr ":code:`Axon Ivy: Open Role Editor`"
 
-#: ../../source/designer/commands/index.rst:191
+#: ../../source/designer/commands/index.rst:186
 msgid "Opens the Axon Ivy role editor."
 msgstr "Axon Ivy ロールエディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:193
+#: ../../source/designer/commands/index.rst:188
 msgid "**Open User Editor**"
 msgstr "**ユーザーエディターを開く**"
 
-#: ../../source/designer/commands/index.rst:194
+#: ../../source/designer/commands/index.rst:189
 msgid ":code:`Axon Ivy: Open User Editor`"
 msgstr ":code:`Axon Ivy: Open User Editor`"
 
-#: ../../source/designer/commands/index.rst:196
+#: ../../source/designer/commands/index.rst:191
 msgid "Opens the Axon Ivy user editor."
 msgstr "Axon Ivy ユーザーエディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:198
+#: ../../source/designer/commands/index.rst:193
 msgid "**Open Variable Editor**"
 msgstr "**変数エディターを開く**"
 
-#: ../../source/designer/commands/index.rst:199
+#: ../../source/designer/commands/index.rst:194
 msgid ":code:`Axon Ivy: Open Variable Editor`"
 msgstr ":code:`Axon Ivy: Open Variable Editor`"
 
-#: ../../source/designer/commands/index.rst:201
+#: ../../source/designer/commands/index.rst:196
 msgid "Opens the Axon Ivy variable editor."
 msgstr "Axon Ivy 変数エディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:203
+#: ../../source/designer/commands/index.rst:198
 msgid "**Open Web Service Client Editor**"
 msgstr "**Web サービスクライアントエディターを開く**"
 
-#: ../../source/designer/commands/index.rst:204
+#: ../../source/designer/commands/index.rst:199
 msgid ":code:`Axon Ivy: Open Web Service Client Editor`"
 msgstr ":code:`Axon Ivy: Open Web Service Client Editor`"
 
-#: ../../source/designer/commands/index.rst:206
+#: ../../source/designer/commands/index.rst:201
 msgid "Opens the Axon Ivy web service client editor."
 msgstr "Axon Ivy Web サービスクライアントエディターを開きます。"
 
-#: ../../source/designer/commands/index.rst:211
+#: ../../source/designer/commands/index.rst:206
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:293
 msgid "Logs"
 msgstr "ログ"
 
-#: ../../source/designer/commands/index.rst:212
+#: ../../source/designer/commands/index.rst:207
 msgid "Refer to the :ref:`designer-views-axonivy-views` for more information."
 msgstr "詳細については、:ref:`designer-views-axonivy-views` を参照してください。"
 
-#: ../../source/designer/commands/index.rst:214
+#: ../../source/designer/commands/index.rst:209
 msgid "**Open Axon Ivy Runtime Log**"
 msgstr "**Axon Ivy ランタイムログを開く**"
 
-#: ../../source/designer/commands/index.rst:215
+#: ../../source/designer/commands/index.rst:210
 msgid ":code:`Axon Ivy: Open Axon Ivy Runtime Log`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:217
+#: ../../source/designer/commands/index.rst:212
 msgid "Opens the Axon Ivy runtime log."
 msgstr "Axon Ivy ランタイムログを開きます。"
 
-#: ../../source/designer/commands/index.rst:219
+#: ../../source/designer/commands/index.rst:214
 msgid "**Open Axon Ivy Extension Log**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:220
+#: ../../source/designer/commands/index.rst:215
 msgid ":code:`Axon Ivy: Open Axon Ivy Extension Log`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:222
+#: ../../source/designer/commands/index.rst:217
 msgid "Opens the Axon Ivy extension log."
 msgstr "Axon Ivy 拡張機能のログを開きます。"
 
-#: ../../source/designer/commands/index.rst:224
+#: ../../source/designer/commands/index.rst:219
 msgid "**Open Axon Ivy Engine Log**"
 msgstr "**Axon Ivy Engine ログを開く**"
 
-#: ../../source/designer/commands/index.rst:225
+#: ../../source/designer/commands/index.rst:220
 msgid ":code:`Axon Ivy: Open Axon Ivy Engine Log`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:227
+#: ../../source/designer/commands/index.rst:222
 msgid "Opens the Axon Ivy Engine log."
 msgstr "Axon Ivy Engine のログを開きます。"
 
-#: ../../source/designer/commands/index.rst:232
+#: ../../source/designer/commands/index.rst:227
 msgid "Import / Export"
 msgstr "インポート / エクスポート"
 
-#: ../../source/designer/commands/index.rst:236
+#: ../../source/designer/commands/index.rst:231
 msgid "**Import Project Archive (.iar or .zip)**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:237
+#: ../../source/designer/commands/index.rst:232
 msgid ":code:`Axon Ivy: Import Project Archive (.iar or .zip)`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:239
+#: ../../source/designer/commands/index.rst:234
 msgid "Lets you import and unpack an archived Axon Ivy project (``.iar``) or a collection of multiple projects (``.zip``). If the import is successful, the project(s) will be **unpacked** and added to your workspace."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:243
+#: ../../source/designer/commands/index.rst:238
 msgid "It is currently not allowed to import an project archive into another Axon Ivy project. Right-clicking on an Axon Ivy project and importing an archive will result in an error."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:248
+#: ../../source/designer/commands/index.rst:243
 msgid "**Export Project Archive (.iar)**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:249
+#: ../../source/designer/commands/index.rst:244
 msgid ":code:`Axon Ivy: Export Project Archive (.iar)`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:251
+#: ../../source/designer/commands/index.rst:246
 msgid "Similar to the import, this command lets you export an Axon Ivy project from your workspace as an ``.iar`` archive."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:253
+#: ../../source/designer/commands/index.rst:248
 msgid "**Import BPMN Process**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:254
+#: ../../source/designer/commands/index.rst:249
 msgid ":code:`Axon Ivy: Import BPMN Process`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:256
+#: ../../source/designer/commands/index.rst:251
 msgid "Import a BPMN process either as :code:`.xml` or :code:`.bpmn`."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:261
+#: ../../source/designer/commands/index.rst:256
 #: ../../source/designer/editors.rst:12
 #: ../../source/reference/process/process-editor/index.rst:4
 msgid "Process Editor"
 msgstr "プロセスエディター"
 
-#: ../../source/designer/commands/index.rst:262
+#: ../../source/designer/commands/index.rst:257
 msgid "The following commands are only active if you have an open :code:`.p.json` file in the Process Editor."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:264
+#: ../../source/designer/commands/index.rst:259
 msgid "**Fit to Screen**"
 msgstr "**画面に合わせる**"
 
-#: ../../source/designer/commands/index.rst:265
+#: ../../source/designer/commands/index.rst:260
 msgid ":code:`Axon Ivy: Fit to Screen`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:267
+#: ../../source/designer/commands/index.rst:262
 msgid "Fits the active workflow diagram to the available screen space."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:269
+#: ../../source/designer/commands/index.rst:264
 msgid "**Center selection**"
 msgstr "**選択範囲を中央に表示**"
 
-#: ../../source/designer/commands/index.rst:270
+#: ../../source/designer/commands/index.rst:265
 msgid ":code:`Axon Ivy: Center selection`"
 msgstr ":code:`Axon Ivy: Center selection`"
 
-#: ../../source/designer/commands/index.rst:272
+#: ../../source/designer/commands/index.rst:267
 msgid "Centers the selected elements in the active workflow diagram."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:274
+#: ../../source/designer/commands/index.rst:269
 msgid "**Layout diagram**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:275
+#: ../../source/designer/commands/index.rst:270
 msgid ":code:`Axon Ivy: Layout diagram`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:277
+#: ../../source/designer/commands/index.rst:272
 msgid "Automatically arranges the active workflow diagram."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:279
+#: ../../source/designer/commands/index.rst:274
 msgid "**Export as SVG**"
 msgstr "**SVG としてエクスポート**"
 
-#: ../../source/designer/commands/index.rst:280
+#: ../../source/designer/commands/index.rst:275
 msgid ":code:`Axon Ivy: Export as SVG`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:282
+#: ../../source/designer/commands/index.rst:277
 msgid "Exports the active workflow diagram as an SVG file."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:287
+#: ../../source/designer/commands/index.rst:282
 #: ../../source/designer/editors.rst:21
 #: ../../source/reference/dialog/form-editor.rst:4
 msgid "Form Editor"
 msgstr "フォームエディター"
 
-#: ../../source/designer/commands/index.rst:288
+#: ../../source/designer/commands/index.rst:283
 msgid "The following commands are only active if you have an open :code:`.f.json` file in the Form Editor."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:290
+#: ../../source/designer/commands/index.rst:285
 msgid "**Open Dialog Preview**"
 msgstr "**ダイアログのプレビューを開く**"
 
-#: ../../source/designer/commands/index.rst:291
+#: ../../source/designer/commands/index.rst:286
 msgid ":code:`Axon Ivy: Open Dialog Preview`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:293
+#: ../../source/designer/commands/index.rst:288
 msgid "Opens a preview of the selected dialog."
 msgstr "選択したダイアログのプレビューを開きます。"
 
-#: ../../source/designer/commands/index.rst:300
+#: ../../source/designer/commands/index.rst:295
 #: ../../source/technical-info/migration/major/post-migration.rst:18
 msgid "Project Conversion"
 msgstr "プロジェクト変換"
 
-#: ../../source/designer/commands/index.rst:301
+#: ../../source/designer/commands/index.rst:296
 msgid "When you update your Axon Ivy engine, projects can become outdated. In that case, the :ref:`problem view <problems-view>` will show a problem marker, indicating that the projects need to be **converted**. Clicking on the problem marker lets you inspect your project's properties file :file:`.ivyproject`, you will see the project version. You will also see a warning indicator, when the project is out of date."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:306
+#: ../../source/designer/commands/index.rst:301
 msgid "Axon Ivy can convert your old projects automatically to the newest project format for you. During this process, all existing artifacts will be converted (if necessary) so as to work with the new Axon Ivy version, and any missing but required artifacts will be added."
 msgstr "Axon Ivy では、古いプロジェクトを最新のプロジェクトのフォーマットに自動的に変換できます。このプロセスでは、新しいバージョンの Axon Ivy で使用できるように、すべての既存のアーティファクトが（必要に応じて）変換され、必要なアーティファクトが見つからない場合は追加されます。"
 
-#: ../../source/designer/commands/index.rst:310
+#: ../../source/designer/commands/index.rst:305
 msgid "The conversion can be triggered via the :code:`Axon Ivy: Convert Project` command. After the execution, you can check the :ref:`conversion log <designer-views-project-conversion>` for details."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:315
+#: ../../source/designer/commands/index.rst:310
 msgid "It is absolutely recommended that you create a copy of your project before invoking the conversion. Alternatively you can have your project under version control. In this case, make sure that all your projects are checked in, before you invoke the conversion, so that you can easily roll back (revert) to the old version, if conversion should fail for some reason."
 msgstr "変換ウィザードを呼び出す前に、プロジェクトのコピーを作成することを強く推奨します。または、プロジェクトをバージョンで管理できます。この場合は、変換ウィザードを呼び出す前に、すべてのプロジェクトがチェックインされていることを確認してください。何らかの理由で変換が失敗した場合に、簡単に古いバージョンにロールバックする（戻す）ことができます。"
 
-#: ../../source/designer/commands/index.rst:322
+#: ../../source/designer/commands/index.rst:317
 msgid "In the :ref:`migration-notes`, migration tasks marked with |tag-project-auto-convert| will run with this command."
 msgstr ":ref:`migration-notes` で |tag-project-auto-convert| のマークが付いた移行タスクは、このコマンドで実行されます。"
 
@@ -799,267 +794,267 @@ msgstr ":ref:`migration-notes` で |tag-project-auto-convert| のマークが付
 msgid "tag-project-auto-convert"
 msgstr "tag-project-auto-convert"
 
-#: ../../source/designer/commands/index.rst:325
+#: ../../source/designer/commands/index.rst:320
 msgid "**Convert Project**"
 msgstr "**プロジェクトを変換**"
 
-#: ../../source/designer/commands/index.rst:326
+#: ../../source/designer/commands/index.rst:321
 msgid ":code:`Axon Ivy: Convert Project`"
 msgstr ":code:`Axon Ivy: Convert Project`"
 
-#: ../../source/designer/commands/index.rst:328
+#: ../../source/designer/commands/index.rst:323
 msgid "Opens a selection with all the outdated projects in your workspace. Lets you choose projects to convert. If there are no outdated projects in your workspace, the selection will be empty and nothing can be selected."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:332
+#: ../../source/designer/commands/index.rst:327
 msgid "**Convert All Projects**"
 msgstr "**すべてのプロジェクトを変換**"
 
-#: ../../source/designer/commands/index.rst:333
+#: ../../source/designer/commands/index.rst:328
 msgid ":code:`Axon Ivy: Convert All Projects`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:335
+#: ../../source/designer/commands/index.rst:330
 msgid "Shortcut for Convert Project which preselects all available projects ready for conversion."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:341
+#: ../../source/designer/commands/index.rst:336
 msgid "Project Management"
 msgstr "プロジェクト管理"
 
-#: ../../source/designer/commands/index.rst:343
+#: ../../source/designer/commands/index.rst:338
 msgid "Those projects pertain the management and setup of your Axon Ivy projects."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:345
+#: ../../source/designer/commands/index.rst:340
 msgid "**Deploy Project**"
 msgstr "**プロジェクトをデプロイ**"
 
-#: ../../source/designer/commands/index.rst:346
+#: ../../source/designer/commands/index.rst:341
 msgid ":code:`Axon Ivy: Deploy Project`"
 msgstr ":code:`Axon Ivy: Deploy Project`"
 
-#: ../../source/designer/commands/index.rst:348
+#: ../../source/designer/commands/index.rst:343
 msgid "Deploys the selected Axon Ivy project, which synchronizes your workspace with the Axon Ivy backend. When working in the Designer, this command is usually executed behind the scenes and is not needed to be executed manually unless you encounter problems in your workspace."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:352
+#: ../../source/designer/commands/index.rst:347
 msgid "**Deploy all Projects**"
 msgstr "**すべてのプロジェクトをデプロイ**"
 
-#: ../../source/designer/commands/index.rst:353
+#: ../../source/designer/commands/index.rst:348
 msgid ":code:`Axon Ivy: Deploy all Projects`"
 msgstr ":code:`Axon Ivy: Deploy all Projects`"
 
-#: ../../source/designer/commands/index.rst:355
+#: ../../source/designer/commands/index.rst:350
 msgid "Shortcut to execute the deploy command on all Axon Ivy projects in the workspace."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:357
+#: ../../source/designer/commands/index.rst:352
 msgid "**Stop BPM Engine of Project**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:358
+#: ../../source/designer/commands/index.rst:353
 msgid ":code:`Axon Ivy: Stop BPM Engine of Project`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:360
+#: ../../source/designer/commands/index.rst:355
 msgid "Stops the BPM Engine associated with the selected project. This will terminate all running simulations in that project."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:364
+#: ../../source/designer/commands/index.rst:359
 msgid "**Add Project Dependency**"
 msgstr "**プロジェクト依存関係の追加**"
 
-#: ../../source/designer/commands/index.rst:365
+#: ../../source/designer/commands/index.rst:360
 msgid ":code:`Axon Ivy: Add Project Dependency`"
 msgstr ":code:`Axon Ivy: Add Project Dependency`"
 
-#: ../../source/designer/commands/index.rst:367
+#: ../../source/designer/commands/index.rst:362
 msgid "Adds a dependency to an Axon Ivy project. This will create a dependency from Axon Ivy project A to project B."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:371
+#: ../../source/designer/commands/index.rst:366
 msgid "This command only works if you have at least two projects in your workspace."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:379 ../../source/market/index.rst:4
+#: ../../source/designer/commands/index.rst:374 ../../source/market/index.rst:4
 msgid "Market"
 msgstr "マーケット"
 
-#: ../../source/designer/commands/index.rst:380
+#: ../../source/designer/commands/index.rst:375
 msgid "Our :ref:`Axon Ivy Market <market>` has many already built connectors to 3rd-party systems, utilities or demos that you can easily integrate into your Axon Ivy projects."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:383
+#: ../../source/designer/commands/index.rst:378
 msgid "**Install Market Product**"
 msgstr "**マーケット製品をインストール**"
 
-#: ../../source/designer/commands/index.rst:384
+#: ../../source/designer/commands/index.rst:379
 msgid ":code:`Axon Ivy: Install Market Product`"
 msgstr ":code:`Axon Ivy: Install Market Product`"
 
-#: ../../source/designer/commands/index.rst:386
+#: ../../source/designer/commands/index.rst:381
 msgid "Installs an Axon Ivy Market product from the Axon Ivy market. The command consists of 3 to 5 steps, depending on the selected product:"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:389
+#: ../../source/designer/commands/index.rst:384
 msgid "Select the market product to install."
 msgstr "インストールするマーケット製品を選択します。"
 
-#: ../../source/designer/commands/index.rst:390
+#: ../../source/designer/commands/index.rst:385
 msgid "Select the version. This is normally prefilled with the matching version from the market."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:391
+#: ../../source/designer/commands/index.rst:386
 msgid "Pick the components of the market product to install. For example, many demo projects contain two parts: The demos themselves and a test project. You must pick at least one."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:392
+#: ../../source/designer/commands/index.rst:387
 msgid "(optional) - Depending on the product and your selection in the previous step, you must also choose some required dependencies needed for the previously picked components to run."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:393
+#: ../../source/designer/commands/index.rst:388
 msgid "(optional) - If your selection from step 3 forced you to choose required dependencies, you must specify in which existing Axon Ivy project you want to install those dependencies."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:396
+#: ../../source/designer/commands/index.rst:391
 msgid "If you try to install a market product that requires you to have an existing Axon Ivy project in the workspace already, but there is no project, the install command will abort and throw an error."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:399
+#: ../../source/designer/commands/index.rst:394
 msgid "**Install Local Market Product**"
 msgstr "**ローカルのマーケット製品をインストール**"
 
-#: ../../source/designer/commands/index.rst:400
+#: ../../source/designer/commands/index.rst:395
 msgid ":code:`Axon Ivy: Install Local Market Product`"
 msgstr ":code:`Axon Ivy: Install Local Market Product`"
 
-#: ../../source/designer/commands/index.rst:402
+#: ../../source/designer/commands/index.rst:397
 msgid "Installs an Axon Ivy Market product from a local source file. The steps are identical to the previous command, apart from the first step. Instead of choosing a product from the market by searching it, you are prompted to supply the local source file :code:`product.json`."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:409
+#: ../../source/designer/commands/index.rst:404
 msgid "Miscellaneous"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:411
+#: ../../source/designer/commands/index.rst:406
 msgid "**Activate Process Animation**"
 msgstr "**プロセスアニメーションを有効化**"
 
-#: ../../source/designer/commands/index.rst:412
+#: ../../source/designer/commands/index.rst:407
 msgid ":code:`Axon Ivy: Activate Process Animation`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:414
+#: ../../source/designer/commands/index.rst:409
 msgid "Activates process animation in the Axon Ivy Engine."
 msgstr "Axon Ivy Engine でプロセスアニメーションを有効にします。"
 
-#: ../../source/designer/commands/index.rst:416
+#: ../../source/designer/commands/index.rst:411
 msgid "**Deactivate Process Animation**"
 msgstr "**プロセスアニメーションを無効化**"
 
-#: ../../source/designer/commands/index.rst:417
+#: ../../source/designer/commands/index.rst:412
 msgid ":code:`Axon Ivy: Deactivate Process Animation`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:419
+#: ../../source/designer/commands/index.rst:414
 msgid "Deactivates process animation in the Axon Ivy Engine."
 msgstr "Axon Ivy Engine でプロセスアニメーションを無効にします。"
 
-#: ../../source/designer/commands/index.rst:421
+#: ../../source/designer/commands/index.rst:416
 msgid "**Attach Process Debugger**"
 msgstr "**プロセスデバッガーを接続**"
 
-#: ../../source/designer/commands/index.rst:422
+#: ../../source/designer/commands/index.rst:417
 msgid ":code:`Axon Ivy: Attach Process Debugger`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:424
+#: ../../source/designer/commands/index.rst:419
 msgid "Attaches the process debugger, which allows you to debug your processes. Refer to the :ref:`debug-process` for more information about debugging."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:426
+#: ../../source/designer/commands/index.rst:421
 msgid "**Open Portal**"
 msgstr "**ポータルを開く**"
 
-#: ../../source/designer/commands/index.rst:427
+#: ../../source/designer/commands/index.rst:422
 msgid ":code:`Axon Ivy: Open Portal`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:429
+#: ../../source/designer/commands/index.rst:424
 msgid "Opens the Axon Ivy portal."
 msgstr "Axon Ivy ポータルを開きます。"
 
-#: ../../source/designer/commands/index.rst:431
+#: ../../source/designer/commands/index.rst:426
 msgid "**Open Developer Workflow UI**"
 msgstr "**Developer Workflow UI を開く**"
 
-#: ../../source/designer/commands/index.rst:432
+#: ../../source/designer/commands/index.rst:427
 msgid ":code:`Axon Ivy: Open Developer Workflow UI`"
 msgstr ":code:`Axon Ivy: Open Developer Workflow UI`"
 
-#: ../../source/designer/commands/index.rst:434
+#: ../../source/designer/commands/index.rst:429
 msgid "Opens the Axon Ivy Developer Workflow UI."
 msgstr "Axon Ivy Developer Workflow UI を開きます。"
 
-#: ../../source/designer/commands/index.rst:436
+#: ../../source/designer/commands/index.rst:431
 msgid "**Open Engine Cockpit**"
 msgstr "**Engine Cockpit を開く**"
 
-#: ../../source/designer/commands/index.rst:437
+#: ../../source/designer/commands/index.rst:432
 msgid ":code:`Axon Ivy: Open Engine Cockpit`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:439
+#: ../../source/designer/commands/index.rst:434
 msgid "Opens the Axon Ivy Engine Cockpit."
 msgstr "Axon Ivy Engine Cockpit を開きます。"
 
-#: ../../source/designer/commands/index.rst:441
+#: ../../source/designer/commands/index.rst:436
 msgid "**Open Welcome Page**"
 msgstr "**ウェルカムページを開く**"
 
-#: ../../source/designer/commands/index.rst:442
+#: ../../source/designer/commands/index.rst:437
 msgid ":code:`Axon Ivy: Open Welcome Page`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:444
+#: ../../source/designer/commands/index.rst:439
 msgid "Opens the Axon Ivy welcome page."
 msgstr "Axon Ivy のウェルカムページを開きます。"
 
-#: ../../source/designer/commands/index.rst:446
+#: ../../source/designer/commands/index.rst:441
 msgid "**Refresh Project Explorer**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:447
+#: ../../source/designer/commands/index.rst:442
 msgid ":code:`Axon Ivy: Refresh Project Explorer`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:449
+#: ../../source/designer/commands/index.rst:444
 msgid "Refreshes the :ref:`Axon Ivy Projects view <designer-basics-tree-view>`."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:451
+#: ../../source/designer/commands/index.rst:446
 msgid "**Switch Engine release train**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:452
+#: ../../source/designer/commands/index.rst:447
 msgid ":code:`Axon Ivy: Switch Engine release train`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:454
+#: ../../source/designer/commands/index.rst:449
 msgid "Switches the Axon Ivy Engine release train. For advanced use only, refer to :ref:`designer-advanced-setup` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:456
+#: ../../source/designer/commands/index.rst:451
 msgid "**Reveal Project in File System**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:457
+#: ../../source/designer/commands/index.rst:452
 msgid ":code:`Axon Ivy: Reveal Project in File System`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:459
+#: ../../source/designer/commands/index.rst:454
 msgid "Reveals the selected Axon Ivy project or resource in the operating system's file system."
 msgstr ""
 
@@ -2068,7 +2063,7 @@ msgstr ""
 
 #: ../../source/designer/views/index.rst:33
 #: ../../source/designer/views/index.rst:36
-msgid "Problem view with one Axon Ivy error (project outdated) and one Java error (missing ;)"
+msgid "Problem view with one Axon Ivy error (project outdated)"
 msgstr ""
 
 #: ../../source/designer/views/index.rst:43
@@ -28126,4 +28121,10 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 #~ msgstr "``作成済み`` や ``アーカイブ済み`` の状態にある他のバージョンは、更新して展開し直すよりも、削除する方が簡単かもしれません。"
 
 #~ msgid "tbd"
+#~ msgstr ""
+
+#~ msgid "Right-click on the empty space below the folders will not set select a project."
+#~ msgstr ""
+
+#~ msgid "Problem view with one Axon Ivy error (project outdated) and one Java error (missing ;)"
 #~ msgstr ""
