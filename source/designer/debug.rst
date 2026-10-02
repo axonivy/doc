@@ -20,7 +20,7 @@ Process Debug
 - After starting the session, the :ref:`designer-views-run-and-debug-view` should indicate that you have a new debug session running. You should also see the debug toolbar.
 - Start your process simulation. The simulation should stop at the breakpoint and you can inspect the variables in the :ref:`designer-views-run-and-debug-view`.
 
-.. figure:: /_images/designer/debug/debug_process.png
+.. figure:: /_images/vscode/debug-view.png
 
 
 .. _debug-java:
