@@ -263,3 +263,15 @@ you. It can be configured with some parameters:
 
 - **reportFolder**: when a test fails the test framework automatically takes
   screenshots. This folder defines where these screenshots are saved to.
+
+
+Run tests locally in Axon Ivy Designer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can configure how JUnit runs your tests locally in VS Code.
+For example you can configure that locally :code:`@IvyWebTest`'s are always run in headed mode. 
+Also if you need to set other system properties like `test.engine.url` you can do this the same way.
+Simply add a :file:`.vscode/settings.json` file with the following content:
+
+.. literalinclude:: includes/webtesting/webtesting-vscode-settings.json
+    :language: json
