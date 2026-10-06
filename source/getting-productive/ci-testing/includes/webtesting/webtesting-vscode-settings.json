@@ -1,0 +1,13 @@
+{
+  "java.test.config": [
+    {
+      "name": "default",
+      "vmArgs": [
+        "-Dtest.engine.url=http://localhost:8080/",
+        "-Dtest.engine.context=~Developer-my-workspace-name",
+        "-Dtest.engine.app=Developer-my-workspace-name",
+        "-Divy.selenide.headless=false"
+      ]
+    }
+  ]
+}
