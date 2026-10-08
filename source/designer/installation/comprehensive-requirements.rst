@@ -66,7 +66,7 @@ To check if your system already has Maven 3.9.x installed, run the following com
   Maven home: PATH/TO/MVN/INSTALLATION
   Java version: 25.0.3, ....
 
-If the command returns ``Command 'mvn' not found`` or a different version than 3.9.x, follow the `Maven installation <https://maven.apache.org/install?utm_source=openai>`_
+If the command returns ``Command 'mvn' not found`` or a different version than >=3.9.0 but <4.0.0, follow the `Maven installation <https://maven.apache.org/install?utm_source=openai>`_
 
 
 
