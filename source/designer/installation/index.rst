@@ -50,7 +50,7 @@ item.
    * - :ref:`Java <designer-install-java>`
      - Java Development Kit (JDK) 25 must be installed.
    * - :ref:`Maven <designer-install-maven>`
-     - Maven version greater or equal to 3.9.0 but smaller than 4.0.0 must be installed.
+     - Maven version greater than or equal to 3.9.0 but less than 4.0.0 must be installed.
    * - :ref:`User permissions <designer-install-user-permissions>`
      - Read/write access to workspace directory, permission to open local ports.
    * - :ref:`Localhost <designer-install-integrated-engine>`

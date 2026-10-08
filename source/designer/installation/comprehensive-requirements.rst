@@ -52,7 +52,7 @@ There are two ways to do so, for more details refer to the `Java extension docum
 Maven
 -----
 
-To use the full functionality of the Axon Ivy Designer, the system should have Maven version greater or equal to 3.9.0 but smaller than 4.0.0 installed.
+To use the full functionality of the Axon Ivy Designer, the system should have Maven version greater than or equal to 3.9.0 but less than 4.0.0 installed.
 
 .. note::
   Technically speaking, the Designer works without a valid Maven installation, but will report errors on a few operations.
