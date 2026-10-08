@@ -1652,11 +1652,11 @@ msgid "Maven"
 msgstr "保存"
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:55
-msgid "To use full functionality of the Axon Ivy Designer, the system should have Maven 3.9.x installed."
+msgid "To use the full functionality of the Axon Ivy Designer, the system should have Maven version greater than or equal to 3.9.0 but less than 4.0.0 installed."
 msgstr ""
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:58
-msgid "Strictly speaking, the Designer works without a Maven 3.9.x installation, but will report errors on a few operations. It is therefore strictly recommended to properly set up a Maven installation. The extension will check the installation at startup and warn you accordingly."
+msgid "Technically speaking, the Designer works without a valid Maven installation, but will report errors on a few operations. It is therefore strictly recommended to properly set up a Maven installation. The extension will check the Maven installation at startup and warn you accordingly."
 msgstr ""
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:62
@@ -1664,7 +1664,7 @@ msgid "To check if your system already has Maven 3.9.x installed, run the follow
 msgstr "システムに Maven 3.9.x がインストールされているか確認するには、ターミナルで次のコマンドを実行します。::"
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:69
-msgid "If the command returns ``Command 'mvn' not found`` or a different version than 3.9.x, follow the `Maven installation <https://maven.apache.org/install?utm_source=openai>`_"
+msgid "If the command returns ``Command 'mvn' not found`` or a different version than >=3.9.0 but <4.0.0, follow the `Maven installation <https://maven.apache.org/install?utm_source=openai>`_"
 msgstr ""
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:77
@@ -1937,7 +1937,7 @@ msgid ":ref:`Maven <designer-install-maven>`"
 msgstr ":ref:`Maven <designer-install-maven>`"
 
 #: ../../source/designer/installation/index.rst:53
-msgid "Maven 3.9 must be installed."
+msgid "Maven version greater than or equal to 3.9.0 but less than 4.0.0 must be installed."
 msgstr ""
 
 #: ../../source/designer/installation/index.rst:54
@@ -9524,6 +9524,15 @@ msgstr "**headless** ：ブラウザを UI で開始するかどうかを制御�
 #: ../../source/getting-productive/ci-testing/web-testing.rst:264
 msgid "**reportFolder**: when a test fails the test framework automatically takes screenshots. This folder defines where these screenshots are saved to."
 msgstr "**reportFolder** ：テストが失敗すると、テストフレームワークは自動的にスクリーンショットを撮ります。このフォルダーは、それらのスクリーンショットの保存先を定義します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:269
+#, fuzzy
+msgid "Run tests locally in Axon Ivy Designer"
+msgstr "Axon Ivy Designer でモジュールのビルドを実行します。"
+
+#: ../../source/getting-productive/ci-testing/web-testing.rst:271
+msgid "You can configure how JUnit runs your tests locally in VS Code. For example you can configure that locally :code:`@IvyWebTest`'s are always run in headed mode. Also if you need to set other system properties like `test.engine.url` you can do this the same way. Simply add a :file:`.vscode/settings.json` file with the following content:"
+msgstr ""
 
 #: ../../source/getting-productive/connectivity/database.rst:2
 #: ../../source/reference/process/process-elements/database-activity.rst:65
@@ -28127,4 +28136,16 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 #~ msgstr ""
 
 #~ msgid "Problem view with one Axon Ivy error (project outdated) and one Java error (missing ;)"
+#~ msgstr ""
+
+#~ msgid "To use full functionality of the Axon Ivy Designer, the system should have Maven 3.9.x installed."
+#~ msgstr ""
+
+#~ msgid "Strictly speaking, the Designer works without a Maven 3.9.x installation, but will report errors on a few operations. It is therefore strictly recommended to properly set up a Maven installation. The extension will check the installation at startup and warn you accordingly."
+#~ msgstr ""
+
+#~ msgid "If the command returns ``Command 'mvn' not found`` or a different version than 3.9.x, follow the `Maven installation <https://maven.apache.org/install?utm_source=openai>`_"
+#~ msgstr ""
+
+#~ msgid "Maven 3.9 must be installed."
 #~ msgstr ""
