@@ -9526,9 +9526,8 @@ msgid "**reportFolder**: when a test fails the test framework automatically take
 msgstr "**reportFolder** ：テストが失敗すると、テストフレームワークは自動的にスクリーンショットを撮ります。このフォルダーは、それらのスクリーンショットの保存先を定義します。"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:269
-#, fuzzy
 msgid "Run tests locally in Axon Ivy Designer"
-msgstr "Axon Ivy Designer でモジュールのビルドを実行します。"
+msgstr "Axon Ivy Designer でテストをローカルで実行します。"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:271
 msgid "You can configure how JUnit runs your tests locally in VS Code. For example you can configure that locally :code:`@IvyWebTest`'s are always run in headed mode. Also if you need to set other system properties like `test.engine.url` you can do this the same way. Simply add a :file:`.vscode/settings.json` file with the following content:"
