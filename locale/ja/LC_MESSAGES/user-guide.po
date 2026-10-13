@@ -23350,6 +23350,10 @@ msgstr "バージョン13.2へのアップグレードは、Axon Ivy Engine 10.0
 msgid "We have updated our platform from Java EE (:code:`javax`) to Jakarta EE (:code:`jakarta`) API's and implementation libraries. This means that all :code:`javax.*` packages have been replaced with :code:`jakarta.*` packages. The biggest change is that there is no longer a :code:`@ManagedBean` annotation, instead beans for Jakarta Faces (JSF) are resolved via `CDI <https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1>`_. CDI beans need to be annotated with :code:`@Named` and they need to have a scope (:code:`@RequestScoped`, :code:`@SessionScoped`, :code:`@ApplicationScoped`, :code:`@ViewScoped`) if they are used in JSF pages. If the beans are :code:`@SessionScoped` or :code:`@ViewScoped`, they need to implement the :code:`Serializable` interface."
 msgstr ""
 
+#: ../../source/technical-info/migration/migration-notes-132-140.rst:434
+msgid "In the Axon Ivy Market, we maintain a `MIGRATE14 log <https://github.com/axonivy-market/market-up2date-keeper/blob/master/doc/MIGRATE14.md>`_ of popular manual conversion steps. You can use it for applied examples or feed it to your Agent for assisted migration."
+msgstr ""
+
 #: ../../source/technical-info/migration/migration-tools.rst:4
 msgid "Migration Tools"
 msgstr "移行ツール"
