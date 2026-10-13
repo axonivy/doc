@@ -429,5 +429,11 @@ that implements the :code:`IBpmnElementExtension` interface.
 
 ------------
 
+.. tip::
+
+  In the Axon Ivy Market, we maintain a `MIGRATE14 log <https://github.com/axonivy-market/market-up2date-keeper/blob/master/doc/MIGRATE14.md>`_ of popular manual conversion steps.
+  You can use it for applied examples or feed it to your Agent for assisted migration.
+
+------------
 
 .. include:: _tagLegend.rst
