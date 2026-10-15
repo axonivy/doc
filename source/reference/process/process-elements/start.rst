@@ -205,11 +205,12 @@ Responsible Role / User
    Defines the role or user required to carry out the task created with
    the :ref:`process-element-trigger-step`.
 
-   Use *Role from Attr.* or *User from Attr.*, if the role or user must
+   Use *Role from Attribute* or *User from Attribute*, if the role or user must
    be set dynamically during process execution. For example from a
-   parameter set by the :ref:`process-element-trigger-step`.
+   parameter set by the :ref:`process-element-trigger-step`. 
+   Or use the *Members from Attribute* option to define a dynamic list of members.
 
-   Use *Role* if you know the responsible role when editing the element.
+   Use *Roles* if you know the responsible roles when editing the element.
 
    - The role SYSTEM means that no human intervention is required. The
      system executes the task automatically.

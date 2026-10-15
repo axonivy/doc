@@ -1,7 +1,8 @@
-Use *Role from Attr.* or *User from Attr.* (as String), if the role or user
+Use *Role from Attribute* or *User from Attribute* (as String), if the role or user
 must be set dynamically during process execution. 
+Or use the *Members from Attribute* option to define a dynamic list of members.
 
-Use *Role* if you know the responsible role when editing the element.
+Use *Roles* if you know the responsible roles when editing the element.
 
 - The role SYSTEM means that no human intervention is required. The
   system executes the new task automatically.
