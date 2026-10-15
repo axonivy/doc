@@ -382,8 +382,20 @@ that you can easily integrate into your Axon Ivy projects.
     The command consists of 3 to 5 steps, depending on the selected product:
 
     1. Select the market product to install.
+
+       .. figure:: /_images/vscode/market-install-product-search.png
+          :alt: Market Install Product Search
+
     2. Select the version. This is normally prefilled with the matching version from the market.
+
+       .. figure:: /_images/vscode/market-install-version-selection.png
+          :alt: Market Install Version Selection
+
     3. Pick the components of the market product to install. For example, many demo projects contain two parts: The demos themselves and a test project. You must pick at least one.
+
+       .. figure:: /_images/vscode/market-install-project-selection.png
+          :alt: Market Install Project Selection
+
     4. (optional) - Depending on the product and your selection in the previous step, you must also choose some required dependencies needed for the previously picked components to run.
     5. (optional) - If your selection from step 3 forced you to choose required dependencies, you must specify in which existing Axon Ivy project you want to install those dependencies.
 
