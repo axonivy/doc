@@ -902,159 +902,172 @@ msgstr ""
 msgid "Select the market product to install."
 msgstr "インストールするマーケット製品を選択します。"
 
-#: ../../source/designer/commands/index.rst:385
+#: ../../source/designer/commands/index.rst:386
+msgid "Market Install Product Search"
+msgstr ""
+
+#: ../../source/designer/commands/index.rst:389
 msgid "Select the version. This is normally prefilled with the matching version from the market."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:386
-msgid "Pick the components of the market product to install. For example, many demo projects contain two parts: The demos themselves and a test project. You must pick at least one."
-msgstr ""
-
-#: ../../source/designer/commands/index.rst:387
-msgid "(optional) - Depending on the product and your selection in the previous step, you must also choose some required dependencies needed for the previously picked components to run."
-msgstr ""
-
-#: ../../source/designer/commands/index.rst:388
-msgid "(optional) - If your selection from step 3 forced you to choose required dependencies, you must specify in which existing Axon Ivy project you want to install those dependencies."
-msgstr ""
-
 #: ../../source/designer/commands/index.rst:391
-msgid "If you try to install a market product that requires you to have an existing Axon Ivy project in the workspace already, but there is no project, the install command will abort and throw an error."
+msgid "Market Install Version Selection"
 msgstr ""
 
 #: ../../source/designer/commands/index.rst:394
-msgid "**Install Local Market Product**"
-msgstr "**ローカルのマーケット製品をインストール**"
-
-#: ../../source/designer/commands/index.rst:395
-msgid ":code:`Axon Ivy: Install Local Market Product`"
-msgstr ":code:`Axon Ivy: Install Local Market Product`"
-
-#: ../../source/designer/commands/index.rst:397
-msgid "Installs an Axon Ivy Market product from a local source file. The steps are identical to the previous command, apart from the first step. Instead of choosing a product from the market by searching it, you are prompted to supply the local source file :code:`product.json`."
+msgid "Pick the components of the market product to install. For example, many demo projects contain two parts: The demos themselves and a test project. You must pick at least one."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:404
-msgid "Miscellaneous"
+#: ../../source/designer/commands/index.rst:396
+#, fuzzy
+msgid "Market Install Project Selection"
+msgstr "プロジェクトの選択"
+
+#: ../../source/designer/commands/index.rst:399
+msgid "(optional) - Depending on the product and your selection in the previous step, you must also choose some required dependencies needed for the previously picked components to run."
+msgstr ""
+
+#: ../../source/designer/commands/index.rst:400
+msgid "(optional) - If your selection from step 3 forced you to choose required dependencies, you must specify in which existing Axon Ivy project you want to install those dependencies."
+msgstr ""
+
+#: ../../source/designer/commands/index.rst:403
+msgid "If you try to install a market product that requires you to have an existing Axon Ivy project in the workspace already, but there is no project, the install command will abort and throw an error."
 msgstr ""
 
 #: ../../source/designer/commands/index.rst:406
+msgid "**Install Local Market Product**"
+msgstr "**ローカルのマーケット製品をインストール**"
+
+#: ../../source/designer/commands/index.rst:407
+msgid ":code:`Axon Ivy: Install Local Market Product`"
+msgstr ":code:`Axon Ivy: Install Local Market Product`"
+
+#: ../../source/designer/commands/index.rst:409
+msgid "Installs an Axon Ivy Market product from a local source file. The steps are identical to the previous command, apart from the first step. Instead of choosing a product from the market by searching it, you are prompted to supply the local source file :code:`product.json`."
+msgstr ""
+
+#: ../../source/designer/commands/index.rst:416
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../source/designer/commands/index.rst:418
 msgid "**Activate Process Animation**"
 msgstr "**プロセスアニメーションを有効化**"
 
-#: ../../source/designer/commands/index.rst:407
+#: ../../source/designer/commands/index.rst:419
 msgid ":code:`Axon Ivy: Activate Process Animation`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:409
+#: ../../source/designer/commands/index.rst:421
 msgid "Activates process animation in the Axon Ivy Engine."
 msgstr "Axon Ivy Engine でプロセスアニメーションを有効にします。"
 
-#: ../../source/designer/commands/index.rst:411
+#: ../../source/designer/commands/index.rst:423
 msgid "**Deactivate Process Animation**"
 msgstr "**プロセスアニメーションを無効化**"
 
-#: ../../source/designer/commands/index.rst:412
+#: ../../source/designer/commands/index.rst:424
 msgid ":code:`Axon Ivy: Deactivate Process Animation`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:414
+#: ../../source/designer/commands/index.rst:426
 msgid "Deactivates process animation in the Axon Ivy Engine."
 msgstr "Axon Ivy Engine でプロセスアニメーションを無効にします。"
 
-#: ../../source/designer/commands/index.rst:416
+#: ../../source/designer/commands/index.rst:428
 msgid "**Attach Process Debugger**"
 msgstr "**プロセスデバッガーを接続**"
 
-#: ../../source/designer/commands/index.rst:417
+#: ../../source/designer/commands/index.rst:429
 msgid ":code:`Axon Ivy: Attach Process Debugger`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:419
+#: ../../source/designer/commands/index.rst:431
 msgid "Attaches the process debugger, which allows you to debug your processes. Refer to the :ref:`debug-process` for more information about debugging."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:421
+#: ../../source/designer/commands/index.rst:433
 msgid "**Open Portal**"
 msgstr "**ポータルを開く**"
 
-#: ../../source/designer/commands/index.rst:422
+#: ../../source/designer/commands/index.rst:434
 msgid ":code:`Axon Ivy: Open Portal`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:424
+#: ../../source/designer/commands/index.rst:436
 msgid "Opens the Axon Ivy portal."
 msgstr "Axon Ivy ポータルを開きます。"
 
-#: ../../source/designer/commands/index.rst:426
+#: ../../source/designer/commands/index.rst:438
 msgid "**Open Developer Workflow UI**"
 msgstr "**Developer Workflow UI を開く**"
 
-#: ../../source/designer/commands/index.rst:427
+#: ../../source/designer/commands/index.rst:439
 msgid ":code:`Axon Ivy: Open Developer Workflow UI`"
 msgstr ":code:`Axon Ivy: Open Developer Workflow UI`"
 
-#: ../../source/designer/commands/index.rst:429
+#: ../../source/designer/commands/index.rst:441
 msgid "Opens the Axon Ivy Developer Workflow UI."
 msgstr "Axon Ivy Developer Workflow UI を開きます。"
 
-#: ../../source/designer/commands/index.rst:431
+#: ../../source/designer/commands/index.rst:443
 msgid "**Open Engine Cockpit**"
 msgstr "**Engine Cockpit を開く**"
 
-#: ../../source/designer/commands/index.rst:432
+#: ../../source/designer/commands/index.rst:444
 msgid ":code:`Axon Ivy: Open Engine Cockpit`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:434
+#: ../../source/designer/commands/index.rst:446
 msgid "Opens the Axon Ivy Engine Cockpit."
 msgstr "Axon Ivy Engine Cockpit を開きます。"
 
-#: ../../source/designer/commands/index.rst:436
+#: ../../source/designer/commands/index.rst:448
 msgid "**Open Welcome Page**"
 msgstr "**ウェルカムページを開く**"
 
-#: ../../source/designer/commands/index.rst:437
+#: ../../source/designer/commands/index.rst:449
 msgid ":code:`Axon Ivy: Open Welcome Page`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:439
+#: ../../source/designer/commands/index.rst:451
 msgid "Opens the Axon Ivy welcome page."
 msgstr "Axon Ivy のウェルカムページを開きます。"
 
-#: ../../source/designer/commands/index.rst:441
+#: ../../source/designer/commands/index.rst:453
 msgid "**Refresh Project Explorer**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:442
+#: ../../source/designer/commands/index.rst:454
 msgid ":code:`Axon Ivy: Refresh Project Explorer`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:444
+#: ../../source/designer/commands/index.rst:456
 msgid "Refreshes the :ref:`Axon Ivy Projects view <designer-basics-tree-view>`."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:446
+#: ../../source/designer/commands/index.rst:458
 msgid "**Switch Engine release train**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:447
+#: ../../source/designer/commands/index.rst:459
 msgid ":code:`Axon Ivy: Switch Engine release train`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:449
+#: ../../source/designer/commands/index.rst:461
 msgid "Switches the Axon Ivy Engine release train. For advanced use only, refer to :ref:`designer-advanced-setup` for more information."
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:451
+#: ../../source/designer/commands/index.rst:463
 msgid "**Reveal Project in File System**"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:452
+#: ../../source/designer/commands/index.rst:464
 msgid ":code:`Axon Ivy: Reveal Project in File System`"
 msgstr ""
 
-#: ../../source/designer/commands/index.rst:454
+#: ../../source/designer/commands/index.rst:466
 msgid "Reveals the selected Axon Ivy project or resource in the operating system's file system."
 msgstr ""
 
@@ -2660,14 +2673,23 @@ msgid "The :code:`W` character is allowed for the day-of-month field. This chara
 msgstr ":code:`W` は日付フィールドで使用できます。この文字を使用して、所定の日に最も近い平日（月曜日～金曜日）を指定します。例えば、 :code:`15W` を日付フィールドの値として指定した場合、その意味は「15 日に最も近い平日」です。15 日が土曜日であれば 14 日の金曜日、15 日が日曜日であれば 16 日の月曜日になります。ただし、 :code:`1W` を日付フィールドの値として指定した場合、月の日の境界を「超える」ことはないため、1 日が土曜日であれば 3 日の月曜日になります。 :code:`W` は、日付が範囲やリストではなく、単日の場合のみ指定できます。"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:158
+#, fuzzy
+msgid "Infrastructure Configuration"
+msgstr "システム設定"
+
+#: ../../source/engine-guide/configuration/advanced-configuration.rst:160
+msgid "To protect hardened infrastructure settings from being overridden, provide :file:`ivy-infra.yaml` in the engine's :file:`configuration` directory. This file is optional; when present, its settings take precedence over matching entries in :file:`ivy.yaml`. The Engine Cockpit treats :file:`ivy-infra.yaml` as read-only and saves configuration changes to :file:`ivy.yaml`."
+msgstr ""
+
+#: ../../source/engine-guide/configuration/advanced-configuration.rst:168
 msgid "Overriding Configuration"
 msgstr "設定のオーバーライド"
 
-#: ../../source/engine-guide/configuration/advanced-configuration.rst:160
+#: ../../source/engine-guide/configuration/advanced-configuration.rst:170
 msgid "Configuration entries of YAML files can be overridden with environment variables of the operating system. Configuration keys in YAML are hierarchic object trees separated by :code:`:` characters. While the environment variable must be written uppercase and separated by :code:`_` characters. You need also to prefix the environment variable with :code:`IVY_`."
 msgstr "YAML ファイルの設定項目をオペレーティングシステムの環境変数でオーバーライドできます。YAML の設定キーは、 :code:`:` で区切られた階層的なオブジェクトツリーです。環境変数は大文字で記述し、 :code:`_` で区切らなければなりません。また、環境変数の前には :code:`IVY_` を付ける必要があります。"
 
-#: ../../source/engine-guide/configuration/advanced-configuration.rst:166
+#: ../../source/engine-guide/configuration/advanced-configuration.rst:176
 msgid "So to overwrite the :code:`SystemDb:Url` of the :ref:`ivy-yaml` file, the environment variable :code:`IVY_SYSTEMDB_URL` must be set."
 msgstr "そのため、 :ref:`ivy-yaml` ファイルの :code:` SystemDb:Url` を上書きするには、環境変数 :code:`IVY_SYSTEMDB_URL` を設定する必要があります。"
 
@@ -3790,7 +3812,7 @@ msgid "You can deploy the configuration of your application with the application
 msgstr "アプリケーションの ZIP アーカイブでアプリケーションの設定を展開できます。 :ref:`app-yaml` などの :file:` .yaml` 設定ファイルを含む :file:`config` フォルダーを追加して設定を展開します。エンジンコックピットでマウスをクリックして手動で設定する代わりに、CI/CD パイプラインでアプリケーションの設定を完全に管理できます。"
 
 #: ../../source/engine-guide/deployment/prepare/application-configuration/index.rst:25
-#: ../../source/reference/process/process-elements/start.rst:252
+#: ../../source/reference/process/process-elements/start.rst:253
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:120
 msgid "Priority"
 msgstr "優先度"
@@ -6642,7 +6664,7 @@ msgstr ":file:`bin/AxonIvyEngine`"
 
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:31
 #: ../../source/engine-guide/reference/engine-config-cli.rst:10
-#: ../../source/reference/process/process-elements/start.rst:243
+#: ../../source/reference/process/process-elements/start.rst:244
 msgid "Options"
 msgstr "オプション"
 
@@ -12580,7 +12602,7 @@ msgstr "|image0|"
 #: ../../source/reference/process/process-elements/signal-boundary-event.rst:40
 #: ../../source/reference/process/process-elements/signal-start.rst:46
 #: ../../source/reference/process/process-elements/split.rst:46
-#: ../../source/reference/process/process-elements/start.rst:293
+#: ../../source/reference/process/process-elements/start.rst:294
 #: ../../source/reference/process/process-elements/sub-process-start.rst:37
 #: ../../source/reference/process/process-elements/task-switch-event.rst:22
 #: ../../source/reference/process/process-elements/task-switch-gateway.rst:99
@@ -12724,7 +12746,7 @@ msgstr "|image4|"
 #: ../../source/reference/process/error-handling.rst:262
 #: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:62
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:332
-#: ../../source/reference/process/process-elements/start.rst:294
+#: ../../source/reference/process/process-elements/start.rst:295
 msgid "image4"
 msgstr "image4"
 
@@ -12922,7 +12944,7 @@ msgstr "シグナルによって中止されるタスク内でシグナルを送
 #: ../../source/getting-productive/workflow/case-task/dev-workflow-ui.rst:68
 #: ../../source/reference/process/error-handling.rst:226
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:105
-#: ../../source/reference/process/process-elements/start.rst:237
+#: ../../source/reference/process/process-elements/start.rst:238
 msgid "|image6|"
 msgstr "|image6|"
 
@@ -12931,7 +12953,7 @@ msgstr "|image6|"
 #: ../../source/reference/process/error-handling.rst:264
 #: ../../source/reference/process/process-elements/bpmn-activity-elements.rst:64
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:334
-#: ../../source/reference/process/process-elements/start.rst:295
+#: ../../source/reference/process/process-elements/start.rst:296
 msgid "image6"
 msgstr "image6"
 
@@ -14328,7 +14350,7 @@ msgstr "「 :ref:`アプリケーション<application>` 」のセクション�
 
 #: ../../source/glossary/glossary.rst:18
 #: ../../source/reference/process/process-elements/signal-start.rst:32
-#: ../../source/reference/process/process-elements/start.rst:224
+#: ../../source/reference/process/process-elements/start.rst:225
 msgid "Case"
 msgstr "ケース"
 
@@ -19220,7 +19242,7 @@ msgstr "パラメーター名にコロン「:」を追加し、その後に必�
 
 #: ../../source/reference/process/process-elements/_tab-task-call-wait.rst:17
 #: ../../source/reference/process/process-elements/common-tabs.rst:200
-#: ../../source/reference/process/process-elements/start.rst:281
+#: ../../source/reference/process/process-elements/start.rst:282
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:127
 msgid "Code"
 msgstr "コード"
@@ -19353,7 +19375,7 @@ msgstr "**ライフタイム** ：要求時（「キャッシュモード」の�
 #: ../../source/reference/process/process-elements/common-tabs.rst:329
 #: ../../source/reference/process/process-elements/common-tabs.rst:348
 #: ../../source/reference/process/process-elements/common-tabs.rst:351
-#: ../../source/reference/process/process-elements/start.rst:287
+#: ../../source/reference/process/process-elements/start.rst:288
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:133
 msgid "Case Tab"
 msgstr "ケースタブ"
@@ -19401,7 +19423,7 @@ msgstr "ケースタブのカスタムフィールドで ``embedInFrame`` が ``
 #: ../../source/reference/process/process-elements/_tab-task-call-wait.rst:2
 #: ../../source/reference/process/process-elements/_tab-task.rst:2
 #: ../../source/reference/process/process-elements/common-tabs.rst:374
-#: ../../source/reference/process/process-elements/start.rst:229
+#: ../../source/reference/process/process-elements/start.rst:230
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:105
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:112
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:115
@@ -19429,23 +19451,25 @@ msgid "**Responsible:** The role or user to assign the task"
 msgstr "**担当：** タスクを割り当てるロールまたはユーザー"
 
 #: ../../source/reference/process/process-elements/_responsible.rst:1
-msgid "Use *Role from Attr.* or *User from Attr.* (as String), if the role or user must be set dynamically during process execution."
+#, fuzzy
+msgid "Use *Role from Attribute* or *User from Attribute* (as String), if the role or user must be set dynamically during process execution. Or use the *Members from Attribute* option to define a dynamic list of members."
 msgstr "プロセス実行中にロールまたはユーザを動的に設定する必要がある場合は、 *Role from Attr.* または *User from Attr.* を（文字列として）使用します。"
 
-#: ../../source/reference/process/process-elements/_responsible.rst:4
-#: ../../source/reference/process/process-elements/start.rst:212
-msgid "Use *Role* if you know the responsible role when editing the element."
+#: ../../source/reference/process/process-elements/_responsible.rst:5
+#: ../../source/reference/process/process-elements/start.rst:213
+#, fuzzy
+msgid "Use *Roles* if you know the responsible roles when editing the element."
 msgstr "要素を編集する際の担当ロールがわかっている場合は、*ロール* を使用してください。"
 
-#: ../../source/reference/process/process-elements/_responsible.rst:6
+#: ../../source/reference/process/process-elements/_responsible.rst:7
 msgid "The role SYSTEM means that no human intervention is required. The system executes the new task automatically."
 msgstr "SYSTEM ロールは、人間の介入が不要なことを意味します。システムが自動的に新しいタスクを実行します。"
 
-#: ../../source/reference/process/process-elements/_responsible.rst:9
+#: ../../source/reference/process/process-elements/_responsible.rst:10
 msgid "The role CREATOR means that the user who has started the current case is responsible for the new task."
 msgstr "CREATOR ロールは、現在のケースを開始したユーザーが新しいタスクに対して責任を負うことを意味します。"
 
-#: ../../source/reference/process/process-elements/_responsible.rst:12
+#: ../../source/reference/process/process-elements/_responsible.rst:13
 msgid "The role SELF means that the user who worked on the previous task is also responsible for the new task."
 msgstr "SELF ロールは、前のタスクを作業したユーザーが新しいタスクにも責任を持つことを意味します。"
 
@@ -21014,90 +21038,91 @@ msgid "Defines the role or user required to carry out the task created with the 
 msgstr ":ref:`process-element-trigger-step` で作成されたタスクを実行するのに必要なロールまたはユーザーを定義します。"
 
 #: ../../source/reference/process/process-elements/start.rst:208
-msgid "Use *Role from Attr.* or *User from Attr.*, if the role or user must be set dynamically during process execution. For example from a parameter set by the :ref:`process-element-trigger-step`."
+#, fuzzy
+msgid "Use *Role from Attribute* or *User from Attribute*, if the role or user must be set dynamically during process execution. For example from a parameter set by the :ref:`process-element-trigger-step`. Or use the *Members from Attribute* option to define a dynamic list of members."
 msgstr "例えば :ref:`process-element-trigger-step` で設定されたパラメーターセットからなど、ロールやユーザーをプロセス実行中に動的に設定する必要がある場合は、*Role from Attr.* または *User from Attr.* を使用します。"
 
-#: ../../source/reference/process/process-elements/start.rst:214
+#: ../../source/reference/process/process-elements/start.rst:215
 msgid "The role SYSTEM means that no human intervention is required. The system executes the task automatically."
 msgstr "SYSTEM ロールは、人間の介入が不要なことを意味します。システムが自動的にタスクを実行します。"
 
-#: ../../source/reference/process/process-elements/start.rst:217
+#: ../../source/reference/process/process-elements/start.rst:218
 msgid "The role CREATOR means that the user who has started the current case is responsible for the task created by the :ref:`process-element-trigger-step`."
 msgstr "CREATOR ロールは、現在のケースを開始したユーザー :ref:`process-element-trigger-step` で作成されたタスクに対して責任を負うことを意味します。"
 
-#: ../../source/reference/process/process-elements/start.rst:220
+#: ../../source/reference/process/process-elements/start.rst:221
 msgid "Delay (blocking period)"
 msgstr "遅延（ブロック期間）"
 
-#: ../../source/reference/process/process-elements/start.rst:221
+#: ../../source/reference/process/process-elements/start.rst:222
 msgid "The task can be blocked before a user can work on it. This ivyScript expression defines the :ref:`ivyscript-datatype-duration` the task is blocked."
 msgstr "ユーザーが作業できるようになるまで、タスクをブロックできます。この ivyScript 式は、タスクがブロックされ :ref:`ivyscript-datatype-duration` を定義します。"
 
-#: ../../source/reference/process/process-elements/start.rst:225
+#: ../../source/reference/process/process-elements/start.rst:226
 msgid "Define whether the triggered case should be attached to the same :ref:`business-case` as the triggering case."
 msgstr "トリガーするケースと同じ :ref:`business-case` にトリガーされたケースを接続すべきかどうかを定義します。"
 
-#: ../../source/reference/process/process-elements/start.rst:231
+#: ../../source/reference/process/process-elements/start.rst:232
 msgid "This tab defines information relevant to the task. Only tasks created with the :ref:`process-element-trigger-step` (see :ref:`process-element-start-request-trigger-tab`) will appear in the task list as suspended tasks. Tasks started with a HTTP request (see :ref:`process-element-start-request-tab-request`) normally do not appear in the task list."
 msgstr "このタブでは、タスクに関連する情報を定義します。:ref:`process-element-trigger-step` （「:ref:`process-element-start-request-trigger-tab`」を参照）を使用して作成されたタスクのみが、保留タスクとしてタスクリストに表示されます。通常、HTTP リクエストで開始されるタスク（「:ref:`process-element-start-request-tab-request`」を参照）は、タスクリストには表示されません。"
 
-#: ../../source/reference/process/process-elements/start.rst:239
+#: ../../source/reference/process/process-elements/start.rst:240
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:117
 msgid "Entry in Task List"
 msgstr "タスクリストのエントリ"
 
-#: ../../source/reference/process/process-elements/start.rst:240
+#: ../../source/reference/process/process-elements/start.rst:241
 msgid "Defines the name and description of the task that appear in the task list of the assigned role or user."
 msgstr "割り当てられたロールまたはユーザーのタスクリストに表示されるタスクの名前と説明を定義します。"
 
-#: ../../source/reference/process/process-elements/start.rst:244
+#: ../../source/reference/process/process-elements/start.rst:245
 msgid "If *Persist task* is selected, the case and task are directly persistent on request start. The case state will be RUNNING instantly (skipping the state CREATED) and the Task state will be RESUMED (skipping the state CREATED). The task could also be reset after the Start Request and the next Task Switch or Process End. This option is only available when the option *Anonymous* on the :ref:`process-element-start-request-tab-request` is disabled."
 msgstr "［*タスクの永続化*］が選択されている場合、ケースとタスクはリクエストの開始時に直接永続化されます。タスクは（作成済みの状態をスキップして）すぐに実行中の状態になり、タスクは（作成済みの状態をスキップして））再開の状態になります。また、開始リクエストや次のタスクスイッチまたはプロセス終了の後、タスクをリセットできます。このオプションは  :ref:`process-element-start-request-tab-request` の［*匿名*］オプションが無効になっている場合のみ、使用可能です。"
 
-#: ../../source/reference/process/process-elements/start.rst:253
+#: ../../source/reference/process/process-elements/start.rst:254
 msgid "Here you select the priority of the task. In the task list you can filter the tasks according the priority."
 msgstr "ここでは、タスクの優先度を選択します。タスクリストでは、優先度に従ってタスクをフィルタリングできます。"
 
-#: ../../source/reference/process/process-elements/start.rst:256
+#: ../../source/reference/process/process-elements/start.rst:257
 msgid "Expiry"
 msgstr "有効期限"
 
-#: ../../source/reference/process/process-elements/start.rst:257
+#: ../../source/reference/process/process-elements/start.rst:258
 msgid "An IvyScript expression defines the :ref:`ivyscript-datatype-duration` until the task will expire. If that happens the escalation procedure defined by the following parameters is executed."
 msgstr "IvyScript 式は、タスクの有効期限が切れるまで :ref:`ivyscript-datatype-duration` を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。"
 
-#: ../../source/reference/process/process-elements/start.rst:262
+#: ../../source/reference/process/process-elements/start.rst:263
 msgid "Exception: Starts an exception process if defined. *>> Ignore Exception* will not start an exception process."
 msgstr "例外：例外プロセスが定義されている場合、例外プロセスを開始します。［*>> 例外を無視*］を選択した場合、例外プロセスは開始されません。"
 
-#: ../../source/reference/process/process-elements/start.rst:265
+#: ../../source/reference/process/process-elements/start.rst:266
 msgid "Responsible Role / User after expiry: Defines the Role / User to reassign the task to."
 msgstr "有効期限後の担当ロール／ユーザー：タスクを再割り当てするロール／ユーザーを定義します。"
 
-#: ../../source/reference/process/process-elements/start.rst:268
+#: ../../source/reference/process/process-elements/start.rst:269
 msgid "Priority after expiry: Defines the new Priority of the task after it has expired."
 msgstr "有効期限後の優先度：期限切れ後のタスクの新しい優先度を定義します。"
 
-#: ../../source/reference/process/process-elements/start.rst:273
+#: ../../source/reference/process/process-elements/start.rst:274
 msgid "A task created with a HTTP request (see :ref:`process-element-start-request-tab-request`) is executed immediately. Defining expiry timeout makes only sense in combination when starting with a :ref:`process-element-trigger-step` (see :ref:`process-element-start-request-trigger-tab`)"
 msgstr "HTTP リクエスト（「:ref:`process-element-start-request-tab-request`」を参照）で作成されたタスクは直ちに実行されます。:ref:`process-element-trigger-step` （「:ref:`process-element-start-request-trigger-tab` 」を参照）で開始する場合のみ、有効期限のタイムアウトを定義してください。"
 
 #: ../../source/reference/process/process-elements/_tab-task-call-wait.rst:12
-#: ../../source/reference/process/process-elements/start.rst:277
+#: ../../source/reference/process/process-elements/start.rst:278
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:123
 msgid "Custom fields"
 msgstr "カスタムフィールド"
 
-#: ../../source/reference/process/process-elements/start.rst:278
+#: ../../source/reference/process/process-elements/start.rst:279
 #: ../../source/reference/process/process-elements/web-service-process-start.rst:124
 msgid "The values set on this table are only informational and have no effect on how this task is treated by Axon Ivy."
 msgstr "この表で設定された値は情報提供のみで、このタスクの Axon Ivy での取り扱いには影響しません。"
 
-#: ../../source/reference/process/process-elements/start.rst:282
+#: ../../source/reference/process/process-elements/start.rst:283
 msgid "This is a post construct code block for the Task that is defined in this tab. The created Task is provided as variable called ``task`` (:ref:`process-element-tab-task`)."
 msgstr "このタブで定義されるタスクのポストコンストラクトコードブロックです。作成されたタスクは ``task`` という名前の変数として提供されます（ :ref:`process-element-tab-task` ）。"
 
-#: ../../source/reference/process/process-elements/start.rst:289
+#: ../../source/reference/process/process-elements/start.rst:290
 msgid "On this tab you can configure the Case created by this Start Request. See :ref:`process-element-tab-case` in the Common Tabs section."
 msgstr "このタブでは、この開始リクエストで作成されるケースを設定できます。「共通のタブ」の章の :ref:`process-element-tab-case` 」を参照してください。"
 
