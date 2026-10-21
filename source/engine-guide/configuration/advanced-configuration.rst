@@ -154,6 +154,16 @@ If the 15th is a Tuesday, then it fires on Tuesday the 15th. However, if :code:`
 is a Saturday, the trigger fires on Monday the 3rd, as it does not 'jump' over the boundary of a month's days. 
 The :code:`W` character can be specified only when the day-of-month is a single day, not a range or list of days.        
 
+Infrastructure Configuration
+----------------------------
+
+To protect hardened infrastructure settings from being overridden, provide
+:file:`ivy-infra.yaml` in the engine's :file:`configuration` directory. This file
+is optional; when present, its settings take precedence over matching entries in
+:file:`ivy.yaml`. The Engine Cockpit treats
+:file:`ivy-infra.yaml` as read-only and saves configuration changes to
+:file:`ivy.yaml`.
+
 Overriding Configuration
 ------------------------
 
