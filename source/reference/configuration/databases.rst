@@ -59,6 +59,31 @@ the variable called ``cloudDb``. Thus, your database name is now configurable
 using variable ``cloudDb``. Operations need to set this variable correctly; they
 do not need to dive into the configuration of this external database.
 
+
+.. _generator-wizard:
+
+Generator Wizard
+-------------------
+
+The Wizard guides you through the process of generating Entities, Forms, and Processes from an existing database.
+This is very powerful to start your project based on database tables.
+
+.. figure:: /_images/database-editor/editor-database-generate-wizard.png
+  :alt: Generator Wizard
+
+  Generator Wizard
+
+.. figure:: /_images/database-editor/editor-database-generate-wizard-tables-selected.png
+  :alt: Generator Wizard with tables selected
+
+  Selected database tables for generation.
+
+.. figure:: /_images/database-editor/editor-database-generate-wizard-options-attributes.png
+  :alt: Generator Wizard options and attributes
+
+  Configure what to generate and define attributes to include.
+
+
 .. _sql-query-runner:
 
 SQL Executor
