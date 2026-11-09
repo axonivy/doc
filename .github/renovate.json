@@ -7,7 +7,8 @@
     {
       "matchPackageNames" :[
         "org.apache.maven.*",
-        "org.codehaus.mojo:*"
+        "org.codehaus.mojo:*",
+        "maven"
       ],
       "automerge": true
     }
