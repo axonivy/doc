@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>axonivy/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames" :[
+        "org.apache.maven.*",
+        "org.codehaus.mojo:*",
+        "maven"
+      ],
+      "automerge": true
+    }
+  ]
+}
+  
