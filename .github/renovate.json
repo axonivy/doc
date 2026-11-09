@@ -11,6 +11,10 @@
         "maven"
       ],
       "automerge": true
+    },
+    {
+      "matchPackageNames": ["ch.ivyteam.*:*"],
+      "enabled": false
     }
   ]
 }
