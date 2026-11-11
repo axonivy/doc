@@ -14,16 +14,25 @@ automated.
 Setup a Test Project
 ~~~~~~~~~~~~~~~~~~~~
 
-.. |TESTKIND| replace:: ``IvyWebTest``
-.. include:: includes/_test-project-setup.rst
+Create a test project with the Axon Ivy Designer extension. Run the
+``Axon Ivy: New Test Project`` command, or right-click the project you want to
+test and select **Axon Ivy > New > New Test Project**.
+
+#. If you ran the command, choose the reference project where you want to write tests. This step is skipped when you start from a project's context menu.
+#. Enter the test project name, group ID, and artifact ID.
+#. Choose the ``WebIT`` test type.
+
+A sample file is created in the ``src_test`` folder of the new test project.
+
+You now have a simple test called ``SampleWebIT``.
 
 #. Run test
 
    - Make sure the Axon Ivy Engine is started with your projects
 
-   - To run this test right-click inside this class -> Run As -> JUnit Test
+   - To run this test right-click inside this class -> Run Tests in Current File
 
-   - A new **JUnit** View should be opened and the test should be green.
+   - The **Test Results** view should open, and the tests should be green.
 
 
 Write a Web Test
@@ -166,45 +175,37 @@ Module Build
 Both projects, production and test project, need to be compiled during the same
 run. To do this, we need to first setup a Maven module build:
 
-#. Create Maven module
+#. Create a Maven module build
 
-   - Delete projects ``crm`` and ``crmIntegrationTests`` from your Axon Ivy Designer
+   - Place the ``crm`` and ``crmIntegrationTests`` projects at the root of your
      workspace.
-   - Open your workspace folder and move both projects into a new folder, e.g
-     :file:`compile-test`
 
-   - Create a :file:`pom.xml` file in the :file:`compile-test` folder.
-
-   - Add the following code to the :link-url:`pom.xml
-     <build-examples-web-test-pom>` file (ensure the correct **modules** ``crm``
-     and ``crmIntegrationTests`` are set):
+   - Create a :file:`pom.xml` at the workspace root. You can also refer to the
+     `pom.xml in the project-build-examples repository
+     <https://github.com/axonivy/project-build-examples/blob/master/compile-test/pom.xml>`__.
+     Add the following code, ensuring the **modules** ``crm`` and
+     ``crmIntegrationTests`` are set:
 
      .. literalinclude:: includes/webtesting/webtesting-maven-module.xml
         :language: xml
 
-   - Your :link-url:`folder structure <build-examples>` should now look as follows:
+   - Your folder structure should look as follows:
 
      .. code:: none
 
         workspace/
-          compile-test/
-            crm/
-            crmIntegrationTests/
-            pom.xml
+          crm/
+          crmIntegrationTests/
+          pom.xml
 
 #. Run module build in Axon Ivy Designer
 
-   - In your Axon Ivy Designer open the **Import** Wizard, then **Existing Maven
-     Projects**
+   - Open the :ref:`designer-views-maven-view`.
 
-   - Select :file:`compile-test/pom.xml` with sub projects (``crm`` and
-     ``crmIntegrationTests`` should be visible here) and click **Finish**
+   - In the Maven view, right-click the workspace-level :file:`pom.xml` and
+     select :guilabel:`Run Maven Commands` > :guilabel:`verify`.
 
-   - Right-click on ``compile-test`` -> Run As -> Maven build
-
-   - Set **Goals** to ``clean verify`` and click **Run**
-
-   - This triggers a run that starts and ends with something similar to:
+   - The build output should look similar to:
 
      .. literalinclude:: includes/webtesting/webtesting-maven-run.log
         :language: none
