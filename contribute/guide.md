@@ -15,6 +15,9 @@ otherwise integrated images and files won't be accessible.
 
 You can browse the documentation at http://127.0.0.1:8000
 
+Some documentation assets and generated content are fetched as Maven dependencies
+during the build. If one cannot be resolved, check that the required artifact is
+available in a configured Maven repository; see `pom.xml` for build details.
 
 ## Dev Environment Setup
 
