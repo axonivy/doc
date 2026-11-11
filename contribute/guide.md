@@ -15,6 +15,19 @@ otherwise integrated images and files won't be accessible.
 
 You can browse the documentation at http://127.0.0.1:8000
 
+## Validation Issue Catalog
+
+Core publishes a neutral JSON catalog of project validators and their validation
+codes in the Maven artifact `ch.ivyteam.doc:validation-issue-catalog`. The docs Maven
+build unpacks the catalog into `target/validation-issue-catalog` and runs the Bash
+updater in the validation pull-request job to regenerate validator overviews and
+update `source/reference/validation`.
+Missing code pages are created, stale catalog pages are removed, and existing
+pages have only their `Message` line updated. The validation pipeline commits
+generated changes to a branch for the matching base branch and opens or updates
+a pull request; reruns append commits to that branch. Pull requests are never
+merged automatically. The updater requires Bash and `jq`.
+
 
 ## Dev Environment Setup
 
