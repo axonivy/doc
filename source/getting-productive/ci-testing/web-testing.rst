@@ -14,11 +14,13 @@ automated.
 Setup a Test Project
 ~~~~~~~~~~~~~~~~~~~~
 
-Create a test project with the Axon Ivy Designer extension. Run the
-``Axon Ivy: New Test Project`` command, or right-click the project you want to
-test and select **Axon Ivy > New > New Test Project**.
+Create a test project with the Axon Ivy Designer extension. Run the ``Axon Ivy:
+New Test Project`` command, or right-click the project you want to test and
+select **Axon Ivy > New > New Test Project**.
 
-#. If you ran the command, choose the reference project where you want to write tests. This step is skipped when you start from a project's context menu.
+#. Chose the reference project for which you want to create tests for. If you
+   ran the command from a projects context menu, the command will have
+   preselected that project for you.
 #. Enter the test project name, group ID, and artifact ID.
 #. Choose the ``WebIT`` test type.
 
@@ -44,8 +46,8 @@ First, we need to start a process. To do this you can use the
 ``EngineUrl`` utility from the :ref:`web-tester`. 
 
 This process opens a dialog with two input fields (``firstname`` and
-``lastname``) and a ``submit`` button. After submitting, a second dialog with your
-input values is displayed.
+``lastname``) and a ``submit`` button. After submitting, a second dialog with
+your input values is displayed.
 
 .. literalinclude:: includes/webtesting/webtesting-test-extend.java
   :language: java
@@ -127,16 +129,19 @@ On your selected element you can check certain conditions (e.g is the element
     //<h:outputText> element should be visible and have text "Unit Test"
     $(By.id("form:newCustomer")).shouldBe(visible, text("Unit Test"));
 
-  Have a look at the :link-url:`demo project <build-examples-web-test-condition>`
-  to see more options.
+  Have a look at the
+  :link-url:`demo project <build-examples-web-test-condition>` to see more
+  options.
 
 
 Change Application Runtime
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For some test cases, you may need to run your web tests with a different user or you need another value for a variable or app configuration. 
-In this case the `WebAppFixture` util can help you to achieve this.
-Unlike the :ref:`AppFixture <unit-testing-app-fixture>` of :ref:`unit-testing`, the changed values are **not** automatically reset after the test run.
+For some test cases, you may need to run your web tests with a different user
+or you need another value for a variable or app configuration. In this case
+the `WebAppFixture` util can help you to achieve this.
+Unlike the :ref:`AppFixture <unit-testing-app-fixture>` of :ref:`unit-testing`,
+the changed values are **not** automatically reset after the test run.
 Let's have a look at it:
 
 You can change the current user or log out to an anonymous session:
@@ -224,16 +229,16 @@ our :link-url:`other demo projects <demos>` and how they are tested.
 Selenium
 ^^^^^^^^
 
-Selenium is an open source web testing framework. It works across different browsers
-and platforms. To communicate with the browser, Selenium provides the **WebDriver**
-specification.
+Selenium is an open source web testing framework. It works across different
+browsers and platforms. To communicate with the browser, Selenium provides the
+**WebDriver** specification.
 
 In our tests we use the `Selenide <https://selenide.org/>`_ (`GitHub
 <https://github.com/selenide/selenide>`_, `API
 <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_)
 framework, which is based on the Selenium WebDriver. If you’re more familiar
-with plain Selenium tests the following comparison can give you a quick overview
-about the differences and benefits: `Selenide vs Selenium
+with plain Selenium tests the following comparison can give you a quick
+overview about the differences and benefits: `Selenide vs Selenium
 <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_. Or you can
 simply write your tests with the normal Selenium API by accessing the driver
 object:
@@ -270,8 +275,9 @@ Run tests locally in Axon Ivy Designer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can configure how JUnit runs your tests locally in VS Code.
-For example you can configure that locally :code:`@IvyWebTest`'s are always run in headed mode. 
-Also if you need to set other system properties like `test.engine.url` you can do this the same way.
+For example you can configure that locally :code:`@IvyWebTest`'s are always run
+in headed mode. Also if you need to set other system properties like
+`test.engine.url` you can do this the same way.
 Simply add a :file:`.vscode/settings.json` file with the following content:
 
 .. literalinclude:: includes/webtesting/webtesting-vscode-settings.json

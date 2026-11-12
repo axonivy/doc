@@ -14,11 +14,13 @@ your processes.
 Setup Test Project
 ~~~~~~~~~~~~~~~~~~
 
-Create a test project with the Axon Ivy Designer extension. Run the
-``Axon Ivy: New Test Project`` command, or right-click the project you want to
-test and select **Axon Ivy > New > New Test Project**.
+Create a test project with the Axon Ivy Designer extension. Run the ``Axon Ivy:
+New Test Project`` command, or right-click the project you want to test and
+select **Axon Ivy > New > New Test Project**.
 
-#. If you ran the command, choose the reference project where you want to write tests. This step is skipped when you start from a project's context menu.
+#. Chose the reference project for which you want to create tests for. If you
+   ran the command from a projects context menu, the command will have
+   preselected that project for you.
 #. Enter the test project name, group ID, and artifact ID.
 #. Choose the ``ProcessTest`` test type.
 
