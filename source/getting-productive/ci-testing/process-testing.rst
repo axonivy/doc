@@ -21,7 +21,7 @@ select **Axon Ivy > New > New Test Project**.
 #. Chose the reference project for which you want to create tests for. If you
    ran the command from a projects context menu, the command will have
    preselected that project for you.
-#. Enter the test project name, group ID, and artifact ID.
+#. Enter the test project ``name``, ``group ID``, and ``artifact ID``.
 #. Choose the ``ProcessTest`` test type.
 
 A sample file is created in the ``src_test`` folder of the new test project.

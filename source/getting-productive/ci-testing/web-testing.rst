@@ -21,7 +21,7 @@ select **Axon Ivy > New > New Test Project**.
 #. Chose the reference project for which you want to create tests for. If you
    ran the command from a projects context menu, the command will have
    preselected that project for you.
-#. Enter the test project name, group ID, and artifact ID.
+#. Enter the test project ``name``, ``group ID``, and ``artifact ID``.
 #. Choose the ``WebIT`` test type.
 
 A sample file is created in the ``src_test`` folder of the new test project.
@@ -182,19 +182,21 @@ run. To do this, we need to first setup a Maven module build:
 
 #. Create a Maven module build
 
-   - Place the ``crm`` and ``crmIntegrationTests`` projects at the root of your
-     workspace.
+   - Place your production project and its test project at the root of your
+     workspace. In this example, these projects are ``crm`` and
+     ``crmIntegrationTests``.
 
    - Create a :file:`pom.xml` at the workspace root. You can also refer to the
      `pom.xml in the project-build-examples repository
      <https://github.com/axonivy/project-build-examples/blob/master/compile-test/pom.xml>`__.
-     Add the following code, ensuring the **modules** ``crm`` and
-     ``crmIntegrationTests`` are set:
+     In the **modules** section, add a **module** entry for each project using
+     its path relative to the workspace root. The example below uses
+     ``crm`` and ``crmIntegrationTests``:
 
      .. literalinclude:: includes/webtesting/webtesting-maven-module.xml
         :language: xml
 
-   - Your folder structure should look as follows:
+   - For this example, the folder structure looks as follows:
 
      .. code:: none
 
@@ -209,6 +211,9 @@ run. To do this, we need to first setup a Maven module build:
 
    - In the Maven view, right-click the workspace-level :file:`pom.xml` and
      select :guilabel:`Run Maven Commands` > :guilabel:`verify`.
+
+      .. figure:: /_images/vscode/maven-view.png
+        :alt: Maven build command in the Designer
 
    - The build output should look similar to:
 
