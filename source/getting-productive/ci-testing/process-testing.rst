@@ -14,10 +14,19 @@ your processes.
 Setup Test Project
 ~~~~~~~~~~~~~~~~~~
 
-.. |TESTKIND| replace:: ``IvyProcessTest``
-.. include:: includes/_test-project-setup.rst
+Create a test project with the Axon Ivy Designer extension. Run the ``Axon Ivy:
+New Test Project`` command, or right-click the project you want to test and
+select **Axon Ivy > New > New Test Project**.
 
-You now have a simple test called ``SampleIvyProcessTest``.
+#. Chose the reference project for which you want to create tests for. If you
+   ran the command from a projects context menu, the command will have
+   preselected that project for you.
+#. Enter the test project ``name``, ``group ID``, and ``artifact ID``.
+#. Choose the ``ProcessTest`` test type.
+
+A sample file is created in the ``src_test`` folder of the new test project.
+
+You now have a simple test called ``SampleProcessTest``.
 
 Note a few things at this point:
 

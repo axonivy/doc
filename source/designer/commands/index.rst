@@ -100,6 +100,11 @@ All commands that create new Axon Ivy resources, except for :code:`New Project`,
     
     Creates a new Axon Ivy project.
 
+**New Test Project**
+    :code:`Axon Ivy: New Test Project`
+
+    Creates a new Axon Ivy test project. Refer to :ref:`CI and Testing <testing>` for more information.
+
 **New Business Process**
     :code:`Axon Ivy: New Business Process`
 

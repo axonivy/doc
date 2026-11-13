@@ -14,16 +14,27 @@ automated.
 Setup a Test Project
 ~~~~~~~~~~~~~~~~~~~~
 
-.. |TESTKIND| replace:: ``IvyWebTest``
-.. include:: includes/_test-project-setup.rst
+Create a test project with the Axon Ivy Designer extension. Run the ``Axon Ivy:
+New Test Project`` command, or right-click the project you want to test and
+select **Axon Ivy > New > New Test Project**.
+
+#. Chose the reference project for which you want to create tests for. If you
+   ran the command from a projects context menu, the command will have
+   preselected that project for you.
+#. Enter the test project ``name``, ``group ID``, and ``artifact ID``.
+#. Choose the ``WebIT`` test type.
+
+A sample file is created in the ``src_test`` folder of the new test project.
+
+You now have a simple test called ``SampleWebIT``.
 
 #. Run test
 
    - Make sure the Axon Ivy Engine is started with your projects
 
-   - To run this test right-click inside this class -> Run As -> JUnit Test
+   - To run this test right-click inside this class -> Run Tests in Current File
 
-   - A new **JUnit** View should be opened and the test should be green.
+   - The **Test Results** view should open, and the tests should be green.
 
 
 Write a Web Test
@@ -35,8 +46,8 @@ First, we need to start a process. To do this you can use the
 ``EngineUrl`` utility from the :ref:`web-tester`. 
 
 This process opens a dialog with two input fields (``firstname`` and
-``lastname``) and a ``submit`` button. After submitting, a second dialog with your
-input values is displayed.
+``lastname``) and a ``submit`` button. After submitting, a second dialog with
+your input values is displayed.
 
 .. literalinclude:: includes/webtesting/webtesting-test-extend.java
   :language: java
@@ -118,16 +129,19 @@ On your selected element you can check certain conditions (e.g is the element
     //<h:outputText> element should be visible and have text "Unit Test"
     $(By.id("form:newCustomer")).shouldBe(visible, text("Unit Test"));
 
-  Have a look at the :link-url:`demo project <build-examples-web-test-condition>`
-  to see more options.
+  Have a look at the
+  :link-url:`demo project <build-examples-web-test-condition>` to see more
+  options.
 
 
 Change Application Runtime
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For some test cases, you may need to run your web tests with a different user or you need another value for a variable or app configuration. 
-In this case the `WebAppFixture` util can help you to achieve this.
-Unlike the :ref:`AppFixture <unit-testing-app-fixture>` of :ref:`unit-testing`, the changed values are **not** automatically reset after the test run.
+For some test cases, you may need to run your web tests with a different user
+or you need another value for a variable or app configuration. In this case
+the `WebAppFixture` util can help you to achieve this.
+Unlike the :ref:`AppFixture <unit-testing-app-fixture>` of :ref:`unit-testing`,
+the changed values are **not** automatically reset after the test run.
 Let's have a look at it:
 
 You can change the current user or log out to an anonymous session:
@@ -166,45 +180,42 @@ Module Build
 Both projects, production and test project, need to be compiled during the same
 run. To do this, we need to first setup a Maven module build:
 
-#. Create Maven module
+#. Create a Maven module build
 
-   - Delete projects ``crm`` and ``crmIntegrationTests`` from your Axon Ivy Designer
-     workspace.
-   - Open your workspace folder and move both projects into a new folder, e.g
-     :file:`compile-test`
+   - Place your production project and its test project at the root of your
+     workspace. In this example, these projects are ``crm`` and
+     ``crmIntegrationTests``.
 
-   - Create a :file:`pom.xml` file in the :file:`compile-test` folder.
-
-   - Add the following code to the :link-url:`pom.xml
-     <build-examples-web-test-pom>` file (ensure the correct **modules** ``crm``
-     and ``crmIntegrationTests`` are set):
+   - Create a :file:`pom.xml` at the workspace root. You can also refer to the
+     `pom.xml in the project-build-examples repository
+     <https://github.com/axonivy/project-build-examples/blob/master/compile-test/pom.xml>`__.
+     In the **modules** section, add a **module** entry for each project using
+     its path relative to the workspace root. The example below uses
+     ``crm`` and ``crmIntegrationTests``:
 
      .. literalinclude:: includes/webtesting/webtesting-maven-module.xml
         :language: xml
 
-   - Your :link-url:`folder structure <build-examples>` should now look as follows:
+   - For this example, the folder structure looks as follows:
 
      .. code:: none
 
         workspace/
-          compile-test/
-            crm/
-            crmIntegrationTests/
-            pom.xml
+          crm/
+          crmIntegrationTests/
+          pom.xml
 
 #. Run module build in Axon Ivy Designer
 
-   - In your Axon Ivy Designer open the **Import** Wizard, then **Existing Maven
-     Projects**
+   - Open the :ref:`designer-views-maven-view`.
 
-   - Select :file:`compile-test/pom.xml` with sub projects (``crm`` and
-     ``crmIntegrationTests`` should be visible here) and click **Finish**
+   - In the Maven view, right-click the workspace-level :file:`pom.xml` and
+     select :guilabel:`Run Maven Commands` > :guilabel:`verify`.
 
-   - Right-click on ``compile-test`` -> Run As -> Maven build
+      .. figure:: /_images/vscode/maven-view.png
+        :alt: Maven build command in the Designer
 
-   - Set **Goals** to ``clean verify`` and click **Run**
-
-   - This triggers a run that starts and ends with something similar to:
+   - The build output should look similar to:
 
      .. literalinclude:: includes/webtesting/webtesting-maven-run.log
         :language: none
@@ -223,16 +234,16 @@ our :link-url:`other demo projects <demos>` and how they are tested.
 Selenium
 ^^^^^^^^
 
-Selenium is an open source web testing framework. It works across different browsers
-and platforms. To communicate with the browser, Selenium provides the **WebDriver**
-specification.
+Selenium is an open source web testing framework. It works across different
+browsers and platforms. To communicate with the browser, Selenium provides the
+**WebDriver** specification.
 
 In our tests we use the `Selenide <https://selenide.org/>`_ (`GitHub
 <https://github.com/selenide/selenide>`_, `API
 <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_)
 framework, which is based on the Selenium WebDriver. If you’re more familiar
-with plain Selenium tests the following comparison can give you a quick overview
-about the differences and benefits: `Selenide vs Selenium
+with plain Selenium tests the following comparison can give you a quick
+overview about the differences and benefits: `Selenide vs Selenium
 <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_. Or you can
 simply write your tests with the normal Selenium API by accessing the driver
 object:
@@ -269,8 +280,9 @@ Run tests locally in Axon Ivy Designer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can configure how JUnit runs your tests locally in VS Code.
-For example you can configure that locally :code:`@IvyWebTest`'s are always run in headed mode. 
-Also if you need to set other system properties like `test.engine.url` you can do this the same way.
+For example you can configure that locally :code:`@IvyWebTest`'s are always run
+in headed mode. Also if you need to set other system properties like
+`test.engine.url` you can do this the same way.
 Simply add a :file:`.vscode/settings.json` file with the following content:
 
 .. literalinclude:: includes/webtesting/webtesting-vscode-settings.json
