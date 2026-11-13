@@ -226,6 +226,25 @@
           </execution>
 
           <execution>
+            <id>unpack-validation-issue-catalog</id>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <outputDirectory>${project.build.directory}/validation-issue-catalog</outputDirectory>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>ch.ivyteam.doc</groupId>
+                  <artifactId>validation-issue-catalog</artifactId>
+                  <version>${ivy-version}</version>
+                  <type>zip</type>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+
+          <execution>
             <id>unpack-configuration-files</id>
             <goals>
               <goal>unpack</goal>

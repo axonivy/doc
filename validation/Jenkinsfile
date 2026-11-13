@@ -1,0 +1,50 @@
+pipeline {
+  agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '30'))
+    disableConcurrentBuilds()
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  stages {
+    stage('generate') {
+      steps {
+        script {
+          docker.build('maven-build', '-f Dockerfile.maven .').inside {
+            maven cmd: '-f pom.xml clean package'
+          }
+        }
+      }
+    }
+    stage('pull-request') {
+      agent {
+        dockerfile {
+          filename 'validation/Dockerfile.validation-gh-cli'
+          reuseNode true
+        }
+      }
+      when {
+        beforeAgent true
+        expression {
+          !env.CHANGE_ID &&
+            (env.BRANCH_NAME == 'master' || env.BRANCH_NAME.startsWith('release/'))
+        }
+      }
+      steps {
+        script {
+          withEnv(['GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/etc/ssh/ssh_known_hosts -o HostKeyAlgorithms=ssh-ed25519 -o LogLevel=error']) {
+            withCredentials([file(credentialsId: 'github-ivyteam-token-repo-manager', variable: 'tokenFile')]) {
+              sshagent(credentials: ['github-axonivy']) {
+                sh 'bash tools/update-validation-reference-pr.sh "$BRANCH_NAME" "$tokenFile"'
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
