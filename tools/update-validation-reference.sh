@@ -26,25 +26,33 @@ declare -A desired_codes=()
 declare -A desired_pages=()
 declare -A templates_by_page=()
 
-while IFS= read -r -d '' validator_id && IFS= read -r -d '' code && IFS= read -r -d '' template; do
+register_catalog_code() {
+  local validator_id=$1
+  local validation_code=$2
+  local message_template=$3
+
   [[ $validator_id =~ ^[a-z][a-z0-9-]*$ ]] || {
     printf 'Invalid validator id in catalog: %s\n' "$validator_id" >&2
     exit 1
   }
-  [[ $code == "ivy.$validator_id."* && $code =~ ^ivy\.[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)+$ ]] || {
-    printf 'Invalid validation code in catalog: %s\n' "$code" >&2
+  [[ $validation_code == "ivy.$validator_id."* && $validation_code =~ ^ivy\.[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)+$ ]] || {
+    printf 'Invalid validation code in catalog: %s\n' "$validation_code" >&2
     exit 1
   }
 
-  relative=${code#ivy.}
-  page=${relative//./\/}.rst
+  local relative=${validation_code#ivy.}
+  local page=${relative//./\/}.rst
   if [[ -v desired_pages["$page"] ]]; then
     printf 'Duplicate validation page in catalog: %s\n' "$page" >&2
     exit 1
   fi
-  desired_codes["$code"]=1
+  desired_codes["$validation_code"]=1
   desired_pages["$page"]=1
-  templates_by_page["$page"]=$template
+  templates_by_page["$page"]=$message_template
+}
+
+while IFS= read -r -d '' validator_id && IFS= read -r -d '' validation_code && IFS= read -r -d '' message_template; do
+  register_catalog_code "$validator_id" "$validation_code" "$message_template"
 done < <(jq -j '.validators[] as $validator | $validator.codes[] | "\($validator.id)\u0000\(.id)\u0000\(.template | gsub("[\\r\\n\\t]"; " "))\u0000"' "$catalog")
 
 create_missing_pages() {
@@ -132,7 +140,10 @@ generate_overviews() {
   done
 
   {
-    printf ':orphan:\n\nValidation\n==========\n\n.. toctree::\n   :maxdepth: 1\n   :includehidden:\n\n   java-index\n'
+    printf ':orphan:\n\nValidation\n==========\n\n.. toctree::\n   :maxdepth: 1\n   :includehidden:\n\n'
+    if jq -e '.validators | any(.id == "java-index")' "$catalog" >/dev/null; then
+      printf '   java-index\n'
+    fi
     jq -r '.validators[].id | select(. != "java-index") | "   " + .' "$catalog"
   } > "$validation_root/index.rst"
 }

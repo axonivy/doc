@@ -36,52 +36,10 @@ pipeline {
       }
       steps {
         script {
-          def base = env.BRANCH_NAME
-          def safeBase = base.replaceAll('[^A-Za-z0-9._-]', '-')
-          def branch = "validation-reference-${safeBase}"
-          def title = "Update validation reference for ${base}"
-          def body = 'Generated validation overviews and code pages from the core validation catalog.'
-          sh "git config user.name 'ivy-team'"
-          sh "git config user.email 'info@ivyteam.ch'"
-
-          withEnv(['GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=no -o LogLevel=error']) {
+          withEnv(['GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/etc/ssh/ssh_known_hosts -o HostKeyAlgorithms=ssh-ed25519 -o LogLevel=error']) {
             withCredentials([file(credentialsId: 'github-ivyteam-token-repo-manager', variable: 'tokenFile')]) {
               sshagent(credentials: ['github-axonivy']) {
-                sh 'git remote add github git@github.com:axonivy/doc.git || git remote set-url github git@github.com:axonivy/doc.git'
-                sh "git fetch github '+refs/heads/${base}:refs/remotes/github/${base}'"
-                def branchExists = sh(
-                  script: "git ls-remote --exit-code --heads github '${branch}' >/dev/null 2>&1",
-                  returnStatus: true) == 0
-                if (branchExists) {
-                  sh "git fetch github '+refs/heads/${branch}:refs/remotes/github/${branch}'"
-                  sh "git checkout -B '${branch}' 'refs/remotes/github/${branch}'"
-                  sh "git merge --no-edit 'refs/remotes/github/${base}'"
-                } else {
-                  sh "git checkout -B '${branch}' 'refs/remotes/github/${base}'"
-                }
-
-                sh 'bash tools/update-validation-reference.sh target/validation-issue-catalog/validation-issue-catalog.json source/reference/validation'
-                sh 'git add source/reference/validation'
-                def stagedChanges = sh(script: 'git diff --cached --quiet', returnStatus: true)
-
-                if (stagedChanges == 0) {
-                  echo 'Validation reference is already up to date'
-                } else if (stagedChanges == 1) {
-                  sh "git commit -m '${title}'"
-                  sh "git push -u github '${branch}'"
-                  sh 'gh auth login --with-token < "${tokenFile}"'
-
-                  def pullRequest = sh(
-                    script: "gh pr list --repo axonivy/doc --base '${base}' --head 'axonivy:${branch}' --state open --json number --jq '.[0].number // empty'",
-                    returnStdout: true).trim()
-                  if (pullRequest) {
-                    sh "gh pr edit '${pullRequest}' --repo axonivy/doc --title '${title}' --body '${body}'"
-                  } else {
-                    sh "gh pr create --repo axonivy/doc --base '${base}' --head '${branch}' --title '${title}' --body '${body}'"
-                  }
-                } else {
-                  error "git diff --cached failed with status ${stagedChanges}"
-                }
+                sh 'bash tools/update-validation-reference-pr.sh "$BRANCH_NAME" "$tokenFile"'
               }
             }
           }
