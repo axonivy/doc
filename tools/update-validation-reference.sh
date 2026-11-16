@@ -48,13 +48,20 @@ update_validator_documentation() {
     create_or_update_code_page "$code_record"
   done < <(jq -c '.codes[]' <<< "$1")
 
+  write_validator_overview "$1"
+  printf '   %s\n' "$validator_id" >> "$validation_root/index.rst"
+  written_pages["$page"]=1
+}
+
+write_validator_overview() {
+  local validator_id
+  validator_id=$(jq -r '.id' <<< "$1")
   local title=${validator_id^}
+  # Overviews are fully generated; handwritten additions belong in individual code pages.
   {
     printf ':orphan:\n\n%s\n%s\n\n' "$title" "$(printf '%s' "$title" | sed 's/./=/g')"
     jq -r '.codes[] | "* :doc:`\(.id) <\(.id | ltrimstr("ivy.") | split(".") | join("/"))>`"' <<< "$1"
-  } > "$validation_root/$page"
-  printf '   %s\n' "$validator_id" >> "$validation_root/index.rst"
-  written_pages["$page"]=1
+  } > "$validation_root/$validator_id.rst"
 }
 
 create_or_update_code_page() {
@@ -82,8 +89,10 @@ create_or_update_code_page() {
     printf ':orphan:\n\n.. _validation-code-%s:\n\n%s\n%s\n\n**Message:** %s\n' \
       "$anchor" "$validation_code" "$(printf '%s' "$validation_code" | sed 's/./-/g')" "$message_template" > "$destination"
   else
+    # Replace only the Message line, preserving handwritten content around it.
     local temporary
     temporary=$(mktemp "${destination}.XXXXXX")
+    # An environment variable keeps backslashes in the template literal.
     if ! MESSAGE=$message_template awk '
       /^\*\*Message:\*\*/ {
         count++
@@ -120,6 +129,7 @@ remove_stale_generated_pages() {
       continue
     fi
     if [[ $relative_page == */* ]]; then
+      # Only generated sub-pages carry this anchor; leave handwritten pages alone.
       grep -q '^\.\. _validation-code-ivy--' "$existing_page" || continue
     fi
     rm -- "$existing_page"
