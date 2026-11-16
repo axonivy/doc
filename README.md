@@ -25,3 +25,9 @@ rebuilding its overview and creating code pages or updating only the `**Message:
 line of existing code pages.
 A final file pass removes stale overviews and generated code pages; handwritten
 sub-pages and the Java-index documentation are preserved.
+
+Run the tests from the repository root (requires Bash, Bats, `jq`, and GNU coreutils):
+
+```sh
+bats tools/test_update_validation_reference.bats
+```
