@@ -10,3 +10,18 @@ Uses reStructuredText as markup language.
 
 - [✍️Contribution](contribute/guide.md)
 - [🌐️ Internationalization](contribute/translate.md)
+
+### Validation reference
+
+The [validation build](validation/Jenkinsfile) updates the reference from the generated
+catalog using:
+
+```sh
+bash tools/update-validation-reference.sh <catalog.json> source/reference/validation
+```
+
+The script requires Bash and `jq`. It processes each validator and its codes directly,
+rebuilding its overview and creating code pages or updating only the `**Message:**`
+line of existing code pages.
+A final file pass removes stale overviews and generated code pages; handwritten
+sub-pages and the Java-index documentation are preserved.
