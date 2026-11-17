@@ -11,35 +11,68 @@ pipeline {
   }
 
   stages {
-    stage('generate') {
+    stage('maven.fetch') {
       steps {
         script {
           docker.build('maven-build', '-f Dockerfile.maven .').inside {
-            maven cmd: '-f pom.xml clean package'
+            maven cmd: '-f pom.xml clean generate-resources'
           }
         }
       }
     }
+
+    stage('generate') {
+      agent {
+        dockerfile {
+          filename 'validation/Dockerfile.validation-generator'
+          reuseNode true
+        }
+      }
+      steps {
+        sh 'bash scripts/validation-doc.sh'
+      }
+    }
+
     stage('pull-request') {
       agent {
         dockerfile {
-          filename 'validation/Dockerfile.validation-gh-cli'
+          filename 'validation/Dockerfile.gh-cli'
           reuseNode true
         }
       }
       when {
         beforeAgent true
-        expression {
-          !env.CHANGE_ID &&
-            (env.BRANCH_NAME == 'master' || env.BRANCH_NAME.startsWith('release/'))
-        }
+        expression { shouldUpdateValidationCatalog() }
       }
       steps {
         script {
-          withEnv(['GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/etc/ssh/ssh_known_hosts -o HostKeyAlgorithms=ssh-ed25519 -o LogLevel=error']) {
+          def branch = validationCatalogBranchName()
+          def message = "Update validation catalog (${env.BRANCH_NAME}) B${env.BUILD_NUMBER}"
+          sh "git config --global user.name 'ivy-team'"
+          sh "git config --global user.email 'info@ivyteam.ch'"
+          withEnv(['GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=no']) {
             withCredentials([file(credentialsId: 'github-ivyteam-token-repo-manager', variable: 'tokenFile')]) {
               sshagent(credentials: ['github-axonivy']) {
-                sh 'bash tools/update-validation-reference-pr.sh "$BRANCH_NAME" "$tokenFile"'
+                sh "git add -A source/reference/validation"
+
+                // 0 = no changes, 1 = changes, anything else = git error
+                def status = sh(script: 'git diff --cached --quiet', returnStatus: true)
+                if (status == 0) {
+                  echo 'validation catalog is up to date'
+                  return
+                }
+                if (status != 1) {
+                  error "git diff failed with status $status"
+                }
+
+                pushValidationCatalog(branch, message)
+
+                sh "gh auth login --with-token < ${tokenFile}"
+                sh """
+                  if [ "\$(gh pr list --head $branch --state open --json number --jq length)" = "0" ]; then
+                    gh pr create --title 'Update validation catalog (${env.BRANCH_NAME})' --body 'Automated update of the validation catalog' --base ${env.BRANCH_NAME} --head $branch
+                  fi
+                """
               }
             }
           }
@@ -47,4 +80,35 @@ pipeline {
       }
     }
   }
+}
+
+def shouldUpdateValidationCatalog() {
+  !env.CHANGE_ID &&
+    (env.BRANCH_NAME == 'master' || env.BRANCH_NAME.startsWith('release/'))
+}
+
+def validationCatalogBranchName() {
+  "update-validation-catalog-${env.BRANCH_NAME.replaceAll(/[^A-Za-z0-9._-]/, '-')}"
+}
+
+// Commits the staged changes on top of the base branch and pushes them to the PR branch.
+// Built with git plumbing, so the commit is always "current base + generated files".
+def pushValidationCatalog(String branch, String message) {
+  sh """
+    tree=\$(git write-tree)
+    parents="-p HEAD"
+
+    # PR branch already exists: append to it
+    if git ls-remote --exit-code --heads origin $branch; then
+      git fetch origin $branch
+      if [ "\$(git rev-parse origin/$branch^{tree})" = "\$tree" ]; then
+        echo 'branch already contains these changes'
+        exit 0
+      fi
+      parents="-p origin/$branch -p HEAD"
+    fi
+
+    commit=\$(git commit-tree \$tree \$parents -m '$message')
+    git push origin \$commit:refs/heads/$branch
+  """
 }
