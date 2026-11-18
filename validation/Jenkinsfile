@@ -1,0 +1,107 @@
+pipeline {
+  agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '30'))
+    disableConcurrentBuilds()
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  stages {
+    stage('maven.fetch') {
+      steps {
+        script {
+          docker.build('maven-build', '-f Dockerfile.maven .').inside {
+            maven cmd: '-f pom.xml clean generate-resources'
+          }
+        }
+      }
+    }
+
+    stage('generate') {
+      agent {
+        dockerfile {
+          filename 'validation/Dockerfile.validation-generator'
+          reuseNode true
+        }
+      }
+      steps {
+        sh 'bash scripts/validation-doc.sh'
+      }
+    }
+
+    stage('pull-request') {
+      agent {
+        dockerfile {
+          filename 'validation/Dockerfile.gh-cli'
+          reuseNode true
+        }
+      }
+      when {
+        beforeAgent true
+        expression { shouldUpdateValidationCatalog() }
+      }
+      steps {
+        script {
+          def branch = validationCatalogBranchName()
+          def message = "Update validation catalog (${env.BRANCH_NAME}) B${env.BUILD_NUMBER}"
+          def title = "Update validation catalog (${env.BRANCH_NAME})"
+          def body = 'Automated update of the validation catalog'
+          sh "git config --global user.name 'ivy-team'"
+          sh "git config --global user.email 'info@ivyteam.ch'"
+          withEnv([
+            'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=no',
+            "VALIDATION_UPDATE_BRANCH=${branch}",
+            "VALIDATION_COMMIT_MESSAGE=${message}",
+            "VALIDATION_BASE_BRANCH=${env.BRANCH_NAME}",
+            "VALIDATION_PR_TITLE=${title}",
+            "VALIDATION_PR_BODY=${body}"
+          ]) {
+            withCredentials([file(credentialsId: 'github-ivyteam-token-repo-manager', variable: 'tokenFile')]) {
+              sshagent(credentials: ['github-axonivy']) {
+                // Reset the generated branch to this source revision; the push below replaces its previous snapshot.
+                sh 'git checkout -B "$VALIDATION_UPDATE_BRANCH" HEAD'
+                sh 'git add -A source/reference/validation'
+
+                // 0 = no changes, 1 = changes, anything else = git error
+                def status = sh(script: 'git diff --cached --quiet', returnStatus: true)
+                if (status == 0) {
+                  echo 'validation catalog is up to date'
+                  return
+                }
+                if (status != 1) {
+                  error "git diff failed with status $status"
+                }
+
+                sh '''
+                  git commit -m "$VALIDATION_COMMIT_MESSAGE"
+                  git push --force origin "HEAD:refs/heads/$VALIDATION_UPDATE_BRANCH"
+                '''
+
+                sh 'gh auth login --with-token < "$tokenFile"'
+                sh '''
+                  if [ "$(gh pr list --head "$VALIDATION_UPDATE_BRANCH" --state open --json number --jq length)" = "0" ]; then
+                    gh pr create --title "$VALIDATION_PR_TITLE" --body "$VALIDATION_PR_BODY" \
+                      --base "$VALIDATION_BASE_BRANCH" --head "$VALIDATION_UPDATE_BRANCH"
+                  fi
+                '''
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+def shouldUpdateValidationCatalog() {
+  !env.CHANGE_ID &&
+    (env.BRANCH_NAME == 'master' || env.BRANCH_NAME.startsWith('release/'))
+}
+
+def validationCatalogBranchName() {
+  "update-validation-catalog-${env.BRANCH_NAME.replaceAll(/[^A-Za-z0-9._-]/, '-')}"
+}

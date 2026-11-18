@@ -11,5 +11,6 @@ Reference
    cms/index
    configuration/index
    project/index
+   validation/index
    public-api/index
    extension-api/index
