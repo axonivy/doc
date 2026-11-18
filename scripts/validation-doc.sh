@@ -30,10 +30,14 @@ detail() {
   local code_id=$1
   local code_template=$2
   local detail_file="$validationRst/codes/$code_id.rst"
+  local heading_underline
 
+  printf -v heading_underline '%*s' "${#code_id}" ''
+  heading_underline=${heading_underline// /-}
   codeIds+=("$code_id")
   manual_doc=$(manualContent "$detail_file")
   detail=${detail_template//__CODE_ID__/"$code_id"}
+  detail=${detail//__CODE_ID_UNDERLINE__/"$heading_underline"}
   detail=${detail//__CODE_TEMPLATE__/"$code_template"}
   printf '%s\n%s\n' "$detail" "$manual_doc" > "$detail_file"
 }
