@@ -62,6 +62,8 @@ pipeline {
           ]) {
             withCredentials([file(credentialsId: 'github-ivyteam-token-repo-manager', variable: 'tokenFile')]) {
               sshagent(credentials: ['github-axonivy']) {
+                sh 'git remote set-url origin git@github.com:axonivy/doc.git'
+
                 // Reset the generated branch to this source revision; the push below replaces its previous snapshot.
                 sh 'git checkout -B "$VALIDATION_UPDATE_BRANCH" HEAD'
                 sh 'git add -A source/reference/validation'
