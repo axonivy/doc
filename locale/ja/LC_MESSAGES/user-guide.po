@@ -9,40 +9,40 @@ msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-19 09:35+0000\n"
-"PO-Revision-Date: 2026-06-26 03:57+0000\n"
-"Last-Translator: wawa-axonivy <wawa.ivyteam@gmail.com>\n"
+"PO-Revision-Date: 2026-11-13 22:16+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.7.dev0\n"
+"X-Generator: Weblate 2026.12.dev0\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/designer/advanced-project-setup.rst:4
 msgid "Advanced Designer Setup"
-msgstr ""
+msgstr "高度なデザイナーセットアップ"
 
 #: ../../source/designer/advanced-project-setup.rst:7
 msgid "This chapter is only relevant if you want to set up your Designer extension with a non-default version. If you want to work with the newest default version of the Designer, you can skip this chapter and stick with the instructions provided in the :ref:`designer-installation` chapter."
-msgstr ""
+msgstr "この章は、デフォルトでないバージョンでデザイナーの拡張子を設定したい場合にのみ関連します。 デザイナーの最新バージョンで動作する場合、この章をスキップして、:ref:`designer-installation` 章で提供される指示に固執することができます."
 
 #: ../../source/designer/advanced-project-setup.rst:11
 msgid "This chapter describes advanced setups where you want to use a specific version of the Engine or de Designer. The following paragraphs will walk you through the most common use cases and how to set them up."
-msgstr ""
+msgstr "この章では、エンジンやデ・デザイナーの特定のバージョンを使用したい高度なセットアップについて説明します。 次の段落は、最も一般的なユースケースとそれらを設定する方法を通してあなたを歩くでしょう."
 
 #: ../../source/designer/advanced-project-setup.rst:14
 msgid "As described in the :ref:`Introduction <designer-guide-vscode>`, there are three pieces of software involved when you work with the Designer:"
-msgstr ""
+msgstr ":ref:`Introduction <designer-guide-vscode>` に記述されているように、Designer で動作する3つのソフトウェアがあります"
 
 #: ../../source/designer/advanced-project-setup.rst:16
 msgid "VS Code -- The IDE"
-msgstr ""
+msgstr "VS コード -- インフォメーション"
 
 #: ../../source/designer/advanced-project-setup.rst:17
 msgid "VS Code Extension -- The Designer"
-msgstr ""
+msgstr "VSコードエクステンション -- デザイナー"
 
 #: ../../source/designer/advanced-project-setup.rst:18
 msgid "Axon Ivy Engine -- The engine"
@@ -50,44 +50,44 @@ msgstr "Axon Ivy Engine -- エンジン"
 
 #: ../../source/designer/advanced-project-setup.rst:20
 msgid "VS Code itself is not controlled by Axon Ivy and has frequent releases. It is therefore paramount that you keep your VS Code up-to-date."
-msgstr ""
+msgstr "VSコード自体はAxon Ivyによって制御されず、頻繁なリリースがあります。 したがって、VSコードを最新の状態に保つことがパラマウントされます."
 
 #: ../../source/designer/advanced-project-setup.rst:22
 msgid "By default, when you install the Designer, you automatically install the newest version of the extension and VS Code will update the extension for you. At startup, the Designer will check if there is a newer engine version available and prompt you to download it before starting. This ensures that you always have an up-to-date Designer and a matching engine."
-msgstr ""
+msgstr "デフォルトでは、Designerをインストールすると、拡張機能の最新バージョンが自動的にインストールされ、VSコードは拡張機能を更新します。 スタートアップでは、新しいエンジンバージョンが利用可能なかどうかを確認し、起動する前にダウンロードするプロンプトが表示されます。 最新のデザイナーとマッチングエンジンを常に備えています."
 
 #: ../../source/designer/advanced-project-setup.rst:28
 msgid "Use case 1 : Work with an older Axon Ivy Engine version"
-msgstr ""
+msgstr "ユースケース1:古いアクソンアイビーエンジンバージョンで動作する"
 
 #: ../../source/designer/advanced-project-setup.rst:29
 msgid "Maybe you need to stick to an older version of the engine, because you need to replicate your production environment which does not use the most recent engine version."
-msgstr ""
+msgstr "多分あなたがエンジンの古いバージョンに固執する必要があります, あなたは、最新のエンジンバージョンを使用しないあなたの生産環境を複製する必要がありますので、."
 
 #: ../../source/designer/advanced-project-setup.rst:31
 msgid "For example, lets say you want to stay on the specific engine version :code:`14.0.2`, but we have released newer versions already. To stick with version :code:`14.0.2`, you can configure the :code:`axonivy.engine.releaseTrain` setting to :code:`14.0.2`. This tells the Designer to download exactly this version of the engine and use it on startup."
-msgstr ""
+msgstr "たとえば、特定のエンジンバージョン:code:`14.0.2`に滞在したいとしましょうが、既に新しいバージョンをリリースしました。 バージョン:code:`14.0.2`に固執するには、:code:`axonivy.engine.releaseTrain`設定を:code:`14.0.2`に設定することができます。 このバージョンのエンジンを正確にダウンロードし、起動時に使うためにデザイナーに指示します."
 
 #: ../../source/designer/advanced-project-setup.rst:36
 msgid "The Designer might informs you on each startup that a newer engine version is available. Ignore those prompts as long as you work on the older engine version."
-msgstr ""
+msgstr "デザイナーは、新しいエンジンバージョンが利用可能になった各スタートアップに通知する場合があります。 古いエンジンバージョンで動作する限り、それらのプロンプトを無視します."
 
 #: ../../source/designer/advanced-project-setup.rst:39
 msgid "Fixing the engine version does not automatically fix the Designer extension version. The Designer can specify a minimum patch version, should it become necessary to enforce a minimum version of the engine in order to work properly."
-msgstr ""
+msgstr "エンジンバージョンの修正は、Designer拡張バージョンを自動的に修正しません。 Designer は、最小限のパッチバージョンを指定できます。エンジンの最小バージョンを適切に機能させるために必要になります."
 
 #: ../../source/designer/advanced-project-setup.rst:42
 msgid "If you happen to have a too old engine version specified in :code:`axonivy.engine.releaseTrain`, the Designer will inform you that it is not compatible with that old engine version anymore."
-msgstr ""
+msgstr ":code:`axonivy.engine.releaseTrain` で指定された古いエンジンバージョンがまだある場合は、その古いエンジンバージョンと互換性がないことを通知します."
 
 #: ../../source/designer/advanced-project-setup.rst:44
 msgid "To solve this, you will have to manually install an older version of the Designer extension."
-msgstr ""
+msgstr "これを解決するには、Designer拡張の古いバージョンを手動でインストールする必要があります."
 
 #: ../../source/designer/advanced-project-setup.rst:46
 #: ../../source/designer/advanced-project-setup.rst:63
 msgid "Run the command :code:`Extensions: Install Specific Version of Extension...`"
-msgstr ""
+msgstr "コマンドを実行する :code:`拡張子: 拡張子の特定のバージョンをインストール...`"
 
 #: ../../source/designer/advanced-project-setup.rst:47
 #: ../../source/designer/advanced-project-setup.rst:64
@@ -100,35 +100,35 @@ msgstr "現在インストールされているバージョンより1つ前の�
 
 #: ../../source/designer/advanced-project-setup.rst:52
 msgid "Use case 2 : Work with a milestone release"
-msgstr ""
+msgstr "ユースケース2:マイルストーンリリースで作業"
 
 #: ../../source/designer/advanced-project-setup.rst:53
 msgid "Milestone releases are snapshots of the current development versions. They allow you to work with new features, but at the same time offer you a stable Designer and engine version that does not change. Refer to this `blogpost <https://community.axonivy.com/d/1319-part-2-developing-in-vs-code-with-a-milestone-release>`_ for a tutorial on how to set it up."
-msgstr ""
+msgstr "マイルストーンリリースは、現在の開発バージョンのスナップショットです。 それらはあなたが新しい機能を使うことを可能にしますが、同時に変更しない安定したデザイナーおよびエンジン版を提供します。 この `blogpost <https://community.axonivy.com/d/1319-part-2-developing-in-vs-code-with-a-milestone-release>`  を参考にしてください."
 
 #: ../../source/designer/advanced-project-setup.rst:57
 msgid "In short, to work with a specific milestone, for example milestone 34:"
-msgstr ""
+msgstr "要するに、マイルストーン34などの特定のマイルストーンで動作します"
 
 #: ../../source/designer/advanced-project-setup.rst:59
 msgid "Configure the settings :code:`axonivy.engine.releaseTrain` to :code:`milestone`"
-msgstr ""
+msgstr "設定の設定 :code:`axonivy.engine.releaseTrain` から :code:` マイルストーン`"
 
 #: ../../source/designer/advanced-project-setup.rst:61
 msgid "There might pop up a warning that your extension version is not a milestone version and there is a mismatch."
-msgstr ""
+msgstr "エクステンションバージョンがマイルストーンバージョンではないという警告がポップアップし、ミスマッチがある可能性があります."
 
 #: ../../source/designer/advanced-project-setup.rst:65
 msgid "Choose the version :code:`14.0.34` where the 34 stands for milestone 34"
-msgstr ""
+msgstr ":code:`14.0.34`バージョンを選択し、34はマイルストーン34を表します"
 
 #: ../../source/designer/advanced-project-setup.rst:66
 msgid "Run the command :code:`Developer: Reload Window` if not prompted"
-msgstr ""
+msgstr "コマンドを実行する :code:`Developer: プロンプトが表示されていない場合は、Reload Window`"
 
 #: ../../source/designer/advanced-project-setup.rst:68
 msgid "The Designer will not most likely start to download the milestone 34 engine. After the download, you will again be asked to restart the window."
-msgstr ""
+msgstr "設計者は、マイルストーン34エンジンをダウンロードし始める可能性がほとんどありません。 ダウンロード後、再びウィンドウを再起動するように求められます."
 
 #: ../../source/designer/ai-development.rst:2
 msgid "AI-assisted development"
@@ -136,11 +136,11 @@ msgstr "AI 支援開発"
 
 #: ../../source/designer/ai-development.rst:4
 msgid "Visual Studio Code and our Designer extension are a perfect match to create and edit Axon Ivy projects."
-msgstr ""
+msgstr "Visual Studio コードとDesigner 拡張機能は、Axon Ivy プロジェクトの作成と編集に最適です."
 
 #: ../../source/designer/ai-development.rst:7
 msgid "Start your journey by chatting to the Agent in the `AI chat panel <https://code.visualstudio.com/docs/chat/chat-overview>`_ on the right side of the Visual Studio Code window."
-msgstr ""
+msgstr "Visual Studio Code ウィンドウの右側にある `AI チャット パネル <https://code.visualstudio.com/docs/chat/chat-overview>`  のエージェントにチャットすることで、旅を始めてください."
 
 #: ../../source/designer/ai-development.rst:11
 msgid "VS Code AI chat panel in the Designer extension"
@@ -152,7 +152,7 @@ msgstr "プロンプトの作成"
 
 #: ../../source/designer/ai-development.rst:18
 msgid "The Agent can respond very powerfully to your prompts."
-msgstr ""
+msgstr "エージェントは、あなたのプロンプトに非常に強力に応答できます."
 
 #: ../../source/designer/ai-development.rst:20
 msgid "Here are a few recommendations:"
@@ -160,19 +160,19 @@ msgstr "ここでは、いくつかの推奨事項を紹介します："
 
 #: ../../source/designer/ai-development.rst:22
 msgid "Mention concrete technical identifiers, such as element names, in your prompt. Talking about a UserTask is more efficient than just a UI."
-msgstr ""
+msgstr "要素名など、あなたのプロンプトで、Mention コンクリートの技術的な識別子。 UserTask について語るのは、UI よりも効率的です."
 
 #: ../../source/designer/ai-development.rst:24
 msgid "The Agent can work very efficiently if you have example projects with your common work practices applied in your workspace. The agent will scan and use these as templates. If you have none, just install `workflow-demos` from the :doc:`market <../market/index>`."
-msgstr ""
+msgstr "エージェントは、あなたのワークスペースで適用される一般的な作業慣行でプロジェクトの例を持っている場合は、非常に効率的に作業することができます。 エージェントはこれらをテンプレートとしてスキャンして使用します。 もしもなければ、:doc:`market <../market/index>`から `workflow-demos` をインストールしてください."
 
 #: ../../source/designer/ai-development.rst:28
 msgid "Open the file where you choose to work at; or drag it into your chat window. This allows the agent to make context-aware edits."
-msgstr ""
+msgstr "選択したファイルを開き、チャットウィンドウにドラッグします。 これにより、エージェントはコンテキスト・ウェアの編集を行うことができます."
 
 #: ../../source/designer/ai-development.rst:30
 msgid "Allow the Agent to look up JSON schema references when prompted; this enables confident, context-aware edits."
-msgstr ""
+msgstr "Agent が JSON のスキーマ参照をプロンプトに表示できるようにします。これにより、自信を持ってコンテキストアウェアの編集が可能になります."
 
 #: ../../source/designer/ai-development.rst:33
 #: ../../source/engine-guide/monitoring/logging.rst:61
@@ -183,15 +183,15 @@ msgstr "**例：**"
 
 #: ../../source/designer/ai-development.rst:35
 msgid "In a workspace with just an empty :code:`Flight` project."
-msgstr ""
+msgstr "空の:code:`Flight`プロジェクトを持つワークスペース."
 
 #: ../../source/designer/ai-development.rst:46
 msgid "Batteries included"
-msgstr ""
+msgstr "含まれている電池"
 
 #: ../../source/designer/ai-development.rst:48
 msgid "The agentic chat is pre-configured to work effectively within Axon Ivy projects. Special knowledge on ivy development is embedded through our tools and pre-packaged skills."
-msgstr ""
+msgstr "エージェントのチャットは、Axon Ivyプロジェクト内で効果的に動作するように事前設定されます。 ivyの開発に関する特別な知識は、当社のツールと事前パッケージ化されたスキルを通じて埋め込まれています."
 
 #: ../../source/designer/ai-development.rst:52
 #: ../../source/reference/cms/cms-editor.rst:15
@@ -200,7 +200,7 @@ msgstr "ツール"
 
 #: ../../source/designer/ai-development.rst:54
 msgid "We supply tools that are automatically activated in your workspace. If one of them isn't used as expected, reference it by name or parts of its description to invoke it in your prompt."
-msgstr ""
+msgstr "ワークスペースで自動的に活性化されるツールを提供します。 期待どおりに使用されていない場合は、その説明の名前または部分で参照して、プロンプトで呼び出すことができます."
 
 #: ../../source/designer/ai-development.rst:62
 msgid "Skills"
@@ -208,15 +208,15 @@ msgstr "スキル"
 
 #: ../../source/designer/ai-development.rst:64
 msgid "Included in the Axon Ivy Designer extension are pre-packaged skills to make your Agent more effective."
-msgstr ""
+msgstr "Axon Ivy Designer エクステンションに含まれているのは、エージェントをより効果的にするための事前パッケージ化されたスキルです."
 
 #: ../../source/designer/ai-development.rst:71
 msgid "Freedom of choice"
-msgstr ""
+msgstr "選択の自由"
 
 #: ../../source/designer/ai-development.rst:73
 msgid "The agentic chat does not enforce a specific model or subscription. Just bring your own model from a vendor of your choice, by configuring your model provider. See `Bring your own Model <https://code.visualstudio.com/docs/agent-customization/language-models#_bring-your-own-language-model-key>`_."
-msgstr ""
+msgstr "エージェントチャットは特定のモデルやサブスクリプションを強制しません。 モデルプロバイダの構成により、選択したベンダーから独自のモデルを持参してください。 独自のモデル <https://code.visualstudio.com/docs/agent-customization/language-models#_bring-your-own-language-model-key>`  を参照."
 
 #: ../../source/designer/ai-development.rst:78
 msgid "The copilot chat is the best default integrated AI harness. However, you can use any third-party harness like Claude Code or Copilot CLI. To bring the ivy development power into any third-party harness, you need to configure our `MCP <https://github.com/axonivy/vscode-designer/blob/release/14.0/doc/mcp/mcp.md>`_ for tool provisioning, and also install our `skills <https://github.com/axonivy/vscode-designer/blob/release/14.0/doc/skills/skills.md>`_."
@@ -228,7 +228,7 @@ msgstr "コマンド"
 
 #: ../../source/designer/commands/index.rst:5
 msgid "This chapter covers the most common commands of the Axon Ivy Designer."
-msgstr ""
+msgstr "この章では、Axon Ivy Designer の最も一般的なコマンドについて説明します."
 
 #: ../../source/designer/commands/index.rst:9
 msgid "Invoking Commands"
@@ -236,7 +236,7 @@ msgstr "コマンドの実行"
 
 #: ../../source/designer/commands/index.rst:11
 msgid "As mentioned in the :ref:`VS Code Basics <designer-basics-commands>`, many commands can be invoked in multiple ways."
-msgstr ""
+msgstr ":ref:`VSコード基本 <designer-basics-commands>`に記載されているように、複数の方法で多くのコマンドを呼び出します."
 
 #: ../../source/designer/commands/index.rst:13
 msgid "**Command Palette** - This is the standard way to invoke a command, since very existing command can be executed via the :ref:`Command Palette <designer-basics-commands>`."
@@ -244,33 +244,33 @@ msgstr ""
 
 #: ../../source/designer/commands/index.rst:14
 msgid "**Tree view context menu** - For convenience, many commands can also be invoked by clicking in the context menu via right-click in a tree view. The advantage is that commands are logically grouped and presented."
-msgstr ""
+msgstr "**ツリービューコンテクストメニュー** - 利便性のために、ツリービューの右クリックでコンテキストメニューをクリックすることで、多くのコマンドが呼び出すことができます。 利点は、コマンドを論理的にグループ化して提示することです."
 
 #: ../../source/designer/commands/index.rst:16
 msgid "There are two tree views where you can right-click: The built-in file explorer and the :ref:`Axon Ivy Projects tree view <designer-basics-tree-view>`."
-msgstr ""
+msgstr "右クリックできる2つのツリービューがあります。組み込みファイルエクスプローラと:ref:`Axon Ivyプロジェクトツリービュー <designer-basics-tree-view>`."
 
 #: ../../source/designer/commands/index.rst:18
 msgid "The file explorer shows a broad collection of commands you most commonly use across your projects. It groups commands by logical sets. Access it by right-clicking anywhere in the file explorer and hover over :code:`Axon Ivy >`"
-msgstr ""
+msgstr "ファイルエクスプローラは、プロジェクト全体で最も一般的に使用されているコマンドの広範なコレクションを示しています。 論理セットでコマンドをグループ化します。 :code:`Axon Ivy >`上のファイルエクスプローラとホバーのどこにでも右クリックしてアクセス"
 
 #: ../../source/designer/commands/index.rst:20
 #: ../../source/designer/commands/index.rst:23
 msgid "Right-click in the file explorer displays the Axon Ivy context menu with the most useful commands."
-msgstr ""
+msgstr "ファイルエクスプローラーで右クリックすると、Axon Ivyコンテクストメニューが最も便利なコマンドに表示されます."
 
 #: ../../source/designer/commands/index.rst:25
 msgid "The Axon Ivy Projects menu only shows commands you execute on that specific project (e.g. deploy, export, etc.)"
-msgstr ""
+msgstr "Axon Ivy Projects メニューは、その特定のプロジェクト(デプロイ、エクスポートなど)で実行するコマンドのみを表示します"
 
 #: ../../source/designer/commands/index.rst:27
 #: ../../source/designer/commands/index.rst:30
 msgid "Right-click in the Axon Ivy Projects view displays the project context menu."
-msgstr ""
+msgstr "Axon Ivy Project で右クリックすると、プロジェクトコンテキストメニューが表示されます."
 
 #: ../../source/designer/commands/index.rst:32
 msgid "The difference between the two context menus is only the selection of the commands."
-msgstr ""
+msgstr "2つのコンテキストメニューの違いは、コマンドの選択のみです."
 
 #: ../../source/designer/commands/index.rst:37
 msgid "Project Selection"
@@ -278,51 +278,51 @@ msgstr "プロジェクトの選択"
 
 #: ../../source/designer/commands/index.rst:39
 msgid "Many commands need you to specify for which project in the workspace you want to invoke the command. For example, when creating a new process, the dialog first asks you in which project you want to create this new process."
-msgstr ""
+msgstr "多くのコマンドは、コマンドを呼び出したいワークスペースでプロジェクトを指定する必要があります。 たとえば、新しいプロセスを作成するとき、ダイアログは最初にこの新しいプロセスを作成したいプロジェクトに尋ねます."
 
 #: ../../source/designer/commands/index.rst:42
 msgid "When you invoke that command via the context menu, it matters where you placed your mouse pointer before right-clicking:"
-msgstr ""
+msgstr "コンテキストメニューでコマンドを実行すると、マウスポインタを右クリックする前に配置することが重要です"
 
 #: ../../source/designer/commands/index.rst:44
 msgid "Right-click on a project or any of its sub folders: The invoked command will prefill the project selection with that project, if applicable."
-msgstr ""
+msgstr "プロジェクトまたはサブフォルダの右クリック: 呼び出されたコマンドは、該当する場合、そのプロジェクトでプロジェクト選択を優先します."
 
 #: ../../source/designer/commands/index.rst:46
 #: ../../source/designer/commands/index.rst:49
 msgid "Right-click on an existing project will set this as the project input."
-msgstr ""
+msgstr "既存のプロジェクトを右クリックすると、プロジェクト入力として設定します."
 
 #: ../../source/designer/commands/index.rst:51
 #: ../../source/designer/commands/index.rst:54
 msgid "The dialog will directly start at step 2/3, prefilling the project input with your tree selection."
-msgstr ""
+msgstr "ダイアログは、直接ステップ2/3で起動し、ツリー選択でプロジェクト入力を準備します."
 
 #: ../../source/designer/commands/index.rst:56
 #: ../../source/designer/commands/index.rst:59
 msgid "When you press the back button, you see the prefilled project selection and can change it if desired."
-msgstr ""
+msgstr "バックボタンを押すと、埋め込まれたプロジェクト選択が表示され、必要に応じて変更できます."
 
 #: ../../source/designer/commands/index.rst:61
 msgid "Right-click in the free space below the folders: No selection is made, you will have to specify the project manually."
-msgstr ""
+msgstr "フォルダの下の空き領域で右クリックします。 選択は行いません。手動でプロジェクトを指定する必要があります."
 
 #: ../../source/designer/commands/index.rst:63
 #: ../../source/designer/commands/index.rst:66
 msgid "The dialog will start at the first step, asking for a project input."
-msgstr ""
+msgstr "ダイアログは、プロジェクト入力を求める最初のステップで起動します."
 
 #: ../../source/designer/commands/index.rst:68
 msgid "This is the same as invoking the command via the Command Palette with :code:`Axon Ivy: New Business Process`, which will never prefill anything."
-msgstr ""
+msgstr ":code:`Axon Ivy: New Business Process` でコマンドパレットを経由してコマンドを呼び出すのと同じです."
 
 #: ../../source/designer/commands/index.rst:71
 msgid "If there is only one Axon Ivy project in your workspace, this project will automatically be preselected. This means that commands that only have a single input step \"Select project\" will execute without asking for input."
-msgstr ""
+msgstr "ワークスペースにAxon Ivyプロジェクトしかない場合、このプロジェクトは自動的に優先されます。 つまり、インプットステップを1つだけ持つコマンドは、インプットを依頼せずに実行されます."
 
 #: ../../source/designer/commands/index.rst:74
 msgid "Example: :code:`Axon Ivy: Reveal Project in File Explorer` consists of one step only: Selecting the project to reveal. If there is only one project, invoking this command will automatically select it and reveal the project in the file explorer without asking for your input."
-msgstr ""
+msgstr "例: :code:`Axon Ivy: File Explorer`のReveal Projectは1つのステップのみで構成されます。 プロジェクトを選択すると、プロジェクトが表示されます。 1つのプロジェクトしかない場合、このコマンドを呼び出して、入力を要求せずにファイルエクスプローラでプロジェクトを自動的に選択して表示します."
 
 #: ../../source/designer/commands/index.rst:79
 msgid "Command Feedback"
@@ -330,27 +330,27 @@ msgstr "コマンドの実行結果"
 
 #: ../../source/designer/commands/index.rst:81
 msgid "Not all commands ask you for your input. Some commands simply execute in the background."
-msgstr ""
+msgstr "すべてのコマンドは入力を要求しません。 一部のコマンドは単にバックグラウンドで実行します."
 
 #: ../../source/designer/commands/index.rst:83
 msgid "After invoking a command, keep an eye on the notifications list and the status bar at the bottom right and left. They usually provide feedback about ongoing operations."
-msgstr ""
+msgstr "コマンドを呼び出した後、通知リストとステータスバーを右下と左下で確認します。 彼らは通常、進行中の操作に関するフィードバックを提供します."
 
 #: ../../source/designer/commands/index.rst:86
 msgid "For more detailed feedback, you can check the :ref:`log views <designer-views-axonivy-views>`."
-msgstr ""
+msgstr "より詳細なフィードバックについては、:ref:`ログビュー <designer-views-axonivy-views>`を確認できます."
 
 #: ../../source/designer/commands/index.rst:92
 msgid "List of all Commands"
-msgstr ""
+msgstr "すべてのコマンドのリスト"
 
 #: ../../source/designer/commands/index.rst:95
 msgid "New"
-msgstr ""
+msgstr "ニュース"
 
 #: ../../source/designer/commands/index.rst:96
 msgid "All commands that create new Axon Ivy resources, except for :code:`New Project`, will first ask you for a project in which to create the new resource in."
-msgstr ""
+msgstr ":code:`New Project` 以外の新しい Axon Ivy リソースを作成するすべてのコマンドは、最初に新しいリソースを作成するプロジェクトを要求します."
 
 #: ../../source/designer/commands/index.rst:98
 msgid "**New Project**"
@@ -370,11 +370,11 @@ msgstr "**新しいビジネスプロセス**"
 
 #: ../../source/designer/commands/index.rst:104
 msgid ":code:`Axon Ivy: New Business Process`"
-msgstr ""
+msgstr ":code:`Axon Ivy: 新業務プロセス`"
 
 #: ../../source/designer/commands/index.rst:106
 msgid "Creates a new Axon Ivy business process. Refer to the :ref:`process-modeling` for more information."
-msgstr ""
+msgstr "Axon Ivy の新しいビジネスプロセスを作成します。 詳細は:ref:`process-modeling`を参照してください."
 
 #: ../../source/designer/commands/index.rst:108
 msgid "**New Callable Sub Process**"
@@ -386,7 +386,7 @@ msgstr ":code:`Axon Ivy: New Callable Sub Process`"
 
 #: ../../source/designer/commands/index.rst:111
 msgid "Creates a new Axon Ivy callable subprocess. Refer to the :ref:`process-modeling` for more information."
-msgstr ""
+msgstr "Axon Ivyコール可能なサブプロセスを新規作成します。 詳細は:ref:`process-modeling`を参照してください."
 
 #: ../../source/designer/commands/index.rst:113
 msgid "**New Web Service Process**"
@@ -398,7 +398,7 @@ msgstr ":code:`Axon Ivy: New Web Service Process`"
 
 #: ../../source/designer/commands/index.rst:116
 msgid "Creates a new Axon Ivy web service process. Refer to the :ref:`process-modeling` for more information."
-msgstr ""
+msgstr "Axon Ivy Web サービスプロセスを新規作成します。 詳細は:ref:`process-modeling`を参照してください."
 
 #: ../../source/designer/commands/index.rst:118
 msgid "**New Html Dialog (JSF)**"
@@ -406,11 +406,11 @@ msgstr "**新しい HTML ダイアログ (JSF)**"
 
 #: ../../source/designer/commands/index.rst:119
 msgid ":code:`Axon Ivy: New Html Dialog (JSF)`"
-msgstr ""
+msgstr ":code:`Axon Ivy:新しいHtmlダイアログ(JSF)`"
 
 #: ../../source/designer/commands/index.rst:121
 msgid "Creates a new Axon Ivy HTML dialog based on JSF. Refer to the :ref:`user-dialogs` for more information."
-msgstr ""
+msgstr "JSFに基づいて新しいAxon Ivy HTMLダイアログを作成します。 詳細は:ref:`user-dialogs`を参照してください."
 
 #: ../../source/designer/commands/index.rst:123
 msgid "**New Dialog Form**"
@@ -418,11 +418,11 @@ msgstr "**新しいダイアログフォーム**"
 
 #: ../../source/designer/commands/index.rst:124
 msgid ":code:`Axon Ivy: New Dialog Form`"
-msgstr ""
+msgstr ":code:`アクソンアイビー:新しいダイアログフォーム`"
 
 #: ../../source/designer/commands/index.rst:126
 msgid "Creates a new Axon Ivy dialog form. Refer to the :ref:`user-dialogs` for more information."
-msgstr ""
+msgstr "Axon Ivy の新しいダイアログ フォームを作成します。 詳細は:ref:`user-dialogs`をご覧ください."
 
 #: ../../source/designer/commands/index.rst:128
 msgid "**New Offline Dialog (JSF)**"
@@ -430,11 +430,11 @@ msgstr "**新しいオフラインダイアログ (JSF)**"
 
 #: ../../source/designer/commands/index.rst:129
 msgid ":code:`Axon Ivy: New Offline Dialog (JSF)`"
-msgstr ""
+msgstr ":code:`Axon Ivy:新しいオフラインダイアログ(JSF)`"
 
 #: ../../source/designer/commands/index.rst:131
 msgid "Creates a new Axon Ivy offline dialog based on JSF. Refer to the :ref:`user-dialogs` for more information."
-msgstr ""
+msgstr "JSFに基づいて新しいAxon Ivyオフラインダイアログを作成します。 詳細は:ref:`user-dialogs`をご覧ください."
 
 #: ../../source/designer/commands/index.rst:133
 msgid "**New Data Class**"
@@ -442,11 +442,11 @@ msgstr "**新しいデータクラス**"
 
 #: ../../source/designer/commands/index.rst:134
 msgid ":code:`Axon Ivy: New Data Class`"
-msgstr ""
+msgstr ":code:`Axon Ivy:新しいデータクラス`"
 
 #: ../../source/designer/commands/index.rst:136
 msgid "Creates a new Axon Ivy data class. Refer to the :ref:`data-classes` for more information."
-msgstr ""
+msgstr "新しいAxon Ivyデータクラスを作成します。 詳細は:ref:`data-classes`を参照してください."
 
 #: ../../source/designer/commands/index.rst:138
 msgid "**New Entity Class**"
@@ -454,11 +454,11 @@ msgstr "**新しいエンティティクラス**"
 
 #: ../../source/designer/commands/index.rst:139
 msgid ":code:`Axon Ivy: New Entity Class`"
-msgstr ""
+msgstr ":code:`Axon Ivy:新しいエンティティティクラス`"
 
 #: ../../source/designer/commands/index.rst:141
 msgid "Creates a new Axon Ivy entity class. Refer to the :ref:`data-classes` for more information."
-msgstr ""
+msgstr "Axon Ivy のエンティティティクラスを作成します。 詳細は「X50X」をご覧ください."
 
 #: ../../source/designer/commands/index.rst:143
 msgid "**New Case Map**"
@@ -466,11 +466,11 @@ msgstr "**新しいケースマップ**"
 
 #: ../../source/designer/commands/index.rst:144
 msgid ":code:`Axon Ivy: New Case Map`"
-msgstr ""
+msgstr ":code:`Axon Ivy:新しいケースマップ`"
 
 #: ../../source/designer/commands/index.rst:146
 msgid "Creates a new Axon Ivy case map. Refer to the :ref:`casemap` for more information."
-msgstr ""
+msgstr "新しいAxon Ivyのケースマップを作成します。 詳細は:ref:`casemap`を参照してください."
 
 #: ../../source/designer/commands/index.rst:151
 msgid "Open Editors"
@@ -478,15 +478,15 @@ msgstr "エディターを開く"
 
 #: ../../source/designer/commands/index.rst:152
 msgid "All the editors will prompt you for a project on which to open the respective config editor."
-msgstr ""
+msgstr "すべてのエディタは、各コンフィギュレーションエディタを開くためにプロジェクトを要求します."
 
 #: ../../source/designer/commands/index.rst:154
 msgid "Except for the :code:`Custom Field` editor, all those editors are Axon Ivy specific editors as described in the :ref:`editor introduction <designer-basics-editor>` and in more detail in the :ref:`designer-editors` chapter. Those editors are therefore linked to specific file types or names."
-msgstr ""
+msgstr ":code:`カスタムフィールド`エディタを除き、すべてのエディタは:ref:`エディタで説明されているように、Axon Ivy固有のエディタであり、 :ref:`designer-editors`の章で詳しく説明しています。 これらのエディタは、特定のファイルタイプや名前にリンクされています."
 
 #: ../../source/designer/commands/index.rst:156
 msgid "For example, invoking :code:`Axon Ivy: Open Database Editor` in project X will open the database editor of that project. The same could be achieved by double-clicking the :code:`config/databases.yaml` file of project X."
-msgstr ""
+msgstr "たとえば、プロジェクトXで:code:`Axon Ivy: Open Database Editor`を呼び出すと、そのプロジェクトのデータベースエディタが開きます。 同じことが、プロジェクトXの:code:`config/databases.yaml`ファイルをダブルクリックすることで実現できます."
 
 #: ../../source/designer/commands/index.rst:158
 msgid "**Open CMS Editor**"
@@ -506,7 +506,7 @@ msgstr "**カスタムフィールドエディターを開く**"
 
 #: ../../source/designer/commands/index.rst:164
 msgid ":code:`Axon Ivy: Open Custom Field Editor`"
-msgstr ""
+msgstr ":code:`Axon Ivy:カスタムフィールドエディタを開きます`"
 
 #: ../../source/designer/commands/index.rst:166
 msgid "Opens the Axon Ivy custom field editor."
@@ -518,7 +518,7 @@ msgstr "**データベースエディターを開く**"
 
 #: ../../source/designer/commands/index.rst:169
 msgid ":code:`Axon Ivy: Open Database Editor`"
-msgstr ""
+msgstr ":code:`Axon Ivy: 開いたデータベースエディタ`"
 
 #: ../../source/designer/commands/index.rst:171
 msgid "Opens the Axon Ivy database editor."
@@ -611,7 +611,7 @@ msgstr "**Axon Ivy ランタイムログを開く**"
 
 #: ../../source/designer/commands/index.rst:210
 msgid ":code:`Axon Ivy: Open Axon Ivy Runtime Log`"
-msgstr ""
+msgstr ":code:`Axon Ivy:Axon Ivy Runtime Log`を開く"
 
 #: ../../source/designer/commands/index.rst:212
 msgid "Opens the Axon Ivy runtime log."
@@ -619,11 +619,11 @@ msgstr "Axon Ivy ランタイムログを開きます。"
 
 #: ../../source/designer/commands/index.rst:214
 msgid "**Open Axon Ivy Extension Log**"
-msgstr ""
+msgstr "**Axon Ivy Extension Logを開く**"
 
 #: ../../source/designer/commands/index.rst:215
 msgid ":code:`Axon Ivy: Open Axon Ivy Extension Log`"
-msgstr ""
+msgstr ":code:`Axon Ivy:Axon Ivy Extension Log`を開く"
 
 #: ../../source/designer/commands/index.rst:217
 msgid "Opens the Axon Ivy extension log."
@@ -635,7 +635,7 @@ msgstr "**Axon Ivy Engine ログを開く**"
 
 #: ../../source/designer/commands/index.rst:220
 msgid ":code:`Axon Ivy: Open Axon Ivy Engine Log`"
-msgstr ""
+msgstr ":code:`Axon Ivy:Axon Ivy Engine Log`を開く"
 
 #: ../../source/designer/commands/index.rst:222
 msgid "Opens the Axon Ivy Engine log."
@@ -647,43 +647,43 @@ msgstr "インポート / エクスポート"
 
 #: ../../source/designer/commands/index.rst:231
 msgid "**Import Project Archive (.iar or .zip)**"
-msgstr ""
+msgstr "**インポートプロジェクトアーカイブ(.iarまたは.zip)**"
 
 #: ../../source/designer/commands/index.rst:232
 msgid ":code:`Axon Ivy: Import Project Archive (.iar or .zip)`"
-msgstr ""
+msgstr ":code:`Axon Ivy:インポートプロジェクトアーカイブ(.iarまたは.zip)`"
 
 #: ../../source/designer/commands/index.rst:234
 msgid "Lets you import and unpack an archived Axon Ivy project (``.iar``) or a collection of multiple projects (``.zip``). If the import is successful, the project(s) will be **unpacked** and added to your workspace."
-msgstr ""
+msgstr "アーカイブされたAxon Ivyプロジェクト(```.iar``)または複数のプロジェクト(```.zip`)のコレクションをインポートしてアンパックしてみましょう。 インポートが成功すると、プロジェクトは**unpacked**で、ワークスペースに追加されます."
 
 #: ../../source/designer/commands/index.rst:238
 msgid "It is currently not allowed to import an project archive into another Axon Ivy project. Right-clicking on an Axon Ivy project and importing an archive will result in an error."
-msgstr ""
+msgstr "プロジェクト アーカイブを別のAxon Ivyプロジェクトにインポートすることはできません。 Axon Ivyプロジェクトを右クリックし、アーカイブをインポートするとエラーが発生します."
 
 #: ../../source/designer/commands/index.rst:243
 msgid "**Export Project Archive (.iar)**"
-msgstr ""
+msgstr "**輸出プロジェクト アーカイブ(.iar)**"
 
 #: ../../source/designer/commands/index.rst:244
 msgid ":code:`Axon Ivy: Export Project Archive (.iar)`"
-msgstr ""
+msgstr ":code:`Axon Ivy:エクスポートプロジェクトアーカイブ(.iar)`"
 
 #: ../../source/designer/commands/index.rst:246
 msgid "Similar to the import, this command lets you export an Axon Ivy project from your workspace as an ``.iar`` archive."
-msgstr ""
+msgstr "インポートと同様に、このコマンドを使用すると、ワークスペースからAxon Ivyプロジェクトを ``.iar` のアーカイブとしてエクスポートできます."
 
 #: ../../source/designer/commands/index.rst:248
 msgid "**Import BPMN Process**"
-msgstr ""
+msgstr "**インポートBPMNプロセス**"
 
 #: ../../source/designer/commands/index.rst:249
 msgid ":code:`Axon Ivy: Import BPMN Process`"
-msgstr ""
+msgstr ":code:`Axon Ivy:インポートBPMNプロセス`"
 
 #: ../../source/designer/commands/index.rst:251
 msgid "Import a BPMN process either as :code:`.xml` or :code:`.bpmn`."
-msgstr ""
+msgstr "BPMNプロセスを:code:`.xml`または:code:`.bpmn`としてインポートします."
 
 #: ../../source/designer/commands/index.rst:256
 #: ../../source/designer/editors.rst:12
@@ -693,7 +693,7 @@ msgstr "プロセスエディター"
 
 #: ../../source/designer/commands/index.rst:257
 msgid "The following commands are only active if you have an open :code:`.p.json` file in the Process Editor."
-msgstr ""
+msgstr "プロセスエディタで:code:`.p.json`ファイルを開くと、次のコマンドが有効になります."
 
 #: ../../source/designer/commands/index.rst:259
 msgid "**Fit to Screen**"
@@ -701,11 +701,11 @@ msgstr "**画面に合わせる**"
 
 #: ../../source/designer/commands/index.rst:260
 msgid ":code:`Axon Ivy: Fit to Screen`"
-msgstr ""
+msgstr ":code:`Axonのアイビー:スクリーン`に合います"
 
 #: ../../source/designer/commands/index.rst:262
 msgid "Fits the active workflow diagram to the available screen space."
-msgstr ""
+msgstr "有効なワークフロー図を利用できるスクリーン スペースに合わせて下さい."
 
 #: ../../source/designer/commands/index.rst:264
 msgid "**Center selection**"
@@ -717,19 +717,19 @@ msgstr ":code:`Axon Ivy: Center selection`"
 
 #: ../../source/designer/commands/index.rst:267
 msgid "Centers the selected elements in the active workflow diagram."
-msgstr ""
+msgstr "選択した要素をアクティブなワークフロー図に集中します."
 
 #: ../../source/designer/commands/index.rst:269
 msgid "**Layout diagram**"
-msgstr ""
+msgstr "**レイアウト図**"
 
 #: ../../source/designer/commands/index.rst:270
 msgid ":code:`Axon Ivy: Layout diagram`"
-msgstr ""
+msgstr ":code:`Axon Ivy:レイアウト図`"
 
 #: ../../source/designer/commands/index.rst:272
 msgid "Automatically arranges the active workflow diagram."
-msgstr ""
+msgstr "アクティブなワークフロー図を自動的に配置します."
 
 #: ../../source/designer/commands/index.rst:274
 msgid "**Export as SVG**"
@@ -737,11 +737,11 @@ msgstr "**SVG としてエクスポート**"
 
 #: ../../source/designer/commands/index.rst:275
 msgid ":code:`Axon Ivy: Export as SVG`"
-msgstr ""
+msgstr ":code:`Axon Ivy:SVG`としてエクスポート"
 
 #: ../../source/designer/commands/index.rst:277
 msgid "Exports the active workflow diagram as an SVG file."
-msgstr ""
+msgstr "アクティブなワークフロー図をSVGファイルとしてエクスポートします."
 
 #: ../../source/designer/commands/index.rst:282
 #: ../../source/designer/editors.rst:21
@@ -751,7 +751,7 @@ msgstr "フォームエディター"
 
 #: ../../source/designer/commands/index.rst:283
 msgid "The following commands are only active if you have an open :code:`.f.json` file in the Form Editor."
-msgstr ""
+msgstr "フォームエディタで:code:`.f.json`ファイルを開くと、次のコマンドが有効になります."
 
 #: ../../source/designer/commands/index.rst:285
 msgid "**Open Dialog Preview**"
@@ -759,7 +759,7 @@ msgstr "**ダイアログのプレビューを開く**"
 
 #: ../../source/designer/commands/index.rst:286
 msgid ":code:`Axon Ivy: Open Dialog Preview`"
-msgstr ""
+msgstr ":code:`Axon Ivy: Dialog Preview`を開く"
 
 #: ../../source/designer/commands/index.rst:288
 msgid "Opens a preview of the selected dialog."
@@ -772,7 +772,7 @@ msgstr "プロジェクト変換"
 
 #: ../../source/designer/commands/index.rst:296
 msgid "When you update your Axon Ivy engine, projects can become outdated. In that case, the :ref:`problem view <problems-view>` will show a problem marker, indicating that the projects need to be **converted**. Clicking on the problem marker lets you inspect your project's properties file :file:`.ivyproject`, you will see the project version. You will also see a warning indicator, when the project is out of date."
-msgstr ""
+msgstr "Axon Ivyエンジンをアップデートすると、プロジェクトが切り離されます。 この場合、:ref:`problem view <problems-view>`は、プロジェクトが**変換される必要があることを示す問題マーカーが表示されます。 問題マーカーをクリックすると、プロジェクトのプロパティファイル:file:`.ivyproject`を調べ、プロジェクトバージョンが表示されます。 プロジェクトが日付外の場合、警告インジケータが表示されます."
 
 #: ../../source/designer/commands/index.rst:301
 msgid "Axon Ivy can convert your old projects automatically to the newest project format for you. During this process, all existing artifacts will be converted (if necessary) so as to work with the new Axon Ivy version, and any missing but required artifacts will be added."
@@ -780,7 +780,7 @@ msgstr "Axon Ivy では、古いプロジェクトを最新のプロジェクト
 
 #: ../../source/designer/commands/index.rst:305
 msgid "The conversion can be triggered via the :code:`Axon Ivy: Convert Project` command. After the execution, you can check the :ref:`conversion log <designer-views-project-conversion>` for details."
-msgstr ""
+msgstr ":code:`Axon Ivy: ` コマンドで変換をトリガーできます。 実行後、詳細は :ref:`conversion log <designer-views-project-conversion>` を確認できます."
 
 #: ../../source/designer/commands/index.rst:310
 msgid "It is absolutely recommended that you create a copy of your project before invoking the conversion. Alternatively you can have your project under version control. In this case, make sure that all your projects are checked in, before you invoke the conversion, so that you can easily roll back (revert) to the old version, if conversion should fail for some reason."
@@ -804,7 +804,7 @@ msgstr ":code:`Axon Ivy: Convert Project`"
 
 #: ../../source/designer/commands/index.rst:323
 msgid "Opens a selection with all the outdated projects in your workspace. Lets you choose projects to convert. If there are no outdated projects in your workspace, the selection will be empty and nothing can be selected."
-msgstr ""
+msgstr "ワークスペース内のすべての古いプロジェクトで選択を開きます。 プロジェクトを選択して変換します。 ワークスペースに未処理のプロジェクトがない場合、選択は空になり、何も選択できません."
 
 #: ../../source/designer/commands/index.rst:327
 msgid "**Convert All Projects**"
@@ -812,11 +812,11 @@ msgstr "**すべてのプロジェクトを変換**"
 
 #: ../../source/designer/commands/index.rst:328
 msgid ":code:`Axon Ivy: Convert All Projects`"
-msgstr ""
+msgstr ":code:`Axon Ivy:すべてのプロジェクトを変換`"
 
 #: ../../source/designer/commands/index.rst:330
 msgid "Shortcut for Convert Project which preselects all available projects ready for conversion."
-msgstr ""
+msgstr "コンバージョンの準備可能なすべてのプロジェクトを事前に選択するコンバートプロジェクトのショートカット."
 
 #: ../../source/designer/commands/index.rst:336
 msgid "Project Management"
@@ -824,7 +824,7 @@ msgstr "プロジェクト管理"
 
 #: ../../source/designer/commands/index.rst:338
 msgid "Those projects pertain the management and setup of your Axon Ivy projects."
-msgstr ""
+msgstr "これらのプロジェクトは、Axon Ivyプロジェクトの管理とセットアップに関するものです."
 
 #: ../../source/designer/commands/index.rst:340
 msgid "**Deploy Project**"
@@ -836,7 +836,7 @@ msgstr ":code:`Axon Ivy: Deploy Project`"
 
 #: ../../source/designer/commands/index.rst:343
 msgid "Deploys the selected Axon Ivy project, which synchronizes your workspace with the Axon Ivy backend. When working in the Designer, this command is usually executed behind the scenes and is not needed to be executed manually unless you encounter problems in your workspace."
-msgstr ""
+msgstr "選択したAxon Ivyプロジェクトを展開し、Axon Ivyバックエンドでワークスペースを同期させます。 Designer で動作する場合、このコマンドは通常、シーンの後ろで実行され、ワークスペースで問題が発生した場合に問題が発生した場合に手動で実行する必要はありません."
 
 #: ../../source/designer/commands/index.rst:347
 msgid "**Deploy all Projects**"
@@ -848,19 +848,19 @@ msgstr ":code:`Axon Ivy: Deploy all Projects`"
 
 #: ../../source/designer/commands/index.rst:350
 msgid "Shortcut to execute the deploy command on all Axon Ivy projects in the workspace."
-msgstr ""
+msgstr "ワークスペース内のすべてのAxon Ivyプロジェクトで展開コマンドを実行するショートカット."
 
 #: ../../source/designer/commands/index.rst:352
 msgid "**Stop BPM Engine of Project**"
-msgstr ""
+msgstr "**プロジェクトトップBPMエンジン**"
 
 #: ../../source/designer/commands/index.rst:353
 msgid ":code:`Axon Ivy: Stop BPM Engine of Project`"
-msgstr ""
+msgstr ":code:`Axon Ivy:プロジェクトBPMエンジンを停止`"
 
 #: ../../source/designer/commands/index.rst:355
 msgid "Stops the BPM Engine associated with the selected project. This will terminate all running simulations in that project."
-msgstr ""
+msgstr "選択したプロジェクトに関連するBPMエンジンを停止します。 実行中の全てのシミュレーションをプロジェクトで終了します."
 
 #: ../../source/designer/commands/index.rst:359
 msgid "**Add Project Dependency**"
@@ -872,11 +872,11 @@ msgstr ":code:`Axon Ivy: Add Project Dependency`"
 
 #: ../../source/designer/commands/index.rst:362
 msgid "Adds a dependency to an Axon Ivy project. This will create a dependency from Axon Ivy project A to project B."
-msgstr ""
+msgstr "Axon Ivyプロジェクトへの依存性を追加します。 Axon IvyプロジェクトAからBプロジェクトへの依存性を作成します."
 
 #: ../../source/designer/commands/index.rst:366
 msgid "This command only works if you have at least two projects in your workspace."
-msgstr ""
+msgstr "このコマンドは、ワークスペースで少なくとも2つのプロジェクトを持っている場合にのみ動作します."
 
 #: ../../source/designer/commands/index.rst:374 ../../source/market/index.rst:4
 msgid "Market"
@@ -884,7 +884,7 @@ msgstr "マーケット"
 
 #: ../../source/designer/commands/index.rst:375
 msgid "Our :ref:`Axon Ivy Market <market>` has many already built connectors to 3rd-party systems, utilities or demos that you can easily integrate into your Axon Ivy projects."
-msgstr ""
+msgstr "当社の:ref:`Axon Ivy Market <market>`は、すでに3rdパーティシステム、ユーティリティ、またはAxon Ivyプロジェクトに簡単に統合できるデモにコネクタを組み込んでいます."
 
 #: ../../source/designer/commands/index.rst:378
 msgid "**Install Market Product**"
@@ -896,7 +896,7 @@ msgstr ":code:`Axon Ivy: Install Market Product`"
 
 #: ../../source/designer/commands/index.rst:381
 msgid "Installs an Axon Ivy Market product from the Axon Ivy market. The command consists of 3 to 5 steps, depending on the selected product:"
-msgstr ""
+msgstr "Axon Ivy市場からAxon Ivy Market製品をインストールします。 コマンドは、選択した製品に応じて3〜5ステップで構成されます"
 
 #: ../../source/designer/commands/index.rst:384
 msgid "Select the market product to install."
@@ -904,19 +904,19 @@ msgstr "インストールするマーケット製品を選択します。"
 
 #: ../../source/designer/commands/index.rst:386
 msgid "Market Install Product Search"
-msgstr ""
+msgstr "市場はプロダクト調査を取付けます"
 
 #: ../../source/designer/commands/index.rst:389
 msgid "Select the version. This is normally prefilled with the matching version from the market."
-msgstr ""
+msgstr "バージョンを選択します。 これは、通常、市場からのマッチングバージョンで優先されます."
 
 #: ../../source/designer/commands/index.rst:391
 msgid "Market Install Version Selection"
-msgstr ""
+msgstr "マーケット インストール バージョン選択"
 
 #: ../../source/designer/commands/index.rst:394
 msgid "Pick the components of the market product to install. For example, many demo projects contain two parts: The demos themselves and a test project. You must pick at least one."
-msgstr ""
+msgstr "市場製品のコンポーネントを選択してインストールします。 たとえば、多くのデモプロジェクトには2つの部分が含まれています。 デモ自体とテストプロジェクト。 少なくとも1つを選ぶ必要があります."
 
 #: ../../source/designer/commands/index.rst:396
 msgid "Market Install Project Selection"
@@ -924,15 +924,15 @@ msgstr "マーケット製品のプロジェクト選択"
 
 #: ../../source/designer/commands/index.rst:399
 msgid "(optional) - Depending on the product and your selection in the previous step, you must also choose some required dependencies needed for the previously picked components to run."
-msgstr ""
+msgstr "(オプション) - 前のステップで製品と選択に応じて、以前に選択したコンポーネントが実行するために必要な依存関係を選択する必要があります."
 
 #: ../../source/designer/commands/index.rst:400
 msgid "(optional) - If your selection from step 3 forced you to choose required dependencies, you must specify in which existing Axon Ivy project you want to install those dependencies."
-msgstr ""
+msgstr "(オプション) - 選択がステップ3から強制的に必要依存関係を選択する場合は、それらの依存関係をインストールしたい既存のAxon Ivyプロジェクトで指定する必要があります."
 
 #: ../../source/designer/commands/index.rst:403
 msgid "If you try to install a market product that requires you to have an existing Axon Ivy project in the workspace already, but there is no project, the install command will abort and throw an error."
-msgstr ""
+msgstr "既にワークスペースに既存のAxon Ivyプロジェクトを持っている必要がある市場製品をインストールしようとすると、プロジェクトがない場合、インストールコマンドは中止し、エラーをスローします."
 
 #: ../../source/designer/commands/index.rst:406
 msgid "**Install Local Market Product**"
@@ -944,11 +944,11 @@ msgstr ":code:`Axon Ivy: Install Local Market Product`"
 
 #: ../../source/designer/commands/index.rst:409
 msgid "Installs an Axon Ivy Market product from a local source file. The steps are identical to the previous command, apart from the first step. Instead of choosing a product from the market by searching it, you are prompted to supply the local source file :code:`product.json`."
-msgstr ""
+msgstr "ローカルソースファイルからAxon Ivy Market製品をインストールします。 最初のステップとは別に、前のコマンドと同じです。 市場から製品を選ぶ代わりに、ローカルソースファイル:code:`product.json`を供給するように求められます."
 
 #: ../../source/designer/commands/index.rst:416
 msgid "Miscellaneous"
-msgstr ""
+msgstr "ツイート"
 
 #: ../../source/designer/commands/index.rst:418
 msgid "**Activate Process Animation**"
@@ -956,7 +956,7 @@ msgstr "**プロセスアニメーションを有効化**"
 
 #: ../../source/designer/commands/index.rst:419
 msgid ":code:`Axon Ivy: Activate Process Animation`"
-msgstr ""
+msgstr ":code:`アクティベートプロセスアニメーション`"
 
 #: ../../source/designer/commands/index.rst:421
 msgid "Activates process animation in the Axon Ivy Engine."
@@ -968,7 +968,7 @@ msgstr "**プロセスアニメーションを無効化**"
 
 #: ../../source/designer/commands/index.rst:424
 msgid ":code:`Axon Ivy: Deactivate Process Animation`"
-msgstr ""
+msgstr ":code:`アクソンアイビー:非アクティブ化プロセスアニメーション`"
 
 #: ../../source/designer/commands/index.rst:426
 msgid "Deactivates process animation in the Axon Ivy Engine."
@@ -980,11 +980,11 @@ msgstr "**プロセスデバッガーを接続**"
 
 #: ../../source/designer/commands/index.rst:429
 msgid ":code:`Axon Ivy: Attach Process Debugger`"
-msgstr ""
+msgstr ":code:`Axon Ivy:アタッチプロセスデバッガー`"
 
 #: ../../source/designer/commands/index.rst:431
 msgid "Attaches the process debugger, which allows you to debug your processes. Refer to the :ref:`debug-process` for more information about debugging."
-msgstr ""
+msgstr "プロセスデバッガを添付して、プロセスをデバッグできます。 デバッグの詳細については、「X86X」を参照してください."
 
 #: ../../source/designer/commands/index.rst:433
 msgid "**Open Portal**"
@@ -992,7 +992,7 @@ msgstr "**ポータルを開く**"
 
 #: ../../source/designer/commands/index.rst:434
 msgid ":code:`Axon Ivy: Open Portal`"
-msgstr ""
+msgstr ":code:`Axon Ivy: オープンポータル`"
 
 #: ../../source/designer/commands/index.rst:436
 msgid "Opens the Axon Ivy portal."
@@ -1016,7 +1016,7 @@ msgstr "**Engine Cockpit を開く**"
 
 #: ../../source/designer/commands/index.rst:444
 msgid ":code:`Axon Ivy: Open Engine Cockpit`"
-msgstr ""
+msgstr ":code:`アクソンアイビー:オープンエンジンコックピット`"
 
 #: ../../source/designer/commands/index.rst:446
 msgid "Opens the Axon Ivy Engine Cockpit."
@@ -1028,7 +1028,7 @@ msgstr "**ウェルカムページを開く**"
 
 #: ../../source/designer/commands/index.rst:449
 msgid ":code:`Axon Ivy: Open Welcome Page`"
-msgstr ""
+msgstr ":code:`アクソンアイビー:オープンウェルカムページ`"
 
 #: ../../source/designer/commands/index.rst:451
 msgid "Opens the Axon Ivy welcome page."
@@ -1036,39 +1036,39 @@ msgstr "Axon Ivy のウェルカムページを開きます。"
 
 #: ../../source/designer/commands/index.rst:453
 msgid "**Refresh Project Explorer**"
-msgstr ""
+msgstr "**Refresh Project Explorer** を参照"
 
 #: ../../source/designer/commands/index.rst:454
 msgid ":code:`Axon Ivy: Refresh Project Explorer`"
-msgstr ""
+msgstr ":code:`Axon Ivy:プロジェクトエクスプローラをリフレッシュ`"
 
 #: ../../source/designer/commands/index.rst:456
 msgid "Refreshes the :ref:`Axon Ivy Projects view <designer-basics-tree-view>`."
-msgstr ""
+msgstr ":ref:`Axon Ivy プロジェクトビュー <designer-basics-tree-view>` をリフレッシュします."
 
 #: ../../source/designer/commands/index.rst:458
 msgid "**Switch Engine release train**"
-msgstr ""
+msgstr "**スイッチエンジンの解放の列車**"
 
 #: ../../source/designer/commands/index.rst:459
 msgid ":code:`Axon Ivy: Switch Engine release train`"
-msgstr ""
+msgstr ":code:`Axon Ivy: スイッチエンジンリリース列車`"
 
 #: ../../source/designer/commands/index.rst:461
 msgid "Switches the Axon Ivy Engine release train. For advanced use only, refer to :ref:`designer-advanced-setup` for more information."
-msgstr ""
+msgstr "Axon Ivyエンジンのリリース列車を切り替えます。 高度な使用のみについては、詳細は:ref:`designer-advanced-setup`を参照してください."
 
 #: ../../source/designer/commands/index.rst:463
 msgid "**Reveal Project in File System**"
-msgstr ""
+msgstr "**ファイルシステムでのプロジェクト**"
 
 #: ../../source/designer/commands/index.rst:464
 msgid ":code:`Axon Ivy: Reveal Project in File System`"
-msgstr ""
+msgstr ":code:`Axon Ivy:ファイルシステム`でRevealプロジェクト"
 
 #: ../../source/designer/commands/index.rst:466
 msgid "Reveals the selected Axon Ivy project or resource in the operating system's file system."
-msgstr ""
+msgstr "オペレーティングシステムのファイルシステムで選択したAxon Ivyプロジェクトまたはリソースを明らかにします."
 
 #: ../../source/designer/debug.rst:4
 msgid "Debugging"
@@ -1076,15 +1076,15 @@ msgstr "デバッグ"
 
 #: ../../source/designer/debug.rst:6
 msgid "This chapter explains how to debug your Axon Ivy processes. There are two things you can debug"
-msgstr ""
+msgstr "この章では、Axon Ivy プロセスのデバッグ方法について説明します。 デバッグできる2つのことがあります"
 
 #: ../../source/designer/debug.rst:9
 msgid "The Axon Ivy process itself. Inspect your process elements when simulating to understand the process."
-msgstr ""
+msgstr "Axon Ivyプロセス自体。 プロセスの要素をシミュレートしてプロセスを理解するときにチェックします."
 
 #: ../../source/designer/debug.rst:10
 msgid "The Axon Ivy engine and the Java classes that are executed during your process. This means your own Java files as well as stepping into the engine code."
-msgstr ""
+msgstr "プロセス中に実行されるAxon IvyエンジンとJavaクラス。 これは、独自のJavaファイルだけでなく、エンジンコードへのステップを意味します."
 
 #: ../../source/designer/debug.rst:16
 msgid "Process Debug"
@@ -1092,23 +1092,23 @@ msgstr "プロセスデバッグ"
 
 #: ../../source/designer/debug.rst:17
 msgid "In your open process, :ref:`add a breakpoint <process-editor-quick-actions-toggle-breakpoint>` on a process element"
-msgstr ""
+msgstr ":ref:` プロセス要素にブレークポイント <process-editor-quick-actions-toggle-breakpoint>` を追加"
 
 #: ../../source/designer/debug.rst:18
 msgid "There should pop up a notification in the bottom-left corner, telling you that you have no running debug session. Press :code:`Start Process Debug` to start a session."
-msgstr ""
+msgstr "左下隅に通知をポップアップして、デバッグセッションを実行していないことを伝えてください。 :code:`プロセスのデバッグ`を開始してセッションを開始します."
 
 #: ../../source/designer/debug.rst:19
 msgid "If no notification appears, start a debug session with the command :code:`Axon Ivy: Attach Process Debugger`"
-msgstr ""
+msgstr "通知が見つからない場合は、コマンド:code:`Axon Ivyでデバッグセッションを開始します: プロセスのデバッグ`を添付"
 
 #: ../../source/designer/debug.rst:20
 msgid "After starting the session, the :ref:`designer-views-run-and-debug-view` should indicate that you have a new debug session running. You should also see the debug toolbar."
-msgstr ""
+msgstr ":ref:`designer-views-run-and-debug-view` はセッションを開始した後、新しいデバッグセッションが実行されていることを示します。 デバッグツールバーも参照してください."
 
 #: ../../source/designer/debug.rst:21
 msgid "Start your process simulation. The simulation should stop at the breakpoint and you can inspect the variables in the :ref:`designer-views-run-and-debug-view`."
-msgstr ""
+msgstr "プロセスシミュレーションを開始します。 シミュレーションは、ブレークポイントで停止し、:ref:`designer-views-run-and-debug-view` で変数を検査することができます."
 
 #: ../../source/designer/debug.rst:29
 msgid "Java Debug"
@@ -1116,23 +1116,23 @@ msgstr "Java デバッグ"
 
 #: ../../source/designer/debug.rst:30
 msgid "Set a breakpoint somewhere in a Java file as described here `Setting a breakpoint <https://code.visualstudio.com/docs/debugtest/debugging#_breakpoints>`_"
-msgstr ""
+msgstr "ここに記載されているようにJavaファイル内のブレークポイントを設定 <https://code.visualstudio.com/docs/debugtest/debugging#_breakpoints>`"
 
 #: ../../source/designer/debug.rst:31
 msgid "Update the :ref:`designer-settings-vmargs` setting with the string"
-msgstr ""
+msgstr "文字列で:ref:`designer-settings-vmargs`設定を更新"
 
 #: ../../source/designer/debug.rst:33
 msgid ":code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n`"
-msgstr ""
+msgstr ":code:`-agentlib:jdwp=transport=dt socket,server=y,address=*:8000,suspend=n`"
 
 #: ../../source/designer/debug.rst:35
 msgid "Restart the extension, so that the settings can take effect by running :code:`Developer: Reload Window`"
-msgstr ""
+msgstr ":code:`Developer: Reload Window` を実行することで設定が有効になるように、拡張子を再起動します"
 
 #: ../../source/designer/debug.rst:36
 msgid "Create a new :code:`launch.json` configuration as described here: `Create a debug configuration file <https://code.visualstudio.com/docs/debugtest/debugging-configuration#_create-a-debug-configuration-file>`_"
-msgstr ""
+msgstr "ここで説明する新しい:code:`launch.json`設定を作成します。`デバッグ設定ファイルを作成する<https://code.visualstudio.com/docs/debugtest/debugging-configuration#_create-a-debug-configuration-file>`"
 
 #: ../../source/designer/debug.rst:37
 msgid "Select `Java`"
@@ -1144,7 +1144,7 @@ msgstr ""
 
 #: ../../source/designer/debug.rst:55
 msgid "Starting your process simulation should now stop at the breakpoint and let you inspect your Java classes."
-msgstr ""
+msgstr "プロセスのシミュレーションを開始すると、ブレイクポイントで停止し、Java クラスを調べることができます."
 
 #: ../../source/designer/designer-settings.rst:4
 msgid "Designer Settings"
@@ -1152,27 +1152,27 @@ msgstr "Designer の設定"
 
 #: ../../source/designer/designer-settings.rst:6
 msgid "This chapters covers the different VS Code settings the Axon Ivy Designer provides to configure the behavior of the extension."
-msgstr ""
+msgstr "この章では、Axon Ivy Designer が拡張機能の動作を構成するための異なる VS コード設定について説明します."
 
 #: ../../source/designer/designer-settings.rst:8
 msgid "For a general introduction to VS Code settings, refer to :ref:`designer-basics-settings`."
-msgstr ""
+msgstr "VS コード設定の一般的な導入については、「X57X」を参照してください."
 
 #: ../../source/designer/designer-settings.rst:10
 msgid "Open the settings UI to the **Workspace** settings by executing the command :code:`Preferences: Open Workspace Settings (UI)` and then search for :code:`@ext:axonivy.vscode-designer-14`."
-msgstr ""
+msgstr ":code:` コマンドを実行することで、設定 UI を :code:` に設定します。 設定: ` を開き、:code:` @ext:axonivy.vscode-designer-14` を検索します."
 
 #: ../../source/designer/designer-settings.rst:13
 msgid "Alternatively, you can click the status bar and press :code:`Open Axon Ivy Settings`."
-msgstr ""
+msgstr "または、ステータスバーをクリックし、:code:`、[Axon Ivy Settings`を開きます."
 
 #: ../../source/designer/designer-settings.rst:15
 msgid "This will give you a list of all available settings of the Axon Ivy Designer."
-msgstr ""
+msgstr "Axon Ivy Designer のすべての利用可能な設定のリストが表示されます."
 
 #: ../../source/designer/designer-settings.rst:17
 msgid "Some of the settings are of a purely technical nature. Only the settings relevant for your work with the extension are listed here."
-msgstr ""
+msgstr "一部の設定は、純粋に技術的な性質です。 拡張機能で作業する設定は こちら にのみ表示されます."
 
 #: ../../source/designer/designer-settings.rst:24
 msgid "Axon Ivy > Engine"
@@ -1184,7 +1184,7 @@ msgstr "拡張機能から実行"
 
 #: ../../source/designer/designer-settings.rst:28
 msgid "This setting must always be activated. Deactivating it is for extension debugging only and will break your Axon Ivy Designer."
-msgstr ""
+msgstr "この設定は必ず有効にする必要があります。 拡張デバッグのみのため、アクティベーションを解除し、Axon Ivy Designer を破棄します."
 
 #: ../../source/designer/designer-settings.rst:32
 msgid "Release Train"
@@ -1192,11 +1192,11 @@ msgstr "リリース系列"
 
 #: ../../source/designer/designer-settings.rst:33
 msgid "Advanced use only. This setting should be empty."
-msgstr ""
+msgstr "高度な使用のみ. この設定は空でなければなりません."
 
 #: ../../source/designer/designer-settings.rst:35
 msgid "Only set it, if you want to work with a specific extension or engine version, as described in :ref:`designer-advanced-setup`"
-msgstr ""
+msgstr ":ref:`designer-advanced-setup` で説明されているように、特定の拡張子またはエンジンバージョンで動作する場合のみ、設定します"
 
 #: ../../source/designer/designer-settings.rst:39
 msgid "Engine URL"
@@ -1204,19 +1204,19 @@ msgstr "Engine の URL"
 
 #: ../../source/designer/designer-settings.rst:40
 msgid "Can be ignored, not relevant."
-msgstr ""
+msgstr "無視できません."
 
 #: ../../source/designer/designer-settings.rst:45
 msgid "Vm Args"
-msgstr ""
+msgstr "Vmのラグ"
 
 #: ../../source/designer/designer-settings.rst:46
 msgid "Here you can specify additional arguments for the engine that is run in the background by the extension."
-msgstr ""
+msgstr "ここでは、拡張子でバックグラウンドで実行されるエンジンの追加の引数を指定できます."
 
 #: ../../source/designer/designer-settings.rst:48
 msgid "As mentioned in the description, this is mainly used for debugging your Java classes. Refer to the :ref:`debug-java` chapter for more information about debugging."
-msgstr ""
+msgstr "説明では、主にJavaクラスをデバッグするために使われます。 デバッグの詳細については、「X99X」の章を参照してください."
 
 #: ../../source/designer/designer-settings.rst:53
 msgid "Axon Ivy > Project"
@@ -1228,7 +1228,7 @@ msgstr "除外パターン"
 
 #: ../../source/designer/designer-settings.rst:57
 msgid "Allows you to specify patterns that should be excluded from the Axon Ivy project scanner. This might be useful if you have many different projects in your workspace."
-msgstr ""
+msgstr "Axon Ivyプロジェクトスキャナーから除外すべきパターンを指定できます。 ワークスペースにさまざまなプロジェクトがある場合に便利です."
 
 #: ../../source/designer/designer-settings.rst:62
 msgid "Maximum Number"
@@ -1236,7 +1236,7 @@ msgstr "最大数"
 
 #: ../../source/designer/designer-settings.rst:63
 msgid "Upper limit for the number of projects that will be detected."
-msgstr ""
+msgstr "検出されるプロジェクト数の上限."
 
 #: ../../source/designer/designer-settings.rst:70 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -1248,7 +1248,7 @@ msgstr "ブラウザー"
 
 #: ../../source/designer/designer-settings.rst:74
 msgid "Which browser is used to open the Axon Ivy content. By default, this is set to the internal VS Code browser. Change it to :code:`externalBrowser` if you want to open the content in your systems browser."
-msgstr ""
+msgstr "どのブラウザがアクソンアイビーコンテンツを開くために使用されます。 デフォルトでは、これは内部VSコードブラウザに設定されます。 システムブラウザでコンテンツを開く場合は、:code:`externalBrowser`に変更します."
 
 #: ../../source/designer/designer-settings.rst:81
 msgid "Workspace Validation"
@@ -1256,7 +1256,7 @@ msgstr "ワークスペースの検証"
 
 #: ../../source/designer/designer-settings.rst:82
 msgid "This setting lets you enable and disable the different validators in case you don't want to see the warnings and errors. During development, it can be helpful to temporarily disable the validators for specific file types."
-msgstr ""
+msgstr "この設定では、警告やエラーが表示されたくない場合に、さまざまなバリデータを有効にして無効にします。 開発中は、特定のファイルタイプのバリデータを一時的に無効にすることができます."
 
 #: ../../source/designer/designer-settings.rst:89
 msgid "Axon Ivy > Process > Animation"
@@ -1268,7 +1268,7 @@ msgstr "プロセスアニメーション"
 
 #: ../../source/designer/designer-settings.rst:95
 msgid "This setting lets you enable or disable the process animation. If enabled, whenever you simulate a process, the animation will visually guide you through the triggered processes."
-msgstr ""
+msgstr "この設定では、プロセスアニメーションを有効にまたは無効にすることができます。 有効にすると、プロセスをシミュレートすると、アニメーションはトリガーされたプロセスを視覚的にガイドします."
 
 #: ../../source/designer/designer-settings.rst:102
 msgid "Mode"
@@ -1280,11 +1280,11 @@ msgstr "プロセスアニメーションのモードを指定します。次の
 
 #: ../../source/designer/designer-settings.rst:106
 msgid "Show and open all touched processes (default)"
-msgstr ""
+msgstr "すべてのタッチされたプロセスを表示し、開く (デフォルト)"
 
 #: ../../source/designer/designer-settings.rst:107
 msgid "Follow only in the current editor on top"
-msgstr ""
+msgstr "上の現在のエディタでのみフォロー"
 
 #: ../../source/designer/designer-settings.rst:108
 msgid "Follow only in open editors"
@@ -1296,7 +1296,7 @@ msgstr "ダイアログロジックに入らない"
 
 #: ../../source/designer/designer-settings.rst:110
 msgid "Follow only top-level business processes"
-msgstr ""
+msgstr "トップレベルのビジネスプロセスのみをフォロー"
 
 #: ../../source/designer/designer-settings.rst:116
 msgid "Speed"
@@ -1308,15 +1308,15 @@ msgstr "プロセスアニメーションの速度を調整します。"
 
 #: ../../source/designer/designer-settings.rst:121
 msgid "Axon Ivy > Local Mcp"
-msgstr ""
+msgstr "アクソンアイビー > ローカルマップ"
 
 #: ../../source/designer/designer-settings.rst:122
 msgid "Enable local loopback MCP endpoints for third-party harness automation clients."
-msgstr ""
+msgstr "サードパーティ製のハーネスオートメーションクライアント用のローカルループバックMCPエンドポイントを有効にします."
 
 #: ../../source/designer/designer-settings.rst:126
 msgid "Use only on trusted machines."
-msgstr ""
+msgstr "信頼できる機械だけを使用して下さい."
 
 #: ../../source/designer/editors.rst:4
 msgid "Editors"
@@ -1324,15 +1324,15 @@ msgstr "エディター"
 
 #: ../../source/designer/editors.rst:5
 msgid "As explained in the :ref:`VS Code Editor Basics <designer-basics-editor>`, the Designer provides custom editors for various Axon Ivy filename patterns or file types."
-msgstr ""
+msgstr ":ref:`VSコードエディタの基本 <designer-basics-editor>`で説明されているように、DesignerはさまざまなAxon Ivyファイル名パターンやファイルタイプ用のカスタムエディタを提供します."
 
 #: ../../source/designer/editors.rst:7
 msgid "If a file with a matching filename or file type is opened, VS Code will open it by default in the associated editor."
-msgstr ""
+msgstr "一致するファイル名またはファイルタイプが開いた場合、VSコードは関連するエディタでデフォルトで開きます."
 
 #: ../../source/designer/editors.rst:13
 msgid "The most important visual editor is the process editor. It allows you to design and edit your processes. It is linked to the filetype :code:`.p.json`."
-msgstr ""
+msgstr "最も重要なビジュアルエディタは、プロセスエディタです。 プロセスの設計と編集ができます。 filetype :code:`.p.json` にリンクします."
 
 #: ../../source/designer/editors.rst:17
 msgid "See :ref:`process-editor`."
@@ -1340,7 +1340,7 @@ msgstr ":ref:`process-editor` を参照してください。"
 
 #: ../../source/designer/editors.rst:22
 msgid "The form editor lets you build UIs with drag-and-drop. It is linked to the filetype :code:`.f.json`."
-msgstr ""
+msgstr "フォームエディタでは、ドラッグアンドドロップでUIを作成できます。 filetype :code:`.f.json` にリンクします."
 
 #: ../../source/designer/editors.rst:25
 msgid "See :ref:`form-editor`."
@@ -1353,7 +1353,7 @@ msgstr "XHTML エディター"
 
 #: ../../source/designer/editors.rst:30
 msgid "The XHTML editor lets you edit your UIs built with Jakarta Faces or static XHTML. It is linked to the filetype :code:`.xhtml`."
-msgstr ""
+msgstr "XHTMLエディタでは、ジャカルタフェイスまたは静的なXHTMLで構築されたUIを編集できます。 ファイルタイプ:code:`.xhtml`にリンクします."
 
 #: ../../source/designer/editors.rst:33
 msgid "See :ref:`xhtml-editor`."
@@ -1367,7 +1367,7 @@ msgstr "データクラスエディター"
 
 #: ../../source/designer/editors.rst:38
 msgid "The data class editor lets you edit your data objects. It is linked to the filetype :code:`.d.json`."
-msgstr ""
+msgstr "データクラスエディタでは、データオブジェクトを編集できます。 filetype :code:`.d.json` にリンクします."
 
 #: ../../source/designer/editors.rst:41
 msgid "See :ref:`data-class-editor`."
@@ -1382,7 +1382,7 @@ msgstr "ケースマップエディター"
 
 #: ../../source/designer/editors.rst:46
 msgid "The case map editor lets you edit your case maps. It is linked to the filetype :code:`.m.json`."
-msgstr ""
+msgstr "ケースマップエディタでは、ケースマップを編集できます。 filetype :code:`.m.json` にリンクします."
 
 #: ../../source/designer/editors.rst:49
 msgid "See :ref:`casemap-editor`."
@@ -1397,7 +1397,7 @@ msgstr "CMSエディター"
 
 #: ../../source/designer/editors.rst:54
 msgid "The Content Management System (CMS) editor lets you edit your CMS files in a graphical interface. It is linked to files with the pattern :code:`cms*.yaml`."
-msgstr ""
+msgstr "コンテンツ管理システム(CMS)エディタを使用すると、CMSファイルをグラフィカルインターフェイスで編集できます。 パターン:code:`cms*.yaml`でファイルへのリンクです."
 
 #: ../../source/designer/editors.rst:57
 msgid "See :ref:`cms-editor`."
@@ -1409,7 +1409,7 @@ msgstr "設定エディター"
 
 #: ../../source/designer/editors.rst:62
 msgid "The following editors are all linked to configuration files found by default in the :code:`config/` folder of an Axon Ivy project."
-msgstr ""
+msgstr "次のエディタは、Axon Ivyプロジェクトの:code:`config/`フォルダにあるデフォルトで見つかった設定ファイルへのリンクです."
 
 #: ../../source/designer/editors.rst:65
 #: ../../source/reference/configuration/databases.rst:14
@@ -1420,7 +1420,7 @@ msgstr "データクラスエディター"
 
 #: ../../source/designer/editors.rst:66
 msgid "Lets you edit and manage your database connections. It is linked to the file name pattern :code:`database.yaml`"
-msgstr ""
+msgstr "データベースの接続を編集して管理しましょう。 ファイル名パターン:code:`database.yaml`にリンクされます"
 
 #: ../../source/designer/editors.rst:69
 msgid "See :ref:`database-configuration-editor`"
@@ -1432,7 +1432,7 @@ msgstr "REST クライアントエディター"
 
 #: ../../source/designer/editors.rst:73
 msgid "Lets you edit and manage your REST clients. It is linked to the file name pattern :code:`rest-client.yaml`"
-msgstr ""
+msgstr "REST クライアントの編集と管理を行います。 ファイル名パターン:code:`rest-client.yaml`にリンクされます"
 
 #: ../../source/designer/editors.rst:76
 msgid "See :ref:`rest-client-configuration-editor`"
@@ -1447,7 +1447,7 @@ msgstr "ロールエディター"
 
 #: ../../source/designer/editors.rst:80
 msgid "Lets you create and edit your roles. It is linked to the file name pattern :code:`roles.yaml`"
-msgstr ""
+msgstr "ロールの作成と編集を行います。 ファイル名パターン:code:`roles.yaml`にリンクされます"
 
 #: ../../source/designer/editors.rst:83
 msgid "See :ref:`role-editor`"
@@ -1459,7 +1459,7 @@ msgstr "ユーザーエディター"
 
 #: ../../source/designer/editors.rst:87
 msgid "Lets you create and edit your users. It is linked to the file name pattern :code:`users.yaml`"
-msgstr ""
+msgstr "ユーザを作成して編集してみましょう。 ファイル名パターン:code:`users.yaml`にリンクされます"
 
 #: ../../source/designer/editors.rst:90
 msgid "See :ref:`test-user-editor`"
@@ -1471,7 +1471,7 @@ msgstr "変数エディター"
 
 #: ../../source/designer/editors.rst:94
 msgid "Lets you add and edit your custom variables. It is linked to the file name pattern :code:`variables.yaml`"
-msgstr ""
+msgstr "カスタム変数を追加して編集してみましょう。 ファイル名パターン:code:`variables.yaml`にリンクされます"
 
 #: ../../source/designer/editors.rst:97
 msgid "See :ref:`variables-editor`"
@@ -1483,7 +1483,7 @@ msgstr "Web サービスクライアントエディター"
 
 #: ../../source/designer/editors.rst:102
 msgid "Lets you add and manage your web service clients. It is linked to the file name pattern :code:`webservice-clients.yaml`"
-msgstr ""
+msgstr "Webサービスクライアントを追加して管理しましょう。 ファイル名パターン:code:`webservice-clients.yaml`にリンクされます"
 
 #: ../../source/designer/editors.rst:105
 msgid "See :ref:`webservice-clients-configuration`"
@@ -1499,65 +1499,65 @@ msgstr "インストールを確認する"
 
 #: ../../source/designer/first-steps.rst:8
 msgid "After installing the Designer extension, it should be listed in your VS Code extension view."
-msgstr ""
+msgstr "Designer 拡張機能をインストールした後、VS コード拡張ビューにリストされている必要があります."
 
 #: ../../source/designer/first-steps.rst:10
 msgid "As mentioned before, there are usually two ways to achieve something in VS Code: By clicking or by executing the command(s)."
-msgstr ""
+msgstr "前述したように、通常はVSコードで何かを達成するために2つの方法があります。 コマンドの実行をクリックするか、または実行することによって."
 
 #: ../../source/designer/first-steps.rst:12
 msgid "To bring up the VS Code extension view, you can either"
-msgstr ""
+msgstr "VSコードの拡張子ビューを上げるには、"
 
 #: ../../source/designer/first-steps.rst:14
 msgid "Click the extension icon in the activity bar on the far left."
-msgstr ""
+msgstr "アクティビティバーのエクステンションアイコンを左手にクリックします."
 
 #: ../../source/designer/first-steps.rst:15
 msgid "Open the Command Palette via ``Ctrl+Shift+P`` and search for the command ``View: Show Extensions``."
-msgstr ""
+msgstr "コマンドパレットを ``Ctrl+Shift+P` で開き、`View: 拡張子を表示する` コマンドを検索します."
 
 #: ../../source/designer/first-steps.rst:17
 #: ../../source/designer/first-steps.rst:20
 msgid "Axon Ivy extension is installed in the extension view"
-msgstr ""
+msgstr "エクステンションビューにAxon Ivyエクステンションをインストール"
 
 #: ../../source/designer/first-steps.rst:24
 msgid "Open a Workspace"
-msgstr ""
+msgstr "ワークスペースを開く"
 
 #: ../../source/designer/first-steps.rst:26
 msgid "After starting VS Code, the window will probably look similar to this:"
-msgstr ""
+msgstr "VSコードを起動すると、ウィンドウはこのように見えます"
 
 #: ../../source/designer/first-steps.rst:28
 #: ../../source/designer/first-steps.rst:31
 msgid "VS Code without an open workspace."
-msgstr ""
+msgstr "開いたワークスペースのないVSコード."
 
 #: ../../source/designer/first-steps.rst:33
 msgid "The top-left file explorer view shows you open files in the workspace. Since we have not yet opened a workspace, it says :code:`No Folder Opened`."
-msgstr ""
+msgstr "左上のファイルエクスプローラビューでは、ワークスペースでファイルを開くことができます。 ワークスペースをまだ開いていないので、:code:`フォルダが開いていない`と言う."
 
 #: ../../source/designer/first-steps.rst:34
 msgid "The bottom-left Axon Ivy Projects view tells us that there are no projects, because we have not yet opened a folder."
-msgstr ""
+msgstr "左下のAxon Ivyプロジェクトビューでは、まだフォルダを開いたことがないので、プロジェクトがないことをお伝えします."
 
 #: ../../source/designer/first-steps.rst:35
 msgid "The right side welcome page of the Designer is always shown upon start of the extension."
-msgstr ""
+msgstr "デザイナーの右側のウェルカムページは、拡張子の開始時に常に表示されます."
 
 #: ../../source/designer/first-steps.rst:38
 msgid "Create an empty folder `example-workspace` and use the ``Open Folder`` button in the file explorer to open it. Alternatively, we can open the Command Palette and execute the command ``File: Open Folder...``."
-msgstr ""
+msgstr "空のフォルダー `example-workspace` を作成し、ファイルエクスプローラーの ``Open Folder``` ボタンを使用して開きます。 また、コマンドパレットを開き、コマンド ``File: Open Folder...` を実行できます."
 
 #: ../../source/designer/first-steps.rst:40
 msgid "This sets your VS Code workspace to that folder, which is now visible in the file explorer view in the upper-left corner."
-msgstr ""
+msgstr "これは、VSコードのワークスペースを、左上隅にあるファイルエクスプローラビューで表示できるようになりました."
 
 #: ../../source/designer/first-steps.rst:42
 msgid "At this point, there is still no Axon Ivy project in the workspace, but the extension will automatically download and start the Axon Ivy Engine. This is shown in the ``Output`` tab. You are now ready to create an Axon Ivy project."
-msgstr ""
+msgstr "この時点で、ワークスペースにAxon Ivyプロジェクトはまだありませんが、エクステンションは自動的にAxon Ivy Engineをダウンロードして起動します。 これは ``Output` タブで表示されます。 Axon Ivyプロジェクトを作成できるようになりました."
 
 #: ../../source/designer/first-steps.rst:46
 #: ../../source/designer/first-steps.rst:49
@@ -1570,20 +1570,20 @@ msgstr "Axon Ivy プロジェクトを追加する"
 
 #: ../../source/designer/first-steps.rst:55
 msgid "You can now create your first Axon Ivy project within the open workspace. To do so, either click the ``Create Axon Ivy Project`` button in the bottom left Axon Ivy Projects view or execute the command ``Axon Ivy: New Project``. This will open a dialog in the top middle. Enter a name and press enter. For steps 2 and 3 of the dialog, accept the proposed default namespace and group ID by pressing enter twice."
-msgstr ""
+msgstr "Axon Ivyプロジェクトをオープンワークスペース内で作成できるようになりました。 そのためには、左下のAxon Ivy Projectの「Create Axon Ivy Project」ボタンをクリックするか、コマンド「Axon Ivy: New Project」を実行します。 上部中央のダイアログを開きます。 お名前を入力してください。 ダイアログの2と3の手順では、提案されたデフォルトの名前空間とグループIDを2回押すことで受け入れます."
 
 #: ../../source/designer/first-steps.rst:59
 #: ../../source/designer/first-steps.rst:62
 msgid "Creating an Axon Ivy project will add it to the workspace."
-msgstr ""
+msgstr "Axon Ivyプロジェクトを作成すると、ワークスペースに追加されます."
 
 #: ../../source/designer/first-steps.rst:64
 msgid "This will create an Axon Ivy project called ``my-first-project``. By default, a simple process is created and the Process Editor opens and displays the new process. The file explorer shows you this folder in the workspace with all the files that make up the project. The Axon Ivy Projects view also displays the project. At this point, you have successfully set up the Axon Ivy Designer and are ready to design your processes."
-msgstr ""
+msgstr "「my-first-project`」というAxon Ivyプロジェクトを作成します。 デフォルトでは、単純なプロセスが作成され、プロセスエディタが開き、新しいプロセスが表示されます。 ファイルエクスプローラは、プロジェクトを構成するすべてのファイルで、ワークスペース内のこのフォルダを表示します。 Axon Ivy プロジェクトビューでは、プロジェクトも表示しています。 この時点で、Axon Ivy Designer を正常にセットアップし、プロセスの設計の準備ができました."
 
 #: ../../source/designer/index.rst:4
 msgid "Designer"
-msgstr ""
+msgstr "デザイナー"
 
 #: ../../source/designer/index.rst:6
 msgid "This guide covers all aspects of the **Axon Ivy Designer**."
@@ -1595,23 +1595,23 @@ msgstr "バージョン 14 以降、Axon Ivy Designer は `VS Code 拡張機能 
 
 #: ../../source/designer/index.rst:13
 msgid "In the following, we refer to the Axon Ivy Designer simply as the Designer."
-msgstr ""
+msgstr "以下では、Axon Ivy Designer を Designer として紹介します."
 
 #: ../../source/designer/index.rst:15
 msgid "This means that the Designer setup consists of three parts:"
-msgstr ""
+msgstr "つまり、デザイナーのセットアップは3つの部分で構成されます"
 
 #: ../../source/designer/index.rst:17
 msgid "**VS Code IDE** - Managed independently of Axon Ivy. The platform where the Designer runs in."
-msgstr ""
+msgstr "**VSコードIDE** - Axon Ivyの独立して管理。 デザイナーが実行するプラットフォーム."
 
 #: ../../source/designer/index.rst:18
 msgid "**The VS Code extension \"Axon Ivy PRO Designer 14\"** - The Designer itself, supplied and managed by Axon Ivy, runs within VS Code. It provides the UI for the user to manage, draw and visualize Axon Ivy processes."
-msgstr ""
+msgstr "**VSコード拡張子 \"Axon Ivy PRO Designer 14\"** - デザイナー自身、Axon Ivyによって供給および管理され、VSコード内で動作します。 ユーザーがAxon Ivyプロセスを管理、描画、視覚化するためのUIを提供します."
 
 #: ../../source/designer/index.rst:19
 msgid "**The Axon Ivy Engine** - Supplied by Axon Ivy, independent from the Designer. Is by default installed automatically by the Designer extension. Refer to :ref:`engine-guide` for more information about the engine. For more advanced setups with specific engine versions, refer to :ref:`designer-advanced-setup`"
-msgstr ""
+msgstr "**Axon Ivy Engine** - Axon Ivy, デザイナーから独立した. Designer 拡張によって自動的にインストールされるデフォルトです。 エンジンの詳細については「X153X」をご覧ください。 特定のエンジンバージョンの高度な設定については、 :ref:`designer-advanced-setup` を参照してください"
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:4
 msgid "Comprehensive Requirements"
@@ -1623,7 +1623,7 @@ msgstr "このページでは、Axon Ivy Designer のインストール、設定
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:13
 msgid "The Axon Ivy Designer Extension automatically installs the Java and Maven extensions to provide things like syntax highlighting in VS Code, but not a working Java and Maven installation itself. Therefore, it should make sure that you have those two installed before starting the Designer."
-msgstr ""
+msgstr "Axon Ivy Designer Extension は、Java と Maven の拡張機能を自動的にインストールし、VS コードで強調する構文のような機能を提供しますが、Java や Maven のインストール自体は機能しません。 そのため、デザイナーを始める前にインストールした2つを持っていることを確認してください."
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:19
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:18
@@ -1632,7 +1632,7 @@ msgstr "Java"
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:21
 msgid "The Axon Ivy Designer depends on the Java extension to work. The Java extension is automatically installed with the Designer. The Designer requires the Java Development Kit (JDK) to have version 25."
-msgstr ""
+msgstr "Axon Ivy Designer は Java 拡張機能に依存します。 Java 拡張は Designer で自動的にインストールされます。 設計者は、バージョン25を持っているJava開発キット(JDK)が必要です."
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:24
 msgid "To check if your system already has JDK 25 installed, run the following command from a terminal ::"
@@ -1640,23 +1640,23 @@ msgstr "システムに JDK 25 がインストールされているか確認す�
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:31
 msgid "If the command returns ``Command 'java' not found`` or a major version older than 25, we recommend installing `Eclipse Temurin <https://adoptium.net/>`_."
-msgstr ""
+msgstr "コマンドが ``Command 'java' が見つからなかった`` またはメジャーバージョンが 25 未満の場合、`Eclipse Temurin <https://adoptium.net/>`  をインストールすることをお勧めします."
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:33
 msgid "After the installation of JDK 25, you must configure the path in the Java extension. There are two ways to do so, for more details refer to the `Java extension documentation <https://marketplace.visualstudio.com/items?itemName=redhat.java&ssr=false>`_ :"
-msgstr ""
+msgstr "JDK 25 のインストール後、Java 拡張のパスを設定する必要があります。 詳細は、`Java 拡張ドキュメント <https://marketplace.visualstudio.com/items?itemName=redhat.java&ssr=false>`  を参照してください"
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:36
 msgid "Either, set the :code:`JAVA_HOME` environment variable. To check this, open a terminal an print the environment variable"
-msgstr ""
+msgstr ":code:`JAVA HOME`環境変数を設定します。 これをチェックするには、ターミナルを開き、環境変数を印刷します"
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:43
 msgid "This should normally be set automatically when you install the JDK."
-msgstr ""
+msgstr "JDKをインストールすると、通常、自動的に設定する必要があります."
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:45
 msgid "Or you can configure the path to the JDK within VS Code with a :ref:`VS Code Setting <designer-basics-settings>`. To do so, specify the path to your Java installation in :code:`java.jdt.ls.java.home` either in the workspace or user settings."
-msgstr ""
+msgstr "または:ref:`VSコード設定 <designer-basics-settings>`でVSコード内のJDKにパスを設定することもできます。 そのためには、ワークスペースまたはユーザー設定の:code:`java.jdt.ls.java.home`のJavaインストールのパスを指定します."
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:53
 #: ../../source/designer/installation/comprehensive-requirements.rst:145
@@ -1669,7 +1669,7 @@ msgstr ""
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:58
 msgid "Technically speaking, the Designer works without a valid Maven installation, but will report errors on a few operations. It is therefore strictly recommended to properly set up a Maven installation. The extension will check the Maven installation at startup and warn you accordingly."
-msgstr ""
+msgstr "技術的に言えば、デザイナーは有効な Maven のインストールなしで動作しますが、いくつかの操作でエラーを報告します。 Maven のインストールを適切に設定することをお勧めします。 拡張機能は、Maven インストールをスタートアップで確認し、それに応じて警告します."
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:62
 msgid "To check if your system already has Maven 3.9.x installed, run the following command from a terminal ::"
@@ -1898,23 +1898,23 @@ msgstr "VS Code Marketplace から `Axon Ivy Designer 拡張機能 <https://mark
 
 #: ../../source/designer/installation/index.rst:21
 msgid "If you are new to the Axon Ivy platform, start with :ref:`getting-productive` to learn about the functionality of Axon Ivy."
-msgstr ""
+msgstr "Axon Ivyプラットフォームに新しい場合は、Axon Ivyの機能について学ぶために:ref:`getting-productive`から始めましょう."
 
 #: ../../source/designer/installation/index.rst:24
 msgid "Notes & Tips"
-msgstr ""
+msgstr "ノート&ヒント"
 
 #: ../../source/designer/installation/index.rst:25
 msgid "Keep VS Code up-to-date. VS Code itself has weekly releases and will often prompt you to update. Not doing so might break the Extensions functionality."
-msgstr ""
+msgstr "VSコードを最新の状態に保ちます。 VSシリーズ コード自体は毎週リリースされ、頻繁に更新するように促します。 そのため、エクステンションの機能が壊れる可能性があります."
 
 #: ../../source/designer/installation/index.rst:26
 msgid "VS Code will take care of updating the extensions automatically. You don't have to configure or update extension versions unless you want to work with a specific version as described in :ref:`designer-advanced-setup`."
-msgstr ""
+msgstr "VSコードは、エクステンションを自動的に更新するのに役立ちます。 :ref:`designer-advanced-setup` で記述されている特定のバージョンで動作したいと思う場合を除き、拡張バージョンの設定や更新する必要はありません."
 
 #: ../../source/designer/installation/index.rst:27
 msgid "The Axon Ivy extension automatically installs the necessary Java and Maven extensions. They are also kept up-to-date by VS Code. Those extensions are needed for the Axon Ivy extension to work properly. This means that, apart from having a working Java and Maven installation on your system as described in the :ref:`designer-install-comprehensive-requirements`, you don't have to install any other VS Code extensions apart from the Axon Ivy extension itself."
-msgstr ""
+msgstr "Axon Ivyエクステンションは、必要なJavaとMavenエクステンションを自動的にインストールします。 また、VSコードで最新の状態を維持しています。 Axon Ivy 拡張機能では、Axon Ivy 拡張機能が正常に動作する必要があります。 これは、 :ref:`designer-install-comprehensive-requirements` で記述されているように、システムにJavaとMavenのインストールを動作させることとは別に、Axon Ivyエクステンション自体とは異なるVSコードの拡張子をインストールする必要はありません."
 
 #: ../../source/designer/installation/index.rst:32
 msgid "Designer System Requirements"
@@ -1942,7 +1942,7 @@ msgstr ":ref:`Java <designer-install-java>`"
 
 #: ../../source/designer/installation/index.rst:51
 msgid "Java Development Kit (JDK) 25 must be installed."
-msgstr ""
+msgstr "Java開発キット(JDK)25をインストールする必要があります."
 
 #: ../../source/designer/installation/index.rst:52
 msgid ":ref:`Maven <designer-install-maven>`"
@@ -2015,23 +2015,23 @@ msgstr "トラブルシューティング"
 
 #: ../../source/designer/troubleshooting.rst:5
 msgid "User limit of inotify instances reached (Linux)"
-msgstr ""
+msgstr "Inotify インスタンスのユーザ制限 (Linux)"
 
 #: ../../source/designer/troubleshooting.rst:6
 msgid "On Linux, if you open a workspace with many projects, the engine sometimes reports the following error:"
-msgstr ""
+msgstr "Linux では、多くのプロジェクトでワークスペースを開くと、エンジンは次のエラーを報告します"
 
 #: ../../source/designer/troubleshooting.rst:8
 msgid ":code:`Error: <...> User limit of inotify instances reached or too many open files`"
-msgstr ""
+msgstr ":code:`エラー:<...> インスタンスの inotify のユーザ制限が多すぎるか Open files`"
 
 #: ../../source/designer/troubleshooting.rst:10
 msgid "Solution: Increase the maximum number of inotify instances manually:"
-msgstr ""
+msgstr "ソリューション: 手動でインスタンスを通知する最大数を増やす:"
 
 #: ../../source/designer/troubleshooting.rst:12
 msgid ":code:`sudo sysctl fs.inotify.max_user_instances=512`"
-msgstr ""
+msgstr ":code:`sudo sysctl fs.inotify.max user instances=512`"
 
 #: ../../source/designer/views/index.rst:4
 msgid "Views"
@@ -2039,15 +2039,15 @@ msgstr "ビュー"
 
 #: ../../source/designer/views/index.rst:6
 msgid "This chapter goes into more detail about the different views in the VS Code UI. It covers built-in views, views supplied by the Java and Maven extension as well as the Axon Ivy specific log views."
-msgstr ""
+msgstr "この章では、VSコードUIの異なるビューについて詳しく説明します。 ビルトインビュー、JavaとMaven拡張機能、およびAxon Ivy固有のログビューによって供給されたビューをカバーしています."
 
 #: ../../source/designer/views/index.rst:9
 msgid "In general, to focus on a view, you can try to search the Command Palette for ``Focus xxx View`` where ``xxx`` is the view you want, e.g. ``Maven`` or ``Axon Ivy``."
-msgstr ""
+msgstr "一般的に、ビューに集中するには、'Focus xxx View` のコマンドパレットを探し、``xxx` は、'Maven` や ``Axon Ivy` のビューです."
 
 #: ../../source/designer/views/index.rst:11
 msgid "If you want to hide a view, you can right click on the view title and look for the ``Hide`` option."
-msgstr ""
+msgstr "ビューを非表示にしたい場合は、ビューのタイトルをクリックし、`Hide`オプションを探してください."
 
 #: ../../source/designer/views/index.rst:18
 msgid "Problems View"
@@ -2055,28 +2055,28 @@ msgstr "問題ビュー"
 
 #: ../../source/designer/views/index.rst:20
 msgid "Command: ``Focus on Problems View``"
-msgstr ""
+msgstr "コマンド: ``問題のフォーカス ビュー``"
 
 #: ../../source/designer/views/index.rst:22
 msgid "The Problems view is normally located in the bottom-center panel. It is a built-in view."
-msgstr ""
+msgstr "問題のビューは通常、中央パネルにあります。 ビルトインビューです."
 
 #: ../../source/designer/views/index.rst:25
 msgid "It shows diagnostic messages in your open files and even across your workspace, indicating problems within your files. It reports Axon Ivy specific problems (e.g. an outdated project) coming from the extension, as well as general problems (for example if one of your Java files contains an error)."
-msgstr ""
+msgstr "開いたファイルとワークスペース全体で診断メッセージを表示し、ファイル内の問題を示すことができます。 Axon Ivyの特定の問題(例:拡張から出るプロジェクト)、一般的な問題(Javaファイルの1つにエラーがある場合など)を報告します."
 
 #: ../../source/designer/views/index.rst:28
 msgid "Clicking the error will open the file where the error is located. If available, a small lightbulb or a right-click context menu offers a fix for the problem."
-msgstr ""
+msgstr "エラーをクリックすると、エラーが配置されているファイルが開きます。 利用可能な場合、小さな電球または右クリックコンテキストメニューは、問題の修正を提供します."
 
 #: ../../source/designer/views/index.rst:31
 msgid "Refer to the :ref:`designer-settings-workspace-validation` setting to configure for which kind of problems you want to enable/disable problem markers."
-msgstr ""
+msgstr "有効/無効な問題マーカーを有効/無効にしたい問題のどの種類のために設定する:ref:`designer-settings-workspace-validation`設定を参照してください."
 
 #: ../../source/designer/views/index.rst:33
 #: ../../source/designer/views/index.rst:36
 msgid "Problem view with one Axon Ivy error (project outdated)"
-msgstr ""
+msgstr "1つのAxon Ivyのエラーによる問題ビュー(古いプロジェクト)"
 
 #: ../../source/designer/views/index.rst:43
 msgid "Run and Debug View"
@@ -2084,15 +2084,15 @@ msgstr "実行とデバッグビュー"
 
 #: ../../source/designer/views/index.rst:45
 msgid "`VS Code Documentation: Debugging <https://code.visualstudio.com/docs/debugtest/debugging>`_"
-msgstr ""
+msgstr "`VS コードドキュメンテーション: デバッグ <https://code.visualstudio.com/docs/debugtest/debugging>`"
 
 #: ../../source/designer/views/index.rst:47
 msgid "Command: ``View: Show Run and Debug``"
-msgstr ""
+msgstr "コマンド: ``View: Run と Debug` を表示"
 
 #: ../../source/designer/views/index.rst:49
 msgid "The built-in Run and Debug view container is located on the far left side in the activity bar and is a collection of views used to debug your code. This container contains multiple views revolving around debugging, setting breakpoints and stepping through your code."
-msgstr ""
+msgstr "組み込みの Run と Debug view コンテナは、アクティビティバーの一番左端にあり、コードをデバッグするために使用されるビューのコレクションです。 このコンテナは、デバッギング、ブレークポイントの設定、コードのステップアウトなど、複数のビューを巻き込みます."
 
 #: ../../source/designer/views/index.rst:52
 #: ../../source/getting-productive/process-modeling/simulation/index.rst:74
@@ -2105,11 +2105,11 @@ msgstr "ブレークポイントビュー"
 
 #: ../../source/designer/views/index.rst:60
 msgid "Command: ``Run and Debug: Focus on Breakpoints View``"
-msgstr ""
+msgstr "コマンド: ``Run と Debug: ブレークポイントのフォーカス ビュー``"
 
 #: ../../source/designer/views/index.rst:62
 msgid "One very useful view within the Run and Debug view container is the Breakpoints view where you can see your currently set breakpoints and enable/disable or remove them."
-msgstr ""
+msgstr "RunとDebugビューコンテナ内の非常に便利なビューは、現在設定されているブレークポイントを表示し、有効/無効または削除できるブレークポイントビューです."
 
 #: ../../source/designer/views/index.rst:65
 msgid "Debug Toolbar"
@@ -2117,7 +2117,7 @@ msgstr "デバッグツールバー"
 
 #: ../../source/designer/views/index.rst:67
 msgid "The toolbar helps you navigate an ongoing debug session. You can resume the execution or step into/out of functions. It is automatically shown as soon as a debug session is ongoing."
-msgstr ""
+msgstr "ツールバーは、進行中のデバッグセッションをナビゲートするのに役立ちます。 実行を再開したり、関数の実行/アウトを再開したりできます。 デバッグセッションが進行すると自動的に表示されます."
 
 #: ../../source/designer/views/index.rst:77
 msgid "Maven View"
@@ -2125,15 +2125,15 @@ msgstr "Maven ビュー"
 
 #: ../../source/designer/views/index.rst:79
 msgid "Command: ``Explorer: Focus on Maven View``"
-msgstr ""
+msgstr "コマンド: ``Explorer: Maven ビュー` の焦点"
 
 #: ../../source/designer/views/index.rst:81
 msgid "The Maven view displays the Maven projects and dependencies available in the current workspace. It is supplied by the Maven extension and is normally shown in the left bar."
-msgstr ""
+msgstr "Maven ビューは、現在のワークスペースで利用可能なMavenプロジェクトと依存関係を表示します。 Maven エクステンションで供給され、左バーに通常表示されます."
 
 #: ../../source/designer/views/index.rst:84
 msgid "Axon Ivy projects resolved from a Maven repository are shown here as well, even when their source projects are not part of the workspace."
-msgstr ""
+msgstr "Mavenリポジトリから解決するAxon Ivyプロジェクトは、ソースプロジェクトがワークスペースの一部ではない場合でも、ここに表示されます."
 
 #: ../../source/designer/views/index.rst:90
 msgid "Java Projects View"
@@ -2141,15 +2141,15 @@ msgstr "Java プロジェクトビュー"
 
 #: ../../source/designer/views/index.rst:92
 msgid "Command: ``Explorer: Focus on Java Projects View``"
-msgstr ""
+msgstr "コマンド: ``Explorer: Java プロジェクトをフォーカスする ビュー`"
 
 #: ../../source/designer/views/index.rst:94
 msgid "The Java Projects view displays the Java projects found in your workspace. It is supplied by the Java extension and is normally shown in the left bar."
-msgstr ""
+msgstr "Java プロジェクトは、ワークスペースで見つかったJavaプロジェクトを表示します。 Javaエクステンションで供給され、左バーに通常表示されます."
 
 #: ../../source/designer/views/index.rst:97
 msgid "This view will not only show Axon Ivy projects (which are Java projects) but also any other Java projects you have in your workspace."
-msgstr ""
+msgstr "このビューは、Axon Ivyプロジェクト(Javaプロジェクト)だけでなく、ワークスペースにある他のJavaプロジェクトも表示されます."
 
 #: ../../source/designer/views/index.rst:106
 msgid "Axon Ivy Output Views"
@@ -2157,11 +2157,11 @@ msgstr "Axon Ivy の出力ビュー"
 
 #: ../../source/designer/views/index.rst:108
 msgid "Apart from the :ref:`Axon Ivy Projects tree view <designer-basics-tree-view>`, the Designer also provides different logs in the Output view."
-msgstr ""
+msgstr ":ref:`Axon Ivy Projectsツリービュー <designer-basics-tree-view>`とは別に、Designerは出力ビューで異なるログも提供します."
 
 #: ../../source/designer/views/index.rst:110
 msgid "Command: ``Output: Focus on Output View``"
-msgstr ""
+msgstr "コマンド: ``Output: 出力ビューにフォーカス``"
 
 #: ../../source/designer/views/index.rst:112
 msgid "The Output view is by default located in the bottom-middle panel. Use the dropdown on the right to switch between different channels. All the ``Axon Ivy`` channels provide logs for different operations and allow you to trace and understand the operations by the extension."
@@ -2173,7 +2173,7 @@ msgstr "コード生成ログ"
 
 #: ../../source/designer/views/index.rst:121
 msgid "The Codegen log contains logs when creating REST or WebService clients."
-msgstr ""
+msgstr "Codegen のログには、REST または WebService クライアントを作成するときにログが含まれています."
 
 #: ../../source/designer/views/index.rst:124
 msgid "Engine Log"
@@ -2206,7 +2206,7 @@ msgstr "プロジェクト変換ログ"
 
 #: ../../source/designer/views/index.rst:143
 msgid "This log displays progress, success and errors specifically from the project conversion commands."
-msgstr ""
+msgstr "このログは、プロジェクト変換コマンドの進捗、成功、エラーを具体的に表示します."
 
 #: ../../source/designer/views/index.rst:149
 msgid "How to log in Axon Ivy"
@@ -2254,7 +2254,7 @@ msgstr ""
 
 #: ../../source/designer/vscode-basics.rst:29
 msgid "`VS Code Documentation: Command Palette <https://code.visualstudio.com/docs/editing/getting-started/userinterface#_command-palette>`_"
-msgstr ""
+msgstr "コマンドパレット <https://code.visualstudio.com/docs/editing/getting-started/userinterface#_command-palette>`"
 
 #: ../../source/designer/vscode-basics.rst:31
 msgid "A command is an action that can be executed by the user. Virtually everything you can do within VS Code can be achieved by running the respective commands. A rule of thumb is that everything you can click can also be accessed through a command. For example, instead of clicking ``File > Open File...``, you can achieve the exact same action by executing the command ``File: Open File...``. This will open the same file picker UI."
@@ -2291,7 +2291,7 @@ msgstr ""
 
 #: ../../source/designer/vscode-basics.rst:61
 msgid "When working in VS Code executing commands, it is helpful to always keep an eye on both UI elements, as they help you keep informed about the status of the extension and its operations."
-msgstr ""
+msgstr "コマンドを実行するVSコードで動作するときは、拡張子とその操作の状況を把握するのに役立ちますので、常にUI要素の両方に目を向けることが便利です."
 
 #: ../../source/designer/vscode-basics.rst:63
 msgid "**Notifications**"
@@ -2307,11 +2307,11 @@ msgstr ""
 
 #: ../../source/designer/vscode-basics.rst:70
 msgid "Apart from error and success messages, the notification often offers additional actions like jumping to a log to see more details."
-msgstr ""
+msgstr "エラーや成功メッセージとは別に、通知は頻繁にログにジャンプするような追加のアクションを提供しています."
 
 #: ../../source/designer/vscode-basics.rst:72
 msgid "By default, notifications vanish after some time if not dismissed manually. You can bring up the full list by running the command :code:`Notifications: Show Notifications`"
-msgstr ""
+msgstr "デフォルトでは、手動で却下されていない場合、通知はしばらく経過後に消えます。 コマンド:code:`の通知を実行することで、リスト全体が表示されます。通知を表示`"
 
 #: ../../source/designer/vscode-basics.rst:76
 msgid "**Status Bar**"
@@ -2319,7 +2319,7 @@ msgstr "**ステータスバー**"
 
 #: ../../source/designer/vscode-basics.rst:78
 msgid "The status bar is a UI part located at the bottom-left of the VS Code window and displays contextual information from specific extensions."
-msgstr ""
+msgstr "ステータスバーは、VSコードウィンドウの左下にあるUI部分で、特定の拡張子からコンテキスト情報を表示します."
 
 #: ../../source/designer/vscode-basics.rst:80
 msgid "The Axon Ivy extension contributes its own status bar."
@@ -2327,12 +2327,12 @@ msgstr ""
 
 #: ../../source/designer/vscode-basics.rst:82
 msgid "Hovering over the status bar will display information regarding the state of the extension and the engine it is connected to. Clicking it will open a context menu with different commands and options."
-msgstr ""
+msgstr "ステータスバーを上回ると、接続している拡張子とエンジンの状態に関する情報が表示されます。 クリックすると、異なるコマンドとオプションでコンテキストメニューが開きます."
 
 #: ../../source/designer/vscode-basics.rst:85
 #: ../../source/designer/vscode-basics.rst:88
 msgid "Axon Ivy status bar at the bottom of the window"
-msgstr ""
+msgstr "ウィンドウの下部にあるアクソンアイビーステータスバー"
 
 #: ../../source/designer/vscode-basics.rst:98
 msgid "Settings"
@@ -2340,7 +2340,7 @@ msgstr "設定"
 
 #: ../../source/designer/vscode-basics.rst:100
 msgid "`VS Code Documentation: Settings <https://code.visualstudio.com/docs/configure/settings>`_"
-msgstr ""
+msgstr "`VS コード ドキュメンテーション: 設定 <https://code.visualstudio.com/docs/configure/settings>`"
 
 #: ../../source/designer/vscode-basics.rst:102
 msgid "You can configure almost all UIs and behaviors in the VS Code settings. They are a list of key-value pairs in ``settings.json`` files. As with commands, there are many built-in settings, but also extensions can supply their own settings that steer the behavior of the extension. The Axon Ivy Designer supplies its own small set of settings, which are explained in more depth in the :ref:`designer-settings`."
@@ -2348,7 +2348,7 @@ msgstr ""
 
 #: ../../source/designer/vscode-basics.rst:105
 msgid "VS Code settings come in a layered system: User and Workspace settings. User settings are applied globally for each new Workspace you open, while Workspace settings only apply to your current workspace. If both are set, Workspace settings win. If only a User setting is set, it will be applied to new workspaces automatically."
-msgstr ""
+msgstr "VS コード設定は、レイヤー化されたシステム: ユーザーとワークスペースの設定になります。 ワークスペースの設定は、ワークスペースの設定が現在のワークスペースにのみ適用されます。 両方が設定されている場合は、ワークスペースの設定が勝ちます。 ユーザー設定のみが設定されている場合は、自動的に新しいワークスペースに適用されます."
 
 #: ../../source/designer/vscode-basics.rst:108
 msgid "Unless you clean them up regularly, using the User settings could potentially lead to a messy configuration with unintended consequences. It is **safer to stick to Workspace settings only**. The downside is that you will have to replicate some settings when starting a fresh workspace."
@@ -2360,7 +2360,7 @@ msgstr ""
 
 #: ../../source/designer/vscode-basics.rst:112
 msgid "You can switch to the Workspace settings by clicking the :code:`Workspace` tab or directly by executing the command :code:`Preferences: Open Workspace Settings (UI)`"
-msgstr ""
+msgstr ":code:`Workspace`タブをクリックするか、コマンド:code:`の設定を直接実行することで、ワークスペースの設定に切り替えることができます。 `"
 
 #: ../../source/designer/vscode-basics.rst:114
 #: ../../source/designer/vscode-basics.rst:117
@@ -2386,15 +2386,15 @@ msgstr ""
 #: ../../source/designer/vscode-basics.rst:133
 #: ../../source/designer/vscode-basics.rst:136
 msgid "A simple Axon Ivy profile with the minimum of extensions required"
-msgstr ""
+msgstr "必要な拡張子の最小値でシンプルなAxon Ivyプロファイル"
 
 #: ../../source/designer/vscode-basics.rst:138
 msgid "This profile has only the Axon Ivy Designer installed. The required Java and Maven extensions are also part of the profile, because they are installed automatically. Note that we only configured the extensions, all the other things like `Settings` or `Keyboard Shortcuts` work identical to the default. This way you don't have to recreate all the settings for each project but only the extensions that change."
-msgstr ""
+msgstr "このプロフィールはAxon Ivy Designerのみがインストールされています。 必要なJavaとMavenの拡張子は、自動的にインストールされているため、プロファイルの一部です。 拡張子だけを設定していることに注意してください。`Settings` や `Keyboard Shortcuts` などの他のすべてのものはすべてデフォルトと同一です。 各プロジェクトのすべての設定を再作成する必要はありませんが、変更する拡張子だけ."
 
 #: ../../source/designer/vscode-basics.rst:141
 msgid "With this profile in place, when you want to work on an Axon Ivy project, you open that folder and first switch to your \"Axon Ivy\" profile."
-msgstr ""
+msgstr "このプロファイルは、Axon Ivyプロジェクトで作業したい場合、そのフォルダを開き、最初に「Axon Ivy」プロファイルに切り替えます."
 
 #: ../../source/designer/vscode-basics.rst:147
 #: ../../source/reference/configuration/custom-fields.rst:13
@@ -2404,7 +2404,7 @@ msgstr "エディター"
 
 #: ../../source/designer/vscode-basics.rst:149
 msgid "Editors are the main UI area where files are opened and displayed. In addition to the standard text editor, extensions can provide custom editors for specific file types. These custom editors are associated with certain file extensions and offer a specialized interface for viewing or editing their content. When an editor is linked to a file extension, opening a file with that extension automatically opens it in the associated editor by default."
-msgstr ""
+msgstr "エディタは、ファイルが開き、表示されているメインUIエリアです。 標準テキストエディタに加えて、エクステンションは特定のファイルタイプのカスタムエディタを提供できます。 これらのカスタムエディタは、特定のファイル拡張子に関連付けられており、コンテンツを閲覧または編集するための専門インターフェイスを提供します。 エディタがファイル拡張子にリンクされている場合は、その拡張子を持つファイルを開くと、関連するエディタでデフォルトで自動的に開きます."
 
 #: ../../source/designer/vscode-basics.rst:156
 msgid "For example, the Designer provides, among others, a specialized :ref:`designer-editors-process` for ``.p.json`` files that displays a graphical view of an Axon Ivy process."
@@ -2412,15 +2412,15 @@ msgstr ""
 
 #: ../../source/designer/vscode-basics.rst:159
 msgid "Double-clicking ``BusinessProcess.p.json`` opens the graphical Process Editor."
-msgstr ""
+msgstr "``BusinessProcess.p.json`` をダブルクリックすると、グラフィカル・プロセス・エディターが開きます."
 
 #: ../../source/designer/vscode-basics.rst:162
 msgid "Double clicking ``BusinessProcess.p.json`` opens the graphical Process Editor."
-msgstr ""
+msgstr "``BusinessProcess.p.json``` をダブルクリックすると、グラフィカルプロセスエディタが開きます."
 
 #: ../../source/designer/vscode-basics.rst:164
 msgid "VS Code offers you the option to switch the editor to the default text editor. The button is located on the top-right corner, where it says *Axon Ivy Process Editor*. Clicking it will offer you the option to switch to the default *Text Editor*."
-msgstr ""
+msgstr "VSコードは、エディタをデフォルトのテキストエディタに切り替えるオプションを提供します。 ボタンは右上隅にあるので、*Axon Ivy Process Editor* と言います。 クリックすると、デフォルト *Text Editor* に切り替えるオプションが表示されます."
 
 #: ../../source/designer/vscode-basics.rst:173
 msgid "Tree View"
@@ -2428,11 +2428,11 @@ msgstr "ツリービュー"
 
 #: ../../source/designer/vscode-basics.rst:175
 msgid "`VS Code Documentation: View <https://code.visualstudio.com/docs/editing/getting-started/userinterface#_views>`_"
-msgstr ""
+msgstr "`VS コードドキュメンテーション: <https://code.visualstudio.com/docs/editing/getting-started/userinterface#_views>`  を参照"
 
 #: ../../source/designer/vscode-basics.rst:177
 msgid "A view in VS Code is a UI container where specific information is displayed. A tree view displays information in a hierarchical structure, typically on the left-hand side of VS Code. For example, the file explorer is a built-in tree view that displays files and folders. Extensions can contribute custom tree views to show their own data in the UI. Users can interact with the entries to trigger actions or open related resources."
-msgstr ""
+msgstr "VSコードのビューは、特定の情報を表示するUIコンテナです。 ツリービューは、通常、VSコードの左側にある階層構造で情報を表示します。 たとえば、ファイルエクスプローラは、ファイルとフォルダを表示する組み込みツリービューです。 エクステンションは、カスタムツリービューに貢献し、自分のデータをUIに表示することができます。 ユーザーは、アクションをトリガーしたり、関連するリソースを開いたりするためにエントリと対話することができます."
 
 #: ../../source/designer/vscode-basics.rst:183
 msgid "The Axon Ivy Designer contributes its own **Axon Ivy Projects** tree view, which displays all Axon Ivy projects in the currently open workspace."
@@ -2677,7 +2677,7 @@ msgstr "インフラストラクチャの設定"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:160
 msgid "To protect hardened infrastructure settings from being overridden, provide :file:`ivy-infra.yaml` in the engine's :file:`configuration` directory. This file is optional; when present, its settings take precedence over matching entries in :file:`ivy.yaml`. The Engine Cockpit treats :file:`ivy-infra.yaml` as read-only and saves configuration changes to :file:`ivy.yaml`."
-msgstr ""
+msgstr "エンジンの:file:`コンフィギュレーション`ディレクトリにある:file:`ivy-infra.yaml`のインフラ設定を保護するため。 このファイルはオプションです。 現時点では、その設定は:file:`ivy.yaml`の一致するエントリよりも優先されます。 エンジンのコックピットは:file:`ivy-infra.yaml`を読み取り専用として扱い、設定の変更を:file:`ivy.yaml`に保存します."
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:168
 msgid "Overriding Configuration"
@@ -3001,7 +3001,7 @@ msgstr "不在ユーザーにアクティブな代行者がいない場合のみ
 
 #: ../../source/engine-guide/configuration/notification/index.rst:32
 msgid "Permanent substitutes can be configured independently from absent users:"
-msgstr ""
+msgstr "永続的置換は、不在なユーザーから独立して設定できます"
 
 #: ../../source/engine-guide/configuration/notification/index.rst:34
 msgid "Send a notification to permanent substitutes regardless of the user's absence: :code:`always`"
@@ -7114,7 +7114,7 @@ msgstr ""
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:38
 msgid ":guilabel:`Archive` archives the version."
-msgstr ""
+msgstr ":guilabel:`Archive` バージョンをアーカイブします."
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:39
 msgid ":guilabel:`Convert` converts the projects of the version to the newest version."
@@ -8787,11 +8787,11 @@ msgstr "リリースの状態"
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:91
 msgid "**CREATED**: The application version has been created in the database but is not yet ready for use."
-msgstr ""
+msgstr "**注意: アプリケーションバージョンはデータベースで作成されていますが、まだ使用できません."
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:94
 msgid "**PREPARED**: The application version is fully set up and ready to be released."
-msgstr ""
+msgstr "**注意: アプリケーションバージョンは完全に設定され、リリースされる準備が整います."
 
 #: ../../source/getting-productive/application-lifecycle/index.rst:97
 msgid "**RELEASED**: The application version is the currently released version. All new processes are started in this version. Program Start, Web Service Process, and REST endpoints are only active for application versions in this state. Only one application version per application can be **RELEASED** at a time. When a new application version is released, the previously released version is changed to **DEPRECATED** or **ARCHIVED**."
@@ -8899,7 +8899,7 @@ msgstr "ランタイム"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:37
 msgid "If you like to build you Axon Ivy Project with Maven, you need to have Maven installed on your system. Now you simply run maven command beside you ``pom.xml`` file (e.g. :code:`mvn clean verify`)."
-msgstr ""
+msgstr "Maven で Axon Ivy プロジェクトをビルドしたい場合は、システムに Maven をインストールする必要があります。 これで、`pom.xml`` のファイル (:code:`mvn clean validate`) の横に maven コマンドを実行するだけです."
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:40
 msgid "The :ref:`designer-guide-vscode` has Maven capabilities built-in, if you have the `Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed (what should be the case if you have our extension installed)."
@@ -8907,7 +8907,7 @@ msgstr ""
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:44
 msgid "Open the :ref:`designer-views-maven-view`"
-msgstr ""
+msgstr ":ref:`designer-views-maven-view` を開きます"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:46
 msgid "Open the context menu of the project by right clicking it"
@@ -8967,7 +8967,7 @@ msgstr "テストにより、ソフトウェアの**機能の信頼性を高め�
 
 #: ../../source/getting-productive/ci-testing/index.rst:18
 msgid "Tests help maintain **quality** as the project evolves."
-msgstr ""
+msgstr "テストは、プロジェクトが進化するにつれて、**quality**を維持するのに役立ちます."
 
 #: ../../source/getting-productive/ci-testing/index.rst:20
 msgid "**Repetitive tasks** can be reduced to a minimum. Let the computer do it!"
@@ -11052,7 +11052,7 @@ msgstr ""
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:13
 msgid "In the Designer, projects are created and organized in a VS Code *workspace*. Required projects can be present in the workspace or resolved from a Maven repository. See the :ref:`project-descriptor` for information about declaring these dependencies in :file:`pom.xml`."
-msgstr ""
+msgstr "デザイナーでは、プロジェクトはVSコード*ワークスペース*で作成および整理されます。 必要なプロジェクトは、ワークスペースに存在するか、Maven リポジトリから解決することができます。 :file:`pom.xml`の依存関係を宣言するための情報については、:ref:`project-descriptor`を参照してください."
 
 #: ../../source/getting-productive/process-modeling/projects/index.rst:19
 msgid "Project dependencies"
@@ -13832,7 +13832,7 @@ msgstr ""
 
 #: ../../source/getting-productive/workflow/documents.rst:18
 msgid "Adding and writing documents"
-msgstr ""
+msgstr "文書の追加と書き込み"
 
 #: ../../source/getting-productive/workflow/documents.rst:20
 msgid "Create a document with a path, then write its content. Paths use ``/`` as the separator and can contain folders. The path must be unique in the selected case or workflow context. Use the case scope for files that belong to a case, and the workflow scope for files that belong to the current workflow context."
@@ -13848,7 +13848,7 @@ msgstr "ドキュメントの読み取り"
 
 #: ../../source/getting-productive/workflow/documents.rst:46
 msgid "Look up a document by its path or list all documents in a context."
-msgstr ""
+msgstr "コンテキスト内のすべての文書をパスまたはリストすることでドキュメントを調べます."
 
 #: ../../source/getting-productive/workflow/documents.rst:62
 msgid "Moving and deleting documents"
@@ -13860,7 +13860,7 @@ msgstr ""
 
 #: ../../source/getting-productive/workflow/documents.rst:71
 msgid "For long-running processes, keep only the documents that are required by the business process and use stable, meaningful paths."
-msgstr ""
+msgstr "長期にわたるプロセスのために、ビジネスプロセスで必要な文書だけを保ち、安定した意味のあるパスを使用します."
 
 #: ../../source/getting-productive/workflow/documents.rst:76
 msgid "Storage Provider"
@@ -13868,7 +13868,7 @@ msgstr "ストレージプロバイダー"
 
 #: ../../source/getting-productive/workflow/documents.rst:78
 msgid "The underlying storage provider is selected by the Engine configuration. The API remains the same when documents are stored locally or in S3, so an application does not need provider-specific document code. See the :ref:`document-storage` configuration for an overview and the :ref:`documents-local` and :ref:`documents-s3` sections for provider-specific settings. The provider can be configured per security system. For clustered Engines, use S3 or make the local storage root available to every node."
-msgstr ""
+msgstr "エンジン構成により、基礎ストレージプロバイダが選定されます。 ドキュメントがローカルまたはS3に保存されると、APIは同じままなので、プロバイダ固有のドキュメントコードを必要としません。 プロバイダー固有の設定の :ref:`document-storage` および :ref:`documents-local` および :ref:`documents-s3` セクションの :ref:`document-storage` 構成を参照してください。 プロバイダは、セキュリティシステムごとに設定できます。 クラスタエンジンでは、S3 を使用して、または各ノードにローカルストレージルートを利用できるようにします."
 
 #: ../../source/getting-productive/workflow/documents.rst:90
 msgid ":public-api:`IDocumentService </ch/ivyteam/ivy/workflow/document/IDocumentService.html>` contains the complete service API."
@@ -14649,7 +14649,7 @@ msgstr ""
 
 #: ../../source/market/index.rst:13
 msgid "To do so, you can execute the command :code:`Axon Ivy: Install Market Product` as documented in the :ref:`Commands <designer-market-install>` section."
-msgstr ""
+msgstr "そのためには、:ref:`Commands <designer-market-install>`セクションで文書化されているように、コマンド:code:`Axon Ivy:マーケット製品`をインストールします."
 
 #: ../../source/market/index.rst:15
 msgid "If you're not sure about how to execute a command, refer to the :ref:`Commands introduction <commands>`."
@@ -14657,31 +14657,31 @@ msgstr ""
 
 #: ../../source/market/index.rst:17
 msgid "If you want to browse the available extensions in more detail check our market website: `Axon Ivy Market <https://market.axonivy.com>`_"
-msgstr ""
+msgstr "利用可能な拡張子を詳細に閲覧したい場合は、当社の市場ウェブサイト:`Axon Ivy Market <https://market.axonivy.com>`"
 
 #: ../../source/market/index.rst:21
 msgid "Install a Local artifact"
-msgstr ""
+msgstr "ローカルアーティファクトをインストールする"
 
 #: ../../source/market/index.rst:22
 msgid "Installing a market product locally lets you use Axon Ivy's guided, dependency-resolving installation mechanism from your own or an internal source instead of the public online market."
-msgstr ""
+msgstr "市場製品をローカルにインストールすると、Axon Ivyのガイド付き、依存性解決インストールメカニズムを自分のものや、パブリックオンライン市場ではなく、内部ソースから使用できます."
 
 #: ../../source/market/index.rst:24
 msgid "This is needed in different scenarios:"
-msgstr ""
+msgstr "これは、異なるシナリオで必要です:"
 
 #: ../../source/market/index.rst:26
 msgid "The dev machine has no internet access to the market."
-msgstr ""
+msgstr "Dev マシンは、市場へのインターネットアクセスがありません."
 
 #: ../../source/market/index.rst:27
 msgid "You want to distribute your own internally-built reusable product the same way as an official market product."
-msgstr ""
+msgstr "自社の社内再利用可能な製品を正式な市場製品と同じ方法で配布したい."
 
 #: ../../source/market/index.rst:28
 msgid "You need a specific version not offered online."
-msgstr ""
+msgstr "オンラインで提供されていない特定のバージョンが必要です."
 
 #: ../../source/market/index.rst:30
 msgid "To install a local product, you can execute the command :code:`Axon Ivy: Install Local Market Product` as documented in the :ref:`Commands <designer-market-install>` section."
@@ -14689,7 +14689,7 @@ msgstr ""
 
 #: ../../source/market/index.rst:35
 msgid "Popular Market Artifacts"
-msgstr ""
+msgstr "人気の市場アーティファクト"
 
 #: ../../source/market/index.rst:37
 msgid "**Axon Ivy Smart Workflow**"
@@ -14697,7 +14697,7 @@ msgstr "**Axon Ivy スマートワークフロー**"
 
 #: ../../source/market/index.rst:38
 msgid "`Smart Workflow <https://market.axonivy.com/smart-workflow>`__ brings AI directly into Axon Ivy, so developers can build, run, and improve AI agents inside existing Axon processes. It lets business workflows leverage large language models to understand natural language, make autonomous decisions, and adapt to changing requirements — all without heavy architectural changes."
-msgstr ""
+msgstr "`Smart Workflow <https://market.axonivy.com/smart-workflow>`     は、Axon Ivy に直接 AI をもたらすので、開発者は既存の Axon プロセス内で AI エージェントを構築、実行、改善することができます。 ビジネスワークフローは、自然言語を理解し、自律的な決定を下し、変化する要件に適応するために、大国語モデルを活用し、大幅な建築変化なしにあらゆるニーズに対応します."
 
 #: ../../source/market/index.rst:45
 msgid "**Axon Ivy IDP**"
@@ -14705,7 +14705,7 @@ msgstr "**Axon Ivy IDP**"
 
 #: ../../source/market/index.rst:46
 msgid "`Axon Ivy IDP <https://market.axonivy.com/idp-utils>`__ is an Intelligent Document Processing solution that automates the extraction, classification, and analysis of unstructured data. It streamlines document-intensive processes such as invoice management, claims processing, and customer onboarding using AI-powered OCR, handwriting text recognition (HTR), and machine learning algorithms to increase the accuracy and efficiency in data management."
-msgstr ""
+msgstr "`Axon Ivy IDP <https://market.axonivy.com/idp-utils>`    は、構造化されていないデータの抽出、分類、解析を自動化するインテリジェントなドキュメント処理ソリューションです。 請求書管理、クレーム処理、顧客オンボーディングなどの文書集中プロセスをAI搭載OCR、手書きテキスト認識(HTR)、機械学習アルゴリズムを合理化し、データ管理の精度と効率性を高めます."
 
 #: ../../source/market/index.rst:57
 msgid "Demo Projects"
@@ -14713,7 +14713,7 @@ msgstr "デモプロジェクト"
 
 #: ../../source/market/index.rst:59
 msgid "We offer several demo projects which explain and showcase some typical use cases. You can install those products from the market."
-msgstr ""
+msgstr "一般的な使用例をいくつか説明し、紹介するデモプロジェクトを提供しています。 それらの製品を市場にインストールすることができます."
 
 #: ../../source/market/index.rst:62
 msgid "**Connectivity Features**"
@@ -15289,22 +15289,20 @@ msgstr "このようなニーズが予想される場合は、プロパティと
 #: ../../source/reference/configuration/databases.rst:66
 #: ../../source/reference/configuration/databases.rst:71
 #: ../../source/reference/configuration/databases.rst:74
-#, fuzzy
 msgid "Generator Wizard"
-msgstr "移行ウィザード"
+msgstr "ジェネレーターウィザード"
 
 #: ../../source/reference/configuration/databases.rst:68
 msgid "The Wizard guides you through the process of generating Entities, Forms, and Processes from an existing database. This is very powerful to start your project based on database tables."
-msgstr ""
+msgstr "ウィザードは、既存のデータベースからエンティティティ、フォーム、およびプロセスを生成するプロセスを通してあなたを導きます。 データベーステーブルに基づいてプロジェクトを始めるのは非常に強力です."
 
 #: ../../source/reference/configuration/databases.rst:76
 msgid "Generator Wizard with tables selected"
-msgstr ""
+msgstr "選択したテーブルを備えたジェネレータウィザード"
 
 #: ../../source/reference/configuration/databases.rst:79
-#, fuzzy
 msgid "Selected database tables for generation."
-msgstr "データベーススキーマの生成"
+msgstr "生成するデータベーステーブルを選択します."
 
 #: ../../source/reference/configuration/databases.rst:81
 msgid "Generator Wizard options and attributes"
@@ -15312,7 +15310,7 @@ msgstr ""
 
 #: ../../source/reference/configuration/databases.rst:84
 msgid "Configure what to generate and define attributes to include."
-msgstr ""
+msgstr "属性を生成し、定義する方法を設定します."
 
 #: ../../source/reference/configuration/databases.rst:90
 #: ../../source/reference/configuration/databases.rst:100
@@ -16922,7 +16920,7 @@ msgstr "ダイアログ"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:6
 msgid "The XHTML editor allows you to edit the view of a `Jakarta Faces`_ Dialog or a static XHTML page. You can view and edit the XHTML source in this text-based editor."
-msgstr ""
+msgstr "XHTMLエディタを使用すると、 `Jakarta Faces`  Dialog または静的 XHTML ページのビューを編集できます。 このテキストベースのエディタでXHTMLソースを表示および編集できます."
 
 #: ../../source/reference/dialog/xhtml-editor.rst:10
 msgid "Creating a Faces Dialog"
@@ -16930,15 +16928,15 @@ msgstr "Faces ダイアログの作成"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:11
 msgid "There are two ways to create a Faces Dialog. The recommended way is to use the provided commands:"
-msgstr ""
+msgstr "Faces Dialogを作成する方法は2つあります。 推奨方法は、提供されたコマンドを使用する方法です"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:14
 msgid ":menuselection:`Axon Ivy: New Html Dialog (JSF)`"
-msgstr ""
+msgstr ":menuselection:`Axon Ivy:新しいHtmlダイアログ(JSF)`"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:15
 msgid ":menuselection:`Axon Ivy: New Offline Dialog (JSF)`"
-msgstr ""
+msgstr ":menuselection:`Axon Ivy:新しいオフラインダイアログ(JSF)`"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:17
 msgid "The other option is to create a Faces Dialog via the context menu in the Explorer. You can create a Faces Dialog from the menu item :guilabel:`Axon Ivy New...`"
@@ -16950,7 +16948,7 @@ msgstr "作成ダイアログで次のオプションを指定します。"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:22
 msgid "Target Project (select from list)"
-msgstr ""
+msgstr "対象プロジェクト(リストから選択)"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:23
 msgid "Dialog Name"
@@ -16970,7 +16968,7 @@ msgstr "ベーステンプレート"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:28
 msgid "After specifying all options, the XHTML editor opens for the newly created Dialog."
-msgstr ""
+msgstr "すべてのオプションを指定すると、XHTMLエディタが新しく作成されたダイアログが開きます."
 
 #: ../../source/reference/dialog/xhtml-editor.rst:31
 msgid "Accessing the Editor"
@@ -16978,7 +16976,7 @@ msgstr "エディターへのアクセス"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:32
 msgid "The XHTML editor opens whenever you select an :file:`.xhtml` file from the Explorer."
-msgstr ""
+msgstr "エクスプローラから:file:`.xhtml`ファイルを選択すると、XHTMLエディタが開きます."
 
 #: ../../source/reference/dialog/xhtml-editor.rst:35
 msgid "Preview"
@@ -16986,11 +16984,11 @@ msgstr "プレビュー"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:36
 msgid "The Dialog Preview enables you to display the current state of your Dialog in the integrated browser."
-msgstr ""
+msgstr "Dialog プレビューを使用すると、統合されたブラウザーでダイアログの現在の状態を表示できます."
 
 #: ../../source/reference/dialog/xhtml-editor.rst:38
 msgid "It can be accessed via the button :guilabel:`Open Dialog Preview` in the top-right corner. A command is also available to open the preview."
-msgstr ""
+msgstr "右上の「X34X」ボタンで「Dialog Preview[X64X」を開きます。 プレビューを開くこともできます."
 
 #: ../../source/reference/dialog/xhtml-editor.rst:41
 msgid "|xhtml-editor-preview|"
@@ -17031,7 +17029,7 @@ msgstr "ホバー"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:57
 msgid "To see detailed information for beans, CMS entries and Faces elements you can hover over them. The popup will display relevant information such as return type of a method, value of a CMS entry or documentation for Faces elements."
-msgstr ""
+msgstr "豆、CMSのエントリー、顔の要素の詳細な情報を見るには、それらをホバーすることができます。 ポップアップは、メソッドの戻りタイプ、CMSエントリの値、Faces要素のドキュメントなどの関連情報を表示します."
 
 #: ../../source/reference/dialog/xhtml-editor.rst:60
 msgid "|xhtml-editor-hover|"
@@ -17043,31 +17041,31 @@ msgstr "xhtml-editor-hover"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:63
 msgid "Code Actions (Ctrl + .)"
-msgstr ""
+msgstr "コードアクション (Ctrl + .)"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:64
 msgid "Quickly remedy any misspellings in EL expressions, missing CMS entries, or warnings using the Code Actions provided."
-msgstr ""
+msgstr "EL 式でスペルミスを素早く処理し、CMS エントリを欠落させるか、提供されたコードアクションを使用して警告する."
 
 #: ../../source/reference/dialog/xhtml-editor.rst:66
 msgid "These can be accessed either via the lightbulb at the start of the line or via the shortcut ``Ctrl + .``. Code Actions are provided for the following actions:"
-msgstr ""
+msgstr "これらは、行の開始時に、またはショートカット ``Ctrl + .` を介して、Lightbulb を介してアクセスすることができます。 コードアクションは、次のアクションのために提供されます"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:69
 msgid "Fixing misspelled bean & attribute names"
-msgstr ""
+msgstr "誤ったビーンと属性名を修正"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:70
 msgid "Creating missing attributes on dialog data"
-msgstr ""
+msgstr "ダイアログデータの欠落した属性を作成する"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:71
 msgid "Converting static strings into CMS entries"
-msgstr ""
+msgstr "静的文字列をCMSエントリに変換する"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:72
 msgid "Suppressing validation of unwanted warnings"
-msgstr ""
+msgstr "不要な警告の抑制検証"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:74
 msgid "|xhtml-editor-actions|"
@@ -17079,7 +17077,7 @@ msgstr "xhtml-editor-actions"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:77
 msgid "Go to Definition (Ctrl + Click)"
-msgstr ""
+msgstr "定義に移動 (Ctrl + クリック)"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:78
 msgid "If you need to see more information than the hover provides, you can ``Ctrl + Click`` on a CMS entry, bean, method or property to directly jump to its source."
@@ -17095,7 +17093,7 @@ msgstr ""
 
 #: ../../source/reference/dialog/xhtml-editor.rst:89
 msgid "The simplest way to suppress validation is to use the Code Action \"Suppress Validation\" either for the affected line or the entire file. This will automatically add the comment to the source code. Multiple validators can be suppressed by separating them with commas:"
-msgstr ""
+msgstr "検証を抑制する最も簡単な方法は、影響を受ける行またはファイル全体に対して、コードアクション「Suppress Validation」を使用することです。 ソースコードにコメントを自動的に追加します。 複数のバリデータはコンマで区切ることで抑制できます"
 
 #: ../../source/reference/extension-api/index.rst:2
 msgid "Extension API"
@@ -17103,11 +17101,11 @@ msgstr "拡張 API"
 
 #: ../../source/reference/extension-api/index.rst:4
 msgid "Extension APIs are here to extend the functionality of the platform."
-msgstr ""
+msgstr "拡張 API は、プラットフォームの機能を拡張するためにここにあります."
 
 #: ../../source/reference/extension-api/index.rst:6
 msgid "Most projects should not need them, so they are not part of the standard project dependencies. Extension implementors, however, can add them to their :file:`pom.xml` dependency declaration as needed. These artifacts do not need a version declaration, as these are already provided by the ivy-project-parent."
-msgstr ""
+msgstr "ほとんどのプロジェクトは必要なくないので、標準プロジェクトの依存関係の一部ではありません。 エクステンション・インキュベーターは、必要に応じて :file:`pom.xml` 依存宣言に追加できます。 これらのアーティファクトは、ivy-project-parentによって既に提供されているため、バージョン宣言を必要としません."
 
 #: ../../source/reference/extension-api/index.rst:13
 msgid "Java Extension API"
@@ -17115,7 +17113,7 @@ msgstr "Java 拡張 API"
 
 #: ../../source/reference/extension-api/index.rst:15
 msgid "The :code:`ivy-java-extension-api` artifact is required to gain access to project specific Classloader instances."
-msgstr ""
+msgstr ":code:`ivy-java-extension-api`アーティファクトは、プロジェクト固有のClassloaderインスタンスへのアクセスを得るために必要です."
 
 #: ../../source/reference/extension-api/index.rst:18
 #: ../../source/reference/extension-api/index.rst:34
@@ -17139,7 +17137,7 @@ msgstr "プロセス拡張 API"
 
 #: ../../source/reference/extension-api/index.rst:47
 msgid "The :code:`ivy-process-extension-api` artifact is required to build custom :ref:`process element extensions<extensible-process-elements>`."
-msgstr ""
+msgstr ":code:`ivy-process-extension-api`アーティファクトは、カスタム:ref:`プロセス要素エクステンション<extensible-process-elements>`を作成する必要があります."
 
 #: ../../source/reference/extension-api/index.rst:60
 msgid "REST Jersey Extension API"
@@ -17147,7 +17145,7 @@ msgstr "REST Jersey 拡張 API"
 
 #: ../../source/reference/extension-api/index.rst:62
 msgid "The :code:`ivy-rest-jersey-extension-api` artifact is required, to extend the Jersey-based REST client stack. Most likely a custom authentication feature or custom serialization behavior."
-msgstr ""
+msgstr ":code:`ivy-rest-jersey-extension-api`アーティファクトは、ジャージーベースのRESTクライアントスタックを拡張する必要があります。 ほとんどの場合、カスタム認証機能またはカスタムシリアライズ動作."
 
 #: ../../source/reference/extension-api/index.rst:77
 msgid "WebService CXF Extension API"
@@ -17155,7 +17153,7 @@ msgstr "WebService CXF 拡張 API"
 
 #: ../../source/reference/extension-api/index.rst:79
 msgid "The :code:`ivy-webservice-cxf-extension-api` artifact is required, to build extensions that rely on the Apache CXF-based WebService client stack. Most customizations will need to implement :code:`ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature`."
-msgstr ""
+msgstr ":code:`ivy-webservice-cxf-extension-api`アーティファクトは、Apache CXFベースのWebServiceクライアントスタックに依存する拡張機能を構築するために必要です。 ほとんどのカスタマイズでは、:code:`ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature`を実行する必要があります."
 
 #: ../../source/reference/process/error-handling.rst:6
 msgid "Errors are used to model exceptional process paths. With an error, the happy path of a process is left. An error is caught by an Error Boundary Event or Error Start Event if their Error Code pattern matches the Error Code."
@@ -18409,7 +18407,7 @@ msgstr "現在の選択に合わせてクイックアクションが表示され
 
 #: ../../source/reference/process/process-editor/index.rst:21
 msgid "the :ref:`process-inscription-view`, where you can see the inscriptions of the process."
-msgstr ""
+msgstr ":ref:`process-inscription-view` は、プロセスの碑文を見ることができます."
 
 #: ../../source/reference/process/process-editor/index.rst:23
 msgid "the :ref:`process-outline-view`, where you can see the outline of the process."
@@ -20400,7 +20398,7 @@ msgstr "高度な設定"
 
 #: ../../source/reference/process/process-elements/program-interface-activity.rst:98
 msgid "If your program implements an editor with widgets, you can access the configured values of a process element in your program implementation from the :code:`ch.ivyteam.ivy.process.program.exec.ProgramContext` through the :code:`config()` method."
-msgstr ""
+msgstr "プログラムがウィジェットでエディタを実装する場合、 :code:`ch.ivyteam.ivy.process.program.exec.ProgramContext`config()`メソッドを介して、プログラムの実行中のプロセス要素の構成値にアクセスすることができます."
 
 #: ../../source/reference/process/process-elements/program-interface-activity.rst:103
 msgid "The context also provides :code:`script()` as entry point to evaluate dynamic expressions configured on Script or Text widgets."
@@ -20420,7 +20418,7 @@ msgstr ""
 
 #: ../../source/reference/process/process-elements/program-interface-activity.rst:118
 msgid "The referenced icon will be shown by default on Program Activity elements. Furthermore, Program Activities with an icon will be displayed in the :ref:`process-element-extension-item` of the process editor."
-msgstr ""
+msgstr "参照されたアイコンは、プログラムアクティビティ要素のデフォルトで表示されます。 また、プロセスエディタの:ref:`process-element-extension-item`にアイコン付きプログラムアクティビティが表示されます."
 
 #: ../../source/reference/process/process-elements/program-interface-activity.rst:122
 msgid "Implementing the :code:`ProgramIconDecorator` is highly recommended for Program Interface Activities that are being distributed as connectors to the :ref:`market`."
@@ -20466,16 +20464,16 @@ msgstr ""
 
 #: ../../source/reference/process/process-elements/program-start.rst:81
 msgid "The common way to implement a Program Start is:"
-msgstr ""
+msgstr "プログラム開始を実装する一般的な方法は:"
 
 #: ../../source/reference/process/process-elements/program-start.rst:83
 #: ../../source/reference/process/process-elements/wait-program-intermediate-event.rst:93
 msgid "Implement the :code:`initialize()` method:"
-msgstr ""
+msgstr ":code:`initialize()`メソッドを実行します"
 
 #: ../../source/reference/process/process-elements/program-start.rst:85
 msgid "fetch the :code:`IProcessStartEventBeanRuntime` and keep it in a member variable for later use"
-msgstr ""
+msgstr ":code:`IProcessStartEventBeanRuntime` を取得し、後で使用するためにメンバー変数に保存します"
 
 #: ../../source/reference/process/process-elements/program-start.rst:86
 #: ../../source/reference/process/process-elements/wait-program-intermediate-event.rst:96
@@ -20494,7 +20492,7 @@ msgstr ""
 
 #: ../../source/reference/process/process-elements/program-start.rst:91
 msgid "check for new runs and call the method :code:`fireProcessStartEventRequest()` of :code:`IProcessStartEventBeanRuntime` to start a new process instance"
-msgstr ""
+msgstr ":code:`IProcessStartEventBeanRuntime`のFireProcessStartEventRequest()`メソッドを呼び出して、新しいプロセスインスタンスを開始します"
 
 #: ../../source/reference/process/process-elements/program-start.rst:94
 msgid "If you use an Axon Ivy Cluster, you may mark your implementation with the :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. This will enable your Program Start not only on the master node, but on all available nodes."
@@ -20670,11 +20668,11 @@ msgstr "ビジネスプロセスで必要な属性（例：String 型の :code:`
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:192
 msgid "Map to Data Class in code block"
-msgstr ""
+msgstr "コードブロックのデータクラスへのマップ"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:197
 msgid "**Map to Generated Class**:"
-msgstr ""
+msgstr "**クラスを生成するためのマップ**:"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:198
 msgid "Paste the JSON you receive from the service into a Java object source generator like http://www.jsonschema2pojo.org/. Generate the Java sources for the JSON structure. Download the sources and add them to a special source folder (E.g., ``src_generated``). Now you can :ref:`read the response body <process-element-rest-client-activity-output-data-tab>` to an object of this generated class, like described before. This option should be used if you want to represent a complex JSON structure without writing code yourself."
@@ -20690,7 +20688,7 @@ msgstr ":ref:`結果のボディ <process-element-rest-client-activity-output-da
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:214
 msgid "Map to JSON Node in code block"
-msgstr ""
+msgstr "コードブロックでJSON Nodeにマップ"
 
 #: ../../source/reference/process/process-elements/rest-client-activity.rst:224
 msgid "The inscription mask provides a handy UI that makes most calls to a REST service very simple. However, there are always corner cases where you need to configure something, which is not configurable on the UI. In these rare cases, you can use the fluent JAX-RS API to call the service and interpret the response. To do so you can choose 'JAX_RS' as HTTP Method. In the scripting field that became visible you can configure every detail of the REST request done by this element."
@@ -21963,7 +21961,7 @@ msgstr "プロジェクト記述子"
 
 #: ../../source/reference/project/index.rst:6
 msgid "Each Axon Ivy project has a Maven project descriptor, :file:`pom.xml`. The POM defines the project's Maven coordinates and its dependencies to other projects and libraries."
-msgstr ""
+msgstr "Axon IvyプロジェクトにはMavenプロジェクト記述子、:file:`pom.xml`があります。 POM は、プロジェクトの Maven 座標と他のプロジェクトやライブラリに対する依存性を定義します."
 
 #: ../../source/reference/project/index.rst:11
 msgid "Project coordinates"
@@ -21971,7 +21969,7 @@ msgstr "プロジェクト座標"
 
 #: ../../source/reference/project/index.rst:13
 msgid "The project's ``groupId``, ``artifactId`` and ``version`` identify it in Maven. Define all three values in the project's own POM so that other projects can reference it. The ``artifactId`` is the project name and the version should follow Maven's version format."
-msgstr ""
+msgstr "プロジェクトの ````group 「アーティファクト」 Id` と ``version` は Maven でそれを識別します。 他のプロジェクトが参照できるように、プロジェクト自身の POM のすべての 3 つの値を定義します。 「アーティファクト」 Id` はプロジェクト名で、バージョンは Maven のバージョン形式に従う必要があります."
 
 #: ../../source/reference/project/index.rst:19
 msgid "Adding a dependency"
@@ -21999,7 +21997,7 @@ msgstr ""
 
 #: ../../source/reference/project/index.rst:52
 msgid "Libraries published to a Maven repository use the same coordinates. JAR dependencies normally use Maven's default type, so no ``<type>`` is needed:"
-msgstr ""
+msgstr "Mavenリポジトリに公開されたライブラリは、同じ座標を使用します。 JAR の依存関係は通常 Maven のデフォルトタイプを使用します。そのため ``<type>` は必須ではありません"
 
 #: ../../source/reference/project/index.rst:63
 msgid "Maven resolves these dependencies from the repositories configured in the POM or inherited from its parent. The dependency's classes and resources are then available to the project according to its Maven scope."
@@ -22011,7 +22009,7 @@ msgstr "Ivy プロジェクトのプロパティ"
 
 #: ../../source/reference/project/index.rst:73
 msgid "The :file:`.ivyproject` file contains the current project version and the project name. The project name is used to match the project during redeployment."
-msgstr ""
+msgstr ":file:`.ivyproject`ファイルには、現在のプロジェクトバージョンとプロジェクト名が含まれています。 プロジェクト名は、プロジェクト名と一致させるために使用されます."
 
 #: ../../source/reference/public-api/index.rst:2
 msgid "Public API"
@@ -22176,7 +22174,7 @@ msgstr "**非推奨**"
 
 #: ../../source/technical-info/migration/index.rst:31
 msgid "We also always deprecate well known features and API's before remove them. Please refer to our :ref:`deprecation` chapter to be informed about."
-msgstr ""
+msgstr "また、よく知られた機能やAPIを廃止して削除します。 :ref:`deprecation` の章についてご報告ください."
 
 #: ../../source/technical-info/migration/major/docker.rst:6
 msgid "Docker's infrastructure enables you to automate various kinds of infrastructure setups. Consequently, the kind of major migration steps are various too and highly dependent on your concrete setup. However, here are the major steps to do when migrating a docker based Axon Ivy Engine to another major version."
@@ -22642,7 +22640,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:51
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:36
 msgid "Previously, individual projects on the Axon Ivy Engine were versioned at runtime. These versions were referred to as **Process Model Versions**. With the introduction of **Application Versions**, versioning has been moved to the application level."
-msgstr ""
+msgstr "以前は、アクソンアイビーエンジンの個々のプロジェクトがランタイムでバージョンアップしました。 これらのバージョンは、**Process Model Versions** と呼ばれていました。 **Application Versions** の導入により、バージョンアップはアプリケーションレベルに移行しました."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:56
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:41
@@ -22674,7 +22672,7 @@ msgstr "展開"
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:81
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:66
 msgid "The target application version must always be specified using the following parameters:"
-msgstr ""
+msgstr "対象アプリケーションバージョンは、次のパラメーターを使用して常に指定する必要があります"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:84
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:69
@@ -22689,7 +22687,7 @@ msgstr "アプリケーション"
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:88
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:73
 msgid "The Application Version can either reference a specific existing version or be controlled using one of the two special keywords: :code:`new` or :code:`released`."
-msgstr ""
+msgstr "アプリケーションバージョンは、特定の既存のバージョンを参照するか、または2つの特別なキーワードのいずれかを使用して制御することができます。 :code:`new` または :code:`released`."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:92
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:76
@@ -22704,12 +22702,12 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:101
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:84
 msgid "To support this new deployment model, the :ref:`Deployment REST API <deployment-rest-api>`, the :ref:`Deployment Directory <deployment-directory>`, and the goals of the :ref:`project-build-plugin <deployment-maven-plugin>` have been updated accordingly."
-msgstr ""
+msgstr "この新しい展開モデルをサポートするために、 :ref:`Deployment REST API <deployment-rest-api>`、 :ref:`Deployment Directory <deployment-directory>`、および :ref:`project-build-plugin <deployment-maven-plugin>`の目的はそれに応じて更新されています."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:106
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:89
 msgid "The :ref:`Cockpit <engine-cockpit-application>` has also been adapted to reflect these changes and to support the new Application Version-based deployment model."
-msgstr ""
+msgstr ":ref:`Cockpit <engine-cockpit-application>`は、これらの変更を反映し、新しいアプリケーションバージョンベースのデプロイメントモデルをサポートするように適応しました."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:110
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:93
@@ -22719,7 +22717,7 @@ msgstr "**起動**"
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:112
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:95
 msgid "Previously, various states were maintained at the Process Model Version level, including the Release State and Activity State."
-msgstr ""
+msgstr "以前は、リリース状態とアクティビティ状態を含むプロセスモデルバージョンレベルでさまざまな状態が維持されていました."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:115
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:98
@@ -22729,7 +22727,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:119
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:102
 msgid "This ensures that the lifecycle and operational state of an application are managed consistently as a whole, rather than independently for each project."
-msgstr ""
+msgstr "これにより、アプリケーションのライフサイクルと運用状態は、プロジェクトごとに独立して管理されるのではなく、一貫して管理されます."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:122
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:105
@@ -22779,7 +22777,7 @@ msgstr "アプリケーションのライフサイクル"
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:154
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:137
 msgid "The directory structure now reflects the Application Version concept and follows the hierarchy: Security System → Application → Version → Project. Each Application Version has its own dedicated folder. On redeployment, a backup is created for the entire Application Version folder. This ensures that all projects and associated files belonging to the application version are backed up consistently."
-msgstr ""
+msgstr "ディレクトリ構造は、アプリケーション・バージョン・コンセプトを反映し、階層:セキュリティ・システム → アプリケーション → バージョン → プロジェクトに従います。 各アプリケーションバージョンには専用のフォルダがあります。 redeployment では、Application Version フォルダー全体でバックアップが作成されます。 これにより、アプリケーションバージョンに属するすべてのプロジェクトおよび関連するファイルが一貫してバックアップされるようにします."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:206
 #: ../../source/technical-info/migration/migration-notes-131-132.rst:107
@@ -22971,11 +22969,11 @@ msgstr "パッケージ名の変更"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:324
 msgid "Most :code:`javax.*` packages have been replaced with :code:`jakarta.*` packages."
-msgstr ""
+msgstr "ほとんどの:code:`javax.*`パッケージは:code:`jakarta.*`パッケージに置き換えられました."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:328
 msgid "Faces (JSF)"
-msgstr ""
+msgstr "フェイス(JSF)"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:330
 msgid "There is no longer a :code:`@ManagedBean` annotation, instead beans for Jakarta Faces (JSF) are resolved via `CDI <https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1>`_. CDI beans need to be annotated with :code:`@Named` and they need to have a scope (:code:`@RequestScoped`, :code:`@SessionScoped`, :code:`@ApplicationScoped`, :code:`@ViewScoped`) if they are used in JSF pages. If the beans are :code:`@SessionScoped` or :code:`@ViewScoped`, they need to implement the :code:`Serializable` interface."
@@ -22989,7 +22987,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:345
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:200
 msgid "Also :code:`@FacesConverter` and :code:`@FacesValidator` are now CDI-managed and must be adapted accordingly. They must set :code:`managed = true`, and they also need to have a scope (see above)."
-msgstr ""
+msgstr "また :code:`@FacesConverter` と :code:`@FacesValidator` は CDI 管理されており、それに応じて適応する必要があります。 :code:`managed = true` を設定しなければなりません。また、スコープ(上記参照)を持つ必要があります."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:357
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:211
@@ -23056,7 +23054,7 @@ msgstr "|tag-project-auto-convert|"
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:396
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:264
 msgid "REST and SOAP WebService clients now use Apache HTTP Client 5-based connectors instead of Apache HTTP Client 4-based connectors by default."
-msgstr ""
+msgstr "REST および SOAP WebService クライアントは、デフォルトで Apache HTTP クライアント 4 ベースのコネクターではなく、Apache HTTP クライアント 5 ベースのコネクタを使用します."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:399
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:266
@@ -23071,7 +23069,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:407
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:272
 msgid "The Apache HTTP Client 4 library itself is still available but will be removed in a future version."
-msgstr ""
+msgstr "Apache HTTP クライアント 4 ライブラリ自体は引き続き利用できますが、将来のバージョンでは削除されます."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:418
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:282
@@ -23091,12 +23089,12 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:440
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:226
 msgid "`PrimeFaces 14 Migration Guide <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`_"
-msgstr ""
+msgstr "`PrimeFaces 14 移行ガイド <https://primefaces.github.io/primefaces/14_0_0/#/../migrationguide/14_0_0>`"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:442
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:227
 msgid "`PrimeFaces 15 Migration Guide <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`_"
-msgstr ""
+msgstr "`PrimeFaces 15 移行ガイド <https://primefaces.github.io/primefaces/15_0_0/#/../migrationguide/15_0_0>`"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:445
 msgid "Notably, Charts have been changed and are not migrated automatically. You will need to manually update your chart configurations to be compatible with PrimeFaces 15."
@@ -23120,7 +23118,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:470
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:249
 msgid "Jackson's :code:`JsonNode` type is suggested to read raw RestClientCall results, occurrences of these are automatically converted in existing processes."
-msgstr ""
+msgstr "Jackson の :code:`JsonNode` 型は、ReestClientCall の結果を読み込み、これらの発生は既存のプロセスで自動的に変換されます."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:474
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:252
@@ -23149,7 +23147,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:508
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:354
 msgid "If you have compile errors after migrating to 14, please check our extension APIs. The idea is that you opt-in to using the new Extension APIs where necessary, without getting the overhead of it in most projects, that do not require it."
-msgstr ""
+msgstr "移行後14にエラーをコンパイルしている場合は、拡張子APIを確認してください。 アイデアは、必要な新しいエクステンション API を使用することをオプトインすることです。ほとんどのプロジェクトでは、そのオーバーヘッドを得ることなく、必要ではありません."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:514
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:361
@@ -23179,7 +23177,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:527
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:374
 msgid "This change improves the consistency of folder names and better reflects their content."
-msgstr ""
+msgstr "この変更により、フォルダー名の一貫性が向上し、コンテンツが反映されます."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:531
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:378
@@ -23254,12 +23252,12 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:626
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:396
 msgid "Program Elements replace IBpmnElementExtensions"
-msgstr ""
+msgstr "プログラム要素はIBpmnElementExtensionsを置き換えます"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:630
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:400
 msgid "We streamlined how to implement custom behavior for process elements. Program Elements can now provide a custom icon and can also appear in the :ref:`Extension <process-element-extension-item>` group of the process editor toolbar. Therefore, we removed the previous :code:`IBpmnElementExtension` interface and its infrastructure completely, which was used to contribute the icon and process-editor integration behavior."
-msgstr ""
+msgstr "プロセス要素のカスタム動作を実装する方法を合理化しました。 プログラム要素は、カスタムアイコンを提供し、プロセスエディタツールバーの:ref:`拡張子 <process-element-extension-item>`グループに表示することもできます。 そのため、以前の:code:`IBpmnElementExtension`インターフェイスとそのインフラストラクチャを完全に削除し、アイコンとプロセスエディタの統合動作に貢献しました."
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:637
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:406
@@ -23274,7 +23272,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:657
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:423
 msgid "For implementation details, see the Program Elements reference:"
-msgstr ""
+msgstr "実装の詳細については、プログラム要素参照を参照してください"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:666
 msgid "Deprecation and Removals"
@@ -23291,7 +23289,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:685
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:289
 msgid "NTLM Authentication for REST and SOAP Web Service Client Connectors"
-msgstr ""
+msgstr "REST および SOAP Web サービス クライアント コネクタの NTLM 認証"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:689
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:293
