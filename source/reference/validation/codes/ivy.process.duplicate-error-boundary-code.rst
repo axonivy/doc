@@ -9,3 +9,11 @@ ivy.process.duplicate-error-boundary-code
 
 .. start: manual doc
 
+**Description**
+
+Multiple Error Boundary Events attached to the same Activity handle the same error code. The process cannot reliably determine which matching boundary event should handle the error.
+
+**How to fix**
+
+Assign distinct error codes to the boundary events, or remove or combine events that are intended to handle the same error.
+

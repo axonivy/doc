@@ -9,3 +9,11 @@ ivy.xhtml.converter-id.not-managed
 
 .. start: manual doc
 
+**Description**
+
+The converter is not configured for CDI-managed creation. Without managed creation, CDI injection and other managed behavior in the converter are not available.
+
+**How to fix**
+
+Set ``managed = true`` on the converter's ``@FacesConverter`` annotation. See :ref:`validation-code-ivy.java-index.managed-property-missing` for an example.
+

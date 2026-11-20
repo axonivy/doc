@@ -9,3 +9,11 @@ ivy.dataclass.field-name-duplicated
 
 .. start: manual doc
 
+**Description**
+
+Data Class Attribute names must be unique, ignoring letter case. For example, ``customer`` and ``Customer`` are considered duplicates.
+
+**How to fix**
+
+Rename one of the Attributes so its name differs from all other Attribute names, including differences in capitalization.
+

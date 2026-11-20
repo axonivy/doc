@@ -9,3 +9,11 @@ ivy.dataclass.association-not-supported
 
 .. start: manual doc
 
+**Description**
+
+The selected association cardinality does not match the Attribute type. One-to-One and Many-to-One associations require an Entity Class type; One-to-Many requires a collection of Entity Classes.
+
+**How to fix**
+
+Change the Attribute type or choose a cardinality that matches it in the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
+
