@@ -5,7 +5,7 @@
 ivy.dataclass.persistent-type-not-whitelisted
 ---------------------------------------------
 
-**Message:** The type '${type}' of the Attribute '${field}' is not whitelisted for being persisted. The internal representation of this type might change and make data unrecoverable: ${detail}
+**Message:** The stability of the type '${type}' of the Attribute '${field}' for persistence is not guaranteed.
 
 .. start: manual doc
 
