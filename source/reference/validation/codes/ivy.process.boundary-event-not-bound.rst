@@ -9,3 +9,11 @@ ivy.process.boundary-event-not-bound
 
 .. start: manual doc
 
+**Description**
+
+A Boundary Event must be linked to an Activity that it can interrupt or otherwise handle. Without a binding, the process does not know which Activity the event belongs to.
+
+**How to fix**
+
+Bind the Boundary Event to the intended Activity in the process editor.
+

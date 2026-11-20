@@ -9,3 +9,11 @@ ivy.variable.invalid-key-warning
 
 .. start: manual doc
 
+**Description**
+
+The Variable key contains characters outside the supported key format or is a reserved Java keyword. It cannot be accessed reliably using the ``ivy.var.<variable>`` syntax.
+
+**How to fix**
+
+Rename the key to begin with a letter and use only letters, digits, or underscores. Do not use a Java keyword as the key.
+

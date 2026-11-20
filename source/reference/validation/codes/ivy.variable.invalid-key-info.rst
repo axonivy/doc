@@ -9,3 +9,11 @@ ivy.variable.invalid-key-info
 
 .. start: manual doc
 
+**Description**
+
+A hyphen is allowed in a Variable key, but it is not valid in the ``ivy.var.<variable>`` dot-property syntax.
+
+**How to fix**
+
+Replace the hyphen with an underscore if the Variable must be accessed using ``ivy.var.<variable>``.
+
