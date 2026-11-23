@@ -365,19 +365,16 @@ msgid "Creates a new Axon Ivy project."
 msgstr "新しい Axon Ivy プロジェクトを作成します。"
 
 #: ../../source/designer/commands/index.rst:103
-#, fuzzy
 msgid "**New Test Project**"
-msgstr "**新しいプロジェクト**"
+msgstr "**新しいテストプロジェクト**"
 
 #: ../../source/designer/commands/index.rst:104
-#, fuzzy
 msgid ":code:`Axon Ivy: New Test Project`"
-msgstr ":code:`Axon Ivy: New Project`"
+msgstr ":code:`Axon Ivy: New Test Project`"
 
 #: ../../source/designer/commands/index.rst:106
-#, fuzzy
 msgid "Creates a new Axon Ivy test project. Refer to :ref:`CI and Testing <testing>` for more information."
-msgstr "Axon Ivy の新しいビジネスプロセスを作成します。 詳細は :ref:`process-modeling` を参照してください."
+msgstr "Axon Ivy の新しいテストプロジェクトを作成します。詳細は :ref:`CI and Testing <testing>` を参照してください。"
 
 #: ../../source/designer/commands/index.rst:108
 msgid "**New Business Process**"
@@ -4600,9 +4597,8 @@ msgid "OpenSearch"
 msgstr "OpenSearch"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:115
-#, fuzzy
 msgid "Version 3.8/3.9/3.10. Only required if you run your :ref:`own <opensearch-external>` OpenSearch instance!"
-msgstr "バージョン 3.8/3.9。:ref:`独自の <opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
+msgstr "バージョン 3.8/3.9/3.10。:ref:`独自の <opensearch-external>` OpenSearch インスタンスを実行する場合にのみ必要です。"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:122
 msgid "Web Browser"
@@ -9038,14 +9034,12 @@ msgstr ""
 #: ../../source/getting-productive/ci-testing/process-testing.rst:27
 #: ../../source/getting-productive/ci-testing/unit-testing.rst:27
 #: ../../source/getting-productive/ci-testing/web-testing.rst:27
-#, fuzzy
 msgid "A sample file is created in the ``src_test`` folder of the new test project."
-msgstr "新しく作成したプロジェクトの ``src_test`` ディレクトリにサンプルテストが作成されます。"
+msgstr "新しいテストプロジェクトの ``src_test`` フォルダーにサンプルファイルが作成されます。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:29
-#, fuzzy
 msgid "You now have a simple test called ``SampleProcessTest``."
-msgstr "``SampleIvyProcessTest`` という名前の簡単なテストが完成しました。"
+msgstr "これで、``SampleProcessTest`` という名前の簡単なテストが用意できました。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:31
 msgid "Note a few things at this point:"
@@ -9287,9 +9281,8 @@ msgid "Choose the ``IvyTest`` test type."
 msgstr ""
 
 #: ../../source/getting-productive/ci-testing/unit-testing.rst:29
-#, fuzzy
 msgid "You now have a simple test called ``SampleIvyTest``."
-msgstr "``SampleIvyProcessTest`` という名前の簡単なテストが完成しました。"
+msgstr "これで、``SampleIvyTest`` という名前の簡単なテストが用意できました。"
 
 #: ../../source/getting-productive/ci-testing/unit-testing.rst:31
 #: ../../source/getting-productive/ci-testing/web-testing.rst:31
@@ -9303,15 +9296,13 @@ msgstr "Axon Ivy Engine がプロジェクトと一緒に起動されている�
 
 #: ../../source/getting-productive/ci-testing/unit-testing.rst:35
 #: ../../source/getting-productive/ci-testing/web-testing.rst:35
-#, fuzzy
 msgid "To run this test right-click inside this class -> Run Tests in Current File"
-msgstr "このテストを実行するには、このクラス内を右クリックし、［実行］、［JUnit テスト］の順に選択します。"
+msgstr "このテストを実行するには、クラス内を右クリックし、[テストの実行] > [現在のファイルでテストを実行] を選択します。"
 
 #: ../../source/getting-productive/ci-testing/unit-testing.rst:37
 #: ../../source/getting-productive/ci-testing/web-testing.rst:37
-#, fuzzy
 msgid "The **Test Results** view should open, and the tests should be green."
-msgstr "新しい **JUnit** ビューが開き、テストが緑色で表示されます。"
+msgstr "**テスト結果** ビューが開き、テストが成功すると緑色で表示されます。"
 
 #: ../../source/getting-productive/ci-testing/unit-testing.rst:40
 msgid "This is all you need to start writing conventional Unit Tests."
@@ -9379,9 +9370,8 @@ msgid "Choose the ``WebIT`` test type."
 msgstr ""
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:29
-#, fuzzy
 msgid "You now have a simple test called ``SampleWebIT``."
-msgstr "``SampleIvyProcessTest`` という名前の簡単なテストが完成しました。"
+msgstr "これで、``SampleWebIT`` という名前の簡単なテストが用意できました。"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:41
 msgid "Write a Web Test"
@@ -9492,9 +9482,8 @@ msgid "Both projects, production and test project, need to be compiled during th
 msgstr "同じ実行中に、本番プロジェクトとテストプロジェクトの両方をコンパイルする必要があります。最初に、Maven モジュールのビルドをセットアップします。"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:183
-#, fuzzy
 msgid "Create a Maven module build"
-msgstr "Maven モジュールを作成します。"
+msgstr "Maven モジュールのビルドを作成する"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:185
 msgid "Place your production project and its test project at the root of your workspace. In this example, these projects are ``crm`` and ``crmIntegrationTests``."
@@ -9513,19 +9502,16 @@ msgid "Run module build in Axon Ivy Designer"
 msgstr "Axon Ivy Designer でモジュールのビルドを実行します。"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:210
-#, fuzzy
 msgid "Open the :ref:`designer-views-maven-view`."
-msgstr ":ref:`designer-views-maven-view` を開きます"
+msgstr ":ref:`designer-views-maven-view` を開きます。"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:212
-#, fuzzy
 msgid "In the Maven view, right-click the workspace-level :file:`pom.xml` and select :guilabel:`Run Maven Commands` > :guilabel:`verify`."
-msgstr ":guilabel:`Run Maven Commands` > :guilabel:`verify` に移動します。"
+msgstr "Maven ビューでワークスペースレベルの :file:`pom.xml` を右クリックし、:guilabel:`Run Maven Commands` > :guilabel:`verify` を選択します。"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:215
-#, fuzzy
 msgid "Maven build command in the Designer"
-msgstr "デザイナーでのシグナルの手動送信"
+msgstr "Designer での Maven ビルドコマンド"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:218
 msgid "The build output should look similar to:"
@@ -22315,7 +22301,6 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:12
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:12
-#, fuzzy
 msgid "**Description**"
 msgstr "説明"
 
@@ -22324,9 +22309,8 @@ msgid "The type matches one of these blacklisted package prefixes:"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:16
-#, fuzzy
 msgid "``javafx``"
-msgstr "``salary``"
+msgstr "``javafx``"
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:17
 msgid "``ch.ivyteam``"
@@ -22346,9 +22330,8 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:24
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:25
-#, fuzzy
 msgid "**How to fix**"
-msgstr "**ホットフィックスのアップグレード**"
+msgstr "**修正方法**"
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:26
 msgid "Prefer a suitable type from the persistence whitelist."
@@ -22390,24 +22373,20 @@ msgid "The type is not on Axon Ivy's persistence whitelist. The whitelist includ
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:16
-#, fuzzy
 msgid "``java.lang``"
-msgstr "``Long``"
+msgstr "``java.lang``"
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:17
-#, fuzzy
 msgid "``java.util``"
-msgstr "``java.sql.Timestamp``"
+msgstr "``java.util``"
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:18
-#, fuzzy
 msgid "``java.math``"
-msgstr "``amount``"
+msgstr "``java.math``"
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:19
-#, fuzzy
 msgid "``ch.ivyteam.ivy.scripting.objects``"
-msgstr "パブリック API ``ch.ivyteam.ivy.scripting.objects.jsf.el.AutoInitializable`` も参照してください。"
+msgstr "``ch.ivyteam.ivy.scripting.objects``"
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:21
 msgid "The whitelist also includes :public-api:`CompositeObject </ch/ivyteam/ivy/scripting/objects/CompositeObject.html>` and Java types annotated with :public-api:`@IvyPersistable </ch/ivyteam/ivy/scripting/objects/persistable/IvyPersistable.html>`."
@@ -22686,9 +22665,8 @@ msgid "**Message:** Condition #${conditionNumber} references a no longer existin
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.alternative-condition-empty.rst:6
-#, fuzzy
 msgid "ivy.process.alternative-condition-empty"
-msgstr "プロセスの前提条件"
+msgstr "ivy.process.alternative-condition-empty"
 
 #: ../../source/reference/validation/codes/ivy.process.alternative-condition-empty.rst:8
 #, python-brace-format
@@ -22915,9 +22893,8 @@ msgid "**Message:** Another process with the same path and name exists. Remove, 
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-signature.rst:6
-#, fuzzy
 msgid "ivy.process.duplicate-signature"
-msgstr "プロセス開始シグネチャ"
+msgstr "ivy.process.duplicate-signature"
 
 #: ../../source/reference/validation/codes/ivy.process.error-code-invalid.rst:6
 msgid "ivy.process.error-code-invalid"
@@ -22950,9 +22927,8 @@ msgid "**Message:** Target '${target}' not existing."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.intermediate-event-id-missing.rst:6
-#, fuzzy
 msgid "ivy.process.intermediate-event-id-missing"
-msgstr "中間イベント"
+msgstr "ivy.process.intermediate-event-id-missing"
 
 #: ../../source/reference/validation/codes/ivy.process.intermediate-event-id-missing.rst:8
 msgid "**Message:** The intermediate event has no Event ID."
@@ -23294,9 +23270,8 @@ msgid "**Message:** ${signalCode} has more than 5 parts which could lead to perf
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.signature-too-long.rst:6
-#, fuzzy
 msgid "ivy.process.signature-too-long"
-msgstr "プロセス開始シグネチャ"
+msgstr "ivy.process.signature-too-long"
 
 #: ../../source/reference/validation/codes/ivy.process.signature-too-long.rst:8
 #, python-brace-format
@@ -24161,9 +24136,8 @@ msgid "**Message:** Provided file is not an xhtml file '${path}'"
 msgstr ""
 
 #: ../../source/reference/validation/index.rst:2
-#, fuzzy
 msgid "Validation"
-msgstr "バリデーター"
+msgstr "検証"
 
 #: ../../source/reference/validation/_overview.rst:3
 msgid ":doc:`ivy.database.duplicate-key <codes/ivy.database.duplicate-key>`"
@@ -24178,7 +24152,6 @@ msgid ":doc:`ivy.database.key-not-unique <codes/ivy.database.key-not-unique>`"
 msgstr ""
 
 #: ../../source/reference/validation/_overview.rst:8
-#, fuzzy
 msgid "Dataclass"
 msgstr "データクラス"
 
@@ -24303,9 +24276,8 @@ msgid ":doc:`ivy.dataclass.version-multiple-times <codes/ivy.dataclass.version-m
 msgstr ""
 
 #: ../../source/reference/validation/_overview.rst:41
-#, fuzzy
 msgid "Form"
-msgstr "for"
+msgstr "フォーム"
 
 #: ../../source/reference/validation/_overview.rst:42
 msgid ":doc:`ivy.form.button.action-empty <codes/ivy.form.button.action-empty>`"
@@ -24392,9 +24364,8 @@ msgid ":doc:`ivy.form.textarea.value-empty <codes/ivy.form.textarea.value-empty>
 msgstr ""
 
 #: ../../source/reference/validation/_overview.rst:65
-#, fuzzy
 msgid "Java-index"
-msgstr "Java デバッグ"
+msgstr "Java インデックス"
 
 #: ../../source/reference/validation/_overview.rst:66
 msgid ":doc:`ivy.java-index.duplicate-component-id <codes/ivy.java-index.duplicate-component-id>`"
@@ -24793,7 +24764,6 @@ msgid ":doc:`ivy.process.web-service-process-name-not-defined <codes/ivy.process
 msgstr ""
 
 #: ../../source/reference/validation/_overview.rst:170
-#, fuzzy
 msgid "Restclient"
 msgstr "REST クライアント"
 
@@ -24846,7 +24816,6 @@ msgid ":doc:`ivy.user.user-defined-in-other-project <codes/ivy.user.user-defined
 msgstr ""
 
 #: ../../source/reference/validation/_overview.rst:191
-#, fuzzy
 msgid "Variable"
 msgstr "変数"
 
@@ -24883,7 +24852,6 @@ msgid ":doc:`ivy.variable.unencrypted-password <codes/ivy.variable.unencrypted-p
 msgstr ""
 
 #: ../../source/reference/validation/_overview.rst:202
-#, fuzzy
 msgid "Webserviceclient"
 msgstr "Web サービスクライアント"
 
@@ -24900,9 +24868,8 @@ msgid ":doc:`ivy.webserviceclient.key-not-sanitized <codes/ivy.webserviceclient.
 msgstr ""
 
 #: ../../source/reference/validation/_overview.rst:208
-#, fuzzy
 msgid "Xhtml"
-msgstr "XML"
+msgstr "XHTML"
 
 #: ../../source/reference/validation/_overview.rst:209
 msgid ":doc:`ivy.xhtml.boolean.invalid-value <codes/ivy.xhtml.boolean.invalid-value>`"
