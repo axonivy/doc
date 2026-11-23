@@ -112,7 +112,7 @@ msgstr "要するに、マイルストーン34などの特定のマイルスト�
 
 #: ../../source/designer/advanced-project-setup.rst:59
 msgid "Configure the settings :code:`axonivy.engine.releaseTrain` to :code:`milestone`"
-msgstr "設定の設定 :code:`axonivy.engine.releaseTrain` から :code:` マイルストーン`"
+msgstr "設定 :code:`axonivy.engine.releaseTrain` を :code:`milestone` に設定します"
 
 #: ../../source/designer/advanced-project-setup.rst:61
 msgid "There might pop up a warning that your extension version is not a milestone version and there is a mismatch."
@@ -458,7 +458,7 @@ msgstr ":code:`Axon Ivy:新しいエンティティティクラス`"
 
 #: ../../source/designer/commands/index.rst:141
 msgid "Creates a new Axon Ivy entity class. Refer to the :ref:`data-classes` for more information."
-msgstr "Axon Ivy のエンティティティクラスを作成します。 詳細は「X50X」をご覧ください."
+msgstr "Axon Ivy のエンティティクラスを作成します。 詳細については :ref:`data-classes` を参照してください。"
 
 #: ../../source/designer/commands/index.rst:143
 msgid "**New Case Map**"
@@ -655,7 +655,7 @@ msgstr ":code:`Axon Ivy:インポートプロジェクトアーカイブ(.iarま
 
 #: ../../source/designer/commands/index.rst:234
 msgid "Lets you import and unpack an archived Axon Ivy project (``.iar``) or a collection of multiple projects (``.zip``). If the import is successful, the project(s) will be **unpacked** and added to your workspace."
-msgstr "アーカイブされたAxon Ivyプロジェクト(```.iar``)または複数のプロジェクト(```.zip`)のコレクションをインポートしてアンパックしてみましょう。 インポートが成功すると、プロジェクトは**unpacked**で、ワークスペースに追加されます."
+msgstr "アーカイブされた Axon Ivy プロジェクト（``.iar``）または複数のプロジェクト（``.zip``）をインポートして展開できます。インポートが成功すると、プロジェクトは展開され、ワークスペースに追加されます。"
 
 #: ../../source/designer/commands/index.rst:238
 msgid "It is currently not allowed to import an project archive into another Axon Ivy project. Right-clicking on an Axon Ivy project and importing an archive will result in an error."
@@ -984,7 +984,7 @@ msgstr ":code:`Axon Ivy:アタッチプロセスデバッガー`"
 
 #: ../../source/designer/commands/index.rst:431
 msgid "Attaches the process debugger, which allows you to debug your processes. Refer to the :ref:`debug-process` for more information about debugging."
-msgstr "プロセスデバッガを添付して、プロセスをデバッグできます。 デバッグの詳細については、「X86X」を参照してください."
+msgstr "プロセスデバッガを接続すると、プロセスをデバッグできます。 デバッグの詳細については :ref:`debug-process` を参照してください。"
 
 #: ../../source/designer/commands/index.rst:433
 msgid "**Open Portal**"
@@ -1124,7 +1124,7 @@ msgstr "文字列で:ref:`designer-settings-vmargs`設定を更新"
 
 #: ../../source/designer/debug.rst:33
 msgid ":code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n`"
-msgstr ":code:`-agentlib:jdwp=transport=dt socket,server=y,address=*:8000,suspend=n`"
+msgstr ":code:`-agentlib:jdwp=transport=dt_socket,server=y,address=*:8000,suspend=n`"
 
 #: ../../source/designer/debug.rst:35
 msgid "Restart the extension, so that the settings can take effect by running :code:`Developer: Reload Window`"
@@ -1156,7 +1156,7 @@ msgstr "この章では、Axon Ivy Designer が拡張機能の動作を構成す
 
 #: ../../source/designer/designer-settings.rst:8
 msgid "For a general introduction to VS Code settings, refer to :ref:`designer-basics-settings`."
-msgstr "VS コード設定の一般的な導入については、「X57X」を参照してください."
+msgstr "VS Code 設定の一般的な説明については :ref:`designer-basics-settings` を参照してください。"
 
 #: ../../source/designer/designer-settings.rst:10
 msgid "Open the settings UI to the **Workspace** settings by executing the command :code:`Preferences: Open Workspace Settings (UI)` and then search for :code:`@ext:axonivy.vscode-designer-14`."
@@ -1216,7 +1216,7 @@ msgstr "ここでは、拡張子でバックグラウンドで実行されるエ
 
 #: ../../source/designer/designer-settings.rst:48
 msgid "As mentioned in the description, this is mainly used for debugging your Java classes. Refer to the :ref:`debug-java` chapter for more information about debugging."
-msgstr "説明では、主にJavaクラスをデバッグするために使われます。 デバッグの詳細については、「X99X」の章を参照してください."
+msgstr "説明にあるように、これは主に Java クラスのデバッグに使用されます。 詳細については :ref:`debug-java` の章を参照してください。"
 
 #: ../../source/designer/designer-settings.rst:53
 msgid "Axon Ivy > Project"
@@ -1611,7 +1611,7 @@ msgstr "**VSコード拡張子 \"Axon Ivy PRO Designer 14\"** - デザイナー�
 
 #: ../../source/designer/index.rst:19
 msgid "**The Axon Ivy Engine** - Supplied by Axon Ivy, independent from the Designer. Is by default installed automatically by the Designer extension. Refer to :ref:`engine-guide` for more information about the engine. For more advanced setups with specific engine versions, refer to :ref:`designer-advanced-setup`"
-msgstr "**Axon Ivy Engine** - Axon Ivy, デザイナーから独立した. Designer 拡張によって自動的にインストールされるデフォルトです。 エンジンの詳細については「X153X」をご覧ください。 特定のエンジンバージョンの高度な設定については、 :ref:`designer-advanced-setup` を参照してください"
+msgstr "**Axon Ivy Engine** - Axon Ivy が提供し、Designer とは独立しています。デフォルトでは Designer 拡張によって自動的にインストールされます。エンジンの詳細については :ref:`engine-guide` を参照してください。特定のエンジンバージョンを使った高度な設定については :ref:`designer-advanced-setup` を参照してください。"
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:4
 msgid "Comprehensive Requirements"
@@ -1648,7 +1648,7 @@ msgstr "JDK 25 のインストール後、Java 拡張のパスを設定する必
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:36
 msgid "Either, set the :code:`JAVA_HOME` environment variable. To check this, open a terminal an print the environment variable"
-msgstr ":code:`JAVA HOME`環境変数を設定します。 これをチェックするには、ターミナルを開き、環境変数を印刷します"
+msgstr ":code:`JAVA_HOME` 環境変数を設定します。確認するには、ターミナルを開いて環境変数を表示します。"
 
 #: ../../source/designer/installation/comprehensive-requirements.rst:43
 msgid "This should normally be set automatically when you install the JDK."
@@ -2031,7 +2031,7 @@ msgstr "ソリューション: 手動でインスタンスを通知する最大�
 
 #: ../../source/designer/troubleshooting.rst:12
 msgid ":code:`sudo sysctl fs.inotify.max_user_instances=512`"
-msgstr ":code:`sudo sysctl fs.inotify.max user instances=512`"
+msgstr ":code:`sudo sysctl fs.inotify.max_user_instances=512`"
 
 #: ../../source/designer/views/index.rst:4
 msgid "Views"
@@ -8899,7 +8899,7 @@ msgstr "ランタイム"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:37
 msgid "If you like to build you Axon Ivy Project with Maven, you need to have Maven installed on your system. Now you simply run maven command beside you ``pom.xml`` file (e.g. :code:`mvn clean verify`)."
-msgstr "Maven で Axon Ivy プロジェクトをビルドしたい場合は、システムに Maven をインストールする必要があります。 これで、`pom.xml`` のファイル (:code:`mvn clean validate`) の横に maven コマンドを実行するだけです."
+msgstr "Maven で Axon Ivy プロジェクトをビルドするには、システムに Maven をインストールする必要があります。 ``pom.xml`` ファイルの横で Maven コマンド（例: :code:`mvn clean verify`）を実行するだけです。"
 
 #: ../../source/getting-productive/ci-testing/continuous-integration.rst:40
 msgid "The :ref:`designer-guide-vscode` has Maven capabilities built-in, if you have the `Maven for Java <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven>`__ extension installed (what should be the case if you have our extension installed)."
@@ -16988,7 +16988,7 @@ msgstr "Dialog プレビューを使用すると、統合されたブラウザ�
 
 #: ../../source/reference/dialog/xhtml-editor.rst:38
 msgid "It can be accessed via the button :guilabel:`Open Dialog Preview` in the top-right corner. A command is also available to open the preview."
-msgstr "右上の「X34X」ボタンで「Dialog Preview[X64X」を開きます。 プレビューを開くこともできます."
+msgstr "右上の :guilabel:`Open Dialog Preview` ボタンからアクセスできます。プレビューを開くコマンドもあります。"
 
 #: ../../source/reference/dialog/xhtml-editor.rst:41
 msgid "|xhtml-editor-preview|"
@@ -21969,7 +21969,7 @@ msgstr "プロジェクト座標"
 
 #: ../../source/reference/project/index.rst:13
 msgid "The project's ``groupId``, ``artifactId`` and ``version`` identify it in Maven. Define all three values in the project's own POM so that other projects can reference it. The ``artifactId`` is the project name and the version should follow Maven's version format."
-msgstr "プロジェクトの ````group 「アーティファクト」 Id` と ``version` は Maven でそれを識別します。 他のプロジェクトが参照できるように、プロジェクト自身の POM のすべての 3 つの値を定義します。 「アーティファクト」 Id` はプロジェクト名で、バージョンは Maven のバージョン形式に従う必要があります."
+msgstr "プロジェクトの ``groupId``、``artifactId``、``version`` は Maven でプロジェクトを識別します。他のプロジェクトから参照できるように、これら 3 つの値をプロジェクト自身の POM に定義してください。``artifactId`` はプロジェクト名であり、バージョンは Maven のバージョン形式に従う必要があります。"
 
 #: ../../source/reference/project/index.rst:19
 msgid "Adding a dependency"
@@ -23118,7 +23118,7 @@ msgstr ""
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:470
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:249
 msgid "Jackson's :code:`JsonNode` type is suggested to read raw RestClientCall results, occurrences of these are automatically converted in existing processes."
-msgstr "Jackson の :code:`JsonNode` 型は、ReestClientCall の結果を読み込み、これらの発生は既存のプロセスで自動的に変換されます."
+msgstr "Jackson の :code:`JsonNode` 型を使用して RestClientCall の生の結果を読み取ることを推奨します。これらの結果は既存のプロセスで自動的に変換されます。"
 
 #: ../../source/technical-info/migration/migration-notes-120-140.rst:474
 #: ../../source/technical-info/migration/migration-notes-132-140.rst:252
