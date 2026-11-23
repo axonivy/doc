@@ -42,4 +42,3 @@ Types outside the whitelist are not necessarily unsafe, but Axon Ivy cannot guar
   ``@SuppressWarnings("ivy.dataclass.persistent-type-not-whitelisted")``
 
   .. warning:: Suppressing the warning does not make the type safer; use this only when you have verified that persisting it is intentional and accept responsibility for its compatibility.
-
