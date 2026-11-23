@@ -31,4 +31,3 @@ The persistence whitelist takes precedence, so some types under these prefixes m
   ``@SuppressWarnings("ivy.dataclass.persistent-type-blacklisted")``
 
   .. warning:: Suppressing the warning does not make the type suitable for persistence; use this only when persisting it is intentional and you accept responsibility for compatibility.
-
