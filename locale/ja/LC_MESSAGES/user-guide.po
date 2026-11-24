@@ -22045,7 +22045,227 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.database.duplicate-key.rst:8
 #, python-brace-format
-msgid "**Message:** The database connection key '${key}' is duplicated in the same project '${projectName}'."
+msgid "**Message:** The database connection key '${key}' is duplicated in project '${projectName}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.database.duplicate-key.rst:12
+#: ../../source/reference/validation/codes/ivy.database.key-not-sanitized.rst:12
+#: ../../source/reference/validation/codes/ivy.database.key-not-unique.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.annotation-not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.annotation-type-invalid.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.association-mandatory.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.association-not-supported.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-length-invalid.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-duplicated.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-invalid.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-precision-scale-invalid.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.entity-collection-list-unsupported.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.entity-id-missing.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.field-name-duplicated.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.field-name-prefix.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.id-multiple-times.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-duplicated.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-invalid.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-mandatory.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-not-supported.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.modifier-not-supported.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.namespace-invalid.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.persist-not-supported.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:12
+#: ../../source/reference/validation/codes/ivy.dataclass.version-multiple-times.rst:12
+#: ../../source/reference/validation/codes/ivy.form.component-cid-duplicated.rst:12
+#: ../../source/reference/validation/codes/ivy.form.composite.unknown.rst:12
+#: ../../source/reference/validation/codes/ivy.form.data-table.column-value-empty.rst:12
+#: ../../source/reference/validation/codes/ivy.form.id-duplicated.rst:12
+#: ../../source/reference/validation/codes/ivy.form.structure.empty.rst:12
+#: ../../source/reference/validation/codes/ivy.java-index.duplicate-component-id.rst:12
+#: ../../source/reference/validation/codes/ivy.java-index.managed-property-missing.rst:12
+#: ../../source/reference/validation/codes/ivy.java-index.public-instance-field.rst:12
+#: ../../source/reference/validation/codes/ivy.java-index.scope-missing.rst:12
+#: ../../source/reference/validation/codes/ivy.java-index.serializable-required.rst:12
+#: ../../source/reference/validation/codes/ivy.process.alternative-condition-connector-missing.rst:12
+#: ../../source/reference/validation/codes/ivy.process.alternative-condition-empty.rst:12
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-not-bound.rst:12
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-not-overlaying.rst:12
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-overlays-wrong-element.rst:12
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-target-not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-fixed-time-empty.rst:12
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-lifetime-empty.rst:12
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-name-empty.rst:12
+#: ../../source/reference/validation/codes/ivy.process.cache-group-fixed-time-empty.rst:12
+#: ../../source/reference/validation/codes/ivy.process.cache-group-lifetime-empty.rst:12
+#: ../../source/reference/validation/codes/ivy.process.cache-group-name-empty.rst:12
+#: ../../source/reference/validation/codes/ivy.process.database-column-not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.process.database-condition-invalid.rst:12
+#: ../../source/reference/validation/codes/ivy.process.database-not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.process.database-table-not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.process.database-tables-not-loaded.rst:12
+#: ../../source/reference/validation/codes/ivy.process.duplicate-error-boundary-code.rst:12
+#: ../../source/reference/validation/codes/ivy.process.duplicate-error-start-code.rst:12
+#: ../../source/reference/validation/codes/ivy.process.duplicate-process-id.rst:12
+#: ../../source/reference/validation/codes/ivy.process.error-code-missing.rst:12
+#: ../../source/reference/validation/codes/ivy.process.error-code-or-cause-missing.rst:12
+#: ../../source/reference/validation/codes/ivy.process.invalid-signature-character.rst:12
+#: ../../source/reference/validation/codes/ivy.process.java-bean-default-constructor-missing.rst:12
+#: ../../source/reference/validation/codes/ivy.process.java-bean-interface-mismatch.rst:12
+#: ../../source/reference/validation/codes/ivy.process.notification-template-not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.process.override-component-missing-method.rst:12
+#: ../../source/reference/validation/codes/ivy.process.override-method-signature-mismatch.rst:12
+#: ../../source/reference/validation/codes/ivy.process.process-call-start-deprecated.rst:12
+#: ../../source/reference/validation/codes/ivy.process.process-call-start-not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-no-start.rst:12
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-not-defined.rst:12
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-process-not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.process.rest-body-attribute-required.rst:12
+#: ../../source/reference/validation/codes/ivy.process.rest-parameter-required.rst:12
+#: ../../source/reference/validation/codes/ivy.process.rest-resource-not-specified.rst:12
+#: ../../source/reference/validation/codes/ivy.process.rest-response-validation.rst:12
+#: ../../source/reference/validation/codes/ivy.process.signal-code-macro-not-supported.rst:12
+#: ../../source/reference/validation/codes/ivy.process.signal-code-too-many-parts.rst:12
+#: ../../source/reference/validation/codes/ivy.process.web-service-parameter-type-invalid.rst:12
+#: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-project.rst:12
+#: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-unrelated-project.rst:12
+#: ../../source/reference/validation/codes/ivy.restclient.feature.class-not-accessible.rst:12
+#: ../../source/reference/validation/codes/ivy.restclient.feature.default-constructor-missing.rst:12
+#: ../../source/reference/validation/codes/ivy.restclient.feature.not-jax-rs-component.rst:12
+#: ../../source/reference/validation/codes/ivy.restclient.key-not-sanitized.rst:12
+#: ../../source/reference/validation/codes/ivy.role.parent-mismatch-across-projects.rst:12
+#: ../../source/reference/validation/codes/ivy.user.user-defined-in-other-project.rst:12
+#: ../../source/reference/validation/codes/ivy.variable.duplicate-key-in-unrelated-project.rst:12
+#: ../../source/reference/validation/codes/ivy.variable.duplicate-key.rst:12
+#: ../../source/reference/validation/codes/ivy.variable.invalid-key-info.rst:12
+#: ../../source/reference/validation/codes/ivy.variable.invalid-key-warning.rst:12
+#: ../../source/reference/validation/codes/ivy.variable.namespace-conflict-in-other-project.rst:12
+#: ../../source/reference/validation/codes/ivy.variable.namespace-conflict.rst:12
+#: ../../source/reference/validation/codes/ivy.variable.unencrypted-password.rst:12
+#: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-project.rst:12
+#: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-unrelated-project.rst:12
+#: ../../source/reference/validation/codes/ivy.webserviceclient.key-not-sanitized.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.missing-scope.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-managed.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.el.local-var-circular-dependency.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.el.unscoped-bean.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.escape.false.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.missing-scope.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-found.rst:12
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-managed.rst:12
+msgid "**Description**"
+msgstr "説明"
+
+#: ../../source/reference/validation/codes/ivy.database.duplicate-key.rst:14
+msgid "Database connection keys identify individual connection configurations. This error appears when two or more connections in the same project use the same key, so the key cannot identify a single connection."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.database.duplicate-key.rst:16
+#: ../../source/reference/validation/codes/ivy.database.key-not-sanitized.rst:16
+#: ../../source/reference/validation/codes/ivy.database.key-not-unique.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.annotation-not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.annotation-type-invalid.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.association-mandatory.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.association-not-supported.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-length-invalid.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-duplicated.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-invalid.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-precision-scale-invalid.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.entity-collection-list-unsupported.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.entity-id-missing.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.field-name-duplicated.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.field-name-prefix.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.id-multiple-times.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-duplicated.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-invalid.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-mandatory.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-not-supported.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.modifier-not-supported.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.namespace-invalid.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.persist-not-supported.rst:16
+#: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:24
+#: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:25
+#: ../../source/reference/validation/codes/ivy.dataclass.version-multiple-times.rst:16
+#: ../../source/reference/validation/codes/ivy.form.component-cid-duplicated.rst:16
+#: ../../source/reference/validation/codes/ivy.form.composite.unknown.rst:16
+#: ../../source/reference/validation/codes/ivy.form.data-table.column-value-empty.rst:16
+#: ../../source/reference/validation/codes/ivy.form.id-duplicated.rst:16
+#: ../../source/reference/validation/codes/ivy.form.structure.empty.rst:16
+#: ../../source/reference/validation/codes/ivy.java-index.duplicate-component-id.rst:16
+#: ../../source/reference/validation/codes/ivy.java-index.managed-property-missing.rst:16
+#: ../../source/reference/validation/codes/ivy.java-index.public-instance-field.rst:16
+#: ../../source/reference/validation/codes/ivy.java-index.scope-missing.rst:16
+#: ../../source/reference/validation/codes/ivy.java-index.serializable-required.rst:16
+#: ../../source/reference/validation/codes/ivy.process.alternative-condition-connector-missing.rst:16
+#: ../../source/reference/validation/codes/ivy.process.alternative-condition-empty.rst:16
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-not-bound.rst:16
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-not-overlaying.rst:16
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-overlays-wrong-element.rst:16
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-target-not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-fixed-time-empty.rst:16
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-lifetime-empty.rst:16
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-name-empty.rst:16
+#: ../../source/reference/validation/codes/ivy.process.cache-group-fixed-time-empty.rst:16
+#: ../../source/reference/validation/codes/ivy.process.cache-group-lifetime-empty.rst:16
+#: ../../source/reference/validation/codes/ivy.process.cache-group-name-empty.rst:16
+#: ../../source/reference/validation/codes/ivy.process.database-column-not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.process.database-condition-invalid.rst:16
+#: ../../source/reference/validation/codes/ivy.process.database-not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.process.database-table-not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.process.database-tables-not-loaded.rst:16
+#: ../../source/reference/validation/codes/ivy.process.duplicate-error-boundary-code.rst:16
+#: ../../source/reference/validation/codes/ivy.process.duplicate-error-start-code.rst:16
+#: ../../source/reference/validation/codes/ivy.process.duplicate-process-id.rst:16
+#: ../../source/reference/validation/codes/ivy.process.error-code-missing.rst:16
+#: ../../source/reference/validation/codes/ivy.process.error-code-or-cause-missing.rst:16
+#: ../../source/reference/validation/codes/ivy.process.invalid-signature-character.rst:16
+#: ../../source/reference/validation/codes/ivy.process.java-bean-default-constructor-missing.rst:16
+#: ../../source/reference/validation/codes/ivy.process.java-bean-interface-mismatch.rst:16
+#: ../../source/reference/validation/codes/ivy.process.notification-template-not-found.rst:18
+#: ../../source/reference/validation/codes/ivy.process.override-component-missing-method.rst:16
+#: ../../source/reference/validation/codes/ivy.process.override-method-signature-mismatch.rst:16
+#: ../../source/reference/validation/codes/ivy.process.process-call-start-deprecated.rst:16
+#: ../../source/reference/validation/codes/ivy.process.process-call-start-not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-no-start.rst:16
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-not-defined.rst:16
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-process-not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.process.rest-body-attribute-required.rst:16
+#: ../../source/reference/validation/codes/ivy.process.rest-parameter-required.rst:16
+#: ../../source/reference/validation/codes/ivy.process.rest-resource-not-specified.rst:16
+#: ../../source/reference/validation/codes/ivy.process.rest-response-validation.rst:16
+#: ../../source/reference/validation/codes/ivy.process.signal-code-macro-not-supported.rst:16
+#: ../../source/reference/validation/codes/ivy.process.signal-code-too-many-parts.rst:16
+#: ../../source/reference/validation/codes/ivy.process.web-service-parameter-type-invalid.rst:16
+#: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-project.rst:16
+#: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-unrelated-project.rst:16
+#: ../../source/reference/validation/codes/ivy.restclient.feature.class-not-accessible.rst:16
+#: ../../source/reference/validation/codes/ivy.restclient.feature.default-constructor-missing.rst:16
+#: ../../source/reference/validation/codes/ivy.restclient.feature.not-jax-rs-component.rst:16
+#: ../../source/reference/validation/codes/ivy.restclient.key-not-sanitized.rst:16
+#: ../../source/reference/validation/codes/ivy.role.parent-mismatch-across-projects.rst:16
+#: ../../source/reference/validation/codes/ivy.user.user-defined-in-other-project.rst:16
+#: ../../source/reference/validation/codes/ivy.variable.duplicate-key-in-unrelated-project.rst:16
+#: ../../source/reference/validation/codes/ivy.variable.duplicate-key.rst:16
+#: ../../source/reference/validation/codes/ivy.variable.invalid-key-info.rst:16
+#: ../../source/reference/validation/codes/ivy.variable.invalid-key-warning.rst:16
+#: ../../source/reference/validation/codes/ivy.variable.namespace-conflict-in-other-project.rst:16
+#: ../../source/reference/validation/codes/ivy.variable.namespace-conflict.rst:16
+#: ../../source/reference/validation/codes/ivy.variable.unencrypted-password.rst:16
+#: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-project.rst:16
+#: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-unrelated-project.rst:16
+#: ../../source/reference/validation/codes/ivy.webserviceclient.key-not-sanitized.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.missing-scope.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-managed.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.el.local-var-circular-dependency.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.el.unscoped-bean.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.escape.false.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.missing-scope.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-found.rst:16
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-managed.rst:16
+msgid "**How to fix**"
+msgstr "**修正方法**"
+
+#: ../../source/reference/validation/codes/ivy.database.duplicate-key.rst:18
+msgid "Give each database connection in the project a unique key. Update any process configuration that refers to a connection whose key you changed."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.database.key-not-sanitized.rst:6
@@ -22054,7 +22274,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.database.key-not-sanitized.rst:8
 #, python-brace-format
-msgid "**Message:** The database connection key '${key}' should be sanitized to '${sanitizedKey}' to avoid potential issues. Use the name for a better readability."
+msgid "**Message:** The database connection key '${key}' is not sanitized. Use '${sanitizedKey}' instead to avoid potential issues."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.database.key-not-sanitized.rst:14
+msgid "Database connection keys are used in configuration and should contain only letters, numbers, hyphens, or underscores. Spaces are converted to hyphens, accented letters are normalized, and other characters are removed during sanitization. The suggested key shows the sanitized result."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.database.key-not-sanitized.rst:18
+msgid "Change the connection key to the suggested sanitized value. If you change the key, update any process configuration that refers to it."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.database.key-not-unique.rst:6
@@ -22063,7 +22291,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.database.key-not-unique.rst:8
 #, python-brace-format
-msgid "**Message:** The database connection key '${key}' is not unique, it exists too in a not dependent project '${projectName}'."
+msgid "**Message:** The database connection key '${key}' is also defined in a not dependent project '${projectName}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.database.key-not-unique.rst:14
+msgid "The same database connection key is defined in another project that is not related by project dependencies. Axon Ivy checks these projects too because both definitions may become visible together when projects are used or connected."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.database.key-not-unique.rst:18
+msgid "Choose a unique key for one of the database connections. If you change a key, update any process configuration that refers to it."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-deprecated.rst:6
@@ -22072,7 +22308,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-deprecated.rst:8
 #, python-brace-format
-msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' is deprecated."
+msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' is deprecated"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-missing-at.rst:6
@@ -22081,7 +22317,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-missing-at.rst:8
 #, python-brace-format
-msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' does not start with '@'."
+msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' does not start with '@'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-not-allowed.rst:6
@@ -22090,7 +22326,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-not-allowed.rst:8
 #, python-brace-format
-msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' is not allowed here."
+msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' is not allowed here"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-not-found.rst:6
@@ -22099,7 +22335,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' was not found."
+msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' was not found"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.annotation-not-found.rst:14
+msgid "The annotation text starts with ``@``, but the type name after it cannot be resolved among the Java types available to the project. This can be caused by a misspelled name, an incomplete package name, or an annotation type that is not available on the project's classpath."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.annotation-not-found.rst:18
+msgid "Check the spelling and use the fully qualified annotation name, for example ``@java.lang.Deprecated``. If it is a custom annotation, make sure its class is included in the project or a referenced library. The :ref:`Data Class Editor <data-class-editor>` writes annotations as provided into the generated Java file."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-type-invalid.rst:6
@@ -22108,7 +22352,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.annotation-type-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** ${fieldPrefix}The type '${type}' cannot be used as an annotation."
+msgid "**Message:** ${fieldPrefix}The type '${type}' cannot be used as an annotation"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.annotation-type-invalid.rst:14
+msgid "The type name resolves to a Java type, but that type is not an annotation type. Only types declared as annotations with ``@interface`` can be used after ``@``; an ordinary class such as ``java.lang.String`` cannot be used as an annotation."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.annotation-type-invalid.rst:18
+msgid "Replace the type with a real annotation, for example ``@java.lang.Deprecated``, or define a custom annotation using ``@interface`` and make it available to the project. Use its fully qualified name in the :ref:`Data Class Editor <data-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.association-mandatory.rst:6
@@ -22117,7 +22369,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.association-mandatory.rst:8
 #, python-brace-format
-msgid "**Message:** A cardinality is mandatory for the Attribute '${field}' of the type '${type}'."
+msgid "**Message:** A cardinality is mandatory for the Attribute '${field}' of the type '${type}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.association-mandatory.rst:14
+msgid "An Attribute whose type is another Entity Class, or a collection of Entity Classes, must define an association cardinality. The cardinality describes how the entities relate."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.association-mandatory.rst:18
+msgid "Select the appropriate cardinality for the Attribute in the :ref:`Entity Class Editor <persistence-entity-class-editor>`. See the editor documentation for the supported One-to-One, Many-to-One, and One-to-Many relationships."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.association-not-supported.rst:6
@@ -22126,7 +22386,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.association-not-supported.rst:8
 #, python-brace-format
-msgid "**Message:** The cardinality '${cardinality}' of the Attribute '${field}' is not applicable for the type '${type}'."
+msgid "**Message:** The cardinality '${cardinality}' of the Attribute '${field}' is not applicable for the type '${type}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.association-not-supported.rst:14
+msgid "The selected association cardinality does not match the Attribute type. One-to-One and Many-to-One associations require an Entity Class type; One-to-Many requires a collection of Entity Classes."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.association-not-supported.rst:18
+msgid "Change the Attribute type or choose a cardinality that matches it in the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.db-field-length-invalid.rst:6
@@ -22138,13 +22406,29 @@ msgstr ""
 msgid "**Message:** The database field length '${fieldLength}' of the Attribute '${field}' is invalid. It must be a number from 1 to 2147483647."
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-length-invalid.rst:14
+msgid "The database field length is only valid for types that support a length setting, such as ``String``. The configured length must be a positive whole number."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-length-invalid.rst:18
+msgid "Enter a positive integer for the field length. If the Attribute type does not use a length, clear the setting. See the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-duplicated.rst:6
 msgid "ivy.dataclass.db-field-name-duplicated"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-duplicated.rst:8
 #, python-brace-format
-msgid "**Message:** The database field name '${dbField}' of the Attribute '${field}' is already used by another Attribute. Database field names must be unique.: ${detail}"
+msgid "**Message:** The database field name '${dbField}' on Attribute '${field}' conflicts with '${otherDbField}' on Attribute '${otherField}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-duplicated.rst:14
+msgid "Two Attributes in the same Entity Class use the same database field name. Database columns must have unique names; names that differ only by letter case are also treated as duplicates."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-duplicated.rst:18
+msgid "Give each persistent Attribute a unique database field name in the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-invalid.rst:6
@@ -22153,7 +22437,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** The database field name '${dbField}' of the Attribute '${field}' is invalid."
+msgid "**Message:** The database field name '${dbField}' of the Attribute '${field}' is invalid"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-invalid.rst:14
+msgid "Database field names are used as database column names. The Entity Class Editor allows uppercase letters ``A-Z``, digits ``0-9``, and underscores to avoid names that require database-specific quoting."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-name-invalid.rst:18
+msgid "Rename the database field using only uppercase letters, digits, and underscores. See the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.db-field-precision-scale-invalid.rst:6
@@ -22162,7 +22454,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.db-field-precision-scale-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** The database field length '${fieldLength}' of the Attribute '${field}' is invalid. It must follow the format '<precision>,<scale>' where <precision> and <scale> are numbers from 1 to 2147483647."
+msgid "**Message:** The database field precision and scale '${fieldLength}' of the Attribute '${field}' are invalid. Enter two non-negative numbers separated by a comma, with at least one greater than zero."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-precision-scale-invalid.rst:14
+msgid "For a type that supports precision and scale, the database field length must contain two comma-separated non-negative numbers. They cannot both be zero; for example, ``19,2`` defines a precision of 19 and a scale of 2."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.db-field-precision-scale-invalid.rst:18
+msgid "Enter a valid ``precision,scale`` pair in the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.entity-collection-list-unsupported.rst:6
@@ -22173,12 +22473,28 @@ msgstr ""
 msgid "**Message:** An Entity Class must not have more than one Attribute which represents a Collection (e.g. 'List'). You can replace the types of the affected Attributes with 'Set'."
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.dataclass.entity-collection-list-unsupported.rst:14
+msgid "An Entity Class cannot combine a ``List`` Attribute with another collection Attribute. A single ``List`` can be used, and multiple collection Attributes are supported when they all use ``Set``."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.entity-collection-list-unsupported.rst:18
+msgid "If the Entity Class has multiple collection Attributes, change them to ``Set`` or remove the extra collection Attributes."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.dataclass.entity-id-missing.rst:6
 msgid "ivy.dataclass.entity-id-missing"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.entity-id-missing.rst:8
-msgid "**Message:** An Entity Class must have exactly one Attribute with the database field property 'ID'."
+msgid "**Message:** An Entity Class must have exactly one Attribute with the database field property 'ID'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.entity-id-missing.rst:14
+msgid "Every Entity Class must have a persistent Attribute marked with the ``ID`` property. This Attribute is used as the entity's primary key in the database."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.entity-id-missing.rst:18
+msgid "Select one suitable persistent Attribute and mark it as ``ID`` in the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.field-name-duplicated.rst:6
@@ -22187,7 +22503,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.field-name-duplicated.rst:8
 #, python-brace-format
-msgid "**Message:** There is another Attribute with the name '${field}'. Names of Attributes must be unique."
+msgid "**Message:** The Attribute name '${field}' is already used. Attribute names must be unique."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.field-name-duplicated.rst:14
+msgid "Data Class Attribute names must be unique, ignoring letter case. For example, ``customer`` and ``Customer`` are considered duplicates."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.field-name-duplicated.rst:18
+msgid "Rename one of the Attributes so its name differs from all other Attribute names, including differences in capitalization."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.field-name-invalid.rst:6
@@ -22205,7 +22529,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.field-name-prefix.rst:8
 #, python-brace-format
-msgid "**Message:** The name of the Attribute '${field}' starts with an uppercasename. It should not start with an uppercase or a single lowercase letter."
+msgid "**Message:** The name '${field}' does not follow the Data Class Attribute naming convention"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.field-name-prefix.rst:14
+msgid "Data Class Attribute names follow a naming convention: they start with a lowercase letter or underscore, and the second character must not be uppercase. A name consisting of only an underscore is not accepted."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.field-name-prefix.rst:18
+msgid "Rename the Attribute to follow the convention, for example use ``firstName`` instead of ``FirstName`` or ``aName``."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.id-multiple-times.rst:6
@@ -22214,7 +22546,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.id-multiple-times.rst:8
 #, python-brace-format
-msgid "**Message:** The Entity Class '${className}' has multiple 'ID' Attributes. An Entity Class must have exactly one 'ID' Attribute: ${detail}"
+msgid "**Message:** Attributes '${field}' and '${otherField}' in Entity Class '${className}' are both marked as 'ID'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.id-multiple-times.rst:14
+msgid "An Entity Class must have exactly one primary key, represented by an Attribute marked with the ``ID`` property."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.id-multiple-times.rst:18
+msgid "Keep the ``ID`` property on one persistent Attribute and remove it from the other Attributes. See the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-duplicated.rst:6
@@ -22223,7 +22563,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-duplicated.rst:8
 #, python-brace-format
-msgid "**Message:** The Attribute '${field}' has been used multiple times as a 'Mapped by' definition. An Attribute can only be used once as a 'Mapped by' definition: ${detail}"
+msgid "**Message:** Attributes '${field}' and '${otherField}' both refer to the 'Mapped by' target '${mappedBy}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-duplicated.rst:14
+msgid "The same Attribute in the referenced Entity Class is used by more than one ``Mapped by`` definition. A relationship field can be the inverse target of only one association from the current Entity Class."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-duplicated.rst:18
+msgid "Review the related Entity Class Attributes and assign each ``Mapped by`` definition to the correct owning relationship. Ensure the same referenced Attribute is not used more than once."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-invalid.rst:6
@@ -22232,7 +22580,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** The 'Mapped by' definition '${className}' of the Attribute '${field}' is invalid: ${detail}"
+msgid "**Message:** The 'Mapped by' definition of Attribute '${field}' in Entity Class '${className}' is invalid: ${detail}"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-invalid.rst:14
+msgid "The ``Mapped by`` value must name an Attribute in the referenced Entity Class. That Attribute must point back to the current Entity Class and use the inverse cardinality required by the association."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-invalid.rst:18
+msgid "Check the validation details to see why the referenced Attribute is invalid. Correct its name, type, or cardinality, or select the correct owning Attribute in the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-mandatory.rst:6
@@ -22242,6 +22598,14 @@ msgstr ""
 #: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-mandatory.rst:8
 #, python-brace-format
 msgid "**Message:** The Attribute '${field}' has a cardinality '${cardinality}' without a 'Mapped by' definition. A 'Mapped by' definition is mandatory for this cardinality."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-mandatory.rst:14
+msgid "A One-to-Many association is the inverse side of a Many-to-One relationship and must point to the Attribute that owns the relationship in the referenced Entity Class."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-mandatory.rst:18
+msgid "Set ``Mapped by`` to the name of the corresponding Many-to-One Attribute in the referenced Entity Class. See the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-not-supported.rst:6
@@ -22263,13 +22627,29 @@ msgstr ""
 msgid "**Message:** ${message}"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-not-supported.rst:14
+msgid "``Mapped by`` is only valid on the inverse side of a supported bidirectional association. It is not supported when no cardinality is selected or for a Many-to-One association."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.mapped-by-not-supported.rst:18
+msgid "Remove the ``Mapped by`` value, or configure a supported inverse association and point it to the owning Attribute in the referenced Entity Class."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.dataclass.modifier-not-supported.rst:6
 msgid "ivy.dataclass.modifier-not-supported"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.modifier-not-supported.rst:8
 #, python-brace-format
-msgid "**Message:** The ${propertyLabel} '${properties}' ${verb} not applicable based on the type '${type}' and other applied properties of the Attribute '${field}' ."
+msgid "**Message:** The ${propertyLabel} '${properties}' ${verb} not supported for the type '${type}' or in combination with other properties on the Attribute '${field}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.modifier-not-supported.rst:14
+msgid "Entity Class Attribute properties depend on the Attribute type and on which other properties are selected. For example, ``ID`` requires a ``String``, ``Integer``, or ``Long`` type; ``Version`` requires ``Short``, ``Integer``, ``Long``, or ``java.sql.Timestamp``. ``ID`` and ``Version`` cannot be combined, and ``Generated`` requires a supported ``ID`` property."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.modifier-not-supported.rst:18
+msgid "Remove the unsupported property or combination, or change the Attribute type to one supported by that property. See the :ref:`Entity Class Editor <persistence-entity-class-editor>` for the available properties."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.namespace-invalid.rst:6
@@ -22278,7 +22658,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.namespace-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** The namespace '${namespace}' does not match the directory of the Data Class."
+msgid "**Message:** The namespace '${namespace}' does not match the directory of the Data Class"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.namespace-invalid.rst:14
+msgid "A Data Class namespace must match the directory structure in which the Data Class is stored. The namespace determines the Data Class's package and must stay in sync with its location in the project."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.namespace-invalid.rst:18
+msgid "Update the namespace or move the Data Class so that its namespace matches its directory. You can edit the namespace in the :ref:`Data Class Editor <data-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persist-not-supported.rst:6
@@ -22287,7 +22675,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persist-not-supported.rst:8
 #, python-brace-format
-msgid "**Message:** The type '${type}' of the Attribute ${field}' cannot be persisted."
+msgid "**Message:** The type '${type}' of the Attribute '${field}' cannot be persisted"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.persist-not-supported.rst:14
+msgid "Entity Class persistence supports specific basic Java and Axon Ivy types, other Entity Classes, and collections of Entity Classes. Other types cannot be stored as persistent Entity Class Attributes."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.persist-not-supported.rst:18
+msgid "Use a supported type, or model the value as an Entity Class and configure the appropriate association. See the :ref:`Entity Class Editor <persistence-entity-class-editor>` for persistence properties and associations."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:6
@@ -22296,13 +22692,8 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:8
 #, python-brace-format
-msgid "**Message:** The type '${type}' of the Attribute '${field}' is unsuitable for persistence."
+msgid "**Message:** The type '${type}' of the Attribute '${field}' is unsuitable for persistence"
 msgstr ""
-
-#: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:12
-#: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:12
-msgid "**Description**"
-msgstr "説明"
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:14
 msgid "The type matches one of these blacklisted package prefixes:"
@@ -22327,11 +22718,6 @@ msgstr ""
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:22
 msgid "The persistence whitelist takes precedence, so some types under these prefixes may still be accepted. For example, types in ``ch.ivyteam.ivy.scripting.objects``, types annotated with :public-api:`@IvyPersistable </ch/ivyteam/ivy/scripting/objects/persistable/IvyPersistable.html>`, and subclasses of :public-api:`CompositeObject </ch/ivyteam/ivy/scripting/objects/CompositeObject.html>` are accepted when all types used by the Attribute are whitelisted. See :ref:`validation-code-ivy.dataclass.persistent-type-not-whitelisted` for details."
 msgstr ""
-
-#: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:24
-#: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:25
-msgid "**How to fix**"
-msgstr "**修正方法**"
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-blacklisted.rst:26
 msgid "Prefer a suitable type from the persistence whitelist."
@@ -22365,7 +22751,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:8
 #, python-brace-format
-msgid "**Message:** The stability of the type '${type}' of the Attribute '${field}' for persistence is not guaranteed."
+msgid "**Message:** The stability of the type '${type}' of the Attribute '${field}' for persistence is not guaranteed"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.persistent-type-not-whitelisted.rst:14
@@ -22418,7 +22804,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.type-deprecated.rst:8
 #, python-brace-format
-msgid "**Message:** The type '${type}' of the Attribute '${field}' is deprecated."
+msgid "**Message:** The type '${type}' of the Attribute '${field}' is deprecated"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.type-not-public.rst:6
@@ -22427,7 +22813,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.type-not-public.rst:8
 #, python-brace-format
-msgid "**Message:** The type '${type}' of the Attribute '${field}' is not declared with the public modifier."
+msgid "**Message:** The type '${type}' of the Attribute '${field}' is not public"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.type-unknown.rst:6
@@ -22436,7 +22822,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.type-unknown.rst:8
 #, python-brace-format
-msgid "**Message:** The type '${type}' of the Attribute '${field}' was not found."
+msgid "**Message:** The type '${type}' of the Attribute '${field}' was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.version-multiple-times.rst:6
@@ -22445,7 +22831,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.dataclass.version-multiple-times.rst:8
 #, python-brace-format
-msgid "**Message:** The Entity Class '${className}' has multiple 'Version' Attributes. An Entity Class must have a maximum of one 'Version' Attribute.: ${detail}"
+msgid "**Message:** Attributes '${field}' and '${otherField}' in Entity Class '${className}' are both marked as 'Version'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.version-multiple-times.rst:14
+msgid "An Entity Class can have at most one version Attribute. The version value is used for optimistic locking to detect conflicting updates."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.dataclass.version-multiple-times.rst:18
+msgid "Keep the ``Version`` property on one supported Attribute and remove it from the others. See the :ref:`Entity Class Editor <persistence-entity-class-editor>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.button.action-empty.rst:6
@@ -22462,7 +22856,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.combobox.item-label-empty.rst:8
 #, python-brace-format
-msgid "**Message:** Item Label should not be empty. Use the keyword 'item' in the EL expression (e.g. #{item} or #{item.<property>}) to access the selected item."
+msgid "**Message:** Item label must not be empty. Use 'item' in the EL expression (e.g. #{item} or #{item.<property>}) to access the selected item."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.combobox.item-value-empty.rst:6
@@ -22471,7 +22865,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.combobox.item-value-empty.rst:8
 #, python-brace-format
-msgid "**Message:** Item Value should not be empty. Specify an EL expression to reference the item (e.g. #{item} or #{item.<property>}) to access the selected item."
+msgid "**Message:** Item value must not be empty. Specify an EL expression to reference the item (e.g. #{item} or #{item.<property>})."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.combobox.value-empty.rst:6
@@ -22484,7 +22878,7 @@ msgstr ""
 #: ../../source/reference/validation/codes/ivy.form.radio.value-empty.rst:8
 #: ../../source/reference/validation/codes/ivy.form.select.value-empty.rst:8
 #: ../../source/reference/validation/codes/ivy.form.textarea.value-empty.rst:8
-msgid "**Message:** Value should not be empty"
+msgid "**Message:** Value must not be empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.component-cid-duplicated.rst:6
@@ -22493,7 +22887,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.component-cid-duplicated.rst:8
 #, python-brace-format
-msgid "**Message:** Form component id is not unique: '${cid}'"
+msgid "**Message:** Form component ID '${cid}' is not unique"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.form.component-cid-duplicated.rst:14
+msgid "The same internal component identifier (``cid``) is assigned to more than one component in the form. Axon Ivy uses CIDs to look up components, and also uses them as rendered component IDs when no explicit form ID is set. A duplicate can therefore make component lookups ambiguous or produce duplicate rendered IDs."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.form.component-cid-duplicated.rst:18
+msgid "Make every component's ``cid`` unique across the whole form, including nested components. Correct the duplicate in the Form Editor or, if you maintain the form definition directly, assign one of the components a new unique ``cid``."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.composite.not-defined.rst:6
@@ -22522,13 +22924,30 @@ msgstr ""
 msgid "**Message:** Unknown composite '${name}'"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.form.composite.unknown.rst:14
+msgid "The configured name does not resolve to an Ivy Component available through the project's User Dialog configuration. A regular HTML Dialog page or dialog that is not declared as an Ivy Component cannot be used as a form composite."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.form.composite.unknown.rst:18
+msgid "Select an existing component from the Form Editor's Composites category and check that its name is correct. To add one, create an :ref:`HTML Dialog Component <html-dialog-component>` in the project and declare ``componentType=\"IvyComponent\"`` on its ``<cc:interface>``; the linked guide describes the required view structure."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.form.data-table.column-value-empty.rst:6
 msgid "ivy.form.data-table.column-value-empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.data-table.column-value-empty.rst:8
 #, python-brace-format
-msgid "**Message:** Column Value should not be empty. Use the keyword 'currentRow' in the EL expression (e.g. #{currentRow} or #{currentRow.<property>}) to access the row object."
+msgid "**Message:** Column value must not be empty. Use 'currentRow' in the EL expression (e.g. #{currentRow} or #{currentRow.<property>}) to access the row object."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.form.data-table.column-value-empty.rst:14
+msgid "Each non-action Data Table column needs a value expression to display a value from the current row. The expression can use ``currentRow``, which represents the row being rendered."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.form.data-table.column-value-empty.rst:18
+#, python-brace-format
+msgid "Set the column's Value to an expression for a property on the row object. For example, if each row has a ``customerName`` property, use ``#{currentRow.customerName}``; use ``#{currentRow}`` when the row itself is the value to display."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.data-table.columns-empty.rst:6
@@ -22544,7 +22963,7 @@ msgid "ivy.form.date-picker.date-pattern-missing"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.date-picker.date-pattern-missing.rst:8
-msgid "**Message:** No Pattern is defined"
+msgid "**Message:** Date pattern is not defined"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.date-picker.time-pattern-missing.rst:6
@@ -22552,7 +22971,7 @@ msgid "ivy.form.date-picker.time-pattern-missing"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.date-picker.time-pattern-missing.rst:8
-msgid "**Message:** No Time Pattern is defined"
+msgid "**Message:** Time pattern is not defined"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.date-picker.value-empty.rst:6
@@ -22574,7 +22993,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.id-duplicated.rst:8
 #, python-brace-format
-msgid "**Message:** Form id is not unique, found duplicated id '${id}' on component '${otherCid}'"
+msgid "**Message:** Form ID '${id}' is used more than once; it is also used by component '${otherCid}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.form.id-duplicated.rst:14
+msgid "The same form ID is assigned to more than one component. Form IDs are used as rendered component IDs, so duplicates can make component lookup and client-side targeting ambiguous."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.form.id-duplicated.rst:18
+msgid "Give each component a unique form ID. If other components or scripts refer to an ID, update those references when renaming it. See the :ref:`Form Editor <form-editor>` guide."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.id-invalid-whitespace.rst:6
@@ -22583,7 +23010,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.id-invalid-whitespace.rst:8
 #, python-brace-format
-msgid "**Message:** Form id is invalid: it cannot contain any whitespace characters, found '${id}'"
+msgid "**Message:** Form ID '${id}' is invalid because it contains whitespace"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.form.input.value-empty.rst:6
@@ -22606,6 +23033,14 @@ msgstr ""
 msgid "**Message:** Structure has no child components"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.form.structure.empty.rst:14
+msgid "A Structure is a container for child components. With no children, it contains no controls or other form content and has no purpose in the form layout."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.form.structure.empty.rst:18
+msgid "Add the components that the Structure is intended to contain, or remove the empty Structure from the form. See the :ref:`Form Editor <form-editor>` guide for adding and organizing components."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.form.textarea.value-empty.rst:6
 msgid "ivy.form.textarea.value-empty"
 msgstr ""
@@ -22616,7 +23051,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.java-index.duplicate-component-id.rst:8
 #, python-brace-format
-msgid "**Message:** Duplicate ${type} '${id}' found: ${duplicates}"
+msgid "**Message:** Duplicate ${type} ID '${id}' found: ${duplicates}"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.duplicate-component-id.rst:14
+msgid "Managed Beans, Faces Converters, and Faces Validators are registered by their annotation IDs. An ID that is used by more than one class cannot identify a single component reliably."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.duplicate-component-id.rst:18
+msgid "Give each component a unique annotation ID. Check both the current project and its required project dependencies for duplicate IDs."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.java-index.managed-property-missing.rst:6
@@ -22625,7 +23068,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.java-index.managed-property-missing.rst:8
 #, python-brace-format
-msgid "**Message:** ${type} '${id}' is missing property 'managed = true'"
+msgid "**Message:** ${type} '${id}' is missing the required property 'managed = true'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.managed-property-missing.rst:14
+msgid "The ``@FacesConverter`` or ``@FacesValidator`` annotation does not enable managed creation. Without ``managed = true``, the component is not created as a CDI-managed object, so CDI injection and other managed behavior are unavailable."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.managed-property-missing.rst:18
+msgid "Add ``managed = true`` to the component's annotation, for example ``@FacesConverter(value = \"myConverter\", managed = true)``."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.java-index.public-instance-field.rst:6
@@ -22634,7 +23085,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.java-index.public-instance-field.rst:8
 #, python-brace-format
-msgid "**Message:** Field '${field}' on ManagedBean '${bean}' is public and non-static, which is not allowed."
+msgid "**Message:** Field '${field}' on ManagedBean '${bean}' is public and non-static, which is not allowed"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.public-instance-field.rst:14
+msgid "Managed Beans must not expose public, non-static instance fields. Public fields bypass the bean's accessors and make its state directly mutable."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.public-instance-field.rst:18
+msgid "Make the field private and expose it through the appropriate getter and setter if it needs to be accessed by the view."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.java-index.scope-missing.rst:6
@@ -22646,13 +23105,29 @@ msgstr ""
 msgid "**Message:** ${type} '${className}' has no scope annotation (${scopes})"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.java-index.scope-missing.rst:14
+msgid "Faces Converters and Faces Validators must have a CDI scope so the container knows how to manage their lifecycle. Supported scopes are listed in the validation message."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.scope-missing.rst:18
+msgid "Add the scope annotation that matches the component's lifecycle, such as ``@RequestScoped`` or ``@ApplicationScoped``."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.java-index.serializable-required.rst:6
 msgid "ivy.java-index.serializable-required"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.java-index.serializable-required.rst:8
 #, python-brace-format
-msgid "**Message:** ${type} '${className}' needs to implement 'java.io.Serializable'"
+msgid "**Message:** ${type} '${className}' must implement 'java.io.Serializable'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.serializable-required.rst:14
+msgid "Managed Beans, Faces Converters, and Faces Validators using ``@ViewScoped`` or ``@SessionScoped`` must be serializable so their state can be preserved across requests and session passivation."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.java-index.serializable-required.rst:18
+msgid "Implement ``java.io.Serializable`` on the class and make sure any state that must be preserved can also be serialized."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.alternative-condition-connector-missing.rst:6
@@ -22661,7 +23136,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.alternative-condition-connector-missing.rst:8
 #, python-brace-format
-msgid "**Message:** Condition #${conditionNumber} references a no longer existing connector ${fieldIds}"
+msgid "**Message:** Condition #${conditionNumber} references a connector that no longer exists: ${fieldIds}"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.alternative-condition-connector-missing.rst:14
+msgid "The Alternative Gateway still has a condition for a connector that is no longer present among its outgoing sequence flows. The condition therefore has no connected path to execute."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.alternative-condition-connector-missing.rst:18
+msgid "Reconnect or recreate the outgoing sequence flow, or remove the condition if that path is no longer needed."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.alternative-condition-empty.rst:6
@@ -22670,7 +23153,15 @@ msgstr "ivy.process.alternative-condition-empty"
 
 #: ../../source/reference/validation/codes/ivy.process.alternative-condition-empty.rst:8
 #, python-brace-format
-msgid "**Message:** Condition #${conditionNumber} is empty which always evaluates to true. Following conditions are ignored."
+msgid "**Message:** Condition #${conditionNumber} is empty and therefore always evaluates to true; subsequent conditions are ignored"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.alternative-condition-empty.rst:14
+msgid "Conditions on an Alternative Gateway are evaluated in order. An empty condition evaluates to ``true``, so any later conditions are never checked. The final alternative can intentionally be left empty as the default path."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.alternative-condition-empty.rst:18
+msgid "Add a valid Boolean expression or remove the empty alternative. If it is intended as the default path, keep it as the final alternative."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-not-bound.rst:6
@@ -22678,8 +23169,17 @@ msgid "ivy.process.boundary-event-not-bound"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-not-bound.rst:8
-msgid "**Message:** Boundary event is not bound to any element"
+msgid "**Message:** Boundary event is not bound to an element"
 msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-not-bound.rst:14
+msgid "A Boundary Event must be linked to an Activity that it can interrupt or otherwise handle. Without a binding, the process does not know which Activity the event belongs to."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-not-bound.rst:18
+#, fuzzy
+msgid "Bind the Boundary Event to the intended Activity in the process editor."
+msgstr "エラーが発生したアクティビティに直接接続されたエラー境界イベント"
 
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-not-overlaying.rst:6
 msgid "ivy.process.boundary-event-not-overlaying"
@@ -22690,13 +23190,29 @@ msgstr ""
 msgid "**Message:** Boundary event is bound to element '${activityNameOrPid}' but does not overlay it"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-not-overlaying.rst:14
+msgid "A Boundary Event is linked to an Activity, but its diagram shape does not overlap that Activity. The visual position and the configured target do not match."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-not-overlaying.rst:18
+msgid "Move the Boundary Event so that it is attached to the linked Activity, or change its binding to the Activity it should handle."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-overlays-wrong-element.rst:6
 msgid "ivy.process.boundary-event-overlays-wrong-element"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-overlays-wrong-element.rst:8
 #, python-brace-format
-msgid "**Message:** Boundary event is bound to element '${activityNameOrPid}' but overlays '${overlayPid}'"
+msgid "**Message:** Boundary event is bound to element '${activityNameOrPid}' but instead overlays '${overlayPid}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-overlays-wrong-element.rst:14
+msgid "A Boundary Event is configured for one Activity but visually overlaps a different element. This can make the process diagram misleading about which Activity the event handles."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-overlays-wrong-element.rst:18
+msgid "Move the Boundary Event onto the configured Activity, or update its binding to the Activity it visually overlaps."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-target-not-found.rst:6
@@ -22705,7 +23221,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-target-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Boundary event is bound to element '${activityPid}' that does not exist"
+msgid "**Message:** Boundary event is bound to element '${activityPid}', which does not exist"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-target-not-found.rst:14
+msgid "The Boundary Event refers to an Activity identifier that no longer exists in the process. This can happen when the target Activity is removed or replaced."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.boundary-event-target-not-found.rst:18
+msgid "Bind the Boundary Event to an existing Activity, or remove the event if it is no longer needed."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.cache-entry-fixed-time-empty.rst:6
@@ -22716,12 +23240,29 @@ msgstr ""
 msgid "**Message:** Data cache entry invalidation fixed time must not be empty"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-fixed-time-empty.rst:14
+msgid "The cache entry is configured to expire at a fixed time of day, but no time is defined. The entry may otherwise remain cached longer than intended."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-fixed-time-empty.rst:18
+#: ../../source/reference/validation/codes/ivy.process.cache-group-fixed-time-empty.rst:18
+msgid "Set the fixed time in ``HH:mm:ss`` format, for example ``23:50:00``, or choose a different invalidation strategy. The setting is validated as a time expression. See :ref:`process-element-tab-data-cache` for the available strategies."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.process.cache-entry-lifetime-empty.rst:6
 msgid "ivy.process.cache-entry-lifetime-empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.cache-entry-lifetime-empty.rst:8
 msgid "**Message:** Data cache entry invalidation lifetime must not be empty"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-lifetime-empty.rst:14
+msgid "The cache entry is configured to expire after a period, but no period is defined. Without the intended expiration, the cached value may remain available longer than expected."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-lifetime-empty.rst:18
+msgid "Set a numeric IvyScript expression for the entry's lifetime in seconds (for example, ``3600`` for one hour), or choose a different invalidation strategy. See :ref:`process-element-tab-data-cache` for the available strategies."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.cache-entry-name-empty.rst:6
@@ -22732,12 +23273,25 @@ msgstr ""
 msgid "**Message:** Data cache entry name must not be empty"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-name-empty.rst:14
+msgid "A cache entry name identifies the value stored by this process step within its group. Steps that should reuse or invalidate the same cached value need to use the same group and entry names."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.cache-entry-name-empty.rst:18
+#, fuzzy
+msgid "Enter an entry name and use it consistently on the steps that read or invalidate this value. See :ref:`process-element-tab-data-cache` for details."
+msgstr "このタブでは、データキャッシュへのアクセスや無効化の設定を行うことができます。詳細な説明については、 :ref:`process-element-tab-data-cache` 」を参照してください。"
+
 #: ../../source/reference/validation/codes/ivy.process.cache-group-fixed-time-empty.rst:6
 msgid "ivy.process.cache-group-fixed-time-empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.cache-group-fixed-time-empty.rst:8
 msgid "**Message:** Data cache group invalidation fixed time must not be empty"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.cache-group-fixed-time-empty.rst:14
+msgid "The cache group is configured to expire at a fixed time of day, but no time is defined. Group expiration removes all entries in the group at that time."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.cache-group-lifetime-empty.rst:6
@@ -22748,12 +23302,28 @@ msgstr ""
 msgid "**Message:** Data cache group invalidation lifetime must not be empty"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.process.cache-group-lifetime-empty.rst:14
+msgid "The cache group is configured to expire after a period, but no period is defined. A group expiration removes all cached entries in that group, so an empty period leaves the configured expiration incomplete."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.cache-group-lifetime-empty.rst:18
+msgid "Set a numeric IvyScript expression for the group's lifetime in seconds (for example, ``3600`` for one hour), or choose a different invalidation strategy. See :ref:`process-element-tab-data-cache` for the available strategies."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.process.cache-group-name-empty.rst:6
 msgid "ivy.process.cache-group-name-empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.cache-group-name-empty.rst:8
 msgid "**Message:** Data cache group name must not be empty"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.cache-group-name-empty.rst:14
+msgid "A cache group name identifies a set of related cached values. Entries with the same group can be invalidated together; without a name, the configured group cannot be identified consistently."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.cache-group-name-empty.rst:18
+msgid "Enter a stable group name. Use the same name on steps that should share a group or be invalidated together. See :ref:`process-element-tab-data-cache` for how cache groups work."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.content-object-page-not-found.rst:6
@@ -22771,7 +23341,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.content-object-page-unsupported.rst:8
 #, python-brace-format
-msgid "**Message:** Content object page '${path}' is of type '${type}' which is not supported"
+msgid "**Message:** Content object page '${path}' has unsupported type '${type}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.custom-field-name-empty.rst:6
@@ -22779,7 +23349,7 @@ msgid "ivy.process.custom-field-name-empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.custom-field-name-empty.rst:8
-msgid "**Message:** Name must not be empty"
+msgid "**Message:** Custom field name must not be empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-column-not-found.rst:6
@@ -22791,13 +23361,29 @@ msgstr ""
 msgid "**Message:** Column '${columnName}' is unknown"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.process.database-column-not-found.rst:14
+msgid "The query refers to a column that is not available in the selected table. Until the query matches the schema, the database operation may fail when it is executed."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-column-not-found.rst:18
+msgid "Check the selected database and table, then update the query to use an existing column. If the schema changed, refresh the Database Activity's table/column choices and review any mappings that use the old column."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.process.database-condition-invalid.rst:6
 msgid "ivy.process.database-condition-invalid"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-condition-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** Database condition invalid: '${condition}'"
+msgid "**Message:** Database condition '${condition}' is invalid"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-condition-invalid.rst:14
+msgid "The condition configured for the Database Activity is not valid. For queries that read, update, or delete rows, the condition determines which rows are affected; an invalid condition can prevent the query from being built or executed as intended."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-condition-invalid.rst:18
+msgid "Review the condition in the Database Activity and correct the reported syntax or expression problem. Make sure the condition uses columns from the selected table and values of compatible types. See :ref:`process-element-db-activity` for the query options."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-not-found.rst:6
@@ -22806,7 +23392,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Database '${databaseName}' is unknown."
+msgid "**Message:** Database '${databaseName}' is unknown"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-not-found.rst:14
+msgid "The Database Activity refers to a database connection that is not defined in the project. This can happen when the connection was renamed or removed, or when the process was copied without its database configuration."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-not-found.rst:18
+msgid "Choose an existing connection in the Database Activity, or add the required connection in the :ref:`Database Editor <database-configuration>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-not-selected.rst:6
@@ -22814,7 +23408,7 @@ msgid "ivy.process.database-not-selected"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-not-selected.rst:8
-msgid "**Message:** No Database selected."
+msgid "**Message:** No database is selected"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-table-not-found.rst:6
@@ -22823,7 +23417,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-table-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Table '${table}' is unknown."
+msgid "**Message:** Table '${table}' is unknown"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-table-not-found.rst:14
+msgid "The selected table is not present in the table list for the configured database. The database schema may have changed, or the process may be using a different connection than intended."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-table-not-found.rst:18
+msgid "Confirm the selected database and schema, then select the current table in the Database Activity. If the table was renamed or removed, update the query and its column mappings to match the current schema."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-table-not-selected.rst:6
@@ -22831,7 +23433,7 @@ msgid "ivy.process.database-table-not-selected"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-table-not-selected.rst:8
-msgid "**Message:** No Table selected."
+msgid "**Message:** No table is selected"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-tables-not-loaded.rst:6
@@ -22840,7 +23442,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.database-tables-not-loaded.rst:8
 #, python-brace-format
-msgid "**Message:** Could not load tables for database '${databaseName}', maybe connection was not successful."
+msgid "**Message:** Could not load tables for database '${databaseName}'. Check that the database connection is available."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-tables-not-loaded.rst:14
+msgid "The Designer could not obtain a table list for the selected database connection. It therefore cannot check the selected table against the database schema, and schema-based assistance such as choosing tables and columns may be unavailable. This warning does not by itself mean that the database or the selected table does not exist."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.database-tables-not-loaded.rst:18
+msgid "Check that the connection is configured and available, then reopen or refresh the Database Activity. See :ref:`database-configuration` for configuring connections and :ref:`process-element-db-activity` for using them in a process."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.deprecated-activity.rst:6
@@ -22849,7 +23459,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.deprecated-activity.rst:8
 #, python-brace-format
-msgid "**Message:** Found deprecated activity, which replaces a no longer existing element: ${nameOrPid}"
+msgid "**Message:** Deprecated activity replaces an element that no longer exists: ${nameOrPid}"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-display-name.rst:6
@@ -22862,7 +23472,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-error-boundary-code.rst:8
 #, python-brace-format
-msgid "**Message:** Same error code '${errorCode}' specified on more than one Error Boundary Event on the same Activity. Error handling order is nondeterministic."
+msgid "**Message:** The error code '${errorCode}' is used by multiple Error Boundary Events on the same Activity, so the handling order is nondeterministic"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.duplicate-error-boundary-code.rst:14
+msgid "Multiple Error Boundary Events attached to the same Activity handle the same error code. The process cannot reliably determine which matching boundary event should handle the error."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.duplicate-error-boundary-code.rst:18
+msgid "Assign distinct error codes to the boundary events, or remove or combine events that are intended to handle the same error."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-error-start-code.rst:6
@@ -22871,7 +23489,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-error-start-code.rst:8
 #, python-brace-format
-msgid "**Message:** Same error code '${errorCode}' specified on more than one Error Start Event in same process. Error handling order is nondeterministic."
+msgid "**Message:** The error code '${errorCode}' is used by multiple Error Start Events in the same process, so the handling order is nondeterministic"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.duplicate-error-start-code.rst:14
+msgid "Multiple Error Start Events in the same process handle the same error code. When that error occurs, the matching start event cannot be selected reliably because the handling order is undefined."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.duplicate-error-start-code.rst:18
+msgid "Assign a distinct error code to each Error Start Event, or remove or combine events that are intended to handle the same error."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-process-id.rst:6
@@ -22880,7 +23506,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-process-id.rst:8
 #, python-brace-format
-msgid "**Message:** This process and '${otherPath}' do have the same process identifier '${processId}'."
+msgid "**Message:** This process and '${otherPath}' have the same process identifier '${processId}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.duplicate-process-id.rst:14
+msgid "Two processes in the same project have the same process identifier. Process identifiers are used to distinguish process definitions, so duplicates make the project configuration ambiguous."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.duplicate-process-id.rst:18
+msgid "Ensure that each process has a unique identifier. If a process was copied, use the Designer's supported process operations to give it a distinct identity."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-process-path.rst:6
@@ -22889,7 +23523,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-process-path.rst:8
 #, python-brace-format
-msgid "**Message:** Another process with the same path and name exists. Remove, rename or delete either this or the process under '${duplicatePath}'"
+msgid "**Message:** Another process with the same path and name exists. Remove, rename or delete either this or the process under '${duplicatePath}'."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.duplicate-signature.rst:6
@@ -22906,7 +23540,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.error-code-missing.rst:8
 #, python-brace-format
-msgid "**Message:** No custom Error Code specified on Error End element. '${errorCode}' will be used."
+msgid "**Message:** No custom error code is specified on the Error End element. '${errorCode}' will be used."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.error-code-missing.rst:14
+msgid "The Error End has no custom error code, so it will throw the default code shown in the message. An Error Start or Error Boundary Event that expects a different, business-specific code may not catch this error."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.error-code-missing.rst:18
+msgid "Set a meaningful code that matches the process's error-handling design, for example ``booking:declined``. See :ref:`error-handling` and :ref:`process-element-error-end` for how error codes are thrown and caught."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.error-code-or-cause-missing.rst:6
@@ -22914,7 +23556,15 @@ msgid "ivy.process.error-code-or-cause-missing"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.error-code-or-cause-missing.rst:8
-msgid "**Message:** Either an 'Error Code' or an 'Error Cause' must be set."
+msgid "**Message:** Set either an 'Error Code' or an 'Error Cause'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.error-code-or-cause-missing.rst:14
+msgid "An Error End must specify either an error code or an error cause. Without either, it has no error to throw, so the exceptional path is incomplete."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.error-code-or-cause-missing.rst:18
+msgid "Set an error code for the error being raised, or provide an error cause when the code should be determined dynamically. See :ref:`error-handling` for examples of defining and handling errors."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.error-start-not-found.rst:6
@@ -22923,7 +23573,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.error-start-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Target '${target}' not existing."
+msgid "**Message:** Target '${target}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.intermediate-event-id-missing.rst:6
@@ -22931,7 +23581,7 @@ msgid "ivy.process.intermediate-event-id-missing"
 msgstr "ivy.process.intermediate-event-id-missing"
 
 #: ../../source/reference/validation/codes/ivy.process.intermediate-event-id-missing.rst:8
-msgid "**Message:** The intermediate event has no Event ID."
+msgid "**Message:** The intermediate event has no event ID"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.invalid-display-name-character.rst:6
@@ -22953,7 +23603,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.invalid-parameter-name.rst:8
 #, python-brace-format
-msgid "**Message:** Name '${name}' not valid : ${validationMessage}"
+msgid "**Message:** Name '${name}' is invalid: ${validationMessage}"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.invalid-result-name.rst:6
@@ -22962,7 +23612,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.invalid-result-name.rst:8
 #, python-brace-format
-msgid "**Message:** Name '${name}' not valid"
+msgid "**Message:** Name '${name}' is invalid"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.invalid-signature-character.rst:6
@@ -22971,7 +23621,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.invalid-signature-character.rst:8
 #, python-brace-format
-msgid "**Message:** Invalid character in signaturename at position ${position}"
+msgid "**Message:** Invalid character in signature name at position ${position}"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.invalid-signature-character.rst:14
+msgid "The signature name must follow the identifier format checked by the validator: it must start with a letter or underscore and may then contain letters, digits, or underscores. Other characters, including spaces, hyphens, periods, and ``$``, are invalid; a digit cannot be the first character."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.invalid-signature-character.rst:18
+msgid "Rename the signature using only the allowed characters, for example ``loadCustomer_2`` instead of ``load-customer`` or ``2loadCustomer``."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.ivy-script-validation-message.rst:6
@@ -23011,7 +23669,19 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.java-bean-default-constructor-missing.rst:8
 #, python-brace-format
-msgid "**Message:** '${className}' must implement a public default constructor."
+msgid "**Message:** '${className}' must declare a public default constructor"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.java-bean-default-constructor-missing.rst:14
+msgid "The configured process Java Bean must have a public constructor with no parameters so the process element can create it without constructor arguments. A class that only has constructors with parameters does not meet this requirement."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.java-bean-default-constructor-missing.rst:18
+msgid "If the class declares other constructors, add a public no-argument constructor, for example:"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.java-bean-default-constructor-missing.rst:25
+msgid "See the Java Bean tab in the documentation for the relevant process element: :ref:`Program Interface Activity <process-element-pi>`, :ref:`Program Start <process-element-program-start>`, or :ref:`Wait Program Intermediate Event <process-element-wait-program-intermediate-event>`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.java-bean-deprecated.rst:6
@@ -23029,7 +23699,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.java-bean-interface-mismatch.rst:8
 #, python-brace-format
-msgid "**Message:** '${className}' must implement the interface '${interfaceName}' in oder to be used here."
+msgid "**Message:** '${className}' must implement the interface '${interfaceName}' to be used here"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.java-bean-interface-mismatch.rst:14
+msgid "The class exists, but it does not implement the interface required by the process element. The required interface depends on the element type, so a bean intended for one kind of element cannot automatically be used by another."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.java-bean-interface-mismatch.rst:18
+msgid "Implement the interface named in the validation message or select a class that already implements it. For example, a :ref:`Program Interface Activity <process-element-pi>` expects ``ProgramExecutor``, while a :ref:`Program Start <process-element-program-start>` expects ``IProcessStartEventBean``. See the corresponding process element documentation for the required Java Bean interface."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.not-allowed-in-process.rst:6
@@ -23045,6 +23723,22 @@ msgstr ""
 msgid "**Message:** Template '${template}' does not exist"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.process.notification-template-not-found.rst:14
+msgid "The task's notification configuration refers to a template name that is not available in the project's CMS under ``/Notification/new-task/Templates/[template]``. The template name must match the folder name beneath ``Templates``. If the intended template cannot be resolved when the notification is sent, Axon Ivy falls back to the default templates and then the Engine fallback. The notification may therefore use generic content instead of the intended customized text."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.notification-template-not-found.rst:16
+msgid "The validator checks templates in the project CMS and always accepts ``Default``. At runtime, Axon Ivy also checks the system CMS for the selected template before trying the default templates. See :ref:`notification-templating` for the resolution order and CMS structure."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.notification-template-not-found.rst:20
+msgid "Select ``Default`` or a template available in the project's CMS. To add a custom template, create its channel-specific ``Subject`` and/or ``Content`` under ``/Notification/new-task/Templates/[template]/[channel]``. For example, the mail subject for a template named ``my-template`` belongs at ``/Notification/new-task/Templates/my-template/mail/Subject``. See :ref:`process-element-tab-task-notification` for where to select the template."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.notification-template-not-found.rst:22
+msgid "If the template is intentionally maintained only in the system CMS, ensure it exists there at the same path; it can be resolved at runtime, although the project validator will still report that it is not present in the project CMS."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.process.override-component-missing-method.rst:6
 msgid "ivy.process.override-component-missing-method"
 msgstr ""
@@ -23052,6 +23746,14 @@ msgstr ""
 #: ../../source/reference/validation/codes/ivy.process.override-component-missing-method.rst:8
 #, python-brace-format
 msgid "**Message:** Overriding component does not implement start method: '${call}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.override-component-missing-method.rst:14
+msgid "The overriding process does not provide a start method that exists in the original process. The original start method is therefore not available through the override."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.override-component-missing-method.rst:18
+msgid "Add the missing start method to the overriding component, or update the override configuration if that start method is no longer required."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.override-method-signature-mismatch.rst:6
@@ -23063,13 +23765,22 @@ msgstr ""
 msgid "**Message:** Overriding method signature does not match original start method: '${call}'"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.process.override-method-signature-mismatch.rst:14
+msgid "An overriding process has a start method with the same name as an original start method, but its parameters or return type do not match. Callers relying on the original signature may not be compatible with the override."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.override-method-signature-mismatch.rst:18
+msgid "Implement the start method with the same name, parameter types, and return type as the original method, or update the override and its callers together."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.process.page-not-specified.rst:6
 msgid "ivy.process.page-not-specified"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.page-not-specified.rst:8
-msgid "**Message:** No page specified"
-msgstr ""
+#, fuzzy
+msgid "**Message:** No page is specified"
+msgstr "ページがすでに指定されている場合"
 
 #: ../../source/reference/validation/codes/ivy.process.parameter-type-not-found.rst:6
 msgid "ivy.process.parameter-type-not-found"
@@ -23077,8 +23788,9 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.parameter-type-not-found.rst:8
 #: ../../source/reference/validation/codes/ivy.process.result-type-not-found.rst:8
+#: ../../source/reference/validation/codes/ivy.xhtml.type.not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Type ${type} unknown"
+msgid "**Message:** Type '${type}' was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-start-deprecated.rst:6
@@ -23087,7 +23799,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-start-deprecated.rst:8
 #, python-brace-format
-msgid "**Message:** ${elementName} target is deprecated. Start '${startMethod}'  on process '${processName} is deprecated and should no longer be used."
+msgid "**Message:** ${elementName} target uses deprecated start '${startMethod}' on process '${processName}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-start-deprecated.rst:14
+msgid "The process call uses a deprecated start method on the target process. The method is still available but should not be used for new or updated process calls."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-start-deprecated.rst:18
+msgid "Use a supported replacement start method if one is available, and update the process call accordingly."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-start-not-found.rst:6
@@ -23096,7 +23816,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-start-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** ${elementName} target is invalid. Start '${startMethod}' not found on process '${processName}."
+msgid "**Message:** ${elementName} target is invalid because start '${startMethod}' was not found on process '${processName}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-start-not-found.rst:14
+msgid "The process call refers to a start method that is not available on the target process. The start method may have been removed or renamed."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-start-not-found.rst:18
+msgid "Select an existing start method on the target process, or restore the referenced start method."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-target-no-start.rst:6
@@ -23105,7 +23833,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-target-no-start.rst:8
 #, python-brace-format
-msgid "**Message:** ${elementName} target is invalid. No start found on process '${processName}."
+msgid "**Message:** ${elementName} target is invalid because process '${processName}' has no start"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-no-start.rst:14
+msgid "The target process exists but has no start event that the process call can invoke."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-no-start.rst:18
+msgid "Add a callable start event to the target process, or select a process that has one."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-target-not-defined.rst:6
@@ -23114,7 +23850,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-target-not-defined.rst:8
 #, python-brace-format
-msgid "**Message:** ${elementName} target is not defined."
+msgid "**Message:** ${elementName} target is not defined"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-not-defined.rst:14
+msgid "A process call has no target process configured, so it cannot invoke another process."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-not-defined.rst:18
+msgid "Select the process that this process call should invoke."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-call-target-process-not-found.rst:6
@@ -23124,6 +23868,14 @@ msgstr ""
 #: ../../source/reference/validation/codes/ivy.process.process-call-target-process-not-found.rst:8
 #, python-brace-format
 msgid "**Message:** ${elementName} target process '${processName}' not found"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-process-not-found.rst:14
+msgid "The process call refers to a target process that does not exist in the project. The target may have been removed or renamed."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.process-call-target-process-not-found.rst:18
+msgid "Select an existing target process or restore the referenced process."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-data-class-not-found.rst:6
@@ -23150,7 +23902,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.process-version-mismatch.rst:8
 #, python-brace-format
-msgid "**Message:** Process version does not match designer: expecting '${expected}' but is '${actual}'"
+msgid "**Message:** The process version does not match the Designer version: expected '${expected}' but found '${actual}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.referenced-error-start-event-not-found.rst:6
@@ -23159,7 +23911,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.referenced-error-start-event-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Referenced error start event ${target} not found"
+msgid "**Message:** Referenced Error Start Event '${target}' was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.request-custom-field-name-empty.rst:6
@@ -23176,7 +23928,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.responsible-role-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Responsible role '${roleName}' not existing"
+msgid "**Message:** Responsible role '${roleName}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-body-attribute-required.rst:6
@@ -23185,7 +23937,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-body-attribute-required.rst:8
 #, python-brace-format
-msgid "**Message:** Body attribute '${attributePath}' is required, but not set."
+msgid "**Message:** Body attribute '${attributePath}' is required but not set"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.rest-body-attribute-required.rst:14
+msgid "The API definition requires this attribute in the request body, but the activity does not map a value to it. The remote service may reject a body that omits a required field."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.rest-body-attribute-required.rst:18
+msgid "In the REST Client Activity's request body mapping, assign the required attribute from process data or another appropriate expression. Check the attribute path and expected type against the API definition. See :ref:`process-element-rest-client-activity`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-client-not-found.rst:6
@@ -23194,7 +23954,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-client-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** RestClient with id '${clientId}' does not exist"
+msgid "**Message:** REST client with ID '${clientId}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-client-not-selected.rst:6
@@ -23202,7 +23962,7 @@ msgid "ivy.process.rest-client-not-selected"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-client-not-selected.rst:8
-msgid "**Message:** Select a RestClient or create a new one"
+msgid "**Message:** Select a REST client or create one"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-parameter-required.rst:6
@@ -23211,7 +23971,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-parameter-required.rst:8
 #, python-brace-format
-msgid "**Message:** ${parameterType} '${parameter}' is required, but not set."
+msgid "**Message:** ${parameterType} '${parameter}' is required but not set"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.rest-parameter-required.rst:14
+msgid "The API definition marks this request parameter as required, but the activity does not assign it a value. The request will be incomplete and the remote service may reject it."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.rest-parameter-required.rst:18
+msgid "In the REST Client Activity's Parameters table, map the required parameter to a process value or another appropriate expression. Check the parameter name and type against the API definition. See :ref:`process-element-rest-client-activity`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-path-parameter-unused.rst:6
@@ -23219,7 +23987,7 @@ msgid "ivy.process.rest-path-parameter-unused"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-path-parameter-unused.rst:8
-msgid "**Message:** '${parameter}' is not used, remove it or use it in the path via {${parameter}}."
+msgid "**Message:** Path parameter '${parameter}' is unused. Remove it or reference it in the path as {${parameter}}."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-resource-not-specified.rst:6
@@ -23228,11 +23996,27 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-resource-not-specified.rst:8
 #, python-brace-format
-msgid "**Message:** Resource '${resource}' is not specified by the client."
+msgid "**Message:** Resource '${resource}' is not specified by the client"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.rest-resource-not-specified.rst:14
+msgid "The REST Client Activity's method and path do not resolve to a resource defined by the selected client. Without a matching resource specification, the Designer cannot validate the request against the API definition or provide its resource-specific assistance."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.rest-resource-not-specified.rst:18
+msgid "Check that the correct client and path are selected. If the client is based on an OpenAPI definition, update or regenerate that definition and select the resource using the API Browser. See :ref:`process-element-rest-client-activity` and :ref:`rest-clients-configuration`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.rest-response-validation.rst:6
 msgid "ivy.process.rest-response-validation"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.rest-response-validation.rst:14
+msgid "The configured error code for an unsuccessful REST response has a validation problem. This concerns the process's error handling configuration, not necessarily the response body or the remote service's response."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.rest-response-validation.rst:18
+msgid "Read the validation details and correct the error code in the REST Client Activity's response/error settings. See :ref:`process-element-rest-client-activity` for the response and error tabs, and :ref:`error-handling` for valid error-code usage."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.result-type-not-found.rst:6
@@ -23245,7 +24029,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.role-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Permitted Role '${role}' not existing."
+msgid "**Message:** Permitted role '${role}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.signal-code-invalid.rst:6
@@ -23257,7 +24041,15 @@ msgid "ivy.process.signal-code-macro-not-supported"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.signal-code-macro-not-supported.rst:8
-msgid "**Message:** Signal code must not have any macro expressions."
+msgid "**Message:** Signal code must not have any macro expressions"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.signal-code-macro-not-supported.rst:14
+msgid "This Signal Start Event requires a literal signal code; macro expressions are not supported in its code. A macro therefore cannot create a runtime-dependent listening code here."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.signal-code-macro-not-supported.rst:18
+msgid "Use a static code or supported signal pattern. If a value must vary at runtime, use a common code and handle the varying value as signal data after the process starts. See :ref:`signal-receive-patterns` for matching patterns and :ref:`adaptive-case-management` for signal data."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.signal-code-too-many-parts.rst:6
@@ -23266,7 +24058,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.signal-code-too-many-parts.rst:8
 #, python-brace-format
-msgid "**Message:** ${signalCode} has more than 5 parts which could lead to performance issues."
+msgid "**Message:** ${signalCode} has more than five parts, which may affect performance"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.signal-code-too-many-parts.rst:14
+msgid "The signal code has more than five colon-separated parts. The code remains valid, but very deep codes can make signal matching less efficient. Signal codes are commonly used to describe an event hierarchy, while optional signal data can carry additional details."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.signal-code-too-many-parts.rst:18
+msgid "Keep the code hierarchy concise and move extra identifiers or payload details into signal data where appropriate. For example, use ``order:canceled`` as the code and send the order ID as data. See :ref:`signal-receive-patterns` for code matching and :ref:`adaptive-case-management` for sending signals."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.signature-too-long.rst:6
@@ -23284,7 +24084,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.task-exception-start-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Exception start does not exist: ${pid}"
+msgid "**Message:** Exception start '${pid}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.task-role-not-found.rst:6
@@ -23293,7 +24093,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.task-role-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Role '${roleName}' not existing"
+msgid "**Message:** Role '${roleName}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-method-name-missing.rst:6
@@ -23301,8 +24101,9 @@ msgid "ivy.process.user-dialog-method-name-missing"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-method-name-missing.rst:8
-msgid "**Message:** No Method Name specified on User Dialog Start element"
-msgstr ""
+#, fuzzy
+msgid "**Message:** No method name is specified on the User Dialog Start element"
+msgstr "通常のリクエスト要素は、ユーザーダイアログの開始要素に置き換えられています。"
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-not-found.rst:6
 msgid "ivy.process.user-dialog-not-found"
@@ -23310,7 +24111,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** User Dialog '${userDialogId}' not found."
+msgid "**Message:** User Dialog '${userDialogId}' was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-not-selected.rst:6
@@ -23318,7 +24119,7 @@ msgid "ivy.process.user-dialog-not-selected"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-not-selected.rst:8
-msgid "**Message:** No User Dialog specified, auto dialog will be shown."
+msgid "**Message:** No User Dialog is specified; an automatic dialog will be shown"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-start-method-name-missing.rst:6
@@ -23326,8 +24127,9 @@ msgid "ivy.process.user-dialog-start-method-name-missing"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-start-method-name-missing.rst:8
-msgid "**Message:** No Start Method Name specified on User Dialog Start element"
-msgstr ""
+#, fuzzy
+msgid "**Message:** No start method name is specified on the User Dialog Start element"
+msgstr "通常のリクエスト要素は、ユーザーダイアログの開始要素に置き換えられています。"
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-start-not-found.rst:6
 msgid "ivy.process.user-dialog-start-not-found"
@@ -23344,7 +24146,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-content-page-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Page in webContent '${path}' does not exist"
+msgid "**Message:** Page '${path}' in webContent does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-not-found.rst:6
@@ -23353,7 +24155,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** The web service with id ´${configId}´ does not exist"
+msgid "**Message:** Web service '${configId}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-not-selected.rst:6
@@ -23361,7 +24163,7 @@ msgid "ivy.process.web-service-not-selected"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-not-selected.rst:8
-msgid "**Message:** Select a web service or create a new one"
+msgid "**Message:** Select a web service or create one"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-operation-empty.rst:6
@@ -23378,7 +24180,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-operation-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** The web service operation ´${operationName}´ does not exist"
+msgid "**Message:** Web service operation '${operationName}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-parameter-type-invalid.rst:6
@@ -23387,7 +24189,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-parameter-type-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** ${readableIdentifier} has type ${invalidType} which can not be used as Webservice parameter. ${hint}"
+msgid "**Message:** ${readableIdentifier} has type ${invalidType}, which cannot be used as a web service parameter. ${hint}"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.web-service-parameter-type-invalid.rst:14
+msgid "This validation applies to Web Service Process Start input parameters and to fields in their Data Classes. The validator checks nested Data Class fields as well, so the unsupported type may be in an attribute rather than the top-level parameter."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.process.web-service-parameter-type-invalid.rst:18
+msgid "Follow the replacement suggested in the validation message. See :ref:`Web Service Process Start <process-element-web-service-process-start>` for the supported input parameter types and examples."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-port-empty.rst:6
@@ -23404,7 +24214,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-port-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** The web service port ´${portName}´ does not exist"
+msgid "**Message:** Web service port '${portName}' does not exist"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-process-implementation-info.rst:6
@@ -23412,7 +24222,7 @@ msgid "ivy.process.web-service-process-implementation-info"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-process-implementation-info.rst:8
-msgid "**Message:** This Web Service Process is implemented by a customized Java file in the src-folder which is under control of the Developer."
+msgid "**Message:** This web service process is implemented by a custom Java file in the src folder, which is maintained by the developer"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-process-name-invalid.rst:6
@@ -23421,7 +24231,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-process-name-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** The fully qualified Web Service name must be a valid java class name (e.g. ch.ivy.team.WebservieName), but is '${webServiceName}'"
+msgid "**Message:** The fully qualified web service name '${webServiceName}' is not a valid Java class name, (e.g. ch.ivy.team.WebservieName)"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-process-name-not-defined.rst:6
@@ -23429,7 +24239,7 @@ msgid "ivy.process.web-service-process-name-not-defined"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.web-service-process-name-not-defined.rst:8
-msgid "**Message:** The fully qualified Web Service name must be defined (e.g. ch.ivy.team.WebservieName)"
+msgid "**Message:** The fully qualified web service name must be defined (e.g. ch.ivy.team.WebservieName)"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-project.rst:6
@@ -23438,7 +24248,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-project.rst:8
 #, python-brace-format
-msgid "**Message:** The rest client key '${key}' is duplicated in the same project '${project}'."
+msgid "**Message:** The REST client key '${key}' is duplicated in project '${project}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-project.rst:14
+msgid "REST client keys identify the client configuration used by a process. More than one client in the same project has the same key, so references to that key may be ambiguous."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-project.rst:18
+msgid "Give each REST client in the project a unique key. Update any process configuration that refers to a key you changed."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-unrelated-project.rst:6
@@ -23447,7 +24265,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-unrelated-project.rst:8
 #, python-brace-format
-msgid "**Message:** The rest client key '${key}' is not unique, it exists too in a not dependent project '${project}'."
+msgid "**Message:** The REST client key '${key}' is also defined in unrelated project '${project}'. It is not defined which client is used at runtime."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-unrelated-project.rst:14
+msgid "The same REST client key is defined in another project that is not related by project dependencies. In related projects, the dependency hierarchy determines which project configuration takes precedence, so the key has a clear result. Unrelated projects have no such precedence order, so Axon Ivy cannot determine which client configuration will be used at runtime."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.duplicate-key-in-unrelated-project.rst:18
+msgid "Give the REST clients unique keys across unrelated projects. If one project is intended to override another, establish the appropriate project dependency so precedence is defined. If you change a key, update any process configuration that refers to it."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.feature.class-not-accessible.rst:6
@@ -23456,7 +24282,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.feature.class-not-accessible.rst:8
 #, python-brace-format
-msgid "**Message:** RestClient feature class '${className}' is not accessible"
+msgid "**Message:** REST client feature class '${className}' is not accessible"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.feature.class-not-accessible.rst:14
+msgid "The configured REST client feature class is not available to the project Java index. The REST client cannot register this extension, so its functionality will not be applied to calls using this client."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.feature.class-not-accessible.rst:18
+msgid "Check the configured fully qualified class name and ensure the class is available on the project's classpath, for example in the project source or a referenced library. See :ref:`rest-clients-configuration` for the REST client's Features section."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.feature.default-constructor-missing.rst:6
@@ -23465,7 +24299,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.feature.default-constructor-missing.rst:8
 #, python-brace-format
-msgid "**Message:** RestClient feature '${className}' has no accessible default constructor"
+msgid "**Message:** REST client feature '${className}' has no accessible default constructor"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.feature.default-constructor-missing.rst:14
+msgid "Axon Ivy creates the configured REST client feature when it registers the feature with the client. The class therefore needs an accessible default (no-argument) constructor."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.feature.default-constructor-missing.rst:18
+msgid "Add an accessible no-argument constructor, or select a feature class that provides one. See :ref:`rest-clients-configuration` for the feature requirements."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.feature.not-jax-rs-component.rst:6
@@ -23474,7 +24316,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.feature.not-jax-rs-component.rst:8
 #, python-brace-format
-msgid "**Message:** RestClient feature '${className}' is not an implementation of a JAX-RS component interface"
+msgid "**Message:** REST client feature '${className}' does not implement a JAX-RS component interface"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.feature.not-jax-rs-component.rst:14
+msgid "REST client features are registered as JAX-RS components. A class that does not implement a supported JAX-RS contract cannot be registered, so its feature behavior will not be available to REST calls."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.feature.not-jax-rs-component.rst:18
+msgid "Implement a supported JAX-RS extension interface, such as ``jakarta.ws.rs.core.Feature``, and select that class in the REST client's Features section. See :ref:`rest-clients-configuration` for the supported interfaces."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.key-not-sanitized.rst:6
@@ -23483,7 +24333,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.key-not-sanitized.rst:8
 #, python-brace-format
-msgid "**Message:** The rest client key '${key}' should be sanitized to '${sanitizedKey}' to avoid potential issues. Use the name for a better readability."
+msgid "**Message:** The REST client key '${key}' is not sanitized. Use '${sanitizedKey}' instead to avoid potential issues."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.key-not-sanitized.rst:14
+msgid "REST client keys are used to identify clients in configuration and should contain only letters, numbers, hyphens, or underscores. Spaces are converted to hyphens, accented letters are normalized, and other characters are removed during sanitization. The suggested key shows the sanitized result."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.restclient.key-not-sanitized.rst:18
+msgid "Change the REST client key to the suggested sanitized value. If you change the key, update any process configuration that refers to it."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.uri-invalid.rst:6
@@ -23492,7 +24350,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.restclient.uri-invalid.rst:8
 #, python-brace-format
-msgid "**Message:** The rest client URI '${uri}' is invalid. Syntax error at position '${position}'"
+msgid "**Message:** The REST client URI '${uri}' is invalid. Syntax error at position '${position}'."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.role.member-not-found.rst:6
@@ -23501,7 +24359,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.role.member-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Role '${role}' has an unknown member '${member}'."
+msgid "**Message:** Role '${role}' has an unknown member '${member}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.role.parent-mismatch-across-projects.rst:6
@@ -23510,7 +24368,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.role.parent-mismatch-across-projects.rst:8
 #, python-brace-format
-msgid "**Message:** Role '${role}' exists in multiple projects with a different parent role. Maybe parent role should be '${otherParent}' instead of '${parent}'."
+msgid "**Message:** Role '${role}' is defined in multiple projects with different parent roles. Use '${otherParent}' instead of '${parent}' to make the definitions consistent."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.role.parent-mismatch-across-projects.rst:14
+msgid "The same Role is defined in multiple projects with different parent Roles. This creates inconsistent role hierarchies and can lead to different inheritance behavior depending on which definition is used."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.role.parent-mismatch-across-projects.rst:18
+msgid "Use the same parent Role for this Role in every project where it is defined."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.role.parent-not-found.rst:6
@@ -23519,7 +24385,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.role.parent-not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Role '${role}' has an unknown parent '${parent}'."
+msgid "**Message:** Role '${role}' has an unknown parent '${parent}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.user.role-not-defined.rst:6
@@ -23540,13 +24406,29 @@ msgstr ""
 msgid "**Message:** User '${username}' is also defined in project '${project}'."
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.user.user-defined-in-other-project.rst:14
+msgid "The same login name is configured as a user in another project. These project user definitions are test users for Designer simulation, not engine accounts, but duplicate definitions can become confusing if their passwords, roles, or properties differ."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.user.user-defined-in-other-project.rst:18
+msgid "Use distinct usernames for different test users, or remove a redundant definition. If the same test user is intentionally configured in multiple projects, check that each definition has the intended roles and properties; this is a warning about project test-user configuration, not a deployed Engine user conflict. See the :ref:`Test User Editor <test-user-editor>` documentation."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.variable.duplicate-key.rst:6
 msgid "ivy.variable.duplicate-key"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.variable.duplicate-key.rst:8
 #, python-brace-format
-msgid "**Message:** Variable '${variable}' is defined multiple times in variables.yaml."
+msgid "**Message:** Variable '${variable}' is defined multiple times in variables.yaml"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.duplicate-key.rst:14
+msgid "Variable keys in the same ``variables.yaml`` file must be unique, ignoring letter case. For example, ``databaseUrl`` and ``DATABASEURL`` are treated as the same key."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.duplicate-key.rst:18
+msgid "Remove the duplicate definition or rename one Variable so its key is unique, including when compared without regard to capitalization."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.variable.duplicate-key-in-unrelated-project.rst:6
@@ -23555,7 +24437,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.variable.duplicate-key-in-unrelated-project.rst:8
 #, python-brace-format
-msgid "**Message:** Variable '${variable}' is also present in unrelated project '${project}'. It is not defined which variable is used at runtime."
+msgid "**Message:** Variable '${variable}' is also defined in unrelated project '${project}'. It is not defined which variable is used at runtime."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.duplicate-key-in-unrelated-project.rst:14
+msgid "The same Variable key is defined in this project and in another project that is not related by project dependencies. In related projects, the dependency hierarchy determines which project's variable configuration takes precedence, so the lookup has a clear result. Unrelated projects have no such precedence order, so Ivy cannot determine which variable value will be used at runtime."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.duplicate-key-in-unrelated-project.rst:18
+msgid "Give variables unique keys across unrelated projects. If one project is intended to override another, establish the appropriate project dependency so precedence is defined."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.variable.empty-value.rst:6
@@ -23577,8 +24467,24 @@ msgstr ""
 msgid "**Message:** Variable '${variable}' contains a character that makes it unable to be accessed using \"ivy.var.<variable>\": ${details}"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.variable.invalid-key-info.rst:14
+msgid "A hyphen is allowed in a Variable key, but it is not valid in the ``ivy.var.<variable>`` dot-property syntax."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.invalid-key-info.rst:18
+msgid "Replace the hyphen with an underscore if the Variable must be accessed using ``ivy.var.<variable>``."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.variable.invalid-key-warning.rst:6
 msgid "ivy.variable.invalid-key-warning"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.invalid-key-warning.rst:14
+msgid "The Variable key contains characters outside the supported key format or is a reserved Java keyword. It cannot be accessed reliably using the ``ivy.var.<variable>`` syntax."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.invalid-key-warning.rst:18
+msgid "Rename the key to begin with a letter and use only letters, digits, or underscores. Do not use a Java keyword as the key."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.variable.namespace-conflict.rst:6
@@ -23590,6 +24496,14 @@ msgstr ""
 msgid "**Message:** Variable '${key}' conflicts with namespaced variable '${namespaceKey}'. Both resolve to the same access path (ivy.var.${key}), causing ambiguous resolution."
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.variable.namespace-conflict.rst:14
+msgid "An underscore in a Variable key is interpreted as a namespace separator. For example, ``mail_server`` and ``mail.server`` resolve to the same access path, so using both makes Variable lookup ambiguous."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.namespace-conflict.rst:18
+msgid "Rename one of the Variables so replacing underscores with namespace separators does not produce another Variable's key."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.variable.namespace-conflict-in-other-project.rst:6
 msgid "ivy.variable.namespace-conflict-in-other-project"
 msgstr ""
@@ -23597,6 +24511,14 @@ msgstr ""
 #: ../../source/reference/validation/codes/ivy.variable.namespace-conflict-in-other-project.rst:8
 #, python-brace-format
 msgid "**Message:** Variable '${key}' conflicts with namespaced variable '${namespaceKey}' in project '${project}'. Both resolve to the same access path (ivy.var.${key}), causing ambiguous resolution."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.namespace-conflict-in-other-project.rst:14
+msgid "An underscore-based Variable key in this project resolves to the same access path as a dot-separated key in another project. Runtime lookup can therefore be ambiguous across the projects."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.namespace-conflict-in-other-project.rst:18
+msgid "Rename one of the conflicting Variables. Check related and unrelated projects for keys that differ only by underscores versus namespace separators."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.variable.unencrypted-password.rst:6
@@ -23608,13 +24530,30 @@ msgstr ""
 msgid "**Message:** Variable '${variable}' is a password but its value is not encrypted. Use \"${encryptionSyntax}\" to encrypt it."
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.variable.unencrypted-password.rst:14
+msgid "The Variable is marked as a password, but its configured value is plain text. Anyone who can read the project configuration or its source-control history may be able to see the password."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.variable.unencrypted-password.rst:18
+#, python-brace-format
+msgid "Encrypt the value using the ``${encrypt:<value>}`` syntax shown in the message. Keep the Variable's password metadata enabled."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-project.rst:6
 msgid "ivy.webserviceclient.duplicate-key-in-project"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-project.rst:8
 #, python-brace-format
-msgid "**Message:** The web service client key '${key}' is duplicated in the same project '${project}'."
+msgid "**Message:** The web service client key '${key}' is duplicated in project '${project}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-project.rst:14
+msgid "Web service client keys identify client configurations used by processes. More than one client in the same project has the same key, so references to that key may be ambiguous."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-project.rst:18
+msgid "Give each web service client in the project a unique key. Update any process configuration that refers to a key you changed."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-unrelated-project.rst:6
@@ -23623,7 +24562,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-unrelated-project.rst:8
 #, python-brace-format
-msgid "**Message:** The web service client key '${key}' is not unique, it exists too in a not dependent project '${project}'."
+msgid "**Message:** The web service client key '${key}' is also defined in a not dependent project '${project}'. It is not defined which client is used at runtime."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-unrelated-project.rst:14
+msgid "The same web service client key is defined in another project that is not related by project dependencies. Axon Ivy checks these projects too because both definitions may become visible together when projects are used or connected."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.webserviceclient.duplicate-key-in-unrelated-project.rst:18
+msgid "Choose a unique key for one of the web service clients. If you change a key, update any process configuration that refers to it."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.webserviceclient.key-not-sanitized.rst:6
@@ -23632,7 +24579,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.webserviceclient.key-not-sanitized.rst:8
 #, python-brace-format
-msgid "**Message:** The web service client key '${key}' should be sanitized to '${sanitizedKey}' to avoid potential issues. Use the name for a better readability."
+msgid "**Message:** The web service client key '${key}' is not sanitized. Use '${sanitizedKey}' instead to avoid potential issues"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.webserviceclient.key-not-sanitized.rst:14
+msgid "Web service client keys are used to identify clients in configuration and should contain only letters, numbers, hyphens, or underscores. Spaces are converted to hyphens, accented letters are normalized, and other characters are removed during sanitization. The suggested key shows the sanitized result."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.webserviceclient.key-not-sanitized.rst:18
+msgid "Change the web service client key to the suggested sanitized value. If you change the key, update any process configuration that refers to it."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.boolean.invalid-value.rst:6
@@ -23641,7 +24596,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.boolean.invalid-value.rst:8
 #, python-brace-format
-msgid "**Message:** Invalid value '${value}' for boolean attribute (true / false)"
+msgid "**Message:** Invalid value '${value}' for boolean attribute; expected 'true' or 'false'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.converter-id.missing-scope.rst:6
@@ -23650,7 +24605,16 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.converter-id.missing-scope.rst:8
 #, python-brace-format
-msgid "**Message:** Converter '${value}' found, but it has no CDI scope defined"
+msgid "**Message:** Converter '${value}' has no CDI scope"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.missing-scope.rst:14
+msgid "The converter has no CDI scope, so the container cannot manage its lifecycle as a CDI bean. This is required for a managed converter."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.missing-scope.rst:18
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.missing-scope.rst:18
+msgid "Add a suitable scope annotation, such as ``@RequestScoped`` or ``@ApplicationScoped``. See :ref:`validation-code-ivy.java-index.scope-missing` and :ref:`html-dialog-managed-beans`."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-found.rst:6
@@ -23659,7 +24623,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Converter '${value}' not found"
+msgid "**Message:** Converter '${value}' was not found"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-found.rst:14
+msgid "The converter ID used in the XHTML page does not identify a converter available to the application. The value cannot be converted as configured, which can prevent a form value from being processed correctly."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-found.rst:18
+msgid "Check the converter ID in the page against the ID declared by the converter, and make sure its class is available to the project. If you intended to use a built-in converter, use the appropriate JSF converter ID."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-managed.rst:6
@@ -23668,7 +24640,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-managed.rst:8
 #, python-brace-format
-msgid "**Message:** Converter '${value}' found, but it misses the managed = true parameter"
+msgid "**Message:** Converter '${value}' is missing the required 'managed = true' parameter"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-managed.rst:14
+msgid "The converter is not configured for CDI-managed creation. Without managed creation, CDI injection and other managed behavior in the converter are not available."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.converter-id.not-managed.rst:18
+msgid "Set ``managed = true`` on the converter's ``@FacesConverter`` annotation. See :ref:`validation-code-ivy.java-index.managed-property-missing` for an example."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.define.invalid-parameter.rst:6
@@ -23677,7 +24657,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.define.invalid-parameter.rst:8
 #, python-brace-format
-msgid "**Message:** No corresponding insert tag found for '${value}'"
+msgid "**Message:** No corresponding insert tag was found for '${value}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.define.missing-template.rst:6
@@ -23685,7 +24665,7 @@ msgid "ivy.xhtml.define.missing-template"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.define.missing-template.rst:8
-msgid "**Message:** No template found"
+msgid "**Message:** No template was found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.define.template-not-found.rst:6
@@ -23703,7 +24683,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.duplicate-param.detected.rst:8
 #, python-brace-format
-msgid "**Message:** Duplicate Parameter '${value}'"
+msgid "**Message:** Duplicate parameter '${value}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.co-uri-argument-empty.rst:6
@@ -23711,7 +24691,7 @@ msgid "ivy.xhtml.el.co-uri-argument-empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.co-uri-argument-empty.rst:8
-msgid "**Message:** Parameter of method co(...) must not be empty"
+msgid "**Message:** The URI parameter of method co(...) must not be empty"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.co-uri-argument-not-string.rst:6
@@ -23719,7 +24699,7 @@ msgid "ivy.xhtml.el.co-uri-argument-not-string"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.co-uri-argument-not-string.rst:8
-msgid "**Message:** Parameter uri of method co(...) must be a String"
+msgid "**Message:** The URI parameter of method co(...) must be a String"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.co-uri-argument-null.rst:6
@@ -23727,7 +24707,7 @@ msgid "ivy.xhtml.el.co-uri-argument-null"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.co-uri-argument-null.rst:8
-msgid "**Message:** Parameter uri of method co(...) must not be null"
+msgid "**Message:** The URI parameter of method co(...) must not be null"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.deprecated.rst:6
@@ -23754,7 +24734,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-any-type.rst:8
 #, python-brace-format
-msgid "**Message:** Must have any type of '${expectedTypes}' but has type '${actualType}'"
+msgid "**Message:** Expected one of the types '${expectedTypes}', but found '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-arithmetic-left-argument.rst:6
@@ -23763,7 +24743,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-arithmetic-left-argument.rst:8
 #, python-brace-format
-msgid "**Message:** Left argument of operator '${operator}' must be a numeric type but is type '${actualType}'"
+msgid "**Message:** Left argument of operator '${operator}' must be numeric, but has type '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-arithmetic-right-argument.rst:6
@@ -23772,7 +24752,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-arithmetic-right-argument.rst:8
 #, python-brace-format
-msgid "**Message:** Right argument of operator '${operator}' must be a numeric type but is type '${actualType}'"
+msgid "**Message:** Right argument of operator '${operator}' must be numeric, but has type '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-assignment-type.rst:6
@@ -23781,7 +24761,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-assignment-type.rst:8
 #, python-brace-format
-msgid "**Message:** Can not assign a value of type '${actualType}' to a variable of type '${expectedType}'"
+msgid "**Message:** Cannot assign a value of type '${actualType}' to a variable of type '${expectedType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-boolean-operator-argument.rst:6
@@ -23790,7 +24770,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-boolean-operator-argument.rst:8
 #, python-brace-format
-msgid "**Message:** ${argumentLabel} of operator '${operator}' must be type 'boolean' but is type '${actualType}'"
+msgid "**Message:** ${argumentLabel} of operator '${operator}' must have type 'boolean', but has type '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-conditional-argument.rst:6
@@ -23799,7 +24779,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-conditional-argument.rst:8
 #, python-brace-format
-msgid "**Message:** Conditional argument of operator '?' must be type 'boolean' but is type '${actualType}'"
+msgid "**Message:** Conditional argument of operator '?' must have type 'boolean', but has type '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-empty-operator-argument.rst:6
@@ -23808,7 +24788,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-empty-operator-argument.rst:8
 #, python-brace-format
-msgid "**Message:** Argument of operator '${operator}' must be either type 'String', 'Collection', 'Map' or an array but is type '${actualType}'"
+msgid "**Message:** Argument of operator '${operator}' must have type 'String', 'Collection', 'Map', or an array, but has type '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-method-arguments.rst:6
@@ -23825,7 +24805,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-not-argument.rst:8
 #, python-brace-format
-msgid "**Message:** Argument of operator 'not / !' must be type 'boolean' but is type '${actualType}'"
+msgid "**Message:** Argument of operator 'not / !' must have type 'boolean', but has type '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-operator-argument-types.rst:6
@@ -23834,7 +24814,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-operator-argument-types.rst:8
 #, python-brace-format
-msgid "**Message:** Arguments of operator '${operator}' must be the same type but are type '${leftType}' and type '${rightType}'"
+msgid "**Message:** Arguments of operator '${operator}' must have the same type, but found '${leftType}' and '${rightType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-string-concatenation-left-argument.rst:6
@@ -23843,7 +24823,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-string-concatenation-left-argument.rst:8
 #, python-brace-format
-msgid "**Message:** Left argument of operator '+=' must be type '${expectedType}' but is type '${actualType}'"
+msgid "**Message:** Left argument of operator '+=' must have type '${expectedType}', but has type '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-type.rst:6
@@ -23852,7 +24832,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.invalid-type.rst:8
 #, python-brace-format
-msgid "**Message:** Must have type '${expectedType}' but has type '${actualType}'"
+msgid "**Message:** Expected type '${expectedType}', but found '${actualType}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.local-var-circular-dependency.rst:6
@@ -23861,7 +24841,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.local-var-circular-dependency.rst:8
 #, python-brace-format
-msgid "**Message:** Local variable '${name}' has a circular dependency in its value expression '${expression}'"
+msgid "**Message:** Local variable '${name}' has a circular dependency in expression '${expression}'"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.el.local-var-circular-dependency.rst:14
+msgid "While analyzing an expression, the validator tried to determine a local variable's type and found that resolving its expression leads back to the same variable, either directly or through other local variables. The validator cannot determine the type, so further type checks involving that variable may be incomplete; this warning alone does not establish that the page will fail at runtime."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.el.local-var-circular-dependency.rst:18
+msgid "Break the dependency cycle by changing one of the local-variable expressions so it depends on an independent value or on a variable that does not ultimately refer back to it."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-bean-variable.rst:6
@@ -23870,7 +24858,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-bean-variable.rst:8
 #, python-brace-format
-msgid "**Message:** Managed bean or local variable '${name}' not found"
+msgid "**Message:** Managed bean or local variable '${name}' was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-content.rst:6
@@ -23879,7 +24867,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-content.rst:8
 #, python-brace-format
-msgid "**Message:** Content object with path '${path}' used in method co(...) not found"
+msgid "**Message:** Content object at path '${path}' used in method co(...) was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-function.rst:6
@@ -23888,7 +24876,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-function.rst:8
 #, python-brace-format
-msgid "**Message:** Function '${name}' not found"
+msgid "**Message:** Function '${name}' was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-method.rst:6
@@ -23897,7 +24885,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-method.rst:8
 #, python-brace-format
-msgid "**Message:** Method '${name}' not found"
+msgid "**Message:** Method '${name}' was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.el.missing-property.rst:6
@@ -23922,6 +24910,14 @@ msgstr ""
 msgid "**Message:** Managed bean '${name}' is not scoped and will not be found by JSF"
 msgstr ""
 
+#: ../../source/reference/validation/codes/ivy.xhtml.el.unscoped-bean.rst:14
+msgid "The XHTML expression refers to a managed bean that has no CDI scope. JSF cannot discover the bean reliably, so the expression may not resolve when the page is rendered or submitted."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.el.unscoped-bean.rst:18
+msgid "Add a scope annotation appropriate to the bean's lifecycle, such as ``@RequestScoped`` or ``@ApplicationScoped``. See :ref:`html-dialog-managed-beans` for scope choices."
+msgstr ""
+
 #: ../../source/reference/validation/codes/ivy.xhtml.empty-attribute.value-empty.rst:6
 msgid "ivy.xhtml.empty-attribute.value-empty"
 msgstr ""
@@ -23936,6 +24932,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.escape.false.rst:8
 msgid "**Message:** Setting 'escape' to false may introduce an XSS vulnerability"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.escape.false.rst:14
+msgid "Disabling escaping allows the rendered value to be interpreted as HTML rather than displayed as text. If that value contains user-controlled content, an attacker may be able to inject markup or script into the page (cross-site scripting, or XSS)."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.escape.false.rst:18
+#, python-brace-format
+msgid "Keep escaping enabled for user-controlled or external values. Disable it only when rendering trusted markup that your application controls. For example, ``<h:outputText value=\"#{data.comment}\" escape=\"true\" />`` renders the value as text instead of interpreting it as HTML."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.execute-render.invalid-keyword.rst:6
@@ -23954,7 +24959,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.id.unknown.rst:8
 #, python-brace-format
-msgid "**Message:** Id '${value}' is unknown"
+msgid "**Message:** ID '${value}' is unknown"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.ivy-component.type-required.rst:6
@@ -23962,7 +24967,7 @@ msgid "ivy.xhtml.ivy-component.type-required"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.ivy-component.type-required.rst:8
-msgid "**Message:** Ivy Component must define componentType=\"IvyComponent\" on the <cc:interface> element."
+msgid "**Message:** Ivy Component must define componentType=\"IvyComponent\" on the <cc:interface> element"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.method-signature.invalid.rst:6
@@ -23989,7 +24994,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.namespace.deprecated.rst:8
 #, python-brace-format
-msgid "**Message:** Deprecated Namespace '${namespace}'"
+msgid "**Message:** Namespace '${namespace}' is deprecated"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.namespace.unknown.rst:6
@@ -23998,7 +25003,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.namespace.unknown.rst:8
 #, python-brace-format
-msgid "**Message:** Unknown Namespace '${namespace}'"
+msgid "**Message:** Unknown namespace '${namespace}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.parse-error.rst:6
@@ -24024,7 +25029,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.search-expression.invalid-pfs.rst:8
 #, python-brace-format
-msgid "**Message:** Invalid PrimeFaces Selector '${expression}'"
+msgid "**Message:** Invalid PrimeFaces selector '${expression}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.search-expression.missing-parameter.rst:6
@@ -24049,18 +25054,13 @@ msgstr ""
 msgid "ivy.xhtml.type.not-found"
 msgstr ""
 
-#: ../../source/reference/validation/codes/ivy.xhtml.type.not-found.rst:8
-#, python-brace-format
-msgid "**Message:** Type '${type}' not found"
-msgstr ""
-
 #: ../../source/reference/validation/codes/ivy.xhtml.unique-id.duplicate.rst:6
 msgid "ivy.xhtml.unique-id.duplicate"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.unique-id.duplicate.rst:8
 #, python-brace-format
-msgid "**Message:** Id '${value}' is not unique in naming container"
+msgid "**Message:** ID '${value}' is not unique in its naming container"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.unknown-attribute.rst:6
@@ -24069,7 +25069,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.unknown-attribute.rst:8
 #, python-brace-format
-msgid "**Message:** Attribute '${attribute}' is not allowed to appear in element '${element}'."
+msgid "**Message:** Attribute '${attribute}' is not allowed in element '${element}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.unknown-element.rst:6
@@ -24078,7 +25078,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.unknown-element.rst:8
 #, python-brace-format
-msgid "**Message:** Unknown element '${element}' in namespace '${namespace}'."
+msgid "**Message:** Unknown element '${element}' in namespace '${namespace}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.validation-failed.rst:6
@@ -24087,7 +25087,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.validation-failed.rst:8
 #, python-brace-format
-msgid "**Message:** Failed to validate xhtml file ${file}"
+msgid "**Message:** Failed to validate XHTML file '${file}'"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.validator-id.missing-scope.rst:6
@@ -24096,7 +25096,11 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.validator-id.missing-scope.rst:8
 #, python-brace-format
-msgid "**Message:** Validator '${value}' found, but it has no CDI scope defined"
+msgid "**Message:** Validator '${value}' has no CDI scope"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.missing-scope.rst:14
+msgid "The validator has no CDI scope, so the container cannot manage its lifecycle as a CDI bean. This is required for a managed validator."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-found.rst:6
@@ -24105,7 +25109,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Validator '${value}' not found"
+msgid "**Message:** Validator '${value}' was not found"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-found.rst:14
+msgid "The validator ID used in the XHTML page does not identify a validator available to the application. The configured validation will not run as intended."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-found.rst:18
+msgid "Check the validator ID in the page against the ID declared by the validator, and make sure its class is available to the project."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-managed.rst:6
@@ -24114,7 +25126,15 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-managed.rst:8
 #, python-brace-format
-msgid "**Message:** Validator '${value}' found, but it misses the managed = true parameter"
+msgid "**Message:** Validator '${value}' is missing the required 'managed = true' parameter"
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-managed.rst:14
+msgid "The validator is not configured for CDI-managed creation. Without managed creation, CDI injection and other managed behavior in the validator are not available."
+msgstr ""
+
+#: ../../source/reference/validation/codes/ivy.xhtml.validator-id.not-managed.rst:18
+msgid "Set ``managed = true`` on the validator's ``@FacesValidator`` annotation. See :ref:`validation-code-ivy.java-index.managed-property-missing` for an example."
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.xhtml-path.not-found.rst:6
@@ -24123,7 +25143,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.xhtml-path.not-found.rst:8
 #, python-brace-format
-msgid "**Message:** Provided file could not be found '${path}'"
+msgid "**Message:** File '${path}' was not found"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.xhtml-path.not-xhtml.rst:6
@@ -24132,7 +25152,7 @@ msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.xhtml.xhtml-path.not-xhtml.rst:8
 #, python-brace-format
-msgid "**Message:** Provided file is not an xhtml file '${path}'"
+msgid "**Message:** File '${path}' is not an XHTML file"
 msgstr ""
 
 #: ../../source/reference/validation/index.rst:2
@@ -31334,3 +32354,474 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "This triggers a run that starts and ends with something similar to:"
 #~ msgstr "始まりと終わりが以下のような実行がトリガーされます。"
+
+#~ msgid "**Message:** The database connection key '${key}' is duplicated in the same project '${projectName}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** The database connection key '${key}' should be sanitized to '${sanitizedKey}' to avoid potential issues. Use the name for a better readability."
+#~ msgstr ""
+
+#~ msgid "**Message:** The database connection key '${key}' is not unique, it exists too in a not dependent project '${projectName}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' is deprecated."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' does not start with '@'."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' is not allowed here."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${fieldPrefix}The annotation '${annotation}' was not found."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${fieldPrefix}The type '${type}' cannot be used as an annotation."
+#~ msgstr ""
+
+#~ msgid "**Message:** A cardinality is mandatory for the Attribute '${field}' of the type '${type}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** The cardinality '${cardinality}' of the Attribute '${field}' is not applicable for the type '${type}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** The database field name '${dbField}' of the Attribute '${field}' is already used by another Attribute. Database field names must be unique.: ${detail}"
+#~ msgstr ""
+
+#~ msgid "**Message:** The database field name '${dbField}' of the Attribute '${field}' is invalid."
+#~ msgstr ""
+
+#~ msgid "**Message:** The database field length '${fieldLength}' of the Attribute '${field}' is invalid. It must follow the format '<precision>,<scale>' where <precision> and <scale> are numbers from 1 to 2147483647."
+#~ msgstr ""
+
+#~ msgid "**Message:** An Entity Class must have exactly one Attribute with the database field property 'ID'."
+#~ msgstr ""
+
+#~ msgid "**Message:** There is another Attribute with the name '${field}'. Names of Attributes must be unique."
+#~ msgstr ""
+
+#~ msgid "**Message:** The name of the Attribute '${field}' starts with an uppercasename. It should not start with an uppercase or a single lowercase letter."
+#~ msgstr ""
+
+#~ msgid "**Message:** The Entity Class '${className}' has multiple 'ID' Attributes. An Entity Class must have exactly one 'ID' Attribute: ${detail}"
+#~ msgstr ""
+
+#~ msgid "**Message:** The Attribute '${field}' has been used multiple times as a 'Mapped by' definition. An Attribute can only be used once as a 'Mapped by' definition: ${detail}"
+#~ msgstr ""
+
+#~ msgid "**Message:** The 'Mapped by' definition '${className}' of the Attribute '${field}' is invalid: ${detail}"
+#~ msgstr ""
+
+#~ msgid "**Message:** The ${propertyLabel} '${properties}' ${verb} not applicable based on the type '${type}' and other applied properties of the Attribute '${field}' ."
+#~ msgstr ""
+
+#~ msgid "**Message:** The namespace '${namespace}' does not match the directory of the Data Class."
+#~ msgstr ""
+
+#~ msgid "**Message:** The type '${type}' of the Attribute ${field}' cannot be persisted."
+#~ msgstr ""
+
+#~ msgid "**Message:** The type '${type}' of the Attribute '${field}' is unsuitable for persistence."
+#~ msgstr ""
+
+#~ msgid "**Message:** The stability of the type '${type}' of the Attribute '${field}' for persistence is not guaranteed."
+#~ msgstr ""
+
+#~ msgid "**Message:** The type '${type}' of the Attribute '${field}' is deprecated."
+#~ msgstr ""
+
+#~ msgid "**Message:** The type '${type}' of the Attribute '${field}' is not declared with the public modifier."
+#~ msgstr ""
+
+#~ msgid "**Message:** The type '${type}' of the Attribute '${field}' was not found."
+#~ msgstr ""
+
+#~ msgid "**Message:** The Entity Class '${className}' has multiple 'Version' Attributes. An Entity Class must have a maximum of one 'Version' Attribute.: ${detail}"
+#~ msgstr ""
+
+#~ msgid "**Message:** Item Label should not be empty. Use the keyword 'item' in the EL expression (e.g. #{item} or #{item.<property>}) to access the selected item."
+#~ msgstr ""
+
+#~ msgid "**Message:** Item Value should not be empty. Specify an EL expression to reference the item (e.g. #{item} or #{item.<property>}) to access the selected item."
+#~ msgstr ""
+
+#~ msgid "**Message:** Value should not be empty"
+#~ msgstr ""
+
+#~ msgid "**Message:** Form component id is not unique: '${cid}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Column Value should not be empty. Use the keyword 'currentRow' in the EL expression (e.g. #{currentRow} or #{currentRow.<property>}) to access the row object."
+#~ msgstr ""
+
+#~ msgid "**Message:** No Pattern is defined"
+#~ msgstr ""
+
+#~ msgid "**Message:** No Time Pattern is defined"
+#~ msgstr ""
+
+#~ msgid "**Message:** Form id is not unique, found duplicated id '${id}' on component '${otherCid}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Form id is invalid: it cannot contain any whitespace characters, found '${id}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Duplicate ${type} '${id}' found: ${duplicates}"
+#~ msgstr ""
+
+#~ msgid "**Message:** ${type} '${id}' is missing property 'managed = true'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Field '${field}' on ManagedBean '${bean}' is public and non-static, which is not allowed."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${type} '${className}' needs to implement 'java.io.Serializable'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Condition #${conditionNumber} references a no longer existing connector ${fieldIds}"
+#~ msgstr ""
+
+#~ msgid "**Message:** Condition #${conditionNumber} is empty which always evaluates to true. Following conditions are ignored."
+#~ msgstr ""
+
+#~ msgid "**Message:** Boundary event is not bound to any element"
+#~ msgstr ""
+
+#~ msgid "**Message:** Boundary event is bound to element '${activityNameOrPid}' but overlays '${overlayPid}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Boundary event is bound to element '${activityPid}' that does not exist"
+#~ msgstr ""
+
+#~ msgid "**Message:** Content object page '${path}' is of type '${type}' which is not supported"
+#~ msgstr ""
+
+#~ msgid "**Message:** Name must not be empty"
+#~ msgstr ""
+
+#~ msgid "**Message:** Database condition invalid: '${condition}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Database '${databaseName}' is unknown."
+#~ msgstr ""
+
+#~ msgid "**Message:** No Database selected."
+#~ msgstr ""
+
+#~ msgid "**Message:** Table '${table}' is unknown."
+#~ msgstr ""
+
+#~ msgid "**Message:** No Table selected."
+#~ msgstr ""
+
+#~ msgid "**Message:** Could not load tables for database '${databaseName}', maybe connection was not successful."
+#~ msgstr ""
+
+#~ msgid "**Message:** Found deprecated activity, which replaces a no longer existing element: ${nameOrPid}"
+#~ msgstr ""
+
+#~ msgid "**Message:** Same error code '${errorCode}' specified on more than one Error Boundary Event on the same Activity. Error handling order is nondeterministic."
+#~ msgstr ""
+
+#~ msgid "**Message:** Same error code '${errorCode}' specified on more than one Error Start Event in same process. Error handling order is nondeterministic."
+#~ msgstr ""
+
+#~ msgid "**Message:** This process and '${otherPath}' do have the same process identifier '${processId}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** Another process with the same path and name exists. Remove, rename or delete either this or the process under '${duplicatePath}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** No custom Error Code specified on Error End element. '${errorCode}' will be used."
+#~ msgstr ""
+
+#~ msgid "**Message:** Either an 'Error Code' or an 'Error Cause' must be set."
+#~ msgstr ""
+
+#~ msgid "**Message:** Target '${target}' not existing."
+#~ msgstr ""
+
+#~ msgid "**Message:** The intermediate event has no Event ID."
+#~ msgstr ""
+
+#~ msgid "**Message:** Name '${name}' not valid : ${validationMessage}"
+#~ msgstr ""
+
+#~ msgid "**Message:** Name '${name}' not valid"
+#~ msgstr ""
+
+#~ msgid "**Message:** Invalid character in signaturename at position ${position}"
+#~ msgstr ""
+
+#~ msgid "**Message:** '${className}' must implement a public default constructor."
+#~ msgstr ""
+
+#~ msgid "**Message:** '${className}' must implement the interface '${interfaceName}' in oder to be used here."
+#~ msgstr ""
+
+#~ msgid "**Message:** No page specified"
+#~ msgstr ""
+
+#~ msgid "**Message:** Type ${type} unknown"
+#~ msgstr ""
+
+#~ msgid "**Message:** ${elementName} target is deprecated. Start '${startMethod}'  on process '${processName} is deprecated and should no longer be used."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${elementName} target is invalid. Start '${startMethod}' not found on process '${processName}."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${elementName} target is invalid. No start found on process '${processName}."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${elementName} target is not defined."
+#~ msgstr ""
+
+#~ msgid "**Message:** Process version does not match designer: expecting '${expected}' but is '${actual}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Referenced error start event ${target} not found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Responsible role '${roleName}' not existing"
+#~ msgstr ""
+
+#~ msgid "**Message:** Body attribute '${attributePath}' is required, but not set."
+#~ msgstr ""
+
+#~ msgid "**Message:** RestClient with id '${clientId}' does not exist"
+#~ msgstr ""
+
+#~ msgid "**Message:** Select a RestClient or create a new one"
+#~ msgstr ""
+
+#~ msgid "**Message:** ${parameterType} '${parameter}' is required, but not set."
+#~ msgstr ""
+
+#~ msgid "**Message:** '${parameter}' is not used, remove it or use it in the path via {${parameter}}."
+#~ msgstr ""
+
+#~ msgid "**Message:** Resource '${resource}' is not specified by the client."
+#~ msgstr ""
+
+#~ msgid "**Message:** Permitted Role '${role}' not existing."
+#~ msgstr ""
+
+#~ msgid "**Message:** Signal code must not have any macro expressions."
+#~ msgstr ""
+
+#~ msgid "**Message:** ${signalCode} has more than 5 parts which could lead to performance issues."
+#~ msgstr ""
+
+#~ msgid "**Message:** Exception start does not exist: ${pid}"
+#~ msgstr ""
+
+#~ msgid "**Message:** Role '${roleName}' not existing"
+#~ msgstr ""
+
+#~ msgid "**Message:** No Method Name specified on User Dialog Start element"
+#~ msgstr ""
+
+#~ msgid "**Message:** User Dialog '${userDialogId}' not found."
+#~ msgstr ""
+
+#~ msgid "**Message:** No User Dialog specified, auto dialog will be shown."
+#~ msgstr ""
+
+#~ msgid "**Message:** No Start Method Name specified on User Dialog Start element"
+#~ msgstr ""
+
+#~ msgid "**Message:** Page in webContent '${path}' does not exist"
+#~ msgstr ""
+
+#~ msgid "**Message:** The web service with id ´${configId}´ does not exist"
+#~ msgstr ""
+
+#~ msgid "**Message:** Select a web service or create a new one"
+#~ msgstr ""
+
+#~ msgid "**Message:** The web service operation ´${operationName}´ does not exist"
+#~ msgstr ""
+
+#~ msgid "**Message:** ${readableIdentifier} has type ${invalidType} which can not be used as Webservice parameter. ${hint}"
+#~ msgstr ""
+
+#~ msgid "**Message:** The web service port ´${portName}´ does not exist"
+#~ msgstr ""
+
+#~ msgid "**Message:** This Web Service Process is implemented by a customized Java file in the src-folder which is under control of the Developer."
+#~ msgstr ""
+
+#~ msgid "**Message:** The fully qualified Web Service name must be a valid java class name (e.g. ch.ivy.team.WebservieName), but is '${webServiceName}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** The fully qualified Web Service name must be defined (e.g. ch.ivy.team.WebservieName)"
+#~ msgstr ""
+
+#~ msgid "**Message:** The rest client key '${key}' is duplicated in the same project '${project}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** The rest client key '${key}' is not unique, it exists too in a not dependent project '${project}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** RestClient feature class '${className}' is not accessible"
+#~ msgstr ""
+
+#~ msgid "**Message:** RestClient feature '${className}' has no accessible default constructor"
+#~ msgstr ""
+
+#~ msgid "**Message:** RestClient feature '${className}' is not an implementation of a JAX-RS component interface"
+#~ msgstr ""
+
+#~ msgid "**Message:** The rest client key '${key}' should be sanitized to '${sanitizedKey}' to avoid potential issues. Use the name for a better readability."
+#~ msgstr ""
+
+#~ msgid "**Message:** The rest client URI '${uri}' is invalid. Syntax error at position '${position}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Role '${role}' has an unknown member '${member}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** Role '${role}' exists in multiple projects with a different parent role. Maybe parent role should be '${otherParent}' instead of '${parent}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** Role '${role}' has an unknown parent '${parent}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** Variable '${variable}' is defined multiple times in variables.yaml."
+#~ msgstr ""
+
+#~ msgid "**Message:** Variable '${variable}' is also present in unrelated project '${project}'. It is not defined which variable is used at runtime."
+#~ msgstr ""
+
+#~ msgid "**Message:** The web service client key '${key}' is duplicated in the same project '${project}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** The web service client key '${key}' is not unique, it exists too in a not dependent project '${project}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** The web service client key '${key}' should be sanitized to '${sanitizedKey}' to avoid potential issues. Use the name for a better readability."
+#~ msgstr ""
+
+#~ msgid "**Message:** Invalid value '${value}' for boolean attribute (true / false)"
+#~ msgstr ""
+
+#~ msgid "**Message:** Converter '${value}' found, but it has no CDI scope defined"
+#~ msgstr ""
+
+#~ msgid "**Message:** Converter '${value}' not found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Converter '${value}' found, but it misses the managed = true parameter"
+#~ msgstr ""
+
+#~ msgid "**Message:** No corresponding insert tag found for '${value}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** No template found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Duplicate Parameter '${value}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Parameter of method co(...) must not be empty"
+#~ msgstr ""
+
+#~ msgid "**Message:** Parameter uri of method co(...) must be a String"
+#~ msgstr ""
+
+#~ msgid "**Message:** Parameter uri of method co(...) must not be null"
+#~ msgstr ""
+
+#~ msgid "**Message:** Must have any type of '${expectedTypes}' but has type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Left argument of operator '${operator}' must be a numeric type but is type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Right argument of operator '${operator}' must be a numeric type but is type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Can not assign a value of type '${actualType}' to a variable of type '${expectedType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** ${argumentLabel} of operator '${operator}' must be type 'boolean' but is type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Conditional argument of operator '?' must be type 'boolean' but is type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Argument of operator '${operator}' must be either type 'String', 'Collection', 'Map' or an array but is type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Argument of operator 'not / !' must be type 'boolean' but is type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Arguments of operator '${operator}' must be the same type but are type '${leftType}' and type '${rightType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Left argument of operator '+=' must be type '${expectedType}' but is type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Must have type '${expectedType}' but has type '${actualType}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Local variable '${name}' has a circular dependency in its value expression '${expression}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Managed bean or local variable '${name}' not found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Content object with path '${path}' used in method co(...) not found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Function '${name}' not found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Method '${name}' not found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Id '${value}' is unknown"
+#~ msgstr ""
+
+#~ msgid "**Message:** Ivy Component must define componentType=\"IvyComponent\" on the <cc:interface> element."
+#~ msgstr ""
+
+#~ msgid "**Message:** Deprecated Namespace '${namespace}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Unknown Namespace '${namespace}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Invalid PrimeFaces Selector '${expression}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Type '${type}' not found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Id '${value}' is not unique in naming container"
+#~ msgstr ""
+
+#~ msgid "**Message:** Attribute '${attribute}' is not allowed to appear in element '${element}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** Unknown element '${element}' in namespace '${namespace}'."
+#~ msgstr ""
+
+#~ msgid "**Message:** Failed to validate xhtml file ${file}"
+#~ msgstr ""
+
+#~ msgid "**Message:** Validator '${value}' found, but it has no CDI scope defined"
+#~ msgstr ""
+
+#~ msgid "**Message:** Validator '${value}' not found"
+#~ msgstr ""
+
+#~ msgid "**Message:** Validator '${value}' found, but it misses the managed = true parameter"
+#~ msgstr ""
+
+#~ msgid "**Message:** Provided file could not be found '${path}'"
+#~ msgstr ""
+
+#~ msgid "**Message:** Provided file is not an xhtml file '${path}'"
+#~ msgstr ""
