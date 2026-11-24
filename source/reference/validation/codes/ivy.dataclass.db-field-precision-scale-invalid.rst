@@ -5,7 +5,7 @@
 ivy.dataclass.db-field-precision-scale-invalid
 ----------------------------------------------
 
-**Message:** The database field length '${fieldLength}' of the Attribute '${field}' is invalid. It must follow the format '<precision>,<scale>' where <precision> and <scale> are numbers from 1 to 2147483647.
+**Message:** The database field precision and scale '${fieldLength}' of the Attribute '${field}' are invalid. Enter two non-negative numbers separated by a comma, with at least one greater than zero.
 
 .. start: manual doc
 

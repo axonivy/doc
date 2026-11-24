@@ -5,7 +5,7 @@
 ivy.process.web-service-not-selected
 ------------------------------------
 
-**Message:** Select a web service or create a new one
+**Message:** Select a web service or create one
 
 .. start: manual doc
 

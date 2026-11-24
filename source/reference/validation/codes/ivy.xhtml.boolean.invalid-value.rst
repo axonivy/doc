@@ -5,7 +5,7 @@
 ivy.xhtml.boolean.invalid-value
 -------------------------------
 
-**Message:** Invalid value '${value}' for boolean attribute (true / false)
+**Message:** Invalid value '${value}' for boolean attribute; expected 'true' or 'false'
 
 .. start: manual doc
 

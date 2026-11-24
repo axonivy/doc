@@ -5,7 +5,7 @@
 ivy.process.responsible-role-not-found
 --------------------------------------
 
-**Message:** Responsible role '${roleName}' not existing
+**Message:** Responsible role '${roleName}' does not exist
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.database.duplicate-key
 --------------------------
 
-**Message:** The database connection key '${key}' is duplicated in the same project '${projectName}'.
+**Message:** The database connection key '${key}' is duplicated in project '${projectName}'
 
 .. start: manual doc
 

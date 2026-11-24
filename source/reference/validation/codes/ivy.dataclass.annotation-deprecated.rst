@@ -5,7 +5,7 @@
 ivy.dataclass.annotation-deprecated
 -----------------------------------
 
-**Message:** ${fieldPrefix}The annotation '${annotation}' is deprecated.
+**Message:** ${fieldPrefix}The annotation '${annotation}' is deprecated
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.process.database-condition-invalid
 --------------------------------------
 
-**Message:** Database condition invalid: '${condition}'
+**Message:** Database condition '${condition}' is invalid
 
 .. start: manual doc
 

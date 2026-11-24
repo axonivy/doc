@@ -5,7 +5,7 @@
 ivy.dataclass.type-not-public
 -----------------------------
 
-**Message:** The type '${type}' of the Attribute '${field}' is not declared with the public modifier.
+**Message:** The type '${type}' of the Attribute '${field}' is not public
 
 .. start: manual doc
 

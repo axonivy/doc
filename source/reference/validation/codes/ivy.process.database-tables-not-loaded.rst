@@ -5,7 +5,7 @@
 ivy.process.database-tables-not-loaded
 --------------------------------------
 
-**Message:** Could not load tables for database '${databaseName}', maybe connection was not successful.
+**Message:** Could not load tables for database '${databaseName}'. Check that the database connection is available.
 
 .. start: manual doc
 

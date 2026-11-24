@@ -5,7 +5,7 @@
 ivy.process.process-call-target-not-defined
 -------------------------------------------
 
-**Message:** ${elementName} target is not defined.
+**Message:** ${elementName} target is not defined
 
 .. start: manual doc
 

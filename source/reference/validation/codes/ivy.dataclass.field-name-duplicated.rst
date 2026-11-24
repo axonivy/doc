@@ -5,7 +5,7 @@
 ivy.dataclass.field-name-duplicated
 -----------------------------------
 
-**Message:** There is another Attribute with the name '${field}'. Names of Attributes must be unique.
+**Message:** The Attribute name '${field}' is already used. Attribute names must be unique.
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.dataclass.version-multiple-times
 ------------------------------------
 
-**Message:** The Entity Class '${className}' has multiple 'Version' Attributes. An Entity Class must have a maximum of one 'Version' Attribute.: ${detail}
+**Message:** Attributes '${field}' and '${otherField}' in Entity Class '${className}' are both marked as 'Version'
 
 .. start: manual doc
 

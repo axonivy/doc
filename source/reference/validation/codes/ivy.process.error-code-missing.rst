@@ -5,7 +5,7 @@
 ivy.process.error-code-missing
 ------------------------------
 
-**Message:** No custom Error Code specified on Error End element. '${errorCode}' will be used.
+**Message:** No custom error code is specified on the Error End element. '${errorCode}' will be used.
 
 .. start: manual doc
 

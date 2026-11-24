@@ -5,7 +5,7 @@
 ivy.xhtml.duplicate-param.detected
 ----------------------------------
 
-**Message:** Duplicate Parameter '${value}'
+**Message:** Duplicate parameter '${value}'
 
 .. start: manual doc
 

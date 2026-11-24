@@ -5,7 +5,7 @@
 ivy.process.web-service-process-name-invalid
 --------------------------------------------
 
-**Message:** The fully qualified Web Service name must be a valid java class name (e.g. ch.ivy.team.WebservieName), but is '${webServiceName}'
+**Message:** The fully qualified web service name '${webServiceName}' is not a valid Java class name, (e.g. ch.ivy.team.WebservieName)
 
 .. start: manual doc
 

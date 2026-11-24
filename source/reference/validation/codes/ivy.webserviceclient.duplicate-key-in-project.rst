@@ -5,7 +5,7 @@
 ivy.webserviceclient.duplicate-key-in-project
 ---------------------------------------------
 
-**Message:** The web service client key '${key}' is duplicated in the same project '${project}'.
+**Message:** The web service client key '${key}' is duplicated in project '${project}'
 
 .. start: manual doc
 

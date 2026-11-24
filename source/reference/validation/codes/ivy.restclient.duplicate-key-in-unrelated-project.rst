@@ -5,7 +5,7 @@
 ivy.restclient.duplicate-key-in-unrelated-project
 -------------------------------------------------
 
-**Message:** The rest client key '${key}' is not unique, it exists too in a not dependent project '${project}'.
+**Message:** The REST client key '${key}' is also defined in unrelated project '${project}'. It is not defined which client is used at runtime.
 
 .. start: manual doc
 

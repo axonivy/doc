@@ -5,7 +5,7 @@
 ivy.dataclass.annotation-type-invalid
 -------------------------------------
 
-**Message:** ${fieldPrefix}The type '${type}' cannot be used as an annotation.
+**Message:** ${fieldPrefix}The type '${type}' cannot be used as an annotation
 
 .. start: manual doc
 

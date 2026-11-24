@@ -5,7 +5,7 @@
 ivy.process.task-exception-start-not-found
 ------------------------------------------
 
-**Message:** Exception start does not exist: ${pid}
+**Message:** Exception start '${pid}' does not exist
 
 .. start: manual doc
 

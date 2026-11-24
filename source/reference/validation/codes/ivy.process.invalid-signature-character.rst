@@ -5,7 +5,7 @@
 ivy.process.invalid-signature-character
 ---------------------------------------
 
-**Message:** Invalid character in signaturename at position ${position}
+**Message:** Invalid character in signature name at position ${position}
 
 .. start: manual doc
 

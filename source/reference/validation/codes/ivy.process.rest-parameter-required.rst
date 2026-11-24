@@ -5,7 +5,7 @@
 ivy.process.rest-parameter-required
 -----------------------------------
 
-**Message:** ${parameterType} '${parameter}' is required, but not set.
+**Message:** ${parameterType} '${parameter}' is required but not set
 
 .. start: manual doc
 

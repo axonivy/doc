@@ -5,7 +5,7 @@
 ivy.xhtml.el.missing-content
 ----------------------------
 
-**Message:** Content object with path '${path}' used in method co(...) not found
+**Message:** Content object at path '${path}' used in method co(...) was not found
 
 .. start: manual doc
 

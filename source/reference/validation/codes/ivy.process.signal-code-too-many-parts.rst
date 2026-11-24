@@ -5,7 +5,7 @@
 ivy.process.signal-code-too-many-parts
 --------------------------------------
 
-**Message:** ${signalCode} has more than 5 parts which could lead to performance issues.
+**Message:** ${signalCode} has more than five parts, which may affect performance
 
 .. start: manual doc
 

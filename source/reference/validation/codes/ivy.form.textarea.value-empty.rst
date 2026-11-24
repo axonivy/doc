@@ -5,7 +5,7 @@
 ivy.form.textarea.value-empty
 -----------------------------
 
-**Message:** Value should not be empty
+**Message:** Value must not be empty
 
 .. start: manual doc
 

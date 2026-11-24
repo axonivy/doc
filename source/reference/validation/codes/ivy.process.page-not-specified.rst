@@ -5,7 +5,7 @@
 ivy.process.page-not-specified
 ------------------------------
 
-**Message:** No page specified
+**Message:** No page is specified
 
 .. start: manual doc
 

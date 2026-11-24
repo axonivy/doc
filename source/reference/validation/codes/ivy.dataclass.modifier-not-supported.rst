@@ -5,7 +5,7 @@
 ivy.dataclass.modifier-not-supported
 ------------------------------------
 
-**Message:** The ${propertyLabel} '${properties}' ${verb} not applicable based on the type '${type}' and other applied properties of the Attribute '${field}' .
+**Message:** The ${propertyLabel} '${properties}' ${verb} not supported for the type '${type}' or in combination with other properties on the Attribute '${field}'
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.xhtml.unknown-attribute
 ---------------------------
 
-**Message:** Attribute '${attribute}' is not allowed to appear in element '${element}'.
+**Message:** Attribute '${attribute}' is not allowed in element '${element}'
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.xhtml.el.invalid-arithmetic-left-argument
 ---------------------------------------------
 
-**Message:** Left argument of operator '${operator}' must be a numeric type but is type '${actualType}'
+**Message:** Left argument of operator '${operator}' must be numeric, but has type '${actualType}'
 
 .. start: manual doc
 

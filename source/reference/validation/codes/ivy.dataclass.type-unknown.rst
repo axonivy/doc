@@ -5,7 +5,7 @@
 ivy.dataclass.type-unknown
 --------------------------
 
-**Message:** The type '${type}' of the Attribute '${field}' was not found.
+**Message:** The type '${type}' of the Attribute '${field}' was not found
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.xhtml.el.invalid-type
 -------------------------
 
-**Message:** Must have type '${expectedType}' but has type '${actualType}'
+**Message:** Expected type '${expectedType}', but found '${actualType}'
 
 .. start: manual doc
 

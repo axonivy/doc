@@ -5,7 +5,7 @@
 ivy.dataclass.annotation-missing-at
 -----------------------------------
 
-**Message:** ${fieldPrefix}The annotation '${annotation}' does not start with '@'.
+**Message:** ${fieldPrefix}The annotation '${annotation}' does not start with '@'
 
 .. start: manual doc
 

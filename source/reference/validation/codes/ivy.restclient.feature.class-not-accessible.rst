@@ -5,7 +5,7 @@
 ivy.restclient.feature.class-not-accessible
 -------------------------------------------
 
-**Message:** RestClient feature class '${className}' is not accessible
+**Message:** REST client feature class '${className}' is not accessible
 
 .. start: manual doc
 

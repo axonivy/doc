@@ -5,7 +5,7 @@
 ivy.process.web-service-process-implementation-info
 ---------------------------------------------------
 
-**Message:** This Web Service Process is implemented by a customized Java file in the src-folder which is under control of the Developer.
+**Message:** This web service process is implemented by a custom Java file in the src folder, which is maintained by the developer
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.process.rest-client-not-found
 ---------------------------------
 
-**Message:** RestClient with id '${clientId}' does not exist
+**Message:** REST client with ID '${clientId}' does not exist
 
 .. start: manual doc
 

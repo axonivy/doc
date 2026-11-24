@@ -5,7 +5,7 @@
 ivy.java-index.serializable-required
 ------------------------------------
 
-**Message:** ${type} '${className}' needs to implement 'java.io.Serializable'
+**Message:** ${type} '${className}' must implement 'java.io.Serializable'
 
 .. start: manual doc
 

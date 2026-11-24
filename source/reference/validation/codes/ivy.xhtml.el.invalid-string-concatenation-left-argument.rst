@@ -5,7 +5,7 @@
 ivy.xhtml.el.invalid-string-concatenation-left-argument
 -------------------------------------------------------
 
-**Message:** Left argument of operator '+=' must be type '${expectedType}' but is type '${actualType}'
+**Message:** Left argument of operator '+=' must have type '${expectedType}', but has type '${actualType}'
 
 .. start: manual doc
 

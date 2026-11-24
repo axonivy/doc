@@ -5,7 +5,7 @@
 ivy.xhtml.type.not-found
 ------------------------
 
-**Message:** Type '${type}' not found
+**Message:** Type '${type}' was not found
 
 .. start: manual doc
 

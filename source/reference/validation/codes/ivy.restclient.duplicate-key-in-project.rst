@@ -5,7 +5,7 @@
 ivy.restclient.duplicate-key-in-project
 ---------------------------------------
 
-**Message:** The rest client key '${key}' is duplicated in the same project '${project}'.
+**Message:** The REST client key '${key}' is duplicated in project '${project}'
 
 .. start: manual doc
 

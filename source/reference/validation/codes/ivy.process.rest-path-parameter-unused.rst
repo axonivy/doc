@@ -5,7 +5,7 @@
 ivy.process.rest-path-parameter-unused
 --------------------------------------
 
-**Message:** '${parameter}' is not used, remove it or use it in the path via {${parameter}}.
+**Message:** Path parameter '${parameter}' is unused. Remove it or reference it in the path as {${parameter}}.
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.restclient.uri-invalid
 --------------------------
 
-**Message:** The rest client URI '${uri}' is invalid. Syntax error at position '${position}'
+**Message:** The REST client URI '${uri}' is invalid. Syntax error at position '${position}'.
 
 .. start: manual doc
 

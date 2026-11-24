@@ -5,7 +5,7 @@
 ivy.xhtml.el.missing-method
 ---------------------------
 
-**Message:** Method '${name}' not found
+**Message:** Method '${name}' was not found
 
 .. start: manual doc
 

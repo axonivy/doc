@@ -5,7 +5,7 @@
 ivy.process.role-not-found
 --------------------------
 
-**Message:** Permitted Role '${role}' not existing.
+**Message:** Permitted role '${role}' does not exist
 
 .. start: manual doc
 

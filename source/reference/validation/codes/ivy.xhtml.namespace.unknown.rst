@@ -5,7 +5,7 @@
 ivy.xhtml.namespace.unknown
 ---------------------------
 
-**Message:** Unknown Namespace '${namespace}'
+**Message:** Unknown namespace '${namespace}'
 
 .. start: manual doc
 

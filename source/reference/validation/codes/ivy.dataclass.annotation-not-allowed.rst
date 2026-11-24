@@ -5,7 +5,7 @@
 ivy.dataclass.annotation-not-allowed
 ------------------------------------
 
-**Message:** ${fieldPrefix}The annotation '${annotation}' is not allowed here.
+**Message:** ${fieldPrefix}The annotation '${annotation}' is not allowed here
 
 .. start: manual doc
 

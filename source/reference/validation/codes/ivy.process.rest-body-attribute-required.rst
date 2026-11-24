@@ -5,7 +5,7 @@
 ivy.process.rest-body-attribute-required
 ----------------------------------------
 
-**Message:** Body attribute '${attributePath}' is required, but not set.
+**Message:** Body attribute '${attributePath}' is required but not set
 
 .. start: manual doc
 

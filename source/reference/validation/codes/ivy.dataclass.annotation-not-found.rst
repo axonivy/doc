@@ -5,7 +5,7 @@
 ivy.dataclass.annotation-not-found
 ----------------------------------
 
-**Message:** ${fieldPrefix}The annotation '${annotation}' was not found.
+**Message:** ${fieldPrefix}The annotation '${annotation}' was not found
 
 .. start: manual doc
 

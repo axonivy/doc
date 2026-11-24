@@ -5,7 +5,7 @@
 ivy.process.invalid-result-name
 -------------------------------
 
-**Message:** Name '${name}' not valid
+**Message:** Name '${name}' is invalid
 
 .. start: manual doc
 

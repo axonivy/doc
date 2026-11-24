@@ -5,7 +5,7 @@
 ivy.process.rest-resource-not-specified
 ---------------------------------------
 
-**Message:** Resource '${resource}' is not specified by the client.
+**Message:** Resource '${resource}' is not specified by the client
 
 .. start: manual doc
 

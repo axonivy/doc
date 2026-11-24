@@ -5,7 +5,7 @@
 ivy.process.process-call-target-no-start
 ----------------------------------------
 
-**Message:** ${elementName} target is invalid. No start found on process '${processName}.
+**Message:** ${elementName} target is invalid because process '${processName}' has no start
 
 .. start: manual doc
 
