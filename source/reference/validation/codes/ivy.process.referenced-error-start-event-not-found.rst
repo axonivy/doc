@@ -5,7 +5,7 @@
 ivy.process.referenced-error-start-event-not-found
 --------------------------------------------------
 
-**Message:** Referenced error start event ${target} not found
+**Message:** Referenced Error Start Event '${target}' was not found
 
 .. start: manual doc
 

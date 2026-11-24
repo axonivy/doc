@@ -5,7 +5,7 @@
 ivy.webserviceclient.duplicate-key-in-unrelated-project
 -------------------------------------------------------
 
-**Message:** The web service client key '${key}' is not unique, it exists too in a not dependent project '${project}'.
+**Message:** The web service client key '${key}' is also defined in a not dependent project '${project}'. It is not defined which client is used at runtime.
 
 .. start: manual doc
 

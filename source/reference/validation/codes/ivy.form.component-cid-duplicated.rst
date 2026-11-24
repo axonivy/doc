@@ -5,7 +5,7 @@
 ivy.form.component-cid-duplicated
 ---------------------------------
 
-**Message:** Form component id is not unique: '${cid}'
+**Message:** Form component ID '${cid}' is not unique
 
 .. start: manual doc
 

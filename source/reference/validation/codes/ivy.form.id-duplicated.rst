@@ -5,7 +5,7 @@
 ivy.form.id-duplicated
 ----------------------
 
-**Message:** Form id is not unique, found duplicated id '${id}' on component '${otherCid}'
+**Message:** Form ID '${id}' is used more than once; it is also used by component '${otherCid}'
 
 .. start: manual doc
 

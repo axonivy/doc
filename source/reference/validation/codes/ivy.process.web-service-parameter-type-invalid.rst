@@ -5,7 +5,7 @@
 ivy.process.web-service-parameter-type-invalid
 ----------------------------------------------
 
-**Message:** ${readableIdentifier} has type ${invalidType} which can not be used as Webservice parameter. ${hint}
+**Message:** ${readableIdentifier} has type ${invalidType}, which cannot be used as a web service parameter. ${hint}
 
 .. start: manual doc
 

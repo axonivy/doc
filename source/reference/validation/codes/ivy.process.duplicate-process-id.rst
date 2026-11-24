@@ -5,7 +5,7 @@
 ivy.process.duplicate-process-id
 --------------------------------
 
-**Message:** This process and '${otherPath}' do have the same process identifier '${processId}'.
+**Message:** This process and '${otherPath}' have the same process identifier '${processId}'
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.form.date-picker.date-pattern-missing
 -----------------------------------------
 
-**Message:** No Pattern is defined
+**Message:** Date pattern is not defined
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.xhtml.el.invalid-assignment-type
 ------------------------------------
 
-**Message:** Can not assign a value of type '${actualType}' to a variable of type '${expectedType}'
+**Message:** Cannot assign a value of type '${actualType}' to a variable of type '${expectedType}'
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.xhtml.xhtml-path.not-found
 ------------------------------
 
-**Message:** Provided file could not be found '${path}'
+**Message:** File '${path}' was not found
 
 .. start: manual doc
 

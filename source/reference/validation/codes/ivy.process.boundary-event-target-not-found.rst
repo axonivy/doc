@@ -5,7 +5,7 @@
 ivy.process.boundary-event-target-not-found
 -------------------------------------------
 
-**Message:** Boundary event is bound to element '${activityPid}' that does not exist
+**Message:** Boundary event is bound to element '${activityPid}', which does not exist
 
 .. start: manual doc
 

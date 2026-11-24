@@ -5,7 +5,7 @@
 ivy.process.parameter-type-not-found
 ------------------------------------
 
-**Message:** Type ${type} unknown
+**Message:** Type '${type}' was not found
 
 .. start: manual doc
 

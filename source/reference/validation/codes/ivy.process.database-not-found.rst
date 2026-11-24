@@ -5,7 +5,7 @@
 ivy.process.database-not-found
 ------------------------------
 
-**Message:** Database '${databaseName}' is unknown.
+**Message:** Database '${databaseName}' is unknown
 
 .. start: manual doc
 

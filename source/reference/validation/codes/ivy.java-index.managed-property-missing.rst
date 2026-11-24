@@ -5,7 +5,7 @@
 ivy.java-index.managed-property-missing
 ---------------------------------------
 
-**Message:** ${type} '${id}' is missing property 'managed = true'
+**Message:** ${type} '${id}' is missing the required property 'managed = true'
 
 .. start: manual doc
 

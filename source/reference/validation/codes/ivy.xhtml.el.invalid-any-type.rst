@@ -5,7 +5,7 @@
 ivy.xhtml.el.invalid-any-type
 -----------------------------
 
-**Message:** Must have any type of '${expectedTypes}' but has type '${actualType}'
+**Message:** Expected one of the types '${expectedTypes}', but found '${actualType}'
 
 .. start: manual doc
 

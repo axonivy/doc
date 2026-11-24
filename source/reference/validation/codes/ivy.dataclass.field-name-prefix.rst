@@ -5,7 +5,7 @@
 ivy.dataclass.field-name-prefix
 -------------------------------
 
-**Message:** The name of the Attribute '${field}' starts with an uppercasename. It should not start with an uppercase or a single lowercase letter.
+**Message:** The name '${field}' does not follow the Data Class Attribute naming convention
 
 .. start: manual doc
 

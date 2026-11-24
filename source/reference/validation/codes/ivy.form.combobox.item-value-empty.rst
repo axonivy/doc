@@ -5,7 +5,7 @@
 ivy.form.combobox.item-value-empty
 ----------------------------------
 
-**Message:** Item Value should not be empty. Specify an EL expression to reference the item (e.g. #{item} or #{item.<property>}) to access the selected item.
+**Message:** Item value must not be empty. Specify an EL expression to reference the item (e.g. #{item} or #{item.<property>}).
 
 .. start: manual doc
 

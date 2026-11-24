@@ -5,7 +5,7 @@
 ivy.process.boundary-event-not-bound
 ------------------------------------
 
-**Message:** Boundary event is not bound to any element
+**Message:** Boundary event is not bound to an element
 
 .. start: manual doc
 

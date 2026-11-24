@@ -5,7 +5,7 @@
 ivy.xhtml.id.unknown
 --------------------
 
-**Message:** Id '${value}' is unknown
+**Message:** ID '${value}' is unknown
 
 .. start: manual doc
 

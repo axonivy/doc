@@ -5,7 +5,7 @@
 ivy.process.deprecated-activity
 -------------------------------
 
-**Message:** Found deprecated activity, which replaces a no longer existing element: ${nameOrPid}
+**Message:** Deprecated activity replaces an element that no longer exists: ${nameOrPid}
 
 .. start: manual doc
 

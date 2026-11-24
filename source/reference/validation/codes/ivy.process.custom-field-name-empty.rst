@@ -5,7 +5,7 @@
 ivy.process.custom-field-name-empty
 -----------------------------------
 
-**Message:** Name must not be empty
+**Message:** Custom field name must not be empty
 
 .. start: manual doc
 

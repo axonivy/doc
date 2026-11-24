@@ -5,7 +5,7 @@
 ivy.xhtml.unique-id.duplicate
 -----------------------------
 
-**Message:** Id '${value}' is not unique in naming container
+**Message:** ID '${value}' is not unique in its naming container
 
 .. start: manual doc
 

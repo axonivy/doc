@@ -5,7 +5,7 @@
 ivy.process.invalid-parameter-name
 ----------------------------------
 
-**Message:** Name '${name}' not valid : ${validationMessage}
+**Message:** Name '${name}' is invalid: ${validationMessage}
 
 .. start: manual doc
 

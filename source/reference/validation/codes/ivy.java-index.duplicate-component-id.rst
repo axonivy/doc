@@ -5,7 +5,7 @@
 ivy.java-index.duplicate-component-id
 -------------------------------------
 
-**Message:** Duplicate ${type} '${id}' found: ${duplicates}
+**Message:** Duplicate ${type} ID '${id}' found: ${duplicates}
 
 .. start: manual doc
 

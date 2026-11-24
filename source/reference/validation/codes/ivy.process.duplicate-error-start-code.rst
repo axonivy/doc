@@ -5,7 +5,7 @@
 ivy.process.duplicate-error-start-code
 --------------------------------------
 
-**Message:** Same error code '${errorCode}' specified on more than one Error Start Event in same process. Error handling order is nondeterministic.
+**Message:** The error code '${errorCode}' is used by multiple Error Start Events in the same process, so the handling order is nondeterministic
 
 .. start: manual doc
 

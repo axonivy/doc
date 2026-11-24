@@ -5,7 +5,7 @@
 ivy.process.rest-client-not-selected
 ------------------------------------
 
-**Message:** Select a RestClient or create a new one
+**Message:** Select a REST client or create one
 
 .. start: manual doc
 

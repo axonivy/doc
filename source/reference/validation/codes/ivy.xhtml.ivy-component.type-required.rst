@@ -5,7 +5,7 @@
 ivy.xhtml.ivy-component.type-required
 -------------------------------------
 
-**Message:** Ivy Component must define componentType="IvyComponent" on the <cc:interface> element.
+**Message:** Ivy Component must define componentType="IvyComponent" on the <cc:interface> element
 
 .. start: manual doc
 

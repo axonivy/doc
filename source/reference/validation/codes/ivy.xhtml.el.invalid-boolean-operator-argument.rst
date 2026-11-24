@@ -5,7 +5,7 @@
 ivy.xhtml.el.invalid-boolean-operator-argument
 ----------------------------------------------
 
-**Message:** ${argumentLabel} of operator '${operator}' must be type 'boolean' but is type '${actualType}'
+**Message:** ${argumentLabel} of operator '${operator}' must have type 'boolean', but has type '${actualType}'
 
 .. start: manual doc
 

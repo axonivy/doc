@@ -5,7 +5,7 @@
 ivy.process.web-service-operation-not-found
 -------------------------------------------
 
-**Message:** The web service operation ´${operationName}´ does not exist
+**Message:** Web service operation '${operationName}' does not exist
 
 .. start: manual doc
 

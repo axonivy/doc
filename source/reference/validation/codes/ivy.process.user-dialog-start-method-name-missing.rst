@@ -5,7 +5,7 @@
 ivy.process.user-dialog-start-method-name-missing
 -------------------------------------------------
 
-**Message:** No Start Method Name specified on User Dialog Start element
+**Message:** No start method name is specified on the User Dialog Start element
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.xhtml.validator-id.not-found
 --------------------------------
 
-**Message:** Validator '${value}' not found
+**Message:** Validator '${value}' was not found
 
 .. start: manual doc
 

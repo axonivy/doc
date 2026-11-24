@@ -5,7 +5,7 @@
 ivy.process.content-object-page-unsupported
 -------------------------------------------
 
-**Message:** Content object page '${path}' is of type '${type}' which is not supported
+**Message:** Content object page '${path}' has unsupported type '${type}'
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.process.signal-code-macro-not-supported
 -------------------------------------------
 
-**Message:** Signal code must not have any macro expressions.
+**Message:** Signal code must not have any macro expressions
 
 .. start: manual doc
 

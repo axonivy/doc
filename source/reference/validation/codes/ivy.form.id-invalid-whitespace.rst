@@ -5,7 +5,7 @@
 ivy.form.id-invalid-whitespace
 ------------------------------
 
-**Message:** Form id is invalid: it cannot contain any whitespace characters, found '${id}'
+**Message:** Form ID '${id}' is invalid because it contains whitespace
 
 .. start: manual doc
 

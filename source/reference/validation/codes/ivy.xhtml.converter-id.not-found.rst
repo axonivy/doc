@@ -5,7 +5,7 @@
 ivy.xhtml.converter-id.not-found
 --------------------------------
 
-**Message:** Converter '${value}' not found
+**Message:** Converter '${value}' was not found
 
 .. start: manual doc
 

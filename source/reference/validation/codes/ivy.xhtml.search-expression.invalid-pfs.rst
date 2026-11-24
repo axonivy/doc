@@ -5,7 +5,7 @@
 ivy.xhtml.search-expression.invalid-pfs
 ---------------------------------------
 
-**Message:** Invalid PrimeFaces Selector '${expression}'
+**Message:** Invalid PrimeFaces selector '${expression}'
 
 .. start: manual doc
 

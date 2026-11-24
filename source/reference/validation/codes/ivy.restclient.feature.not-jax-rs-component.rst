@@ -5,7 +5,7 @@
 ivy.restclient.feature.not-jax-rs-component
 -------------------------------------------
 
-**Message:** RestClient feature '${className}' is not an implementation of a JAX-RS component interface
+**Message:** REST client feature '${className}' does not implement a JAX-RS component interface
 
 .. start: manual doc
 

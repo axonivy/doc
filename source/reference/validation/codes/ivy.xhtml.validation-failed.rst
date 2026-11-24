@@ -5,7 +5,7 @@
 ivy.xhtml.validation-failed
 ---------------------------
 
-**Message:** Failed to validate xhtml file ${file}
+**Message:** Failed to validate XHTML file '${file}'
 
 .. start: manual doc
 

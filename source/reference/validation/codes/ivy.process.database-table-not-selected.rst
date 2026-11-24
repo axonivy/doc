@@ -5,7 +5,7 @@
 ivy.process.database-table-not-selected
 ---------------------------------------
 
-**Message:** No Table selected.
+**Message:** No table is selected
 
 .. start: manual doc
 

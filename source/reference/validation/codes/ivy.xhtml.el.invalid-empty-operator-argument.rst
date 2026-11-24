@@ -5,7 +5,7 @@
 ivy.xhtml.el.invalid-empty-operator-argument
 --------------------------------------------
 
-**Message:** Argument of operator '${operator}' must be either type 'String', 'Collection', 'Map' or an array but is type '${actualType}'
+**Message:** Argument of operator '${operator}' must have type 'String', 'Collection', 'Map', or an array, but has type '${actualType}'
 
 .. start: manual doc
 

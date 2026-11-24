@@ -5,7 +5,7 @@
 ivy.process.process-call-start-not-found
 ----------------------------------------
 
-**Message:** ${elementName} target is invalid. Start '${startMethod}' not found on process '${processName}.
+**Message:** ${elementName} target is invalid because start '${startMethod}' was not found on process '${processName}'
 
 .. start: manual doc
 

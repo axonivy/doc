@@ -5,7 +5,7 @@
 ivy.webserviceclient.key-not-sanitized
 --------------------------------------
 
-**Message:** The web service client key '${key}' should be sanitized to '${sanitizedKey}' to avoid potential issues. Use the name for a better readability.
+**Message:** The web service client key '${key}' is not sanitized. Use '${sanitizedKey}' instead to avoid potential issues
 
 .. start: manual doc
 

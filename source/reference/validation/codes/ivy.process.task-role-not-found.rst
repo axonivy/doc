@@ -5,7 +5,7 @@
 ivy.process.task-role-not-found
 -------------------------------
 
-**Message:** Role '${roleName}' not existing
+**Message:** Role '${roleName}' does not exist
 
 .. start: manual doc
 

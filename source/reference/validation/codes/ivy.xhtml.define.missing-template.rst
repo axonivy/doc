@@ -5,7 +5,7 @@
 ivy.xhtml.define.missing-template
 ---------------------------------
 
-**Message:** No template found
+**Message:** No template was found
 
 .. start: manual doc
 

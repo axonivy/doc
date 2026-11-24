@@ -5,7 +5,7 @@
 ivy.xhtml.define.invalid-parameter
 ----------------------------------
 
-**Message:** No corresponding insert tag found for '${value}'
+**Message:** No corresponding insert tag was found for '${value}'
 
 .. start: manual doc
 

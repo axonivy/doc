@@ -5,7 +5,7 @@
 ivy.xhtml.xhtml-path.not-xhtml
 ------------------------------
 
-**Message:** Provided file is not an xhtml file '${path}'
+**Message:** File '${path}' is not an XHTML file
 
 .. start: manual doc
 

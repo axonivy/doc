@@ -5,7 +5,7 @@
 ivy.process.database-not-selected
 ---------------------------------
 
-**Message:** No Database selected.
+**Message:** No database is selected
 
 .. start: manual doc
 

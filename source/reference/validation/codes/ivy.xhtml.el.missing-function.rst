@@ -5,7 +5,7 @@
 ivy.xhtml.el.missing-function
 -----------------------------
 
-**Message:** Function '${name}' not found
+**Message:** Function '${name}' was not found
 
 .. start: manual doc
 

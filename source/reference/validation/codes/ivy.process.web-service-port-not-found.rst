@@ -5,7 +5,7 @@
 ivy.process.web-service-port-not-found
 --------------------------------------
 
-**Message:** The web service port ´${portName}´ does not exist
+**Message:** Web service port '${portName}' does not exist
 
 .. start: manual doc
 

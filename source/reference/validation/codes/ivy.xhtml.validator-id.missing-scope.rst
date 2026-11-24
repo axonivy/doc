@@ -5,7 +5,7 @@
 ivy.xhtml.validator-id.missing-scope
 ------------------------------------
 
-**Message:** Validator '${value}' found, but it has no CDI scope defined
+**Message:** Validator '${value}' has no CDI scope
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.xhtml.converter-id.missing-scope
 ------------------------------------
 
-**Message:** Converter '${value}' found, but it has no CDI scope defined
+**Message:** Converter '${value}' has no CDI scope
 
 .. start: manual doc
 

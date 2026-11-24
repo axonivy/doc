@@ -5,7 +5,7 @@
 ivy.xhtml.el.missing-bean-variable
 ----------------------------------
 
-**Message:** Managed bean or local variable '${name}' not found
+**Message:** Managed bean or local variable '${name}' was not found
 
 .. start: manual doc
 

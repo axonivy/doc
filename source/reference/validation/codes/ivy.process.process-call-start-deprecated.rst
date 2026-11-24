@@ -5,7 +5,7 @@
 ivy.process.process-call-start-deprecated
 -----------------------------------------
 
-**Message:** ${elementName} target is deprecated. Start '${startMethod}'  on process '${processName} is deprecated and should no longer be used.
+**Message:** ${elementName} target uses deprecated start '${startMethod}' on process '${processName}'
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.xhtml.unknown-element
 -------------------------
 
-**Message:** Unknown element '${element}' in namespace '${namespace}'.
+**Message:** Unknown element '${element}' in namespace '${namespace}'
 
 .. start: manual doc
 

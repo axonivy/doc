@@ -5,7 +5,7 @@
 ivy.xhtml.namespace.deprecated
 ------------------------------
 
-**Message:** Deprecated Namespace '${namespace}'
+**Message:** Namespace '${namespace}' is deprecated
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.process.process-version-mismatch
 ------------------------------------
 
-**Message:** Process version does not match designer: expecting '${expected}' but is '${actual}'
+**Message:** The process version does not match the Designer version: expected '${expected}' but found '${actual}'
 
 .. start: manual doc
 

@@ -5,7 +5,7 @@
 ivy.process.alternative-condition-connector-missing
 ---------------------------------------------------
 
-**Message:** Condition #${conditionNumber} references a no longer existing connector ${fieldIds}
+**Message:** Condition #${conditionNumber} references a connector that no longer exists: ${fieldIds}
 
 .. start: manual doc
 

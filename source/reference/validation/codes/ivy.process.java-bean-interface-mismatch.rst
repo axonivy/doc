@@ -5,7 +5,7 @@
 ivy.process.java-bean-interface-mismatch
 ----------------------------------------
 
-**Message:** '${className}' must implement the interface '${interfaceName}' in oder to be used here.
+**Message:** '${className}' must implement the interface '${interfaceName}' to be used here
 
 .. start: manual doc
 
