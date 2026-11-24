@@ -88,7 +88,7 @@ pipeline {
         script {
           def releaseVersion = evalReleaseVersion()
           def deployer = {
-            def host = 'axonivya@update.axonivy.io'
+            def host = 'axonivya@upload.axonivy.io'
             def homeDir = '/home/axonivya'
             def dir = "$homeDir/data/ivy-doc"
             def destFolder = "$dir/doc-$releaseVersion-" + new Date().format('yyyy-MM-dd_HH-mm-ss-SSS')
