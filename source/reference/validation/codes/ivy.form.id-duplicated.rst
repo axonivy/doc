@@ -16,4 +16,3 @@ The same form ID is assigned to more than one component. Form IDs are used as re
 **How to fix**
 
 Give each component a unique form ID. If other components or scripts refer to an ID, update those references when renaming it. See the :ref:`Form Editor <form-editor>` guide.
-

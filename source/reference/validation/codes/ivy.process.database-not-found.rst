@@ -16,4 +16,3 @@ The Database Activity refers to a database connection that is not defined in the
 **How to fix**
 
 Choose an existing connection in the Database Activity, or add the required connection in the :ref:`Database Editor <database-configuration>`.
-

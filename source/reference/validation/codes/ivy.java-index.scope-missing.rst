@@ -16,4 +16,3 @@ Faces Converters and Faces Validators must have a CDI scope so the container kno
 **How to fix**
 
 Add the scope annotation that matches the component's lifecycle, such as ``@RequestScoped`` or ``@ApplicationScoped``.
-

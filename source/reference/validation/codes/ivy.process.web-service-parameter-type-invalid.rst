@@ -16,4 +16,3 @@ This validation applies to Web Service Process Start input parameters and to fie
 **How to fix**
 
 Follow the replacement suggested in the validation message. See :ref:`Web Service Process Start <process-element-web-service-process-start>` for the supported input parameter types and examples.
-

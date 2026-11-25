@@ -16,4 +16,3 @@ The Variable is marked as a password, but its configured value is plain text. An
 **How to fix**
 
 Encrypt the value using the ``${encrypt:<value>}`` syntax shown in the message. Keep the Variable's password metadata enabled.
-

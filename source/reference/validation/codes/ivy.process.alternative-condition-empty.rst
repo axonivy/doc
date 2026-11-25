@@ -16,4 +16,3 @@ Conditions on an Alternative Gateway are evaluated in order. An empty condition 
 **How to fix**
 
 Add a valid Boolean expression or remove the empty alternative. If it is intended as the default path, keep it as the final alternative.
-

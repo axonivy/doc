@@ -16,4 +16,3 @@ The same Variable key is defined in this project and in another project that is 
 **How to fix**
 
 Give variables unique keys across unrelated projects. If one project is intended to override another, establish the appropriate project dependency so precedence is defined.
-

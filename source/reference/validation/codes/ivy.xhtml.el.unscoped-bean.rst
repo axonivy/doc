@@ -16,4 +16,3 @@ The XHTML expression refers to a managed bean that has no CDI scope. JSF cannot 
 **How to fix**
 
 Add a scope annotation appropriate to the bean's lifecycle, such as ``@RequestScoped`` or ``@ApplicationScoped``. See :ref:`html-dialog-managed-beans` for scope choices.
-

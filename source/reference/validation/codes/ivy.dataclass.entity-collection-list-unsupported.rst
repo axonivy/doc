@@ -16,4 +16,3 @@ An Entity Class cannot combine a ``List`` Attribute with another collection Attr
 **How to fix**
 
 If the Entity Class has multiple collection Attributes, change them to ``Set`` or remove the extra collection Attributes.
-

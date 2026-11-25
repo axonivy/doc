@@ -16,4 +16,3 @@ The converter ID used in the XHTML page does not identify a converter available 
 **How to fix**
 
 Check the converter ID in the page against the ID declared by the converter, and make sure its class is available to the project. If you intended to use a built-in converter, use the appropriate JSF converter ID.
-

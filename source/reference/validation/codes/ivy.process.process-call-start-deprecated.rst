@@ -16,4 +16,3 @@ The process call uses a deprecated start method on the target process. The metho
 **How to fix**
 
 Use a supported replacement start method if one is available, and update the process call accordingly.
-

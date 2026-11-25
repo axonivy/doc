@@ -16,4 +16,3 @@ The same database connection key is defined in another project that is not relat
 **How to fix**
 
 Choose a unique key for one of the database connections. If you change a key, update any process configuration that refers to it.
-

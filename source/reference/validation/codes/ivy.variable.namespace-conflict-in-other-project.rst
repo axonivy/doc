@@ -16,4 +16,3 @@ An underscore-based Variable key in this project resolves to the same access pat
 **How to fix**
 
 Rename one of the conflicting Variables. Check related and unrelated projects for keys that differ only by underscores versus namespace separators.
-

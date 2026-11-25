@@ -16,4 +16,3 @@ Database connection keys are used in configuration and should contain only lette
 **How to fix**
 
 Change the connection key to the suggested sanitized value. If you change the key, update any process configuration that refers to it.
-

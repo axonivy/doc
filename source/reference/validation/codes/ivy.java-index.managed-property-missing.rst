@@ -16,4 +16,3 @@ The ``@FacesConverter`` or ``@FacesValidator`` annotation does not enable manage
 **How to fix**
 
 Add ``managed = true`` to the component's annotation, for example ``@FacesConverter(value = "myConverter", managed = true)``.
-

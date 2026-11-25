@@ -16,4 +16,3 @@ An Error End must specify either an error code or an error cause. Without either
 **How to fix**
 
 Set an error code for the error being raised, or provide an error cause when the code should be determined dynamically. See :ref:`error-handling` for examples of defining and handling errors.
-

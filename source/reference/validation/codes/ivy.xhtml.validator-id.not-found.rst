@@ -16,4 +16,3 @@ The validator ID used in the XHTML page does not identify a validator available 
 **How to fix**
 
 Check the validator ID in the page against the ID declared by the validator, and make sure its class is available to the project.
-

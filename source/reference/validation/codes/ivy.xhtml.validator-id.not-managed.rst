@@ -16,4 +16,3 @@ The validator is not configured for CDI-managed creation. Without managed creati
 **How to fix**
 
 Set ``managed = true`` on the validator's ``@FacesValidator`` annotation. See :ref:`validation-code-ivy.java-index.managed-property-missing` for an example.
-

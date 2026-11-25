@@ -16,4 +16,3 @@ The annotation text starts with ``@``, but the type name after it cannot be reso
 **How to fix**
 
 Check the spelling and use the fully qualified annotation name, for example ``@java.lang.Deprecated``. If it is a custom annotation, make sure its class is included in the project or a referenced library. The :ref:`Data Class Editor <data-class-editor>` writes annotations as provided into the generated Java file.
-

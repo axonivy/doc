@@ -16,4 +16,3 @@ An Attribute whose type is another Entity Class, or a collection of Entity Class
 **How to fix**
 
 Select the appropriate cardinality for the Attribute in the :ref:`Entity Class Editor <persistence-entity-class-editor>`. See the editor documentation for the supported One-to-One, Many-to-One, and One-to-Many relationships.
-

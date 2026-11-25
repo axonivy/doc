@@ -16,4 +16,3 @@ A Structure is a container for child components. With no children, it contains n
 **How to fix**
 
 Add the components that the Structure is intended to contain, or remove the empty Structure from the form. See the :ref:`Form Editor <form-editor>` guide for adding and organizing components.
-

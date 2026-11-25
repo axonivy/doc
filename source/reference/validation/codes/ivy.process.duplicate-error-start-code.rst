@@ -16,4 +16,3 @@ Multiple Error Start Events in the same process handle the same error code. When
 **How to fix**
 
 Assign a distinct error code to each Error Start Event, or remove or combine events that are intended to handle the same error.
-

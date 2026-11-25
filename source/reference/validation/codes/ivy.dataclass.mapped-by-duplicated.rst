@@ -16,4 +16,3 @@ The same Attribute in the referenced Entity Class is used by more than one ``Map
 **How to fix**
 
 Review the related Entity Class Attributes and assign each ``Mapped by`` definition to the correct owning relationship. Ensure the same referenced Attribute is not used more than once.
-

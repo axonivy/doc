@@ -16,4 +16,3 @@ Database field names are used as database column names. The Entity Class Editor 
 **How to fix**
 
 Rename the database field using only uppercase letters, digits, and underscores. See the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
-

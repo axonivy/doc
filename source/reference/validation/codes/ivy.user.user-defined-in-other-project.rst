@@ -16,4 +16,3 @@ The same login name is configured as a user in another project. These project us
 **How to fix**
 
 Use distinct usernames for different test users, or remove a redundant definition. If the same test user is intentionally configured in multiple projects, check that each definition has the intended roles and properties; this is a warning about project test-user configuration, not a deployed Engine user conflict. See the :ref:`Test User Editor <test-user-editor>` documentation.
-

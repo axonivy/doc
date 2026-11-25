@@ -16,4 +16,3 @@ The signature name must follow the identifier format checked by the validator: i
 **How to fix**
 
 Rename the signature using only the allowed characters, for example ``loadCustomer_2`` instead of ``load-customer`` or ``2loadCustomer``.
-

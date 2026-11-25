@@ -16,4 +16,3 @@ A Boundary Event must be linked to an Activity that it can interrupt or otherwis
 **How to fix**
 
 Bind the Boundary Event to the intended Activity in the process editor.
-

@@ -16,4 +16,3 @@ Disabling escaping allows the rendered value to be interpreted as HTML rather th
 **How to fix**
 
 Keep escaping enabled for user-controlled or external values. Disable it only when rendering trusted markup that your application controls. For example, ``<h:outputText value="#{data.comment}" escape="true" />`` renders the value as text instead of interpreting it as HTML.
-

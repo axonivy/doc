@@ -16,4 +16,3 @@ The same Role is defined in multiple projects with different parent Roles. This 
 **How to fix**
 
 Use the same parent Role for this Role in every project where it is defined.
-

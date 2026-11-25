@@ -16,4 +16,3 @@ The API definition marks this request parameter as required, but the activity do
 **How to fix**
 
 In the REST Client Activity's Parameters table, map the required parameter to a process value or another appropriate expression. Check the parameter name and type against the API definition. See :ref:`process-element-rest-client-activity`.
-

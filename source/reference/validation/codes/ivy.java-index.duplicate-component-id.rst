@@ -16,4 +16,3 @@ Managed Beans, Faces Converters, and Faces Validators are registered by their an
 **How to fix**
 
 Give each component a unique annotation ID. Check both the current project and its required project dependencies for duplicate IDs.
-

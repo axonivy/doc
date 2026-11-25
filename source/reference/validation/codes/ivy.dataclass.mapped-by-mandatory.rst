@@ -16,4 +16,3 @@ A One-to-Many association is the inverse side of a Many-to-One relationship and 
 **How to fix**
 
 Set ``Mapped by`` to the name of the corresponding Many-to-One Attribute in the referenced Entity Class. See the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
-
