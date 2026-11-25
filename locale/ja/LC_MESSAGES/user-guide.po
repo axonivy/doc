@@ -23177,9 +23177,8 @@ msgid "A Boundary Event must be linked to an Activity that it can interrupt or o
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-not-bound.rst:18
-#, fuzzy
 msgid "Bind the Boundary Event to the intended Activity in the process editor."
-msgstr "エラーが発生したアクティビティに直接接続されたエラー境界イベント"
+msgstr "プロセスエディターで、境界イベントを対象のアクティビティにバインドしてください。"
 
 #: ../../source/reference/validation/codes/ivy.process.boundary-event-not-overlaying.rst:6
 msgid "ivy.process.boundary-event-not-overlaying"
@@ -23278,9 +23277,8 @@ msgid "A cache entry name identifies the value stored by this process step withi
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.cache-entry-name-empty.rst:18
-#, fuzzy
 msgid "Enter an entry name and use it consistently on the steps that read or invalidate this value. See :ref:`process-element-tab-data-cache` for details."
-msgstr "このタブでは、データキャッシュへのアクセスや無効化の設定を行うことができます。詳細な説明については、 :ref:`process-element-tab-data-cache` 」を参照してください。"
+msgstr "エントリー名を入力し、この値を読み取るステップや無効化するステップで一貫して使用してください。詳細については、 :ref:`process-element-tab-data-cache` を参照してください。"
 
 #: ../../source/reference/validation/codes/ivy.process.cache-group-fixed-time-empty.rst:6
 msgid "ivy.process.cache-group-fixed-time-empty"
@@ -23778,9 +23776,8 @@ msgid "ivy.process.page-not-specified"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.page-not-specified.rst:8
-#, fuzzy
 msgid "**Message:** No page is specified"
-msgstr "ページがすでに指定されている場合"
+msgstr "**メッセージ:** ページが指定されていません"
 
 #: ../../source/reference/validation/codes/ivy.process.parameter-type-not-found.rst:6
 msgid "ivy.process.parameter-type-not-found"
@@ -24101,9 +24098,8 @@ msgid "ivy.process.user-dialog-method-name-missing"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-method-name-missing.rst:8
-#, fuzzy
 msgid "**Message:** No method name is specified on the User Dialog Start element"
-msgstr "通常のリクエスト要素は、ユーザーダイアログの開始要素に置き換えられています。"
+msgstr "**メッセージ:** ユーザーダイアログ開始要素にメソッド名が指定されていません"
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-not-found.rst:6
 msgid "ivy.process.user-dialog-not-found"
@@ -24127,9 +24123,8 @@ msgid "ivy.process.user-dialog-start-method-name-missing"
 msgstr ""
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-start-method-name-missing.rst:8
-#, fuzzy
 msgid "**Message:** No start method name is specified on the User Dialog Start element"
-msgstr "通常のリクエスト要素は、ユーザーダイアログの開始要素に置き換えられています。"
+msgstr "**メッセージ:** ユーザーダイアログ開始要素に開始メソッド名が指定されていません"
 
 #: ../../source/reference/validation/codes/ivy.process.user-dialog-start-not-found.rst:6
 msgid "ivy.process.user-dialog-start-not-found"
