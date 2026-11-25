@@ -16,4 +16,3 @@ Two Attributes in the same Entity Class use the same database field name. Databa
 **How to fix**
 
 Give each persistent Attribute a unique database field name in the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
-

@@ -16,4 +16,3 @@ Web service client keys are used to identify clients in configuration and should
 **How to fix**
 
 Change the web service client key to the suggested sanitized value. If you change the key, update any process configuration that refers to it.
-

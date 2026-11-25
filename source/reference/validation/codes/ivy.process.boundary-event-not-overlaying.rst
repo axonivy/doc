@@ -16,4 +16,3 @@ A Boundary Event is linked to an Activity, but its diagram shape does not overla
 **How to fix**
 
 Move the Boundary Event so that it is attached to the linked Activity, or change its binding to the Activity it should handle.
-

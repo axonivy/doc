@@ -16,4 +16,3 @@ An Entity Class can have at most one version Attribute. The version value is use
 **How to fix**
 
 Keep the ``Version`` property on one supported Attribute and remove it from the others. See the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
-

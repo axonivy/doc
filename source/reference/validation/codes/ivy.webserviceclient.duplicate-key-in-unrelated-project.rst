@@ -16,4 +16,3 @@ The same web service client key is defined in another project that is not relate
 **How to fix**
 
 Choose a unique key for one of the web service clients. If you change a key, update any process configuration that refers to it.
-

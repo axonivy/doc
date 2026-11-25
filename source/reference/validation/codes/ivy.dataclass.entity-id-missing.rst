@@ -16,4 +16,3 @@ Every Entity Class must have a persistent Attribute marked with the ``ID`` prope
 **How to fix**
 
 Select one suitable persistent Attribute and mark it as ``ID`` in the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
-

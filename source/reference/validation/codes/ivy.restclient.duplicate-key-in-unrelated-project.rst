@@ -16,4 +16,3 @@ The same REST client key is defined in another project that is not related by pr
 **How to fix**
 
 Give the REST clients unique keys across unrelated projects. If one project is intended to override another, establish the appropriate project dependency so precedence is defined. If you change a key, update any process configuration that refers to it.
-

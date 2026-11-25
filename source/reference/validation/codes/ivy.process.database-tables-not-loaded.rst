@@ -16,4 +16,3 @@ The Designer could not obtain a table list for the selected database connection.
 **How to fix**
 
 Check that the connection is configured and available, then reopen or refresh the Database Activity. See :ref:`database-configuration` for configuring connections and :ref:`process-element-db-activity` for using them in a process.
-

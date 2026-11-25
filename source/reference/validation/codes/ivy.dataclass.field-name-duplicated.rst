@@ -16,4 +16,3 @@ Data Class Attribute names must be unique, ignoring letter case. For example, ``
 **How to fix**
 
 Rename one of the Attributes so its name differs from all other Attribute names, including differences in capitalization.
-

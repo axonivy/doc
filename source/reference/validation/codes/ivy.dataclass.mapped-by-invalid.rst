@@ -16,4 +16,3 @@ The ``Mapped by`` value must name an Attribute in the referenced Entity Class. T
 **How to fix**
 
 Check the validation details to see why the referenced Attribute is invalid. Correct its name, type, or cardinality, or select the correct owning Attribute in the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
-

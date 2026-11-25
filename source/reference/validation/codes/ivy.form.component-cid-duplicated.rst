@@ -16,4 +16,3 @@ The same internal component identifier (``cid``) is assigned to more than one co
 **How to fix**
 
 Make every component's ``cid`` unique across the whole form, including nested components. Correct the duplicate in the Form Editor or, if you maintain the form definition directly, assign one of the components a new unique ``cid``.
-

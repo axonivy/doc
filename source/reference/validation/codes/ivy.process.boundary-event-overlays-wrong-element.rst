@@ -16,4 +16,3 @@ A Boundary Event is configured for one Activity but visually overlaps a differen
 **How to fix**
 
 Move the Boundary Event onto the configured Activity, or update its binding to the Activity it visually overlaps.
-

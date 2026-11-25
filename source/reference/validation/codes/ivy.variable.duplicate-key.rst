@@ -16,4 +16,3 @@ Variable keys in the same ``variables.yaml`` file must be unique, ignoring lette
 **How to fix**
 
 Remove the duplicate definition or rename one Variable so its key is unique, including when compared without regard to capitalization.
-

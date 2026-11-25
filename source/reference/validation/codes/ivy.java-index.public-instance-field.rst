@@ -16,4 +16,3 @@ Managed Beans must not expose public, non-static instance fields. Public fields 
 **How to fix**
 
 Make the field private and expose it through the appropriate getter and setter if it needs to be accessed by the view.
-

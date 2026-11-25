@@ -16,4 +16,3 @@ A cache group name identifies a set of related cached values. Entries with the s
 **How to fix**
 
 Enter a stable group name. Use the same name on steps that should share a group or be invalidated together. See :ref:`process-element-tab-data-cache` for how cache groups work.
-

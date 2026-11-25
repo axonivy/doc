@@ -16,4 +16,3 @@ The configured error code for an unsuccessful REST response has a validation pro
 **How to fix**
 
 Read the validation details and correct the error code in the REST Client Activity's response/error settings. See :ref:`process-element-rest-client-activity` for the response and error tabs, and :ref:`error-handling` for valid error-code usage.
-

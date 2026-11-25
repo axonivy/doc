@@ -16,4 +16,3 @@ Entity Class Attribute properties depend on the Attribute type and on which othe
 **How to fix**
 
 Remove the unsupported property or combination, or change the Attribute type to one supported by that property. See the :ref:`Entity Class Editor <persistence-entity-class-editor>` for the available properties.
-

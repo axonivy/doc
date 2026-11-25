@@ -16,4 +16,3 @@ A Data Class namespace must match the directory structure in which the Data Clas
 **How to fix**
 
 Update the namespace or move the Data Class so that its namespace matches its directory. You can edit the namespace in the :ref:`Data Class Editor <data-class-editor>`.
-

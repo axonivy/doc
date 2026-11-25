@@ -16,4 +16,3 @@ REST client keys are used to identify clients in configuration and should contai
 **How to fix**
 
 Change the REST client key to the suggested sanitized value. If you change the key, update any process configuration that refers to it.
-

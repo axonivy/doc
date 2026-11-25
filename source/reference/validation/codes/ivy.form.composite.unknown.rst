@@ -16,4 +16,3 @@ The configured name does not resolve to an Ivy Component available through the p
 **How to fix**
 
 Select an existing component from the Form Editor's Composites category and check that its name is correct. To add one, create an :ref:`HTML Dialog Component <html-dialog-component>` in the project and declare ``componentType="IvyComponent"`` on its ``<cc:interface>``; the linked guide describes the required view structure.
-

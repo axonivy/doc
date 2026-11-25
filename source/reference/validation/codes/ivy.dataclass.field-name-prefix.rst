@@ -16,4 +16,3 @@ Data Class Attribute names follow a naming convention: they start with a lowerca
 **How to fix**
 
 Rename the Attribute to follow the convention, for example use ``firstName`` instead of ``FirstName`` or ``aName``.
-

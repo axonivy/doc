@@ -16,4 +16,3 @@ An underscore in a Variable key is interpreted as a namespace separator. For exa
 **How to fix**
 
 Rename one of the Variables so replacing underscores with namespace separators does not produce another Variable's key.
-

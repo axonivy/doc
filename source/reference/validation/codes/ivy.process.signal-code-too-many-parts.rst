@@ -16,4 +16,3 @@ The signal code has more than five colon-separated parts. The code remains valid
 **How to fix**
 
 Keep the code hierarchy concise and move extra identifiers or payload details into signal data where appropriate. For example, use ``order:canceled`` as the code and send the order ID as data. See :ref:`signal-receive-patterns` for code matching and :ref:`adaptive-case-management` for sending signals.
-

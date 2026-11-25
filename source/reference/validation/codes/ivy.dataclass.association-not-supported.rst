@@ -16,4 +16,3 @@ The selected association cardinality does not match the Attribute type. One-to-O
 **How to fix**
 
 Change the Attribute type or choose a cardinality that matches it in the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
-

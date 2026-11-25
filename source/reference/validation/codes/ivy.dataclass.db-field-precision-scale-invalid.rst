@@ -16,4 +16,3 @@ For a type that supports precision and scale, the database field length must con
 **How to fix**
 
 Enter a valid ``precision,scale`` pair in the :ref:`Entity Class Editor <persistence-entity-class-editor>`.
-

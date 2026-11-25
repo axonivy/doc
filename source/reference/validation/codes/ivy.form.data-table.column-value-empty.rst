@@ -16,4 +16,3 @@ Each non-action Data Table column needs a value expression to display a value fr
 **How to fix**
 
 Set the column's Value to an expression for a property on the row object. For example, if each row has a ``customerName`` property, use ``#{currentRow.customerName}``; use ``#{currentRow}`` when the row itself is the value to display.
-

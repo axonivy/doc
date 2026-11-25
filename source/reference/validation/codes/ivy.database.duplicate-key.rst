@@ -16,4 +16,3 @@ Database connection keys identify individual connection configurations. This err
 **How to fix**
 
 Give each database connection in the project a unique key. Update any process configuration that refers to a connection whose key you changed.
-

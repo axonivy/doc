@@ -16,4 +16,3 @@ Managed Beans, Faces Converters, and Faces Validators using ``@ViewScoped`` or `
 **How to fix**
 
 Implement ``java.io.Serializable`` on the class and make sure any state that must be preserved can also be serialized.
-

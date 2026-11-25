@@ -16,4 +16,3 @@ Axon Ivy creates the configured REST client feature when it registers the featur
 **How to fix**
 
 Add an accessible no-argument constructor, or select a feature class that provides one. See :ref:`rest-clients-configuration` for the feature requirements.
-

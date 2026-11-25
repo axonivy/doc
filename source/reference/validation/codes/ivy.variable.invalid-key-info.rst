@@ -16,4 +16,3 @@ A hyphen is allowed in a Variable key, but it is not valid in the ``ivy.var.<var
 **How to fix**
 
 Replace the hyphen with an underscore if the Variable must be accessed using ``ivy.var.<variable>``.
-

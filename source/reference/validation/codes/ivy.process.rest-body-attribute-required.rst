@@ -16,4 +16,3 @@ The API definition requires this attribute in the request body, but the activity
 **How to fix**
 
 In the REST Client Activity's request body mapping, assign the required attribute from process data or another appropriate expression. Check the attribute path and expected type against the API definition. See :ref:`process-element-rest-client-activity`.
-

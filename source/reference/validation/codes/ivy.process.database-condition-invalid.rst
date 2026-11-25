@@ -16,4 +16,3 @@ The condition configured for the Database Activity is not valid. For queries tha
 **How to fix**
 
 Review the condition in the Database Activity and correct the reported syntax or expression problem. Make sure the condition uses columns from the selected table and values of compatible types. See :ref:`process-element-db-activity` for the query options.
-

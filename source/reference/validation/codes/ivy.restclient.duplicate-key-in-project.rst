@@ -16,4 +16,3 @@ REST client keys identify the client configuration used by a process. More than 
 **How to fix**
 
 Give each REST client in the project a unique key. Update any process configuration that refers to a key you changed.
-

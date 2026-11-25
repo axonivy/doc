@@ -16,4 +16,3 @@ The converter is not configured for CDI-managed creation. Without managed creati
 **How to fix**
 
 Set ``managed = true`` on the converter's ``@FacesConverter`` annotation. See :ref:`validation-code-ivy.java-index.managed-property-missing` for an example.
-

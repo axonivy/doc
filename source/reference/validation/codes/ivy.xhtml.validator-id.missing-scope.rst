@@ -16,4 +16,3 @@ The validator has no CDI scope, so the container cannot manage its lifecycle as 
 **How to fix**
 
 Add a suitable scope annotation, such as ``@RequestScoped`` or ``@ApplicationScoped``. See :ref:`validation-code-ivy.java-index.scope-missing` and :ref:`html-dialog-managed-beans`.
-

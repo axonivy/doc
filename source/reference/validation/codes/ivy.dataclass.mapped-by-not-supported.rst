@@ -16,4 +16,3 @@ ivy.dataclass.mapped-by-not-supported
 **How to fix**
 
 Remove the ``Mapped by`` value, or configure a supported inverse association and point it to the owning Attribute in the referenced Entity Class.
-

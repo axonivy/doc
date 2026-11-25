@@ -23,4 +23,3 @@ If the class declares other constructors, add a public no-argument constructor, 
    }
 
 See the Java Bean tab in the documentation for the relevant process element: :ref:`Program Interface Activity <process-element-pi>`, :ref:`Program Start <process-element-program-start>`, or :ref:`Wait Program Intermediate Event <process-element-wait-program-intermediate-event>`.
-

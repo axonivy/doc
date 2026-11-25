@@ -16,4 +16,3 @@ Multiple Error Boundary Events attached to the same Activity handle the same err
 **How to fix**
 
 Assign distinct error codes to the boundary events, or remove or combine events that are intended to handle the same error.
-

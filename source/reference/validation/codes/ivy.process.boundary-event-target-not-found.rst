@@ -16,4 +16,3 @@ The Boundary Event refers to an Activity identifier that no longer exists in the
 **How to fix**
 
 Bind the Boundary Event to an existing Activity, or remove the event if it is no longer needed.
-

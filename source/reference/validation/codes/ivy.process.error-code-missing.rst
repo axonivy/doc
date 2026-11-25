@@ -16,4 +16,3 @@ The Error End has no custom error code, so it will throw the default code shown 
 **How to fix**
 
 Set a meaningful code that matches the process's error-handling design, for example ``booking:declined``. See :ref:`error-handling` and :ref:`process-element-error-end` for how error codes are thrown and caught.
-

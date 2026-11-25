@@ -16,4 +16,3 @@ The query refers to a column that is not available in the selected table. Until 
 **How to fix**
 
 Check the selected database and table, then update the query to use an existing column. If the schema changed, refresh the Database Activity's table/column choices and review any mappings that use the old column.
-

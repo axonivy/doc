@@ -16,4 +16,3 @@ The overriding process does not provide a start method that exists in the origin
 **How to fix**
 
 Add the missing start method to the overriding component, or update the override configuration if that start method is no longer required.
-

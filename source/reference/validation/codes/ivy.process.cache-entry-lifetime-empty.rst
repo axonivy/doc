@@ -16,4 +16,3 @@ The cache entry is configured to expire after a period, but no period is defined
 **How to fix**
 
 Set a numeric IvyScript expression for the entry's lifetime in seconds (for example, ``3600`` for one hour), or choose a different invalidation strategy. See :ref:`process-element-tab-data-cache` for the available strategies.
-
