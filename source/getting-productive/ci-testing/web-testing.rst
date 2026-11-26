@@ -22,11 +22,11 @@ select **Axon Ivy > New > New Test Project**.
    ran the command from a projects context menu, the command will have
    preselected that project for you.
 #. Enter the test project ``name``, ``group ID``, and ``artifact ID``.
-#. Choose the ``WebIT`` test type.
+#. Choose the ``IvyWebTest`` test type.
 
 A sample file is created in the ``src_test`` folder of the new test project.
 
-You now have a simple test called ``SampleWebIT``.
+You now have a simple test called ``SampleIvyWebTestIT``.
 
 #. Run test
 
