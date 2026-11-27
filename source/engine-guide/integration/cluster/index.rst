@@ -40,6 +40,13 @@ environment like Kubernetes or OpenShift.
 
 **Restrictions**
 
+.. warning::
+
+   Cluster communication is a trusted internal interface. Restrict its network
+   access to trusted cluster nodes, including multicast and discovery traffic.
+   Do not expose it to clients or the public internet. See
+   :ref:`cluster-communication` for additional security guidance.
+
 Please consider the following restrictions if you want to run an Axon Ivy Engine
 Cluster:
 
