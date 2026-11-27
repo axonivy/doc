@@ -4551,14 +4551,12 @@ msgid "Database System"
 msgstr "データベースシステム"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:96
-#, fuzzy
 msgid "15, 16, 17, 18, 19"
-msgstr "15、16、17、18"
+msgstr "15、16、17、18、19"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:96
-#, fuzzy
 msgid "15, 19"
-msgstr "15、18"
+msgstr "15、19"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:98
 msgid "MySQL (InnoDB)"
