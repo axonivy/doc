@@ -10,6 +10,46 @@ function properly. To facilitate this, the Axon Ivy Engine uses the reliable
 communication settings by providing your own
 :file:`[ivyEngine]/configuration/jgroups.xml` file.
 
+Security
+--------
+
+Cluster communication is a trusted internal interface. The default JGroups
+stack does not authenticate peers or encrypt traffic, and the cluster name is
+not a secret. A host that can reach the cluster transport may be able to join
+or send traffic to the cluster.
+
+For deployments requiring protection against untrusted network participants,
+configure TLS on the JGroups TCP transport, or use an authenticated, encrypted
+network layer between nodes. The following is a minimal mutual-TLS example for
+a TCP stack; add these attributes to its ``<TCP>`` element:
+
+.. code-block:: xml
+
+   <TCP bind_addr="${jgroups.bind_addr:site_local}"
+        bind_port="${jgroups.bind_port:7800}"
+        tls.enabled="true"
+        tls.keystore_path="${cluster.tls.keystore}"
+        tls.keystore_password="${cluster.tls.keystore_password}"
+        tls.truststore_path="${cluster.tls.truststore}"
+        tls.truststore_password="${cluster.tls.truststore_password}"
+        tls.client_auth="NEED"/>
+
+Set the referenced JVM system properties on each Engine node, for example in
+:file:`[ivyEngine]/configuration/jvm.options`. One value could be
+``-Dcluster.tls.keystore=/path/to/node.p12``. Inject the password properties
+through your deployment's secret-management process. Each node needs a keystore
+with its own private key and certificate, and a truststore that trusts the
+certificates (or issuing CA) of the other
+cluster nodes. Do not share private keys between nodes. Protect the keystore and
+truststore files.
+
+This enables TLS only for the TCP transport. The TCP/IP example below shows
+transport and discovery configuration only; without the TLS attributes above,
+it does not authenticate peers or encrypt cluster traffic. If your stack uses
+``FD_SOCK2``, restrict its separate failure-detection port to trusted cluster
+nodes as well; the TCP transport's TLS settings do not protect that listener.
+Restrict discovery traffic and all other cluster ports to trusted nodes too.
+
 Discovery
 ---------
 
