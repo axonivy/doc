@@ -9049,7 +9049,7 @@ msgid "Enter the test project ``name``, ``group ID``, and ``artifact ID``."
 msgstr ""
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:25
-msgid "Choose the ``ProcessTest`` test type."
+msgid "Choose the ``IvyProcessTest`` test type."
 msgstr ""
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:27
@@ -9059,7 +9059,8 @@ msgid "A sample file is created in the ``src_test`` folder of the new test proje
 msgstr "新しいテストプロジェクトの ``src_test`` フォルダーにサンプルファイルが作成されます。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:29
-msgid "You now have a simple test called ``SampleProcessTest``."
+#, fuzzy
+msgid "You now have a simple test called ``SampleIvyProcessTest``."
 msgstr "これで、``SampleProcessTest`` という名前の簡単なテストが用意できました。"
 
 #: ../../source/getting-productive/ci-testing/process-testing.rst:31
@@ -9387,12 +9388,13 @@ msgid "Setup a Test Project"
 msgstr "テストプロジェクトのセットアップ"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:25
-msgid "Choose the ``WebIT`` test type."
+msgid "Choose the ``IvyWebTest`` test type."
 msgstr ""
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:29
-msgid "You now have a simple test called ``SampleWebIT``."
-msgstr "これで、``SampleWebIT`` という名前の簡単なテストが用意できました。"
+#, fuzzy
+msgid "You now have a simple test called ``SampleIvyWebTestIT``."
+msgstr "これで、``SampleIvyTest`` という名前の簡単なテストが用意できました。"
 
 #: ../../source/getting-productive/ci-testing/web-testing.rst:41
 msgid "Write a Web Test"
@@ -32841,3 +32843,12 @@ msgstr ":ref:`designer-system-requirements` を参照してください。"
 
 #~ msgid "**Message:** Provided file is not an xhtml file '${path}'"
 #~ msgstr ""
+
+#~ msgid "Choose the ``ProcessTest`` test type."
+#~ msgstr ""
+
+#~ msgid "Choose the ``WebIT`` test type."
+#~ msgstr ""
+
+#~ msgid "You now have a simple test called ``SampleWebIT``."
+#~ msgstr "これで、``SampleWebIT`` という名前の簡単なテストが用意できました。"
