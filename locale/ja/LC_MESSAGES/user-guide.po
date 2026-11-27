@@ -2021,7 +2021,7 @@ msgid "Consider using a Dev Drive for improved performance."
 msgstr "性能向上のため、Dev Driveを利用してください."
 
 #: ../../source/designer/troubleshooting.rst:2
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:51
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:91
 msgid "Troubleshooting"
 msgstr "トラブルシューティング"
 
@@ -4551,11 +4551,13 @@ msgid "Database System"
 msgstr "データベースシステム"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:96
-msgid "15, 16, 17, 18"
+#, fuzzy
+msgid "15, 16, 17, 18, 19"
 msgstr "15、16、17、18"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:96
-msgid "15, 18"
+#, fuzzy
+msgid "15, 19"
 msgstr "15、18"
 
 #: ../../source/engine-guide/installation/system-requirements.rst:98
@@ -4781,46 +4783,68 @@ msgid "Cluster nodes need to communicate with each other primarily to send cache
 msgstr "クラスタノードは、主にキャッシュ無効化メッセージを送信するために互いに通信する必要があります。この通信がない場合、Axon Ivy クラスターは正常に機能できません。通信を円滑にするために、Axon Ivy Engine は信頼性の高い `JGroups library <http://jgroups.org/manual5>`_ を使用します。通信設定は、独自の :file:`[ivyEngine]/configuration/jgroups.xml` ファイルを提供することで完全にカスタマイズできます。"
 
 #: ../../source/engine-guide/integration/cluster/communication/index.rst:14
+#: ../../source/engine-guide/reference/engine-cockpit/security.rst:2
+#: ../../source/engine-guide/security/index.rst:4
+msgid "Security"
+msgstr "セキュリティ"
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:16
+msgid "Cluster communication is a trusted internal interface. The default JGroups stack does not authenticate peers or encrypt traffic, and the cluster name is not a secret. A host that can reach the cluster transport may be able to join or send traffic to the cluster."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:21
+msgid "For deployments requiring protection against untrusted network participants, configure TLS on the JGroups TCP transport, or use an authenticated, encrypted network layer between nodes. The following is a minimal mutual-TLS example for a TCP stack; add these attributes to its ``<TCP>`` element:"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:37
+msgid "Set the referenced JVM system properties on each Engine node, for example in :file:`[ivyEngine]/configuration/jvm.options`. One value could be ``-Dcluster.tls.keystore=/path/to/node.p12``. Inject the password properties through your deployment's secret-management process. Each node needs a keystore with its own private key and certificate, and a truststore that trusts the certificates (or issuing CA) of the other cluster nodes. Do not share private keys between nodes. Protect the keystore and truststore files."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:46
+msgid "This enables TLS only for the TCP transport. The TCP/IP example below shows transport and discovery configuration only; without the TLS attributes above, it does not authenticate peers or encrypt cluster traffic. If your stack uses ``FD_SOCK2``, restrict its separate failure-detection port to trusted cluster nodes as well; the TCP transport's TLS settings do not protect that listener. Restrict discovery traffic and all other cluster ports to trusted nodes too."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:54
 msgid "Discovery"
 msgstr "検出"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:16
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:56
 msgid "First, a discovery mechanism is used to locate other nodes within the cluster. By default, the Axon Ivy Engine uses UDP multicast over port :code:`45588` to discover other nodes. The `discovery protocol <http://jgroups.org/manual5/index.html#Discovery>`_ can be changed if UDP multicast is not suitable for your environment. For example:"
 msgstr "まず、クラスタ内の他のノードを検出するために検出メカニズムが使用されます。デフォルトでは、Axon Ivy Engine は :code:`45588` ポートで UDP マルチキャストを使用して他のノードを検出します。環境に UDP マルチキャストが適していない場合、`discovery protocol <http://jgroups.org/manual5/index.html#Discovery>`_ を変更できます。例："
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:22
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:62
 msgid "`TCP/IP <http://jgroups.org/manual5/#TCPPING_Prot>`_-based discovery with TCPPING"
 msgstr "TCPPING による `TCP/IP <http://jgroups.org/manual5/#TCPPING_Prot>`_ ベースの検出"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:24
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:64
 msgid "`DNS <http://jgroups.org/manual5/#_dns_ping>`_-based discovery, which is often suitable for cloud environments (DNS_PING)"
 msgstr "`DNS <http://jgroups.org/manual5/#_dns_ping>`_ ベースの検出。クラウド環境に適していることが多いです（DNS_PING）"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:28
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:68
 msgid "Messaging"
 msgstr "メッセージング"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:30
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:70
 msgid "After discovery, cluster nodes communicate with each other by sending messages—by default using UDP multicast on port :code:`45588`. This is typically the most efficient way to send messages in a local network. However, if your environment does not support UDP multicast, you can change the `protocol <http://jgroups.org/manual5/#_transport_protocols>`_."
 msgstr "検出後、クラスタノードはメッセージを送信して互いに通信します。デフォルトでは、:code:`45588` ポートで UDP マルチキャストを使用して実行されます。これは通常、ローカルネットワークでメッセージを送信する最も効率的な方法です。ただし、環境が UDP マルチキャストをサポートしていない場合、`protocol <http://jgroups.org/manual5/#_transport_protocols>`_ を変更できます。"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:37
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:77
 msgid "TCP/IP"
 msgstr "TCP/IP"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:39
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:79
 msgid "If UDP multicast is not suitable for your environment, you can switch to TCP/IP. This is often necessary in cloud environments where multicast is not supported. To configure TCP/IP, you can modify the :file:`jgroups.xml` file to use the `TCP transport <http://jgroups.org/manual5/#TCP>`_ instead of multicast. Here is an example configuration using DNS-based discovery with TCP/IP as protocol:"
 msgstr "環境に UDP マルチキャストが適していない場合は、TCP/IP に切り替えることができます。これは、マルチキャストがサポートされていないクラウド環境で必要になることが多いです。TCP/IP を設定するには、マルチキャストの代わりに `TCP transport <http://jgroups.org/manual5/#TCP>`_ を使用するように :file:`jgroups.xml` ファイルを変更できます。以下は、TCP/IP をプロトコルとして DNS ベースの検出を使用した設定例です。"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:45
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:85
 msgid "jgroups.xml example of a TCP/IP based communication and DNS-based discovery mechanism"
 msgstr "TCP/IP ベースの通信および DNS ベースの検出メカニズムの jgroups.xml の例"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:53
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:93
 msgid "If cluster nodes cannot discover each other or you experience messaging issues, you can enable specific :ref:`Loggers <logging>` to gain more insight into what is happening."
 msgstr "クラスタノードが互いを検出できない場合や、メッセージングに問題が発生している場合は、特定の :ref:`Loggers <logging>` を有効にすると、何が起きているのかをより詳細に把握できます。"
 
-#: ../../source/engine-guide/integration/cluster/communication/index.rst:57
+#: ../../source/engine-guide/integration/cluster/communication/index.rst:97
 msgid "log4j2.xml configuration for troubleshooting cluster communication"
 msgstr "クラスタ通信の問題を解決するための log4j2.xml 設定"
 
@@ -4908,19 +4932,23 @@ msgstr "Kubernetes や OpenShift などのコンテナ化された環境で Axon
 msgid "**Restrictions**"
 msgstr "**制限**"
 
-#: ../../source/engine-guide/integration/cluster/index.rst:43
+#: ../../source/engine-guide/integration/cluster/index.rst:45
+msgid "Cluster communication is a trusted internal interface. Restrict its network access to trusted cluster nodes, including multicast and discovery traffic. Do not expose it to clients or the public internet. See :ref:`cluster-communication` for additional security guidance."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/index.rst:50
 msgid "Please consider the following restrictions if you want to run an Axon Ivy Engine Cluster:"
 msgstr "Axon Ivy Engine のクラスタを実行したい場合は、以下の制限を考慮してください。"
 
-#: ../../source/engine-guide/integration/cluster/index.rst:46
+#: ../../source/engine-guide/integration/cluster/index.rst:53
 msgid "Each node has to be the exact same version of the Axon Ivy Engine."
 msgstr "各ノードは、完全に同じバージョンの Axon Ivy Engine である必要があります。"
 
-#: ../../source/engine-guide/integration/cluster/index.rst:47
+#: ../../source/engine-guide/integration/cluster/index.rst:54
 msgid "Each node needs to have the same configuration, applications, data, :ref:`system database <systemdb>`, and :ref:`OpenSearch <opensearch>`."
 msgstr "各ノードの設定、アプリケーション、データ、:ref:`system database <systemdb>`、:ref:`OpenSearch <opensearch>` は同一である必要があります。"
 
-#: ../../source/engine-guide/integration/cluster/index.rst:49
+#: ../../source/engine-guide/integration/cluster/index.rst:56
 msgid "Nodes need to communicate with each other."
 msgstr "ノードは互いに通信する必要があります。"
 
@@ -7602,11 +7630,6 @@ msgstr "**REST クライアント** ：選択された REST クライアント�
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:315
 msgid "You can open these life stats from the detailed view of the desired service using the monitor button at the right side."
 msgstr "右側にある監視ボタンを使用して、選択したサービスの詳細ビューからリアルタイムの統計を開くことができます。"
-
-#: ../../source/engine-guide/reference/engine-cockpit/security.rst:2
-#: ../../source/engine-guide/security/index.rst:4
-msgid "Security"
-msgstr "セキュリティ"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:8
 #: ../../source/getting-productive/application-lifecycle/index.rst:12
